@@ -243,6 +243,21 @@ export function createJsonLdBuilder({ seoFor }) {
           author: ORG,
           publisher: PUBLISHER,
         },
+        // Hero ImageObject, exactly as the city and site branches above build it.
+        // This branch used to omit it entirely, so a things-to-do guide's
+        // prerendered graph was only [Article, BreadcrumbList] while the hydrated
+        // page (ThingsToDoCityPage, which has always built this node) also carried
+        // the hero — and, on guides with body figures, the inline ImageObjects.
+        // The runtime node is field-for-field identical to imageNode()'s output,
+        // including the caption-map-else-alt fallback, the optional `@id`, the
+        // `noCredit` opt-out and the conditional address/geo, so adding it here
+        // makes the two graphs agree rather than introducing a second variant.
+        // `put()` drops falsy nodes, so the 11 guides with no `imageMeta` are
+        // unchanged. The href matches ThingsToDoCityPage's `heroImage`
+        // (`config.image || place.image`) and the Article node's `image` above.
+        // NOTE: the inline body-figure ImageObjects are still runtime-only here —
+        // this closes the hero gap, not that one.
+        imageNode(e.thingsToDo.imageMeta, e.thingsToDo.image || e.image, lang, url),
         breadcrumbs([
           HOME,
           ALL_DEST,
