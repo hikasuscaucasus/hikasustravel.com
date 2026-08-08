@@ -3462,6 +3462,57 @@ section {
   }
 }
 /* 1672 is the native ceiling (Borjomi Central Park). Do not add a 2400 breakpoint. */
+/* Borjomi CITY page hero — same four-rung ladder and the same source files as
+   `.hero--borjomi-central-park` above, because the mineral-water pavilion is the
+   ONLY broad photograph of Borjomi that exists anywhere in the project (the whole
+   approved library holds exactly two Borjomi frames, both shot in Central Park).
+   It replaces `/images/files/borjomi-town.jpg`, a grey winter back street under
+   five power lines that illustrates none of what this page describes. That file is
+   NOT deleted — the Things to Do in Borjomi page still uses it.
+   ⚠️ DELIBERATELY A SEPARATE BLOCK, not a shared `.hero--borjomi,
+   .hero--borjomi-central-park` selector: the duplication is a temporary
+   consequence of the photo gap, and when a real Borjomi town/valley frame arrives
+   only this block should change. Coupling the two pages' heroes in one selector
+   would silently move the attraction page's hero with it.
+   Ladder, native ceiling and crop reasoning are identical to the park page's block
+   above: 16:9 native 1672x941, rungs 768/1200/1600/1672, no 2400, nothing
+   upscaled, and `background-position: 30% center` because the pavilion sits left
+   of centre and a centred crop halves the dome on a phone. */
+.hero--borjomi {
+  background-image: url("/images/borjomi/borjomi-central-park-pavilion-georgia-1200.webp");
+  background-image: image-set(
+    url("/images/borjomi/borjomi-central-park-pavilion-georgia-768.avif") type("image/avif"),
+    url("/images/borjomi/borjomi-central-park-pavilion-georgia-768.webp") type("image/webp")
+  );
+  background-position: 30% center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .hero--borjomi {
+    background-image: image-set(
+      url("/images/borjomi/borjomi-central-park-pavilion-georgia-1200.avif") type("image/avif"),
+      url("/images/borjomi/borjomi-central-park-pavilion-georgia-1200.webp") type("image/webp")
+    );
+  }
+}
+@media (min-width: 1200px) {
+  .hero--borjomi {
+    background-image: image-set(
+      url("/images/borjomi/borjomi-central-park-pavilion-georgia-1600.avif") type("image/avif"),
+      url("/images/borjomi/borjomi-central-park-pavilion-georgia-1600.webp") type("image/webp")
+    );
+  }
+}
+@media (min-width: 1600px) {
+  .hero--borjomi {
+    background-image: image-set(
+      url("/images/borjomi/borjomi-central-park-pavilion-georgia-1672.avif") type("image/avif"),
+      url("/images/borjomi/borjomi-central-park-pavilion-georgia-1672.webp") type("image/webp")
+    );
+  }
+}
+/* 1672 is the native ceiling (Borjomi city). Do not add a 2400 breakpoint. */
 .centerme {
   text-align: center !important;
 }
