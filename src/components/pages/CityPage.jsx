@@ -293,8 +293,8 @@ export default function CityPage() {
         })),
         // Hero ImageObject via the `imageMeta` block (for heroes whose file naming
         // or single-variant ceiling doesn't fit the gallery/imageObjects builders).
-        // contentUrl points at the hero file itself (`city.image`); caption is the
-        // localized alt; the cover is representativeOfPage. Mirrors SitePage.
+        // contentUrl points at the hero file itself (`city.image`); the cover is
+        // representativeOfPage. Mirrors SitePage.
         ...(heroImageMeta ? [{
           '@type': 'ImageObject',
           // Optional stable @id for the hero node (page-scoped): a hero package may
@@ -308,7 +308,21 @@ export default function CityPage() {
           height: heroImageMeta.height,
           representativeOfPage: true,
           name: heroImageMeta.name,
-          caption: heroAlt,
+          // Prefer the per-locale `caption` map when the image SEO package ships
+          // one, falling back to the localized alt when it doesn't. This line used
+          // to be a bare `caption: heroAlt`, which silently DISCARDED
+          // `imageMeta.caption` — so a city hero's caption differed between the two
+          // graphs: scripts/seo-jsonld.js's own imageNode() has always preferred
+          // meta.caption, so the prerendered <head> carried the real caption while
+          // the hydrated page carried the alt. Seven cities were shipping that split
+          // (Tbilisi, Akhaltsikhe, Tskaltubo, Batumi, Borjomi, Kazbegi, Gudauri).
+          // Now identical to SitePage.jsx and ThingsToDoCityPage.jsx, which have
+          // always had the conditional — this was the only builder that lacked it.
+          // The `: heroAlt` fallback keeps the three imageMeta heroes that ship NO
+          // caption map (Mtskheta, Mestia, Martvili) byte-identical to before.
+          caption: heroImageMeta.caption
+            ? (heroImageMeta.caption[lang] || heroImageMeta.caption.en)
+            : heroAlt,
           description: heroImageMeta.description,
           ...creditFields(heroImageMeta),
           contentLocation: {
