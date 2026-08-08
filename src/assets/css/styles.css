@@ -3513,6 +3513,52 @@ section {
   }
 }
 /* 1672 is the native ceiling (Borjomi city). Do not add a 2400 breakpoint. */
+/* Things to Do in Borjomi hero — the park's bronze photographer statue, NOT the
+   mineral-water pavilion. ⚠️ ROLES ARE DELIBERATELY INVERTED against both sibling
+   pages: only two Borjomi photographs exist in the whole project, and the Borjomi
+   Central Park page and the Borjomi city page BOTH already open on the pavilion
+   with the statue as their body figure. Inverting is the house answer to a
+   two-photo/three-page squeeze (same call as the Samegrelo and Martvili passes),
+   so this guide at least opens on a different frame; the pavilion moves into the
+   body here instead. If a third Borjomi photograph ever arrives, this is the hero
+   to replace first.
+   Landscape 4:3, native 1448x1086 → ladder 768/1200/1448, top breakpoint at
+   min-width:1200. No 1600/2400 rung, nothing upscaled; files already ship in
+   /images/borjomi/ for the other two pages, so nothing new was copied.
+   `background-position: center center`: the statue is dead-centre in the frame and
+   the crop was rendered before choosing — at 1440 the full width shows (the park
+   signpost sits harmlessly at the right edge) and at 360 the crop keeps only 42% of
+   the width, which drops the signage entirely and leaves the statue centred. The
+   H1 band falls on the tripod legs and lawn, the calmest part of the frame. No
+   extra scrim — the shared .coverme::after overlay carries the text. The plain
+   url() line = image-set() fallback for browsers without image-set(). */
+.hero--things-to-do-borjomi {
+  background-image: url("/images/borjomi/borjomi-central-park-photographer-statue-georgia-1200.webp");
+  background-image: image-set(
+    url("/images/borjomi/borjomi-central-park-photographer-statue-georgia-768.avif") type("image/avif"),
+    url("/images/borjomi/borjomi-central-park-photographer-statue-georgia-768.webp") type("image/webp")
+  );
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .hero--things-to-do-borjomi {
+    background-image: image-set(
+      url("/images/borjomi/borjomi-central-park-photographer-statue-georgia-1200.avif") type("image/avif"),
+      url("/images/borjomi/borjomi-central-park-photographer-statue-georgia-1200.webp") type("image/webp")
+    );
+  }
+}
+@media (min-width: 1200px) {
+  .hero--things-to-do-borjomi {
+    background-image: image-set(
+      url("/images/borjomi/borjomi-central-park-photographer-statue-georgia-1448.avif") type("image/avif"),
+      url("/images/borjomi/borjomi-central-park-photographer-statue-georgia-1448.webp") type("image/webp")
+    );
+  }
+}
+/* 1448 is the native ceiling (Things to Do in Borjomi). Do not add a 1600 rung. */
 .centerme {
   text-align: center !important;
 }
