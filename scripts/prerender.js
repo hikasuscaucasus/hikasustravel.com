@@ -54,6 +54,14 @@ const { createJsonLdBuilder } = await import(
 const { normalizeJsonLdUrls } = await import(
   pathToFileURL(join(__dirname, '../src/utils/url.js')).href
 )
+
+// Build-time React renderer (dist-ssr, produced by `vite build --ssr`). Renders
+// the real page body into #root so the article text is in the static HTML
+// without executing JavaScript. See src/entry-server.jsx.
+const { prepareLocale, renderPage } = await import(
+  pathToFileURL(join(__dirname, '../dist-ssr/entry-server.js')).href
+)
+
 const DIST = join(__dirname, '..', 'dist')
 const SITE_URL = 'https://www.hikasustravel.com'
 const LANGS = ['en', 'es', 'fr', 'de', 'pl', 'cs', 'nl']
@@ -336,7 +344,21 @@ function setOrAppendMeta($, name, content, attr = 'property') {
   else $('head').append(`<meta ${attr}="${name}" content="${escAttr(String(content))}">`)
 }
 
-function writeHtml(filePath, lang, { title, description, keywords, canonical, image, ogImage, ogImageAlt, ogImageWidth, ogImageHeight, heroPreload, ogLocale }) {
+// Page writes are queued rather than executed inline: rendering the body is
+// async (see emitHtml), while the generation loops below are plain synchronous
+// for-loops. drainPages() runs the queue once they have all been walked.
+const pageQueue = []
+function writeHtml(filePath, lang, meta) {
+  pageQueue.push({ filePath, lang, meta })
+}
+
+async function drainPages() {
+  for (const { filePath, lang, meta } of pageQueue) {
+    await emitHtml(filePath, lang, meta)
+  }
+}
+
+async function emitHtml(filePath, lang, { title, description, keywords, canonical, image, ogImage, ogImageAlt, ogImageWidth, ogImageHeight, heroPreload, ogLocale }) {
   // Use the trailing-slash form the host serves at 200; this also flows through
   // to the hreflang/x-default alternates and og:url derived from it below.
   canonical = withTrailingSlash(canonical)
@@ -423,15 +445,41 @@ function writeHtml(filePath, lang, { title, description, keywords, canonical, im
   const ldHtml = renderJsonLd(jsonLdBuilder.forRoute(lang, canonicalPath))
   if (ldHtml) $('head').append(ldHtml)
 
-  // Crawlable links (see renderCrawlLinks). Written into #root so React drops
-  // them on mount; a crawler that does not execute JS still gets a real link
-  // graph instead of an empty document.
-  $('#root').html(renderCrawlLinks(linkGraph.linksFor(lang, canonicalPath)))
+  // The page body, rendered from the same React tree the browser mounts, so the
+  // article text is in the static HTML without executing JavaScript.
+  await prepareLocale(lang)
+  const body = await renderPage(`/${lang}${canonicalPath}`)
 
-  // Write file
+  // The real page carries most of the crawlable link graph now (header, footer,
+  // in-content links), but not all of it: the language switcher is a JS dropdown
+  // that renders buttons rather than anchors, and the parent/sibling links the
+  // graph adds are not all expressed in the UI — without this, 91 pages (the
+  // border crossings and the Tbilisi transport guides) end up with no inbound
+  // link at all. So the block is kept, moved out of #root and into <noscript>.
+  //
+  // Out of #root because React now hydrates that container and would treat any
+  // markup it did not render as a mismatch; <noscript> because a JS visitor must
+  // see exactly what they saw before, i.e. nothing. This is the element's proper
+  // use — a genuine no-script fallback, not links hidden behind CSS.
+  const crawlLinks = renderCrawlLinks(linkGraph.linksFor(lang, canonicalPath))
+  const noscript = crawlLinks ? `<noscript>${crawlLinks}</noscript>` : ''
+
+  // Injected into the serialised string rather than through cheerio. Re-parsing
+  // React's markup would re-serialise it (attribute quoting, void elements,
+  // entity escaping) and hydration compares the two character by character.
+  $('#root').empty()
+  let html = $.html()
+  const ROOT_EMPTY = '<div id="root"></div>'
+  if (!html.includes(ROOT_EMPTY)) {
+    throw new Error(`No empty #root to fill in ${filePath} — template changed?`)
+  }
+  // data-ssr tells src/main.jsx to hydrate rather than render from scratch. It
+  // lives on the container element, which React does not manage or diff.
+  html = html.replace(ROOT_EMPTY, `<div id="root" data-ssr="">${body}</div>${noscript}`)
+
   const dir = dirname(filePath)
   mkdirSync(dir, { recursive: true })
-  writeFileSync(filePath, $.html(), 'utf-8')
+  writeFileSync(filePath, html, 'utf-8')
   fileCount++
 }
 
@@ -641,6 +689,12 @@ for (const lang of LANGS) {
     })
   }
 }
+
+// ---------------------------------------------------------------------------
+// 4b. Render and write the queued pages (see writeHtml/drainPages)
+// ---------------------------------------------------------------------------
+console.log(`Rendering ${pageQueue.length} page bodies...`)
+await drainPages()
 
 // ---------------------------------------------------------------------------
 // 5. Generate 404.html (SPA fallback)
