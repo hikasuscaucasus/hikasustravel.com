@@ -723,7 +723,13 @@ export const tours = [
     "formerSlug": "experience-georgias-rich-culture-coastal-beauty-5-day-tour-from-tbilisi-to-batumi",
     "type": "private",
     "title": "5-Day Private Tour from Tbilisi to Batumi",
-    "heroImage": "/images/files/batumi-coastal-tour.jpg",
+    /* Hero: Batumi seafront skyline via the .hero--tbilisi-batumi image-set()
+       ladder (styles.css) + the ogImage below. heroImage is the SEO fallback
+       ref. tileImage/listingImage keep the existing card artwork — the listing
+       and homepage cards are deliberately out of scope. */
+    "heroImage": "/images/tours/tbilisi-to-batumi/batumi-skyline-beach-georgia-1200.webp",
+    "heroBgClass": "hero--tbilisi-batumi",
+    "ogImage": { "src": "/images/tours/tbilisi-to-batumi/batumi-skyline-beach-georgia-og.jpg", "width": 1200, "height": 630 },
     "tileImage": "/images/files/batumi-coastal-tour.jpg",
     "listingImage": "/images/files/batumi-coastal-tour.jpg",
     "days": 5,
@@ -851,17 +857,281 @@ export const tours = [
       "Additional hotel expenses;",
       "Travel insurance."
     ],
+    /* Gallery — the 14 approved tour photos in itinerary order (Day 1 Mtskheta
+       and Gori → Day 2 Kutaisi → Day 3 Prometheus Cave and Musicians Park →
+       Day 4 Batumi). Each item carries `base` + `widths`, so the shared Gallery
+       renders a real <figure><picture><img> with an AVIF/WebP ladder and exact
+       intrinsic dimensions. `caption` is a per-locale object (resolved at the
+       render boundary in TourDetailPage) and doubles as the <img> alt, so no
+       English caption reaches a non-English page. Keys map to the image
+       package's tour5.* i18n keys, noted per item.
+       #9 (Batumi skyline) is also the hero — the same hero-in-gallery overlap
+       the 8-day culture tour ships. */
     "gallery": [
-      { "src": "/images/files/Tour%20Route%20Map%20Tbilisi%20to%20Batumi.jpg", "caption": "Tour Route Map: Tbilisi to Batumi", "description": "Illustrated route of the 5-day journey from Tbilisi to Batumi via Mtskheta, Gori, Kutaisi and Prometheus Cave" },
-      { "src": "/images/files/Jvari%20Monastery.jpg", "caption": "Jvari Monastery near Mtskheta", "description": "6th-century UNESCO-listed monastery above the confluence of the Aragvi and Mtkvari rivers" },
-      { "src": "/images/files/Uplistsikhe%20Cave%20Town.jpg", "caption": "Uplistsikhe Cave Town", "description": "Ancient rock-hewn cave town carved into the cliffs above the Mtkvari River" },
-      { "src": "/images/files/Stalins%20Train%20Gori.jpg", "caption": "Stalin Museum, Gori", "description": "Joseph Stalin's personal railway carriage at the Stalin Museum in Gori" },
-      { "src": "/images/files/Kutaisi%20Green%20Bazaar.jpg", "caption": "Kutaisi Green Bazaar", "description": "The lively Green Bazaar in the heart of Kutaisi, full of local produce and daily life" },
-      { "src": "/images/files/Prometheus%20Cave%20Interior.jpg", "caption": "Prometheus Cave near Kutaisi", "description": "Vast limestone cave with floodlit stalactites, stalagmites and an underground river" },
-      { "src": "/images/files/Ali%20and%20Nino%20Statue%20Sunset.jpg", "caption": "Ali and Nino Statue, Batumi", "description": "The moving Ali and Nino sculpture on the Batumi seafront at sunset" },
-      { "src": "/images/files/Batumi%20Botanical%20Garden.jpg", "caption": "Batumi Botanical Garden", "description": "Lush hillside gardens overlooking the Black Sea just north of Batumi" },
-      { "src": "/images/files/Batumi%20Black%20Sea%20Coast.jpg", "caption": "Black Sea Coast near Batumi", "description": "The green Adjara coastline meeting the turquoise Black Sea" }
+      {
+        /* tour5.jvari */
+        "src": "/images/tours/tbilisi-to-batumi/jvari-monastery-mtskheta-georgia-1920.webp",
+        "base": "/images/tours/tbilisi-to-batumi/jvari-monastery-mtskheta-georgia",
+        "widths": [768, 1200, 1600, 1920],
+        "width": 1920,
+        "height": 1439,
+        "caption": {
+          "en": "Jvari Monastery, Mtskheta",
+          "de": "Kloster Jvari, Mtskheta",
+          "fr": "Monastère de Jvari, Mtskheta",
+          "es": "Monasterio de Jvari, Mtskheta",
+          "nl": "Jvari-klooster, Mtskheta",
+          "cs": "Klášter Jvari, Mtskheta",
+          "pl": "Klasztor Jvari, Mtskheta"
+        }
+      },
+      {
+        /* tour5.svetitskhoveli */
+        "src": "/images/tours/tbilisi-to-batumi/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
+        "base": "/images/tours/tbilisi-to-batumi/svetitskhoveli-cathedral-mtskheta-georgia",
+        "widths": [768, 1200, 1540],
+        "width": 1540,
+        "height": 1021,
+        "caption": {
+          "en": "Svetitskhoveli Cathedral, Mtskheta",
+          "de": "Kathedrale Svetitskhoveli, Mtskheta",
+          "fr": "Cathédrale de Svetitskhoveli, Mtskheta",
+          "es": "Catedral de Svetitskhoveli, Mtskheta",
+          "nl": "Svetitskhoveli-kathedraal, Mtskheta",
+          "cs": "Katedrála Svetitskhoveli, Mtskheta",
+          "pl": "Katedra Svetitskhoveli, Mtskheta"
+        }
+      },
+      {
+        /* tour5.uplistsikhe */
+        "src": "/images/tours/tbilisi-to-batumi/uplistsikhe-cave-town-georgia-1448.webp",
+        "base": "/images/tours/tbilisi-to-batumi/uplistsikhe-cave-town-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Uplistsikhe Cave Town, near Gori",
+          "de": "Höhlenstadt Uplistsikhe, bei Gori",
+          "fr": "Cité troglodyte d'Uplistsikhe, près de Gori",
+          "es": "Ciudad rupestre de Uplistsikhe, cerca de Gori",
+          "nl": "Grottenstad Uplistsikhe, bij Gori",
+          "cs": "Skalní město Uplistsikhe, u Gori",
+          "pl": "Miasto jaskiniowe Uplistsikhe, koło Gori"
+        }
+      },
+      {
+        /* tour5.stalinMuseum */
+        "src": "/images/tours/tbilisi-to-batumi/stalin-museum-gori-georgia-1536.webp",
+        "base": "/images/tours/tbilisi-to-batumi/stalin-museum-gori-georgia",
+        "widths": [768, 1200, 1536],
+        "width": 1536,
+        "height": 1024,
+        "caption": {
+          "en": "Stalin Museum, Gori",
+          "de": "Stalin-Museum, Gori",
+          "fr": "Musée Staline, Gori",
+          "es": "Museo de Stalin, Gori",
+          "nl": "Stalinmuseum, Gori",
+          "cs": "Stalinovo muzeum, Gori",
+          "pl": "Muzeum Stalina, Gori"
+        }
+      },
+      {
+        /* tour5.gelati */
+        "src": "/images/tours/tbilisi-to-batumi/gelati-monastery-kutaisi-georgia-1491.webp",
+        "base": "/images/tours/tbilisi-to-batumi/gelati-monastery-kutaisi-georgia",
+        "widths": [768, 1200, 1491],
+        "width": 1491,
+        "height": 1055,
+        "caption": {
+          "en": "Gelati Monastery, near Kutaisi",
+          "de": "Kloster Gelati, bei Kutaisi",
+          "fr": "Monastère de Gélati, près de Koutaïssi",
+          "es": "Monasterio de Gelati, cerca de Kutaisi",
+          "nl": "Klooster Gelati, bij Koetaisi",
+          "cs": "Klášter Gelati, u Kutaisi",
+          "pl": "Klasztor Gelati, koło Kutaisi"
+        }
+      },
+      {
+        /* tour5.greenBazaar */
+        "src": "/images/tours/tbilisi-to-batumi/kutaisi-green-bazaar-georgia-1536.webp",
+        "base": "/images/tours/tbilisi-to-batumi/kutaisi-green-bazaar-georgia",
+        "widths": [768, 1200, 1536],
+        "width": 1536,
+        "height": 1024,
+        "caption": {
+          "en": "Kutaisi Green Bazaar",
+          "de": "Grüner Basar von Kutaisi",
+          "fr": "Bazar vert de Koutaïssi",
+          "es": "Bazar Verde de Kutaisi",
+          "nl": "Groene Bazaar van Koetaisi",
+          "cs": "Zelený bazar v Kutaisi",
+          "pl": "Zielony Bazar w Kutaisi"
+        }
+      },
+      {
+        /* tour5.prometheusCave */
+        "src": "/images/tours/tbilisi-to-batumi/prometheus-cave-kutaisi-georgia-1536.webp",
+        "base": "/images/tours/tbilisi-to-batumi/prometheus-cave-kutaisi-georgia",
+        "widths": [768, 1200, 1536],
+        "width": 1536,
+        "height": 1024,
+        "caption": {
+          "en": "Prometheus Cave, near Kutaisi",
+          "de": "Prometheus-Höhle, bei Kutaisi",
+          "fr": "Grotte de Prométhée, près de Koutaïssi",
+          "es": "Cueva de Prometeo, cerca de Kutaisi",
+          "nl": "Prometheusgrot, bij Koetaisi",
+          "cs": "Prométheova jeskyně, u Kutaisi",
+          "pl": "Jaskinia Prometeusza, koło Kutaisi"
+        }
+      },
+      {
+        /* tour5.beatles */
+        "src": "/images/tours/tbilisi-to-batumi/beatles-statue-georgia-1448.webp",
+        "base": "/images/tours/tbilisi-to-batumi/beatles-statue-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "The Beatles statue",
+          "de": "Beatles-Statue",
+          "fr": "Statue des Beatles",
+          "es": "Estatua de los Beatles",
+          "nl": "Beatles-standbeeld",
+          "cs": "Socha Beatles",
+          "pl": "Pomnik The Beatles"
+        }
+      },
+      {
+        /* tour5.batumiSkyline */
+        "src": "/images/tours/tbilisi-to-batumi/batumi-skyline-beach-georgia-1448.webp",
+        "base": "/images/tours/tbilisi-to-batumi/batumi-skyline-beach-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Batumi seafront skyline",
+          "de": "Uferskyline von Batumi",
+          "fr": "Front de mer de Batumi",
+          "es": "Perfil urbano frente al mar de Batumi",
+          "nl": "Skyline aan de kust van Batumi",
+          "cs": "Panoráma pobřeží Batumi",
+          "pl": "Panorama nadmorska Batumi"
+        }
+      },
+      {
+        /* tour5.boulevardFountains */
+        "src": "/images/tours/tbilisi-to-batumi/batumi-boulevard-fountains-night-georgia-1445.webp",
+        "base": "/images/tours/tbilisi-to-batumi/batumi-boulevard-fountains-night-georgia",
+        "widths": [768, 1200, 1445],
+        "width": 1445,
+        "height": 1089,
+        "caption": {
+          "en": "Batumi Boulevard fountains at night",
+          "de": "Springbrunnen am Boulevard von Batumi bei Nacht",
+          "fr": "Fontaines du boulevard de Batumi la nuit",
+          "es": "Fuentes del bulevar de Batumi de noche",
+          "nl": "Fonteinen op de boulevard van Batumi bij nacht",
+          "cs": "Fontány na bulváru v Batumi v noci",
+          "pl": "Fontanny na bulwarze w Batumi nocą"
+        }
+      },
+      {
+        /* tour5.aliNino */
+        "src": "/images/tours/tbilisi-to-batumi/ali-and-nino-statue-batumi-georgia-1024.webp",
+        "base": "/images/tours/tbilisi-to-batumi/ali-and-nino-statue-batumi-georgia",
+        "widths": [768, 1024],
+        "width": 1024,
+        "height": 1536,
+        /* Portrait: keep the figures' heads in the 3:2 tile crop. */
+        "objectPosition": "center 30%",
+        "caption": {
+          "en": "Ali & Nino moving statue, Batumi",
+          "de": "Bewegliche Statue „Ali und Nino“, Batumi",
+          "fr": "Statue mobile Ali et Nino, Batumi",
+          "es": "Estatua móvil de Ali y Nino, Batumi",
+          "nl": "Bewegend beeld Ali en Nino, Batumi",
+          "cs": "Pohyblivá socha Ali a Nino, Batumi",
+          "pl": "Ruchomy pomnik Ali i Nino, Batumi"
+        }
+      },
+      {
+        /* tour5.alphabetTower */
+        "src": "/images/tours/tbilisi-to-batumi/alphabet-tower-batumi-night-georgia-1122.webp",
+        "base": "/images/tours/tbilisi-to-batumi/alphabet-tower-batumi-night-georgia",
+        "widths": [768, 1122],
+        "width": 1122,
+        "height": 1402,
+        /* Portrait: keep the tower's crown in the 3:2 tile crop. */
+        "objectPosition": "center 15%",
+        "caption": {
+          "en": "Alphabet Tower, Batumi",
+          "de": "Alphabet-Turm, Batumi",
+          "fr": "Tour de l'Alphabet, Batumi",
+          "es": "Torre del Alfabeto, Batumi",
+          "nl": "Alfabettoren, Batumi",
+          "cs": "Abecední věž, Batumi",
+          "pl": "Wieża Alfabetu, Batumi"
+        }
+      },
+      {
+        /* tour5.pebbleBeach */
+        "src": "/images/tours/tbilisi-to-batumi/batumi-black-sea-waves-georgia-1448.webp",
+        "base": "/images/tours/tbilisi-to-batumi/batumi-black-sea-waves-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Black Sea pebble beach, Batumi",
+          "de": "Kieselstrand am Schwarzen Meer, Batumi",
+          "fr": "Plage de galets de la mer Noire, Batumi",
+          "es": "Playa de guijarros del mar Negro, Batumi",
+          "nl": "Kiezelstrand aan de Zwarte Zee, Batumi",
+          "cs": "Oblázková pláž Černého moře, Batumi",
+          "pl": "Kamienista plaża nad Morzem Czarnym, Batumi"
+        }
+      },
+      {
+        /* tour5.sunset */
+        "src": "/images/tours/tbilisi-to-batumi/batumi-black-sea-sunset-georgia-1448.webp",
+        "base": "/images/tours/tbilisi-to-batumi/batumi-black-sea-sunset-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Sunset over the Black Sea, Batumi",
+          "de": "Sonnenuntergang über dem Schwarzen Meer, Batumi",
+          "fr": "Coucher de soleil sur la mer Noire, Batumi",
+          "es": "Atardecer sobre el mar Negro, Batumi",
+          "nl": "Zonsondergang boven de Zwarte Zee, Batumi",
+          "cs": "Západ slunce nad Černým mořem, Batumi",
+          "pl": "Zachód słońca nad Morzem Czarnym, Batumi"
+        }
+      }
     ],
+    /* Route-map infographic. Deliberately NOT a gallery tile: it renders as its
+       own figure at the top of the gallery section (the slot it has always
+       occupied) via the same body-img + lightbox pattern as the Gudauri ski
+       tour route map. */
+    "routeMapImage": {
+      /* tour5.routeMap */
+      "src": "/images/tours/tbilisi-to-batumi/tbilisi-to-batumi-route-map-georgia-1536.webp",
+      "base": "/images/tours/tbilisi-to-batumi/tbilisi-to-batumi-route-map-georgia",
+      "widths": [768, 1200, 1536],
+      "width": 1536,
+      "height": 1024,
+      "caption": {
+        "en": "Route map — 5-day Tbilisi to Batumi journey",
+        "de": "Routenkarte – 5-tägige Reise von Tiflis nach Batumi",
+        "fr": "Carte de l'itinéraire — voyage de 5 jours de Tbilissi à Batumi",
+        "es": "Mapa de la ruta: viaje de 5 días de Tbilisi a Batumi",
+        "nl": "Routekaart — 5-daagse reis van Tbilisi naar Batumi",
+        "cs": "Mapa trasy — pětidenní cesta z Tbilisi do Batumi",
+        "pl": "Mapa trasy — 5-dniowa podróż z Tbilisi do Batumi"
+      }
+    },
     "map": {
       "center": [
         42.696,

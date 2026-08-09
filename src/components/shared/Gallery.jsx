@@ -182,6 +182,14 @@ export default function Gallery({ images }) {
                         sizes={GALLERY_SIZES}
                         alt={caption}
                         className="gallery-card__img"
+                        /* Optional per-item crop anchor. Tiles are a uniform 3:2
+                           object-fit:cover box, so a tall portrait keeps only
+                           ~44% of its height and a centred crop can behead the
+                           subject (the Ali & Nino figures, the Alphabet Tower's
+                           crown). An item may name the band to keep; omitting it
+                           leaves the CSS default (50%), so every existing
+                           gallery renders exactly as before. */
+                        style={img.objectPosition ? { objectPosition: img.objectPosition } : undefined}
                       />
                     </picture>
                   ) : (

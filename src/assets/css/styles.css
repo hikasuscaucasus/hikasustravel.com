@@ -496,6 +496,44 @@ section {
 }
 /* No rung above 1448 (native ceiling). */
 
+/* 5-Day Tbilisi→Batumi tour hero — Batumi seafront skyline, same opt-in
+   .heroBgClass mechanism as .hero--gudauri-ski above, on the tour-page hero
+   (.td-hero). Ladder 768/1200/1448 — native ceiling 1448, no 1600/2400.
+   background-position: 20% center, NOT centre: .td-hero is min-height:100vh, so
+   at 360px wide the cover crop keeps only ~42% of the frame's width and a
+   centred crop drops both the sea and the Alphabet Tower, leaving an anonymous
+   row of towers. 20% holds the Alphabet Tower and the spire tower in frame.
+   Horizontal position is a no-op at desktop widths (the crop there is vertical
+   only), so this costs the desktop composition nothing.
+   plain url() = image-set() fallback. */
+.hero--tbilisi-batumi {
+  background-image: url("/images/tours/tbilisi-to-batumi/batumi-skyline-beach-georgia-1200.webp");
+  background-image: image-set(
+    url("/images/tours/tbilisi-to-batumi/batumi-skyline-beach-georgia-768.avif") type("image/avif"),
+    url("/images/tours/tbilisi-to-batumi/batumi-skyline-beach-georgia-768.webp") type("image/webp")
+  );
+  background-position: 20% center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .hero--tbilisi-batumi {
+    background-image: image-set(
+      url("/images/tours/tbilisi-to-batumi/batumi-skyline-beach-georgia-1200.avif") type("image/avif"),
+      url("/images/tours/tbilisi-to-batumi/batumi-skyline-beach-georgia-1200.webp") type("image/webp")
+    );
+  }
+}
+@media (min-width: 1200px) {
+  .hero--tbilisi-batumi {
+    background-image: image-set(
+      url("/images/tours/tbilisi-to-batumi/batumi-skyline-beach-georgia-1448.avif") type("image/avif"),
+      url("/images/tours/tbilisi-to-batumi/batumi-skyline-beach-georgia-1448.webp") type("image/webp")
+    );
+  }
+}
+/* No rung above 1448 (native ceiling). */
+
 /* Truso Valley hero — per-page CSS background (same opt-in mechanism as
    .hero--juta). Ladder 768→2400 + deliberate `background-position: center 72%`:
    the subject (tower + church) sits low in a sky-less frame, so a centred crop
