@@ -2,41 +2,7 @@ import { useState, useEffect, useMemo, useCallback } from 'react'
 import { useParams, useNavigate, useLocation } from 'react-router-dom'
 import { langCodes, defaultLang } from './languages'
 import { I18nContext } from './I18nContext'
-import { registerSEO } from '../data/seoData'
-
-const translationCache = {}
-
-async function loadLocale(lang) {
-  if (translationCache[lang]) return translationCache[lang]
-
-  // `en-fallback.json` carries only what a translated locale actually needs from
-  // English — the keys it has no translation for, plus the destination-hub keys
-  // whose English item names are used as a per-card fallback. English itself
-  // needs none of it: its own pages.json already is the fallback. See
-  // scripts/generate-en-fallback.js.
-  const [ui, pages, faq, enFallback, seo] = await Promise.all([
-    import(`./locales/${lang}/ui.json`),
-    import(`./locales/${lang}/pages.json`),
-    import(`./locales/${lang}/faq.json`),
-    lang === defaultLang ? null : import('./locales/en-fallback.json'),
-    // Per-locale page metadata, split out of the 1.16 MB seoData source so a
-    // visitor downloads only their own language. Registered on the module
-    // before this promise resolves, so the synchronous getSEO() calls in the
-    // page components (and in the search index) always find their table.
-    import(`../data/seo/${lang}.json`),
-  ])
-
-  registerSEO(lang, seo.default)
-
-  const result = {
-    ui: ui.default,
-    pages: pages.default,
-    faq: faq.default,
-    enPages: enFallback ? enFallback.default : pages.default,
-  }
-  translationCache[lang] = result
-  return result
-}
+import { getCachedLocale, loadLocale } from './localeData'
 
 const tourCache = {}
 
@@ -66,7 +32,16 @@ export default function I18nProvider({ children }) {
 
   const lang = langCodes.includes(paramLang) ? paramLang : defaultLang
 
-  const [data, setData] = useState(null)
+  const [loaded, setLoaded] = useState(null)
+  // Prefer the module cache over state, so a locale that is already loaded is
+  // used on the very first render rather than one effect later. This is what
+  // lets the build-time render emit real content instead of null, and what keeps
+  // hydration's first render identical to the HTML the build wrote.
+  //
+  // Falling back to `loaded` (rather than to null) preserves the old behaviour
+  // during a switch to a not-yet-loaded language: the previous language's copy
+  // stays on screen while the new one downloads, instead of blanking the page.
+  const data = getCachedLocale(lang) || loaded
   // Store the loaded tour translations together with the language they belong to,
   // so a language change drops stale translations during render (no reset effect).
   const [tourState, setTourState] = useState({ lang: null, tours: null, hotels: null })
@@ -74,7 +49,12 @@ export default function I18nProvider({ children }) {
   const hotelTranslations = tourState.lang === lang ? tourState.hotels : null
 
   useEffect(() => {
-    loadLocale(lang).then(setData)
+    // Already cached — the render above used it, so there is nothing to fetch
+    // and no state to set.
+    if (getCachedLocale(lang)) return
+    let cancelled = false
+    loadLocale(lang).then((d) => { if (!cancelled) setLoaded(d) })
+    return () => { cancelled = true }
   }, [lang])
 
   const setLang = useCallback((newLang) => {

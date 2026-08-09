@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/generate-redirects.js --check && node scripts/generate-en-fallback.js && node scripts/generate-seo-locales.js && node scripts/generate-sitemap.js && vite build && node scripts/prerender.js",
+    "build": "node scripts/generate-redirects.js --check && node scripts/generate-en-fallback.js && node scripts/generate-seo-locales.js && node scripts/generate-sitemap.js && vite build && vite build --ssr src/entry-server.jsx && node scripts/prerender.js",
     "redirects": "node scripts/generate-redirects.js",
     "lint": "eslint .",
     "preview": "vite preview",
