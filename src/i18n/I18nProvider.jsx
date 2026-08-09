@@ -2,28 +2,7 @@ import { useState, useEffect, useMemo, useCallback } from 'react'
 import { useParams, useNavigate, useLocation } from 'react-router-dom'
 import { langCodes, defaultLang } from './languages'
 import { I18nContext } from './I18nContext'
-import { getCachedLocale, loadLocale } from './localeData'
-
-const tourCache = {}
-
-async function loadTours(lang) {
-  if (tourCache[lang]) return tourCache[lang]
-
-  // `hotels.json` carries the translated hotel copy shown in the accommodation
-  // modal (description, amenity labels, location highlights, image alt text).
-  // English reads straight from hotelData.js, so it has no file of its own; a
-  // locale that has not been translated yet simply falls back to English.
-  const [tours, hotels] = await Promise.all([
-    import(`./locales/${lang}/tours.json`),
-    lang === defaultLang
-      ? null
-      : import(`./locales/${lang}/hotels.json`).catch(() => null),
-  ])
-
-  const result = { tours: tours.default, hotels: hotels ? hotels.default : null }
-  tourCache[lang] = result
-  return result
-}
+import { getCachedLocale, getCachedTours, loadLocale, loadTours } from './localeData'
 
 export default function I18nProvider({ children }) {
   const { lang: paramLang } = useParams()
@@ -45,8 +24,12 @@ export default function I18nProvider({ children }) {
   // Store the loaded tour translations together with the language they belong to,
   // so a language change drops stale translations during render (no reset effect).
   const [tourState, setTourState] = useState({ lang: null, tours: null, hotels: null })
-  const tourTranslations = tourState.lang === lang ? tourState.tours : null
-  const hotelTranslations = tourState.lang === lang ? tourState.hotels : null
+  // Same cache-first rule as the page copy above, so a warm locale's tour titles
+  // are translated on the first render — otherwise the build would write the
+  // English titles into a translated page.
+  const cachedTours = getCachedTours(lang)
+  const tourTranslations = cachedTours ? cachedTours.tours : (tourState.lang === lang ? tourState.tours : null)
+  const hotelTranslations = cachedTours ? cachedTours.hotels : (tourState.lang === lang ? tourState.hotels : null)
 
   useEffect(() => {
     // Already cached — the render above used it, so there is nothing to fetch

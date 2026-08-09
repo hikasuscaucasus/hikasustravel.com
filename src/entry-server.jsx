@@ -3,7 +3,7 @@ import { renderToString } from 'react-dom/server'
 import { StaticRouter } from 'react-router'
 import { AppRoutes } from './App'
 import { preloadRouteComponents } from './routeComponents'
-import { loadLocale } from './i18n/localeData'
+import { loadLocale, loadTours } from './i18n/localeData'
 
 /**
  * Build-time renderer. scripts/prerender.js imports this from the SSR bundle and
@@ -20,15 +20,17 @@ import { loadLocale } from './i18n/localeData'
  * Both are cached, so this is only real work the first time a language appears.
  */
 export async function prepareLocale(lang) {
-  await Promise.all([loadLocale(lang), preloadRouteComponents()])
+  await Promise.all([loadLocale(lang), loadTours(lang), preloadRouteComponents()])
 }
 
-// React parks a Suspense boundary that was still pending as an empty <template>
-// and appends its content at the end of the document for an inline script to
-// move into place — i.e. content that only exists once JS runs, which is the
-// exact problem this renderer exists to fix. Nothing should suspend once
-// prepareLocale() has run, so treat any of these as a hard failure.
-const STREAMING_ARTIFACT = /<template id="[BS]:|<!--\$\?-->|<div hidden id="S:/
+// Signs that a Suspense boundary did not complete during the render:
+//   <!--$?-->, <template id="B:…">, <div hidden id="S:…">  streamed out of order
+//   <!--$!-->                                              rendered its fallback
+// Either way the real content is missing from the static HTML, and on the
+// errored form the browser also throws React #419 while hydrating. Nothing
+// should suspend once prepareLocale() has run, so treat these as hard failures
+// rather than letting a half-rendered page ship.
+const UNRESOLVED_BOUNDARY = /<template id="[BS]:|<!--\$\?-->|<!--\$!-->|<div hidden id="S:/
 
 /**
  * Render one route to an HTML string.
@@ -48,10 +50,11 @@ export function renderPage(url) {
     </StrictMode>,
   )
 
-  if (STREAMING_ARTIFACT.test(html)) {
+  if (UNRESOLVED_BOUNDARY.test(html)) {
     throw new Error(
-      `SSR produced a deferred Suspense boundary for ${url}. Something in the ` +
-      'tree suspended, so its content would not be in the static HTML.',
+      `SSR left a Suspense boundary unresolved for ${url}. Something in the tree ` +
+      'suspended, so its content is missing from the static HTML. Hold it back ' +
+      'until after hydration with useIsHydrated, or preload it in prepareLocale.',
     )
   }
   return html

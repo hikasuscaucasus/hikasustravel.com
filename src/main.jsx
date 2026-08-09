@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
-import { loadLocale } from './i18n/localeData'
+import { loadLocale, loadTours } from './i18n/localeData'
 import { langCodes, defaultLang } from './i18n/languages'
 import { initFirstTouchAttribution } from './utils/attribution'
 import './assets/css/reset_plus.css'
@@ -44,5 +44,12 @@ function mount() {
   else ReactDOM.createRoot(container).render(tree)
 }
 
-if (isPrerendered) loadLocale(lang).then(mount, mount)
+// Tour copy is awaited too, unconditionally rather than only on tour routes: the
+// build renders translated tour titles wherever they appear (the hubs, the tour
+// pages, the "<Entity> Tours" listings, the home page cards), so hydration needs
+// the same data or those pages would mismatch. A route-shaped guess about which
+// pages need it is the kind of thing that silently drifts. It no longer delays
+// what the visitor sees either — the page is painted from the static HTML; this
+// only gates interactivity.
+if (isPrerendered) Promise.all([loadLocale(lang), loadTours(lang)]).then(mount, mount)
 else mount()

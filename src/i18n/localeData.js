@@ -48,3 +48,35 @@ export async function loadLocale(lang) {
   translationCache[lang] = result
   return result
 }
+
+const tourCache = {}
+
+export function getCachedTours(lang) {
+  return tourCache[lang]
+}
+
+/**
+ * Translated tour copy — titles, summaries and itineraries for the tour hubs,
+ * tour detail pages, the "<Entity> Tours" listings and the home page's cards.
+ *
+ * Loaded up front by both entries for the same reason as the page copy: without
+ * it the build-time render writes the English titles into a translated page.
+ */
+export async function loadTours(lang) {
+  if (tourCache[lang]) return tourCache[lang]
+
+  // `hotels.json` carries the translated hotel copy shown in the accommodation
+  // modal (description, amenity labels, location highlights, image alt text).
+  // English reads straight from hotelData.js, so it has no file of its own; a
+  // locale that has not been translated yet simply falls back to English.
+  const [tours, hotels] = await Promise.all([
+    import(`./locales/${lang}/tours.json`),
+    lang === defaultLang
+      ? null
+      : import(`./locales/${lang}/hotels.json`).catch(() => null),
+  ])
+
+  const result = { tours: tours.default, hotels: hotels ? hotels.default : null }
+  tourCache[lang] = result
+  return result
+}
