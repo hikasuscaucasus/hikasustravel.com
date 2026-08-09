@@ -2586,7 +2586,7 @@ export const tours = [
     "heroImage": "/images/tours/8-day-culture-adventure/gergeti-trinity-church-kazbegi-georgia-1448.webp",
     "ogImage": { "src": "/images/tours/8-day-culture-adventure/gergeti-trinity-church-kazbegi-georgia-og.jpg", "width": 1200, "height": 630 },
     "tileImage": "/images/files/cultural-adventure-caucasus.jpg",
-    "listingImage": "/images/files/cultural-adventure-caucasus.jpg",
+    "listingImage": "/images/tours/8-day-culture-adventure/gergeti-trinity-church-kazbegi-georgia-1200.webp",
     "days": 8,
     "description": "Dive into the wonders of Georgia on this 8-day adventure, blending cultural discovery, historic landmarks, and exhilarating outdoor activities.",
     "listingDescription": "Dive into the wonders of Georgia on this 8-day adventure, blending cultural discovery, historic landmarks, and exhilarating outdoor activities.",
