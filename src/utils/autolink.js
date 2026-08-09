@@ -16,13 +16,19 @@
  *     verified localized name (all cities + the curated places), never an
  *     invented translation.
  *
- * Implementation safety: the content HTML is parsed with the browser DOMParser
- * and only TEXT NODES are processed (never attributes/URLs/code), so no nested
- * <a> elements or broken markup can be produced. It is a no-op during SSR /
- * prerender (window absent); body content is client-rendered, so there is no
- * hydration mismatch.
+ * Implementation safety: the content HTML is parsed with a DOMParser and only
+ * TEXT NODES are processed (never attributes/URLs/code), so no nested <a>
+ * elements or broken markup can be produced.
+ *
+ * This runs at build time as well as in the browser — the parser comes from the
+ * `@dom` alias, which resolves to happy-dom in the SSR build (see
+ * vite.config.js). It used to be a no-op without `window`, which put the entity
+ * links in the browser's render but not in the prerendered HTML; React does not
+ * patch a dangerouslySetInnerHTML mismatch, so it kept the link-free server
+ * markup and the links vanished from the page entirely.
  */
 import { regions, cities, sites, regionPath, cityPath, sitePath } from '../data/places'
+import { domApi } from '@dom'
 
 // Generic words that must never become a link by themselves.
 const GENERIC = new Set([
@@ -165,17 +171,18 @@ const SKIP_TAGS = new Set(['A', 'CODE', 'PRE', 'SCRIPT', 'STYLE', 'BUTTON', 'TEX
  *   would send the reader to the wrong city (see `noAutolinkKeys` in places.js).
  */
 export function autolinkHtml(html, lang, pages, excludeKey) {
-  if (typeof window === 'undefined' || typeof DOMParser === 'undefined') return html
+  const dom = domApi()
+  if (!dom) return html
   if (!html || html.indexOf('<') === -1) return html
   try {
-    return linkHtml(html, lang, pages, excludeKey)
+    return linkHtml(html, lang, pages, excludeKey, dom)
   } catch {
     // Never let linking break content rendering — fall back to the original HTML.
     return html
   }
 }
 
-function linkHtml(html, lang, pages, excludeKey) {
+function linkHtml(html, lang, pages, excludeKey, dom) {
   const { byName, regex } = getIndex(lang, pages)
   if (!regex) return html
   // `excludeKey` accepts a single key (the historical shape) or an array; empty
@@ -185,8 +192,8 @@ function linkHtml(html, lang, pages, excludeKey) {
     Array.isArray(excludeKey) ? excludeKey.filter(Boolean) : (excludeKey ? [excludeKey] : []),
   )
 
-  const doc = new DOMParser().parseFromString(`<body>${html}</body>`, 'text/html')
-  const walker = doc.createTreeWalker(doc.body, NodeFilter.SHOW_TEXT)
+  const doc = new dom.DOMParser().parseFromString(`<body>${html}</body>`, 'text/html')
+  const walker = doc.createTreeWalker(doc.body, dom.SHOW_TEXT)
   const targets = []
   let node
   while ((node = walker.nextNode())) {

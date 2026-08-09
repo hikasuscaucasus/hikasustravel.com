@@ -3,6 +3,8 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 const mapboxStub = fileURLToPath(new URL('./src/ssr/mapbox-gl-stub.js', import.meta.url))
+const domBrowser = fileURLToPath(new URL('./src/utils/dom.browser.js', import.meta.url))
+const domSsr = fileURLToPath(new URL('./src/ssr/dom.ssr.js', import.meta.url))
 
 // Two builds come out of this config:
 //   vite build                      -> dist/        the browser bundle
@@ -20,7 +22,15 @@ export default defineConfig(({ isSsrBuild }) => ({
     // it would rewrite `mapbox-gl/dist/mapbox-gl.css` too and look for the
     // stylesheet underneath the stub file. Only the package entry is swapped;
     // the CSS import resolves normally and Vite drops it from the SSR build.
-    alias: isSsrBuild ? [{ find: /^mapbox-gl$/, replacement: mapboxStub }] : [],
+    alias: [
+      // `@dom` gives src/utils/autolink.js a DOM parser in both worlds: the
+      // platform's in the browser, happy-dom at build time. Without the
+      // build-time half the prerendered HTML carries no entity links while the
+      // browser adds them, which React reports as a hydration mismatch and
+      // resolves by keeping the server's link-free HTML.
+      { find: '@dom', replacement: isSsrBuild ? domSsr : domBrowser },
+      ...(isSsrBuild ? [{ find: /^mapbox-gl$/, replacement: mapboxStub }] : []),
+    ],
   },
   build: isSsrBuild
     ? { outDir: 'dist-ssr', ssr: true }
