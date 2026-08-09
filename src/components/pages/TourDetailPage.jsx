@@ -327,8 +327,9 @@ export default function TourDetailPage() {
               </FadeUp>
               {/* The 5-day Tbilisi→Batumi route map is a normal gallery item
                   (the closing tile), not a separate block — see its entry in
-                  tours.js. */}
-              <Gallery images={localizedGallery} />
+                  tours.js. That tour also sets `galleryShowAll`, so the map
+                  isn't stranded behind the "show more" fold. */}
+              <Gallery images={localizedGallery} showAll={tour.galleryShowAll} />
             </section>
           )}
 

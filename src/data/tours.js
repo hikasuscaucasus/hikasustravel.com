@@ -857,6 +857,10 @@ export const tours = [
       "Additional hotel expenses;",
       "Travel insurance."
     ],
+    /* Render all 15 tiles with no "show more" fold: the route map is the
+       closing tile and the default 6-tile fold left it invisible on load.
+       Opt-in — every other tour gallery keeps the fold. */
+    "galleryShowAll": true,
     /* Gallery — the 14 approved tour photos in itinerary order (Day 1 Mtskheta
        and Gori → Day 2 Kutaisi → Day 3 Prometheus Cave and Musicians Park →
        Day 4 Batumi). Each item carries `base` + `widths`, so the shared Gallery

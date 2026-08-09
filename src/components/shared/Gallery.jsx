@@ -116,7 +116,12 @@ export function GalleryLightbox({ images, startIndex, onClose, label }) {
   )
 }
 
-export default function Gallery({ images }) {
+/* `showAll` opts a single gallery out of the "show more" fold and renders every
+   tile immediately. Added for the 5-day Tbilisi→Batumi tour, whose route map is
+   the closing tile: behind the 6-tile fold it was invisible until you pressed
+   the button, which read as the map having been dropped. Defaults to false, so
+   every other gallery keeps the fold exactly as before. */
+export default function Gallery({ images, showAll = false }) {
   const [expanded, setExpanded] = useState(false)
   const [lightboxIndex, setLightboxIndex] = useState(null)
   const lastFocused = useRef(null)
@@ -130,8 +135,8 @@ export default function Gallery({ images }) {
      Because `visible` is a leading slice, a card's index within it IS its index
      within `images` — keep that invariant if the grid order ever changes
      (indexOf would misresolve a gallery that repeats the same src). */
-  const visible = expanded ? images : images.slice(0, INITIAL_COUNT)
-  const hasMore = images.length > INITIAL_COUNT
+  const visible = (showAll || expanded) ? images : images.slice(0, INITIAL_COUNT)
+  const hasMore = !showAll && images.length > INITIAL_COUNT
 
   const openLightbox = (index, el) => {
     lastFocused.current = el
