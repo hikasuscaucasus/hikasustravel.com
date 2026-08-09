@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
+import { loadLocale } from './i18n/localeData'
+import { langCodes, defaultLang } from './i18n/languages'
 import { initFirstTouchAttribution } from './utils/attribution'
 import './assets/css/reset_plus.css'
 import './assets/css/styles.css'
@@ -16,8 +18,31 @@ import 'swiper/css/navigation'
 // leave the original source intact.
 initFirstTouchAttribution()
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+const container = document.getElementById('root')
+
+const tree = (
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
+  </React.StrictMode>
 )
+
+// scripts/prerender.js marks the pages whose body it rendered at build time.
+// Those hydrate; anything else (the dev server, the 404 SPA fallback, the
+// legacy redirect stubs) still gets a plain client render into an empty root.
+const isPrerendered = container.hasAttribute('data-ssr')
+
+// The locale JSON has to be in the cache before the first render, or
+// I18nProvider returns null and hydration finds an empty tree where the build
+// wrote a full page. This is not a new round-trip: the provider already blocked
+// its first paint on exactly this fetch — it just used to happen one render
+// later, inside an effect.
+const seg = window.location.pathname.split('/')[1]
+const lang = langCodes.includes(seg) ? seg : defaultLang
+
+function mount() {
+  if (isPrerendered) ReactDOM.hydrateRoot(container, tree)
+  else ReactDOM.createRoot(container).render(tree)
+}
+
+if (isPrerendered) loadLocale(lang).then(mount, mount)
+else mount()
