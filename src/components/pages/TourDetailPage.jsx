@@ -18,7 +18,6 @@ import useLang from '../../i18n/useLang'
 import { I18nContext } from '../../i18n/I18nContext'
 import useSEO from '../../hooks/useSEO'
 import useIsHydrated from '../../hooks/useIsHydrated'
-import asset from '../../utils/basePath'
 import { autolinkHtml } from '../../utils/autolink'
 import { autolinkNodes } from '../../utils/autolinkReact'
 
@@ -221,12 +220,6 @@ export default function TourDetailPage() {
     [tour, lang]
   )
 
-  // Route-map infographic caption/alt for tours that ship a `routeMapImage`
-  // (per-locale caption object, same shape as a gallery item's).
-  const routeMapCaption = tour?.routeMapImage
-    ? (tour.routeMapImage.caption[lang] || tour.routeMapImage.caption.en)
-    : ''
-
   if (!tour) {
     return (
       <section className="td-not-found">
@@ -332,64 +325,9 @@ export default function TourDetailPage() {
                 <h2 className="td-section__title">{t('tour.gallery')}</h2>
                 <p className="td-section__subtitle">{t('tour.gallerySubtitle')}</p>
               </FadeUp>
-              {/* Route-map infographic — data-driven (`routeMapImage`), so only
-                  tours that ship one render it and every other tour is
-                  unchanged. It leads the gallery block, the slot it has always
-                  occupied, but is deliberately a standalone <figure> rather than
-                  a gallery tile so the grid stays a clean itinerary sequence.
-                  Same body-img + lightbox pattern as the Gudauri route map
-                  above; caption and alt are localized, unlike that one, because
-                  this map is shown on all seven locales. Below the fold (the
-                  hero is 100vh) so lazy — the hero owns LCP. */}
-              {tour.routeMapImage && (
-                <figure className="body-img body-img--wide">
-                  <div
-                    ref={routeMapTrigger}
-                    className="body-img__btn"
-                    role="button"
-                    tabIndex={0}
-                    aria-label={`${t('tour.viewImage')}: ${routeMapCaption}`}
-                    onClick={() => setRouteMapOpen(true)}
-                    onKeyDown={(e) => {
-                      if (e.key === 'Enter' || e.key === ' ') {
-                        e.preventDefault()
-                        setRouteMapOpen(true)
-                      }
-                    }}
-                  >
-                    <picture>
-                      <source
-                        type="image/avif"
-                        sizes="(max-width: 700px) 100vw, 642px"
-                        srcSet={tour.routeMapImage.widths.map((w) => `${asset(`${tour.routeMapImage.base}-${w}.avif`)} ${w}w`).join(', ')}
-                      />
-                      <source
-                        type="image/webp"
-                        sizes="(max-width: 700px) 100vw, 642px"
-                        srcSet={tour.routeMapImage.widths.map((w) => `${asset(`${tour.routeMapImage.base}-${w}.webp`)} ${w}w`).join(', ')}
-                      />
-                      <img
-                        src={asset(`${tour.routeMapImage.base}-${tour.routeMapImage.widths[0]}.webp`)}
-                        width={tour.routeMapImage.width}
-                        height={tour.routeMapImage.height}
-                        loading="lazy"
-                        decoding="async"
-                        sizes="(max-width: 700px) 100vw, 642px"
-                        alt={routeMapCaption}
-                      />
-                    </picture>
-                  </div>
-                  <figcaption>{routeMapCaption}</figcaption>
-                  {routeMapOpen && (
-                    <GalleryLightbox
-                      images={[{ src: tour.routeMapImage.src, caption: routeMapCaption }]}
-                      startIndex={0}
-                      label={routeMapCaption}
-                      onClose={() => { setRouteMapOpen(false); routeMapTrigger.current?.focus() }}
-                    />
-                  )}
-                </figure>
-              )}
+              {/* The 5-day Tbilisi→Batumi route map is a normal gallery item
+                  (the closing tile), not a separate block — see its entry in
+                  tours.js. */}
               <Gallery images={localizedGallery} />
             </section>
           )}

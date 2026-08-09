@@ -1109,29 +1109,29 @@ export const tours = [
           "cs": "Západ slunce nad Černým mořem, Batumi",
           "pl": "Zachód słońca nad Morzem Czarnym, Batumi"
         }
+      },
+      {
+        /* tour5.routeMap — the route-map infographic is the closing gallery
+           tile, not a separate block: same tile markup, sizing, lazy loading
+           and lightbox as every other item. Native 1536x1024 is already 3:2,
+           so the uniform tile crop takes nothing off it and it needs no crop
+           anchor. */
+        "src": "/images/tours/tbilisi-to-batumi/tbilisi-to-batumi-route-map-georgia-1536.webp",
+        "base": "/images/tours/tbilisi-to-batumi/tbilisi-to-batumi-route-map-georgia",
+        "widths": [768, 1200, 1536],
+        "width": 1536,
+        "height": 1024,
+        "caption": {
+          "en": "Route map — 5-day Tbilisi to Batumi journey",
+          "de": "Routenkarte – 5-tägige Reise von Tiflis nach Batumi",
+          "fr": "Carte de l'itinéraire — voyage de 5 jours de Tbilissi à Batumi",
+          "es": "Mapa de la ruta: viaje de 5 días de Tbilisi a Batumi",
+          "nl": "Routekaart — 5-daagse reis van Tbilisi naar Batumi",
+          "cs": "Mapa trasy — pětidenní cesta z Tbilisi do Batumi",
+          "pl": "Mapa trasy — 5-dniowa podróż z Tbilisi do Batumi"
+        }
       }
     ],
-    /* Route-map infographic. Deliberately NOT a gallery tile: it renders as its
-       own figure at the top of the gallery section (the slot it has always
-       occupied) via the same body-img + lightbox pattern as the Gudauri ski
-       tour route map. */
-    "routeMapImage": {
-      /* tour5.routeMap */
-      "src": "/images/tours/tbilisi-to-batumi/tbilisi-to-batumi-route-map-georgia-1536.webp",
-      "base": "/images/tours/tbilisi-to-batumi/tbilisi-to-batumi-route-map-georgia",
-      "widths": [768, 1200, 1536],
-      "width": 1536,
-      "height": 1024,
-      "caption": {
-        "en": "Route map — 5-day Tbilisi to Batumi journey",
-        "de": "Routenkarte – 5-tägige Reise von Tiflis nach Batumi",
-        "fr": "Carte de l'itinéraire — voyage de 5 jours de Tbilissi à Batumi",
-        "es": "Mapa de la ruta: viaje de 5 días de Tbilisi a Batumi",
-        "nl": "Routekaart — 5-daagse reis van Tbilisi naar Batumi",
-        "cs": "Mapa trasy — pětidenní cesta z Tbilisi do Batumi",
-        "pl": "Mapa trasy — 5-dniowa podróż z Tbilisi do Batumi"
-      }
-    },
     "map": {
       "center": [
         42.696,
