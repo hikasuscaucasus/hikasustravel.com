@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from 'react'
+import { useState, useMemo, useEffect, useSyncExternalStore } from 'react'
 import HeroSection from '../shared/HeroSection'
 import useT from '../../i18n/useT'
 import useLang from '../../i18n/useLang'
@@ -9,6 +9,19 @@ import { embassies, emergencyNumbers, filterEmbassies } from '../../data/embassy
 function FlagImg({ code, size = 32 }) {
   const src = `https://flagcdn.com/w80/${code.toLowerCase()}.png`
   return <img src={src} alt={code} width={size} height={Math.round(size * 0.75)} style={{ objectFit: 'cover', borderRadius: 3 }} />
+}
+
+// The visitor's country never changes while the page is open, so there is
+// nothing to subscribe to. Module-level so the reference stays stable.
+const subscribeNever = () => () => {}
+
+// Must return a stable value — React re-reads it and compares. It resolves to a
+// string id or null, so repeated calls compare equal.
+function getHighlightedEmbassyId() {
+  const code = getUserCountryCode()
+  if (!code) return null
+  const match = embassies.find((e) => e.countryCode === code)
+  return match ? match.id : null
 }
 
 function getUserCountryCode() {
@@ -25,13 +38,17 @@ export default function EmbassiesPage() {
   const { lang } = useLang()
   const seo = getSEO('embassies', lang)
   const [query, setQuery] = useState('')
-  // Resolve the visitor's own embassy once, from the browser locale, at mount.
-  const [highlightedId] = useState(() => {
-    const code = getUserCountryCode()
-    if (!code) return null
-    const match = embassies.find(e => e.countryCode === code)
-    return match ? match.id : null
-  })
+  // Resolve the visitor's own embassy from the browser locale. useSyncExternalStore
+  // rather than a useState initialiser because the browser locale does not exist
+  // at build time: the server snapshot (null) is what the static HTML and the
+  // first hydration render both use, and React swaps in the client snapshot
+  // immediately afterwards. Reading navigator during render instead would make
+  // the two disagree.
+  const highlightedId = useSyncExternalStore(
+    subscribeNever,
+    getHighlightedEmbassyId,
+    () => null,
+  )
 
   const filtered = useMemo(() => filterEmbassies(query), [query])
 

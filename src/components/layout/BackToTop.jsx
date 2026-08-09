@@ -2,7 +2,10 @@ import useScrollPosition from '../../hooks/useScrollPosition'
 
 export default function BackToTop() {
   const scrollY = useScrollPosition()
-  const isVisible = scrollY > window.innerHeight * 1.2
+  // `typeof window` guard for the build-time render, which has no window. The
+  // result is the same either way on the first render — scrollY starts at 0, so
+  // the button is hidden — which is exactly what hydration needs to match.
+  const isVisible = typeof window !== 'undefined' && scrollY > window.innerHeight * 1.2
 
   const handleClick = (e) => {
     e.preventDefault()

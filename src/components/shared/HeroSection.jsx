@@ -10,8 +10,13 @@ function heroBackground(image, imageAvif) {
   const webp = `url(${asset(image)})`
   if (!imageAvif) return webp
   const imageSet = `image-set(url("${asset(imageAvif)}") type("image/avif"), url("${asset(image)}") type("image/webp"))`
-  if (typeof window !== 'undefined' && window.CSS?.supports?.('background-image', imageSet)) return imageSet
-  return webp
+  // The build-time render has no CSS engine to ask, so it emits image-set() —
+  // what every browser with image-set() support produces on its own first
+  // render, which is what keeps the static HTML and hydration identical (and
+  // means the AVIF is the hero's first paint rather than a post-hydration swap).
+  // A browser without support still downgrades itself here on that first render.
+  if (typeof window === 'undefined') return imageSet
+  return window.CSS?.supports?.('background-image', imageSet) ? imageSet : webp
 }
 
 export default function HeroSection({ image, imageAvif, title, className = '', isTaxi = false, bgClass = '' }) {
