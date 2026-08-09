@@ -5,7 +5,10 @@ import reactRefresh from 'eslint-plugin-react-refresh'
 import { defineConfig, globalIgnores } from 'eslint/config'
 
 export default defineConfig([
-  globalIgnores(['dist']),
+  // Both build outputs: `dist` is the browser bundle, `dist-ssr` the build-time
+  // renderer (see vite.config.js). Without dist-ssr here, `npm run lint` walks
+  // the generated bundles and reports dozens of failures in machine-written code.
+  globalIgnores(['dist', 'dist-ssr']),
   {
     files: ['**/*.{js,jsx}'],
     extends: [
