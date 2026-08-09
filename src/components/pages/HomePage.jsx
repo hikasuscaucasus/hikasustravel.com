@@ -14,10 +14,12 @@ import useLang from '../../i18n/useLang'
 import LocaleLink from '../../i18n/LocaleLink'
 import { I18nContext } from '../../i18n/I18nContext'
 import useSEO from '../../hooks/useSEO'
+import useIsHydrated from '../../hooks/useIsHydrated'
 import { getSEO } from '../../data/seoData'
 
 export default function HomePage() {
   const t = useT()
+  const hydrated = useIsHydrated()
   const { lang } = useLang()
   const { tourTranslations, loadTourTranslations } = useContext(I18nContext)
   const seo = getSEO('home', lang)
@@ -167,7 +169,14 @@ export default function HomePage() {
       </section>
 
       {/* Fallback mirrors MapboxMap's own wrapper so the slot keeps its height
-          (.page-map is 70vh) and nothing shifts when the map arrives. */}
+          (.page-map is 70vh) and nothing shifts when the map arrives.
+          The map is held back until after hydration (useIsHydrated) so the
+          static HTML and the first browser render both show this placeholder.
+          Rendering the map at build time instead would put markup in the HTML
+          that the hydrating render — still waiting on the mapbox chunk — cannot
+          match. A visitor sees no difference: the map already arrived with its
+          chunk, after mount. */}
+      {!hydrated ? <section><div className="page-map" /></section> : (
       <Suspense fallback={<section><div className="page-map" /></section>}>
         <MapboxMap
           id="map"
@@ -185,6 +194,7 @@ export default function HomePage() {
           isHomePage
         />
       </Suspense>
+      )}
 
       {/* Testimonials */}
       <section className="td-testimonials-section">

@@ -17,12 +17,14 @@ import useT from '../../i18n/useT'
 import useLang from '../../i18n/useLang'
 import { I18nContext } from '../../i18n/I18nContext'
 import useSEO from '../../hooks/useSEO'
+import useIsHydrated from '../../hooks/useIsHydrated'
 import { autolinkHtml } from '../../utils/autolink'
 import { autolinkNodes } from '../../utils/autolinkReact'
 
 export default function TourDetailPage() {
   const { slug } = useParams()
   const t = useT()
+  const hydrated = useIsHydrated()
   const { lang } = useLang()
   const { tourTranslations, loadTourTranslations, pages } = useContext(I18nContext)
 
@@ -441,6 +443,10 @@ export default function TourDetailPage() {
         <section id="tour-map" className="td-map-section">
           <div className="td-map-card">
             <h2 className="td-section__title">{t('tour.routeMap')}</h2>
+            {/* Held back until after hydration — see the same slot on HomePage.
+                The placeholder is what both the static HTML and the first
+                browser render show; the map arrives with its chunk as before. */}
+            {!hydrated ? <section><div className="td-map" /></section> : (
             <Suspense fallback={<section><div className="td-map" /></section>}>
               <MapboxMap
                 id="tour-map-canvas"
@@ -451,6 +457,7 @@ export default function TourDetailPage() {
                 className="td-map"
               />
             </Suspense>
+            )}
           </div>
         </section>
       )}
