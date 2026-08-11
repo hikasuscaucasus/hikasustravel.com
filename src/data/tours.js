@@ -3389,7 +3389,7 @@ export const tours = [
           "de": "Metechi-Kirche auf dem Felsen über dem Fluss Mtkwari in der Altstadt von Tiflis, Georgien",
           "fr": "Église de Metekhi sur la falaise dominant la rivière Mtkvari dans le vieux Tbilissi, Géorgie",
           "es": "Iglesia de Metekhi sobre el acantilado del río Mtkvari en el casco antiguo de Tiflis, Georgia",
-          "nl": "Metechi-kerk op de rots boven de rivier de Mtkvari in de oude stad van Tbilisi, Georgië",
+          "nl": "Metekhi-kerk op de rots boven de rivier de Mtkvari in de oude stad van Tbilisi, Georgië",
           "cs": "Kostel Metechi na skále nad řekou Mtkvari ve starém Tbilisi, Gruzie",
           "pl": "Kościół Metechi na skale nad rzeką Mtkwari na starym mieście w Tbilisi, Gruzja"
         }
@@ -3419,7 +3419,7 @@ export const tours = [
         "objectPosition": "center 30%",
         "caption": {
           "en": "The leaning Gabriadze clock tower in Old Tbilisi, Georgia",
-          "de": "Der schiefe Gabriadse-Uhrturm in der Altstadt von Tiflis, Georgien",
+          "de": "Der schiefe Gabriadze-Uhrturm in der Altstadt von Tiflis, Georgien",
           "fr": "La tour de l'horloge penchée de Gabriadze dans le vieux Tbilissi, Géorgie",
           "es": "La torre del reloj inclinada de Gabriadze en el casco antiguo de Tiflis, Georgia",
           "nl": "De scheve Gabriadze-klokkentoren in de oude stad van Tbilisi, Georgië",
@@ -3568,7 +3568,7 @@ export const tours = [
           "es": "La ciudad rupestre de Uplistsije cerca de Gori, Georgia",
           "nl": "De in rots uitgehouwen holenstad Uplistsikhe bij Gori, Georgië",
           "cs": "Skalní jeskynní město Uplisciche poblíž Gori, Gruzie",
-          "pl": "Wykute w skale jaskiniowe miasto Upliscyche koło Gori, Gruzja"
+          "pl": "Wykute w skale jaskiniowe miasto Uplisciche koło Gori, Gruzja"
         }
       },
       {
