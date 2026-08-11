@@ -1290,7 +1290,35 @@ export const tours = [
     "formerSlug": "sulfur-baths-and-sipping-wine-5-days-of-georgian-delights",
     "type": "private",
     "title": "5-Day Georgia Private Tour: Tbilisi, Wine & Sulfur Baths",
-    "heroImage": "/images/files/sulfur-baths-wine-tour.jpg",
+    "heroImage": "/images/tours/tbilisi-wine-sulfur/gergeti-trinity-church-kazbegi-georgia-1200.webp",
+    "heroBgClass": "hero--tbilisi-wine-sulfur",
+    "ogImage": { "src": "/images/tours/tbilisi-wine-sulfur/gergeti-trinity-church-kazbegi-georgia-og.jpg", "width": 1200, "height": 630 },
+    "imageMeta": {
+      "width": 1448,
+      "height": 1086,
+      "contentUrl": "/images/tours/tbilisi-wine-sulfur/gergeti-trinity-church-kazbegi-georgia-1448.webp",
+      "description": "The Gergeti Trinity Church and its separate stone bell tower on a grassy ridge above Stepantsminda, against the vast scree slopes of the Kazbek massif, in the Mtskheta-Mtianeti region of Georgia.",
+      "locationName": "Gergeti Trinity Church, Stepantsminda, Mtskheta-Mtianeti, Georgia",
+      "geo": { "lat": 42.66253, "lng": 44.62072 },
+      "alt": {
+        "en": "Gergeti Trinity Church, Kazbegi",
+        "de": "Gergeti-Dreifaltigkeitskirche, Kazbegi",
+        "fr": "Église de la Trinité de Guerguéti, Kazbegi",
+        "es": "Iglesia de la Trinidad de Gergeti, Kazbegi",
+        "nl": "Drie-eenheidskerk van Gergeti, Kazbegi",
+        "cs": "Trojiční kostel Gergeti, Kazbegi",
+        "pl": "Cerkiew Trójcy Świętej w Gergeti, Kazbegi"
+      },
+      "caption": {
+        "en": "Gergeti Trinity Church, Kazbegi",
+        "de": "Gergeti-Dreifaltigkeitskirche, Kazbegi",
+        "fr": "Église de la Trinité de Guerguéti, Kazbegi",
+        "es": "Iglesia de la Trinidad de Gergeti, Kazbegi",
+        "nl": "Drie-eenheidskerk van Gergeti, Kazbegi",
+        "cs": "Trojiční kostel Gergeti, Kazbegi",
+        "pl": "Cerkiew Trójcy Świętej w Gergeti, Kazbegi"
+      }
+    },
     "tileImage": "/images/files/sulfur-baths-wine-tour.jpg",
     "listingImage": "/images/files/sulfur-baths-wine-tour.jpg",
     "days": 5,
@@ -1383,12 +1411,231 @@ export const tours = [
       "Travel insurance."
     ],
     "gallery": [
-      { "src": "/images/files/sulfur-baths-wine-tour.jpg", "caption": "Tbilisi Sulfur Baths", "description": "Historic bathhouse district in Old Tbilisi" },
-      { "src": "/images/files/georgia-tour-01.jpg", "caption": "Tbilisi", "description": "Georgia's vibrant capital city" },
-      { "src": "/images/files/georgia-tour-03.jpg", "caption": "Old Tbilisi", "description": "Charming cobblestone streets and balconied houses" },
-      { "src": "/images/files/Gergeti-Church.jpg", "caption": "Gergeti Trinity Church", "description": "Iconic church with stunning Caucasus mountain views" },
-      { "src": "/images/files/georgia-tour-05.jpg", "caption": "Gergeti Trinity Church", "description": "Iconic church beneath Mount Kazbek" },
-      { "src": "/images/files/Kachka.jpg", "caption": "Caucasus Mountains", "description": "Breathtaking peaks of the Greater Caucasus" }
+      {
+        "src": "/images/tours/tbilisi-wine-sulfur/tbilisi-old-town-panorama-georgia-1448.webp",
+        "base": "/images/tours/tbilisi-wine-sulfur/tbilisi-old-town-panorama-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Tbilisi Old Town",
+          "de": "Altstadt von Tiflis",
+          "fr": "Vieille ville de Tbilissi",
+          "es": "Casco antiguo de Tbilisi",
+          "nl": "Oude stad van Tbilisi",
+          "cs": "Staré město Tbilisi",
+          "pl": "Stare Miasto w Tbilisi"
+        }
+      },
+      {
+        "src": "/images/tours/tbilisi-wine-sulfur/narikala-fortress-tbilisi-georgia-1448.webp",
+        "base": "/images/tours/tbilisi-wine-sulfur/narikala-fortress-tbilisi-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Narikala Fortress, Tbilisi",
+          "de": "Festung Narikala, Tiflis",
+          "fr": "Forteresse de Narikala, Tbilissi",
+          "es": "Fortaleza de Narikala, Tbilisi",
+          "nl": "Vesting Narikala, Tbilisi",
+          "cs": "Pevnost Narikala, Tbilisi",
+          "pl": "Twierdza Narikala, Tbilisi"
+        }
+      },
+      {
+        "src": "/images/tours/tbilisi-wine-sulfur/metekhi-cliff-mtkvari-river-tbilisi-georgia-1448.webp",
+        "base": "/images/tours/tbilisi-wine-sulfur/metekhi-cliff-mtkvari-river-tbilisi-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Metekhi cliff and the Mtkvari River, Tbilisi",
+          "de": "Metechi-Felsen und der Fluss Mtkwari, Tiflis",
+          "fr": "Falaise de Metekhi et la rivière Mtkvari, Tbilissi",
+          "es": "Acantilado de Metekhi y el río Mtkvari, Tbilisi",
+          "nl": "Metekhi-klif en de rivier Mtkvari, Tbilisi",
+          "cs": "Metechiský útes a řeka Mtkvari, Tbilisi",
+          "pl": "Klif Metechi i rzeka Mtkwari, Tbilisi"
+        }
+      },
+      {
+        "src": "/images/tours/tbilisi-wine-sulfur/gabriadze-clock-tower-tbilisi-georgia-1086.webp",
+        "base": "/images/tours/tbilisi-wine-sulfur/gabriadze-clock-tower-tbilisi-georgia",
+        "widths": [768, 1086],
+        "width": 1086,
+        "height": 1448,
+        "objectPosition": "center top",
+        "caption": {
+          "en": "Rezo Gabriadze clock tower, Tbilisi",
+          "de": "Rezo-Gabriadze-Uhrturm, Tiflis",
+          "fr": "Tour de l'horloge de Rezo Gabriadze, Tbilissi",
+          "es": "Torre del reloj de Rezo Gabriadze, Tbilisi",
+          "nl": "Klokkentoren van Rezo Gabriadze, Tbilisi",
+          "cs": "Hodinová věž Rezo Gabriadzeho, Tbilisi",
+          "pl": "Wieża zegarowa Rezo Gabriadze, Tbilisi"
+        }
+      },
+      {
+        "src": "/images/tours/tbilisi-wine-sulfur/holy-trinity-cathedral-sameba-tbilisi-georgia-1672.webp",
+        "base": "/images/tours/tbilisi-wine-sulfur/holy-trinity-cathedral-sameba-tbilisi-georgia",
+        "widths": [768, 1200, 1672],
+        "width": 1672,
+        "height": 941,
+        "caption": {
+          "en": "Holy Trinity Cathedral (Sameba), Tbilisi",
+          "de": "Dreifaltigkeitskathedrale (Sameba), Tiflis",
+          "fr": "Cathédrale de la Sainte-Trinité (Sameba), Tbilissi",
+          "es": "Catedral de la Santísima Trinidad (Sameba), Tbilisi",
+          "nl": "Heilige-Drie-eenheidskathedraal (Sameba), Tbilisi",
+          "cs": "Katedrála Nejsvětější Trojice (Sameba), Tbilisi",
+          "pl": "Katedra Trójcy Świętej (Sameba), Tbilisi"
+        }
+      },
+      {
+        "src": "/images/tours/tbilisi-wine-sulfur/jvari-monastery-mtskheta-georgia-1920.webp",
+        "base": "/images/tours/tbilisi-wine-sulfur/jvari-monastery-mtskheta-georgia",
+        "widths": [768, 1200, 1600, 1920],
+        "width": 1920,
+        "height": 1439,
+        "caption": {
+          "en": "Jvari Monastery, Mtskheta",
+          "de": "Kloster Jvari, Mtskheta",
+          "fr": "Monastère de Jvari, Mtskheta",
+          "es": "Monasterio de Jvari, Mtskheta",
+          "nl": "Jvari-klooster, Mtskheta",
+          "cs": "Klášter Jvari, Mtskheta",
+          "pl": "Klasztor Jvari, Mtskheta"
+        }
+      },
+      {
+        "src": "/images/tours/tbilisi-wine-sulfur/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
+        "base": "/images/tours/tbilisi-wine-sulfur/svetitskhoveli-cathedral-mtskheta-georgia",
+        "widths": [768, 1200, 1540],
+        "width": 1540,
+        "height": 1021,
+        "caption": {
+          "en": "Svetitskhoveli Cathedral, Mtskheta",
+          "de": "Kathedrale Svetitskhoveli, Mtskheta",
+          "fr": "Cathédrale de Svetitskhoveli, Mtskheta",
+          "es": "Catedral de Svetitskhoveli, Mtskheta",
+          "nl": "Svetitskhoveli-kathedraal, Mtskheta",
+          "cs": "Katedrála Svetitskhoveli, Mtskheta",
+          "pl": "Katedra Svetitskhoveli, Mtskheta"
+        }
+      },
+      {
+        "src": "/images/tours/tbilisi-wine-sulfur/ananuri-fortress-zhinvali-reservoir-georgia-1920.webp",
+        "base": "/images/tours/tbilisi-wine-sulfur/ananuri-fortress-zhinvali-reservoir-georgia",
+        "widths": [768, 1200, 1600, 1920],
+        "width": 1920,
+        "height": 1271,
+        "caption": {
+          "en": "Ananuri Fortress, Jinvali Reservoir",
+          "de": "Festung Ananuri, Schinwali-Stausee",
+          "fr": "Forteresse d'Ananouri, réservoir de Jinvali",
+          "es": "Fortaleza de Ananuri, embalse de Jinvali",
+          "nl": "Vesting Ananuri, Jinvali-stuwmeer",
+          "cs": "Pevnost Ananuri, přehrada Zhinvali",
+          "pl": "Twierdza Ananuri, Zbiornik Zhinvali"
+        }
+      },
+      {
+        "src": "/images/tours/tbilisi-wine-sulfur/zhinvali-reservoir-georgia-1448.webp",
+        "base": "/images/tours/tbilisi-wine-sulfur/zhinvali-reservoir-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Jinvali Reservoir",
+          "de": "Schinwali-Stausee",
+          "fr": "Réservoir de Jinvali",
+          "es": "Embalse de Jinvali",
+          "nl": "Jinvali-stuwmeer",
+          "cs": "Přehrada Zhinvali",
+          "pl": "Zbiornik Zhinvali"
+        }
+      },
+      {
+        "src": "/images/tours/tbilisi-wine-sulfur/gudauri-friendship-monument-georgia-1448.webp",
+        "base": "/images/tours/tbilisi-wine-sulfur/gudauri-friendship-monument-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Friendship Monument, Gudauri",
+          "de": "Freundschaftsdenkmal, Gudauri",
+          "fr": "Monument de l'Amitié, Gudauri",
+          "es": "Monumento a la Amistad, Gudauri",
+          "nl": "Vriendschapsmonument, Gudauri",
+          "cs": "Památník přátelství, Gudauri",
+          "pl": "Pomnik Przyjaźni, Gudauri"
+        }
+      },
+      {
+        "src": "/images/tours/tbilisi-wine-sulfur/gergeti-trinity-church-kazbegi-georgia-1448.webp",
+        "base": "/images/tours/tbilisi-wine-sulfur/gergeti-trinity-church-kazbegi-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Gergeti Trinity Church, Kazbegi",
+          "de": "Gergeti-Dreifaltigkeitskirche, Kazbegi",
+          "fr": "Église de la Trinité de Guerguéti, Kazbegi",
+          "es": "Iglesia de la Trinidad de Gergeti, Kazbegi",
+          "nl": "Drie-eenheidskerk van Gergeti, Kazbegi",
+          "cs": "Trojiční kostel Gergeti, Kazbegi",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti, Kazbegi"
+        }
+      },
+      {
+        "src": "/images/tours/tbilisi-wine-sulfur/tsinandali-estate-kakheti-georgia-1536.webp",
+        "base": "/images/tours/tbilisi-wine-sulfur/tsinandali-estate-kakheti-georgia",
+        "widths": [768, 1200, 1536],
+        "width": 1536,
+        "height": 1024,
+        "caption": {
+          "en": "Tsinandali Estate, Kakheti",
+          "de": "Landgut Tsinandali, Kachetien",
+          "fr": "Domaine de Tsinandali, Kakhétie",
+          "es": "Finca de Tsinandali, Kajetia",
+          "nl": "Landgoed Tsinandali, Kachetië",
+          "cs": "Sídlo Tsinandali, Kachetie",
+          "pl": "Posiadłość Tsinandali, Kachetia"
+        }
+      },
+      {
+        "src": "/images/tours/tbilisi-wine-sulfur/erekle-ii-monument-telavi-georgia-1448.webp",
+        "base": "/images/tours/tbilisi-wine-sulfur/erekle-ii-monument-telavi-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "King Erekle II monument, Telavi",
+          "de": "Denkmal für König Erekle II., Telawi",
+          "fr": "Monument au roi Héraclius II, Telavi",
+          "es": "Monumento al rey Erekle II, Telavi",
+          "nl": "Monument voor koning Erekle II, Telavi",
+          "cs": "Pomník krále Erekleho II., Telavi",
+          "pl": "Pomnik króla Herakliusza II, Telawi"
+        }
+      },
+      {
+        "src": "/images/tours/tbilisi-wine-sulfur/georgian-supra-feast-georgia-1448.webp",
+        "base": "/images/tours/tbilisi-wine-sulfur/georgian-supra-feast-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Traditional Georgian supra (feast)",
+          "de": "Traditionelle georgische Supra (Festmahl)",
+          "fr": "Supra géorgien traditionnel (banquet)",
+          "es": "Supra georgiana tradicional (banquete)",
+          "nl": "Traditionele Georgische supra (feestmaal)",
+          "cs": "Tradiční gruzínská supra (hostina)",
+          "pl": "Tradycyjna gruzińska supra (uczta)"
+        }
+      }
     ],
     "map": {
       "center": [

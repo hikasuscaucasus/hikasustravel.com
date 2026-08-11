@@ -534,6 +534,44 @@ section {
 }
 /* No rung above 1448 (native ceiling). */
 
+/* 5-Day Tbilisi/Wine & Sulfur Baths tour hero — Gergeti Trinity Church, same
+   opt-in .heroBgClass mechanism as .hero--tbilisi-batumi above, on the tour-page
+   hero (.td-hero). Ladder 768/1200/1448 — native ceiling 1448, no 1600/2400.
+   background-position: 40% center, NOT centre: .td-hero is min-height:100vh, so
+   at 360px the cover crop keeps only 34% of the frame's width and a centred crop
+   holds the bell tower but slices the domed church off the left edge. 40% keeps
+   BOTH structures. At desktop the box is wider than the source (1.6 vs 1.33), so
+   cover scales by width and the X value is a no-op there — this costs the
+   desktop composition nothing. Both crops were rendered and compared first.
+   plain url() = image-set() fallback. */
+.hero--tbilisi-wine-sulfur {
+  background-image: url("/images/tours/tbilisi-wine-sulfur/gergeti-trinity-church-kazbegi-georgia-1200.webp");
+  background-image: image-set(
+    url("/images/tours/tbilisi-wine-sulfur/gergeti-trinity-church-kazbegi-georgia-768.avif") type("image/avif"),
+    url("/images/tours/tbilisi-wine-sulfur/gergeti-trinity-church-kazbegi-georgia-768.webp") type("image/webp")
+  );
+  background-position: 40% center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .hero--tbilisi-wine-sulfur {
+    background-image: image-set(
+      url("/images/tours/tbilisi-wine-sulfur/gergeti-trinity-church-kazbegi-georgia-1200.avif") type("image/avif"),
+      url("/images/tours/tbilisi-wine-sulfur/gergeti-trinity-church-kazbegi-georgia-1200.webp") type("image/webp")
+    );
+  }
+}
+@media (min-width: 1200px) {
+  .hero--tbilisi-wine-sulfur {
+    background-image: image-set(
+      url("/images/tours/tbilisi-wine-sulfur/gergeti-trinity-church-kazbegi-georgia-1448.avif") type("image/avif"),
+      url("/images/tours/tbilisi-wine-sulfur/gergeti-trinity-church-kazbegi-georgia-1448.webp") type("image/webp")
+    );
+  }
+}
+/* No rung above 1448 (native ceiling). */
+
 /* 6-Day Highlights-from-Tbilisi tour hero — Vardzia cave monastery, same opt-in
    .heroBgClass mechanism as .hero--tbilisi-batumi above, on the tour-page hero
    (.td-hero). Ladder 768/1200/1448 — native ceiling 1448, no 1600/2400.
