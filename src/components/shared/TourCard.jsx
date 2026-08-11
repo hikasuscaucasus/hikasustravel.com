@@ -27,6 +27,7 @@ export default function TourCard({ tour, translation, index = 0, basePath = '/pr
         <LocaleLink to={tourUrl} className="tc__img-link" aria-label={title}>
           <BlurUpBackground
             src={tour.listingImage || tour.heroImage}
+            position={tour.cardPosition}
             className="tc__img"
           >
             <div className="tc__img-overlay" />

@@ -127,6 +127,7 @@ export default function HomePage() {
                     >
                       <BlurUpBackground
                         src={tour.tileImage || tour.heroImage}
+                        position={tour.cardPosition}
                         className="tour-tile-image"
                       />
                       <div className="tour-tile-overlay">

@@ -4716,9 +4716,12 @@ export const tours = [
     "type": "private",
     "title": "9-Day Georgia Private Tour: Kutaisi to Tbilisi",
     "seoTitle": "9-Day Georgia Private Tour: Kutaisi to Tbilisi Highlights",
-    "heroImage": "/images/files/ultimate-exploration-kutaisi.jpg",
-    "tileImage": "/images/files/Bazaar%20in%20Kutaisi.jpg",
-    "listingImage": "/images/files/Bazaar%20in%20Kutaisi.jpg",
+    "heroImage": "/images/tours/9-day-kutaisi-tbilisi/martvili-canyon-samegrelo-georgia/martvili-canyon-samegrelo-georgia-1086.webp",
+    "heroBgClass": "hero--9day-martvili-canyon",
+    "ogImage": { "src": "/images/martvili/martvili-canyon-georgia-og.jpg", "width": 1086, "height": 570 },
+    "tileImage": "/images/tours/9-day-kutaisi-tbilisi/martvili-canyon-samegrelo-georgia/martvili-canyon-samegrelo-georgia-1086.webp",
+    "listingImage": "/images/tours/9-day-kutaisi-tbilisi/martvili-canyon-samegrelo-georgia/martvili-canyon-samegrelo-georgia-1086.webp",
+    "cardPosition": "center 70%",
     "days": 9,
     "description": "Start your Georgian journey in Kutaisi, a city steeped in history, where the serene Gelati and Motsameta Monasteries await.",
     "listingDescription": "Start your Georgian journey in Kutaisi, a city steeped in history, where the serene Gelati and Motsameta Monasteries await.",
@@ -5130,6 +5133,23 @@ export const tours = [
           "cs": "Mramorová busta Stalina v Stalinově muzeu v Gori, Gruzie",
           "pl": "Marmurowe popiersie Stalina w Muzeum Stalina w Gori, Gruzja"
         }
+      },
+      {
+        "src": "/images/tours/9-day-kutaisi-tbilisi/martvili-canyon-samegrelo-georgia/martvili-canyon-samegrelo-georgia-1086.webp",
+        "base": "/images/tours/9-day-kutaisi-tbilisi/martvili-canyon-samegrelo-georgia/martvili-canyon-samegrelo-georgia",
+        "widths": [768, 1086],
+        "width": 1086,
+        "height": 1448,
+        "objectPosition": "center 30%",
+        "caption": {
+          "en": "Emerald water flowing through the forested limestone gorge of Martvili Canyon in Samegrelo, Georgia",
+          "de": "Smaragdgrünes Wasser in der bewaldeten Kalksteinschlucht des Martvili-Canyons in Samegrelo, Georgien",
+          "fr": "Eaux émeraude s'écoulant dans les gorges calcaires boisées du canyon de Martvili en Samegrelo, Géorgie",
+          "es": "Aguas esmeralda fluyendo por el desfiladero calcáreo y boscoso del Cañón de Martvili en Samegrelo, Georgia",
+          "nl": "Smaragdgroen water in de beboste kalksteenkloof van de Martvili-canyon in Samegrelo, Georgië",
+          "cs": "Smaragdová voda protékající zalesněnou vápencovou soutěskou kaňonu Martvili v Samegrelu, Gruzie",
+          "pl": "Szmaragdowa woda płynąca przez zalesiony wapienny wąwóz Kanionu Martvili w Samegrelo, Gruzja"
+        }
       }
     ],
     "imageObjects": [
@@ -5360,6 +5380,19 @@ export const tours = [
           "name": "Hikasus Travel"
         },
         "copyrightNotice": "© Hikasus Travel"
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/9-day-kutaisi-tbilisi/martvili-canyon-samegrelo-georgia/martvili-canyon-samegrelo-georgia-1086.webp",
+        "name": "Martvili Canyon, Samegrelo",
+        "caption": "Emerald water flowing through the forested limestone gorge of Martvili Canyon in Samegrelo, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": true
       }
     ],
     "map": {

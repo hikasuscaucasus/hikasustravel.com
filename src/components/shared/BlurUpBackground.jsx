@@ -23,7 +23,18 @@ import asset from '../../utils/basePath'
  */
 const cssUrl = (u) => (u ? `url("${String(u).replace(/["\\]/g, '\\$&')}")` : undefined)
 
-export default function BlurUpBackground({ src, thumbSrc, className = '', style = {}, children }) {
+/**
+ * `position` anchors the cover crop, exactly like CSS `background-position`.
+ *
+ * It has to be a prop rather than a stylesheet rule because the value below is
+ * an INLINE style, and an inline style beats any class selector. Defaults to
+ * 'center', so every existing caller renders byte-identically.
+ *
+ * Needed for PORTRAIT card images: a 3:4 frame in the 4:3 `.tc__img` box keeps
+ * only 56% of its height, so a centred crop can cut the subject out entirely
+ * (Martvili Canyon loses its water). Tours opt in via `tour.cardPosition`.
+ */
+export default function BlurUpBackground({ src, thumbSrc, className = '', style = {}, position = 'center', children }) {
   const [ref, isIntersecting] = useIntersectionObserver()
   const [loaded, setLoaded] = useState(false)
 
@@ -38,7 +49,7 @@ export default function BlurUpBackground({ src, thumbSrc, className = '', style 
         ...style,
         backgroundImage: loaded ? cssUrl(fullSrc) : cssUrl(thumb),
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundPosition: position,
         backgroundRepeat: 'no-repeat',
         position: 'relative',
       }}

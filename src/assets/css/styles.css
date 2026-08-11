@@ -534,6 +534,49 @@ section {
 }
 /* No rung above 1448 (native ceiling). */
 
+/* 9-Day Kutaisi→Tbilisi hero — Martvili Canyon.
+   ⚠️ NAME: `.hero--martvili-canyon` was ALREADY TAKEN (see ~line 2570) by the
+   Martvili city/guide pages, and it sits later in the file, so it would have
+   silently won on source order. Hence the tour-scoped name. Deliberately NOT
+   reusing that class: it is shared by several Martvili pages, and coupling this
+   tour's hero to a future retune of those pages is a trap.
+   The photograph is in fact the SAME frame as /images/martvili/martvili-canyon-
+   georgia-* (perceptual distance 0.89) — the owner's package re-delivered it
+   under the tour naming scheme. Paths stay tour-local, per house convention.
+
+   Ladder 768/1086 only: 1086x1448 PORTRAIT is the native ceiling, so a wider
+   rung would mean upscaling.
+   background-position: center 88%, NOT centre. .td-hero is 100vh, so a portrait
+   in a wide desktop box shows well under half its height — and the emerald
+   water, which every alt string names, sits near the bottom. A centred crop
+   showed nothing but gorge wall. 88% is the value already measured for this
+   exact frame in this exact box on the Martvili pages, re-verified here by
+   screenshot at 390, 1440 and 1920. Y is inert below 768 (the box is taller
+   than the frame), so mobile is unaffected.
+   ⚠️ Known trade-off: 1086px native means a ~1.3x (1440) to ~1.8x (1920)
+   browser upscale on wide desktops. Acceptable on this foliage-heavy frame —
+   no hard edges — but a wider Martvili original would be an improvement.
+   plain url() = image-set() fallback. */
+.hero--9day-martvili-canyon {
+  background-image: url("/images/tours/9-day-kutaisi-tbilisi/martvili-canyon-samegrelo-georgia/martvili-canyon-samegrelo-georgia-1086.webp");
+  background-image: image-set(
+    url("/images/tours/9-day-kutaisi-tbilisi/martvili-canyon-samegrelo-georgia/martvili-canyon-samegrelo-georgia-768.avif") type("image/avif"),
+    url("/images/tours/9-day-kutaisi-tbilisi/martvili-canyon-samegrelo-georgia/martvili-canyon-samegrelo-georgia-768.webp") type("image/webp")
+  );
+  background-position: center 88%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .hero--9day-martvili-canyon {
+    background-image: image-set(
+      url("/images/tours/9-day-kutaisi-tbilisi/martvili-canyon-samegrelo-georgia/martvili-canyon-samegrelo-georgia-1086.avif") type("image/avif"),
+      url("/images/tours/9-day-kutaisi-tbilisi/martvili-canyon-samegrelo-georgia/martvili-canyon-samegrelo-georgia-1086.webp") type("image/webp")
+    );
+  }
+}
+/* No rung above 1086 (native ceiling). */
+
 /* Georgia in 10 Days (Story & Celebration) hero — Black Sea sunset at Batumi,
    same opt-in .heroBgClass mechanism. Ladder 768/1200/1448 — native ceiling
    1448 (1448x1086), so no 1600/2400 rung.
