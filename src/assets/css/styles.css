@@ -534,6 +534,44 @@ section {
 }
 /* No rung above 1448 (native ceiling). */
 
+/* 6-Day Highlights-from-Tbilisi tour hero — Vardzia cave monastery, same opt-in
+   .heroBgClass mechanism as .hero--tbilisi-batumi above, on the tour-page hero
+   (.td-hero). Ladder 768/1200/1448 — native ceiling 1448, no 1600/2400.
+   background-position stays CENTRE (unlike the Batumi hero): .td-hero is
+   min-height:100vh, so at 360px the cover crop keeps only ~34% of the frame's
+   width, but Vardzia's cave tiers fill the middle of the frame — the centred
+   crop lands squarely on the honeycomb of chambers and walkways at both 360px
+   and desktop, so no horizontal nudge is needed (both crops were rendered and
+   checked before choosing).
+   plain url() = image-set() fallback. */
+.hero--highlights-tbilisi {
+  background-image: url("/images/tours/highlights-from-tbilisi/vardzia-cave-monastery-georgia-1200.webp");
+  background-image: image-set(
+    url("/images/tours/highlights-from-tbilisi/vardzia-cave-monastery-georgia-768.avif") type("image/avif"),
+    url("/images/tours/highlights-from-tbilisi/vardzia-cave-monastery-georgia-768.webp") type("image/webp")
+  );
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .hero--highlights-tbilisi {
+    background-image: image-set(
+      url("/images/tours/highlights-from-tbilisi/vardzia-cave-monastery-georgia-1200.avif") type("image/avif"),
+      url("/images/tours/highlights-from-tbilisi/vardzia-cave-monastery-georgia-1200.webp") type("image/webp")
+    );
+  }
+}
+@media (min-width: 1200px) {
+  .hero--highlights-tbilisi {
+    background-image: image-set(
+      url("/images/tours/highlights-from-tbilisi/vardzia-cave-monastery-georgia-1448.avif") type("image/avif"),
+      url("/images/tours/highlights-from-tbilisi/vardzia-cave-monastery-georgia-1448.webp") type("image/webp")
+    );
+  }
+}
+/* No rung above 1448 (native ceiling). */
+
 /* Truso Valley hero — per-page CSS background (same opt-in mechanism as
    .hero--juta). Ladder 768→2400 + deliberate `background-position: center 72%`:
    the subject (tower + church) sits low in a sky-less frame, so a centred crop

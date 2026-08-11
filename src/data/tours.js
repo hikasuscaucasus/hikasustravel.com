@@ -1533,9 +1533,37 @@ export const tours = [
     "type": "private",
     "title": "6-Day Georgia Private Tour: Highlights from Tbilisi",
     "seoTitle": "6-Day Georgia Private Tour: Highlights & Culture from Tbilisi",
-    "heroImage": "/images/files/georgia-tour-02.jpg",
-    "tileImage": "/images/files/georgia-tour-02.jpg",
-    "listingImage": "/images/files/georgia-tour-02.jpg",
+    "heroImage": "/images/tours/highlights-from-tbilisi/vardzia-cave-monastery-georgia-1200.webp",
+    "heroBgClass": "hero--highlights-tbilisi",
+    "ogImage": { "src": "/images/tours/highlights-from-tbilisi/vardzia-cave-monastery-georgia-og.jpg", "width": 1200, "height": 630 },
+    "tileImage": "/images/tours/highlights-from-tbilisi/vardzia-cave-monastery-georgia-card.webp",
+    "listingImage": "/images/tours/highlights-from-tbilisi/vardzia-cave-monastery-georgia-card.webp",
+    "imageMeta": {
+      "width": 1448,
+      "height": 1086,
+      "contentUrl": "/images/tours/highlights-from-tbilisi/vardzia-cave-monastery-georgia-1448.webp",
+      "description": "The cave monastery of Vardzia, its chambers and a stone church cut into the cliff face above the Mtkvari valley, Samtskhe-Javakheti, Georgia.",
+      "locationName": "Vardzia, Aspindza Municipality, Samtskhe-Javakheti, Georgia",
+      "geo": { "lat": 41.3811, "lng": 43.2847 },
+      "alt": {
+        "en": "Vardzia cave monastery",
+        "de": "Höhlenkloster Wardsia",
+        "fr": "Monastère troglodyte de Vardzia",
+        "es": "Monasterio rupestre de Vardzia",
+        "nl": "Grottenklooster Vardzia",
+        "cs": "Jeskynní klášter Vardzia",
+        "pl": "Klasztor jaskiniowy Wardzia"
+      },
+      "caption": {
+        "en": "Vardzia cave monastery",
+        "de": "Höhlenkloster Wardsia",
+        "fr": "Monastère troglodyte de Vardzia",
+        "es": "Monasterio rupestre de Vardzia",
+        "nl": "Grottenklooster Vardzia",
+        "cs": "Jeskynní klášter Vardzia",
+        "pl": "Klasztor jaskiniowy Wardzia"
+      }
+    },
     "days": 6,
     "description": "Georgia's rich culture, history, and natural beauty await on this 6-day tour that begins and ends in the vibrant city of Tbilisi.",
     "listingDescription": "Georgia's rich culture, history, and natural beauty await on this 6-day tour that begins and ends in the vibrant city of Tbilisi.",
@@ -1635,13 +1663,234 @@ export const tours = [
       "Additional hotel expenses;",
       "Travel insurance."
     ],
+    "galleryShowAll": true,
     "gallery": [
-      { "src": "/images/files/georgia-tour-02.jpg", "caption": "Holy Trinity Cathedral", "description": "The largest cathedral in Georgia, Tbilisi" },
-      { "src": "/images/files/georgia-tour-04.jpg", "caption": "Ananuri Fortress", "description": "Medieval fortress on the Aragvi River" },
-      { "src": "/images/files/georgia-tour-06.jpg", "caption": "Stalin Museum", "description": "Historic museum in Gori, Georgia" },
-      { "src": "/images/files/Gveleti-Waterfall.jpg", "caption": "Gveleti Waterfall", "description": "Beautiful waterfall near Stepantsminda" },
-      { "src": "/images/files/georgia-tour-08.jpg", "caption": "Prometheus Cave", "description": "Stunning underground cave with stalactites" },
-      { "src": "/images/files/georgia-tour-10.jpg", "caption": "Batumi", "description": "Black Sea coastal city with modern architecture" }
+      {
+        "src": "/images/tours/highlights-from-tbilisi/tbilisi-old-town-panorama-georgia-1448.webp",
+        "base": "/images/tours/highlights-from-tbilisi/tbilisi-old-town-panorama-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Tbilisi Old Town",
+          "de": "Altstadt von Tiflis",
+          "fr": "Vieille ville de Tbilissi",
+          "es": "Casco antiguo de Tbilisi",
+          "nl": "Oude stad van Tbilisi",
+          "cs": "Staré město Tbilisi",
+          "pl": "Stare Miasto w Tbilisi"
+        }
+      },
+      {
+        "src": "/images/tours/highlights-from-tbilisi/narikala-fortress-tbilisi-georgia-1448.webp",
+        "base": "/images/tours/highlights-from-tbilisi/narikala-fortress-tbilisi-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Narikala Fortress, Tbilisi",
+          "de": "Festung Narikala, Tiflis",
+          "fr": "Forteresse de Narikala, Tbilissi",
+          "es": "Fortaleza de Narikala, Tbilisi",
+          "nl": "Vesting Narikala, Tbilisi",
+          "cs": "Pevnost Narikala, Tbilisi",
+          "pl": "Twierdza Narikala, Tbilisi"
+        }
+      },
+      {
+        "src": "/images/tours/highlights-from-tbilisi/metekhi-cliff-mtkvari-river-tbilisi-georgia-1448.webp",
+        "base": "/images/tours/highlights-from-tbilisi/metekhi-cliff-mtkvari-river-tbilisi-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Metekhi cliff and the Mtkvari River, Tbilisi",
+          "de": "Metechi-Felsen und der Fluss Mtkwari, Tiflis",
+          "fr": "Falaise de Metekhi et la rivière Mtkvari, Tbilissi",
+          "es": "Acantilado de Metekhi y el río Mtkvari, Tbilisi",
+          "nl": "Metekhi-klif en de rivier Mtkvari, Tbilisi",
+          "cs": "Metechiský útes a řeka Mtkvari, Tbilisi",
+          "pl": "Klif Metechi i rzeka Mtkwari, Tbilisi"
+        }
+      },
+      {
+        "src": "/images/tours/highlights-from-tbilisi/gabriadze-clock-tower-tbilisi-georgia-1086.webp",
+        "base": "/images/tours/highlights-from-tbilisi/gabriadze-clock-tower-tbilisi-georgia",
+        "widths": [768, 1086],
+        "width": 1086,
+        "height": 1448,
+        "objectPosition": "center top",
+        "caption": {
+          "en": "Rezo Gabriadze clock tower, Tbilisi",
+          "de": "Rezo-Gabriadze-Uhrturm, Tiflis",
+          "fr": "Tour de l'horloge de Rezo Gabriadze, Tbilissi",
+          "es": "Torre del reloj de Rezo Gabriadze, Tbilisi",
+          "nl": "Klokkentoren van Rezo Gabriadze, Tbilisi",
+          "cs": "Hodinová věž Rezo Gabriadzeho, Tbilisi",
+          "pl": "Wieża zegarowa Rezo Gabriadze, Tbilisi"
+        }
+      },
+      {
+        "src": "/images/tours/highlights-from-tbilisi/holy-trinity-cathedral-sameba-tbilisi-georgia-1672.webp",
+        "base": "/images/tours/highlights-from-tbilisi/holy-trinity-cathedral-sameba-tbilisi-georgia",
+        "widths": [768, 1200, 1672],
+        "width": 1672,
+        "height": 941,
+        "caption": {
+          "en": "Holy Trinity Cathedral (Sameba), Tbilisi",
+          "de": "Dreifaltigkeitskathedrale (Sameba), Tiflis",
+          "fr": "Cathédrale de la Sainte-Trinité (Sameba), Tbilissi",
+          "es": "Catedral de la Santísima Trinidad (Sameba), Tbilisi",
+          "nl": "Heilige-Drie-eenheidskathedraal (Sameba), Tbilisi",
+          "cs": "Katedrála Nejsvětější Trojice (Sameba), Tbilisi",
+          "pl": "Katedra Trójcy Świętej (Sameba), Tbilisi"
+        }
+      },
+      {
+        "src": "/images/tours/highlights-from-tbilisi/uplistsikhe-cave-town-georgia-1448.webp",
+        "base": "/images/tours/highlights-from-tbilisi/uplistsikhe-cave-town-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Uplistsikhe cave town, near Gori",
+          "de": "Höhlenstadt Uplistsikhe, bei Gori",
+          "fr": "Cité troglodyte d'Uplistsikhe, près de Gori",
+          "es": "Ciudad rupestre de Uplistsikhe, cerca de Gori",
+          "nl": "Grottenstad Uplistsikhe, bij Gori",
+          "cs": "Skalní město Uplistsikhe, u Gori",
+          "pl": "Miasto jaskiniowe Uplistsikhe, koło Gori"
+        }
+      },
+      {
+        "src": "/images/tours/highlights-from-tbilisi/stalin-museum-gori-georgia-1536.webp",
+        "base": "/images/tours/highlights-from-tbilisi/stalin-museum-gori-georgia",
+        "widths": [768, 1200, 1536],
+        "width": 1536,
+        "height": 1024,
+        "caption": {
+          "en": "Stalin Museum, Gori",
+          "de": "Stalin-Museum, Gori",
+          "fr": "Musée Staline, Gori",
+          "es": "Museo de Stalin, Gori",
+          "nl": "Stalinmuseum, Gori",
+          "cs": "Stalinovo muzeum, Gori",
+          "pl": "Muzeum Stalina, Gori"
+        }
+      },
+      {
+        "src": "/images/tours/highlights-from-tbilisi/borjomi-central-park-pavilion-georgia-1672.webp",
+        "base": "/images/tours/highlights-from-tbilisi/borjomi-central-park-pavilion-georgia",
+        "widths": [768, 1200, 1672],
+        "width": 1672,
+        "height": 941,
+        "caption": {
+          "en": "Borjomi Central Park pavilion",
+          "de": "Pavillon im Zentralpark von Borjomi",
+          "fr": "Pavillon du parc central de Borjomi",
+          "es": "Pabellón del parque central de Borjomi",
+          "nl": "Paviljoen van het centraal park van Borjomi",
+          "cs": "Pavilon v centrálním parku v Borjomi",
+          "pl": "Pawilon w parku centralnym w Borjomi"
+        }
+      },
+      {
+        "src": "/images/tours/highlights-from-tbilisi/borjomi-central-park-photographer-statue-georgia-1448.webp",
+        "base": "/images/tours/highlights-from-tbilisi/borjomi-central-park-photographer-statue-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Photographer statue, Borjomi Central Park",
+          "de": "Fotografen-Statue, Zentralpark von Borjomi",
+          "fr": "Statue du photographe, parc central de Borjomi",
+          "es": "Estatua del fotógrafo, parque central de Borjomi",
+          "nl": "Fotografenbeeld, centraal park van Borjomi",
+          "cs": "Socha fotografa, centrální park v Borjomi",
+          "pl": "Pomnik fotografa, park centralny w Borjomi"
+        }
+      },
+      {
+        "src": "/images/tours/highlights-from-tbilisi/vardzia-cave-monastery-georgia-1448.webp",
+        "base": "/images/tours/highlights-from-tbilisi/vardzia-cave-monastery-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Vardzia cave monastery",
+          "de": "Höhlenkloster Wardsia",
+          "fr": "Monastère troglodyte de Vardzia",
+          "es": "Monasterio rupestre de Vardzia",
+          "nl": "Grottenklooster Vardzia",
+          "cs": "Jeskynní klášter Vardzia",
+          "pl": "Klasztor jaskiniowy Wardzia"
+        }
+      },
+      {
+        "src": "/images/tours/highlights-from-tbilisi/rabati-castle-akhaltsikhe-georgia-1448.webp",
+        "base": "/images/tours/highlights-from-tbilisi/rabati-castle-akhaltsikhe-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Rabati Castle, Akhaltsikhe",
+          "de": "Burg Rabati, Achalziche",
+          "fr": "Château de Rabati, Akhaltsikhe",
+          "es": "Castillo de Rabati, Akhaltsikhe",
+          "nl": "Kasteel Rabati, Achaltsiche",
+          "cs": "Hrad Rabati, Achalciche",
+          "pl": "Zamek Rabati, Achalciche"
+        }
+      },
+      {
+        "src": "/images/tours/highlights-from-tbilisi/bagrati-cathedral-kutaisi-georgia-1672.webp",
+        "base": "/images/tours/highlights-from-tbilisi/bagrati-cathedral-kutaisi-georgia",
+        "widths": [768, 1200, 1672],
+        "width": 1672,
+        "height": 941,
+        "caption": {
+          "en": "Bagrati Cathedral, Kutaisi",
+          "de": "Bagrati-Kathedrale, Kutaissi",
+          "fr": "Cathédrale de Bagrati, Koutaïssi",
+          "es": "Catedral de Bagrati, Kutaisi",
+          "nl": "Bagrati-kathedraal, Koetaisi",
+          "cs": "Katedrála Bagrati, Kutaisi",
+          "pl": "Katedra Bagrati, Kutaisi"
+        }
+      },
+      {
+        "src": "/images/tours/highlights-from-tbilisi/gelati-monastery-kutaisi-georgia-1491.webp",
+        "base": "/images/tours/highlights-from-tbilisi/gelati-monastery-kutaisi-georgia",
+        "widths": [768, 1200, 1491],
+        "width": 1491,
+        "height": 1055,
+        "caption": {
+          "en": "Gelati Monastery, near Kutaisi",
+          "de": "Kloster Gelati, bei Kutaissi",
+          "fr": "Monastère de Gélati, près de Koutaïssi",
+          "es": "Monasterio de Gelati, cerca de Kutaisi",
+          "nl": "Klooster Gelati, bij Koetaisi",
+          "cs": "Klášter Gelati, u Kutaisi",
+          "pl": "Klasztor Gelati, koło Kutaisi"
+        }
+      },
+      {
+        "src": "/images/tours/highlights-from-tbilisi/martvili-canyon-georgia-1086.webp",
+        "base": "/images/tours/highlights-from-tbilisi/martvili-canyon-georgia",
+        "widths": [768, 1086],
+        "width": 1086,
+        "height": 1448,
+        "objectPosition": "center bottom",
+        "caption": {
+          "en": "Martvili Canyon",
+          "de": "Martvili-Schlucht",
+          "fr": "Canyon de Martvili",
+          "es": "Cañón de Martvili",
+          "nl": "Martvili-canyon",
+          "cs": "Kaňon Martvili",
+          "pl": "Kanion Martvili"
+        }
+      }
     ],
     "map": {
       "center": [
