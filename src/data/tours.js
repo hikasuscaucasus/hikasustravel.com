@@ -5374,9 +5374,10 @@ export const tours = [
     "tourFormTitle": "Ultimate Georgia Exploration: 9-Day Tour from Kutaisi to Tbilisi and Hidden Gems"
   },
   {
-    "slug": "wander-wonder-and-wine-9-days-of-georgias-best",
+    "slug": "georgia-grand-tour-9-days-from-tbilisi-to-batumi",
+    "formerSlug": "wander-wonder-and-wine-9-days-of-georgias-best",
     "type": "private",
-    "title": "Wander, Wonder and Wine: 9 Days of Georgia's Best",
+    "title": "Georgia Grand Tour: 9 Days from Tbilisi to Batumi",
     "heroImage": "/images/files/wander-wonder-wine-tour.jpg",
     "tileImage": "/images/files/Uplistsikhe%20Cave%20Town.jpg",
     "listingImage": "/images/files/Uplistsikhe%20Cave%20Town.jpg",
@@ -5741,7 +5742,7 @@ export const tours = [
         ]
       ]
     },
-    "tourFormTitle": "Wander, Wonder and Wine: 9 Days of Georgia's Best"
+    "tourFormTitle": "Georgia Grand Tour: 9 Days from Tbilisi to Batumi"
   },
   {
     "slug": "9-day-georgia-wine-and-adventure-tour",
