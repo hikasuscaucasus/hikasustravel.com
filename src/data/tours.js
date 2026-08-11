@@ -5378,9 +5378,11 @@ export const tours = [
     "formerSlug": "wander-wonder-and-wine-9-days-of-georgias-best",
     "type": "private",
     "title": "Georgia Grand Tour: 9 Days from Tbilisi to Batumi",
-    "heroImage": "/images/files/wander-wonder-wine-tour.jpg",
-    "tileImage": "/images/files/Uplistsikhe%20Cave%20Town.jpg",
-    "listingImage": "/images/files/Uplistsikhe%20Cave%20Town.jpg",
+    "heroImage": "/images/tours/grand-tour-tbilisi-batumi/batumi-black-sea-beach-batumi-georgia/batumi-black-sea-beach-batumi-georgia-1200.webp",
+    "heroBgClass": "hero--grand-tour-batumi",
+    "ogImage": { "src": "/images/tours/grand-tour-tbilisi-batumi/og/batumi-black-sea-beach-batumi-georgia-og.jpg", "width": 1200, "height": 630 },
+    "tileImage": "/images/tours/grand-tour-tbilisi-batumi/batumi-black-sea-beach-batumi-georgia/batumi-black-sea-beach-batumi-georgia-1200.webp",
+    "listingImage": "/images/tours/grand-tour-tbilisi-batumi/batumi-black-sea-beach-batumi-georgia/batumi-black-sea-beach-batumi-georgia-1200.webp",
     "days": 9,
     "description": "Unearth the rich layers of Georgia's history, culture, and natural beauty on this 9-day adventure.",
     "listingDescription": "Unearth the rich layers of Georgia's history, culture, and natural beauty on this 9-day adventure.",
@@ -5492,12 +5494,562 @@ export const tours = [
       "Travel insurance."
     ],
     "gallery": [
-      { "src": "/images/files/wander-wonder-wine-tour.jpg", "caption": "Wine Country", "description": "Rolling hills and vineyards of eastern Georgia" },
-      { "src": "/images/files/georgia-tour-02.jpg", "caption": "Holy Trinity Cathedral", "description": "The largest cathedral in Georgia, Tbilisi" },
-      { "src": "/images/files/georgia-tour-09.jpg", "caption": "Kutaisi", "description": "Georgia's second-largest city and cultural hub" },
-      { "src": "/images/files/georgia-tour-13.jpg", "caption": "Telavi", "description": "Capital of the Kakheti wine region" },
-      { "src": "/images/files/Gveleti-Waterfall.jpg", "caption": "Gveleti Waterfall", "description": "Beautiful waterfall near Stepantsminda" },
-      { "src": "/images/files/georgia-tour-07.jpg", "caption": "Katskhi Pillar", "description": "Ancient limestone monolith with a chapel on top" }
+      {
+        "src": "/images/tours/grand-tour-tbilisi-batumi/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia-1448.webp",
+        "base": "/images/tours/grand-tour-tbilisi-batumi/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "View of Old Tbilisi with Narikala Fortress and the aerial cable car, Georgia",
+          "de": "Blick auf die Altstadt von Tiflis mit der Festung Narikala und der Seilbahn, Georgien",
+          "fr": "Vue du vieux Tbilissi avec la forteresse de Narikala et le téléphérique, Géorgie",
+          "es": "Vista del casco antiguo de Tiflis con la fortaleza de Narikala y el teleférico, Georgia",
+          "nl": "Uitzicht op de oude stad van Tbilisi met de Narikala-vesting en de kabelbaan, Georgië",
+          "cs": "Pohled na staré Tbilisi s pevností Narikala a lanovkou, Gruzie",
+          "pl": "Widok na stare Tbilisi z twierdzą Narikala i kolejką linową, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/grand-tour-tbilisi-batumi/narikala-fortress-tbilisi-georgia/narikala-fortress-tbilisi-georgia-1448.webp",
+        "base": "/images/tours/grand-tour-tbilisi-batumi/narikala-fortress-tbilisi-georgia/narikala-fortress-tbilisi-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Stone entrance and walls of Narikala Fortress in Tbilisi, Georgia",
+          "de": "Steinernes Tor und Mauern der Festung Narikala in Tiflis, Georgien",
+          "fr": "Porte et remparts en pierre de la forteresse de Narikala à Tbilissi, Géorgie",
+          "es": "Puerta y murallas de piedra de la fortaleza de Narikala en Tiflis, Georgia",
+          "nl": "Stenen poort en muren van de Narikala-vesting in Tbilisi, Georgië",
+          "cs": "Kamenná brána a hradby pevnosti Narikala v Tbilisi, Gruzie",
+          "pl": "Kamienna brama i mury twierdzy Narikala w Tbilisi, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/grand-tour-tbilisi-batumi/gabriadze-clock-tower-tbilisi-georgia/gabriadze-clock-tower-tbilisi-georgia-1086.webp",
+        "base": "/images/tours/grand-tour-tbilisi-batumi/gabriadze-clock-tower-tbilisi-georgia/gabriadze-clock-tower-tbilisi-georgia",
+        "widths": [768, 1086],
+        "width": 1086,
+        "height": 1448,
+        "objectPosition": "center 30%",
+        "caption": {
+          "en": "The leaning Gabriadze clock tower in Old Tbilisi, Georgia",
+          "de": "Der schiefe Gabriadze-Uhrturm in der Altstadt von Tiflis, Georgien",
+          "fr": "La tour de l'horloge penchée de Gabriadze dans le vieux Tbilissi, Géorgie",
+          "es": "La torre del reloj inclinada de Gabriadze en el casco antiguo de Tiflis, Georgia",
+          "nl": "De scheve Gabriadze-klokkentoren in de oude stad van Tbilisi, Georgië",
+          "cs": "Nakloněná hodinová věž Gabriadze ve starém Tbilisi, Gruzie",
+          "pl": "Pochylona wieża zegarowa Gabriadzego na starym mieście w Tbilisi, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/grand-tour-tbilisi-batumi/holy-trinity-cathedral-tbilisi-georgia/holy-trinity-cathedral-tbilisi-georgia-1672.webp",
+        "base": "/images/tours/grand-tour-tbilisi-batumi/holy-trinity-cathedral-tbilisi-georgia/holy-trinity-cathedral-tbilisi-georgia",
+        "widths": [768, 1200, 1600, 1672],
+        "width": 1672,
+        "height": 941,
+        "caption": {
+          "en": "Holy Trinity Cathedral (Sameba), the largest cathedral in Tbilisi, Georgia",
+          "de": "Sameba-Kathedrale (Heilige Dreifaltigkeit), die größte Kathedrale in Tiflis, Georgien",
+          "fr": "Cathédrale de la Sainte-Trinité (Sameba), la plus grande cathédrale de Tbilissi, Géorgie",
+          "es": "Catedral de la Santísima Trinidad (Sameba), la catedral más grande de Tiflis, Georgia",
+          "nl": "Heilige-Drie-eenheidskathedraal (Sameba), de grootste kathedraal van Tbilisi, Georgië",
+          "cs": "Katedrála Nejsvětější Trojice (Sameba), největší katedrála v Tbilisi, Gruzie",
+          "pl": "Katedra Trójcy Świętej (Sameba), największa katedra w Tbilisi, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/grand-tour-tbilisi-batumi/jvari-monastery-mtskheta-georgia/jvari-monastery-mtskheta-georgia-1920.webp",
+        "base": "/images/tours/grand-tour-tbilisi-batumi/jvari-monastery-mtskheta-georgia/jvari-monastery-mtskheta-georgia",
+        "widths": [768, 1200, 1600, 1920],
+        "width": 1920,
+        "height": 1439,
+        "caption": {
+          "en": "Aerial view of Jvari Monastery above Mtskheta, a UNESCO World Heritage site, Georgia",
+          "de": "Luftaufnahme des Dschwari-Klosters über Mzcheta, UNESCO-Welterbe, Georgien",
+          "fr": "Vue aérienne du monastère de Djvari au-dessus de Mtskheta, site du patrimoine mondial de l'UNESCO, Géorgie",
+          "es": "Vista aérea del monasterio de Jvari sobre Mtsjeta, Patrimonio de la Humanidad de la UNESCO, Georgia",
+          "nl": "Luchtfoto van het Jvari-klooster boven Mtscheta, UNESCO-werelderfgoed, Georgië",
+          "cs": "Letecký pohled na klášter Džvari nad Mcchetou, památka UNESCO, Gruzie",
+          "pl": "Widok z lotu ptaka na klasztor Dżwari nad Mccchetą, obiekt UNESCO, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/grand-tour-tbilisi-batumi/svetitskhoveli-cathedral-mtskheta-georgia/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
+        "base": "/images/tours/grand-tour-tbilisi-batumi/svetitskhoveli-cathedral-mtskheta-georgia/svetitskhoveli-cathedral-mtskheta-georgia",
+        "widths": [768, 1200, 1540],
+        "width": 1540,
+        "height": 1021,
+        "caption": {
+          "en": "Svetitskhoveli Cathedral, a UNESCO World Heritage site in Mtskheta, Georgia",
+          "de": "Swetizchoweli-Kathedrale, UNESCO-Welterbe in Mzcheta, Georgien",
+          "fr": "Cathédrale de Svetitskhoveli, site du patrimoine mondial de l'UNESCO à Mtskheta, Géorgie",
+          "es": "Catedral de Svetitsjoveli, Patrimonio de la Humanidad de la UNESCO en Mtsjeta, Georgia",
+          "nl": "Svetitskhoveli-kathedraal, UNESCO-werelderfgoed in Mtscheta, Georgië",
+          "cs": "Katedrála Sveticchoveli, památka UNESCO ve městě Mccheta, Gruzie",
+          "pl": "Katedra Sweticchoweli, obiekt światowego dziedzictwa UNESCO w Mccchecie, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/grand-tour-tbilisi-batumi/uplistsikhe-cave-town-gori-georgia/uplistsikhe-cave-town-gori-georgia-1448.webp",
+        "base": "/images/tours/grand-tour-tbilisi-batumi/uplistsikhe-cave-town-gori-georgia/uplistsikhe-cave-town-gori-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "The rock-hewn cave town of Uplistsikhe near Gori, Georgia",
+          "de": "Die in Fels gehauene Höhlenstadt Uplisziche bei Gori, Georgien",
+          "fr": "La cité troglodyte d'Ouplistsikhé près de Gori, Géorgie",
+          "es": "La ciudad rupestre de Uplistsije cerca de Gori, Georgia",
+          "nl": "De in rots uitgehouwen holenstad Uplistsikhe bij Gori, Georgië",
+          "cs": "Skalní jeskynní město Uplisciche poblíž Gori, Gruzie",
+          "pl": "Wykute w skale jaskiniowe miasto Uplisciche koło Gori, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/grand-tour-tbilisi-batumi/stalin-museum-gori-georgia/stalin-museum-gori-georgia-1536.webp",
+        "base": "/images/tours/grand-tour-tbilisi-batumi/stalin-museum-gori-georgia/stalin-museum-gori-georgia",
+        "widths": [768, 1200, 1536],
+        "width": 1536,
+        "height": 1024,
+        "caption": {
+          "en": "Marble bust of Stalin inside the Stalin Museum in Gori, Georgia",
+          "de": "Marmorbüste Stalins im Stalin-Museum in Gori, Georgien",
+          "fr": "Buste en marbre de Staline au musée Staline à Gori, Géorgie",
+          "es": "Busto de mármol de Stalin en el Museo de Stalin en Gori, Georgia",
+          "nl": "Marmeren buste van Stalin in het Stalinmuseum in Gori, Georgië",
+          "cs": "Mramorová busta Stalina v Stalinově muzeu v Gori, Gruzie",
+          "pl": "Marmurowe popiersie Stalina w Muzeum Stalina w Gori, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/grand-tour-tbilisi-batumi/green-bazaar-kutaisi-georgia/green-bazaar-kutaisi-georgia-1448.webp",
+        "base": "/images/tours/grand-tour-tbilisi-batumi/green-bazaar-kutaisi-georgia/green-bazaar-kutaisi-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Fresh produce stalls under the yellow steel roof of Kutaisi's Green Bazaar, Georgia",
+          "de": "Frische-Marktstände unter dem gelben Stahldach des Grünen Basars von Kutaissi, Georgien",
+          "fr": "Étals de produits frais sous la charpente jaune du bazar vert de Koutaïssi, Géorgie",
+          "es": "Puestos de productos frescos bajo la estructura amarilla del Bazar Verde de Kutaisi, Georgia",
+          "nl": "Verse groente- en fruitkramen onder het gele stalen dak van de Groene Bazaar in Kutaisi, Georgië",
+          "cs": "Stánky s čerstvými potravinami pod žlutou ocelovou střechou Zeleného bazaru v Kutaisi, Gruzie",
+          "pl": "Stoiska ze świeżymi produktami pod żółtą stalową konstrukcją Zielonego Bazaru w Kutaisi, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/grand-tour-tbilisi-batumi/gelati-monastery-kutaisi-georgia/gelati-monastery-kutaisi-georgia-1491.webp",
+        "base": "/images/tours/grand-tour-tbilisi-batumi/gelati-monastery-kutaisi-georgia/gelati-monastery-kutaisi-georgia",
+        "widths": [768, 1200, 1491],
+        "width": 1491,
+        "height": 1055,
+        "caption": {
+          "en": "Gelati Monastery, a UNESCO World Heritage site near Kutaisi, Georgia",
+          "de": "Kloster Gelati, UNESCO-Welterbe bei Kutaissi, Georgien",
+          "fr": "Monastère de Gélati, site du patrimoine mondial de l'UNESCO près de Koutaïssi, Géorgie",
+          "es": "Monasterio de Gelati, Patrimonio de la Humanidad de la UNESCO cerca de Kutaisi, Georgia",
+          "nl": "Gelati-klooster, UNESCO-werelderfgoed bij Kutaisi, Georgië",
+          "cs": "Klášter Gelati, památka UNESCO poblíž Kutaisi, Gruzie",
+          "pl": "Klasztor Gelati, obiekt światowego dziedzictwa UNESCO koło Kutaisi, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/grand-tour-tbilisi-batumi/prometheus-cave-imereti-georgia/prometheus-cave-imereti-georgia-1536.webp",
+        "base": "/images/tours/grand-tour-tbilisi-batumi/prometheus-cave-imereti-georgia/prometheus-cave-imereti-georgia",
+        "widths": [768, 1200, 1536],
+        "width": 1536,
+        "height": 1024,
+        "caption": {
+          "en": "Illuminated stalactites and walkway inside Prometheus Cave near Kutaisi, Georgia",
+          "de": "Beleuchtete Stalaktiten und Steg in der Prometheus-Höhle bei Kutaissi, Georgien",
+          "fr": "Stalactites illuminées et passerelle dans la grotte de Prométhée près de Koutaïssi, Géorgie",
+          "es": "Estalactitas iluminadas y pasarela dentro de la Cueva de Prometeo cerca de Kutaisi, Georgia",
+          "nl": "Verlichte stalactieten en looppad in de Prometheus-grot bij Kutaisi, Georgië",
+          "cs": "Nasvícené krápníky a lávka v Prométheově jeskyni poblíž Kutaisi, Gruzie",
+          "pl": "Podświetlone stalaktyty i kładka w Jaskini Prometeusza koło Kutaisi, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/grand-tour-tbilisi-batumi/vardzia-cave-monastery-samtskhe-javakheti-georgia/vardzia-cave-monastery-samtskhe-javakheti-georgia-1448.webp",
+        "base": "/images/tours/grand-tour-tbilisi-batumi/vardzia-cave-monastery-samtskhe-javakheti-georgia/vardzia-cave-monastery-samtskhe-javakheti-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "The 12th-century Vardzia cave monastery carved into a cliff in Samtskhe-Javakheti, Georgia",
+          "de": "Das Höhlenkloster Wardsia aus dem 12. Jahrhundert, in eine Felswand gehauen, Samzche-Dschawachetien, Georgien",
+          "fr": "Le monastère troglodyte de Vardzia du XIIe siècle creusé dans une falaise, Samtskhé-Djavakhétie, Géorgie",
+          "es": "El monasterio rupestre de Vardzia del siglo XII excavado en un acantilado, Samtsje-Yavajeti, Georgia",
+          "nl": "Het 12e-eeuwse grotklooster Vardzia uitgehouwen in een klif, Samtsche-Dzjavacheti, Georgië",
+          "cs": "Jeskynní klášter Vardzia z 12. století vytesaný do skály, Samcche-Džavacheti, Gruzie",
+          "pl": "XII-wieczny klasztor jaskiniowy Wardzia wykuty w skale, Samcche-Dżawachetia, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/grand-tour-tbilisi-batumi/rabati-fortress-akhaltsikhe-georgia/rabati-fortress-akhaltsikhe-georgia-1448.webp",
+        "base": "/images/tours/grand-tour-tbilisi-batumi/rabati-fortress-akhaltsikhe-georgia/rabati-fortress-akhaltsikhe-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "The restored medieval Rabati Fortress in Akhaltsikhe, Georgia",
+          "de": "Die restaurierte mittelalterliche Rabati-Festung in Achalziche, Georgien",
+          "fr": "La forteresse médiévale restaurée de Rabati à Akhaltsikhe, Géorgie",
+          "es": "La fortaleza medieval restaurada de Rabati en Akhaltsikhe, Georgia",
+          "nl": "De gerestaureerde middeleeuwse Rabati-vesting in Achaltsiche, Georgië",
+          "cs": "Zrekonstruovaná středověká pevnost Rabati v Achalciche, Gruzie",
+          "pl": "Odrestaurowana średniowieczna twierdza Rabati w Achalciche, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/grand-tour-tbilisi-batumi/borjomi-central-park-borjomi-georgia/borjomi-central-park-borjomi-georgia-1672.webp",
+        "base": "/images/tours/grand-tour-tbilisi-batumi/borjomi-central-park-borjomi-georgia/borjomi-central-park-borjomi-georgia",
+        "widths": [768, 1200, 1600, 1672],
+        "width": 1672,
+        "height": 941,
+        "caption": {
+          "en": "Green pavilion and gardens of the Central Park in Borjomi, Georgia",
+          "de": "Grüner Pavillon und Gärten des Zentralparks in Bordschomi, Georgien",
+          "fr": "Pavillon vert et jardins du parc central de Borjomi, Géorgie",
+          "es": "Pabellón verde y jardines del Parque Central de Borjomi, Georgia",
+          "nl": "Groen paviljoen en tuinen van het Centrale Park in Borjomi, Georgië",
+          "cs": "Zelený pavilon a zahrady Centrálního parku v Bordžomi, Gruzie",
+          "pl": "Zielony pawilon i ogrody Parku Centralnego w Borjomi, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/grand-tour-tbilisi-batumi/batumi-black-sea-beach-batumi-georgia/batumi-black-sea-beach-batumi-georgia-1448.webp",
+        "base": "/images/tours/grand-tour-tbilisi-batumi/batumi-black-sea-beach-batumi-georgia/batumi-black-sea-beach-batumi-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Pebble beach and turquoise Black Sea water under a bright sky in Batumi, Georgia",
+          "de": "Kieselstrand und türkisfarbenes Schwarzes Meer unter hellem Himmel in Batumi, Georgien",
+          "fr": "Plage de galets et eau turquoise de la mer Noire sous un ciel lumineux à Batoumi, Géorgie",
+          "es": "Playa de guijarros y aguas turquesas del mar Negro bajo un cielo luminoso en Batumi, Georgia",
+          "nl": "Kiezelstrand en turquoise water van de Zwarte Zee onder een heldere hemel in Batumi, Georgië",
+          "cs": "Oblázková pláž a tyrkysová voda Černého moře pod jasnou oblohou v Batumi, Gruzie",
+          "pl": "Kamienista plaża i turkusowa woda Morza Czarnego pod jasnym niebem w Batumi, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/grand-tour-tbilisi-batumi/batumi-skyline-batumi-georgia/batumi-skyline-batumi-georgia-1448.webp",
+        "base": "/images/tours/grand-tour-tbilisi-batumi/batumi-skyline-batumi-georgia/batumi-skyline-batumi-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Batumi seaside skyline with the Alphabetic Tower and high-rises seen from the pebble beach, Georgia",
+          "de": "Die Skyline von Batumi mit dem Alphabet-Turm und Hochhäusern vom Kieselstrand aus, Georgien",
+          "fr": "La ligne d'horizon balnéaire de Batoumi avec la tour de l'Alphabet et les gratte-ciel depuis la plage de galets, Géorgie",
+          "es": "El perfil costero de Batumi con la Torre del Alfabeto y los rascacielos desde la playa de guijarros, Georgia",
+          "nl": "De skyline van Batumi met de Alfabettoren en hoogbouw gezien vanaf het kiezelstrand, Georgië",
+          "cs": "Přímořské panorama Batumi s Abecední věží a výškovými budovami z oblázkové pláže, Gruzie",
+          "pl": "Nadmorska panorama Batumi z Wieżą Alfabetu i wieżowcami widziana z kamienistej plaży, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/grand-tour-tbilisi-batumi/ali-and-nino-statue-batumi-georgia/ali-and-nino-statue-batumi-georgia-1024.webp",
+        "base": "/images/tours/grand-tour-tbilisi-batumi/ali-and-nino-statue-batumi-georgia/ali-and-nino-statue-batumi-georgia",
+        "widths": [768, 1024],
+        "width": 1024,
+        "height": 1536,
+        "objectPosition": "center 30%",
+        "caption": {
+          "en": "The moving steel Ali and Nino statue on the Batumi seafront, Georgia",
+          "de": "Die bewegliche Stahlskulptur Ali und Nino an der Uferpromenade von Batumi, Georgien",
+          "fr": "La sculpture mobile en acier Ali et Nino sur le front de mer de Batoumi, Géorgie",
+          "es": "La escultura móvil de acero Ali y Nino en el paseo marítimo de Batumi, Georgia",
+          "nl": "Het bewegende stalen beeld Ali en Nino aan de boulevard van Batumi, Georgië",
+          "cs": "Pohyblivá ocelová socha Ali a Nino na nábřeží Batumi, Gruzie",
+          "pl": "Ruchoma stalowa rzeźba Ali i Nino na nadmorskim bulwarze w Batumi, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/grand-tour-tbilisi-batumi/alphabetic-tower-batumi-georgia/alphabetic-tower-batumi-georgia-1122.webp",
+        "base": "/images/tours/grand-tour-tbilisi-batumi/alphabetic-tower-batumi-georgia/alphabetic-tower-batumi-georgia",
+        "widths": [768, 1122],
+        "width": 1122,
+        "height": 1402,
+        "objectPosition": "center 30%",
+        "caption": {
+          "en": "The illuminated Alphabetic Tower at night in Batumi, Georgia",
+          "de": "Der beleuchtete Alphabet-Turm bei Nacht in Batumi, Georgien",
+          "fr": "La tour de l'Alphabet illuminée la nuit à Batoumi, Géorgie",
+          "es": "La Torre del Alfabeto iluminada de noche en Batumi, Georgia",
+          "nl": "De verlichte Alfabettoren 's nachts in Batumi, Georgië",
+          "cs": "Osvětlená Abecední věž v noci v Batumi, Gruzie",
+          "pl": "Podświetlona Wieża Alfabetu nocą w Batumi, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/grand-tour-tbilisi-batumi/batumi-sunset-black-sea-batumi-georgia/batumi-sunset-black-sea-batumi-georgia-1448.webp",
+        "base": "/images/tours/grand-tour-tbilisi-batumi/batumi-sunset-black-sea-batumi-georgia/batumi-sunset-black-sea-batumi-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Sunset over the Black Sea from the Batumi shore, Georgia",
+          "de": "Sonnenuntergang über dem Schwarzen Meer von der Küste Batumis, Georgien",
+          "fr": "Coucher de soleil sur la mer Noire depuis le rivage de Batoumi, Géorgie",
+          "es": "Puesta de sol sobre el mar Negro desde la costa de Batumi, Georgia",
+          "nl": "Zonsondergang boven de Zwarte Zee vanaf de kust van Batumi, Georgië",
+          "cs": "Západ slunce nad Černým mořem z pobřeží Batumi, Gruzie",
+          "pl": "Zachód słońca nad Morzem Czarnym z wybrzeża Batumi, Gruzja"
+        }
+      }
+    ],
+    "imageObjects": [
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia-1448.webp",
+        "name": "Old Town & Cable Car, Tbilisi",
+        "caption": "View of Old Tbilisi with Narikala Fortress and the aerial cable car, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/narikala-fortress-tbilisi-georgia/narikala-fortress-tbilisi-georgia-1448.webp",
+        "name": "Narikala Fortress, Tbilisi",
+        "caption": "Stone entrance and walls of Narikala Fortress in Tbilisi, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/gabriadze-clock-tower-tbilisi-georgia/gabriadze-clock-tower-tbilisi-georgia-1086.webp",
+        "name": "Gabriadze Clock Tower, Tbilisi",
+        "caption": "The leaning Gabriadze clock tower in Old Tbilisi, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/holy-trinity-cathedral-tbilisi-georgia/holy-trinity-cathedral-tbilisi-georgia-1672.webp",
+        "name": "Holy Trinity Cathedral, Tbilisi",
+        "caption": "Holy Trinity Cathedral (Sameba), the largest cathedral in Tbilisi, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/jvari-monastery-mtskheta-georgia/jvari-monastery-mtskheta-georgia-1920.webp",
+        "name": "Jvari Monastery, Mtskheta",
+        "caption": "Aerial view of Jvari Monastery above Mtskheta, a UNESCO World Heritage site, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/svetitskhoveli-cathedral-mtskheta-georgia/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
+        "name": "Svetitskhoveli Cathedral, Mtskheta",
+        "caption": "Svetitskhoveli Cathedral, a UNESCO World Heritage site in Mtskheta, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/uplistsikhe-cave-town-gori-georgia/uplistsikhe-cave-town-gori-georgia-1448.webp",
+        "name": "Uplistsikhe Cave Town, Gori",
+        "caption": "The rock-hewn cave town of Uplistsikhe near Gori, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/stalin-museum-gori-georgia/stalin-museum-gori-georgia-1536.webp",
+        "name": "Stalin Museum, Gori",
+        "caption": "Marble bust of Stalin inside the Stalin Museum in Gori, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/green-bazaar-kutaisi-georgia/green-bazaar-kutaisi-georgia-1448.webp",
+        "name": "Green Bazaar, Kutaisi",
+        "caption": "Fresh produce stalls under the yellow steel roof of Kutaisi's Green Bazaar, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/gelati-monastery-kutaisi-georgia/gelati-monastery-kutaisi-georgia-1491.webp",
+        "name": "Gelati Monastery, Kutaisi",
+        "caption": "Gelati Monastery, a UNESCO World Heritage site near Kutaisi, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/prometheus-cave-imereti-georgia/prometheus-cave-imereti-georgia-1536.webp",
+        "name": "Prometheus Cave, Imereti",
+        "caption": "Illuminated stalactites and walkway inside Prometheus Cave near Kutaisi, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/vardzia-cave-monastery-samtskhe-javakheti-georgia/vardzia-cave-monastery-samtskhe-javakheti-georgia-1448.webp",
+        "name": "Vardzia Cave Monastery",
+        "caption": "The 12th-century Vardzia cave monastery carved into a cliff in Samtskhe-Javakheti, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/rabati-fortress-akhaltsikhe-georgia/rabati-fortress-akhaltsikhe-georgia-1448.webp",
+        "name": "Rabati Fortress, Akhaltsikhe",
+        "caption": "The restored medieval Rabati Fortress in Akhaltsikhe, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/borjomi-central-park-borjomi-georgia/borjomi-central-park-borjomi-georgia-1672.webp",
+        "name": "Central Park, Borjomi",
+        "caption": "Green pavilion and gardens of the Central Park in Borjomi, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/batumi-black-sea-beach-batumi-georgia/batumi-black-sea-beach-batumi-georgia-1448.webp",
+        "name": "Black Sea Beach, Batumi",
+        "caption": "Pebble beach and turquoise Black Sea water under a bright sky in Batumi, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": true
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/batumi-skyline-batumi-georgia/batumi-skyline-batumi-georgia-1448.webp",
+        "name": "Seaside Skyline, Batumi",
+        "caption": "Batumi seaside skyline with the Alphabetic Tower and high-rises seen from the pebble beach, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/ali-and-nino-statue-batumi-georgia/ali-and-nino-statue-batumi-georgia-1024.webp",
+        "name": "Ali and Nino Statue, Batumi",
+        "caption": "The moving steel Ali and Nino statue on the Batumi seafront, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/alphabetic-tower-batumi-georgia/alphabetic-tower-batumi-georgia-1122.webp",
+        "name": "Alphabetic Tower, Batumi",
+        "caption": "The illuminated Alphabetic Tower at night in Batumi, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/batumi-sunset-black-sea-batumi-georgia/batumi-sunset-black-sea-batumi-georgia-1448.webp",
+        "name": "Black Sea Sunset, Batumi",
+        "caption": "Sunset over the Black Sea from the Batumi shore, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      }
     ],
     "map": {
       "center": [

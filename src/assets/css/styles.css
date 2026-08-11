@@ -534,6 +534,40 @@ section {
 }
 /* No rung above 1448 (native ceiling). */
 
+/* Georgia Grand Tour (Tbilisi→Batumi) hero — Black Sea pebble beach, same opt-in
+   .heroBgClass mechanism. Ladder 768/1200/1448 — native ceiling 1448.
+   background-position: center center (what the package asks for) and it is
+   right here: the frame is horizontal bands — sky, sea, surf, pebbles — so the
+   100vh cover crop keeps the whole composition at 360px AND desktop. Both were
+   rendered and compared. plain url() = image-set() fallback. */
+.hero--grand-tour-batumi {
+  background-image: url("/images/tours/grand-tour-tbilisi-batumi/batumi-black-sea-beach-batumi-georgia/batumi-black-sea-beach-batumi-georgia-1200.webp");
+  background-image: image-set(
+    url("/images/tours/grand-tour-tbilisi-batumi/batumi-black-sea-beach-batumi-georgia/batumi-black-sea-beach-batumi-georgia-768.avif") type("image/avif"),
+    url("/images/tours/grand-tour-tbilisi-batumi/batumi-black-sea-beach-batumi-georgia/batumi-black-sea-beach-batumi-georgia-768.webp") type("image/webp")
+  );
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .hero--grand-tour-batumi {
+    background-image: image-set(
+      url("/images/tours/grand-tour-tbilisi-batumi/batumi-black-sea-beach-batumi-georgia/batumi-black-sea-beach-batumi-georgia-1200.avif") type("image/avif"),
+      url("/images/tours/grand-tour-tbilisi-batumi/batumi-black-sea-beach-batumi-georgia/batumi-black-sea-beach-batumi-georgia-1200.webp") type("image/webp")
+    );
+  }
+}
+@media (min-width: 1200px) {
+  .hero--grand-tour-batumi {
+    background-image: image-set(
+      url("/images/tours/grand-tour-tbilisi-batumi/batumi-black-sea-beach-batumi-georgia/batumi-black-sea-beach-batumi-georgia-1448.avif") type("image/avif"),
+      url("/images/tours/grand-tour-tbilisi-batumi/batumi-black-sea-beach-batumi-georgia/batumi-black-sea-beach-batumi-georgia-1448.webp") type("image/webp")
+    );
+  }
+}
+/* No rung above 1448 (native ceiling). */
+
 /* 7-Day Cultural Kutaisi→Tbilisi tour hero — Prometheus Cave, same opt-in
    .heroBgClass mechanism. Ladder 768/1200/1536 — native ceiling 1536.
    background-position stays CENTRE (what the package asks for): the lit
