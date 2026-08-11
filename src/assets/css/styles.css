@@ -534,6 +534,40 @@ section {
 }
 /* No rung above 1448 (native ceiling). */
 
+/* 7-Day Cultural Kutaisi→Tbilisi tour hero — Prometheus Cave, same opt-in
+   .heroBgClass mechanism. Ladder 768/1200/1536 — native ceiling 1536.
+   background-position stays CENTRE (what the package asks for): the lit
+   stalactite ceiling and the walkway both sit mid-frame, so the 100vh cover crop
+   holds the whole scene at 360px AND desktop — both rendered and checked, no
+   nudge needed. plain url() = image-set() fallback. */
+.hero--prometheus-kutaisi {
+  background-image: url("/images/tours/7-day-cultural-kutaisi-tbilisi/prometheus-cave-imereti-georgia/prometheus-cave-imereti-georgia-1200.webp");
+  background-image: image-set(
+    url("/images/tours/7-day-cultural-kutaisi-tbilisi/prometheus-cave-imereti-georgia/prometheus-cave-imereti-georgia-768.avif") type("image/avif"),
+    url("/images/tours/7-day-cultural-kutaisi-tbilisi/prometheus-cave-imereti-georgia/prometheus-cave-imereti-georgia-768.webp") type("image/webp")
+  );
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .hero--prometheus-kutaisi {
+    background-image: image-set(
+      url("/images/tours/7-day-cultural-kutaisi-tbilisi/prometheus-cave-imereti-georgia/prometheus-cave-imereti-georgia-1200.avif") type("image/avif"),
+      url("/images/tours/7-day-cultural-kutaisi-tbilisi/prometheus-cave-imereti-georgia/prometheus-cave-imereti-georgia-1200.webp") type("image/webp")
+    );
+  }
+}
+@media (min-width: 1200px) {
+  .hero--prometheus-kutaisi {
+    background-image: image-set(
+      url("/images/tours/7-day-cultural-kutaisi-tbilisi/prometheus-cave-imereti-georgia/prometheus-cave-imereti-georgia-1536.avif") type("image/avif"),
+      url("/images/tours/7-day-cultural-kutaisi-tbilisi/prometheus-cave-imereti-georgia/prometheus-cave-imereti-georgia-1536.webp") type("image/webp")
+    );
+  }
+}
+/* No rung above 1536 (native ceiling). */
+
 /* 8-Day Culture, Nature & Wine tour hero — Gergeti Trinity Church (the same
    photograph as the Wine & Sulfur hero below), same opt-in .heroBgClass
    mechanism. Ladder 768/1200/1448 — native ceiling 1448.

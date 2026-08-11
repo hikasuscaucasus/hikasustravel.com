@@ -2256,9 +2256,15 @@ export const tours = [
     "formerSlug": "georgias-cultural-wonders-7-day-adventure-from-kutaisi-to-tbilisi-and-beyond",
     "type": "private",
     "title": "7-Day Georgia Cultural Tour: Kutaisi to Tbilisi",
-    "heroImage": "/images/files/cultural-wonders-kutaisi.jpg",
-    "tileImage": "/images/files/Prometheus%20Cave.jpg",
-    "listingImage": "/images/files/Prometheus%20Cave.jpg",
+    "heroImage": "/images/tours/7-day-cultural-kutaisi-tbilisi/prometheus-cave-imereti-georgia/prometheus-cave-imereti-georgia-1200.webp",
+    "heroBgClass": "hero--prometheus-kutaisi",
+    /* Social image deliberately PINNED to the page's existing one: the photo
+       package ships no Prometheus OG crop (only a Gergeti one), and Gergeti is
+       explicitly not this tour's hero. Without this pin og:image would silently
+       follow heroImage. Replace with the Prometheus OG when it is supplied. */
+    "ogImage": { "src": "/images/files/cultural-wonders-kutaisi.jpg", "width": 1296, "height": 864 },
+    "tileImage": "/images/tours/7-day-cultural-kutaisi-tbilisi/prometheus-cave-imereti-georgia/prometheus-cave-imereti-georgia-1200.webp",
+    "listingImage": "/images/tours/7-day-cultural-kutaisi-tbilisi/prometheus-cave-imereti-georgia/prometheus-cave-imereti-georgia-1200.webp",
     "days": 7,
     "description": "Immerse yourself in the captivating charm of Georgia on this 7-day cultural journey, beginning in the historic city of Kutaisi.",
     "listingDescription": "Immerse yourself in the captivating charm of Georgia on this 7-day cultural journey, beginning in the historic city of Kutaisi.",
@@ -2351,12 +2357,416 @@ export const tours = [
       "Travel insurance."
     ],
     "gallery": [
-      { "src": "/images/files/cultural-wonders-kutaisi.jpg", "caption": "Kutaisi", "description": "Gateway to western Georgia's cultural treasures" },
-      { "src": "/images/files/georgia-tour-02.jpg", "caption": "Holy Trinity Cathedral", "description": "The largest cathedral in Georgia, Tbilisi" },
-      { "src": "/images/files/georgia-tour-07.jpg", "caption": "Katskhi Pillar", "description": "Ancient limestone monolith with a chapel on top" },
-      { "src": "/images/files/georgia-tour-09.jpg", "caption": "Kutaisi", "description": "Georgia's second-largest city and cultural hub" },
-      { "src": "/images/files/Gergeti-Church.jpg", "caption": "Gergeti Trinity Church", "description": "Iconic church with stunning Caucasus mountain views" },
-      { "src": "/images/files/georgia-tour-11.jpg", "caption": "Sighnaghi", "description": "The charming 'City of Love' in Kakheti" }
+      {
+        "src": "/images/tours/7-day-cultural-kutaisi-tbilisi/green-bazaar-kutaisi-georgia/green-bazaar-kutaisi-georgia-1448.webp",
+        "base": "/images/tours/7-day-cultural-kutaisi-tbilisi/green-bazaar-kutaisi-georgia/green-bazaar-kutaisi-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Fresh produce stalls under the yellow steel roof of Kutaisi's Green Bazaar, Georgia",
+          "de": "Frische-Marktstände unter dem gelben Stahldach des Grünen Basars von Kutaissi, Georgien",
+          "fr": "Étals de produits frais sous la charpente jaune du bazar vert de Koutaïssi, Géorgie",
+          "es": "Puestos de productos frescos bajo la estructura amarilla del Bazar Verde de Kutaisi, Georgia",
+          "nl": "Verse groente- en fruitkramen onder het gele stalen dak van de Groene Bazaar in Kutaisi, Georgië",
+          "cs": "Stánky s čerstvými potravinami pod žlutou ocelovou střechou Zeleného bazaru v Kutaisi, Gruzie",
+          "pl": "Stoiska ze świeżymi produktami pod żółtą stalową konstrukcją Zielonego Bazaru w Kutaisi, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/7-day-cultural-kutaisi-tbilisi/gelati-monastery-kutaisi-georgia/gelati-monastery-kutaisi-georgia-1491.webp",
+        "base": "/images/tours/7-day-cultural-kutaisi-tbilisi/gelati-monastery-kutaisi-georgia/gelati-monastery-kutaisi-georgia",
+        "widths": [768, 1200, 1491],
+        "width": 1491,
+        "height": 1055,
+        "caption": {
+          "en": "Gelati Monastery, a UNESCO World Heritage site near Kutaisi, Georgia",
+          "de": "Kloster Gelati, UNESCO-Welterbe bei Kutaissi, Georgien",
+          "fr": "Monastère de Gélati, site du patrimoine mondial de l'UNESCO près de Koutaïssi, Géorgie",
+          "es": "Monasterio de Gelati, Patrimonio de la Humanidad de la UNESCO cerca de Kutaisi, Georgia",
+          "nl": "Gelati-klooster, UNESCO-werelderfgoed bij Kutaisi, Georgië",
+          "cs": "Klášter Gelati, památka UNESCO poblíž Kutaisi, Gruzie",
+          "pl": "Klasztor Gelati, obiekt światowego dziedzictwa UNESCO koło Kutaisi, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/7-day-cultural-kutaisi-tbilisi/prometheus-cave-imereti-georgia/prometheus-cave-imereti-georgia-1536.webp",
+        "base": "/images/tours/7-day-cultural-kutaisi-tbilisi/prometheus-cave-imereti-georgia/prometheus-cave-imereti-georgia",
+        "widths": [768, 1200, 1536],
+        "width": 1536,
+        "height": 1024,
+        "caption": {
+          "en": "Illuminated stalactites and walkway inside Prometheus Cave near Kutaisi, Georgia",
+          "de": "Beleuchtete Stalaktiten und Steg in der Prometheus-Höhle bei Kutaissi, Georgien",
+          "fr": "Stalactites illuminées et passerelle dans la grotte de Prométhée près de Koutaïssi, Géorgie",
+          "es": "Estalactitas iluminadas y pasarela dentro de la Cueva de Prometeo cerca de Kutaisi, Georgia",
+          "nl": "Verlichte stalactieten en looppad in de Prometheus-grot bij Kutaisi, Georgië",
+          "cs": "Nasvícené krápníky a lávka v Prométheově jeskyni poblíž Kutaisi, Gruzie",
+          "pl": "Podświetlone stalaktyty i kładka w Jaskini Prometeusza koło Kutaisi, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/7-day-cultural-kutaisi-tbilisi/metekhi-cliff-tbilisi-georgia/metekhi-cliff-tbilisi-georgia-1448.webp",
+        "base": "/images/tours/7-day-cultural-kutaisi-tbilisi/metekhi-cliff-tbilisi-georgia/metekhi-cliff-tbilisi-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Metekhi church on the cliff above the Mtkvari River in Old Tbilisi, Georgia",
+          "de": "Metechi-Kirche auf dem Felsen über dem Fluss Mtkwari in der Altstadt von Tiflis, Georgien",
+          "fr": "Église de Metekhi sur la falaise dominant la rivière Mtkvari dans le vieux Tbilissi, Géorgie",
+          "es": "Iglesia de Metekhi sobre el acantilado del río Mtkvari en el casco antiguo de Tiflis, Georgia",
+          "nl": "Metekhi-kerk op de rots boven de rivier de Mtkvari in de oude stad van Tbilisi, Georgië",
+          "cs": "Kostel Metechi na skále nad řekou Mtkvari ve starém Tbilisi, Gruzie",
+          "pl": "Kościół Metechi na skale nad rzeką Mtkwari na starym mieście w Tbilisi, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/7-day-cultural-kutaisi-tbilisi/narikala-fortress-tbilisi-georgia/narikala-fortress-tbilisi-georgia-1448.webp",
+        "base": "/images/tours/7-day-cultural-kutaisi-tbilisi/narikala-fortress-tbilisi-georgia/narikala-fortress-tbilisi-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Stone entrance and walls of Narikala Fortress in Tbilisi, Georgia",
+          "de": "Steinernes Tor und Mauern der Festung Narikala in Tiflis, Georgien",
+          "fr": "Porte et remparts en pierre de la forteresse de Narikala à Tbilissi, Géorgie",
+          "es": "Puerta y murallas de piedra de la fortaleza de Narikala en Tiflis, Georgia",
+          "nl": "Stenen poort en muren van de Narikala-vesting in Tbilisi, Georgië",
+          "cs": "Kamenná brána a hradby pevnosti Narikala v Tbilisi, Gruzie",
+          "pl": "Kamienna brama i mury twierdzy Narikala w Tbilisi, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/7-day-cultural-kutaisi-tbilisi/gabriadze-clock-tower-tbilisi-georgia/gabriadze-clock-tower-tbilisi-georgia-1086.webp",
+        "base": "/images/tours/7-day-cultural-kutaisi-tbilisi/gabriadze-clock-tower-tbilisi-georgia/gabriadze-clock-tower-tbilisi-georgia",
+        "widths": [768, 1086],
+        "width": 1086,
+        "height": 1448,
+        "objectPosition": "center 30%",
+        "caption": {
+          "en": "The leaning Gabriadze clock tower in Old Tbilisi, Georgia",
+          "de": "Der schiefe Gabriadze-Uhrturm in der Altstadt von Tiflis, Georgien",
+          "fr": "La tour de l'horloge penchée de Gabriadze dans le vieux Tbilissi, Géorgie",
+          "es": "La torre del reloj inclinada de Gabriadze en el casco antiguo de Tiflis, Georgia",
+          "nl": "De scheve Gabriadze-klokkentoren in de oude stad van Tbilisi, Georgië",
+          "cs": "Nakloněná hodinová věž Gabriadze ve starém Tbilisi, Gruzie",
+          "pl": "Pochylona wieża zegarowa Gabriadzego na starym mieście w Tbilisi, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/7-day-cultural-kutaisi-tbilisi/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia-1448.webp",
+        "base": "/images/tours/7-day-cultural-kutaisi-tbilisi/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "View of Old Tbilisi with Narikala Fortress and the aerial cable car, Georgia",
+          "de": "Blick auf die Altstadt von Tiflis mit der Festung Narikala und der Seilbahn, Georgien",
+          "fr": "Vue du vieux Tbilissi avec la forteresse de Narikala et le téléphérique, Géorgie",
+          "es": "Vista del casco antiguo de Tiflis con la fortaleza de Narikala y el teleférico, Georgia",
+          "nl": "Uitzicht op de oude stad van Tbilisi met de Narikala-vesting en de kabelbaan, Georgië",
+          "cs": "Pohled na staré Tbilisi s pevností Narikala a lanovkou, Gruzie",
+          "pl": "Widok na stare Tbilisi z twierdzą Narikala i kolejką linową, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/7-day-cultural-kutaisi-tbilisi/holy-trinity-cathedral-tbilisi-georgia/holy-trinity-cathedral-tbilisi-georgia-1672.webp",
+        "base": "/images/tours/7-day-cultural-kutaisi-tbilisi/holy-trinity-cathedral-tbilisi-georgia/holy-trinity-cathedral-tbilisi-georgia",
+        "widths": [768, 1200, 1600, 1672],
+        "width": 1672,
+        "height": 941,
+        "caption": {
+          "en": "Holy Trinity Cathedral (Sameba), the largest cathedral in Tbilisi, Georgia",
+          "de": "Sameba-Kathedrale (Heilige Dreifaltigkeit), die größte Kathedrale in Tiflis, Georgien",
+          "fr": "Cathédrale de la Sainte-Trinité (Sameba), la plus grande cathédrale de Tbilissi, Géorgie",
+          "es": "Catedral de la Santísima Trinidad (Sameba), la catedral más grande de Tiflis, Georgia",
+          "nl": "Heilige-Drie-eenheidskathedraal (Sameba), de grootste kathedraal van Tbilisi, Georgië",
+          "cs": "Katedrála Nejsvětější Trojice (Sameba), největší katedrála v Tbilisi, Gruzie",
+          "pl": "Katedra Trójcy Świętej (Sameba), największa katedra w Tbilisi, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/7-day-cultural-kutaisi-tbilisi/aragvi-confluence-pasanauri-georgia/aragvi-confluence-pasanauri-georgia-1445.webp",
+        "base": "/images/tours/7-day-cultural-kutaisi-tbilisi/aragvi-confluence-pasanauri-georgia/aragvi-confluence-pasanauri-georgia",
+        "widths": [768, 1200, 1445],
+        "width": 1445,
+        "height": 1089,
+        "caption": {
+          "en": "Confluence of the Black and White Aragvi rivers near Pasanauri, Georgia",
+          "de": "Zusammenfluss der Schwarzen und Weißen Aragwi bei Pasanauri, Georgien",
+          "fr": "Confluent de l'Aragvi noire et de l'Aragvi blanche près de Pasanauri, Géorgie",
+          "es": "Confluencia de los ríos Aragvi Negro y Blanco cerca de Pasanauri, Georgia",
+          "nl": "Samenvloeiing van de Zwarte en Witte Aragvi bij Pasanauri, Georgië",
+          "cs": "Soutok Černé a Bílé Aragvi poblíž Pasanauri, Gruzie",
+          "pl": "Zbieg rzek Czarna i Biała Aragwi koło Pasanauri, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/7-day-cultural-kutaisi-tbilisi/friendship-monument-gudauri-georgia/friendship-monument-gudauri-georgia-1448.webp",
+        "base": "/images/tours/7-day-cultural-kutaisi-tbilisi/friendship-monument-gudauri-georgia/friendship-monument-gudauri-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Mosaic panorama of the Friendship Monument near Gudauri, Georgia",
+          "de": "Mosaik-Panorama des Freundschaftsdenkmals bei Gudauri, Georgien",
+          "fr": "Panorama en mosaïque du Monument de l'Amitié près de Gudauri, Géorgie",
+          "es": "Panorama de mosaico del Monumento a la Amistad cerca de Gudauri, Georgia",
+          "nl": "Mozaïekpanorama van het Vriendschapsmonument bij Gudauri, Georgië",
+          "cs": "Mozaikové panorama Pomníku přátelství u Gudauri, Gruzie",
+          "pl": "Mozaikowa panorama Pomnika Przyjaźni koło Gudauri, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/7-day-cultural-kutaisi-tbilisi/mount-kazbek-stepantsminda-georgia/mount-kazbek-stepantsminda-georgia-1024.webp",
+        "base": "/images/tours/7-day-cultural-kutaisi-tbilisi/mount-kazbek-stepantsminda-georgia/mount-kazbek-stepantsminda-georgia",
+        "widths": [768, 1024],
+        "width": 1024,
+        "height": 1536,
+        "objectPosition": "center 30%",
+        "caption": {
+          "en": "Snow-capped Mount Kazbek rising above Stepantsminda village, Georgia",
+          "de": "Der schneebedeckte Kazbek über dem Dorf Stepanzminda, Georgien",
+          "fr": "Le mont Kazbek enneigé dominant le village de Stepantsminda, Géorgie",
+          "es": "El monte Kazbek nevado sobre el pueblo de Stepantsminda, Georgia",
+          "nl": "De besneeuwde Kazbek boven het dorp Stepantsminda, Georgië",
+          "cs": "Zasněžená hora Kazbek nad vesnicí Stepancminda, Gruzie",
+          "pl": "Ośnieżony szczyt Kazbek nad wsią Stepancminda, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/7-day-cultural-kutaisi-tbilisi/gergeti-trinity-church-kazbegi-georgia/gergeti-trinity-church-kazbegi-georgia-1448.webp",
+        "base": "/images/tours/7-day-cultural-kutaisi-tbilisi/gergeti-trinity-church-kazbegi-georgia/gergeti-trinity-church-kazbegi-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Gergeti Trinity Church on a hill below the Caucasus peaks near Stepantsminda, Georgia",
+          "de": "Gergeti-Dreifaltigkeitskirche auf einem Hügel unterhalb der Kaukasusgipfel bei Stepanzminda, Georgien",
+          "fr": "Église de la Trinité de Guerguéti sur une colline sous les sommets du Caucase près de Stepantsminda, Géorgie",
+          "es": "Iglesia de la Trinidad de Gergeti en una colina bajo los picos del Cáucaso cerca de Stepantsminda, Georgia",
+          "nl": "Gergeti-Drie-eenheidskerk op een heuvel onder de Kaukasustoppen bij Stepantsminda, Georgië",
+          "cs": "Kostel Nejsvětější Trojice Gergeti na kopci pod vrcholky Kavkazu u Stepancmindy, Gruzie",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti na wzgórzu pod szczytami Kaukazu koło Stepancmindy, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/7-day-cultural-kutaisi-tbilisi/uplistsikhe-cave-town-gori-georgia/uplistsikhe-cave-town-gori-georgia-1448.webp",
+        "base": "/images/tours/7-day-cultural-kutaisi-tbilisi/uplistsikhe-cave-town-gori-georgia/uplistsikhe-cave-town-gori-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "The rock-hewn cave town of Uplistsikhe near Gori, Georgia",
+          "de": "Die in Fels gehauene Höhlenstadt Uplisziche bei Gori, Georgien",
+          "fr": "La cité troglodyte d'Ouplistsikhé près de Gori, Géorgie",
+          "es": "La ciudad rupestre de Uplistsije cerca de Gori, Georgia",
+          "nl": "De in rots uitgehouwen holenstad Uplistsikhe bij Gori, Georgië",
+          "cs": "Skalní jeskynní město Uplisciche poblíž Gori, Gruzie",
+          "pl": "Wykute w skale jaskiniowe miasto Uplisciche koło Gori, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/7-day-cultural-kutaisi-tbilisi/stalin-museum-gori-georgia/stalin-museum-gori-georgia-1536.webp",
+        "base": "/images/tours/7-day-cultural-kutaisi-tbilisi/stalin-museum-gori-georgia/stalin-museum-gori-georgia",
+        "widths": [768, 1200, 1536],
+        "width": 1536,
+        "height": 1024,
+        "caption": {
+          "en": "Marble bust of Stalin inside the Stalin Museum in Gori, Georgia",
+          "de": "Marmorbüste Stalins im Stalin-Museum in Gori, Georgien",
+          "fr": "Buste en marbre de Staline au musée Staline à Gori, Géorgie",
+          "es": "Busto de mármol de Stalin en el Museo de Stalin en Gori, Georgia",
+          "nl": "Marmeren buste van Stalin in het Stalinmuseum in Gori, Georgië",
+          "cs": "Mramorová busta Stalina v Stalinově muzeu v Gori, Gruzie",
+          "pl": "Marmurowe popiersie Stalina w Muzeum Stalina w Gori, Gruzja"
+        }
+      }
+    ],
+    "imageObjects": [
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/green-bazaar-kutaisi-georgia/green-bazaar-kutaisi-georgia-1448.webp",
+        "name": "Green Bazaar, Kutaisi",
+        "caption": "Fresh produce stalls under the yellow steel roof of Kutaisi's Green Bazaar, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/gelati-monastery-kutaisi-georgia/gelati-monastery-kutaisi-georgia-1491.webp",
+        "name": "Gelati Monastery, Kutaisi",
+        "caption": "Gelati Monastery, a UNESCO World Heritage site near Kutaisi, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/prometheus-cave-imereti-georgia/prometheus-cave-imereti-georgia-1536.webp",
+        "name": "Prometheus Cave, Imereti",
+        "caption": "Illuminated stalactites and walkway inside Prometheus Cave near Kutaisi, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": true
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/metekhi-cliff-tbilisi-georgia/metekhi-cliff-tbilisi-georgia-1448.webp",
+        "name": "Old Town & Mtkvari River, Tbilisi",
+        "caption": "Metekhi church on the cliff above the Mtkvari River in Old Tbilisi, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/narikala-fortress-tbilisi-georgia/narikala-fortress-tbilisi-georgia-1448.webp",
+        "name": "Narikala Fortress, Tbilisi",
+        "caption": "Stone entrance and walls of Narikala Fortress in Tbilisi, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/gabriadze-clock-tower-tbilisi-georgia/gabriadze-clock-tower-tbilisi-georgia-1086.webp",
+        "name": "Gabriadze Clock Tower, Tbilisi",
+        "caption": "The leaning Gabriadze clock tower in Old Tbilisi, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia-1448.webp",
+        "name": "Old Town & Cable Car, Tbilisi",
+        "caption": "View of Old Tbilisi with Narikala Fortress and the aerial cable car, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/holy-trinity-cathedral-tbilisi-georgia/holy-trinity-cathedral-tbilisi-georgia-1672.webp",
+        "name": "Holy Trinity Cathedral, Tbilisi",
+        "caption": "Holy Trinity Cathedral (Sameba), the largest cathedral in Tbilisi, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/aragvi-confluence-pasanauri-georgia/aragvi-confluence-pasanauri-georgia-1445.webp",
+        "name": "Aragvi Confluence, Pasanauri",
+        "caption": "Confluence of the Black and White Aragvi rivers near Pasanauri, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/friendship-monument-gudauri-georgia/friendship-monument-gudauri-georgia-1448.webp",
+        "name": "Friendship Monument, Gudauri",
+        "caption": "Mosaic panorama of the Friendship Monument near Gudauri, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/mount-kazbek-stepantsminda-georgia/mount-kazbek-stepantsminda-georgia-1024.webp",
+        "name": "Mount Kazbek, Stepantsminda",
+        "caption": "Snow-capped Mount Kazbek rising above Stepantsminda village, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/gergeti-trinity-church-kazbegi-georgia/gergeti-trinity-church-kazbegi-georgia-1448.webp",
+        "name": "Gergeti Trinity Church, Kazbegi",
+        "caption": "Gergeti Trinity Church on a hill below the Caucasus peaks near Stepantsminda, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/uplistsikhe-cave-town-gori-georgia/uplistsikhe-cave-town-gori-georgia-1448.webp",
+        "name": "Uplistsikhe Cave Town, Gori",
+        "caption": "The rock-hewn cave town of Uplistsikhe near Gori, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/stalin-museum-gori-georgia/stalin-museum-gori-georgia-1536.webp",
+        "name": "Stalin Museum, Gori",
+        "caption": "Marble bust of Stalin inside the Stalin Museum in Gori, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      }
     ],
     "map": {
       "center": [
