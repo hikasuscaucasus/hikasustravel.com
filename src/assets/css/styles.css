@@ -534,6 +534,44 @@ section {
 }
 /* No rung above 1448 (native ceiling). */
 
+/* 8-Day Culture, Nature & Wine tour hero — Gergeti Trinity Church (the same
+   photograph as the Wine & Sulfur hero below), same opt-in .heroBgClass
+   mechanism. Ladder 768/1200/1448 — native ceiling 1448.
+   background-position: 40% center. The package asks for `center center`, but
+   .td-hero is min-height:100vh so at 360px the cover crop keeps only 34% of the
+   frame's width, and centred it holds the bell tower while slicing the domed
+   church off the left edge — rendered both and compared. 40% keeps BOTH. X is a
+   no-op at desktop widths (box 1.6 is wider than the source 1.33, so cover
+   scales by width), so the desktop composition is unchanged either way.
+   plain url() = image-set() fallback. */
+.hero--culture-nature-wine {
+  background-image: url("/images/tours/8-day-culture-nature-wine/gergeti-trinity-church-kazbegi-georgia/gergeti-trinity-church-kazbegi-georgia-1200.webp");
+  background-image: image-set(
+    url("/images/tours/8-day-culture-nature-wine/gergeti-trinity-church-kazbegi-georgia/gergeti-trinity-church-kazbegi-georgia-768.avif") type("image/avif"),
+    url("/images/tours/8-day-culture-nature-wine/gergeti-trinity-church-kazbegi-georgia/gergeti-trinity-church-kazbegi-georgia-768.webp") type("image/webp")
+  );
+  background-position: 40% center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .hero--culture-nature-wine {
+    background-image: image-set(
+      url("/images/tours/8-day-culture-nature-wine/gergeti-trinity-church-kazbegi-georgia/gergeti-trinity-church-kazbegi-georgia-1200.avif") type("image/avif"),
+      url("/images/tours/8-day-culture-nature-wine/gergeti-trinity-church-kazbegi-georgia/gergeti-trinity-church-kazbegi-georgia-1200.webp") type("image/webp")
+    );
+  }
+}
+@media (min-width: 1200px) {
+  .hero--culture-nature-wine {
+    background-image: image-set(
+      url("/images/tours/8-day-culture-nature-wine/gergeti-trinity-church-kazbegi-georgia/gergeti-trinity-church-kazbegi-georgia-1448.avif") type("image/avif"),
+      url("/images/tours/8-day-culture-nature-wine/gergeti-trinity-church-kazbegi-georgia/gergeti-trinity-church-kazbegi-georgia-1448.webp") type("image/webp")
+    );
+  }
+}
+/* No rung above 1448 (native ceiling). */
+
 /* 5-Day Tbilisi/Wine & Sulfur Baths tour hero — Gergeti Trinity Church, same
    opt-in .heroBgClass mechanism as .hero--tbilisi-batumi above, on the tour-page
    hero (.td-hero). Ladder 768/1200/1448 — native ceiling 1448, no 1600/2400.

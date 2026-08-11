@@ -151,6 +151,15 @@ export default function TourDetailPage() {
     // content package (exact TouristTrip + AggregateOffer + BreadcrumbList). Every
     // other locale and every other tour keeps the generic `jsonLd` node above,
     // untouched.
+    // A tour may ship a finished ImageObject set with its photo package
+    // (`tour.imageObjects`) — the per-photo nodes are authored alongside the
+    // images, so they are emitted verbatim rather than rebuilt here. Opt-in: a
+    // tour without the key keeps exactly the graph it had before, and the hero
+    // node inside such a set already carries `representativeOfPage`, so those
+    // tours deliberately do NOT also set `imageMeta` (that would emit a second
+    // representative node). Added for the 8-day Culture, Nature & Wine tour.
+    const packagedImages = tour.imageObjects || []
+
     let finalJsonLd
     if (lang === 'en' && tour.enTouristTrip) {
       const stripCtx = (node) => { const rest = { ...node }; delete rest['@context']; return rest }
@@ -159,12 +168,14 @@ export default function TourDetailPage() {
         ...(tour.enBreadcrumb ? [tour.enBreadcrumb] : []),
         ...(tour.enRouteMapImage ? [tour.enRouteMapImage] : []),
         ...(heroImageObject ? [heroImageObject] : []),
+        ...packagedImages,
         ...(faqNode ? [faqNode] : []),
       ]
       finalJsonLd = { '@context': 'https://schema.org', '@graph': nodes.map(stripCtx) }
     } else {
       const extra = [
         ...(heroImageObject ? [heroImageObject] : []),
+        ...packagedImages,
         ...(faqNode ? [faqNode] : []),
       ]
       finalJsonLd = extra.length
