@@ -534,6 +534,43 @@ section {
 }
 /* No rung above 1448 (native ceiling). */
 
+/* Georgia in 10 Days (Story & Celebration) hero — Black Sea sunset at Batumi,
+   same opt-in .heroBgClass mechanism. Ladder 768/1200/1448 — native ceiling
+   1448 (1448x1086), so no 1600/2400 rung.
+   background-position: center center. .td-hero is min-height:100vh, so at 390px
+   the cover crop keeps only 35% of the frame's width — but the composition is
+   horizontal bands (cloud, red band, sun on the horizon, sea, surf) with the sun
+   just right of centre, so the centre slice keeps the sun at 360/390 AND shows
+   the full width on desktop. Both ends were rendered and compared before this
+   was chosen. plain url() = image-set() fallback. */
+.hero--georgia-10-days-sunset {
+  background-image: url("/images/tours/georgia-10-days-celebration/batumi-sunset-black-sea-batumi-georgia/batumi-sunset-black-sea-batumi-georgia-1200.webp");
+  background-image: image-set(
+    url("/images/tours/georgia-10-days-celebration/batumi-sunset-black-sea-batumi-georgia/batumi-sunset-black-sea-batumi-georgia-768.avif") type("image/avif"),
+    url("/images/tours/georgia-10-days-celebration/batumi-sunset-black-sea-batumi-georgia/batumi-sunset-black-sea-batumi-georgia-768.webp") type("image/webp")
+  );
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .hero--georgia-10-days-sunset {
+    background-image: image-set(
+      url("/images/tours/georgia-10-days-celebration/batumi-sunset-black-sea-batumi-georgia/batumi-sunset-black-sea-batumi-georgia-1200.avif") type("image/avif"),
+      url("/images/tours/georgia-10-days-celebration/batumi-sunset-black-sea-batumi-georgia/batumi-sunset-black-sea-batumi-georgia-1200.webp") type("image/webp")
+    );
+  }
+}
+@media (min-width: 1200px) {
+  .hero--georgia-10-days-sunset {
+    background-image: image-set(
+      url("/images/tours/georgia-10-days-celebration/batumi-sunset-black-sea-batumi-georgia/batumi-sunset-black-sea-batumi-georgia-1448.avif") type("image/avif"),
+      url("/images/tours/georgia-10-days-celebration/batumi-sunset-black-sea-batumi-georgia/batumi-sunset-black-sea-batumi-georgia-1448.webp") type("image/webp")
+    );
+  }
+}
+/* No rung above 1448 (native ceiling). */
+
 /* Georgia Grand Tour (Tbilisi→Batumi) hero — Black Sea pebble beach, same opt-in
    .heroBgClass mechanism. Ladder 768/1200/1448 — native ceiling 1448.
    background-position: center center (what the package asks for) and it is
