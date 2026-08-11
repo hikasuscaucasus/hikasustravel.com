@@ -1319,8 +1319,8 @@ export const tours = [
         "pl": "Cerkiew Trójcy Świętej w Gergeti, Kazbegi"
       }
     },
-    "tileImage": "/images/files/sulfur-baths-wine-tour.jpg",
-    "listingImage": "/images/files/sulfur-baths-wine-tour.jpg",
+    "tileImage": "/images/tours/tbilisi-wine-sulfur/ananuri-fortress-zhinvali-reservoir-georgia-1200.webp",
+    "listingImage": "/images/tours/tbilisi-wine-sulfur/ananuri-fortress-zhinvali-reservoir-georgia-1200.webp",
     "days": 5,
     "description": "Delve into the heart of Georgia's rich heritage on this 5-day tour, blending historic landmarks, breathtaking landscapes, and the country's celebrated hospitality.",
     "listingDescription": "Delve into the heart of Georgia's rich heritage on this 5-day tour, blending historic landmarks, breathtaking landscapes, and the country's celebrated hospitality.",
