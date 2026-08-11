@@ -1663,7 +1663,6 @@ export const tours = [
       "Additional hotel expenses;",
       "Travel insurance."
     ],
-    "galleryShowAll": true,
     "gallery": [
       {
         "src": "/images/tours/highlights-from-tbilisi/tbilisi-old-town-panorama-georgia-1448.webp",

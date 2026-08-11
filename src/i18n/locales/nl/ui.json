@@ -33,6 +33,8 @@
   "tour.nextImage": "Volgende afbeelding",
   "tour.prevImage": "Vorige afbeelding",
   "tour.showMore": "Meer tonen",
+  "tour.showMorePhotos.one": "Nog 1 foto tonen",
+  "tour.showMorePhotos.other": "Nog {count} foto's tonen",
   "tour.book": "Boeken",
   "tour.map": "Kaart",
   "tour.bookThisTour": "Boek deze reis",

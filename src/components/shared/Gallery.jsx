@@ -4,10 +4,23 @@ import FadeUp from './FadeUp'
 import BlurUpBackground from './BlurUpBackground'
 import asset from '../../utils/basePath'
 import useT from '../../i18n/useT'
+import useLang from '../../i18n/useLang'
 
-/* Two rows of three on desktop (.gallery-grid is repeat(3, 1fr) above 600px). */
+/* Two rows of three on desktop (.gallery-grid is repeat(3, 1fr) above 600px);
+   2 columns ≤768px and 1 column on phones — 6 divides evenly into all three, so
+   the last visible row is never left with an empty slot. */
 const INITIAL_COUNT = 6
 const SWIPE_THRESHOLD = 50
+
+/* "Show more" label carries the number of hidden photos. Czech and Polish need
+   more than singular/plural (cs: 1 / 2-4 / 5+; pl: 1 / 2-4 / 5+ with the 12-14
+   exception), so the category comes from Intl.PluralRules rather than a
+   hand-rolled n===1 test. Falls back through `.other` to the original bare
+   `tour.showMore`, so a missing translation degrades to the old label instead of
+   printing a raw key. */
+const pluralCategory = (lang, n) => {
+  try { return new Intl.PluralRules(lang).select(n) } catch { return 'other' }
+}
 
 /* A gallery item opts into real responsive markup by supplying `base` + `widths`
    (plus the native `width`/`height`). Those render a crawlable
@@ -126,6 +139,7 @@ export default function Gallery({ images, showAll = false }) {
   const [lightboxIndex, setLightboxIndex] = useState(null)
   const lastFocused = useRef(null)
   const t = useT()
+  const { lang } = useLang()
 
   if (!images || images.length === 0) return null
 
@@ -137,6 +151,14 @@ export default function Gallery({ images, showAll = false }) {
      (indexOf would misresolve a gallery that repeats the same src). */
   const visible = (showAll || expanded) ? images : images.slice(0, INITIAL_COUNT)
   const hasMore = !showAll && images.length > INITIAL_COUNT
+
+  /* How many photos the button will reveal. `t()` returns the key itself when a
+     string is missing, which is what the `!== k` probe below detects. */
+  const remainingCount = images.length - INITIAL_COUNT
+  const showMoreKey =
+    [`tour.showMorePhotos.${pluralCategory(lang, remainingCount)}`, 'tour.showMorePhotos.other']
+      .find((k) => t(k) !== k) || 'tour.showMore'
+  const showMoreLabel = t(showMoreKey, { count: remainingCount })
 
   const openLightbox = (index, el) => {
     lastFocused.current = el
@@ -216,7 +238,7 @@ export default function Gallery({ images, showAll = false }) {
       {hasMore && !expanded && (
         <div className="gallery-show-more">
           <button className="gallery-show-more__btn" onClick={() => setExpanded(true)}>
-            {t('tour.showMore')}
+            {showMoreLabel}
           </button>
         </div>
       )}

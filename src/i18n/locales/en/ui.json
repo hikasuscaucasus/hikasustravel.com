@@ -33,6 +33,8 @@
   "tour.nextImage": "Next image",
   "tour.prevImage": "Previous image",
   "tour.showMore": "Show more",
+  "tour.showMorePhotos.one": "Show 1 more photo",
+  "tour.showMorePhotos.other": "Show {count} more photos",
   "tour.book": "Book",
   "tour.map": "Map",
   "tour.bookThisTour": "Book This Tour",
