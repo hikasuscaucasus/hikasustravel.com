@@ -207,7 +207,14 @@ export default function Gallery({ images, showAll = false }) {
                         loading="lazy"
                         decoding="async"
                         sizes={GALLERY_SIZES}
-                        alt={caption}
+                        /* The <figcaption> and the alt are normally the same
+                           string. An item may separate them by supplying
+                           `imgAlt` — a short place label reads better under the
+                           tile, while alt needs the full descriptive sentence
+                           (the 9-day Wine & Adventure gallery ships both).
+                           Omitting it falls back to `caption`, so every existing
+                           gallery renders exactly as before. */
+                        alt={img.imgAlt || caption}
                         className="gallery-card__img"
                         /* Optional per-item crop anchor. Tiles are a uniform 3:2
                            object-fit:cover box, so a tall portrait keeps only

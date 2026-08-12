@@ -6335,9 +6335,21 @@ export const tours = [
     "type": "private",
     "title": "9-Day Georgia Wine & Adventure Tour",
     "seoTitle": "9-Day Georgia Wine & Adventure Tour: Caucasus Mountains",
-    "heroImage": "/images/files/wine-caucasus-adventure.jpg",
-    "tileImage": "/images/files/wine-caucasus-adventure.jpg",
-    "listingImage": "/images/files/wine-caucasus-adventure.jpg",
+    "heroImage": "/images/files/uplistsikhe-gori-georgia-1200.webp",
+    "heroBgClass": "hero--9day-wine-uplistsikhe",
+    "alt": {
+      "en": "Uplistsikhe ancient rock-hewn cave town overlooking the Mtkvari valley near Gori, Georgia",
+      "de": "Die antike Höhlenstadt Uplisziche über dem Mtkwari-Tal bei Gori, Georgien",
+      "fr": "L'ancienne cité troglodyte d'Ouplistsikhé surplombant la vallée de la Mtkvari près de Gori, Géorgie",
+      "es": "La antigua ciudad rupestre de Uplistsije sobre el valle del Mtkvari, cerca de Gori, Georgia",
+      "nl": "De oude in de rotsen uitgehouwen stad Uplistsiche boven het Mtkvari-dal bij Gori, Georgië",
+      "cs": "Starobylé skalní město Uplisciche nad údolím Mtkvari poblíž Gori, Gruzie",
+      "pl": "Starożytne skalne miasto Uplisciche nad doliną Mtkwari koło Gori, Gruzja"
+    },
+    "ogImage": { "src": "/images/files/uplistsikhe-gori-georgia-og.jpg", "width": 1200, "height": 630 },
+    "tileImage": "/images/files/uplistsikhe-gori-georgia-card-1200.webp",
+    "listingImage": "/images/files/uplistsikhe-gori-georgia-card-1200.webp",
+    "cardPosition": "center",
     "days": 9,
     "description": "Discover the essence of Georgia on this 9-day tour packed with unforgettable experiences.",
     "listingDescription": "Discover the essence of Georgia on this 9-day tour packed with unforgettable experiences.",
@@ -6444,12 +6456,701 @@ export const tours = [
       "Travel insurance."
     ],
     "gallery": [
-      { "src": "/images/files/wine-caucasus-adventure.jpg", "caption": "Kakheti Wine Region", "description": "The cradle of winemaking with 8,000 years of history" },
-      { "src": "/images/files/georgia-tour-03.jpg", "caption": "Old Tbilisi", "description": "Charming cobblestone streets and balconied houses" },
-      { "src": "/images/files/georgia-tour-06.jpg", "caption": "Stalin Museum", "description": "Historic museum in Gori, Georgia" },
-      { "src": "/images/files/georgia-tour-12.jpg", "caption": "Tsinandali Estate", "description": "Historic estate and birthplace of Georgian winemaking" },
-      { "src": "/images/files/Gergeti-Church.jpg", "caption": "Gergeti Trinity Church", "description": "Iconic church with stunning Caucasus mountain views" },
-      { "src": "/images/files/georgia-tour-01.jpg", "caption": "Tbilisi", "description": "Georgia's vibrant capital city" }
+      {
+        "src": "/images/files/tbilisi-cityscape-georgia-1448.webp",
+        "base": "/images/files/tbilisi-cityscape-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Tbilisi",
+          "de": "Tiflis",
+          "fr": "Tbilissi",
+          "es": "Tiflis",
+          "nl": "Tbilisi",
+          "cs": "Tbilisi",
+          "pl": "Tbilisi"
+        },
+        "altText": {
+          "en": "Panoramic view of Tbilisi with Narikala Fortress, the Mtkvari River and cable car, capital of Georgia",
+          "de": "Panoramablick auf Tiflis mit der Festung Narikala, dem Fluss Mtkwari und der Seilbahn, Hauptstadt Georgiens",
+          "fr": "Vue panoramique de Tbilissi avec la forteresse de Narikala, la rivière Mtkvari et le téléphérique, capitale de la Géorgie",
+          "es": "Vista panorámica de Tiflis con la fortaleza de Narikala, el río Mtkvari y el teleférico, capital de Georgia",
+          "nl": "Panorama van Tbilisi met de Narikala-vesting, de rivier de Mtkvari en de kabelbaan, hoofdstad van Georgië",
+          "cs": "Panorama Tbilisi s pevností Narikala, řekou Mtkvari a lanovkou, hlavní město Gruzie",
+          "pl": "Panorama Tbilisi z twierdzą Narikala, rzeką Mtkwari i kolejką linową, stolica Gruzji"
+        }
+      },
+      {
+        "src": "/images/files/old-town-tbilisi-georgia-1448.webp",
+        "base": "/images/files/old-town-tbilisi-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Old Town, Tbilisi",
+          "de": "Altstadt, Tiflis",
+          "fr": "Vieille ville, Tbilissi",
+          "es": "Casco antiguo, Tiflis",
+          "nl": "Oude stad, Tbilisi",
+          "cs": "Staré Město, Tbilisi",
+          "pl": "Starówka, Tbilisi"
+        },
+        "altText": {
+          "en": "Cliffside houses of Old Tbilisi reflected in the Mtkvari River, Georgia",
+          "de": "Die Felsenhäuser der Altstadt von Tiflis spiegeln sich im Fluss Mtkwari, Georgien",
+          "fr": "Les maisons perchées de la vieille ville de Tbilissi se reflétant dans la Mtkvari, Géorgie",
+          "es": "Las casas sobre el acantilado del casco antiguo de Tiflis reflejadas en el río Mtkvari, Georgia",
+          "nl": "De klifhuizen van de oude stad van Tbilisi weerspiegeld in de Mtkvari, Georgië",
+          "cs": "Domy na útesech tbiliského Starého Města zrcadlící se v řece Mtkvari, Gruzie",
+          "pl": "Domy na klifie tbiliskiej starówki odbite w rzece Mtkwari, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/narikala-fortress-tbilisi-georgia-1448.webp",
+        "base": "/images/files/narikala-fortress-tbilisi-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Narikala Fortress, Tbilisi",
+          "de": "Festung Narikala, Tiflis",
+          "fr": "Forteresse de Narikala, Tbilissi",
+          "es": "Fortaleza de Narikala, Tiflis",
+          "nl": "Narikala-vesting, Tbilisi",
+          "cs": "Pevnost Narikala, Tbilisi",
+          "pl": "Twierdza Narikala, Tbilisi"
+        },
+        "altText": {
+          "en": "Ancient Narikala Fortress above the Old Town of Tbilisi, Georgia",
+          "de": "Die antike Festung Narikala über der Altstadt von Tiflis, Georgien",
+          "fr": "L'ancienne forteresse de Narikala dominant la vieille ville de Tbilissi, Géorgie",
+          "es": "La antigua fortaleza de Narikala sobre el casco antiguo de Tiflis, Georgia",
+          "nl": "De oude Narikala-vesting boven de oude stad van Tbilisi, Georgië",
+          "cs": "Starobylá pevnost Narikala nad Starým Městem v Tbilisi, Gruzie",
+          "pl": "Starożytna twierdza Narikala nad starówką Tbilisi, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/holy-trinity-cathedral-tbilisi-georgia-1672.webp",
+        "base": "/images/files/holy-trinity-cathedral-tbilisi-georgia",
+        "widths": [768, 1200, 1600, 1672],
+        "width": 1672,
+        "height": 941,
+        "caption": {
+          "en": "Holy Trinity Cathedral, Tbilisi",
+          "de": "Sameba-Kathedrale, Tiflis",
+          "fr": "Cathédrale Sameba, Tbilissi",
+          "es": "Catedral Sameba, Tiflis",
+          "nl": "Sameba-kathedraal, Tbilisi",
+          "cs": "Katedrála Sameba, Tbilisi",
+          "pl": "Katedra Sameba, Tbilisi"
+        },
+        "altText": {
+          "en": "Holy Trinity Cathedral (Sameba) with its golden dome in Tbilisi, Georgia",
+          "de": "Die Sameba-Kathedrale der Heiligen Dreifaltigkeit mit goldener Kuppel in Tiflis, Georgien",
+          "fr": "La cathédrale de la Sainte-Trinité (Sameba) et sa coupole dorée à Tbilissi, Géorgie",
+          "es": "La catedral de la Santísima Trinidad (Sameba) con su cúpula dorada en Tiflis, Georgia",
+          "nl": "De Heilige Drie-eenheidskathedraal (Sameba) met haar gouden koepel in Tbilisi, Georgië",
+          "cs": "Katedrála Nejsvětější Trojice (Sameba) se zlatou kupolí v Tbilisi, Gruzie",
+          "pl": "Katedra Trójcy Świętej (Sameba) ze złotą kopułą w Tbilisi, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/gabriadze-clock-tower-tbilisi-georgia-1086.webp",
+        "base": "/images/files/gabriadze-clock-tower-tbilisi-georgia",
+        "widths": [768, 1086],
+        "width": 1086,
+        "height": 1448,
+        "objectPosition": "center",
+        "caption": {
+          "en": "Gabriadze Clock Tower, Tbilisi",
+          "de": "Gabriadze-Uhrturm, Tiflis",
+          "fr": "Tour de l'horloge Gabriadze, Tbilissi",
+          "es": "Torre del reloj Gabriadze, Tiflis",
+          "nl": "Gabriadze-klokkentoren, Tbilisi",
+          "cs": "Gabriadzeho hodinová věž, Tbilisi",
+          "pl": "Wieża zegarowa Gabriadzego, Tbilisi"
+        },
+        "altText": {
+          "en": "The leaning Gabriadze Clock Tower in the Old Town of Tbilisi, Georgia",
+          "de": "Der schiefe Gabriadze-Uhrturm in der Altstadt von Tiflis, Georgien",
+          "fr": "La tour de l'horloge penchée de Gabriadze dans la vieille ville de Tbilissi, Géorgie",
+          "es": "La inclinada torre del reloj de Gabriadze en el casco antiguo de Tiflis, Georgia",
+          "nl": "De scheve Gabriadze-klokkentoren in de oude stad van Tbilisi, Georgië",
+          "cs": "Nakloněná Gabriadzeho hodinová věž ve Starém Městě v Tbilisi, Gruzie",
+          "pl": "Pochylona wieża zegarowa Gabriadzego na starówce Tbilisi, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
+        "base": "/images/files/svetitskhoveli-cathedral-mtskheta-georgia",
+        "widths": [768, 1200, 1540],
+        "width": 1540,
+        "height": 1021,
+        "caption": {
+          "en": "Svetitskhoveli Cathedral, Mtskheta",
+          "de": "Swetizchoweli-Kathedrale, Mzcheta",
+          "fr": "Cathédrale de Svétitskhovéli, Mtskheta",
+          "es": "Catedral de Svetitsjoveli, Mtsjeta",
+          "nl": "Svetitschoveli-kathedraal, Mtscheta",
+          "cs": "Katedrála Sveticchoveli, Mccheta",
+          "pl": "Katedra Sweticchoweli, Mccheta"
+        },
+        "altText": {
+          "en": "Svetitskhoveli Cathedral, a UNESCO World Heritage site in Mtskheta, Georgia",
+          "de": "Die Swetizchoweli-Kathedrale, UNESCO-Welterbe in Mzcheta, Georgien",
+          "fr": "La cathédrale de Svétitskhovéli, site du patrimoine mondial de l’UNESCO à Mtskheta, Géorgie",
+          "es": "La catedral de Svetitsjoveli, Patrimonio de la Humanidad de la UNESCO en Mtsjeta, Georgia",
+          "nl": "De Svetitschoveli-kathedraal, UNESCO-werelderfgoed in Mtscheta, Georgië",
+          "cs": "Katedrála Sveticchoveli, památka UNESCO v Mcchetě, Gruzie",
+          "pl": "Katedra Sweticchoweli, obiekt UNESCO w Mcchecie, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/jvari-monastery-aerial-mtskheta-georgia-1920.webp",
+        "base": "/images/files/jvari-monastery-aerial-mtskheta-georgia",
+        "widths": [768, 1200, 1600, 1920],
+        "width": 1920,
+        "height": 1439,
+        "caption": {
+          "en": "Jvari Monastery, Mtskheta",
+          "de": "Dschwari-Kloster, Mzcheta",
+          "fr": "Monastère de Djvari, Mtskheta",
+          "es": "Monasterio de Jvari, Mtsjeta",
+          "nl": "Jvari-klooster, Mtscheta",
+          "cs": "Klášter Džvari, Mccheta",
+          "pl": "Klasztor Dżwari, Mccheta"
+        },
+        "altText": {
+          "en": "The 6th-century Jvari Monastery, a UNESCO World Heritage site above Mtskheta, Georgia",
+          "de": "Das Dschwari-Kloster aus dem 6. Jahrhundert, UNESCO-Welterbe über Mzcheta, Georgien",
+          "fr": "Le monastère de Djvari du VIe siècle, site du patrimoine mondial de l’UNESCO au-dessus de Mtskheta, Géorgie",
+          "es": "El monasterio de Jvari del siglo VI, Patrimonio de la Humanidad de la UNESCO sobre Mtsjeta, Georgia",
+          "nl": "Het 6e-eeuwse Jvari-klooster, UNESCO-werelderfgoed boven Mtscheta, Georgië",
+          "cs": "Klášter Džvari z 6. století, památka UNESCO nad Mcchetou, Gruzie",
+          "pl": "Klasztor Dżwari z VI wieku, obiekt UNESCO nad Mcchetą, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/ananuri-fortress-georgia-1920.webp",
+        "base": "/images/files/ananuri-fortress-georgia",
+        "widths": [768, 1200, 1600, 1920],
+        "width": 1920,
+        "height": 1271,
+        "caption": {
+          "en": "Ananuri Fortress",
+          "de": "Festung Ananuri",
+          "fr": "Forteresse d'Ananouri",
+          "es": "Fortaleza de Ananuri",
+          "nl": "Ananuri-vesting",
+          "cs": "Pevnost Ananuri",
+          "pl": "Twierdza Ananuri"
+        },
+        "altText": {
+          "en": "Ananuri fortress complex on the shore of the Aragvi (Zhinvali) reservoir, Georgia",
+          "de": "Die Festungsanlage Ananuri am Ufer des Aragwi-(Schinwali-)Stausees, Georgien",
+          "fr": "Le complexe fortifié d'Ananouri au bord du réservoir de l'Aragvi (Jinvali), Géorgie",
+          "es": "El complejo fortificado de Ananuri a orillas del embalse del Aragvi (Zhinvali), Georgia",
+          "nl": "Het vestingcomplex Ananuri aan de oever van het Aragvi- (Zhinvali-)stuwmeer, Georgië",
+          "cs": "Pevnostní komplex Ananuri na břehu přehrady Aragvi (Žinvali), Gruzie",
+          "pl": "Kompleks twierdzy Ananuri nad zbiornikiem Aragwi (Żinwali), Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/zhinvali-reservoir-georgia-1448.webp",
+        "base": "/images/files/zhinvali-reservoir-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Zhinvali Reservoir",
+          "de": "Schinwali-Stausee",
+          "fr": "Réservoir de Jinvali",
+          "es": "Embalse de Zhinvali",
+          "nl": "Zhinvali-stuwmeer",
+          "cs": "Přehrada Žinvali",
+          "pl": "Zbiornik Żinwali"
+        },
+        "altText": {
+          "en": "Turquoise waters of Zhinvali Reservoir amid the Caucasus foothills, Georgia",
+          "de": "Das türkisfarbene Wasser des Schinwali-Stausees in den Ausläufern des Kaukasus, Georgien",
+          "fr": "Les eaux turquoise du réservoir de Jinvali au pied du Caucase, Géorgie",
+          "es": "Las aguas turquesas del embalse de Zhinvali entre las estribaciones del Cáucaso, Georgia",
+          "nl": "Het turquoise water van het Zhinvali-stuwmeer in de uitlopers van de Kaukasus, Georgië",
+          "cs": "Tyrkysová voda přehrady Žinvali v podhůří Kavkazu, Gruzie",
+          "pl": "Turkusowe wody zbiornika Żinwali u podnóża Kaukazu, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/gergeti-trinity-church-kazbegi-georgia-1448.webp",
+        "base": "/images/files/gergeti-trinity-church-kazbegi-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Gergeti Trinity Church, Kazbegi",
+          "de": "Gergeti-Kirche, Kasbegi",
+          "fr": "Église de Guerguéti, Kazbegi",
+          "es": "Iglesia de Gergeti, Kazbegi",
+          "nl": "Gergeti-kerk, Kazbegi",
+          "cs": "Kostel Gergeti, Kazbegi",
+          "pl": "Cerkiew Gergeti, Kazbegi"
+        },
+        "altText": {
+          "en": "Gergeti Trinity Church set against the Caucasus mountains near Kazbegi, Georgia",
+          "de": "Die Gergeti-Dreifaltigkeitskirche vor der Kulisse des Kaukasus bei Kasbegi, Georgien",
+          "fr": "L'église de la Trinité de Guerguéti devant les montagnes du Caucase près de Kazbegi, Géorgie",
+          "es": "La iglesia de la Trinidad de Gergeti frente a las montañas del Cáucaso, cerca de Kazbegi, Georgia",
+          "nl": "De Gergeti-Drie-eenheidskerk tegen de achtergrond van de Kaukasus bij Kazbegi, Georgië",
+          "cs": "Kostel Nejsvětější Trojice v Gergeti na pozadí Kavkazu poblíž Kazbegi, Gruzie",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti na tle Kaukazu koło Kazbegi, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/friendship-monument-gudauri-georgia-1448.webp",
+        "base": "/images/files/friendship-monument-gudauri-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Friendship Monument, Gudauri",
+          "de": "Freundschaftsdenkmal, Gudauri",
+          "fr": "Monument de l'Amitié, Gudauri",
+          "es": "Monumento a la Amistad, Gudauri",
+          "nl": "Vriendschapsmonument, Gudauri",
+          "cs": "Památník přátelství, Gudauri",
+          "pl": "Pomnik Przyjaźni, Gudauri"
+        },
+        "altText": {
+          "en": "The mosaic Russia–Georgia Friendship Monument on the Georgian Military Highway at Gudauri, Georgia",
+          "de": "Das Mosaik-Freundschaftsdenkmal Russland–Georgien an der Georgischen Heerstraße bei Gudauri, Georgien",
+          "fr": "Le monument de l'Amitié russo-géorgienne en mosaïque sur la route militaire géorgienne à Gudauri, Géorgie",
+          "es": "El monumento en mosaico a la Amistad ruso-georgiana en la Carretera Militar Georgiana en Gudauri, Georgia",
+          "nl": "Het mozaïek Vriendschapsmonument Rusland–Georgië aan de Georgische Militaire Weg bij Gudauri, Georgië",
+          "cs": "Mozaikový Památník rusko-gruzínského přátelství na Gruzínské vojenské silnici u Gudauri, Gruzie",
+          "pl": "Mozaikowy Pomnik Przyjaźni Rosyjsko-Gruzińskiej przy Gruzińskiej Drodze Wojennej w Gudauri, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/truso-valley-kazbegi-georgia-2400.webp",
+        "base": "/images/files/truso-valley-kazbegi-georgia",
+        "widths": [768, 1200, 1600, 2400],
+        "width": 2400,
+        "height": 1600,
+        "caption": {
+          "en": "Truso Valley, Kazbegi",
+          "de": "Truso-Tal, Kasbegi",
+          "fr": "Vallée de Truso, Kazbegi",
+          "es": "Valle de Truso, Kazbegi",
+          "nl": "Truso-dal, Kazbegi",
+          "cs": "Údolí Truso, Kazbegi",
+          "pl": "Dolina Truso, Kazbegi"
+        },
+        "altText": {
+          "en": "Stone tower and church in the remote Truso Valley near Kazbegi, Georgia",
+          "de": "Steinturm und Kirche im abgelegenen Truso-Tal bei Kasbegi, Georgien",
+          "fr": "Tour de pierre et église dans la vallée isolée de Truso près de Kazbegi, Géorgie",
+          "es": "Torre de piedra e iglesia en el remoto valle de Truso, cerca de Kazbegi, Georgia",
+          "nl": "Stenen toren en kerk in het afgelegen Truso-dal bij Kazbegi, Georgië",
+          "cs": "Kamenná věž a kostel v odlehlém údolí Truso poblíž Kazbegi, Gruzie",
+          "pl": "Kamienna wieża i kościół w odległej dolinie Truso koło Kazbegi, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/kakheti-vineyard-georgia-1280.webp",
+        "base": "/images/files/kakheti-vineyard-georgia",
+        "widths": [768, 1200, 1280],
+        "width": 1280,
+        "height": 853,
+        "caption": {
+          "en": "Kakheti Vineyard",
+          "de": "Weinberg, Kachetien",
+          "fr": "Vignoble, Kakhétie",
+          "es": "Viñedo, Kajetia",
+          "nl": "Wijngaard, Kachetië",
+          "cs": "Vinice, Kachetie",
+          "pl": "Winnica, Kachetia"
+        },
+        "altText": {
+          "en": "Vineyard rows at sunrise in the Kakheti wine region, Georgia",
+          "de": "Weinreben bei Sonnenaufgang in der Weinregion Kachetien, Georgien",
+          "fr": "Rangs de vigne au lever du soleil dans la région viticole de Kakhétie, Géorgie",
+          "es": "Hileras de viñedos al amanecer en la región vinícola de Kajetia, Georgia",
+          "nl": "Wijngaardrijen bij zonsopgang in de wijnregio Kachetië, Georgië",
+          "cs": "Řady vinic za východu slunce ve vinařské oblasti Kachetie, Gruzie",
+          "pl": "Rzędy winnic o wschodzie słońca w regionie winiarskim Kachetia, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/georgian-supra-feast-georgia-1448.webp",
+        "base": "/images/files/georgian-supra-feast-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Georgian Supra Feast",
+          "de": "Georgische Supra",
+          "fr": "Supra géorgienne",
+          "es": "Supra georgiana",
+          "nl": "Georgische supra",
+          "cs": "Gruzínská supra",
+          "pl": "Gruzińska supra"
+        },
+        "altText": {
+          "en": "Traditional Georgian supra feast table laid with khachapuri, salads and grilled dishes, Georgia",
+          "de": "Traditionelle georgische Supra-Festtafel mit Chatschapuri, Salaten und Grillgerichten, Georgien",
+          "fr": "Table de fête traditionnelle géorgienne (supra) garnie de khatchapouri, de salades et de grillades, Géorgie",
+          "es": "Mesa festiva tradicional georgiana (supra) con jachapuri, ensaladas y platos a la brasa, Georgia",
+          "nl": "Traditionele Georgische supra-feesttafel met chatsjapoeri, salades en gegrilde gerechten, Georgië",
+          "cs": "Tradiční gruzínská hostina supra s chačapuri, saláty a grilovanými pokrmy, Gruzie",
+          "pl": "Tradycyjny gruziński stół biesiadny supra z chaczapuri, sałatkami i daniami z grilla, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/erekle-ii-monument-telavi-georgia-1448.webp",
+        "base": "/images/files/erekle-ii-monument-telavi-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Erekle II Monument, Telavi",
+          "de": "Erekle-II.-Denkmal, Telawi",
+          "fr": "Monument d'Héraclius II, Télavi",
+          "es": "Monumento a Erekle II, Telavi",
+          "nl": "Erekle II-monument, Telavi",
+          "cs": "Pomník Erekleho II., Telavi",
+          "pl": "Pomnik Erekle II, Telawi"
+        },
+        "altText": {
+          "en": "Equestrian monument to King Erekle II in Telavi, Kakheti, Georgia",
+          "de": "Reiterdenkmal für König Erekle II. in Telawi, Kachetien, Georgien",
+          "fr": "Monument équestre au roi Héraclius II à Télavi, Kakhétie, Géorgie",
+          "es": "Monumento ecuestre al rey Erekle II en Telavi, Kajetia, Georgia",
+          "nl": "Ruiterstandbeeld van koning Erekle II in Telavi, Kachetië, Georgië",
+          "cs": "Jezdecký pomník krále Erekleho II. v Telavi, Kachetie, Gruzie",
+          "pl": "Pomnik konny króla Erekle II w Telawi, Kachetia, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/tsinandali-estate-georgia-1536.webp",
+        "base": "/images/files/tsinandali-estate-georgia",
+        "widths": [768, 1200, 1536],
+        "width": 1536,
+        "height": 1024,
+        "caption": {
+          "en": "Tsinandali Estate, Kakheti",
+          "de": "Anwesen Zinandali, Kachetien",
+          "fr": "Domaine de Tsinandali, Kakhétie",
+          "es": "Finca de Tsinandali, Kajetia",
+          "nl": "Landgoed Tsinandali, Kachetië",
+          "cs": "Sídlo Cinandali, Kachetie",
+          "pl": "Posiadłość Cinandali, Kachetia"
+        },
+        "altText": {
+          "en": "Historic Tsinandali Estate and its landscaped gardens in Kakheti, Georgia",
+          "de": "Das historische Anwesen Zinandali mit seinem Landschaftsgarten in Kachetien, Georgien",
+          "fr": "Le domaine historique de Tsinandali et ses jardins paysagers en Kakhétie, Géorgie",
+          "es": "La histórica finca de Tsinandali y sus jardines paisajísticos en Kajetia, Georgia",
+          "nl": "Het historische landgoed Tsinandali met zijn aangelegde tuinen in Kachetië, Georgië",
+          "cs": "Historické sídlo Cinandali a jeho krajinářské zahrady v Kachetii, Gruzie",
+          "pl": "Zabytkowa posiadłość Cinandali i jej ogrody krajobrazowe w Kachetii, Gruzja"
+        }
+      }
+    ],
+    "imageObjects": [
+      {
+        "@type": "ImageObject",
+        "@id": "https://www.hikasustravel.com/images/files/uplistsikhe-gori-georgia-1200.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/uplistsikhe-gori-georgia-og.jpg",
+        "name": "Uplistsikhe, Gori",
+        "caption": "Uplistsikhe ancient rock-hewn cave town overlooking the Mtkvari valley near Gori, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Georgia (country)"
+        },
+        "representativeOfPage": true,
+        "width": 1200,
+        "height": 630
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://www.hikasustravel.com/images/files/tbilisi-cityscape-georgia-1200.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/tbilisi-cityscape-georgia-1200.webp",
+        "name": "Tbilisi",
+        "caption": "Panoramic view of Tbilisi with Narikala Fortress, the Mtkvari River and cable car, capital of Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Georgia (country)"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://www.hikasustravel.com/images/files/old-town-tbilisi-georgia-1200.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/old-town-tbilisi-georgia-1200.webp",
+        "name": "Old Town, Tbilisi",
+        "caption": "Cliffside houses of Old Tbilisi reflected in the Mtkvari River, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Georgia (country)"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://www.hikasustravel.com/images/files/narikala-fortress-tbilisi-georgia-1200.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/narikala-fortress-tbilisi-georgia-1200.webp",
+        "name": "Narikala Fortress, Tbilisi",
+        "caption": "Ancient Narikala Fortress above the Old Town of Tbilisi, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Georgia (country)"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://www.hikasustravel.com/images/files/holy-trinity-cathedral-tbilisi-georgia-1200.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/holy-trinity-cathedral-tbilisi-georgia-1200.webp",
+        "name": "Holy Trinity Cathedral, Tbilisi",
+        "caption": "Holy Trinity Cathedral (Sameba) with its golden dome in Tbilisi, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Georgia (country)"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://www.hikasustravel.com/images/files/gabriadze-clock-tower-tbilisi-georgia-1086.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/gabriadze-clock-tower-tbilisi-georgia-1086.webp",
+        "name": "Gabriadze Clock Tower, Tbilisi",
+        "caption": "The leaning Gabriadze Clock Tower in the Old Town of Tbilisi, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Georgia (country)"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://www.hikasustravel.com/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1200.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1200.webp",
+        "name": "Svetitskhoveli Cathedral, Mtskheta",
+        "caption": "Svetitskhoveli Cathedral, a UNESCO World Heritage site in Mtskheta, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Georgia (country)"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://www.hikasustravel.com/images/files/jvari-monastery-aerial-mtskheta-georgia-1200.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/jvari-monastery-aerial-mtskheta-georgia-1200.webp",
+        "name": "Jvari Monastery, Mtskheta",
+        "caption": "The 6th-century Jvari Monastery, a UNESCO World Heritage site above Mtskheta, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Georgia (country)"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://www.hikasustravel.com/images/files/ananuri-fortress-georgia-1200.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/ananuri-fortress-georgia-1200.webp",
+        "name": "Ananuri Fortress",
+        "caption": "Ananuri fortress complex on the shore of the Aragvi (Zhinvali) reservoir, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Georgia (country)"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://www.hikasustravel.com/images/files/zhinvali-reservoir-georgia-1200.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/zhinvali-reservoir-georgia-1200.webp",
+        "name": "Zhinvali Reservoir",
+        "caption": "Turquoise waters of Zhinvali Reservoir amid the Caucasus foothills, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Georgia (country)"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://www.hikasustravel.com/images/files/gergeti-trinity-church-kazbegi-georgia-1200.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/gergeti-trinity-church-kazbegi-georgia-1200.webp",
+        "name": "Gergeti Trinity Church, Kazbegi",
+        "caption": "Gergeti Trinity Church set against the Caucasus mountains near Kazbegi, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Georgia (country)"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://www.hikasustravel.com/images/files/friendship-monument-gudauri-georgia-1200.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/friendship-monument-gudauri-georgia-1200.webp",
+        "name": "Friendship Monument, Gudauri",
+        "caption": "The mosaic Russia–Georgia Friendship Monument on the Georgian Military Highway at Gudauri, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Georgia (country)"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://www.hikasustravel.com/images/files/truso-valley-kazbegi-georgia-1200.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/truso-valley-kazbegi-georgia-1200.webp",
+        "name": "Truso Valley, Kazbegi",
+        "caption": "Stone tower and church in the remote Truso Valley near Kazbegi, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Georgia (country)"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://www.hikasustravel.com/images/files/kakheti-vineyard-georgia-1200.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/kakheti-vineyard-georgia-1200.webp",
+        "name": "Kakheti Vineyard",
+        "caption": "Vineyard rows at sunrise in the Kakheti wine region, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Georgia (country)"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://www.hikasustravel.com/images/files/georgian-supra-feast-georgia-1200.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/georgian-supra-feast-georgia-1200.webp",
+        "name": "Georgian Supra Feast",
+        "caption": "Traditional Georgian supra feast table laid with khachapuri, salads and grilled dishes, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Georgia (country)"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://www.hikasustravel.com/images/files/erekle-ii-monument-telavi-georgia-1200.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/erekle-ii-monument-telavi-georgia-1200.webp",
+        "name": "Erekle II Monument, Telavi",
+        "caption": "Equestrian monument to King Erekle II in Telavi, Kakheti, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Georgia (country)"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://www.hikasustravel.com/images/files/tsinandali-estate-georgia-1200.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/tsinandali-estate-georgia-1200.webp",
+        "name": "Tsinandali Estate, Kakheti",
+        "caption": "Historic Tsinandali Estate and its landscaped gardens in Kakheti, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Georgia (country)"
+        }
+      }
     ],
     "map": {
       "center": [

@@ -185,7 +185,13 @@ export default function TourDetailPage() {
 
     return {
       title, description, keywords, path: `${prefix}/${slug}`,
-      image: tour.heroImage, imageAlt: heroAlt,
+      image: tour.heroImage,
+      // og:image:alt / twitter:image:alt. Normally comes from imageMeta; a tour
+      // that ships a packaged @graph deliberately has no imageMeta (it would emit
+      // a second representativeOfPage node), so a plain per-locale `tour.alt`
+      // supplies it instead — this is the same field prerender.js reads, so the
+      // static and hydrated heads agree.
+      imageAlt: heroAlt || (tour.alt ? (tour.alt[lang] || tour.alt.en) : undefined),
       ogImage: tour.ogImage?.src, ogImageWidth: tour.ogImage?.width, ogImageHeight: tour.ogImage?.height,
       jsonLd: finalJsonLd,
     }
@@ -224,9 +230,12 @@ export default function TourDetailPage() {
   const localizedGallery = useMemo(
     () => (tour?.gallery || []).map((img) => {
       const withAlt = img.alt ? { ...img, description: img.alt[lang] || img.alt.en } : img
+      // `altText` (per-locale) is the <img alt> when it must differ from the
+      // visible caption; Gallery falls back to the caption when it is absent.
+      const withImgAlt = img.altText ? { ...withAlt, imgAlt: img.altText[lang] || img.altText.en } : withAlt
       return img.caption && typeof img.caption === 'object'
-        ? { ...withAlt, caption: img.caption[lang] || img.caption.en }
-        : withAlt
+        ? { ...withImgAlt, caption: img.caption[lang] || img.caption.en }
+        : withImgAlt
     }),
     [tour, lang]
   )
