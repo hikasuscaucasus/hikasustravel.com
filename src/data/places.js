@@ -11444,7 +11444,54 @@ export const sites = [
     slug: 'gveleti-waterfalls', name: 'Gveleti Waterfalls',
     parentType: 'city', parent: 'kazbegi', published: true,
     seoKey: 'gveletiWaterfalls', contentKey: 'gveletiWaterfalls',
-    image: '/images/files/georgia-home.jpg',
+    // Hero: the real Gveleti waterfall in its narrow rocky gorge, via the
+    // .hero--gveleti-waterfalls image-set() ladder (styles.css), replacing the
+    // shared georgia-home.jpg placeholder. This is the SAME photo (and the same
+    // localized strings) already used as the inline figure on the Kazbegi
+    // things-to-do page, so the two pages cannot drift apart. It is NOT the
+    // green-forest frame that was removed from the 10-day tour as a different
+    // waterfall. Native 3:2 (1200x800) — the ladder is exactly 768/1200 with the
+    // top breakpoint at min-width:768. NO 1448/1600/2400 rung, no upscale.
+    // background-position: center center — the fall runs down the middle of the
+    // frame with gorge walls either side and a sky gap at top centre, so a centred
+    // crop holds at 360 AND on desktop (both rendered before choosing); the shared
+    // .coverme::after scrim carries the H1. No dedicated 1.91:1 crop exists, so
+    // og:image falls back to `image` (the 1200 rung), as it does for every other
+    // site without one.
+    image: '/images/kazbegi/gveleti-waterfall-kazbegi-georgia-1200.webp',
+    imageAvif: '/images/kazbegi/gveleti-waterfall-kazbegi-georgia-1200.avif',
+    heroClass: 'hero--gveleti-waterfalls',
+    // Hero image SEO/AEO metadata (owner's own photo -> brand credit, set by
+    // SitePage). The hero is a CSS background (no <img alt>), so the localized alt
+    // lives here and is emitted as the ImageObject caption + og:image:alt /
+    // twitter:image:alt per locale. `alt` and `caption` are copied verbatim from
+    // the kazbegi.thingsToDo inline entry for this same file.
+    imageMeta: {
+      width: 1200, height: 800,
+      name: 'A waterfall in the narrow rocky gorge at Gveleti near Stepantsminda, Kazbegi, Georgia',
+      description: 'A waterfall falling down the rock face of a narrow gorge at Gveleti, near Stepantsminda, Kazbegi Municipality, Mtskheta-Mtianeti, Georgia.',
+      locationName: 'Gveleti Waterfall, Kazbegi Municipality, Mtskheta-Mtianeti, Georgia',
+      locality: 'Gveleti', region: 'Mtskheta-Mtianeti', country: 'GE',
+      geo: { lat: 42.7211, lng: 44.6194 },
+      alt: {
+        en: 'A waterfall in the narrow rocky gorge at Gveleti near Stepantsminda, Kazbegi, Georgia',
+        de: 'Ein Wasserfall in der engen Felsschlucht von Gveleti bei Stepantsminda, Kazbegi, Georgien',
+        fr: "Une cascade dans l'étroite gorge rocheuse de Gveleti, près de Stepantsminda, Kazbegi, Géorgie",
+        es: 'Una cascada en el estrecho desfiladero rocoso de Gveleti, cerca de Stepantsminda, Kazbegi, Georgia',
+        nl: 'Een waterval in de nauwe rotskloof bij Gveleti nabij Stepantsminda, Kazbegi, Georgië',
+        cs: 'Vodopád v úzké skalní rokli u Gveleti nedaleko Stepantsmindy, Kazbegi, Gruzie',
+        pl: 'Wodospad w wąskim skalnym wąwozie w Gveleti koło Stepantsmindy, Kazbegi, Gruzja',
+      },
+      caption: {
+        en: 'The Gveleti waterfall dropping down the rock face of its narrow gorge near Stepantsminda.',
+        de: 'Der Wasserfall von Gveleti stürzt die Felswand seiner engen Schlucht hinab, unweit von Stepantsminda.',
+        fr: "La cascade de Gveleti dévale la paroi rocheuse de son étroite gorge, non loin de Stepantsminda.",
+        es: 'La cascada de Gveleti cae por la pared rocosa de su estrecho desfiladero, cerca de Stepantsminda.',
+        nl: 'De waterval van Gveleti stort omlaag langs de rotswand van zijn nauwe kloof, vlak bij Stepantsminda.',
+        cs: 'Vodopád Gveleti padá po skalní stěně své úzké rokle nedaleko Stepantsmindy.',
+        pl: 'Wodospad Gveleti spada po skalnej ścianie swojego wąskiego wąwozu niedaleko Stepantsmindy.',
+      },
+    },
   },
   {
     slug: 'juta', name: 'Juta & the Chaukhi Massif',

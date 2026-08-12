@@ -3110,6 +3110,35 @@ section {
   }
 }
 /* Native ceiling 1122 is the top rung. Do not add a 1200/1448/1600/2400 breakpoint. */
+
+/* Gveleti Waterfalls hero — the real Gveleti fall in its narrow rocky gorge,
+   same opt-in heroClass mechanism, replacing the shared georgia-home.jpg
+   placeholder. Native 3:2 (1200x800) is the ceiling, so the ladder is exactly
+   768/1200 with the top breakpoint at min-width:768. NO 1448/1600/2400 rung, no
+   upscale. background-position: center center — the fall runs down the middle
+   with gorge walls either side and a sky gap at top centre, which is the H1 zone;
+   the shared .coverme::after scrim already provides the readable text layer.
+   plain url() = image-set() fallback. */
+.hero--gveleti-waterfalls {
+  background-image: url("/images/kazbegi/gveleti-waterfall-kazbegi-georgia-1200.webp");
+  background-image: image-set(
+    url("/images/kazbegi/gveleti-waterfall-kazbegi-georgia-768.avif") type("image/avif"),
+    url("/images/kazbegi/gveleti-waterfall-kazbegi-georgia-768.webp") type("image/webp")
+  );
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .hero--gveleti-waterfalls {
+    background-image: image-set(
+      url("/images/kazbegi/gveleti-waterfall-kazbegi-georgia-1200.avif") type("image/avif"),
+      url("/images/kazbegi/gveleti-waterfall-kazbegi-georgia-1200.webp") type("image/webp")
+    );
+  }
+}
+/* No rung above 1200 (native ceiling). */
+
 /* Elia Hill (St Elias Church) hero — per-page CSS background (same opt-in mechanism
    as .hero--juta; the Kazbegi Elia-Hill sunset viewpoint). Native 4:3 (1448x1086),
    just UNDER the usual 1600 rung, so the ladder is exactly 768/1200/1448 with the top
