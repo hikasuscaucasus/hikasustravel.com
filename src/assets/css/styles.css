@@ -648,37 +648,38 @@ section {
 }
 /* No rung above 1448 (native ceiling). */
 
-/* 9-Day Georgia Wine & Adventure tour hero — Uplistsikhe cave town above the
-   Mtkvari valley, same opt-in .heroBgClass mechanism. Ladder 768/1200/1448 —
-   native ceiling 1448 (1448x1086), so no 1600/2400 rung and nothing is upscaled.
-   background-position: center (what the package asks for) and it is right here:
-   the frame is horizontal bands — sky, ridge, forest, carved rock terrace — so
-   the 100vh cover crop keeps the carved rock at 360px AND the full valley on
-   desktop. Both ends were rendered and compared before this was chosen.
+/* 9-Day Georgia Wine & Adventure tour hero — the cliffside houses of Old
+   Tbilisi over the Mtkvari, same opt-in .heroBgClass mechanism. Ladder
+   768/1200/1448 — native ceiling 1448 (1448x1086), so no 1600/2400 rung and
+   nothing is upscaled. Replaces the Uplistsikhe hero, which was removed as
+   off-route: the itinerary has no Gori stop.
+   background-position: center — the frame is horizontal bands (river, cliff
+   face, houses, sky) with the houses just above centre, so the 100vh cover crop
+   keeps the cliff AND the houses at 360px and shows the full span on desktop.
    plain url() = image-set() fallback. */
-.hero--9day-wine-uplistsikhe {
-  background-image: url("/images/files/uplistsikhe-gori-georgia-1200.webp");
+.hero--9day-wine-old-town {
+  background-image: url("/images/files/old-town-tbilisi-georgia-1200.webp");
   background-image: image-set(
-    url("/images/files/uplistsikhe-gori-georgia-768.avif") type("image/avif"),
-    url("/images/files/uplistsikhe-gori-georgia-768.webp") type("image/webp")
+    url("/images/files/old-town-tbilisi-georgia-768.avif") type("image/avif"),
+    url("/images/files/old-town-tbilisi-georgia-768.webp") type("image/webp")
   );
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
-  .hero--9day-wine-uplistsikhe {
+  .hero--9day-wine-old-town {
     background-image: image-set(
-      url("/images/files/uplistsikhe-gori-georgia-1200.avif") type("image/avif"),
-      url("/images/files/uplistsikhe-gori-georgia-1200.webp") type("image/webp")
+      url("/images/files/old-town-tbilisi-georgia-1200.avif") type("image/avif"),
+      url("/images/files/old-town-tbilisi-georgia-1200.webp") type("image/webp")
     );
   }
 }
 @media (min-width: 1200px) {
-  .hero--9day-wine-uplistsikhe {
+  .hero--9day-wine-old-town {
     background-image: image-set(
-      url("/images/files/uplistsikhe-gori-georgia-1448.avif") type("image/avif"),
-      url("/images/files/uplistsikhe-gori-georgia-1448.webp") type("image/webp")
+      url("/images/files/old-town-tbilisi-georgia-1448.avif") type("image/avif"),
+      url("/images/files/old-town-tbilisi-georgia-1448.webp") type("image/webp")
     );
   }
 }

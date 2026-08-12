@@ -6335,20 +6335,19 @@ export const tours = [
     "type": "private",
     "title": "9-Day Georgia Wine & Adventure Tour",
     "seoTitle": "9-Day Georgia Wine & Adventure Tour: Caucasus Mountains",
-    "heroImage": "/images/files/uplistsikhe-gori-georgia-1200.webp",
-    "heroBgClass": "hero--9day-wine-uplistsikhe",
+    "heroImage": "/images/files/old-town-tbilisi-georgia-1200.webp",
+    "heroBgClass": "hero--9day-wine-old-town",
     "alt": {
-      "en": "Uplistsikhe ancient rock-hewn cave town overlooking the Mtkvari valley near Gori, Georgia",
-      "de": "Die antike Höhlenstadt Uplisziche über dem Mtkwari-Tal bei Gori, Georgien",
-      "fr": "L'ancienne cité troglodyte d'Ouplistsikhé surplombant la vallée de la Mtkvari près de Gori, Géorgie",
-      "es": "La antigua ciudad rupestre de Uplistsije sobre el valle del Mtkvari, cerca de Gori, Georgia",
-      "nl": "De oude in de rotsen uitgehouwen stad Uplistsiche boven het Mtkvari-dal bij Gori, Georgië",
-      "cs": "Starobylé skalní město Uplisciche nad údolím Mtkvari poblíž Gori, Gruzie",
-      "pl": "Starożytne skalne miasto Uplisciche nad doliną Mtkwari koło Gori, Gruzja"
+      "en": "Cliffside houses of Old Tbilisi reflected in the Mtkvari River, Georgia",
+      "de": "Die Felsenhäuser der Altstadt von Tiflis spiegeln sich im Fluss Mtkwari, Georgien",
+      "fr": "Les maisons perchées de la vieille ville de Tbilissi se reflétant dans la Mtkvari, Géorgie",
+      "es": "Las casas sobre el acantilado del casco antiguo de Tiflis reflejadas en el río Mtkvari, Georgia",
+      "nl": "De klifhuizen van de oude stad van Tbilisi weerspiegeld in de Mtkvari, Georgië",
+      "cs": "Domy na útesech tbiliského Starého Města zrcadlící se v řece Mtkvari, Gruzie",
+      "pl": "Domy na klifie tbiliskiej starówki odbite w rzece Mtkwari, Gruzja"
     },
-    "ogImage": { "src": "/images/files/uplistsikhe-gori-georgia-og.jpg", "width": 1200, "height": 630 },
-    "tileImage": "/images/files/uplistsikhe-gori-georgia-card-1200.webp",
-    "listingImage": "/images/files/uplistsikhe-gori-georgia-card-1200.webp",
+    "tileImage": "/images/files/old-town-tbilisi-georgia-1200.webp",
+    "listingImage": "/images/files/old-town-tbilisi-georgia-1200.webp",
     "cardPosition": "center",
     "days": 9,
     "description": "Discover the essence of Georgia on this 9-day tour packed with unforgettable experiences.",
@@ -6861,26 +6860,6 @@ export const tours = [
     "imageObjects": [
       {
         "@type": "ImageObject",
-        "@id": "https://www.hikasustravel.com/images/files/uplistsikhe-gori-georgia-1200.webp#image",
-        "contentUrl": "https://www.hikasustravel.com/images/files/uplistsikhe-gori-georgia-og.jpg",
-        "name": "Uplistsikhe, Gori",
-        "caption": "Uplistsikhe ancient rock-hewn cave town overlooking the Mtkvari valley near Gori, Georgia",
-        "creditText": "Hikasus Travel",
-        "creator": {
-          "@type": "Organization",
-          "name": "Hikasus Travel"
-        },
-        "copyrightNotice": "© Hikasus Travel",
-        "contentLocation": {
-          "@type": "Place",
-          "name": "Georgia (country)"
-        },
-        "representativeOfPage": true,
-        "width": 1200,
-        "height": 630
-      },
-      {
-        "@type": "ImageObject",
         "@id": "https://www.hikasustravel.com/images/files/tbilisi-cityscape-georgia-1200.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/tbilisi-cityscape-georgia-1200.webp",
         "name": "Tbilisi",
@@ -6911,7 +6890,8 @@ export const tours = [
         "contentLocation": {
           "@type": "Place",
           "name": "Georgia (country)"
-        }
+        },
+        "representativeOfPage": true
       },
       {
         "@type": "ImageObject",
