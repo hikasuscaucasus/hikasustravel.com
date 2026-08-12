@@ -648,6 +648,35 @@ section {
 }
 /* No rung above 1448 (native ceiling). */
 
+/* Georgia's Wonders 11-Day Grand Tour hero — the Ali & Nino statue at Batumi,
+   same opt-in .heroBgClass mechanism. Ladder is only 768/1024: the source is a
+   1024x1536 PORTRAIT (native ceiling 1024), so there is no 1200/1448 rung and
+   nothing is upscaled on disk.
+   background-position: center 25% — .td-hero is min-height:100vh, so a 2:3 frame
+   in a wide box keeps only the middle band; a centred crop cuts both figures off
+   at the waist. 25% was rendered against 50% at 360x640 and 1440x800 before it
+   was chosen: it holds the heads and the joined torsos at both ends.
+   plain url() = image-set() fallback. */
+.hero--georgia-wonders-ali-nino {
+  background-image: url("/images/tours/georgia-wonders-11-day/ali-and-nino-statue-batumi-georgia/ali-and-nino-statue-batumi-georgia-1024.webp");
+  background-image: image-set(
+    url("/images/tours/georgia-wonders-11-day/ali-and-nino-statue-batumi-georgia/ali-and-nino-statue-batumi-georgia-768.avif") type("image/avif"),
+    url("/images/tours/georgia-wonders-11-day/ali-and-nino-statue-batumi-georgia/ali-and-nino-statue-batumi-georgia-768.webp") type("image/webp")
+  );
+  background-position: center 25%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .hero--georgia-wonders-ali-nino {
+    background-image: image-set(
+      url("/images/tours/georgia-wonders-11-day/ali-and-nino-statue-batumi-georgia/ali-and-nino-statue-batumi-georgia-1024.avif") type("image/avif"),
+      url("/images/tours/georgia-wonders-11-day/ali-and-nino-statue-batumi-georgia/ali-and-nino-statue-batumi-georgia-1024.webp") type("image/webp")
+    );
+  }
+}
+/* No rung above 1024 (native ceiling of the portrait source). */
+
 /* 7-Day Cultural Kutaisi→Tbilisi tour hero — Prometheus Cave, same opt-in
    .heroBgClass mechanism. Ladder 768/1200/1536 — native ceiling 1536.
    background-position stays CENTRE (what the package asks for): the lit
