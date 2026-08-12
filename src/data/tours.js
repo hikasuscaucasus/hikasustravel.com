@@ -7586,23 +7586,6 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/georgia-10-days-celebration/gveleti-waterfall-kazbegi-georgia/gveleti-waterfall-kazbegi-georgia-2400.webp",
-        "base": "/images/tours/georgia-10-days-celebration/gveleti-waterfall-kazbegi-georgia/gveleti-waterfall-kazbegi-georgia",
-        "widths": [768, 1200, 1600, 2400],
-        "width": 2400,
-        "height": 3200,
-        "objectPosition": "center 30%",
-        "caption": {
-          "en": "The Gveleti Waterfall cascading through a green gorge near Stepantsminda, Georgia",
-          "de": "Der Gveleti-Wasserfall, der durch eine grüne Schlucht bei Stepanzminda stürzt, Georgien",
-          "fr": "La cascade de Gveleti dévalant une gorge verdoyante près de Stepantsminda, Géorgie",
-          "es": "La cascada de Gveleti cayendo por un desfiladero verde cerca de Stepantsminda, Georgia",
-          "nl": "De Gveleti-waterval die door een groene kloof stort bij Stepantsminda, Georgië",
-          "cs": "Vodopád Gveleti padající zelenou soutěskou poblíž Stepancmindy, Gruzie",
-          "pl": "Wodospad Gveleti spływający przez zielony wąwóz koło Stepancmindy, Gruzja"
-        }
-      },
-      {
         "src": "/images/tours/georgia-10-days-celebration/stalin-museum-gori-georgia/stalin-museum-gori-georgia-1536.webp",
         "base": "/images/tours/georgia-10-days-celebration/stalin-museum-gori-georgia/stalin-museum-gori-georgia",
         "widths": [768, 1200, 1536],
@@ -7879,19 +7862,6 @@ export const tours = [
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-10-days-celebration/mount-kazbek-stepantsminda-georgia/mount-kazbek-stepantsminda-georgia-1024.webp",
         "name": "Mount Kazbek, Stepantsminda",
         "caption": "Snow-capped Mount Kazbek rising above Stepantsminda village, Georgia",
-        "creditText": "Hikasus Travel",
-        "creator": {
-          "@type": "Organization",
-          "name": "Hikasus Travel"
-        },
-        "copyrightNotice": "© Hikasus Travel",
-        "representativeOfPage": false
-      },
-      {
-        "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-10-days-celebration/gveleti-waterfall-kazbegi-georgia/gveleti-waterfall-kazbegi-georgia-2400.webp",
-        "name": "Gveleti Waterfall, Kazbegi",
-        "caption": "The Gveleti Waterfall cascading through a green gorge near Stepantsminda, Georgia",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
