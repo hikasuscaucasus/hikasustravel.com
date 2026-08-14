@@ -11319,9 +11319,21 @@ export const tours = [
     "slug": "ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty",
     "type": "private",
     "title": "Ultimate 15-Day Georgia Tour: From Tbilisi to Svaneti – Wine, Culture, and Natural Beauty",
-    "heroImage": "/images/files/svaneti-wine-culture-tour.jpg",
-    "tileImage": "/images/files/svaneti-wine-culture-tour.jpg",
-    "listingImage": "/images/files/svaneti-wine-culture-tour.jpg",
+    "heroImage": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/holy-trinity-cathedral-tbilisi-georgia-1200.webp",
+    "heroBgClass": "hero--15day-ultimate-sameba",
+    "alt": {
+      "en": "Holy Trinity Cathedral (Sameba) with golden dome under a blue sky in Tbilisi, Georgia",
+      "de": "Dreifaltigkeitskathedrale (Sameba) mit goldener Kuppel unter blauem Himmel in Tiflis, Georgien",
+      "fr": "Cathédrale de la Sainte-Trinité (Saméba) à coupole dorée sous un ciel bleu à Tbilissi, Géorgie",
+      "es": "Catedral de la Santísima Trinidad (Sameba) con cúpula dorada bajo cielo azul en Tiflis, Georgia",
+      "nl": "Heilige-Drie-eenheidskathedraal (Sameba) met gouden koepel onder blauwe lucht in Tbilisi, Georgië",
+      "cs": "Katedrála Nejsvětější Trojice (Sameba) se zlatou kupolí pod modrou oblohou v Tbilisi, Gruzie",
+      "pl": "Katedra Trójcy Świętej (Sameba) ze złotą kopułą pod błękitnym niebem w Tbilisi, Gruzja"
+    },
+    "ogImage": { "src": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/holy-trinity-cathedral-tbilisi-georgia-og-1200x630.jpg", "width": 1200, "height": 630 },
+    "tileImage": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/holy-trinity-cathedral-tbilisi-georgia-1200.webp",
+    "listingImage": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/holy-trinity-cathedral-tbilisi-georgia-1200.webp",
+    "cardPosition": "center",
     "days": 15,
     "description": "Embark on a 15-day adventure through Georgia, a land where ancient history, breathtaking landscapes, and rich traditions come together.",
     "listingDescription": "Embark on a 15-day adventure through Georgia, a land where ancient history, breathtaking landscapes, and rich traditions come together.",
@@ -11471,13 +11483,1051 @@ export const tours = [
       "Travel insurance."
     ],
     "gallery": [
-      { "src": "/images/files/svaneti-wine-culture-tour.jpg", "caption": "Upper Svaneti", "description": "UNESCO-listed mountain region with ancient towers" },
-      { "src": "/images/files/georgia-tour-04.jpg", "caption": "Ananuri Fortress", "description": "Medieval fortress on the Aragvi River" },
-      { "src": "/images/files/georgia-tour-10.jpg", "caption": "Batumi", "description": "Black Sea coastal city with modern architecture" },
-      { "src": "/images/files/georgia-tour-14.jpg", "caption": "Qvevri Winemaking", "description": "Traditional Georgian clay vessel winemaking" },
-      { "src": "/images/files/Gveleti-Waterfall.jpg", "caption": "Gveleti Waterfall", "description": "Beautiful waterfall near Stepantsminda" },
-      { "src": "/images/files/georgia-tour-02.jpg", "caption": "Holy Trinity Cathedral", "description": "The largest cathedral in Georgia, Tbilisi" }
+      {
+        "src": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/holy-trinity-cathedral-tbilisi-georgia-1672.webp",
+        "base": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/holy-trinity-cathedral-tbilisi-georgia",
+        "widths": [768, 1200, 1600, 1672],
+        "fallbackWidth": 1200,
+        "width": 1672,
+        "height": 941,
+        "caption": {
+          "en": "Holy Trinity Cathedral, Tbilisi",
+          "de": "Sameba-Kathedrale, Tiflis",
+          "fr": "Cathédrale Sameba, Tbilissi",
+          "es": "Catedral Sameba, Tiflis",
+          "nl": "Sameba-kathedraal, Tbilisi",
+          "cs": "Katedrála Sameba, Tbilisi",
+          "pl": "Katedra Sameba, Tbilisi"
+        },
+        "altText": {
+          "en": "Holy Trinity Cathedral (Sameba) with golden dome under a blue sky in Tbilisi, Georgia",
+          "de": "Dreifaltigkeitskathedrale (Sameba) mit goldener Kuppel unter blauem Himmel in Tiflis, Georgien",
+          "fr": "Cathédrale de la Sainte-Trinité (Saméba) à coupole dorée sous un ciel bleu à Tbilissi, Géorgie",
+          "es": "Catedral de la Santísima Trinidad (Sameba) con cúpula dorada bajo cielo azul en Tiflis, Georgia",
+          "nl": "Heilige-Drie-eenheidskathedraal (Sameba) met gouden koepel onder blauwe lucht in Tbilisi, Georgië",
+          "cs": "Katedrála Nejsvětější Trojice (Sameba) se zlatou kupolí pod modrou oblohou v Tbilisi, Gruzie",
+          "pl": "Katedra Trójcy Świętej (Sameba) ze złotą kopułą pod błękitnym niebem w Tbilisi, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/narikala-fortress-tbilisi-georgia-1448.webp",
+        "base": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/narikala-fortress-tbilisi-georgia",
+        "widths": [768, 1200, 1448],
+        "fallbackWidth": 1200,
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Narikala Fortress, Tbilisi",
+          "de": "Festung Narikala, Tiflis",
+          "fr": "Forteresse de Narikala, Tbilissi",
+          "es": "Fortaleza de Narikala, Tiflis",
+          "nl": "Narikala-vesting, Tbilisi",
+          "cs": "Pevnost Narikala, Tbilisi",
+          "pl": "Twierdza Narikala, Tbilisi"
+        },
+        "altText": {
+          "en": "Ancient Narikala Fortress walls above the Old Town of Tbilisi, Georgia",
+          "de": "Alte Mauern der Narikala-Festung über der Altstadt von Tiflis, Georgien",
+          "fr": "Anciens remparts de la forteresse de Narikala au-dessus de la vieille ville de Tbilissi, Géorgie",
+          "es": "Antiguas murallas de la fortaleza de Narikala sobre el casco antiguo de Tiflis, Georgia",
+          "nl": "Oude muren van de Narikala-vesting boven de oude stad van Tbilisi, Georgië",
+          "cs": "Starobylé hradby pevnosti Narikala nad starým městem Tbilisi, Gruzie",
+          "pl": "Starożytne mury twierdzy Narikala nad starówką Tbilisi, Gruzja"
+        }
+      },
+      {
+        "src": "/images/kakheti/sighnaghi-ridge-alazani-valley-kakheti-georgia-1448.webp",
+        "base": "/images/kakheti/sighnaghi-ridge-alazani-valley-kakheti-georgia",
+        "widths": [768, 1200, 1448],
+        "fallbackWidth": 1200,
+        "width": 1448,
+        "height": 877,
+        "caption": {
+          "en": "Sighnaghi, Kakheti",
+          "de": "Sighnaghi, Kachetien",
+          "fr": "Sighnaghi, Kakhétie",
+          "es": "Sighnaghi, Kajetia",
+          "nl": "Sighnaghi, Kachetië",
+          "cs": "Sighnaghi, Kachetie",
+          "pl": "Sighnaghi, Kachetia"
+        },
+        "altText": {
+          "en": "Hilltop town of Sighnaghi overlooking the Alazani Valley in Kakheti, Georgia",
+          "de": "Die Hügelstadt Sighnaghi mit Blick über das Alasani-Tal in Kachetien, Georgien",
+          "fr": "La ville perchée de Sighnaghi dominant la vallée de l'Alazani en Kakhétie, Géorgie",
+          "es": "El pueblo en la colina de Sighnaghi con vistas al valle de Alazani en Kajetia, Georgia",
+          "nl": "Het heuveltopstadje Sighnaghi met uitzicht over de Alazani-vallei in Kachetië, Georgië",
+          "cs": "Městečko Sighnaghi na kopci s výhledem na Alazanské údolí v Kachetii, Gruzie",
+          "pl": "Miasteczko Sighnaghi na wzgórzu z widokiem na Dolinę Alazani w Kachetii, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/erekle-monument-telavi-georgia-1448.webp",
+        "base": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/erekle-monument-telavi-georgia",
+        "widths": [768, 1200, 1448],
+        "fallbackWidth": 1200,
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Erekle II Monument, Telavi",
+          "de": "Erekle-II.-Denkmal, Telawi",
+          "fr": "Monument d'Erekle II, Telavi",
+          "es": "Monumento a Erekle II, Telavi",
+          "nl": "Erekle II-monument, Telavi",
+          "cs": "Pomník Erekleho II., Telavi",
+          "pl": "Pomnik Erekle II, Telawi"
+        },
+        "altText": {
+          "en": "Bronze equestrian monument to King Erekle II against a blue sky in Telavi, Georgia",
+          "de": "Bronzenes Reiterdenkmal für König Erekle II. vor blauem Himmel in Telawi, Georgien",
+          "fr": "Monument équestre en bronze du roi Erekle II sur fond de ciel bleu à Telavi, Géorgie",
+          "es": "Monumento ecuestre de bronce al rey Erekle II bajo un cielo azul en Telavi, Georgia",
+          "nl": "Bronzen ruiterstandbeeld van koning Erekle II tegen een blauwe lucht in Telavi, Georgië",
+          "cs": "Bronzový jezdecký pomník krále Erekleho II. proti modré obloze v Telavi, Gruzie",
+          "pl": "Brązowy pomnik konny króla Erekle II na tle błękitnego nieba w Telawi, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/tsinandali-estate-kakheti-georgia-1536.webp",
+        "base": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/tsinandali-estate-kakheti-georgia",
+        "widths": [768, 1200, 1536],
+        "fallbackWidth": 1200,
+        "width": 1536,
+        "height": 1024,
+        "caption": {
+          "en": "Tsinandali Estate, Kakheti",
+          "de": "Anwesen Tsinandali, Kachetien",
+          "fr": "Domaine de Tsinandali, Kakhétie",
+          "es": "Finca Tsinandali, Kajetia",
+          "nl": "Landgoed Tsinandali, Kachetië",
+          "cs": "Panství Tsinandali, Kachetie",
+          "pl": "Posiadłość Tsinandali, Kachetia"
+        },
+        "altText": {
+          "en": "Historic Tsinandali Estate manor and garden in the Kakheti wine region, Georgia",
+          "de": "Historisches Herrenhaus mit Garten des Anwesens Tsinandali in der Weinregion Kachetien, Georgien",
+          "fr": "Manoir historique et jardin du domaine de Tsinandali dans la région viticole de Kakhétie, Géorgie",
+          "es": "Casa señorial histórica y jardín de la finca Tsinandali en la región vinícola de Kajetia, Georgia",
+          "nl": "Historisch landhuis en tuin van landgoed Tsinandali in de wijnregio Kachetië, Georgië",
+          "cs": "Historické panské sídlo a zahrada panství Tsinandali ve vinařské oblasti Kachetie, Gruzie",
+          "pl": "Zabytkowy dwór i ogród posiadłości Tsinandali w regionie winiarskim Kachetia, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/georgian-supra-feast-georgia-1448.webp",
+        "base": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/georgian-supra-feast-georgia",
+        "widths": [768, 1200, 1448],
+        "fallbackWidth": 1200,
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Georgian Supra Feast",
+          "de": "Georgische Supra",
+          "fr": "Supra géorgienne",
+          "es": "Supra georgiana",
+          "nl": "Georgische supra",
+          "cs": "Gruzínská supra",
+          "pl": "Gruzińska supra"
+        },
+        "altText": {
+          "en": "Overhead view of a traditional Georgian supra feast with khachapuri and shared dishes, Georgia",
+          "de": "Draufsicht auf ein traditionelles georgisches Supra-Festmahl mit Chatschapuri und geteilten Gerichten, Georgien",
+          "fr": "Vue de dessus d'une supra géorgienne traditionnelle avec khatchapouri et plats partagés, Géorgie",
+          "es": "Vista cenital de una supra georgiana tradicional con jachapuri y platos para compartir, Georgia",
+          "nl": "Bovenaanzicht van een traditionele Georgische supra met chatsjapoeri en gedeelde gerechten, Georgië",
+          "cs": "Pohled shora na tradiční gruzínskou supru s chačapuri a společnými pokrmy, Gruzie",
+          "pl": "Widok z góry na tradycyjną gruzińską suprę z chaczapuri i wspólnymi daniami, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/gabriadze-clock-tower-tbilisi-georgia-1086.webp",
+        "base": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/gabriadze-clock-tower-tbilisi-georgia",
+        "widths": [768, 1086],
+        "fallbackWidth": 1086,
+        "width": 1086,
+        "height": 1448,
+        "objectPosition": "center",
+        "caption": {
+          "en": "Gabriadze Clock Tower, Tbilisi",
+          "de": "Gabriadze-Uhrturm, Tiflis",
+          "fr": "Tour de l'horloge Gabriadze, Tbilissi",
+          "es": "Torre del reloj Gabriadze, Tiflis",
+          "nl": "Gabriadze-klokkentoren, Tbilisi",
+          "cs": "Gabriadzeho hodinová věž, Tbilisi",
+          "pl": "Wieża zegarowa Gabriadzego, Tbilisi"
+        },
+        "altText": {
+          "en": "The leaning Gabriadze Clock Tower in the Old Town of Tbilisi, Georgia",
+          "de": "Der schiefe Gabriadze-Uhrturm in der Altstadt von Tiflis, Georgien",
+          "fr": "La tour de l'horloge penchée de Gabriadze dans la vieille ville de Tbilissi, Géorgie",
+          "es": "La inclinada torre del reloj de Gabriadze en el casco antiguo de Tiflis, Georgia",
+          "nl": "De scheve Gabriadze-klokkentoren in de oude stad van Tbilisi, Georgië",
+          "cs": "Nakloněná Gabriadzeho hodinová věž ve starém městě Tbilisi, Gruzie",
+          "pl": "Pochylona wieża zegarowa Gabriadzego na starówce Tbilisi, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/jvari-monastery-mtskheta-georgia-1920.webp",
+        "base": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/jvari-monastery-mtskheta-georgia",
+        "widths": [768, 1200, 1600, 1920],
+        "fallbackWidth": 1200,
+        "width": 1920,
+        "height": 1439,
+        "caption": {
+          "en": "Jvari Monastery, Mtskheta",
+          "de": "Dschwari-Kloster, Mzcheta",
+          "fr": "Monastère de Djvari, Mtskheta",
+          "es": "Monasterio de Jvari, Mtsjeta",
+          "nl": "Jvari-klooster, Mtscheta",
+          "cs": "Klášter Džvari, Mccheta",
+          "pl": "Klasztor Dżwari, Mccheta"
+        },
+        "altText": {
+          "en": "Aerial view of Jvari Monastery above the river confluence at Mtskheta, Georgia",
+          "de": "Luftaufnahme des Dschwari-Klosters über dem Flusszusammenfluss bei Mzcheta, Georgien",
+          "fr": "Vue aérienne du monastère de Djvari au-dessus du confluent des rivières à Mtskheta, Géorgie",
+          "es": "Vista aérea del monasterio de Jvari sobre la confluencia de ríos en Mtsjeta, Georgia",
+          "nl": "Luchtfoto van het Jvari-klooster boven de samenvloeiing van rivieren bij Mtscheta, Georgië",
+          "cs": "Letecký pohled na klášter Džvari nad soutokem řek u Mcchety, Gruzie",
+          "pl": "Widok z lotu ptaka na klasztor Dżwari nad zbiegiem rzek w Mcchecie, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
+        "base": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/svetitskhoveli-cathedral-mtskheta-georgia",
+        "widths": [768, 1200, 1540],
+        "fallbackWidth": 1200,
+        "width": 1540,
+        "height": 1021,
+        "caption": {
+          "en": "Svetitskhoveli Cathedral, Mtskheta",
+          "de": "Swetizchoweli-Kathedrale, Mzcheta",
+          "fr": "Cathédrale de Svétitskhovéli, Mtskheta",
+          "es": "Catedral de Svetitsjoveli, Mtsjeta",
+          "nl": "Svetitschoveli-kathedraal, Mtscheta",
+          "cs": "Katedrála Sveticchoveli, Mccheta",
+          "pl": "Katedra Sweticchoweli, Mccheta"
+        },
+        "altText": {
+          "en": "Eleventh-century Svetitskhoveli Cathedral under a blue sky in Mtskheta, Georgia",
+          "de": "Swetizchoweli-Kathedrale aus dem 11. Jahrhundert unter blauem Himmel in Mzcheta, Georgien",
+          "fr": "Cathédrale de Svétitskhovéli du XIe siècle sous un ciel bleu à Mtskheta, Géorgie",
+          "es": "Catedral de Svetitsjoveli del siglo XI bajo cielo azul en Mtsjeta, Georgia",
+          "nl": "Elfde-eeuwse Svetitschoveli-kathedraal onder een blauwe lucht in Mtscheta, Georgië",
+          "cs": "Katedrála Sveticchoveli z 11. století pod modrou oblohou v Mcchetě, Gruzie",
+          "pl": "Jedenastowieczna katedra Sweticchoweli pod błękitnym niebem w Mcchecie, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/friendship-monument-gudauri-georgia-1448.webp",
+        "base": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/friendship-monument-gudauri-georgia",
+        "widths": [768, 1200, 1448],
+        "fallbackWidth": 1200,
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Friendship Monument, Gudauri",
+          "de": "Freundschaftsdenkmal, Gudauri",
+          "fr": "Monument de l'Amitié, Gudauri",
+          "es": "Monumento a la Amistad, Gudauri",
+          "nl": "Vriendschapsmonument, Gudauri",
+          "cs": "Památník přátelství, Gudauri",
+          "pl": "Pomnik Przyjaźni, Gudauri"
+        },
+        "altText": {
+          "en": "Colorful mosaic panorama terrace at the Friendship Monument in Gudauri, Georgia",
+          "de": "Bunte Mosaik-Panoramaterrasse am Freundschaftsdenkmal in Gudauri, Georgien",
+          "fr": "Terrasse panoramique en mosaïque colorée au Monument de l'Amitié à Gudauri, Géorgie",
+          "es": "Terraza panorámica de mosaico colorido en el Monumento a la Amistad en Gudauri, Georgia",
+          "nl": "Kleurrijk mozaïek-panoramaterras bij het Vriendschapsmonument in Gudauri, Georgië",
+          "cs": "Barevná mozaiková vyhlídková terasa u Památníku přátelství v Gudauri, Gruzie",
+          "pl": "Kolorowy mozaikowy taras widokowy przy Pomniku Przyjaźni w Gudauri, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/aragvi-confluence-military-highway-georgia-1445.webp",
+        "base": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/aragvi-confluence-military-highway-georgia",
+        "widths": [768, 1200, 1445],
+        "fallbackWidth": 1200,
+        "width": 1445,
+        "height": 1089,
+        "caption": {
+          "en": "Aragvi Confluence, Georgian Military Highway",
+          "de": "Aragwi-Zusammenfluss, Georgische Heerstraße",
+          "fr": "Confluent de l'Aragvi, route militaire géorgienne",
+          "es": "Confluencia del Aragvi, Carretera Militar Georgiana",
+          "nl": "Samenvloeiing van de Aragvi, Georgische Militaire Weg",
+          "cs": "Soutok Aragvi, Gruzínská vojenská silnice",
+          "pl": "Ujście Aragwi, Gruzińska Droga Wojenna"
+        },
+        "altText": {
+          "en": "Confluence of the Black and White Aragvi rivers below snow-capped Caucasus peaks, Georgia",
+          "de": "Zusammenfluss der Schwarzen und Weißen Aragwi unter schneebedeckten Kaukasusgipfeln, Georgien",
+          "fr": "Confluent des rivières Aragvi noire et blanche sous les sommets enneigés du Caucase, Géorgie",
+          "es": "Confluencia de los ríos Aragvi negro y blanco bajo picos nevados del Cáucaso, Georgia",
+          "nl": "Samenvloeiing van de Zwarte en Witte Aragvi onder besneeuwde Kaukasustoppen, Georgië",
+          "cs": "Soutok Černé a Bílé Aragvi pod zasněženými vrcholky Kavkazu, Gruzie",
+          "pl": "Zbieg Czarnej i Białej Aragwi pod ośnieżonymi szczytami Kaukazu, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/gergeti-trinity-church-kazbegi-georgia-1448.webp",
+        "base": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/gergeti-trinity-church-kazbegi-georgia",
+        "widths": [768, 1200, 1448],
+        "fallbackWidth": 1200,
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Gergeti Trinity Church, Kazbegi",
+          "de": "Gergeti-Dreifaltigkeitskirche, Kasbegi",
+          "fr": "Église de la Trinité de Guerguéti, Kazbegi",
+          "es": "Iglesia de la Trinidad de Gergeti, Kazbegi",
+          "nl": "Gergeti-Drie-eenheidskerk, Kazbegi",
+          "cs": "Kostel Nejsvětější Trojice v Gergeti, Kazbegi",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti, Kazbegi"
+        },
+        "altText": {
+          "en": "Gergeti Trinity Church on a ridge below the Caucasus peaks near Kazbegi, Georgia",
+          "de": "Gergeti-Dreifaltigkeitskirche auf einem Bergrücken unter den Kaukasusgipfeln bei Kasbegi, Georgien",
+          "fr": "Église de la Trinité de Guerguéti sur une crête sous les sommets du Caucase près de Kazbegi, Géorgie",
+          "es": "Iglesia de la Trinidad de Gergeti en una cresta bajo los picos del Cáucaso cerca de Kazbegi, Georgia",
+          "nl": "Gergeti-Drie-eenheidskerk op een bergkam onder de Kaukasustoppen bij Kazbegi, Georgië",
+          "cs": "Kostel Nejsvětější Trojice v Gergeti na hřebeni pod vrcholky Kavkazu u Kazbegi, Gruzie",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti na grani pod szczytami Kaukazu koło Kazbegi, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/stalin-museum-gori-georgia-1536.webp",
+        "base": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/stalin-museum-gori-georgia",
+        "widths": [768, 1200, 1536],
+        "fallbackWidth": 1200,
+        "width": 1536,
+        "height": 1024,
+        "caption": {
+          "en": "Stalin Museum, Gori",
+          "de": "Stalin-Museum, Gori",
+          "fr": "Musée Staline, Gori",
+          "es": "Museo de Stalin, Gori",
+          "nl": "Stalinmuseum, Gori",
+          "cs": "Muzeum Stalina, Gori",
+          "pl": "Muzeum Stalina, Gori"
+        },
+        "altText": {
+          "en": "Marble bust displayed in the Stalin Museum in Gori, Georgia",
+          "de": "Marmorbüste in der Ausstellung des Stalin-Museums in Gori, Georgien",
+          "fr": "Buste en marbre exposé au musée Staline à Gori, Géorgie",
+          "es": "Busto de mármol expuesto en el Museo de Stalin en Gori, Georgia",
+          "nl": "Marmeren buste in het Stalinmuseum in Gori, Georgië",
+          "cs": "Mramorová busta vystavená v Muzeu Stalina v Gori, Gruzie",
+          "pl": "Marmurowe popiersie na ekspozycji w Muzeum Stalina w Gori, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/uplistsikhe-cave-town-gori-georgia-1448.webp",
+        "base": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/uplistsikhe-cave-town-gori-georgia",
+        "widths": [768, 1200, 1448],
+        "fallbackWidth": 1200,
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Uplistsikhe Cave Town, Gori",
+          "de": "Höhlenstadt Uplisziche, Gori",
+          "fr": "Ville troglodyte d'Ouplistsikhé, Gori",
+          "es": "Ciudad rupestre de Uplistsije, Gori",
+          "nl": "Grottenstad Oeplistsiche, Gori",
+          "cs": "Skalní město Uplisciche, Gori",
+          "pl": "Skalne miasto Uplisciche, Gori"
+        },
+        "altText": {
+          "en": "Rock-hewn cave town of Uplistsikhe above the Mtkvari valley near Gori, Georgia",
+          "de": "In Fels gehauene Höhlenstadt Uplisziche über dem Kura-Tal bei Gori, Georgien",
+          "fr": "Ville troglodyte d'Ouplistsikhé taillée dans la roche au-dessus de la vallée de la Koura près de Gori, Géorgie",
+          "es": "Ciudad rupestre de Uplistsije excavada en la roca sobre el valle del Mtkvari cerca de Gori, Georgia",
+          "nl": "In rots uitgehakte grottenstad Oeplistsiche boven het Mtkvari-dal bij Gori, Georgië",
+          "cs": "Ve skále vytesané skalní město Uplisciche nad údolím Mtkvari u Gori, Gruzie",
+          "pl": "Wykute w skale skalne miasto Uplisciche nad doliną Mtkwari koło Gori, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/gelati-monastery-kutaisi-georgia-1491.webp",
+        "base": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/gelati-monastery-kutaisi-georgia",
+        "widths": [768, 1200, 1491],
+        "fallbackWidth": 1200,
+        "width": 1491,
+        "height": 1055,
+        "caption": {
+          "en": "Gelati Monastery, Kutaisi",
+          "de": "Gelati-Kloster, Kutaissi",
+          "fr": "Monastère de Gélati, Koutaïssi",
+          "es": "Monasterio de Gelati, Kutaisi",
+          "nl": "Gelati-klooster, Koetaisi",
+          "cs": "Klášter Gelati, Kutaisi",
+          "pl": "Klasztor Gelati, Kutaisi"
+        },
+        "altText": {
+          "en": "Medieval Gelati Monastery with domed churches near Kutaisi, western Georgia",
+          "de": "Mittelalterliches Gelati-Kloster mit Kuppelkirchen bei Kutaissi, Westgeorgien",
+          "fr": "Monastère médiéval de Gélati aux églises à coupole près de Koutaïssi, Géorgie occidentale",
+          "es": "Monasterio medieval de Gelati con iglesias abovedadas cerca de Kutaisi, Georgia occidental",
+          "nl": "Middeleeuws Gelati-klooster met koepelkerken bij Koetaisi, West-Georgië",
+          "cs": "Středověký klášter Gelati s kupolovými kostely u Kutaisi, západní Gruzie",
+          "pl": "Średniowieczny klasztor Gelati z kopułowymi cerkwiami koło Kutaisi, zachodnia Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/prometheus-cave-imereti-georgia-1536.webp",
+        "base": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/prometheus-cave-imereti-georgia",
+        "widths": [768, 1200, 1536],
+        "fallbackWidth": 1200,
+        "width": 1536,
+        "height": 1024,
+        "caption": {
+          "en": "Prometheus Cave, Imereti",
+          "de": "Prometheus-Höhle, Imeretien",
+          "fr": "Grotte de Prométhée, Iméréthie",
+          "es": "Cueva de Prometeo, Imereti",
+          "nl": "Prometheus-grot, Imereti",
+          "cs": "Prométheova jeskyně, Imeretie",
+          "pl": "Jaskinia Prometeusza, Imeretia"
+        },
+        "altText": {
+          "en": "Illuminated stalactites and walkway inside Prometheus Cave in Imereti, Georgia",
+          "de": "Beleuchtete Stalaktiten und Steg in der Prometheus-Höhle in Imeretien, Georgien",
+          "fr": "Stalactites illuminées et passerelle dans la grotte de Prométhée en Iméréthie, Géorgie",
+          "es": "Estalactitas iluminadas y pasarela dentro de la cueva de Prometeo en Imereti, Georgia",
+          "nl": "Verlichte stalactieten en looppad in de Prometheus-grot in Imereti, Georgië",
+          "cs": "Nasvícené krápníky a lávka v Prométheově jeskyni v Imeretii, Gruzie",
+          "pl": "Podświetlone stalaktyty i pomost we wnętrzu Jaskini Prometeusza w Imeretii, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/martvili-canyon-samegrelo-georgia-1086.webp",
+        "base": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/martvili-canyon-samegrelo-georgia",
+        "widths": [768, 1086],
+        "fallbackWidth": 1086,
+        "width": 1086,
+        "height": 1448,
+        "objectPosition": "center",
+        "caption": {
+          "en": "Martvili Canyon, Samegrelo",
+          "de": "Martvili-Schlucht, Samegrelo",
+          "fr": "Canyon de Martvili, Samegrelo",
+          "es": "Cañón de Martvili, Samegrelo",
+          "nl": "Martvili-kloof, Samegrelo",
+          "cs": "Kaňon Martvili, Samegrelo",
+          "pl": "Kanion Martvili, Samegrelo"
+        },
+        "altText": {
+          "en": "Emerald water and lush cliffs of Martvili Canyon in Samegrelo, western Georgia",
+          "de": "Smaragdgrünes Wasser und üppige Felswände der Martvili-Schlucht in Samegrelo, Westgeorgien",
+          "fr": "Eaux émeraude et falaises verdoyantes du canyon de Martvili en Samegrelo, Géorgie occidentale",
+          "es": "Aguas esmeralda y acantilados frondosos del cañón de Martvili en Samegrelo, Georgia occidental",
+          "nl": "Smaragdgroen water en weelderige kliffen van de Martvili-kloof in Samegrelo, West-Georgië",
+          "cs": "Smaragdová voda a bujné skály kaňonu Martvili v Samegrelu, západní Gruzie",
+          "pl": "Szmaragdowa woda i bujne skały kanionu Martvili w Samegrelo, zachodnia Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/svaneti-highlands-ushguli-georgia-1448.webp",
+        "base": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/svaneti-highlands-ushguli-georgia",
+        "widths": [768, 1200, 1448],
+        "fallbackWidth": 1200,
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Svaneti Highlands, Ushguli",
+          "de": "Hochland von Swanetien, Uschguli",
+          "fr": "Hauts plateaux de Svanétie, Ouchgouli",
+          "es": "Altiplano de Svaneti, Ushguli",
+          "nl": "Hooglanden van Svaneti, Oesjgoeli",
+          "cs": "Vysočina Svanetie, Ušguli",
+          "pl": "Wyżyny Swanetii, Uszguli"
+        },
+        "altText": {
+          "en": "Green alpine valley and hiking trail in the Svaneti highlands near Ushguli, Georgia",
+          "de": "Grünes Alpental und Wanderweg im Hochland von Swanetien bei Uschguli, Georgien",
+          "fr": "Vallée alpine verdoyante et sentier dans les hauts plateaux de Svanétie près d'Ouchgouli, Géorgie",
+          "es": "Valle alpino verde y sendero en el altiplano de Svaneti cerca de Ushguli, Georgia",
+          "nl": "Groene alpiene vallei en wandelpad in de hooglanden van Svaneti bij Oesjgoeli, Georgië",
+          "cs": "Zelené alpské údolí a stezka ve vysočině Svanetie u Ušguli, Gruzie",
+          "pl": "Zielona alpejska dolina i szlak w wyżynach Swanetii koło Uszguli, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/ushguli-svan-tower-svaneti-georgia-1024.webp",
+        "base": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/ushguli-svan-tower-svaneti-georgia",
+        "widths": [768, 1024],
+        "fallbackWidth": 1024,
+        "width": 1024,
+        "height": 1536,
+        "objectPosition": "center",
+        "caption": {
+          "en": "Ushguli Svan Tower",
+          "de": "Swanenturm in Uschguli",
+          "fr": "Tour svane d'Ouchgouli",
+          "es": "Torre svana de Ushguli",
+          "nl": "Svan-toren in Oesjgoeli",
+          "cs": "Svanská věž v Ušguli",
+          "pl": "Wieża swańska w Uszguli"
+        },
+        "altText": {
+          "en": "Medieval Svan tower and mountain stream in Ushguli village, Upper Svaneti, Georgia",
+          "de": "Mittelalterlicher Swanenturm und Gebirgsbach im Dorf Uschguli, Ober-Swanetien, Georgien",
+          "fr": "Tour svane médiévale et torrent de montagne au village d'Ouchgouli, Haute-Svanétie, Géorgie",
+          "es": "Torre svana medieval y arroyo de montaña en el pueblo de Ushguli, Alta Svaneti, Georgia",
+          "nl": "Middeleeuwse Svan-toren en bergbeek in het dorp Oesjgoeli, Boven-Svaneti, Georgië",
+          "cs": "Středověká svanská věž a horský potok ve vesnici Ušguli, Horní Svanetie, Gruzie",
+          "pl": "Średniowieczna wieża swańska i górski potok we wsi Uszguli, Górna Swanetia, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/batumi-skyline-black-sea-georgia-1448.webp",
+        "base": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/batumi-skyline-black-sea-georgia",
+        "widths": [768, 1200, 1448],
+        "fallbackWidth": 1200,
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Batumi Skyline",
+          "de": "Skyline von Batumi",
+          "fr": "Skyline de Batoumi",
+          "es": "Perfil urbano de Batumi",
+          "nl": "Skyline van Batumi",
+          "cs": "Panorama Batumi",
+          "pl": "Panorama Batumi"
+        },
+        "altText": {
+          "en": "Modern Batumi skyline seen from the pebble beach on the Black Sea, Georgia",
+          "de": "Moderne Skyline von Batumi vom Kieselstrand am Schwarzen Meer, Georgien",
+          "fr": "Skyline moderne de Batoumi vue depuis la plage de galets sur la mer Noire, Géorgie",
+          "es": "Perfil urbano moderno de Batumi visto desde la playa de guijarros del mar Negro, Georgia",
+          "nl": "Moderne skyline van Batumi gezien vanaf het kiezelstrand aan de Zwarte Zee, Georgië",
+          "cs": "Moderní panorama Batumi z oblázkové pláže u Černého moře, Gruzie",
+          "pl": "Nowoczesna panorama Batumi znad kamienistej plaży nad Morzem Czarnym, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/ali-and-nino-statue-batumi-georgia-1024.webp",
+        "base": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/ali-and-nino-statue-batumi-georgia",
+        "widths": [768, 1024],
+        "fallbackWidth": 1024,
+        "width": 1024,
+        "height": 1536,
+        "objectPosition": "center",
+        "caption": {
+          "en": "Ali and Nino Statue, Batumi",
+          "de": "Ali-und-Nino-Statue, Batumi",
+          "fr": "Statue Ali et Nino, Batoumi",
+          "es": "Estatua de Ali y Nino, Batumi",
+          "nl": "Ali en Nino-beeld, Batumi",
+          "cs": "Socha Ali a Nino, Batumi",
+          "pl": "Rzeźba Ali i Nino, Batumi"
+        },
+        "altText": {
+          "en": "The moving Ali and Nino steel statue on the seafront in Batumi, Georgia",
+          "de": "Die bewegliche Stahlstatue Ali und Nino an der Uferpromenade von Batumi, Georgien",
+          "fr": "La statue mobile en acier Ali et Nino sur le front de mer de Batoumi, Géorgie",
+          "es": "La escultura móvil de acero Ali y Nino en el paseo marítimo de Batumi, Georgia",
+          "nl": "Het bewegende stalen beeld Ali en Nino aan de boulevard van Batumi, Georgië",
+          "cs": "Pohyblivá ocelová socha Ali a Nino na nábřeží v Batumi, Gruzie",
+          "pl": "Ruchoma stalowa rzeźba Ali i Nino na nadmorskim bulwarze w Batumi, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/alphabetic-tower-batumi-georgia-1122.webp",
+        "base": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/alphabetic-tower-batumi-georgia",
+        "widths": [768, 1122],
+        "fallbackWidth": 1122,
+        "width": 1122,
+        "height": 1402,
+        "objectPosition": "center",
+        "caption": {
+          "en": "Alphabetic Tower, Batumi",
+          "de": "Alphabet-Turm, Batumi",
+          "fr": "Tour alphabétique, Batoumi",
+          "es": "Torre Alfabética, Batumi",
+          "nl": "Alfabettoren, Batumi",
+          "cs": "Abecední věž, Batumi",
+          "pl": "Wieża Alfabetu, Batumi"
+        },
+        "altText": {
+          "en": "Illuminated Alphabetic Tower at night on the Batumi seafront, Georgia",
+          "de": "Beleuchteter Alphabet-Turm bei Nacht an der Uferpromenade von Batumi, Georgien",
+          "fr": "Tour alphabétique illuminée la nuit sur le front de mer de Batoumi, Géorgie",
+          "es": "Torre Alfabética iluminada de noche en el paseo marítimo de Batumi, Georgia",
+          "nl": "Verlichte Alfabettoren 's nachts aan de boulevard van Batumi, Georgië",
+          "cs": "Nasvícená Abecední věž v noci na nábřeží v Batumi, Gruzie",
+          "pl": "Podświetlona Wieża Alfabetu nocą na nadmorskim bulwarze w Batumi, Gruzja"
+        }
+      }
     ],
+    "imageObjects": [
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/holy-trinity-cathedral-tbilisi-georgia-1672.webp",
+        "width": 1672,
+        "height": 941,
+        "caption": "Holy Trinity Cathedral, Tbilisi",
+        "description": "Holy Trinity Cathedral (Sameba) with golden dome under a blue sky in Tbilisi, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Tbilisi, Georgia"
+        },
+        "representativeOfPage": true,
+        "thumbnailUrl": "https://www.hikasustravel.com/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/holy-trinity-cathedral-tbilisi-georgia-og-1200x630.jpg"
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/narikala-fortress-tbilisi-georgia-1448.webp",
+        "width": 1448,
+        "height": 1086,
+        "caption": "Narikala Fortress, Tbilisi",
+        "description": "Ancient Narikala Fortress walls above the Old Town of Tbilisi, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Tbilisi, Georgia"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/kakheti/sighnaghi-ridge-alazani-valley-kakheti-georgia-1448.webp",
+        "width": 1448,
+        "height": 877,
+        "caption": "Sighnaghi, Kakheti",
+        "description": "Hilltop town of Sighnaghi overlooking the Alazani Valley in Kakheti, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Kakheti, Georgia"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/erekle-monument-telavi-georgia-1448.webp",
+        "width": 1448,
+        "height": 1086,
+        "caption": "Erekle II Monument, Telavi",
+        "description": "Bronze equestrian monument to King Erekle II against a blue sky in Telavi, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Telavi, Georgia"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/tsinandali-estate-kakheti-georgia-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "Tsinandali Estate, Kakheti",
+        "description": "Historic Tsinandali Estate manor and garden in the Kakheti wine region, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Kakheti, Georgia"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/georgian-supra-feast-georgia-1448.webp",
+        "width": 1448,
+        "height": 1086,
+        "caption": "Georgian Supra Feast",
+        "description": "Overhead view of a traditional Georgian supra feast with khachapuri and shared dishes, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Georgian supra (feast), Georgia"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/gabriadze-clock-tower-tbilisi-georgia-1086.webp",
+        "width": 1086,
+        "height": 1448,
+        "caption": "Gabriadze Clock Tower, Tbilisi",
+        "description": "The leaning Gabriadze Clock Tower in the Old Town of Tbilisi, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Tbilisi, Georgia"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/jvari-monastery-mtskheta-georgia-1920.webp",
+        "width": 1920,
+        "height": 1439,
+        "caption": "Jvari Monastery, Mtskheta",
+        "description": "Aerial view of Jvari Monastery above the river confluence at Mtskheta, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Mtskheta, Georgia"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
+        "width": 1540,
+        "height": 1021,
+        "caption": "Svetitskhoveli Cathedral, Mtskheta",
+        "description": "Eleventh-century Svetitskhoveli Cathedral under a blue sky in Mtskheta, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Mtskheta, Georgia"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/friendship-monument-gudauri-georgia-1448.webp",
+        "width": 1448,
+        "height": 1086,
+        "caption": "Friendship Monument, Gudauri",
+        "description": "Colorful mosaic panorama terrace at the Friendship Monument in Gudauri, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Gudauri, Georgia"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/aragvi-confluence-military-highway-georgia-1445.webp",
+        "width": 1445,
+        "height": 1089,
+        "caption": "Aragvi Confluence, Georgian Military Highway",
+        "description": "Confluence of the Black and White Aragvi rivers below snow-capped Caucasus peaks, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Military Highway, Georgia"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/gergeti-trinity-church-kazbegi-georgia-1448.webp",
+        "width": 1448,
+        "height": 1086,
+        "caption": "Gergeti Trinity Church, Kazbegi",
+        "description": "Gergeti Trinity Church on a ridge below the Caucasus peaks near Kazbegi, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Kazbegi, Georgia"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/stalin-museum-gori-georgia-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "Stalin Museum, Gori",
+        "description": "Marble bust displayed in the Stalin Museum in Gori, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Gori, Georgia"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/uplistsikhe-cave-town-gori-georgia-1448.webp",
+        "width": 1448,
+        "height": 1086,
+        "caption": "Uplistsikhe Cave Town, Gori",
+        "description": "Rock-hewn cave town of Uplistsikhe above the Mtkvari valley near Gori, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Gori, Georgia"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/gelati-monastery-kutaisi-georgia-1491.webp",
+        "width": 1491,
+        "height": 1055,
+        "caption": "Gelati Monastery, Kutaisi",
+        "description": "Medieval Gelati Monastery with domed churches near Kutaisi, western Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Kutaisi, Georgia"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/prometheus-cave-imereti-georgia-1536.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "Prometheus Cave, Imereti",
+        "description": "Illuminated stalactites and walkway inside Prometheus Cave in Imereti, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Imereti, Georgia"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/martvili-canyon-samegrelo-georgia-1086.webp",
+        "width": 1086,
+        "height": 1448,
+        "caption": "Martvili Canyon, Samegrelo",
+        "description": "Emerald water and lush cliffs of Martvili Canyon in Samegrelo, western Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Samegrelo, Georgia"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/svaneti-highlands-ushguli-georgia-1448.webp",
+        "width": 1448,
+        "height": 1086,
+        "caption": "Svaneti Highlands, Ushguli",
+        "description": "Green alpine valley and hiking trail in the Svaneti highlands near Ushguli, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Ushguli, Upper Svaneti, Georgia"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/ushguli-svan-tower-svaneti-georgia-1024.webp",
+        "width": 1024,
+        "height": 1536,
+        "caption": "Ushguli Svan Tower",
+        "description": "Medieval Svan tower and mountain stream in Ushguli village, Upper Svaneti, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Ushguli, Upper Svaneti, Georgia"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/batumi-skyline-black-sea-georgia-1448.webp",
+        "width": 1448,
+        "height": 1086,
+        "caption": "Batumi Skyline",
+        "description": "Modern Batumi skyline seen from the pebble beach on the Black Sea, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Black Sea coast, Georgia"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/ali-and-nino-statue-batumi-georgia-1024.webp",
+        "width": 1024,
+        "height": 1536,
+        "caption": "Ali and Nino Statue, Batumi",
+        "description": "The moving Ali and Nino steel statue on the seafront in Batumi, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Batumi, Georgia"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/alphabetic-tower-batumi-georgia-1122.webp",
+        "width": 1122,
+        "height": 1402,
+        "caption": "Alphabetic Tower, Batumi",
+        "description": "Illuminated Alphabetic Tower at night on the Batumi seafront, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Batumi, Georgia"
+        }
+      }
+    ],
+    "localizeImageObjects": true,
     "map": {
       "center": [
         44.8271,

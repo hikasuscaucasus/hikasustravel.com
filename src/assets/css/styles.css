@@ -759,6 +759,45 @@ section {
 }
 /* No rung above 1448 (native ceiling). */
 
+/* Ultimate 15-Day Georgia Tour (v2) hero — Sameba / Holy Trinity Cathedral,
+   same opt-in .heroBgClass mechanism. Ladder 768/1200/1672 — native ceiling
+   1672 (1672x941), so no 2400 rung and nothing is upscaled. Replaces
+   /images/files/svaneti-wine-culture-tour.jpg, which had no responsive ladder.
+   Files live under the per-tour /images/tours/<slug>/ namespace the v2 package
+   ships (note the DOUBLE dash before "wine" in the slug — it is part of the
+   real route, not a typo).
+   background-position: center — the frame is a wide 16:9 with the dome on the
+   centre line, so the 100vh cover crop keeps the dome and the full facade at
+   360px and shows the colonnade on desktop.
+   plain url() = image-set() fallback. */
+.hero--15day-ultimate-sameba {
+  background-image: url("/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/holy-trinity-cathedral-tbilisi-georgia-1200.webp");
+  background-image: image-set(
+    url("/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/holy-trinity-cathedral-tbilisi-georgia-768.avif") type("image/avif"),
+    url("/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/holy-trinity-cathedral-tbilisi-georgia-768.webp") type("image/webp")
+  );
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .hero--15day-ultimate-sameba {
+    background-image: image-set(
+      url("/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/holy-trinity-cathedral-tbilisi-georgia-1200.avif") type("image/avif"),
+      url("/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/holy-trinity-cathedral-tbilisi-georgia-1200.webp") type("image/webp")
+    );
+  }
+}
+@media (min-width: 1200px) {
+  .hero--15day-ultimate-sameba {
+    background-image: image-set(
+      url("/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/holy-trinity-cathedral-tbilisi-georgia-1672.avif") type("image/avif"),
+      url("/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/holy-trinity-cathedral-tbilisi-georgia-1672.webp") type("image/webp")
+    );
+  }
+}
+/* No rung above 1672 (native ceiling). */
+
 /* Georgia's Wonders 11-Day Grand Tour hero — the Ali & Nino statue at Batumi,
    same opt-in .heroBgClass mechanism. Ladder is only 768/1024: the source is a
    1024x1536 PORTRAIT (native ceiling 1024), so there is no 1200/1448 rung and
