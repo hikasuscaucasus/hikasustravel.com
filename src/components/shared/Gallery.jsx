@@ -201,7 +201,14 @@ export default function Gallery({ images, showAll = false }) {
                       <source type="image/avif" srcSet={srcSetFor(img.base, img.widths, 'avif')} sizes={GALLERY_SIZES} />
                       <source type="image/webp" srcSet={srcSetFor(img.base, img.widths, 'webp')} sizes={GALLERY_SIZES} />
                       <img
-                        src={asset(`${img.base}-${img.widths[0]}.webp`)}
+                        /* The <img> is only the fallback for browsers that take
+                           neither <source>; the srcSet above drives real
+                           selection. It defaults to the smallest rung, which is
+                           what every existing gallery shipped with. An item may
+                           name a different rung via `fallbackWidth` (the 13-day
+                           Grand Tour package specifies "-1200 where present,
+                           else native"), so no other gallery moves. */
+                        src={asset(`${img.base}-${img.fallbackWidth || img.widths[0]}.webp`)}
                         width={img.width}
                         height={img.height}
                         loading="lazy"

@@ -158,7 +158,38 @@ export default function TourDetailPage() {
     // node inside such a set already carries `representativeOfPage`, so those
     // tours deliberately do NOT also set `imageMeta` (that would emit a second
     // representative node). Added for the 8-day Culture, Nature & Wine tour.
-    const packagedImages = tour.imageObjects || []
+    //
+    // Those packaged nodes carry ENGLISH `caption`/`description`, so they are
+    // emitted identically on all seven locales. A tour may opt into per-locale
+    // structured data with `localizeImageObjects`: each node is matched to its
+    // gallery item by contentUrl stem, and caption/description are swapped for
+    // that item's localized `caption`/`altText` — the same strings the visible
+    // <figcaption> and <img alt> use, so the markup and the schema never
+    // disagree. Nodes with no matching gallery item (and every tour without the
+    // flag) pass through untouched. Added for the 13-day Grand Tour from
+    // Kutaisi, whose package asks for localized caption/description.
+    const packagedImages = (() => {
+      const nodes = tour.imageObjects || []
+      if (!tour.localizeImageObjects || !nodes.length) return nodes
+      const byStem = new Map(
+        (tour.gallery || [])
+          .filter((g) => g.base)
+          .map((g) => [g.base.split('/').pop(), g])
+      )
+      return nodes.map((node) => {
+        const file = String(node.contentUrl || '').split('/').pop()
+        const stem = file.replace(/-\d+\.(webp|avif|jpg)$/, '')
+        const item = byStem.get(stem)
+        if (!item) return node
+        const caption = item.caption?.[lang] || item.caption?.en
+        const description = item.altText?.[lang] || item.altText?.en
+        return {
+          ...node,
+          ...(caption ? { caption } : {}),
+          ...(description ? { description } : {}),
+        }
+      })
+    })()
 
     let finalJsonLd
     if (lang === 'en' && tour.enTouristTrip) {

@@ -721,6 +721,44 @@ section {
 }
 /* No rung above 1448 (native ceiling). */
 
+/* 13-Day Grand Tour from Kutaisi hero — the Svaneti highland valley above
+   Ushguli, same opt-in .heroBgClass mechanism. Ladder 768/1200/1448 — native
+   ceiling 1448 (1448x1086), so no 1600/2400 rung and nothing is upscaled.
+   Replaces /images/files/grand-georgia-cultural-journey.jpg, which had no
+   responsive ladder at all. Files live under the per-tour
+   /images/tours/<slug>/ namespace this package ships, not the flat files/ one.
+   background-position: center — a wide valley with the trail and ridgeline
+   through the middle third, so the 100vh cover crop keeps the valley floor AND
+   the peaks at 360px and shows the full span on desktop.
+   plain url() = image-set() fallback. */
+.hero--13day-grand-kutaisi-svaneti {
+  background-image: url("/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/svaneti-highlands-ushguli-georgia-1200.webp");
+  background-image: image-set(
+    url("/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/svaneti-highlands-ushguli-georgia-768.avif") type("image/avif"),
+    url("/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/svaneti-highlands-ushguli-georgia-768.webp") type("image/webp")
+  );
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .hero--13day-grand-kutaisi-svaneti {
+    background-image: image-set(
+      url("/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/svaneti-highlands-ushguli-georgia-1200.avif") type("image/avif"),
+      url("/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/svaneti-highlands-ushguli-georgia-1200.webp") type("image/webp")
+    );
+  }
+}
+@media (min-width: 1200px) {
+  .hero--13day-grand-kutaisi-svaneti {
+    background-image: image-set(
+      url("/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/svaneti-highlands-ushguli-georgia-1448.avif") type("image/avif"),
+      url("/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/svaneti-highlands-ushguli-georgia-1448.webp") type("image/webp")
+    );
+  }
+}
+/* No rung above 1448 (native ceiling). */
+
 /* Georgia's Wonders 11-Day Grand Tour hero — the Ali & Nino statue at Batumi,
    same opt-in .heroBgClass mechanism. Ladder is only 768/1024: the source is a
    1024x1536 PORTRAIT (native ceiling 1024), so there is no 1200/1448 rung and
