@@ -4587,6 +4587,38 @@ export const tours = [
     ],
     "gallery": [
       {
+        /* Route map — the itinerary infographic opens the gallery as an
+           ordinary tile, flat in the tour folder like every other image here.
+           Native 2400x1600 is already 3:2, so the uniform tile crop takes
+           nothing off it and it needs no crop anchor. Its caption is a
+           per-locale object (the 18 photo captions are still English-only
+           strings, which pass through the resolver untouched), and the long
+           alt rides in altText so no "alt" block can hijack og:image:alt. */
+        "src": "/images/tours/8-day-culture-adventure/route-map-culture-adventure-georgia-2400.webp",
+        "base": "/images/tours/8-day-culture-adventure/route-map-culture-adventure-georgia",
+        "widths": [768, 1200, 1600, 2400],
+        "width": 2400,
+        "height": 1600,
+        "caption": {
+          "en": "8-Day Georgia Culture and Adventure Tour – Route Map",
+          "de": "8-tägige Kultur- und Abenteuerreise durch Georgien – Routenkarte",
+          "fr": "Circuit culturel et aventure de 8 jours en Géorgie – Carte de l'itinéraire",
+          "es": "Tour de cultura y aventura de 8 días por Georgia – Mapa de la ruta",
+          "nl": "8-daagse culturele en avontuurlijke tour door Georgië – Routekaart",
+          "cs": "8denní kulturní a dobrodružný zájezd po Gruzii – Mapa trasy",
+          "pl": "8-dniowa wycieczka kulturowo-przygodowa po Gruzji – Mapa trasy"
+        },
+        "altText": {
+          "en": "Illustrated route map of the 8-day Georgia culture and adventure tour from Tbilisi, east to Bodbe, Sighnaghi and Lagodekhi for a national-park hike, then Telavi, Mtskheta and Uplistsikhe, and north via Aragvi rafting and Ananuri to Kazbegi's Gergeti Trinity Church",
+          "de": "Illustrierte Routenkarte der 8-tägigen georgischen Kultur- und Abenteuerreise ab Tiflis, ostwärts nach Bodbe, Sighnaghi und Lagodekhi für eine Nationalpark-Wanderung, dann Telavi, Mtskheta und Uplistsikhe, und nördlich über Aragvi-Rafting und Ananuri zur Gergeti-Dreifaltigkeitskirche bei Kazbegi",
+          "fr": "Carte illustrée de l'itinéraire du circuit culture et aventure de 8 jours en Géorgie au départ de Tbilissi, vers l'est jusqu'à Bodbe, Sighnaghi et Lagodekhi pour une randonnée dans le parc national, puis Telavi, Mtskheta et Uplistsikhe, et vers le nord via le rafting sur l'Aragvi et Ananouri jusqu'à l'église de la Trinité de Gergeti près de Kazbegi",
+          "es": "Mapa ilustrado de la ruta del tour de cultura y aventura de 8 días por Georgia desde Tbilisi, hacia el este a Bodbe, Sighnaghi y Lagodekhi para una caminata por el parque nacional, luego Telavi, Mtskheta y Uplistsikhe, y hacia el norte vía rafting en el Aragvi y Ananuri hasta la iglesia de la Trinidad de Gergeti cerca de Kazbegi",
+          "nl": "Geïllustreerde routekaart van de 8-daagse Georgische cultuur- en avontuurreis vanuit Tbilisi, oostwaarts naar Bodbe, Sighnaghi en Lagodekhi voor een wandeling in het nationale park, daarna Telavi, Mtskheta en Uplistsikhe, en noordwaarts via raften op de Aragvi en Ananuri naar de Gergeti-Drie-eenheidskerk bij Kazbegi",
+          "cs": "Ilustrovaná mapa trasy 8denního gruzínského kulturně-dobrodružného zájezdu z Tbilisi, na východ do Bodbe, Sighnaghi a Lagodekhi na túru v národním parku, poté Telavi, Mtskheta a Uplistsikhe, a na sever přes rafting na Aragvi a Ananuri ke kostelu Nejsvětější Trojice v Gergeti u Kazbegi",
+          "pl": "Ilustrowana mapa trasy 8-dniowej gruzińskiej wycieczki kulturowo-przygodowej z Tbilisi, na wschód do Bodbe, Sighnaghi i Lagodekhi na wędrówkę w parku narodowym, następnie Telavi, Mtskheta i Uplistsikhe, i na północ przez rafting na Aragvi i Ananuri do cerkwi Trójcy Świętej w Gergeti koło Kazbegi"
+        }
+      },
+      {
         "src": "/images/tours/8-day-culture-adventure/holy-trinity-cathedral-sameba-tbilisi-georgia-1672.webp",
         "base": "/images/tours/8-day-culture-adventure/holy-trinity-cathedral-sameba-tbilisi-georgia",
         "widths": [768, 1200, 1600, 1672],
@@ -4731,6 +4763,31 @@ export const tours = [
         "caption": "Stalin's railway carriage, Stalin Museum, Gori"
       }
     ],
+    /* One packaged ImageObject for the route map. This tour ships no other
+       ImageObjects, so there is no sibling set to mirror — same node shape as
+       the 5- and 6-day route maps. localizeImageObjects swaps caption and
+       description for this item’s localized strings. No representativeOfPage:
+       nothing on this page claims it today. */
+    "imageObjects": [
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-culture-adventure/route-map-culture-adventure-georgia-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "caption": "8-Day Georgia Culture and Adventure Tour – Route Map",
+        "description": "Illustrated route map of the 8-day Georgia culture and adventure tour from Tbilisi, east to Bodbe, Sighnaghi and Lagodekhi for a national-park hike, then Telavi, Mtskheta and Uplistsikhe, and north via Aragvi rafting and Ananuri to Kazbegi's Gergeti Trinity Church",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        }
+      }
+    ],
+    "localizeImageObjects": true,
     "map": {
       "center": [
         44.8271,
