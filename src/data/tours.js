@@ -1976,6 +1976,45 @@ export const tours = [
     ],
     "gallery": [
       {
+        /* Route map — the itinerary infographic opens the gallery as an
+           ordinary tile: same markup, sizing, lazy loading and lightbox as
+           every photo, exactly as the 5-day tours ship theirs. Native
+           2400x1600 is already 3:2, so the uniform tile crop takes nothing off
+           it and it needs no crop anchor. */
+        "src": "/images/tours/highlights-from-tbilisi/highlights-from-tbilisi-route-map-georgia-2400.webp",
+        "base": "/images/tours/highlights-from-tbilisi/highlights-from-tbilisi-route-map-georgia",
+        "widths": [768, 1200, 1600, 2400],
+        "width": 2400,
+        "height": 1600,
+        "caption": {
+          "en": "6-Day Georgia Private Tour: Highlights from Tbilisi Route Map",
+          "de": "6-tägige Georgien-Privatreise: Höhepunkte ab Tiflis Routenkarte",
+          "fr": "Circuit privé de 6 jours en Géorgie : les incontournables depuis Tbilissi Carte de l'itinéraire",
+          "es": "Tour privado de 6 días por Georgia: lo más destacado desde Tiflis Mapa de la ruta",
+          "nl": "6-daagse privétour door Georgië: hoogtepunten vanuit Tbilisi Routekaart",
+          "cs": "6denní soukromý zájezd po Gruzii: to nejlepší z Tbilisi Mapa trasy",
+          "pl": "6-dniowa prywatna wycieczka po Gruzji: atrakcje z Tbilisi Mapa trasy"
+        },
+        "alt": {
+          "en": "Illustrated route of the 6-day journey from Tbilisi through Uplistsikhe, Gori, Borjomi, Vardzia, Akhaltsikhe, Kutaisi and Martvili Canyon",
+          "de": "Illustrierte Route der 6-tägigen Reise von Tiflis über Uplistsikhe, Gori, Borjomi, Wardsia, Achalziche, Kutaissi und die Martvili-Schlucht",
+          "fr": "Itinéraire illustré du voyage de 6 jours de Tbilissi via Uplistsikhe, Gori, Borjomi, Vardzia, Akhaltsikhe, Koutaïssi et le canyon de Martvili",
+          "es": "Ruta ilustrada del viaje de 6 días desde Tiflis pasando por Uplistsikhe, Gori, Borjomi, Vardzia, Akhaltsikhe, Kutaisi y el cañón de Martvili",
+          "nl": "Geïllustreerde route van de 6-daagse reis van Tbilisi via Uplistsikhe, Gori, Borjomi, Vardzia, Achaltsiche, Koetaisi en de Martvili-kloof",
+          "cs": "Ilustrovaná trasa 6denního výletu z Tbilisi přes Uplistsikhe, Gori, Borjomi, Vardzii, Achalciche, Kutaisi a kaňon Martvili",
+          "pl": "Ilustrowana trasa 6-dniowej podróży z Tbilisi przez Uplistsikhe, Gori, Borjomi, Wardzię, Achalciche, Kutaisi i kanion Martvili"
+        },
+        "altText": {
+          "en": "Illustrated route map of the 6-day Georgia private tour, running west from Tbilisi through Uplistsikhe, Gori, Borjomi, Vardzia and Akhaltsikhe to Kutaisi and Martvili Canyon before returning to Tbilisi",
+          "de": "Illustrierte Routenkarte der 6-tägigen privaten Georgien-Reise, von Tiflis westwärts über Uplistsikhe, Gori, Borjomi, Wardsia und Achalziche nach Kutaissi und zur Martvili-Schlucht, mit Rückkehr nach Tiflis",
+          "fr": "Carte illustrée de l'itinéraire du circuit privé de 6 jours en Géorgie, de Tbilissi vers l'ouest par Uplistsikhe, Gori, Borjomi, Vardzia et Akhaltsikhe jusqu'à Koutaïssi et au canyon de Martvili, avant le retour à Tbilissi",
+          "es": "Mapa ilustrado de la ruta del tour privado de 6 días por Georgia, desde Tiflis hacia el oeste por Uplistsikhe, Gori, Borjomi, Vardzia y Akhaltsikhe hasta Kutaisi y el cañón de Martvili, antes de regresar a Tiflis",
+          "nl": "Geïllustreerde routekaart van de 6-daagse privétour door Georgië, van Tbilisi westwaarts via Uplistsikhe, Gori, Borjomi, Vardzia en Achaltsiche naar Koetaisi en de Martvili-kloof, en terug naar Tbilisi",
+          "cs": "Ilustrovaná mapa trasy 6denního soukromého zájezdu po Gruzii, z Tbilisi na západ přes Uplistsikhe, Gori, Borjomi, Vardzii a Achalciche do Kutaisi a ke kaňonu Martvili, poté zpět do Tbilisi",
+          "pl": "Ilustrowana mapa trasy 6-dniowej prywatnej wycieczki po Gruzji, z Tbilisi na zachód przez Uplistsikhe, Gori, Borjomi, Wardzię i Achalciche do Kutaisi i kanionu Martvili, a następnie z powrotem do Tbilisi"
+        }
+      },
+      {
         "src": "/images/tours/highlights-from-tbilisi/tbilisi-old-town-panorama-georgia-1448.webp",
         "base": "/images/tours/highlights-from-tbilisi/tbilisi-old-town-panorama-georgia",
         "widths": [768, 1200, 1448],
@@ -2202,6 +2241,31 @@ export const tours = [
         }
       }
     ],
+    /* One packaged ImageObject for the route map, same field set as the other
+       tours that ship per-photo nodes. localizeImageObjects swaps caption and
+       description for this gallery item’s localized strings, so the schema and
+       the visible figcaption/alt never disagree. No representativeOfPage — the
+       Vardzia hero built from imageMeta keeps that. */
+    "imageObjects": [
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/highlights-from-tbilisi/highlights-from-tbilisi-route-map-georgia-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "caption": "6-Day Georgia Private Tour: Highlights from Tbilisi Route Map",
+        "description": "Illustrated route map of the 6-day Georgia private tour, running west from Tbilisi through Uplistsikhe, Gori, Borjomi, Vardzia and Akhaltsikhe to Kutaisi and Martvili Canyon before returning to Tbilisi",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        }
+      }
+    ],
+    "localizeImageObjects": true,
     "map": {
       "center": [
         44.8271,
