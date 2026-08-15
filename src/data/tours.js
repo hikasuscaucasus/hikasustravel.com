@@ -13718,6 +13718,37 @@ export const tours = [
     ],
     "gallery": [
       {
+        /* Route map — the illustrated itinerary leads the gallery so the shape
+           of the trip reads before the photos. 2400x1600 master, native 3:2, so
+           the uniform tile box takes nothing off it and it needs no crop anchor.
+           No per-locale `alt` block: the 18 sibling items carry only `caption`
+           + `altText`, and this one mirrors them. */
+        "src": "/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/route-map-20-day-grand-georgia-2400.webp",
+        "base": "/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/route-map-20-day-grand-georgia",
+        "widths": [768, 1200, 1600, 2400],
+        "fallbackWidth": 1200,
+        "width": 2400,
+        "height": 1600,
+        "caption": {
+          "en": "20-Day Georgia Grand Tour: Wine, Hiking & Culture – Route Map",
+          "de": "20-tägige Grand Tour durch Georgien: Wein, Wandern & Kultur – Routenkarte",
+          "fr": "Grand circuit de Géorgie de 20 jours : vin, randonnée et culture – Carte de l'itinéraire",
+          "es": "Gran Tour de Georgia de 20 Días: Vino, Senderismo y Cultura – Mapa de la ruta",
+          "nl": "20-Daagse Grand Tour door Georgië: Wijn, Wandelen & Cultuur – Routekaart",
+          "cs": "20denní velký okruh Gruzií: víno, turistika a kultura – Mapa trasy",
+          "pl": "20-dniowa wielka wycieczka po Gruzji: wino, trekking i kultura – Mapa trasy"
+        },
+        "altText": {
+          "en": "Illustrated route map of the 20-day Georgia grand tour, based in Tbilisi, Telavi, Kazbegi, Kutaisi, Zugdidi, Mestia and Batumi, taking in Sighnaghi and David Gareja, Ananuri and Gergeti Trinity Church, Juta trekking, Gelati and Prometheus Cave, Okatse and Martvili canyons, the Svan towers of Mestia and Ushguli, and the Batumi coast",
+          "de": "Illustrierte Routenkarte der 20-tägigen Georgien-Grand-Tour mit Standorten in Tiflis, Telawi, Kasbegi, Kutaissi, Sugdidi, Mestia und Batumi, mit Sighnaghi und David Gareja, Ananuri und der Gergeti-Dreifaltigkeitskirche, Juta-Trekking, Gelati und der Prometheus-Höhle, den Schluchten Okatse und Martvili, den Swanentürmen von Mestia und Uschguli sowie der Küste von Batumi",
+          "fr": "Carte illustrée de l'itinéraire de la grande tournée de 20 jours en Géorgie, basée à Tbilissi, Telavi, Kazbegi, Koutaïssi, Zougdidi, Mestia et Batoumi, avec Sighnaghi et David Gareja, Ananouri et l'église de la Trinité de Guerguéti, le trek de Juta, Gélati et la grotte de Prométhée, les canyons d'Okatse et de Martvili, les tours svanes de Mestia et d'Ouchgouli, ainsi que la côte de Batoumi",
+          "es": "Mapa ilustrado de la ruta del gran tour de 20 días por Georgia, con base en Tiflis, Telavi, Kazbegi, Kutaisi, Zugdidi, Mestia y Batumi, con Sighnaghi y David Gareja, Ananuri y la iglesia de la Trinidad de Gergeti, el trekking de Juta, Gelati y la cueva de Prometeo, los cañones de Okatse y Martvili, las torres svanas de Mestia y Ushguli, y la costa de Batumi",
+          "nl": "Geïllustreerde routekaart van de 20-daagse Georgische grand tour met standplaatsen in Tbilisi, Telavi, Kazbegi, Koetaisi, Zugdidi, Mestia en Batumi, met Sighnaghi en David Gareja, Ananuri en de Gergeti-Drie-eenheidskerk, de Juta-trektocht, Gelati en de Prometheus-grot, de canyons Okatse en Martvili, de Svan-torens van Mestia en Oesjgoeli, en de kust van Batumi",
+          "cs": "Ilustrovaná mapa trasy 20denní gruzínské grand tour se základnami v Tbilisi, Telavi, Kazbegi, Kutaisi, Zugdidi, Mestii a Batumi, se Sighnaghi a David Gareja, Ananuri a kostelem Nejsvětější Trojice v Gergeti, trekem do Juty, Gelati a Prométheovou jeskyní, kaňony Okatse a Martvili, svanskými věžemi v Mestii a Ušguli a pobřežím Batumi",
+          "pl": "Ilustrowana mapa trasy 20-dniowej gruzińskiej wielkiej wycieczki z bazami w Tbilisi, Telawi, Kazbegi, Kutaisi, Zugdidi, Mestii i Batumi, obejmująca Sighnaghi i David Gareja, Ananuri i cerkiew Trójcy Świętej w Gergeti, trekking w Jucie, Gelati i Jaskinię Prometeusza, kaniony Okatse i Martvili, swańskie wieże w Mestii i Uszguli oraz wybrzeże Batumi"
+        }
+      },
+      {
         "src": "/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/narikala-fortress-tbilisi-georgia-1448.webp",
         "base": "/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/narikala-fortress-tbilisi-georgia",
         "widths": [768, 1200, 1448],
@@ -14190,6 +14221,27 @@ export const tours = [
       }
     ],
     "imageObjects": [
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/route-map-20-day-grand-georgia-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "caption": "20-Day Georgia Grand Tour: Wine, Hiking & Culture – Route Map",
+        "description": "Illustrated route map of the 20-day Georgia grand tour, based in Tbilisi, Telavi, Kazbegi, Kutaisi, Zugdidi, Mestia and Batumi, taking in Sighnaghi and David Gareja, Ananuri and Gergeti Trinity Church, Juta trekking, Gelati and Prometheus Cave, Okatse and Martvili canyons, the Svan towers of Mestia and Ushguli, and the Batumi coast",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Georgia"
+        }
+      },
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/narikala-fortress-tbilisi-georgia-1448.webp",
