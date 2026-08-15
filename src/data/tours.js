@@ -12092,6 +12092,37 @@ export const tours = [
     ],
     "gallery": [
       {
+        /* Route map — the illustrated itinerary leads the gallery so the shape
+           of the trip reads before the photos. 2400x1600 master, native 3:2, so
+           the uniform tile box takes nothing off it and it needs no crop anchor.
+           No per-locale `alt` block: the 22 sibling items carry only `caption`
+           + `altText`, and this one mirrors them. */
+        "src": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/route-map-15-day-svaneti-georgia-2400.webp",
+        "base": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/route-map-15-day-svaneti-georgia",
+        "widths": [768, 1200, 1600, 2400],
+        "fallbackWidth": 1200,
+        "width": 2400,
+        "height": 1600,
+        "caption": {
+          "en": "Ultimate 15-Day Georgia Tour: From Tbilisi to Svaneti – Wine, Culture, and Natural Beauty – Route Map",
+          "de": "Ultimative 15-tägige Georgien-Rundreise: Von Tiflis nach Swanetien - Wein, Kultur und Naturschönheit – Routenkarte",
+          "fr": "Circuit ultime de 15 jours en Géorgie : De Tbilissi à la Svanétie – Vins, culture et beauté naturelle – Carte de l'itinéraire",
+          "es": "Tour Definitivo de 15 Días por Georgia: De Tiflis a Svaneti – Vinos, Cultura y Belleza Natural – Mapa de la ruta",
+          "nl": "Ultieme 15-Daagse Georgië Tour: Van Tbilisi naar Svaneti – Wijn, Cultuur en Natuurlijke Schoonheid – Routekaart",
+          "cs": "Ultimátní 15denní zájezd po Gruzii: Z Tbilisi do Svanetie – víno, kultura a přírodní krásy – Mapa trasy",
+          "pl": "15-dniowa wycieczka po Gruzji: z Tbilisi do Swanecji – wino, kultura i naturalne piękno – Mapa trasy"
+        },
+        "altText": {
+          "en": "Illustrated route map of the 15-day ultimate Georgia tour, based in Tbilisi, Telavi, Kazbegi, Kutaisi, Mestia and Batumi, taking in Sighnaghi and Bodbe, Mtskheta and Ananuri, Kazbegi's Gergeti Trinity Church, Gori and Uplistsikhe, Gelati, Prometheus Cave and Martvili Canyon, the Svan towers of Mestia and Ushguli, and the Batumi coast, with a scenic train back to Tbilisi",
+          "de": "Illustrierte Routenkarte der 15-tägigen ultimativen Georgien-Reise mit Standorten in Tiflis, Telawi, Kasbegi, Kutaissi, Mestia und Batumi, mit Sighnaghi und Bodbe, Mzcheta und Ananuri, der Gergeti-Dreifaltigkeitskirche bei Kasbegi, Gori und Uplisziche, Gelati, der Prometheus-Höhle und der Martvili-Schlucht, den Swanentürmen von Mestia und Uschguli sowie der Küste von Batumi, mit einer Zugfahrt zurück nach Tiflis",
+          "fr": "Carte illustrée de l'itinéraire du circuit ultime de 15 jours en Géorgie, basé à Tbilissi, Telavi, Kazbegi, Koutaïssi, Mestia et Batoumi, avec Sighnaghi et Bodbé, Mtskheta et Ananouri, l'église de la Trinité de Guerguéti près de Kazbegi, Gori et Ouplistsikhé, Gélati, la grotte de Prométhée et le canyon de Martvili, les tours svanes de Mestia et d'Ouchgouli, ainsi que la côte de Batoumi, avec un train panoramique de retour à Tbilissi",
+          "es": "Mapa ilustrado de la ruta del tour ultimate de 15 días por Georgia, con base en Tiflis, Telavi, Kazbegi, Kutaisi, Mestia y Batumi, con Sighnaghi y Bodbe, Mtsjeta y Ananuri, la iglesia de la Trinidad de Gergeti cerca de Kazbegi, Gori y Uplistsije, Gelati, la cueva de Prometeo y el cañón de Martvili, las torres svanas de Mestia y Ushguli, y la costa de Batumi, con un tren panorámico de vuelta a Tiflis",
+          "nl": "Geïllustreerde routekaart van de 15-daagse ultieme Georgische reis met standplaatsen in Tbilisi, Telavi, Kazbegi, Koetaisi, Mestia en Batumi, met Sighnaghi en Bodbe, Mtscheta en Ananuri, de Gergeti-Drie-eenheidskerk bij Kazbegi, Gori en Oeplistsiche, Gelati, de Prometheus-grot en de Martvili-kloof, de Svan-torens van Mestia en Oesjgoeli, en de kust van Batumi, met een panoramische trein terug naar Tbilisi",
+          "cs": "Ilustrovaná mapa trasy 15denního ultimátního gruzínského zájezdu se základnami v Tbilisi, Telavi, Kazbegi, Kutaisi, Mestii a Batumi, se Sighnaghi a Bodbe, Mcchetou a Ananuri, kostelem Nejsvětější Trojice v Gergeti u Kazbegi, Gori a Uplisciche, Gelati, Prométheovou jeskyní a kaňonem Martvili, svanskými věžemi v Mestii a Ušguli a pobřežím Batumi, s malebným vlakem zpět do Tbilisi",
+          "pl": "Ilustrowana mapa trasy 15-dniowej ostatecznej gruzińskiej wycieczki z bazami w Tbilisi, Telawi, Kazbegi, Kutaisi, Mestii i Batumi, obejmująca Sighnaghi i Bodbe, Mcchetę i Ananuri, cerkiew Trójcy Świętej w Gergeti koło Kazbegi, Gori i Uplisciche, Gelati, Jaskinię Prometeusza i kanion Martvili, swańskie wieże w Mestii i Uszguli oraz wybrzeże Batumi, z widokowym pociągiem z powrotem do Tbilisi"
+        }
+      },
+      {
         "src": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/holy-trinity-cathedral-tbilisi-georgia-1672.webp",
         "base": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/holy-trinity-cathedral-tbilisi-georgia",
         "widths": [768, 1200, 1600, 1672],
@@ -12670,6 +12701,27 @@ export const tours = [
       }
     ],
     "imageObjects": [
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/route-map-15-day-svaneti-georgia-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "caption": "Ultimate 15-Day Georgia Tour: From Tbilisi to Svaneti – Wine, Culture, and Natural Beauty – Route Map",
+        "description": "Illustrated route map of the 15-day ultimate Georgia tour, based in Tbilisi, Telavi, Kazbegi, Kutaisi, Mestia and Batumi, taking in Sighnaghi and Bodbe, Mtskheta and Ananuri, Kazbegi's Gergeti Trinity Church, Gori and Uplistsikhe, Gelati, Prometheus Cave and Martvili Canyon, the Svan towers of Mestia and Ushguli, and the Batumi coast, with a scenic train back to Tbilisi",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Georgia"
+        }
+      },
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/holy-trinity-cathedral-tbilisi-georgia-1672.webp",
