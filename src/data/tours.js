@@ -10910,6 +10910,37 @@ export const tours = [
     ],
     "gallery": [
       {
+        /* Route map — the illustrated itinerary leads the gallery so the shape
+           of the trip reads before the photos. 2400x1600 master, native 3:2, so
+           the uniform tile box takes nothing off it and it needs no crop anchor.
+           No per-locale `alt` block: the 20 sibling items carry only `caption`
+           + `altText`, and this one mirrors them. */
+        "src": "/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/route-map-13-day-kutaisi-georgia-2400.webp",
+        "base": "/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/route-map-13-day-kutaisi-georgia",
+        "widths": [768, 1200, 1600, 2400],
+        "fallbackWidth": 1200,
+        "width": 2400,
+        "height": 1600,
+        "caption": {
+          "en": "13-Day Georgia Grand Tour from Kutaisi: Culture & Nature – Route Map",
+          "de": "13-tägige Grand Tour durch Georgien ab Kutaisi: Kultur & Natur – Routenkarte",
+          "fr": "Grand circuit de Géorgie de 13 jours depuis Kutaisi : culture et nature – Carte de l'itinéraire",
+          "es": "Gran Tour de Georgia de 13 Días desde Kutaisi: Cultura y Naturaleza – Mapa de la ruta",
+          "nl": "13-Daagse Grand Tour door Georgië vanuit Kutaisi: Cultuur & Natuur – Routekaart",
+          "cs": "13denní velký okruh Gruzií z Kutaisi: kultura a příroda – Mapa trasy",
+          "pl": "13-dniowa wielka wycieczka z Kutaisi po Gruzji: kultura i przyroda – Mapa trasy"
+        },
+        "altText": {
+          "en": "Illustrated route map of the 13-day Georgia grand tour, based in Kutaisi, Mestia, Batumi, Tbilisi and Kazbegi, taking in Gelati and Motsameta, Prometheus Cave, the Svan towers of Mestia and Ushguli, Martvili Canyon, the Batumi coast, Mtskheta and Ananuri, Kazbegi's Gergeti Trinity Church, and Gori and Uplistsikhe, with a scenic train from Batumi to Tbilisi",
+          "de": "Illustrierte Routenkarte der 13-tägigen Georgien-Grand-Tour mit Standorten in Kutaissi, Mestia, Batumi, Tiflis und Kasbegi, mit Gelati und Motsameta, der Prometheus-Höhle, den Swanentürmen von Mestia und Uschguli, der Martvili-Schlucht, der Küste von Batumi, Mzcheta und Ananuri, der Gergeti-Dreifaltigkeitskirche bei Kasbegi sowie Gori und Uplisziche, mit einer Zugfahrt von Batumi nach Tiflis",
+          "fr": "Carte illustrée de l'itinéraire de la grande tournée de 13 jours en Géorgie, basée à Koutaïssi, Mestia, Batoumi, Tbilissi et Kazbegi, avec Gélati et Motsameta, la grotte de Prométhée, les tours svanes de Mestia et d'Ouchgouli, le canyon de Martvili, la côte de Batoumi, Mtskheta et Ananouri, l'église de la Trinité de Guerguéti près de Kazbegi, ainsi que Gori et Ouplistsikhé, avec un train panoramique de Batoumi à Tbilissi",
+          "es": "Mapa ilustrado de la ruta del gran tour de 13 días por Georgia, con base en Kutaisi, Mestia, Batumi, Tiflis y Kazbegi, con Gelati y Motsameta, la cueva de Prometeo, las torres svanas de Mestia y Ushguli, el cañón de Martvili, la costa de Batumi, Mtsjeta y Ananuri, la iglesia de la Trinidad de Gergeti cerca de Kazbegi, y Gori y Uplistsije, con un tren panorámico de Batumi a Tiflis",
+          "nl": "Geïllustreerde routekaart van de 13-daagse Georgische grand tour met standplaatsen in Koetaisi, Mestia, Batumi, Tbilisi en Kazbegi, met Gelati en Motsameta, de Prometheus-grot, de Svan-torens van Mestia en Oesjgoeli, de Martvili-kloof, de kust van Batumi, Mtscheta en Ananuri, de Gergeti-Drie-eenheidskerk bij Kazbegi, en Gori en Oeplistsiche, met een panoramische trein van Batumi naar Tbilisi",
+          "cs": "Ilustrovaná mapa trasy 13denní gruzínské grand tour se základnami v Kutaisi, Mestii, Batumi, Tbilisi a Kazbegi, s Gelati a Mocameta, Prométheovou jeskyní, svanskými věžemi v Mestii a Ušguli, kaňonem Martvili, pobřežím Batumi, Mcchetou a Ananuri, kostelem Nejsvětější Trojice v Gergeti u Kazbegi a s Gori a Uplisciche, s malebným vlakem z Batumi do Tbilisi",
+          "pl": "Ilustrowana mapa trasy 13-dniowej gruzińskiej wielkiej wycieczki z bazami w Kutaisi, Mestii, Batumi, Tbilisi i Kazbegi, obejmująca Gelati i Mocameta, Jaskinię Prometeusza, swańskie wieże w Mestii i Uszguli, kanion Martvili, wybrzeże Batumi, Mcchetę i Ananuri, cerkiew Trójcy Świętej w Gergeti koło Kazbegi oraz Gori i Uplisciche, z widokowym pociągiem z Batumi do Tbilisi"
+        }
+      },
+      {
         "src": "/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/gelati-monastery-kutaisi-georgia-1491.webp",
         "base": "/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/gelati-monastery-kutaisi-georgia",
         "widths": [768, 1200, 1491],
@@ -11436,6 +11467,27 @@ export const tours = [
       }
     ],
     "imageObjects": [
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/route-map-13-day-kutaisi-georgia-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "caption": "13-Day Georgia Grand Tour from Kutaisi: Culture & Nature – Route Map",
+        "description": "Illustrated route map of the 13-day Georgia grand tour, based in Kutaisi, Mestia, Batumi, Tbilisi and Kazbegi, taking in Gelati and Motsameta, Prometheus Cave, the Svan towers of Mestia and Ushguli, Martvili Canyon, the Batumi coast, Mtskheta and Ananuri, Kazbegi's Gergeti Trinity Church, and Gori and Uplistsikhe, with a scenic train from Batumi to Tbilisi",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Georgia"
+        }
+      },
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/gelati-monastery-kutaisi-georgia-1491.webp",
