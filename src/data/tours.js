@@ -9656,6 +9656,37 @@ export const tours = [
     ],
     "gallery": [
       {
+        /* Route map — the itinerary infographic opens the gallery as an
+           ordinary tile, flat in images/files/ like the rest of this older
+           tour. Native 2400x1600 is already 3:2, so the uniform tile crop takes
+           nothing off it and it needs no crop anchor. caption + altText only,
+           exactly like the 19 siblings (the tour-level alt above the gallery is
+           what feeds og:image:alt). */
+        "src": "/images/files/route-map-ultimate-12-day-georgia-2400.webp",
+        "base": "/images/files/route-map-ultimate-12-day-georgia",
+        "widths": [768, 1200, 1600, 2400],
+        "width": 2400,
+        "height": 1600,
+        "caption": {
+          "en": "12-Day Ultimate Georgia Adventure Tour: Tbilisi, Kazbegi, Mestia, Kutaisi, Batumi – Route Map",
+          "de": "12-tägige ultimative Georgien-Abenteuertour: Tiflis, Kasbegi, Mestia, Kutaissi, Batumi – Routenkarte",
+          "fr": "Circuit aventure ultime de 12 jours en Géorgie : Tbilissi, Kazbegi, Mestia, Koutaïssi, Batumi – Carte de l'itinéraire",
+          "es": "Tour Definitivo de Aventura por Georgia de 12 Días: Tiflis, Kazbegi, Mestia, Kutaisi, Batumi – Mapa de la ruta",
+          "nl": "12-Daagse Ultieme Georgië Avontuurtour: Tbilisi, Kazbegi, Mestia, Koetaisi, Batumi – Routekaart",
+          "cs": "12denní ultimátní dobrodružný zájezd po Gruzii: Tbilisi, Kazbegi, Mestia, Kutaisi, Batumi – Mapa trasy",
+          "pl": "12-dniowa wycieczka po Gruzji: Tbilisi, Kazbegi, Mestia, Kutaisi, Batumi – Mapa trasy"
+        },
+        "altText": {
+          "en": "Illustrated route map of the 12-day ultimate Georgia adventure, based in Tbilisi, Kazbegi, Kutaisi, Mestia and Batumi, taking in Ananuri and Kazbegi's Gergeti Trinity Church, Gori and Uplistsikhe, Gelati, Prometheus Cave and Martvili Canyon, the Svan towers of Mestia and Ushguli, and the Batumi coast, with a scenic train back to Tbilisi",
+          "de": "Illustrierte Routenkarte der 12-tägigen ultimativen Georgien-Abenteuerreise mit Standorten in Tiflis, Kasbegi, Kutaissi, Mestia und Batumi, mit Ananuri und der Gergeti-Dreifaltigkeitskirche bei Kasbegi, Gori und Uplisziche, Gelati, der Prometheus-Höhle und der Martvili-Schlucht, den Swanentürmen von Mestia und Uschguli sowie der Küste von Batumi, mit einer Zugfahrt zurück nach Tiflis",
+          "fr": "Carte illustrée de l'itinéraire du circuit aventure ultime de 12 jours en Géorgie, basé à Tbilissi, Kazbegi, Koutaïssi, Mestia et Batoumi, avec Ananouri et l'église de la Trinité de Guerguéti près de Kazbegi, Gori et Ouplistsikhé, Gélati, la grotte de Prométhée et le canyon de Martvili, les tours svanes de Mestia et d'Ushguli, ainsi que la côte de Batoumi, avec un train panoramique de retour à Tbilissi",
+          "es": "Mapa ilustrado de la ruta del tour de aventura ultimate de 12 días por Georgia, con base en Tiflis, Kazbegi, Kutaisi, Mestia y Batumi, con Ananuri y la iglesia de la Trinidad de Gergeti cerca de Kazbegi, Gori y Uplistsikhe, Gelati, la cueva de Prometeo y el cañón de Martvili, las torres svanas de Mestia y Ushguli, y la costa de Batumi, con un tren panorámico de vuelta a Tiflis",
+          "nl": "Geïllustreerde routekaart van de 12-daagse ultieme Georgische avontuurreis met standplaatsen in Tbilisi, Kazbegi, Koetaisi, Mestia en Batumi, met Ananuri en de Gergeti-Drie-eenheidskerk bij Kazbegi, Gori en Oeplistsiche, Gelati, de Prometheusgrot en de Martvili-kloof, de Svan-torens van Mestia en Ushguli, en de kust van Batumi, met een panoramische trein terug naar Tbilisi",
+          "cs": "Ilustrovaná mapa trasy 12denního ultimátního gruzínského dobrodružného zájezdu se základnami v Tbilisi, Kazbegi, Kutaisi, Mestii a Batumi, s Ananuri a kostelem Nejsvětější Trojice v Gergeti u Kazbegi, Gori a Uplisciche, Gelati, Prométheovou jeskyní a kaňonem Martvili, svanskými věžemi v Mestii a Ušguli a pobřežím Batumi, s malebným vlakem zpět do Tbilisi",
+          "pl": "Ilustrowana mapa trasy 12-dniowej ostatecznej gruzińskiej wyprawy przygodowej z bazami w Tbilisi, Kazbegi, Kutaisi, Mestii i Batumi, obejmująca Ananuri i cerkiew Trójcy Świętej w Gergeti koło Kazbegi, Gori i Uplisciche, Gelati, Jaskinię Prometeusza i kanion Martvili, swańskie wieże w Mestii i Uszguli oraz wybrzeże Batumi, z widokowym pociągiem z powrotem do Tbilisi"
+        }
+      },
+      {
         "src": "/images/files/tbilisi-cityscape-georgia-1448.webp",
         "base": "/images/files/tbilisi-cityscape-georgia",
         "widths": [768, 1200, 1448],
@@ -10156,6 +10187,25 @@ export const tours = [
         "representativeOfPage": true,
         "width": 1200,
         "height": 630
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://www.hikasustravel.com/images/files/route-map-ultimate-12-day-georgia-2400.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/route-map-ultimate-12-day-georgia-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "name": "12-Day Ultimate Georgia Adventure Tour: Tbilisi, Kazbegi, Mestia, Kutaisi, Batumi – Route Map",
+        "caption": "Illustrated route of the 12-day ultimate adventure from Tbilisi to Kazbegi, west to Kutaisi and the Svaneti highlands at Mestia and Ushguli, then to Batumi on the Black Sea, returning by train, via Ananuri, Gori, Uplistsikhe, Gelati, Prometheus Cave and Martvili Canyon",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Georgia (country)"
+        }
       },
       {
         "@type": "ImageObject",
