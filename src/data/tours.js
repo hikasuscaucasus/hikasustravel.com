@@ -3551,6 +3551,37 @@ export const tours = [
     ],
     "gallery": [
       {
+        /* Route map — the itinerary infographic opens the gallery as an
+           ordinary tile, in its own nested folder like every other image on
+           this tour. Native 2400x1600 is already 3:2, so the uniform tile crop
+           takes nothing off it and it needs no crop anchor. Carries no per-locale
+           alt block on purpose: this tour has no imageMeta, so that block would
+           become prerender.js first alt match and hijack og:image:alt. */
+        "src": "/images/tours/8-day-culture-nature-wine/route-map-culture-nature-wine-georgia/route-map-culture-nature-wine-georgia-2400.webp",
+        "base": "/images/tours/8-day-culture-nature-wine/route-map-culture-nature-wine-georgia/route-map-culture-nature-wine-georgia",
+        "widths": [768, 1200, 1600, 2400],
+        "width": 2400,
+        "height": 1600,
+        "caption": {
+          "en": "8-Day Georgia Private Tour: Culture, Nature & Wine – Route Map",
+          "de": "8-tägige Georgien-Privatreise: Kultur, Natur & Wein – Routenkarte",
+          "fr": "Circuit privé de 8 jours en Géorgie : culture, nature et vin – Carte de l'itinéraire",
+          "es": "Tour privado de 8 días por Georgia: cultura, naturaleza y vino – Mapa de la ruta",
+          "nl": "8-daagse privétour door Georgië: cultuur, natuur & wijn – Routekaart",
+          "cs": "8denní soukromý zájezd po Gruzii: kultura, příroda a víno – Mapa trasy",
+          "pl": "8-dniowa prywatna wycieczka po Gruzji: kultura, natura i wino – Mapa trasy"
+        },
+        "altText": {
+          "en": "Illustrated route map of the 8-day Georgia private tour, looping north from Tbilisi to Kazbegi for Gergeti Trinity Church and Gveleti Waterfall, then east through Kakheti wine country via Telavi, Tsinandali, Sighnaghi and Bodbe, with Mtskheta, Ananuri, Uplistsikhe and Gori en route",
+          "de": "Illustrierte Routenkarte der 8-tägigen privaten Georgien-Reise, von Tiflis nördlich nach Kasbegi zur Gergeti-Dreifaltigkeitskirche und zum Gveleti-Wasserfall, dann ostwärts durch die Weinregion Kachetien über Telawi, Tsinandali, Sighnaghi und Bodbe, mit Mzcheta, Ananuri, Uplisziche und Gori unterwegs",
+          "fr": "Carte illustrée de l'itinéraire du circuit privé de 8 jours en Géorgie, de Tbilissi vers le nord jusqu'à Kazbegi pour l'église de la Trinité de Guerguéti et la cascade de Gveleti, puis vers l'est à travers le vignoble de Kakhétie via Telavi, Tsinandali, Sighnaghi et Bodbé, avec Mtskheta, Ananouri, Ouplistsikhé et Gori en chemin",
+          "es": "Mapa ilustrado de la ruta del tour privado de 8 días por Georgia, desde Tiflis hacia el norte hasta Kazbegi para la iglesia de la Trinidad de Gergeti y la cascada de Gveleti, y luego hacia el este por la región vinícola de Kajetia vía Telavi, Tsinandali, Sighnaghi y Bodbe, con Mtskheta, Ananuri, Uplistsikhe y Gori en el camino",
+          "nl": "Geïllustreerde routekaart van de 8-daagse privétour door Georgië, van Tbilisi noordwaarts naar Kazbegi voor de Gergeti-Drie-eenheidskerk en de Gveleti-waterval, daarna oostwaarts door het wijngebied Kachetië via Telavi, Tsinandali, Sighnaghi en Bodbe, met onderweg Mtscheta, Ananuri, Uplistsikhe en Gori",
+          "cs": "Ilustrovaná mapa trasy 8denního soukromého zájezdu po Gruzii, z Tbilisi na sever do Kazbegi ke kostelu Nejsvětější Trojice v Gergeti a vodopádu Gveleti, poté na východ vinařskou oblastí Kachetie přes Telavi, Cinandali, Sighnaghi a Bodbe, cestou přes Mcchetu, Ananuri, Uplisciche a Gori",
+          "pl": "Ilustrowana mapa trasy 8-dniowej prywatnej wycieczki po Gruzji, z Tbilisi na północ do Kazbegi do cerkwi Trójcy Świętej w Gergeti i wodospadu Gweleti, następnie na wschód przez region winiarski Kachetia przez Telawi, Cinandali, Sighnaghi i Bodbe, po drodze mijając Mcchetę, Ananuri, Uplisciche i Gori"
+        }
+      },
+      {
         "src": "/images/tours/8-day-culture-nature-wine/metekhi-cliff-tbilisi-georgia/metekhi-cliff-tbilisi-georgia-1448.webp",
         "base": "/images/tours/8-day-culture-nature-wine/metekhi-cliff-tbilisi-georgia/metekhi-cliff-tbilisi-georgia",
         "widths": [768, 1200, 1448],
@@ -3825,6 +3856,21 @@ export const tours = [
       }
     ],
     "imageObjects": [
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-culture-nature-wine/route-map-culture-nature-wine-georgia/route-map-culture-nature-wine-georgia-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "name": "8-Day Georgia Private Tour: Culture, Nature & Wine – Route Map",
+        "caption": "Illustrated route of the 8-day journey from Tbilisi to Kazbegi and the Kakheti wine region, via Mtskheta, Ananuri, Gergeti, Uplistsikhe, Gori, Telavi, Sighnaghi and Bodbe",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-culture-nature-wine/metekhi-cliff-tbilisi-georgia/metekhi-cliff-tbilisi-georgia-1448.webp",
