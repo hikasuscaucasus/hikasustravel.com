@@ -5848,6 +5848,37 @@ export const tours = [
     ],
     "gallery": [
       {
+        /* Route map — the itinerary infographic opens the gallery as an
+           ordinary tile, in its own nested folder like every other image on
+           this tour. Native 2400x1600 is already 3:2, so the uniform tile crop
+           takes nothing off it and it needs no crop anchor. No per-locale alt
+           block on purpose: this tour has no imageMeta, so that block would
+           become prerender.js first alt match and hijack og:image:alt. */
+        "src": "/images/tours/grand-tour-tbilisi-batumi/route-map-grand-tour-tbilisi-batumi-georgia/route-map-grand-tour-tbilisi-batumi-georgia-2400.webp",
+        "base": "/images/tours/grand-tour-tbilisi-batumi/route-map-grand-tour-tbilisi-batumi-georgia/route-map-grand-tour-tbilisi-batumi-georgia",
+        "widths": [768, 1200, 1600, 2400],
+        "width": 2400,
+        "height": 1600,
+        "caption": {
+          "en": "Georgia Grand Tour: 9 Days from Tbilisi to Batumi – Route Map",
+          "de": "Georgien Grand Tour: 9 Tage von Tiflis nach Batumi – Routenkarte",
+          "fr": "Grand Tour de Géorgie : 9 jours de Tbilissi à Batumi – Carte de l'itinéraire",
+          "es": "Gran Tour de Georgia: 9 días de Tbilisi a Batumi – Mapa de la ruta",
+          "nl": "Georgia Grand Tour: 9 dagen van Tbilisi naar Batumi – Routekaart",
+          "cs": "Velký okruh Gruzií: 9 dní z Tbilisi do Batumi – Mapa trasy",
+          "pl": "Wielka podróż po Gruzji: 9 dni z Tbilisi do Batumi – Mapa trasy"
+        },
+        "altText": {
+          "en": "Illustrated route map of the 9-day Georgia Grand Tour looping from Tbilisi west through Mtskheta, Uplistsikhe, Gori and Kutaisi, south to Vardzia and Akhaltsikhe, then via Borjomi to Batumi on the Black Sea before returning to Tbilisi",
+          "de": "Illustrierte Routenkarte der 9-tägigen Georgia Grand Tour, von Tiflis westwärts über Mzcheta, Uplisziche, Gori und Kutaissi, südlich nach Wardsia und Achalziche, dann über Bordschomi nach Batumi am Schwarzen Meer und zurück nach Tiflis",
+          "fr": "Carte illustrée de l'itinéraire de la Georgia Grand Tour de 9 jours, de Tbilissi vers l'ouest par Mtskheta, Ouplistsikhé, Gori et Koutaïssi, au sud jusqu'à Vardzia et Akhaltsikhe, puis via Borjomi jusqu'à Batoumi sur la mer Noire avant le retour à Tbilissi",
+          "es": "Mapa ilustrado de la ruta del Georgia Grand Tour de 9 días, desde Tiflis hacia el oeste por Mtskheta, Uplistsikhe, Gori y Kutaisi, al sur hasta Vardzia y Akhaltsikhe, y luego vía Borjomi hasta Batumi en el mar Negro antes de regresar a Tiflis",
+          "nl": "Geïllustreerde routekaart van de 9-daagse Georgia Grand Tour, van Tbilisi westwaarts via Mtscheta, Uplistsikhe, Gori en Kutaisi, zuidwaarts naar Vardzia en Achaltsiche, en dan via Borjomi naar Batumi aan de Zwarte Zee, en terug naar Tbilisi",
+          "cs": "Ilustrovaná mapa trasy 9denní Georgia Grand Tour, z Tbilisi na západ přes Mcchetu, Uplisciche, Gori a Kutaisi, na jih do Vardzie a Achalciche, poté přes Borjomi do Batumi u Černého moře a zpět do Tbilisi",
+          "pl": "Ilustrowana mapa trasy 9-dniowej Georgia Grand Tour, z Tbilisi na zachód przez Mcchetę, Uplisciche, Gori i Kutaisi, na południe do Wardzi i Achalciche, a następnie przez Borjomi do Batumi nad Morzem Czarnym i z powrotem do Tbilisi"
+        }
+      },
+      {
         "src": "/images/tours/grand-tour-tbilisi-batumi/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia-1448.webp",
         "base": "/images/tours/grand-tour-tbilisi-batumi/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia",
         "widths": [768, 1200, 1448],
@@ -6156,6 +6187,21 @@ export const tours = [
       }
     ],
     "imageObjects": [
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/route-map-grand-tour-tbilisi-batumi-georgia/route-map-grand-tour-tbilisi-batumi-georgia-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "name": "Georgia Grand Tour: 9 Days from Tbilisi to Batumi – Route Map",
+        "caption": "Illustrated route of the 9-day Georgia Grand Tour from Tbilisi to Batumi, via Mtskheta, Uplistsikhe, Gori, Kutaisi, Gelati, Prometheus Cave, Vardzia, Akhaltsikhe and Borjomi",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia-1448.webp",
