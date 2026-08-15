@@ -798,6 +798,51 @@ section {
 }
 /* No rung above 1672 (native ceiling). */
 
+/* 20-Day Georgia Grand Tour hero — hammocks in the Juta valley under the
+   Chaukhi peaks, same opt-in .heroBgClass mechanism. The master is 3140px so
+   the ladder is capped at the 2400 ceiling: 768/1200/1600/2400, nothing
+   upscaled. Replaces /images/files/georgia-20-days-relaxation.jpg, which had
+   no responsive ladder at all.
+   background-position: center — a wide meadow with the peaks along the top
+   third, so the 100vh cover crop keeps both the hammocks and the ridge at
+   360px and shows the full valley on desktop.
+   plain url() = image-set() fallback. */
+.hero--20day-grand-juta {
+  background-image: url("/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/juta-valley-kazbegi-georgia-1200.webp");
+  background-image: image-set(
+    url("/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/juta-valley-kazbegi-georgia-768.avif") type("image/avif"),
+    url("/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/juta-valley-kazbegi-georgia-768.webp") type("image/webp")
+  );
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .hero--20day-grand-juta {
+    background-image: image-set(
+      url("/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/juta-valley-kazbegi-georgia-1200.avif") type("image/avif"),
+      url("/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/juta-valley-kazbegi-georgia-1200.webp") type("image/webp")
+    );
+  }
+}
+@media (min-width: 1200px) {
+  .hero--20day-grand-juta {
+    background-image: image-set(
+      url("/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/juta-valley-kazbegi-georgia-1600.avif") type("image/avif"),
+      url("/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/juta-valley-kazbegi-georgia-1600.webp") type("image/webp")
+    );
+  }
+}
+@media (min-width: 1600px) {
+  .hero--20day-grand-juta {
+    background-image: image-set(
+      url("/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/juta-valley-kazbegi-georgia-2400.avif") type("image/avif"),
+      url("/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/juta-valley-kazbegi-georgia-2400.webp") type("image/webp")
+    );
+  }
+}
+/* 2400 is the cap, not the native width (master is 3140). */
+
 /* Georgia's Wonders 11-Day Grand Tour hero — the Ali & Nino statue at Batumi,
    same opt-in .heroBgClass mechanism. Ladder is only 768/1024: the source is a
    1024x1536 PORTRAIT (native ceiling 1024), so there is no 1200/1448 rung and
