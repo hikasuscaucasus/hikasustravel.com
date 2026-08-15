@@ -1412,6 +1412,45 @@ export const tours = [
     ],
     "gallery": [
       {
+        /* Route map — the itinerary infographic opens the gallery as an
+           ordinary tile: same markup, sizing, lazy loading and lightbox as
+           every photo (the 5-day Tbilisi to Batumi tour ships its map the same
+           way). Native 2400x1600 is already 3:2, so the uniform tile crop takes
+           nothing off it and it needs no crop anchor. */
+        "src": "/images/tours/tbilisi-wine-sulfur/tbilisi-kazbegi-kakheti-route-map-georgia-2400.webp",
+        "base": "/images/tours/tbilisi-wine-sulfur/tbilisi-kazbegi-kakheti-route-map-georgia",
+        "widths": [768, 1200, 1600, 2400],
+        "width": 2400,
+        "height": 1600,
+        "caption": {
+          "en": "5-Day Georgia Private Tour: Tbilisi, Wine & Sulfur Baths Route Map",
+          "de": "5-tägige Privatreise durch Georgien: Tiflis, Wein & Schwefelbäder – Routenkarte",
+          "fr": "Circuit privé de 5 jours en Géorgie : Tbilissi, vin et bains de soufre – Carte de l'itinéraire",
+          "es": "Tour privado de 5 días por Georgia: Tiflis, vino y baños de azufre – Mapa de la ruta",
+          "nl": "5-daagse privétour door Georgië: Tbilisi, wijn & zwavelbaden – Routekaart",
+          "cs": "5denní soukromý zájezd po Gruzii: Tbilisi, víno a sirné lázně – Mapa trasy",
+          "pl": "5-dniowa prywatna wycieczka po Gruzji: Tbilisi, wino i łaźnie siarkowe – Mapa trasy"
+        },
+        "alt": {
+          "en": "Illustrated route of the 5-day journey from Tbilisi to Kazbegi and Kakheti via Mtskheta, Ananuri, Telavi, Sighnaghi and Bodbe",
+          "de": "Illustrierte Route der 5-tägigen Reise von Tiflis nach Kazbegi und Kachetien über Mtskheta, Ananuri, Telawi, Sighnaghi und Bodbe",
+          "fr": "Itinéraire illustré du voyage de 5 jours de Tbilissi à Kazbegi et en Kakhétie via Mtskheta, Ananouri, Telavi, Sighnaghi et Bodbe",
+          "es": "Ruta ilustrada del viaje de 5 días desde Tiflis hasta Kazbegi y Kajetia pasando por Mtskheta, Ananuri, Telavi, Sighnaghi y Bodbe",
+          "nl": "Geïllustreerde route van de 5-daagse reis van Tbilisi naar Kazbegi en Kachetië via Mtskheta, Ananuri, Telavi, Sighnaghi en Bodbe",
+          "cs": "Ilustrovaná trasa 5denního výletu z Tbilisi do Kazbegi a Kachetie přes Mtskhetu, Ananuri, Telavi, Sighnaghi a Bodbe",
+          "pl": "Ilustrowana trasa 5-dniowej podróży z Tbilisi do Kazbegi i Kachetii przez Mtskhetę, Ananuri, Telawi, Sighnaghi i Bodbe"
+        },
+        "altText": {
+          "en": "Illustrated route map of the 5-day Georgia private tour, looping from Tbilisi north to Kazbegi and east through the Kakheti wine region via Mtskheta, Ananuri, Telavi, Sighnaghi and Bodbe",
+          "de": "Illustrierte Routenkarte der 5-tägigen privaten Georgien-Reise, als Rundreise von Tiflis nördlich nach Kazbegi und östlich durch die Weinregion Kachetien über Mtskheta, Ananuri, Telawi, Sighnaghi und Bodbe",
+          "fr": "Carte illustrée de l'itinéraire du circuit privé de 5 jours en Géorgie, en boucle depuis Tbilissi vers le nord jusqu'à Kazbegi puis vers l'est à travers la région viticole de Kakhétie via Mtskheta, Ananouri, Telavi, Sighnaghi et Bodbe",
+          "es": "Mapa ilustrado de la ruta del tour privado de 5 días por Georgia, en circuito desde Tiflis hacia el norte hasta Kazbegi y hacia el este por la región vinícola de Kajetia pasando por Mtskheta, Ananuri, Telavi, Sighnaghi y Bodbe",
+          "nl": "Geïllustreerde routekaart van de 5-daagse privétour door Georgië, in een lus van Tbilisi noordwaarts naar Kazbegi en oostwaarts door de wijnregio Kachetië via Mtskheta, Ananuri, Telavi, Sighnaghi en Bodbe",
+          "cs": "Ilustrovaná mapa trasy 5denního soukromého zájezdu po Gruzii, okruh z Tbilisi na sever do Kazbegi a na východ vinařskou oblastí Kachetie přes Mtskhetu, Ananuri, Telavi, Sighnaghi a Bodbe",
+          "pl": "Ilustrowana mapa trasy 5-dniowej prywatnej wycieczki po Gruzji, pętla z Tbilisi na północ do Kazbegi i na wschód przez region winiarski Kachetii, przez Mtskhetę, Ananuri, Telawi, Sighnaghi i Bodbe"
+        }
+      },
+      {
         "src": "/images/tours/tbilisi-wine-sulfur/tbilisi-old-town-panorama-georgia-1448.webp",
         "base": "/images/tours/tbilisi-wine-sulfur/tbilisi-old-town-panorama-georgia",
         "widths": [768, 1200, 1448],
@@ -1637,6 +1676,31 @@ export const tours = [
         }
       }
     ],
+    /* One packaged ImageObject for the route map, mirroring the per-photo nodes
+       the newer tour packages ship. localizeImageObjects swaps caption and
+       description for this gallery item’s localized strings, so the schema and
+       the visible figcaption/alt never disagree. No representativeOfPage — the
+       hero imageMeta node keeps that. */
+    "imageObjects": [
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/tbilisi-wine-sulfur/tbilisi-kazbegi-kakheti-route-map-georgia-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "caption": "5-Day Georgia Private Tour: Tbilisi, Wine & Sulfur Baths Route Map",
+        "description": "Illustrated route map of the 5-day Georgia private tour, looping from Tbilisi north to Kazbegi and east through the Kakheti wine region via Mtskheta, Ananuri, Telavi, Sighnaghi and Bodbe",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        }
+      }
+    ],
+    "localizeImageObjects": true,
     "map": {
       "center": [
         44.8271,
