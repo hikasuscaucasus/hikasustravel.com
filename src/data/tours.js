@@ -541,9 +541,45 @@ export const tours = [
     ],
     "gallery": [
       {
-        "src": "/images/files/kakheti-route-map.jpg",
-        "caption": "Tour Route Map: Kakheti Wine & Culture Tour",
-        "description": "Illustrated route of the 3-day journey from Tbilisi through Kakheti via Telavi, Gremi, Sighnaghi and Bodbe"
+        /* Route map, refreshed 2026-08-16 to the house style. Position 0 is
+           unchanged. `base` + `widths` opt this one tile into the responsive
+           <picture> path (AVIF + WebP), which the seven photos below do not
+           use — they keep their original blur-up rendering. caption = title,
+           alt = the visible description, altText = the <img alt>; the same
+           three slots the 5-day and 6-day route maps use. */
+        "src": "/images/files/route-map-3-day-kakheti-georgia-2400.webp",
+        "base": "/images/files/route-map-3-day-kakheti-georgia",
+        "widths": [768, 1200, 1600, 2400],
+        "fallbackWidth": 1200,
+        "width": 2400,
+        "height": 1600,
+        "caption": {
+          "en": "3-Day Kakheti Wine and Food Tour from Tbilisi – Route Map",
+          "de": "Die Aromen Kachetiens genießen: 3-tägige Wein- & Kulturtour – Routenkarte",
+          "fr": "Savourez les saveurs de Kakheti : circuit vin et culture de 3 jours – Carte de l'itinéraire",
+          "es": "Saborea los sabores de Kakheti: tour de 3 días de vino y cultura – Mapa de la ruta",
+          "nl": "Proef de smaken van Kacheti: 3-daagse wijn- en cultuurtour – Routekaart",
+          "cs": "Vychutnejte si chutě Kachetie: 3denní zájezd za vínem a kulturou – Mapa trasy",
+          "pl": "Poczuj smaki Kakheti: 3-dniowy tour winny i kulturowy – Mapa trasy"
+        },
+        "alt": {
+          "en": "Illustrated route of the 3-day Kakheti wine and food journey from Tbilisi via Tsinandali, Telavi, Gremi, Sighnaghi and Bodbe, with two nights in Telavi",
+          "de": "Illustrierte Route der 3-tägigen Wein- und Kulinarik-Reise durch Kachetien ab Tiflis über Tsinandali, Telavi, Gremi, Sighnaghi und Bodbe, mit zwei Nächten in Telavi",
+          "fr": "Itinéraire illustré du circuit vin et gastronomie de 3 jours à Kakheti au départ de Tbilisi via Tsinandali, Telavi, Gremi, Sighnaghi et Bodbe, avec deux nuits à Telavi",
+          "es": "Ruta ilustrada del tour de vino y gastronomía de 3 días por Kakheti desde Tbilisi vía Tsinandali, Telavi, Gremi, Sighnaghi y Bodbe, con dos noches en Telavi",
+          "nl": "Geïllustreerde route van de 3-daagse wijn- en culinaire reis door Kacheti vanuit Tbilisi via Tsinandali, Telavi, Gremi, Sighnaghi en Bodbe, met twee nachten in Telavi",
+          "cs": "Ilustrovaná trasa 3denního vinařsko-gastronomického zájezdu Kachetií z Tbilisi přes Tsinandali, Telavi, Gremi, Sighnaghi a Bodbe, se dvěma nocemi v Telavi",
+          "pl": "Ilustrowana trasa 3-dniowej wycieczki winiarsko-kulinarnej po Kakheti z Tbilisi przez Tsinandali, Telavi, Gremi, Sighnaghi i Bodbe, z dwoma nocami w Telavi"
+        },
+        "altText": {
+          "en": "Illustrated route map of the 3-day Kakheti wine and food tour from Tbilisi, over the Gombori Pass to Tsinandali and Telavi, with a loop to Khareba, Gremi and Napareuli, and a final day via Sighnaghi and Bodbe before returning to Tbilisi",
+          "de": "Illustrierte Routenkarte der 3-tägigen kachetischen Wein- und Kulinarik-Reise ab Tiflis, über den Gombori-Pass nach Tsinandali und Telavi, mit einer Schleife nach Khareba, Gremi und Napareuli und einem letzten Tag über Sighnaghi und Bodbe vor der Rückkehr nach Tiflis",
+          "fr": "Carte illustrée de l'itinéraire du circuit vin et gastronomie de 3 jours à Kakheti au départ de Tbilisi, par le col de Gombori jusqu'à Tsinandali et Telavi, avec une boucle vers Khareba, Gremi et Napareuli, et une dernière journée via Sighnaghi et Bodbe avant le retour à Tbilisi",
+          "es": "Mapa ilustrado de la ruta del tour de vino y gastronomía de 3 días por Kakheti desde Tbilisi, por el paso de Gombori hasta Tsinandali y Telavi, con un circuito a Khareba, Gremi y Napareuli, y un último día vía Sighnaghi y Bodbe antes de regresar a Tbilisi",
+          "nl": "Geïllustreerde routekaart van de 3-daagse Kachetische wijn- en culinaire reis vanuit Tbilisi, over de Gombori-pas naar Tsinandali en Telavi, met een lus naar Khareba, Gremi en Napareuli, en een laatste dag via Sighnaghi en Bodbe voor de terugkeer naar Tbilisi",
+          "cs": "Ilustrovaná mapa trasy 3denního kachetského vinařsko-gastronomického zájezdu z Tbilisi, přes průsmyk Gombori do Tsinandali a Telavi, se smyčkou k vinařství Khareba, Gremi a Napareuli a posledním dnem přes Sighnaghi a Bodbe před návratem do Tbilisi",
+          "pl": "Ilustrowana mapa trasy 3-dniowej kachetyjskiej wycieczki winiarsko-kulinarnej z Tbilisi, przez przełęcz Gombori do Tsinandali i Telavi, z pętlą do winiarni Khareba, Gremi i Napareuli oraz ostatnim dniem przez Sighnaghi i Bodbe przed powrotem do Tbilisi"
+        }
       },
       {
         "src": "/images/files/gombori-pass-kakheti-georgia.jpg",
@@ -581,6 +617,32 @@ export const tours = [
         "description": "Hilltop walled town with views over the Alazani Valley, near Bodbe Monastery"
       }
     ],
+    /* Route-map ImageObject. This tour shipped without an @graph of its own,
+       so — exactly as the 5-day Tbilisi/Wine & Sulfur tour did — it gains the
+       `imageObjects` opt-in for the one image that has authored metadata.
+       localizeImageObjects swaps caption/description for this gallery item’s
+       localized strings, so the schema and the visible figcaption/alt never
+       disagree. No representativeOfPage. */
+    "imageObjects": [
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/files/route-map-3-day-kakheti-georgia-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "caption": "3-Day Kakheti Wine and Food Tour from Tbilisi – Route Map",
+        "description": "Illustrated route map of the 3-day Kakheti wine and food tour from Tbilisi, over the Gombori Pass to Tsinandali and Telavi, with a loop to Khareba, Gremi and Napareuli, and a final day via Sighnaghi and Bodbe before returning to Tbilisi",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        }
+      }
+    ],
+    "localizeImageObjects": true,
     "map": {
       "center": [
         45.3,
