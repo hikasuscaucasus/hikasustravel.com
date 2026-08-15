@@ -1423,7 +1423,7 @@ export const tours = [
         "width": 2400,
         "height": 1600,
         "caption": {
-          "en": "5-Day Georgia Private Tour: Tbilisi, Wine & Sulfur Baths Route Map",
+          "en": "5-Day Georgia Private Tour: Tbilisi, Wine & Sulfur Baths – Route Map",
           "de": "5-tägige Privatreise durch Georgien: Tiflis, Wein & Schwefelbäder – Routenkarte",
           "fr": "Circuit privé de 5 jours en Géorgie : Tbilissi, vin et bains de soufre – Carte de l'itinéraire",
           "es": "Tour privado de 5 días por Georgia: Tiflis, vino y baños de azufre – Mapa de la ruta",
@@ -1687,7 +1687,7 @@ export const tours = [
         "contentUrl": "https://www.hikasustravel.com/images/tours/tbilisi-wine-sulfur/tbilisi-kazbegi-kakheti-route-map-georgia-2400.webp",
         "width": 2400,
         "height": 1600,
-        "caption": "5-Day Georgia Private Tour: Tbilisi, Wine & Sulfur Baths Route Map",
+        "caption": "5-Day Georgia Private Tour: Tbilisi, Wine & Sulfur Baths – Route Map",
         "description": "Illustrated route map of the 5-day Georgia private tour, looping from Tbilisi north to Kazbegi and east through the Kakheti wine region via Mtskheta, Ananuri, Telavi, Sighnaghi and Bodbe",
         "creditText": "Hikasus Travel",
         "creator": {
@@ -1987,13 +1987,13 @@ export const tours = [
         "width": 2400,
         "height": 1600,
         "caption": {
-          "en": "6-Day Georgia Private Tour: Highlights from Tbilisi Route Map",
-          "de": "6-tägige Georgien-Privatreise: Höhepunkte ab Tiflis Routenkarte",
-          "fr": "Circuit privé de 6 jours en Géorgie : les incontournables depuis Tbilissi Carte de l'itinéraire",
-          "es": "Tour privado de 6 días por Georgia: lo más destacado desde Tiflis Mapa de la ruta",
-          "nl": "6-daagse privétour door Georgië: hoogtepunten vanuit Tbilisi Routekaart",
-          "cs": "6denní soukromý zájezd po Gruzii: to nejlepší z Tbilisi Mapa trasy",
-          "pl": "6-dniowa prywatna wycieczka po Gruzji: atrakcje z Tbilisi Mapa trasy"
+          "en": "6-Day Georgia Private Tour: Highlights from Tbilisi – Route Map",
+          "de": "6-tägige Georgien-Privatreise: Höhepunkte ab Tiflis – Routenkarte",
+          "fr": "Circuit privé de 6 jours en Géorgie : les incontournables depuis Tbilissi – Carte de l'itinéraire",
+          "es": "Tour privado de 6 días por Georgia: lo más destacado desde Tiflis – Mapa de la ruta",
+          "nl": "6-daagse privétour door Georgië: hoogtepunten vanuit Tbilisi – Routekaart",
+          "cs": "6denní soukromý zájezd po Gruzii: to nejlepší z Tbilisi – Mapa trasy",
+          "pl": "6-dniowa prywatna wycieczka po Gruzji: atrakcje z Tbilisi – Mapa trasy"
         },
         "alt": {
           "en": "Illustrated route of the 6-day journey from Tbilisi through Uplistsikhe, Gori, Borjomi, Vardzia, Akhaltsikhe, Kutaisi and Martvili Canyon",
@@ -2252,7 +2252,7 @@ export const tours = [
         "contentUrl": "https://www.hikasustravel.com/images/tours/highlights-from-tbilisi/highlights-from-tbilisi-route-map-georgia-2400.webp",
         "width": 2400,
         "height": 1600,
-        "caption": "6-Day Georgia Private Tour: Highlights from Tbilisi Route Map",
+        "caption": "6-Day Georgia Private Tour: Highlights from Tbilisi – Route Map",
         "description": "Illustrated route map of the 6-day Georgia private tour, running west from Tbilisi through Uplistsikhe, Gori, Borjomi, Vardzia and Akhaltsikhe to Kutaisi and Martvili Canyon before returning to Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
