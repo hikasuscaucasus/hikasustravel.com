@@ -8862,6 +8862,37 @@ export const tours = [
     ],
     "gallery": [
       {
+        /* Route map — the itinerary infographic opens the gallery as an
+           ordinary tile, in its own nested folder like every other image on
+           this tour. Native 2400x1600 is already 3:2, so the uniform tile crop
+           takes nothing off it and it needs no crop anchor. No per-locale alt
+           block on purpose: this tour has no imageMeta and no tour-level alt,
+           so that block would become prerender.js first alt match. */
+        "src": "/images/tours/georgia-wonders-11-day/route-map-11-day-wonders-georgia/route-map-11-day-wonders-georgia-2400.webp",
+        "base": "/images/tours/georgia-wonders-11-day/route-map-11-day-wonders-georgia/route-map-11-day-wonders-georgia",
+        "widths": [768, 1200, 1600, 2400],
+        "width": 2400,
+        "height": 1600,
+        "caption": {
+          "en": "Georgia's Wonders: 11-Day Grand Tour from Kutaisi to Kazbegi and Batumi – Route Map",
+          "de": "Georgiens Wunder: 11-tägige Grosse Tour von Kutaissi nach Kasbegi und Batumi – Routenkarte",
+          "fr": "Merveilles de la Géorgie : Grand circuit de 11 jours de Koutaïssi à Kazbegi et Batumi – Carte de l'itinéraire",
+          "es": "Maravillas de Georgia: Gran Tour de 11 Días desde Kutaisi a Kazbegi y Batumi – Mapa de la ruta",
+          "nl": "Georgië's Wonderen: 11-Daagse Grand Tour van Koetaisi naar Kazbegi en Batumi – Routekaart",
+          "cs": "Divy Gruzie: 11denní velký okruh z Kutaisi přes Kazbegi do Batumi – Mapa trasy",
+          "pl": "Cuda Gruzji: 11-dniowa wielka wycieczka z Kutaisi do Kazbegi i Batumi – Mapa trasy"
+        },
+        "altText": {
+          "en": "Illustrated route map of the 11-day Georgia grand tour, based in Kutaisi, Batumi, Tbilisi and Kazbegi, taking in Gelati and Motsameta, Prometheus Cave and Martvili Canyon, the Batumi coast, Mtskheta and Ananuri, Kazbegi's Gergeti Trinity Church, and Gori and Uplistsikhe, with a scenic train from Batumi to Tbilisi",
+          "de": "Illustrierte Routenkarte der 11-tägigen Georgien-Grand-Tour mit Standorten in Kutaissi, Batumi, Tiflis und Kasbegi, mit Gelati und Motsameta, der Prometheus-Höhle und der Martvili-Schlucht, der Küste von Batumi, Mzcheta und Ananuri, der Gergeti-Dreifaltigkeitskirche bei Kasbegi sowie Gori und Uplisziche, mit einer Zugfahrt von Batumi nach Tiflis",
+          "fr": "Carte illustrée de l'itinéraire de la grande tournée de 11 jours en Géorgie, basée à Koutaïssi, Batoumi, Tbilissi et Kazbegi, avec Guélati et Motsameta, la grotte de Prométhée et le canyon de Martvili, la côte de Batoumi, Mtskheta et Ananouri, l'église de la Trinité de Guerguéti près de Kazbegi, ainsi que Gori et Ouplistsikhé, avec un train panoramique de Batoumi à Tbilissi",
+          "es": "Mapa ilustrado de la ruta del gran tour de 11 días por Georgia, con base en Kutaisi, Batumi, Tiflis y Kazbegi, con Gelati y Motsameta, la cueva de Prometeo y el cañón de Martvili, la costa de Batumi, Mtskheta y Ananuri, la iglesia de la Trinidad de Gergeti cerca de Kazbegi, y Gori y Uplistsikhe, con un tren panorámico de Batumi a Tiflis",
+          "nl": "Geïllustreerde routekaart van de 11-daagse Georgische grand tour met standplaatsen in Koetaisi, Batumi, Tbilisi en Kazbegi, met Gelati en Motsameta, de Prometheusgrot en de Martvili-kloof, de kust van Batumi, Mtscheta en Ananuri, de Gergeti-Drie-eenheidskerk bij Kazbegi, en Gori en Uplistsikhe, met een panoramische trein van Batumi naar Tbilisi",
+          "cs": "Ilustrovaná mapa trasy 11denní gruzínské grand tour se základnami v Kutaisi, Batumi, Tbilisi a Kazbegi, s Gelati a Mocameta, Prométheovou jeskyní a kaňonem Martvili, pobřežím Batumi, Mcchetou a Ananuri, kostelem Nejsvětější Trojice v Gergeti u Kazbegi a s Gori a Uplisciche, s malebným vlakem z Batumi do Tbilisi",
+          "pl": "Ilustrowana mapa trasy 11-dniowej gruzińskiej wielkiej wycieczki z bazami w Kutaisi, Batumi, Tbilisi i Kazbegi, obejmująca Gelati i Mocameta, Jaskinię Prometeusza i kanion Martvili, wybrzeże Batumi, Mcchetę i Ananuri, cerkiew Trójcy Świętej w Gergeti koło Kazbegi oraz Gori i Uplisciche, z widokowym pociągiem z Batumi do Tbilisi"
+        }
+      },
+      {
         "src": "/images/tours/georgia-wonders-11-day/gelati-monastery-kutaisi-georgia/gelati-monastery-kutaisi-georgia-1491.webp",
         "base": "/images/tours/georgia-wonders-11-day/gelati-monastery-kutaisi-georgia/gelati-monastery-kutaisi-georgia",
         "widths": [768, 1200, 1491],
@@ -9187,6 +9218,21 @@ export const tours = [
       }
     ],
     "imageObjects": [
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-wonders-11-day/route-map-11-day-wonders-georgia/route-map-11-day-wonders-georgia-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "name": "Georgia's Wonders: 11-Day Grand Tour from Kutaisi to Kazbegi and Batumi – Route Map",
+        "caption": "Illustrated route of the 11-day grand tour from Kutaisi to Batumi on the Black Sea, then by train to Tbilisi and north to Kazbegi, via Gelati, Prometheus Cave, Martvili Canyon, Mtskheta, Ananuri, Gori and Uplistsikhe",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-wonders-11-day/gelati-monastery-kutaisi-georgia/gelati-monastery-kutaisi-georgia-1491.webp",
