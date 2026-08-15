@@ -7870,6 +7870,37 @@ export const tours = [
     ],
     "gallery": [
       {
+        /* Route map — the itinerary infographic opens the gallery as an
+           ordinary tile, in its own nested folder like every other image on
+           this tour. Native 2400x1600 is already 3:2, so the uniform tile crop
+           takes nothing off it and it needs no crop anchor. No per-locale alt
+           block on purpose: this tour has no imageMeta and no tour-level alt,
+           so that block would become prerender.js first alt match. */
+        "src": "/images/tours/georgia-10-days-celebration/route-map-10-days-celebration-georgia/route-map-10-days-celebration-georgia-2400.webp",
+        "base": "/images/tours/georgia-10-days-celebration/route-map-10-days-celebration-georgia/route-map-10-days-celebration-georgia",
+        "widths": [768, 1200, 1600, 2400],
+        "width": 2400,
+        "height": 1600,
+        "caption": {
+          "en": "Georgia in 10 Days: Where Every Corner Has a Story and Every Meal is a Celebration – Route Map",
+          "de": "Georgien in 10 Tagen: Wo jede Ecke eine Geschichte und jede Mahlzeit ein Fest ist – Routenkarte",
+          "fr": "La Géorgie en 10 jours : Où chaque coin a une histoire et chaque repas est une fête – Carte de l'itinéraire",
+          "es": "Georgia en 10 Días: Donde Cada Rincón Tiene una Historia y Cada Comida es una Celebración – Mapa de la ruta",
+          "nl": "Georgië in 10 Dagen: Waar Elke Hoek een Verhaal Heeft en Elke Maaltijd een Feest Is – Routekaart",
+          "cs": "Gruzie za 10 dní: Kde každý kout vypráví příběh a každé jídlo je oslavou – Mapa trasy",
+          "pl": "Gruzja w 10 dni: gdzie każdy zakątek kryje historie, a każdy posiłek to świętowanie – Mapa trasy"
+        },
+        "altText": {
+          "en": "Illustrated route map of the 10-day Georgia tour, based in Tbilisi, Kazbegi, Kutaisi and Batumi, taking in Ananuri and Gudauri, Kazbegi's Gergeti Trinity Church, Gori and Uplistsikhe, Gelati and Motsameta, Prometheus Cave and Martvili Canyon, and the Batumi coast, with a scenic train back to Tbilisi",
+          "de": "Illustrierte Routenkarte der 10-tägigen Georgien-Reise mit Standorten in Tiflis, Kasbegi, Kutaissi und Batumi, mit Ananuri und Gudauri, der Gergeti-Dreifaltigkeitskirche bei Kasbegi, Gori und Uplisziche, Gelati und Motsameta, der Prometheus-Höhle und der Martvili-Schlucht sowie der Küste von Batumi, mit einer Zugfahrt zurück nach Tiflis",
+          "fr": "Carte illustrée de l'itinéraire du voyage de 10 jours en Géorgie, basé à Tbilissi, Kazbegi, Koutaïssi et Batoumi, avec Ananouri et Gudauri, l'église de la Trinité de Guerguéti près de Kazbegi, Gori et Ouplistsikhé, Guélati et Motsameta, la grotte de Prométhée et le canyon de Martvili, ainsi que la côte de Batoumi, avec un train panoramique de retour à Tbilissi",
+          "es": "Mapa ilustrado de la ruta del viaje de 10 días por Georgia, con base en Tiflis, Kazbegi, Kutaisi y Batumi, con Ananuri y Gudauri, la iglesia de la Trinidad de Gergeti cerca de Kazbegi, Gori y Uplistsikhe, Gelati y Motsameta, la cueva de Prometeo y el cañón de Martvili, y la costa de Batumi, con un tren panorámico de vuelta a Tiflis",
+          "nl": "Geïllustreerde routekaart van de 10-daagse Georgische reis met standplaatsen in Tbilisi, Kazbegi, Kutaisi en Batumi, met Ananuri en Gudauri, de Gergeti-Drie-eenheidskerk bij Kazbegi, Gori en Uplistsikhe, Gelati en Motsameta, de Prometheusgrot en de Martvili-kloof, en de kust van Batumi, met een panoramische trein terug naar Tbilisi",
+          "cs": "Ilustrovaná mapa trasy 10denního gruzínského výletu se základnami v Tbilisi, Kazbegi, Kutaisi a Batumi, s Ananuri a Gudauri, kostelem Nejsvětější Trojice v Gergeti u Kazbegi, Gori a Uplisciche, Gelati a Mocameta, Prométheovou jeskyní a kaňonem Martvili a pobřežím Batumi, s malebným vlakem zpět do Tbilisi",
+          "pl": "Ilustrowana mapa trasy 10-dniowej gruzińskiej podróży z bazami w Tbilisi, Kazbegi, Kutaisi i Batumi, obejmująca Ananuri i Gudauri, cerkiew Trójcy Świętej w Gergeti koło Kazbegi, Gori i Uplisciche, Gelati i Mocameta, Jaskinię Prometeusza i kanion Martvili oraz wybrzeże Batumi, z widokowym pociągiem z powrotem do Tbilisi"
+        }
+      },
+      {
         "src": "/images/tours/georgia-10-days-celebration/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia-1448.webp",
         "base": "/images/tours/georgia-10-days-celebration/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia",
         "widths": [768, 1200, 1448],
@@ -8180,6 +8211,21 @@ export const tours = [
       }
     ],
     "imageObjects": [
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-10-days-celebration/route-map-10-days-celebration-georgia/route-map-10-days-celebration-georgia-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "name": "Georgia in 10 Days: Where Every Corner Has a Story and Every Meal is a Celebration – Route Map",
+        "caption": "Illustrated route of the 10-day tour from Tbilisi north to Kazbegi, west to Kutaisi and Batumi on the Black Sea, via Ananuri, Gudauri, Gori, Uplistsikhe, Gelati, Prometheus Cave and Martvili Canyon, returning by train",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-10-days-celebration/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia-1448.webp",
