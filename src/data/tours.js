@@ -13110,32 +13110,6 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/stalin-museum-gori-georgia-1536.webp",
-        "base": "/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/stalin-museum-gori-georgia",
-        "widths": [768, 1200, 1536],
-        "fallbackWidth": 1200,
-        "width": 1536,
-        "height": 1024,
-        "caption": {
-          "en": "Stalin Museum, Gori",
-          "de": "Stalin-Museum, Gori",
-          "fr": "Musée Staline, Gori",
-          "es": "Museo de Stalin, Gori",
-          "nl": "Stalinmuseum, Gori",
-          "cs": "Muzeum Stalina, Gori",
-          "pl": "Muzeum Stalina, Gori"
-        },
-        "altText": {
-          "en": "Marble bust displayed in the Stalin Museum in Gori, Georgia",
-          "de": "Marmorbüste in der Ausstellung des Stalin-Museums in Gori, Georgien",
-          "fr": "Buste en marbre exposé au musée Staline à Gori, Géorgie",
-          "es": "Busto de mármol expuesto en el Museo de Stalin en Gori, Georgia",
-          "nl": "Marmeren buste in het Stalinmuseum in Gori, Georgië",
-          "cs": "Mramorová busta vystavená v Muzeu Stalina v Gori, Gruzie",
-          "pl": "Marmurowe popiersie na ekspozycji w Muzeum Stalina w Gori, Gruzja"
-        }
-      },
-      {
         "src": "/images/kakheti/sighnaghi-ridge-alazani-valley-kakheti-georgia-1448.webp",
         "base": "/images/kakheti/sighnaghi-ridge-alazani-valley-kakheti-georgia",
         "widths": [768, 1200, 1448],
@@ -13370,32 +13344,6 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/uplistsikhe-cave-town-gori-georgia-1448.webp",
-        "base": "/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/uplistsikhe-cave-town-gori-georgia",
-        "widths": [768, 1200, 1448],
-        "fallbackWidth": 1200,
-        "width": 1448,
-        "height": 1086,
-        "caption": {
-          "en": "Uplistsikhe Cave Town, Gori",
-          "de": "Höhlenstadt Uplisziche, Gori",
-          "fr": "Ville troglodyte d'Ouplistsikhé, Gori",
-          "es": "Ciudad rupestre de Uplistsije, Gori",
-          "nl": "Grottenstad Oeplistsiche, Gori",
-          "cs": "Skalní město Uplisciche, Gori",
-          "pl": "Skalne miasto Uplisciche, Gori"
-        },
-        "altText": {
-          "en": "Rock-hewn cave town of Uplistsikhe above the Mtkvari valley near Gori, Georgia",
-          "de": "In Fels gehauene Höhlenstadt Uplisziche über dem Kura-Tal bei Gori, Georgien",
-          "fr": "Ville troglodyte d'Ouplistsikhé taillée dans la roche au-dessus de la vallée de la Koura près de Gori, Géorgie",
-          "es": "Ciudad rupestre de Uplistsije excavada en la roca sobre el valle del Mtkvari cerca de Gori, Georgia",
-          "nl": "In rots uitgehakte grottenstad Oeplistsiche boven het Mtkvari-dal bij Gori, Georgië",
-          "cs": "Ve skále vytesané skalní město Uplisciche nad údolím Mtkvari u Gori, Gruzie",
-          "pl": "Wykute w skale skalne miasto Uplisciche nad doliną Mtkwari koło Gori, Gruzja"
-        }
-      },
-      {
         "src": "/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/gelati-monastery-kutaisi-georgia-1491.webp",
         "base": "/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/gelati-monastery-kutaisi-georgia",
         "widths": [768, 1200, 1491],
@@ -13626,27 +13574,6 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/stalin-museum-gori-georgia-1536.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "Stalin Museum, Gori",
-        "description": "Marble bust displayed in the Stalin Museum in Gori, Georgia",
-        "creditText": "Hikasus Travel",
-        "creator": {
-          "@type": "Organization",
-          "name": "Hikasus Travel"
-        },
-        "copyrightHolder": {
-          "@type": "Organization",
-          "name": "Hikasus Travel"
-        },
-        "contentLocation": {
-          "@type": "Place",
-          "name": "Gori, Georgia"
-        }
-      },
-      {
-        "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/kakheti/sighnaghi-ridge-alazani-valley-kakheti-georgia-1448.webp",
         "width": 1448,
         "height": 877,
@@ -13834,27 +13761,6 @@ export const tours = [
         "contentLocation": {
           "@type": "Place",
           "name": "Kutaisi, Georgia"
-        }
-      },
-      {
-        "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/uplistsikhe-cave-town-gori-georgia-1448.webp",
-        "width": 1448,
-        "height": 1086,
-        "caption": "Uplistsikhe Cave Town, Gori",
-        "description": "Rock-hewn cave town of Uplistsikhe above the Mtkvari valley near Gori, Georgia",
-        "creditText": "Hikasus Travel",
-        "creator": {
-          "@type": "Organization",
-          "name": "Hikasus Travel"
-        },
-        "copyrightHolder": {
-          "@type": "Organization",
-          "name": "Hikasus Travel"
-        },
-        "contentLocation": {
-          "@type": "Place",
-          "name": "Gori, Georgia"
         }
       },
       {
