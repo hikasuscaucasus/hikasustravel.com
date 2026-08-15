@@ -6822,6 +6822,35 @@ export const tours = [
     ],
     "gallery": [
       {
+        /* Route map — the itinerary infographic opens the gallery as an
+           ordinary tile, flat in images/files/ like every other image on this
+           older tour. Native 2400x1600 is already 3:2, so the uniform tile crop
+           takes nothing off it and it needs no crop anchor. */
+        "src": "/images/files/route-map-wine-adventure-georgia-2400.webp",
+        "base": "/images/files/route-map-wine-adventure-georgia",
+        "widths": [768, 1200, 1600, 2400],
+        "width": 2400,
+        "height": 1600,
+        "caption": {
+          "en": "9-Day Georgia Wine & Adventure Tour – Route Map",
+          "de": "9-tägige Wein- & Abenteuerreise durch Georgien – Routenkarte",
+          "fr": "Circuit vin et aventure de 9 jours en Géorgie – Carte de l'itinéraire",
+          "es": "Tour de vino y aventura de 9 días por Georgia – Mapa de la ruta",
+          "nl": "9-daagse wijn- & avontuurtour door Georgië – Routekaart",
+          "cs": "9denní vinný a dobrodružný zájezd po Gruzii – Mapa trasy",
+          "pl": "9-dniowa wycieczka winno-przygodowa po Gruzji – Mapa trasy"
+        },
+        "altText": {
+          "en": "Illustrated route map of the 9-day Georgia wine and adventure tour, based in Tbilisi, Kazbegi and Telavi, taking in Mtskheta and Ananuri, Kazbegi's Gergeti Trinity Church and the high Caucasus, and the Kakheti wine region around Sighnaghi and Alaverdi Monastery",
+          "de": "Illustrierte Routenkarte der 9-tägigen georgischen Wein- und Abenteuerreise mit Standorten in Tiflis, Kasbegi und Telawi, mit Mzcheta und Ananuri, der Gergeti-Dreifaltigkeitskirche bei Kasbegi und dem Hochkaukasus sowie der Weinregion Kachetien um Sighnaghi und das Alawerdi-Kloster",
+          "fr": "Carte illustrée de l'itinéraire du circuit vin et aventure de 9 jours en Géorgie, basé à Tbilissi, Kazbegi et Telavi, avec Mtskheta et Ananouri, l'église de la Trinité de Guerguéti près de Kazbegi et le haut Caucase, ainsi que la région viticole de Kakhétie autour de Sighnaghi et du monastère d'Alaverdi",
+          "es": "Mapa ilustrado de la ruta del tour de vino y aventura de 9 días por Georgia, con base en Tiflis, Kazbegi y Telavi, con Mtskheta y Ananuri, la iglesia de la Trinidad de Gergeti cerca de Kazbegi y el alto Cáucaso, y la región vinícola de Kajetia en torno a Sighnaghi y el monasterio de Alaverdi",
+          "nl": "Geïllustreerde routekaart van de 9-daagse Georgische wijn- en avontuurreis met standplaatsen in Tbilisi, Kazbegi en Telavi, met Mtscheta en Ananuri, de Gergeti-Drie-eenheidskerk bij Kazbegi en de hoge Kaukasus, en de wijnregio Kachetië rond Sighnaghi en het Alaverdi-klooster",
+          "cs": "Ilustrovaná mapa trasy 9denního gruzínského vinařsko-dobrodružného zájezdu se základnami v Tbilisi, Kazbegi a Telavi, s Mcchetou a Ananuri, kostelem Nejsvětější Trojice v Gergeti u Kazbegi a vysokým Kavkazem a vinařskou oblastí Kachetie kolem Sighnaghi a kláštera Alaverdi",
+          "pl": "Ilustrowana mapa trasy 9-dniowej gruzińskiej wycieczki winiarsko-przygodowej z bazami w Tbilisi, Kazbegi i Telawi, obejmująca Mcchetę i Ananuri, cerkiew Trójcy Świętej w Gergeti koło Kazbegi i wysoki Kaukaz oraz region winiarski Kachetia wokół Sighnaghi i klasztoru Alawerdi"
+        }
+      },
+      {
         "src": "/images/files/tbilisi-cityscape-georgia-1448.webp",
         "base": "/images/files/tbilisi-cityscape-georgia",
         "widths": [768, 1200, 1448],
@@ -7224,6 +7253,25 @@ export const tours = [
       }
     ],
     "imageObjects": [
+      {
+        "@type": "ImageObject",
+        "@id": "https://www.hikasustravel.com/images/files/route-map-wine-adventure-georgia-2400.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/route-map-wine-adventure-georgia-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "name": "9-Day Georgia Wine & Adventure Tour – Route Map",
+        "caption": "Illustrated route of the 9-day wine and adventure tour from Tbilisi, north to Kazbegi in the Caucasus and east to the Kakheti wine region via Mtskheta, Ananuri, Sighnaghi and Telavi",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Georgia (country)"
+        }
+      },
       {
         "@type": "ImageObject",
         "@id": "https://www.hikasustravel.com/images/files/tbilisi-cityscape-georgia-1200.webp#image",
