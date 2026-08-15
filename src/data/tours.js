@@ -3675,7 +3675,7 @@ export const tours = [
           "es": "Vista aérea del monasterio de Jvari sobre Mtsjeta, Patrimonio de la Humanidad de la UNESCO, Georgia",
           "nl": "Luchtfoto van het Jvari-klooster boven Mtscheta, UNESCO-werelderfgoed, Georgië",
           "cs": "Letecký pohled na klášter Džvari nad Mcchetou, památka UNESCO, Gruzie",
-          "pl": "Widok z lotu ptaka na klasztor Dżwari nad Mccchetą, obiekt UNESCO, Gruzja"
+          "pl": "Widok z lotu ptaka na klasztor Dżwari nad Mcchetą, obiekt UNESCO, Gruzja"
         }
       },
       {
@@ -3691,7 +3691,7 @@ export const tours = [
           "es": "Catedral de Svetitsjoveli, Patrimonio de la Humanidad de la UNESCO en Mtsjeta, Georgia",
           "nl": "Svetitskhoveli-kathedraal, UNESCO-werelderfgoed in Mtscheta, Georgië",
           "cs": "Katedrála Sveticchoveli, památka UNESCO ve městě Mccheta, Gruzie",
-          "pl": "Katedra Sweticchoweli, obiekt światowego dziedzictwa UNESCO w Mccchecie, Gruzja"
+          "pl": "Katedra Sweticchoweli, obiekt światowego dziedzictwa UNESCO w Mcchecie, Gruzja"
         }
       },
       {
@@ -5292,7 +5292,7 @@ export const tours = [
           "es": "Vista aérea del monasterio de Jvari sobre Mtsjeta, Patrimonio de la Humanidad de la UNESCO, Georgia",
           "nl": "Luchtfoto van het Jvari-klooster boven Mtscheta, UNESCO-werelderfgoed, Georgië",
           "cs": "Letecký pohled na klášter Džvari nad Mcchetou, památka UNESCO, Gruzie",
-          "pl": "Widok z lotu ptaka na klasztor Dżwari nad Mccchetą, obiekt UNESCO, Gruzja"
+          "pl": "Widok z lotu ptaka na klasztor Dżwari nad Mcchetą, obiekt UNESCO, Gruzja"
         }
       },
       {
@@ -5308,7 +5308,7 @@ export const tours = [
           "es": "Catedral de Svetitsjoveli, Patrimonio de la Humanidad de la UNESCO en Mtsjeta, Georgia",
           "nl": "Svetitskhoveli-kathedraal, UNESCO-werelderfgoed in Mtscheta, Georgië",
           "cs": "Katedrála Sveticchoveli, památka UNESCO ve městě Mccheta, Gruzie",
-          "pl": "Katedra Sweticchoweli, obiekt światowego dziedzictwa UNESCO w Mccchecie, Gruzja"
+          "pl": "Katedra Sweticchoweli, obiekt światowego dziedzictwa UNESCO w Mcchecie, Gruzja"
         }
       },
       {
@@ -5956,7 +5956,7 @@ export const tours = [
           "es": "Vista aérea del monasterio de Jvari sobre Mtsjeta, Patrimonio de la Humanidad de la UNESCO, Georgia",
           "nl": "Luchtfoto van het Jvari-klooster boven Mtscheta, UNESCO-werelderfgoed, Georgië",
           "cs": "Letecký pohled na klášter Džvari nad Mcchetou, památka UNESCO, Gruzie",
-          "pl": "Widok z lotu ptaka na klasztor Dżwari nad Mccchetą, obiekt UNESCO, Gruzja"
+          "pl": "Widok z lotu ptaka na klasztor Dżwari nad Mcchetą, obiekt UNESCO, Gruzja"
         }
       },
       {
@@ -5972,7 +5972,7 @@ export const tours = [
           "es": "Catedral de Svetitsjoveli, Patrimonio de la Humanidad de la UNESCO en Mtsjeta, Georgia",
           "nl": "Svetitskhoveli-kathedraal, UNESCO-werelderfgoed in Mtscheta, Georgië",
           "cs": "Katedrála Sveticchoveli, památka UNESCO ve městě Mccheta, Gruzie",
-          "pl": "Katedra Sweticchoweli, obiekt światowego dziedzictwa UNESCO w Mccchecie, Gruzja"
+          "pl": "Katedra Sweticchoweli, obiekt światowego dziedzictwa UNESCO w Mcchecie, Gruzja"
         }
       },
       {

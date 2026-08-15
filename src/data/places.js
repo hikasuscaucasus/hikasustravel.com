@@ -1899,7 +1899,7 @@ export const regions = [
       // Svetitskhoveli, Jvari, Gergeti, Stepantsminda, Kazbegi, Ananuri,
       // Zhinvali, Gudauri, Truso. The sibling site pages do NOT — Svetitskhoveli
       // says de "Mzcheta"/"Swetizchoweli", es "Mtsjeta"/"Svetitsjoveli",
-      // nl "Mtscheta", cs "Mccchetě"/"Sveticchoveli", pl "Mcchecie"/"Sweticchoweli";
+      // nl "Mtscheta", cs "Mcchetě"/"Sveticchoveli", pl "Mcchecie"/"Sweticchoweli";
       // Gergeti says fr "Guerguéti", es "Guergueti", cs "Stepancmindou",
       // pl "Stepancmindą"; Truso says de "Kasbegi". NONE of those strings is
       // reused. Every set below is authored from THIS page's own body wording.
@@ -9552,7 +9552,7 @@ export const sites = [
           fr: "Une maquette de la cathédrale de Svetitskhoveli — cathédrale du XIe siècle classée à l'UNESCO, à Mtskheta — au parc Georgia in Miniatures à Shekvetili, Gourie.",
           es: 'Una maqueta de la catedral de Svetitsjoveli — catedral del siglo XI declarada Patrimonio de la Humanidad, en Mtsjeta — en el parque Georgia in Miniatures en Shekvetili, Guria.',
           nl: 'Een schaalmodel van de Svetitschoveli-kathedraal — de 11e-eeuwse, op de UNESCO-lijst staande kathedraal in Mtscheta — in het park Georgia in Miniatures in Shekvetili, Guria.',
-          cs: 'Model katedrály Sveticchoveli — katedrály z 11. století zapsané na seznamu UNESCO v Mccchetě — v parku Georgia in Miniatures v Shekvetili, Gurie.',
+          cs: 'Model katedrály Sveticchoveli — katedrály z 11. století zapsané na seznamu UNESCO v Mcchetě — v parku Georgia in Miniatures v Shekvetili, Gurie.',
           pl: 'Model katedry Sweticchoweli — XI-wiecznej katedry z listy UNESCO w Mcchecie — w parku Georgia in Miniatures w Szekwetili, Guria.',
         },
       },
@@ -10714,7 +10714,7 @@ export const sites = [
         fr: 'Cathédrale de Svétitskhovéli à Mtskheta, église en pierre à coupole conique et muraille fortifiée, Géorgie',
         es: 'Catedral de Svetitsjoveli en Mtsjeta, iglesia de piedra con cúpula cónica y muralla fortificada, Georgia',
         nl: 'Svetitskhoveli-kathedraal in Mtscheta, stenen kruiskoepelkerk met kegeldak en verdedigingsmuur, Georgië',
-        cs: 'Katedrála Sveticchoveli v Mccchetě, kamenný křížový chrám s kuželovou kupolí a hradbou, Gruzie',
+        cs: 'Katedrála Sveticchoveli v Mcchetě, kamenný křížový chrám s kuželovou kupolí a hradbou, Gruzie',
         pl: 'Katedra Sweticchoweli w Mcchecie, kamienny kościół z kopułą i murem obronnym, Gruzja',
       },
     },
