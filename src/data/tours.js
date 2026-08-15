@@ -2486,6 +2486,35 @@ export const tours = [
     ],
     "gallery": [
       {
+        /* Route map — the itinerary infographic opens the gallery as an
+           ordinary tile, in its own nested folder like every other image on
+           this tour. Native 2400x1600 is already 3:2, so the uniform tile crop
+           takes nothing off it and it needs no crop anchor. */
+        "src": "/images/tours/7-day-cultural-kutaisi-tbilisi/route-map-kutaisi-tbilisi-georgia/route-map-kutaisi-tbilisi-georgia-2400.webp",
+        "base": "/images/tours/7-day-cultural-kutaisi-tbilisi/route-map-kutaisi-tbilisi-georgia/route-map-kutaisi-tbilisi-georgia",
+        "widths": [768, 1200, 1600, 2400],
+        "width": 2400,
+        "height": 1600,
+        "caption": {
+          "en": "7-Day Georgia Cultural Tour: Kutaisi to Tbilisi – Route Map",
+          "de": "7-tägige Kulturreise durch Georgien: von Kutaisi nach Tiflis – Routenkarte",
+          "fr": "Circuit culturel de 7 jours en Géorgie : de Kutaisi à Tbilissi – Carte de l'itinéraire",
+          "es": "Tour cultural de 7 días por Georgia: de Kutaisi a Tiflis – Mapa de la ruta",
+          "nl": "7-daagse culturele rondreis door Georgië: van Kutaisi naar Tbilisi – Routekaart",
+          "cs": "7denní kulturní zájezd po Gruzii: z Kutaisi do Tbilisi – Mapa trasy",
+          "pl": "7-dniowa wycieczka kulturowa po Gruzji: z Kutaisi do Tbilisi – Mapa trasy"
+        },
+        "altText": {
+          "en": "Illustrated route map of the 7-day Georgia cultural tour, based in Kutaisi and Tbilisi, with stops at Gelati and Motsameta monasteries, Prometheus Cave, Ananuri, Kazbegi's Gergeti Trinity Church, Uplistsikhe and Gori",
+          "de": "Illustrierte Routenkarte der 7-tägigen Kulturreise durch Georgien mit Standorten in Kutaissi und Tiflis, mit Halten an den Klöstern Gelati und Motsameta, der Prometheus-Höhle, Ananuri, der Gergeti-Dreifaltigkeitskirche bei Kasbegi sowie Uplisziche und Gori",
+          "fr": "Carte illustrée de l'itinéraire du circuit culturel de 7 jours en Géorgie, basé à Koutaïssi et Tbilissi, avec les monastères de Gélati et Motsameta, la grotte de Prométhée, Ananouri, l'église de la Trinité de Guerguéti près de Kazbegi, ainsi qu'Ouplistsikhé et Gori",
+          "es": "Mapa ilustrado de la ruta del tour cultural de 7 días por Georgia, con base en Kutaisi y Tiflis, con los monasterios de Gelati y Motsameta, la cueva de Prometeo, Ananuri, la iglesia de la Trinidad de Gergeti cerca de Kazbegi, y Uplistsikhe y Gori",
+          "nl": "Geïllustreerde routekaart van de 7-daagse culturele rondreis door Georgië, met standplaatsen in Kutaisi en Tbilisi, langs de kloosters Gelati en Motsameta, de Prometheusgrot, Ananuri, de Gergeti-Drie-eenheidskerk bij Kazbegi, en Uplistsikhe en Gori",
+          "cs": "Ilustrovaná mapa trasy 7denního kulturního zájezdu po Gruzii se základnami v Kutaisi a Tbilisi, s kláštery Gelati a Mocameta, Prométheovou jeskyní, Ananuri, kostelem Nejsvětější Trojice v Gergeti u Kazbegi a Uplisciche a Gori",
+          "pl": "Ilustrowana mapa trasy 7-dniowej wycieczki kulturowej po Gruzji, z bazami w Kutaisi i Tbilisi, obejmująca klasztory Gelati i Mocameta, Jaskinię Prometeusza, Ananuri, cerkiew Trójcy Świętej w Gergeti koło Kazbegi oraz Uplisciche i Gori"
+        }
+      },
+      {
         "src": "/images/tours/7-day-cultural-kutaisi-tbilisi/green-bazaar-kutaisi-georgia/green-bazaar-kutaisi-georgia-1448.webp",
         "base": "/images/tours/7-day-cultural-kutaisi-tbilisi/green-bazaar-kutaisi-georgia/green-bazaar-kutaisi-georgia",
         "widths": [768, 1200, 1448],
@@ -2713,6 +2742,21 @@ export const tours = [
       }
     ],
     "imageObjects": [
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/route-map-kutaisi-tbilisi-georgia/route-map-kutaisi-tbilisi-georgia-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "name": "7-Day Georgia Cultural Tour: Kutaisi to Tbilisi – Route Map",
+        "caption": "Illustrated route of the 7-day cultural tour between Kutaisi and Tbilisi, via Prometheus Cave, Gelati, Ananuri, Kazbegi, Uplistsikhe and Gori",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/green-bazaar-kutaisi-georgia/green-bazaar-kutaisi-georgia-1448.webp",
