@@ -5104,6 +5104,37 @@ export const tours = [
     ],
     "gallery": [
       {
+        /* Route map — the itinerary infographic opens the gallery as an
+           ordinary tile, in its own nested folder like every other image on
+           this tour. Native 2400x1600 is already 3:2, so the uniform tile crop
+           takes nothing off it and it needs no crop anchor. No per-locale alt
+           block on purpose: this tour has no imageMeta, so that block would
+           become prerender.js first alt match and hijack og:image:alt. */
+        "src": "/images/tours/9-day-kutaisi-tbilisi/route-map-9-day-kutaisi-tbilisi-georgia/route-map-9-day-kutaisi-tbilisi-georgia-2400.webp",
+        "base": "/images/tours/9-day-kutaisi-tbilisi/route-map-9-day-kutaisi-tbilisi-georgia/route-map-9-day-kutaisi-tbilisi-georgia",
+        "widths": [768, 1200, 1600, 2400],
+        "width": 2400,
+        "height": 1600,
+        "caption": {
+          "en": "9-Day Georgia Private Tour: Kutaisi to Tbilisi – Route Map",
+          "de": "9-tägige Georgien-Privatreise: von Kutaisi nach Tiflis – Routenkarte",
+          "fr": "Circuit privé de 9 jours en Géorgie : de Kutaisi à Tbilissi – Carte de l'itinéraire",
+          "es": "Tour privado de 9 días por Georgia: de Kutaisi a Tiflis – Mapa de la ruta",
+          "nl": "9-daagse privétour door Georgië: van Kutaisi naar Tbilisi – Routekaart",
+          "cs": "9denní soukromý zájezd po Gruzii: z Kutaisi do Tbilisi – Mapa trasy",
+          "pl": "9-dniowa prywatna wycieczka po Gruzji: z Kutaisi do Tbilisi – Mapa trasy"
+        },
+        "altText": {
+          "en": "Illustrated route map of the 9-day Georgia private tour based in Kutaisi and Tbilisi, taking in Gelati and Motsameta, Prometheus Cave, Mtskheta, Ananuri and Kazbegi's Gergeti Trinity Church, Uplistsikhe and Gori, and the western hidden gems of Nokalakevi and Martvili Canyon",
+          "de": "Illustrierte Routenkarte der 9-tägigen privaten Georgien-Reise mit Standorten in Kutaissi und Tiflis, mit Gelati und Motsameta, der Prometheus-Höhle, Mzcheta, Ananuri und der Gergeti-Dreifaltigkeitskirche bei Kasbegi, Uplisziche und Gori sowie den westlichen Geheimtipps Nokalakewi und Martvili-Schlucht",
+          "fr": "Carte illustrée de l'itinéraire du circuit privé de 9 jours en Géorgie, basé à Koutaïssi et Tbilissi, avec Gélati et Motsameta, la grotte de Prométhée, Mtskheta, Ananouri et l'église de la Trinité de Guerguéti près de Kazbegi, Ouplistsikhé et Gori, ainsi que les trésors cachés de l'ouest, Nokalakevi et le canyon de Martvili",
+          "es": "Mapa ilustrado de la ruta del tour privado de 9 días por Georgia, con base en Kutaisi y Tiflis, con Gelati y Motsameta, la cueva de Prometeo, Mtskheta, Ananuri y la iglesia de la Trinidad de Gergeti cerca de Kazbegi, Uplistsikhe y Gori, y los tesoros ocultos del oeste, Nokalakevi y el cañón de Martvili",
+          "nl": "Geïllustreerde routekaart van de 9-daagse privétour door Georgië met standplaatsen in Kutaisi en Tbilisi, met Gelati en Motsameta, de Prometheusgrot, Mtscheta, Ananuri en de Gergeti-Drie-eenheidskerk bij Kazbegi, Uplistsikhe en Gori, en de verborgen parels in het westen, Nokalakevi en de Martvili-kloof",
+          "cs": "Ilustrovaná mapa trasy 9denního soukromého zájezdu po Gruzii se základnami v Kutaisi a Tbilisi, s Gelati a Mocameta, Prométheovou jeskyní, Mcchetou, Ananuri a kostelem Nejsvětější Trojice v Gergeti u Kazbegi, Uplisciche a Gori a se západními skrytými klenoty Nokalakevi a kaňonem Martvili",
+          "pl": "Ilustrowana mapa trasy 9-dniowej prywatnej wycieczki po Gruzji z bazami w Kutaisi i Tbilisi, obejmująca Gelati i Mocameta, Jaskinię Prometeusza, Mcchetę, Ananuri i cerkiew Trójcy Świętej w Gergeti koło Kazbegi, Uplisciche i Gori oraz zachodnie ukryte perły Nokalakewi i kanion Martvili"
+        }
+      },
+      {
         "src": "/images/tours/9-day-kutaisi-tbilisi/green-bazaar-kutaisi-georgia/green-bazaar-kutaisi-georgia-1448.webp",
         "base": "/images/tours/9-day-kutaisi-tbilisi/green-bazaar-kutaisi-georgia/green-bazaar-kutaisi-georgia",
         "widths": [768, 1200, 1448],
@@ -5428,6 +5459,20 @@ export const tours = [
       }
     ],
     "imageObjects": [
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/9-day-kutaisi-tbilisi/route-map-9-day-kutaisi-tbilisi-georgia/route-map-9-day-kutaisi-tbilisi-georgia-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "name": "9-Day Georgia Private Tour: Kutaisi to Tbilisi – Route Map",
+        "caption": "Illustrated route of the 9-day tour between Kutaisi and Tbilisi, via Gelati, Prometheus Cave, Mtskheta, Ananuri, Kazbegi, Uplistsikhe, Gori, Nokalakevi and Martvili Canyon",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel"
+      },
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/9-day-kutaisi-tbilisi/green-bazaar-kutaisi-georgia/green-bazaar-kutaisi-georgia-1448.webp",
