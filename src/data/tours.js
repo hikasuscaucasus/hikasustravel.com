@@ -270,22 +270,22 @@ export const tours = [
         "height": 1089,
         "fallbackWidth": 1200,
         "caption": {
-          "en": "Aragvi confluence, Military Highway",
-          "de": "Aragvi-Zusammenfluss, Heerstraße",
-          "fr": "Confluent de l'Aragvi, route militaire",
-          "es": "Confluencia del Aragvi, Carretera Militar",
-          "nl": "Samenvloeiing van de Aragvi, Militaire Weg",
-          "cs": "Soutok Aragvi, Vojenská cesta",
-          "pl": "Zbieg rzek Aragwi, Droga Wojenna"
+          "en": "Black and White Aragvi Confluence, Pasanauri",
+          "de": "Zusammenfluss der Schwarzen und Weißen Aragwi, Pasanauri",
+          "fr": "Confluent de l'Aragvi noire et blanche, Pasanauri",
+          "es": "Confluencia de los Aragvi Negro y Blanco, Pasanauri",
+          "nl": "Samenvloeiing van de Zwarte en Witte Aragvi, Pasanauri",
+          "cs": "Soutok Černé a Bílé Aragvi, Pasanauri",
+          "pl": "Zbieg Czarnej i Białej Aragwi, Pasanauri"
         },
         "altText": {
-          "en": "Confluence of the Black and White Aragvi rivers below snow-capped Caucasus peaks, Georgia",
-          "de": "Zusammenfluss der Schwarzen und Weißen Aragvi unter schneebedeckten Kaukasusgipfeln, Georgien",
-          "fr": "Confluent des rivières Aragvi noire et blanche sous les sommets enneigés du Caucase, Géorgie",
-          "es": "Confluencia de los ríos Aragvi negro y blanco bajo picos nevados del Cáucaso, Georgia",
-          "nl": "Samenvloeiing van de Zwarte en Witte Aragvi onder besneeuwde Kaukasustoppen, Georgië",
-          "cs": "Soutok Černé a Bílé Aragvi pod zasněženými vrcholky Kavkazu, Gruzie",
-          "pl": "Zbieg Czarnej i Białej Aragwi pod ośnieżonymi szczytami Kaukazu, Gruzja"
+          "en": "Confluence of the Black and White Aragvi rivers near Pasanauri on the Georgian Military Highway, Georgia",
+          "de": "Zusammenfluss der Schwarzen und Weißen Aragwi nahe Pasanauri an der Georgischen Heerstraße, Georgien",
+          "fr": "Confluent des rivières Aragvi noire et blanche près de Pasanauri sur la route militaire géorgienne, Géorgie",
+          "es": "Confluencia de los ríos Aragvi Negro y Blanco cerca de Pasanauri en la Carretera Militar Georgiana, Georgia",
+          "nl": "Samenvloeiing van de Zwarte en Witte Aragvi nabij Pasanauri aan de Georgische Militaire Weg, Georgië",
+          "cs": "Soutok Černé a Bílé Aragvi poblíž Pasanauri na Gruzínské vojenské silnici, Gruzie",
+          "pl": "Zbieg Czarnej i Białej Aragwi w pobliżu Pasanauri przy Gruzińskiej Drodze Wojennej, Gruzja"
         }
       },
       {
@@ -814,8 +814,8 @@ export const tours = [
         "contentUrl": "https://www.hikasustravel.com/images/group-tours/georgia-group-tour/aragvi-confluence-military-highway-georgia-1445.webp",
         "width": 1445,
         "height": 1089,
-        "caption": "Aragvi confluence, Military Highway",
-        "description": "Confluence of the Black and White Aragvi rivers below snow-capped Caucasus peaks, Georgia",
+        "caption": "Black and White Aragvi Confluence, Pasanauri",
+        "description": "Confluence of the Black and White Aragvi rivers near Pasanauri on the Georgian Military Highway, Georgia",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -12495,22 +12495,22 @@ export const tours = [
         "width": 1445,
         "height": 1089,
         "caption": {
-          "en": "Aragvi Confluence, Georgian Military Highway",
-          "de": "Aragwi-Zusammenfluss, Georgische Heerstraße",
-          "fr": "Confluent de l'Aragvi, route militaire géorgienne",
-          "es": "Confluencia del Aragvi, Carretera Militar Georgiana",
-          "nl": "Samenvloeiing van de Aragvi, Georgische Militaire Weg",
-          "cs": "Soutok Aragvi, Gruzínská vojenská silnice",
-          "pl": "Ujście Aragwi, Gruzińska Droga Wojenna"
+          "en": "Black and White Aragvi Confluence, Pasanauri",
+          "de": "Zusammenfluss der Schwarzen und Weißen Aragwi, Pasanauri",
+          "fr": "Confluent de l'Aragvi noire et blanche, Pasanauri",
+          "es": "Confluencia de los Aragvi Negro y Blanco, Pasanauri",
+          "nl": "Samenvloeiing van de Zwarte en Witte Aragvi, Pasanauri",
+          "cs": "Soutok Černé a Bílé Aragvi, Pasanauri",
+          "pl": "Zbieg Czarnej i Białej Aragwi, Pasanauri"
         },
         "altText": {
-          "en": "Confluence of the Black and White Aragvi rivers below snow-capped Caucasus peaks, Georgia",
-          "de": "Zusammenfluss der Schwarzen und Weißen Aragwi unter schneebedeckten Kaukasusgipfeln, Georgien",
-          "fr": "Confluent des rivières Aragvi noire et blanche sous les sommets enneigés du Caucase, Géorgie",
-          "es": "Confluencia de los ríos Aragvi negro y blanco bajo picos nevados del Cáucaso, Georgia",
-          "nl": "Samenvloeiing van de Zwarte en Witte Aragvi onder besneeuwde Kaukasustoppen, Georgië",
-          "cs": "Soutok Černé a Bílé Aragvi pod zasněženými vrcholky Kavkazu, Gruzie",
-          "pl": "Zbieg Czarnej i Białej Aragwi pod ośnieżonymi szczytami Kaukazu, Gruzja"
+          "en": "Confluence of the Black and White Aragvi rivers near Pasanauri on the Georgian Military Highway, Georgia",
+          "de": "Zusammenfluss der Schwarzen und Weißen Aragwi nahe Pasanauri an der Georgischen Heerstraße, Georgien",
+          "fr": "Confluent des rivières Aragvi noire et blanche près de Pasanauri sur la route militaire géorgienne, Géorgie",
+          "es": "Confluencia de los ríos Aragvi Negro y Blanco cerca de Pasanauri en la Carretera Militar Georgiana, Georgia",
+          "nl": "Samenvloeiing van de Zwarte en Witte Aragvi nabij Pasanauri aan de Georgische Militaire Weg, Georgië",
+          "cs": "Soutok Černé a Bílé Aragvi poblíž Pasanauri na Gruzínské vojenské silnici, Gruzie",
+          "pl": "Zbieg Czarnej i Białej Aragwi w pobliżu Pasanauri przy Gruzińskiej Drodze Wojennej, Gruzja"
         }
       },
       {
@@ -12957,8 +12957,8 @@ export const tours = [
         "contentUrl": "https://www.hikasustravel.com/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/aragvi-confluence-military-highway-georgia-1445.webp",
         "width": 1445,
         "height": 1089,
-        "caption": "Aragvi Confluence, Georgian Military Highway",
-        "description": "Confluence of the Black and White Aragvi rivers below snow-capped Caucasus peaks, Georgia",
+        "caption": "Black and White Aragvi Confluence, Pasanauri",
+        "description": "Confluence of the Black and White Aragvi rivers near Pasanauri on the Georgian Military Highway, Georgia",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -13517,22 +13517,22 @@ export const tours = [
         "width": 1445,
         "height": 1089,
         "caption": {
-          "en": "Aragvi Confluence, Georgian Military Highway",
-          "de": "Aragwi-Zusammenfluss, Georgische Heerstraße",
-          "fr": "Confluent de l'Aragvi, route militaire géorgienne",
-          "es": "Confluencia del Aragvi, Carretera Militar Georgiana",
-          "nl": "Samenvloeiing van de Aragvi, Georgische Militaire Weg",
-          "cs": "Soutok Aragvi, Gruzínská vojenská silnice",
-          "pl": "Ujście Aragwi, Gruzińska Droga Wojenna"
+          "en": "Black and White Aragvi Confluence, Pasanauri",
+          "de": "Zusammenfluss der Schwarzen und Weißen Aragwi, Pasanauri",
+          "fr": "Confluent de l'Aragvi noire et blanche, Pasanauri",
+          "es": "Confluencia de los Aragvi Negro y Blanco, Pasanauri",
+          "nl": "Samenvloeiing van de Zwarte en Witte Aragvi, Pasanauri",
+          "cs": "Soutok Černé a Bílé Aragvi, Pasanauri",
+          "pl": "Zbieg Czarnej i Białej Aragwi, Pasanauri"
         },
         "altText": {
-          "en": "Confluence of the Black and White Aragvi rivers below snow-capped Caucasus peaks, Georgia",
-          "de": "Zusammenfluss der Schwarzen und Weißen Aragwi unter schneebedeckten Kaukasusgipfeln, Georgien",
-          "fr": "Confluent des rivières Aragvi noire et blanche sous les sommets enneigés du Caucase, Géorgie",
-          "es": "Confluencia de los ríos Aragvi negro y blanco bajo picos nevados del Cáucaso, Georgia",
-          "nl": "Samenvloeiing van de Zwarte en Witte Aragvi onder besneeuwde Kaukasustoppen, Georgië",
-          "cs": "Soutok Černé a Bílé Aragvi pod zasněženými vrcholky Kavkazu, Gruzie",
-          "pl": "Zbieg Czarnej i Białej Aragwi pod ośnieżonymi szczytami Kaukazu, Gruzja"
+          "en": "Confluence of the Black and White Aragvi rivers near Pasanauri on the Georgian Military Highway, Georgia",
+          "de": "Zusammenfluss der Schwarzen und Weißen Aragwi nahe Pasanauri an der Georgischen Heerstraße, Georgien",
+          "fr": "Confluent des rivières Aragvi noire et blanche près de Pasanauri sur la route militaire géorgienne, Géorgie",
+          "es": "Confluencia de los ríos Aragvi Negro y Blanco cerca de Pasanauri en la Carretera Militar Georgiana, Georgia",
+          "nl": "Samenvloeiing van de Zwarte en Witte Aragvi nabij Pasanauri aan de Georgische Militaire Weg, Georgië",
+          "cs": "Soutok Černé a Bílé Aragvi poblíž Pasanauri na Gruzínské vojenské silnici, Gruzie",
+          "pl": "Zbieg Czarnej i Białej Aragwi w pobliżu Pasanauri przy Gruzińskiej Drodze Wojennej, Gruzja"
         }
       },
       {
@@ -14065,8 +14065,8 @@ export const tours = [
         "contentUrl": "https://www.hikasustravel.com/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/aragvi-confluence-military-highway-georgia-1445.webp",
         "width": 1445,
         "height": 1089,
-        "caption": "Aragvi Confluence, Georgian Military Highway",
-        "description": "Confluence of the Black and White Aragvi rivers below snow-capped Caucasus peaks, Georgia",
+        "caption": "Black and White Aragvi Confluence, Pasanauri",
+        "description": "Confluence of the Black and White Aragvi rivers near Pasanauri on the Georgian Military Highway, Georgia",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -15064,22 +15064,22 @@ export const tours = [
         "width": 1445,
         "height": 1089,
         "caption": {
-          "en": "Aragvi Confluence, Georgian Military Highway",
-          "de": "Aragwi-Zusammenfluss, Georgische Heerstraße",
-          "fr": "Confluent de l'Aragvi, route militaire géorgienne",
-          "es": "Confluencia del Aragvi, Carretera Militar Georgiana",
-          "nl": "Samenvloeiing van de Aragvi, Georgische Militaire Weg",
-          "cs": "Soutok Aragvi, Gruzínská vojenská silnice",
-          "pl": "Ujście Aragwi, Gruzińska Droga Wojenna"
+          "en": "Black and White Aragvi Confluence, Pasanauri",
+          "de": "Zusammenfluss der Schwarzen und Weißen Aragwi, Pasanauri",
+          "fr": "Confluent de l'Aragvi noire et blanche, Pasanauri",
+          "es": "Confluencia de los Aragvi Negro y Blanco, Pasanauri",
+          "nl": "Samenvloeiing van de Zwarte en Witte Aragvi, Pasanauri",
+          "cs": "Soutok Černé a Bílé Aragvi, Pasanauri",
+          "pl": "Zbieg Czarnej i Białej Aragwi, Pasanauri"
         },
         "altText": {
-          "en": "Confluence of the Black and White Aragvi rivers below snow-capped Caucasus peaks, Georgia",
-          "de": "Zusammenfluss der Schwarzen und Weißen Aragwi unter schneebedeckten Kaukasusgipfeln, Georgien",
-          "fr": "Confluent des rivières Aragvi noire et blanche sous les sommets enneigés du Caucase, Géorgie",
-          "es": "Confluencia de los ríos Aragvi negro y blanco bajo picos nevados del Cáucaso, Georgia",
-          "nl": "Samenvloeiing van de Zwarte en Witte Aragvi onder besneeuwde Kaukasustoppen, Georgië",
-          "cs": "Soutok Černé a Bílé Aragvi pod zasněženými vrcholky Kavkazu, Gruzie",
-          "pl": "Zbieg Czarnej i Białej Aragwi pod ośnieżonymi szczytami Kaukazu, Gruzja"
+          "en": "Confluence of the Black and White Aragvi rivers near Pasanauri on the Georgian Military Highway, Georgia",
+          "de": "Zusammenfluss der Schwarzen und Weißen Aragwi nahe Pasanauri an der Georgischen Heerstraße, Georgien",
+          "fr": "Confluent des rivières Aragvi noire et blanche près de Pasanauri sur la route militaire géorgienne, Géorgie",
+          "es": "Confluencia de los ríos Aragvi Negro y Blanco cerca de Pasanauri en la Carretera Militar Georgiana, Georgia",
+          "nl": "Samenvloeiing van de Zwarte en Witte Aragvi nabij Pasanauri aan de Georgische Militaire Weg, Georgië",
+          "cs": "Soutok Černé a Bílé Aragvi poblíž Pasanauri na Gruzínské vojenské silnici, Gruzie",
+          "pl": "Zbieg Czarnej i Białej Aragwi w pobliżu Pasanauri przy Gruzińskiej Drodze Wojennej, Gruzja"
         }
       },
       {
@@ -15520,8 +15520,8 @@ export const tours = [
         "contentUrl": "https://www.hikasustravel.com/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/aragvi-confluence-military-highway-georgia-1445.webp",
         "width": 1445,
         "height": 1089,
-        "caption": "Aragvi Confluence, Georgian Military Highway",
-        "description": "Confluence of the Black and White Aragvi rivers below snow-capped Caucasus peaks, Georgia",
+        "caption": "Black and White Aragvi Confluence, Pasanauri",
+        "description": "Confluence of the Black and White Aragvi rivers near Pasanauri on the Georgian Military Highway, Georgia",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
