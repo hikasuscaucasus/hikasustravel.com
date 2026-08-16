@@ -1587,15 +1587,6 @@ export const tours = [
           "cs": "Mapa trasy",
           "pl": "Mapa trasy"
         },
-        "alt": {
-          "en": "Illustrated route of the 3-day Kakheti wine and food journey from Tbilisi via Tsinandali, Telavi, Gremi, Sighnaghi and Bodbe, with two nights in Telavi",
-          "de": "Illustrierte Route der 3-tägigen Wein- und Kulinarik-Reise durch Kachetien ab Tiflis über Tsinandali, Telavi, Gremi, Sighnaghi und Bodbe, mit zwei Nächten in Telavi",
-          "fr": "Itinéraire illustré du circuit vin et gastronomie de 3 jours à Kakheti au départ de Tbilisi via Tsinandali, Telavi, Gremi, Sighnaghi et Bodbe, avec deux nuits à Telavi",
-          "es": "Ruta ilustrada del tour de vino y gastronomía de 3 días por Kakheti desde Tbilisi vía Tsinandali, Telavi, Gremi, Sighnaghi y Bodbe, con dos noches en Telavi",
-          "nl": "Geïllustreerde route van de 3-daagse wijn- en culinaire reis door Kacheti vanuit Tbilisi via Tsinandali, Telavi, Gremi, Sighnaghi en Bodbe, met twee nachten in Telavi",
-          "cs": "Ilustrovaná trasa 3denního vinařsko-gastronomického zájezdu Kachetií z Tbilisi přes Tsinandali, Telavi, Gremi, Sighnaghi a Bodbe, se dvěma nocemi v Telavi",
-          "pl": "Ilustrowana trasa 3-dniowej wycieczki winiarsko-kulinarnej po Kakheti z Tbilisi przez Tsinandali, Telavi, Gremi, Sighnaghi i Bodbe, z dwoma nocami w Telavi"
-        },
         "altText": {
           "en": "Illustrated route map of the 3-day Kakheti wine and food tour from Tbilisi, over the Gombori Pass to Tsinandali and Telavi, with a loop to Khareba, Gremi and Napareuli, and a final day via Sighnaghi and Bodbe before returning to Tbilisi",
           "de": "Illustrierte Routenkarte der 3-tägigen kachetischen Wein- und Kulinarik-Reise ab Tiflis, über den Gombori-Pass nach Tsinandali und Telavi, mit einer Schleife nach Khareba, Gremi und Napareuli und einem letzten Tag über Sighnaghi und Bodbe vor der Rückkehr nach Tiflis",
@@ -2613,15 +2604,6 @@ export const tours = [
           "cs": "Mapa trasy",
           "pl": "Mapa trasy"
         },
-        "alt": {
-          "en": "Illustrated route of the 5-day journey from Tbilisi to Kazbegi and Kakheti via Mtskheta, Ananuri, Telavi, Sighnaghi and Bodbe",
-          "de": "Illustrierte Route der 5-tägigen Reise von Tiflis nach Kazbegi und Kachetien über Mtskheta, Ananuri, Telawi, Sighnaghi und Bodbe",
-          "fr": "Itinéraire illustré du voyage de 5 jours de Tbilissi à Kazbegi et en Kakhétie via Mtskheta, Ananouri, Telavi, Sighnaghi et Bodbe",
-          "es": "Ruta ilustrada del viaje de 5 días desde Tiflis hasta Kazbegi y Kajetia pasando por Mtskheta, Ananuri, Telavi, Sighnaghi y Bodbe",
-          "nl": "Geïllustreerde route van de 5-daagse reis van Tbilisi naar Kazbegi en Kachetië via Mtskheta, Ananuri, Telavi, Sighnaghi en Bodbe",
-          "cs": "Ilustrovaná trasa 5denního výletu z Tbilisi do Kazbegi a Kachetie přes Mtskhetu, Ananuri, Telavi, Sighnaghi a Bodbe",
-          "pl": "Ilustrowana trasa 5-dniowej podróży z Tbilisi do Kazbegi i Kachetii przez Mtskhetę, Ananuri, Telawi, Sighnaghi i Bodbe"
-        },
         "altText": {
           "en": "Illustrated route map of the 5-day Georgia private tour, looping from Tbilisi north to Kazbegi and east through the Kakheti wine region via Mtskheta, Ananuri, Telavi, Sighnaghi and Bodbe",
           "de": "Illustrierte Routenkarte der 5-tägigen privaten Georgien-Reise, als Rundreise von Tiflis nördlich nach Kazbegi und östlich durch die Weinregion Kachetien über Mtskheta, Ananuri, Telawi, Sighnaghi und Bodbe",
@@ -3176,15 +3158,6 @@ export const tours = [
           "nl": "Routekaart",
           "cs": "Mapa trasy",
           "pl": "Mapa trasy"
-        },
-        "alt": {
-          "en": "Illustrated route of the 6-day journey from Tbilisi through Uplistsikhe, Gori, Borjomi, Vardzia, Akhaltsikhe, Kutaisi and Martvili Canyon",
-          "de": "Illustrierte Route der 6-tägigen Reise von Tiflis über Uplistsikhe, Gori, Borjomi, Wardsia, Achalziche, Kutaissi und die Martvili-Schlucht",
-          "fr": "Itinéraire illustré du voyage de 6 jours de Tbilissi via Uplistsikhe, Gori, Borjomi, Vardzia, Akhaltsikhe, Koutaïssi et le canyon de Martvili",
-          "es": "Ruta ilustrada del viaje de 6 días desde Tiflis pasando por Uplistsikhe, Gori, Borjomi, Vardzia, Akhaltsikhe, Kutaisi y el cañón de Martvili",
-          "nl": "Geïllustreerde route van de 6-daagse reis van Tbilisi via Uplistsikhe, Gori, Borjomi, Vardzia, Achaltsiche, Koetaisi en de Martvili-kloof",
-          "cs": "Ilustrovaná trasa 6denního výletu z Tbilisi přes Uplistsikhe, Gori, Borjomi, Vardzii, Achalciche, Kutaisi a kaňon Martvili",
-          "pl": "Ilustrowana trasa 6-dniowej podróży z Tbilisi przez Uplistsikhe, Gori, Borjomi, Wardzię, Achalciche, Kutaisi i kanion Martvili"
         },
         "altText": {
           "en": "Illustrated route map of the 6-day Georgia private tour, running west from Tbilisi through Uplistsikhe, Gori, Borjomi, Vardzia and Akhaltsikhe to Kutaisi and Martvili Canyon before returning to Tbilisi",
