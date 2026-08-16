@@ -11834,8 +11834,14 @@ export const tours = [
     "slug": "12-day-ultimate-georgia-adventure-tour-tbilisi-kazbegi-mestia-kutaisi-batumi",
     "type": "private",
     "title": "12-Day Ultimate Georgia Adventure Tour: Tbilisi, Kazbegi, Mestia, Kutaisi, Batumi",
-    "heroImage": "/images/files/svaneti-highlands-georgia-1200.webp",
-    "heroBgClass": "hero--12day-ultimate-svaneti",
+    /* Hero + both cards are Svetitskhoveli Cathedral, Mtskheta — the same
+       flat-namespace file this tour's own gallery already ships, so no asset
+       was added. ⚠️ `alt` below is NOT the hero's alt: the hero is a CSS
+       background with no <img>, and this block feeds og:image:alt only. The
+       og:image is deliberately unchanged (still the Svaneti crop), so this
+       text must keep describing THAT image, not the new hero. */
+    "heroImage": "/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1200.webp",
+    "heroBgClass": "hero--12day-ultimate-svetitskhoveli",
     "alt": {
       "en": "Green alpine valley and hiking trail in the Svaneti highlands, Georgia",
       "de": "Grünes Alpental mit Wanderweg im Hochland von Swanetien, Georgien",
@@ -11846,8 +11852,8 @@ export const tours = [
       "pl": "Zielona alpejska dolina i szlak w wyżynach Swanetii, Gruzja"
     },
     "ogImage": { "src": "/images/files/svaneti-highlands-georgia-og.jpg", "width": 1200, "height": 630 },
-    "tileImage": "/images/files/svaneti-highlands-georgia-card-1200.webp",
-    "listingImage": "/images/files/svaneti-highlands-georgia-card-1200.webp",
+    "tileImage": "/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1200.webp",
+    "listingImage": "/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1200.webp",
     "cardPosition": "center",
     "days": 12,
     "description": "Embark on the ultimate Georgian adventure with this comprehensive 12-day journey through historic landmarks, breathtaking landscapes, and vibrant cities.",

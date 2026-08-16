@@ -685,37 +685,38 @@ section {
 }
 /* No rung above 1448 (native ceiling). */
 
-/* 12-Day Ultimate Georgia Adventure tour hero — the Svaneti highland valley,
-   same opt-in .heroBgClass mechanism. Ladder 768/1200/1448 — native ceiling
-   1448 (1448x1086), so no 1600/2400 rung and nothing is upscaled. Replaces
-   ultimate-georgia-adventure.jpg, which had no responsive ladder at all.
-   background-position: center — the frame is a wide valley with the trail and
-   ridgeline through the middle third, so the 100vh cover crop keeps the valley
-   floor AND the peaks at 360px and shows the full span on desktop.
+/* 12-Day Ultimate Georgia Adventure tour hero — Svetitskhoveli Cathedral in
+   Mtskheta, same opt-in .heroBgClass mechanism. Ladder 768/1200/1540 — native
+   ceiling 1540 (1540x1021), so no 1600/2400 rung and nothing is upscaled.
+   Reuses the flat-namespace file this tour's own gallery already ships; no new
+   asset was created. Replaces the Svaneti highland valley frame (the tour's
+   og:image deliberately still uses that Svaneti crop, so the two now differ).
+   background-position: center — the cathedral sits mid-frame with sky above,
+   which is what the 100vh cover crop needs at 360px and on desktop alike.
    plain url() = image-set() fallback. */
-.hero--12day-ultimate-svaneti {
-  background-image: url("/images/files/svaneti-highlands-georgia-1200.webp");
+.hero--12day-ultimate-svetitskhoveli {
+  background-image: url("/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1200.webp");
   background-image: image-set(
-    url("/images/files/svaneti-highlands-georgia-768.avif") type("image/avif"),
-    url("/images/files/svaneti-highlands-georgia-768.webp") type("image/webp")
+    url("/images/files/svetitskhoveli-cathedral-mtskheta-georgia-768.avif") type("image/avif"),
+    url("/images/files/svetitskhoveli-cathedral-mtskheta-georgia-768.webp") type("image/webp")
   );
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
-  .hero--12day-ultimate-svaneti {
+  .hero--12day-ultimate-svetitskhoveli {
     background-image: image-set(
-      url("/images/files/svaneti-highlands-georgia-1200.avif") type("image/avif"),
-      url("/images/files/svaneti-highlands-georgia-1200.webp") type("image/webp")
+      url("/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1200.avif") type("image/avif"),
+      url("/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1200.webp") type("image/webp")
     );
   }
 }
 @media (min-width: 1200px) {
-  .hero--12day-ultimate-svaneti {
+  .hero--12day-ultimate-svetitskhoveli {
     background-image: image-set(
-      url("/images/files/svaneti-highlands-georgia-1448.avif") type("image/avif"),
-      url("/images/files/svaneti-highlands-georgia-1448.webp") type("image/webp")
+      url("/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1540.avif") type("image/avif"),
+      url("/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp") type("image/webp")
     );
   }
 }
