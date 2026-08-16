@@ -24,8 +24,15 @@ export default function GroupToursPage() {
 
   return (
     <>
+      {/* Hero shows the same Gergeti frame as the Georgia Group Tour page it
+          lists, from that tour's own image folder. `imageAvif` upgrades the
+          CSS background to AVIF via image-set() where the browser supports it
+          — the same opt-in the city/region/site heroes use. The legacy
+          /images/files/Gergeti-Church.jpg is still referenced by a blog post,
+          so it stays on disk. */}
       <HeroSection
-        image="/images/files/Gergeti-Church.jpg"
+        image="/images/group-tours/georgia-group-tour/gergeti-trinity-church-kazbegi-georgia-1448.webp"
+        imageAvif="/images/group-tours/georgia-group-tour/gergeti-trinity-church-kazbegi-georgia-1448.avif"
         title={t('tour.groupTours')}
       />
 
