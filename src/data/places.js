@@ -5925,18 +5925,52 @@ export const cities = [
   {
     slug: 'zugdidi', name: 'Zugdidi', region: 'samegrelo', published: true,
     seoKey: 'zugdidi', contentKey: 'zugdidi',
-    // ⚠️ NO HERO PHOTOGRAPH. There is no image of Zugdidi anywhere in the
-    // library — not the city, the Dadiani Palace, the Enguri Dam, Anaklia, the
-    // market or Mingrelian food (the only "Dadiani Palace Zugdidi" file is a
-    // SCALE MODEL in the Miniatures Park). A Mestia/Svaneti hero was shipped
-    // briefly under this page's gateway-to-Svaneti framing and then REMOVED at
-    // the owner's request: a photograph of a mountain village three hours up the
-    // road should not front the Zugdidi city page. Back to the placeholder every
-    // un-illustrated page uses, so og:image auto-derives from it as before.
-    // ⚠️ Do NOT re-add a Svaneti hero here. The body figure below stays: it
-    // sits inside the page's own "Gateway to Svaneti" section, where Svan towers
-    // are what the text is actually about.
-    image: '/images/files/georgia-home.jpg',
+    // Hero: the Dadiani Palace and its gardens — the city's own landmark, and
+    // the subject the H1 leads with. This replaces the site-wide
+    // georgia-home.jpg placeholder that served as hero AND og:image.
+    // ⚠️ History worth keeping: a Mestia/Svaneti hero shipped here briefly under
+    // the gateway-to-Svaneti framing and was REMOVED at the owner's request
+    // (45d2592a) — a mountain village three hours up the road should not front
+    // the Zugdidi city page. That ruling stands; this frame is different because
+    // it is Zugdidi. Do NOT re-add a Svaneti hero. The body figure below stays:
+    // it sits inside the page's own "Gateway to Svaneti" section, where Svan
+    // towers are what the text is actually about.
+    // ⚠️ These files live in /images/files/ (not the /images/zugdidi/ folder the
+    // Dadiani Palace Museum page uses for the SAME photograph) because this
+    // entry's `image` also feeds the Zugdidi card on /georgia, and
+    // BlurUpBackground derives its placeholder by string-replacing
+    // /images/files/ -> /images/files-thumb/. A card cover outside that folder
+    // silently loads the full-size file as its own placeholder.
+    // Landscape 4:3, native 1448x1086 → ladder 768/1200/1448, no upscale.
+    image: '/images/files/dadiani-palace-zugdidi-georgia-1448.webp',
+    imageAvif: '/images/files/dadiani-palace-zugdidi-georgia-1448.avif',
+    heroClass: 'hero--zugdidi',
+    // LCP hero preload: the 1200 AVIF rung with fetchpriority=high — this site's
+    // equivalent of an eager/high-priority <img>, since the hero is a CSS
+    // background rather than an <img> element.
+    heroPreload: '/images/files/dadiani-palace-zugdidi-georgia-1200.avif',
+    ogImage: { src: '/images/files/dadiani-palace-zugdidi-georgia-og-1200x630.jpg', width: 1200, height: 630 },
+    // Per-locale hero alt → og:image:alt / twitter:image:alt, and the hero
+    // ImageObject CityPage emits for any entry with an `imageMeta`. No
+    // `imageId` (so the node carries no `@id`) and no `caption` (CityPage falls
+    // back to the alt) — the owner supplied alt text only.
+    // ⚠️ `locationName` is required: without it `contentLocation` serialises as
+    // an empty `{"@type":"Place"}`. locality/region/country add the postal
+    // address block, exactly as the palace's own page does.
+    imageMeta: {
+      width: 1448, height: 1086,
+      locationName: 'Dadiani Palace, Zugdidi, Samegrelo-Zemo Svaneti, Georgia',
+      locality: 'Zugdidi', region: 'Samegrelo-Zemo Svaneti', country: 'GE',
+      alt: {
+        en: 'Gothic-style Dadiani Palace and gardens in Zugdidi, western Georgia',
+        de: 'Dadiani-Palast im gotischen Stil mit Gärten in Sugdidi, Westgeorgien',
+        fr: 'Palais Dadiani de style gothique et ses jardins à Zougdidi, Géorgie occidentale',
+        es: 'Palacio Dadiani de estilo gótico y sus jardines en Zugdidi, Georgia occidental',
+        nl: 'Dadiani-paleis in gotische stijl met tuinen in Zugdidi, West-Georgië',
+        cs: 'Palác Dadiani v gotickém stylu se zahradami v Zugdidi, západní Gruzie',
+        pl: 'Pałac Dadianich w stylu gotyckim z ogrodami w Zugdidi, zachodnia Gruzja',
+      },
+    },
     // ⚠️ `portraitInlines`, not `imageObjects`: these files ship WITHOUT the
     // `-<width>w` suffix, and CityPage renders this list itself per `afterChunk`
     // (no figure is spliced into the body). It also resolves alt/caption per

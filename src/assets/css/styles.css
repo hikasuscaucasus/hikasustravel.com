@@ -3913,6 +3913,37 @@ section {
     );
   }
 }
+
+/* Zugdidi CITY page hero — the same Dadiani Palace frame as the palace's own
+   page above, but served from /images/files/ because this city entry's `image`
+   also feeds its card on /georgia, where BlurUpBackground requires that folder.
+   Identical 768/1200/1448 AVIF+WebP ladder and centre crop. */
+.hero--zugdidi {
+  background-image: url("/images/files/dadiani-palace-zugdidi-georgia-1200.webp");
+  background-image: image-set(
+    url("/images/files/dadiani-palace-zugdidi-georgia-768.avif") type("image/avif"),
+    url("/images/files/dadiani-palace-zugdidi-georgia-768.webp") type("image/webp")
+  );
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .hero--zugdidi {
+    background-image: image-set(
+      url("/images/files/dadiani-palace-zugdidi-georgia-1200.avif") type("image/avif"),
+      url("/images/files/dadiani-palace-zugdidi-georgia-1200.webp") type("image/webp")
+    );
+  }
+}
+@media (min-width: 1200px) {
+  .hero--zugdidi {
+    background-image: image-set(
+      url("/images/files/dadiani-palace-zugdidi-georgia-1448.avif") type("image/avif"),
+      url("/images/files/dadiani-palace-zugdidi-georgia-1448.webp") type("image/webp")
+    );
+  }
+}
 /* No rung above 1448 exists (Dadiani Palace). Do not add a 1600/2400 breakpoint. */
 /* Dmanisi Sioni hero — per-page CSS background, REPLACING the generic
    georgia-home.jpg placeholder this page shipped with. ⚠️ georgia-home.jpg is NOT
