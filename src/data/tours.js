@@ -919,9 +919,10 @@ export const tours = [
       "Additional hotel expenses;",
       "Travel insurance."
     ],
-    /* Render all 15 tiles with no "show more" fold: the route map is the
-       closing tile and the default 6-tile fold left it invisible on load.
-       Opt-in — every other tour gallery keeps the fold. */
+    /* Render all 15 tiles with no "show more" fold. Added when the route map
+       was the closing tile and the default 6-tile fold left it invisible on
+       load; kept now that the map leads the grid, so the 9 photos below the
+       old fold stay server-rendered. Opt-in — every other gallery folds. */
     "galleryShowAll": true,
     /* Gallery — the 14 approved tour photos in itinerary order (Day 1 Mtskheta
        and Gori → Day 2 Kutaisi → Day 3 Prometheus Cave and Musicians Park →
@@ -934,6 +935,39 @@ export const tours = [
        #9 (Batumi skyline) is also the hero — the same hero-in-gallery overlap
        the 8-day culture tour ships. */
     "gallery": [
+      {
+        /* tour5.routeMap - the route-map infographic leads the gallery: same
+           tile markup, sizing, lazy loading and lightbox as every other item.
+           Native 2400x1600 is already 3:2, so the uniform tile crop takes
+           nothing off it and it needs no crop anchor. `caption` is the tile
+           title (this page’s H1 plus the localized route-map term) and
+           `altText` the descriptive <img> alt. Deliberately no `alt` block:
+           this tour has an ogImage and no imageMeta, so the first alt object
+           in the chunk would become its og:image:alt in prerender.js. */
+        "src": "/images/tours/tbilisi-to-batumi/tbilisi-to-batumi-route-map-georgia-2400.webp",
+        "base": "/images/tours/tbilisi-to-batumi/tbilisi-to-batumi-route-map-georgia",
+        "widths": [768, 1200, 1600, 2400],
+        "width": 2400,
+        "height": 1600,
+        "caption": {
+          "en": "5-Day Private Tour from Tbilisi to Batumi – Route Map",
+          "de": "5-tägige Privattour von Tiflis nach Batumi – Routenkarte",
+          "fr": "Circuit privé de 5 jours de Tbilissi à Batumi – Carte de l'itinéraire",
+          "es": "Tour Privado de 5 Días de Tiflis a Batumi – Mapa de la ruta",
+          "nl": "5-Daagse Privétour van Tbilisi naar Batumi – Routekaart",
+          "cs": "5denní soukromý zájezd z Tbilisi do Batumi – Mapa trasy",
+          "pl": "5-dniowa prywatna wycieczka z Tbilisi do Batumi – Mapa trasy"
+        },
+        "altText": {
+          "en": "Illustrated route map of the 5-day private tour from Tbilisi to Batumi, west through Mtskheta and Jvari, Gori and Uplistsikhe to Kutaisi with Gelati and Motsameta, then Prometheus Cave and the coast to Batumi, before driving back to Tbilisi",
+          "de": "Illustrierte Routenkarte der 5-tägigen Privatreise von Tiflis nach Batumi, westwärts über Mtskheta und Jvari, Gori und Uplistsikhe nach Kutaisi mit Gelati und Motsameta, dann zur Prometheus-Höhle und über die Küste nach Batumi, mit Rückfahrt nach Tiflis",
+          "fr": "Carte illustrée de l'itinéraire du circuit privé de 5 jours de Tbilissi à Batumi, vers l'ouest par Mtskheta et Jvari, Gori et Uplistsikhe jusqu'à Koutaïssi avec Gélati et Motsaméta, puis la grotte de Prométhée et la côte jusqu'à Batumi, avant le retour à Tbilissi",
+          "es": "Mapa ilustrado de la ruta del tour privado de 5 días de Tiflis a Batumi, hacia el oeste por Mtskheta y Jvari, Gori y Uplistsikhe hasta Kutaisi con Gelati y Motsameta, luego la cueva de Prometeo y la costa hasta Batumi, antes de regresar a Tiflis",
+          "nl": "Geïllustreerde routekaart van de 5-daagse privétour van Tbilisi naar Batumi, westwaarts via Mtskheta en Jvari, Gori en Uplistsikhe naar Koetaisi met Gelati en Motsameta, dan de Prometheusgrot en de kust naar Batumi, voor de terugrit naar Tbilisi",
+          "cs": "Ilustrovaná mapa trasy 5denního soukromého zájezdu z Tbilisi do Batumi, na západ přes Mtskhetu a Jvari, Gori a Uplistsikhe do Kutaisi s Gelati a Mocameta, poté k Prométheově jeskyni a po pobřeží do Batumi, před návratem do Tbilisi",
+          "pl": "Ilustrowana mapa trasy 5-dniowej prywatnej wycieczki z Tbilisi do Batumi, na zachód przez Mtskhetę i Jvari, Gori i Uplistsikhe do Kutaisi z Gelati i Mocameta, następnie do Jaskini Prometeusza i wzdłuż wybrzeża do Batumi, przed powrotem do Tbilisi"
+        }
+      },
       {
         /* tour5.jvari */
         "src": "/images/tours/tbilisi-to-batumi/jvari-monastery-mtskheta-georgia-1920.webp",
@@ -1175,29 +1209,34 @@ export const tours = [
           "cs": "Západ slunce nad Černým mořem, Batumi",
           "pl": "Zachód słońca nad Morzem Czarnym, Batumi"
         }
-      },
+      }
+    ],
+    /* One packaged ImageObject for the route map — the only image on this page
+       Hikasus Travel authored, so the credit fields are safe to assert here
+       (the 14 licensed photos still carry none). localizeImageObjects swaps
+       caption and description for this gallery item’s localized strings, so
+       the schema and the visible figcaption/alt never disagree. No
+       representativeOfPage — a map infographic is not the page subject. */
+    "imageObjects": [
       {
-        /* tour5.routeMap — the route-map infographic is the closing gallery
-           tile, not a separate block: same tile markup, sizing, lazy loading
-           and lightbox as every other item. Native 1536x1024 is already 3:2,
-           so the uniform tile crop takes nothing off it and it needs no crop
-           anchor. */
-        "src": "/images/tours/tbilisi-to-batumi/tbilisi-to-batumi-route-map-georgia-1536.webp",
-        "base": "/images/tours/tbilisi-to-batumi/tbilisi-to-batumi-route-map-georgia",
-        "widths": [768, 1200, 1536],
-        "width": 1536,
-        "height": 1024,
-        "caption": {
-          "en": "Route map — 5-day Tbilisi to Batumi journey",
-          "de": "Routenkarte – 5-tägige Reise von Tiflis nach Batumi",
-          "fr": "Carte de l'itinéraire — voyage de 5 jours de Tbilissi à Batumi",
-          "es": "Mapa de la ruta: viaje de 5 días de Tbilisi a Batumi",
-          "nl": "Routekaart — 5-daagse reis van Tbilisi naar Batumi",
-          "cs": "Mapa trasy — pětidenní cesta z Tbilisi do Batumi",
-          "pl": "Mapa trasy — 5-dniowa podróż z Tbilisi do Batumi"
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/tbilisi-to-batumi/tbilisi-to-batumi-route-map-georgia-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "caption": "5-Day Private Tour from Tbilisi to Batumi – Route Map",
+        "description": "Illustrated route map of the 5-day private tour from Tbilisi to Batumi, west through Mtskheta and Jvari, Gori and Uplistsikhe to Kutaisi with Gelati and Motsameta, then Prometheus Cave and the coast to Batumi, before driving back to Tbilisi",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
         }
       }
     ],
+    "localizeImageObjects": true,
     "map": {
       "center": [
         42.696,
