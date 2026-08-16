@@ -10601,3 +10601,32 @@ select option:checked {
   text-align: left;
   text-wrap: pretty;
 }
+
+/* Bakhmaro city page hero — the winter resort: snow-covered wooden cottages
+   under the forested ridge. FIRST Bakhmaro photograph in the project; replaces
+   the site-wide georgia-home.jpg placeholder.
+   ⚠️ PORTRAIT source (1086x1448), so a wide hero crops VERTICALLY and the
+   default centre would sit on empty snow. `background-position: center 40%`
+   keeps the cottages in the lower half and the ridge + sky above at every
+   width — checked by rendering the cover window at 1440x900 and 360x780.
+   Ladder 768/1086 only — 1086 is the native ceiling, nothing is upscaled.
+   plain url() = image-set() fallback. */
+.hero--bakhmaro {
+  background-image: url("/images/files/bakhmaro-guria-georgia-768.webp");
+  background-image: image-set(
+    url("/images/files/bakhmaro-guria-georgia-768.avif") type("image/avif"),
+    url("/images/files/bakhmaro-guria-georgia-768.webp") type("image/webp")
+  );
+  background-position: center 40%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .hero--bakhmaro {
+    background-image: image-set(
+      url("/images/files/bakhmaro-guria-georgia-1086.avif") type("image/avif"),
+      url("/images/files/bakhmaro-guria-georgia-1086.webp") type("image/webp")
+    );
+  }
+}
+/* Native is 1086 — that is the top rung. Do not add a 1200/1448 breakpoint. */

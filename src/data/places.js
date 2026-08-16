@@ -3823,7 +3823,46 @@ export const cities = [
   },
   {
     slug: 'bakhmaro', name: 'Bakhmaro', region: 'guria', published: true,
-    seoKey: 'bakhmaro', contentKey: 'bakhmaro', image: '/images/files/georgia-home.jpg',
+    seoKey: 'bakhmaro', contentKey: 'bakhmaro',
+    // Hero: the winter resort — snow-covered wooden cottages under the forested
+    // ridge. FIRST Bakhmaro photograph in the project; replaces the site-wide
+    // georgia-home.jpg placeholder that served as hero AND og:image.
+    // ⚠️ Files live in /images/files/ because this `image` also feeds the
+    // Bakhmaro card on /georgia, and BlurUpBackground derives its placeholder by
+    // string-replacing /images/files/ -> /images/files-thumb/; a cover outside
+    // that folder silently loads the full-size file as its own placeholder.
+    // ⚠️ PORTRAIT 1086x1448 — the `.hero--bakhmaro` class carries
+    // `background-position: center 40%` so the wide hero crop keeps the cottages
+    // and the ridge rather than a field of empty snow. Ladder 768/1086 (native
+    // ceiling), no upscale.
+    image: '/images/files/bakhmaro-guria-georgia-1086.webp',
+    imageAvif: '/images/files/bakhmaro-guria-georgia-1086.avif',
+    heroClass: 'hero--bakhmaro',
+    // LCP hero preload: the 768 AVIF rung (there is no 1200) with
+    // fetchpriority=high — this site's equivalent of an eager/high-priority
+    // <img>, since the hero is a CSS background rather than an <img> element.
+    heroPreload: '/images/files/bakhmaro-guria-georgia-768.avif',
+    ogImage: { src: '/images/files/bakhmaro-guria-georgia-og-1200x630.jpg', width: 1200, height: 630 },
+    // Per-locale hero alt → og:image:alt / twitter:image:alt, and the hero
+    // ImageObject CityPage emits for any entry with an `imageMeta`. No
+    // `imageId` (so the node carries no `@id`) and no `caption` (CityPage falls
+    // back to the alt) — the owner supplied alt text only.
+    // ⚠️ `locationName` is required, or `contentLocation` serialises as an
+    // empty `{"@type":"Place"}`.
+    imageMeta: {
+      width: 1086, height: 1448,
+      locationName: 'Bakhmaro, Chokhatauri Municipality, Guria, Georgia',
+      locality: 'Bakhmaro', region: 'Guria', country: 'GE',
+      alt: {
+        en: 'Snow-covered wooden cottages below forested slopes at the Bakhmaro mountain resort in Guria, Georgia',
+        de: 'Schneebedeckte Holzhütten unterhalb bewaldeter Hänge im Bergresort Bakhmaro in Gurien, Georgien',
+        fr: 'Chalets en bois enneigés au pied de versants boisés dans la station de montagne de Bakhmaro en Gourie, Géorgie',
+        es: 'Cabañas de madera cubiertas de nieve bajo laderas boscosas en el complejo de montaña de Bakhmaro en Guria, Georgia',
+        nl: 'Besneeuwde houten hutten onder beboste hellingen bij het bergresort Bakhmaro in Guria, Georgië',
+        cs: 'Zasněžené dřevěné chaty pod zalesněnými svahy v horském letovisku Bakhmaro v Gurii, Gruzie',
+        pl: 'Ośnieżone drewniane domki pod zalesionymi zboczami w górskim kurorcie Bakhmaro w Gurii, Gruzja',
+      },
+    },
   },
   {
     slug: 'gomismta', name: 'Gomismta (Gomi Mountain)', region: 'guria', published: true,
