@@ -135,13 +135,13 @@ export const tours = [
         "height": 1600,
         "fallbackWidth": 1200,
         "caption": {
-          "en": "Georgia Group Tour – Route Map",
-          "de": "Georgien Gruppenreise – Routenkarte",
-          "fr": "Circuit en groupe en Géorgie – Carte de l'itinéraire",
-          "es": "Tour Grupal por Georgia – Mapa de la ruta",
-          "nl": "Georgië Groepsreis – Routekaart",
-          "cs": "Skupinový zájezd po Gruzii – Mapa trasy",
-          "pl": "Wycieczka grupowa po Gruzji – Mapa trasy"
+          "en": "Route Map",
+          "de": "Routenkarte",
+          "fr": "Carte de l'itinéraire",
+          "es": "Mapa de la ruta",
+          "nl": "Routekaart",
+          "cs": "Mapa trasy",
+          "pl": "Mapa trasy"
         },
         "altText": {
           "en": "Illustrated route map of the 14-day Georgia group tour, based in Tbilisi, Kazbegi, Kutaisi, Batumi and Telavi, taking in Mtskheta and Ananuri, Kazbegi's Gergeti Trinity Church, Gori and Uplistsikhe, Chiatura and the Katskhi Pillar, Prometheus Cave and Martvili Canyon, the Batumi coast, and the Kakheti wine towns of Tsinandali, Sighnaghi and Bodbe, with a scenic train from Batumi to Tbilisi",
@@ -709,7 +709,7 @@ export const tours = [
         "contentUrl": "https://www.hikasustravel.com/images/group-tours/georgia-group-tour/route-map-group-tour-georgia-2400.webp",
         "width": 2400,
         "height": 1600,
-        "caption": "Georgia Group Tour – Route Map",
+        "caption": "Route Map",
         "description": "Illustrated route map of the 14-day Georgia group tour, based in Tbilisi, Kazbegi, Kutaisi, Batumi and Telavi, taking in Mtskheta and Ananuri, Kazbegi's Gergeti Trinity Church, Gori and Uplistsikhe, Chiatura and the Katskhi Pillar, Prometheus Cave and Martvili Canyon, the Batumi coast, and the Kakheti wine towns of Tsinandali, Sighnaghi and Bodbe, with a scenic train from Batumi to Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
@@ -1579,13 +1579,13 @@ export const tours = [
         "width": 2400,
         "height": 1600,
         "caption": {
-          "en": "3-Day Kakheti Wine and Food Tour from Tbilisi – Route Map",
-          "de": "Die Aromen Kachetiens genießen: 3-tägige Wein- & Kulturtour – Routenkarte",
-          "fr": "Savourez les saveurs de Kakheti : circuit vin et culture de 3 jours – Carte de l'itinéraire",
-          "es": "Saborea los sabores de Kakheti: tour de 3 días de vino y cultura – Mapa de la ruta",
-          "nl": "Proef de smaken van Kacheti: 3-daagse wijn- en cultuurtour – Routekaart",
-          "cs": "Vychutnejte si chutě Kachetie: 3denní zájezd za vínem a kulturou – Mapa trasy",
-          "pl": "Poczuj smaki Kakheti: 3-dniowy tour winny i kulturowy – Mapa trasy"
+          "en": "Route Map",
+          "de": "Routenkarte",
+          "fr": "Carte de l'itinéraire",
+          "es": "Mapa de la ruta",
+          "nl": "Routekaart",
+          "cs": "Mapa trasy",
+          "pl": "Mapa trasy"
         },
         "alt": {
           "en": "Illustrated route of the 3-day Kakheti wine and food journey from Tbilisi via Tsinandali, Telavi, Gremi, Sighnaghi and Bodbe, with two nights in Telavi",
@@ -1710,7 +1710,7 @@ export const tours = [
         "contentUrl": "https://www.hikasustravel.com/images/files/route-map-3-day-kakheti-georgia-2400.webp",
         "width": 2400,
         "height": 1600,
-        "caption": "3-Day Kakheti Wine and Food Tour from Tbilisi – Route Map",
+        "caption": "Route Map",
         "description": "Illustrated route map of the 3-day Kakheti wine and food tour from Tbilisi, over the Gombori Pass to Tsinandali and Telavi, with a loop to Khareba, Gremi and Napareuli, and a final day via Sighnaghi and Bodbe before returning to Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
@@ -2031,13 +2031,13 @@ export const tours = [
         "width": 2400,
         "height": 1600,
         "caption": {
-          "en": "5-Day Private Tour from Tbilisi to Batumi – Route Map",
-          "de": "5-tägige Privattour von Tiflis nach Batumi – Routenkarte",
-          "fr": "Circuit privé de 5 jours de Tbilissi à Batumi – Carte de l'itinéraire",
-          "es": "Tour Privado de 5 Días de Tiflis a Batumi – Mapa de la ruta",
-          "nl": "5-Daagse Privétour van Tbilisi naar Batumi – Routekaart",
-          "cs": "5denní soukromý zájezd z Tbilisi do Batumi – Mapa trasy",
-          "pl": "5-dniowa prywatna wycieczka z Tbilisi do Batumi – Mapa trasy"
+          "en": "Route Map",
+          "de": "Routenkarte",
+          "fr": "Carte de l'itinéraire",
+          "es": "Mapa de la ruta",
+          "nl": "Routekaart",
+          "cs": "Mapa trasy",
+          "pl": "Mapa trasy"
         },
         "altText": {
           "en": "Illustrated route map of the 5-day private tour from Tbilisi to Batumi, west through Mtskheta and Jvari, Gori and Uplistsikhe to Kutaisi with Gelati and Motsameta, then Prometheus Cave and the coast to Batumi, before driving back to Tbilisi",
@@ -2304,7 +2304,7 @@ export const tours = [
         "contentUrl": "https://www.hikasustravel.com/images/tours/tbilisi-to-batumi/tbilisi-to-batumi-route-map-georgia-2400.webp",
         "width": 2400,
         "height": 1600,
-        "caption": "5-Day Private Tour from Tbilisi to Batumi – Route Map",
+        "caption": "Route Map",
         "description": "Illustrated route map of the 5-day private tour from Tbilisi to Batumi, west through Mtskheta and Jvari, Gori and Uplistsikhe to Kutaisi with Gelati and Motsameta, then Prometheus Cave and the coast to Batumi, before driving back to Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
@@ -2605,13 +2605,13 @@ export const tours = [
         "width": 2400,
         "height": 1600,
         "caption": {
-          "en": "5-Day Georgia Private Tour: Tbilisi, Wine & Sulfur Baths – Route Map",
-          "de": "5-tägige Privatreise durch Georgien: Tiflis, Wein & Schwefelbäder – Routenkarte",
-          "fr": "Circuit privé de 5 jours en Géorgie : Tbilissi, vin et bains de soufre – Carte de l'itinéraire",
-          "es": "Tour privado de 5 días por Georgia: Tiflis, vino y baños de azufre – Mapa de la ruta",
-          "nl": "5-daagse privétour door Georgië: Tbilisi, wijn & zwavelbaden – Routekaart",
-          "cs": "5denní soukromý zájezd po Gruzii: Tbilisi, víno a sirné lázně – Mapa trasy",
-          "pl": "5-dniowa prywatna wycieczka po Gruzji: Tbilisi, wino i łaźnie siarkowe – Mapa trasy"
+          "en": "Route Map",
+          "de": "Routenkarte",
+          "fr": "Carte de l'itinéraire",
+          "es": "Mapa de la ruta",
+          "nl": "Routekaart",
+          "cs": "Mapa trasy",
+          "pl": "Mapa trasy"
         },
         "alt": {
           "en": "Illustrated route of the 5-day journey from Tbilisi to Kazbegi and Kakheti via Mtskheta, Ananuri, Telavi, Sighnaghi and Bodbe",
@@ -2869,7 +2869,7 @@ export const tours = [
         "contentUrl": "https://www.hikasustravel.com/images/tours/tbilisi-wine-sulfur/tbilisi-kazbegi-kakheti-route-map-georgia-2400.webp",
         "width": 2400,
         "height": 1600,
-        "caption": "5-Day Georgia Private Tour: Tbilisi, Wine & Sulfur Baths – Route Map",
+        "caption": "Route Map",
         "description": "Illustrated route map of the 5-day Georgia private tour, looping from Tbilisi north to Kazbegi and east through the Kakheti wine region via Mtskheta, Ananuri, Telavi, Sighnaghi and Bodbe",
         "creditText": "Hikasus Travel",
         "creator": {
@@ -3169,13 +3169,13 @@ export const tours = [
         "width": 2400,
         "height": 1600,
         "caption": {
-          "en": "6-Day Georgia Private Tour: Highlights from Tbilisi – Route Map",
-          "de": "6-tägige Georgien-Privatreise: Höhepunkte ab Tiflis – Routenkarte",
-          "fr": "Circuit privé de 6 jours en Géorgie : les incontournables depuis Tbilissi – Carte de l'itinéraire",
-          "es": "Tour privado de 6 días por Georgia: lo más destacado desde Tiflis – Mapa de la ruta",
-          "nl": "6-daagse privétour door Georgië: hoogtepunten vanuit Tbilisi – Routekaart",
-          "cs": "6denní soukromý zájezd po Gruzii: to nejlepší z Tbilisi – Mapa trasy",
-          "pl": "6-dniowa prywatna wycieczka po Gruzji: atrakcje z Tbilisi – Mapa trasy"
+          "en": "Route Map",
+          "de": "Routenkarte",
+          "fr": "Carte de l'itinéraire",
+          "es": "Mapa de la ruta",
+          "nl": "Routekaart",
+          "cs": "Mapa trasy",
+          "pl": "Mapa trasy"
         },
         "alt": {
           "en": "Illustrated route of the 6-day journey from Tbilisi through Uplistsikhe, Gori, Borjomi, Vardzia, Akhaltsikhe, Kutaisi and Martvili Canyon",
@@ -3434,7 +3434,7 @@ export const tours = [
         "contentUrl": "https://www.hikasustravel.com/images/tours/highlights-from-tbilisi/highlights-from-tbilisi-route-map-georgia-2400.webp",
         "width": 2400,
         "height": 1600,
-        "caption": "6-Day Georgia Private Tour: Highlights from Tbilisi – Route Map",
+        "caption": "Route Map",
         "description": "Illustrated route map of the 6-day Georgia private tour, running west from Tbilisi through Uplistsikhe, Gori, Borjomi, Vardzia and Akhaltsikhe to Kutaisi and Martvili Canyon before returning to Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
@@ -3678,13 +3678,13 @@ export const tours = [
         "width": 2400,
         "height": 1600,
         "caption": {
-          "en": "7-Day Georgia Cultural Tour: Kutaisi to Tbilisi – Route Map",
-          "de": "7-tägige Kulturreise durch Georgien: von Kutaisi nach Tiflis – Routenkarte",
-          "fr": "Circuit culturel de 7 jours en Géorgie : de Kutaisi à Tbilissi – Carte de l'itinéraire",
-          "es": "Tour cultural de 7 días por Georgia: de Kutaisi a Tiflis – Mapa de la ruta",
-          "nl": "7-daagse culturele rondreis door Georgië: van Kutaisi naar Tbilisi – Routekaart",
-          "cs": "7denní kulturní zájezd po Gruzii: z Kutaisi do Tbilisi – Mapa trasy",
-          "pl": "7-dniowa wycieczka kulturowa po Gruzji: z Kutaisi do Tbilisi – Mapa trasy"
+          "en": "Route Map",
+          "de": "Routenkarte",
+          "fr": "Carte de l'itinéraire",
+          "es": "Mapa de la ruta",
+          "nl": "Routekaart",
+          "cs": "Mapa trasy",
+          "pl": "Mapa trasy"
         },
         "altText": {
           "en": "Illustrated route map of the 7-day Georgia cultural tour, based in Kutaisi and Tbilisi, with stops at Gelati and Motsameta monasteries, Prometheus Cave, Ananuri, Kazbegi's Gergeti Trinity Church, Uplistsikhe and Gori",
@@ -4055,7 +4055,7 @@ export const tours = [
         "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/route-map-kutaisi-tbilisi-georgia/route-map-kutaisi-tbilisi-georgia-2400.webp",
         "width": 2400,
         "height": 1600,
-        "name": "7-Day Georgia Cultural Tour: Kutaisi to Tbilisi – Route Map",
+        "name": "Route Map",
         "caption": "Illustrated route of the 7-day cultural tour between Kutaisi and Tbilisi, via Prometheus Cave, Gelati, Ananuri, Kazbegi, Uplistsikhe and Gori",
         "creditText": "Hikasus Travel",
         "creator": {
@@ -4898,13 +4898,13 @@ export const tours = [
         "width": 2400,
         "height": 1600,
         "caption": {
-          "en": "8-Day Georgia Private Tour: Culture, Nature & Wine – Route Map",
-          "de": "8-tägige Georgien-Privatreise: Kultur, Natur & Wein – Routenkarte",
-          "fr": "Circuit privé de 8 jours en Géorgie : culture, nature et vin – Carte de l'itinéraire",
-          "es": "Tour privado de 8 días por Georgia: cultura, naturaleza y vino – Mapa de la ruta",
-          "nl": "8-daagse privétour door Georgië: cultuur, natuur & wijn – Routekaart",
-          "cs": "8denní soukromý zájezd po Gruzii: kultura, příroda a víno – Mapa trasy",
-          "pl": "8-dniowa prywatna wycieczka po Gruzji: kultura, natura i wino – Mapa trasy"
+          "en": "Route Map",
+          "de": "Routenkarte",
+          "fr": "Carte de l'itinéraire",
+          "es": "Mapa de la ruta",
+          "nl": "Routekaart",
+          "cs": "Mapa trasy",
+          "pl": "Mapa trasy"
         },
         "altText": {
           "en": "Illustrated route map of the 8-day Georgia private tour, looping north from Tbilisi to Kazbegi for Gergeti Trinity Church and Gveleti Waterfall, then east through Kakheti wine country via Telavi, Tsinandali, Sighnaghi and Bodbe, with Mtskheta, Ananuri, Uplistsikhe and Gori en route",
@@ -5340,7 +5340,7 @@ export const tours = [
         "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-culture-nature-wine/route-map-culture-nature-wine-georgia/route-map-culture-nature-wine-georgia-2400.webp",
         "width": 2400,
         "height": 1600,
-        "name": "8-Day Georgia Private Tour: Culture, Nature & Wine – Route Map",
+        "name": "Route Map",
         "caption": "Illustrated route of the 8-day journey from Tbilisi to Kazbegi and the Kakheti wine region, via Mtskheta, Ananuri, Gergeti, Uplistsikhe, Gori, Telavi, Sighnaghi and Bodbe",
         "creditText": "Hikasus Travel",
         "creator": {
@@ -6079,13 +6079,13 @@ export const tours = [
         "width": 2400,
         "height": 1600,
         "caption": {
-          "en": "8-Day Georgia Culture and Adventure Tour – Route Map",
-          "de": "8-tägige Kultur- und Abenteuerreise durch Georgien – Routenkarte",
-          "fr": "Circuit culturel et aventure de 8 jours en Géorgie – Carte de l'itinéraire",
-          "es": "Tour de cultura y aventura de 8 días por Georgia – Mapa de la ruta",
-          "nl": "8-daagse culturele en avontuurlijke tour door Georgië – Routekaart",
-          "cs": "8denní kulturní a dobrodružný zájezd po Gruzii – Mapa trasy",
-          "pl": "8-dniowa wycieczka kulturowo-przygodowa po Gruzji – Mapa trasy"
+          "en": "Route Map",
+          "de": "Routenkarte",
+          "fr": "Carte de l'itinéraire",
+          "es": "Mapa de la ruta",
+          "nl": "Routekaart",
+          "cs": "Mapa trasy",
+          "pl": "Mapa trasy"
         },
         "altText": {
           "en": "Illustrated route map of the 8-day Georgia culture and adventure tour from Tbilisi, east to Bodbe, Sighnaghi and Lagodekhi for a national-park hike, then Telavi, Mtskheta and Uplistsikhe, and north via Aragvi rafting and Ananuri to Kazbegi's Gergeti Trinity Church",
@@ -6397,7 +6397,7 @@ export const tours = [
         "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-culture-adventure/route-map-culture-adventure-georgia-2400.webp",
         "width": 2400,
         "height": 1600,
-        "caption": "8-Day Georgia Culture and Adventure Tour – Route Map",
+        "caption": "Route Map",
         "description": "Illustrated route map of the 8-day Georgia culture and adventure tour from Tbilisi, east to Bodbe, Sighnaghi and Lagodekhi for a national-park hike, then Telavi, Mtskheta and Uplistsikhe, and north via Aragvi rafting and Ananuri to Kazbegi's Gergeti Trinity Church",
         "creditText": "Hikasus Travel",
         "creator": {
@@ -6739,13 +6739,13 @@ export const tours = [
         "width": 2400,
         "height": 1600,
         "caption": {
-          "en": "9-Day Georgia Private Tour: Kutaisi to Tbilisi – Route Map",
-          "de": "9-tägige Georgien-Privatreise: von Kutaisi nach Tiflis – Routenkarte",
-          "fr": "Circuit privé de 9 jours en Géorgie : de Kutaisi à Tbilissi – Carte de l'itinéraire",
-          "es": "Tour privado de 9 días por Georgia: de Kutaisi a Tiflis – Mapa de la ruta",
-          "nl": "9-daagse privétour door Georgië: van Kutaisi naar Tbilisi – Routekaart",
-          "cs": "9denní soukromý zájezd po Gruzii: z Kutaisi do Tbilisi – Mapa trasy",
-          "pl": "9-dniowa prywatna wycieczka po Gruzji: z Kutaisi do Tbilisi – Mapa trasy"
+          "en": "Route Map",
+          "de": "Routenkarte",
+          "fr": "Carte de l'itinéraire",
+          "es": "Mapa de la ruta",
+          "nl": "Routekaart",
+          "cs": "Mapa trasy",
+          "pl": "Mapa trasy"
         },
         "altText": {
           "en": "Illustrated route map of the 9-day Georgia private tour based in Kutaisi and Tbilisi, taking in Gelati and Motsameta, Prometheus Cave, Mtskheta, Ananuri and Kazbegi's Gergeti Trinity Church, Uplistsikhe and Gori, and the western hidden gems of Nokalakevi and Martvili Canyon",
@@ -7267,7 +7267,7 @@ export const tours = [
         "contentUrl": "https://www.hikasustravel.com/images/tours/9-day-kutaisi-tbilisi/route-map-9-day-kutaisi-tbilisi-georgia/route-map-9-day-kutaisi-tbilisi-georgia-2400.webp",
         "width": 2400,
         "height": 1600,
-        "name": "9-Day Georgia Private Tour: Kutaisi to Tbilisi – Route Map",
+        "name": "Route Map",
         "caption": "Illustrated route of the 9-day tour between Kutaisi and Tbilisi, via Gelati, Prometheus Cave, Mtskheta, Ananuri, Kazbegi, Uplistsikhe, Gori, Nokalakevi and Martvili Canyon",
         "creditText": "Hikasus Travel",
         "creator": {
@@ -7663,13 +7663,13 @@ export const tours = [
         "width": 2400,
         "height": 1600,
         "caption": {
-          "en": "Georgia Grand Tour: 9 Days from Tbilisi to Batumi – Route Map",
-          "de": "Georgien Grand Tour: 9 Tage von Tiflis nach Batumi – Routenkarte",
-          "fr": "Grand Tour de Géorgie : 9 jours de Tbilissi à Batumi – Carte de l'itinéraire",
-          "es": "Gran Tour de Georgia: 9 días de Tbilisi a Batumi – Mapa de la ruta",
-          "nl": "Georgia Grand Tour: 9 dagen van Tbilisi naar Batumi – Routekaart",
-          "cs": "Velký okruh Gruzií: 9 dní z Tbilisi do Batumi – Mapa trasy",
-          "pl": "Wielka podróż po Gruzji: 9 dni z Tbilisi do Batumi – Mapa trasy"
+          "en": "Route Map",
+          "de": "Routenkarte",
+          "fr": "Carte de l'itinéraire",
+          "es": "Mapa de la ruta",
+          "nl": "Routekaart",
+          "cs": "Mapa trasy",
+          "pl": "Mapa trasy"
         },
         "altText": {
           "en": "Illustrated route map of the 9-day Georgia Grand Tour looping from Tbilisi west through Mtskheta, Uplistsikhe, Gori and Kutaisi, south to Vardzia and Akhaltsikhe, then via Borjomi to Batumi on the Black Sea before returning to Tbilisi",
@@ -8166,7 +8166,7 @@ export const tours = [
         "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/route-map-grand-tour-tbilisi-batumi-georgia/route-map-grand-tour-tbilisi-batumi-georgia-2400.webp",
         "width": 2400,
         "height": 1600,
-        "name": "Georgia Grand Tour: 9 Days from Tbilisi to Batumi – Route Map",
+        "name": "Route Map",
         "caption": "Illustrated route of the 9-day Georgia Grand Tour from Tbilisi to Batumi, via Mtskheta, Uplistsikhe, Gori, Kutaisi, Gelati, Prometheus Cave, Vardzia, Akhaltsikhe and Borjomi",
         "creditText": "Hikasus Travel",
         "creator": {
@@ -8806,13 +8806,13 @@ export const tours = [
         "width": 2400,
         "height": 1600,
         "caption": {
-          "en": "9-Day Georgia Wine & Adventure Tour – Route Map",
-          "de": "9-tägige Wein- & Abenteuerreise durch Georgien – Routenkarte",
-          "fr": "Circuit vin et aventure de 9 jours en Géorgie – Carte de l'itinéraire",
-          "es": "Tour de vino y aventura de 9 días por Georgia – Mapa de la ruta",
-          "nl": "9-daagse wijn- & avontuurtour door Georgië – Routekaart",
-          "cs": "9denní vinný a dobrodružný zájezd po Gruzii – Mapa trasy",
-          "pl": "9-dniowa wycieczka winno-przygodowa po Gruzji – Mapa trasy"
+          "en": "Route Map",
+          "de": "Routenkarte",
+          "fr": "Carte de l'itinéraire",
+          "es": "Mapa de la ruta",
+          "nl": "Routekaart",
+          "cs": "Mapa trasy",
+          "pl": "Mapa trasy"
         },
         "altText": {
           "en": "Illustrated route map of the 9-day Georgia wine and adventure tour, based in Tbilisi, Kazbegi and Telavi, taking in Mtskheta and Ananuri, Kazbegi's Gergeti Trinity Church and the high Caucasus, and the Kakheti wine region around Sighnaghi and Alaverdi Monastery",
@@ -9233,7 +9233,7 @@ export const tours = [
         "contentUrl": "https://www.hikasustravel.com/images/files/route-map-wine-adventure-georgia-2400.webp",
         "width": 2400,
         "height": 1600,
-        "name": "9-Day Georgia Wine & Adventure Tour – Route Map",
+        "name": "Route Map",
         "caption": "Illustrated route of the 9-day wine and adventure tour from Tbilisi, north to Kazbegi in the Caucasus and east to the Kakheti wine region via Mtskheta, Ananuri, Sighnaghi and Telavi",
         "creditText": "Hikasus Travel",
         "creator": {
@@ -9856,13 +9856,13 @@ export const tours = [
         "width": 2400,
         "height": 1600,
         "caption": {
-          "en": "Georgia in 10 Days: Where Every Corner Has a Story and Every Meal is a Celebration – Route Map",
-          "de": "Georgien in 10 Tagen: Wo jede Ecke eine Geschichte und jede Mahlzeit ein Fest ist – Routenkarte",
-          "fr": "La Géorgie en 10 jours : Où chaque coin a une histoire et chaque repas est une fête – Carte de l'itinéraire",
-          "es": "Georgia en 10 Días: Donde Cada Rincón Tiene una Historia y Cada Comida es una Celebración – Mapa de la ruta",
-          "nl": "Georgië in 10 Dagen: Waar Elke Hoek een Verhaal Heeft en Elke Maaltijd een Feest Is – Routekaart",
-          "cs": "Gruzie za 10 dní: Kde každý kout vypráví příběh a každé jídlo je oslavou – Mapa trasy",
-          "pl": "Gruzja w 10 dni: gdzie każdy zakątek kryje historie, a każdy posiłek to świętowanie – Mapa trasy"
+          "en": "Route Map",
+          "de": "Routenkarte",
+          "fr": "Carte de l'itinéraire",
+          "es": "Mapa de la ruta",
+          "nl": "Routekaart",
+          "cs": "Mapa trasy",
+          "pl": "Mapa trasy"
         },
         "altText": {
           "en": "Illustrated route map of the 10-day Georgia tour, based in Tbilisi, Kazbegi, Kutaisi and Batumi, taking in Ananuri and Gudauri, Kazbegi's Gergeti Trinity Church, Gori and Uplistsikhe, Gelati and Motsameta, Prometheus Cave and Martvili Canyon, and the Batumi coast, with a scenic train back to Tbilisi",
@@ -10361,7 +10361,7 @@ export const tours = [
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-10-days-celebration/route-map-10-days-celebration-georgia/route-map-10-days-celebration-georgia-2400.webp",
         "width": 2400,
         "height": 1600,
-        "name": "Georgia in 10 Days: Where Every Corner Has a Story and Every Meal is a Celebration – Route Map",
+        "name": "Route Map",
         "caption": "Illustrated route of the 10-day tour from Tbilisi north to Kazbegi, west to Kutaisi and Batumi on the Black Sea, via Ananuri, Gudauri, Gori, Uplistsikhe, Gelati, Prometheus Cave and Martvili Canyon, returning by train",
         "creditText": "Hikasus Travel",
         "creator": {
@@ -11019,13 +11019,13 @@ export const tours = [
         "width": 2400,
         "height": 1600,
         "caption": {
-          "en": "Georgia's Wonders: 11-Day Grand Tour from Kutaisi to Kazbegi and Batumi – Route Map",
-          "de": "Georgiens Wunder: 11-tägige Grosse Tour von Kutaissi nach Kasbegi und Batumi – Routenkarte",
-          "fr": "Merveilles de la Géorgie : Grand circuit de 11 jours de Koutaïssi à Kazbegi et Batumi – Carte de l'itinéraire",
-          "es": "Maravillas de Georgia: Gran Tour de 11 Días desde Kutaisi a Kazbegi y Batumi – Mapa de la ruta",
-          "nl": "Georgië's Wonderen: 11-Daagse Grand Tour van Koetaisi naar Kazbegi en Batumi – Routekaart",
-          "cs": "Divy Gruzie: 11denní velký okruh z Kutaisi přes Kazbegi do Batumi – Mapa trasy",
-          "pl": "Cuda Gruzji: 11-dniowa wielka wycieczka z Kutaisi do Kazbegi i Batumi – Mapa trasy"
+          "en": "Route Map",
+          "de": "Routenkarte",
+          "fr": "Carte de l'itinéraire",
+          "es": "Mapa de la ruta",
+          "nl": "Routekaart",
+          "cs": "Mapa trasy",
+          "pl": "Mapa trasy"
         },
         "altText": {
           "en": "Illustrated route map of the 11-day Georgia grand tour, based in Kutaisi, Batumi, Tbilisi and Kazbegi, taking in Gelati and Motsameta, Prometheus Cave and Martvili Canyon, the Batumi coast, Mtskheta and Ananuri, Kazbegi's Gergeti Trinity Church, and Gori and Uplistsikhe, with a scenic train from Batumi to Tbilisi",
@@ -11548,7 +11548,7 @@ export const tours = [
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-wonders-11-day/route-map-11-day-wonders-georgia/route-map-11-day-wonders-georgia-2400.webp",
         "width": 2400,
         "height": 1600,
-        "name": "Georgia's Wonders: 11-Day Grand Tour from Kutaisi to Kazbegi and Batumi – Route Map",
+        "name": "Route Map",
         "caption": "Illustrated route of the 11-day grand tour from Kutaisi to Batumi on the Black Sea, then by train to Tbilisi and north to Kazbegi, via Gelati, Prometheus Cave, Martvili Canyon, Mtskheta, Ananuri, Gori and Uplistsikhe",
         "creditText": "Hikasus Travel",
         "creator": {
@@ -11999,13 +11999,13 @@ export const tours = [
         "width": 2400,
         "height": 1600,
         "caption": {
-          "en": "12-Day Ultimate Georgia Adventure Tour: Tbilisi, Kazbegi, Mestia, Kutaisi, Batumi – Route Map",
-          "de": "12-tägige ultimative Georgien-Abenteuertour: Tiflis, Kasbegi, Mestia, Kutaissi, Batumi – Routenkarte",
-          "fr": "Circuit aventure ultime de 12 jours en Géorgie : Tbilissi, Kazbegi, Mestia, Koutaïssi, Batumi – Carte de l'itinéraire",
-          "es": "Tour Definitivo de Aventura por Georgia de 12 Días: Tiflis, Kazbegi, Mestia, Kutaisi, Batumi – Mapa de la ruta",
-          "nl": "12-Daagse Ultieme Georgië Avontuurtour: Tbilisi, Kazbegi, Mestia, Koetaisi, Batumi – Routekaart",
-          "cs": "12denní ultimátní dobrodružný zájezd po Gruzii: Tbilisi, Kazbegi, Mestia, Kutaisi, Batumi – Mapa trasy",
-          "pl": "12-dniowa wycieczka po Gruzji: Tbilisi, Kazbegi, Mestia, Kutaisi, Batumi – Mapa trasy"
+          "en": "Route Map",
+          "de": "Routenkarte",
+          "fr": "Carte de l'itinéraire",
+          "es": "Mapa de la ruta",
+          "nl": "Routekaart",
+          "cs": "Mapa trasy",
+          "pl": "Mapa trasy"
         },
         "altText": {
           "en": "Illustrated route map of the 12-day ultimate Georgia adventure, based in Tbilisi, Kazbegi, Kutaisi, Mestia and Batumi, taking in Ananuri and Kazbegi's Gergeti Trinity Church, Gori and Uplistsikhe, Gelati, Prometheus Cave and Martvili Canyon, the Svan towers of Mestia and Ushguli, and the Batumi coast, with a scenic train back to Tbilisi",
@@ -12525,7 +12525,7 @@ export const tours = [
         "contentUrl": "https://www.hikasustravel.com/images/files/route-map-ultimate-12-day-georgia-2400.webp",
         "width": 2400,
         "height": 1600,
-        "name": "12-Day Ultimate Georgia Adventure Tour: Tbilisi, Kazbegi, Mestia, Kutaisi, Batumi – Route Map",
+        "name": "Route Map",
         "caption": "Illustrated route of the 12-day ultimate adventure from Tbilisi to Kazbegi, west to Kutaisi and the Svaneti highlands at Mestia and Ushguli, then to Batumi on the Black Sea, returning by train, via Ananuri, Gori, Uplistsikhe, Gelati, Prometheus Cave and Martvili Canyon",
         "creditText": "Hikasus Travel",
         "creator": {
@@ -13253,13 +13253,13 @@ export const tours = [
         "width": 2400,
         "height": 1600,
         "caption": {
-          "en": "13-Day Georgia Grand Tour from Kutaisi: Culture & Nature – Route Map",
-          "de": "13-tägige Grand Tour durch Georgien ab Kutaisi: Kultur & Natur – Routenkarte",
-          "fr": "Grand circuit de Géorgie de 13 jours depuis Kutaisi : culture et nature – Carte de l'itinéraire",
-          "es": "Gran Tour de Georgia de 13 Días desde Kutaisi: Cultura y Naturaleza – Mapa de la ruta",
-          "nl": "13-Daagse Grand Tour door Georgië vanuit Kutaisi: Cultuur & Natuur – Routekaart",
-          "cs": "13denní velký okruh Gruzií z Kutaisi: kultura a příroda – Mapa trasy",
-          "pl": "13-dniowa wielka wycieczka z Kutaisi po Gruzji: kultura i przyroda – Mapa trasy"
+          "en": "Route Map",
+          "de": "Routenkarte",
+          "fr": "Carte de l'itinéraire",
+          "es": "Mapa de la ruta",
+          "nl": "Routekaart",
+          "cs": "Mapa trasy",
+          "pl": "Mapa trasy"
         },
         "altText": {
           "en": "Illustrated route map of the 13-day Georgia grand tour, based in Kutaisi, Mestia, Batumi, Tbilisi and Kazbegi, taking in Gelati and Motsameta, Prometheus Cave, the Svan towers of Mestia and Ushguli, Martvili Canyon, the Batumi coast, Mtskheta and Ananuri, Kazbegi's Gergeti Trinity Church, and Gori and Uplistsikhe, with a scenic train from Batumi to Tbilisi",
@@ -13803,7 +13803,7 @@ export const tours = [
         "contentUrl": "https://www.hikasustravel.com/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/route-map-13-day-kutaisi-georgia-2400.webp",
         "width": 2400,
         "height": 1600,
-        "caption": "13-Day Georgia Grand Tour from Kutaisi: Culture & Nature – Route Map",
+        "caption": "Route Map",
         "description": "Illustrated route map of the 13-day Georgia grand tour, based in Kutaisi, Mestia, Batumi, Tbilisi and Kazbegi, taking in Gelati and Motsameta, Prometheus Cave, the Svan towers of Mestia and Ushguli, Martvili Canyon, the Batumi coast, Mtskheta and Ananuri, Kazbegi's Gergeti Trinity Church, and Gori and Uplistsikhe, with a scenic train from Batumi to Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
@@ -14435,13 +14435,13 @@ export const tours = [
         "width": 2400,
         "height": 1600,
         "caption": {
-          "en": "Ultimate 15-Day Georgia Tour: From Tbilisi to Svaneti – Wine, Culture, and Natural Beauty – Route Map",
-          "de": "Ultimative 15-tägige Georgien-Rundreise: Von Tiflis nach Swanetien - Wein, Kultur und Naturschönheit – Routenkarte",
-          "fr": "Circuit ultime de 15 jours en Géorgie : De Tbilissi à la Svanétie – Vins, culture et beauté naturelle – Carte de l'itinéraire",
-          "es": "Tour Definitivo de 15 Días por Georgia: De Tiflis a Svaneti – Vinos, Cultura y Belleza Natural – Mapa de la ruta",
-          "nl": "Ultieme 15-Daagse Georgië Tour: Van Tbilisi naar Svaneti – Wijn, Cultuur en Natuurlijke Schoonheid – Routekaart",
-          "cs": "Ultimátní 15denní zájezd po Gruzii: Z Tbilisi do Svanetie – víno, kultura a přírodní krásy – Mapa trasy",
-          "pl": "15-dniowa wycieczka po Gruzji: z Tbilisi do Swanecji – wino, kultura i naturalne piękno – Mapa trasy"
+          "en": "Route Map",
+          "de": "Routenkarte",
+          "fr": "Carte de l'itinéraire",
+          "es": "Mapa de la ruta",
+          "nl": "Routekaart",
+          "cs": "Mapa trasy",
+          "pl": "Mapa trasy"
         },
         "altText": {
           "en": "Illustrated route map of the 15-day ultimate Georgia tour, based in Tbilisi, Telavi, Kazbegi, Kutaisi, Mestia and Batumi, taking in Sighnaghi and Bodbe, Mtskheta and Ananuri, Kazbegi's Gergeti Trinity Church, Gori and Uplistsikhe, Gelati, Prometheus Cave and Martvili Canyon, the Svan towers of Mestia and Ushguli, and the Batumi coast, with a scenic train back to Tbilisi",
@@ -15037,7 +15037,7 @@ export const tours = [
         "contentUrl": "https://www.hikasustravel.com/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/route-map-15-day-svaneti-georgia-2400.webp",
         "width": 2400,
         "height": 1600,
-        "caption": "Ultimate 15-Day Georgia Tour: From Tbilisi to Svaneti – Wine, Culture, and Natural Beauty – Route Map",
+        "caption": "Route Map",
         "description": "Illustrated route map of the 15-day ultimate Georgia tour, based in Tbilisi, Telavi, Kazbegi, Kutaisi, Mestia and Batumi, taking in Sighnaghi and Bodbe, Mtskheta and Ananuri, Kazbegi's Gergeti Trinity Church, Gori and Uplistsikhe, Gelati, Prometheus Cave and Martvili Canyon, the Svan towers of Mestia and Ushguli, and the Batumi coast, with a scenic train back to Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
@@ -16061,13 +16061,13 @@ export const tours = [
         "width": 2400,
         "height": 1600,
         "caption": {
-          "en": "20-Day Georgia Grand Tour: Wine, Hiking & Culture – Route Map",
-          "de": "20-tägige Grand Tour durch Georgien: Wein, Wandern & Kultur – Routenkarte",
-          "fr": "Grand circuit de Géorgie de 20 jours : vin, randonnée et culture – Carte de l'itinéraire",
-          "es": "Gran Tour de Georgia de 20 Días: Vino, Senderismo y Cultura – Mapa de la ruta",
-          "nl": "20-Daagse Grand Tour door Georgië: Wijn, Wandelen & Cultuur – Routekaart",
-          "cs": "20denní velký okruh Gruzií: víno, turistika a kultura – Mapa trasy",
-          "pl": "20-dniowa wielka wycieczka po Gruzji: wino, trekking i kultura – Mapa trasy"
+          "en": "Route Map",
+          "de": "Routenkarte",
+          "fr": "Carte de l'itinéraire",
+          "es": "Mapa de la ruta",
+          "nl": "Routekaart",
+          "cs": "Mapa trasy",
+          "pl": "Mapa trasy"
         },
         "altText": {
           "en": "Illustrated route map of the 20-day Georgia grand tour, based in Tbilisi, Telavi, Kazbegi, Kutaisi, Zugdidi, Mestia and Batumi, taking in Sighnaghi and David Gareja, Ananuri and Gergeti Trinity Church, Juta trekking, Gelati and Prometheus Cave, Okatse and Martvili canyons, the Svan towers of Mestia and Ushguli, and the Batumi coast",
@@ -16557,7 +16557,7 @@ export const tours = [
         "contentUrl": "https://www.hikasustravel.com/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/route-map-20-day-grand-georgia-2400.webp",
         "width": 2400,
         "height": 1600,
-        "caption": "20-Day Georgia Grand Tour: Wine, Hiking & Culture – Route Map",
+        "caption": "Route Map",
         "description": "Illustrated route map of the 20-day Georgia grand tour, based in Tbilisi, Telavi, Kazbegi, Kutaisi, Zugdidi, Mestia and Batumi, taking in Sighnaghi and David Gareja, Ananuri and Gergeti Trinity Church, Juta trekking, Gelati and Prometheus Cave, Okatse and Martvili canyons, the Svan towers of Mestia and Ushguli, and the Batumi coast",
         "creditText": "Hikasus Travel",
         "creator": {
