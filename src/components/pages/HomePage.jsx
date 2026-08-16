@@ -1,7 +1,11 @@
-import { useContext } from 'react'
+import { lazy, Suspense, useContext } from 'react'
 import HeroSection from '../shared/HeroSection'
 import FadeUp from '../shared/FadeUp'
 import BlurUpBackground from '../shared/BlurUpBackground'
+// mapbox-gl is ~450 kB gzipped. Loading it lazily keeps it out of the main
+// bundle, so it no longer downloads on the ~370 routes that render no map at
+// all, and here it arrives after the page itself rather than blocking it.
+const MapboxMap = lazy(() => import('../shared/MapboxMap'))
 import Testimonials from '../shared/Testimonials'
 import ContactForm from '../shared/ContactForm'
 import { tours } from '../../data/tours'
@@ -10,10 +14,12 @@ import useLang from '../../i18n/useLang'
 import LocaleLink from '../../i18n/LocaleLink'
 import { I18nContext } from '../../i18n/I18nContext'
 import useSEO from '../../hooks/useSEO'
+import useIsHydrated from '../../hooks/useIsHydrated'
 import { getSEO } from '../../data/seoData'
 
 export default function HomePage() {
   const t = useT()
+  const hydrated = useIsHydrated()
   const { lang } = useLang()
   const { tourTranslations, loadTourTranslations } = useContext(I18nContext)
   const seo = getSEO('home', lang)
@@ -163,6 +169,35 @@ export default function HomePage() {
           <Testimonials />
         </FadeUp>
       </section>
+
+      {/* Map — restored between the testimonials and the enquiry form.
+          Fallback mirrors MapboxMap's own wrapper so the slot keeps its height
+          (.page-map is 70vh) and nothing shifts when the map arrives.
+          The map is held back until after hydration (useIsHydrated) so the
+          static HTML and the first browser render both show this placeholder.
+          Rendering the map at build time instead would put markup in the HTML
+          that the hydrating render — still waiting on the mapbox chunk — cannot
+          match. A visitor sees no difference: the map already arrived with its
+          chunk, after mount. */}
+      {!hydrated ? <section><div className="page-map" /></section> : (
+      <Suspense fallback={<section><div className="page-map" /></section>}>
+        <MapboxMap
+          id="map"
+          center={[43.402090536365975, 42.22342174308285]}
+          zoom={7}
+          showGeorgiaBorders
+          markers={[{
+            coordinates: [43.402090536365975, 42.22342174308285],
+            svgUrl: '/img/pennant.svg',
+            width: 30,
+            height: 36,
+            offsetX: 20,
+            offsetY: 5,
+          }]}
+          isHomePage
+        />
+      </Suspense>
+      )}
 
       <section className="home-items">
         <div className="home-items">
