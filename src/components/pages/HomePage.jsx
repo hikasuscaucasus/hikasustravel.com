@@ -154,6 +154,16 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Testimonials — social proof sits between the shuttle section and the
+          enquiry form, so a visitor reads why others chose us immediately
+          before the form that asks them to get in touch. */}
+      <section className="td-testimonials-section">
+        <FadeUp>
+          <h2 className="td-section__title">{t('testimonials.title')}</h2>
+          <Testimonials />
+        </FadeUp>
+      </section>
+
       <section className="home-items">
         <div className="home-items">
           <FadeUp>
@@ -161,14 +171,6 @@ export default function HomePage() {
           </FadeUp>
           <ContactForm />
         </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="td-testimonials-section">
-        <FadeUp>
-          <h2 className="td-section__title">{t('testimonials.title')}</h2>
-          <Testimonials />
-        </FadeUp>
       </section>
     </>
   )
