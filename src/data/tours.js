@@ -163,7 +163,7 @@ export const tours = [
         "fallbackWidth": 1200,
         "caption": {
           "en": "Narikala Fortress, Tbilisi",
-          "de": "Narikala-Festung, Tiflis",
+          "de": "Festung Narikala, Tiflis",
           "fr": "Forteresse de Narikala, Tbilissi",
           "es": "Fortaleza de Narikala, Tiflis",
           "nl": "Narikala-vesting, Tbilisi",
@@ -190,12 +190,12 @@ export const tours = [
         "fallbackWidth": 1200,
         "caption": {
           "en": "Holy Trinity Cathedral, Tbilisi",
-          "de": "Dreifaltigkeitskathedrale, Tiflis",
-          "fr": "Cathédrale de la Trinité, Tbilissi",
-          "es": "Catedral de la Trinidad, Tiflis",
-          "nl": "Drie-eenheidskathedraal, Tbilisi",
-          "cs": "Katedrála Nejsvětější Trojice, Tbilisi",
-          "pl": "Katedra Trójcy Świętej, Tbilisi"
+          "de": "Sameba-Kathedrale, Tiflis",
+          "fr": "Cathédrale Sameba, Tbilissi",
+          "es": "Catedral Sameba, Tiflis",
+          "nl": "Sameba-kathedraal, Tbilisi",
+          "cs": "Katedrála Sameba, Tbilisi",
+          "pl": "Katedra Sameba, Tbilisi"
         },
         "altText": {
           "en": "Holy Trinity Cathedral (Sameba) with golden dome under a blue sky in Tbilisi, Georgia",
@@ -217,10 +217,10 @@ export const tours = [
         "fallbackWidth": 1200,
         "caption": {
           "en": "Jvari Monastery, Mtskheta",
-          "de": "Dschvari-Kloster, Mzcheta",
+          "de": "Dschwari-Kloster, Mzcheta",
           "fr": "Monastère de Djvari, Mtskheta",
-          "es": "Monasterio de Jvari, Mtskheta",
-          "nl": "Jvari-klooster, Mtskheta",
+          "es": "Monasterio de Jvari, Mtsjeta",
+          "nl": "Jvari-klooster, Mtscheta",
           "cs": "Klášter Džvari, Mccheta",
           "pl": "Klasztor Dżwari, Mccheta"
         },
@@ -245,9 +245,9 @@ export const tours = [
         "caption": {
           "en": "Svetitskhoveli Cathedral, Mtskheta",
           "de": "Swetizchoweli-Kathedrale, Mzcheta",
-          "fr": "Cathédrale de Svetitskhoveli, Mtskheta",
-          "es": "Catedral de Svetitskhoveli, Mtskheta",
-          "nl": "Svetitskhoveli-kathedraal, Mtskheta",
+          "fr": "Cathédrale de Svétitskhovéli, Mtskheta",
+          "es": "Catedral de Svetitsjoveli, Mtsjeta",
+          "nl": "Svetitschoveli-kathedraal, Mtscheta",
           "cs": "Katedrála Sveticchoveli, Mccheta",
           "pl": "Katedra Sweticchoweli, Mccheta"
         },
@@ -299,7 +299,7 @@ export const tours = [
         "caption": {
           "en": "Gergeti Trinity Church, Kazbegi",
           "de": "Gergeti-Dreifaltigkeitskirche, Kasbegi",
-          "fr": "Église de la Trinité de Gergeti, Kazbegi",
+          "fr": "Église de la Trinité de Guerguéti, Kazbegi",
           "es": "Iglesia de la Trinidad de Gergeti, Kazbegi",
           "nl": "Gergeti-Drie-eenheidskerk, Kazbegi",
           "cs": "Kostel Nejsvětější Trojice v Gergeti, Kazbegi",
@@ -351,13 +351,13 @@ export const tours = [
         "height": 1086,
         "fallbackWidth": 1200,
         "caption": {
-          "en": "Uplistsikhe cave town, Gori",
+          "en": "Uplistsikhe Cave Town, Gori",
           "de": "Höhlenstadt Uplisziche, Gori",
-          "fr": "Ville troglodyte d'Ouplistsikhé, Gori",
+          "fr": "Cité troglodyte d'Ouplistsikhé, Gori",
           "es": "Ciudad rupestre de Uplistsikhe, Gori",
           "nl": "Grottenstad Oeplistsiche, Gori",
           "cs": "Skalní město Uplisciche, Gori",
-          "pl": "Skalne miasto Uplisciche, Gori"
+          "pl": "Miasto jaskiniowe Uplisciche, Gori"
         },
         "altText": {
           "en": "Rock-hewn cave town of Uplistsikhe above the Mtkvari valley near Gori, Georgia",
@@ -408,7 +408,7 @@ export const tours = [
         "caption": {
           "en": "Gelati Monastery, Kutaisi",
           "de": "Gelati-Kloster, Kutaissi",
-          "fr": "Monastère de Gelati, Koutaïssi",
+          "fr": "Monastère de Gélati, Koutaïssi",
           "es": "Monasterio de Gelati, Kutaisi",
           "nl": "Gelati-klooster, Koetaisi",
           "cs": "Klášter Gelati, Kutaisi",
@@ -434,11 +434,11 @@ export const tours = [
         "fallbackWidth": 1200,
         "caption": {
           "en": "Prometheus Cave, Imereti",
-          "de": "Prometheus-Höhle, Imereti",
-          "fr": "Grotte de Prométhée, Imereti",
+          "de": "Prometheus-Höhle, Imeretien",
+          "fr": "Grotte de Prométhée, Iméréthie",
           "es": "Cueva de Prometeo, Imereti",
-          "nl": "Prometheusgrot, Imereti",
-          "cs": "jeskyně Prometheus, Imeretie",
+          "nl": "Prometheus-grot, Imereti",
+          "cs": "Prométheova jeskyně, Imeretie",
           "pl": "Jaskinia Prometeusza, Imeretia"
         },
         "altText": {
@@ -515,13 +515,13 @@ export const tours = [
         "height": 1086,
         "fallbackWidth": 1200,
         "caption": {
-          "en": "Black Sea sunset, Batumi",
-          "de": "Schwarzmeer-Sonnenuntergang, Batumi",
-          "fr": "Coucher de soleil sur la mer Noire, Batumi",
-          "es": "Atardecer en el mar Negro, Batumi",
-          "nl": "Zonsondergang aan de Zwarte Zee, Batumi",
-          "cs": "Západ slunce nad Černým mořem, Batumi",
-          "pl": "Zachód słońca nad Morzem Czarnym, Batumi"
+          "en": "Black Sea Sunset, Batumi",
+          "de": "Sonnenuntergang, Batumi",
+          "fr": "Coucher de soleil, Batoumi",
+          "es": "Atardecer, Batumi",
+          "nl": "Zonsondergang, Batumi",
+          "cs": "Západ slunce, Batumi",
+          "pl": "Zachód słońca, Batumi"
         },
         "altText": {
           "en": "Red sun setting over the Black Sea under dramatic clouds near Batumi, Georgia",
@@ -542,13 +542,13 @@ export const tours = [
         "height": 1086,
         "fallbackWidth": 1200,
         "caption": {
-          "en": "Batumi skyline, Black Sea coast",
-          "de": "Batumi-Skyline, Schwarzmeerküste",
-          "fr": "Skyline de Batumi, côte de la mer Noire",
-          "es": "Perfil urbano de Batumi, costa del mar Negro",
-          "nl": "Skyline van Batumi, kust van de Zwarte Zee",
-          "cs": "Panorama Batumi, pobřeží Černého moře",
-          "pl": "Panorama Batumi, wybrzeże Morza Czarnego"
+          "en": "Batumi Skyline",
+          "de": "Skyline von Batumi",
+          "fr": "Panorama de Batoumi",
+          "es": "Perfil urbano de Batumi",
+          "nl": "Skyline van Batumi",
+          "cs": "Panoráma Batumi",
+          "pl": "Panorama Batumi"
         },
         "altText": {
           "en": "Modern Batumi skyline seen from the pebble beach on the Black Sea, Georgia",
@@ -570,10 +570,10 @@ export const tours = [
         "fallbackWidth": 1024,
         "objectPosition": "center",
         "caption": {
-          "en": "Ali & Nino statue, Batumi",
+          "en": "Ali and Nino Statue, Batumi",
           "de": "Ali-und-Nino-Statue, Batumi",
-          "fr": "Statue Ali et Nino, Batumi",
-          "es": "Estatua Ali y Nino, Batumi",
+          "fr": "Statue Ali et Nino, Batoumi",
+          "es": "Estatua de Ali y Nino, Batumi",
           "nl": "Ali en Nino-beeld, Batumi",
           "cs": "Socha Ali a Nino, Batumi",
           "pl": "Rzeźba Ali i Nino, Batumi"
@@ -625,12 +625,12 @@ export const tours = [
         "fallbackWidth": 1200,
         "caption": {
           "en": "Tsinandali Estate, Kakheti",
-          "de": "Anwesen Zinandali, Kachetien",
+          "de": "Anwesen Tsinandali, Kachetien",
           "fr": "Domaine de Tsinandali, Kakhétie",
-          "es": "Finca Tsinandali, Kakheti",
+          "es": "Finca Tsinandali, Kajetia",
           "nl": "Landgoed Tsinandali, Kachetië",
-          "cs": "Panství Cinandali, Kachetie",
-          "pl": "Posiadłość Cinandali, Kachetia"
+          "cs": "Panství Tsinandali, Kachetie",
+          "pl": "Posiadłość Tsinandali, Kachetia"
         },
         "altText": {
           "en": "Historic Tsinandali Estate manor and garden in the Kakheti wine region, Georgia",
@@ -651,13 +651,13 @@ export const tours = [
         "height": 1086,
         "fallbackWidth": 1200,
         "caption": {
-          "en": "Erekle II monument, Telavi",
+          "en": "Erekle II Monument, Telavi",
           "de": "Erekle-II.-Denkmal, Telawi",
           "fr": "Monument d'Erekle II, Télavi",
           "es": "Monumento a Erekle II, Telavi",
           "nl": "Erekle II-monument, Telavi",
           "cs": "Pomník Erekleho II., Telavi",
-          "pl": "Pomnik Ereklego II, Telawi"
+          "pl": "Pomnik Erekle II, Telawi"
         },
         "altText": {
           "en": "Bronze equestrian monument to King Erekle II against a blue sky in Telavi, Georgia",
@@ -679,12 +679,12 @@ export const tours = [
         "fallbackWidth": 1200,
         "caption": {
           "en": "Sighnaghi, Kakheti",
-          "de": "Signachi, Kachetien",
+          "de": "Sighnaghi, Kachetien",
           "fr": "Sighnaghi, Kakhétie",
-          "es": "Sighnaghi, Kakheti",
+          "es": "Sighnaghi, Kajetia",
           "nl": "Sighnaghi, Kachetië",
           "cs": "Sighnaghi, Kachetie",
-          "pl": "Signagi, Kachetia"
+          "pl": "Sighnaghi, Kachetia"
         },
         "altText": {
           "en": "Hilltop town of Sighnaghi overlooking the Alazani Valley in Kakheti, Georgia",
@@ -879,7 +879,7 @@ export const tours = [
         "contentUrl": "https://www.hikasustravel.com/images/group-tours/georgia-group-tour/uplistsikhe-cave-town-gori-georgia-1448.webp",
         "width": 1448,
         "height": 1086,
-        "caption": "Uplistsikhe cave town, Gori",
+        "caption": "Uplistsikhe Cave Town, Gori",
         "description": "Rock-hewn cave town of Uplistsikhe above the Mtkvari valley near Gori, Georgia",
         "creditText": "Hikasus Travel",
         "creator": {
@@ -1005,7 +1005,7 @@ export const tours = [
         "contentUrl": "https://www.hikasustravel.com/images/group-tours/georgia-group-tour/black-sea-sunset-batumi-georgia-1448.webp",
         "width": 1448,
         "height": 1086,
-        "caption": "Black Sea sunset, Batumi",
+        "caption": "Black Sea Sunset, Batumi",
         "description": "Red sun setting over the Black Sea under dramatic clouds near Batumi, Georgia",
         "creditText": "Hikasus Travel",
         "creator": {
@@ -1026,7 +1026,7 @@ export const tours = [
         "contentUrl": "https://www.hikasustravel.com/images/group-tours/georgia-group-tour/batumi-skyline-black-sea-georgia-1448.webp",
         "width": 1448,
         "height": 1086,
-        "caption": "Batumi skyline, Black Sea coast",
+        "caption": "Batumi Skyline",
         "description": "Modern Batumi skyline seen from the pebble beach on the Black Sea, Georgia",
         "creditText": "Hikasus Travel",
         "creator": {
@@ -1047,7 +1047,7 @@ export const tours = [
         "contentUrl": "https://www.hikasustravel.com/images/group-tours/georgia-group-tour/ali-and-nino-statue-batumi-georgia-1024.webp",
         "width": 1024,
         "height": 1536,
-        "caption": "Ali & Nino statue, Batumi",
+        "caption": "Ali and Nino Statue, Batumi",
         "description": "The moving Ali and Nino steel statue on the seafront in Batumi, Georgia",
         "creditText": "Hikasus Travel",
         "creator": {
@@ -1110,7 +1110,7 @@ export const tours = [
         "contentUrl": "https://www.hikasustravel.com/images/group-tours/georgia-group-tour/erekle-monument-telavi-georgia-1448.webp",
         "width": 1448,
         "height": 1086,
-        "caption": "Erekle II monument, Telavi",
+        "caption": "Erekle II Monument, Telavi",
         "description": "Bronze equestrian monument to King Erekle II against a blue sky in Telavi, Georgia",
         "creditText": "Hikasus Travel",
         "creator": {
@@ -1608,37 +1608,93 @@ export const tours = [
       },
       {
         "src": "/images/files/gombori-pass-kakheti-georgia.jpg",
-        "caption": "The Gombori Pass",
+        "caption": {
+          "en": "The Gombori Pass",
+          "de": "The Gombori Pass",
+          "fr": "The Gombori Pass",
+          "es": "The Gombori Pass",
+          "nl": "The Gombori Pass",
+          "cs": "The Gombori Pass",
+          "pl": "The Gombori Pass"
+        },
         "description": "Scenic mountain road from Tbilisi into Kakheti, crossed on the first day"
       },
       {
         "src": "/images/files/tsinandali-estate.jpg",
-        "caption": "Tsinandali Estate",
+        "caption": {
+          "en": "Tsinandali Estate",
+          "de": "Tsinandali Estate",
+          "fr": "Tsinandali Estate",
+          "es": "Tsinandali Estate",
+          "nl": "Tsinandali Estate",
+          "cs": "Tsinandali Estate",
+          "pl": "Tsinandali Estate"
+        },
         "description": "Historic 19th-century estate, gardens and winery near Telavi"
       },
       {
         "src": "/images/files/kakheti-wine-tasting.jpg",
-        "caption": "Georgian Wine Tasting in Kakheti",
+        "caption": {
+          "en": "Georgian Wine Tasting in Kakheti",
+          "de": "Georgian Wine Tasting in Kakheti",
+          "fr": "Georgian Wine Tasting in Kakheti",
+          "es": "Georgian Wine Tasting in Kakheti",
+          "nl": "Georgian Wine Tasting in Kakheti",
+          "cs": "Georgian Wine Tasting in Kakheti",
+          "pl": "Georgian Wine Tasting in Kakheti"
+        },
         "description": "Traditional Georgian wine and food paired in the Alazani Valley"
       },
       {
         "src": "/images/files/Qvevri%20(Clay%20Vessels).jpg",
-        "caption": "Qvevri Winemaking in Vardisubani",
+        "caption": {
+          "en": "Qvevri Winemaking in Vardisubani",
+          "de": "Qvevri Winemaking in Vardisubani",
+          "fr": "Qvevri Winemaking in Vardisubani",
+          "es": "Qvevri Winemaking in Vardisubani",
+          "nl": "Qvevri Winemaking in Vardisubani",
+          "cs": "Qvevri Winemaking in Vardisubani",
+          "pl": "Qvevri Winemaking in Vardisubani"
+        },
         "description": "UNESCO-listed qvevri method, with wine fermented in clay vessels buried underground"
       },
       {
         "src": "/images/files/gremi-archangels-complex.jpg",
-        "caption": "Gremi Fortress",
+        "caption": {
+          "en": "Gremi Fortress",
+          "de": "Gremi Fortress",
+          "fr": "Gremi Fortress",
+          "es": "Gremi Fortress",
+          "nl": "Gremi Fortress",
+          "cs": "Gremi Fortress",
+          "pl": "Gremi Fortress"
+        },
         "description": "16th-century royal citadel and Church of the Archangels in Kakheti"
       },
       {
         "src": "/images/files/kakheti-vineyard.jpg",
-        "caption": "Kakheti Vineyards",
+        "caption": {
+          "en": "Kakheti Vineyards",
+          "de": "Kakheti Vineyards",
+          "fr": "Kakheti Vineyards",
+          "es": "Kakheti Vineyards",
+          "nl": "Kakheti Vineyards",
+          "cs": "Kakheti Vineyards",
+          "pl": "Kakheti Vineyards"
+        },
         "description": "Vineyards of the Alazani Valley, the heart of Georgia's wine region"
       },
       {
         "src": "/images/files/sighnaghi-kakheti.jpg",
-        "caption": "Sighnaghi, the City of Love",
+        "caption": {
+          "en": "Sighnaghi, the City of Love",
+          "de": "Sighnaghi, the City of Love",
+          "fr": "Sighnaghi, the City of Love",
+          "es": "Sighnaghi, the City of Love",
+          "nl": "Sighnaghi, the City of Love",
+          "cs": "Sighnaghi, the City of Love",
+          "pl": "Sighnaghi, the City of Love"
+        },
         "description": "Hilltop walled town with views over the Alazani Valley, near Bodbe Monastery"
       }
     ],
@@ -2002,12 +2058,12 @@ export const tours = [
         "height": 1439,
         "caption": {
           "en": "Jvari Monastery, Mtskheta",
-          "de": "Kloster Jvari, Mtskheta",
-          "fr": "Monastère de Jvari, Mtskheta",
-          "es": "Monasterio de Jvari, Mtskheta",
-          "nl": "Jvari-klooster, Mtskheta",
-          "cs": "Klášter Jvari, Mtskheta",
-          "pl": "Klasztor Jvari, Mtskheta"
+          "de": "Dschwari-Kloster, Mzcheta",
+          "fr": "Monastère de Djvari, Mtskheta",
+          "es": "Monasterio de Jvari, Mtsjeta",
+          "nl": "Jvari-klooster, Mtscheta",
+          "cs": "Klášter Džvari, Mccheta",
+          "pl": "Klasztor Dżwari, Mccheta"
         }
       },
       {
@@ -2019,12 +2075,12 @@ export const tours = [
         "height": 1021,
         "caption": {
           "en": "Svetitskhoveli Cathedral, Mtskheta",
-          "de": "Kathedrale Svetitskhoveli, Mtskheta",
-          "fr": "Cathédrale de Svetitskhoveli, Mtskheta",
-          "es": "Catedral de Svetitskhoveli, Mtskheta",
-          "nl": "Svetitskhoveli-kathedraal, Mtskheta",
-          "cs": "Katedrála Svetitskhoveli, Mtskheta",
-          "pl": "Katedra Svetitskhoveli, Mtskheta"
+          "de": "Swetizchoweli-Kathedrale, Mzcheta",
+          "fr": "Cathédrale de Svétitskhovéli, Mtskheta",
+          "es": "Catedral de Svetitsjoveli, Mtsjeta",
+          "nl": "Svetitschoveli-kathedraal, Mtscheta",
+          "cs": "Katedrála Sveticchoveli, Mccheta",
+          "pl": "Katedra Sweticchoweli, Mccheta"
         }
       },
       {
@@ -2035,13 +2091,13 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
-          "en": "Uplistsikhe Cave Town, near Gori",
-          "de": "Höhlenstadt Uplistsikhe, bei Gori",
-          "fr": "Cité troglodyte d'Uplistsikhe, près de Gori",
-          "es": "Ciudad rupestre de Uplistsikhe, cerca de Gori",
-          "nl": "Grottenstad Uplistsikhe, bij Gori",
-          "cs": "Skalní město Uplistsikhe, u Gori",
-          "pl": "Miasto jaskiniowe Uplistsikhe, koło Gori"
+          "en": "Uplistsikhe Cave Town, Gori",
+          "de": "Höhlenstadt Uplisziche, Gori",
+          "fr": "Cité troglodyte d'Ouplistsikhé, Gori",
+          "es": "Ciudad rupestre de Uplistsikhe, Gori",
+          "nl": "Grottenstad Oeplistsiche, Gori",
+          "cs": "Skalní město Uplisciche, Gori",
+          "pl": "Miasto jaskiniowe Uplisciche, Gori"
         }
       },
       {
@@ -2057,7 +2113,7 @@ export const tours = [
           "fr": "Musée Staline, Gori",
           "es": "Museo de Stalin, Gori",
           "nl": "Stalinmuseum, Gori",
-          "cs": "Stalinovo muzeum, Gori",
+          "cs": "Muzeum Stalina, Gori",
           "pl": "Muzeum Stalina, Gori"
         }
       },
@@ -2069,13 +2125,13 @@ export const tours = [
         "width": 1491,
         "height": 1055,
         "caption": {
-          "en": "Gelati Monastery, near Kutaisi",
-          "de": "Kloster Gelati, bei Kutaisi",
-          "fr": "Monastère de Gélati, près de Koutaïssi",
-          "es": "Monasterio de Gelati, cerca de Kutaisi",
-          "nl": "Klooster Gelati, bij Koetaisi",
-          "cs": "Klášter Gelati, u Kutaisi",
-          "pl": "Klasztor Gelati, koło Kutaisi"
+          "en": "Gelati Monastery, Kutaisi",
+          "de": "Gelati-Kloster, Kutaissi",
+          "fr": "Monastère de Gélati, Koutaïssi",
+          "es": "Monasterio de Gelati, Kutaisi",
+          "nl": "Gelati-klooster, Koetaisi",
+          "cs": "Klášter Gelati, Kutaisi",
+          "pl": "Klasztor Gelati, Kutaisi"
         }
       },
       {
@@ -2086,13 +2142,13 @@ export const tours = [
         "width": 1536,
         "height": 1024,
         "caption": {
-          "en": "Kutaisi Green Bazaar",
-          "de": "Grüner Basar von Kutaisi",
-          "fr": "Bazar vert de Koutaïssi",
-          "es": "Bazar Verde de Kutaisi",
-          "nl": "Groene Bazaar van Koetaisi",
-          "cs": "Zelený bazar v Kutaisi",
-          "pl": "Zielony Bazar w Kutaisi"
+          "en": "Green Bazaar, Kutaisi",
+          "de": "Grüner Basar, Kutaissi",
+          "fr": "Bazar vert, Koutaïssi",
+          "es": "Bazar Verde, Kutaisi",
+          "nl": "Groene Bazaar, Koetaisi",
+          "cs": "Zelený bazar, Kutaisi",
+          "pl": "Zielony Bazar, Kutaisi"
         }
       },
       {
@@ -2137,13 +2193,13 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
-          "en": "Batumi seafront skyline",
-          "de": "Uferskyline von Batumi",
-          "fr": "Front de mer de Batumi",
-          "es": "Perfil urbano frente al mar de Batumi",
-          "nl": "Skyline aan de kust van Batumi",
-          "cs": "Panoráma pobřeží Batumi",
-          "pl": "Panorama nadmorska Batumi"
+          "en": "Batumi Skyline",
+          "de": "Skyline von Batumi",
+          "fr": "Panorama de Batoumi",
+          "es": "Perfil urbano de Batumi",
+          "nl": "Skyline van Batumi",
+          "cs": "Panoráma Batumi",
+          "pl": "Panorama Batumi"
         }
       },
       {
@@ -2154,13 +2210,13 @@ export const tours = [
         "width": 1445,
         "height": 1089,
         "caption": {
-          "en": "Batumi Boulevard fountains at night",
-          "de": "Springbrunnen am Boulevard von Batumi bei Nacht",
-          "fr": "Fontaines du boulevard de Batumi la nuit",
-          "es": "Fuentes del bulevar de Batumi de noche",
-          "nl": "Fonteinen op de boulevard van Batumi bij nacht",
-          "cs": "Fontány na bulváru v Batumi v noci",
-          "pl": "Fontanny na bulwarze w Batumi nocą"
+          "en": "Batumi Boulevard",
+          "de": "Batumi-Boulevard",
+          "fr": "Boulevard de Batumi",
+          "es": "Bulevar de Batumi",
+          "nl": "Boulevard van Batumi",
+          "cs": "Batumská promenáda",
+          "pl": "Bulwar w Batumi"
         }
       },
       {
@@ -2173,13 +2229,13 @@ export const tours = [
         /* Portrait: keep the figures' heads in the 3:2 tile crop. */
         "objectPosition": "center 30%",
         "caption": {
-          "en": "Ali & Nino moving statue, Batumi",
-          "de": "Bewegliche Statue „Ali und Nino“, Batumi",
-          "fr": "Statue mobile Ali et Nino, Batumi",
-          "es": "Estatua móvil de Ali y Nino, Batumi",
-          "nl": "Bewegend beeld Ali en Nino, Batumi",
-          "cs": "Pohyblivá socha Ali a Nino, Batumi",
-          "pl": "Ruchomy pomnik Ali i Nino, Batumi"
+          "en": "Ali and Nino Statue, Batumi",
+          "de": "Ali-und-Nino-Statue, Batumi",
+          "fr": "Statue Ali et Nino, Batoumi",
+          "es": "Estatua de Ali y Nino, Batumi",
+          "nl": "Ali en Nino-beeld, Batumi",
+          "cs": "Socha Ali a Nino, Batumi",
+          "pl": "Rzeźba Ali i Nino, Batumi"
         }
       },
       {
@@ -2194,7 +2250,7 @@ export const tours = [
         "caption": {
           "en": "Alphabet Tower, Batumi",
           "de": "Alphabet-Turm, Batumi",
-          "fr": "Tour de l'Alphabet, Batumi",
+          "fr": "Tour de l'Alphabet, Batoumi",
           "es": "Torre del Alfabeto, Batumi",
           "nl": "Alfabettoren, Batumi",
           "cs": "Abecední věž, Batumi",
@@ -2209,13 +2265,13 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
-          "en": "Black Sea pebble beach, Batumi",
-          "de": "Kieselstrand am Schwarzen Meer, Batumi",
-          "fr": "Plage de galets de la mer Noire, Batumi",
-          "es": "Playa de guijarros del mar Negro, Batumi",
-          "nl": "Kiezelstrand aan de Zwarte Zee, Batumi",
-          "cs": "Oblázková pláž Černého moře, Batumi",
-          "pl": "Kamienista plaża nad Morzem Czarnym, Batumi"
+          "en": "Black Sea Beach, Batumi",
+          "de": "Schwarzmeerstrand, Batumi",
+          "fr": "Plage de la mer Noire, Batoumi",
+          "es": "Playa del mar Negro, Batumi",
+          "nl": "Strand aan de Zwarte Zee, Batumi",
+          "cs": "Pláž Černého moře, Batumi",
+          "pl": "Plaża nad Morzem Czarnym, Batumi"
         }
       },
       {
@@ -2226,13 +2282,13 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
-          "en": "Sunset over the Black Sea, Batumi",
-          "de": "Sonnenuntergang über dem Schwarzen Meer, Batumi",
-          "fr": "Coucher de soleil sur la mer Noire, Batumi",
-          "es": "Atardecer sobre el mar Negro, Batumi",
-          "nl": "Zonsondergang boven de Zwarte Zee, Batumi",
-          "cs": "Západ slunce nad Černým mořem, Batumi",
-          "pl": "Zachód słońca nad Morzem Czarnym, Batumi"
+          "en": "Black Sea Sunset, Batumi",
+          "de": "Sonnenuntergang, Batumi",
+          "fr": "Coucher de soleil, Batoumi",
+          "es": "Atardecer, Batumi",
+          "nl": "Zonsondergang, Batumi",
+          "cs": "Západ slunce, Batumi",
+          "pl": "Zachód słońca, Batumi"
         }
       }
     ],
@@ -2584,12 +2640,12 @@ export const tours = [
         "height": 1086,
         "caption": {
           "en": "Tbilisi Old Town",
-          "de": "Altstadt von Tiflis",
-          "fr": "Vieille ville de Tbilissi",
-          "es": "Casco antiguo de Tbilisi",
-          "nl": "Oude stad van Tbilisi",
-          "cs": "Staré město Tbilisi",
-          "pl": "Stare Miasto w Tbilisi"
+          "de": "Old Town panorama, Tbilisi",
+          "fr": "Old Town panorama, Tbilisi",
+          "es": "Old Town panorama, Tbilisi",
+          "nl": "Old Town panorama, Tbilisi",
+          "cs": "Old Town panorama, Tbilisi",
+          "pl": "Old Town panorama, Tbilisi"
         }
       },
       {
@@ -2602,8 +2658,8 @@ export const tours = [
           "en": "Narikala Fortress, Tbilisi",
           "de": "Festung Narikala, Tiflis",
           "fr": "Forteresse de Narikala, Tbilissi",
-          "es": "Fortaleza de Narikala, Tbilisi",
-          "nl": "Vesting Narikala, Tbilisi",
+          "es": "Fortaleza de Narikala, Tiflis",
+          "nl": "Narikala-vesting, Tbilisi",
           "cs": "Pevnost Narikala, Tbilisi",
           "pl": "Twierdza Narikala, Tbilisi"
         }
@@ -2615,13 +2671,13 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
-          "en": "Metekhi cliff and the Mtkvari River, Tbilisi",
-          "de": "Metechi-Felsen und der Fluss Mtkwari, Tiflis",
-          "fr": "Falaise de Metekhi et la rivière Mtkvari, Tbilissi",
-          "es": "Acantilado de Metekhi y el río Mtkvari, Tbilisi",
-          "nl": "Metekhi-klif en de rivier Mtkvari, Tbilisi",
-          "cs": "Metechiský útes a řeka Mtkvari, Tbilisi",
-          "pl": "Klif Metechi i rzeka Mtkwari, Tbilisi"
+          "en": "Metekhi Church, Tbilisi",
+          "de": "Metechi-Kirche, Tiflis",
+          "fr": "Église de Metekhi, Tbilissi",
+          "es": "Iglesia de Metekhi, Tiflis",
+          "nl": "Metekhi-kerk, Tbilisi",
+          "cs": "Kostel Metechi, Tbilisi",
+          "pl": "Kościół Metechi, Tbilisi"
         }
       },
       {
@@ -2632,13 +2688,13 @@ export const tours = [
         "height": 1448,
         "objectPosition": "center top",
         "caption": {
-          "en": "Rezo Gabriadze clock tower, Tbilisi",
-          "de": "Rezo-Gabriadze-Uhrturm, Tiflis",
-          "fr": "Tour de l'horloge de Rezo Gabriadze, Tbilissi",
-          "es": "Torre del reloj de Rezo Gabriadze, Tbilisi",
-          "nl": "Klokkentoren van Rezo Gabriadze, Tbilisi",
-          "cs": "Hodinová věž Rezo Gabriadzeho, Tbilisi",
-          "pl": "Wieża zegarowa Rezo Gabriadze, Tbilisi"
+          "en": "Gabriadze Clock Tower, Tbilisi",
+          "de": "Gabriadze-Uhrturm, Tiflis",
+          "fr": "Tour de l'horloge Gabriadze, Tbilissi",
+          "es": "Torre del reloj Gabriadze, Tiflis",
+          "nl": "Gabriadze-klokkentoren, Tbilisi",
+          "cs": "Hodinová věž Gabriadze, Tbilisi",
+          "pl": "Wieża zegarowa Gabriadzego, Tbilisi"
         }
       },
       {
@@ -2648,13 +2704,13 @@ export const tours = [
         "width": 1672,
         "height": 941,
         "caption": {
-          "en": "Holy Trinity Cathedral (Sameba), Tbilisi",
-          "de": "Dreifaltigkeitskathedrale (Sameba), Tiflis",
-          "fr": "Cathédrale de la Sainte-Trinité (Sameba), Tbilissi",
-          "es": "Catedral de la Santísima Trinidad (Sameba), Tbilisi",
-          "nl": "Heilige-Drie-eenheidskathedraal (Sameba), Tbilisi",
-          "cs": "Katedrála Nejsvětější Trojice (Sameba), Tbilisi",
-          "pl": "Katedra Trójcy Świętej (Sameba), Tbilisi"
+          "en": "Holy Trinity Cathedral, Tbilisi",
+          "de": "Dreifaltigkeitskathedrale, Tiflis",
+          "fr": "Cathédrale de la Trinité, Tbilissi",
+          "es": "Catedral de la Trinidad, Tiflis",
+          "nl": "Drie-eenheidskathedraal, Tbilisi",
+          "cs": "Katedrála Nejsvětější Trojice, Tbilisi",
+          "pl": "Katedra Trójcy Świętej, Tbilisi"
         }
       },
       {
@@ -2665,12 +2721,12 @@ export const tours = [
         "height": 1439,
         "caption": {
           "en": "Jvari Monastery, Mtskheta",
-          "de": "Kloster Jvari, Mtskheta",
-          "fr": "Monastère de Jvari, Mtskheta",
-          "es": "Monasterio de Jvari, Mtskheta",
-          "nl": "Jvari-klooster, Mtskheta",
-          "cs": "Klášter Jvari, Mtskheta",
-          "pl": "Klasztor Jvari, Mtskheta"
+          "de": "Dschwari-Kloster, Mzcheta",
+          "fr": "Monastère de Djvari, Mtskheta",
+          "es": "Monasterio de Jvari, Mtsjeta",
+          "nl": "Jvari-klooster, Mtscheta",
+          "cs": "Klášter Džvari, Mccheta",
+          "pl": "Klasztor Dżwari, Mccheta"
         }
       },
       {
@@ -2681,12 +2737,12 @@ export const tours = [
         "height": 1021,
         "caption": {
           "en": "Svetitskhoveli Cathedral, Mtskheta",
-          "de": "Kathedrale Svetitskhoveli, Mtskheta",
-          "fr": "Cathédrale de Svetitskhoveli, Mtskheta",
-          "es": "Catedral de Svetitskhoveli, Mtskheta",
-          "nl": "Svetitskhoveli-kathedraal, Mtskheta",
-          "cs": "Katedrála Svetitskhoveli, Mtskheta",
-          "pl": "Katedra Svetitskhoveli, Mtskheta"
+          "de": "Swetizchoweli-Kathedrale, Mzcheta",
+          "fr": "Cathédrale de Svétitskhovéli, Mtskheta",
+          "es": "Catedral de Svetitsjoveli, Mtsjeta",
+          "nl": "Svetitschoveli-kathedraal, Mtscheta",
+          "cs": "Katedrála Sveticchoveli, Mccheta",
+          "pl": "Katedra Sweticchoweli, Mccheta"
         }
       },
       {
@@ -2696,13 +2752,13 @@ export const tours = [
         "width": 1920,
         "height": 1271,
         "caption": {
-          "en": "Ananuri Fortress, Jinvali Reservoir",
+          "en": "Ananuri Fortress, Zhinvali Reservoir",
           "de": "Festung Ananuri, Schinwali-Stausee",
           "fr": "Forteresse d'Ananouri, réservoir de Jinvali",
-          "es": "Fortaleza de Ananuri, embalse de Jinvali",
-          "nl": "Vesting Ananuri, Jinvali-stuwmeer",
-          "cs": "Pevnost Ananuri, přehrada Zhinvali",
-          "pl": "Twierdza Ananuri, Zbiornik Zhinvali"
+          "es": "Fortaleza de Ananuri, embalse de Zhinvali",
+          "nl": "Vesting Ananuri, Zhinvali-stuwmeer",
+          "cs": "Pevnost Ananuri, přehrada Žinvali",
+          "pl": "Twierdza Ananuri, Zbiornik Żinwali"
         }
       },
       {
@@ -2712,13 +2768,13 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
-          "en": "Jinvali Reservoir",
+          "en": "Zhinvali Reservoir",
           "de": "Schinwali-Stausee",
           "fr": "Réservoir de Jinvali",
           "es": "Embalse de Jinvali",
           "nl": "Jinvali-stuwmeer",
-          "cs": "Přehrada Zhinvali",
-          "pl": "Zbiornik Zhinvali"
+          "cs": "Přehrada Žinvali",
+          "pl": "Zbiornik Żinwali"
         }
       },
       {
@@ -2729,11 +2785,11 @@ export const tours = [
         "height": 1086,
         "caption": {
           "en": "Friendship Monument, Gudauri",
-          "de": "Freundschaftsdenkmal, Gudauri",
-          "fr": "Monument de l'Amitié, Gudauri",
-          "es": "Monumento a la Amistad, Gudauri",
-          "nl": "Vriendschapsmonument, Gudauri",
-          "cs": "Památník přátelství, Gudauri",
+          "de": "Friendship Monument, Gudauri",
+          "fr": "Friendship Monument, Gudauri",
+          "es": "Friendship Monument, Gudauri",
+          "nl": "Friendship Monument, Gudauri",
+          "cs": "Friendship Monument, Gudauri",
           "pl": "Pomnik Przyjaźni, Gudauri"
         }
       },
@@ -2745,11 +2801,11 @@ export const tours = [
         "height": 1086,
         "caption": {
           "en": "Gergeti Trinity Church, Kazbegi",
-          "de": "Gergeti-Dreifaltigkeitskirche, Kazbegi",
+          "de": "Gergeti-Dreifaltigkeitskirche, Kasbegi",
           "fr": "Église de la Trinité de Guerguéti, Kazbegi",
           "es": "Iglesia de la Trinidad de Gergeti, Kazbegi",
-          "nl": "Drie-eenheidskerk van Gergeti, Kazbegi",
-          "cs": "Trojiční kostel Gergeti, Kazbegi",
+          "nl": "Gergeti-Drie-eenheidskerk, Kazbegi",
+          "cs": "Kostel Nejsvětější Trojice v Gergeti, Kazbegi",
           "pl": "Cerkiew Trójcy Świętej w Gergeti, Kazbegi"
         }
       },
@@ -2761,11 +2817,11 @@ export const tours = [
         "height": 1024,
         "caption": {
           "en": "Tsinandali Estate, Kakheti",
-          "de": "Landgut Tsinandali, Kachetien",
+          "de": "Anwesen Tsinandali, Kachetien",
           "fr": "Domaine de Tsinandali, Kakhétie",
-          "es": "Finca de Tsinandali, Kajetia",
+          "es": "Finca Tsinandali, Kajetia",
           "nl": "Landgoed Tsinandali, Kachetië",
-          "cs": "Sídlo Tsinandali, Kachetie",
+          "cs": "Panství Tsinandali, Kachetie",
           "pl": "Posiadłość Tsinandali, Kachetia"
         }
       },
@@ -2776,13 +2832,13 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
-          "en": "King Erekle II monument, Telavi",
-          "de": "Denkmal für König Erekle II., Telawi",
-          "fr": "Monument au roi Héraclius II, Telavi",
-          "es": "Monumento al rey Erekle II, Telavi",
-          "nl": "Monument voor koning Erekle II, Telavi",
-          "cs": "Pomník krále Erekleho II., Telavi",
-          "pl": "Pomnik króla Herakliusza II, Telawi"
+          "en": "Erekle II Monument, Telavi",
+          "de": "Erekle-II.-Denkmal, Telawi",
+          "fr": "Monument d'Erekle II, Télavi",
+          "es": "Monumento a Erekle II, Telavi",
+          "nl": "Erekle II-monument, Telavi",
+          "cs": "Pomník Erekleho II., Telavi",
+          "pl": "Pomnik Erekle II, Telawi"
         }
       },
       {
@@ -2792,13 +2848,13 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
-          "en": "Traditional Georgian supra (feast)",
-          "de": "Traditionelle georgische Supra (Festmahl)",
-          "fr": "Supra géorgien traditionnel (banquet)",
-          "es": "Supra georgiana tradicional (banquete)",
-          "nl": "Traditionele Georgische supra (feestmaal)",
-          "cs": "Tradiční gruzínská supra (hostina)",
-          "pl": "Tradycyjna gruzińska supra (uczta)"
+          "en": "Georgian Supra Feast",
+          "de": "Georgische Supra",
+          "fr": "Supra géorgienne",
+          "es": "Supra georgiana",
+          "nl": "Georgische supra",
+          "cs": "Gruzínská supra",
+          "pl": "Gruzińska supra"
         }
       }
     ],
@@ -3148,12 +3204,12 @@ export const tours = [
         "height": 1086,
         "caption": {
           "en": "Tbilisi Old Town",
-          "de": "Altstadt von Tiflis",
-          "fr": "Vieille ville de Tbilissi",
-          "es": "Casco antiguo de Tbilisi",
-          "nl": "Oude stad van Tbilisi",
-          "cs": "Staré město Tbilisi",
-          "pl": "Stare Miasto w Tbilisi"
+          "de": "Old Town panorama, Tbilisi",
+          "fr": "Old Town panorama, Tbilisi",
+          "es": "Old Town panorama, Tbilisi",
+          "nl": "Old Town panorama, Tbilisi",
+          "cs": "Old Town panorama, Tbilisi",
+          "pl": "Old Town panorama, Tbilisi"
         }
       },
       {
@@ -3166,8 +3222,8 @@ export const tours = [
           "en": "Narikala Fortress, Tbilisi",
           "de": "Festung Narikala, Tiflis",
           "fr": "Forteresse de Narikala, Tbilissi",
-          "es": "Fortaleza de Narikala, Tbilisi",
-          "nl": "Vesting Narikala, Tbilisi",
+          "es": "Fortaleza de Narikala, Tiflis",
+          "nl": "Narikala-vesting, Tbilisi",
           "cs": "Pevnost Narikala, Tbilisi",
           "pl": "Twierdza Narikala, Tbilisi"
         }
@@ -3179,13 +3235,13 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
-          "en": "Metekhi cliff and the Mtkvari River, Tbilisi",
-          "de": "Metechi-Felsen und der Fluss Mtkwari, Tiflis",
-          "fr": "Falaise de Metekhi et la rivière Mtkvari, Tbilissi",
-          "es": "Acantilado de Metekhi y el río Mtkvari, Tbilisi",
-          "nl": "Metekhi-klif en de rivier Mtkvari, Tbilisi",
-          "cs": "Metechiský útes a řeka Mtkvari, Tbilisi",
-          "pl": "Klif Metechi i rzeka Mtkwari, Tbilisi"
+          "en": "Metekhi Church, Tbilisi",
+          "de": "Metechi-Kirche, Tiflis",
+          "fr": "Église de Metekhi, Tbilissi",
+          "es": "Iglesia de Metekhi, Tiflis",
+          "nl": "Metekhi-kerk, Tbilisi",
+          "cs": "Kostel Metechi, Tbilisi",
+          "pl": "Kościół Metechi, Tbilisi"
         }
       },
       {
@@ -3196,13 +3252,13 @@ export const tours = [
         "height": 1448,
         "objectPosition": "center top",
         "caption": {
-          "en": "Rezo Gabriadze clock tower, Tbilisi",
-          "de": "Rezo-Gabriadze-Uhrturm, Tiflis",
-          "fr": "Tour de l'horloge de Rezo Gabriadze, Tbilissi",
-          "es": "Torre del reloj de Rezo Gabriadze, Tbilisi",
-          "nl": "Klokkentoren van Rezo Gabriadze, Tbilisi",
-          "cs": "Hodinová věž Rezo Gabriadzeho, Tbilisi",
-          "pl": "Wieża zegarowa Rezo Gabriadze, Tbilisi"
+          "en": "Gabriadze Clock Tower, Tbilisi",
+          "de": "Gabriadze-Uhrturm, Tiflis",
+          "fr": "Tour de l'horloge Gabriadze, Tbilissi",
+          "es": "Torre del reloj Gabriadze, Tiflis",
+          "nl": "Gabriadze-klokkentoren, Tbilisi",
+          "cs": "Hodinová věž Gabriadze, Tbilisi",
+          "pl": "Wieża zegarowa Gabriadzego, Tbilisi"
         }
       },
       {
@@ -3212,13 +3268,13 @@ export const tours = [
         "width": 1672,
         "height": 941,
         "caption": {
-          "en": "Holy Trinity Cathedral (Sameba), Tbilisi",
-          "de": "Dreifaltigkeitskathedrale (Sameba), Tiflis",
-          "fr": "Cathédrale de la Sainte-Trinité (Sameba), Tbilissi",
-          "es": "Catedral de la Santísima Trinidad (Sameba), Tbilisi",
-          "nl": "Heilige-Drie-eenheidskathedraal (Sameba), Tbilisi",
-          "cs": "Katedrála Nejsvětější Trojice (Sameba), Tbilisi",
-          "pl": "Katedra Trójcy Świętej (Sameba), Tbilisi"
+          "en": "Holy Trinity Cathedral, Tbilisi",
+          "de": "Dreifaltigkeitskathedrale, Tiflis",
+          "fr": "Cathédrale de la Trinité, Tbilissi",
+          "es": "Catedral de la Trinidad, Tiflis",
+          "nl": "Drie-eenheidskathedraal, Tbilisi",
+          "cs": "Katedrála Nejsvětější Trojice, Tbilisi",
+          "pl": "Katedra Trójcy Świętej, Tbilisi"
         }
       },
       {
@@ -3228,13 +3284,13 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
-          "en": "Uplistsikhe cave town, near Gori",
-          "de": "Höhlenstadt Uplistsikhe, bei Gori",
-          "fr": "Cité troglodyte d'Uplistsikhe, près de Gori",
-          "es": "Ciudad rupestre de Uplistsikhe, cerca de Gori",
-          "nl": "Grottenstad Uplistsikhe, bij Gori",
-          "cs": "Skalní město Uplistsikhe, u Gori",
-          "pl": "Miasto jaskiniowe Uplistsikhe, koło Gori"
+          "en": "Uplistsikhe Cave Town, Gori",
+          "de": "Höhlenstadt Uplisziche, Gori",
+          "fr": "Cité troglodyte d'Ouplistsikhé, Gori",
+          "es": "Ciudad rupestre de Uplistsikhe, Gori",
+          "nl": "Grottenstad Oeplistsiche, Gori",
+          "cs": "Skalní město Uplisciche, Gori",
+          "pl": "Miasto jaskiniowe Uplisciche, Gori"
         }
       },
       {
@@ -3249,7 +3305,7 @@ export const tours = [
           "fr": "Musée Staline, Gori",
           "es": "Museo de Stalin, Gori",
           "nl": "Stalinmuseum, Gori",
-          "cs": "Stalinovo muzeum, Gori",
+          "cs": "Muzeum Stalina, Gori",
           "pl": "Muzeum Stalina, Gori"
         }
       },
@@ -3260,13 +3316,13 @@ export const tours = [
         "width": 1672,
         "height": 941,
         "caption": {
-          "en": "Borjomi Central Park pavilion",
-          "de": "Pavillon im Zentralpark von Borjomi",
-          "fr": "Pavillon du parc central de Borjomi",
-          "es": "Pabellón del parque central de Borjomi",
-          "nl": "Paviljoen van het centraal park van Borjomi",
-          "cs": "Pavilon v centrálním parku v Borjomi",
-          "pl": "Pawilon w parku centralnym w Borjomi"
+          "en": "Central Park, Borjomi",
+          "de": "Zentralpark, Bordschomi",
+          "fr": "Parc central, Borjomi",
+          "es": "Parque Central, Borjomi",
+          "nl": "Centraal Park, Borjomi",
+          "cs": "Centrální park, Bordžomi",
+          "pl": "Park Centralny, Borjomi"
         }
       },
       {
@@ -3340,13 +3396,13 @@ export const tours = [
         "width": 1491,
         "height": 1055,
         "caption": {
-          "en": "Gelati Monastery, near Kutaisi",
-          "de": "Kloster Gelati, bei Kutaissi",
-          "fr": "Monastère de Gélati, près de Koutaïssi",
-          "es": "Monasterio de Gelati, cerca de Kutaisi",
-          "nl": "Klooster Gelati, bij Koetaisi",
-          "cs": "Klášter Gelati, u Kutaisi",
-          "pl": "Klasztor Gelati, koło Kutaisi"
+          "en": "Gelati Monastery, Kutaisi",
+          "de": "Gelati-Kloster, Kutaissi",
+          "fr": "Monastère de Gélati, Koutaïssi",
+          "es": "Monasterio de Gelati, Kutaisi",
+          "nl": "Gelati-klooster, Koetaisi",
+          "cs": "Klášter Gelati, Kutaisi",
+          "pl": "Klasztor Gelati, Kutaisi"
         }
       },
       {
@@ -3361,7 +3417,7 @@ export const tours = [
           "de": "Martvili-Schlucht",
           "fr": "Canyon de Martvili",
           "es": "Cañón de Martvili",
-          "nl": "Martvili-canyon",
+          "nl": "Martvili-kloof",
           "cs": "Kaňon Martvili",
           "pl": "Kanion Martvili"
         }
@@ -3647,6 +3703,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Green Bazaar, Kutaisi",
+          "de": "Grüner Basar, Kutaissi",
+          "fr": "Bazar vert, Koutaïssi",
+          "es": "Bazar Verde, Kutaisi",
+          "nl": "Groene Bazaar, Koetaisi",
+          "cs": "Zelený bazar, Kutaisi",
+          "pl": "Zielony Bazar, Kutaisi"
+        },
+        "altText": {
           "en": "Fresh produce stalls under the yellow steel roof of Kutaisi's Green Bazaar, Georgia",
           "de": "Frische-Marktstände unter dem gelben Stahldach des Grünen Basars von Kutaissi, Georgien",
           "fr": "Étals de produits frais sous la charpente jaune du bazar vert de Koutaïssi, Géorgie",
@@ -3663,6 +3728,15 @@ export const tours = [
         "width": 1491,
         "height": 1055,
         "caption": {
+          "en": "Gelati Monastery, Kutaisi",
+          "de": "Gelati-Kloster, Kutaissi",
+          "fr": "Monastère de Gélati, Koutaïssi",
+          "es": "Monasterio de Gelati, Kutaisi",
+          "nl": "Gelati-klooster, Koetaisi",
+          "cs": "Klášter Gelati, Kutaisi",
+          "pl": "Klasztor Gelati, Kutaisi"
+        },
+        "altText": {
           "en": "Gelati Monastery, a UNESCO World Heritage site near Kutaisi, Georgia",
           "de": "Kloster Gelati, UNESCO-Welterbe bei Kutaissi, Georgien",
           "fr": "Monastère de Gélati, site du patrimoine mondial de l'UNESCO près de Koutaïssi, Géorgie",
@@ -3679,6 +3753,15 @@ export const tours = [
         "width": 1536,
         "height": 1024,
         "caption": {
+          "en": "Prometheus Cave, Imereti",
+          "de": "Prometheus-Höhle, Imeretien",
+          "fr": "Grotte de Prométhée, Iméréthie",
+          "es": "Cueva de Prometeo, Imereti",
+          "nl": "Prometheus-grot, Imereti",
+          "cs": "Prométheova jeskyně, Imeretie",
+          "pl": "Jaskinia Prometeusza, Imeretia"
+        },
+        "altText": {
           "en": "Illuminated stalactites and walkway inside Prometheus Cave near Kutaisi, Georgia",
           "de": "Beleuchtete Stalaktiten und Steg in der Prometheus-Höhle bei Kutaissi, Georgien",
           "fr": "Stalactites illuminées et passerelle dans la grotte de Prométhée près de Koutaïssi, Géorgie",
@@ -3695,6 +3778,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Metekhi Church, Tbilisi",
+          "de": "Metechi-Kirche, Tiflis",
+          "fr": "Église de Metekhi, Tbilissi",
+          "es": "Iglesia de Metekhi, Tiflis",
+          "nl": "Metekhi-kerk, Tbilisi",
+          "cs": "Kostel Metechi, Tbilisi",
+          "pl": "Kościół Metechi, Tbilisi"
+        },
+        "altText": {
           "en": "Metekhi church on the cliff above the Mtkvari River in Old Tbilisi, Georgia",
           "de": "Metechi-Kirche auf dem Felsen über dem Fluss Mtkwari in der Altstadt von Tiflis, Georgien",
           "fr": "Église de Metekhi sur la falaise dominant la rivière Mtkvari dans le vieux Tbilissi, Géorgie",
@@ -3711,6 +3803,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Narikala Fortress, Tbilisi",
+          "de": "Festung Narikala, Tiflis",
+          "fr": "Forteresse de Narikala, Tbilissi",
+          "es": "Fortaleza de Narikala, Tiflis",
+          "nl": "Narikala-vesting, Tbilisi",
+          "cs": "Pevnost Narikala, Tbilisi",
+          "pl": "Twierdza Narikala, Tbilisi"
+        },
+        "altText": {
           "en": "Stone entrance and walls of Narikala Fortress in Tbilisi, Georgia",
           "de": "Steinernes Tor und Mauern der Festung Narikala in Tiflis, Georgien",
           "fr": "Porte et remparts en pierre de la forteresse de Narikala à Tbilissi, Géorgie",
@@ -3728,6 +3829,15 @@ export const tours = [
         "height": 1448,
         "objectPosition": "center 30%",
         "caption": {
+          "en": "Gabriadze Clock Tower, Tbilisi",
+          "de": "Gabriadze-Uhrturm, Tiflis",
+          "fr": "Tour de l'horloge Gabriadze, Tbilissi",
+          "es": "Torre del reloj Gabriadze, Tiflis",
+          "nl": "Gabriadze-klokkentoren, Tbilisi",
+          "cs": "Hodinová věž Gabriadze, Tbilisi",
+          "pl": "Wieża zegarowa Gabriadzego, Tbilisi"
+        },
+        "altText": {
           "en": "The leaning Gabriadze clock tower in Old Tbilisi, Georgia",
           "de": "Der schiefe Gabriadze-Uhrturm in der Altstadt von Tiflis, Georgien",
           "fr": "La tour de l'horloge penchée de Gabriadze dans le vieux Tbilissi, Géorgie",
@@ -3744,6 +3854,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Old Town and Narikala, Tbilisi",
+          "de": "Altstadt und Narikala, Tiflis",
+          "fr": "Vieille ville et Narikala, Tbilissi",
+          "es": "Casco antiguo y Narikala, Tiflis",
+          "nl": "Oude stad en Narikala, Tbilisi",
+          "cs": "Staré město a Narikala, Tbilisi",
+          "pl": "Stare Miasto i Narikala, Tbilisi"
+        },
+        "altText": {
           "en": "View of Old Tbilisi with Narikala Fortress and the aerial cable car, Georgia",
           "de": "Blick auf die Altstadt von Tiflis mit der Festung Narikala und der Seilbahn, Georgien",
           "fr": "Vue du vieux Tbilissi avec la forteresse de Narikala et le téléphérique, Géorgie",
@@ -3760,6 +3879,15 @@ export const tours = [
         "width": 1672,
         "height": 941,
         "caption": {
+          "en": "Holy Trinity Cathedral, Tbilisi",
+          "de": "Sameba-Kathedrale, Tiflis",
+          "fr": "Cathédrale Sameba, Tbilissi",
+          "es": "Catedral Sameba, Tiflis",
+          "nl": "Sameba-kathedraal, Tbilisi",
+          "cs": "Katedrála Sameba, Tbilisi",
+          "pl": "Katedra Sameba, Tbilisi"
+        },
+        "altText": {
           "en": "Holy Trinity Cathedral (Sameba), the largest cathedral in Tbilisi, Georgia",
           "de": "Sameba-Kathedrale (Heilige Dreifaltigkeit), die größte Kathedrale in Tiflis, Georgien",
           "fr": "Cathédrale de la Sainte-Trinité (Sameba), la plus grande cathédrale de Tbilissi, Géorgie",
@@ -3776,6 +3904,15 @@ export const tours = [
         "width": 1445,
         "height": 1089,
         "caption": {
+          "en": "Black and White Aragvi Confluence, Pasanauri",
+          "de": "Zusammenfluss der Schwarzen und Weißen Aragwi, Pasanauri",
+          "fr": "Confluent de l'Aragvi noire et blanche, Pasanauri",
+          "es": "Confluencia de los Aragvi Negro y Blanco, Pasanauri",
+          "nl": "Samenvloeiing van de Zwarte en Witte Aragvi, Pasanauri",
+          "cs": "Soutok Černé a Bílé Aragvi, Pasanauri",
+          "pl": "Zbieg Czarnej i Białej Aragwi, Pasanauri"
+        },
+        "altText": {
           "en": "Confluence of the Black and White Aragvi rivers near Pasanauri, Georgia",
           "de": "Zusammenfluss der Schwarzen und Weißen Aragwi bei Pasanauri, Georgien",
           "fr": "Confluent de l'Aragvi noire et de l'Aragvi blanche près de Pasanauri, Géorgie",
@@ -3792,6 +3929,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Friendship Monument, Gudauri",
+          "de": "Freundschaftsdenkmal, Gudauri",
+          "fr": "Monument de l'Amitié, Gudauri",
+          "es": "Monumento a la Amistad, Gudauri",
+          "nl": "Vriendschapsmonument, Gudauri",
+          "cs": "Pomník přátelství, Gudauri",
+          "pl": "Pomnik Przyjaźni, Gudauri"
+        },
+        "altText": {
           "en": "Mosaic panorama of the Friendship Monument near Gudauri, Georgia",
           "de": "Mosaik-Panorama des Freundschaftsdenkmals bei Gudauri, Georgien",
           "fr": "Panorama en mosaïque du Monument de l'Amitié près de Gudauri, Géorgie",
@@ -3809,6 +3955,15 @@ export const tours = [
         "height": 1536,
         "objectPosition": "center 30%",
         "caption": {
+          "en": "Mount Kazbek, Stepantsminda",
+          "de": "Berg Kazbek, Stepanzminda",
+          "fr": "Mont Kazbek, Stepantsminda",
+          "es": "Monte Kazbek, Stepantsminda",
+          "nl": "Berg Kazbek, Stepantsminda",
+          "cs": "Hora Kazbek, Stepancminda",
+          "pl": "Szczyt Kazbek, Stepancminda"
+        },
+        "altText": {
           "en": "Snow-capped Mount Kazbek rising above Stepantsminda village, Georgia",
           "de": "Der schneebedeckte Kazbek über dem Dorf Stepanzminda, Georgien",
           "fr": "Le mont Kazbek enneigé dominant le village de Stepantsminda, Géorgie",
@@ -3825,6 +3980,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Gergeti Trinity Church, Kazbegi",
+          "de": "Gergeti-Dreifaltigkeitskirche, Kasbegi",
+          "fr": "Église de la Trinité de Guerguéti, Kazbegi",
+          "es": "Iglesia de la Trinidad de Gergeti, Kazbegi",
+          "nl": "Gergeti-Drie-eenheidskerk, Kazbegi",
+          "cs": "Kostel Nejsvětější Trojice v Gergeti, Kazbegi",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti, Kazbegi"
+        },
+        "altText": {
           "en": "Gergeti Trinity Church on a hill below the Caucasus peaks near Stepantsminda, Georgia",
           "de": "Gergeti-Dreifaltigkeitskirche auf einem Hügel unterhalb der Kaukasusgipfel bei Stepanzminda, Georgien",
           "fr": "Église de la Trinité de Guerguéti sur une colline sous les sommets du Caucase près de Stepantsminda, Géorgie",
@@ -3841,6 +4005,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Uplistsikhe Cave Town, Gori",
+          "de": "Höhlenstadt Uplisziche, Gori",
+          "fr": "Cité troglodyte d'Ouplistsikhé, Gori",
+          "es": "Ciudad rupestre de Uplistsikhe, Gori",
+          "nl": "Grottenstad Oeplistsiche, Gori",
+          "cs": "Skalní město Uplisciche, Gori",
+          "pl": "Miasto jaskiniowe Uplisciche, Gori"
+        },
+        "altText": {
           "en": "The rock-hewn cave town of Uplistsikhe near Gori, Georgia",
           "de": "Die in Fels gehauene Höhlenstadt Uplisziche bei Gori, Georgien",
           "fr": "La cité troglodyte d'Ouplistsikhé près de Gori, Géorgie",
@@ -3857,6 +4030,15 @@ export const tours = [
         "width": 1536,
         "height": 1024,
         "caption": {
+          "en": "Stalin Museum, Gori",
+          "de": "Stalin-Museum, Gori",
+          "fr": "Musée Staline, Gori",
+          "es": "Museo de Stalin, Gori",
+          "nl": "Stalinmuseum, Gori",
+          "cs": "Muzeum Stalina, Gori",
+          "pl": "Muzeum Stalina, Gori"
+        },
+        "altText": {
           "en": "Marble bust of Stalin inside the Stalin Museum in Gori, Georgia",
           "de": "Marmorbüste Stalins im Stalin-Museum in Gori, Georgien",
           "fr": "Buste en marbre de Staline au musée Staline à Gori, Géorgie",
@@ -3887,7 +4069,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/green-bazaar-kutaisi-georgia/green-bazaar-kutaisi-georgia-1448.webp",
         "name": "Green Bazaar, Kutaisi",
-        "caption": "Fresh produce stalls under the yellow steel roof of Kutaisi's Green Bazaar, Georgia",
+        "caption": "Green Bazaar, Kutaisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -3900,7 +4082,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/gelati-monastery-kutaisi-georgia/gelati-monastery-kutaisi-georgia-1491.webp",
         "name": "Gelati Monastery, Kutaisi",
-        "caption": "Gelati Monastery, a UNESCO World Heritage site near Kutaisi, Georgia",
+        "caption": "Gelati Monastery, Kutaisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -3913,7 +4095,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/prometheus-cave-imereti-georgia/prometheus-cave-imereti-georgia-1536.webp",
         "name": "Prometheus Cave, Imereti",
-        "caption": "Illuminated stalactites and walkway inside Prometheus Cave near Kutaisi, Georgia",
+        "caption": "Prometheus Cave, Imereti",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -3925,8 +4107,8 @@ export const tours = [
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/metekhi-cliff-tbilisi-georgia/metekhi-cliff-tbilisi-georgia-1448.webp",
-        "name": "Old Town & Mtkvari River, Tbilisi",
-        "caption": "Metekhi church on the cliff above the Mtkvari River in Old Tbilisi, Georgia",
+        "name": "Metekhi Church, Tbilisi",
+        "caption": "Metekhi Church, Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -3939,7 +4121,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/narikala-fortress-tbilisi-georgia/narikala-fortress-tbilisi-georgia-1448.webp",
         "name": "Narikala Fortress, Tbilisi",
-        "caption": "Stone entrance and walls of Narikala Fortress in Tbilisi, Georgia",
+        "caption": "Narikala Fortress, Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -3952,7 +4134,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/gabriadze-clock-tower-tbilisi-georgia/gabriadze-clock-tower-tbilisi-georgia-1086.webp",
         "name": "Gabriadze Clock Tower, Tbilisi",
-        "caption": "The leaning Gabriadze clock tower in Old Tbilisi, Georgia",
+        "caption": "Gabriadze Clock Tower, Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -3964,8 +4146,8 @@ export const tours = [
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia-1448.webp",
-        "name": "Old Town & Cable Car, Tbilisi",
-        "caption": "View of Old Tbilisi with Narikala Fortress and the aerial cable car, Georgia",
+        "name": "Old Town and Narikala, Tbilisi",
+        "caption": "Old Town and Narikala, Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -3978,7 +4160,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/holy-trinity-cathedral-tbilisi-georgia/holy-trinity-cathedral-tbilisi-georgia-1672.webp",
         "name": "Holy Trinity Cathedral, Tbilisi",
-        "caption": "Holy Trinity Cathedral (Sameba), the largest cathedral in Tbilisi, Georgia",
+        "caption": "Holy Trinity Cathedral, Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -3990,8 +4172,8 @@ export const tours = [
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/aragvi-confluence-pasanauri-georgia/aragvi-confluence-pasanauri-georgia-1445.webp",
-        "name": "Aragvi Confluence, Pasanauri",
-        "caption": "Confluence of the Black and White Aragvi rivers near Pasanauri, Georgia",
+        "name": "Black and White Aragvi Confluence, Pasanauri",
+        "caption": "Black and White Aragvi Confluence, Pasanauri",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -4004,7 +4186,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/friendship-monument-gudauri-georgia/friendship-monument-gudauri-georgia-1448.webp",
         "name": "Friendship Monument, Gudauri",
-        "caption": "Mosaic panorama of the Friendship Monument near Gudauri, Georgia",
+        "caption": "Friendship Monument, Gudauri",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -4017,7 +4199,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/mount-kazbek-stepantsminda-georgia/mount-kazbek-stepantsminda-georgia-1024.webp",
         "name": "Mount Kazbek, Stepantsminda",
-        "caption": "Snow-capped Mount Kazbek rising above Stepantsminda village, Georgia",
+        "caption": "Mount Kazbek, Stepantsminda",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -4030,7 +4212,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/gergeti-trinity-church-kazbegi-georgia/gergeti-trinity-church-kazbegi-georgia-1448.webp",
         "name": "Gergeti Trinity Church, Kazbegi",
-        "caption": "Gergeti Trinity Church on a hill below the Caucasus peaks near Stepantsminda, Georgia",
+        "caption": "Gergeti Trinity Church, Kazbegi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -4043,7 +4225,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/uplistsikhe-cave-town-gori-georgia/uplistsikhe-cave-town-gori-georgia-1448.webp",
         "name": "Uplistsikhe Cave Town, Gori",
-        "caption": "The rock-hewn cave town of Uplistsikhe near Gori, Georgia",
+        "caption": "Uplistsikhe Cave Town, Gori",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -4056,7 +4238,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/stalin-museum-gori-georgia/stalin-museum-gori-georgia-1536.webp",
         "name": "Stalin Museum, Gori",
-        "caption": "Marble bust of Stalin inside the Stalin Museum in Gori, Georgia",
+        "caption": "Stalin Museum, Gori",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -4376,6 +4558,15 @@ export const tours = [
     "gallery": [
       {
         "src": "/images/files/gudauri-ski-view-1448.webp",
+        "caption": {
+          "en": "Ski Slopes, Gudauri",
+          "de": "Skipisten, Gudauri",
+          "fr": "Pistes de ski, Gudauri",
+          "es": "Pistas de esquí, Gudauri",
+          "nl": "Skipistes, Gudauri",
+          "cs": "Sjezdovky, Gudauri",
+          "pl": "Stoki narciarskie, Gudauri"
+        },
         "alt": {
           "en": "A skier at the top of Gudauri above a sea of cloud, snow-covered Caucasus peaks behind, Georgia",
           "de": "Ein Skifahrer am Gipfel von Gudauri über einem Wolkenmeer, dahinter verschneite Kaukasusgipfel, Georgien",
@@ -4388,6 +4579,15 @@ export const tours = [
       },
       {
         "src": "/images/files/gudauri-ski-piste-1448.webp",
+        "caption": {
+          "en": "Ski Piste, Gudauri",
+          "de": "Skipiste, Gudauri",
+          "fr": "Piste de ski, Gudauri",
+          "es": "Pista de esquí, Gudauri",
+          "nl": "Skipiste, Gudauri",
+          "cs": "Sjezdovka, Gudauri",
+          "pl": "Stok narciarski, Gudauri"
+        },
         "alt": {
           "en": "A wide open ski piste and chairlift at Gudauri under a blue sky, distant Caucasus peaks, Georgia",
           "de": "Eine weite offene Skipiste und ein Sessellift in Gudauri unter blauem Himmel, ferne Kaukasusgipfel, Georgien",
@@ -4400,6 +4600,15 @@ export const tours = [
       },
       {
         "src": "/images/files/gudauri-ski-lift-1448.webp",
+        "caption": {
+          "en": "Ski Lift, Gudauri",
+          "de": "Skilift, Gudauri",
+          "fr": "Remontée mécanique, Gudauri",
+          "es": "Telesilla, Gudauri",
+          "nl": "Skilift, Gudauri",
+          "cs": "Lyžařský vlek, Gudauri",
+          "pl": "Wyciąg narciarski, Gudauri"
+        },
         "alt": {
           "en": "Skiers and snowboarders at a Gudauri lift top station above the clouds, Greater Caucasus, Georgia",
           "de": "Skifahrer und Snowboarder an einer Bergstation in Gudauri über den Wolken, Großer Kaukasus, Georgien",
@@ -4714,6 +4923,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Metekhi Church, Tbilisi",
+          "de": "Metechi-Kirche, Tiflis",
+          "fr": "Église de Metekhi, Tbilissi",
+          "es": "Iglesia de Metekhi, Tiflis",
+          "nl": "Metekhi-kerk, Tbilisi",
+          "cs": "Kostel Metechi, Tbilisi",
+          "pl": "Kościół Metechi, Tbilisi"
+        },
+        "altText": {
           "en": "Metekhi church on the cliff above the Mtkvari River in Old Tbilisi, Georgia",
           "de": "Metechi-Kirche auf dem Felsen über dem Fluss Mtkwari in der Altstadt von Tiflis, Georgien",
           "fr": "Église de Metekhi sur la falaise dominant la rivière Mtkvari dans le vieux Tbilissi, Géorgie",
@@ -4730,6 +4948,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Narikala Fortress, Tbilisi",
+          "de": "Festung Narikala, Tiflis",
+          "fr": "Forteresse de Narikala, Tbilissi",
+          "es": "Fortaleza de Narikala, Tiflis",
+          "nl": "Narikala-vesting, Tbilisi",
+          "cs": "Pevnost Narikala, Tbilisi",
+          "pl": "Twierdza Narikala, Tbilisi"
+        },
+        "altText": {
           "en": "Stone entrance and walls of Narikala Fortress in Tbilisi, Georgia",
           "de": "Steinernes Tor und Mauern der Festung Narikala in Tiflis, Georgien",
           "fr": "Porte et remparts en pierre de la forteresse de Narikala à Tbilissi, Géorgie",
@@ -4747,6 +4974,15 @@ export const tours = [
         "height": 1448,
         "objectPosition": "center 30%",
         "caption": {
+          "en": "Gabriadze Clock Tower, Tbilisi",
+          "de": "Gabriadze-Uhrturm, Tiflis",
+          "fr": "Tour de l'horloge Gabriadze, Tbilissi",
+          "es": "Torre del reloj Gabriadze, Tiflis",
+          "nl": "Gabriadze-klokkentoren, Tbilisi",
+          "cs": "Hodinová věž Gabriadze, Tbilisi",
+          "pl": "Wieża zegarowa Gabriadzego, Tbilisi"
+        },
+        "altText": {
           "en": "The leaning Gabriadze clock tower in Old Tbilisi, Georgia",
           "de": "Der schiefe Gabriadze-Uhrturm in der Altstadt von Tiflis, Georgien",
           "fr": "La tour de l'horloge penchée de Gabriadze dans le vieux Tbilissi, Géorgie",
@@ -4763,6 +4999,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Old Town and Narikala, Tbilisi",
+          "de": "Altstadt und Narikala, Tiflis",
+          "fr": "Vieille ville et Narikala, Tbilissi",
+          "es": "Casco antiguo y Narikala, Tiflis",
+          "nl": "Oude stad en Narikala, Tbilisi",
+          "cs": "Staré město a Narikala, Tbilisi",
+          "pl": "Stare Miasto i Narikala, Tbilisi"
+        },
+        "altText": {
           "en": "View of Old Tbilisi with Narikala Fortress and the aerial cable car, Georgia",
           "de": "Blick auf die Altstadt von Tiflis mit der Festung Narikala und der Seilbahn, Georgien",
           "fr": "Vue du vieux Tbilissi avec la forteresse de Narikala et le téléphérique, Géorgie",
@@ -4779,6 +5024,15 @@ export const tours = [
         "width": 1672,
         "height": 941,
         "caption": {
+          "en": "Holy Trinity Cathedral, Tbilisi",
+          "de": "Sameba-Kathedrale, Tiflis",
+          "fr": "Cathédrale Sameba, Tbilissi",
+          "es": "Catedral Sameba, Tiflis",
+          "nl": "Sameba-kathedraal, Tbilisi",
+          "cs": "Katedrála Sameba, Tbilisi",
+          "pl": "Katedra Sameba, Tbilisi"
+        },
+        "altText": {
           "en": "Holy Trinity Cathedral (Sameba), the largest cathedral in Tbilisi, Georgia",
           "de": "Sameba-Kathedrale (Heilige Dreifaltigkeit), die größte Kathedrale in Tiflis, Georgien",
           "fr": "Cathédrale de la Sainte-Trinité (Sameba), la plus grande cathédrale de Tbilissi, Géorgie",
@@ -4795,6 +5049,15 @@ export const tours = [
         "width": 1920,
         "height": 1439,
         "caption": {
+          "en": "Jvari Monastery, Mtskheta",
+          "de": "Dschwari-Kloster, Mzcheta",
+          "fr": "Monastère de Djvari, Mtskheta",
+          "es": "Monasterio de Jvari, Mtsjeta",
+          "nl": "Jvari-klooster, Mtscheta",
+          "cs": "Klášter Džvari, Mccheta",
+          "pl": "Klasztor Dżwari, Mccheta"
+        },
+        "altText": {
           "en": "Aerial view of Jvari Monastery above Mtskheta, a UNESCO World Heritage site, Georgia",
           "de": "Luftaufnahme des Dschwari-Klosters über Mzcheta, UNESCO-Welterbe, Georgien",
           "fr": "Vue aérienne du monastère de Djvari au-dessus de Mtskheta, site du patrimoine mondial de l'UNESCO, Géorgie",
@@ -4811,6 +5074,15 @@ export const tours = [
         "width": 1540,
         "height": 1021,
         "caption": {
+          "en": "Svetitskhoveli Cathedral, Mtskheta",
+          "de": "Swetizchoweli-Kathedrale, Mzcheta",
+          "fr": "Cathédrale de Svétitskhovéli, Mtskheta",
+          "es": "Catedral de Svetitsjoveli, Mtsjeta",
+          "nl": "Svetitschoveli-kathedraal, Mtscheta",
+          "cs": "Katedrála Sveticchoveli, Mccheta",
+          "pl": "Katedra Sweticchoweli, Mccheta"
+        },
+        "altText": {
           "en": "Svetitskhoveli Cathedral, a UNESCO World Heritage site in Mtskheta, Georgia",
           "de": "Swetizchoweli-Kathedrale, UNESCO-Welterbe in Mzcheta, Georgien",
           "fr": "Cathédrale de Svetitskhoveli, site du patrimoine mondial de l'UNESCO à Mtskheta, Géorgie",
@@ -4827,6 +5099,15 @@ export const tours = [
         "width": 1920,
         "height": 1271,
         "caption": {
+          "en": "Ananuri Fortress, Zhinvali Reservoir",
+          "de": "Festung Ananuri, Schinwali-Stausee",
+          "fr": "Forteresse d'Ananouri, réservoir de Jinvali",
+          "es": "Fortaleza de Ananuri, embalse de Zhinvali",
+          "nl": "Vesting Ananuri, Zhinvali-stuwmeer",
+          "cs": "Pevnost Ananuri, přehrada Žinvali",
+          "pl": "Twierdza Ananuri, Zbiornik Żinwali"
+        },
+        "altText": {
           "en": "Ananuri fortress and church beside the Zhinvali Reservoir, Georgia",
           "de": "Festung und Kirche von Ananuri am Schinwali-Stausee, Georgien",
           "fr": "Forteresse et église d'Ananouri au bord du réservoir de Jinvali, Géorgie",
@@ -4843,6 +5124,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Zhinvali Reservoir",
+          "de": "Schinwali-Stausee",
+          "fr": "Réservoir de Jinvali",
+          "es": "Embalse de Jinvali",
+          "nl": "Jinvali-stuwmeer",
+          "cs": "Přehrada Žinvali",
+          "pl": "Zbiornik Żinwali"
+        },
+        "altText": {
           "en": "Turquoise water of the Zhinvali Reservoir amid forested hills, Georgia",
           "de": "Türkisfarbenes Wasser des Schinwali-Stausees zwischen bewaldeten Hügeln, Georgien",
           "fr": "Eaux turquoise du réservoir de Jinvali entre des collines boisées, Géorgie",
@@ -4859,6 +5149,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Friendship Monument, Gudauri",
+          "de": "Freundschaftsdenkmal, Gudauri",
+          "fr": "Monument de l'Amitié, Gudauri",
+          "es": "Monumento a la Amistad, Gudauri",
+          "nl": "Vriendschapsmonument, Gudauri",
+          "cs": "Pomník přátelství, Gudauri",
+          "pl": "Pomnik Przyjaźni, Gudauri"
+        },
+        "altText": {
           "en": "Mosaic panorama of the Friendship Monument near Gudauri, Georgia",
           "de": "Mosaik-Panorama des Freundschaftsdenkmals bei Gudauri, Georgien",
           "fr": "Panorama en mosaïque du Monument de l'Amitié près de Gudauri, Géorgie",
@@ -4875,6 +5174,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Gergeti Trinity Church, Kazbegi",
+          "de": "Gergeti-Dreifaltigkeitskirche, Kasbegi",
+          "fr": "Église de la Trinité de Guerguéti, Kazbegi",
+          "es": "Iglesia de la Trinidad de Gergeti, Kazbegi",
+          "nl": "Gergeti-Drie-eenheidskerk, Kazbegi",
+          "cs": "Kostel Nejsvětější Trojice v Gergeti, Kazbegi",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti, Kazbegi"
+        },
+        "altText": {
           "en": "Gergeti Trinity Church on a hill below the Caucasus peaks near Stepantsminda, Georgia",
           "de": "Gergeti-Dreifaltigkeitskirche auf einem Hügel unterhalb der Kaukasusgipfel bei Stepanzminda, Georgien",
           "fr": "Église de la Trinité de Guerguéti sur une colline sous les sommets du Caucase près de Stepantsminda, Géorgie",
@@ -4891,6 +5199,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Uplistsikhe Cave Town, Gori",
+          "de": "Höhlenstadt Uplisziche, Gori",
+          "fr": "Cité troglodyte d'Ouplistsikhé, Gori",
+          "es": "Ciudad rupestre de Uplistsikhe, Gori",
+          "nl": "Grottenstad Oeplistsiche, Gori",
+          "cs": "Skalní město Uplisciche, Gori",
+          "pl": "Miasto jaskiniowe Uplisciche, Gori"
+        },
+        "altText": {
           "en": "The rock-hewn cave town of Uplistsikhe near Gori, Georgia",
           "de": "Die in Fels gehauene Höhlenstadt Uplisziche bei Gori, Georgien",
           "fr": "La cité troglodyte d'Ouplistsikhé près de Gori, Géorgie",
@@ -4907,6 +5224,15 @@ export const tours = [
         "width": 1536,
         "height": 1024,
         "caption": {
+          "en": "Stalin Museum, Gori",
+          "de": "Stalin-Museum, Gori",
+          "fr": "Musée Staline, Gori",
+          "es": "Museo de Stalin, Gori",
+          "nl": "Stalinmuseum, Gori",
+          "cs": "Muzeum Stalina, Gori",
+          "pl": "Muzeum Stalina, Gori"
+        },
+        "altText": {
           "en": "Marble bust of Stalin inside the Stalin Museum in Gori, Georgia",
           "de": "Marmorbüste Stalins im Stalin-Museum in Gori, Georgien",
           "fr": "Buste en marbre de Staline au musée Staline à Gori, Géorgie",
@@ -4923,13 +5249,13 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
-          "en": "Equestrian monument to King Erekle II in Telavi, Georgia",
-          "de": "Reiterdenkmal für König Erekle II. in Telawi, Georgien",
-          "fr": "Monument équestre du roi Héraclius II à Telavi, Géorgie",
-          "es": "Monumento ecuestre al rey Erekle II en Telavi, Georgia",
-          "nl": "Ruiterstandbeeld van koning Erekle II in Telavi, Georgië",
-          "cs": "Jezdecký pomník krále Erekleho II. v Telavi, Gruzie",
-          "pl": "Pomnik konny króla Herakliusza II w Telawi, Gruzja"
+          "en": "Erekle II Monument, Telavi",
+          "de": "Erekle-II.-Denkmal, Telawi",
+          "fr": "Monument d'Erekle II, Télavi",
+          "es": "Monumento a Erekle II, Telavi",
+          "nl": "Erekle II-monument, Telavi",
+          "cs": "Pomník Erekleho II., Telavi",
+          "pl": "Pomnik Erekle II, Telawi"
         }
       },
       {
@@ -4939,6 +5265,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Georgian Supra Feast",
+          "de": "Georgische Supra",
+          "fr": "Supra géorgienne",
+          "es": "Supra georgiana",
+          "nl": "Georgische supra",
+          "cs": "Gruzínská supra",
+          "pl": "Gruzińska supra"
+        },
+        "altText": {
           "en": "Traditional Georgian supra feast table laid with khachapuri and shared dishes, Georgia",
           "de": "Traditionelle georgische Supra-Tafel mit Chatschapuri und gemeinsamen Gerichten, Georgien",
           "fr": "Table de supra géorgienne traditionnelle garnie de khatchapouri et de plats à partager, Géorgie",
@@ -4955,6 +5290,15 @@ export const tours = [
         "width": 1536,
         "height": 1024,
         "caption": {
+          "en": "Tsinandali Estate, Kakheti",
+          "de": "Anwesen Tsinandali, Kachetien",
+          "fr": "Domaine de Tsinandali, Kakhétie",
+          "es": "Finca Tsinandali, Kajetia",
+          "nl": "Landgoed Tsinandali, Kachetië",
+          "cs": "Panství Tsinandali, Kachetie",
+          "pl": "Posiadłość Tsinandali, Kachetia"
+        },
+        "altText": {
           "en": "Chavchavadze family estate and gardens at Tsinandali in Kakheti, Georgia",
           "de": "Landgut und Gärten der Familie Tschawtschawadse in Tsinandali, Kachetien, Georgien",
           "fr": "Domaine et jardins de la famille Tchavtchavadzé à Tsinandali, en Kakhétie, Géorgie",
@@ -4971,6 +5315,15 @@ export const tours = [
         "width": 2400,
         "height": 1340,
         "caption": {
+          "en": "Sighnaghi, Kakheti",
+          "de": "Sighnaghi, Kachetien",
+          "fr": "Sighnaghi, Kakhétie",
+          "es": "Sighnaghi, Kajetia",
+          "nl": "Sighnaghi, Kachetië",
+          "cs": "Sighnaghi, Kachetie",
+          "pl": "Sighnaghi, Kachetia"
+        },
+        "altText": {
           "en": "Hilltop town of Sighnaghi overlooking the Alazani Valley in Kakheti, Georgia",
           "de": "Die Bergstadt Sighnaghi mit Blick über das Alasani-Tal in Kachetien, Georgien",
           "fr": "La ville perchée de Sighnaghi surplombant la vallée de l'Alazani en Kakhétie, Géorgie",
@@ -5000,8 +5353,8 @@ export const tours = [
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-culture-nature-wine/metekhi-cliff-tbilisi-georgia/metekhi-cliff-tbilisi-georgia-1448.webp",
-        "name": "Old Town & Mtkvari River, Tbilisi",
-        "caption": "Metekhi church on the cliff above the Mtkvari River in Old Tbilisi, Georgia",
+        "name": "Metekhi Church, Tbilisi",
+        "caption": "Metekhi Church, Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -5014,7 +5367,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-culture-nature-wine/narikala-fortress-tbilisi-georgia/narikala-fortress-tbilisi-georgia-1448.webp",
         "name": "Narikala Fortress, Tbilisi",
-        "caption": "Stone entrance and walls of Narikala Fortress in Tbilisi, Georgia",
+        "caption": "Narikala Fortress, Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -5027,7 +5380,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-culture-nature-wine/gabriadze-clock-tower-tbilisi-georgia/gabriadze-clock-tower-tbilisi-georgia-1086.webp",
         "name": "Gabriadze Clock Tower, Tbilisi",
-        "caption": "The leaning Gabriadze clock tower in Old Tbilisi, Georgia",
+        "caption": "Gabriadze Clock Tower, Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -5039,8 +5392,8 @@ export const tours = [
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-culture-nature-wine/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia-1448.webp",
-        "name": "Old Town & Cable Car, Tbilisi",
-        "caption": "View of Old Tbilisi with Narikala Fortress and the aerial cable car, Georgia",
+        "name": "Old Town and Narikala, Tbilisi",
+        "caption": "Old Town and Narikala, Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -5053,7 +5406,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-culture-nature-wine/holy-trinity-cathedral-tbilisi-georgia/holy-trinity-cathedral-tbilisi-georgia-1672.webp",
         "name": "Holy Trinity Cathedral, Tbilisi",
-        "caption": "Holy Trinity Cathedral (Sameba), the largest cathedral in Tbilisi, Georgia",
+        "caption": "Holy Trinity Cathedral, Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -5066,7 +5419,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-culture-nature-wine/jvari-monastery-mtskheta-georgia/jvari-monastery-mtskheta-georgia-1920.webp",
         "name": "Jvari Monastery, Mtskheta",
-        "caption": "Aerial view of Jvari Monastery above Mtskheta, a UNESCO World Heritage site, Georgia",
+        "caption": "Jvari Monastery, Mtskheta",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -5079,7 +5432,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-culture-nature-wine/svetitskhoveli-cathedral-mtskheta-georgia/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
         "name": "Svetitskhoveli Cathedral, Mtskheta",
-        "caption": "Svetitskhoveli Cathedral, a UNESCO World Heritage site in Mtskheta, Georgia",
+        "caption": "Svetitskhoveli Cathedral, Mtskheta",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -5091,8 +5444,8 @@ export const tours = [
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-culture-nature-wine/ananuri-fortress-zhinvali-georgia/ananuri-fortress-zhinvali-georgia-1920.webp",
-        "name": "Ananuri Fortress, Zhinvali",
-        "caption": "Ananuri fortress and church beside the Zhinvali Reservoir, Georgia",
+        "name": "Ananuri Fortress, Zhinvali Reservoir",
+        "caption": "Ananuri Fortress, Zhinvali Reservoir",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -5105,7 +5458,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-culture-nature-wine/zhinvali-reservoir-georgia/zhinvali-reservoir-georgia-1448.webp",
         "name": "Zhinvali Reservoir",
-        "caption": "Turquoise water of the Zhinvali Reservoir amid forested hills, Georgia",
+        "caption": "Zhinvali Reservoir",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -5118,7 +5471,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-culture-nature-wine/friendship-monument-gudauri-georgia/friendship-monument-gudauri-georgia-1448.webp",
         "name": "Friendship Monument, Gudauri",
-        "caption": "Mosaic panorama of the Friendship Monument near Gudauri, Georgia",
+        "caption": "Friendship Monument, Gudauri",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -5131,7 +5484,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-culture-nature-wine/gergeti-trinity-church-kazbegi-georgia/gergeti-trinity-church-kazbegi-georgia-1448.webp",
         "name": "Gergeti Trinity Church, Kazbegi",
-        "caption": "Gergeti Trinity Church on a hill below the Caucasus peaks near Stepantsminda, Georgia",
+        "caption": "Gergeti Trinity Church, Kazbegi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -5144,7 +5497,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-culture-nature-wine/uplistsikhe-cave-town-gori-georgia/uplistsikhe-cave-town-gori-georgia-1448.webp",
         "name": "Uplistsikhe Cave Town, Gori",
-        "caption": "The rock-hewn cave town of Uplistsikhe near Gori, Georgia",
+        "caption": "Uplistsikhe Cave Town, Gori",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -5157,7 +5510,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-culture-nature-wine/stalin-museum-gori-georgia/stalin-museum-gori-georgia-1536.webp",
         "name": "Stalin Museum, Gori",
-        "caption": "Marble bust of Stalin inside the Stalin Museum in Gori, Georgia",
+        "caption": "Stalin Museum, Gori",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -5169,8 +5522,8 @@ export const tours = [
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-culture-nature-wine/erekle-ii-monument-telavi-georgia/erekle-ii-monument-telavi-georgia-1448.webp",
-        "name": "King Erekle II Monument, Telavi",
-        "caption": "Equestrian monument to King Erekle II in Telavi, Georgia",
+        "name": "Erekle II Monument, Telavi",
+        "caption": "Erekle II Monument, Telavi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -5182,8 +5535,8 @@ export const tours = [
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-culture-nature-wine/georgian-supra-feast-georgia/georgian-supra-feast-georgia-1448.webp",
-        "name": "Traditional Georgian Supra",
-        "caption": "Traditional Georgian supra feast table laid with khachapuri and shared dishes, Georgia",
+        "name": "Georgian Supra Feast",
+        "caption": "Georgian Supra Feast",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -5196,7 +5549,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-culture-nature-wine/tsinandali-estate-kakheti-georgia/tsinandali-estate-kakheti-georgia-1536.webp",
         "name": "Tsinandali Estate, Kakheti",
-        "caption": "Chavchavadze family estate and gardens at Tsinandali in Kakheti, Georgia",
+        "caption": "Tsinandali Estate, Kakheti",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -5209,7 +5562,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-culture-nature-wine/sighnaghi-town-kakheti-georgia/sighnaghi-town-kakheti-georgia-2400.webp",
         "name": "Sighnaghi, Kakheti",
-        "caption": "Hilltop town of Sighnaghi overlooking the Alazani Valley in Kakheti, Georgia",
+        "caption": "Sighnaghi, Kakheti",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -5750,7 +6103,15 @@ export const tours = [
         "widths": [768, 1200, 1600, 1672],
         "width": 1672,
         "height": 941,
-        "caption": "Holy Trinity Cathedral (Sameba), Tbilisi"
+        "caption": {
+          "en": "Holy Trinity Cathedral, Tbilisi",
+          "de": "Dreifaltigkeitskathedrale, Tiflis",
+          "fr": "Cathédrale de la Trinité, Tbilissi",
+          "es": "Catedral de la Trinidad, Tiflis",
+          "nl": "Drie-eenheidskathedraal, Tbilisi",
+          "cs": "Katedrála Nejsvětější Trojice, Tbilisi",
+          "pl": "Katedra Trójcy Świętej, Tbilisi"
+        }
       },
       {
         "src": "/images/tours/8-day-culture-adventure/metekhi-cliff-mtkvari-river-tbilisi-georgia-1448.webp",
@@ -5758,7 +6119,15 @@ export const tours = [
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
-        "caption": "Metekhi cliff above the Mtkvari River, Tbilisi"
+        "caption": {
+          "en": "Metekhi Church, Tbilisi",
+          "de": "Metechi-Kirche, Tiflis",
+          "fr": "Église de Metekhi, Tbilissi",
+          "es": "Iglesia de Metekhi, Tiflis",
+          "nl": "Metekhi-kerk, Tbilisi",
+          "cs": "Kostel Metechi, Tbilisi",
+          "pl": "Kościół Metechi, Tbilisi"
+        }
       },
       {
         "src": "/images/tours/8-day-culture-adventure/narikala-fortress-tbilisi-georgia-1448.webp",
@@ -5766,7 +6135,15 @@ export const tours = [
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
-        "caption": "Narikala Fortress, Tbilisi"
+        "caption": {
+          "en": "Narikala Fortress, Tbilisi",
+          "de": "Festung Narikala, Tiflis",
+          "fr": "Forteresse de Narikala, Tbilissi",
+          "es": "Fortaleza de Narikala, Tiflis",
+          "nl": "Narikala-vesting, Tbilisi",
+          "cs": "Pevnost Narikala, Tbilisi",
+          "pl": "Twierdza Narikala, Tbilisi"
+        }
       },
       {
         "src": "/images/tours/8-day-culture-adventure/tbilisi-cable-car-old-town-georgia-1023.webp",
@@ -5774,7 +6151,15 @@ export const tours = [
         "widths": [768, 1023],
         "width": 1023,
         "height": 1537,
-        "caption": "Cable car over Old Tbilisi"
+        "caption": {
+          "en": "Cable car over Old Tbilisi",
+          "de": "Cable car over Old Tbilisi",
+          "fr": "Cable car over Old Tbilisi",
+          "es": "Cable car over Old Tbilisi",
+          "nl": "Cable car over Old Tbilisi",
+          "cs": "Cable car over Old Tbilisi",
+          "pl": "Cable car over Old Tbilisi"
+        }
       },
       {
         "src": "/images/tours/8-day-culture-adventure/gabriadze-clock-tower-tbilisi-georgia-1086.webp",
@@ -5782,7 +6167,15 @@ export const tours = [
         "widths": [768, 1086],
         "width": 1086,
         "height": 1448,
-        "caption": "Rezo Gabriadze clock tower, Tbilisi"
+        "caption": {
+          "en": "Gabriadze Clock Tower, Tbilisi",
+          "de": "Gabriadze-Uhrturm, Tiflis",
+          "fr": "Tour de l'horloge Gabriadze, Tbilissi",
+          "es": "Torre del reloj Gabriadze, Tiflis",
+          "nl": "Gabriadze-klokkentoren, Tbilisi",
+          "cs": "Hodinová věž Gabriadze, Tbilisi",
+          "pl": "Wieża zegarowa Gabriadzego, Tbilisi"
+        }
       },
       {
         "src": "/images/tours/8-day-culture-adventure/tbilisi-old-town-panorama-georgia-1448.webp",
@@ -5790,7 +6183,15 @@ export const tours = [
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
-        "caption": "Old Town panorama, Tbilisi"
+        "caption": {
+          "en": "Tbilisi Old Town",
+          "de": "Old Town panorama, Tbilisi",
+          "fr": "Old Town panorama, Tbilisi",
+          "es": "Old Town panorama, Tbilisi",
+          "nl": "Old Town panorama, Tbilisi",
+          "cs": "Old Town panorama, Tbilisi",
+          "pl": "Old Town panorama, Tbilisi"
+        }
       },
       {
         "src": "/images/tours/8-day-culture-adventure/georgian-supra-feast-georgia-1448.webp",
@@ -5798,7 +6199,15 @@ export const tours = [
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
-        "caption": "Traditional Georgian supra (feast)"
+        "caption": {
+          "en": "Georgian Supra Feast",
+          "de": "Georgische Supra",
+          "fr": "Supra géorgienne",
+          "es": "Supra georgiana",
+          "nl": "Georgische supra",
+          "cs": "Gruzínská supra",
+          "pl": "Gruzińska supra"
+        }
       },
       {
         "src": "/images/tours/8-day-culture-adventure/ninoskhevi-waterfall-lagodekhi-georgia-941.webp",
@@ -5806,7 +6215,15 @@ export const tours = [
         "widths": [768, 941],
         "width": 941,
         "height": 1672,
-        "caption": "Ninoskhevi Waterfall, Lagodekhi"
+        "caption": {
+          "en": "Ninoskhevi Waterfall, Lagodekhi",
+          "de": "Ninoskhevi Waterfall, Lagodekhi",
+          "fr": "Ninoskhevi Waterfall, Lagodekhi",
+          "es": "Ninoskhevi Waterfall, Lagodekhi",
+          "nl": "Ninoskhevi Waterfall, Lagodekhi",
+          "cs": "Ninoskhevi Waterfall, Lagodekhi",
+          "pl": "Ninoskhevi Waterfall, Lagodekhi"
+        }
       },
       {
         "src": "/images/tours/8-day-culture-adventure/batonistsikhe-fortress-telavi-georgia-2400.webp",
@@ -5814,7 +6231,15 @@ export const tours = [
         "widths": [768, 1200, 1600, 2400],
         "width": 2400,
         "height": 1807,
-        "caption": "Batonistsikhe Fortress, Telavi"
+        "caption": {
+          "en": "Batonistsikhe Fortress, Telavi",
+          "de": "Batonistsikhe Fortress, Telavi",
+          "fr": "Batonistsikhe Fortress, Telavi",
+          "es": "Batonistsikhe Fortress, Telavi",
+          "nl": "Batonistsikhe Fortress, Telavi",
+          "cs": "Batonistsikhe Fortress, Telavi",
+          "pl": "Batonistsikhe Fortress, Telavi"
+        }
       },
       {
         "src": "/images/tours/8-day-culture-adventure/jvari-monastery-mtskheta-georgia-1448.webp",
@@ -5822,7 +6247,15 @@ export const tours = [
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
-        "caption": "Jvari Monastery, Mtskheta"
+        "caption": {
+          "en": "Jvari Monastery, Mtskheta",
+          "de": "Dschwari-Kloster, Mzcheta",
+          "fr": "Monastère de Djvari, Mtskheta",
+          "es": "Monasterio de Jvari, Mtsjeta",
+          "nl": "Jvari-klooster, Mtscheta",
+          "cs": "Klášter Džvari, Mccheta",
+          "pl": "Klasztor Dżwari, Mccheta"
+        }
       },
       {
         "src": "/images/tours/8-day-culture-adventure/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
@@ -5830,7 +6263,15 @@ export const tours = [
         "widths": [768, 1200, 1540],
         "width": 1540,
         "height": 1021,
-        "caption": "Svetitskhoveli Cathedral, Mtskheta"
+        "caption": {
+          "en": "Svetitskhoveli Cathedral, Mtskheta",
+          "de": "Swetizchoweli-Kathedrale, Mzcheta",
+          "fr": "Cathédrale de Svétitskhovéli, Mtskheta",
+          "es": "Catedral de Svetitsjoveli, Mtsjeta",
+          "nl": "Svetitschoveli-kathedraal, Mtscheta",
+          "cs": "Katedrála Sveticchoveli, Mccheta",
+          "pl": "Katedra Sweticchoweli, Mccheta"
+        }
       },
       {
         "src": "/images/tours/8-day-culture-adventure/uplistsikhe-cave-town-georgia-1448.webp",
@@ -5838,7 +6279,15 @@ export const tours = [
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
-        "caption": "Uplistsikhe cave town, near Gori"
+        "caption": {
+          "en": "Uplistsikhe Cave Town, Gori",
+          "de": "Höhlenstadt Uplisziche, Gori",
+          "fr": "Cité troglodyte d'Ouplistsikhé, Gori",
+          "es": "Ciudad rupestre de Uplistsikhe, Gori",
+          "nl": "Grottenstad Oeplistsiche, Gori",
+          "cs": "Skalní město Uplisciche, Gori",
+          "pl": "Miasto jaskiniowe Uplisciche, Gori"
+        }
       },
       {
         "src": "/images/tours/8-day-culture-adventure/zhinvali-reservoir-georgia-1448.webp",
@@ -5846,7 +6295,15 @@ export const tours = [
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
-        "caption": "Zhinvali Reservoir"
+        "caption": {
+          "en": "Zhinvali Reservoir",
+          "de": "Schinwali-Stausee",
+          "fr": "Réservoir de Jinvali",
+          "es": "Embalse de Jinvali",
+          "nl": "Jinvali-stuwmeer",
+          "cs": "Přehrada Žinvali",
+          "pl": "Zbiornik Żinwali"
+        }
       },
       {
         "src": "/images/tours/8-day-culture-adventure/ananuri-fortress-zhinvali-reservoir-georgia-1920.webp",
@@ -5854,7 +6311,15 @@ export const tours = [
         "widths": [768, 1200, 1600, 1920],
         "width": 1920,
         "height": 1271,
-        "caption": "Ananuri Fortress on the Zhinvali Reservoir"
+        "caption": {
+          "en": "Ananuri Fortress, Zhinvali Reservoir",
+          "de": "Festung Ananuri, Schinwali-Stausee",
+          "fr": "Forteresse d'Ananouri, réservoir de Jinvali",
+          "es": "Fortaleza de Ananuri, embalse de Zhinvali",
+          "nl": "Vesting Ananuri, Zhinvali-stuwmeer",
+          "cs": "Pevnost Ananuri, přehrada Žinvali",
+          "pl": "Twierdza Ananuri, Zbiornik Żinwali"
+        }
       },
       {
         "src": "/images/tours/8-day-culture-adventure/gudauri-friendship-monument-georgia-1448.webp",
@@ -5862,7 +6327,15 @@ export const tours = [
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
-        "caption": "Friendship Monument, Gudauri"
+        "caption": {
+          "en": "Friendship Monument, Gudauri",
+          "de": "Friendship Monument, Gudauri",
+          "fr": "Friendship Monument, Gudauri",
+          "es": "Friendship Monument, Gudauri",
+          "nl": "Friendship Monument, Gudauri",
+          "cs": "Friendship Monument, Gudauri",
+          "pl": "Pomnik Przyjaźni, Gudauri"
+        }
       },
       {
         "src": "/images/tours/8-day-culture-adventure/gergeti-trinity-church-kazbegi-georgia-1448.webp",
@@ -5870,7 +6343,15 @@ export const tours = [
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
-        "caption": "Gergeti Trinity Church below Mount Kazbek, Kazbegi"
+        "caption": {
+          "en": "Gergeti Trinity Church, Kazbegi",
+          "de": "Gergeti-Dreifaltigkeitskirche, Kasbegi",
+          "fr": "Église de la Trinité de Guerguéti, Kazbegi",
+          "es": "Iglesia de la Trinidad de Gergeti, Kazbegi",
+          "nl": "Gergeti-Drie-eenheidskerk, Kazbegi",
+          "cs": "Kostel Nejsvětější Trojice v Gergeti, Kazbegi",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti, Kazbegi"
+        }
       },
       {
         "src": "/images/tours/8-day-culture-adventure/stalin-museum-gori-georgia-1009.webp",
@@ -5878,7 +6359,15 @@ export const tours = [
         "widths": [768, 1009],
         "width": 1009,
         "height": 1559,
-        "caption": "Stalin Museum, Gori"
+        "caption": {
+          "en": "Stalin Museum, Gori",
+          "de": "Stalin-Museum, Gori",
+          "fr": "Musée Staline, Gori",
+          "es": "Museo de Stalin, Gori",
+          "nl": "Stalinmuseum, Gori",
+          "cs": "Muzeum Stalina, Gori",
+          "pl": "Muzeum Stalina, Gori"
+        }
       },
       {
         "src": "/images/tours/8-day-culture-adventure/stalin-museum-railway-carriage-gori-georgia-1477.webp",
@@ -5886,7 +6375,15 @@ export const tours = [
         "widths": [768, 1200, 1477],
         "width": 1477,
         "height": 1065,
-        "caption": "Stalin's railway carriage, Stalin Museum, Gori"
+        "caption": {
+          "en": "Stalin's Railway Carriage, Gori",
+          "de": "Stalins Eisenbahnwaggon, Gori",
+          "fr": "Wagon de Staline, Gori",
+          "es": "Vagón de tren de Stalin, Gori",
+          "nl": "Stalins treinwagon, Gori",
+          "cs": "Stalinův železniční vagon, Gori",
+          "pl": "Wagon kolejowy Stalina, Gori"
+        }
       }
     ],
     /* One packaged ImageObject for the route map. This tour ships no other
@@ -6267,6 +6764,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Green Bazaar, Kutaisi",
+          "de": "Grüner Basar, Kutaissi",
+          "fr": "Bazar vert, Koutaïssi",
+          "es": "Bazar Verde, Kutaisi",
+          "nl": "Groene Bazaar, Koetaisi",
+          "cs": "Zelený bazar, Kutaisi",
+          "pl": "Zielony Bazar, Kutaisi"
+        },
+        "altText": {
           "en": "Fresh produce stalls under the yellow steel roof of Kutaisi's Green Bazaar, Georgia",
           "de": "Frische-Marktstände unter dem gelben Stahldach des Grünen Basars von Kutaissi, Georgien",
           "fr": "Étals de produits frais sous la charpente jaune du bazar vert de Koutaïssi, Géorgie",
@@ -6283,6 +6789,15 @@ export const tours = [
         "width": 1491,
         "height": 1055,
         "caption": {
+          "en": "Gelati Monastery, Kutaisi",
+          "de": "Gelati-Kloster, Kutaissi",
+          "fr": "Monastère de Gélati, Koutaïssi",
+          "es": "Monasterio de Gelati, Kutaisi",
+          "nl": "Gelati-klooster, Koetaisi",
+          "cs": "Klášter Gelati, Kutaisi",
+          "pl": "Klasztor Gelati, Kutaisi"
+        },
+        "altText": {
           "en": "Gelati Monastery, a UNESCO World Heritage site near Kutaisi, Georgia",
           "de": "Kloster Gelati, UNESCO-Welterbe bei Kutaissi, Georgien",
           "fr": "Monastère de Gélati, site du patrimoine mondial de l'UNESCO près de Koutaïssi, Géorgie",
@@ -6299,6 +6814,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Georgian Supra Feast",
+          "de": "Georgische Supra",
+          "fr": "Supra géorgienne",
+          "es": "Supra georgiana",
+          "nl": "Georgische supra",
+          "cs": "Gruzínská supra",
+          "pl": "Gruzińska supra"
+        },
+        "altText": {
           "en": "Traditional Georgian supra feast table laid with khachapuri and shared dishes, Georgia",
           "de": "Traditionelle georgische Supra-Tafel mit Chatschapuri und gemeinsamen Gerichten, Georgien",
           "fr": "Table de supra géorgienne traditionnelle garnie de khatchapouri et de plats à partager, Géorgie",
@@ -6315,6 +6839,15 @@ export const tours = [
         "width": 1536,
         "height": 1024,
         "caption": {
+          "en": "Prometheus Cave, Imereti",
+          "de": "Prometheus-Höhle, Imeretien",
+          "fr": "Grotte de Prométhée, Iméréthie",
+          "es": "Cueva de Prometeo, Imereti",
+          "nl": "Prometheus-grot, Imereti",
+          "cs": "Prométheova jeskyně, Imeretie",
+          "pl": "Jaskinia Prometeusza, Imeretia"
+        },
+        "altText": {
           "en": "Illuminated stalactites and walkway inside Prometheus Cave near Kutaisi, Georgia",
           "de": "Beleuchtete Stalaktiten und Steg in der Prometheus-Höhle bei Kutaissi, Georgien",
           "fr": "Stalactites illuminées et passerelle dans la grotte de Prométhée près de Koutaïssi, Géorgie",
@@ -6331,6 +6864,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Metekhi Church, Tbilisi",
+          "de": "Metechi-Kirche, Tiflis",
+          "fr": "Église de Metekhi, Tbilissi",
+          "es": "Iglesia de Metekhi, Tiflis",
+          "nl": "Metekhi-kerk, Tbilisi",
+          "cs": "Kostel Metechi, Tbilisi",
+          "pl": "Kościół Metechi, Tbilisi"
+        },
+        "altText": {
           "en": "Metekhi church on the cliff above the Mtkvari River in Old Tbilisi, Georgia",
           "de": "Metechi-Kirche auf dem Felsen über dem Fluss Mtkwari in der Altstadt von Tiflis, Georgien",
           "fr": "Église de Metekhi sur la falaise dominant la rivière Mtkvari dans le vieux Tbilissi, Géorgie",
@@ -6347,6 +6889,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Narikala Fortress, Tbilisi",
+          "de": "Festung Narikala, Tiflis",
+          "fr": "Forteresse de Narikala, Tbilissi",
+          "es": "Fortaleza de Narikala, Tiflis",
+          "nl": "Narikala-vesting, Tbilisi",
+          "cs": "Pevnost Narikala, Tbilisi",
+          "pl": "Twierdza Narikala, Tbilisi"
+        },
+        "altText": {
           "en": "Stone entrance and walls of Narikala Fortress in Tbilisi, Georgia",
           "de": "Steinernes Tor und Mauern der Festung Narikala in Tiflis, Georgien",
           "fr": "Porte et remparts en pierre de la forteresse de Narikala à Tbilissi, Géorgie",
@@ -6364,6 +6915,15 @@ export const tours = [
         "height": 1448,
         "objectPosition": "center 30%",
         "caption": {
+          "en": "Gabriadze Clock Tower, Tbilisi",
+          "de": "Gabriadze-Uhrturm, Tiflis",
+          "fr": "Tour de l'horloge Gabriadze, Tbilissi",
+          "es": "Torre del reloj Gabriadze, Tiflis",
+          "nl": "Gabriadze-klokkentoren, Tbilisi",
+          "cs": "Hodinová věž Gabriadze, Tbilisi",
+          "pl": "Wieża zegarowa Gabriadzego, Tbilisi"
+        },
+        "altText": {
           "en": "The leaning Gabriadze clock tower in Old Tbilisi, Georgia",
           "de": "Der schiefe Gabriadze-Uhrturm in der Altstadt von Tiflis, Georgien",
           "fr": "La tour de l'horloge penchée de Gabriadze dans le vieux Tbilissi, Géorgie",
@@ -6380,6 +6940,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Old Town and Narikala, Tbilisi",
+          "de": "Altstadt und Narikala, Tiflis",
+          "fr": "Vieille ville et Narikala, Tbilissi",
+          "es": "Casco antiguo y Narikala, Tiflis",
+          "nl": "Oude stad en Narikala, Tbilisi",
+          "cs": "Staré město a Narikala, Tbilisi",
+          "pl": "Stare Miasto i Narikala, Tbilisi"
+        },
+        "altText": {
           "en": "View of Old Tbilisi with Narikala Fortress and the aerial cable car, Georgia",
           "de": "Blick auf die Altstadt von Tiflis mit der Festung Narikala und der Seilbahn, Georgien",
           "fr": "Vue du vieux Tbilissi avec la forteresse de Narikala et le téléphérique, Géorgie",
@@ -6396,6 +6965,15 @@ export const tours = [
         "width": 1672,
         "height": 941,
         "caption": {
+          "en": "Holy Trinity Cathedral, Tbilisi",
+          "de": "Sameba-Kathedrale, Tiflis",
+          "fr": "Cathédrale Sameba, Tbilissi",
+          "es": "Catedral Sameba, Tiflis",
+          "nl": "Sameba-kathedraal, Tbilisi",
+          "cs": "Katedrála Sameba, Tbilisi",
+          "pl": "Katedra Sameba, Tbilisi"
+        },
+        "altText": {
           "en": "Holy Trinity Cathedral (Sameba), the largest cathedral in Tbilisi, Georgia",
           "de": "Sameba-Kathedrale (Heilige Dreifaltigkeit), die größte Kathedrale in Tiflis, Georgien",
           "fr": "Cathédrale de la Sainte-Trinité (Sameba), la plus grande cathédrale de Tbilissi, Géorgie",
@@ -6412,6 +6990,15 @@ export const tours = [
         "width": 1920,
         "height": 1439,
         "caption": {
+          "en": "Jvari Monastery, Mtskheta",
+          "de": "Dschwari-Kloster, Mzcheta",
+          "fr": "Monastère de Djvari, Mtskheta",
+          "es": "Monasterio de Jvari, Mtsjeta",
+          "nl": "Jvari-klooster, Mtscheta",
+          "cs": "Klášter Džvari, Mccheta",
+          "pl": "Klasztor Dżwari, Mccheta"
+        },
+        "altText": {
           "en": "Aerial view of Jvari Monastery above Mtskheta, a UNESCO World Heritage site, Georgia",
           "de": "Luftaufnahme des Dschwari-Klosters über Mzcheta, UNESCO-Welterbe, Georgien",
           "fr": "Vue aérienne du monastère de Djvari au-dessus de Mtskheta, site du patrimoine mondial de l'UNESCO, Géorgie",
@@ -6428,6 +7015,15 @@ export const tours = [
         "width": 1540,
         "height": 1021,
         "caption": {
+          "en": "Svetitskhoveli Cathedral, Mtskheta",
+          "de": "Swetizchoweli-Kathedrale, Mzcheta",
+          "fr": "Cathédrale de Svétitskhovéli, Mtskheta",
+          "es": "Catedral de Svetitsjoveli, Mtsjeta",
+          "nl": "Svetitschoveli-kathedraal, Mtscheta",
+          "cs": "Katedrála Sveticchoveli, Mccheta",
+          "pl": "Katedra Sweticchoweli, Mccheta"
+        },
+        "altText": {
           "en": "Svetitskhoveli Cathedral, a UNESCO World Heritage site in Mtskheta, Georgia",
           "de": "Swetizchoweli-Kathedrale, UNESCO-Welterbe in Mzcheta, Georgien",
           "fr": "Cathédrale de Svetitskhoveli, site du patrimoine mondial de l'UNESCO à Mtskheta, Géorgie",
@@ -6444,6 +7040,15 @@ export const tours = [
         "width": 1920,
         "height": 1271,
         "caption": {
+          "en": "Ananuri Fortress, Zhinvali Reservoir",
+          "de": "Festung Ananuri, Schinwali-Stausee",
+          "fr": "Forteresse d'Ananouri, réservoir de Jinvali",
+          "es": "Fortaleza de Ananuri, embalse de Zhinvali",
+          "nl": "Vesting Ananuri, Zhinvali-stuwmeer",
+          "cs": "Pevnost Ananuri, přehrada Žinvali",
+          "pl": "Twierdza Ananuri, Zbiornik Żinwali"
+        },
+        "altText": {
           "en": "Ananuri fortress and church beside the Zhinvali Reservoir, Georgia",
           "de": "Festung und Kirche von Ananuri am Schinwali-Stausee, Georgien",
           "fr": "Forteresse et église d'Ananouri au bord du réservoir de Jinvali, Géorgie",
@@ -6460,6 +7065,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Zhinvali Reservoir",
+          "de": "Schinwali-Stausee",
+          "fr": "Réservoir de Jinvali",
+          "es": "Embalse de Jinvali",
+          "nl": "Jinvali-stuwmeer",
+          "cs": "Přehrada Žinvali",
+          "pl": "Zbiornik Żinwali"
+        },
+        "altText": {
           "en": "Turquoise water of the Zhinvali Reservoir amid forested hills, Georgia",
           "de": "Türkisfarbenes Wasser des Schinwali-Stausees zwischen bewaldeten Hügeln, Georgien",
           "fr": "Eaux turquoise du réservoir de Jinvali entre des collines boisées, Géorgie",
@@ -6476,6 +7090,15 @@ export const tours = [
         "width": 1445,
         "height": 1089,
         "caption": {
+          "en": "Black and White Aragvi Confluence, Pasanauri",
+          "de": "Zusammenfluss der Schwarzen und Weißen Aragwi, Pasanauri",
+          "fr": "Confluent de l'Aragvi noire et blanche, Pasanauri",
+          "es": "Confluencia de los Aragvi Negro y Blanco, Pasanauri",
+          "nl": "Samenvloeiing van de Zwarte en Witte Aragvi, Pasanauri",
+          "cs": "Soutok Černé a Bílé Aragvi, Pasanauri",
+          "pl": "Zbieg Czarnej i Białej Aragwi, Pasanauri"
+        },
+        "altText": {
           "en": "Confluence of the Black and White Aragvi rivers near Pasanauri, Georgia",
           "de": "Zusammenfluss der Schwarzen und Weißen Aragwi bei Pasanauri, Georgien",
           "fr": "Confluent de l'Aragvi noire et de l'Aragvi blanche près de Pasanauri, Géorgie",
@@ -6492,6 +7115,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Friendship Monument, Gudauri",
+          "de": "Freundschaftsdenkmal, Gudauri",
+          "fr": "Monument de l'Amitié, Gudauri",
+          "es": "Monumento a la Amistad, Gudauri",
+          "nl": "Vriendschapsmonument, Gudauri",
+          "cs": "Pomník přátelství, Gudauri",
+          "pl": "Pomnik Przyjaźni, Gudauri"
+        },
+        "altText": {
           "en": "Mosaic panorama of the Friendship Monument near Gudauri, Georgia",
           "de": "Mosaik-Panorama des Freundschaftsdenkmals bei Gudauri, Georgien",
           "fr": "Panorama en mosaïque du Monument de l'Amitié près de Gudauri, Géorgie",
@@ -6509,6 +7141,15 @@ export const tours = [
         "height": 1536,
         "objectPosition": "center 30%",
         "caption": {
+          "en": "Mount Kazbek, Stepantsminda",
+          "de": "Berg Kazbek, Stepanzminda",
+          "fr": "Mont Kazbek, Stepantsminda",
+          "es": "Monte Kazbek, Stepantsminda",
+          "nl": "Berg Kazbek, Stepantsminda",
+          "cs": "Hora Kazbek, Stepancminda",
+          "pl": "Szczyt Kazbek, Stepancminda"
+        },
+        "altText": {
           "en": "Snow-capped Mount Kazbek rising above Stepantsminda village, Georgia",
           "de": "Der schneebedeckte Kazbek über dem Dorf Stepanzminda, Georgien",
           "fr": "Le mont Kazbek enneigé dominant le village de Stepantsminda, Géorgie",
@@ -6525,6 +7166,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Gergeti Trinity Church, Kazbegi",
+          "de": "Gergeti-Dreifaltigkeitskirche, Kasbegi",
+          "fr": "Église de la Trinité de Guerguéti, Kazbegi",
+          "es": "Iglesia de la Trinidad de Gergeti, Kazbegi",
+          "nl": "Gergeti-Drie-eenheidskerk, Kazbegi",
+          "cs": "Kostel Nejsvětější Trojice v Gergeti, Kazbegi",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti, Kazbegi"
+        },
+        "altText": {
           "en": "Gergeti Trinity Church on a hill below the Caucasus peaks near Stepantsminda, Georgia",
           "de": "Gergeti-Dreifaltigkeitskirche auf einem Hügel unterhalb der Kaukasusgipfel bei Stepanzminda, Georgien",
           "fr": "Église de la Trinité de Guerguéti sur une colline sous les sommets du Caucase près de Stepantsminda, Géorgie",
@@ -6541,6 +7191,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Uplistsikhe Cave Town, Gori",
+          "de": "Höhlenstadt Uplisziche, Gori",
+          "fr": "Cité troglodyte d'Ouplistsikhé, Gori",
+          "es": "Ciudad rupestre de Uplistsikhe, Gori",
+          "nl": "Grottenstad Oeplistsiche, Gori",
+          "cs": "Skalní město Uplisciche, Gori",
+          "pl": "Miasto jaskiniowe Uplisciche, Gori"
+        },
+        "altText": {
           "en": "The rock-hewn cave town of Uplistsikhe near Gori, Georgia",
           "de": "Die in Fels gehauene Höhlenstadt Uplisziche bei Gori, Georgien",
           "fr": "La cité troglodyte d'Ouplistsikhé près de Gori, Géorgie",
@@ -6557,6 +7216,15 @@ export const tours = [
         "width": 1536,
         "height": 1024,
         "caption": {
+          "en": "Stalin Museum, Gori",
+          "de": "Stalin-Museum, Gori",
+          "fr": "Musée Staline, Gori",
+          "es": "Museo de Stalin, Gori",
+          "nl": "Stalinmuseum, Gori",
+          "cs": "Muzeum Stalina, Gori",
+          "pl": "Muzeum Stalina, Gori"
+        },
+        "altText": {
           "en": "Marble bust of Stalin inside the Stalin Museum in Gori, Georgia",
           "de": "Marmorbüste Stalins im Stalin-Museum in Gori, Georgien",
           "fr": "Buste en marbre de Staline au musée Staline à Gori, Géorgie",
@@ -6574,6 +7242,15 @@ export const tours = [
         "height": 1448,
         "objectPosition": "center 30%",
         "caption": {
+          "en": "Martvili Canyon, Samegrelo",
+          "de": "Martvili-Schlucht, Samegrelo",
+          "fr": "Canyon de Martvili, Samegrelo",
+          "es": "Cañón de Martvili, Samegrelo",
+          "nl": "Martvili-kloof, Samegrelo",
+          "cs": "Kaňon Martvili, Samegrelo",
+          "pl": "Kanion Martvili, Samegrelo"
+        },
+        "altText": {
           "en": "Emerald water flowing through the forested limestone gorge of Martvili Canyon in Samegrelo, Georgia",
           "de": "Smaragdgrünes Wasser in der bewaldeten Kalksteinschlucht des Martvili-Canyons in Samegrelo, Georgien",
           "fr": "Eaux émeraude s'écoulant dans les gorges calcaires boisées du canyon de Martvili en Samegrelo, Géorgie",
@@ -6603,7 +7280,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/9-day-kutaisi-tbilisi/green-bazaar-kutaisi-georgia/green-bazaar-kutaisi-georgia-1448.webp",
         "name": "Green Bazaar, Kutaisi",
-        "caption": "Fresh produce stalls under the yellow steel roof of Kutaisi's Green Bazaar, Georgia",
+        "caption": "Green Bazaar, Kutaisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -6615,7 +7292,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/9-day-kutaisi-tbilisi/gelati-monastery-kutaisi-georgia/gelati-monastery-kutaisi-georgia-1491.webp",
         "name": "Gelati Monastery, Kutaisi",
-        "caption": "Gelati Monastery, a UNESCO World Heritage site near Kutaisi, Georgia",
+        "caption": "Gelati Monastery, Kutaisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -6626,8 +7303,8 @@ export const tours = [
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/9-day-kutaisi-tbilisi/georgian-supra-feast-georgia/georgian-supra-feast-georgia-1448.webp",
-        "name": "Traditional Georgian Supra",
-        "caption": "Traditional Georgian supra feast table laid with khachapuri and shared dishes, Georgia",
+        "name": "Georgian Supra Feast",
+        "caption": "Georgian Supra Feast",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -6639,7 +7316,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/9-day-kutaisi-tbilisi/prometheus-cave-imereti-georgia/prometheus-cave-imereti-georgia-1536.webp",
         "name": "Prometheus Cave, Imereti",
-        "caption": "Illuminated stalactites and walkway inside Prometheus Cave near Kutaisi, Georgia",
+        "caption": "Prometheus Cave, Imereti",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -6650,8 +7327,8 @@ export const tours = [
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/9-day-kutaisi-tbilisi/metekhi-cliff-tbilisi-georgia/metekhi-cliff-tbilisi-georgia-1448.webp",
-        "name": "Old Town & Mtkvari River, Tbilisi",
-        "caption": "Metekhi church on the cliff above the Mtkvari River in Old Tbilisi, Georgia",
+        "name": "Metekhi Church, Tbilisi",
+        "caption": "Metekhi Church, Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -6663,7 +7340,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/9-day-kutaisi-tbilisi/narikala-fortress-tbilisi-georgia/narikala-fortress-tbilisi-georgia-1448.webp",
         "name": "Narikala Fortress, Tbilisi",
-        "caption": "Stone entrance and walls of Narikala Fortress in Tbilisi, Georgia",
+        "caption": "Narikala Fortress, Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -6675,7 +7352,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/9-day-kutaisi-tbilisi/gabriadze-clock-tower-tbilisi-georgia/gabriadze-clock-tower-tbilisi-georgia-1086.webp",
         "name": "Gabriadze Clock Tower, Tbilisi",
-        "caption": "The leaning Gabriadze clock tower in Old Tbilisi, Georgia",
+        "caption": "Gabriadze Clock Tower, Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -6686,8 +7363,8 @@ export const tours = [
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/9-day-kutaisi-tbilisi/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia-1448.webp",
-        "name": "Old Town & Cable Car, Tbilisi",
-        "caption": "View of Old Tbilisi with Narikala Fortress and the aerial cable car, Georgia",
+        "name": "Old Town and Narikala, Tbilisi",
+        "caption": "Old Town and Narikala, Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -6699,7 +7376,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/9-day-kutaisi-tbilisi/holy-trinity-cathedral-tbilisi-georgia/holy-trinity-cathedral-tbilisi-georgia-1672.webp",
         "name": "Holy Trinity Cathedral, Tbilisi",
-        "caption": "Holy Trinity Cathedral (Sameba), the largest cathedral in Tbilisi, Georgia",
+        "caption": "Holy Trinity Cathedral, Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -6711,7 +7388,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/9-day-kutaisi-tbilisi/jvari-monastery-mtskheta-georgia/jvari-monastery-mtskheta-georgia-1920.webp",
         "name": "Jvari Monastery, Mtskheta",
-        "caption": "Aerial view of Jvari Monastery above Mtskheta, a UNESCO World Heritage site, Georgia",
+        "caption": "Jvari Monastery, Mtskheta",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -6723,7 +7400,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/9-day-kutaisi-tbilisi/svetitskhoveli-cathedral-mtskheta-georgia/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
         "name": "Svetitskhoveli Cathedral, Mtskheta",
-        "caption": "Svetitskhoveli Cathedral, a UNESCO World Heritage site in Mtskheta, Georgia",
+        "caption": "Svetitskhoveli Cathedral, Mtskheta",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -6734,8 +7411,8 @@ export const tours = [
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/9-day-kutaisi-tbilisi/ananuri-fortress-zhinvali-georgia/ananuri-fortress-zhinvali-georgia-1920.webp",
-        "name": "Ananuri Fortress, Zhinvali",
-        "caption": "Ananuri fortress and church beside the Zhinvali Reservoir, Georgia",
+        "name": "Ananuri Fortress, Zhinvali Reservoir",
+        "caption": "Ananuri Fortress, Zhinvali Reservoir",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -6747,7 +7424,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/9-day-kutaisi-tbilisi/zhinvali-reservoir-georgia/zhinvali-reservoir-georgia-1448.webp",
         "name": "Zhinvali Reservoir",
-        "caption": "Turquoise water of the Zhinvali Reservoir amid forested hills, Georgia",
+        "caption": "Zhinvali Reservoir",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -6758,8 +7435,8 @@ export const tours = [
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/9-day-kutaisi-tbilisi/aragvi-confluence-pasanauri-georgia/aragvi-confluence-pasanauri-georgia-1445.webp",
-        "name": "Aragvi Confluence, Pasanauri",
-        "caption": "Confluence of the Black and White Aragvi rivers near Pasanauri, Georgia",
+        "name": "Black and White Aragvi Confluence, Pasanauri",
+        "caption": "Black and White Aragvi Confluence, Pasanauri",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -6771,7 +7448,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/9-day-kutaisi-tbilisi/friendship-monument-gudauri-georgia/friendship-monument-gudauri-georgia-1448.webp",
         "name": "Friendship Monument, Gudauri",
-        "caption": "Mosaic panorama of the Friendship Monument near Gudauri, Georgia",
+        "caption": "Friendship Monument, Gudauri",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -6783,7 +7460,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/9-day-kutaisi-tbilisi/mount-kazbek-stepantsminda-georgia/mount-kazbek-stepantsminda-georgia-1024.webp",
         "name": "Mount Kazbek, Stepantsminda",
-        "caption": "Snow-capped Mount Kazbek rising above Stepantsminda village, Georgia",
+        "caption": "Mount Kazbek, Stepantsminda",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -6795,7 +7472,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/9-day-kutaisi-tbilisi/gergeti-trinity-church-kazbegi-georgia/gergeti-trinity-church-kazbegi-georgia-1448.webp",
         "name": "Gergeti Trinity Church, Kazbegi",
-        "caption": "Gergeti Trinity Church on a hill below the Caucasus peaks near Stepantsminda, Georgia",
+        "caption": "Gergeti Trinity Church, Kazbegi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -6807,7 +7484,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/9-day-kutaisi-tbilisi/uplistsikhe-cave-town-gori-georgia/uplistsikhe-cave-town-gori-georgia-1448.webp",
         "name": "Uplistsikhe Cave Town, Gori",
-        "caption": "The rock-hewn cave town of Uplistsikhe near Gori, Georgia",
+        "caption": "Uplistsikhe Cave Town, Gori",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -6819,7 +7496,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/9-day-kutaisi-tbilisi/stalin-museum-gori-georgia/stalin-museum-gori-georgia-1536.webp",
         "name": "Stalin Museum, Gori",
-        "caption": "Marble bust of Stalin inside the Stalin Museum in Gori, Georgia",
+        "caption": "Stalin Museum, Gori",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -6831,7 +7508,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/9-day-kutaisi-tbilisi/martvili-canyon-samegrelo-georgia/martvili-canyon-samegrelo-georgia-1086.webp",
         "name": "Martvili Canyon, Samegrelo",
-        "caption": "Emerald water flowing through the forested limestone gorge of Martvili Canyon in Samegrelo, Georgia",
+        "caption": "Martvili Canyon, Samegrelo",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -7011,6 +7688,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Old Town and Narikala, Tbilisi",
+          "de": "Altstadt und Narikala, Tiflis",
+          "fr": "Vieille ville et Narikala, Tbilissi",
+          "es": "Casco antiguo y Narikala, Tiflis",
+          "nl": "Oude stad en Narikala, Tbilisi",
+          "cs": "Staré město a Narikala, Tbilisi",
+          "pl": "Stare Miasto i Narikala, Tbilisi"
+        },
+        "altText": {
           "en": "View of Old Tbilisi with Narikala Fortress and the aerial cable car, Georgia",
           "de": "Blick auf die Altstadt von Tiflis mit der Festung Narikala und der Seilbahn, Georgien",
           "fr": "Vue du vieux Tbilissi avec la forteresse de Narikala et le téléphérique, Géorgie",
@@ -7027,6 +7713,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Narikala Fortress, Tbilisi",
+          "de": "Festung Narikala, Tiflis",
+          "fr": "Forteresse de Narikala, Tbilissi",
+          "es": "Fortaleza de Narikala, Tiflis",
+          "nl": "Narikala-vesting, Tbilisi",
+          "cs": "Pevnost Narikala, Tbilisi",
+          "pl": "Twierdza Narikala, Tbilisi"
+        },
+        "altText": {
           "en": "Stone entrance and walls of Narikala Fortress in Tbilisi, Georgia",
           "de": "Steinernes Tor und Mauern der Festung Narikala in Tiflis, Georgien",
           "fr": "Porte et remparts en pierre de la forteresse de Narikala à Tbilissi, Géorgie",
@@ -7044,6 +7739,15 @@ export const tours = [
         "height": 1448,
         "objectPosition": "center 30%",
         "caption": {
+          "en": "Gabriadze Clock Tower, Tbilisi",
+          "de": "Gabriadze-Uhrturm, Tiflis",
+          "fr": "Tour de l'horloge Gabriadze, Tbilissi",
+          "es": "Torre del reloj Gabriadze, Tiflis",
+          "nl": "Gabriadze-klokkentoren, Tbilisi",
+          "cs": "Hodinová věž Gabriadze, Tbilisi",
+          "pl": "Wieża zegarowa Gabriadzego, Tbilisi"
+        },
+        "altText": {
           "en": "The leaning Gabriadze clock tower in Old Tbilisi, Georgia",
           "de": "Der schiefe Gabriadze-Uhrturm in der Altstadt von Tiflis, Georgien",
           "fr": "La tour de l'horloge penchée de Gabriadze dans le vieux Tbilissi, Géorgie",
@@ -7060,6 +7764,15 @@ export const tours = [
         "width": 1672,
         "height": 941,
         "caption": {
+          "en": "Holy Trinity Cathedral, Tbilisi",
+          "de": "Sameba-Kathedrale, Tiflis",
+          "fr": "Cathédrale Sameba, Tbilissi",
+          "es": "Catedral Sameba, Tiflis",
+          "nl": "Sameba-kathedraal, Tbilisi",
+          "cs": "Katedrála Sameba, Tbilisi",
+          "pl": "Katedra Sameba, Tbilisi"
+        },
+        "altText": {
           "en": "Holy Trinity Cathedral (Sameba), the largest cathedral in Tbilisi, Georgia",
           "de": "Sameba-Kathedrale (Heilige Dreifaltigkeit), die größte Kathedrale in Tiflis, Georgien",
           "fr": "Cathédrale de la Sainte-Trinité (Sameba), la plus grande cathédrale de Tbilissi, Géorgie",
@@ -7076,6 +7789,15 @@ export const tours = [
         "width": 1920,
         "height": 1439,
         "caption": {
+          "en": "Jvari Monastery, Mtskheta",
+          "de": "Dschwari-Kloster, Mzcheta",
+          "fr": "Monastère de Djvari, Mtskheta",
+          "es": "Monasterio de Jvari, Mtsjeta",
+          "nl": "Jvari-klooster, Mtscheta",
+          "cs": "Klášter Džvari, Mccheta",
+          "pl": "Klasztor Dżwari, Mccheta"
+        },
+        "altText": {
           "en": "Aerial view of Jvari Monastery above Mtskheta, a UNESCO World Heritage site, Georgia",
           "de": "Luftaufnahme des Dschwari-Klosters über Mzcheta, UNESCO-Welterbe, Georgien",
           "fr": "Vue aérienne du monastère de Djvari au-dessus de Mtskheta, site du patrimoine mondial de l'UNESCO, Géorgie",
@@ -7092,6 +7814,15 @@ export const tours = [
         "width": 1540,
         "height": 1021,
         "caption": {
+          "en": "Svetitskhoveli Cathedral, Mtskheta",
+          "de": "Swetizchoweli-Kathedrale, Mzcheta",
+          "fr": "Cathédrale de Svétitskhovéli, Mtskheta",
+          "es": "Catedral de Svetitsjoveli, Mtsjeta",
+          "nl": "Svetitschoveli-kathedraal, Mtscheta",
+          "cs": "Katedrála Sveticchoveli, Mccheta",
+          "pl": "Katedra Sweticchoweli, Mccheta"
+        },
+        "altText": {
           "en": "Svetitskhoveli Cathedral, a UNESCO World Heritage site in Mtskheta, Georgia",
           "de": "Swetizchoweli-Kathedrale, UNESCO-Welterbe in Mzcheta, Georgien",
           "fr": "Cathédrale de Svetitskhoveli, site du patrimoine mondial de l'UNESCO à Mtskheta, Géorgie",
@@ -7108,6 +7839,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Uplistsikhe Cave Town, Gori",
+          "de": "Höhlenstadt Uplisziche, Gori",
+          "fr": "Cité troglodyte d'Ouplistsikhé, Gori",
+          "es": "Ciudad rupestre de Uplistsikhe, Gori",
+          "nl": "Grottenstad Oeplistsiche, Gori",
+          "cs": "Skalní město Uplisciche, Gori",
+          "pl": "Miasto jaskiniowe Uplisciche, Gori"
+        },
+        "altText": {
           "en": "The rock-hewn cave town of Uplistsikhe near Gori, Georgia",
           "de": "Die in Fels gehauene Höhlenstadt Uplisziche bei Gori, Georgien",
           "fr": "La cité troglodyte d'Ouplistsikhé près de Gori, Géorgie",
@@ -7124,6 +7864,15 @@ export const tours = [
         "width": 1536,
         "height": 1024,
         "caption": {
+          "en": "Stalin Museum, Gori",
+          "de": "Stalin-Museum, Gori",
+          "fr": "Musée Staline, Gori",
+          "es": "Museo de Stalin, Gori",
+          "nl": "Stalinmuseum, Gori",
+          "cs": "Muzeum Stalina, Gori",
+          "pl": "Muzeum Stalina, Gori"
+        },
+        "altText": {
           "en": "Marble bust of Stalin inside the Stalin Museum in Gori, Georgia",
           "de": "Marmorbüste Stalins im Stalin-Museum in Gori, Georgien",
           "fr": "Buste en marbre de Staline au musée Staline à Gori, Géorgie",
@@ -7140,6 +7889,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Green Bazaar, Kutaisi",
+          "de": "Grüner Basar, Kutaissi",
+          "fr": "Bazar vert, Koutaïssi",
+          "es": "Bazar Verde, Kutaisi",
+          "nl": "Groene Bazaar, Koetaisi",
+          "cs": "Zelený bazar, Kutaisi",
+          "pl": "Zielony Bazar, Kutaisi"
+        },
+        "altText": {
           "en": "Fresh produce stalls under the yellow steel roof of Kutaisi's Green Bazaar, Georgia",
           "de": "Frische-Marktstände unter dem gelben Stahldach des Grünen Basars von Kutaissi, Georgien",
           "fr": "Étals de produits frais sous la charpente jaune du bazar vert de Koutaïssi, Géorgie",
@@ -7156,6 +7914,15 @@ export const tours = [
         "width": 1491,
         "height": 1055,
         "caption": {
+          "en": "Gelati Monastery, Kutaisi",
+          "de": "Gelati-Kloster, Kutaissi",
+          "fr": "Monastère de Gélati, Koutaïssi",
+          "es": "Monasterio de Gelati, Kutaisi",
+          "nl": "Gelati-klooster, Koetaisi",
+          "cs": "Klášter Gelati, Kutaisi",
+          "pl": "Klasztor Gelati, Kutaisi"
+        },
+        "altText": {
           "en": "Gelati Monastery, a UNESCO World Heritage site near Kutaisi, Georgia",
           "de": "Kloster Gelati, UNESCO-Welterbe bei Kutaissi, Georgien",
           "fr": "Monastère de Gélati, site du patrimoine mondial de l'UNESCO près de Koutaïssi, Géorgie",
@@ -7172,6 +7939,15 @@ export const tours = [
         "width": 1536,
         "height": 1024,
         "caption": {
+          "en": "Prometheus Cave, Imereti",
+          "de": "Prometheus-Höhle, Imeretien",
+          "fr": "Grotte de Prométhée, Iméréthie",
+          "es": "Cueva de Prometeo, Imereti",
+          "nl": "Prometheus-grot, Imereti",
+          "cs": "Prométheova jeskyně, Imeretie",
+          "pl": "Jaskinia Prometeusza, Imeretia"
+        },
+        "altText": {
           "en": "Illuminated stalactites and walkway inside Prometheus Cave near Kutaisi, Georgia",
           "de": "Beleuchtete Stalaktiten und Steg in der Prometheus-Höhle bei Kutaissi, Georgien",
           "fr": "Stalactites illuminées et passerelle dans la grotte de Prométhée près de Koutaïssi, Géorgie",
@@ -7188,6 +7964,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Vardzia Cave Monastery, Samtskhe-Javakheti",
+          "de": "Höhlenkloster Wardsia, Samzche-Dschawachetien",
+          "fr": "Monastère troglodyte de Vardzia, Samtskhé-Djavakhétie",
+          "es": "Monasterio rupestre de Vardzia, Samtsje-Yavajeti",
+          "nl": "Grotklooster Vardzia, Samtsche-Dzjavacheti",
+          "cs": "Jeskynní klášter Vardzia, Samcche-Džavacheti",
+          "pl": "Klasztor jaskiniowy Wardzia, Samcche-Dżawachetia"
+        },
+        "altText": {
           "en": "The 12th-century Vardzia cave monastery carved into a cliff in Samtskhe-Javakheti, Georgia",
           "de": "Das Höhlenkloster Wardsia aus dem 12. Jahrhundert, in eine Felswand gehauen, Samzche-Dschawachetien, Georgien",
           "fr": "Le monastère troglodyte de Vardzia du XIIe siècle creusé dans une falaise, Samtskhé-Djavakhétie, Géorgie",
@@ -7204,6 +7989,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Rabati Fortress, Akhaltsikhe",
+          "de": "Rabati-Festung, Achalziche",
+          "fr": "Forteresse de Rabati, Akhaltsikhe",
+          "es": "Fortaleza de Rabati, Akhaltsikhe",
+          "nl": "Rabati-vesting, Achaltsiche",
+          "cs": "Pevnost Rabati, Achalciche",
+          "pl": "Twierdza Rabati, Achalciche"
+        },
+        "altText": {
           "en": "The restored medieval Rabati Fortress in Akhaltsikhe, Georgia",
           "de": "Die restaurierte mittelalterliche Rabati-Festung in Achalziche, Georgien",
           "fr": "La forteresse médiévale restaurée de Rabati à Akhaltsikhe, Géorgie",
@@ -7220,6 +8014,15 @@ export const tours = [
         "width": 1672,
         "height": 941,
         "caption": {
+          "en": "Central Park, Borjomi",
+          "de": "Zentralpark, Bordschomi",
+          "fr": "Parc central, Borjomi",
+          "es": "Parque Central, Borjomi",
+          "nl": "Centraal Park, Borjomi",
+          "cs": "Centrální park, Bordžomi",
+          "pl": "Park Centralny, Borjomi"
+        },
+        "altText": {
           "en": "Green pavilion and gardens of the Central Park in Borjomi, Georgia",
           "de": "Grüner Pavillon und Gärten des Zentralparks in Bordschomi, Georgien",
           "fr": "Pavillon vert et jardins du parc central de Borjomi, Géorgie",
@@ -7236,6 +8039,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Black Sea Beach, Batumi",
+          "de": "Schwarzmeerstrand, Batumi",
+          "fr": "Plage de la mer Noire, Batoumi",
+          "es": "Playa del mar Negro, Batumi",
+          "nl": "Strand aan de Zwarte Zee, Batumi",
+          "cs": "Pláž Černého moře, Batumi",
+          "pl": "Plaża nad Morzem Czarnym, Batumi"
+        },
+        "altText": {
           "en": "Pebble beach and turquoise Black Sea water under a bright sky in Batumi, Georgia",
           "de": "Kieselstrand und türkisfarbenes Schwarzes Meer unter hellem Himmel in Batumi, Georgien",
           "fr": "Plage de galets et eau turquoise de la mer Noire sous un ciel lumineux à Batoumi, Géorgie",
@@ -7252,6 +8064,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Batumi Skyline",
+          "de": "Skyline von Batumi",
+          "fr": "Panorama de Batoumi",
+          "es": "Perfil urbano de Batumi",
+          "nl": "Skyline van Batumi",
+          "cs": "Panoráma Batumi",
+          "pl": "Panorama Batumi"
+        },
+        "altText": {
           "en": "Batumi seaside skyline with the Alphabetic Tower and high-rises seen from the pebble beach, Georgia",
           "de": "Die Skyline von Batumi mit dem Alphabet-Turm und Hochhäusern vom Kieselstrand aus, Georgien",
           "fr": "La ligne d'horizon balnéaire de Batoumi avec la tour de l'Alphabet et les gratte-ciel depuis la plage de galets, Géorgie",
@@ -7269,6 +8090,15 @@ export const tours = [
         "height": 1536,
         "objectPosition": "center 30%",
         "caption": {
+          "en": "Ali and Nino Statue, Batumi",
+          "de": "Ali-und-Nino-Statue, Batumi",
+          "fr": "Statue Ali et Nino, Batoumi",
+          "es": "Estatua de Ali y Nino, Batumi",
+          "nl": "Ali en Nino-beeld, Batumi",
+          "cs": "Socha Ali a Nino, Batumi",
+          "pl": "Rzeźba Ali i Nino, Batumi"
+        },
+        "altText": {
           "en": "The moving steel Ali and Nino statue on the Batumi seafront, Georgia",
           "de": "Die bewegliche Stahlskulptur Ali und Nino an der Uferpromenade von Batumi, Georgien",
           "fr": "La sculpture mobile en acier Ali et Nino sur le front de mer de Batoumi, Géorgie",
@@ -7286,6 +8116,15 @@ export const tours = [
         "height": 1402,
         "objectPosition": "center 30%",
         "caption": {
+          "en": "Alphabet Tower, Batumi",
+          "de": "Alphabet-Turm, Batumi",
+          "fr": "Tour de l'Alphabet, Batoumi",
+          "es": "Torre del Alfabeto, Batumi",
+          "nl": "Alfabettoren, Batumi",
+          "cs": "Abecední věž, Batumi",
+          "pl": "Wieża Alfabetu, Batumi"
+        },
+        "altText": {
           "en": "The illuminated Alphabetic Tower at night in Batumi, Georgia",
           "de": "Der beleuchtete Alphabet-Turm bei Nacht in Batumi, Georgien",
           "fr": "La tour de l'Alphabet illuminée la nuit à Batoumi, Géorgie",
@@ -7302,6 +8141,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Black Sea Sunset, Batumi",
+          "de": "Sonnenuntergang, Batumi",
+          "fr": "Coucher de soleil, Batoumi",
+          "es": "Atardecer, Batumi",
+          "nl": "Zonsondergang, Batumi",
+          "cs": "Západ slunce, Batumi",
+          "pl": "Zachód słońca, Batumi"
+        },
+        "altText": {
           "en": "Sunset over the Black Sea from the Batumi shore, Georgia",
           "de": "Sonnenuntergang über dem Schwarzen Meer von der Küste Batumis, Georgien",
           "fr": "Coucher de soleil sur la mer Noire depuis le rivage de Batoumi, Géorgie",
@@ -7331,8 +8179,8 @@ export const tours = [
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia-1448.webp",
-        "name": "Old Town & Cable Car, Tbilisi",
-        "caption": "View of Old Tbilisi with Narikala Fortress and the aerial cable car, Georgia",
+        "name": "Old Town and Narikala, Tbilisi",
+        "caption": "Old Town and Narikala, Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -7345,7 +8193,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/narikala-fortress-tbilisi-georgia/narikala-fortress-tbilisi-georgia-1448.webp",
         "name": "Narikala Fortress, Tbilisi",
-        "caption": "Stone entrance and walls of Narikala Fortress in Tbilisi, Georgia",
+        "caption": "Narikala Fortress, Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -7358,7 +8206,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/gabriadze-clock-tower-tbilisi-georgia/gabriadze-clock-tower-tbilisi-georgia-1086.webp",
         "name": "Gabriadze Clock Tower, Tbilisi",
-        "caption": "The leaning Gabriadze clock tower in Old Tbilisi, Georgia",
+        "caption": "Gabriadze Clock Tower, Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -7371,7 +8219,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/holy-trinity-cathedral-tbilisi-georgia/holy-trinity-cathedral-tbilisi-georgia-1672.webp",
         "name": "Holy Trinity Cathedral, Tbilisi",
-        "caption": "Holy Trinity Cathedral (Sameba), the largest cathedral in Tbilisi, Georgia",
+        "caption": "Holy Trinity Cathedral, Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -7384,7 +8232,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/jvari-monastery-mtskheta-georgia/jvari-monastery-mtskheta-georgia-1920.webp",
         "name": "Jvari Monastery, Mtskheta",
-        "caption": "Aerial view of Jvari Monastery above Mtskheta, a UNESCO World Heritage site, Georgia",
+        "caption": "Jvari Monastery, Mtskheta",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -7397,7 +8245,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/svetitskhoveli-cathedral-mtskheta-georgia/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
         "name": "Svetitskhoveli Cathedral, Mtskheta",
-        "caption": "Svetitskhoveli Cathedral, a UNESCO World Heritage site in Mtskheta, Georgia",
+        "caption": "Svetitskhoveli Cathedral, Mtskheta",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -7410,7 +8258,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/uplistsikhe-cave-town-gori-georgia/uplistsikhe-cave-town-gori-georgia-1448.webp",
         "name": "Uplistsikhe Cave Town, Gori",
-        "caption": "The rock-hewn cave town of Uplistsikhe near Gori, Georgia",
+        "caption": "Uplistsikhe Cave Town, Gori",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -7423,7 +8271,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/stalin-museum-gori-georgia/stalin-museum-gori-georgia-1536.webp",
         "name": "Stalin Museum, Gori",
-        "caption": "Marble bust of Stalin inside the Stalin Museum in Gori, Georgia",
+        "caption": "Stalin Museum, Gori",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -7436,7 +8284,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/green-bazaar-kutaisi-georgia/green-bazaar-kutaisi-georgia-1448.webp",
         "name": "Green Bazaar, Kutaisi",
-        "caption": "Fresh produce stalls under the yellow steel roof of Kutaisi's Green Bazaar, Georgia",
+        "caption": "Green Bazaar, Kutaisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -7449,7 +8297,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/gelati-monastery-kutaisi-georgia/gelati-monastery-kutaisi-georgia-1491.webp",
         "name": "Gelati Monastery, Kutaisi",
-        "caption": "Gelati Monastery, a UNESCO World Heritage site near Kutaisi, Georgia",
+        "caption": "Gelati Monastery, Kutaisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -7462,7 +8310,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/prometheus-cave-imereti-georgia/prometheus-cave-imereti-georgia-1536.webp",
         "name": "Prometheus Cave, Imereti",
-        "caption": "Illuminated stalactites and walkway inside Prometheus Cave near Kutaisi, Georgia",
+        "caption": "Prometheus Cave, Imereti",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -7474,8 +8322,8 @@ export const tours = [
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/vardzia-cave-monastery-samtskhe-javakheti-georgia/vardzia-cave-monastery-samtskhe-javakheti-georgia-1448.webp",
-        "name": "Vardzia Cave Monastery",
-        "caption": "The 12th-century Vardzia cave monastery carved into a cliff in Samtskhe-Javakheti, Georgia",
+        "name": "Vardzia Cave Monastery, Samtskhe-Javakheti",
+        "caption": "Vardzia Cave Monastery, Samtskhe-Javakheti",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -7488,7 +8336,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/rabati-fortress-akhaltsikhe-georgia/rabati-fortress-akhaltsikhe-georgia-1448.webp",
         "name": "Rabati Fortress, Akhaltsikhe",
-        "caption": "The restored medieval Rabati Fortress in Akhaltsikhe, Georgia",
+        "caption": "Rabati Fortress, Akhaltsikhe",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -7501,7 +8349,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/borjomi-central-park-borjomi-georgia/borjomi-central-park-borjomi-georgia-1672.webp",
         "name": "Central Park, Borjomi",
-        "caption": "Green pavilion and gardens of the Central Park in Borjomi, Georgia",
+        "caption": "Central Park, Borjomi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -7514,7 +8362,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/batumi-black-sea-beach-batumi-georgia/batumi-black-sea-beach-batumi-georgia-1448.webp",
         "name": "Black Sea Beach, Batumi",
-        "caption": "Pebble beach and turquoise Black Sea water under a bright sky in Batumi, Georgia",
+        "caption": "Black Sea Beach, Batumi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -7526,8 +8374,8 @@ export const tours = [
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/batumi-skyline-batumi-georgia/batumi-skyline-batumi-georgia-1448.webp",
-        "name": "Seaside Skyline, Batumi",
-        "caption": "Batumi seaside skyline with the Alphabetic Tower and high-rises seen from the pebble beach, Georgia",
+        "name": "Batumi Skyline",
+        "caption": "Batumi Skyline",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -7540,7 +8388,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/ali-and-nino-statue-batumi-georgia/ali-and-nino-statue-batumi-georgia-1024.webp",
         "name": "Ali and Nino Statue, Batumi",
-        "caption": "The moving steel Ali and Nino statue on the Batumi seafront, Georgia",
+        "caption": "Ali and Nino Statue, Batumi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -7552,8 +8400,8 @@ export const tours = [
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/alphabetic-tower-batumi-georgia/alphabetic-tower-batumi-georgia-1122.webp",
-        "name": "Alphabetic Tower, Batumi",
-        "caption": "The illuminated Alphabetic Tower at night in Batumi, Georgia",
+        "name": "Alphabet Tower, Batumi",
+        "caption": "Alphabet Tower, Batumi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -7566,7 +8414,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/batumi-sunset-black-sea-batumi-georgia/batumi-sunset-black-sea-batumi-georgia-1448.webp",
         "name": "Black Sea Sunset, Batumi",
-        "caption": "Sunset over the Black Sea from the Batumi shore, Georgia",
+        "caption": "Black Sea Sunset, Batumi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -8089,7 +8937,7 @@ export const tours = [
           "fr": "Tour de l'horloge Gabriadze, Tbilissi",
           "es": "Torre del reloj Gabriadze, Tiflis",
           "nl": "Gabriadze-klokkentoren, Tbilisi",
-          "cs": "Gabriadzeho hodinová věž, Tbilisi",
+          "cs": "Hodinová věž Gabriadze, Tbilisi",
           "pl": "Wieża zegarowa Gabriadzego, Tbilisi"
         },
         "altText": {
@@ -8159,13 +9007,13 @@ export const tours = [
         "width": 1920,
         "height": 1271,
         "caption": {
-          "en": "Ananuri Fortress",
-          "de": "Festung Ananuri",
-          "fr": "Forteresse d'Ananouri",
-          "es": "Fortaleza de Ananuri",
-          "nl": "Ananuri-vesting",
-          "cs": "Pevnost Ananuri",
-          "pl": "Twierdza Ananuri"
+          "en": "Ananuri Fortress, Zhinvali Reservoir",
+          "de": "Festung Ananuri, Schinwali-Stausee",
+          "fr": "Forteresse d'Ananouri, réservoir de Jinvali",
+          "es": "Fortaleza de Ananuri, embalse de Zhinvali",
+          "nl": "Vesting Ananuri, Zhinvali-stuwmeer",
+          "cs": "Pevnost Ananuri, přehrada Žinvali",
+          "pl": "Twierdza Ananuri, Zbiornik Żinwali"
         },
         "altText": {
           "en": "Ananuri fortress complex on the shore of the Aragvi (Zhinvali) reservoir, Georgia",
@@ -8187,8 +9035,8 @@ export const tours = [
           "en": "Zhinvali Reservoir",
           "de": "Schinwali-Stausee",
           "fr": "Réservoir de Jinvali",
-          "es": "Embalse de Zhinvali",
-          "nl": "Zhinvali-stuwmeer",
+          "es": "Embalse de Jinvali",
+          "nl": "Jinvali-stuwmeer",
           "cs": "Přehrada Žinvali",
           "pl": "Zbiornik Żinwali"
         },
@@ -8210,12 +9058,12 @@ export const tours = [
         "height": 1086,
         "caption": {
           "en": "Gergeti Trinity Church, Kazbegi",
-          "de": "Gergeti-Kirche, Kasbegi",
-          "fr": "Église de Guerguéti, Kazbegi",
-          "es": "Iglesia de Gergeti, Kazbegi",
-          "nl": "Gergeti-kerk, Kazbegi",
-          "cs": "Kostel Gergeti, Kazbegi",
-          "pl": "Cerkiew Gergeti, Kazbegi"
+          "de": "Gergeti-Dreifaltigkeitskirche, Kasbegi",
+          "fr": "Église de la Trinité de Guerguéti, Kazbegi",
+          "es": "Iglesia de la Trinidad de Gergeti, Kazbegi",
+          "nl": "Gergeti-Drie-eenheidskerk, Kazbegi",
+          "cs": "Kostel Nejsvětější Trojice v Gergeti, Kazbegi",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti, Kazbegi"
         },
         "altText": {
           "en": "Gergeti Trinity Church set against the Caucasus mountains near Kazbegi, Georgia",
@@ -8239,7 +9087,7 @@ export const tours = [
           "fr": "Monument de l'Amitié, Gudauri",
           "es": "Monumento a la Amistad, Gudauri",
           "nl": "Vriendschapsmonument, Gudauri",
-          "cs": "Památník přátelství, Gudauri",
+          "cs": "Pomník přátelství, Gudauri",
           "pl": "Pomnik Przyjaźni, Gudauri"
         },
         "altText": {
@@ -8336,7 +9184,7 @@ export const tours = [
         "caption": {
           "en": "Erekle II Monument, Telavi",
           "de": "Erekle-II.-Denkmal, Telawi",
-          "fr": "Monument d'Héraclius II, Télavi",
+          "fr": "Monument d'Erekle II, Télavi",
           "es": "Monumento a Erekle II, Telavi",
           "nl": "Erekle II-monument, Telavi",
           "cs": "Pomník Erekleho II., Telavi",
@@ -8403,7 +9251,7 @@ export const tours = [
         "@id": "https://www.hikasustravel.com/images/files/tbilisi-cityscape-georgia-1200.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/tbilisi-cityscape-georgia-1200.webp",
         "name": "Tbilisi",
-        "caption": "Panoramic view of Tbilisi with Narikala Fortress, the Mtkvari River and cable car, capital of Georgia",
+        "caption": "Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -8420,7 +9268,7 @@ export const tours = [
         "@id": "https://www.hikasustravel.com/images/files/old-town-tbilisi-georgia-1200.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/old-town-tbilisi-georgia-1200.webp",
         "name": "Old Town, Tbilisi",
-        "caption": "Cliffside houses of Old Tbilisi reflected in the Mtkvari River, Georgia",
+        "caption": "Old Town, Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -8438,7 +9286,7 @@ export const tours = [
         "@id": "https://www.hikasustravel.com/images/files/narikala-fortress-tbilisi-georgia-1200.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/narikala-fortress-tbilisi-georgia-1200.webp",
         "name": "Narikala Fortress, Tbilisi",
-        "caption": "Ancient Narikala Fortress above the Old Town of Tbilisi, Georgia",
+        "caption": "Narikala Fortress, Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -8455,7 +9303,7 @@ export const tours = [
         "@id": "https://www.hikasustravel.com/images/files/holy-trinity-cathedral-tbilisi-georgia-1200.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/holy-trinity-cathedral-tbilisi-georgia-1200.webp",
         "name": "Holy Trinity Cathedral, Tbilisi",
-        "caption": "Holy Trinity Cathedral (Sameba) with its golden dome in Tbilisi, Georgia",
+        "caption": "Holy Trinity Cathedral, Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -8472,7 +9320,7 @@ export const tours = [
         "@id": "https://www.hikasustravel.com/images/files/gabriadze-clock-tower-tbilisi-georgia-1086.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/gabriadze-clock-tower-tbilisi-georgia-1086.webp",
         "name": "Gabriadze Clock Tower, Tbilisi",
-        "caption": "The leaning Gabriadze Clock Tower in the Old Town of Tbilisi, Georgia",
+        "caption": "Gabriadze Clock Tower, Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -8489,7 +9337,7 @@ export const tours = [
         "@id": "https://www.hikasustravel.com/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1200.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1200.webp",
         "name": "Svetitskhoveli Cathedral, Mtskheta",
-        "caption": "Svetitskhoveli Cathedral, a UNESCO World Heritage site in Mtskheta, Georgia",
+        "caption": "Svetitskhoveli Cathedral, Mtskheta",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -8506,7 +9354,7 @@ export const tours = [
         "@id": "https://www.hikasustravel.com/images/files/jvari-monastery-aerial-mtskheta-georgia-1200.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/jvari-monastery-aerial-mtskheta-georgia-1200.webp",
         "name": "Jvari Monastery, Mtskheta",
-        "caption": "The 6th-century Jvari Monastery, a UNESCO World Heritage site above Mtskheta, Georgia",
+        "caption": "Jvari Monastery, Mtskheta",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -8522,8 +9370,8 @@ export const tours = [
         "@type": "ImageObject",
         "@id": "https://www.hikasustravel.com/images/files/ananuri-fortress-georgia-1200.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/ananuri-fortress-georgia-1200.webp",
-        "name": "Ananuri Fortress",
-        "caption": "Ananuri fortress complex on the shore of the Aragvi (Zhinvali) reservoir, Georgia",
+        "name": "Ananuri Fortress, Zhinvali Reservoir",
+        "caption": "Ananuri Fortress, Zhinvali Reservoir",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -8540,7 +9388,7 @@ export const tours = [
         "@id": "https://www.hikasustravel.com/images/files/zhinvali-reservoir-georgia-1200.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/zhinvali-reservoir-georgia-1200.webp",
         "name": "Zhinvali Reservoir",
-        "caption": "Turquoise waters of Zhinvali Reservoir amid the Caucasus foothills, Georgia",
+        "caption": "Zhinvali Reservoir",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -8557,7 +9405,7 @@ export const tours = [
         "@id": "https://www.hikasustravel.com/images/files/gergeti-trinity-church-kazbegi-georgia-1200.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/gergeti-trinity-church-kazbegi-georgia-1200.webp",
         "name": "Gergeti Trinity Church, Kazbegi",
-        "caption": "Gergeti Trinity Church set against the Caucasus mountains near Kazbegi, Georgia",
+        "caption": "Gergeti Trinity Church, Kazbegi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -8574,7 +9422,7 @@ export const tours = [
         "@id": "https://www.hikasustravel.com/images/files/friendship-monument-gudauri-georgia-1200.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/friendship-monument-gudauri-georgia-1200.webp",
         "name": "Friendship Monument, Gudauri",
-        "caption": "The mosaic Russia–Georgia Friendship Monument on the Georgian Military Highway at Gudauri, Georgia",
+        "caption": "Friendship Monument, Gudauri",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -8591,7 +9439,7 @@ export const tours = [
         "@id": "https://www.hikasustravel.com/images/files/truso-valley-kazbegi-georgia-1200.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/truso-valley-kazbegi-georgia-1200.webp",
         "name": "Truso Valley, Kazbegi",
-        "caption": "Stone tower and church in the remote Truso Valley near Kazbegi, Georgia",
+        "caption": "Truso Valley, Kazbegi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -8608,7 +9456,7 @@ export const tours = [
         "@id": "https://www.hikasustravel.com/images/files/kakheti-vineyard-georgia-1200.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/kakheti-vineyard-georgia-1200.webp",
         "name": "Kakheti Vineyard",
-        "caption": "Vineyard rows at sunrise in the Kakheti wine region, Georgia",
+        "caption": "Kakheti Vineyard",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -8625,7 +9473,7 @@ export const tours = [
         "@id": "https://www.hikasustravel.com/images/files/georgian-supra-feast-georgia-1200.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/georgian-supra-feast-georgia-1200.webp",
         "name": "Georgian Supra Feast",
-        "caption": "Traditional Georgian supra feast table laid with khachapuri, salads and grilled dishes, Georgia",
+        "caption": "Georgian Supra Feast",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -8642,7 +9490,7 @@ export const tours = [
         "@id": "https://www.hikasustravel.com/images/files/erekle-ii-monument-telavi-georgia-1200.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/erekle-ii-monument-telavi-georgia-1200.webp",
         "name": "Erekle II Monument, Telavi",
-        "caption": "Equestrian monument to King Erekle II in Telavi, Kakheti, Georgia",
+        "caption": "Erekle II Monument, Telavi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -8659,7 +9507,7 @@ export const tours = [
         "@id": "https://www.hikasustravel.com/images/files/tsinandali-estate-georgia-1200.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/tsinandali-estate-georgia-1200.webp",
         "name": "Tsinandali Estate, Kakheti",
-        "caption": "Historic Tsinandali Estate and its landscaped gardens in Kakheti, Georgia",
+        "caption": "Tsinandali Estate, Kakheti",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -9033,6 +9881,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Old Town and Narikala, Tbilisi",
+          "de": "Altstadt und Narikala, Tiflis",
+          "fr": "Vieille ville et Narikala, Tbilissi",
+          "es": "Casco antiguo y Narikala, Tiflis",
+          "nl": "Oude stad en Narikala, Tbilisi",
+          "cs": "Staré město a Narikala, Tbilisi",
+          "pl": "Stare Miasto i Narikala, Tbilisi"
+        },
+        "altText": {
           "en": "View of Old Tbilisi with Narikala Fortress and the aerial cable car, Georgia",
           "de": "Blick auf die Altstadt von Tiflis mit der Festung Narikala und der Seilbahn, Georgien",
           "fr": "Vue du vieux Tbilissi avec la forteresse de Narikala et le téléphérique, Géorgie",
@@ -9049,6 +9906,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Narikala Fortress, Tbilisi",
+          "de": "Festung Narikala, Tiflis",
+          "fr": "Forteresse de Narikala, Tbilissi",
+          "es": "Fortaleza de Narikala, Tiflis",
+          "nl": "Narikala-vesting, Tbilisi",
+          "cs": "Pevnost Narikala, Tbilisi",
+          "pl": "Twierdza Narikala, Tbilisi"
+        },
+        "altText": {
           "en": "Stone entrance and walls of Narikala Fortress in Tbilisi, Georgia",
           "de": "Steinernes Tor und Mauern der Festung Narikala in Tiflis, Georgien",
           "fr": "Porte et remparts en pierre de la forteresse de Narikala à Tbilissi, Géorgie",
@@ -9066,6 +9932,15 @@ export const tours = [
         "height": 1448,
         "objectPosition": "center 30%",
         "caption": {
+          "en": "Gabriadze Clock Tower, Tbilisi",
+          "de": "Gabriadze-Uhrturm, Tiflis",
+          "fr": "Tour de l'horloge Gabriadze, Tbilissi",
+          "es": "Torre del reloj Gabriadze, Tiflis",
+          "nl": "Gabriadze-klokkentoren, Tbilisi",
+          "cs": "Hodinová věž Gabriadze, Tbilisi",
+          "pl": "Wieża zegarowa Gabriadzego, Tbilisi"
+        },
+        "altText": {
           "en": "The leaning Gabriadze clock tower in Old Tbilisi, Georgia",
           "de": "Der schiefe Gabriadze-Uhrturm in der Altstadt von Tiflis, Georgien",
           "fr": "La tour de l'horloge penchée de Gabriadze dans le vieux Tbilissi, Géorgie",
@@ -9082,6 +9957,15 @@ export const tours = [
         "width": 1672,
         "height": 941,
         "caption": {
+          "en": "Holy Trinity Cathedral, Tbilisi",
+          "de": "Sameba-Kathedrale, Tiflis",
+          "fr": "Cathédrale Sameba, Tbilissi",
+          "es": "Catedral Sameba, Tiflis",
+          "nl": "Sameba-kathedraal, Tbilisi",
+          "cs": "Katedrála Sameba, Tbilisi",
+          "pl": "Katedra Sameba, Tbilisi"
+        },
+        "altText": {
           "en": "Holy Trinity Cathedral (Sameba), the largest cathedral in Tbilisi, Georgia",
           "de": "Sameba-Kathedrale (Heilige Dreifaltigkeit), die größte Kathedrale in Tiflis, Georgien",
           "fr": "Cathédrale de la Sainte-Trinité (Sameba), la plus grande cathédrale de Tbilissi, Géorgie",
@@ -9098,6 +9982,15 @@ export const tours = [
         "width": 1445,
         "height": 1089,
         "caption": {
+          "en": "Black and White Aragvi Confluence, Pasanauri",
+          "de": "Zusammenfluss der Schwarzen und Weißen Aragwi, Pasanauri",
+          "fr": "Confluent de l'Aragvi noire et blanche, Pasanauri",
+          "es": "Confluencia de los Aragvi Negro y Blanco, Pasanauri",
+          "nl": "Samenvloeiing van de Zwarte en Witte Aragvi, Pasanauri",
+          "cs": "Soutok Černé a Bílé Aragvi, Pasanauri",
+          "pl": "Zbieg Czarnej i Białej Aragwi, Pasanauri"
+        },
+        "altText": {
           "en": "Confluence of the Black and White Aragvi rivers near Pasanauri, Georgia",
           "de": "Zusammenfluss der Schwarzen und Weißen Aragwi bei Pasanauri, Georgien",
           "fr": "Confluent de l'Aragvi noire et de l'Aragvi blanche près de Pasanauri, Géorgie",
@@ -9114,6 +10007,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Friendship Monument, Gudauri",
+          "de": "Freundschaftsdenkmal, Gudauri",
+          "fr": "Monument de l'Amitié, Gudauri",
+          "es": "Monumento a la Amistad, Gudauri",
+          "nl": "Vriendschapsmonument, Gudauri",
+          "cs": "Pomník přátelství, Gudauri",
+          "pl": "Pomnik Przyjaźni, Gudauri"
+        },
+        "altText": {
           "en": "Mosaic panorama of the Friendship Monument near Gudauri, Georgia",
           "de": "Mosaik-Panorama des Freundschaftsdenkmals bei Gudauri, Georgien",
           "fr": "Panorama en mosaïque du Monument de l'Amitié près de Gudauri, Géorgie",
@@ -9130,6 +10032,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Gergeti Trinity Church, Kazbegi",
+          "de": "Gergeti-Dreifaltigkeitskirche, Kasbegi",
+          "fr": "Église de la Trinité de Guerguéti, Kazbegi",
+          "es": "Iglesia de la Trinidad de Gergeti, Kazbegi",
+          "nl": "Gergeti-Drie-eenheidskerk, Kazbegi",
+          "cs": "Kostel Nejsvětější Trojice v Gergeti, Kazbegi",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti, Kazbegi"
+        },
+        "altText": {
           "en": "Gergeti Trinity Church on a hill below the Caucasus peaks near Stepantsminda, Georgia",
           "de": "Gergeti-Dreifaltigkeitskirche auf einem Hügel unterhalb der Kaukasusgipfel bei Stepanzminda, Georgien",
           "fr": "Église de la Trinité de Guerguéti sur une colline sous les sommets du Caucase près de Stepantsminda, Géorgie",
@@ -9147,6 +10058,15 @@ export const tours = [
         "height": 1536,
         "objectPosition": "center 30%",
         "caption": {
+          "en": "Mount Kazbek, Stepantsminda",
+          "de": "Berg Kazbek, Stepanzminda",
+          "fr": "Mont Kazbek, Stepantsminda",
+          "es": "Monte Kazbek, Stepantsminda",
+          "nl": "Berg Kazbek, Stepantsminda",
+          "cs": "Hora Kazbek, Stepancminda",
+          "pl": "Szczyt Kazbek, Stepancminda"
+        },
+        "altText": {
           "en": "Snow-capped Mount Kazbek rising above Stepantsminda village, Georgia",
           "de": "Der schneebedeckte Kazbek über dem Dorf Stepanzminda, Georgien",
           "fr": "Le mont Kazbek enneigé dominant le village de Stepantsminda, Géorgie",
@@ -9163,6 +10083,15 @@ export const tours = [
         "width": 1536,
         "height": 1024,
         "caption": {
+          "en": "Stalin Museum, Gori",
+          "de": "Stalin-Museum, Gori",
+          "fr": "Musée Staline, Gori",
+          "es": "Museo de Stalin, Gori",
+          "nl": "Stalinmuseum, Gori",
+          "cs": "Muzeum Stalina, Gori",
+          "pl": "Muzeum Stalina, Gori"
+        },
+        "altText": {
           "en": "Marble bust of Stalin inside the Stalin Museum in Gori, Georgia",
           "de": "Marmorbüste Stalins im Stalin-Museum in Gori, Georgien",
           "fr": "Buste en marbre de Staline au musée Staline à Gori, Géorgie",
@@ -9179,6 +10108,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Uplistsikhe Cave Town, Gori",
+          "de": "Höhlenstadt Uplisziche, Gori",
+          "fr": "Cité troglodyte d'Ouplistsikhé, Gori",
+          "es": "Ciudad rupestre de Uplistsikhe, Gori",
+          "nl": "Grottenstad Oeplistsiche, Gori",
+          "cs": "Skalní město Uplisciche, Gori",
+          "pl": "Miasto jaskiniowe Uplisciche, Gori"
+        },
+        "altText": {
           "en": "The rock-hewn cave town of Uplistsikhe near Gori, Georgia",
           "de": "Die in Fels gehauene Höhlenstadt Uplisziche bei Gori, Georgien",
           "fr": "La cité troglodyte d'Ouplistsikhé près de Gori, Géorgie",
@@ -9195,6 +10133,15 @@ export const tours = [
         "width": 1491,
         "height": 1055,
         "caption": {
+          "en": "Gelati Monastery, Kutaisi",
+          "de": "Gelati-Kloster, Kutaissi",
+          "fr": "Monastère de Gélati, Koutaïssi",
+          "es": "Monasterio de Gelati, Kutaisi",
+          "nl": "Gelati-klooster, Koetaisi",
+          "cs": "Klášter Gelati, Kutaisi",
+          "pl": "Klasztor Gelati, Kutaisi"
+        },
+        "altText": {
           "en": "Gelati Monastery, a UNESCO World Heritage site near Kutaisi, Georgia",
           "de": "Kloster Gelati, UNESCO-Welterbe bei Kutaissi, Georgien",
           "fr": "Monastère de Ghélati, site du patrimoine mondial de l'UNESCO près de Koutaïssi, Géorgie",
@@ -9211,6 +10158,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Green Bazaar, Kutaisi",
+          "de": "Grüner Basar, Kutaissi",
+          "fr": "Bazar vert, Koutaïssi",
+          "es": "Bazar Verde, Kutaisi",
+          "nl": "Groene Bazaar, Koetaisi",
+          "cs": "Zelený bazar, Kutaisi",
+          "pl": "Zielony Bazar, Kutaisi"
+        },
+        "altText": {
           "en": "Fresh produce stalls under the yellow steel roof of Kutaisi's Green Bazaar, Georgia",
           "de": "Frische-Marktstände unter dem gelben Stahldach des Grünen Basars von Kutaissi, Georgien",
           "fr": "Étals de produits frais sous la charpente jaune du bazar vert de Koutaïssi, Géorgie",
@@ -9227,6 +10183,15 @@ export const tours = [
         "width": 1536,
         "height": 1024,
         "caption": {
+          "en": "Prometheus Cave, Imereti",
+          "de": "Prometheus-Höhle, Imeretien",
+          "fr": "Grotte de Prométhée, Iméréthie",
+          "es": "Cueva de Prometeo, Imereti",
+          "nl": "Prometheus-grot, Imereti",
+          "cs": "Prométheova jeskyně, Imeretie",
+          "pl": "Jaskinia Prometeusza, Imeretia"
+        },
+        "altText": {
           "en": "Illuminated stalactites and walkway inside Prometheus Cave near Kutaisi, Georgia",
           "de": "Beleuchtete Stalaktiten und Steg in der Prometheus-Höhle bei Kutaissi, Georgien",
           "fr": "Stalactites illuminées et passerelle dans la grotte de Prométhée près de Koutaïssi, Géorgie",
@@ -9244,6 +10209,15 @@ export const tours = [
         "height": 1448,
         "objectPosition": "center 30%",
         "caption": {
+          "en": "Martvili Canyon, Samegrelo",
+          "de": "Martvili-Schlucht, Samegrelo",
+          "fr": "Canyon de Martvili, Samegrelo",
+          "es": "Cañón de Martvili, Samegrelo",
+          "nl": "Martvili-kloof, Samegrelo",
+          "cs": "Kaňon Martvili, Samegrelo",
+          "pl": "Kanion Martvili, Samegrelo"
+        },
+        "altText": {
           "en": "Emerald water flowing through the forested limestone gorge of Martvili Canyon in Samegrelo, Georgia",
           "de": "Smaragdgrünes Wasser in der bewaldeten Kalksteinschlucht des Martvili-Canyons in Samegrelo, Georgien",
           "fr": "Eaux émeraude s'écoulant dans les gorges calcaires boisées du canyon de Martvili en Samegrelo, Géorgie",
@@ -9260,6 +10234,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Black Sea Beach, Batumi",
+          "de": "Schwarzmeerstrand, Batumi",
+          "fr": "Plage de la mer Noire, Batoumi",
+          "es": "Playa del mar Negro, Batumi",
+          "nl": "Strand aan de Zwarte Zee, Batumi",
+          "cs": "Pláž Černého moře, Batumi",
+          "pl": "Plaża nad Morzem Czarnym, Batumi"
+        },
+        "altText": {
           "en": "Pebble beach and turquoise Black Sea water under a bright sky in Batumi, Georgia",
           "de": "Kieselstrand und türkisfarbenes Schwarzes Meer unter hellem Himmel in Batumi, Georgien",
           "fr": "Plage de galets et eau turquoise de la mer Noire sous un ciel lumineux à Batoumi, Géorgie",
@@ -9276,6 +10259,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Batumi Skyline",
+          "de": "Skyline von Batumi",
+          "fr": "Panorama de Batoumi",
+          "es": "Perfil urbano de Batumi",
+          "nl": "Skyline van Batumi",
+          "cs": "Panoráma Batumi",
+          "pl": "Panorama Batumi"
+        },
+        "altText": {
           "en": "Batumi seaside skyline with the Alphabetic Tower and high-rises seen from the pebble beach, Georgia",
           "de": "Die Skyline von Batumi mit dem Alphabet-Turm und Hochhäusern vom Kieselstrand aus, Georgien",
           "fr": "La ligne d'horizon balnéaire de Batoumi avec la tour de l'Alphabet et les gratte-ciel depuis la plage de galets, Géorgie",
@@ -9293,6 +10285,15 @@ export const tours = [
         "height": 1536,
         "objectPosition": "center 30%",
         "caption": {
+          "en": "Ali and Nino Statue, Batumi",
+          "de": "Ali-und-Nino-Statue, Batumi",
+          "fr": "Statue Ali et Nino, Batoumi",
+          "es": "Estatua de Ali y Nino, Batumi",
+          "nl": "Ali en Nino-beeld, Batumi",
+          "cs": "Socha Ali a Nino, Batumi",
+          "pl": "Rzeźba Ali i Nino, Batumi"
+        },
+        "altText": {
           "en": "The moving steel Ali and Nino statue on the Batumi seafront, Georgia",
           "de": "Die bewegliche Stahlskulptur Ali und Nino an der Uferpromenade von Batumi, Georgien",
           "fr": "La sculpture mobile en acier Ali et Nino sur le front de mer de Batoumi, Géorgie",
@@ -9309,6 +10310,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Black Sea Sunset, Batumi",
+          "de": "Sonnenuntergang, Batumi",
+          "fr": "Coucher de soleil, Batoumi",
+          "es": "Atardecer, Batumi",
+          "nl": "Zonsondergang, Batumi",
+          "cs": "Západ slunce, Batumi",
+          "pl": "Zachód słońca, Batumi"
+        },
+        "altText": {
           "en": "Sunset over the Black Sea from the Batumi shore, Georgia",
           "de": "Sonnenuntergang über dem Schwarzen Meer von der Küste Batumis, Georgien",
           "fr": "Coucher de soleil sur la mer Noire depuis le rivage de Batoumi, Géorgie",
@@ -9326,6 +10336,15 @@ export const tours = [
         "height": 1402,
         "objectPosition": "center 30%",
         "caption": {
+          "en": "Alphabet Tower, Batumi",
+          "de": "Alphabet-Turm, Batumi",
+          "fr": "Tour de l'Alphabet, Batoumi",
+          "es": "Torre del Alfabeto, Batumi",
+          "nl": "Alfabettoren, Batumi",
+          "cs": "Abecední věž, Batumi",
+          "pl": "Wieża Alfabetu, Batumi"
+        },
+        "altText": {
           "en": "The illuminated Alphabetic Tower at night in Batumi, Georgia",
           "de": "Der beleuchtete Alphabet-Turm bei Nacht in Batumi, Georgien",
           "fr": "La tour de l'Alphabet illuminée la nuit à Batoumi, Géorgie",
@@ -9355,8 +10374,8 @@ export const tours = [
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-10-days-celebration/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia-1448.webp",
-        "name": "Old Town & Cable Car, Tbilisi",
-        "caption": "View of Old Tbilisi with Narikala Fortress and the aerial cable car, Georgia",
+        "name": "Old Town and Narikala, Tbilisi",
+        "caption": "Old Town and Narikala, Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -9369,7 +10388,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-10-days-celebration/narikala-fortress-tbilisi-georgia/narikala-fortress-tbilisi-georgia-1448.webp",
         "name": "Narikala Fortress, Tbilisi",
-        "caption": "Stone entrance and walls of Narikala Fortress in Tbilisi, Georgia",
+        "caption": "Narikala Fortress, Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -9382,7 +10401,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-10-days-celebration/gabriadze-clock-tower-tbilisi-georgia/gabriadze-clock-tower-tbilisi-georgia-1086.webp",
         "name": "Gabriadze Clock Tower, Tbilisi",
-        "caption": "The leaning Gabriadze clock tower in Old Tbilisi, Georgia",
+        "caption": "Gabriadze Clock Tower, Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -9395,7 +10414,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-10-days-celebration/holy-trinity-cathedral-tbilisi-georgia/holy-trinity-cathedral-tbilisi-georgia-1672.webp",
         "name": "Holy Trinity Cathedral, Tbilisi",
-        "caption": "Holy Trinity Cathedral (Sameba), the largest cathedral in Tbilisi, Georgia",
+        "caption": "Holy Trinity Cathedral, Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -9407,8 +10426,8 @@ export const tours = [
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-10-days-celebration/aragvi-confluence-pasanauri-georgia/aragvi-confluence-pasanauri-georgia-1445.webp",
-        "name": "Aragvi Confluence, Pasanauri",
-        "caption": "Confluence of the Black and White Aragvi rivers near Pasanauri, Georgia",
+        "name": "Black and White Aragvi Confluence, Pasanauri",
+        "caption": "Black and White Aragvi Confluence, Pasanauri",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -9421,7 +10440,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-10-days-celebration/friendship-monument-gudauri-georgia/friendship-monument-gudauri-georgia-1448.webp",
         "name": "Friendship Monument, Gudauri",
-        "caption": "Mosaic panorama of the Friendship Monument near Gudauri, Georgia",
+        "caption": "Friendship Monument, Gudauri",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -9434,7 +10453,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-10-days-celebration/gergeti-trinity-church-kazbegi-georgia/gergeti-trinity-church-kazbegi-georgia-1448.webp",
         "name": "Gergeti Trinity Church, Kazbegi",
-        "caption": "Gergeti Trinity Church on a hill below the Caucasus peaks near Stepantsminda, Georgia",
+        "caption": "Gergeti Trinity Church, Kazbegi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -9447,7 +10466,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-10-days-celebration/mount-kazbek-stepantsminda-georgia/mount-kazbek-stepantsminda-georgia-1024.webp",
         "name": "Mount Kazbek, Stepantsminda",
-        "caption": "Snow-capped Mount Kazbek rising above Stepantsminda village, Georgia",
+        "caption": "Mount Kazbek, Stepantsminda",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -9460,7 +10479,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-10-days-celebration/stalin-museum-gori-georgia/stalin-museum-gori-georgia-1536.webp",
         "name": "Stalin Museum, Gori",
-        "caption": "Marble bust of Stalin inside the Stalin Museum in Gori, Georgia",
+        "caption": "Stalin Museum, Gori",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -9473,7 +10492,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-10-days-celebration/uplistsikhe-cave-town-gori-georgia/uplistsikhe-cave-town-gori-georgia-1448.webp",
         "name": "Uplistsikhe Cave Town, Gori",
-        "caption": "The rock-hewn cave town of Uplistsikhe near Gori, Georgia",
+        "caption": "Uplistsikhe Cave Town, Gori",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -9486,7 +10505,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-10-days-celebration/gelati-monastery-kutaisi-georgia/gelati-monastery-kutaisi-georgia-1491.webp",
         "name": "Gelati Monastery, Kutaisi",
-        "caption": "Gelati Monastery, a UNESCO World Heritage site near Kutaisi, Georgia",
+        "caption": "Gelati Monastery, Kutaisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -9499,7 +10518,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-10-days-celebration/green-bazaar-kutaisi-georgia/green-bazaar-kutaisi-georgia-1448.webp",
         "name": "Green Bazaar, Kutaisi",
-        "caption": "Fresh produce stalls under the yellow steel roof of Kutaisi's Green Bazaar, Georgia",
+        "caption": "Green Bazaar, Kutaisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -9512,7 +10531,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-10-days-celebration/prometheus-cave-imereti-georgia/prometheus-cave-imereti-georgia-1536.webp",
         "name": "Prometheus Cave, Imereti",
-        "caption": "Illuminated stalactites and walkway inside Prometheus Cave near Kutaisi, Georgia",
+        "caption": "Prometheus Cave, Imereti",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -9525,7 +10544,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-10-days-celebration/martvili-canyon-samegrelo-georgia/martvili-canyon-samegrelo-georgia-1086.webp",
         "name": "Martvili Canyon, Samegrelo",
-        "caption": "Emerald water flowing through the forested limestone gorge of Martvili Canyon in Samegrelo, Georgia",
+        "caption": "Martvili Canyon, Samegrelo",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -9538,7 +10557,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-10-days-celebration/batumi-black-sea-beach-batumi-georgia/batumi-black-sea-beach-batumi-georgia-1448.webp",
         "name": "Black Sea Beach, Batumi",
-        "caption": "Pebble beach and turquoise Black Sea water under a bright sky in Batumi, Georgia",
+        "caption": "Black Sea Beach, Batumi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -9550,8 +10569,8 @@ export const tours = [
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-10-days-celebration/batumi-skyline-batumi-georgia/batumi-skyline-batumi-georgia-1448.webp",
-        "name": "Seaside Skyline, Batumi",
-        "caption": "Batumi seaside skyline with the Alphabetic Tower and high-rises seen from the pebble beach, Georgia",
+        "name": "Batumi Skyline",
+        "caption": "Batumi Skyline",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -9564,7 +10583,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-10-days-celebration/ali-and-nino-statue-batumi-georgia/ali-and-nino-statue-batumi-georgia-1024.webp",
         "name": "Ali and Nino Statue, Batumi",
-        "caption": "The moving steel Ali and Nino statue on the Batumi seafront, Georgia",
+        "caption": "Ali and Nino Statue, Batumi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -9577,7 +10596,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-10-days-celebration/batumi-sunset-black-sea-batumi-georgia/batumi-sunset-black-sea-batumi-georgia-1448.webp",
         "name": "Black Sea Sunset, Batumi",
-        "caption": "Sunset over the Black Sea from the Batumi shore, Georgia",
+        "caption": "Black Sea Sunset, Batumi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -9589,8 +10608,8 @@ export const tours = [
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-10-days-celebration/alphabetic-tower-batumi-georgia/alphabetic-tower-batumi-georgia-1122.webp",
-        "name": "Alphabetic Tower, Batumi",
-        "caption": "The illuminated Alphabetic Tower at night in Batumi, Georgia",
+        "name": "Alphabet Tower, Batumi",
+        "caption": "Alphabet Tower, Batumi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -10025,6 +11044,15 @@ export const tours = [
         "width": 1491,
         "height": 1055,
         "caption": {
+          "en": "Gelati Monastery, Kutaisi",
+          "de": "Gelati-Kloster, Kutaissi",
+          "fr": "Monastère de Gélati, Koutaïssi",
+          "es": "Monasterio de Gelati, Kutaisi",
+          "nl": "Gelati-klooster, Koetaisi",
+          "cs": "Klášter Gelati, Kutaisi",
+          "pl": "Klasztor Gelati, Kutaisi"
+        },
+        "altText": {
           "en": "Gelati Monastery, a UNESCO World Heritage site near Kutaisi, Georgia",
           "de": "Kloster Gelati, UNESCO-Welterbe bei Kutaissi, Georgien",
           "fr": "Monastère de Guélati, site du patrimoine mondial de l'UNESCO près de Koutaïssi, Géorgie",
@@ -10041,6 +11069,15 @@ export const tours = [
         "width": 1536,
         "height": 1024,
         "caption": {
+          "en": "Prometheus Cave, Imereti",
+          "de": "Prometheus-Höhle, Imeretien",
+          "fr": "Grotte de Prométhée, Iméréthie",
+          "es": "Cueva de Prometeo, Imereti",
+          "nl": "Prometheus-grot, Imereti",
+          "cs": "Prométheova jeskyně, Imeretie",
+          "pl": "Jaskinia Prometeusza, Imeretia"
+        },
+        "altText": {
           "en": "Illuminated stalactites and walkway inside Prometheus Cave near Kutaisi, Georgia",
           "de": "Beleuchtete Stalaktiten und Steg in der Prometheus-Höhle bei Kutaissi, Georgien",
           "fr": "Stalactites illuminées et passerelle dans la grotte de Prométhée près de Koutaïssi, Géorgie",
@@ -10058,6 +11095,15 @@ export const tours = [
         "height": 1448,
         "objectPosition": "center 30%",
         "caption": {
+          "en": "Martvili Canyon, Samegrelo",
+          "de": "Martvili-Schlucht, Samegrelo",
+          "fr": "Canyon de Martvili, Samegrelo",
+          "es": "Cañón de Martvili, Samegrelo",
+          "nl": "Martvili-kloof, Samegrelo",
+          "cs": "Kaňon Martvili, Samegrelo",
+          "pl": "Kanion Martvili, Samegrelo"
+        },
+        "altText": {
           "en": "Emerald water flowing through the forested limestone gorge of Martvili Canyon in Samegrelo, Georgia",
           "de": "Smaragdgrünes Wasser in der bewaldeten Kalksteinschlucht des Martvili-Canyons in Samegrelo, Georgien",
           "fr": "Eaux émeraude s'écoulant dans les gorges calcaires boisées du canyon de Martvili en Samegrelo, Géorgie",
@@ -10074,6 +11120,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Black Sea Beach, Batumi",
+          "de": "Schwarzmeerstrand, Batumi",
+          "fr": "Plage de la mer Noire, Batoumi",
+          "es": "Playa del mar Negro, Batumi",
+          "nl": "Strand aan de Zwarte Zee, Batumi",
+          "cs": "Pláž Černého moře, Batumi",
+          "pl": "Plaża nad Morzem Czarnym, Batumi"
+        },
+        "altText": {
           "en": "Pebble beach and turquoise Black Sea water under a bright sky in Batumi, Georgia",
           "de": "Kieselstrand und türkisfarbenes Schwarzes Meer unter hellem Himmel in Batumi, Georgien",
           "fr": "Plage de galets et eau turquoise de la mer Noire sous un ciel lumineux à Batoumi, Géorgie",
@@ -10090,6 +11145,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Batumi Skyline",
+          "de": "Skyline von Batumi",
+          "fr": "Panorama de Batoumi",
+          "es": "Perfil urbano de Batumi",
+          "nl": "Skyline van Batumi",
+          "cs": "Panoráma Batumi",
+          "pl": "Panorama Batumi"
+        },
+        "altText": {
           "en": "Batumi seaside skyline with the Alphabetic Tower and high-rises seen from the pebble beach, Georgia",
           "de": "Die Skyline von Batumi mit dem Alphabet-Turm und Hochhäusern vom Kieselstrand aus, Georgien",
           "fr": "La ligne d'horizon balnéaire de Batoumi avec la tour de l'Alphabet et les gratte-ciel depuis la plage de galets, Géorgie",
@@ -10107,6 +11171,15 @@ export const tours = [
         "height": 1536,
         "objectPosition": "center 30%",
         "caption": {
+          "en": "Ali and Nino Statue, Batumi",
+          "de": "Ali-und-Nino-Statue, Batumi",
+          "fr": "Statue Ali et Nino, Batoumi",
+          "es": "Estatua de Ali y Nino, Batumi",
+          "nl": "Ali en Nino-beeld, Batumi",
+          "cs": "Socha Ali a Nino, Batumi",
+          "pl": "Rzeźba Ali i Nino, Batumi"
+        },
+        "altText": {
           "en": "The moving steel Ali and Nino statue on the Batumi seafront, Georgia",
           "de": "Die bewegliche Stahlskulptur Ali und Nino an der Uferpromenade von Batumi, Georgien",
           "fr": "La sculpture mobile en acier Ali et Nino sur le front de mer de Batoumi, Géorgie",
@@ -10123,6 +11196,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Black Sea Sunset, Batumi",
+          "de": "Sonnenuntergang, Batumi",
+          "fr": "Coucher de soleil, Batoumi",
+          "es": "Atardecer, Batumi",
+          "nl": "Zonsondergang, Batumi",
+          "cs": "Západ slunce, Batumi",
+          "pl": "Zachód słońca, Batumi"
+        },
+        "altText": {
           "en": "Sunset over the Black Sea from the Batumi shore, Georgia",
           "de": "Sonnenuntergang über dem Schwarzen Meer von der Küste Batumis, Georgien",
           "fr": "Coucher de soleil sur la mer Noire depuis le rivage de Batoumi, Géorgie",
@@ -10139,6 +11221,15 @@ export const tours = [
         "width": 1445,
         "height": 1089,
         "caption": {
+          "en": "Batumi Boulevard",
+          "de": "Batumi-Boulevard",
+          "fr": "Boulevard de Batumi",
+          "es": "Bulevar de Batumi",
+          "nl": "Boulevard van Batumi",
+          "cs": "Batumská promenáda",
+          "pl": "Bulwar w Batumi"
+        },
+        "altText": {
           "en": "Illuminated fountains and chessboard paving on the Batumi Boulevard promenade at night, Georgia",
           "de": "Beleuchtete Springbrunnen und Schachbrettpflaster auf der Promenade des Batumi-Boulevards bei Nacht, Georgien",
           "fr": "Fontaines illuminées et pavage en damier sur la promenade du boulevard de Batoumi la nuit, Géorgie",
@@ -10156,6 +11247,15 @@ export const tours = [
         "height": 1402,
         "objectPosition": "center 30%",
         "caption": {
+          "en": "Alphabet Tower, Batumi",
+          "de": "Alphabet-Turm, Batumi",
+          "fr": "Tour de l'Alphabet, Batoumi",
+          "es": "Torre del Alfabeto, Batumi",
+          "nl": "Alfabettoren, Batumi",
+          "cs": "Abecední věž, Batumi",
+          "pl": "Wieża Alfabetu, Batumi"
+        },
+        "altText": {
           "en": "The illuminated Alphabetic Tower at night in Batumi, Georgia",
           "de": "Der beleuchtete Alphabet-Turm bei Nacht in Batumi, Georgien",
           "fr": "La tour de l'Alphabet illuminée la nuit à Batoumi, Géorgie",
@@ -10172,6 +11272,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Old Town and Narikala, Tbilisi",
+          "de": "Altstadt und Narikala, Tiflis",
+          "fr": "Vieille ville et Narikala, Tbilissi",
+          "es": "Casco antiguo y Narikala, Tiflis",
+          "nl": "Oude stad en Narikala, Tbilisi",
+          "cs": "Staré město a Narikala, Tbilisi",
+          "pl": "Stare Miasto i Narikala, Tbilisi"
+        },
+        "altText": {
           "en": "View of Old Tbilisi with Narikala Fortress and the aerial cable car, Georgia",
           "de": "Blick auf die Altstadt von Tiflis mit der Festung Narikala und der Seilbahn, Georgien",
           "fr": "Vue du vieux Tbilissi avec la forteresse de Narikala et le téléphérique, Géorgie",
@@ -10188,6 +11297,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Narikala Fortress, Tbilisi",
+          "de": "Festung Narikala, Tiflis",
+          "fr": "Forteresse de Narikala, Tbilissi",
+          "es": "Fortaleza de Narikala, Tiflis",
+          "nl": "Narikala-vesting, Tbilisi",
+          "cs": "Pevnost Narikala, Tbilisi",
+          "pl": "Twierdza Narikala, Tbilisi"
+        },
+        "altText": {
           "en": "Stone entrance and walls of Narikala Fortress in Tbilisi, Georgia",
           "de": "Steinernes Tor und Mauern der Festung Narikala in Tiflis, Georgien",
           "fr": "Porte et remparts en pierre de la forteresse de Narikala à Tbilissi, Géorgie",
@@ -10205,6 +11323,15 @@ export const tours = [
         "height": 1448,
         "objectPosition": "center 30%",
         "caption": {
+          "en": "Gabriadze Clock Tower, Tbilisi",
+          "de": "Gabriadze-Uhrturm, Tiflis",
+          "fr": "Tour de l'horloge Gabriadze, Tbilissi",
+          "es": "Torre del reloj Gabriadze, Tiflis",
+          "nl": "Gabriadze-klokkentoren, Tbilisi",
+          "cs": "Hodinová věž Gabriadze, Tbilisi",
+          "pl": "Wieża zegarowa Gabriadzego, Tbilisi"
+        },
+        "altText": {
           "en": "The leaning Gabriadze clock tower in Old Tbilisi, Georgia",
           "de": "Der schiefe Gabriadze-Uhrturm in der Altstadt von Tiflis, Georgien",
           "fr": "La tour de l'horloge penchée de Gabriadze dans le vieux Tbilissi, Géorgie",
@@ -10221,6 +11348,15 @@ export const tours = [
         "width": 1672,
         "height": 941,
         "caption": {
+          "en": "Holy Trinity Cathedral, Tbilisi",
+          "de": "Sameba-Kathedrale, Tiflis",
+          "fr": "Cathédrale Sameba, Tbilissi",
+          "es": "Catedral Sameba, Tiflis",
+          "nl": "Sameba-kathedraal, Tbilisi",
+          "cs": "Katedrála Sameba, Tbilisi",
+          "pl": "Katedra Sameba, Tbilisi"
+        },
+        "altText": {
           "en": "Holy Trinity Cathedral (Sameba), the largest cathedral in Tbilisi, Georgia",
           "de": "Sameba-Kathedrale (Heilige Dreifaltigkeit), die größte Kathedrale in Tiflis, Georgien",
           "fr": "Cathédrale de la Sainte-Trinité (Sameba), la plus grande cathédrale de Tbilissi, Géorgie",
@@ -10237,6 +11373,15 @@ export const tours = [
         "width": 1920,
         "height": 1439,
         "caption": {
+          "en": "Jvari Monastery, Mtskheta",
+          "de": "Dschwari-Kloster, Mzcheta",
+          "fr": "Monastère de Djvari, Mtskheta",
+          "es": "Monasterio de Jvari, Mtsjeta",
+          "nl": "Jvari-klooster, Mtscheta",
+          "cs": "Klášter Džvari, Mccheta",
+          "pl": "Klasztor Dżwari, Mccheta"
+        },
+        "altText": {
           "en": "Aerial view of Jvari Monastery above Mtskheta, a UNESCO World Heritage site, Georgia",
           "de": "Luftaufnahme des Dschwari-Klosters über Mzcheta, UNESCO-Welterbe, Georgien",
           "fr": "Vue aérienne du monastère de Djvari au-dessus de Mtskheta, site du patrimoine mondial de l'UNESCO, Géorgie",
@@ -10253,6 +11398,15 @@ export const tours = [
         "width": 1540,
         "height": 1021,
         "caption": {
+          "en": "Svetitskhoveli Cathedral, Mtskheta",
+          "de": "Swetizchoweli-Kathedrale, Mzcheta",
+          "fr": "Cathédrale de Svétitskhovéli, Mtskheta",
+          "es": "Catedral de Svetitsjoveli, Mtsjeta",
+          "nl": "Svetitschoveli-kathedraal, Mtscheta",
+          "cs": "Katedrála Sveticchoveli, Mccheta",
+          "pl": "Katedra Sweticchoweli, Mccheta"
+        },
+        "altText": {
           "en": "Svetitskhoveli Cathedral, a UNESCO World Heritage site in Mtskheta, Georgia",
           "de": "Swetizchoweli-Kathedrale, UNESCO-Welterbe in Mzcheta, Georgien",
           "fr": "Cathédrale de Svetitskhoveli, site du patrimoine mondial de l'UNESCO à Mtskheta, Géorgie",
@@ -10269,6 +11423,15 @@ export const tours = [
         "width": 1445,
         "height": 1089,
         "caption": {
+          "en": "Black and White Aragvi Confluence, Pasanauri",
+          "de": "Zusammenfluss der Schwarzen und Weißen Aragwi, Pasanauri",
+          "fr": "Confluent de l'Aragvi noire et blanche, Pasanauri",
+          "es": "Confluencia de los Aragvi Negro y Blanco, Pasanauri",
+          "nl": "Samenvloeiing van de Zwarte en Witte Aragvi, Pasanauri",
+          "cs": "Soutok Černé a Bílé Aragvi, Pasanauri",
+          "pl": "Zbieg Czarnej i Białej Aragwi, Pasanauri"
+        },
+        "altText": {
           "en": "Confluence of the Black and White Aragvi rivers near Pasanauri, Georgia",
           "de": "Zusammenfluss der Schwarzen und Weißen Aragwi bei Pasanauri, Georgien",
           "fr": "Confluent de l'Aragvi noire et de l'Aragvi blanche près de Pasanauri, Géorgie",
@@ -10285,6 +11448,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Friendship Monument, Gudauri",
+          "de": "Freundschaftsdenkmal, Gudauri",
+          "fr": "Monument de l'Amitié, Gudauri",
+          "es": "Monumento a la Amistad, Gudauri",
+          "nl": "Vriendschapsmonument, Gudauri",
+          "cs": "Pomník přátelství, Gudauri",
+          "pl": "Pomnik Przyjaźni, Gudauri"
+        },
+        "altText": {
           "en": "Mosaic panorama of the Friendship Monument near Gudauri, Georgia",
           "de": "Mosaik-Panorama des Freundschaftsdenkmals bei Gudauri, Georgien",
           "fr": "Panorama en mosaïque du Monument de l'Amitié près de Gudauri, Géorgie",
@@ -10301,6 +11473,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Gergeti Trinity Church, Kazbegi",
+          "de": "Gergeti-Dreifaltigkeitskirche, Kasbegi",
+          "fr": "Église de la Trinité de Guerguéti, Kazbegi",
+          "es": "Iglesia de la Trinidad de Gergeti, Kazbegi",
+          "nl": "Gergeti-Drie-eenheidskerk, Kazbegi",
+          "cs": "Kostel Nejsvětější Trojice v Gergeti, Kazbegi",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti, Kazbegi"
+        },
+        "altText": {
           "en": "Gergeti Trinity Church on a hill below the Caucasus peaks near Stepantsminda, Georgia",
           "de": "Gergeti-Dreifaltigkeitskirche auf einem Hügel unterhalb der Kaukasusgipfel bei Stepanzminda, Georgien",
           "fr": "Église de la Trinité de Guerguéti sur une colline sous les sommets du Caucase près de Stepantsminda, Géorgie",
@@ -10317,6 +11498,15 @@ export const tours = [
         "width": 1536,
         "height": 1024,
         "caption": {
+          "en": "Stalin Museum, Gori",
+          "de": "Stalin-Museum, Gori",
+          "fr": "Musée Staline, Gori",
+          "es": "Museo de Stalin, Gori",
+          "nl": "Stalinmuseum, Gori",
+          "cs": "Muzeum Stalina, Gori",
+          "pl": "Muzeum Stalina, Gori"
+        },
+        "altText": {
           "en": "Marble bust of Stalin inside the Stalin Museum in Gori, Georgia",
           "de": "Marmorbüste Stalins im Stalin-Museum in Gori, Georgien",
           "fr": "Buste en marbre de Staline au musée Staline à Gori, Géorgie",
@@ -10333,6 +11523,15 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
+          "en": "Uplistsikhe Cave Town, Gori",
+          "de": "Höhlenstadt Uplisziche, Gori",
+          "fr": "Cité troglodyte d'Ouplistsikhé, Gori",
+          "es": "Ciudad rupestre de Uplistsikhe, Gori",
+          "nl": "Grottenstad Oeplistsiche, Gori",
+          "cs": "Skalní město Uplisciche, Gori",
+          "pl": "Miasto jaskiniowe Uplisciche, Gori"
+        },
+        "altText": {
           "en": "The rock-hewn cave town of Uplistsikhe near Gori, Georgia",
           "de": "Die in Fels gehauene Höhlenstadt Uplisziche bei Gori, Georgien",
           "fr": "La cité troglodyte d'Ouplistsikhé près de Gori, Géorgie",
@@ -10363,7 +11562,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-wonders-11-day/gelati-monastery-kutaisi-georgia/gelati-monastery-kutaisi-georgia-1491.webp",
         "name": "Gelati Monastery, Kutaisi",
-        "caption": "Gelati Monastery, a UNESCO World Heritage site near Kutaisi, Georgia",
+        "caption": "Gelati Monastery, Kutaisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -10376,7 +11575,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-wonders-11-day/prometheus-cave-imereti-georgia/prometheus-cave-imereti-georgia-1536.webp",
         "name": "Prometheus Cave, Imereti",
-        "caption": "Illuminated stalactites and walkway inside Prometheus Cave near Kutaisi, Georgia",
+        "caption": "Prometheus Cave, Imereti",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -10389,7 +11588,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-wonders-11-day/martvili-canyon-samegrelo-georgia/martvili-canyon-samegrelo-georgia-1086.webp",
         "name": "Martvili Canyon, Samegrelo",
-        "caption": "Emerald water flowing through the forested limestone gorge of Martvili Canyon in Samegrelo, Georgia",
+        "caption": "Martvili Canyon, Samegrelo",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -10402,7 +11601,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-wonders-11-day/batumi-black-sea-beach-batumi-georgia/batumi-black-sea-beach-batumi-georgia-1448.webp",
         "name": "Black Sea Beach, Batumi",
-        "caption": "Pebble beach and turquoise Black Sea water under a bright sky in Batumi, Georgia",
+        "caption": "Black Sea Beach, Batumi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -10414,8 +11613,8 @@ export const tours = [
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-wonders-11-day/batumi-skyline-batumi-georgia/batumi-skyline-batumi-georgia-1448.webp",
-        "name": "Seaside Skyline, Batumi",
-        "caption": "Batumi seaside skyline with the Alphabetic Tower and high-rises seen from the pebble beach, Georgia",
+        "name": "Batumi Skyline",
+        "caption": "Batumi Skyline",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -10428,7 +11627,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-wonders-11-day/ali-and-nino-statue-batumi-georgia/ali-and-nino-statue-batumi-georgia-1024.webp",
         "name": "Ali and Nino Statue, Batumi",
-        "caption": "The moving steel Ali and Nino statue on the Batumi seafront, Georgia",
+        "caption": "Ali and Nino Statue, Batumi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -10441,7 +11640,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-wonders-11-day/batumi-sunset-black-sea-batumi-georgia/batumi-sunset-black-sea-batumi-georgia-1448.webp",
         "name": "Black Sea Sunset, Batumi",
-        "caption": "Sunset over the Black Sea from the Batumi shore, Georgia",
+        "caption": "Black Sea Sunset, Batumi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -10453,8 +11652,8 @@ export const tours = [
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-wonders-11-day/batumi-boulevard-batumi-georgia/batumi-boulevard-batumi-georgia-1445.webp",
-        "name": "Batumi Boulevard, Batumi",
-        "caption": "Illuminated fountains and chessboard paving on the Batumi Boulevard promenade at night, Georgia",
+        "name": "Batumi Boulevard",
+        "caption": "Batumi Boulevard",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -10466,8 +11665,8 @@ export const tours = [
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-wonders-11-day/alphabetic-tower-batumi-georgia/alphabetic-tower-batumi-georgia-1122.webp",
-        "name": "Alphabetic Tower, Batumi",
-        "caption": "The illuminated Alphabetic Tower at night in Batumi, Georgia",
+        "name": "Alphabet Tower, Batumi",
+        "caption": "Alphabet Tower, Batumi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -10479,8 +11678,8 @@ export const tours = [
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-wonders-11-day/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia-1448.webp",
-        "name": "Old Town & Cable Car, Tbilisi",
-        "caption": "View of Old Tbilisi with Narikala Fortress and the aerial cable car, Georgia",
+        "name": "Old Town and Narikala, Tbilisi",
+        "caption": "Old Town and Narikala, Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -10493,7 +11692,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-wonders-11-day/narikala-fortress-tbilisi-georgia/narikala-fortress-tbilisi-georgia-1448.webp",
         "name": "Narikala Fortress, Tbilisi",
-        "caption": "Stone entrance and walls of Narikala Fortress in Tbilisi, Georgia",
+        "caption": "Narikala Fortress, Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -10506,7 +11705,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-wonders-11-day/gabriadze-clock-tower-tbilisi-georgia/gabriadze-clock-tower-tbilisi-georgia-1086.webp",
         "name": "Gabriadze Clock Tower, Tbilisi",
-        "caption": "The leaning Gabriadze clock tower in Old Tbilisi, Georgia",
+        "caption": "Gabriadze Clock Tower, Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -10519,7 +11718,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-wonders-11-day/holy-trinity-cathedral-tbilisi-georgia/holy-trinity-cathedral-tbilisi-georgia-1672.webp",
         "name": "Holy Trinity Cathedral, Tbilisi",
-        "caption": "Holy Trinity Cathedral (Sameba), the largest cathedral in Tbilisi, Georgia",
+        "caption": "Holy Trinity Cathedral, Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -10532,7 +11731,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-wonders-11-day/jvari-monastery-mtskheta-georgia/jvari-monastery-mtskheta-georgia-1920.webp",
         "name": "Jvari Monastery, Mtskheta",
-        "caption": "Aerial view of Jvari Monastery above Mtskheta, a UNESCO World Heritage site, Georgia",
+        "caption": "Jvari Monastery, Mtskheta",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -10545,7 +11744,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-wonders-11-day/svetitskhoveli-cathedral-mtskheta-georgia/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
         "name": "Svetitskhoveli Cathedral, Mtskheta",
-        "caption": "Svetitskhoveli Cathedral, a UNESCO World Heritage site in Mtskheta, Georgia",
+        "caption": "Svetitskhoveli Cathedral, Mtskheta",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -10557,8 +11756,8 @@ export const tours = [
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-wonders-11-day/aragvi-confluence-pasanauri-georgia/aragvi-confluence-pasanauri-georgia-1445.webp",
-        "name": "Aragvi Confluence, Pasanauri",
-        "caption": "Confluence of the Black and White Aragvi rivers near Pasanauri, Georgia",
+        "name": "Black and White Aragvi Confluence, Pasanauri",
+        "caption": "Black and White Aragvi Confluence, Pasanauri",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -10571,7 +11770,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-wonders-11-day/friendship-monument-gudauri-georgia/friendship-monument-gudauri-georgia-1448.webp",
         "name": "Friendship Monument, Gudauri",
-        "caption": "Mosaic panorama of the Friendship Monument near Gudauri, Georgia",
+        "caption": "Friendship Monument, Gudauri",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -10584,7 +11783,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-wonders-11-day/gergeti-trinity-church-kazbegi-georgia/gergeti-trinity-church-kazbegi-georgia-1448.webp",
         "name": "Gergeti Trinity Church, Kazbegi",
-        "caption": "Gergeti Trinity Church on a hill below the Caucasus peaks near Stepantsminda, Georgia",
+        "caption": "Gergeti Trinity Church, Kazbegi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -10597,7 +11796,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-wonders-11-day/stalin-museum-gori-georgia/stalin-museum-gori-georgia-1536.webp",
         "name": "Stalin Museum, Gori",
-        "caption": "Marble bust of Stalin inside the Stalin Museum in Gori, Georgia",
+        "caption": "Stalin Museum, Gori",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -10610,7 +11809,7 @@ export const tours = [
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-wonders-11-day/uplistsikhe-cave-town-gori-georgia/uplistsikhe-cave-town-gori-georgia-1448.webp",
         "name": "Uplistsikhe Cave Town, Gori",
-        "caption": "The rock-hewn cave town of Uplistsikhe near Gori, Georgia",
+        "caption": "Uplistsikhe Cave Town, Gori",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -10875,7 +12074,7 @@ export const tours = [
           "fr": "Tour de l'horloge Gabriadze, Tbilissi",
           "es": "Torre del reloj Gabriadze, Tiflis",
           "nl": "Gabriadze-klokkentoren, Tbilisi",
-          "cs": "Gabriadzeho hodinová věž, Tbilisi",
+          "cs": "Hodinová věž Gabriadze, Tbilisi",
           "pl": "Wieża zegarowa Gabriadzego, Tbilisi"
         },
         "altText": {
@@ -10945,13 +12144,13 @@ export const tours = [
         "width": 1445,
         "height": 1089,
         "caption": {
-          "en": "Aragvi Confluence, Pasanauri",
-          "de": "Aragwi-Zusammenfluss, Pasanauri",
-          "fr": "Confluent de l'Aragvi, Pasanauri",
-          "es": "Confluencia del Aragvi, Pasanauri",
-          "nl": "Samenvloeiing van de Aragvi, Pasanauri",
-          "cs": "Soutok Aragvi, Pasanauri",
-          "pl": "Ujście Aragwi, Pasanauri"
+          "en": "Black and White Aragvi Confluence, Pasanauri",
+          "de": "Zusammenfluss der Schwarzen und Weißen Aragwi, Pasanauri",
+          "fr": "Confluent de l'Aragvi noire et blanche, Pasanauri",
+          "es": "Confluencia de los Aragvi Negro y Blanco, Pasanauri",
+          "nl": "Samenvloeiing van de Zwarte en Witte Aragvi, Pasanauri",
+          "cs": "Soutok Černé a Bílé Aragvi, Pasanauri",
+          "pl": "Zbieg Czarnej i Białej Aragwi, Pasanauri"
         },
         "altText": {
           "en": "Confluence of the Black and White Aragvi rivers at Pasanauri, Georgia",
@@ -10975,7 +12174,7 @@ export const tours = [
           "fr": "Monument de l'Amitié, Gudauri",
           "es": "Monumento a la Amistad, Gudauri",
           "nl": "Vriendschapsmonument, Gudauri",
-          "cs": "Památník přátelství, Gudauri",
+          "cs": "Pomník přátelství, Gudauri",
           "pl": "Pomnik Przyjaźni, Gudauri"
         },
         "altText": {
@@ -10996,12 +12195,12 @@ export const tours = [
         "height": 1086,
         "caption": {
           "en": "Gergeti Trinity Church, Kazbegi",
-          "de": "Gergeti-Kirche, Kasbegi",
-          "fr": "Église de Guerguéti, Kazbegi",
-          "es": "Iglesia de Gergeti, Kazbegi",
-          "nl": "Gergeti-kerk, Kazbegi",
-          "cs": "Kostel Gergeti, Kazbegi",
-          "pl": "Cerkiew Gergeti, Kazbegi"
+          "de": "Gergeti-Dreifaltigkeitskirche, Kasbegi",
+          "fr": "Église de la Trinité de Guerguéti, Kazbegi",
+          "es": "Iglesia de la Trinidad de Gergeti, Kazbegi",
+          "nl": "Gergeti-Drie-eenheidskerk, Kazbegi",
+          "cs": "Kostel Nejsvětější Trojice v Gergeti, Kazbegi",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti, Kazbegi"
         },
         "altText": {
           "en": "Gergeti Trinity Church set against the Caucasus mountains near Kazbegi, Georgia",
@@ -11024,7 +12223,7 @@ export const tours = [
           "de": "Stalin-Museum, Gori",
           "fr": "Musée Staline, Gori",
           "es": "Museo de Stalin, Gori",
-          "nl": "Stalin-museum, Gori",
+          "nl": "Stalinmuseum, Gori",
           "cs": "Muzeum Stalina, Gori",
           "pl": "Muzeum Stalina, Gori"
         },
@@ -11098,7 +12297,7 @@ export const tours = [
           "en": "Prometheus Cave, Imereti",
           "de": "Prometheus-Höhle, Imeretien",
           "fr": "Grotte de Prométhée, Iméréthie",
-          "es": "Cueva de Prometeo, Imericia",
+          "es": "Cueva de Prometeo, Imereti",
           "nl": "Prometheus-grot, Imereti",
           "cs": "Prométheova jeskyně, Imeretie",
           "pl": "Jaskinia Prometeusza, Imeretia"
@@ -11202,7 +12401,7 @@ export const tours = [
           "de": "Schwarzmeerstrand, Batumi",
           "fr": "Plage de la mer Noire, Batoumi",
           "es": "Playa del mar Negro, Batumi",
-          "nl": "Zwarte Zee-strand, Batumi",
+          "nl": "Strand aan de Zwarte Zee, Batumi",
           "cs": "Pláž Černého moře, Batumi",
           "pl": "Plaża nad Morzem Czarnym, Batumi"
         },
@@ -11250,10 +12449,10 @@ export const tours = [
         "caption": {
           "en": "Batumi Skyline",
           "de": "Skyline von Batumi",
-          "fr": "Gratte-ciel de Batoumi",
-          "es": "Horizonte de Batumi",
+          "fr": "Panorama de Batoumi",
+          "es": "Perfil urbano de Batumi",
           "nl": "Skyline van Batumi",
-          "cs": "Panorama Batumi",
+          "cs": "Panoráma Batumi",
           "pl": "Panorama Batumi"
         },
         "altText": {
@@ -11338,7 +12537,7 @@ export const tours = [
         "@id": "https://www.hikasustravel.com/images/files/tbilisi-cityscape-georgia-1200.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/tbilisi-cityscape-georgia-1200.webp",
         "name": "Tbilisi",
-        "caption": "Panoramic view of Tbilisi with Narikala Fortress, the Mtkvari River and cable car, capital of Georgia",
+        "caption": "Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -11355,7 +12554,7 @@ export const tours = [
         "@id": "https://www.hikasustravel.com/images/files/holy-trinity-cathedral-tbilisi-georgia-1200.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/holy-trinity-cathedral-tbilisi-georgia-1200.webp",
         "name": "Holy Trinity Cathedral, Tbilisi",
-        "caption": "Holy Trinity Cathedral (Sameba) with its golden dome in Tbilisi, Georgia",
+        "caption": "Holy Trinity Cathedral, Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -11372,7 +12571,7 @@ export const tours = [
         "@id": "https://www.hikasustravel.com/images/files/gabriadze-clock-tower-tbilisi-georgia-1086.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/gabriadze-clock-tower-tbilisi-georgia-1086.webp",
         "name": "Gabriadze Clock Tower, Tbilisi",
-        "caption": "The leaning Gabriadze Clock Tower in the Old Town of Tbilisi, Georgia",
+        "caption": "Gabriadze Clock Tower, Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -11389,7 +12588,7 @@ export const tours = [
         "@id": "https://www.hikasustravel.com/images/files/jvari-monastery-aerial-mtskheta-georgia-1200.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/jvari-monastery-aerial-mtskheta-georgia-1200.webp",
         "name": "Jvari Monastery, Mtskheta",
-        "caption": "The 6th-century Jvari Monastery, a UNESCO World Heritage site above Mtskheta, Georgia",
+        "caption": "Jvari Monastery, Mtskheta",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -11406,7 +12605,7 @@ export const tours = [
         "@id": "https://www.hikasustravel.com/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1200.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1200.webp",
         "name": "Svetitskhoveli Cathedral, Mtskheta",
-        "caption": "Svetitskhoveli Cathedral, a UNESCO World Heritage site in Mtskheta, Georgia",
+        "caption": "Svetitskhoveli Cathedral, Mtskheta",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -11422,8 +12621,8 @@ export const tours = [
         "@type": "ImageObject",
         "@id": "https://www.hikasustravel.com/images/files/black-white-aragvi-confluence-pasanauri-georgia-1200.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/black-white-aragvi-confluence-pasanauri-georgia-1200.webp",
-        "name": "Aragvi Confluence, Pasanauri",
-        "caption": "Confluence of the Black and White Aragvi rivers at Pasanauri, Georgia",
+        "name": "Black and White Aragvi Confluence, Pasanauri",
+        "caption": "Black and White Aragvi Confluence, Pasanauri",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -11440,7 +12639,7 @@ export const tours = [
         "@id": "https://www.hikasustravel.com/images/files/friendship-monument-gudauri-georgia-1200.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/friendship-monument-gudauri-georgia-1200.webp",
         "name": "Friendship Monument, Gudauri",
-        "caption": "The mosaic Russia–Georgia Friendship Monument on the Georgian Military Highway at Gudauri, Georgia",
+        "caption": "Friendship Monument, Gudauri",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -11457,7 +12656,7 @@ export const tours = [
         "@id": "https://www.hikasustravel.com/images/files/gergeti-trinity-church-kazbegi-georgia-1200.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/gergeti-trinity-church-kazbegi-georgia-1200.webp",
         "name": "Gergeti Trinity Church, Kazbegi",
-        "caption": "Gergeti Trinity Church set against the Caucasus mountains near Kazbegi, Georgia",
+        "caption": "Gergeti Trinity Church, Kazbegi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -11474,7 +12673,7 @@ export const tours = [
         "@id": "https://www.hikasustravel.com/images/files/stalin-museum-gori-georgia-1200.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/stalin-museum-gori-georgia-1200.webp",
         "name": "Stalin Museum, Gori",
-        "caption": "Marble bust displayed in the Joseph Stalin Museum in Gori, Georgia",
+        "caption": "Stalin Museum, Gori",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -11491,7 +12690,7 @@ export const tours = [
         "@id": "https://www.hikasustravel.com/images/files/uplistsikhe-mtkvari-valley-view-georgia-1200.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/uplistsikhe-mtkvari-valley-view-georgia-1200.webp",
         "name": "Uplistsikhe, Gori",
-        "caption": "Uplistsikhe ancient rock-hewn cave town overlooking the Mtkvari valley near Gori, Georgia",
+        "caption": "Uplistsikhe, Gori",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -11508,7 +12707,7 @@ export const tours = [
         "@id": "https://www.hikasustravel.com/images/files/gelati-monastery-kutaisi-georgia-1200.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/gelati-monastery-kutaisi-georgia-1200.webp",
         "name": "Gelati Monastery, Kutaisi",
-        "caption": "Gelati Monastery, a UNESCO World Heritage site near Kutaisi, Georgia",
+        "caption": "Gelati Monastery, Kutaisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -11525,7 +12724,7 @@ export const tours = [
         "@id": "https://www.hikasustravel.com/images/files/prometheus-cave-imereti-georgia-1200.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/prometheus-cave-imereti-georgia-1200.webp",
         "name": "Prometheus Cave, Imereti",
-        "caption": "Illuminated stalactite formations inside Prometheus Cave in Imereti, Georgia",
+        "caption": "Prometheus Cave, Imereti",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -11542,7 +12741,7 @@ export const tours = [
         "@id": "https://www.hikasustravel.com/images/files/martvili-canyon-georgia-1086.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/martvili-canyon-georgia-1086.webp",
         "name": "Martvili Canyon",
-        "caption": "Turquoise water in the forested gorge of Martvili Canyon, Georgia",
+        "caption": "Martvili Canyon",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -11559,7 +12758,7 @@ export const tours = [
         "@id": "https://www.hikasustravel.com/images/files/ushguli-village-svaneti-georgia-1024.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/ushguli-village-svaneti-georgia-1024.webp",
         "name": "Ushguli, Svaneti",
-        "caption": "Stone houses and a Svan tower below the snow-capped Caucasus in Ushguli, Upper Svaneti, a UNESCO World Heritage site, Georgia",
+        "caption": "Ushguli, Svaneti",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -11576,7 +12775,7 @@ export const tours = [
         "@id": "https://www.hikasustravel.com/images/files/ushguli-tower-svaneti-georgia-1024.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/ushguli-tower-svaneti-georgia-1024.webp",
         "name": "Ushguli Tower, Svaneti",
-        "caption": "Medieval Svan tower beside a mountain stream in Ushguli, Upper Svaneti, a UNESCO World Heritage site, Georgia",
+        "caption": "Ushguli Tower, Svaneti",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -11593,7 +12792,7 @@ export const tours = [
         "@id": "https://www.hikasustravel.com/images/files/batumi-black-sea-beach-georgia-1200.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/batumi-black-sea-beach-georgia-1200.webp",
         "name": "Black Sea Beach, Batumi",
-        "caption": "Pebble beach and waves on the Black Sea coast at Batumi, Georgia",
+        "caption": "Black Sea Beach, Batumi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -11610,7 +12809,7 @@ export const tours = [
         "@id": "https://www.hikasustravel.com/images/files/batumi-sunset-georgia-1200.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/batumi-sunset-georgia-1200.webp",
         "name": "Black Sea Sunset, Batumi",
-        "caption": "Red sunset over the Black Sea at Batumi, Georgia",
+        "caption": "Black Sea Sunset, Batumi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -11627,7 +12826,7 @@ export const tours = [
         "@id": "https://www.hikasustravel.com/images/files/batumi-skyline-georgia-1200.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/batumi-skyline-georgia-1200.webp",
         "name": "Batumi Skyline",
-        "caption": "Modern Batumi skyline seen from the pebble beach on the Black Sea, Georgia",
+        "caption": "Batumi Skyline",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -11644,7 +12843,7 @@ export const tours = [
         "@id": "https://www.hikasustravel.com/images/files/ali-and-nino-statue-batumi-georgia-1024.webp#image",
         "contentUrl": "https://www.hikasustravel.com/images/files/ali-and-nino-statue-batumi-georgia-1024.webp",
         "name": "Ali and Nino Statue, Batumi",
-        "caption": "The moving steel Ali and Nino (Man and Woman) statue on the Batumi seafront, Georgia",
+        "caption": "Ali and Nino Statue, Batumi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -12153,13 +13352,13 @@ export const tours = [
         "height": 1536,
         "objectPosition": "center",
         "caption": {
-          "en": "Ushguli Svan Tower",
-          "de": "Swanenturm in Uschguli",
-          "fr": "Tour svane d'Ouchgouli",
-          "es": "Torre svana de Ushguli",
-          "nl": "Svan-toren in Oesjgoeli",
-          "cs": "Svanská věž v Ušguli",
-          "pl": "Wieża swańska w Uszguli"
+          "en": "Ushguli Svan Tower, Svaneti",
+          "de": "Swanenturm in Uschguli, Swanetien",
+          "fr": "Tour svane d'Ouchgouli, Svanétie",
+          "es": "Torre svana de Ushguli, Svaneti",
+          "nl": "Svan-toren in Oesjgoeli, Svaneti",
+          "cs": "Svanská věž v Ušguli, Svanetie",
+          "pl": "Wieża swańska w Uszguli, Swanetia"
         },
         "altText": {
           "en": "Medieval Svan tower and mountain stream in Ushguli village, Upper Svaneti, Georgia",
@@ -12208,10 +13407,10 @@ export const tours = [
         "caption": {
           "en": "Batumi Skyline",
           "de": "Skyline von Batumi",
-          "fr": "Skyline de Batoumi",
+          "fr": "Panorama de Batoumi",
           "es": "Perfil urbano de Batumi",
           "nl": "Skyline van Batumi",
-          "cs": "Panorama Batumi",
+          "cs": "Panoráma Batumi",
           "pl": "Panorama Batumi"
         },
         "altText": {
@@ -12260,10 +13459,10 @@ export const tours = [
         "height": 1402,
         "objectPosition": "center",
         "caption": {
-          "en": "Alphabetic Tower, Batumi",
+          "en": "Alphabet Tower, Batumi",
           "de": "Alphabet-Turm, Batumi",
-          "fr": "Tour alphabétique, Batoumi",
-          "es": "Torre Alfabética, Batumi",
+          "fr": "Tour de l'Alphabet, Batoumi",
+          "es": "Torre del Alfabeto, Batumi",
           "nl": "Alfabettoren, Batumi",
           "cs": "Abecední věž, Batumi",
           "pl": "Wieża Alfabetu, Batumi"
@@ -12290,7 +13489,7 @@ export const tours = [
           "de": "Schwarzmeerstrand, Batumi",
           "fr": "Plage de la mer Noire, Batoumi",
           "es": "Playa del mar Negro, Batumi",
-          "nl": "Zwarte Zee-strand, Batumi",
+          "nl": "Strand aan de Zwarte Zee, Batumi",
           "cs": "Pláž Černého moře, Batumi",
           "pl": "Plaża nad Morzem Czarnym, Batumi"
         },
@@ -12396,7 +13595,7 @@ export const tours = [
           "fr": "Tour de l'horloge Gabriadze, Tbilissi",
           "es": "Torre del reloj Gabriadze, Tiflis",
           "nl": "Gabriadze-klokkentoren, Tbilisi",
-          "cs": "Gabriadzeho hodinová věž, Tbilisi",
+          "cs": "Hodinová věž Gabriadze, Tbilisi",
           "pl": "Wieża zegarowa Gabriadzego, Tbilisi"
         },
         "altText": {
@@ -12474,7 +13673,7 @@ export const tours = [
           "fr": "Monument de l'Amitié, Gudauri",
           "es": "Monumento a la Amistad, Gudauri",
           "nl": "Vriendschapsmonument, Gudauri",
-          "cs": "Památník přátelství, Gudauri",
+          "cs": "Pomník přátelství, Gudauri",
           "pl": "Pomnik Przyjaźni, Gudauri"
         },
         "altText": {
@@ -12575,11 +13774,11 @@ export const tours = [
         "caption": {
           "en": "Uplistsikhe Cave Town, Gori",
           "de": "Höhlenstadt Uplisziche, Gori",
-          "fr": "Ville troglodyte d'Ouplistsikhé, Gori",
-          "es": "Ciudad rupestre de Uplistsije, Gori",
+          "fr": "Cité troglodyte d'Ouplistsikhé, Gori",
+          "es": "Ciudad rupestre de Uplistsikhe, Gori",
           "nl": "Grottenstad Oeplistsiche, Gori",
           "cs": "Skalní město Uplisciche, Gori",
-          "pl": "Skalne miasto Uplisciche, Gori"
+          "pl": "Miasto jaskiniowe Uplisciche, Gori"
         },
         "altText": {
           "en": "Rock-hewn cave town of Uplistsikhe above the Mtkvari valley near Gori, Georgia",
@@ -12684,7 +13883,7 @@ export const tours = [
         "contentUrl": "https://www.hikasustravel.com/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/ushguli-svan-tower-svaneti-georgia-1024.webp",
         "width": 1024,
         "height": 1536,
-        "caption": "Ushguli Svan Tower",
+        "caption": "Ushguli Svan Tower, Svaneti",
         "description": "Medieval Svan tower and mountain stream in Ushguli village, Upper Svaneti, Georgia",
         "creditText": "Hikasus Travel",
         "creator": {
@@ -12768,7 +13967,7 @@ export const tours = [
         "contentUrl": "https://www.hikasustravel.com/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/alphabetic-tower-batumi-georgia-1122.webp",
         "width": 1122,
         "height": 1402,
-        "caption": "Alphabetic Tower, Batumi",
+        "caption": "Alphabet Tower, Batumi",
         "description": "Illuminated Alphabetic Tower at night on the Batumi seafront, Georgia",
         "creditText": "Hikasus Travel",
         "creator": {
@@ -13336,7 +14535,7 @@ export const tours = [
         "caption": {
           "en": "Erekle II Monument, Telavi",
           "de": "Erekle-II.-Denkmal, Telawi",
-          "fr": "Monument d'Erekle II, Telavi",
+          "fr": "Monument d'Erekle II, Télavi",
           "es": "Monumento a Erekle II, Telavi",
           "nl": "Erekle II-monument, Telavi",
           "cs": "Pomník Erekleho II., Telavi",
@@ -13418,7 +14617,7 @@ export const tours = [
           "fr": "Tour de l'horloge Gabriadze, Tbilissi",
           "es": "Torre del reloj Gabriadze, Tiflis",
           "nl": "Gabriadze-klokkentoren, Tbilisi",
-          "cs": "Gabriadzeho hodinová věž, Tbilisi",
+          "cs": "Hodinová věž Gabriadze, Tbilisi",
           "pl": "Wieża zegarowa Gabriadzego, Tbilisi"
         },
         "altText": {
@@ -13496,7 +14695,7 @@ export const tours = [
           "fr": "Monument de l'Amitié, Gudauri",
           "es": "Monumento a la Amistad, Gudauri",
           "nl": "Vriendschapsmonument, Gudauri",
-          "cs": "Památník přátelství, Gudauri",
+          "cs": "Pomník přátelství, Gudauri",
           "pl": "Pomnik Przyjaźni, Gudauri"
         },
         "altText": {
@@ -13597,11 +14796,11 @@ export const tours = [
         "caption": {
           "en": "Uplistsikhe Cave Town, Gori",
           "de": "Höhlenstadt Uplisziche, Gori",
-          "fr": "Ville troglodyte d'Ouplistsikhé, Gori",
-          "es": "Ciudad rupestre de Uplistsije, Gori",
+          "fr": "Cité troglodyte d'Ouplistsikhé, Gori",
+          "es": "Ciudad rupestre de Uplistsikhe, Gori",
           "nl": "Grottenstad Oeplistsiche, Gori",
           "cs": "Skalní město Uplisciche, Gori",
-          "pl": "Skalne miasto Uplisciche, Gori"
+          "pl": "Miasto jaskiniowe Uplisciche, Gori"
         },
         "altText": {
           "en": "Rock-hewn cave town of Uplistsikhe above the Mtkvari valley near Gori, Georgia",
@@ -13727,13 +14926,13 @@ export const tours = [
         "height": 1536,
         "objectPosition": "center",
         "caption": {
-          "en": "Ushguli Svan Tower",
-          "de": "Swanenturm in Uschguli",
-          "fr": "Tour svane d'Ouchgouli",
-          "es": "Torre svana de Ushguli",
-          "nl": "Svan-toren in Oesjgoeli",
-          "cs": "Svanská věž v Ušguli",
-          "pl": "Wieża swańska w Uszguli"
+          "en": "Ushguli Svan Tower, Svaneti",
+          "de": "Swanenturm in Uschguli, Swanetien",
+          "fr": "Tour svane d'Ouchgouli, Svanétie",
+          "es": "Torre svana de Ushguli, Svaneti",
+          "nl": "Svan-toren in Oesjgoeli, Svaneti",
+          "cs": "Svanská věž v Ušguli, Svanetie",
+          "pl": "Wieża swańska w Uszguli, Swanetia"
         },
         "altText": {
           "en": "Medieval Svan tower and mountain stream in Ushguli village, Upper Svaneti, Georgia",
@@ -13755,10 +14954,10 @@ export const tours = [
         "caption": {
           "en": "Batumi Skyline",
           "de": "Skyline von Batumi",
-          "fr": "Skyline de Batoumi",
+          "fr": "Panorama de Batoumi",
           "es": "Perfil urbano de Batumi",
           "nl": "Skyline van Batumi",
-          "cs": "Panorama Batumi",
+          "cs": "Panoráma Batumi",
           "pl": "Panorama Batumi"
         },
         "altText": {
@@ -13807,10 +15006,10 @@ export const tours = [
         "height": 1402,
         "objectPosition": "center",
         "caption": {
-          "en": "Alphabetic Tower, Batumi",
+          "en": "Alphabet Tower, Batumi",
           "de": "Alphabet-Turm, Batumi",
-          "fr": "Tour alphabétique, Batoumi",
-          "es": "Torre Alfabética, Batumi",
+          "fr": "Tour de l'Alphabet, Batoumi",
+          "es": "Torre del Alfabeto, Batumi",
           "nl": "Alfabettoren, Batumi",
           "cs": "Abecední věž, Batumi",
           "pl": "Wieża Alfabetu, Batumi"
@@ -14233,7 +15432,7 @@ export const tours = [
         "contentUrl": "https://www.hikasustravel.com/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/ushguli-svan-tower-svaneti-georgia-1024.webp",
         "width": 1024,
         "height": 1536,
-        "caption": "Ushguli Svan Tower",
+        "caption": "Ushguli Svan Tower, Svaneti",
         "description": "Medieval Svan tower and mountain stream in Ushguli village, Upper Svaneti, Georgia",
         "creditText": "Hikasus Travel",
         "creator": {
@@ -14296,7 +15495,7 @@ export const tours = [
         "contentUrl": "https://www.hikasustravel.com/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/alphabetic-tower-batumi-georgia-1122.webp",
         "width": 1122,
         "height": 1402,
-        "caption": "Alphabetic Tower, Batumi",
+        "caption": "Alphabet Tower, Batumi",
         "description": "Illuminated Alphabetic Tower at night on the Batumi seafront, Georgia",
         "creditText": "Hikasus Travel",
         "creator": {
@@ -15302,10 +16501,10 @@ export const tours = [
         "caption": {
           "en": "Batumi Skyline",
           "de": "Skyline von Batumi",
-          "fr": "Skyline de Batoumi",
+          "fr": "Panorama de Batoumi",
           "es": "Perfil urbano de Batumi",
           "nl": "Skyline van Batumi",
-          "cs": "Panorama Batumi",
+          "cs": "Panoráma Batumi",
           "pl": "Panorama Batumi"
         },
         "altText": {
