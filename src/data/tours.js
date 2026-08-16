@@ -124,6 +124,36 @@ export const tours = [
        English string reaches a non-English page. */
     "gallery": [
       {
+        /* Route map — the itinerary infographic leads the gallery, rendered as
+           an ordinary tile: same markup, ladder, lazy loading and lightbox as
+           the 20 photos below it. Native 2400x1600 is already 3:2, so the
+           uniform tile crop takes nothing off it and it needs no crop anchor. */
+        "src": "/images/group-tours/georgia-group-tour/route-map-group-tour-georgia-2400.webp",
+        "base": "/images/group-tours/georgia-group-tour/route-map-group-tour-georgia",
+        "widths": [768, 1200, 1600, 2400],
+        "width": 2400,
+        "height": 1600,
+        "fallbackWidth": 1200,
+        "caption": {
+          "en": "Georgia Group Tour – Route Map",
+          "de": "Georgien Gruppenreise – Routenkarte",
+          "fr": "Circuit en groupe en Géorgie – Carte de l'itinéraire",
+          "es": "Tour Grupal por Georgia – Mapa de la ruta",
+          "nl": "Georgië Groepsreis – Routekaart",
+          "cs": "Skupinový zájezd po Gruzii – Mapa trasy",
+          "pl": "Wycieczka grupowa po Gruzji – Mapa trasy"
+        },
+        "altText": {
+          "en": "Illustrated route map of the 14-day Georgia group tour, based in Tbilisi, Kazbegi, Kutaisi, Batumi and Telavi, taking in Mtskheta and Ananuri, Kazbegi's Gergeti Trinity Church, Gori and Uplistsikhe, Chiatura and the Katskhi Pillar, Prometheus Cave and Martvili Canyon, the Batumi coast, and the Kakheti wine towns of Tsinandali, Sighnaghi and Bodbe, with a scenic train from Batumi to Tbilisi",
+          "de": "Illustrierte Routenkarte der 14-tägigen Georgien-Gruppenreise mit Standorten in Tiflis, Kasbegi, Kutaissi, Batumi und Telawi, mit Mzcheta und Ananuri, der Gergeti-Dreifaltigkeitskirche bei Kasbegi, Gori und Uplisziche, Tschiatura und der Katskhi-Säule, der Prometheus-Höhle und der Martvili-Schlucht, der Küste von Batumi und den kachetischen Weinorten Zinandali, Signachi und Bodbe, mit einer Zugfahrt von Batumi nach Tiflis",
+          "fr": "Carte illustrée de l'itinéraire du circuit de groupe de 14 jours en Géorgie, basé à Tbilissi, Kazbegi, Koutaïssi, Batumi et Télavi, avec Mtskheta et Ananouri, l'église de la Trinité de Gergeti près de Kazbegi, Gori et Ouplistsikhé, Chiatura et le pilier de Katskhi, la grotte de Prométhée et le canyon de Martvili, la côte de Batumi et les villages viticoles de Kakhétie Tsinandali, Sighnaghi et Bodbé, avec un train panoramique de Batumi à Tbilissi",
+          "es": "Mapa ilustrado de la ruta del tour en grupo de 14 días por Georgia, con base en Tiflis, Kazbegi, Kutaisi, Batumi y Telavi, con Mtskheta y Ananuri, la iglesia de la Trinidad de Gergeti cerca de Kazbegi, Gori y Uplistsikhe, Chiatura y el pilar de Katskhi, la cueva de Prometeo y el cañón de Martvili, la costa de Batumi y los pueblos vinícolas de Kakheti Tsinandali, Sighnaghi y Bodbe, con un tren panorámico de Batumi a Tiflis",
+          "nl": "Geïllustreerde routekaart van de 14-daagse Georgische groepsreis met standplaatsen in Tbilisi, Kazbegi, Koetaisi, Batumi en Telavi, met Mtskheta en Ananuri, de Gergeti-Drie-eenheidskerk bij Kazbegi, Gori en Oeplistsiche, Chiatura en de Katskhi-pilaar, de Prometheusgrot en de Martvili-kloof, de kust van Batumi en de Kachetische wijndorpen Tsinandali, Sighnaghi en Bodbe, met een panoramische trein van Batumi naar Tbilisi",
+          "cs": "Ilustrovaná mapa trasy 14denního gruzínského skupinového zájezdu se základnami v Tbilisi, Kazbegi, Kutaisi, Batumi a Telavi, s Mcchetou a Ananuri, kostelem Nejsvětější Trojice v Gergeti u Kazbegi, Gori a Uplisciche, Čiaturou a pilířem Kacchi, jeskyní Prometheus a kaňonem Martvili, pobřežím Batumi a kachetskými vinařskými městy Cinandali, Sighnaghi a Bodbe, s malebným vlakem z Batumi do Tbilisi",
+          "pl": "Ilustrowana mapa trasy 14-dniowej gruzińskiej wycieczki grupowej z bazami w Tbilisi, Kazbegi, Kutaisi, Batumi i Telawi, obejmująca Mcchetę i Ananuri, cerkiew Trójcy Świętej w Gergeti koło Kazbegi, Gori i Uplisciche, Cziaturę i filar Kacchi, Jaskinię Prometeusza i kanion Martvili, wybrzeże Batumi oraz kachetyjskie miasteczka winiarskie Cinandali, Signagi i Bodbe, z widokowym pociągiem z Batumi do Tbilisi"
+        }
+      },
+      {
         /* #1 — Day 2 */
         "src": "/images/group-tours/georgia-group-tour/narikala-fortress-tbilisi-georgia-1448.webp",
         "base": "/images/group-tours/georgia-group-tour/narikala-fortress-tbilisi-georgia",
@@ -674,6 +704,27 @@ export const tours = [
        figcaption/alt never disagree. No representativeOfPage — the hero has
        no separate node on this tour. */
     "imageObjects": [
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/group-tours/georgia-group-tour/route-map-group-tour-georgia-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "caption": "Georgia Group Tour – Route Map",
+        "description": "Illustrated route map of the 14-day Georgia group tour, based in Tbilisi, Kazbegi, Kutaisi, Batumi and Telavi, taking in Mtskheta and Ananuri, Kazbegi's Gergeti Trinity Church, Gori and Uplistsikhe, Chiatura and the Katskhi Pillar, Prometheus Cave and Martvili Canyon, the Batumi coast, and the Kakheti wine towns of Tsinandali, Sighnaghi and Bodbe, with a scenic train from Batumi to Tbilisi",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Georgia"
+        }
+      },
       {
         "@type": "ImageObject",
         "contentUrl": "https://www.hikasustravel.com/images/group-tours/georgia-group-tour/narikala-fortress-tbilisi-georgia-1448.webp",
