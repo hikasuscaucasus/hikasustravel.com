@@ -10175,6 +10175,23 @@ select option:checked {
   outline: 3px solid var(--color-h3);
   outline-offset: 2px;
 }
+/* Card cover (Cities hub only — entries without an `image` get neither the
+   element nor the `--media` class, so the Regions and Places to Visit hubs are
+   untouched). The padding lives on the link itself, so the cover is bled back
+   out to the card edges with negative margins rather than restructuring the
+   card. `flex: none` stops the column stretching it; the card's own
+   `overflow: hidden` + border-radius clip the top corners. */
+.dest-hub-card__link--media,
+.dest-hub-card__pending--media { padding-top: 0; }
+.dest-hub-card__image {
+  flex: none;
+  margin: 0 -24px 16px;
+  height: 170px;
+  background-color: rgba(43, 78, 71, 0.08);
+}
+@media (max-width: 480px) {
+  .dest-hub-card__image { height: 190px; }
+}
 .dest-hub-card h3 {
   margin: 0 0 10px;
   padding-bottom: 0;

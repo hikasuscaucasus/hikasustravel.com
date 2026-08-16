@@ -54,6 +54,11 @@ export function CitiesHubPage() {
       fallbackName: c.name,
       published: c.published,
       to: c.published ? cityPath(c.slug) : null,
+      // Card cover. Read straight from the registry — the SAME `cities[].image`
+      // field the featured-city strip on /georgia renders — so the two pages can
+      // never drift: a city's photo is changed in one place and both follow.
+      // Matching is by slug because it is the entry itself being mapped.
+      image: c.image,
     }))
   return (
     <DestinationHub

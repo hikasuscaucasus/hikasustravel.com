@@ -1,6 +1,7 @@
 import { useContext, useMemo } from 'react'
 import HeroSection from './HeroSection'
 import FadeUp from './FadeUp'
+import BlurUpBackground from './BlurUpBackground'
 import Breadcrumbs from './Breadcrumbs'
 import LocaleLink from '../../i18n/LocaleLink'
 import useT from '../../i18n/useT'
@@ -137,6 +138,19 @@ export default function DestinationHub({
   const regionItems = (pages.destinationsRegions && pages.destinationsRegions.items) || {}
   const enCityItems = (enPages.destinationsCities && enPages.destinationsCities.items) || {}
   const enRegionItems = (enPages.destinationsRegions && enPages.destinationsRegions.items) || {}
+  // Optional card cover. Only the Cities hub supplies one (from the same
+  // `cities[].image` field the /georgia strip reads, so the two pages show the
+  // identical photo for a given slug). An entry without `image` renders exactly
+  // the markup this component produced before covers existed — which is why the
+  // Regions and Places to Visit hubs are byte-identical after this change.
+  const cover = (e) =>
+    e.image ? <BlurUpBackground src={e.image} className="dest-hub-card__image" /> : null
+  // The cover has to bleed to the card's edges, but the padding lives on the
+  // link/pending element itself. Rather than restructure the card (which would
+  // move markup on all three hubs), the image is pulled out with negative
+  // margins and this modifier drops the now-redundant top padding.
+  const mediaClass = (e, base) => (e.image ? `${base} ${base}--media` : base)
+
   const country = t('destinations.country')
   const locationLabel = (loc) => {
     if (!loc) return ''
@@ -172,7 +186,8 @@ export default function DestinationHub({
               {resolved.map((e) => (
                 <li className="dest-hub-card" key={e.slug}>
                   {e.published && e.to ? (
-                    <LocaleLink to={e.to} className="dest-hub-card__link">
+                    <LocaleLink to={e.to} className={mediaClass(e, 'dest-hub-card__link')}>
+                      {cover(e)}
                       <h3>{e.name}</h3>
                       {locationLabel(e.location) && (
                         <span className="dest-hub-card__loc">{locationLabel(e.location)}</span>
@@ -181,7 +196,8 @@ export default function DestinationHub({
                       {ctaKey && <span className="dest-hub-card__cta">{t(ctaKey)}</span>}
                     </LocaleLink>
                   ) : (
-                    <div className="dest-hub-card__pending">
+                    <div className={mediaClass(e, 'dest-hub-card__pending')}>
+                      {cover(e)}
                       <h3>{e.name}</h3>
                       {locationLabel(e.location) && (
                         <span className="dest-hub-card__loc">{locationLabel(e.location)}</span>
