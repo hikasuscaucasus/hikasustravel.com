@@ -5688,6 +5688,13 @@ tour-info h2 a,
   margin-bottom: 50px;
   border-bottom: none;
 }
+/* `.td-section__title` is `--color-h2`, the same value as this card's background, so
+   the "Book This Tour" heading rendered dark-green-on-dark-green. Match the subtitle,
+   which already uses the cream. Scoped to the tour-page section (both classes) so the
+   contact page's plain `.td-book-inline` is unaffected. */
+.td-section.td-book-inline .td-section__title {
+  color: var(--color-bg);
+}
 
 /* Booking Form */
 .td-form {
@@ -5707,6 +5714,11 @@ tour-info h2 a,
 .td-form__group textarea,
 .td-form__group select {
   width: 100%;
+  /* The global `select { width: 220px; max-width: 300px }` rules (and the mobile
+     override of them) otherwise cap these fields below their column, leaving the
+     selects visibly narrower than the inputs next to them. */
+  max-width: 100%;
+  min-width: 0;
   padding: 12px 14px;
   border: 1.5px solid rgba(239, 239, 215, 0.25);
   border-radius: 8px;
@@ -5731,14 +5743,28 @@ tour-info h2 a,
 .td-form__group textarea {
   resize: vertical;
 }
+/* The `background` shorthand above resets background-image, which wiped the arrow
+   the global `select` rule draws — and `appearance: none` left no native one either,
+   so these read as text inputs. Redraw it in the card's cream, and reserve room so a
+   long translated option ("Preferowana data...", "Stredni trida") never runs under it. */
+.td-form__group select {
+  padding-right: 40px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><path fill='%23efefd7' d='M6 9l4-5H2z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 12px;
+}
 .td-form__row {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* minmax(0, 1fr) — a plain 1fr floors at min-content, so a date input's intrinsic
+     width or a long translated label could push a column past the card edge. */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
   margin-bottom: 20px;
 }
 .td-form__row .td-form__group {
   margin-bottom: 0;
+  min-width: 0;
 }
 .td-form__submit {
   display: inline-block;
@@ -5841,6 +5867,9 @@ tour-info h2 a,
   .td-form__row {
     grid-template-columns: 1fr;
     gap: 0;
+    /* Stacked, each group already carries the 20px gap below; keeping the row's own
+       margin too made every second field sit 40px down instead of 20px. */
+    margin-bottom: 0;
   }
   .td-form__row .td-form__group {
     margin-bottom: 20px;
@@ -8313,6 +8342,14 @@ select option:checked {
   .td-section {
     padding: calc(var(--indent) * 1.5) 0;
   }
+  /* The enquiry section carries BOTH classes, so the rule above (later in the file
+     than `.td-book-inline`, same specificity) was zeroing the card's side padding:
+     every field sat flush on a 16px-rounded edge and looked cut. Restore it here,
+     where the compound selector outranks `.td-section`. ContactPage's plain
+     `.td-book-inline` never hit this and is untouched. */
+  .td-section.td-book-inline {
+    padding: calc(var(--indent) * 1.5) var(--indent);
+  }
   .incl {
     grid-template-columns: 1fr;
     gap: var(--indent);
@@ -8320,6 +8357,9 @@ select option:checked {
   .td-form__row {
     grid-template-columns: 1fr;
     gap: 0;
+    /* Stacked, each group already carries the 20px gap below; keeping the row's own
+       margin too made every second field sit 40px down instead of 20px. */
+    margin-bottom: 0;
   }
   .td-form__row .td-form__group {
     margin-bottom: 20px;
