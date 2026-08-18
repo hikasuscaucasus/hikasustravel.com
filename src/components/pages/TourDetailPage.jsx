@@ -298,10 +298,14 @@ export default function TourDetailPage() {
     ? (tour.pricePerPerson ? parseFloat(tour.pricePerPerson.replace(/[^0-9.]/g, '')) : null)
     : getStartingPrice(tour.pricing)
 
-  // Tour highlights for the overview. Prefer an explicit `highlights` list
-  // (translated or base) when a tour provides one; otherwise fall back to the
-  // first 4 included items so tours without highlights are unchanged.
-  const highlightItems = tt?.highlights || tour.highlights || (includedItems ? includedItems.slice(0, 4) : [])
+  // Tour highlights for the overview: the tour's own `highlights` list
+  // (translated or base) and nothing else. There used to be a fallback to the
+  // first 4 `included` items, which just repeated the top of "What's Included"
+  // a few sections further down — generic service lines (accommodation,
+  // transfers, entrance fees, still water) rather than anything specific to the
+  // route. Tours without real highlights now render no block at all; the
+  // included list itself is untouched and still renders in its own section.
+  const highlightItems = tt?.highlights || tour.highlights || []
 
   return (
     <>
