@@ -4530,6 +4530,48 @@ export const tours = [
     // mirroring the hero's imageMeta.alt[lang]). No captions supplied per locale.
     "gallery": [
       {
+        /* Route map, tile #1. Was a standalone <figure> above the gallery
+           (English-only, native 642x428); now a normal gallery tile so it
+           joins the lightbox queue. `base` + `widths` opt this tile into the
+           responsive <picture> path (AVIF + WebP) that the three photos below
+           do not use — they keep their blur-up rendering. caption = the label,
+           altText = the <img alt>, alt = the visible description; the same
+           three slots the other route maps use. */
+        "src": "/images/files/gudauri-ski-tour-route-map-georgia-2400.webp",
+        "base": "/images/files/gudauri-ski-tour-route-map-georgia",
+        "widths": [768, 1200, 1600, 2400],
+        "fallbackWidth": 1200,
+        "width": 2400,
+        "height": 1600,
+        "caption": {
+          "en": "Route Map",
+          "de": "Routenkarte",
+          "fr": "Carte de l'itinéraire",
+          "es": "Mapa de la ruta",
+          "nl": "Routekaart",
+          "cs": "Mapa trasy",
+          "pl": "Mapa trasy"
+        },
+        "altText": {
+          "en": "Winter route map of the 7-day Gudauri ski tour: Tbilisi north up the Georgian Military Highway past Ananuri Fortress and the Friendship Monument to Gudauri, with five nights at the ski base and one in Tbilisi",
+          "de": "Winter-Routenkarte der 7-tägigen Gudauri-Skireise: von Tiflis nördlich über die Georgische Heerstraße vorbei an der Festung Ananuri und dem Freundschaftsdenkmal nach Gudauri, mit fünf Nächten am Skiort und einer in Tiflis",
+          "fr": "Carte de l'itinéraire hivernal du séjour ski de 7 jours à Gudauri : de Tbilissi vers le nord par la route militaire géorgienne, en passant par la forteresse d'Ananuri et le monument de l'Amitié, jusqu'à Gudauri, avec cinq nuits à la station et une à Tbilissi",
+          "es": "Mapa de la ruta invernal del tour de esquí de 7 días en Gudauri: de Tiflis hacia el norte por la Carretera Militar Georgiana, pasando por la fortaleza de Ananuri y el Monumento a la Amistad, hasta Gudauri, con cinco noches en la estación y una en Tiflis",
+          "nl": "Winterse routekaart van de 7-daagse skireis naar Gudauri: van Tbilisi noordwaarts over de Georgische Militaire Weg langs de Ananuri-vesting en het Vriendschapsmonument naar Gudauri, met vijf nachten bij de skibasis en één in Tbilisi",
+          "cs": "Zimní mapa trasy 7denního lyžařského zájezdu do Gudauri: z Tbilisi na sever po Gruzínské vojenské cestě kolem pevnosti Ananuri a Památníku přátelství do Gudauri, s pěti nocemi ve středisku a jednou v Tbilisi",
+          "pl": "Zimowa mapa trasy 7-dniowej wycieczki narciarskiej do Gudauri: z Tbilisi na północ Gruzińską Drogą Wojenną obok twierdzy Ananuri i Pomnika Przyjaźni do Gudauri, z pięcioma nocami w ośrodku i jedną w Tbilisi"
+        },
+        "alt": {
+          "en": "The 7-day winter route — Tbilisi to Gudauri and back up the Georgian Military Highway, with five nights at the resort",
+          "de": "Die 7-tägige Winterroute – von Tiflis nach Gudauri und zurück über die Georgische Heerstraße, mit fünf Nächten am Skiort",
+          "fr": "L'itinéraire hivernal de 7 jours – de Tbilissi à Gudauri et retour par la route militaire géorgienne, avec cinq nuits à la station",
+          "es": "La ruta invernal de 7 días: de Tiflis a Gudauri y vuelta por la Carretera Militar Georgiana, con cinco noches en la estación",
+          "nl": "De 7-daagse winterroute – van Tbilisi naar Gudauri en terug over de Georgische Militaire Weg, met vijf nachten bij de skiplaats",
+          "cs": "Zimní 7denní trasa – z Tbilisi do Gudauri a zpět po Gruzínské vojenské cestě, s pěti nocemi ve středisku",
+          "pl": "Zimowa 7-dniowa trasa – z Tbilisi do Gudauri i z powrotem Gruzińską Drogą Wojenną, z pięcioma nocami w ośrodku"
+        }
+      },
+      {
         "src": "/images/files/gudauri-ski-view-1448.webp",
         "caption": {
           "en": "Ski Slopes, Gudauri",
@@ -4639,10 +4681,10 @@ export const tours = [
       "@context": "https://schema.org",
       "@type": "ImageObject",
       "@id": "https://www.hikasustravel.com/en/private-tours/7-day-gudauri-ski-tour-from-tbilisi/#route-map",
-      "contentUrl": "https://www.hikasustravel.com/images/files/gudauri-ski-tour-route-map-georgia.png",
-      "width": 642,
-      "height": 428,
-      "caption": "Route map of the 7-day Gudauri winter ski tour: Tbilisi to Gudauri via the Georgian Military Highway, with a scenic stop at Ananuri Fortress and the Russia–Georgia Friendship Monument; five nights in Gudauri and one in Tbilisi.",
+      "contentUrl": "https://www.hikasustravel.com/images/files/gudauri-ski-tour-route-map-georgia-2400.webp",
+      "width": 2400,
+      "height": 1600,
+      "caption": "The 7-day winter route — Tbilisi to Gudauri and back up the Georgian Military Highway, with five nights at the resort",
       "creditText": "Hikasus Travel",
       "creator": { "@type": "Organization", "name": "Hikasus Travel" }
     },

@@ -1,4 +1,4 @@
-import { lazy, Suspense, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react'
+import { lazy, Suspense, useCallback, useContext, useEffect, useMemo, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import TourDetailHero from '../shared/TourDetailHero'
 import TourSectionNav from '../shared/TourSectionNav'
@@ -8,7 +8,7 @@ import { AccommodationSection, PriceSection } from '../shared/PricingGrid'
 import { getStartingPrice } from '../shared/pricingUtils'
 import IncludedNotIncluded from '../shared/IncludedNotIncluded'
 import TourInquiryForm from '../shared/TourInquiryForm'
-import Gallery, { GalleryLightbox } from '../shared/Gallery'
+import Gallery from '../shared/Gallery'
 // Lazy so mapbox-gl stays out of the main bundle — see HomePage. Only tours
 // that actually define `tour.map` reach the Suspense boundary below.
 const MapboxMap = lazy(() => import('../shared/MapboxMap'))
@@ -36,12 +36,6 @@ export default function TourDetailPage() {
   const handleSelectPackage = useCallback((value) => {
     setPackageSelection((prev) => ({ value, nonce: prev.nonce + 1 }))
   }, [])
-
-  // Route-map infographic lightbox (Gudauri EN page only). Reuses the shared
-  // GalleryLightbox; `routeMapTrigger` restores focus to the clickable figure
-  // when the expanded view closes.
-  const [routeMapOpen, setRouteMapOpen] = useState(false)
-  const routeMapTrigger = useRef(null)
 
   useEffect(() => {
     if (!tourTranslations) loadTourTranslations()
@@ -323,57 +317,11 @@ export default function TourDetailPage() {
 
       <div className="td-layout">
         <main className="td-main">
-          {/* Route-map infographic — English only (baked-in English text) and
-              only on the Gudauri ski tour. Native 642x428, below the fold
-              (hero is 100vh) so lazy; hero owns LCP, no fetchpriority. */}
-          {lang === 'en' && slug === '7-day-gudauri-ski-tour-from-tbilisi' && (
-            <figure className="body-img body-img--wide">
-              {/* Click/keyboard-open the infographic in the shared lightbox. Only
-                  the image is the click target (caption stays outside), mirroring
-                  the gallery-card pattern; the <picture>/<img> below are unchanged. */}
-              <div
-                ref={routeMapTrigger}
-                className="body-img__btn"
-                role="button"
-                tabIndex={0}
-                aria-label="Open Gudauri ski tour route map"
-                onClick={() => setRouteMapOpen(true)}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault()
-                    setRouteMapOpen(true)
-                  }
-                }}
-              >
-                <picture>
-                  <source type="image/avif" srcSet="/images/files/gudauri-ski-tour-route-map-georgia.avif" />
-                  <source type="image/webp" srcSet="/images/files/gudauri-ski-tour-route-map-georgia.webp" />
-                  <img
-                    src="/images/files/gudauri-ski-tour-route-map-georgia.png"
-                    width="642"
-                    height="428"
-                    loading="lazy"
-                    decoding="async"
-                    alt="Route map of the 7-day Gudauri winter ski tour: Tbilisi to Gudauri via the Georgian Military Highway, with a scenic stop at Ananuri Fortress and the Russia–Georgia Friendship Monument; five nights in Gudauri and one in Tbilisi."
-                  />
-                </picture>
-              </div>
-              <figcaption>The 7-day route: Tbilisi to Gudauri and back, via the Georgian Military Highway.</figcaption>
-              {routeMapOpen && (
-                <GalleryLightbox
-                  images={[{
-                    src: '/images/files/gudauri-ski-tour-route-map-georgia.png',
-                    caption: 'The 7-day route: Tbilisi to Gudauri and back, via the Georgian Military Highway.',
-                  }]}
-                  startIndex={0}
-                  label="Gudauri ski tour route map"
-                  onClose={() => { setRouteMapOpen(false); routeMapTrigger.current?.focus() }}
-                />
-              )}
-            </figure>
-          )}
-
-          {/* Gallery — placed before Overview so photos lead the page. */}
+          {/* Gallery — placed before Overview so photos lead the page. The
+              Gudauri ski tour's route map used to sit above this as its own
+              English-only <figure> with a private one-image lightbox; it is now
+              gallery tile #1 (see its entry in tours.js), so it shares the
+              gallery's lightbox queue and renders in all 7 locales. */}
           {tour.gallery && tour.gallery.length > 0 && (
             <section id="gallery" className="td-section">
               <FadeUp>
