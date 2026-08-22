@@ -85,8 +85,11 @@ export default function HomePage() {
                       <>
                         <div className="available">{t('tour.availableDates')}</div>
                         <div className="date-chips">
+                          {/* Sold-out departures stay visible on the tour page
+                              (flagged there) but are dropped from this card, so
+                              it only ever advertises bookable dates. */}
                           {groupTour.groupDates
-                            .filter((d) => !(d.start === '23 May' && d.end === '5 June' && d.year === '2026'))
+                            .filter((d) => !d.soldOut)
                             .map((d, i) => (
                             <div key={i} className="date-chip">
                               <span className="date-range">{d.start} – {d.end}</span>

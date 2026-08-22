@@ -1358,8 +1358,8 @@ export const tours = [
     },
     "tourFormTitle": "Georgia Group Tour",
     "groupDates": [
-      { "start": "23 May", "end": "5 June", "year": "2026" },
-      { "start": "5 September", "end": "18 September", "year": "2026" },
+      { "start": "23 May", "end": "5 June", "year": "2026", "soldOut": true },
+      { "start": "5 September", "end": "18 September", "year": "2026", "soldOut": true },
       { "start": "17 October", "end": "30 October", "year": "2026" }
     ],
     "pricePerPerson": "2,590",
@@ -1378,7 +1378,7 @@ export const tours = [
         "type": "dates",
         "values": [
           { "text": "23 May – 5 June 2026", "soldOut": true },
-          { "text": "5 September – 18 September 2026", "soldOut": false },
+          { "text": "5 September – 18 September 2026", "soldOut": true },
           { "text": "17 October – 30 October 2026", "soldOut": false }
         ]
       },

@@ -69,8 +69,9 @@ export default function GroupToursPage() {
                     <>
                       <div className="available">{t('tour.availableDates')}</div>
                       <div className="date-chips">
+                        {/* Same rule as the homepage card: only bookable dates. */}
                         {tour.groupDates
-                          .filter((d) => !(d.start === '23 May' && d.end === '5 June' && d.year === '2026'))
+                          .filter((d) => !d.soldOut)
                           .map((d, i) => (
                           <div key={i} className="date-chip">
                             <span className="date-range">{d.start} – {d.end}</span>
