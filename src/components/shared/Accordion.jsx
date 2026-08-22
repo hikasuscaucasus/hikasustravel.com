@@ -47,12 +47,29 @@ const DRIVING_DURATION = new Set([
   'Duración del trayecto', 'Duración de la conducción', 'Rijduur',
   'Doba jízdy', 'Délka jízdy', 'Czas jazdy',
 ].map(normLabel))
+/* A day whose leg is by rail instead of by road. Unlike the two above — where
+   the icon carries the meaning and the chip shows only the value — the rail
+   chip keeps its label, so it reads "Train ride: 4 hours" rather than a bare
+   "4 hours" that would be mistaken for a driving time. */
+const TRAIN_DURATION = new Set([
+  'Train ride', 'Zugfahrt', 'Trajet en train', 'Viaje en tren', 'Treinreis',
+  'Jízda vlakem', 'Przejazd pociągiem',
+].map(normLabel))
+
+/* Keep a chip's own label in front of its value, with the punctuation the
+   source wrote — French sets a space before the colon ("Trajet en train : 4
+   heures"), English does not. */
+const withLabel = (label, value) => {
+  const l = label.trim()
+  return `${/:\s*$/.test(l) ? l : `${l}:`} ${value.trim()}`
+}
 
 function extractTags(htmlContent) {
   let tourValue = null
   let drivingValue = null
+  let trainValue = null
 
-  // Lift the two duration lines out of their <li> (or <i>) wrapper, whatever
+  // Lift the duration lines out of their <li> (or <i>) wrapper, whatever
   // language they are written in, and drop them from the visible bullet list.
   let cleaned = htmlContent.replace(
     /<(li|i)>\s*<strong>([^<]*)<\/strong>([^<]*)<\/\1>/gi,
@@ -60,16 +77,21 @@ function extractTags(htmlContent) {
       const key = normLabel(label)
       if (TOUR_DURATION.has(key)) { if (tourValue === null) tourValue = value.trim(); return '' }
       if (DRIVING_DURATION.has(key)) { if (drivingValue === null) drivingValue = value.trim(); return '' }
+      if (TRAIN_DURATION.has(key)) {
+        if (trainValue === null) trainValue = withLabel(label, value)
+        return ''
+      }
       return whole
     }
   )
 
   // Fall back to a bare scan for any layout that does not use those wrappers.
-  if (tourValue === null || drivingValue === null) {
+  if (tourValue === null || drivingValue === null || trainValue === null) {
     for (const m of htmlContent.matchAll(/<strong>([^<]*)<\/strong>\s*([^<]*)/g)) {
       const key = normLabel(m[1])
       if (tourValue === null && TOUR_DURATION.has(key)) tourValue = m[2].trim()
       if (drivingValue === null && DRIVING_DURATION.has(key)) drivingValue = m[2].trim()
+      if (trainValue === null && TRAIN_DURATION.has(key)) trainValue = withLabel(m[1], m[2])
     }
   }
 
@@ -81,6 +103,7 @@ function extractTags(htmlContent) {
   const tags = []
   if (tourValue) tags.push({ icon: 'clock', label: tourValue })
   if (drivingValue) tags.push({ icon: 'car', label: drivingValue })
+  if (trainValue) tags.push({ icon: 'train', label: trainValue })
 
   return { tags, cleanedContent: cleaned }
 }
@@ -97,6 +120,15 @@ function CarIcon() {
   return (
     <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <path d="M5 17h14v-5l-2-5H7L5 12z"/><circle cx="7.5" cy="17.5" r="1.5"/><circle cx="16.5" cy="17.5" r="1.5"/>
+    </svg>
+  )
+}
+
+function TrainIcon() {
+  return (
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <rect x="5" y="3" width="14" height="13" rx="3"/><path d="M5 10h14"/><path d="M7 19l-2 2"/><path d="M17 19l2 2"/>
+      <circle cx="8.5" cy="13.5" r="1"/><circle cx="15.5" cy="13.5" r="1"/>
     </svg>
   )
 }
@@ -124,7 +156,7 @@ export function AccordionItem({ title, children, isOpen, onToggle, index, itiner
           <span className="acc__tags">
             {tags.map((tag, i) => (
               <span key={i} className="acc__tag">
-                {tag.icon === 'clock' ? <ClockIcon /> : <CarIcon />}
+                {tag.icon === 'clock' ? <ClockIcon /> : tag.icon === 'train' ? <TrainIcon /> : <CarIcon />}
                 {tag.label}
               </span>
             ))}
