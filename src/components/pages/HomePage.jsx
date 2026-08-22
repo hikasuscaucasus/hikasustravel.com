@@ -1,6 +1,7 @@
 import { lazy, Suspense, useContext } from 'react'
 import HeroSection from '../shared/HeroSection'
 import FadeUp from '../shared/FadeUp'
+import PrivateTourCollectionLinks from '../shared/PrivateTourCollectionLinks'
 import BlurUpBackground from '../shared/BlurUpBackground'
 // mapbox-gl is ~450 kB gzipped. Loading it lazily keeps it out of the main
 // bundle, so it no longer downloads on the ~370 routes that render no map at
@@ -114,6 +115,12 @@ export default function HomePage() {
         <div className="tours-grid-container">
           <FadeUp>
             <h2>{t('tour.privateTours')}</h2>
+          </FadeUp>
+          {/* Browse-by-interest links to the six category landing pages. They
+              sit under the heading and above the cards so those pages get a
+              homepage entry point without competing with the cards or CTAs. */}
+          <FadeUp>
+            <PrivateTourCollectionLinks variant="home" />
           </FadeUp>
           <FadeUp>
             <div className="tours-grid tours-grid--private-home">

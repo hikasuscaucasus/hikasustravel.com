@@ -9806,6 +9806,24 @@ select option:checked {
   border-color: var(--color-h2);
   color: var(--color-bg);
 }
+/* Homepage variant — the same chips inside the Private Tours section, between
+   its h2 and the card grid. Compact and centred, with no group heading, so it
+   stays secondary to the section heading and the tour tiles. */
+.ptc-links--home {
+  max-width: none;
+  padding: 0;
+  margin: 0 0 calc(var(--indent) * 1.1);
+  background: transparent;
+}
+.ptc-links--home .ptc-links__chips {
+  justify-content: center;
+  gap: 8px;
+}
+.ptc-links--home .ptc-chip {
+  padding: 6px 14px;
+  font-size: 0.82rem;
+}
+
 .ptc-intro-section {
   padding-bottom: 0;
 }
@@ -9818,9 +9836,12 @@ select option:checked {
   .ptc-links {
     padding: calc(var(--indent) * 1.2) var(--indent) 0;
   }
-  .ptc-chip {
-    padding: 7px 13px;
-    font-size: 0.8rem;
+  /* Taller padding on touch: the chips wrap to several rows here, so each one
+     needs a comfortable tap target rather than the compact desktop height. */
+  .ptc-chip,
+  .ptc-links--home .ptc-chip {
+    padding: 11px 14px;
+    font-size: 0.82rem;
   }
 }
 
