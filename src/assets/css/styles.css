@@ -9822,6 +9822,20 @@ select option:checked {
 .ptc-links--home .ptc-chip {
   padding: 6px 14px;
   font-size: 0.82rem;
+  /* The homepage Private Tours band is a DARK section (.home-items, background
+     var(--color-h2)), unlike the light /private-tours hub. The base .ptc-chip
+     colours — text var(--color-h2), border rgba(43,78,71,.28) — are therefore
+     the SAME colour as the background here: contrast 1.00:1, i.e. the chips
+     render at full opacity and correct size but are invisible. Invert them the
+     way the section already inverts its h2 and its card links. */
+  color: var(--color-bg);
+  border-color: rgba(239, 239, 215, 0.5);
+}
+.ptc-links--home .ptc-chip:hover,
+.ptc-links--home .ptc-chip:focus-visible {
+  background-color: var(--color-bg);
+  border-color: var(--color-bg);
+  color: var(--color-h2);
 }
 
 .ptc-intro-section {
