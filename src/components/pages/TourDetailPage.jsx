@@ -1,4 +1,4 @@
-import { lazy, Suspense, useCallback, useContext, useEffect, useMemo, useState } from 'react'
+import { useCallback, useContext, useEffect, useMemo, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import TourDetailHero from '../shared/TourDetailHero'
 import TourSectionNav from '../shared/TourSectionNav'
@@ -9,22 +9,17 @@ import { getStartingPrice } from '../shared/pricingUtils'
 import IncludedNotIncluded from '../shared/IncludedNotIncluded'
 import TourInquiryForm from '../shared/TourInquiryForm'
 import Gallery from '../shared/Gallery'
-// Lazy so mapbox-gl stays out of the main bundle — see HomePage. Only tours
-// that actually define `tour.map` reach the Suspense boundary below.
-const MapboxMap = lazy(() => import('../shared/MapboxMap'))
 import { tours } from '../../data/tours'
 import useT from '../../i18n/useT'
 import useLang from '../../i18n/useLang'
 import { I18nContext } from '../../i18n/I18nContext'
 import useSEO from '../../hooks/useSEO'
-import useIsHydrated from '../../hooks/useIsHydrated'
 import { autolinkHtml } from '../../utils/autolink'
 import { autolinkNodes } from '../../utils/autolinkReact'
 
 export default function TourDetailPage() {
   const { slug } = useParams()
   const t = useT()
-  const hydrated = useIsHydrated()
   const { lang } = useLang()
   const { tourTranslations, loadTourTranslations, pages } = useContext(I18nContext)
 
@@ -230,14 +225,13 @@ export default function TourDetailPage() {
     const hasPrice = (tour.pricing?.length > 0) || (tour.type === 'group' && tour.pricePerPerson)
 
     // Order must mirror the on-page section order:
-    // Gallery → Overview → Itinerary → Accommodation → Pricing → Map → Book
+    // Gallery → Overview → Itinerary → Accommodation → Pricing → Book
     const sections = []
     if (tour.gallery?.length > 0) sections.push({ id: 'gallery', labelKey: 'tour.gallery' })
     sections.push({ id: 'overview', labelKey: 'tour.overview' })
     if (itinerary?.length > 0) sections.push({ id: 'itinerary', labelKey: 'tour.itinerary' })
     if (tour.accommodations?.length > 0) sections.push({ id: 'accommodation', labelKey: 'pricing.accommodations' })
     if (hasPrice) sections.push({ id: 'pricing', labelKey: 'tour.pricing' })
-    if (tour.map?.center) sections.push({ id: 'tour-map', labelKey: 'tour.map' })
     sections.push({ id: 'book', labelKey: 'tour.book' })
     return sections
   }, [tour, tourTranslations])
@@ -453,29 +447,10 @@ export default function TourDetailPage() {
         </main>
       </div>
 
-      {/* 7. Map */}
-      {tour.map && tour.map.center && (
-        <section id="tour-map" className="td-map-section">
-          <div className="td-map-card">
-            <h2 className="td-section__title">{t('tour.routeMap')}</h2>
-            {/* Held back until after hydration — see the same slot on HomePage.
-                The placeholder is what both the static HTML and the first
-                browser render show; the map arrives with its chunk as before. */}
-            {!hydrated ? <section><div className="td-map" /></section> : (
-            <Suspense fallback={<section><div className="td-map" /></section>}>
-              <MapboxMap
-                id="tour-map-canvas"
-                center={tour.map.center}
-                zoom={tour.map.zoom || 8}
-                markers={tour.map.markers || []}
-                routeCoordinates={tour.map.routeCoordinates || []}
-                className="td-map"
-              />
-            </Suspense>
-            )}
-          </div>
-        </section>
-      )}
+      {/* The standalone interactive route map used to sit here. It was removed
+          because the route is already shown by the route-map image inside the
+          gallery. `tour.map` data stays in tours.js — MapboxMap itself is still
+          used by HomePage. */}
 
       {/* FAQ (only when the tour supplies the data) */}
       {faqList?.length > 0 && (

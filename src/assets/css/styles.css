@@ -5876,32 +5876,6 @@ tour-info h2 a,
   }
 }
 
-/* Map Section */
-.td-map-section {
-  padding: 0;
-  background: var(--color-bg);
-}
-.td-map-card {
-  max-width: 100%;
-  margin: 0;
-  background: #fff;
-  border-radius: 0;
-  overflow: hidden;
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
-  padding: calc(var(--indent) * 1.5);
-}
-.td-map-card .td-section__title {
-  margin-bottom: calc(var(--indent) * 0.8);
-  padding-left: var(--indent);
-  padding-right: var(--indent);
-}
-.td-map {
-  width: 100%;
-  height: 500px;
-  border-radius: 0;
-  overflow: hidden;
-}
-
 /* Hero Price */
 .td-hero__price {
   margin-top: 14px;
@@ -8363,12 +8337,6 @@ select option:checked {
   }
   .td-form__row .td-form__group {
     margin-bottom: 20px;
-  }
-  .td-map {
-    height: 350px;
-  }
-  .td-map-card {
-    padding: calc(var(--indent) * 1.2) 0;
   }
   .acc__header {
     flex-direction: column;
