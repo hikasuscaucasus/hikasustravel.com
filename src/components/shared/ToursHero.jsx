@@ -11,11 +11,6 @@ export default function ToursHero({
   onSearchChange,
   sortValue = '',
   onSortChange,
-  originValue = '',
-  onOriginChange,
-  categoryValue = 'all',
-  onCategoryChange,
-  categoryOptions = [],
 }) {
   const sectionRef = useRef(null)
   const t = useT()
@@ -40,7 +35,7 @@ export default function ToursHero({
           <p className="th__subtitle">{subtitle}</p>
         )}
 
-        {(onSearchChange || onSortChange || onOriginChange || onCategoryChange) && (
+        {(onSearchChange || onSortChange) && (
           <div className="th__actions">
             {onSearchChange && (
               <div className="th__search-wrap">
@@ -70,34 +65,6 @@ export default function ToursHero({
                   <option value="days-asc">{t('tour.sortDuration')} ↑</option>
                   <option value="days-desc">{t('tour.sortDuration')} ↓</option>
                   <option value="name">{t('tour.sortName')}</option>
-                </select>
-              </div>
-            )}
-            {onOriginChange && (
-              <div className="th__sort-wrap">
-                <select
-                  className="th__sort"
-                  value={originValue}
-                  onChange={(e) => onOriginChange(e.target.value)}
-                  aria-label={t('tour.toursFrom')}
-                >
-                  <option value="">{t('tour.toursFrom')}</option>
-                  <option value="tbilisi">Tbilisi</option>
-                  <option value="kutaisi">Kutaisi</option>
-                </select>
-              </div>
-            )}
-            {onCategoryChange && (
-              <div className="th__sort-wrap">
-                <select
-                  className="th__sort"
-                  value={categoryValue}
-                  onChange={(e) => onCategoryChange(e.target.value)}
-                  aria-label={t('tour.tourCategories')}
-                >
-                  {categoryOptions.map((opt) => (
-                    <option key={opt.value} value={opt.value}>{opt.label}</option>
-                  ))}
                 </select>
               </div>
             )}

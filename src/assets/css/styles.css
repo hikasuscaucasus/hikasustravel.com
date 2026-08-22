@@ -4646,12 +4646,20 @@ tour-info h2 a,
    ⚠️ Do NOT move `flex: 1 1 100%` into the base rule above: below 601px
    `.th__actions` switches to `flex-direction: column`, where a 100% flex-basis
    resolves against HEIGHT, not width, and would break the mobile layout. */
+/* UPDATE — the "Tours From" and "Tour Categories" dropdowns became the
+   crawlable chips below the hero (.ptc-links), so this bar now holds the search
+   plus ONE select instead of three. That leaves ~418px for the search on a
+   580px bar, so Search and Sort share a row again as the design intends. The
+   zero-width bug described above is still guarded against: the search keeps a
+   healthy 260px flex-basis (never a 0 basis) plus min-width: 0, so it can
+   shrink without its content box collapsing. */
 @media (min-width: 901px) {
   .th__actions {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
   .th__search-wrap {
-    flex: 1 1 100%;
+    flex: 1 1 260px;
+    min-width: 0;
   }
   /* With `flex-wrap: wrap` the browser wraps an item BEFORE shrinking it, so the
      three selects (~210px of content each) spilled 2-then-1 across two rows even
@@ -4662,8 +4670,8 @@ tour-info h2 a,
      `min-width: auto`, which floors the wrapper at its select's intrinsic
      content width (~210px) and defeats the zero basis on its own. */
   .th__sort-wrap {
-    flex: 1 1 0;
-    min-width: 0;
+    flex: 0 0 auto;
+    min-width: 150px;
   }
   .th__sort {
     width: 100%;
@@ -9030,9 +9038,10 @@ select option:checked {
      search box do not fit one row here and overflowed the viewport. Let the bar
      wrap — search on its own row, dropdowns share the next — and drop the fixed
      min-width so they shrink to fit. */
-  .th__actions { flex-wrap: wrap; justify-content: center; max-width: 560px; }
-  .th__search-wrap { flex: 1 1 100%; }
-  .th__sort-wrap { flex: 1 1 140px; }
+  /* One select instead of three now fits beside the search here too. */
+  .th__actions { flex-wrap: nowrap; justify-content: center; max-width: 560px; }
+  .th__search-wrap { flex: 1 1 200px; min-width: 0; }
+  .th__sort-wrap { flex: 0 0 auto; min-width: 140px; }
   .th__sort { width: 100%; min-width: 0; }
 }
 
@@ -9751,6 +9760,70 @@ select option:checked {
 }
 
 /* Generated <Entity> Tours listing page header (H1 + intro above the grid). */
+/* Private Tours collection links — the crawlable chips that replaced the
+   "Tours From" and "Tour Categories" dropdowns on /private-tours. Visually
+   secondary to the tour cards: minimal outlined chips, not CTA buttons. */
+.ptc-links {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: calc(var(--indent) * 1.6) calc(var(--indent) * 2) 0;
+  background-color: var(--color-bg);
+}
+.ptc-links__group + .ptc-links__group {
+  margin-top: calc(var(--indent) * 0.9);
+}
+.ptc-links__heading {
+  font-family: "rockwell";
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-h2);
+  opacity: 0.75;
+  margin: 0 0 calc(var(--indent) / 2.4);
+}
+.ptc-links__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.ptc-chip {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid rgba(43, 78, 71, 0.28);
+  border-radius: 999px;
+  font-family: 'Proza Libre', sans-serif;
+  font-size: 0.86rem;
+  line-height: 1.3;
+  color: var(--color-h2);
+  text-decoration: none;
+  background: transparent;
+  transition: background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+}
+.ptc-chip:hover,
+.ptc-chip:focus-visible {
+  background-color: var(--color-h2);
+  border-color: var(--color-h2);
+  color: var(--color-bg);
+}
+.ptc-intro-section {
+  padding-bottom: 0;
+}
+.ptc-intro {
+  max-width: 760px;
+  margin: calc(var(--indent) / 2) auto 0;
+}
+
+@media (max-width: 600px) {
+  .ptc-links {
+    padding: calc(var(--indent) * 1.2) var(--indent) 0;
+  }
+  .ptc-chip {
+    padding: 7px 13px;
+    font-size: 0.8rem;
+  }
+}
+
 .entity-tours-header {
   text-align: center;
 }

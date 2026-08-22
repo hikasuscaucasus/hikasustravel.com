@@ -41,6 +41,9 @@ const { blogArticles } = await import(
 const { entityTourPages } = await import(
   pathToFileURL(join(__dirname, '../src/data/entityTours.js')).href
 )
+const { privateTourCollectionPages } = await import(
+  pathToFileURL(join(__dirname, '../src/data/privateTourCollections.js')).href
+)
 
 // Parse tours data from the source file
 const toursFile = readFileSync(join(__dirname, '../src/data/tours.js'), 'utf-8')
@@ -110,6 +113,11 @@ for (const ep of entityTourPages) {
   allPaths.push({ path: ep.path, changefreq: 'monthly', priority: '0.6' })
 }
 
+// Private Tours collection pages (starting point / category listings).
+for (const c of privateTourCollectionPages) {
+  allPaths.push({ path: c.path, changefreq: 'weekly', priority: '0.8' })
+}
+
 for (const bp of publishedBorderPages()) {
   allPaths.push({ path: bp.path, changefreq: 'monthly', priority: '0.7' })
 }
@@ -143,12 +151,15 @@ const stableStringify = (value) => {
 // generate-seo-locales both run before this script, so these are current.
 const localeContent = {}
 const localeSeo = {}
+const localeUi = {}
 const localeContentHash = {}
 for (const lang of languages) {
   localeContent[lang] = JSON.parse(
     readFileSync(join(__dirname, `../src/i18n/locales/${lang}/pages.json`), 'utf-8'))
   localeSeo[lang] = JSON.parse(
     readFileSync(join(__dirname, `../src/data/seo/${lang}.json`), 'utf-8'))
+  localeUi[lang] = JSON.parse(
+    readFileSync(join(__dirname, `../src/i18n/locales/${lang}/ui.json`), 'utf-8'))
   localeContentHash[lang] = sha1(stableStringify(localeContent[lang]))
 }
 const enFallback = JSON.parse(
@@ -167,6 +178,7 @@ for (const s of sites) registryData.set(strip(sitePath(s)), s)
 
 const tourBySlug = new Map(tourObjects.map((t) => [t.slug, t]))
 const entityPageByPath = new Map(entityTourPages.map((ep) => [ep.path, ep]))
+const collectionByPath = new Map(privateTourCollectionPages.map((c) => [c.path, c]))
 const blogBySlug = new Map(blogArticles.map((a) => [a.slug, a]))
 
 // `private-tours/<slug>` / `group-tours/<slug>` -> the tour slug, else null.
@@ -196,6 +208,7 @@ for (const { path } of allPaths) {
   contentKeyByPath.set(path, key)
   const hasOwnData = registryData.has(path)
     || entityPageByPath.has(path)
+    || collectionByPath.has(path)
     || tourBySlug.has(tourSlugOf(path))
     || blogBySlug.has(blogSlugOf(path))
   if (key === null && !hasOwnData) unresolved.add(path)
@@ -220,6 +233,17 @@ const signatureFor = (lang, path, changefreq, priority) => {
     // A tours listing page renders the tours it links to.
     entityTours: entityPage
       ? entityPage.tourSlugs.map((s) => tourBySlug.get(s) ?? s)
+      : null,
+    // Same for a Private Tours collection page: the tours it lists plus its own
+    // per-locale copy, so it is keyed precisely instead of falling back to the
+    // whole-locale hash.
+    collectionTours: collectionByPath.has(path)
+      ? collectionByPath.get(path).tourSlugs.map((s) => tourBySlug.get(s) ?? s)
+      : null,
+    collectionCopy: collectionByPath.has(path)
+      ? [collectionByPath.get(path).h1Key, collectionByPath.get(path).titleKey,
+        collectionByPath.get(path).descriptionKey, collectionByPath.get(path).introKey]
+        .map((k) => localeUi[lang]?.[k] ?? null)
       : null,
   }
 

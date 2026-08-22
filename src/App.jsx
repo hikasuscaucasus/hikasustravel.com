@@ -4,6 +4,7 @@ import I18nProvider from './i18n/I18nProvider'
 import Layout from './components/layout/Layout'
 import { cities, regions } from './data/places'
 import { tours } from './data/tours'
+import { privateTourCollectionPages } from './data/privateTourCollections'
 
 // Every page is code-split: a route now downloads its own component (and any
 // data module only it needs — blog articles, dish data, embassy records) rather
@@ -41,6 +42,7 @@ const PrivateToursPage = routeComponent(() => import('./components/pages/Private
 const GroupToursPage = routeComponent(() => import('./components/pages/GroupToursPage'))
 const TourDetailPage = routeComponent(() => import('./components/pages/TourDetailPage'))
 const EntityToursPage = routeComponent(() => import('./components/pages/EntityToursPage'))
+const PrivateTourCollectionPage = routeComponent(() => import('./components/pages/PrivateTourCollectionPage'))
 const FaqPage = routeComponent(() => import('./components/pages/FaqPage'))
 const ContactPage = routeComponent(() => import('./components/pages/ContactPage'))
 const ShuttleServicePage = routeComponent(() => import('./components/pages/ShuttleServicePage'))
@@ -110,6 +112,12 @@ export function AppRoutes() {
             ))}
           <Route path="private-tours" element={<PrivateToursPage />} />
           <Route path="group-tours" element={<GroupToursPage />} />
+          {/* Private Tours collection pages: /:lang/private-tours/<collection>.
+              Declared before the dynamic tour route below so a collection slug
+              is never mistaken for a tour slug. */}
+          {privateTourCollectionPages.map((c) => (
+            <Route key={c.slug} path={`private-tours/${c.slug}`} element={<PrivateTourCollectionPage slug={c.slug} />} />
+          ))}
           <Route path="private-tours/:slug" element={<TourDetailPage />} />
           <Route path="group-tours/:slug" element={<TourDetailPage />} />
           {/* Destination/attraction tour listings: /:lang/tours/<entity>-tours */}

@@ -38,6 +38,11 @@ const { entityTourPages } = await import(
   pathToFileURL(join(__dirname, '../src/data/entityTours.js')).href
 )
 
+// Private Tours collection pages (starting point / category -> tours).
+const { privateTourCollectionPages } = await import(
+  pathToFileURL(join(__dirname, '../src/data/privateTourCollections.js')).href
+)
+
 // Crawlable internal-link graph (parent / children / siblings / translations)
 // written into #root as fallback content — see scripts/seo-links.js.
 const { createLinkGraph } = await import(
@@ -655,6 +660,17 @@ for (const lang of LANGS) {
       title,
       description,
       canonical,
+      image: '/images/files/georgia-tour-01.jpg',
+      ogLocale,
+    })
+  }
+
+  // --- Private Tours collection pages (/:lang/private-tours/<collection>) ---
+  for (const c of privateTourCollectionPages) {
+    writeHtml(join(DIST, lang, c.path, 'index.html'), lang, {
+      title: ui[c.titleKey],
+      description: ui[c.descriptionKey],
+      canonical: `${SITE_URL}/${lang}/${c.path}`,
       image: '/images/files/georgia-tour-01.jpg',
       ogLocale,
     })
