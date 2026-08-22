@@ -8717,23 +8717,23 @@ export const tours = [
         "content": "<p>Explore Tbilisi's Old Town and discover the rich heritage of Georgia's capital. Visit iconic landmarks like the ancient Narikala Fortress overlooking the city, the historic Metekhi Church with its dramatic clifftop location, and wander through the charming cobblestone streets that tell the story of Georgia's diverse cultural influences. Experience the unique blend of traditional Georgian architecture with modern elements that make Tbilisi so captivating.</p><ul><li>Explore Tbilisi Old Town;</li><li>Visit ancient Narikala Fortress;</li><li>See historic Metekhi Church;</li><li>Walk through cobblestone streets;</li><li>Discover cultural landmarks;</li><li>Learn about Tbilisi's rich history;</li><li>Overnight stay in Tbilisi.</li><li><strong>Duration of the tour:</strong> 4-5 hours</li><li><strong>Driving duration:</strong> 30 minutes</li></ul>"
       },
       {
-        "title": "Day 3: Mtskheta and Ananuri",
+        "title": "Day 3: Tbilisi – Jvari – Mtskheta – Ananuri – Stepantsminda (Kazbegi)",
         "content": "<p>Journey to Mtskheta, the ancient capital and spiritual heart of Georgia. Explore this UNESCO World Heritage Site, home to treasures like Svetitskhoveli Cathedral and Jvari Monastery. Continue to the picturesque Ananuri Fortress, a stunning medieval architectural complex beside the Aragvi River with breathtaking mountain backdrops. This day showcases Georgia's rich religious heritage and medieval craftsmanship.</p><ul><li>Visit Mtskheta, the ancient capital;</li><li>Explore UNESCO World Heritage treasures;</li><li>See Svetitskhoveli Cathedral;</li><li>Visit Jvari Monastery;</li><li>Discover Ananuri Fortress;</li><li>Enjoy mountain and river scenery;</li><li>Return to Tbilisi;</li><li>Overnight stay in Tbilisi.</li><li><strong>Duration of the tour:</strong> 7-8 hours</li><li><strong>Driving duration:</strong> 3 hours</li></ul>"
       },
       {
-        "title": "Day 4: Kazbegi Exploration",
+        "title": "Day 4: Kazbegi – Gergeti Trinity Church",
         "content": "<p>Take in breathtaking Caucasus Mountain views as you journey to Kazbegi. Visit the iconic Gergeti Trinity Church, perched dramatically at 2,170 meters altitude with unparalleled views of Mount Kazbek and the surrounding peaks. This spiritual site offers some of the most spectacular mountain scenery in Georgia and serves as a perfect introduction to the majestic Caucasus landscape.</p><ul><li>Journey to scenic Kazbegi;</li><li>Visit iconic Gergeti Trinity Church;</li><li>Take in breathtaking Caucasus views;</li><li>Experience Mount Kazbek scenery;</li><li>Photography opportunities;</li><li>Explore mountain landscapes;</li><li>Check-in and overnight in Kazbegi.</li><li><strong>Duration of the tour:</strong> 6-7 hours</li><li><strong>Driving duration:</strong> 3 hours</li></ul>"
       },
       {
-        "title": "Day 5: Gudauri and Stepantsminda",
+        "title": "Day 5: Kazbegi – Truso Valley – Kazbegi",
         "content": "<p>Explore the serene beauty of the high Caucasus today. Visit Gudauri, a ski resort town offering panoramic mountain views and fresh alpine air. Continue exploring Stepantsminda and discover the tranquil Truso Valley with its pristine natural environment. Experience the peaceful mountain atmosphere and dramatic landscapes that make the Georgian Caucasus so memorable.</p><ul><li>Visit Gudauri ski resort town;</li><li>Enjoy panoramic mountain views;</li><li>Explore Stepantsminda area;</li><li>Discover serene Truso Valley;</li><li>Experience pristine natural environment;</li><li>Alpine landscape photography;</li><li>Overnight stay in Kazbegi.</li><li><strong>Duration of the tour:</strong> 6-7 hours</li><li><strong>Driving duration:</strong> 2 hours</li></ul>"
       },
       {
-        "title": "Day 6: Kakheti Wine Region",
+        "title": "Day 6: Kazbegi – Sighnaghi – Telavi",
         "content": "<p>Immerse yourself in the rich traditions of Georgian winemaking in the renowned Kakheti region. Experience tastings at local wineries and discover Georgia's 8,000-year-old wine heritage. Visit charming Sighnaghi, known as the \"City of Love,\" with its cobblestone streets and stunning views over the Alazani Valley. This day celebrates Georgia's most famous cultural export - its exceptional wines.</p><ul><li>Journey to renowned Kakheti wine region;</li><li>Experience tastings at local wineries;</li><li>Learn about 8,000-year wine heritage;</li><li>Visit charming Sighnaghi \"City of Love\";</li><li>Explore cobblestone streets;</li><li>Enjoy views over Alazani Valley;</li><li>Overnight stay in Kazbegi.</li><li><strong>Duration of the tour:</strong> 8-9 hours</li><li><strong>Driving duration:</strong> 4 hours</li></ul>"
       },
       {
-        "title": "Day 7: Telavi and Alaverdi Monastery",
+        "title": "Day 7: Telavi – Tsinandali – Shumi Winery – Tbilisi",
         "content": "<p>Explore Telavi, the administrative center of the Kakheti region, known for its historic sites and connection to Georgian wine culture. Visit the magnificent Alaverdi Monastery, one of the highest cathedrals in Georgia and an important center of Georgian Orthodox Christianity. This day combines cultural exploration with spiritual heritage in the heart of Georgia's wine country.</p><ul><li>Explore Telavi, center of Kakheti region;</li><li>Visit historic sites and monuments;</li><li>See magnificent Alaverdi Monastery;</li><li>Learn about Georgian Orthodox heritage;</li><li>Experience one of Georgia's highest cathedrals;</li><li>Discover wine country culture;</li><li>Check-in and overnight in Telavi.</li><li><strong>Duration of the tour:</strong> 6-7 hours</li><li><strong>Driving duration:</strong> 1.5 hours</li></ul>"
       },
       {
@@ -8741,7 +8741,7 @@ export const tours = [
         "content": "<p>Return to Tbilisi for a well-deserved free day, perfect for shopping, savoring local cuisine, or simply relaxing. Explore the city at your own pace, perhaps revisiting favorite spots from your arrival or discovering new areas you haven't yet explored. This flexible day allows you to enjoy Tbilisi's vibrant atmosphere, visit local markets, or treat yourself to a traditional Georgian feast.</p><ul><li>Return journey to Tbilisi;</li><li>Free day for personal exploration;</li><li>Optional shopping and souvenir hunting;</li><li>Savor local cuisine at restaurants;</li><li>Visit local markets and cafes;</li><li>Relax and reflect on your journey;</li><li>Overnight stay in Tbilisi.</li><li><strong>Duration of the tour:</strong> Free day</li><li><strong>Driving duration:</strong> 2.5 hours (return to Tbilisi)</li></ul>"
       },
       {
-        "title": "Day 9: Departure",
+        "title": "Day 9: Departure from Tbilisi",
         "content": "<p>Conclude your enriching and memorable 9-day travel experience in the heart of the Caucasus. Enjoy a final Georgian breakfast and take last moments to soak in the atmosphere of Tbilisi. Check out from your hotel and transfer to Tbilisi International Airport for your departure, carrying with you unforgettable memories of Georgia's breathtaking landscapes, historic landmarks, wine traditions, and culinary delights.</p><ul><li>Final Georgian breakfast;</li><li>Last moments in Tbilisi;</li><li>Hotel check-out;</li><li>Transfer to Tbilisi International Airport;</li><li>Departure from Georgia;</li><li>End of 9-day Caucasus adventure.</li><li><strong>Duration:</strong> As per flight schedule</li></ul>"
       }
     ],
@@ -9750,11 +9750,11 @@ export const tours = [
         "content": "<p>Begin your comprehensive Georgian adventure with a warm welcome and city tour of Tbilisi. Explore the vibrant capital's rich history and culture, including visits to iconic sites like Narikala Fortress, sulfur baths, and Freedom Square. Wander through the charming streets and get acquainted with Georgian hospitality on this introductory day that sets the stage for your 10-day journey through this captivating country.</p><ul><li>Arrival in Tbilisi and airport transfer;</li><li>Comprehensive city tour of the capital;</li><li>Visit Narikala Fortress and Old Town;</li><li>Explore traditional sulfur baths area;</li><li>See Freedom Square and central landmarks;</li><li>Introduction to Georgian culture and history;</li><li>Check-in and overnight in Tbilisi.</li><li><strong>Duration of the tour:</strong> 4-5 hours</li></ul>"
       },
       {
-        "title": "Day 2: Tbilisi – Ananuri – Kazbegi",
+        "title": "Day 2: Tbilisi – Jvari – Mtskheta – Ananuri – Stepantsminda (Kazbegi)",
         "content": "<p>Journey from Tbilisi through stunning mountain landscapes to reach the breathtaking region of Kazbegi. Stop at the magnificent Ananuri Fortress complex beside the Aragvi River, with its dramatic mountain backdrop. Continue through the scenic Gudauri mountain pass, taking in panoramic views from the Gudauri Friendship Monument before arriving in the mountain town of Kazbegi for spectacular Caucasus vistas.</p><ul><li>Departure from Tbilisi to mountain regions;</li><li>Visit stunning Ananuri Fortress complex;</li><li>Scenic drive through Aragvi River valley;</li><li>Stop at Gudauri Friendship Monument;</li><li>Enjoy panoramic mountain views;</li><li>Arrival in breathtaking Kazbegi;</li><li>Check-in and overnight in Kazbegi.</li><li><strong>Duration of the tour:</strong> 6-7 hours</li><li><strong>Driving duration:</strong> 3 hours</li></ul>"
       },
       {
-        "title": "Day 3: Kazbegi",
+        "title": "Day 3: Kazbegi – Gergeti Trinity Church – Gveleti Waterfalls – Dariali Gorge – Kazbegi",
         "content": "<p>Immerse yourself fully in the spectacular mountain scenery of Kazbegi. Visit the iconic Gergeti Trinity Church, perched dramatically at 2,170 meters with unparalleled views of Mount Kazbek and the surrounding Caucasus peaks. Explore the beautiful Gveleti Waterfalls and discover the dramatic landscapes of Dariali Gorge, experiencing the raw natural beauty of this mountain paradise.</p><ul><li>Full day exploring Kazbegi region;</li><li>Visit iconic Gergeti Trinity Church;</li><li>Experience breathtaking Caucasus views;</li><li>Explore beautiful Gveleti Waterfalls;</li><li>Discover dramatic Dariali Gorge;</li><li>Photography opportunities in stunning landscapes;</li><li>Overnight stay in Kazbegi.</li><li><strong>Duration of the tour:</strong> 8-9 hours</li></ul>"
       },
       {
@@ -9762,19 +9762,19 @@ export const tours = [
         "content": "<p>Travel from the mountains to explore Georgia's fascinating history. Visit Gori, known for the Stalin Museum, then explore the remarkable ancient rock-hewn city of Uplistsikhe, one of Georgia's most important archaeological sites. This day combines recent history with ancient heritage, showcasing the diverse cultural layers that make Georgia so captivating, before returning to Tbilisi.</p><ul><li>Departure from Kazbegi mountain region;</li><li>Visit Stalin Museum in Gori;</li><li>Explore remarkable Uplistsikhe cave city;</li><li>Discover ancient rock-hewn architecture;</li><li>Learn about archaeological significance;</li><li>Journey back to Tbilisi;</li><li>Check-in and overnight in Tbilisi.</li><li><strong>Duration of the tour:</strong> 8-9 hours</li><li><strong>Driving duration:</strong> 4 hours total</li></ul>"
       },
       {
-        "title": "Day 5: Tbilisi - Gelati - Motsameta - Kutaisi",
+        "title": "Day 5: Tbilisi – Gelati – Motsameta – Kutaisi",
         "content": "<p>Journey to western Georgia to explore one of the country's oldest cities, Kutaisi. Visit the magnificent UNESCO-listed Gelati Monastery, a masterpiece of medieval Georgian architecture, and the serene Motsameta Monastery. These historic religious sites showcase Georgia's rich spiritual heritage and architectural achievements, representing centuries of Georgian Orthodox tradition in beautiful settings.</p><ul><li>Travel to historic Kutaisi in western Georgia;</li><li>Visit UNESCO-listed Gelati Monastery;</li><li>Explore magnificent medieval architecture;</li><li>See serene Motsameta Monastery;</li><li>Learn about Georgian Orthodox heritage;</li><li>Discover spiritual and cultural significance;</li><li>Check-in and overnight in Kutaisi.</li><li><strong>Duration of the tour:</strong> 7-8 hours</li><li><strong>Driving duration:</strong> 4.5 hours</li></ul>"
       },
       {
-        "title": "Day 6: Kutaisi – Gelati – Prometheus Cave – Martvili Canyon – Kutaisi",
+        "title": "Day 6: Kutaisi – Prometheus Cave – Martvili Canyon – Kutaisi",
         "content": "<p>Experience the natural wonders of western Georgia with visits to stunning underground and surface attractions. Explore the magnificent Prometheus Cave with its spectacular stalactites and underground chambers. Then enjoy the picturesque beauty of Martvili Canyon, where you can take a boat trip along turquoise waters surrounded by dramatic canyon walls, creating unforgettable memories of Georgia's natural splendor.</p><ul><li>Return visit to Gelati Monastery;</li><li>Explore magnificent Prometheus Cave;</li><li>Discover spectacular underground chambers;</li><li>Experience boat trip at Martvili Canyon;</li><li>Enjoy turquoise waters and canyon views;</li><li>Photography in stunning natural settings;</li><li>Return to Kutaisi for overnight.</li><li><strong>Duration of the tour:</strong> 8-9 hours</li><li><strong>Driving duration:</strong> 3 hours</li></ul>"
       },
       {
-        "title": "Day 7: Kutaisi – Batumi Botanical Garden – Local Winery - Batumi",
+        "title": "Day 7: Kutaisi – Local Winery – Batumi",
         "content": "<p>Travel to Georgia's stunning Black Sea coast and the vibrant city of Batumi. Begin with a visit to the world-renowned Batumi Botanical Garden, featuring diverse plant collections from around the globe in spectacular coastal settings. Experience a wine tour and tasting at a local winery, celebrating Georgia's famous wine heritage while enjoying the refreshing sea breeze and coastal atmosphere.</p><ul><li>Journey to Black Sea coast and Batumi;</li><li>Visit world-renowned Batumi Botanical Garden;</li><li>Explore diverse international plant collections;</li><li>Wine tour and tasting at local winery;</li><li>Celebrate Georgian wine heritage;</li><li>Enjoy coastal atmosphere and sea views;</li><li>Check-in and overnight in Batumi.</li><li><strong>Duration of the tour:</strong> 7-8 hours</li><li><strong>Driving duration:</strong> 2.5 hours</li></ul>"
       },
       {
-        "title": "Day 8: Batumi City Tour, Free Evening",
+        "title": "Day 8: Batumi City Tour",
         "content": "<p>Discover the charm and attractions of coastal Batumi with a comprehensive city tour. Visit Europe Square, see the iconic Ali and Nino Statue, and explore the city's unique blend of modern architecture and traditional Georgian elements. Enjoy a free evening to relax on the beach, stroll along the seaside boulevard, or experience Batumi's vibrant nightlife and dining scene at your own pace.</p><ul><li>Comprehensive Batumi city tour;</li><li>Visit elegant Europe Square;</li><li>See iconic Ali and Nino moving statue;</li><li>Explore modern and traditional architecture;</li><li>Free evening for personal exploration;</li><li>Optional beach relaxation and seaside strolls;</li><li>Overnight stay in Batumi.</li><li><strong>Duration of the tour:</strong> 4-5 hours, then free time</li></ul>"
       },
       {
@@ -11879,11 +11879,11 @@ export const tours = [
         "content": "<p>Begin your ultimate 12-day Georgian adventure with a warm welcome and comprehensive city tour of Tbilisi. Explore the vibrant capital's historic Old Town, visit the iconic Narikala Fortress, and wander through charming streets steeped in history. This introductory day sets the perfect stage for your extensive journey through Georgia's most captivating regions, from mountain peaks to coastal beauty.</p><ul><li>Arrival in Tbilisi and airport transfer;</li><li>Comprehensive city tour of historic Old Town;</li><li>Visit iconic Narikala Fortress;</li><li>Explore charming historic streets;</li><li>Introduction to Georgian culture and heritage;</li><li>First taste of Georgian hospitality;</li><li>Check-in and overnight in Tbilisi.</li><li><strong>Duration of the tour:</strong> 4-5 hours</li></ul>"
       },
       {
-        "title": "Day 2: Tbilisi – Ananuri – Kazbegi",
+        "title": "Day 2: Tbilisi – Jvari – Mtskheta – Ananuri – Stepantsminda (Kazbegi)",
         "content": "<p>Journey from Tbilisi through stunning mountain landscapes to reach the breathtaking region of Kazbegi. Visit the magnificent Ananuri Complex, a masterpiece of medieval architecture beside the Aragvi River. This scenic drive through the Caucasus Mountains offers spectacular views and introduces you to Georgia's dramatic highland beauty.</p><ul><li>Departure from Tbilisi to mountain regions;</li><li>Visit magnificent Ananuri Complex;</li><li>Experience masterpiece of medieval architecture;</li><li>Scenic drive through Caucasus Mountains;</li><li>Spectacular mountain views and landscapes;</li><li>Arrival in breathtaking Kazbegi region;</li><li>Check-in and overnight in Kazbegi.</li><li><strong>Duration of the tour:</strong> 6-7 hours</li><li><strong>Driving duration:</strong> 3 hours</li></ul>"
       },
       {
-        "title": "Day 3: Kazbegi",
+        "title": "Day 3: Kazbegi – Gergeti Trinity Church – Gveleti Waterfalls – Dariali Gorge – Kazbegi",
         "content": "<p>Immerse yourself fully in the awe-inspiring Caucasus Mountain views of Kazbegi. Visit the famous Gergeti Trinity Church and experience the breathtaking highland scenery that makes this region one of Georgia's most spectacular destinations. This day offers unparalleled mountain vistas and spiritual experiences in one of the country's most dramatic settings.</p><ul><li>Full day exploring magnificent Kazbegi region;</li><li>Visit famous Gergeti Trinity Church;</li><li>Experience awe-inspiring Caucasus Mountain views;</li><li>Breathtaking highland scenery exploration;</li><li>Photography opportunities in dramatic landscapes;</li><li>Spiritual experiences in mountain settings;</li><li>Overnight stay in Kazbegi.</li><li><strong>Duration of the tour:</strong> 8-9 hours</li></ul>"
       },
       {
@@ -11891,7 +11891,7 @@ export const tours = [
         "content": "<p>Travel from the mountains to explore Georgia's fascinating historical layers. Visit the Stalin Museum in Gori to learn about this significant figure in world history, then explore the remarkable ancient rock-hewn city of Uplistsikhe, one of Georgia's most important archaeological sites. This day showcases the diverse cultural heritage that defines Georgian history.</p><ul><li>Departure from Kazbegi mountain region;</li><li>Visit Stalin Museum in historic Gori;</li><li>Learn about significant world history;</li><li>Explore remarkable Uplistsikhe cave city;</li><li>Discover important archaeological heritage;</li><li>Experience diverse Georgian cultural layers;</li><li>Return to Tbilisi and overnight.</li><li><strong>Duration of the tour:</strong> 8-9 hours</li><li><strong>Driving duration:</strong> 4 hours total</li></ul>"
       },
       {
-        "title": "Day 5: Tbilisi - Gelati - Motsameta - Kutaisi",
+        "title": "Day 5: Tbilisi – Gelati – Motsameta – Kutaisi",
         "content": "<p>Journey to western Georgia to explore one of the country's most historic regions. Visit the UNESCO-listed Gelati Monastery, showcasing the beauty of medieval Georgian architecture, and the serene Motsameta Monastery. These magnificent religious sites represent centuries of Georgian spiritual heritage and architectural achievement in stunning natural settings.</p><ul><li>Travel to western Georgia and historic Kutaisi;</li><li>Visit UNESCO-listed Gelati Monastery;</li><li>Experience beauty of medieval architecture;</li><li>Explore serene Motsameta Monastery;</li><li>Discover Georgian spiritual heritage;</li><li>Learn about architectural achievements;</li><li>Check-in and overnight in Kutaisi.</li><li><strong>Duration of the tour:</strong> 7-8 hours</li><li><strong>Driving duration:</strong> 4.5 hours</li></ul>"
       },
       {
@@ -11899,7 +11899,7 @@ export const tours = [
         "content": "<p>Discover the magical natural wonders of western Georgia with visits to stunning underground and surface attractions. Explore the magnificent Prometheus Cave with its spectacular formations, then experience the beauty of Martvili Canyon with its turquoise waters and dramatic landscapes. These natural wonders showcase Georgia's diverse geological treasures.</p><ul><li>Explore magnificent Prometheus Cave;</li><li>Discover spectacular underground formations;</li><li>Experience magical underground chambers;</li><li>Visit beautiful Martvili Canyon;</li><li>Enjoy turquoise waters and canyon views;</li><li>Discover diverse geological treasures;</li><li>Return to Kutaisi for overnight.</li><li><strong>Duration of the tour:</strong> 8-9 hours</li><li><strong>Driving duration:</strong> 3 hours</li></ul>"
       },
       {
-        "title": "Day 7: Kutaisi - Mestia",
+        "title": "Day 7: Kutaisi – Enguri Dam – Mestia",
         "content": "<p>Journey to Svaneti, a land of ancient towers and stunning peaks, where the unique highland culture awaits. Travel to Mestia, a highland town famous for its distinctive Svan towers and mountain landscapes. This scenic journey takes you into one of Georgia's most remote and culturally distinct regions, where ancient traditions are perfectly preserved.</p><ul><li>Journey to Svaneti highland region;</li><li>Travel to historic Mestia town;</li><li>Experience land of ancient towers;</li><li>Discover stunning mountain peaks;</li><li>Enter unique highland cultural region;</li><li>See distinctive Svan towers;</li><li>Check-in and overnight in Mestia.</li><li><strong>Duration of the tour:</strong> 6-7 hours</li><li><strong>Driving duration:</strong> 5 hours</li></ul>"
       },
       {
@@ -11907,11 +11907,11 @@ export const tours = [
         "content": "<p>Explore the unique villages of Mestia and the UNESCO World Heritage site of Ushguli, one of Europe's highest permanently inhabited settlements. Experience the distinctive Svan culture, visit the Svaneti Museum, and marvel at the ancient defensive towers that dot this remarkable highland landscape. This day offers deep immersion into Georgia's most preserved mountain culture.</p><ul><li>Visit UNESCO World Heritage Ushguli;</li><li>Explore Europe's highest inhabited settlement;</li><li>Experience distinctive Svan culture;</li><li>Visit informative Svaneti Museum;</li><li>Marvel at ancient defensive towers;</li><li>Deep cultural immersion experience;</li><li>Return to Mestia for overnight.</li><li><strong>Duration of the tour:</strong> 8-9 hours</li><li><strong>Driving duration:</strong> 3 hours round trip</li></ul>"
       },
       {
-        "title": "Day 9: Mestia – Batumi Botanical Garden – Batumi",
+        "title": "Day 9: Mestia – Batumi",
         "content": "<p>Travel from the highlands to Georgia's stunning Black Sea coast and the vibrant coastal city of Batumi. Visit the world-renowned Batumi Botanical Garden featuring diverse plant collections in spectacular coastal settings. This journey from mountains to sea showcases Georgia's incredible geographic and climatic diversity.</p><ul><li>Travel from highlands to Black Sea coast;</li><li>Journey to vibrant coastal city Batumi;</li><li>Visit world-renowned Batumi Botanical Garden;</li><li>Explore diverse plant collections;</li><li>Experience spectacular coastal settings;</li><li>Discover geographic and climatic diversity;</li><li>Check-in and overnight in Batumi.</li><li><strong>Duration of the tour:</strong> 7-8 hours</li><li><strong>Driving duration:</strong> 5 hours</li></ul>"
       },
       {
-        "title": "Day 10: Batumi City Tour, Free Evening",
+        "title": "Day 10: Batumi City Tour",
         "content": "<p>Discover the charm and attractions of coastal Batumi with a comprehensive city tour. Explore the vibrant city squares, experience the unique blend of modern and traditional architecture, and enjoy the tranquil Black Sea coast atmosphere. A free evening allows you to relax and explore at your own pace, whether strolling the seaside or experiencing local nightlife.</p><ul><li>Comprehensive Batumi city tour;</li><li>Explore vibrant city squares;</li><li>Experience unique architectural blend;</li><li>Discover modern and traditional elements;</li><li>Enjoy tranquil Black Sea coast;</li><li>Free evening for personal exploration;</li><li>Overnight stay in Batumi.</li><li><strong>Duration of the tour:</strong> 4-5 hours, then free time</li></ul>"
       },
       {
@@ -14309,11 +14309,11 @@ export const tours = [
         "content": "<p>Return to Tbilisi after your wine region exploration and enjoy a free evening in the capital. Take time to reflect on your wine experiences, explore the city at your own pace, or relax and prepare for the mountain adventures ahead. This free time allows you to savor the memories of Kakheti's exceptional wines and hospitality.</p><ul><li>Return journey to Tbilisi capital;</li><li>Free evening for personal exploration;</li><li>Time to reflect on wine experiences;</li><li>Explore city at your own pace;</li><li>Optional shopping or dining;</li><li>Prepare for mountain adventures;</li><li>Check-in and overnight in Tbilisi.</li><li><strong>Duration of the tour:</strong> Free evening</li><li><strong>Driving duration:</strong> 2 hours</li></ul>"
       },
       {
-        "title": "Day 5: Tbilisi – Jvari – Mtskheta – Ananuri – Kazbegi",
+        "title": "Day 5: Tbilisi – Jvari – Mtskheta – Ananuri – Stepantsminda (Kazbegi)",
         "content": "<p>Journey to the stunning landscapes of Kazbegi, visiting the ancient capital Mtskheta with its UNESCO World Heritage sites including Jvari Monastery. Stop at the magnificent Ananuri fortress complex and continue through mountain passes to reach the breathtaking Caucasus highland region of Kazbegi with views of Mount Kazbek.</p><ul><li>Visit UNESCO site Jvari Monastery;</li><li>Explore ancient capital Mtskheta;</li><li>Discover significant religious landmarks;</li><li>Stop at magnificent Ananuri fortress;</li><li>Journey through Caucasus mountain passes;</li><li>Arrive in breathtaking Kazbegi region;</li><li>Check-in and overnight in Kazbegi.</li><li><strong>Duration of the tour:</strong> 7-8 hours</li><li><strong>Driving duration:</strong> 3.5 hours</li></ul>"
       },
       {
-        "title": "Day 6: Kazbegi",
+        "title": "Day 6: Kazbegi – Gergeti Trinity Church – Gveleti Waterfalls – Dariali Gorge – Kazbegi",
         "content": "<p>Immerse yourself in the stunning landscapes of Kazbegi with a full day of mountain exploration. Visit the iconic Gergeti Trinity Church perched dramatically against Mount Kazbek's backdrop. Experience the raw beauty of the Caucasus Mountains and soak in the magnificent highland scenery that makes this region one of Georgia's most spectacular destinations.</p><ul><li>Full day exploring stunning Kazbegi;</li><li>Visit iconic Gergeti Trinity Church;</li><li>Experience dramatic Mount Kazbek views;</li><li>Immerse in Caucasus mountain beauty;</li><li>Photography in magnificent highland scenery;</li><li>Explore raw mountain landscapes;</li><li>Overnight stay in Kazbegi.</li><li><strong>Duration of the tour:</strong> 8-9 hours</li></ul>"
       },
       {
@@ -14329,7 +14329,7 @@ export const tours = [
         "content": "<p>Be mesmerized by the surreal formations of Prometheus Cave with its spectacular underground chambers and geological wonders. Continue to the scenic Martvili Canyon for boat rides through picturesque blue waters surrounded by dramatic canyon walls. These natural attractions showcase Georgia's diverse geological treasures and stunning landscapes.</p><ul><li>Explore mesmerizing Prometheus Cave;</li><li>Discover surreal underground formations;</li><li>Experience spectacular geological wonders;</li><li>Visit scenic Martvili Canyon;</li><li>Enjoy boat rides through blue waters;</li><li>Marvel at dramatic canyon landscapes;</li><li>Return to Kutaisi for overnight.</li><li><strong>Duration of the tour:</strong> 8-9 hours</li><li><strong>Driving duration:</strong> 3 hours</li></ul>"
       },
       {
-        "title": "Day 10: Kutaisi – Mestia",
+        "title": "Day 10: Kutaisi – Enguri Dam – Mestia",
         "content": "<p>Journey to the remote mountain region of Svaneti, where timeless villages and ancient traditions await. Travel to Mestia, a highland town featuring traditional Svan towers and serving as gateway to one of Europe's most unique mountain cultures. This scenic journey takes you into Georgia's most preserved highland region.</p><ul><li>Journey to remote Svaneti mountain region;</li><li>Travel to highland town Mestia;</li><li>Discover timeless villages and traditions;</li><li>See traditional Svan towers;</li><li>Enter unique mountain culture region;</li><li>Experience Georgia's preserved highlands;</li><li>Check-in and overnight in Mestia.</li><li><strong>Duration of the tour:</strong> 6-7 hours</li><li><strong>Driving duration:</strong> 5 hours</li></ul>"
       },
       {
@@ -14337,11 +14337,11 @@ export const tours = [
         "content": "<p>Explore the timeless villages of Mestia and visit Ushguli, one of the highest inhabited villages in Europe. Experience the distinctive Svan culture, visit the Svaneti Museum, and marvel at the ancient towers that define this remarkable highland landscape. This day offers deep immersion into Georgia's most unique mountain heritage.</p><ul><li>Explore timeless village of Mestia;</li><li>Visit Ushguli, Europe's highest village;</li><li>Experience distinctive Svan culture;</li><li>Visit informative Svaneti Museum;</li><li>Marvel at ancient defensive towers;</li><li>Deep immersion in mountain heritage;</li><li>Return to Mestia for overnight.</li><li><strong>Duration of the tour:</strong> 8-9 hours</li><li><strong>Driving duration:</strong> 3 hours round trip</li></ul>"
       },
       {
-        "title": "Day 12: Mestia – Batumi Botanical Garden – Batumi",
+        "title": "Day 12: Mestia – Batumi",
         "content": "<p>Travel from the highlands to the serene Black Sea coast and vibrant coastal city of Batumi. Visit the world-renowned Batumi Botanical Garden featuring diverse plant collections in spectacular coastal settings. This dramatic journey from mountains to sea showcases Georgia's incredible geographic diversity and natural beauty.</p><ul><li>Travel from highlands to Black Sea coast;</li><li>Journey to vibrant coastal Batumi;</li><li>Visit world-renowned Botanical Garden;</li><li>Explore diverse plant collections;</li><li>Experience spectacular coastal settings;</li><li>Discover incredible geographic diversity;</li><li>Check-in and overnight in Batumi.</li><li><strong>Duration of the tour:</strong> 7-8 hours</li><li><strong>Driving duration:</strong> 5 hours</li></ul>"
       },
       {
-        "title": "Day 13: Batumi – Lively Squares and Black Sea Coast Relaxation",
+        "title": "Day 13: Batumi City Tour",
         "content": "<p>End your adventure in Batumi exploring the lively squares including Europe Square and experiencing the famous Ali and Nino statue. Enjoy relaxation along the serene Black Sea coast, providing the perfect setting for reflection on your comprehensive Georgian journey through ancient history, breathtaking landscapes, and rich cultural traditions.</p><ul><li>Explore lively Batumi squares;</li><li>Visit elegant Europe Square;</li><li>See famous Ali and Nino statue;</li><li>Relax along serene Black Sea coast;</li><li>Perfect setting for journey reflection;</li><li>Experience coastal atmosphere;</li><li>Overnight stay in Batumi.</li><li><strong>Duration of the tour:</strong> 4-5 hours, then free time</li></ul>"
       },
       {
@@ -15908,11 +15908,11 @@ export const tours = [
         "content": "<p>Dedicated culinary day discovering Georgian cuisine and Soviet-era landmarks in Tbilisi. Explore local markets, taste traditional dishes, and learn about Georgian cooking traditions. Visit Soviet-era monuments and architecture while experiencing how this fascinating heritage blends with modern Tbilisi life and vibrant food culture.</p><ul><li>Dedicated Georgian culinary exploration;</li><li>Visit vibrant local markets;</li><li>Taste authentic traditional dishes;</li><li>Learn Georgian cooking traditions;</li><li>Explore Soviet-era landmarks;</li><li>Experience heritage and modern life blend;</li><li>Overnight in Tbilisi.</li><li><strong>Duration of the tour:</strong> 8-9 hours</li></ul>"
       },
       {
-        "title": "Day 3: Tbilisi – Sighnaghi – Telavi Wine Region",
+        "title": "Day 3: Tbilisi – Bodbe – Sighnaghi – Telavi",
         "content": "<p>Journey to the picturesque \"City of Love\" Sighnaghi with breathtaking views over the Alazani Valley and charming cobblestone streets. Continue to Telavi in the heart of Kakheti wine region for authentic wine experiences, visiting local markets and renowned wineries for traditional Georgian wine tastings.</p><ul><li>Journey to charming Sighnaghi \"City of Love\";</li><li>Breathtaking Alazani Valley views;</li><li>Explore cobblestone streets and charm;</li><li>Continue to Telavi wine capital;</li><li>Visit authentic local markets;</li><li>Experience renowned winery tastings;</li><li>Check-in and overnight in Telavi.</li><li><strong>Duration of the tour:</strong> 8-9 hours</li><li><strong>Driving duration:</strong> 3.5 hours</li></ul>"
       },
       {
-        "title": "Day 4: Telavi – Tsinandali Estate – Batonistsikhe Castle",
+        "title": "Day 4: Telavi – Tsinandali – Local Winery – Vardisubani – Telavi",
         "content": "<p>Explore the famous Tsinandali Estate for authentic wine experiences and visit the historic Batonistsikhe Castle complex in the heart of Kakheti. Experience traditional Georgian winemaking traditions and discover the rich heritage of this renowned wine region with its centuries-old viticultural culture.</p><ul><li>Visit famous Tsinandali Estate;</li><li>Authentic wine experiences and tastings;</li><li>Explore historic Batonistsikhe Castle;</li><li>Traditional Georgian winemaking discovery;</li><li>Rich heritage of wine region exploration;</li><li>Centuries-old viticultural culture;</li><li>Overnight stay in Telavi.</li><li><strong>Duration of the tour:</strong> 8-9 hours</li><li><strong>Driving duration:</strong> 2 hours</li></ul>"
       },
       {
@@ -15920,11 +15920,11 @@ export const tours = [
         "content": "<p>Explore the ancient David Gareja Monastery complex nestled in unique semi-desert landscapes, offering a distinctive site for reflection and spiritual exploration. This remarkable monastery represents Georgia's early Christian heritage in a dramatic natural setting before returning to Tbilisi.</p><ul><li>Explore ancient David Gareja Monastery;</li><li>Unique semi-desert landscape setting;</li><li>Distinctive site for reflection;</li><li>Spiritual exploration experience;</li><li>Early Christian heritage discovery;</li><li>Dramatic natural setting appreciation;</li><li>Return to Tbilisi and overnight.</li><li><strong>Duration of the tour:</strong> 8-9 hours</li><li><strong>Driving duration:</strong> 4 hours total</li></ul>"
       },
       {
-        "title": "Day 6: Tbilisi – Ananuri – Kazbegi (Stepantsminda)",
+        "title": "Day 6: Tbilisi – Jvari – Mtskheta – Ananuri – Stepantsminda (Kazbegi)",
         "content": "<p>Travel along the spectacular Georgian Military Highway, stopping at the magnificent Ananuri Fortress complex, and continue to Kazbegi (Stepantsminda) with stunning views of Mount Kazbek. Experience the raw beauty of the Caucasus Mountains and the iconic highland landscapes that define this remarkable region.</p><ul><li>Travel spectacular Georgian Military Highway;</li><li>Stop at magnificent Ananuri Fortress;</li><li>Continue to stunning Kazbegi region;</li><li>Spectacular Mount Kazbek views;</li><li>Experience raw Caucasus Mountains beauty;</li><li>Iconic highland landscape exploration;</li><li>Check-in and overnight in Kazbegi.</li><li><strong>Duration of the tour:</strong> 7-8 hours</li><li><strong>Driving duration:</strong> 3.5 hours</li></ul>"
       },
       {
-        "title": "Day 7: Kazbegi – Gergeti Trinity Church",
+        "title": "Day 7: Kazbegi – Gergeti Trinity Church – Gveleti Waterfalls – Dariali Gorge – Kazbegi",
         "content": "<p>Visit the stunning Gergeti Trinity Church, dramatically perched high on a ridge with spectacular views of Mount Kazbek and the surrounding Caucasus peaks. Experience one of Georgia's most iconic and photographed landmarks in its breathtaking mountain setting.</p><ul><li>Visit stunning Gergeti Trinity Church;</li><li>Dramatically perched ridge location;</li><li>Spectacular Mount Kazbek views;</li><li>Surrounding Caucasus peaks panorama;</li><li>Experience iconic Georgian landmark;</li><li>Breathtaking mountain setting;</li><li>Overnight stay in Kazbegi.</li><li><strong>Duration of the tour:</strong> 6-7 hours</li></ul>"
       },
       {
@@ -15936,7 +15936,7 @@ export const tours = [
         "content": "<p>Final mountain morning in Juta Village before returning through Kazbegi and traveling back to Tbilisi. Enjoy last glimpses of the spectacular Caucasus landscapes and reflect on the incredible mountain experiences during the comfortable journey back to the capital.</p><ul><li>Final morning in pristine Juta Village;</li><li>Return journey through Kazbegi;</li><li>Travel back to vibrant Tbilisi;</li><li>Last glimpses of Caucasus landscapes;</li><li>Reflect on incredible mountain experiences;</li><li>Comfortable journey to capital;</li><li>Check-in and overnight in Tbilisi.</li><li><strong>Duration of the tour:</strong> 6-7 hours</li><li><strong>Driving duration:</strong> 4 hours</li></ul>"
       },
       {
-        "title": "Day 10: Tbilisi – Kutaisi – Bagrati Cathedral",
+        "title": "Day 10: Tbilisi – Bagrati Cathedral – Kutaisi",
         "content": "<p>Discover historic Kutaisi by visiting landmarks like the historic Bagrati Cathedral. This historical western Georgian city offers over 3,000 years of heritage and serves as your gateway to western Georgia's natural and cultural wonders.</p><ul><li>Journey to historic western Georgian city;</li><li>Visit the historic Bagrati Cathedral;</li><li>Discover over 3,000 years of heritage;</li><li>Gateway to western Georgia exploration;</li><li>Experience historical architecture;</li><li>Cultural wonders introduction;</li><li>Check-in and overnight in Kutaisi.</li><li><strong>Duration of the tour:</strong> 7-8 hours</li><li><strong>Driving duration:</strong> 4.5 hours</li></ul>"
       },
       {
@@ -15948,31 +15948,31 @@ export const tours = [
         "content": "<p>Explore the scenic Okatse Canyon for an adventurous day of nature exploration, then continue to Martvili Canyon offering boat rides along turquoise waters and stunning natural landscapes surrounded by dramatic canyon walls and lush vegetation.</p><ul><li>Explore scenic Okatse Canyon;</li><li>Adventurous nature exploration day;</li><li>Continue to beautiful Martvili Canyon;</li><li>Boat rides along turquoise waters;</li><li>Stunning natural landscapes;</li><li>Dramatic canyon walls and vegetation;</li><li>Return to Kutaisi for overnight.</li><li><strong>Duration of the tour:</strong> 8-9 hours</li><li><strong>Driving duration:</strong> 3 hours</li></ul>"
       },
       {
-        "title": "Day 13: Kutaisi – Zugdidi – Dadiani Palace",
+        "title": "Day 13: Kutaisi – Enguri Dam – Mestia",
         "content": "<p>Visit the historic Dadiani Palace in Zugdidi before continuing to the mountainous Svaneti region. This palace showcases Georgian nobility heritage and serves as the gateway to one of Europe's most unique and preserved mountain cultures.</p><ul><li>Visit historic Dadiani Palace;</li><li>Georgian nobility heritage discovery;</li><li>Gateway to mountainous Svaneti region;</li><li>Europe's most unique mountain culture;</li><li>Preserved highland traditions;</li><li>Journey toward mountain adventures;</li><li>Overnight stay in Zugdidi.</li><li><strong>Duration of the tour:</strong> 6-7 hours</li><li><strong>Driving duration:</strong> 2.5 hours</li></ul>"
       },
       {
-        "title": "Day 14: Zugdidi – Mestia",
+        "title": "Day 14: Mestia – Ushguli – Mestia",
         "content": "<p>Travel to Mestia, a highland town known for its distinctive Svan towers and serving as home to the Svaneti Museum of History and Ethnography. Enter Georgia's most preserved and unique mountain heritage region with its ancient defensive architecture.</p><ul><li>Travel to highland town Mestia;</li><li>Famous for distinctive Svan towers;</li><li>Home to Svaneti Museum of History;</li><li>Ethnography and cultural heritage;</li><li>Georgia's most preserved mountain region;</li><li>Ancient defensive architecture;</li><li>Check-in and overnight in Mestia.</li><li><strong>Duration of the tour:</strong> 5-6 hours</li><li><strong>Driving duration:</strong> 4 hours</li></ul>"
       },
       {
-        "title": "Day 15: Mestia – Ushguli",
+        "title": "Day 15: Mestia – Koruldi Lakes – Mestia",
         "content": "<p>Visit Ushguli, one of the highest inhabited villages in Europe, featuring ancient watchtowers, traditional Svan culture, and breathtaking mountain landscapes. Experience the timeless charm of this UNESCO World Heritage site with its perfectly preserved medieval architecture.</p><ul><li>Visit highest inhabited European village;</li><li>Ancient watchtowers and architecture;</li><li>Traditional Svan culture experience;</li><li>Breathtaking mountain landscapes;</li><li>UNESCO World Heritage site;</li><li>Perfectly preserved medieval charm;</li><li>Return to Mestia for overnight.</li><li><strong>Duration of the tour:</strong> 8-9 hours</li><li><strong>Driving duration:</strong> 3 hours round trip</li></ul>"
       },
       {
-        "title": "Day 16: Mestia – Svaneti Museum – Mestia",
+        "title": "Day 16: Mestia – Batumi",
         "content": "<p>Explore the comprehensive Svaneti Museum of History and Ethnography and discover more of Mestia's unique highland culture. Learn about centuries-old Svan traditions, view ancient artifacts, and immerse yourself in the distinctive mountain heritage of this remarkable region.</p><ul><li>Explore comprehensive Svaneti Museum;</li><li>History and Ethnography discovery;</li><li>Unique highland culture immersion;</li><li>Centuries-old Svan traditions;</li><li>View ancient artifacts and heritage;</li><li>Distinctive mountain culture experience;</li><li>Final overnight in Mestia.</li><li><strong>Duration of the tour:</strong> 6-7 hours</li></ul>"
       },
       {
-        "title": "Day 17: Mestia – Batumi",
+        "title": "Day 17: Batumi City Tour",
         "content": "<p>Journey from the highlands to the Black Sea coast and vibrant city of Batumi. Experience the dramatic geographic diversity as you travel from mountain peaks to seaside promenade, discovering Georgia's incredible landscape transitions and coastal charm.</p><ul><li>Journey from highlands to Black Sea;</li><li>Travel to vibrant coastal Batumi;</li><li>Experience dramatic geographic diversity;</li><li>Mountain peaks to seaside transition;</li><li>Georgia's incredible landscape variety;</li><li>Discover coastal charm and atmosphere;</li><li>Check-in and overnight in Batumi.</li><li><strong>Duration of the tour:</strong> 7-8 hours</li><li><strong>Driving duration:</strong> 6 hours</li></ul>"
       },
       {
-        "title": "Day 18: Batumi – Botanical Garden – Ali and Nino Statue",
+        "title": "Day 18: Batumi – Adjarian Cuisine Cooking Class",
         "content": "<p>Explore Batumi Boulevard, visit the world-renowned Batumi Botanical Garden featuring diverse plant collections in spectacular coastal settings, and see the famous Ali and Nino statue. Experience the lively squares and unique fusion of modern architecture and old-world charm.</p><ul><li>Explore vibrant Batumi Boulevard;</li><li>Visit world-renowned Botanical Garden;</li><li>Diverse plant collections in coastal setting;</li><li>See famous Ali and Nino statue;</li><li>Experience lively city squares;</li><li>Modern architecture and old-world charm;</li><li>Overnight stay in Batumi.</li><li><strong>Duration of the tour:</strong> 6-7 hours</li></ul>"
       },
       {
-        "title": "Day 19: Batumi – Adjarian Cuisine Cooking Class",
+        "title": "Day 19: Batumi – Tbilisi (Train)",
         "content": "<p>Enjoy a dedicated cooking class focused on Adjarian cuisine, learning to prepare regional specialties and traditional Black Sea coastal dishes. Experience hands-on culinary education while relaxing by the serene Black Sea and reflecting on your comprehensive 20-day Georgian journey.</p><ul><li>Dedicated Adjarian cuisine cooking class;</li><li>Learn regional specialty preparation;</li><li>Traditional Black Sea coastal dishes;</li><li>Hands-on culinary education;</li><li>Relax by serene Black Sea;</li><li>Reflect on 20-day Georgian journey;</li><li>Final overnight in Batumi.</li><li><strong>Duration of the tour:</strong> 6-7 hours cooking class</li></ul>"
       },
       {
