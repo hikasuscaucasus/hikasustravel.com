@@ -3550,7 +3550,8 @@ export const tours = [
     "tileImage": "/images/tours/7-day-cultural-kutaisi-tbilisi/prometheus-cave-imereti-georgia/prometheus-cave-imereti-georgia-1200.webp",
     "listingImage": "/images/tours/7-day-cultural-kutaisi-tbilisi/prometheus-cave-imereti-georgia/prometheus-cave-imereti-georgia-1200.webp",
     "days": 7,
-    "description": "Immerse yourself in the captivating charm of Georgia on this 7-day cultural journey, beginning in the historic city of Kutaisi.",
+    "description": "A week of Georgian culture, built around two cities. You spend three nights in Kutaisi, the old western capital, and three in Tbilisi, with the monasteries, cave towns and one big mountain day filling the space between.\n\nKutaisi comes first — its clifftop monasteries, the Green Bazaar, and the Prometheus Cave underground — before the drive east to Tbilisi. From the capital you head up the old Military Highway for a day at Kazbegi and the Gergeti church under Mount Kazbek, then work back west through the Uplistsikhe cave town and Gori to close the loop where it began.\n\nThe through-line is the old and the hand-carved: 12th-century Gelati on the UNESCO list, the rock-cut halls of Uplistsikhe, a lone church at 2,170 metres. Two of the days ask for real time on the road, but you unpack just twice, and since the tour runs only for your group, the route and pace stay open to change.",
+    "metaDescription": "Immerse yourself in the captivating charm of Georgia on this 7-day cultural journey, beginning in the historic city of Kutaisi.",
     "listingDescription": "Immerse yourself in the captivating charm of Georgia on this 7-day cultural journey, beginning in the historic city of Kutaisi.",
     "itinerary": [
       {
