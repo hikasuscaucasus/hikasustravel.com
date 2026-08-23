@@ -589,7 +589,7 @@ export const blogArticles = [
         "pl": "Przyjęta w 2004 roku flaga narodowa Gruzji jest znana jako flaga pięciu krzyży: duży centralny krzyż św. Jerzego i mniejszy krzyż z Bolnisi w każdym z czterech pól."
       }
     },
-    "thumbnail": "/images/files/about-georgia.jpg",
+    "thumbnail": "/images/files/georgian-flag-five-cross-flag-georgia-1600.webp",
     "tags": ["history", "culture", "flag"],
     "translations": {
       "de": {
