@@ -386,6 +386,47 @@ section {
   background: rgba(0, 0, 0, 0.35);
   pointer-events: none;
 }
+/* Infographic hero — opt-in via HeroSection's `infographic` prop, currently the
+   Georgian alphabet chart on the essential-georgian-words-phrases post. A chart
+   has to be read, so none of the treatment above works for it: `.coverme` would
+   cover-crop it at every viewport, `.fullscreen`'s 100dvh would letterbox a 16:9
+   image into a tall box on phones, and the 35% scrim plus the overlaid white H1
+   would sit on top of the letters. Here the image keeps its own aspect ratio and
+   the title moves below it. The band is the site's inverted dark green because
+   the header overlay above is transparent and its nav text is cream — on the
+   chart's own parchment that text would be invisible. */
+.hero--infographic {
+  background-color: var(--color-h2);
+  color: var(--color-bg);
+  /* Clear the header overlay so the nav never lands on the chart. Measured, not
+     guessed: the menu bottoms out at 341px, or 360px where it wraps to two rows
+     just above the 900px breakpoint (worst case across all seven locales). */
+  padding: 380px var(--indent) var(--indent);
+  text-align: center;
+}
+.hero--infographic picture {
+  display: block;
+}
+.hero--infographic__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  /* Nothing to crop at any width; the clamp only stops the chart from filling a
+     short desktop viewport on its own, and `contain` keeps it whole if it bites. */
+  max-width: 1200px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+.hero--infographic__title h1 {
+  margin: var(--indent) auto 0;
+  max-width: 1000px;
+}
+@media (max-width: 900px) {
+  .hero--infographic {
+    /* Below 900px the menu collapses to the hamburger and the header is 80px. */
+    padding-top: 110px;
+  }
+}
 /* Juta hero — per-page CSS background. The package needs a responsive image-set()
    ladder (768 → 2400) and a deliberate `background-position: center 40%` (keeps
    the Chaukhi peaks framed on short desktop banners); neither is expressible via

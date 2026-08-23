@@ -25,6 +25,21 @@ function tf(t, key, fallback) {
   return val === key ? fallback : val
 }
 
+// Cards normally ship one flat thumbnail. A post that packages a width ladder
+// can opt into a srcset instead (`thumbnailSrcSet`); everything without one
+// renders exactly the single <img src> it always did.
+function cardImageProps(item) {
+  const s = item.thumbnailSrcSet
+  if (!s) return {}
+  return {
+    srcSet: s.widths.map((w) => `${asset(`${s.base}-${w}.webp`)} ${w}w`).join(', '),
+    sizes: s.sizes,
+    width: s.width,
+    height: s.height,
+    decoding: 'async',
+  }
+}
+
 export default function BlogPage() {
   const t = useT()
   const { lang } = useLang()
@@ -46,6 +61,12 @@ export default function BlogPage() {
       date: a.date,
       readTime: a.readTime,
       thumbnail: a.thumbnail,
+      thumbnailSrcSet: a.thumbnailSrcSet,
+      // An infographic card shows a chart, so it is described by what the chart
+      // contains rather than by the headline; photo cards keep the title as alt.
+      thumbnailAlt: a.heroInfographic
+        ? (a.heroImageMeta?.alt?.[lang] || a.heroImageMeta?.alt?.en)
+        : undefined,
       tags: a.tags,
     })),
     ...blogGuides.map(g => {
@@ -86,9 +107,10 @@ export default function BlogPage() {
                 <div className="blog-item__img-wrap">
                   <img
                     src={asset(item.thumbnail)}
-                    alt={item.title}
+                    alt={item.thumbnailAlt || item.title}
                     className="blog-item__img"
                     loading="lazy"
+                    {...cardImageProps(item)}
                   />
                 </div>
                 <div className="blog-item__body">

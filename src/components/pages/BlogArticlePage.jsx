@@ -58,7 +58,10 @@ export default function BlogArticlePage() {
         description: localizedDesc,
         author: { '@type': 'Organization', name: article.author },
         datePublished: article.date,
-        image: `https://www.hikasustravel.com${article.heroImage}`,
+        // `schemaImage` is the opt-in override for a post whose hero is not a
+        // good social/search card on its own — the alphabet chart, whose 1200px
+        // hero is a wide infographic, ships a 1200x630 crop for this instead.
+        image: `https://www.hikasustravel.com${article.schemaImage || article.heroImage}`,
         mainEntityOfPage: url,
         inLanguage: lang,
         publisher: {
@@ -156,7 +159,18 @@ export default function BlogArticlePage() {
 
   return (
     <>
-      <HeroSection image={article.heroImage} title={articleTitle} bgClass={article.heroBgClass || ''} />
+      <HeroSection
+        image={article.heroImage}
+        title={articleTitle}
+        bgClass={article.heroBgClass || ''}
+        infographic={article.heroInfographic
+          ? {
+            ...article.heroInfographic,
+            src: article.heroImage,
+            alt: article.heroImageMeta?.alt?.[lang] || article.heroImageMeta?.alt?.en,
+          }
+          : null}
+      />
       <section className="blog-article">
         <nav className="blog-breadcrumb">
           <LocaleLink to="/">Home</LocaleLink>

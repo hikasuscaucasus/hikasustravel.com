@@ -19,12 +19,46 @@ function heroBackground(image, imageAvif) {
   return window.CSS?.supports?.('background-image', imageSet) ? imageSet : webp
 }
 
-export default function HeroSection({ image, imageAvif, title, className = '', isTaxi = false, bgClass = '' }) {
+// Build one srcset line from the width ladder a packaged image ships with.
+const srcSetFor = (base, widths, ext) =>
+  widths.map((w) => `${asset(`${base}-${w}.${ext}`)} ${w}w`).join(', ')
+
+export default function HeroSection({ image, imageAvif, title, className = '', isTaxi = false, bgClass = '', infographic = null }) {
   const sectionRef = useRef(null)
 
   const scrollToNext = () => {
     const next = sectionRef.current?.nextElementSibling
     if (next) next.scrollIntoView({ behavior: 'smooth' })
+  }
+
+  // An infographic hero is read, not just looked at: a chart cover-cropped into
+  // the 100dvh background above would clip letters at every viewport, and the
+  // 35% scrim `.coverme` paints would sit on top of them. So this variant is a
+  // real <picture> at the image's own aspect ratio — nothing to crop, nothing
+  // to clip — with the title below it instead of over it. Opt-in per article;
+  // every other hero still takes the branch below.
+  if (infographic) {
+    const { base, widths, src, sizes, width, height, alt } = infographic
+    return (
+      <section ref={sectionRef} className={`hero--infographic ${className}`}>
+        <picture>
+          <source type="image/avif" srcSet={srcSetFor(base, widths, 'avif')} sizes={sizes} />
+          <source type="image/webp" srcSet={srcSetFor(base, widths, 'webp')} sizes={sizes} />
+          <img
+            className="hero--infographic__img"
+            src={asset(src)}
+            width={width}
+            height={height}
+            alt={alt}
+            loading="eager"
+            fetchPriority="high"
+          />
+        </picture>
+        <div className="hero--infographic__title">
+          <h1>{title}</h1>
+        </div>
+      </section>
+    )
   }
 
   // A page may supply its own background via a CSS class (`bgClass`) — used when

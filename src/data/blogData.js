@@ -299,8 +299,41 @@ export const blogArticles = [
     "author": "Hikasus Travel",
     "date": "2026-06-04",
     "readTime": 8,
-    "heroImage": "/images/files/sulfur-baths-wine-tour.jpg",
-    "thumbnail": "/images/files/about-georgia.jpg",
+    "heroImage": "/images/files/georgian-alphabet-mkhedruli-1200.webp",
+    "heroInfographic": {
+      "base": "/images/files/georgian-alphabet-mkhedruli",
+      "widths": [768, 1200, 1600, 1672],
+      "sizes": "(max-width:1200px) 100vw, 1200px",
+      "width": 1672,
+      "height": 941
+    },
+    "heroImageMeta": {
+      "width": 1672,
+      "height": 941,
+      "og": {
+        "src": "/images/files/georgian-alphabet-mkhedruli-og-1200x630.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "alt": {
+        "en": "Chart of the 33 letters of the Georgian Mkhedruli alphabet with their romanized names",
+        "de": "Tafel der 33 Buchstaben des georgischen Mchedruli-Alphabets mit ihren romanisierten Namen",
+        "fr": "Tableau des 33 lettres de l'alphabet géorgien mkhedruli avec leurs noms romanisés",
+        "es": "Tabla de las 33 letras del alfabeto georgiano mkhedruli con sus nombres romanizados",
+        "nl": "Overzicht van de 33 letters van het Georgische Mchedroeli-alfabet met hun geromaniseerde namen",
+        "cs": "Přehled 33 písmen gruzínské abecedy mchedruli s jejich přepisem do latinky",
+        "pl": "Tablica 33 liter gruzińskiego alfabetu mchedruli z ich zlatynizowanymi nazwami"
+      }
+    },
+    "schemaImage": "/images/files/georgian-alphabet-mkhedruli-og-1200x630.jpg",
+    "thumbnail": "/images/files/georgian-alphabet-mkhedruli-768.webp",
+    "thumbnailSrcSet": {
+      "base": "/images/files/georgian-alphabet-mkhedruli",
+      "widths": [768, 1200],
+      "sizes": "(max-width:768px) 100vw, 400px",
+      "width": 1672,
+      "height": 941
+    },
     "tags": [
       "language",
       "culture",
