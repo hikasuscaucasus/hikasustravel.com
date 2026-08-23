@@ -10904,7 +10904,8 @@ export const tours = [
     "listingImage": "/images/tours/georgia-wonders-11-day/ali-and-nino-statue-batumi-georgia/ali-and-nino-statue-batumi-georgia-1024.webp",
     "cardPosition": "center 25%",
     "days": 11,
-    "description": "Begin your Georgian adventure in the vibrant city of Kutaisi, where history and natural wonders collide.",
+    "description": "Eleven days and most of Georgia — the caves and monasteries of the west, the Black Sea coast, the capital, and the high mountains. This grand loop settles you in four bases: four nights in Kutaisi, two in Batumi, two in Tbilisi and two at Kazbegi.\n\nYou start among Kutaisi's monasteries, the Prometheus Cave and the green water of Martvili Canyon, then drop to the sea at Batumi. From the coast a scenic train carries you east to Tbilisi, and the old Military Highway climbs north to two nights under Mount Kazbek and the Gergeti church. The way home turns back west through Gori and Uplistsikhe to Kutaisi.\n\nIt's the widest sweep of the shorter tours — canyon, coast, capital and Caucasus in one trip, with the Batumi train a pleasure in itself. The long legs carry some real driving, but four bases keep the packing down, and with your own guide-driver, the plan bends to suit you.",
+    "metaDescription": "Begin your Georgian adventure in the vibrant city of Kutaisi, where history and natural wonders collide.",
     "listingDescription": "Begin your Georgian adventure in the vibrant city of Kutaisi, where history and natural wonders collide.",
     "itinerary": [
       {
