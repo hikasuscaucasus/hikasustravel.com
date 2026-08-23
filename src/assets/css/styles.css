@@ -5286,37 +5286,6 @@ tour-info h2 a,
   font-size: 13px;
   font-family: "rockwell";
 }
-.td-hero__subtitle {
-  color: rgba(255, 255, 255, 0.92);
-  margin: 14px auto 0;
-  max-width: 720px;
-  text-align: center;
-  font-size: clamp(0.95rem, 2vw, 1.1rem);
-  line-height: 1.55;
-}
-.td-hero__facts {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 8px 12px;
-  margin: 18px auto 0;
-  padding: 0;
-  max-width: 780px;
-}
-.td-hero__fact {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(8px);
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-size: 13px;
-  font-family: "rockwell";
-}
-.td-hero__fact svg { color: var(--color-h3); flex-shrink: 0; }
 .td-hero__actions {
   margin-top: 24px;
   display: flex;

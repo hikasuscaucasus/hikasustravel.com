@@ -301,8 +301,6 @@ export default function TourDetailPage() {
         tour={tour}
         translatedTitle={tt?.title}
         heroH1={tt?.heroH1 || tour.heroH1}
-        heroSubtitle={tt?.heroSubtitle || tour.heroSubtitle}
-        heroFacts={tt?.heroFacts || tour.heroFacts}
         isGroup={isGroup}
         startingPrice={startingPrice}
       />
