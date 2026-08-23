@@ -5596,16 +5596,6 @@ tour-info h2 a,
   text-align: center;
   margin-bottom: calc(var(--indent) * 1.5);
 }
-.td-pricing__note {
-  margin: 20px auto 0;
-  max-width: 720px;
-  text-align: center;
-  font-size: 14px;
-  line-height: 1.55;
-  color: var(--color-h2);
-  opacity: 0.88;
-}
-.td-pricing__note strong { color: var(--color-h3); opacity: 1; }
 .td-pricing__from {
   display: inline-block;
   margin-top: 8px;

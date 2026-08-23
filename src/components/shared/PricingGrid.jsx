@@ -367,18 +367,6 @@ export function PriceSection({ isGroup, pricing, pricePerPerson, singleSupplemen
               </div>
             )}
           </div>
-
-          {/* The note explains the private-tour "From" prices — per person at
-              four travellers in the Classic package, varying with dates, hotels,
-              group size and customization. A group tour sells one fixed
-              per-person price with published dates, so none of it applies and it
-              read as a contradiction of the price above. Private tours (every
-              tour with a tiered `pricing` table) are unaffected. */}
-          {!isGroup && (
-            <p className="td-pricing__note">
-              <strong>{t('pricing.fromNote')}</strong> {t('pricing.note')}
-            </p>
-          )}
         </div>
       </FadeUp>
     </section>
