@@ -3940,6 +3940,40 @@ section {
   }
 }
 /* No rung above 1364 exists (Koruldi Lakes). Do not add a 1600/2400 breakpoint. */
+/* Title band for a site page that opts out of the photo hero (`noHero`), used
+   while a genuine photograph is sourced. Solid brand colour, no image and no
+   gradient of its own. The top padding is the SAME proven header-safe value the
+   Private Tours hero uses: the header is a 300px absolute overlay whose nav
+   actually bottoms out at 327-346px once long localized labels wrap, so 380px
+   clears it; at <=900px the header collapses to a fixed 80px bar and 100px is
+   enough. The H1 inherits the global cream h1 colour, which is what this dark
+   band wants, and mirrors the hero H1's small-screen size reductions so long
+   localized titles stay compact. */
+.dest-title-band {
+  --dtb-header-safe: 380px;
+  padding: var(--dtb-header-safe) var(--indent) calc(var(--indent) * 1.5);
+  background-color: var(--color-h2);
+  text-align: center;
+}
+.dest-title-band h1 {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-bottom: 0;
+}
+@media (max-width: 900px) {
+  .dest-title-band { --dtb-header-safe: 100px; }
+}
+@media (max-width: 600px) {
+  .dest-title-band h1 {
+    font-size: calc(var(--font-size) * 1.7);
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+}
+@media (max-width: 400px) {
+  .dest-title-band h1 { font-size: calc(var(--font-size) * 1.5); }
+}
 /* Things to Do in Batumi hero — per-page CSS background, and the FIRST hero on a
    things-to-do page to use a ladder at all (the template only gained the opt-in
    plumbing in 610fb1d; every other things-to-do page still renders a bare

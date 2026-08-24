@@ -431,7 +431,20 @@ export default function SitePage() {
       <div className="dest-breadcrumbs">
         <Breadcrumbs trail={trail} />
       </div>
-      <HeroSection image={heroImage} imageAvif={site.imageAvif} bgClass={site.heroClass} title={page.heroTitle || site.name} />
+      {/* Hero. A site may opt out of the photo hero entirely (`noHero`) while a
+          genuine image is sourced. The replacement is a plain title band, NOT a
+          removal: it keeps <main>'s child count stable so the .page-items
+          :nth-child() light/dark banding below is unaffected, it carries the H1
+          that otherwise lives inside the hero (so the page still has exactly one),
+          and its solid background keeps the transparent header's cream logo/nav
+          legible. No image, no placeholder, no reserved 100dvh. */}
+      {site.noHero ? (
+        <section className="dest-title-band">
+          <h1>{page.heroTitle || site.name}</h1>
+        </section>
+      ) : (
+        <HeroSection image={heroImage} imageAvif={site.imageAvif} bgClass={site.heroClass} title={page.heroTitle || site.name} />
+      )}
       <section className="page-items about-georgia">
         <EntityToursTag type="site" slug={site.slug} name={site.name} />
         <div ref={contentRef}>

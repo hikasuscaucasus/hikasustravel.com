@@ -10314,6 +10314,22 @@ export const sites = [
     slug: 'abanotubani-sulfur-baths', name: 'Abanotubani Sulfur Baths',
     parentType: 'city', parent: 'tbilisi', published: true,
     seoKey: 'abanotubaniSulfurBaths', contentKey: 'abanotubaniSulfurBaths',
+    // ⚠️ TEMPORARY, pending a genuine Abanotubani photograph. `noHero` drops the
+    // photo hero on THIS page only: SitePage renders a plain `.dest-title-band`
+    // (solid brand colour, no image) carrying the same H1 instead of HeroSection.
+    // Why a band rather than nothing: `header` is a 300px TRANSPARENT overlay with
+    // cream nav links and a dark ::before gradient, designed to sit over a dark
+    // hero photo — with no dark area behind it the logo and nav render
+    // cream-on-cream and the gradient washes the top of the page grey. The band is
+    // also why the element must stay in <main> at all: removing it outright shifts
+    // every following .page-items into the opposite :nth-child() band and inverts
+    // the whole page's light/dark scheme.
+    // `image` is deliberately LEFT as the generic georgia-home.jpg: it no longer
+    // renders anywhere on the page, but it still feeds og:image / twitter:image /
+    // the TouristAttraction JSON-LD image, and the brief asked for social metadata
+    // to be reported rather than guessed at. Replace all of it together when the
+    // real photo arrives, and delete `noHero`.
+    noHero: true,
     image: '/images/files/georgia-home.jpg',
   },
   {
