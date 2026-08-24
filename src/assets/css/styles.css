@@ -3876,6 +3876,39 @@ section {
   }
 }
 /* No rung above 1448 exists (Batumi Dolphinarium). Do not add a 1600/2400 breakpoint. */
+/* Batumi Boulevard hero — per-page CSS background (the hero is a background, not
+   an <img>), so AVIF-first + WebP fallback ride on image-set() and the three
+   rungs are breakpoints rather than a srcset. background-size: cover is the
+   object-fit equivalent; background-position: center 38% is the requested
+   object-position, biased above centre so the fountains and the lit skyline stay
+   in frame while the checkerboard paving fills the foreground. */
+.hero--batumi-boulevard {
+  background-image: url("/images/files/batumi-boulevard-georgia-1200.webp");
+  background-image: image-set(
+    url("/images/files/batumi-boulevard-georgia-768.avif") type("image/avif"),
+    url("/images/files/batumi-boulevard-georgia-768.webp") type("image/webp")
+  );
+  background-position: center 38%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .hero--batumi-boulevard {
+    background-image: image-set(
+      url("/images/files/batumi-boulevard-georgia-1200.avif") type("image/avif"),
+      url("/images/files/batumi-boulevard-georgia-1200.webp") type("image/webp")
+    );
+  }
+}
+@media (min-width: 1200px) {
+  .hero--batumi-boulevard {
+    background-image: image-set(
+      url("/images/files/batumi-boulevard-georgia-1445.avif") type("image/avif"),
+      url("/images/files/batumi-boulevard-georgia-1445.webp") type("image/webp")
+    );
+  }
+}
+/* No rung above 1445 exists (Batumi Boulevard). Do not add a 1600/2400 breakpoint. */
 /* Things to Do in Batumi hero — per-page CSS background, and the FIRST hero on a
    things-to-do page to use a ladder at all (the template only gained the opt-in
    plumbing in 610fb1d; every other things-to-do page still renders a bare

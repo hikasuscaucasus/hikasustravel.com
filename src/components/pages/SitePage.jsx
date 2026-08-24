@@ -184,6 +184,11 @@ export default function SitePage() {
     // Most sites are places (TouristAttraction). Thematic/cultural explainers can
     // opt into an Article-class type via `schemaType` (e.g. 'TravelGuide') so they
     // aren't mislabelled as a physical attraction.
+    // The primary node's `image`. Defaults to the hero rung; an entry may opt into
+    // a dedicated social crop instead via `jsonLdImage` (first consumer: Batumi
+    // Boulevard, whose og:image/twitter:image use the same 1.91:1 file). Entries
+    // that omit the field are unchanged — `undefined || hero` is the hero.
+    const primaryImage = `${SITE_URL}${site.jsonLdImage || heroImage}`
     const primaryNode =
       site.schemaType === 'TravelGuide' || site.schemaType === 'Article'
         ? {
@@ -192,7 +197,7 @@ export default function SitePage() {
             headline: (page && page.heroTitle) || site.name,
             description: seo.description,
             url,
-            image: `${SITE_URL}${heroImage}`,
+            image: primaryImage,
             inLanguage: lang,
             about: { '@type': 'Place', name: 'Kakheti, Georgia' },
           }
@@ -201,7 +206,7 @@ export default function SitePage() {
             name: site.name,
             description: seo.description,
             url,
-            image: `${SITE_URL}${heroImage}`,
+            image: primaryImage,
             containedInPlace: { '@type': 'Country', name: 'Georgia' },
           }
     // Image SEO/AEO: a standalone ImageObject describing the hero. Because the

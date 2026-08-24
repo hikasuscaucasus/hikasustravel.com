@@ -9197,7 +9197,52 @@ export const sites = [
     slug: 'batumi-boulevard', name: 'Batumi Boulevard',
     parentType: 'city', parent: 'batumi', published: true,
     seoKey: 'batumiBoulevard', contentKey: 'batumiBoulevard',
-    image: '/images/files/batumi-coastal-tour.jpg',
+    // Hero: the boulevard's illuminated dancing fountains and checkerboard-paved
+    // plaza at night, via the `.hero--batumi-boulevard` image-set() ladder.
+    // REPLACES the generic batumi-coastal-tour.jpg, which is not specific to the
+    // boulevard and is SHARED with the Batumi Dolphinarium page's old reference,
+    // a tour's hero/tile/listing images and a blog post — so the file itself must
+    // stay; only this page's reference moves.
+    // Landscape 4:3, native 1445x1089 (NOT 1448x1086) -> ladder 768/1200/1445
+    // only; no 1600/2400, no upscale. Same frame the group-tour gallery and the
+    // Batumi city page's inline `batumi-boulevard-fountains-night-georgia` figure
+    // already ship; this is the /images/files/ copy the hero package targets.
+    image: '/images/files/batumi-boulevard-georgia-1445.webp',
+    imageAvif: '/images/files/batumi-boulevard-georgia-1445.avif',
+    heroClass: 'hero--batumi-boulevard',
+    // LCP hero preload: the 1200 AVIF rung with fetchpriority=high (this entry had
+    // none before). Dedicated 1.91:1 social image; the matching -og.webp ships
+    // alongside but is unreferenced — useSEO/prerender emit a single og:image.
+    heroPreload: '/images/files/batumi-boulevard-georgia-1200.avif',
+    ogImage: { src: '/images/files/batumi-boulevard-georgia-og-1200x630.jpg', width: 1200, height: 630 },
+    // Opt-in: point the primary TouristAttraction node's `image` at the dedicated
+    // 1.91:1 social crop instead of the hero rung, so schema.org, og:image and
+    // twitter:image all name the same file. Every other registry entry omits this
+    // field and keeps `image` (the hero) exactly as before.
+    jsonLdImage: '/images/files/batumi-boulevard-georgia-og-1200x630.jpg',
+    // Hero image SEO/AEO metadata (owner's own photo -> brand credit, set by
+    // SitePage). The hero is a CSS background (no <img alt>), so the localized alt
+    // lives here and feeds og:image:alt / twitter:image:alt per locale and the hero
+    // ImageObject's caption. width/height = the 1445 rung. `imageId: 'hero-image'`
+    // gives the node a stable page-scoped @id. Location facts are kept identical to
+    // the Batumi city page's inline figure for this same frame.
+    imageMeta: {
+      width: 1445, height: 1089, imageId: 'hero-image',
+      name: 'Illuminated fountains on Batumi Boulevard at night, Adjara, Georgia',
+      description: "The dancing fountains of Batumi Boulevard lit at night, with the checkerboard-paved promenade in the foreground and the lit towers of the seafront skyline behind, in Batumi, Adjara, on Georgia's Black Sea coast.",
+      locationName: 'Batumi Boulevard, Batumi, Adjara, Georgia',
+      locality: 'Batumi', region: 'Adjara', country: 'GE',
+      geo: { lat: 41.6500, lng: 41.6367 },
+      alt: {
+        en: 'Illuminated fountains and a checkerboard plaza on Batumi Boulevard at night, Georgia',
+        de: 'Beleuchtete Springbrunnen und ein Schachbrettplatz am Batumi-Boulevard bei Nacht, Georgien',
+        fr: 'Fontaines illuminées et esplanade en damier sur le boulevard de Batoumi la nuit, Géorgie',
+        es: 'Fuentes iluminadas y una plaza ajedrezada en el bulevar de Batumi de noche, Georgia',
+        nl: 'Verlichte fonteinen en een dambordplein op de boulevard van Batumi bij nacht, Georgië',
+        cs: 'Nasvícené fontány a šachovnicové náměstí na batumské promenádě v noci, Gruzie',
+        pl: 'Podświetlone fontanny i szachownicowy plac na bulwarze w Batumi nocą, Gruzja',
+      },
+    },
   },
   {
     slug: 'batumi-central-mosque', name: 'Batumi Central Mosque',

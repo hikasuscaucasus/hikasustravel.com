@@ -189,6 +189,11 @@ export function createJsonLdBuilder({ seoFor }) {
       const url = `${SITE_URL}/${lang}/${path}`
       const seo = seoFor(s.seoKey, lang)
       const isArticleType = s.schemaType === 'TravelGuide' || s.schemaType === 'Article'
+      // The primary node's `image`. Defaults to the hero rung; an entry may opt into
+      // a dedicated social crop instead via `jsonLdImage` (first consumer: Batumi
+      // Boulevard, whose og:image/twitter:image use the same 1.91:1 file). Entries
+      // that omit the field are unchanged — `undefined || hero` is the hero.
+      const primaryImage = `${SITE_URL}${s.jsonLdImage || s.image}`
       const primary = isArticleType
         ? {
             '@type': s.schemaType,
@@ -196,7 +201,7 @@ export function createJsonLdBuilder({ seoFor }) {
             headline: heroTitle(s.contentKey) || s.name,
             description: seo.description,
             url,
-            image: `${SITE_URL}${s.image}`,
+            image: primaryImage,
             inLanguage: lang,
           }
         : {
@@ -204,7 +209,7 @@ export function createJsonLdBuilder({ seoFor }) {
             name: s.name,
             description: seo.description,
             url,
-            image: `${SITE_URL}${s.image}`,
+            image: primaryImage,
             containedInPlace: { '@type': 'Country', name: 'Georgia' },
           }
       const trail = [HOME, ALL_DEST]
