@@ -12105,7 +12105,50 @@ export const sites = [
     slug: 'koruldi-lakes', name: 'Koruldi Lakes',
     parentType: 'city', parent: 'mestia', formerParent: 'svaneti', published: true,
     seoKey: 'koruldiLakes', contentKey: 'koruldiLakes',
-    image: '/images/files/georgia-home.jpg',
+    // Hero: the lakes themselves — a hiker on the shore with the Greater Caucasus
+    // along the horizon — via the `.hero--koruldi-lakes` image-set() ladder.
+    // REPLACES the generic site-wide georgia-home.jpg, which is the fallback image
+    // for ~200 other registry entries, so the FILE must stay; only this page's
+    // reference moves.
+    // Landscape 16:9, native 1364x768 -> ladder 768/1200/1364 only; no 1600/2400,
+    // no upscale. Distinct from the older 1920x1080 `Koruldi Lakes.jpg` in the same
+    // folder (a different frame, still used by another entry) — do not merge them.
+    image: '/images/files/koruldi-lakes-svaneti-georgia-1364.webp',
+    imageAvif: '/images/files/koruldi-lakes-svaneti-georgia-1364.avif',
+    heroClass: 'hero--koruldi-lakes',
+    // LCP hero preload: the 1200 AVIF rung with fetchpriority=high (this entry had
+    // none before). Dedicated 1.91:1 social image; the matching -og.webp ships
+    // alongside but is unreferenced — useSEO/prerender emit a single og:image.
+    heroPreload: '/images/files/koruldi-lakes-svaneti-georgia-1200.avif',
+    ogImage: { src: '/images/files/koruldi-lakes-svaneti-georgia-og-1200x630.jpg', width: 1200, height: 630 },
+    // Opt-in (see SitePage/seo-jsonld): point the primary TouristAttraction node's
+    // `image` at the 1.91:1 social crop so schema.org, og:image and twitter:image
+    // all name the same file. Entries omitting this keep the hero rung.
+    jsonLdImage: '/images/files/koruldi-lakes-svaneti-georgia-og-1200x630.jpg',
+    // Hero image SEO/AEO metadata (owner's own photo -> brand credit, set by
+    // SitePage). The hero is a CSS background (no <img alt>), so the localized alt
+    // lives here and feeds og:image:alt / twitter:image:alt per locale and the hero
+    // ImageObject's caption. width/height = the 1364 rung.
+    // ⚠️ The package deliberately says 'Greater Caucasus peaks', NOT Ushba — the
+    // frame shows the range broadly, not Ushba's twin summit. Do not 'improve' it.
+    // contentLocation is name-only: the package ships no coordinate for the lakes,
+    // and SitePage/seo-jsonld both handle a geo-less contentLocation.
+    imageMeta: {
+      width: 1364, height: 768, imageId: 'hero-image',
+      name: 'A hiker beside the Koruldi Lakes above Mestia, with the Greater Caucasus behind, Svaneti, Georgia',
+      description: 'A hiker with a backpack standing on the shore of one of the Koruldi Lakes, on the alpine ridge above Mestia, with the still water reflecting the sky and the snow-streaked peaks of the Greater Caucasus along the horizon, in Samegrelo-Zemo Svaneti, Georgia (the country).',
+      locationName: 'Koruldi Lakes, above Mestia, Samegrelo-Zemo Svaneti, Georgia',
+      locality: 'Mestia', region: 'Samegrelo-Zemo Svaneti', country: 'GE',
+      alt: {
+        en: 'Hiker with a backpack beside the Koruldi Lakes below the Greater Caucasus peaks above Mestia, Svaneti, Georgia',
+        de: 'Wanderer mit Rucksack an den Koruldi-Seen unter den Gipfeln des Großen Kaukasus oberhalb von Mestia, Swanetien, Georgien',
+        fr: 'Randonneur avec un sac à dos au bord des lacs Koruldi sous les sommets du Grand Caucase au-dessus de Mestia, Svanétie, Géorgie',
+        es: 'Excursionista con mochila junto a los lagos Koruldi bajo los picos del Gran Cáucaso sobre Mestia, Svaneti, Georgia',
+        nl: 'Wandelaar met rugzak bij de Koruldi-meren onder de toppen van de Grote Kaukasus boven Mestia, Svaneti, Georgië',
+        cs: 'Turista s batohem u Koruldských jezer pod vrcholky Velkého Kavkazu nad Mestií, Svanetie, Gruzie',
+        pl: 'Turysta z plecakiem nad jeziorami Koruldi pod szczytami Wielkiego Kaukazu powyżej Mestii, Swanetia, Gruzja',
+      },
+    },
   },
   {
     slug: 'mount-ushba', name: 'Mount Ushba',
