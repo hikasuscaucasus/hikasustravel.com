@@ -8035,48 +8035,56 @@ export const sites = [
     slug: 'tsageri-history-museum', name: 'Tsageri History Museum',
     parentType: 'region', parent: 'racha-lechkhumi', published: true,
     seoKey: 'tsageriHistoryMuseum', contentKey: 'tsageriHistoryMuseum',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'sairme-pillars', name: 'The Sairme Pillars',
     parentType: 'region', parent: 'racha-lechkhumi', published: true,
     seoKey: 'sairmePillars', contentKey: 'sairmePillars',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'rachkha-waterfall', name: 'Rachkha Waterfall',
     parentType: 'region', parent: 'racha-lechkhumi', published: true,
     seoKey: 'rachkhaWaterfall', contentKey: 'rachkhaWaterfall',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'verdzistava-waterfall', name: 'Verdzistava Waterfall',
     parentType: 'region', parent: 'racha-lechkhumi', published: true,
     seoKey: 'verdzistavaWaterfall', contentKey: 'verdzistavaWaterfall',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'zubi-fortress', name: 'Zubi Fortress',
     parentType: 'region', parent: 'racha-lechkhumi', published: true,
     seoKey: 'zubiFortress', contentKey: 'zubiFortress',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'orbeli-fortress', name: 'Orbeli Fortress',
     parentType: 'region', parent: 'racha-lechkhumi', published: true,
     seoKey: 'orbeliFortress', contentKey: 'orbeliFortress',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'lailashi-pool-okronishi', name: 'The Lailashi Pool (Okronishi)',
     parentType: 'region', parent: 'racha-lechkhumi', published: true,
     seoKey: 'lailashiPool', contentKey: 'lailashiPool',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'kulbaki-lakes', name: 'The Kulbaki Lakes',
     parentType: 'region', parent: 'racha-lechkhumi', published: true,
     seoKey: 'kulbakiLakes', contentKey: 'kulbakiLakes',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
@@ -8090,42 +8098,49 @@ export const sites = [
     slug: 'khvanchkara-wine-monument', name: 'The Khvanchkara Wine Monument',
     parentType: 'city', parent: 'ambrolauri', formerParent: 'racha-lechkhumi', published: true,
     seoKey: 'khvanchkaraMonument', contentKey: 'khvanchkaraMonument',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'love-waterfall', name: 'The Love Waterfall (Sikvaruli)',
     parentType: 'region', parent: 'racha-lechkhumi', published: true,
     seoKey: 'loveWaterfall', contentKey: 'loveWaterfall',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'minda-fortress', name: 'Minda Fortress',
     parentType: 'region', parent: 'racha-lechkhumi', published: true,
     seoKey: 'mindaFortress', contentKey: 'mindaFortress',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'nikortsminda-cathedral', name: 'Nikortsminda Cathedral',
     parentType: 'region', parent: 'racha-lechkhumi', published: true,
     seoKey: 'nikortsmindaCathedral', contentKey: 'nikortsmindaCathedral',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'oni-synagogue', name: 'The Oni Synagogue',
     parentType: 'city', parent: 'oni', formerParent: 'racha-lechkhumi', published: true,
     seoKey: 'oniSynagogue', contentKey: 'oniSynagogue',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'shaori-lake', name: 'Shaori Lake',
     parentType: 'region', parent: 'racha-lechkhumi', published: true,
     seoKey: 'shaoriLake', contentKey: 'shaoriLake',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'udziro-lake', name: 'Udziro Lake',
     parentType: 'region', parent: 'racha-lechkhumi', published: true,
     seoKey: 'udziroLake', contentKey: 'udziroLake',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
@@ -8280,6 +8295,7 @@ export const sites = [
     slug: 'askhi-massif', name: 'The Askhi Massif',
     parentType: 'region', parent: 'racha-lechkhumi', published: true,
     seoKey: 'askhiMassif', contentKey: 'askhiMassif',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
@@ -8432,6 +8448,7 @@ export const sites = [
     slug: 'rustavi-history-museum', name: 'The Rustavi History Museum',
     parentType: 'city', parent: 'rustavi', published: true,
     seoKey: 'rustaviHistoryMuseum', contentKey: 'rustaviHistoryMuseum',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
@@ -8637,6 +8654,7 @@ export const sites = [
     slug: 'tsughrughasheni-church', name: 'Tsughrughasheni Church',
     parentType: 'city', parent: 'bolnisi', published: true,
     seoKey: 'tsughrughasheniChurch', contentKey: 'tsughrughasheniChurch',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
@@ -8688,6 +8706,7 @@ export const sites = [
     slug: 'ujarma-fortress', name: 'Ujarma Fortress',
     parentType: 'region', parent: 'kakheti', published: true,
     seoKey: 'ujarmaFortress', contentKey: 'ujarmaFortress',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
@@ -8795,24 +8814,28 @@ export const sites = [
     slug: 'telavi-bazaar', name: 'The Telavi Bazaar',
     parentType: 'city', parent: 'telavi', published: true,
     seoKey: 'telaviBazaar', contentKey: 'telaviBazaar',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'sighnaghi-museum', name: 'The Sighnaghi Museum',
     parentType: 'city', parent: 'sighnaghi', published: true,
     seoKey: 'sighnaghiMuseum', contentKey: 'sighnaghiMuseum',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'shumi-winery', name: 'Shumi Winery',
     parentType: 'city', parent: 'telavi', published: true,
     seoKey: 'shumiWinery', contentKey: 'shumiWinery',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'shuamta-monasteries', name: 'The Shuamta Monasteries',
     parentType: 'city', parent: 'telavi', published: true,
     seoKey: 'shuamtaMonasteries', contentKey: 'shuamtaMonasteries',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
@@ -8821,12 +8844,14 @@ export const sites = [
     slug: 'rtveli-georgian-grape-harvest', name: 'Rtveli: The Georgian Grape Harvest',
     parentType: 'region', parent: 'kakheti', published: true,
     seoKey: 'rtveli', contentKey: 'rtveli', schemaType: 'TravelGuide',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'pankisi-gorge', name: 'Pankisi Gorge',
     parentType: 'region', parent: 'kakheti', published: true,
     seoKey: 'pankisiGorge', contentKey: 'pankisiGorge',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
@@ -8840,6 +8865,7 @@ export const sites = [
     slug: 'nekresi-monastery', name: 'Nekresi Monastery',
     parentType: 'city', parent: 'kvareli', formerParent: 'kakheti', published: true,
     seoKey: 'nekresiMonastery', contentKey: 'nekresiMonastery',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
@@ -8853,6 +8879,7 @@ export const sites = [
     slug: 'vashlovani-national-park', name: 'Vashlovani National Park',
     parentType: 'region', parent: 'kakheti', published: true,
     seoKey: 'vashlovaniNationalPark', contentKey: 'vashlovaniNationalPark',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
@@ -9615,12 +9642,14 @@ export const sites = [
     slug: 'mtirala-national-park', name: 'Mtirala National Park',
     parentType: 'city', parent: 'batumi', published: true,
     seoKey: 'mtiralaNationalPark', contentKey: 'mtiralaNationalPark',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'petra-fortress', name: 'Petra Fortress',
     parentType: 'city', parent: 'batumi', published: true,
     seoKey: 'petraFortress', contentKey: 'petraFortress',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
@@ -10004,6 +10033,7 @@ export const sites = [
     slug: 'shemokmedi-monastery', name: 'Shemokmedi Monastery',
     parentType: 'region', parent: 'guria', published: true,
     seoKey: 'shemokmediMonastery', contentKey: 'shemokmediMonastery',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
@@ -10204,30 +10234,35 @@ export const sites = [
     slug: 'national-botanical-garden-of-georgia', name: 'National Botanical Garden of Georgia',
     parentType: 'city', parent: 'tbilisi', published: true,
     seoKey: 'nationalBotanicalGarden', contentKey: 'nationalBotanicalGarden',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'tbilisi-opera-and-ballet-theatre', name: 'Tbilisi Opera and Ballet Theatre',
     parentType: 'city', parent: 'tbilisi', published: true,
     seoKey: 'operaBalletTheatre', contentKey: 'operaBalletTheatre',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'parliament-of-georgia', name: 'Parliament of Georgia',
     parentType: 'city', parent: 'tbilisi', published: true,
     seoKey: 'parliamentOfGeorgia', contentKey: 'parliamentOfGeorgia',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'rezo-gabriadze-marionette-theatre', name: 'Rezo Gabriadze Marionette Theatre and Clock Tower',
     parentType: 'city', parent: 'tbilisi', published: true,
     seoKey: 'gabriadzeMarionetteTheatre', contentKey: 'gabriadzeMarionetteTheatre',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'rike-park', name: 'Rike Park',
     parentType: 'city', parent: 'tbilisi', published: true,
     seoKey: 'rikePark', contentKey: 'rikePark',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
@@ -10290,6 +10325,7 @@ export const sites = [
     slug: 'rustaveli-avenue', name: 'Rustaveli Avenue',
     parentType: 'city', parent: 'tbilisi', published: true,
     seoKey: 'rustaveliAvenue', contentKey: 'rustaveliAvenue',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
@@ -10303,24 +10339,28 @@ export const sites = [
     slug: 'sioni-cathedral', name: 'Sioni Cathedral',
     parentType: 'city', parent: 'tbilisi', published: true,
     seoKey: 'sioniCathedral', contentKey: 'sioniCathedral',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'tamada-statue', name: 'Tamada (Toastmaster) Statue',
     parentType: 'city', parent: 'tbilisi', published: true,
     seoKey: 'tamadaStatue', contentKey: 'tamadaStatue',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'tbilisi-juma-mosque', name: 'Tbilisi Juma Mosque',
     parentType: 'city', parent: 'tbilisi', published: true,
     seoKey: 'jumaMosque', contentKey: 'jumaMosque',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'tbilisi-zoo', name: 'Tbilisi Zoo',
     parentType: 'city', parent: 'tbilisi', published: true,
     seoKey: 'tbilisiZoo', contentKey: 'tbilisiZoo',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
@@ -10341,6 +10381,7 @@ export const sites = [
     slug: 'museum-history-georgian-jews', name: 'Museum of History of Georgian Jews (David Baazov Museum)',
     parentType: 'city', parent: 'tbilisi', published: true,
     seoKey: 'museumHistoryGeorgianJews', contentKey: 'museumHistoryGeorgianJews',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
@@ -10354,12 +10395,14 @@ export const sites = [
     slug: 'open-air-museum-of-ethnography', name: 'Tbilisi Open Air Museum of Ethnography (Giorgi Chitaia Museum)',
     parentType: 'city', parent: 'tbilisi', published: true,
     seoKey: 'openAirMuseumEthnography', contentKey: 'openAirMuseumEthnography',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'tbilisi-funicular', name: 'Tbilisi Funicular',
     parentType: 'city', parent: 'tbilisi', published: true,
     seoKey: 'tbilisiFunicular', contentKey: 'tbilisiFunicular',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
@@ -10402,6 +10445,7 @@ export const sites = [
     slug: 'ateshgah-fire-temple', name: 'The Ateshgah Fire Temple',
     parentType: 'city', parent: 'tbilisi', published: true,
     seoKey: 'ateshgahFireTemple', contentKey: 'ateshgahFireTemple',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
@@ -10422,6 +10466,7 @@ export const sites = [
     slug: 'dry-bridge-market', name: 'The Dry Bridge Market',
     parentType: 'city', parent: 'tbilisi', published: true,
     seoKey: 'dryBridgeMarket', contentKey: 'dryBridgeMarket',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
@@ -10435,6 +10480,7 @@ export const sites = [
     slug: 'great-synagogue-tbilisi', name: 'The Great Synagogue of Tbilisi',
     parentType: 'city', parent: 'tbilisi', published: true,
     seoKey: 'greatSynagogue', contentKey: 'greatSynagogue',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
@@ -10553,6 +10599,7 @@ export const sites = [
     slug: 'metekhi-church', name: 'Metekhi Church',
     parentType: 'city', parent: 'tbilisi', published: true,
     seoKey: 'metekhiChurch', contentKey: 'metekhiChurch',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
@@ -10638,6 +10685,7 @@ export const sites = [
     slug: 'mtatsminda-park', name: 'Mtatsminda Park',
     parentType: 'city', parent: 'tbilisi', published: true,
     seoKey: 'mtatsmindaPark', contentKey: 'mtatsmindaPark',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
@@ -10862,12 +10910,14 @@ export const sites = [
     slug: 'samtavro-monastery', name: 'Samtavro Monastery',
     parentType: 'city', parent: 'mtskheta', published: true,
     seoKey: 'samtavroMonastery', contentKey: 'samtavroMonastery',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'shio-mgvime-monastery', name: 'Shio-Mgvime Monastery',
     parentType: 'city', parent: 'mtskheta', published: true,
     seoKey: 'shioMgvimeMonastery', contentKey: 'shioMgvimeMonastery',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
@@ -11280,6 +11330,7 @@ export const sites = [
     slug: 'samtavisi-cathedral', name: 'Samtavisi Cathedral',
     parentType: 'region', parent: 'shida-kartli', published: true,
     seoKey: 'samtavisiCathedral', contentKey: 'samtavisiCathedral',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
@@ -11504,6 +11555,7 @@ export const sites = [
     slug: 'motsameta-monastery', name: 'Motsameta Monastery',
     parentType: 'city', parent: 'kutaisi', published: true,
     seoKey: 'motsametaMonastery', contentKey: 'motsametaMonastery',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
@@ -12058,18 +12110,21 @@ export const sites = [
     slug: 'nokalakevi', name: 'Nokalakevi (Archaeopolis)',
     parentType: 'region', parent: 'samegrelo', published: true,
     seoKey: 'nokalakevi', contentKey: 'nokalakevi',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'tobavarchkhili-lakes', name: 'Tobavarchkhili (the Silver Lakes)',
     parentType: 'region', parent: 'samegrelo', published: true,
     seoKey: 'tobavarchkhili', contentKey: 'tobavarchkhili',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'paliastomi-lake-kolkheti-national-park', name: 'Paliastomi Lake & Kolkheti National Park',
     parentType: 'region', parent: 'samegrelo', published: true,
     seoKey: 'paliastomiKolkheti', contentKey: 'paliastomiKolkheti',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
@@ -12152,12 +12207,14 @@ export const sites = [
     slug: 'enguri-dam', name: 'The Enguri Dam',
     parentType: 'region', parent: 'samegrelo', published: true,
     seoKey: 'enguriDam', contentKey: 'enguriDam',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'intsra-waterfall', name: 'The Intsra Waterfall',
     parentType: 'region', parent: 'samegrelo', published: true,
     seoKey: 'intsraWaterfall', contentKey: 'intsraWaterfall',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
@@ -12178,12 +12235,14 @@ export const sites = [
     slug: 'mikheil-khergiani-house-museum', name: 'Mikheil Khergiani House Museum',
     parentType: 'city', parent: 'mestia', published: true,
     seoKey: 'mikheilKhergianiHouseMuseum', contentKey: 'mikheilKhergianiHouseMuseum',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'svaneti-museum-history-ethnography', name: 'Svaneti Museum of History and Ethnography',
     parentType: 'city', parent: 'mestia', published: true,
     seoKey: 'svanetiMuseumHistoryEthnography', contentKey: 'svanetiMuseumHistoryEthnography',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
@@ -12239,18 +12298,21 @@ export const sites = [
     slug: 'mount-ushba', name: 'Mount Ushba',
     parentType: 'region', parent: 'svaneti', published: true,
     seoKey: 'mountUshba', contentKey: 'mountUshba',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'tetnuldi-ski-resort', name: 'Tetnuldi Ski Resort',
     parentType: 'city', parent: 'mestia', formerParent: 'svaneti', published: true,
     seoKey: 'tetnuldiSkiResort', contentKey: 'tetnuldiSkiResort',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'cross-over-mestia', name: 'The Cross Over Mestia',
     parentType: 'city', parent: 'mestia', formerParent: 'svaneti', published: true,
     seoKey: 'crossOverMestia', contentKey: 'crossOverMestia',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
@@ -12486,6 +12548,7 @@ export const sites = [
     slug: 'akhaltsikhe-synagogue', name: 'The Akhaltsikhe Synagogue',
     parentType: 'city', parent: 'akhaltsikhe', published: true,
     seoKey: 'akhaltsikheSynagogue', contentKey: 'akhaltsikheSynagogue',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
@@ -12696,18 +12759,21 @@ export const sites = [
     slug: 'green-monastery', name: 'The Green Monastery (Mtsvane Monastery)',
     parentType: 'city', parent: 'borjomi', formerParent: 'samtskhe-javakheti', published: true,
     seoKey: 'greenMonastery', contentKey: 'greenMonastery',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'sapara-monastery', name: 'Sapara Monastery',
     parentType: 'city', parent: 'akhaltsikhe', formerParent: 'samtskhe-javakheti', published: true,
     seoKey: 'saparaMonastery', contentKey: 'saparaMonastery',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'timotesubani-monastery', name: 'Timotesubani Monastery',
     parentType: 'city', parent: 'borjomi', formerParent: 'samtskhe-javakheti', published: true,
     seoKey: 'timotesubaniMonastery', contentKey: 'timotesubaniMonastery',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
@@ -12751,6 +12817,7 @@ export const sites = [
     slug: 'tmogvi-fortress', name: 'Tmogvi Fortress',
     parentType: 'region', parent: 'samtskhe-javakheti', published: true,
     seoKey: 'tmogviFortress', contentKey: 'tmogviFortress',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
@@ -12807,42 +12874,49 @@ export const sites = [
     slug: 'poka-nunnery', name: 'Poka Nunnery (St. Nino Monastery of Poka)',
     parentType: 'region', parent: 'samtskhe-javakheti', published: true,
     seoKey: 'pokaNunnery', contentKey: 'pokaNunnery',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'vani-archaeological-museum', name: 'Vani Archaeological Museum',
     parentType: 'region', parent: 'imereti', published: true,
     seoKey: 'vaniArchaeologicalMuseum', contentKey: 'vaniArchaeologicalMuseum',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'ubisa-monastery', name: 'Ubisa Monastery',
     parentType: 'region', parent: 'imereti', published: true,
     seoKey: 'ubisaMonastery', contentKey: 'ubisaMonastery',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'tskaltubo-sanatoriums', name: 'Tskaltubo Sanatoriums',
     parentType: 'city', parent: 'tskaltubo', published: true,
     seoKey: 'tskaltuboSanatoriums', contentKey: 'tskaltuboSanatoriums',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'tetra-cave', name: 'Tetra Cave',
     parentType: 'city', parent: 'tskaltubo', formerParent: 'imereti', published: true,
     seoKey: 'tetraCave', contentKey: 'tetraCave',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'sataplia-nature-reserve', name: 'Sataplia Nature Reserve',
     parentType: 'region', parent: 'imereti', published: true,
     seoKey: 'satapliaNatureReserve', contentKey: 'satapliaNatureReserve',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
     slug: 'okatse-kinchkha-waterfall', name: 'Okatse (Kinchkha) Waterfall',
     parentType: 'region', parent: 'imereti', published: true,
     seoKey: 'okatseKinchkhaWaterfall', contentKey: 'okatseKinchkhaWaterfall',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
@@ -12981,6 +13055,7 @@ export const sites = [
     slug: 'white-bridge-kutaisi', name: 'White Bridge',
     parentType: 'city', parent: 'kutaisi', published: true,
     seoKey: 'whiteBridgeKutaisi', contentKey: 'whiteBridgeKutaisi',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
   },
   {
