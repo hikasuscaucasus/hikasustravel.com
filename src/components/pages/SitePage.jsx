@@ -45,6 +45,77 @@ function creditFields(img) {
 // and the fallback <img> uses -1200w.webp. Mirrors the Telavi CityPage gallery.
 const GALLERY_WIDTHS = [768, 1200, 1536]
 const GALLERY_MAX_WIDTH = GALLERY_WIDTHS[GALLERY_WIDTHS.length - 1]
+// The `sizes` every body figure has always used. A gallery item may override it
+// when its package specifies a different rendered cap (Shekvetili: 800px).
+const GALLERY_SIZES = '(max-width: 768px) 100vw, 760px'
+
+/**
+ * Split a rendered body chunk after its Nth closing `</p>`, so a figure can be
+ * woven BETWEEN paragraphs instead of only at the end of a section. Returns
+ * `[before, after]`; if the chunk has fewer than N paragraphs it returns
+ * `[chunk, null]`, i.e. the caller falls back to the original single-node
+ * rendering rather than dropping or reordering any copy. Operates purely on the
+ * already-rendered HTML string — no page content is ever rewritten.
+ */
+function splitAfterParagraph(html, n) {
+  let idx = -1
+  for (let k = 0; k < n; k++) {
+    idx = html.indexOf('</p>', idx + 1)
+    if (idx === -1) return [html, null]
+  }
+  const cut = idx + '</p>'.length
+  return [html.slice(0, cut), html.slice(cut)]
+}
+
+/**
+ * One in-body editorial figure — a real, crawlable, lazy responsive
+ * <picture>/<img> (not the hero, not a CSS background). Extracted verbatim from
+ * the inline JSX it replaces so every existing page renders byte-identically;
+ * the three opt-ins below all default to the previous behaviour.
+ *
+ * - `widths` / `fallbackWidth`: per-image ladder. Most sets ship the default
+ *   1536-topped variants, but some originals top out lower (e.g. Ananuri:
+ *   1448/1445 landscape, 1086 portrait). Defaults keep Telavi/Tsinandali intact.
+ * - `plainWidths`: files named `<base>-768.avif` rather than `<base>-768w.avif`.
+ *   The newer packages (and CityPage's portraitInlines) ship the bare width, so
+ *   this reads them as delivered instead of renaming assets on import.
+ * - `sizes`: override the rendered-width hint when the package specifies one.
+ */
+function BodyFigure({ img }) {
+  const widths = img.widths || GALLERY_WIDTHS
+  const fallbackW = img.fallbackWidth || 1200
+  const wsfx = img.plainWidths ? '' : 'w'
+  const sizes = img.sizes || GALLERY_SIZES
+  const src = (w, ext) => asset(`/images/files/${img.base}-${w}${wsfx}.${ext}`)
+  return (
+    <FadeUp>
+      <figure className="city-body-figure">
+        <picture>
+          <source
+            type="image/avif"
+            srcSet={widths.map((w) => `${src(w, 'avif')} ${w}w`).join(', ')}
+            sizes={sizes}
+          />
+          <source
+            type="image/webp"
+            srcSet={widths.map((w) => `${src(w, 'webp')} ${w}w`).join(', ')}
+            sizes={sizes}
+          />
+          <img
+            src={src(fallbackW, 'webp')}
+            width={img.width}
+            height={img.height}
+            alt={img.alt}
+            loading="lazy"
+            decoding="async"
+            className="city-body-figure__img"
+          />
+        </picture>
+        {img.caption && <figcaption className="city-body-figure__caption">{img.caption}</figcaption>}
+      </figure>
+    </FadeUp>
+  )
+}
 
 /**
  * Generic tourist-site detail page. Both city- and region-parented sites now
@@ -277,10 +348,40 @@ export default function SitePage() {
         ...gallery.map((img) => {
           // Largest shipped variant for this image (per-image override or default).
           const maxW = img.widths ? img.widths[img.widths.length - 1] : GALLERY_MAX_WIDTH
+          // Must match the file the figure actually renders — a set shipping bare
+          // widths (`plainWidths`) has no `-<w>w.webp` on disk, and a contentUrl
+          // naming a rung that does not exist is a broken image reference.
+          const fileUrl = `${SITE_URL}/images/files/${img.base}-${maxW}${img.plainWidths ? '' : 'w'}.webp`
+          // Location is OPTIONAL, exactly as it already is for the hero imageNode
+          // above: a package may ship figures with no reliable coordinate or
+          // address for the exact point. Every existing gallery item supplies
+          // locationName + locality + geo, so their output is unchanged; a
+          // location-less item now omits the blocks rather than crashing on
+          // `geo.lat`.
+          const hasAddress = img.locality || img.region || img.country
+          const contentLocation = (img.locationName || hasAddress || img.geo)
+            ? {
+                '@type': 'Place',
+                ...(img.locationName ? { name: img.locationName } : {}),
+                ...(hasAddress
+                  ? {
+                      address: {
+                        '@type': 'PostalAddress',
+                        addressLocality: img.locality,
+                        addressRegion: img.region,
+                        addressCountry: img.country,
+                      },
+                    }
+                  : {}),
+                ...(img.geo
+                  ? { geo: { '@type': 'GeoCoordinates', latitude: img.geo.lat, longitude: img.geo.lng } }
+                  : {}),
+              }
+            : null
           return {
           '@type': 'ImageObject',
-          contentUrl: `${SITE_URL}/images/files/${img.base}-${maxW}w.webp`,
-          url: `${SITE_URL}/images/files/${img.base}-${maxW}w.webp`,
+          contentUrl: fileUrl,
+          url: fileUrl,
           width: maxW,
           height: Math.round((maxW * img.height) / img.width),
           representativeOfPage: !!img.hero,
@@ -290,17 +391,7 @@ export default function SitePage() {
           creator: { '@type': 'Organization', name: BRAND },
           creditText: BRAND,
           copyrightNotice: `© ${BRAND}`,
-          contentLocation: {
-            '@type': 'Place',
-            name: img.locationName,
-            address: {
-              '@type': 'PostalAddress',
-              addressLocality: img.locality,
-              addressRegion: img.region,
-              addressCountry: img.country,
-            },
-            geo: { '@type': 'GeoCoordinates', latitude: img.geo.lat, longitude: img.geo.lng },
-          },
+          ...(contentLocation ? { contentLocation } : {}),
           }
         }),
         // Cover + contextual body photos rendered as inline <figure> blocks in the
@@ -449,48 +540,30 @@ export default function SitePage() {
         <EntityToursTag type="site" slug={site.slug} name={site.name} />
         <div ref={contentRef}>
           {bodyChunks.map((chunk, i) => {
-            const img = bodyImages.find((im) => im.afterChunk === i)
-            // Per-image responsive widths. Most sets ship the default 1536-topped
-            // variants, but some originals top out lower (e.g. Ananuri: 1448/1445
-            // landscape, 1086 portrait), so a gallery item may override `widths`
-            // and the fallback <img> width. Defaults keep Telavi/Tsinandali intact.
-            const widths = img ? (img.widths || GALLERY_WIDTHS) : null
-            const fallbackW = img ? (img.fallbackWidth || 1200) : null
+            // Images anchored to this chunk. `afterChunk` alone puts the figure at
+            // the END of the section (the original behaviour, every existing page).
+            // An item that ALSO sets `afterParagraph` is woven INSIDE the section,
+            // after that many closing </p> — needed when one section carries two
+            // figures at different points (Shekvetili's lakes section: the lake
+            // photo after the water paragraph, the deer after the wildlife one).
+            const chunkImages = bodyImages.filter((im) => im.afterChunk === i)
+            const inner = chunkImages.find((im) => im.afterParagraph != null) || null
+            const img = chunkImages.find((im) => im.afterParagraph == null) || null
+            const [chunkBefore, chunkAfter] = inner
+              ? splitAfterParagraph(chunk, inner.afterParagraph)
+              : [chunk, null]
             return (
               <Fragment key={`chunk-${i}`}>
                 <FadeUp>
-                  <div dangerouslySetInnerHTML={{ __html: chunk }} />
+                  <div dangerouslySetInnerHTML={{ __html: chunkBefore }} />
                 </FadeUp>
-                {img && (
-                  /* Body image between content sections — real, crawlable, lazy
-                     responsive <picture>/<img> (not the hero, not a CSS background). */
+                {inner && <BodyFigure img={inner} />}
+                {chunkAfter !== null && (
                   <FadeUp>
-                    <figure className="city-body-figure">
-                      <picture>
-                        <source
-                          type="image/avif"
-                          srcSet={widths.map((w) => `${asset(`/images/files/${img.base}-${w}w.avif`)} ${w}w`).join(', ')}
-                          sizes="(max-width: 768px) 100vw, 760px"
-                        />
-                        <source
-                          type="image/webp"
-                          srcSet={widths.map((w) => `${asset(`/images/files/${img.base}-${w}w.webp`)} ${w}w`).join(', ')}
-                          sizes="(max-width: 768px) 100vw, 760px"
-                        />
-                        <img
-                          src={asset(`/images/files/${img.base}-${fallbackW}w.webp`)}
-                          width={img.width}
-                          height={img.height}
-                          alt={img.alt}
-                          loading="lazy"
-                          decoding="async"
-                          className="city-body-figure__img"
-                        />
-                      </picture>
-                      {img.caption && <figcaption className="city-body-figure__caption">{img.caption}</figcaption>}
-                    </figure>
+                    <div dangerouslySetInnerHTML={{ __html: chunkAfter }} />
                   </FadeUp>
                 )}
+                {img && <BodyFigure img={img} />}
               </Fragment>
             )
           })}

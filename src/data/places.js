@@ -10027,7 +10027,160 @@ export const sites = [
     slug: 'shekvetili-dendrological-park', name: 'Shekvetili Dendrological Park',
     parentType: 'region', parent: 'guria', published: true,
     seoKey: 'dendrologicalPark', contentKey: 'dendrologicalPark',
-    image: '/images/files/georgia-home.jpg',
+    // Hero: the gravel lakeside path with the reflecting lake and willow-lined
+    // shore, via the `.hero--shekvetili-dendrological-park` image-set() ladder.
+    // REPLACES the generic georgia-home.jpg, which is the site-wide fallback used
+    // by ~200 other registry entries — only THIS page's reference moves; the file
+    // itself must stay. Landscape 4:3, native 1448x1086 -> ladder 768/1200/1448
+    // only; no 1600/2400, no upscale.
+    image: '/images/files/shekvetili-dendrological-park-guria-georgia-1448.webp',
+    imageAvif: '/images/files/shekvetili-dendrological-park-guria-georgia-1448.avif',
+    heroClass: 'hero--shekvetili-dendrological-park',
+    // LCP hero preload: the 1200 AVIF rung with fetchpriority=high (this entry had
+    // none before). Dedicated 1.91:1 social image; the matching -og.webp ships
+    // alongside but is unreferenced — useSEO/prerender emit a single og:image.
+    heroPreload: '/images/files/shekvetili-dendrological-park-guria-georgia-1200.avif',
+    ogImage: { src: '/images/files/shekvetili-dendrological-park-guria-georgia-og-1200x630.jpg', width: 1200, height: 630 },
+    // Opt-in: point the primary TouristAttraction node's `image` at the dedicated
+    // 1.91:1 social crop instead of the hero rung, so schema.org, og:image and
+    // twitter:image all name the same file (same mechanism as Batumi Boulevard).
+    jsonLdImage: '/images/files/shekvetili-dendrological-park-guria-georgia-og-1200x630.jpg',
+    // Hero image SEO/AEO metadata (owner's own photo -> brand credit, set by
+    // SitePage). The hero is a CSS background (no <img alt>), so the localized alt
+    // lives here and feeds og:image:alt / twitter:image:alt per locale and the hero
+    // ImageObject's caption. width/height = the 1448 rung. `imageId: 'hero-image'`
+    // gives the node a stable page-scoped @id. `geo` is deliberately OMITTED: the
+    // package ships no coordinates for this frame and inventing them is worse than
+    // a contentLocation carrying name + address only.
+    imageMeta: {
+      width: 1448, height: 1086, imageId: 'hero-image',
+      name: 'Gravel path beside a reflecting lake in Shekvetili Dendrological Park, Guria, Georgia',
+      description: 'A gravel walking path curving along the shore of one of the landscaped lakes in the Shekvetili Dendrological Park, with the still water reflecting the willows and eucalyptus of the far bank, in Shekvetili, Guria, on Georgia\'s Black Sea coast.',
+      locationName: 'Shekvetili Dendrological Park, Shekvetili, Guria, Georgia',
+      locality: 'Shekvetili', region: 'Guria', country: 'GE',
+      alt: {
+        en: 'Gravel path along a reflective lake in the Shekvetili Dendrological Park, Guria, Georgia',
+        de: 'Kiesweg entlang eines spiegelnden Sees im Dendrologischen Park Schekwetili, Gurien, Georgien',
+        fr: 'Allée de gravier le long d\'un lac réfléchissant dans le parc dendrologique de Chekvetili, Gourie, Géorgie',
+        es: 'Sendero de grava junto a un lago que refleja el cielo en el Parque Dendrológico de Shekvetili, Guria, Georgia',
+        nl: 'Grindpad langs een spiegelend meer in het Dendrologisch Park van Shekvetili, Guria, Georgië',
+        cs: 'Štěrková cesta podél zrcadlícího jezera v Dendrologickém parku Šekvetili, Gurie, Gruzie',
+        pl: 'Żwirowa ścieżka wzdłuż odbijającego niebo jeziora w Parku Dendrologicznym w Szekwetili, Guria, Gruzja',
+      },
+    },
+    // Four editorial in-body figures, woven between the existing sections via
+    // `afterChunk` (chunks are the body split at each <h2>). All seven locales
+    // share an identical 8-chunk structure with the same section order and the
+    // same paragraph counts — verified, not assumed — so one set of indices is
+    // semantically correct in every language. The lakes section carries TWO
+    // figures: the lake after its water paragraph (`afterParagraph: 1`) and the
+    // deer at the section end, after the flamingo/wildlife paragraph.
+    // NOTE the page's real section order is tree collection -> lakes -> experience,
+    // so the rendered order is conifer, lake, deer, bamboo.
+    // `plainWidths` reads the files as delivered (`-768.avif`, no `w` suffix);
+    // `sizes` is the package's 800px rendered cap.
+    gallery: [
+      {
+        base: 'shekvetili-dendrological-park-conifer-georgia',
+        afterChunk: 2,
+        widths: [768, 1200, 1448], fallbackWidth: 1200, plainWidths: true,
+        sizes: '(max-width: 768px) 100vw, 800px',
+        width: 1448, height: 1086,
+        alt: {
+          en: 'Tall slender conifer and flowering shrubs on a lawn among giant trees at Shekvetili Dendrological Park, Georgia',
+          de: 'Hohe schlanke Konifere und blühende Sträucher auf einer Rasenfläche zwischen Riesenbäumen im Dendrologischen Park Schekwetili, Georgien',
+          fr: 'Grand conifère élancé et arbustes en fleurs sur une pelouse parmi les arbres géants du parc dendrologique de Chekvetili, Géorgie',
+          es: 'Conífera alta y esbelta y arbustos en flor sobre el césped entre árboles gigantes en el Parque Dendrológico de Shekvetili, Georgia',
+          nl: 'Hoge slanke conifeer en bloeiende struiken op een gazon tussen reuzenbomen in het Dendrologisch Park van Shekvetili, Georgië',
+          cs: 'Vysoký štíhlý jehličnan a kvetoucí keře na trávníku mezi obřími stromy v Dendrologickém parku Šekvetili, Gruzie',
+          pl: 'Wysoki smukły iglak i kwitnące krzewy na trawniku wśród olbrzymich drzew w Parku Dendrologicznym w Szekwetili, Gruzja',
+        },
+        caption: {
+          en: 'Conifers, Shekvetili Dendrological Park',
+          de: 'Koniferen, Shekvetili Dendrological Park',
+          fr: 'Conifères, Shekvetili Dendrological Park',
+          es: 'Coníferas, Shekvetili Dendrological Park',
+          nl: 'Coniferen, Shekvetili Dendrological Park',
+          cs: 'Jehličnany, Shekvetili Dendrological Park',
+          pl: 'Iglaki, Shekvetili Dendrological Park',
+        },
+      },
+      {
+        base: 'shekvetili-dendrological-park-lake-georgia',
+        afterChunk: 3, afterParagraph: 1,
+        widths: [768, 1200, 1448], fallbackWidth: 1200, plainWidths: true,
+        sizes: '(max-width: 768px) 100vw, 800px',
+        width: 1448, height: 1086,
+        alt: {
+          en: 'Landscaped lake with a wooded island and weeping willows at Shekvetili Dendrological Park, Georgia',
+          de: 'Angelegter See mit bewaldeter Insel und Trauerweiden im Dendrologischen Park Schekwetili, Georgien',
+          fr: 'Lac paysager avec une île boisée et des saules pleureurs au parc dendrologique de Chekvetili, Géorgie',
+          es: 'Lago paisajístico con una isla arbolada y sauces llorones en el Parque Dendrológico de Shekvetili, Georgia',
+          nl: 'Aangelegd meer met een bebost eiland en treurwilgen in het Dendrologisch Park van Shekvetili, Georgië',
+          cs: 'Upravené jezero se zalesněným ostrovem a smutečními vrbami v Dendrologickém parku Šekvetili, Gruzie',
+          pl: 'Zaaranżowane jezioro z zalesioną wyspą i wierzbami płaczącymi w Parku Dendrologicznym w Szekwetili, Gruzja',
+        },
+        caption: {
+          en: 'Lake, Shekvetili Dendrological Park',
+          de: 'See, Shekvetili Dendrological Park',
+          fr: 'Lac, Shekvetili Dendrological Park',
+          es: 'Lago, Shekvetili Dendrological Park',
+          nl: 'Meer, Shekvetili Dendrological Park',
+          cs: 'Jezero, Shekvetili Dendrological Park',
+          pl: 'Jezioro, Shekvetili Dendrological Park',
+        },
+      },
+      {
+        base: 'shekvetili-dendrological-park-deer-georgia',
+        afterChunk: 3,
+        widths: [768, 1200, 1448], fallbackWidth: 1200, plainWidths: true,
+        sizes: '(max-width: 768px) 100vw, 800px',
+        width: 1448, height: 1086,
+        alt: {
+          en: 'Spotted deer resting in a grassy woodland clearing at Shekvetili Dendrological Park, Georgia',
+          de: 'Ruhende gefleckte Hirsche auf einer grasbewachsenen Waldlichtung im Dendrologischen Park Schekwetili, Georgien',
+          fr: 'Cerfs tachetés au repos dans une clairière herbeuse au parc dendrologique de Chekvetili, Géorgie',
+          es: 'Ciervos moteados descansando en un claro herboso del Parque Dendrológico de Shekvetili, Georgia',
+          nl: 'Rustende gevlekte herten op een grazige open plek in het Dendrologisch Park van Shekvetili, Georgië',
+          cs: 'Odpočívající skvrnití jeleni na travnaté lesní mýtině v Dendrologickém parku Šekvetili, Gruzie',
+          pl: 'Odpoczywające jelenie plamiste na trawiastej leśnej polanie w Parku Dendrologicznym w Szekwetili, Gruzja',
+        },
+        caption: {
+          en: 'Spotted deer, Shekvetili Dendrological Park',
+          de: 'Gefleckte Hirsche, Shekvetili Dendrological Park',
+          fr: 'Cerfs tachetés, Shekvetili Dendrological Park',
+          es: 'Ciervos moteados, Shekvetili Dendrological Park',
+          nl: 'Gevlekte herten, Shekvetili Dendrological Park',
+          cs: 'Skvrnití jeleni, Shekvetili Dendrological Park',
+          pl: 'Jelenie plamiste, Shekvetili Dendrological Park',
+        },
+      },
+      {
+        base: 'shekvetili-dendrological-park-bamboo-georgia',
+        afterChunk: 4,
+        widths: [768, 1200, 1448], fallbackWidth: 1200, plainWidths: true,
+        sizes: '(max-width: 768px) 100vw, 800px',
+        width: 1448, height: 1086,
+        alt: {
+          en: 'Dense green bamboo grove beside a lawn at Shekvetili Dendrological Park, Guria, Georgia',
+          de: 'Dichter grüner Bambushain neben einer Rasenfläche im Dendrologischen Park Schekwetili, Gurien, Georgien',
+          fr: 'Dense bosquet de bambous verts au bord d\'une pelouse au parc dendrologique de Chekvetili, Gourie, Géorgie',
+          es: 'Denso bosque de bambú verde junto al césped en el Parque Dendrológico de Shekvetili, Guria, Georgia',
+          nl: 'Dicht groen bamboebos naast een gazon in het Dendrologisch Park van Shekvetili, Guria, Georgië',
+          cs: 'Hustý zelený bambusový háj vedle trávníku v Dendrologickém parku Šekvetili, Gurie, Gruzie',
+          pl: 'Gęsty zielony gaj bambusowy obok trawnika w Parku Dendrologicznym w Szekwetili, Guria, Gruzja',
+        },
+        caption: {
+          en: 'Bamboo grove, Shekvetili Dendrological Park',
+          de: 'Bambushain, Shekvetili Dendrological Park',
+          fr: 'Bosquet de bambous, Shekvetili Dendrological Park',
+          es: 'Bosque de bambú, Shekvetili Dendrological Park',
+          nl: 'Bamboebos, Shekvetili Dendrological Park',
+          cs: 'Bambusový háj, Shekvetili Dendrological Park',
+          pl: 'Gaj bambusowy, Shekvetili Dendrological Park',
+        },
+      },
+    ],
   },
   {
     slug: 'shemokmedi-monastery', name: 'Shemokmedi Monastery',

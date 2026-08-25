@@ -3940,6 +3940,39 @@ section {
   }
 }
 /* No rung above 1364 exists (Koruldi Lakes). Do not add a 1600/2400 breakpoint. */
+/* Shekvetili Dendrological Park hero — per-page CSS background (the hero is a
+   background, not an <img>), so AVIF-first + WebP fallback ride on image-set()
+   and the three rungs are breakpoints rather than a srcset. background-size:
+   cover is the object-fit equivalent; background-position: center 42% is the
+   requested object-position, biased just above centre so the gravel path and the
+   reflecting lake stay in frame while the tall sky is the part that crops. */
+.hero--shekvetili-dendrological-park {
+  background-image: url("/images/files/shekvetili-dendrological-park-guria-georgia-1200.webp");
+  background-image: image-set(
+    url("/images/files/shekvetili-dendrological-park-guria-georgia-768.avif") type("image/avif"),
+    url("/images/files/shekvetili-dendrological-park-guria-georgia-768.webp") type("image/webp")
+  );
+  background-position: center 42%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .hero--shekvetili-dendrological-park {
+    background-image: image-set(
+      url("/images/files/shekvetili-dendrological-park-guria-georgia-1200.avif") type("image/avif"),
+      url("/images/files/shekvetili-dendrological-park-guria-georgia-1200.webp") type("image/webp")
+    );
+  }
+}
+@media (min-width: 1200px) {
+  .hero--shekvetili-dendrological-park {
+    background-image: image-set(
+      url("/images/files/shekvetili-dendrological-park-guria-georgia-1448.avif") type("image/avif"),
+      url("/images/files/shekvetili-dendrological-park-guria-georgia-1448.webp") type("image/webp")
+    );
+  }
+}
+/* No rung above 1448 exists (Shekvetili). Do not add a 1600/2400 breakpoint. */
 /* Title band for a site page that opts out of the photo hero (`noHero`), used
    while a genuine photograph is sourced. Solid brand colour, no image and no
    gradient of its own. The top padding is the SAME proven header-safe value the
