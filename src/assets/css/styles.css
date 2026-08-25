@@ -3973,6 +3973,39 @@ section {
   }
 }
 /* No rung above 1448 exists (Shekvetili). Do not add a 1600/2400 breakpoint. */
+/* Gombori Pass hero — per-page CSS background (the hero is a background, not an
+   <img>), so AVIF-first + WebP fallback ride on image-set() and the three rungs
+   are breakpoints rather than a srcset. background-size: cover is the object-fit
+   equivalent; background-position: center 55% is the requested object-position,
+   biased below centre so the hairpin switchback and the autumn forest hold the
+   frame and the empty blue sky is what gets cropped. */
+.hero--gombori-pass {
+  background-image: url("/images/files/gombori-pass-kakheti-georgia-1200.webp");
+  background-image: image-set(
+    url("/images/files/gombori-pass-kakheti-georgia-768.avif") type("image/avif"),
+    url("/images/files/gombori-pass-kakheti-georgia-768.webp") type("image/webp")
+  );
+  background-position: center 55%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .hero--gombori-pass {
+    background-image: image-set(
+      url("/images/files/gombori-pass-kakheti-georgia-1200.avif") type("image/avif"),
+      url("/images/files/gombori-pass-kakheti-georgia-1200.webp") type("image/webp")
+    );
+  }
+}
+@media (min-width: 1200px) {
+  .hero--gombori-pass {
+    background-image: image-set(
+      url("/images/files/gombori-pass-kakheti-georgia-1536.avif") type("image/avif"),
+      url("/images/files/gombori-pass-kakheti-georgia-1536.webp") type("image/webp")
+    );
+  }
+}
+/* No rung above 1536 exists (Gombori Pass). Do not add a 1600/2400 breakpoint. */
 /* Title band for a site page that opts out of the photo hero (`noHero`), used
    while a genuine photograph is sourced. Solid brand colour, no image and no
    gradient of its own. The top padding is the SAME proven header-safe value the

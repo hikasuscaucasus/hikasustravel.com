@@ -8989,7 +8989,60 @@ export const sites = [
     slug: 'gombori-pass', name: 'The Gombori Pass',
     parentType: 'region', parent: 'kakheti', published: true,
     seoKey: 'gomboriPass', contentKey: 'gomboriPass',
-    image: '/images/files/gombori-pass.jpg',
+    // Hero: the hairpin switchback in autumn forest, via the
+    // `.hero--gombori-pass` image-set() ladder. REPLACES gombori-pass.jpg, which
+    // this entry was the ONLY reference to anywhere in the project — the file is
+    // kept, not deleted.
+    //
+    // ⚠️ DELIBERATE duplication, same situation the Things-to-do-in-Kakheti pass
+    // already documented above: this is the SAME frame the project already ships
+    // twice — as `/images/files/gombori-pass-kakheti-georgia.jpg` (1536x1024, used
+    // by the Kakheti wine tour gallery in tours.js) and as the
+    // `/images/kakheti/gombori-pass-road-kakheti-georgia-*` ladder (the Kakheti
+    // region page inline figure). A perceptual scan puts it at MAD 0.36 against
+    // the region-page 1200 rung. The brief specifies this /images/files/ path, and
+    // the new set does add something real: the true native 1536 top rung (the
+    // existing ladder stops at 1448) and a dedicated 1.91:1 social crop.
+    image: '/images/files/gombori-pass-kakheti-georgia-1536.webp',
+    imageAvif: '/images/files/gombori-pass-kakheti-georgia-1536.avif',
+    heroClass: 'hero--gombori-pass',
+    // LCP hero preload: the 1200 AVIF rung with fetchpriority=high (this entry had
+    // none before). The matching -og.webp ships alongside but is unreferenced —
+    // useSEO/prerender emit a single og:image.
+    heroPreload: '/images/files/gombori-pass-kakheti-georgia-1200.avif',
+    ogImage: { src: '/images/files/gombori-pass-kakheti-georgia-og-1200x630.jpg', width: 1200, height: 630 },
+    // Opt-in: point the primary TouristAttraction node's `image` at the dedicated
+    // 1.91:1 social crop instead of the hero rung, so schema.org, og:image and
+    // twitter:image all name the same file (same mechanism as Batumi Boulevard).
+    jsonLdImage: '/images/files/gombori-pass-kakheti-georgia-og-1200x630.jpg',
+    // Hero image SEO/AEO metadata. The hero is a CSS background (no <img alt>), so
+    // the localized alt lives here and feeds og:image:alt / twitter:image:alt per
+    // locale and the hero ImageObject's caption. width/height = the 1536 rung.
+    //
+    // ⚠️ `noCredit` and the absent `geo` are both deliberate and both copied from
+    // what the project already records for THIS EXACT PHOTOGRAPH: the Kakheti
+    // region page ships `gombori-pass-road-kakheti-georgia` with `noCredit: true`
+    // and with the note "the site's own gombori-pass entry records no coordinate,
+    // so none is asserted here either". Credit is per-image on this site, not
+    // blanket — claiming Hikasus authorship here would contradict the site's own
+    // record for the same file. `region` + `country` still give the ImageObject a
+    // contentLocation with an address.
+    imageMeta: {
+      width: 1536, height: 1024, imageId: 'hero-image', noCredit: true,
+      name: 'Hairpin bend on the Gombori Pass road in autumn, Kakheti, Georgia',
+      description: 'A hairpin bend on the road over the Gombori Pass in autumn, the forested mountain route linking Tbilisi with the Alazani Valley, in Kakheti, Georgia.',
+      locationName: 'The Gombori Pass, Kakheti, Georgia',
+      region: 'Kakheti', country: 'GE',
+      alt: {
+        en: 'Hairpin switchback on the Gombori Pass road amid autumn forest under a clear blue sky, Kakheti, Georgia',
+        de: 'Haarnadelkurve auf der Straße über den Gombori-Pass inmitten herbstlichen Waldes unter klarem blauem Himmel, Kachetien, Georgien',
+        fr: 'Virage en épingle sur la route du col de Gombori au milieu d\'une forêt d\'automne sous un ciel bleu clair, Kakhétie, Géorgie',
+        es: 'Curva cerrada en la carretera del paso de Gombori entre un bosque otoñal bajo un cielo azul despejado, Kajetia, Georgia',
+        nl: 'Haarspeldbocht op de weg over de Gombori-pas te midden van herfstbos onder een heldere blauwe lucht, Kachetië, Georgië',
+        cs: 'Vlásenka na silnici přes průsmyk Gombori uprostřed podzimního lesa pod jasně modrou oblohou, Kachetie, Gruzie',
+        pl: 'Serpentyna na drodze przez przełęcz Gombori wśród jesiennego lasu pod czystym błękitnym niebem, Kachetia, Gruzja',
+      },
+    },
   },
   {
     slug: 'giant-plane-tree-telavi', name: 'The Giant Plane Tree of Telavi',
