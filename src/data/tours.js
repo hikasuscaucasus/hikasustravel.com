@@ -3629,11 +3629,6 @@ export const tours = [
         "economy": "€160"
       }
     ],
-    "startingFrom": {
-      "economy": "€890",
-      "midRange": "€940",
-      "luxury": "€1245"
-    },
     "included": [
       "Accommodation in double or twin rooms, with breakfast included;",
       "Transfers as per the itinerary in a comfortable, air-conditioned vehicle, with an English-speaking guide driver;",

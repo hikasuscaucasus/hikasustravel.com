@@ -84,7 +84,7 @@ export default function TourDetailPage() {
     // Offer price (lowest available) for richer product/trip schema.
     const startPrice = tour.type === 'group'
       ? (tour.pricePerPerson ? parseFloat(tour.pricePerPerson.replace(/[^0-9.]/g, '')) : null)
-      : getStartingPrice(tour.pricing, tour.startingFrom)
+      : getStartingPrice(tour.pricing)
     if (startPrice) {
       jsonLd.offers = {
         '@type': 'Offer',
@@ -284,7 +284,7 @@ export default function TourDetailPage() {
   // Extract starting price
   const startingPrice = isGroup
     ? (tour.pricePerPerson ? parseFloat(tour.pricePerPerson.replace(/[^0-9.]/g, '')) : null)
-    : getStartingPrice(tour.pricing, tour.startingFrom)
+    : getStartingPrice(tour.pricing)
 
   // Tour highlights for the overview: the tour's own `highlights` list
   // (translated or base) and nothing else. There used to be a fallback to the
@@ -407,7 +407,6 @@ export default function TourDetailPage() {
           <PriceSection
             isGroup={isGroup}
             pricing={tour.pricing}
-            startingFrom={tour.startingFrom}
             pricePerPerson={tour.pricePerPerson}
             singleSupplement={tour.singleSupplement}
             onSelectPackage={handleSelectPackage}

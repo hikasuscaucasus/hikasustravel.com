@@ -4,7 +4,6 @@ import useHotel from '../../i18n/useHotel'
 import { I18nContext } from '../../i18n/I18nContext'
 import FadeUp from './FadeUp'
 import HotelModal from './HotelModal'
-import { tierStartingFrom } from './pricingUtils'
 
 // Selecting stores the hotel NAME, not a resolved record. The translated copy
 // arrives with the tour translations, a moment after the table itself renders
@@ -164,12 +163,7 @@ export function TravelerPricingTable({ pricing }) {
   )
 }
 
-function getTierPrice(pricing, tier, startingFrom) {
-  // An owner-approved advertised price wins over the derived minimum when the
-  // tour ships one; the two are allowed to differ. Opt-in, so every tour
-  // without `startingFrom` keeps the exact card price it had before.
-  const advertised = tierStartingFrom(startingFrom, tier)
-  if (advertised !== null) return advertised
+function getTierPrice(pricing, tier) {
   const numericRows = pricing.filter((r) => r.travelers !== 'Single Supplement')
   if (numericRows.length === 0) return null
   const prices = numericRows
@@ -190,7 +184,7 @@ function formatEuro(raw) {
   return `€${num.toLocaleString('en-US')}`
 }
 
-function PricingCards({ pricing, startingFrom, onSelectPackage }) {
+function PricingCards({ pricing, onSelectPackage }) {
   const t = useT()
   // `accommodation` is the exact internal value of the booking form's
   // Accommodation Type <select> for private tours (Classic / Mid-Range /
@@ -221,7 +215,7 @@ function PricingCards({ pricing, startingFrom, onSelectPackage }) {
   return (
     <div className="td-price-cards">
       {tiers.map((tier) => {
-        const startPrice = getTierPrice(pricing, tier.key, startingFrom)
+        const startPrice = getTierPrice(pricing, tier.key)
 
         return (
           <div
@@ -333,7 +327,7 @@ export function AccommodationSection({ accommodations, isGroup }) {
 
 // Price section (id="pricing"). Private tours show the per-tier pricing cards;
 // group tours show their fixed per-person price (existing data, unchanged).
-export function PriceSection({ isGroup, pricing, startingFrom, pricePerPerson, singleSupplement, onSelectPackage }) {
+export function PriceSection({ isGroup, pricing, pricePerPerson, singleSupplement, onSelectPackage }) {
   const t = useT()
   const hasPricing = pricing && pricing.length > 0
   const hasGroupPrice = isGroup && pricePerPerson
@@ -349,7 +343,7 @@ export function PriceSection({ isGroup, pricing, startingFrom, pricePerPerson, s
 
           <div className="td-pricing__block">
             {hasPricing ? (
-              <PricingCards pricing={pricing} startingFrom={startingFrom} onSelectPackage={onSelectPackage} />
+              <PricingCards pricing={pricing} onSelectPackage={onSelectPackage} />
             ) : (
               <div className="td-price-cards td-price-cards--single">
                 <div className="td-price-card td-price-card--featured">
