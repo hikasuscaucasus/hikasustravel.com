@@ -5838,15 +5838,20 @@ export const cities = [
           pl: 'Kamienne swańskie wieże mieszkalne w Mestii, u ich podnóża domy z gontowymi dachami, a w tle zalesiony stok.',
         },
       },
-      // Four body figures, spliced into the ENGLISH content by LINE INDEX (this page
+      // Five body figures, spliced into the ENGLISH content by LINE INDEX (this page
       // is a 25-line single-\n block, so the unit is the LINE, not the \n\n chunk):
-      //   4 Svan towers · 12 Ushguli day trip · 22 best time to visit · 24 why Mestia.
+      //   4 Svan towers · 12 Ushguli day trip · 14 Hatsvali chairlift ·
+      //   22 best time to visit · 24 why Mestia.
       //
-      // ⚠️ ALL FOUR ARE REFERENCES, NOT COPIES, EXCEPT svaneti-alpine-meadow. Three
+      // ⚠️ THE FIRST FOUR ARE REFERENCES, NOT COPIES, EXCEPT svaneti-alpine-meadow. Three
       // sets already ship under the no-`w` names this array builds. The meadow ships
       // only as `-<w>w`, which would 404 the contentUrl, so byte-identical copies
       // (sha256-verified) went into the existing /images/svaneti/. Nothing was
       // re-encoded, nothing upscaled, no OG generated.
+      // The fifth (hatsvali-cable-car) is genuinely NEW: its four files were copied
+      // byte-for-byte from the commissioned package into /images/files/ and cleared a
+      // tree-wide perceptual dup scan (closest aspect-compatible MAD 65.6, an
+      // unrelated waterfall). Rungs 768 + 941 only, nothing upscaled, no OG.
       //
       // ⚠️ INLINE #1 MUST NOT BE CALLED MESTIA. Its own package deliberately does not
       // assert the village ("almost certainly Ushguli, but the metadata says *a
@@ -5855,11 +5860,12 @@ export const cities = [
       // section is about the towers as a phenomenon of "Mestia and Svaneti"; the
       // caption carries the disambiguation.
       //
-      // ⚠️ EIGHT SECTIONS STAY BARE, and this is the honest ceiling of the library,
+      // ⚠️ SEVEN SECTIONS STAY BARE, and this is the honest ceiling of the library,
       // not an oversight: the Svaneti museum, the Margiani house museum, Chalaadi
-      // Glacier, Hatsvali, Tetnuldi, the Mestia town walk and Svan cuisine have NO
-      // photograph anywhere in the source tree (whole tree searched — zero hits on
-      // Chalaadi, Hatsvali, Tetnuldi, Margiani or kubdari).
+      // Glacier, Tetnuldi, the Mestia town walk and Svan cuisine have NO photograph
+      // anywhere in the source tree (whole tree searched — zero hits on Chalaadi,
+      // Tetnuldi, Margiani or kubdari). Hatsvali left this list on 2026-08-27, when a
+      // commissioned chairlift frame arrived; it too had been a zero-hit search.
       //
       // Explicitly REJECTED rather than stretched:
       //   shkhara-glacier-ushguli — a glacier snout above a forested river valley,
@@ -5930,6 +5936,45 @@ export const cities = [
             nl: 'Ushguli in zijn dal: de stenen Svaanse torens van het dorp staan onder het besneeuwde massief van de Shkhara.',
             cs: 'Ushguli ve svém údolí — kamenné svanské věže vesnice stojí pod zasněženým masivem Shkhary.',
             pl: 'Ushguli w swojej dolinie — kamienne swańskie wieże wsi stoją pod ośnieżonym masywem Shkhary.',
+          },
+        },
+        {
+          // PORTRAIT and very tall (941x1672, ~0.56 — taller than the 2:3 Svan-tower
+          // frame above). The figure takes `--portrait` plus an inline
+          // `max-width:480px` on the <img>: the plain 560 portrait cap would render
+          // it 995px tall and swallow the column, while the shared
+          // `--portrait-narrow` 420 modifier belongs to the pages that opted into it
+          // and is not this page's call to widen. 480 -> 853px tall, between the two.
+          // Rungs 768 + 941 (native ceiling — there is NO 1200/1448 export), so no
+          // upscaled filename is referenced.
+          //
+          // ⚠️ The section heading says "cable car"; the photograph is an open
+          // CHAIRLIFT. Every string below says chairlift, which is what the frame
+          // shows. The heading and its paragraph are NOT touched.
+          base: 'hatsvali-cable-car-mestia-georgia', width: 941, height: 1672,
+          anchor: 'inline-hatsvali-chairlift', dir: '/images/files',
+          description: 'The open chairlift to Hatsvali climbing above the wooded slope over Mestia, with the town in its valley and the peaks of the Greater Caucasus beyond, Svaneti, Georgia.',
+          // No `geo` — the exact lift-line coordinates are not established anywhere
+          // in the source tree, and this page's rule is NO ADDED FACTS.
+          locationName: 'Hatsvali, Mestia, Svaneti, Georgia',
+          locality: 'Mestia', region: 'Samegrelo-Zemo Svaneti',
+          name: {
+            en: 'View from the Hatsvali chairlift over Mestia and the Greater Caucasus peaks, Svaneti, Georgia',
+            de: 'Blick von der Sesselbahn Hatsvali über Mestia und die Gipfel des Großen Kaukasus, Swanetien, Georgien',
+            fr: 'Vue depuis le télésiège de Hatsvali sur Mestia et les sommets du Grand Caucase, Svanétie, Géorgie',
+            es: 'Vista desde el telesilla de Hatsvali sobre Mestia y los picos del Gran Cáucaso, Svaneti, Georgia',
+            nl: 'Uitzicht vanaf de stoeltjeslift van Hatsvali over Mestia en de toppen van de Grote Kaukasus, Svaneti, Georgië',
+            cs: 'Pohled ze sedačkové lanovky Hatsvali na Mestii a vrcholky Velkého Kavkazu, Svanetie, Gruzie',
+            pl: 'Widok z wyciągu krzesełkowego Hatsvali na Mestię i szczyty Wielkiego Kaukazu, Swanetia, Gruzja',
+          },
+          caption: {
+            en: 'The Hatsvali chairlift rising above Mestia, with the town and the Greater Caucasus peaks beyond.',
+            de: 'Die Sesselbahn Hatsvali steigt über Mestia auf, dahinter der Ort und die Gipfel des Großen Kaukasus.',
+            fr: "Le télésiège de Hatsvali s'élève au-dessus de Mestia, la ville et les sommets du Grand Caucase à l'arrière-plan.",
+            es: 'El telesilla de Hatsvali asciende sobre Mestia, con el pueblo y los picos del Gran Cáucaso al fondo.',
+            nl: 'De stoeltjeslift van Hatsvali stijgt op boven Mestia, met het stadje en de toppen van de Grote Kaukasus daarachter.',
+            cs: 'Sedačková lanovka Hatsvali stoupá nad Mestii, v pozadí město a vrcholky Velkého Kavkazu.',
+            pl: 'Wyciąg krzesełkowy Hatsvali wznosi się nad Mestią, w tle miasteczko i szczyty Wielkiego Kaukazu.',
           },
         },
         {
