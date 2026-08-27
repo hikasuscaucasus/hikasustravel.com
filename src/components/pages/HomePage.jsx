@@ -10,6 +10,7 @@ const MapboxMap = lazy(() => import('../shared/MapboxMap'))
 import Testimonials from '../shared/Testimonials'
 import ContactForm from '../shared/ContactForm'
 import { tours } from '../../data/tours'
+import { tierStartingFrom } from '../shared/pricingUtils'
 import useT from '../../i18n/useT'
 import useLang from '../../i18n/useLang'
 import LocaleLink from '../../i18n/LocaleLink'
@@ -126,8 +127,12 @@ export default function HomePage() {
             <div className="tours-grid tours-grid--private-home">
               {tours.filter((tour) => tour.type === 'private').map((tour) => {
                 const tt = tourTranslations?.[tour.slug]
+                // An owner-approved advertised Classic price wins over the
+                // 4-traveller row when the tour ships one, so this tile agrees
+                // with the listing card and the tour page. Opt-in.
                 const classicRow = tour.pricing?.find((r) => r.travelers === '4')
-                const classicNum = classicRow ? parseFloat((classicRow.economy || '').replace(/[^0-9.]/g, '')) : NaN
+                const classicNum = tierStartingFrom(tour.startingFrom, 'economy')
+                  ?? (classicRow ? parseFloat((classicRow.economy || '').replace(/[^0-9.]/g, '')) : NaN)
                 const priceFrom = !isNaN(classicNum) && classicNum > 0 ? `€${classicNum.toLocaleString('en-US')}` : null
                 return (
                   <div className="tour-tile" key={tour.slug}>

@@ -2,8 +2,13 @@ import BlurUpBackground from './BlurUpBackground'
 import FadeUp from './FadeUp'
 import LocaleLink from '../../i18n/LocaleLink'
 import useT from '../../i18n/useT'
+import { tierStartingFrom } from './pricingUtils'
 
-function getClassicPrice(pricing) {
+// An owner-approved advertised Classic price wins over the 4-traveller row when
+// the tour ships one, so the listing badge matches the detail page. Opt-in.
+function getClassicPrice(pricing, startingFrom) {
+  const advertised = tierStartingFrom(startingFrom, 'economy')
+  if (advertised !== null) return advertised
   if (!pricing || pricing.length === 0) return null
   const row = pricing.find((r) => r.travelers === '4')
   if (!row || !row.economy) return null
@@ -19,7 +24,7 @@ export default function TourCard({ tour, translation, index = 0, basePath = '/pr
   const title = tt?.title || tour.title
   const description = tt?.listingDescription || tt?.description || tour.listingDescription || tour.description
   const tourUrl = `${basePath}/${tour.slug}`
-  const classicPrice = getClassicPrice(tour.pricing)
+  const classicPrice = getClassicPrice(tour.pricing, tour.startingFrom)
 
   return (
     <FadeUp>

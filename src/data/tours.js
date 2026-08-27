@@ -3601,26 +3601,26 @@ export const tours = [
       {
         "travelers": "1",
         "luxury": "€2995",
-        "midRange": "€2395",
-        "economy": "€2315"
+        "midRange": "€2470",
+        "economy": "€2360"
       },
       {
         "travelers": "2",
-        "luxury": "€1665",
-        "midRange": "€1340",
-        "economy": "€1290"
+        "luxury": "€1695",
+        "midRange": "€1380",
+        "economy": "€1340"
       },
       {
         "travelers": "3",
         "luxury": "€1395",
-        "midRange": "€1095",
-        "economy": "€1050"
+        "midRange": "€1135",
+        "economy": "€1090"
       },
       {
         "travelers": "4",
-        "luxury": "€1245",
-        "midRange": "€940",
-        "economy": "€890"
+        "luxury": "€1280",
+        "midRange": "€980",
+        "economy": "€935"
       },
       {
         "travelers": "Single Supplement",
@@ -3629,6 +3629,11 @@ export const tours = [
         "economy": "€160"
       }
     ],
+    "startingFrom": {
+      "economy": "€890",
+      "midRange": "€940",
+      "luxury": "€1245"
+    },
     "included": [
       "Accommodation in double or twin rooms, with breakfast included;",
       "Transfers as per the itinerary in a comfortable, air-conditioned vehicle, with an English-speaking guide driver;",
@@ -4021,6 +4026,31 @@ export const tours = [
           "nl": "Marmeren buste van Stalin in het Stalinmuseum in Gori, Georgië",
           "cs": "Mramorová busta Stalina v Stalinově muzeu v Gori, Gruzie",
           "pl": "Marmurowe popiersie Stalina w Muzeum Stalina w Gori, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/7-day-cultural-kutaisi-tbilisi/baias-winery-imereti-georgia/baias-winery-imereti-georgia-768.webp",
+        "base": "/images/tours/7-day-cultural-kutaisi-tbilisi/baias-winery-imereti-georgia/baias-winery-imereti-georgia",
+        "widths": [768, 1200, 1536],
+        "width": 1536,
+        "height": 1024,
+        "caption": {
+          "en": "Baia's Winery, Imereti",
+          "de": "Baias Weingut, Imeretien",
+          "fr": "Domaine Baia, Iméréthie",
+          "es": "Bodega de Baia, Imereti",
+          "nl": "Baia's wijnmakerij, Imereti",
+          "cs": "Vinařství Baia, Imeretie",
+          "pl": "Winnica Baii, Imeretia"
+        },
+        "altText": {
+          "en": "Traditional qvevri wine cellar with clay amphorae set in the floor at a family winery in Imereti, Georgia",
+          "de": "Traditioneller Qvevri-Weinkeller mit im Boden eingelassenen Tonamphoren in einem Familienweingut in Imeretien, Georgien",
+          "fr": "Cave à vin traditionnelle à qvevri avec des amphores en argile enterrées dans le sol, dans un domaine familial en Iméréthie, Géorgie",
+          "es": "Bodega tradicional de qvevri con ánforas de arcilla enterradas en el suelo en una bodega familiar de Imereti, Georgia",
+          "nl": "Traditionele qvevri-wijnkelder met kleiamforen in de vloer bij een familiewijnmakerij in Imereti, Georgië",
+          "cs": "Tradiční kvevri vinný sklep s hliněnými amforami zapuštěnými v podlaze v rodinném vinařství v Imeretii, Gruzie",
+          "pl": "Tradycyjna piwnica z kwewri – glinianymi amforami wkopanymi w podłogę – w rodzinnej winnicy w Imeretii, Gruzja"
         }
       }
     ],
