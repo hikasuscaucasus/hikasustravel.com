@@ -11863,6 +11863,455 @@ export const tours = [
     "tourFormTitle": "Georgia's Wonders: 11-Day Grand Tour from Kutaisi to Kazbegi and Batumi"
   },
   {
+    "slug": "11-day-winter-ski-tour-from-kutaisi",
+    "type": "private",
+    "title": "11-Day Winter Ski Tour from Kutaisi",
+    "heroImage": "/images/files/bakuriani-ski-slope-georgia-1600w.webp",
+    "ogImage": {
+      "src": "/images/files/bakuriani-ski-slope-georgia-og-1200x630.jpg",
+      "width": 1200,
+      "height": 630
+    },
+    "imageMeta": {
+      "width": 1600,
+      "height": 900,
+      "contentUrl": "/images/files/bakuriani-ski-slope-georgia-1600w.webp",
+      "description": "Skiers on a groomed piste beside a chairlift at Bakuriani ski resort, on the northern slope of the Trialeti Range at about 1,700 m, Borjomi municipality, Samtskhe-Javakheti, Georgia.",
+      "locationName": "Bakuriani",
+      "geo": {
+        "lat": 41.75,
+        "lng": 43.533
+      },
+      "alt": {
+        "en": "Skiers on a groomed piste beside a chairlift at Bakuriani ski resort, Georgia",
+        "de": "Skifahrer auf einer präparierten Piste neben einem Sessellift im Skigebiet Bakuriani, Georgien",
+        "fr": "Skieurs sur une piste damée à côté d’un télésiège à la station de Bakuriani, Géorgie",
+        "es": "Esquiadores en una pista preparada junto a una telesilla en la estación de Bakuriani, Georgia",
+        "nl": "Skiërs op een geprepareerde piste naast een stoeltjeslift in skigebied Bakuriani, Georgië",
+        "cs": "Lyžaři na upravené sjezdovce vedle sedačkové lanovky ve středisku Bakuriani, Gruzie",
+        "pl": "Narciarze na przygotowanym stoku obok wyciągu krzesełkowego w ośrodku Bakuriani, Gruzja"
+      },
+      "caption": {
+        "en": "Skiers on a groomed piste beside a chairlift among snow-covered spruce forest at Bakuriani",
+        "de": "Skifahrer auf einer präparierten Piste neben einem Sessellift im verschneiten Fichtenwald von Bakuriani",
+        "fr": "Skieurs sur une piste damée près d’un télésiège au milieu de la forêt d’épicéas enneigée de Bakuriani",
+        "es": "Esquiadores en una pista preparada junto a una telesilla entre abetos nevados en Bakuriani",
+        "nl": "Skiërs op een geprepareerde piste naast een stoeltjeslift in besneeuwd sparrenbos bij Bakuriani",
+        "cs": "Lyžaři na upravené sjezdovce vedle sedačkové lanovky v zasněženém smrkovém lese v Bakuriani",
+        "pl": "Narciarze na przygotowanym stoku obok wyciągu krzesełkowego w ośnieżonym lesie świerkowym w Bakuriani"
+      }
+    },
+    "tileImage": "/images/files/bakuriani-ski-slope-georgia-768w.webp",
+    "listingImage": "/images/files/bakuriani-ski-slope-georgia-768w.webp",
+    "days": 11,
+    "description": "Eleven days, two mountains, and as much time on snow as you want. This is a ski trip pure and simple — a night to land at Kutaisi, then straight up to the slopes, split between Georgia’s two main resorts with no sightseeing in between.\n\nYou start at Gudauri, the high, open resort on the Caucasus ridge at around 2,200 metres, for four full days on wide, treeless pistes and long descents. Then it’s south to Bakuriani, a lower, forested resort in the pines — gentler and more sheltered — for three more days on the snow. Everything between arrival and departure is yours to spend skiing, at whatever pace and level suits you.\n\nTwo resorts means two different mountains and a natural change of gear: Gudauri’s open bowls for confident skiers and freeriders, Bakuriani’s easy tree-lined runs for beginners and families. Mountain weather calls the shots up here, so lift openings and conditions shape each day — the vehicle and pace are yours, and the ski days flex around whatever the mountain gives.",
+    "listingDescription": "A private 11-day ski holiday from Kutaisi combining four full ski days in high-altitude Gudauri with three days on Bakuriani's forested slopes, with hotels and transfers arranged.",
+    "heroH1": "11-Day Winter Ski Tour from Kutaisi",
+    "heroSubtitle": "A private eleven-day ski holiday from Kutaisi across two Georgian resorts — five nights in high, open Gudauri and four in forested Bakuriani, with seven flexible days on the snow.",
+    "seoTitle": "11-Day Winter Ski Tour from Kutaisi",
+    "metaDescription": "Private 11-day ski tour from Kutaisi combining Gudauri and Bakuriani, with seven flexible ski days, 10 hotel nights, breakfast and transfers arranged.",
+    "heroFacts": [
+      "11 days / 10 nights",
+      "Private tour",
+      "Starts & ends in Kutaisi",
+      "Two resorts: Gudauri & Bakuriani",
+      "Five nights in Gudauri",
+      "Four nights in Bakuriani",
+      "Hotels included",
+      "7 flexible ski days",
+      "From €745 per person",
+      "Customizable route"
+    ],
+    "rightForYou": [
+      "Skiers and snowboarders who want maximum mountain time rather than a sightseeing itinerary",
+      "Travelers who want to experience two different Georgian ski resorts in one trip",
+      "Confident skiers and freeriders who will appreciate Gudauri's high, open terrain",
+      "Beginners, families and relaxed skiers who will appreciate Bakuriani's gentler forested runs",
+      "Couples, families, friends and small private groups who want flexible ski days rather than a fixed daily programme",
+      "Less suited to travelers expecting ski passes, equipment, lessons or meals to be bundled into the package"
+    ],
+    "faq": [
+      {
+        "title": "How many ski days are included in the 11-day tour?",
+        "content": "<p>The tour gives you seven full ski days in total: four full days in Gudauri and three full days in Bakuriani. The arrival, inter-resort transfer and departure days are separate, although there may be time for a first run on a transfer day if conditions and arrival time allow.</p>"
+      },
+      {
+        "title": "Why combine Gudauri and Bakuriani?",
+        "content": "<p>The two resorts offer very different skiing. Gudauri is higher, open and above the tree line, with long pistes and extensive freeride terrain. Bakuriani is lower, more sheltered and forested, with gentler slopes that work particularly well for beginners, families and anyone who wants a more relaxed second half of the trip.</p>"
+      },
+      {
+        "title": "Is this tour suitable for beginners?",
+        "content": "<p>Yes. Both resorts have options for less experienced skiers, and Bakuriani is particularly well suited to beginners and families. Lessons can be arranged locally but are not included in the tour price.</p>"
+      },
+      {
+        "title": "Are ski passes, equipment and lessons included?",
+        "content": "<p>No. Ski passes, ski or snowboard hire, lessons and personal winter equipment are not included. They can be arranged locally at the resorts, which lets each traveler choose the equipment and level of instruction that suits them.</p>"
+      },
+      {
+        "title": "Can experienced skiers go off-piste in Gudauri?",
+        "content": "<p>Gudauri is well known for open freeride and off-piste terrain, but off-piste skiing should only be considered by appropriately experienced participants and should be undertaken with a qualified local guide, subject to snow, weather and safety conditions. Off-piste guiding is not included in the tour price.</p>"
+      },
+      {
+        "title": "How much driving is involved?",
+        "content": "<p>The main transfer days are approximately four hours from Kutaisi to Gudauri, four and a half hours from Gudauri to Bakuriani, and three hours from Bakuriani back to Kutaisi International Airport. Winter road and weather conditions can affect journey times, so departure transfers should always allow additional margin.</p>"
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/images/files/gudauri-ski-view-1448.webp",
+        "caption": {
+          "en": "Ski Slopes, Gudauri",
+          "de": "Skipisten, Gudauri",
+          "fr": "Pistes de ski, Gudauri",
+          "es": "Pistas de esquí, Gudauri",
+          "nl": "Skipistes, Gudauri",
+          "cs": "Sjezdovky, Gudauri",
+          "pl": "Stoki narciarskie, Gudauri"
+        },
+        "alt": {
+          "en": "A skier at the top of Gudauri above a sea of cloud, snow-covered Caucasus peaks behind, Georgia",
+          "de": "Ein Skifahrer am Gipfel von Gudauri über einem Wolkenmeer, dahinter verschneite Kaukasusgipfel, Georgien",
+          "fr": "Un skieur au sommet de Gudauri au-dessus d'une mer de nuages, sommets enneigés du Caucase derrière, Géorgie",
+          "es": "Un esquiador en lo alto de Gudauri sobre un mar de nubes, con cumbres nevadas del Cáucaso detrás, Georgia",
+          "nl": "Een skiër boven op Gudauri boven een wolkenzee, met besneeuwde Kaukasustoppen erachter, Georgië",
+          "cs": "Lyžař na vrcholu Gudauri nad mořem oblaků, v pozadí zasněžené vrcholy Kavkazu, Gruzie",
+          "pl": "Narciarz na szczycie Gudauri nad morzem chmur, w tle ośnieżone szczyty Kaukazu, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/gudauri-ski-piste-1448.webp",
+        "caption": {
+          "en": "Ski Piste, Gudauri",
+          "de": "Skipiste, Gudauri",
+          "fr": "Piste de ski, Gudauri",
+          "es": "Pista de esquí, Gudauri",
+          "nl": "Skipiste, Gudauri",
+          "cs": "Sjezdovka, Gudauri",
+          "pl": "Stok narciarski, Gudauri"
+        },
+        "alt": {
+          "en": "A wide open ski piste and chairlift at Gudauri under a blue sky, distant Caucasus peaks, Georgia",
+          "de": "Eine weite offene Skipiste und ein Sessellift in Gudauri unter blauem Himmel, ferne Kaukasusgipfel, Georgien",
+          "fr": "Une large piste de ski ouverte et un télésiège à Gudauri sous un ciel bleu, sommets lointains du Caucase, Géorgie",
+          "es": "Una amplia pista de esquí abierta y un telesilla en Gudauri bajo un cielo azul, cumbres lejanas del Cáucaso, Georgia",
+          "nl": "Een brede open skipiste en stoeltjeslift in Gudauri onder een blauwe lucht, verre Kaukasustoppen, Georgië",
+          "cs": "Široká otevřená sjezdovka a sedačková lanovka v Gudauri pod modrou oblohou, vzdálené vrcholy Kavkazu, Gruzie",
+          "pl": "Szeroki otwarty stok narciarski i wyciąg krzesełkowy w Gudauri pod błękitnym niebem, odległe szczyty Kaukazu, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/gudauri-ski-lift-1448.webp",
+        "caption": {
+          "en": "Ski Lift, Gudauri",
+          "de": "Skilift, Gudauri",
+          "fr": "Remontée mécanique, Gudauri",
+          "es": "Telesilla, Gudauri",
+          "nl": "Skilift, Gudauri",
+          "cs": "Lyžařský vlek, Gudauri",
+          "pl": "Wyciąg narciarski, Gudauri"
+        },
+        "alt": {
+          "en": "Skiers and snowboarders at a Gudauri lift top station above the clouds, Greater Caucasus, Georgia",
+          "de": "Skifahrer und Snowboarder an einer Bergstation in Gudauri über den Wolken, Großer Kaukasus, Georgien",
+          "fr": "Skieurs et snowboardeurs à la gare d'arrivée d'un téléski à Gudauri au-dessus des nuages, Grand Caucase, Géorgie",
+          "es": "Esquiadores y practicantes de snowboard en la estación superior de un remonte de Gudauri sobre las nubes, Gran Cáucaso, Georgia",
+          "nl": "Skiërs en snowboarders bij een bergstation in Gudauri boven de wolken, Grote Kaukasus, Georgië",
+          "cs": "Lyžaři a snowboardisté u horní stanice vleku v Gudauri nad oblaky, Velký Kavkaz, Gruzie",
+          "pl": "Narciarze i snowboardziści przy górnej stacji wyciągu w Gudauri nad chmurami, Wielki Kaukaz, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/gudauri-ski-slopes-caucasus-georgia-1448.webp",
+        "caption": {
+          "en": "Open Slopes, Gudauri",
+          "de": "Offene Hänge, Gudauri",
+          "fr": "Pentes ouvertes, Gudauri",
+          "es": "Laderas abiertas, Gudauri",
+          "nl": "Open hellingen, Gudauri",
+          "cs": "Otevřené svahy, Gudauri",
+          "pl": "Otwarte stoki, Gudauri"
+        },
+        "alt": {
+          "en": "Open treeless ski slopes and chairlifts under snow-covered peaks at Gudauri ski resort, Greater Caucasus, Georgia",
+          "de": "Offene baumlose Skipisten und Sessellifte unter schneebedeckten Gipfeln im Skigebiet Gudauri, Großer Kaukasus, Georgien",
+          "fr": "Pistes de ski ouvertes et sans arbres et télésièges sous des sommets enneigés à la station de Gudauri, Grand Caucase, Géorgie",
+          "es": "Pistas de esquí abiertas y sin árboles y telesillas bajo cumbres nevadas en la estación de Gudauri, Gran Cáucaso, Georgia",
+          "nl": "Open boomloze skipistes en stoeltjesliften onder besneeuwde toppen in skigebied Gudauri, Grote Kaukasus, Georgië",
+          "cs": "Otevřené bezlesé sjezdovky a sedačkové lanovky pod zasněženými vrcholy ve středisku Gudauri, Velký Kavkaz, Gruzie",
+          "pl": "Otwarte bezleśne stoki narciarskie i wyciągi krzesełkowe pod ośnieżonymi szczytami w ośrodku Gudauri, Wielki Kaukaz, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/bakuriani-chairlift-view-georgia-2104w.webp",
+        "caption": {
+          "en": "Chairlift, Bakuriani",
+          "de": "Sessellift, Bakuriani",
+          "fr": "Télésiège, Bakuriani",
+          "es": "Telesilla, Bakuriani",
+          "nl": "Stoeltjeslift, Bakuriani",
+          "cs": "Sedačková lanovka, Bakuriani",
+          "pl": "Wyciąg krzesełkowy, Bakuriani"
+        },
+        "alt": {
+          "en": "A chairlift climbing above the pistes at Bakuriani ski resort, Trialeti Range, Georgia",
+          "de": "Ein Sessellift über den Pisten des Skigebiets Bakuriani, Trialeti-Gebirge, Georgien",
+          "fr": "Un télésiège s'élevant au-dessus des pistes de la station de Bakuriani, chaîne du Trialeti, Géorgie",
+          "es": "Una telesilla sobre las pistas de la estación de esquí de Bakuriani, cordillera de Trialeti, Georgia",
+          "nl": "Een stoeltjeslift boven de pistes van skigebied Bakuriani, Trialeti-gebergte, Georgië",
+          "cs": "Sedačková lanovka nad sjezdovkami ve středisku Bakuriani, pohoří Trialeti, Gruzie",
+          "pl": "Wyciąg krzesełkowy nad stokami ośrodka Bakuriani, pasmo Trialeti, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/bakuriani-chairlift-forest-georgia-1600w.webp",
+        "caption": {
+          "en": "Forest Slopes, Bakuriani",
+          "de": "Waldhänge, Bakuriani",
+          "fr": "Pistes en forêt, Bakuriani",
+          "es": "Pistas entre bosques, Bakuriani",
+          "nl": "Beboste hellingen, Bakuriani",
+          "cs": "Zalesněné svahy, Bakuriani",
+          "pl": "Zalesione stoki, Bakuriani"
+        },
+        "alt": {
+          "en": "A chairlift rising through snow-covered spruce forest toward the summit at Bakuriani, Georgia",
+          "de": "Ein Sessellift steigt durch verschneiten Fichtenwald zum Gipfel von Bakuriani, Georgien",
+          "fr": "Un télésiège s'élève à travers la forêt d'épicéas enneigée vers le sommet de Bakuriani, Géorgie",
+          "es": "Una telesilla asciende entre abetos nevados hacia la cumbre de Bakuriani, Georgia",
+          "nl": "Een stoeltjeslift stijgt door besneeuwd sparrenbos naar de top van Bakuriani, Georgië",
+          "cs": "Sedačková lanovka stoupá zasněženým smrkovým lesem k vrcholu Bakuriani, Gruzie",
+          "pl": "Wyciąg krzesełkowy wznosi się przez ośnieżony las świerkowy ku szczytowi Bakuriani, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/bakuriani-mountain-panorama-georgia-1200w.webp",
+        "caption": {
+          "en": "Mountain Panorama, Bakuriani",
+          "de": "Bergpanorama, Bakuriani",
+          "fr": "Panorama, Bakuriani",
+          "es": "Panorama de montaña, Bakuriani",
+          "nl": "Bergpanorama, Bakuriani",
+          "cs": "Horské panorama, Bakuriani",
+          "pl": "Panorama gór, Bakuriani"
+        },
+        "alt": {
+          "en": "Snow-covered ridges and open pistes above the tree line at Bakuriani, Trialeti Range, Georgia",
+          "de": "Verschneite Bergrücken und offene Pisten oberhalb der Baumgrenze in Bakuriani, Trialeti-Gebirge, Georgien",
+          "fr": "Crêtes enneigées et pistes dégagées au-dessus de la limite des arbres à Bakuriani, chaîne du Trialeti, Géorgie",
+          "es": "Cumbres nevadas y pistas abiertas por encima del límite arbóreo en Bakuriani, cordillera de Trialeti, Georgia",
+          "nl": "Besneeuwde bergkammen en open pistes boven de boomgrens bij Bakuriani, Trialeti-gebergte, Georgië",
+          "cs": "Zasněžené hřebeny a otevřené sjezdovky nad hranicí lesa v Bakuriani, pohoří Trialeti, Gruzie",
+          "pl": "Ośnieżone grzbiety i otwarte stoki powyżej granicy lasu w Bakuriani, pasmo Trialeti, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/bakuriani-slope-cafe-georgia-1600w.webp",
+        "caption": {
+          "en": "Slope-side Café, Bakuriani",
+          "de": "Café an der Piste, Bakuriani",
+          "fr": "Café sur les pistes, Bakuriani",
+          "es": "Café a pie de pista, Bakuriani",
+          "nl": "Café aan de piste, Bakuriani",
+          "cs": "Kavárna u sjezdovky, Bakuriani",
+          "pl": "Kawiarnia przy stoku, Bakuriani"
+        },
+        "alt": {
+          "en": "A café beside the piste among snow-laden pines at Bakuriani ski resort, Georgia",
+          "de": "Ein Café an der Piste zwischen schneebedeckten Kiefern im Skigebiet Bakuriani, Georgien",
+          "fr": "Un café au bord de la piste parmi les pins enneigés à la station de Bakuriani, Géorgie",
+          "es": "Un café junto a la pista entre pinos nevados en la estación de esquí de Bakuriani, Georgia",
+          "nl": "Een café langs de piste tussen besneeuwde dennen in skigebied Bakuriani, Georgië",
+          "cs": "Kavárna u sjezdovky mezi zasněženými borovicemi ve středisku Bakuriani, Gruzie",
+          "pl": "Kawiarnia przy stoku wśród ośnieżonych sosen w ośrodku Bakuriani, Gruzja"
+        }
+      }
+    ],
+    "enTouristTrip": {
+      "@context": "https://schema.org",
+      "@type": "TouristTrip",
+      "name": "11-Day Winter Ski Tour from Kutaisi",
+      "description": "A private eleven-day ski holiday from Kutaisi combining Gudauri and Bakuriani, Georgia's two main ski resorts, with five nights in Gudauri, four in Bakuriani, seven flexible ski days, and transfers and hotels included.",
+      "url": "https://www.hikasustravel.com/en/private-tours/11-day-winter-ski-tour-from-kutaisi/",
+      "touristType": [
+        "Ski tourism",
+        "Winter sports",
+        "Adventure tourism"
+      ],
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "Hikasus Travel",
+        "url": "https://www.hikasustravel.com/"
+      },
+      "itinerary": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Day 1 — Arrival in Kutaisi"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Day 2 — Kutaisi – Gudauri"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Day 3-6 — Gudauri – Skiing"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Day 7 — Gudauri – Bakuriani"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Day 8-10 — Bakuriani – Skiing"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "Day 11 — Departure from Kutaisi"
+          }
+        ]
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "EUR",
+        "lowPrice": "745",
+        "highPrice": "3980",
+        "offerCount": "3",
+        "url": "https://www.hikasustravel.com/en/private-tours/11-day-winter-ski-tour-from-kutaisi/"
+      }
+    },
+    "enBreadcrumb": {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.hikasustravel.com/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Private Tours",
+          "item": "https://www.hikasustravel.com/en/private-tours/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "11-Day Winter Ski Tour from Kutaisi",
+          "item": "https://www.hikasustravel.com/en/private-tours/11-day-winter-ski-tour-from-kutaisi/"
+        }
+      ]
+    },
+    "highlights": [
+      "Private 11-day ski holiday from Kutaisi combining Gudauri and Bakuriani",
+      "Seven full flexible ski days — four in Gudauri and three in Bakuriani",
+      "Five nights in high-altitude Gudauri",
+      "Four nights in forested Bakuriani",
+      "Two contrasting Georgian ski resorts in one journey",
+      "Gudauri's wide open pistes and freeride terrain for confident skiers",
+      "Bakuriani's gentler, tree-lined slopes for beginners, families and relaxed skiing",
+      "Hotels and transfers arranged, while the ski days stay flexible",
+      "No sightseeing schedule — the trip is built around mountain time and skiing"
+    ],
+    "itinerary": [
+      {
+        "title": "Day 1 — Arrival in Kutaisi",
+        "content": "<p>You'll be met at Kutaisi International Airport and transferred to your hotel. Check-in is from 14:00. The rest of the day is free to rest before heading up to the mountains in the morning. Overnight stay in Kutaisi.</p><ul><li>Arrival at Kutaisi International Airport;</li><li>Transfer to hotel and check-in;</li><li>Free time in Kutaisi;</li><li>Overnight stay in Kutaisi.</li><li><strong>Driving duration:</strong> 30 minutes</li></ul>"
+      },
+      {
+        "title": "Day 2 — Kutaisi – Gudauri",
+        "content": "<p>A travel day up to the first resort. You drive east across the country and climb the Georgian Military Highway into the Greater Caucasus to Gudauri, Georgia's biggest ski resort, high on the ridge at around 2,200 metres. It's a long but scenic drive, and you settle into your base for the next five nights — if you arrive with time to spare, the lower lifts are right on the doorstep for a first run.</p><ul><li>Drive up to Gudauri;</li><li>Hotel check-in and free time;</li><li>Overnight stay in Gudauri.</li><li><strong>Driving duration:</strong> ~4 hours</li></ul>"
+      },
+      {
+        "title": "Day 3-6 — Gudauri – Skiing",
+        "content": "<p>Four full days on the mountain, to ski however you like. Gudauri is wide and open — treeless runs on a sunny, south-facing slope, modern lifts, and room for everyone from first-timers to people chasing a long, fast descent. Pick up a lift pass and rentals at the base, take a lesson if you need one, and settle into the rhythm of the week. Above the tree line the slopes spill into the wide off-piste bowls Gudauri is known for — a treat for strong skiers, though you're never pushed off the groomed runs; if you do go off-piste, take a qualified local guide and only when the snow and weather are right. There's room in the four days to rest the legs, too — a spa afternoon, some snowshoeing, or a slow lunch with the peaks in front of you.</p><ul><li>Free days skiing or snowboarding at Gudauri;</li><li>Optional lessons, guided off-piste, or a rest day;</li><li>Overnight stays in Gudauri.</li><li><strong>Duration of the tour:</strong> Free days on the slopes</li></ul>"
+      },
+      {
+        "title": "Day 7 — Gudauri – Bakuriani",
+        "content": "<p>A transfer day between the two resorts. You come down off the ridge and cross south into the pine country around Bakuriani, a lower, gentler ski town where you settle in for four nights. More sheltered than Gudauri and easier underfoot, it's a change of both pace and scenery — and if you reach it with time to spare, the slopes make an easy first afternoon.</p><ul><li>Drive to Bakuriani;</li><li>Hotel check-in and free time;</li><li>Overnight stay in Bakuriani.</li><li><strong>Driving duration:</strong> ~4.5 hours</li></ul>"
+      },
+      {
+        "title": "Day 8-10 — Bakuriani – Skiing",
+        "content": "<p>Three full days on Bakuriani's gentle, tree-lined slopes — lower and more forgiving than Gudauri, and well suited to beginners, families and anyone who wants an easier pace to finish the trip. Rentals, lift passes and lessons are all simple to sort out, and there's tubing and a snow park for a change from the pistes. Ski as much or as little as you like; it's a relaxed mountain to round off the week.</p><ul><li>Free days skiing or snowboarding at Bakuriani;</li><li>Optional lessons, tubing, or the snow park;</li><li>Overnight stays in Bakuriani.</li><li><strong>Duration of the tour:</strong> Free days on the slopes</li></ul>"
+      },
+      {
+        "title": "Day 11 — Departure from Kutaisi",
+        "content": "<p>After breakfast you check out and transfer west from Bakuriani back to Kutaisi International Airport for your departure, closing the loop where it began. In winter, departure times allow extra margin for mountain road and weather conditions.</p><ul><li>Hotel check-out;</li><li>Transfer to Kutaisi International Airport;</li><li>Departure.</li><li><strong>Driving duration:</strong> ~3 hours</li></ul>"
+      }
+    ],
+    "accommodations": [
+      {
+        "city": "Kutaisi (1 night)",
+        "luxury": "Newport Hotel Kutaisi",
+        "midRange": "Boutique Hotel Argo",
+        "economy": "Hotel West Way"
+      },
+      {
+        "city": "Gudauri (5 nights)",
+        "luxury": "Gudauri Lodge",
+        "midRange": "Marco Polo",
+        "economy": "Gudauri Inn (not ski in/ski out)"
+      },
+      {
+        "city": "Bakuriani (4 nights)",
+        "luxury": "Kokhta Bakuriani",
+        "midRange": "On request",
+        "economy": "Bakuriani Inn"
+      }
+    ],
+    "pricing": [
+      {
+        "travelers": "Single Supplement",
+        "luxury": "€1565",
+        "midRange": "€865",
+        "economy": "€425"
+      },
+      {
+        "travelers": "1",
+        "luxury": "€3980",
+        "midRange": "€2545",
+        "economy": "€1595"
+      },
+      {
+        "travelers": "2",
+        "luxury": "€2060",
+        "midRange": "€1375",
+        "economy": "€870"
+      },
+      {
+        "travelers": "3",
+        "luxury": "€1995",
+        "midRange": "€1295",
+        "economy": "€795"
+      },
+      {
+        "travelers": "4",
+        "luxury": "€1935",
+        "midRange": "€1250",
+        "economy": "€745"
+      }
+    ],
+    "included": [
+      "Accommodation in double/twin rooms, with breakfast included;",
+      "Transfers as per itinerary by comfortable vehicle."
+    ],
+    "notIncluded": [
+      "Lunches and dinners;",
+      "Additional hotel expenses;",
+      "Ski passes, ski hire, lessons and personal winter equipment;",
+      "Travel insurance."
+    ],
+    "tourFormTitle": "11-Day Winter Ski Tour from Kutaisi"
+  },
+  {
     "slug": "12-day-ultimate-georgia-adventure-tour-tbilisi-kazbegi-mestia-kutaisi-batumi",
     "type": "private",
     "title": "12-Day Ultimate Georgia Adventure Tour: Tbilisi, Kazbegi, Mestia, Kutaisi, Batumi",
