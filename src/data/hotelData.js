@@ -1,10 +1,10 @@
 const hotelData = {
   'Sandali Metekhi By Old Hospitality': {
     images: [
-      { src: '/images/hotels/sandali-metekhi.jpg', alt: 'Sandali Metekhi By Old Hospitality hotel building exterior in Tbilisi Old Town, Georgia' },
+      { src: '/images/hotels/sandali-metekhi.jpg', alt: 'MICHELIN Guide plaque displayed at Sandali Metekhi By Old Hospitality in Tbilisi, Georgia' },
       { src: '/images/hotels/sandali-metekhi-2.jpg', alt: 'Sandali Metekhi hotel lobby and reception area with Art Deco interior design, Tbilisi' },
       { src: '/images/hotels/sandali-metekhi-3.jpg', alt: 'Sandali Metekhi hotel guest room with elegant furnishings, Tbilisi' },
-      { src: '/images/hotels/sandali-metekhi-4.jpg', alt: 'Sandali Metekhi hotel bathroom with bathtub and modern amenities, Tbilisi' },
+      { src: '/images/hotels/sandali-metekhi-4.jpg', alt: 'Balcony with Old Town views at Sandali Metekhi By Old Hospitality in Tbilisi, Georgia' },
     ],
     stars: 4,
     description: 'An Art Deco boutique hotel nestled in Tbilisi\'s historic Metekhi district. With a stunning rooftop bar offering panoramic views of Narikala Fortress and the Old Town, Sandali Metekhi blends Georgian charm with modern luxury for an unforgettable stay.',
@@ -47,7 +47,7 @@ const hotelData = {
     images: [
       { src: '/images/hotels/hotel-west-way.jpg', alt: 'Hotel West Way building exterior in Kutaisi, Georgia' },
       { src: '/images/hotels/hotel-west-way-2.jpg', alt: 'Hotel West Way lobby and reception area in Kutaisi, Georgia' },
-      { src: '/images/hotels/hotel-west-way-3.jpg', alt: 'Hotel West Way comfortable guest room in Kutaisi, Georgia' },
+      { src: '/images/hotels/hotel-west-way-3.jpg', alt: 'Reception desk at Hotel West Way in Kutaisi, Georgia' },
       { src: '/images/hotels/hotel-west-way-4.jpg', alt: 'Hotel West Way bathroom with shower in Kutaisi, Georgia' },
     ],
     stars: 4,
@@ -95,7 +95,7 @@ const hotelData = {
   // details are listed. The old spelling still resolves via `hotelAliases`.
   'Hotel & Wine Cellar ARGE': {
     images: [
-      { src: '/images/hotels/hotel-arge.jpg', alt: 'Hotel and Wine Cellar ARGE building exterior with garden in Telavi, Kakheti wine region, Georgia' },
+      { src: '/images/hotels/hotel-arge.jpg', alt: 'Guest room with balcony doors at Hotel & Wine Cellar ARGE in Telavi, Georgia' },
       { src: '/images/hotels/hotel-arge-2.jpg', alt: 'Hotel ARGE lobby and lounge area in Telavi, Georgia' },
       { src: '/images/hotels/hotel-arge-3.jpg', alt: 'Hotel ARGE guest room with vineyard views in Kakheti, Georgia' },
       { src: '/images/hotels/hotel-arge-4.jpg', alt: 'Hotel ARGE bathroom with modern amenities in Telavi, Georgia' },
@@ -121,7 +121,9 @@ const hotelData = {
       { src: '/images/hotels/rooms-hotel-tbilisi.jpg', alt: 'Rooms Hotel Tbilisi building exterior on the banks of the Mtkvari River, Georgia' },
       { src: '/images/hotels/rooms-hotel-tbilisi-2.jpg', alt: 'Rooms Hotel Tbilisi stylish lobby and lounge with designer furniture' },
       { src: '/images/hotels/rooms-hotel-tbilisi-3.jpg', alt: 'Rooms Hotel Tbilisi guest room with contemporary design and city views' },
-      { src: '/images/hotels/rooms-hotel-tbilisi-4.jpg', alt: 'Rooms Hotel Tbilisi bathroom with modern fixtures, Tbilisi' },
+      // The file named "bathroom" was actually a laid restaurant table.
+      // Replaced from the operator's own site (roomshotels.com/hotel/tbilisi).
+      { src: '/images/hotels/rooms-hotel-tbilisi-5.webp', alt: 'Guest bathroom at Rooms Hotel Tbilisi with walk-in shower and tiled walls, Tbilisi, Georgia' },
     ],
     stars: 4,
     description: 'A design-forward boutique hotel housed in a converted Soviet-era publishing house on the banks of the Mtkvari River. Rooms Hotel Tbilisi is a cultural landmark in its own right, blending industrial-chic aesthetics with warm Georgian hospitality, a vibrant lobby bar, and a celebrated restaurant.',
@@ -163,7 +165,7 @@ const hotelData = {
   'Ginger Hotel': {
     images: [
       { src: '/images/hotels/ginger-hotel.jpg', alt: 'Ginger Hotel building exterior in Tbilisi Old Town, Georgia' },
-      { src: '/images/hotels/ginger-hotel-2.jpg', alt: 'Ginger Hotel lobby and common area in Tbilisi' },
+      { src: '/images/hotels/ginger-hotel-2.jpg', alt: 'Meeting room at Ginger Hotel in Tbilisi, Georgia' },
       { src: '/images/hotels/ginger-hotel-3.jpg', alt: 'Ginger Hotel clean and comfortable guest room in Tbilisi' },
       { src: '/images/hotels/ginger-hotel-4.jpg', alt: 'Ginger Hotel bathroom with modern amenities in Tbilisi' },
     ],
@@ -211,10 +213,15 @@ const hotelData = {
   },
   'Gudauri Lodge': {
     images: [
-      { src: '/images/hotels/gudauri-lodge.webp', alt: 'Gudauri Lodge modern hotel building in the snowy Caucasus mountains, Gudauri, Georgia' },
-      { src: '/images/hotels/gudauri-lodge-2.webp', alt: 'Gudauri Lodge suite living room with snowy mountain views' },
-      { src: '/images/hotels/gudauri-lodge-3.webp', alt: 'Gudauri Lodge contemporary twin guest room' },
-      { src: '/images/hotels/gudauri-lodge-4.webp', alt: 'Gudauri Lodge library and lounge area' },
+      // Ordered exterior / lobby / standard room, the order the modal shows.
+      // The previous lead image showed the building as a dark sliver against
+      // the mountain; this one, from the hotel's own site, actually identifies
+      // the property. No guest-bathroom photograph is published anywhere on
+      // gudaurilodge.com, so that category is still outstanding.
+      { src: '/images/hotels/gudauri-lodge-5.webp', alt: 'Exterior of Gudauri Lodge below the Caucasus peaks in Gudauri, Georgia' },
+      { src: '/images/hotels/gudauri-lodge-4.webp', alt: 'Library lounge at Gudauri Lodge in Gudauri, Georgia' },
+      { src: '/images/hotels/gudauri-lodge-3.webp', alt: 'Standard twin guest room at Gudauri Lodge in Gudauri, Georgia' },
+      { src: '/images/hotels/gudauri-lodge-2.webp', alt: 'Suite living area with mountain views at Gudauri Lodge in Gudauri, Georgia' },
     ],
     stars: 5,
     description: 'A contemporary five-star mountain lodge set right beside the pistes in the center of Gudauri, with genuine ski-in, ski-out access. After a day on the snow you can unwind in the wellness center — indoor and outdoor pools, an outdoor hot tub, sauna and steam room — then dine in the signature Georgian restaurant. Spacious modern rooms, a ski depot and a sun terrace make it a comfortable, self-contained base for a ski week.',
@@ -234,12 +241,15 @@ const hotelData = {
   },
   'Marco Polo': {
     images: [
-      { src: '/images/hotels/marco-polo.webp', alt: 'Marco Polo Hotel Gudauri illuminated at night in the winter mountains, Georgia' },
-      { src: '/images/hotels/marco-polo-2.webp', alt: 'Marco Polo Hotel Gudauri indoor swimming pool with mountain views' },
-      { src: '/images/hotels/marco-polo-3.webp', alt: 'Marco Polo Hotel Gudauri lobby lounge with sofas and staircase' },
-      { src: '/images/hotels/marco-polo-4.webp', alt: 'Marco Polo Hotel Gudauri comfortable guest room' },
-      // Bathroom added from the hotel's own site (marcopolo.ge).
-      { src: '/images/hotels/marco-polo-5.webp', alt: 'Bathroom at Marco Polo Hotel Gudauri with freestanding bath and louvred shutters' },
+      // Exterior / lobby / standard room / bathroom, then the indoor pool as a
+      // single extra. The record previously carried an indoor AND an outdoor
+      // pool shot but no guest room at all; the room below comes from the
+      // hotel's own site, and the duplicate outdoor pool frame is dropped.
+      { src: '/images/hotels/marco-polo.webp', alt: 'Exterior of Marco Polo Hotel Gudauri illuminated at night in the winter mountains, Georgia' },
+      { src: '/images/hotels/marco-polo-3.webp', alt: 'Lobby lounge at Marco Polo Hotel Gudauri in Gudauri, Georgia' },
+      { src: '/images/hotels/marco-polo-6.webp', alt: 'Standard guest room at Marco Polo Hotel Gudauri in Gudauri, Georgia' },
+      { src: '/images/hotels/marco-polo-5.webp', alt: 'Guest bathroom at Marco Polo Hotel Gudauri with freestanding bath and louvred shutters' },
+      { src: '/images/hotels/marco-polo-2.webp', alt: 'Indoor swimming pool with mountain views at Marco Polo Hotel Gudauri, Georgia' },
     ],
     stars: 5,
     description: 'Gudauri\'s original ski hotel, welcoming guests since 1988 and still one of the resort\'s landmarks. Marco Polo sits slope-side at around 2,000 metres with ski-in, ski-out access, backed by a large spa and wellness center — indoor and outdoor pools, saunas and a hot tub — plus a bowling alley, padel courts and the Soliko restaurant serving Georgian and European cuisine. A lively, full-service base in the middle of the resort.',
@@ -259,14 +269,14 @@ const hotelData = {
   },
   'Gudauri Inn': {
     images: [
-      { src: '/images/hotels/gudauri-inn.webp', alt: 'Gudauri Inn mountain-view lounge with hanging chairs, Gudauri, Georgia' },
-      { src: '/images/hotels/gudauri-inn-2.webp', alt: 'Gudauri Inn comfortable double guest room' },
-      { src: '/images/hotels/gudauri-inn-3.webp', alt: 'Gudauri Inn bright twin guest room' },
-      { src: '/images/hotels/gudauri-inn-4.webp', alt: 'Gudauri Inn twin guest room with balcony and mountain views' },
-      // Exterior and bathroom added from the hotel's own site (gudauriinn.org)
-      // so the modal covers exterior / common area / room / bathroom.
+      // Exterior / lobby / standard room / bathroom. The record held three
+      // near-identical twin-room frames before the exterior and bathroom were
+      // even reached; the two redundant ones are dropped so the set matches
+      // the four-category order used everywhere else.
       { src: '/images/hotels/gudauri-inn-5.webp', alt: 'Exterior of Gudauri Inn at dusk below the snowy peaks in Gudauri, Georgia' },
-      { src: '/images/hotels/gudauri-inn-6.webp', alt: 'Bathroom at Gudauri Inn with walk-in shower and stone-tiled walls' },
+      { src: '/images/hotels/gudauri-inn.webp', alt: 'Mountain-view lounge with hanging chairs at Gudauri Inn in Gudauri, Georgia' },
+      { src: '/images/hotels/gudauri-inn-2.webp', alt: 'Standard double guest room at Gudauri Inn in Gudauri, Georgia' },
+      { src: '/images/hotels/gudauri-inn-6.webp', alt: 'Guest bathroom at Gudauri Inn with walk-in shower and stone-tiled walls' },
     ],
     stars: 4,
     description: 'A comfortable, easy-going hotel in the heart of Gudauri at 2,200 metres, with a relaxed mountain atmosphere and wide views over the surrounding peaks. It has its own wellness center with an indoor pool, jacuzzi and sauna, a restaurant serving Georgian and international dishes, and a bar for local wines. Good value and welcoming, it makes a solid classic-tier base for a Gudauri ski trip.',
@@ -288,7 +298,7 @@ const hotelData = {
       { src: '/images/hotels/rooms-hotel-kazbegi.jpg', alt: 'Rooms Hotel Kazbegi striking modern building against the Greater Caucasus mountains, Stepantsminda' },
       { src: '/images/hotels/rooms-hotel-kazbegi-2.jpg', alt: 'Rooms Hotel Kazbegi lobby and reception with mountain views' },
       { src: '/images/hotels/rooms-hotel-kazbegi-3.jpg', alt: 'Rooms Hotel Kazbegi luxurious guest room with Mount Kazbek views' },
-      { src: '/images/hotels/rooms-hotel-kazbegi-4.jpg', alt: 'Rooms Hotel Kazbegi bathroom with modern fixtures, Stepantsminda' },
+      { src: '/images/hotels/rooms-hotel-kazbegi-4.jpg', alt: 'Fireplace lounge at Rooms Hotel Kazbegi in Stepantsminda, Georgia' },
     ],
     stars: 4,
     description: 'A design masterpiece set against the dramatic backdrop of Mount Kazbek. Rooms Hotel Kazbegi is one of Georgia\'s most iconic luxury retreats, offering floor-to-ceiling mountain views, a crackling fireplace lounge, an indoor pool, and a spa — the ultimate mountain escape.',
@@ -376,7 +386,7 @@ const hotelData = {
       { src: '/images/hotels/boutique-hotel-argo.jpg', alt: 'Boutique Hotel Argo building exterior in central Kutaisi, Georgia' },
       { src: '/images/hotels/boutique-hotel-argo-2.jpg', alt: 'Boutique Hotel Argo reception and lobby area in Kutaisi' },
       { src: '/images/hotels/boutique-hotel-argo-3.jpg', alt: 'Boutique Hotel Argo well-appointed guest room in Kutaisi' },
-      { src: '/images/hotels/boutique-hotel-argo-4.jpg', alt: 'Boutique Hotel Argo bathroom with modern amenities in Kutaisi' },
+      { src: '/images/hotels/boutique-hotel-argo-4.jpg', alt: 'Table set for dinner at Boutique Hotel Argo in Kutaisi, Georgia' },
     ],
     stars: 3,
     description: 'A charming boutique hotel in central Kutaisi named after the legendary Argonauts who sailed to ancient Colchis. Boutique Hotel Argo offers comfortable rooms, warm service, and a great location for discovering Kutaisi\'s rich history and the stunning natural attractions of Imereti.',
@@ -420,7 +430,10 @@ const hotelData = {
       { src: '/images/hotels/hotel-monarch.jpg', alt: 'Hotel Monarch modern building exterior in Batumi, Georgia' },
       { src: '/images/hotels/hotel-monarch-2.jpg', alt: 'Hotel Monarch lobby and reception area in Batumi' },
       { src: '/images/hotels/hotel-monarch-3.jpg', alt: 'Hotel Monarch comfortable guest room with balcony views in Batumi' },
-      { src: '/images/hotels/hotel-monarch-4.jpg', alt: 'Hotel Monarch bathroom with modern amenities in Batumi' },
+      // The previous fourth image was a staged glamour shot of a model in a
+      // bathtub rather than a usable picture of a guest bathroom; replaced
+      // from the hotel's own site (hotelmonarch.ge).
+      { src: '/images/hotels/hotel-monarch-5.webp', alt: 'Guest bathroom at Hotel Monarch with walk-in shower in Batumi, Georgia' },
     ],
     stars: 4,
     description: 'A polished mid-range hotel in the heart of Batumi offering modern rooms, many with balconies and sea views. Hotel Monarch combines comfort and value with a convenient location near Batumi Boulevard, making it an excellent choice for exploring Georgia\'s sunny Black Sea coast.',
@@ -439,8 +452,8 @@ const hotelData = {
   },
   'Boutique Hotel 32': {
     images: [
-      { src: '/images/hotels/boutique-hotel-32.jpg', alt: 'Boutique Hotel 32 building exterior in Batumi, Georgia' },
-      { src: '/images/hotels/boutique-hotel-32-2.jpg', alt: 'Boutique Hotel 32 entrance and reception area in Batumi' },
+      { src: '/images/hotels/boutique-hotel-32.jpg', alt: 'Entrance sign of Boutique Hotel 32 in Batumi, Georgia' },
+      { src: '/images/hotels/boutique-hotel-32-2.jpg', alt: 'View over the seafront park from Boutique Hotel 32 in Batumi, Georgia' },
       { src: '/images/hotels/boutique-hotel-32-3.jpg', alt: 'Boutique Hotel 32 guest room with warm décor in Batumi' },
       { src: '/images/hotels/boutique-hotel-32-4.jpg', alt: 'Boutique Hotel 32 bathroom with modern fixtures in Batumi' },
     ],
@@ -463,7 +476,7 @@ const hotelData = {
     images: [
       { src: '/images/hotels/tsinandali-estate.jpg', alt: 'Tsinandali Estate Radisson Collection Hotel grand exterior surrounded by historic gardens, Telavi' },
       { src: '/images/hotels/tsinandali-estate-2.jpg', alt: 'Tsinandali Estate hotel lobby and lounge with elegant interior design' },
-      { src: '/images/hotels/tsinandali-estate-3.jpg', alt: 'Tsinandali Estate luxurious guest room with elegant Georgian décor' },
+      { src: '/images/hotels/tsinandali-estate-3.jpg', alt: 'Outdoor pool terrace at Tsinandali Estate, A Radisson Collection Hotel in Kakheti, Georgia' },
       { src: '/images/hotels/tsinandali-estate-4.jpg', alt: 'Tsinandali Estate hotel bathroom with premium amenities and marble finishes' },
     ],
     stars: 5,
@@ -483,10 +496,10 @@ const hotelData = {
   },
   'Park Hotel Tsinandali': {
     images: [
-      { src: '/images/hotels/park-hotel-tsinandali.jpg', alt: 'Park Hotel Tsinandali building exterior surrounded by greenery in Kakheti, Georgia' },
-      { src: '/images/hotels/park-hotel-tsinandali-2.jpg', alt: 'Park Hotel Tsinandali lobby and interior common area' },
-      { src: '/images/hotels/park-hotel-tsinandali-3.jpg', alt: 'Park Hotel Tsinandali comfortable guest room with contemporary furnishings' },
-      { src: '/images/hotels/park-hotel-tsinandali-4.jpg', alt: 'Park Hotel Tsinandali bathroom with modern amenities' },
+      { src: '/images/hotels/park-hotel-tsinandali-2.jpg', alt: 'Exterior terrace at Park Hotel Tsinandali in Kakheti, Georgia' },
+      { src: '/images/hotels/park-hotel-tsinandali-3.jpg', alt: 'Standard guest room at Park Hotel Tsinandali in Kakheti, Georgia' },
+      { src: '/images/hotels/park-hotel-tsinandali-4.jpg', alt: 'Guest bathroom at Park Hotel Tsinandali in Kakheti, Georgia' },
+      { src: '/images/hotels/park-hotel-tsinandali.jpg', alt: 'Indoor swimming pool at Park Hotel Tsinandali in Kakheti, Georgia' },
     ],
     stars: 4,
     description: 'A modern and comfortable hotel set amid the lush greenery of the Tsinandali area in Kakheti. Park Hotel Tsinandali offers a peaceful retreat with well-appointed rooms, a lovely garden terrace, and easy access to the region\'s famous wineries and historic estates.',
@@ -508,7 +521,7 @@ const hotelData = {
       { src: '/images/hotels/akhaltsikhe-inn.jpg', alt: 'Akhaltsikhe Inn building exterior near Rabati Castle, Akhaltsikhe, Georgia' },
       { src: '/images/hotels/akhaltsikhe-inn-2.jpg', alt: 'Akhaltsikhe Inn lobby and reception area in Akhaltsikhe' },
       { src: '/images/hotels/akhaltsikhe-inn-3.jpg', alt: 'Akhaltsikhe Inn spacious Junior Suite guest room with luxurious furnishings' },
-      { src: '/images/hotels/akhaltsikhe-inn-4.jpg', alt: 'Akhaltsikhe Inn bathroom with modern amenities' },
+      { src: '/images/hotels/akhaltsikhe-inn-4.jpg', alt: 'Changing room at Akhaltsikhe Inn in Akhaltsikhe, Georgia' },
     ],
     stars: 5,
     description: 'A premium boutique inn offering luxurious Junior Suite rooms just steps from the magnificent Rabati Castle. Akhaltsikhe Inn combines elegant interiors with stunning views of the historic fortress and surrounding valley, providing the finest accommodation in this ancient southern Georgian town.',
@@ -530,7 +543,7 @@ const hotelData = {
       { src: '/images/hotels/hotel-gino-wellness-rabati.jpg', alt: 'Hotel Gino Wellness Rabati building exterior near Rabati Castle, Akhaltsikhe, Georgia' },
       { src: '/images/hotels/hotel-gino-wellness-rabati-2.jpg', alt: 'Hotel Gino Wellness Rabati lobby and reception area in Akhaltsikhe' },
       { src: '/images/hotels/hotel-gino-wellness-rabati-3.jpg', alt: 'Hotel Gino Wellness Rabati comfortable guest room in Akhaltsikhe' },
-      { src: '/images/hotels/hotel-gino-wellness-rabati-4.jpg', alt: 'Hotel Gino Wellness Rabati bathroom with modern amenities' },
+      { src: '/images/hotels/hotel-gino-wellness-rabati-4.jpg', alt: 'Twin guest room at Hotel Gino Wellness Rabati in Akhaltsikhe, Georgia' },
     ],
     stars: 4,
     description: 'A modern wellness hotel right beside the historic Rabati Castle in Akhaltsikhe. Hotel Gino features an indoor pool, sauna, and full wellness center, making it ideal for relaxation after exploring the Vardzia cave monastery and the dramatic landscapes of southern Georgia.',
@@ -550,9 +563,9 @@ const hotelData = {
   'Hotel Beni': {
     images: [
       { src: '/images/hotels/hotel-beni.jpg', alt: 'Hotel Beni building exterior in Akhaltsikhe, southern Georgia' },
-      { src: '/images/hotels/hotel-beni-2.jpg', alt: 'Hotel Beni lobby and interior common area in Akhaltsikhe' },
+      { src: '/images/hotels/hotel-beni-2.jpg', alt: 'Garden steps at Hotel Beni in Akhaltsikhe, Georgia' },
       { src: '/images/hotels/hotel-beni-3.jpg', alt: 'Hotel Beni clean and comfortable guest room in Akhaltsikhe' },
-      { src: '/images/hotels/hotel-beni-4.jpg', alt: 'Hotel Beni bathroom with modern amenities in Akhaltsikhe' },
+      { src: '/images/hotels/hotel-beni-4.jpg', alt: 'Second guest room at Hotel Beni in Akhaltsikhe, Georgia' },
     ],
     stars: 3,
     description: 'A friendly and affordable hotel in Akhaltsikhe offering clean, comfortable rooms and genuine southern Georgian hospitality. Hotel Beni is a great-value base for exploring Rabati Castle, the Vardzia cave city, and the scenic Samtskhe-Javakheti region.',
@@ -681,10 +694,10 @@ const hotelData = {
   },
   'Lileo Inn': {
     images: [
-      { src: '/images/hotels/lileo-inn.jpg', alt: 'Lileo Inn building exterior in Mestia, Svaneti, Georgia' },
-      { src: '/images/hotels/lileo-inn-2.jpg', alt: 'Lileo Inn lobby and common area in Mestia' },
-      { src: '/images/hotels/lileo-inn-3.jpg', alt: 'Lileo Inn guest room with traditional Svan décor in Mestia' },
-      { src: '/images/hotels/lileo-inn-4.jpg', alt: 'Lileo Inn bathroom with modern amenities in Mestia' },
+      { src: '/images/hotels/lileo-inn-2.jpg', alt: 'Exterior of Lileo Inn illuminated at night in Mestia, Svaneti, Georgia' },
+      { src: '/images/hotels/lileo-inn-3.jpg', alt: 'Standard guest room at Lileo Inn in Mestia, Svaneti, Georgia' },
+      { src: '/images/hotels/lileo-inn.jpg', alt: 'Guest bathroom at Lileo Inn in Mestia, Svaneti, Georgia' },
+      { src: '/images/hotels/lileo-inn-4.jpg', alt: 'Twin guest room at Lileo Inn in Mestia, Svaneti, Georgia' },
     ],
     stars: 3,
     description: 'An authentic Svan family guesthouse in Mestia offering a genuine highland experience. Lileo Inn serves delicious home-cooked Svan meals, provides simple but clean rooms, and gives guests a taste of the warm family hospitality that Svaneti is famous for.',
@@ -799,7 +812,14 @@ const hotelData = {
   // nor a headless browser can pass, so its record claims only what we can
   // stand behind — no stars, amenities or location highlights.
   'Kokhta Bakuriani': {
-    images: [],
+    images: [
+      // From the operator's own site (silkhospitality.com/kokhta-bakuriani).
+      // Its media library publishes no guest-bathroom photograph, so that
+      // category is still outstanding.
+      { src: '/images/hotels/kokhta-bakuriani.webp', alt: 'Exterior of Kokhta Bakuriani hotel in the snow in Bakuriani, Georgia' },
+      { src: '/images/hotels/kokhta-bakuriani-2.webp', alt: 'Lobby lounge at Kokhta Bakuriani in Bakuriani, Georgia' },
+      { src: '/images/hotels/kokhta-bakuriani-3.webp', alt: 'Standard mountain-view king room at Kokhta Bakuriani in Bakuriani, Georgia' },
+    ],
     stars: 5,
     description: 'A five-star hotel by the Kokhta slopes in Bakuriani, part of the Silk Hospitality group, built in natural materials that sit easily against the surrounding forest and ridges. It has 92 rooms across standard, superior, deluxe and suite categories, a full-service restaurant and bar with in-room dining, and a guests-only fitness center open around the clock two floors above the rooms. An entertainment zone adds indoor ice skating and a children’s indoor playground for days off the slopes.',
     amenities: [
@@ -814,7 +834,13 @@ const hotelData = {
     ],
   },
   'Crystal Hotel & Spa': {
-    images: [],
+    images: [
+      // From the hotel's own site (hotelcrystal.ge). It publishes no
+      // guest-bathroom photograph, so that category is still outstanding.
+      { src: '/images/hotels/crystal-hotel-spa.webp', alt: 'Exterior of Crystal Hotel & Spa at dusk in Bakuriani, Georgia' },
+      { src: '/images/hotels/crystal-hotel-spa-2.webp', alt: 'Lobby lounge at Crystal Hotel & Spa in Bakuriani, Georgia' },
+      { src: '/images/hotels/crystal-hotel-spa-3.webp', alt: 'Standard double guest room at Crystal Hotel & Spa in Bakuriani, Georgia' },
+    ],
     stars: 5,
     description: 'A five-star hotel in Bakuriani, 185 km from Tbilisi and a few minutes from the Didveli ski lift. It forms part of the Crystal Resort complex, which brings gondola and chairlift systems, 12 km of snowmaking-equipped slopes with night skiing, a 1,500-metre toboggan run, an ice rink, ski rental and instructors together in one place. The hotel itself has an indoor swimming pool and spa, with cafes, restaurants and bars across the resort.',
     amenities: [
@@ -830,7 +856,10 @@ const hotelData = {
   },
   'Bakuriani Inn': {
     images: [],
-    description: 'The classic-tier base for the Bakuriani nights of our winter ski tour, in the pine-forested ski town on the northern slope of the Trialeti Range.',
+    // Was a description of the hotel's role in our own tour rather than of the
+    // hotel. Replaced with what the property itself publishes about its size
+    // and facilities. No photographs are available from the hotel yet.
+    description: 'A large hotel in the ski town of Bakuriani, on Koba Tsakadze Street between the resort\'s two ski zones. The property states that it has 153 rooms and space for up to 450 guests, along with a wellness centre containing a swimming pool, jacuzzis, a sauna, massage rooms and a gym. It sits in the pine forest on the northern slope of the Trialeti Range and is geared towards families and active guests.',
   },
 }
 

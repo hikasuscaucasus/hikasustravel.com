@@ -4,10 +4,10 @@
     "amenities": ["Kostenloses WLAN", "Dachbar & Restaurant", "Klimaanlage", "Privatparkplatz", "24/7-Concierge"],
     "locationHighlights": ["Zu Fuß zur Metekhi-Brücke & Altstadt", "Blick auf die Festung Narikala von der Dachterrasse", "Wenige Schritte zum Schwefelbad-Viertel"],
     "imageAlts": [
-      "Außenansicht des Hotels Sandali Metekhi By Old Hospitality in der Altstadt von Tiflis, Georgien",
+      "MICHELIN-Guide-Plakette im Sandali Metekhi By Old Hospitality in Tiflis, Georgien",
       "Lobby und Empfangsbereich des Sandali Metekhi mit Art-déco-Interieur, Tiflis",
       "Gästezimmer im Hotel Sandali Metekhi mit eleganter Einrichtung, Tiflis",
-      "Badezimmer im Hotel Sandali Metekhi mit Badewanne und moderner Ausstattung, Tiflis"
+      "Balkon mit Blick auf die Altstadt im Sandali Metekhi By Old Hospitality in Tiflis, Georgien"
     ]
   },
   "Best View Kazbegi": {
@@ -28,7 +28,7 @@
     "imageAlts": [
       "Außenansicht des Hotels West Way in Kutaissi, Georgien",
       "Lobby und Empfangsbereich des Hotels West Way in Kutaissi, Georgien",
-      "Komfortables Gästezimmer im Hotel West Way in Kutaissi, Georgien",
+      "Empfangstresen im Hotel West Way in Kutaissi, Georgien",
       "Badezimmer mit Dusche im Hotel West Way in Kutaissi, Georgien"
     ]
   },
@@ -48,7 +48,7 @@
     "amenities": ["Weinkeller & Verkostung", "Swimmingpool", "Eigene Weinberge", "Gartenrestaurant", "Kostenloses WLAN", "Kostenlose Parkplätze"],
     "locationHighlights": ["Dorf Ruispiri, etwa 3 km von Telawi", "Blick über das Alasani-Tal & den Kaukasus", "Im Herzen des Weinlands Kachetien"],
     "imageAlts": [
-      "Außenansicht des Hotel and Wine Cellar ARGE mit Garten in Telawi, Weinregion Kachetien, Georgien",
+      "Gästezimmer mit Balkontür im Hotel & Wine Cellar ARGE in Telawi, Georgien",
       "Lobby und Loungebereich des Hotels ARGE in Telawi, Georgien",
       "Gästezimmer im Hotel ARGE mit Blick auf die Weinberge in Kachetien, Georgien",
       "Badezimmer mit moderner Ausstattung im Hotel ARGE in Telawi, Georgien"
@@ -62,7 +62,7 @@
       "Außenansicht des Rooms Hotel Tbilisi am Ufer der Mtkwari, Georgien",
       "Stilvolle Lobby und Lounge des Rooms Hotel Tbilisi mit Designermöbeln",
       "Gästezimmer im Rooms Hotel Tbilisi mit zeitgenössischem Design und Stadtblick",
-      "Badezimmer mit modernen Armaturen im Rooms Hotel Tbilisi, Tiflis"
+      "Gästebadezimmer mit ebenerdiger Dusche und gefliesten Wänden im Rooms Hotel Tbilisi, Tiflis, Georgien"
     ]
   },
   "Ibis Styles Tbilisi Center": {
@@ -82,7 +82,7 @@
     "locationHighlights": ["Im Herzen der Altstadt von Tiflis", "Zu Fuß zu den Schwefelbädern & zur Festung Narikala", "Umgeben von Cafés, Restaurants & Geschäften"],
     "imageAlts": [
       "Außenansicht des Ginger Hotel in der Altstadt von Tiflis, Georgien",
-      "Lobby und Aufenthaltsbereich des Ginger Hotel in Tiflis",
+      "Tagungsraum im Ginger Hotel in Tiflis, Georgien",
       "Sauberes und komfortables Gästezimmer im Ginger Hotel in Tiflis",
       "Badezimmer mit moderner Ausstattung im Ginger Hotel in Tiflis"
     ]
@@ -103,10 +103,10 @@
     "amenities": ["Innen- & Außenpool", "Spa, Sauna & Whirlpool", "Fitnessbereich", "Restaurant & Bar", "Kostenloses WLAN", "Sonnenterrasse"],
     "locationHighlights": ["Ski-in, Ski-out – direkt an den Pisten", "Im Zentrum von Gudauri, neben den Liften", "Wellnessbereich mit Innen- & Außenpool"],
     "imageAlts": [
-      "Modernes Gebäude der Gudauri Lodge im verschneiten Kaukasus, Gudauri, Georgien",
-      "Wohnbereich einer Suite der Gudauri Lodge mit Blick auf verschneite Berge",
+      "Außenansicht der Gudauri Lodge unterhalb der Kaukasusgipfel in Gudauri, Georgien",
+      "Bibliothek und Loungebereich der Gudauri Lodge",
       "Zeitgemäßes Zweibettzimmer in der Gudauri Lodge",
-      "Bibliothek und Loungebereich der Gudauri Lodge"
+      "Wohnbereich einer Suite der Gudauri Lodge mit Blick auf verschneite Berge"
     ]
   },
   "Marco Polo": {
@@ -115,9 +115,10 @@
     "locationHighlights": ["Ski-in, Ski-out im Zentrum von Gudauri", "Direkt an der Piste auf rund 2.000 m", "Bowling, Padelplätze & Spa im Haus"],
     "imageAlts": [
       "Nächtlich beleuchtetes Marco Polo Hotel Gudauri in den winterlichen Bergen, Georgien",
-      "Innenpool mit Bergblick im Marco Polo Hotel Gudauri",
       "Lobby-Lounge mit Sofas und Treppe im Marco Polo Hotel Gudauri",
-      "Komfortables Gästezimmer im Marco Polo Hotel Gudauri"
+      "Standardzimmer im Marco Polo Hotel Gudauri, Georgien",
+      "Gästebadezimmer mit freistehender Badewanne im Marco Polo Hotel Gudauri, Georgien",
+      "Innenpool mit Bergblick im Marco Polo Hotel Gudauri"
     ]
   },
   "Gudauri Inn": {
@@ -125,10 +126,10 @@
     "amenities": ["Kostenloses WLAN", "Innenpool", "Sauna & Whirlpool", "Restaurant & Bar", "Kostenlose Parkplätze"],
     "locationHighlights": ["Im Zentrum von Gudauri auf 2.200 m", "Wellnessbereich mit Innenpool, Whirlpool & Sauna", "Panoramablick auf den Großen Kaukasus"],
     "imageAlts": [
+      "Außenansicht des Gudauri Inn in der Abenddämmerung unterhalb der verschneiten Gipfel in Gudauri, Georgien",
       "Lounge mit Bergblick und Hängesesseln im Gudauri Inn, Gudauri, Georgien",
       "Komfortables Doppelzimmer im Gudauri Inn",
-      "Helles Zweibettzimmer im Gudauri Inn",
-      "Zweibettzimmer mit Balkon und Bergblick im Gudauri Inn"
+      "Gästebadezimmer mit ebenerdiger Dusche im Gudauri Inn, Gudauri, Georgien"
     ]
   },
   "Rooms Hotel Kazbegi": {
@@ -139,7 +140,7 @@
       "Markantes modernes Gebäude des Rooms Hotel Kazbegi vor dem Großen Kaukasus, Stepanzminda",
       "Lobby und Empfang des Rooms Hotel Kazbegi mit Bergblick",
       "Großzügiges Gästezimmer im Rooms Hotel Kazbegi mit Blick auf den Kasbek",
-      "Badezimmer mit modernen Armaturen im Rooms Hotel Kazbegi, Stepanzminda"
+      "Kaminlounge im Rooms Hotel Kazbegi in Stepanzminda, Georgien"
     ]
   },
   "Northgate Hotel": {
@@ -183,7 +184,7 @@
       "Außenansicht des Boutique Hotel Argo im Zentrum von Kutaissi, Georgien",
       "Empfang und Lobby des Boutique Hotel Argo in Kutaissi",
       "Gut ausgestattetes Gästezimmer im Boutique Hotel Argo in Kutaissi",
-      "Badezimmer mit moderner Ausstattung im Boutique Hotel Argo in Kutaissi"
+      "Gedeckter Abendtisch im Boutique Hotel Argo in Kutaissi, Georgien"
     ]
   },
   "Rooms Hotel": {
@@ -205,7 +206,7 @@
       "Modernes Gebäude des Hotel Monarch in Batumi, Georgien",
       "Lobby und Empfangsbereich des Hotel Monarch in Batumi",
       "Komfortables Gästezimmer mit Balkonblick im Hotel Monarch in Batumi",
-      "Badezimmer mit moderner Ausstattung im Hotel Monarch in Batumi"
+      "Gästebadezimmer mit ebenerdiger Dusche im Hotel Monarch in Batumi, Georgien"
     ]
   },
   "Boutique Hotel 32": {
@@ -213,8 +214,8 @@
     "amenities": ["Kostenloses WLAN", "Tägliches Frühstück", "Klimaanlage", "24/7-Rezeption", "Wäscheservice"],
     "locationHighlights": ["Ruhige Straße nahe der Altstadt von Batumi", "Zu Fuß zum Strand am Schwarzen Meer", "Nahe lokalen Restaurants & Märkten"],
     "imageAlts": [
-      "Außenansicht des Boutique Hotel 32 in Batumi, Georgien",
-      "Eingang und Empfangsbereich des Boutique Hotel 32 in Batumi",
+      "Eingangsschild des Boutique Hotel 32 in Batumi, Georgien",
+      "Blick über den Uferpark vom Boutique Hotel 32 in Batumi, Georgien",
       "Gästezimmer mit warmem Dekor im Boutique Hotel 32 in Batumi",
       "Badezimmer mit modernen Armaturen im Boutique Hotel 32 in Batumi"
     ]
@@ -226,7 +227,7 @@
     "imageAlts": [
       "Prächtige Außenansicht des Tsinandali Estate, A Radisson Collection Hotel, umgeben von historischen Gärten, Telawi",
       "Lobby und Lounge des Tsinandali Estate Hotels mit elegantem Interieur",
-      "Luxuriöses Gästezimmer mit georgischem Dekor im Tsinandali Estate",
+      "Poolterrasse im Freien im Tsinandali Estate, A Radisson Collection Hotel in Kachetien, Georgien",
       "Badezimmer mit hochwertiger Ausstattung und Marmor im Tsinandali Estate Hotel"
     ]
   },
@@ -235,10 +236,10 @@
     "amenities": ["Kostenloses WLAN", "Hoteleigenes Restaurant", "Garten & Terrasse", "Kostenlose Parkplätze", "Klimaanlage"],
     "locationHighlights": ["Nahe dem bekannten Anwesen Tsinandali", "Umgeben von Weinbergen & Weingütern Kachetiens", "Guter Zugang zum Zentrum von Telawi"],
     "imageAlts": [
-      "Außenansicht des Park Hotel Tsinandali im Grünen in Kachetien, Georgien",
-      "Lobby und gemeinsamer Innenbereich des Park Hotel Tsinandali",
-      "Komfortables Gästezimmer mit zeitgemäßer Einrichtung im Park Hotel Tsinandali",
-      "Badezimmer mit moderner Ausstattung im Park Hotel Tsinandali"
+      "Außenterrasse des Park Hotel Tsinandali in Kachetien, Georgien",
+      "Standardzimmer im Park Hotel Tsinandali in Kachetien, Georgien",
+      "Gästebadezimmer im Park Hotel Tsinandali in Kachetien, Georgien",
+      "Hallenbad im Park Hotel Tsinandali in Kachetien, Georgien"
     ]
   },
   "Akhaltsikhe Inn (Junior Suite Room)": {
@@ -249,7 +250,7 @@
       "Außenansicht des Akhaltsikhe Inn nahe der Burg Rabati, Achalziche, Georgien",
       "Lobby und Empfangsbereich des Akhaltsikhe Inn in Achalziche",
       "Geräumige Junior-Suite mit hochwertiger Einrichtung im Akhaltsikhe Inn",
-      "Badezimmer mit moderner Ausstattung im Akhaltsikhe Inn"
+      "Umkleideraum im Akhaltsikhe Inn in Achalziche, Georgien"
     ]
   },
   "Hotel Gino Wellness Rabati": {
@@ -260,7 +261,7 @@
       "Außenansicht des Hotel Gino Wellness Rabati nahe der Burg Rabati, Achalziche, Georgien",
       "Lobby und Empfangsbereich des Hotel Gino Wellness Rabati in Achalziche",
       "Komfortables Gästezimmer im Hotel Gino Wellness Rabati in Achalziche",
-      "Badezimmer mit moderner Ausstattung im Hotel Gino Wellness Rabati"
+      "Zweibettzimmer im Hotel Gino Wellness Rabati in Achalziche, Georgien"
     ]
   },
   "Hotel Beni": {
@@ -269,9 +270,9 @@
     "locationHighlights": ["Zu Fuß zur Burg Rabati", "Guter Zugang zum Höhlenkloster Wardsia", "Im Herzen von Achalziche"],
     "imageAlts": [
       "Außenansicht des Hotel Beni in Achalziche, Südgeorgien",
-      "Lobby und gemeinsamer Innenbereich des Hotel Beni in Achalziche",
+      "Gartentreppe im Hotel Beni in Achalziche, Georgien",
       "Sauberes und komfortables Gästezimmer im Hotel Beni in Achalziche",
-      "Badezimmer mit moderner Ausstattung im Hotel Beni in Achalziche"
+      "Weiteres Gästezimmer im Hotel Beni in Achalziche, Georgien"
     ]
   },
   "Crowne Plaza Borjomi": {
@@ -334,10 +335,10 @@
     "amenities": ["Kostenloses WLAN", "Hausgemachte swanische Küche", "Zentralheizung", "Kostenlose Parkplätze", "Gartenbereich"],
     "locationHighlights": ["Authentisches swanisches Dorfumfeld in Mestia", "Zu Fuß ins Zentrum von Mestia", "Nahe den Ausgangspunkten zu den Koruldi-Seen & Uschguli"],
     "imageAlts": [
-      "Außenansicht des Lileo Inn in Mestia, Swanetien, Georgien",
-      "Lobby und Aufenthaltsbereich des Lileo Inn in Mestia",
-      "Gästezimmer mit traditionellem swanischem Dekor im Lileo Inn in Mestia",
-      "Badezimmer mit moderner Ausstattung im Lileo Inn in Mestia"
+      "Außenansicht des Lileo Inn bei Nacht in Mestia, Swanetien, Georgien",
+      "Standardzimmer im Lileo Inn in Mestia, Swanetien, Georgien",
+      "Gästebadezimmer im Lileo Inn in Mestia, Swanetien, Georgien",
+      "Zweibettzimmer im Lileo Inn in Mestia, Swanetien, Georgien"
     ]
   },
   "Communal Hotel Telavi": {
@@ -364,5 +365,28 @@
     "description": "Ein kleines Weingut-Gästehaus im Dorf Ikalto bei Telawi, in dem die Gastgeberfamilie ihren eigenen Biowein in einem traditionellen Marani ausbaut. Umgeben von Reben, mit Garten und Außenpool, bietet Chateau Orberi herzliche kachetische Gastfreundschaft eine kurze Fahrt vom historischen Kloster Ikalto entfernt.",
     "amenities": ["Familienweinkeller (Marani)", "Außenpool", "Garten & Weinberge"],
     "locationHighlights": ["Dorf Ikalto, kurze Fahrt von Telawi", "Inmitten eigener Weinberge", "Nahe dem Kloster & der Akademie von Ikalto"]
+  },
+  "Kokhta Bakuriani": {
+    "description": "Ein Fünf-Sterne-Hotel an den Kokhta-Hängen in Bakuriani, Teil der Silk-Hospitality-Gruppe, aus natürlichen Materialien gebaut, die sich harmonisch in Wald und Bergkämme einfügen. Es verfügt über 92 Zimmer in den Kategorien Standard, Superior, Deluxe und Suite, ein Restaurant mit Bar und Zimmerservice sowie einen rund um die Uhr geöffneten Fitnessbereich nur für Gäste zwei Etagen über den Zimmern. Eine Erlebniszone mit Eisbahn und Indoor-Spielplatz für Kinder ergänzt das Angebot an Tagen abseits der Piste.",
+    "amenities": ["Restaurant & Bar", "Fitnessbereich", "Zimmerservice"],
+    "locationHighlights": ["Am Skigebiet Kokhta / Kokhta-Mitarbi", "Eisbahn & Indoor-Spielplatz für Kinder", "Tagungs- und Veranstaltungsräume im Haus"],
+    "imageAlts": [
+      "Außenansicht des Kokhta Bakuriani im Schnee in Bakuriani, Georgien",
+      "Lobby-Lounge im Kokhta Bakuriani in Bakuriani, Georgien",
+      "Standard-Kingzimmer mit Bergblick im Kokhta Bakuriani in Bakuriani, Georgien"
+    ]
+  },
+  "Crystal Hotel & Spa": {
+    "description": "Ein Fünf-Sterne-Hotel in Bakuriani, 185 km von Tiflis entfernt und wenige Minuten vom Skilift Didveli. Es gehört zum Komplex Crystal Resort, der Gondel- und Sesselbahnen, 12 km beschneite Pisten mit Nachtskilauf, eine 1.500 Meter lange Rodelbahn, eine Eisbahn sowie Skiverleih und Skischule an einem Ort vereint. Das Hotel selbst verfügt über ein Hallenbad und einen Spa-Bereich, dazu Cafés, Restaurants und Bars im gesamten Resort.",
+    "amenities": ["Hallenbad", "Spa & Wellness", "Restaurants & Bars"],
+    "locationHighlights": ["Wenige Minuten vom Skilift Didveli", "Teil des Komplexes Crystal Resort", "1.500 m Rodelbahn & Eisbahn"],
+    "imageAlts": [
+      "Außenansicht des Crystal Hotel & Spa in der Abenddämmerung in Bakuriani, Georgien",
+      "Lobby-Lounge im Crystal Hotel & Spa in Bakuriani, Georgien",
+      "Standard-Doppelzimmer im Crystal Hotel & Spa in Bakuriani, Georgien"
+    ]
+  },
+  "Bakuriani Inn": {
+    "description": "Ein großes Hotel im Skiort Bakuriani, an der Koba-Tsakadze-Straße zwischen den beiden Skigebieten des Ortes gelegen. Nach eigenen Angaben verfügt es über 153 Zimmer und Platz für bis zu 450 Gäste sowie einen Wellnessbereich mit Schwimmbad, Whirlpools, Sauna, Massageräumen und Fitnessraum. Das Haus liegt im Kiefernwald am Nordhang des Trialeti-Gebirges und ist auf Familien und aktive Gäste ausgerichtet."
   }
 }

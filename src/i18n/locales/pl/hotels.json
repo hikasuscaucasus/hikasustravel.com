@@ -4,10 +4,10 @@
     "amenities": ["Bezpłatne Wi-Fi", "Bar i restauracja na dachu", "Klimatyzacja", "Parking prywatny", "Konsjerż 24/7"],
     "locationHighlights": ["Spacerem do mostu Metechi i na Stare Miasto", "Widok na twierdzę Narikala z tarasu na dachu", "Kilka kroków od dzielnicy łaźni siarkowych"],
     "imageAlts": [
-      "Elewacja hotelu Sandali Metekhi By Old Hospitality na Starym Mieście w Tbilisi, Gruzja",
+      "Tablica przewodnika MICHELIN w Sandali Metekhi By Old Hospitality w Tbilisi, Gruzja",
       "Lobby i recepcja hotelu Sandali Metekhi z wnętrzem w stylu art déco, Tbilisi",
       "Pokój gościnny w hotelu Sandali Metekhi z eleganckim wyposażeniem, Tbilisi",
-      "Łazienka w hotelu Sandali Metekhi z wanną i nowoczesnym wyposażeniem, Tbilisi"
+      "Balkon z widokiem na stare miasto w Sandali Metekhi By Old Hospitality w Tbilisi, Gruzja"
     ]
   },
   "Best View Kazbegi": {
@@ -28,7 +28,7 @@
     "imageAlts": [
       "Elewacja hotelu West Way w Kutaisi, Gruzja",
       "Lobby i recepcja hotelu West Way w Kutaisi, Gruzja",
-      "Wygodny pokój gościnny w hotelu West Way w Kutaisi, Gruzja",
+      "Recepcja w Hotelu West Way w Kutaisi, Gruzja",
       "Łazienka z prysznicem w hotelu West Way w Kutaisi, Gruzja"
     ]
   },
@@ -48,7 +48,7 @@
     "amenities": ["Piwnica winiarska i degustacje", "Basen", "Własne winnice", "Restauracja ogrodowa", "Bezpłatne Wi-Fi", "Bezpłatny parking"],
     "locationHighlights": ["Wieś Ruispiri, około 3 km od Telawi", "Widok na Dolinę Alazani i Kaukaz", "W sercu regionu winiarskiego Kachetia"],
     "imageAlts": [
-      "Elewacja i ogród hotelu Hotel and Wine Cellar ARGE w Telawi, region winiarski Kachetia, Gruzja",
+      "Pokój gościnny z drzwiami balkonowymi w Hotel & Wine Cellar ARGE w Telawi, Gruzja",
       "Lobby i strefa wypoczynkowa hotelu ARGE w Telawi, Gruzja",
       "Pokój gościnny w hotelu ARGE z widokiem na winnice w Kachetii, Gruzja",
       "Łazienka z nowoczesnym wyposażeniem w hotelu ARGE w Telawi, Gruzja"
@@ -62,7 +62,7 @@
       "Elewacja hotelu Rooms Hotel Tbilisi nad brzegiem rzeki Mtkwari, Gruzja",
       "Stylowe lobby i strefa wypoczynkowa hotelu Rooms Hotel Tbilisi z designerskimi meblami",
       "Pokój gościnny w hotelu Rooms Hotel Tbilisi o nowoczesnym designie z widokiem na miasto",
-      "Łazienka z nowoczesną armaturą w hotelu Rooms Hotel Tbilisi, Tbilisi"
+      "Łazienka z prysznicem walk-in i kafelkowymi ścianami w Rooms Hotel Tbilisi, Tbilisi, Gruzja"
     ]
   },
   "Ibis Styles Tbilisi Center": {
@@ -82,7 +82,7 @@
     "locationHighlights": ["W sercu Starego Miasta w Tbilisi", "Spacerem do łaźni siarkowych i twierdzy Narikala", "W otoczeniu kawiarni, restauracji i sklepów"],
     "imageAlts": [
       "Elewacja hotelu Ginger Hotel na Starym Mieście w Tbilisi, Gruzja",
-      "Lobby i część wspólna hotelu Ginger Hotel w Tbilisi",
+      "Sala konferencyjna w Ginger Hotel w Tbilisi, Gruzja",
       "Czysty i wygodny pokój gościnny w hotelu Ginger Hotel w Tbilisi",
       "Łazienka z nowoczesnym wyposażeniem w hotelu Ginger Hotel w Tbilisi"
     ]
@@ -103,10 +103,10 @@
     "amenities": ["Baseny kryty i odkryty", "Spa, sauna i jacuzzi", "Siłownia", "Restauracja i bar", "Bezpłatne Wi-Fi", "Taras słoneczny"],
     "locationHighlights": ["Ski-in, ski-out — tuż przy stokach", "W centrum Gudauri, obok wyciągów", "Strefa wellness z basenem krytym i odkrytym"],
     "imageAlts": [
-      "Nowoczesny budynek Gudauri Lodge w ośnieżonym Kaukazie, Gudauri, Gruzja",
-      "Salon apartamentu w Gudauri Lodge z widokiem na ośnieżone góry",
+      "Budynek Gudauri Lodge pod szczytami Kaukazu w Gudauri, Gruzja",
+      "Biblioteka i strefa wypoczynkowa w Gudauri Lodge",
       "Nowoczesny pokój dwuosobowy w Gudauri Lodge",
-      "Biblioteka i strefa wypoczynkowa w Gudauri Lodge"
+      "Salon apartamentu w Gudauri Lodge z widokiem na ośnieżone góry"
     ]
   },
   "Marco Polo": {
@@ -115,9 +115,10 @@
     "locationHighlights": ["Ski-in, ski-out w centrum Gudauri", "Przy samym stoku na wysokości około 2000 m", "Kręgielnia, korty do padla i spa na miejscu"],
     "imageAlts": [
       "Marco Polo Hotel Gudauri oświetlony nocą w zimowych górach, Gruzja",
-      "Basen kryty z widokiem na góry w hotelu Marco Polo Hotel Gudauri",
       "Strefa wypoczynkowa w lobby z sofami i schodami w hotelu Marco Polo Hotel Gudauri",
-      "Wygodny pokój gościnny w hotelu Marco Polo Hotel Gudauri"
+      "Pokój standardowy w hotelu Marco Polo Hotel Gudauri, Gruzja",
+      "Łazienka z wolnostojącą wanną w hotelu Marco Polo Hotel Gudauri, Gruzja",
+      "Basen kryty z widokiem na góry w hotelu Marco Polo Hotel Gudauri"
     ]
   },
   "Gudauri Inn": {
@@ -125,10 +126,10 @@
     "amenities": ["Bezpłatne Wi-Fi", "Basen kryty", "Sauna i jacuzzi", "Restauracja i bar", "Bezpłatny parking"],
     "locationHighlights": ["W centrum Gudauri na wysokości 2200 m", "Strefa wellness z basenem krytym, jacuzzi i sauną", "Panoramiczne widoki na Wielki Kaukaz"],
     "imageAlts": [
+      "Budynek Gudauri Inn o zmierzchu pod ośnieżonymi szczytami w Gudauri, Gruzja",
       "Strefa wypoczynkowa z widokiem na góry i wiszącymi fotelami w Gudauri Inn, Gudauri, Gruzja",
       "Wygodny pokój dwuosobowy w Gudauri Inn",
-      "Jasny pokój z dwoma łóżkami w Gudauri Inn",
-      "Pokój z dwoma łóżkami, balkonem i widokiem na góry w Gudauri Inn"
+      "Łazienka z prysznicem walk-in w Gudauri Inn, Gudauri, Gruzja"
     ]
   },
   "Rooms Hotel Kazbegi": {
@@ -139,7 +140,7 @@
       "Charakterystyczny nowoczesny budynek hotelu Rooms Hotel Kazbegi na tle Wielkiego Kaukazu, Stepancminda",
       "Lobby i recepcja hotelu Rooms Hotel Kazbegi z widokiem na góry",
       "Przestronny pokój gościnny w hotelu Rooms Hotel Kazbegi z widokiem na górę Kazbek",
-      "Łazienka z nowoczesną armaturą w hotelu Rooms Hotel Kazbegi, Stepancminda"
+      "Salon z kominkiem w Rooms Hotel Kazbegi w Stepancmindzie, Gruzja"
     ]
   },
   "Northgate Hotel": {
@@ -183,7 +184,7 @@
       "Elewacja hotelu Boutique Hotel Argo w centrum Kutaisi, Gruzja",
       "Recepcja i lobby hotelu Boutique Hotel Argo w Kutaisi",
       "Dobrze wyposażony pokój gościnny w hotelu Boutique Hotel Argo w Kutaisi",
-      "Łazienka z nowoczesnym wyposażeniem w hotelu Boutique Hotel Argo w Kutaisi"
+      "Stół nakryty do kolacji w Boutique Hotel Argo w Kutaisi, Gruzja"
     ]
   },
   "Rooms Hotel": {
@@ -205,7 +206,7 @@
       "Nowoczesny budynek hotelu Monarch w Batumi, Gruzja",
       "Lobby i recepcja hotelu Monarch w Batumi",
       "Wygodny pokój gościnny z widokiem z balkonu w hotelu Monarch w Batumi",
-      "Łazienka z nowoczesnym wyposażeniem w hotelu Monarch w Batumi"
+      "Łazienka z prysznicem walk-in w hotelu Monarch w Batumi, Gruzja"
     ]
   },
   "Boutique Hotel 32": {
@@ -213,8 +214,8 @@
     "amenities": ["Bezpłatne Wi-Fi", "Codzienne śniadanie", "Klimatyzacja", "Recepcja 24/7", "Usługa prania"],
     "locationHighlights": ["Spokojna ulica blisko Starego Miasta w Batumi", "Spacerem na plażę nad Morzem Czarnym", "Blisko lokalnych restauracji i bazarów"],
     "imageAlts": [
-      "Elewacja hotelu Boutique Hotel 32 w Batumi, Gruzja",
-      "Wejście i recepcja hotelu Boutique Hotel 32 w Batumi",
+      "Szyld przy wejściu do Boutique Hotel 32 w Batumi, Gruzja",
+      "Widok na nadmorski park z Boutique Hotel 32 w Batumi, Gruzja",
       "Pokój gościnny w ciepłej kolorystyce w hotelu Boutique Hotel 32 w Batumi",
       "Łazienka z nowoczesną armaturą w hotelu Boutique Hotel 32 w Batumi"
     ]
@@ -226,7 +227,7 @@
     "imageAlts": [
       "Okazała elewacja hotelu Tsinandali Estate, A Radisson Collection Hotel, otoczona historycznymi ogrodami, Telawi",
       "Lobby i strefa wypoczynkowa hotelu Tsinandali Estate z eleganckim wnętrzem",
-      "Luksusowy pokój gościnny z gruzińskim wystrojem w hotelu Tsinandali Estate",
+      "Taras z basenem zewnętrznym w Tsinandali Estate, A Radisson Collection Hotel w Kachetii, Gruzja",
       "Marmurowa łazienka z wysokiej klasy wyposażeniem w hotelu Tsinandali Estate"
     ]
   },
@@ -235,10 +236,10 @@
     "amenities": ["Bezpłatne Wi-Fi", "Własna restauracja", "Ogród i taras", "Bezpłatny parking", "Klimatyzacja"],
     "locationHighlights": ["Blisko słynnej posiadłości Cinandali", "Otoczony winnicami i winiarniami Kachetii", "Łatwy dostęp do centrum Telawi"],
     "imageAlts": [
-      "Elewacja hotelu Park Hotel Tsinandali otoczona zielenią w Kachetii, Gruzja",
-      "Lobby i wewnętrzna część wspólna hotelu Park Hotel Tsinandali",
-      "Wygodny pokój gościnny z nowoczesnymi meblami w hotelu Park Hotel Tsinandali",
-      "Łazienka z nowoczesnym wyposażeniem w hotelu Park Hotel Tsinandali"
+      "Taras zewnętrzny w Park Hotel Tsinandali w Kachetii, Gruzja",
+      "Pokój standardowy w Park Hotel Tsinandali w Kachetii, Gruzja",
+      "Łazienka w Park Hotel Tsinandali w Kachetii, Gruzja",
+      "Basen kryty w Park Hotel Tsinandali w Kachetii, Gruzja"
     ]
   },
   "Akhaltsikhe Inn (Junior Suite Room)": {
@@ -249,7 +250,7 @@
       "Elewacja hotelu Akhaltsikhe Inn blisko zamku Rabati, Achalciche, Gruzja",
       "Lobby i recepcja hotelu Akhaltsikhe Inn w Achalciche",
       "Przestronny pokój Junior Suite z luksusowym wyposażeniem w hotelu Akhaltsikhe Inn",
-      "Łazienka z nowoczesnym wyposażeniem w hotelu Akhaltsikhe Inn"
+      "Przebieralnia w Akhaltsikhe Inn w Achalcyche, Gruzja"
     ]
   },
   "Hotel Gino Wellness Rabati": {
@@ -260,7 +261,7 @@
       "Elewacja hotelu Gino Wellness Rabati blisko zamku Rabati, Achalciche, Gruzja",
       "Lobby i recepcja hotelu Gino Wellness Rabati w Achalciche",
       "Wygodny pokój gościnny w hotelu Gino Wellness Rabati w Achalciche",
-      "Łazienka z nowoczesnym wyposażeniem w hotelu Gino Wellness Rabati"
+      "Pokój z dwoma łóżkami w Hotel Gino Wellness Rabati w Achalcyche, Gruzja"
     ]
   },
   "Hotel Beni": {
@@ -269,9 +270,9 @@
     "locationHighlights": ["Spacerem do zamku Rabati", "Łatwy dostęp do klasztoru jaskiniowego Wardzia", "W sercu Achalciche"],
     "imageAlts": [
       "Elewacja hotelu Beni w Achalciche, południowa Gruzja",
-      "Lobby i wewnętrzna część wspólna hotelu Beni w Achalciche",
+      "Schody ogrodowe przy Hotelu Beni w Achalcyche, Gruzja",
       "Czysty i wygodny pokój gościnny w hotelu Beni w Achalciche",
-      "Łazienka z nowoczesnym wyposażeniem w hotelu Beni w Achalciche"
+      "Kolejny pokój gościnny w Hotelu Beni w Achalcyche, Gruzja"
     ]
   },
   "Crowne Plaza Borjomi": {
@@ -334,10 +335,10 @@
     "amenities": ["Bezpłatne Wi-Fi", "Domowe dania swańskie", "Ogrzewanie centralne", "Bezpłatny parking", "Ogród"],
     "locationHighlights": ["Autentyczne swańskie otoczenie wiejskie w Mestii", "Spacerem do centrum Mestii", "Blisko początków szlaków do jezior Koruldi i Uszguli"],
     "imageAlts": [
-      "Elewacja hotelu Lileo Inn w Mestii, Swanetia, Gruzja",
-      "Lobby i część wspólna hotelu Lileo Inn w Mestii",
-      "Pokój gościnny z tradycyjnym swańskim wystrojem w hotelu Lileo Inn w Mestii",
-      "Łazienka z nowoczesnym wyposażeniem w hotelu Lileo Inn w Mestii"
+      "Budynek Lileo Inn oświetlony nocą w Mestii, Swanetia, Gruzja",
+      "Pokój standardowy w Lileo Inn w Mestii, Swanetia, Gruzja",
+      "Łazienka w Lileo Inn w Mestii, Swanetia, Gruzja",
+      "Pokój z dwoma łóżkami w Lileo Inn w Mestii, Swanetia, Gruzja"
     ]
   },
   "Communal Hotel Telavi": {
@@ -364,5 +365,28 @@
     "description": "Mały pensjonat wśród winnic we wsi Ikalto koło Telawi, gdzie rodzina gospodarzy wytwarza własne wino ekologiczne w tradycyjnym marani. Otoczony winoroślą, z ogrodem i basenem odkrytym, Chateau Orberi oferuje ciepłą, domową kachetyjską gościnność kilka minut jazdy od zabytkowego klasztoru Ikalto.",
     "amenities": ["Rodzinna piwnica winiarska (marani)", "Basen odkryty", "Ogród i winnice"],
     "locationHighlights": ["Wieś Ikalto, kilka minut jazdy od Telawi", "Pośród własnych winnic", "Blisko klasztoru i akademii Ikalto"]
+  },
+  "Kokhta Bakuriani": {
+    "description": "Pięciogwiazdkowy hotel przy stokach Kokhta w Bakuriani, należący do grupy Silk Hospitality, zbudowany z naturalnych materiałów współgrających z otaczającym lasem i graniami. Ma 92 pokoje w kategoriach standard, superior, deluxe i apartament, restaurację z barem i obsługą pokoju oraz czynną całą dobę siłownię wyłącznie dla gości, dwa piętra nad pokojami. Strefa rozrywki oferuje krytą ślizgawkę i wewnętrzny plac zabaw dla dzieci na dni bez nart.",
+    "amenities": ["Restauracja i bar", "Siłownia", "Obsługa pokoju"],
+    "locationHighlights": ["Przy terenie narciarskim Kokhta / Kokhta-Mitarbi", "Kryta ślizgawka i plac zabaw dla dzieci", "Sale konferencyjne i eventowe w hotelu"],
+    "imageAlts": [
+      "Budynek hotelu Kokhta Bakuriani w śniegu w Bakuriani, Gruzja",
+      "Lobby hotelu Kokhta Bakuriani w Bakuriani, Gruzja",
+      "Standardowy pokój king z widokiem na góry w hotelu Kokhta Bakuriani w Bakuriani, Gruzja"
+    ]
+  },
+  "Crystal Hotel & Spa": {
+    "description": "Pięciogwiazdkowy hotel w Bakuriani, 185 km od Tbilisi i kilka minut od wyciągu Didveli. Należy do kompleksu Crystal Resort, który łączy w jednym miejscu gondole i wyciągi krzesełkowe, 12 km naśnieżanych tras z jazdą wieczorną, 1500-metrowy tor saneczkowy, lodowisko oraz wypożyczalnię nart z instruktorami. Sam hotel ma kryty basen i strefę spa, a w całym kompleksie działają kawiarnie, restauracje i bary.",
+    "amenities": ["Basen kryty", "Spa i wellness", "Restauracje i bary"],
+    "locationHighlights": ["Kilka minut od wyciągu Didveli", "Część kompleksu Crystal Resort", "Tor saneczkowy 1500 m i lodowisko"],
+    "imageAlts": [
+      "Budynek Crystal Hotel & Spa o zmierzchu w Bakuriani, Gruzja",
+      "Lobby w Crystal Hotel & Spa w Bakuriani, Gruzja",
+      "Standardowy pokój dwuosobowy w Crystal Hotel & Spa w Bakuriani, Gruzja"
+    ]
+  },
+  "Bakuriani Inn": {
+    "description": "Duży hotel w kurorcie narciarskim Bakuriani, przy ulicy Koby Cakadzego, między dwoma terenami narciarskimi miejscowości. Według informacji hotelu ma 153 pokoje i mieści do 450 gości, a także centrum wellness z basenem, jacuzzi, sauną, gabinetami masażu i siłownią. Leży w sosnowym lesie na północnym stoku pasma Trialeti i jest nastawiony na rodziny oraz aktywnych gości."
   }
 }

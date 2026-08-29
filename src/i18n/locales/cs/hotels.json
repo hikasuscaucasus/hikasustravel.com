@@ -4,10 +4,10 @@
     "amenities": ["Wi-Fi zdarma", "Střešní bar a restaurace", "Klimatizace", "Soukromé parkoviště", "Concierge 24/7"],
     "locationHighlights": ["Pěšky k Metechskému mostu a do Starého Města", "Výhled na pevnost Narikala ze střešní terasy", "Pár kroků od čtvrti sirných lázní"],
     "imageAlts": [
-      "Exteriér hotelu Sandali Metekhi By Old Hospitality ve Starém Městě v Tbilisi, Gruzie",
+      "Plaketa průvodce MICHELIN v hotelu Sandali Metekhi By Old Hospitality v Tbilisi, Gruzie",
       "Lobby a recepce hotelu Sandali Metekhi s interiérem art deco, Tbilisi",
       "Pokoj pro hosty v hotelu Sandali Metekhi s elegantním zařízením, Tbilisi",
-      "Koupelna v hotelu Sandali Metekhi s vanou a moderním vybavením, Tbilisi"
+      "Balkon s výhledem na staré město v hotelu Sandali Metekhi By Old Hospitality v Tbilisi, Gruzie"
     ]
   },
   "Best View Kazbegi": {
@@ -28,7 +28,7 @@
     "imageAlts": [
       "Exteriér hotelu West Way v Kutaisi, Gruzie",
       "Lobby a recepce hotelu West Way v Kutaisi, Gruzie",
-      "Pohodlný pokoj pro hosty v hotelu West Way v Kutaisi, Gruzie",
+      "Recepční pult v hotelu West Way v Kutaisi, Gruzie",
       "Koupelna se sprchou v hotelu West Way v Kutaisi, Gruzie"
     ]
   },
@@ -48,7 +48,7 @@
     "amenities": ["Vinný sklep a degustace", "Bazén", "Vlastní vinice", "Zahradní restaurace", "Wi-Fi zdarma", "Parkování zdarma"],
     "locationHighlights": ["Vesnice Ruispiri, asi 3 km od Telavi", "Výhled na Alazanské údolí a Kavkaz", "V srdci vinařské oblasti Kachetie"],
     "imageAlts": [
-      "Exteriér hotelu Hotel and Wine Cellar ARGE se zahradou v Telavi, vinařská oblast Kachetie, Gruzie",
+      "Pokoj pro hosty s balkonovými dveřmi v hotelu Hotel & Wine Cellar ARGE v Telavi, Gruzie",
       "Lobby a odpočinkový prostor hotelu ARGE v Telavi, Gruzie",
       "Pokoj pro hosty v hotelu ARGE s výhledem na vinice v Kachetii, Gruzie",
       "Koupelna s moderním vybavením v hotelu ARGE v Telavi, Gruzie"
@@ -62,7 +62,7 @@
       "Exteriér hotelu Rooms Hotel Tbilisi na břehu řeky Mtkvari, Gruzie",
       "Stylová lobby a odpočinkový prostor hotelu Rooms Hotel Tbilisi s designovým nábytkem",
       "Pokoj pro hosty v hotelu Rooms Hotel Tbilisi se současným designem a výhledem na město",
-      "Koupelna s moderními armaturami v hotelu Rooms Hotel Tbilisi, Tbilisi"
+      "Koupelna s bezbariérovým sprchovým koutem a obkládanými stěnami v hotelu Rooms Hotel Tbilisi, Tbilisi, Gruzie"
     ]
   },
   "Ibis Styles Tbilisi Center": {
@@ -82,7 +82,7 @@
     "locationHighlights": ["V srdci tbiliského Starého Města", "Pěšky k sirným lázním a pevnosti Narikala", "Obklopen kavárnami, restauracemi a obchody"],
     "imageAlts": [
       "Exteriér hotelu Ginger Hotel ve Starém Městě v Tbilisi, Gruzie",
-      "Lobby a společný prostor hotelu Ginger Hotel v Tbilisi",
+      "Zasedací místnost v hotelu Ginger Hotel v Tbilisi, Gruzie",
       "Čistý a pohodlný pokoj pro hosty v hotelu Ginger Hotel v Tbilisi",
       "Koupelna s moderním vybavením v hotelu Ginger Hotel v Tbilisi"
     ]
@@ -103,10 +103,10 @@
     "amenities": ["Vnitřní a venkovní bazén", "Spa, sauna a vířivka", "Fitness centrum", "Restaurace a bar", "Wi-Fi zdarma", "Sluneční terasa"],
     "locationHighlights": ["Ski-in, ski-out — přímo u sjezdovek", "V centru Gudauri, hned vedle vleků", "Wellness centrum s vnitřním i venkovním bazénem"],
     "imageAlts": [
-      "Moderní budova Gudauri Lodge v zasněženém Kavkaze, Gudauri, Gruzie",
-      "Obývací část apartmá v Gudauri Lodge s výhledem na zasněžené hory",
+      "Exteriér Gudauri Lodge pod kavkazskými štíty v Gudauri, Gruzie",
+      "Knihovna a odpočinkový prostor v Gudauri Lodge",
       "Moderní dvoulůžkový pokoj v Gudauri Lodge",
-      "Knihovna a odpočinkový prostor v Gudauri Lodge"
+      "Obývací část apartmá v Gudauri Lodge s výhledem na zasněžené hory"
     ]
   },
   "Marco Polo": {
@@ -115,9 +115,10 @@
     "locationHighlights": ["Ski-in, ski-out v centru Gudauri", "Přímo u sjezdovky v cca 2 000 m n. m.", "Bowling, padelové kurty a spa v objektu"],
     "imageAlts": [
       "Marco Polo Hotel Gudauri osvětlený v noci v zimních horách, Gruzie",
-      "Vnitřní bazén s výhledem na hory v hotelu Marco Polo Hotel Gudauri",
       "Odpočinkový prostor v lobby s pohovkami a schodištěm v hotelu Marco Polo Hotel Gudauri",
-      "Pohodlný pokoj pro hosty v hotelu Marco Polo Hotel Gudauri"
+      "Standardní pokoj v hotelu Marco Polo Hotel Gudauri, Gruzie",
+      "Koupelna s volně stojící vanou v hotelu Marco Polo Hotel Gudauri, Gruzie",
+      "Vnitřní bazén s výhledem na hory v hotelu Marco Polo Hotel Gudauri"
     ]
   },
   "Gudauri Inn": {
@@ -125,10 +126,10 @@
     "amenities": ["Wi-Fi zdarma", "Vnitřní bazén", "Sauna a vířivka", "Restaurace a bar", "Parkování zdarma"],
     "locationHighlights": ["V centru Gudauri ve výšce 2 200 m", "Wellness s vnitřním bazénem, vířivkou a saunou", "Panoramatický výhled na Velký Kavkaz"],
     "imageAlts": [
+      "Exteriér Gudauri Inn za soumraku pod zasněženými štíty v Gudauri, Gruzie",
       "Odpočinkový prostor s výhledem na hory a závěsnými křesly v Gudauri Inn, Gudauri, Gruzie",
       "Pohodlný dvoulůžkový pokoj v Gudauri Inn",
-      "Světlý pokoj se dvěma lůžky v Gudauri Inn",
-      "Pokoj se dvěma lůžky, balkonem a výhledem na hory v Gudauri Inn"
+      "Koupelna s bezbariérovým sprchovým koutem v Gudauri Inn, Gudauri, Gruzie"
     ]
   },
   "Rooms Hotel Kazbegi": {
@@ -139,7 +140,7 @@
       "Výrazná moderní budova hotelu Rooms Hotel Kazbegi na pozadí Velkého Kavkazu, Stepancminda",
       "Lobby a recepce hotelu Rooms Hotel Kazbegi s výhledem na hory",
       "Prostorný pokoj pro hosty v hotelu Rooms Hotel Kazbegi s výhledem na horu Kazbek",
-      "Koupelna s moderními armaturami v hotelu Rooms Hotel Kazbegi, Stepancminda"
+      "Lounge s krbem v hotelu Rooms Hotel Kazbegi ve Stepancmindě, Gruzie"
     ]
   },
   "Northgate Hotel": {
@@ -183,7 +184,7 @@
       "Exteriér hotelu Boutique Hotel Argo v centru Kutaisi, Gruzie",
       "Recepce a lobby hotelu Boutique Hotel Argo v Kutaisi",
       "Dobře vybavený pokoj pro hosty v hotelu Boutique Hotel Argo v Kutaisi",
-      "Koupelna s moderním vybavením v hotelu Boutique Hotel Argo v Kutaisi"
+      "Prostřený stůl k večeři v hotelu Boutique Hotel Argo v Kutaisi, Gruzie"
     ]
   },
   "Rooms Hotel": {
@@ -205,7 +206,7 @@
       "Moderní budova hotelu Monarch v Batumi, Gruzie",
       "Lobby a recepce hotelu Monarch v Batumi",
       "Pohodlný pokoj pro hosty s výhledem z balkonu v hotelu Monarch v Batumi",
-      "Koupelna s moderním vybavením v hotelu Monarch v Batumi"
+      "Koupelna s bezbariérovým sprchovým koutem v hotelu Monarch v Batumi, Gruzie"
     ]
   },
   "Boutique Hotel 32": {
@@ -213,8 +214,8 @@
     "amenities": ["Wi-Fi zdarma", "Každodenní snídaně", "Klimatizace", "Recepce 24/7", "Prádelní služba"],
     "locationHighlights": ["Klidná ulice blízko batumského Starého Města", "Pěšky na pláž u Černého moře", "Blízko místních restaurací a tržnic"],
     "imageAlts": [
-      "Exteriér hotelu Boutique Hotel 32 v Batumi, Gruzie",
-      "Vchod a recepce hotelu Boutique Hotel 32 v Batumi",
+      "Vstupní cedule hotelu Boutique Hotel 32 v Batumi, Gruzie",
+      "Výhled na pobřežní park z hotelu Boutique Hotel 32 v Batumi, Gruzie",
       "Pokoj pro hosty s teplým dekorem v hotelu Boutique Hotel 32 v Batumi",
       "Koupelna s moderními armaturami v hotelu Boutique Hotel 32 v Batumi"
     ]
@@ -226,7 +227,7 @@
     "imageAlts": [
       "Majestátní exteriér hotelu Tsinandali Estate, A Radisson Collection Hotel, obklopený historickými zahradami, Telavi",
       "Lobby a odpočinkový prostor hotelu Tsinandali Estate s elegantním interiérem",
-      "Luxusní pokoj pro hosty s gruzínským dekorem v hotelu Tsinandali Estate",
+      "Terasa s venkovním bazénem v hotelu Tsinandali Estate, A Radisson Collection Hotel v Kachetii, Gruzie",
       "Mramorová koupelna s prvotřídním vybavením v hotelu Tsinandali Estate"
     ]
   },
@@ -235,10 +236,10 @@
     "amenities": ["Wi-Fi zdarma", "Vlastní restaurace", "Zahrada a terasa", "Parkování zdarma", "Klimatizace"],
     "locationHighlights": ["Blízko proslulého panství Cinandali", "Obklopen vinicemi a vinařstvími Kachetie", "Snadný přístup do centra Telavi"],
     "imageAlts": [
-      "Exteriér hotelu Park Hotel Tsinandali obklopený zelení v Kachetii, Gruzie",
-      "Lobby a vnitřní společný prostor hotelu Park Hotel Tsinandali",
-      "Pohodlný pokoj pro hosty se současným nábytkem v hotelu Park Hotel Tsinandali",
-      "Koupelna s moderním vybavením v hotelu Park Hotel Tsinandali"
+      "Venkovní terasa hotelu Park Hotel Tsinandali v Kachetii, Gruzie",
+      "Standardní pokoj v hotelu Park Hotel Tsinandali v Kachetii, Gruzie",
+      "Koupelna v hotelu Park Hotel Tsinandali v Kachetii, Gruzie",
+      "Krytý bazén v hotelu Park Hotel Tsinandali v Kachetii, Gruzie"
     ]
   },
   "Akhaltsikhe Inn (Junior Suite Room)": {
@@ -249,7 +250,7 @@
       "Exteriér hotelu Akhaltsikhe Inn poblíž hradu Rabati, Achalcyche, Gruzie",
       "Lobby a recepce hotelu Akhaltsikhe Inn v Achalcyche",
       "Prostorný pokoj Junior Suite s luxusním zařízením v hotelu Akhaltsikhe Inn",
-      "Koupelna s moderním vybavením v hotelu Akhaltsikhe Inn"
+      "Šatna v hotelu Akhaltsikhe Inn v Achalciche, Gruzie"
     ]
   },
   "Hotel Gino Wellness Rabati": {
@@ -260,7 +261,7 @@
       "Exteriér hotelu Gino Wellness Rabati poblíž hradu Rabati, Achalcyche, Gruzie",
       "Lobby a recepce hotelu Gino Wellness Rabati v Achalcyche",
       "Pohodlný pokoj pro hosty v hotelu Gino Wellness Rabati v Achalcyche",
-      "Koupelna s moderním vybavením v hotelu Gino Wellness Rabati"
+      "Pokoj se dvěma lůžky v hotelu Gino Wellness Rabati v Achalciche, Gruzie"
     ]
   },
   "Hotel Beni": {
@@ -269,9 +270,9 @@
     "locationHighlights": ["Pěšky k hradu Rabati", "Snadný přístup k jeskynnímu klášteru Vardzia", "V srdci Achalcyche"],
     "imageAlts": [
       "Exteriér hotelu Beni v Achalcyche, jižní Gruzie",
-      "Lobby a vnitřní společný prostor hotelu Beni v Achalcyche",
+      "Zahradní schodiště u hotelu Beni v Achalciche, Gruzie",
       "Čistý a pohodlný pokoj pro hosty v hotelu Beni v Achalcyche",
-      "Koupelna s moderním vybavením v hotelu Beni v Achalcyche"
+      "Další pokoj pro hosty v hotelu Beni v Achalciche, Gruzie"
     ]
   },
   "Crowne Plaza Borjomi": {
@@ -334,10 +335,10 @@
     "amenities": ["Wi-Fi zdarma", "Domácí svanská jídla", "Ústřední topení", "Parkování zdarma", "Zahradní prostor"],
     "locationHighlights": ["Autentické svanské vesnické prostředí v Mestii", "Pěšky do centra Mestie", "Blízko výchozích bodů k Koruldským jezerům a Ušguli"],
     "imageAlts": [
-      "Exteriér hotelu Lileo Inn v Mestii, Svanetie, Gruzie",
-      "Lobby a společný prostor hotelu Lileo Inn v Mestii",
-      "Pokoj pro hosty s tradičním svanským dekorem v hotelu Lileo Inn v Mestii",
-      "Koupelna s moderním vybavením v hotelu Lileo Inn v Mestii"
+      "Exteriér hotelu Lileo Inn osvětlený v noci v Mestii, Svanetie, Gruzie",
+      "Standardní pokoj v hotelu Lileo Inn v Mestii, Svanetie, Gruzie",
+      "Koupelna v hotelu Lileo Inn v Mestii, Svanetie, Gruzie",
+      "Pokoj se dvěma lůžky v hotelu Lileo Inn v Mestii, Svanetie, Gruzie"
     ]
   },
   "Communal Hotel Telavi": {
@@ -364,5 +365,28 @@
     "description": "Malý vinařský penzion ve vesnici Ikalto poblíž Telavi, kde hostitelská rodina vyrábí vlastní bio víno v tradičním marani. Chateau Orberi, obklopený vinicemi, se zahradou a venkovním bazénem, nabízí vřelou domáckou kachetskou pohostinnost kousek autem od historického kláštera Ikalto.",
     "amenities": ["Rodinný vinný sklep (marani)", "Venkovní bazén", "Zahrada a vinice"],
     "locationHighlights": ["Vesnice Ikalto, kousek autem od Telavi", "Uprostřed vlastních vinic", "Blízko kláštera a akademie Ikalto"]
+  },
+  "Kokhta Bakuriani": {
+    "description": "Pětihvězdičkový hotel u sjezdovek Kokhta v Bakuriani, součást skupiny Silk Hospitality, postavený z přírodních materiálů, které ladí s okolním lesem a hřebeny. Nabízí 92 pokojů v kategoriích standard, superior, deluxe a apartmá, restauraci s barem a donáškou na pokoj a nepřetržitě otevřenou posilovnu jen pro hosty dvě patra nad pokoji. Zábavní zóna přidává kryté kluziště a vnitřní dětské hřiště pro dny mimo sjezdovky.",
+    "amenities": ["Restaurace a bar", "Posilovna", "Donáška na pokoj"],
+    "locationHighlights": ["U lyžařské oblasti Kokhta / Kokhta-Mitarbi", "Kryté kluziště a dětské hřiště", "Zasedací a společenské sály v hotelu"],
+    "imageAlts": [
+      "Exteriér hotelu Kokhta Bakuriani ve sněhu v Bakuriani, Gruzie",
+      "Lobby hotelu Kokhta Bakuriani v Bakuriani, Gruzie",
+      "Standardní pokoj king s výhledem na hory v hotelu Kokhta Bakuriani v Bakuriani, Gruzie"
+    ]
+  },
+  "Crystal Hotel & Spa": {
+    "description": "Pětihvězdičkový hotel v Bakuriani, 185 km od Tbilisi a pár minut od vleku Didveli. Je součástí komplexu Crystal Resort, který na jednom místě spojuje kabinkové i sedačkové lanovky, 12 km zasněžovaných sjezdovek s večerním lyžováním, 1 500 metrů dlouhou sáňkařskou dráhu, kluziště a půjčovnu lyží s instruktory. Samotný hotel má krytý bazén a spa, kavárny, restaurace a bary jsou rozmístěné po celém areálu.",
+    "amenities": ["Krytý bazén", "Spa a wellness", "Restaurace a bary"],
+    "locationHighlights": ["Pár minut od vleku Didveli", "Součást komplexu Crystal Resort", "Sáňkařská dráha 1 500 m a kluziště"],
+    "imageAlts": [
+      "Exteriér hotelu Crystal Hotel & Spa za soumraku v Bakuriani, Gruzie",
+      "Lobby hotelu Crystal Hotel & Spa v Bakuriani, Gruzie",
+      "Standardní dvoulůžkový pokoj v hotelu Crystal Hotel & Spa v Bakuriani, Gruzie"
+    ]
+  },
+  "Bakuriani Inn": {
+    "description": "Velký hotel v lyžařském středisku Bakuriani, v ulici Koba Tsakadze mezi dvěma lyžařskými areály obce. Podle vlastních údajů má 153 pokojů a kapacitu až 450 hostů a nabízí wellness centrum s bazénem, vířivkami, saunou, masážními místnostmi a posilovnou. Leží v borovicovém lese na severním svahu Trialetského hřbetu a je zaměřený na rodiny a aktivní hosty."
   }
 }

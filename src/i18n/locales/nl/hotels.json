@@ -4,10 +4,10 @@
     "amenities": ["Gratis wifi", "Dakbar & restaurant", "Airconditioning", "Privéparkeerplaats", "24/7-conciërge"],
     "locationHighlights": ["Op loopafstand van de Metekhi-brug en de oude stad", "Uitzicht op het Narikala-fort vanaf het dakterras", "Op een paar stappen van de zwavelbadwijk"],
     "imageAlts": [
-      "Buitenaanzicht van hotel Sandali Metekhi By Old Hospitality in de oude stad van Tbilisi, Georgië",
+      "MICHELIN Guide-plaquette in Sandali Metekhi By Old Hospitality in Tbilisi, Georgië",
       "Lobby en receptie van Sandali Metekhi met art-deco-interieur, Tbilisi",
       "Gastenkamer in hotel Sandali Metekhi met elegante inrichting, Tbilisi",
-      "Badkamer in hotel Sandali Metekhi met bad en moderne voorzieningen, Tbilisi"
+      "Balkon met uitzicht op de oude stad in Sandali Metekhi By Old Hospitality in Tbilisi, Georgië"
     ]
   },
   "Best View Kazbegi": {
@@ -28,7 +28,7 @@
     "imageAlts": [
       "Buitenaanzicht van Hotel West Way in Kutaisi, Georgië",
       "Lobby en receptie van Hotel West Way in Kutaisi, Georgië",
-      "Comfortabele gastenkamer in Hotel West Way in Kutaisi, Georgië",
+      "Receptiebalie in Hotel West Way in Kutaisi, Georgië",
       "Badkamer met douche in Hotel West Way in Kutaisi, Georgië"
     ]
   },
@@ -48,7 +48,7 @@
     "amenities": ["Wijnkelder & proeverij", "Zwembad", "Eigen wijngaarden", "Tuinrestaurant", "Gratis wifi", "Gratis parkeren"],
     "locationHighlights": ["Dorp Ruispiri, ongeveer 3 km van Telavi", "Uitzicht over de Alazani-vallei en de Kaukasus", "In het hart van het wijngebied Kachetië"],
     "imageAlts": [
-      "Buitenaanzicht van Hotel and Wine Cellar ARGE met tuin in Telavi, wijnstreek Kachetië, Georgië",
+      "Gastenkamer met balkondeuren in Hotel & Wine Cellar ARGE in Telavi, Georgië",
       "Lobby en loungeruimte van hotel ARGE in Telavi, Georgië",
       "Gastenkamer in hotel ARGE met uitzicht op de wijngaarden in Kachetië, Georgië",
       "Badkamer met moderne voorzieningen in hotel ARGE in Telavi, Georgië"
@@ -62,7 +62,7 @@
       "Buitenaanzicht van Rooms Hotel Tbilisi aan de oevers van de rivier de Mtkvari, Georgië",
       "Stijlvolle lobby en lounge van Rooms Hotel Tbilisi met designmeubilair",
       "Gastenkamer in Rooms Hotel Tbilisi met eigentijds design en uitzicht op de stad",
-      "Badkamer met moderne kranen in Rooms Hotel Tbilisi, Tbilisi"
+      "Badkamer met inloopdouche en betegelde wanden in Rooms Hotel Tbilisi, Tbilisi, Georgië"
     ]
   },
   "Ibis Styles Tbilisi Center": {
@@ -82,7 +82,7 @@
     "locationHighlights": ["In het hart van de oude stad van Tbilisi", "Op loopafstand van de zwavelbaden en het Narikala-fort", "Omringd door cafés, restaurants en winkels"],
     "imageAlts": [
       "Buitenaanzicht van Ginger Hotel in de oude stad van Tbilisi, Georgië",
-      "Lobby en gemeenschappelijke ruimte van Ginger Hotel in Tbilisi",
+      "Vergaderzaal in Ginger Hotel in Tbilisi, Georgië",
       "Schone en comfortabele gastenkamer in Ginger Hotel in Tbilisi",
       "Badkamer met moderne voorzieningen in Ginger Hotel in Tbilisi"
     ]
@@ -103,10 +103,10 @@
     "amenities": ["Binnen- & buitenzwembad", "Spa, sauna & jacuzzi", "Fitnessruimte", "Restaurant & bar", "Gratis wifi", "Zonneterras"],
     "locationHighlights": ["Ski-in, ski-out — direct aan de pistes", "In het centrum van Gudauri, naast de liften", "Wellnesscentrum met binnen- en buitenzwembad"],
     "imageAlts": [
-      "Modern gebouw van Gudauri Lodge in de besneeuwde Kaukasus, Gudauri, Georgië",
-      "Woonkamer van een suite in Gudauri Lodge met uitzicht op besneeuwde bergen",
+      "Buitenaanzicht van Gudauri Lodge onder de Kaukasustoppen in Gudauri, Georgië",
+      "Bibliotheek en loungeruimte van Gudauri Lodge",
       "Eigentijdse tweepersoonskamer in Gudauri Lodge",
-      "Bibliotheek en loungeruimte van Gudauri Lodge"
+      "Woonkamer van een suite in Gudauri Lodge met uitzicht op besneeuwde bergen"
     ]
   },
   "Marco Polo": {
@@ -115,9 +115,10 @@
     "locationHighlights": ["Ski-in, ski-out in het centrum van Gudauri", "Direct aan de piste op ongeveer 2.000 m", "Bowling, padelbanen en spa op het terrein"],
     "imageAlts": [
       "Marco Polo Hotel Gudauri 's nachts verlicht in de winterse bergen, Georgië",
-      "Binnenzwembad met bergzicht in Marco Polo Hotel Gudauri",
       "Lobbylounge met banken en trap in Marco Polo Hotel Gudauri",
-      "Comfortabele gastenkamer in Marco Polo Hotel Gudauri"
+      "Standaardkamer in Marco Polo Hotel Gudauri, Georgië",
+      "Badkamer met vrijstaand bad in Marco Polo Hotel Gudauri, Georgië",
+      "Binnenzwembad met bergzicht in Marco Polo Hotel Gudauri"
     ]
   },
   "Gudauri Inn": {
@@ -125,10 +126,10 @@
     "amenities": ["Gratis wifi", "Binnenzwembad", "Sauna & jacuzzi", "Restaurant & bar", "Gratis parkeren"],
     "locationHighlights": ["In het centrum van Gudauri op 2.200 m", "Wellnessruimte met binnenzwembad, jacuzzi en sauna", "Panoramisch uitzicht op de Grote Kaukasus"],
     "imageAlts": [
+      "Buitenaanzicht van Gudauri Inn in de schemering onder de besneeuwde toppen in Gudauri, Georgië",
       "Lounge met bergzicht en hangstoelen in Gudauri Inn, Gudauri, Georgië",
       "Comfortabele tweepersoonskamer in Gudauri Inn",
-      "Lichte kamer met twee bedden in Gudauri Inn",
-      "Kamer met twee bedden, balkon en bergzicht in Gudauri Inn"
+      "Badkamer met inloopdouche in Gudauri Inn, Gudauri, Georgië"
     ]
   },
   "Rooms Hotel Kazbegi": {
@@ -139,7 +140,7 @@
       "Opvallend modern gebouw van Rooms Hotel Kazbegi tegen de Grote Kaukasus, Stepantsminda",
       "Lobby en receptie van Rooms Hotel Kazbegi met bergzicht",
       "Ruime gastenkamer in Rooms Hotel Kazbegi met uitzicht op de berg Kazbek",
-      "Badkamer met moderne kranen in Rooms Hotel Kazbegi, Stepantsminda"
+      "Lounge met open haard in Rooms Hotel Kazbegi in Stepantsminda, Georgië"
     ]
   },
   "Northgate Hotel": {
@@ -183,7 +184,7 @@
       "Buitenaanzicht van Boutique Hotel Argo in het centrum van Kutaisi, Georgië",
       "Receptie en lobby van Boutique Hotel Argo in Kutaisi",
       "Goed uitgeruste gastenkamer in Boutique Hotel Argo in Kutaisi",
-      "Badkamer met moderne voorzieningen in Boutique Hotel Argo in Kutaisi"
+      "Gedekte tafel voor het diner in Boutique Hotel Argo in Kutaisi, Georgië"
     ]
   },
   "Rooms Hotel": {
@@ -205,7 +206,7 @@
       "Modern gebouw van Hotel Monarch in Batumi, Georgië",
       "Lobby en receptie van Hotel Monarch in Batumi",
       "Comfortabele gastenkamer met uitzicht vanaf het balkon in Hotel Monarch in Batumi",
-      "Badkamer met moderne voorzieningen in Hotel Monarch in Batumi"
+      "Badkamer met inloopdouche in Hotel Monarch in Batumi, Georgië"
     ]
   },
   "Boutique Hotel 32": {
@@ -213,8 +214,8 @@
     "amenities": ["Gratis wifi", "Dagelijks ontbijt", "Airconditioning", "24/7-receptie", "Wasservice"],
     "locationHighlights": ["Rustige straat vlak bij de oude stad van Batumi", "Op loopafstand van het strand aan de Zwarte Zee", "Dicht bij lokale restaurants en markten"],
     "imageAlts": [
-      "Buitenaanzicht van Boutique Hotel 32 in Batumi, Georgië",
-      "Ingang en receptie van Boutique Hotel 32 in Batumi",
+      "Entreebord van Boutique Hotel 32 in Batumi, Georgië",
+      "Uitzicht over het strandpark vanaf Boutique Hotel 32 in Batumi, Georgië",
       "Gastenkamer met warm decor in Boutique Hotel 32 in Batumi",
       "Badkamer met moderne kranen in Boutique Hotel 32 in Batumi"
     ]
@@ -226,7 +227,7 @@
     "imageAlts": [
       "Imposante gevel van Tsinandali Estate, A Radisson Collection Hotel, omringd door historische tuinen, Telavi",
       "Lobby en lounge van Tsinandali Estate met elegant interieur",
-      "Luxueuze gastenkamer met Georgisch decor in Tsinandali Estate",
+      "Buitenzwembadterras bij Tsinandali Estate, A Radisson Collection Hotel in Kacheti, Georgië",
       "Marmeren badkamer met hoogwaardige voorzieningen in Tsinandali Estate"
     ]
   },
@@ -235,10 +236,10 @@
     "amenities": ["Gratis wifi", "Eigen restaurant", "Tuin & terras", "Gratis parkeren", "Airconditioning"],
     "locationHighlights": ["Vlak bij het bekende landgoed Tsinandali", "Omringd door de wijngaarden en wijnhuizen van Kachetië", "Makkelijke toegang tot het centrum van Telavi"],
     "imageAlts": [
-      "Buitenaanzicht van Park Hotel Tsinandali omringd door groen in Kachetië, Georgië",
-      "Lobby en gemeenschappelijke binnenruimte van Park Hotel Tsinandali",
-      "Comfortabele gastenkamer met eigentijds meubilair in Park Hotel Tsinandali",
-      "Badkamer met moderne voorzieningen in Park Hotel Tsinandali"
+      "Buitenterras bij Park Hotel Tsinandali in Kacheti, Georgië",
+      "Standaardkamer in Park Hotel Tsinandali in Kacheti, Georgië",
+      "Badkamer in Park Hotel Tsinandali in Kacheti, Georgië",
+      "Binnenzwembad in Park Hotel Tsinandali in Kacheti, Georgië"
     ]
   },
   "Akhaltsikhe Inn (Junior Suite Room)": {
@@ -249,7 +250,7 @@
       "Buitenaanzicht van Akhaltsikhe Inn vlak bij kasteel Rabati, Achaltsiche, Georgië",
       "Lobby en receptie van Akhaltsikhe Inn in Achaltsiche",
       "Ruime Junior Suite met luxe inrichting in Akhaltsikhe Inn",
-      "Badkamer met moderne voorzieningen in Akhaltsikhe Inn"
+      "Kleedruimte in Akhaltsikhe Inn in Achaltsiche, Georgië"
     ]
   },
   "Hotel Gino Wellness Rabati": {
@@ -260,7 +261,7 @@
       "Buitenaanzicht van Hotel Gino Wellness Rabati vlak bij kasteel Rabati, Achaltsiche, Georgië",
       "Lobby en receptie van Hotel Gino Wellness Rabati in Achaltsiche",
       "Comfortabele gastenkamer in Hotel Gino Wellness Rabati in Achaltsiche",
-      "Badkamer met moderne voorzieningen in Hotel Gino Wellness Rabati"
+      "Tweepersoonskamer met aparte bedden in Hotel Gino Wellness Rabati in Achaltsiche, Georgië"
     ]
   },
   "Hotel Beni": {
@@ -269,9 +270,9 @@
     "locationHighlights": ["Op loopafstand van kasteel Rabati", "Goede toegang tot het grottenklooster Vardzia", "In het hart van Achaltsiche"],
     "imageAlts": [
       "Buitenaanzicht van Hotel Beni in Achaltsiche, Zuid-Georgië",
-      "Lobby en gemeenschappelijke binnenruimte van Hotel Beni in Achaltsiche",
+      "Tuintrap bij Hotel Beni in Achaltsiche, Georgië",
       "Schone en comfortabele gastenkamer in Hotel Beni in Achaltsiche",
-      "Badkamer met moderne voorzieningen in Hotel Beni in Achaltsiche"
+      "Tweede gastenkamer in Hotel Beni in Achaltsiche, Georgië"
     ]
   },
   "Crowne Plaza Borjomi": {
@@ -334,10 +335,10 @@
     "amenities": ["Gratis wifi", "Huisgemaakte Svan-maaltijden", "Centrale verwarming", "Gratis parkeren", "Tuinruimte"],
     "locationHighlights": ["Authentieke Svan-dorpsomgeving in Mestia", "Op loopafstand van het centrum van Mestia", "Vlak bij de startpunten naar de Koruldi-meren en Ushguli"],
     "imageAlts": [
-      "Buitenaanzicht van Lileo Inn in Mestia, Svaneti, Georgië",
-      "Lobby en gemeenschappelijke ruimte van Lileo Inn in Mestia",
-      "Gastenkamer met traditioneel Svan-decor in Lileo Inn in Mestia",
-      "Badkamer met moderne voorzieningen in Lileo Inn in Mestia"
+      "Buitenaanzicht van Lileo Inn verlicht bij nacht in Mestia, Svaneti, Georgië",
+      "Standaardkamer in Lileo Inn in Mestia, Svaneti, Georgië",
+      "Badkamer in Lileo Inn in Mestia, Svaneti, Georgië",
+      "Tweepersoonskamer met aparte bedden in Lileo Inn in Mestia, Svaneti, Georgië"
     ]
   },
   "Communal Hotel Telavi": {
@@ -364,5 +365,28 @@
     "description": "Een klein wijngaardgastenverblijf in het dorp Ikalto vlak bij Telavi, waar de gastfamilie haar eigen biologische wijn maakt in een traditionele marani. Omringd door wijnstokken, met tuin en buitenzwembad, biedt Chateau Orberi warme, huiselijke Kachetische gastvrijheid op korte rijafstand van het historische klooster van Ikalto.",
     "amenities": ["Familiewijnkelder (marani)", "Buitenzwembad", "Tuin & wijngaarden"],
     "locationHighlights": ["Dorp Ikalto, op korte rijafstand van Telavi", "Te midden van eigen wijngaarden", "Vlak bij het klooster en de academie van Ikalto"]
+  },
+  "Kokhta Bakuriani": {
+    "description": "Een vijfsterrenhotel aan de Kokhta-pistes in Bakuriani, onderdeel van de Silk Hospitality-groep en gebouwd met natuurlijke materialen die aansluiten bij het omringende bos en de bergkammen. Het heeft 92 kamers in de categorieën standaard, superior, deluxe en suite, een restaurant met bar en roomservice, en een fitnessruimte alleen voor gasten die dag en nacht open is, twee verdiepingen boven de kamers. Een entertainmentzone biedt een overdekte ijsbaan en een binnenspeeltuin voor dagen zonder skiën.",
+    "amenities": ["Restaurant & bar", "Fitnessruimte", "Roomservice"],
+    "locationHighlights": ["Aan het skigebied Kokhta / Kokhta-Mitarbi", "Overdekte ijsbaan & binnenspeeltuin", "Vergader- en evenementenruimten in het hotel"],
+    "imageAlts": [
+      "Buitenaanzicht van Kokhta Bakuriani in de sneeuw in Bakuriani, Georgië",
+      "Lobbylounge in Kokhta Bakuriani in Bakuriani, Georgië",
+      "Standaard kingkamer met bergzicht in Kokhta Bakuriani in Bakuriani, Georgië"
+    ]
+  },
+  "Crystal Hotel & Spa": {
+    "description": "Een vijfsterrenhotel in Bakuriani, 185 km van Tbilisi en een paar minuten van de skilift van Didveli. Het maakt deel uit van het Crystal Resort-complex, dat gondel- en stoeltjesliften, 12 km besneeuwde pistes met nachtskiën, een rodelbaan van 1.500 meter, een ijsbaan en skiverhuur met instructeurs op één plek samenbrengt. Het hotel zelf heeft een binnenzwembad en een spa, met cafés, restaurants en bars verspreid over het resort.",
+    "amenities": ["Binnenzwembad", "Spa & wellness", "Restaurants & bars"],
+    "locationHighlights": ["Enkele minuten van de skilift van Didveli", "Onderdeel van het Crystal Resort-complex", "Rodelbaan van 1.500 m & ijsbaan"],
+    "imageAlts": [
+      "Buitenaanzicht van Crystal Hotel & Spa in de schemering in Bakuriani, Georgië",
+      "Lobbylounge in Crystal Hotel & Spa in Bakuriani, Georgië",
+      "Standaard tweepersoonskamer in Crystal Hotel & Spa in Bakuriani, Georgië"
+    ]
+  },
+  "Bakuriani Inn": {
+    "description": "Een groot hotel in het skidorp Bakuriani, aan de Koba Tsakadzestraat tussen de twee skigebieden van het dorp. Volgens het hotel zelf heeft het 153 kamers en plaats voor maximaal 450 gasten, plus een wellnesscentrum met zwembad, jacuzzi’s, sauna, massageruimten en een fitnessruimte. Het ligt in het dennenbos op de noordhelling van het Trialetigebergte en richt zich op gezinnen en actieve gasten."
   }
 }

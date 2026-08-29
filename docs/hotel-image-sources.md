@@ -230,3 +230,81 @@ evidence. Do not upgrade a row to "cleared" without a written reply on file.
 4. Add the matching alt string to `imageAlts` in **all six** `src/i18n/locales/<lang>/hotels.json` files. Array lengths must match `images[]` exactly, or that locale falls back to English for the whole hotel (see `src/i18n/useHotel.js`).
 5. Add a row here with a real source and licence status.
 6. If the licence requires visible credit, raise it before publishing — the modal has no credit slot today.
+
+---
+
+## 2026-08-29 — hotel information audit
+
+Every hotel record was checked against the four required categories by **looking at each
+photograph**, not by reading its filename or alt text. Nine photographs were added, all
+taken from the property’s own website. Sizes below are after conversion to WebP
+(long edge capped at 1600 px, never upscaled).
+
+| Hotel | Category | Source URL (official site) | Local file | Size |
+|---|---|---|---|---|
+| Kokhta Bakuriani | exterior | https://silkhospitality.com/media/c2jgvmm2/kokhta-bakuriani.jpg | `kokhta-bakuriani.webp` | 1600x1144, 338 KB |
+| Kokhta Bakuriani | lobby | https://silkhospitality.com/media/wo0foa1q/lobby_roomshotelkokhta_3.jpg | `kokhta-bakuriani-2.webp` | 1600x1067, 176 KB |
+| Kokhta Bakuriani | standard room | https://silkhospitality.com/media/aqrf41tw/mountain_view_standard-king.jpg | `kokhta-bakuriani-3.webp` | 1600x1067, 174 KB |
+| Crystal Hotel & Spa | exterior | https://hotelcrystal.ge/wp-content/uploads/2022/07/cr_sastumro_32.jpg | `crystal-hotel-spa.webp` | 1200x804, 188 KB |
+| Crystal Hotel & Spa | lobby | https://hotelcrystal.ge/wp-content/uploads/2022/07/cr_sastumro_27.jpg | `crystal-hotel-spa-2.webp` | 1200x800, 87 KB |
+| Crystal Hotel & Spa | standard room | https://hotelcrystal.ge/wp-content/uploads/2022/07/oradgiliani_stand_1.jpg | `crystal-hotel-spa-3.webp` | 1200x800, 62 KB |
+| Gudauri Lodge | exterior | https://gudaurilodge.com/wp-content/uploads/2026/07/home-the-resort.webp | `gudauri-lodge-5.webp` | 1600x1067, 196 KB |
+| Marco Polo | standard room | https://marcopolo.ge/img/62c92550f3afa8a1.webp | `marco-polo-6.webp` | 1280x1024, 142 KB |
+| Hotel Monarch | bathroom | https://hotelmonarch.ge/wp-content/uploads/2018/09/Standard-Room-10-scaled.jpg | `hotel-monarch-5.webp` | 1600x1067, 123 KB |
+
+Added in the preceding change (8-day tour pass), recorded here for completeness:
+
+| Hotel | Category | Source URL (official site) | Local file |
+|---|---|---|---|
+| Gudauri Inn | exterior | https://gudauriinn.org/ | `gudauri-inn-5.webp` |
+| Gudauri Inn | bathroom | https://gudauriinn.org/ | `gudauri-inn-6.webp` |
+| Marco Polo | bathroom | https://marcopolo.ge/ | `marco-polo-5.webp` |
+
+### Retired from the core sets
+
+Still on disk, no longer referenced by any record:
+
+| File | Hotel | Why |
+|---|---|---|
+| `gudauri-lodge.webp` | Gudauri Lodge | Building was a dark sliver against the mountain; replaced by a clear exterior. |
+| `marco-polo-4.webp` | Marco Polo | An outdoor pool, held in the record as the "guest room"; a real room now fills that slot. |
+| `gudauri-inn-3.webp`, `gudauri-inn-4.webp` | Gudauri Inn | Third and fourth near-identical twin-room frames. |
+| `hotel-monarch-4.jpg` | Hotel Monarch | Staged glamour shot of a model in a bathtub, not a usable guest-bathroom photograph. |
+
+### Still outstanding — NEEDS SOURCE / RIGHTS APPROVAL
+
+Judged by looking at every photograph, not at filenames or alt text. Nothing was
+substituted from a banned source (OTA, Google, Pinterest, social) to fill these.
+
+| Hotel | Tours | Missing / weak category | Why it is still open |
+|---|---|---|---|
+| Bakuriani Inn | 1 | exterior, lobby, standard room, bathroom | bakurianiinn.org is behind a Cloudflare challenge that blocks automated access; no other official source found |
+| Communal Hotel Telavi | 1 | all four | already in the missing-image report above; no images anywhere in the project |
+| Boutique Hotel Kviria | 1 | all four | as above |
+| Seventeen Rooms | 1 | all four | as above — no official site, OTA listings only |
+| Villa Lapa | 1 | all four | as above |
+| Chateau Orberi | 1 | all four | as above — no official site, OTA listings only |
+| Kokhta Bakuriani | 1 | bathroom | the operator publishes no guest-bathroom photograph (whole media library checked) |
+| Crystal Hotel & Spa | 1 | bathroom | hotelcrystal.ge publishes no guest-bathroom photograph; the only candidate is a toiletries close-up |
+| Gudauri Lodge | 3 | bathroom | gudaurilodge.com publishes no guest-bathroom photograph |
+| Rooms Hotel Kazbegi | 11 | bathroom (currently a fireplace lounge) | the only bathroom frame on roomshotels.com is an extreme crop of a bathtub foot |
+| Hotel West Way | 14 | standard room (currently a second lobby shot) | no official website; OTA listings only |
+| Boutique Hotel Argo | 13 | standard room is model-dominated; bathroom is a dinner table | no official website; hotelargo.ge is a different property in Tskaltubo |
+| Ginger Hotel | 15 | lobby (currently a meeting room) | no official website found |
+| Sandali Metekhi By Old Hospitality | 1 | exterior (currently a MICHELIN plaque); bathroom (currently a balcony) | no official website found |
+| Hotel & Wine Cellar ARGE | 8 | exterior | no official website found |
+| Ambassadori | 1 | bathroom (currently a suite lounge) | no official website found |
+| Boutique Hotel 32 | 8 | exterior (currently a signboard); lobby (currently a sea view) | no official website found |
+| Tsinandali Estate, A Radisson Collection Hotel | 6 | standard room (currently a pool terrace) | not yet sourced from the Radisson brand site |
+| Park Hotel Tsinandali | 6 | lobby | no official website found; order corrected so the pool no longer leads |
+| Akhaltsikhe Inn (Junior Suite Room) | 2 | bathroom (currently a changing room) | no official website found |
+| Hotel Gino Wellness Rabati | 2 | bathroom (currently a second room) | no official website found |
+| Hotel Beni | 2 | lobby (garden steps); bathroom (second room) | no official website found |
+| Crowne Plaza Borjomi | 1 | exterior is a distant aerial in which the hotel is very small | not yet sourced from the IHG brand site |
+| Boutique Hotel Borjomi Verde | 1 | lobby (currently a terrace) | no official website found |
+| Lileo Inn | 4 | lobby | no official website found; order corrected so the bathroom no longer leads |
+| Rooms Hotel | 8 | lobby frame is very dark | usable, but a brighter common-area frame would be better |
+
+**26 hotels still have at least one gap.** Every one of them is clickable, has a
+description in all seven languages, and has correct alt text for the photographs it
+does hold — the gap is the photograph itself.
