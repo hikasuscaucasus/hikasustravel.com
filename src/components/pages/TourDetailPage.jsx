@@ -180,6 +180,14 @@ export default function TourDetailPage() {
       })
     })()
 
+    // A route map whose ImageObject is authored per locale (name/description in
+    // the page's own language, plus `inLanguage`). `enRouteMapImage` below is the
+    // older English-only form; a tour uses one or the other, never both. Opt-in,
+    // so every tour without the key keeps exactly the graph it had.
+    const routeMapNode = tour.routeMapImage
+      ? (tour.routeMapImage[lang] || tour.routeMapImage.en)
+      : null
+
     let finalJsonLd
     if (lang === 'en' && tour.enTouristTrip) {
       const stripCtx = (node) => { const rest = { ...node }; delete rest['@context']; return rest }
@@ -187,6 +195,7 @@ export default function TourDetailPage() {
         tour.enTouristTrip,
         ...(tour.enBreadcrumb ? [tour.enBreadcrumb] : []),
         ...(tour.enRouteMapImage ? [tour.enRouteMapImage] : []),
+        ...(routeMapNode ? [routeMapNode] : []),
         ...(heroImageObject ? [heroImageObject] : []),
         ...packagedImages,
         ...(faqNode ? [faqNode] : []),
@@ -194,6 +203,7 @@ export default function TourDetailPage() {
       finalJsonLd = { '@context': 'https://schema.org', '@graph': nodes.map(stripCtx) }
     } else {
       const extra = [
+        ...(routeMapNode ? [routeMapNode] : []),
         ...(heroImageObject ? [heroImageObject] : []),
         ...packagedImages,
         ...(faqNode ? [faqNode] : []),

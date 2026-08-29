@@ -11941,7 +11941,173 @@ export const tours = [
         "content": "<p>The main transfer days are approximately four hours from Kutaisi to Gudauri, four and a half hours from Gudauri to Bakuriani, and three hours from Bakuriani back to Kutaisi International Airport. Winter road and weather conditions can affect journey times, so departure transfers should always allow additional margin.</p>"
       }
     ],
+    "routeMapImage": {
+      "en": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/11-day-winter-ski-tour-from-kutaisi/route-map-11-day-winter-ski-tour-from-kutaisi-1080.webp",
+        "url": "https://www.hikasustravel.com/images/tours/11-day-winter-ski-tour-from-kutaisi/route-map-11-day-winter-ski-tour-from-kutaisi-1080.webp",
+        "width": 1080,
+        "height": 1350,
+        "encodingFormat": "image/webp",
+        "name": "11-Day Winter Ski Tour from Kutaisi — Route Map",
+        "description": "Route map of the 11-Day Winter Ski Tour from Kutaisi, showing the loop from Kutaisi to Gudauri, on to Bakuriani, and back to Kutaisi.",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel LTD"
+        },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/en/terms-and-conditions",
+        "inLanguage": "en"
+      },
+      "de": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/11-day-winter-ski-tour-from-kutaisi/route-map-11-day-winter-ski-tour-from-kutaisi-1080.webp",
+        "url": "https://www.hikasustravel.com/images/tours/11-day-winter-ski-tour-from-kutaisi/route-map-11-day-winter-ski-tour-from-kutaisi-1080.webp",
+        "width": 1080,
+        "height": 1350,
+        "encodingFormat": "image/webp",
+        "name": "11-tägige Winter-Skitour ab Kutaissi — Streckenkarte",
+        "description": "Streckenkarte der 11-tägigen Winter-Skireise ab Kutaissi, von Kutaissi nach Gudauri, weiter nach Bakuriani und zurück nach Kutaissi.",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel LTD"
+        },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/de/terms-and-conditions",
+        "inLanguage": "de"
+      },
+      "fr": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/11-day-winter-ski-tour-from-kutaisi/route-map-11-day-winter-ski-tour-from-kutaisi-1080.webp",
+        "url": "https://www.hikasustravel.com/images/tours/11-day-winter-ski-tour-from-kutaisi/route-map-11-day-winter-ski-tour-from-kutaisi-1080.webp",
+        "width": 1080,
+        "height": 1350,
+        "encodingFormat": "image/webp",
+        "name": "Séjour ski de 11 jours depuis Koutaïssi — Carte de l'itinéraire",
+        "description": "Carte de l'itinéraire du circuit de ski d'hiver de 11 jours au départ de Koutaïssi, de Koutaïssi à Goudaouri, puis Bakouriani, et retour à Koutaïssi.",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel LTD"
+        },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/fr/terms-and-conditions",
+        "inLanguage": "fr"
+      },
+      "es": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/11-day-winter-ski-tour-from-kutaisi/route-map-11-day-winter-ski-tour-from-kutaisi-1080.webp",
+        "url": "https://www.hikasustravel.com/images/tours/11-day-winter-ski-tour-from-kutaisi/route-map-11-day-winter-ski-tour-from-kutaisi-1080.webp",
+        "width": 1080,
+        "height": 1350,
+        "encodingFormat": "image/webp",
+        "name": "Tour de esquí de 11 días desde Kutaisi — Mapa de la ruta",
+        "description": "Mapa de la ruta del tour de esquí de invierno de 11 días desde Kutaisi, con el recorrido de Kutaisi a Gudauri, después a Bakuriani y de vuelta a Kutaisi.",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel LTD"
+        },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/es/terms-and-conditions",
+        "inLanguage": "es"
+      },
+      "nl": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/11-day-winter-ski-tour-from-kutaisi/route-map-11-day-winter-ski-tour-from-kutaisi-1080.webp",
+        "url": "https://www.hikasustravel.com/images/tours/11-day-winter-ski-tour-from-kutaisi/route-map-11-day-winter-ski-tour-from-kutaisi-1080.webp",
+        "width": 1080,
+        "height": 1350,
+        "encodingFormat": "image/webp",
+        "name": "11-daagse winterskireis vanuit Kutaisi — Routekaart",
+        "description": "Routekaart van de 11-daagse winterse skireis vanuit Koetaisi, van Koetaisi naar Gudauri, daarna Bakuriani en terug naar Koetaisi.",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel LTD"
+        },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/nl/terms-and-conditions",
+        "inLanguage": "nl"
+      },
+      "cs": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/11-day-winter-ski-tour-from-kutaisi/route-map-11-day-winter-ski-tour-from-kutaisi-1080.webp",
+        "url": "https://www.hikasustravel.com/images/tours/11-day-winter-ski-tour-from-kutaisi/route-map-11-day-winter-ski-tour-from-kutaisi-1080.webp",
+        "width": 1080,
+        "height": 1350,
+        "encodingFormat": "image/webp",
+        "name": "11denní zimní lyžařský zájezd z Kutaisi — Mapa trasy",
+        "description": "Mapa trasy 11denního zimního lyžařského zájezdu z Kutaisi: z Kutaisi do Gudauri, poté do Bakuriani a zpět do Kutaisi.",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel LTD"
+        },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/cs/terms-and-conditions",
+        "inLanguage": "cs"
+      },
+      "pl": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/11-day-winter-ski-tour-from-kutaisi/route-map-11-day-winter-ski-tour-from-kutaisi-1080.webp",
+        "url": "https://www.hikasustravel.com/images/tours/11-day-winter-ski-tour-from-kutaisi/route-map-11-day-winter-ski-tour-from-kutaisi-1080.webp",
+        "width": 1080,
+        "height": 1350,
+        "encodingFormat": "image/webp",
+        "name": "11-dniowy zimowy tour narciarski z Kutaisi — Mapa trasy",
+        "description": "Mapa trasy 11-dniowej zimowej wycieczki narciarskiej z Kutaisi: z Kutaisi do Gudauri, następnie do Bakuriani i z powrotem do Kutaisi.",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel LTD"
+        },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/pl/terms-and-conditions",
+        "inLanguage": "pl"
+      }
+    },
     "gallery": [
+      {
+        "src": "/images/tours/11-day-winter-ski-tour-from-kutaisi/route-map-11-day-winter-ski-tour-from-kutaisi-1080.webp",
+        "base": "/images/tours/11-day-winter-ski-tour-from-kutaisi/route-map-11-day-winter-ski-tour-from-kutaisi",
+        "widths": [
+          768,
+          1080
+        ],
+        "fallbackWidth": 1080,
+        "width": 1080,
+        "height": 1350,
+        "caption": {
+          "en": "11-Day Winter Ski Tour from Kutaisi — Route Map",
+          "de": "11-tägige Winter-Skitour ab Kutaissi — Streckenkarte",
+          "fr": "Séjour ski de 11 jours depuis Koutaïssi — Carte de l'itinéraire",
+          "es": "Tour de esquí de 11 días desde Kutaisi — Mapa de la ruta",
+          "nl": "11-daagse winterskireis vanuit Kutaisi — Routekaart",
+          "cs": "11denní zimní lyžařský zájezd z Kutaisi — Mapa trasy",
+          "pl": "11-dniowy zimowy tour narciarski z Kutaisi — Mapa trasy"
+        },
+        "alt": {
+          "en": "Kutaisi to Gudauri on day 2, Gudauri to Bakuriani on day 7, Bakuriani to Kutaisi on day 11. Four ski days in Gudauri, three in Bakuriani.",
+          "es": "De Kutaisi a Gudauri el día 2, de Gudauri a Bakuriani el día 7 y de Bakuriani a Kutaisi el día 11. Cuatro días de esquí en Gudauri y tres en Bakuriani.",
+          "fr": "De Koutaïssi à Goudaouri le jour 2, de Goudaouri à Bakouriani le jour 7, de Bakouriani à Koutaïssi le jour 11. Quatre jours de ski à Goudaouri, trois à Bakouriani.",
+          "de": "Von Kutaissi nach Gudauri an Tag 2, von Gudauri nach Bakuriani an Tag 7, von Bakuriani nach Kutaissi an Tag 11. Vier Skitage in Gudauri, drei in Bakuriani.",
+          "pl": "Z Kutaisi do Gudauri drugiego dnia, z Gudauri do Bakuriani siódmego, z Bakuriani do Kutaisi jedenastego. Cztery dni na nartach w Gudauri, trzy w Bakuriani.",
+          "cs": "Z Kutaisi do Gudauri druhý den, z Gudauri do Bakuriani sedmý, z Bakuriani do Kutaisi jedenáctý. Čtyři dny na lyžích v Gudauri, tři v Bakuriani.",
+          "nl": "Van Koetaisi naar Gudauri op dag 2, van Gudauri naar Bakuriani op dag 7, van Bakuriani naar Koetaisi op dag 11. Vier skidagen in Gudauri, drie in Bakuriani."
+        },
+        "altText": {
+          "en": "Route map of the 11-Day Winter Ski Tour from Kutaisi, showing the loop from Kutaisi to Gudauri, on to Bakuriani, and back to Kutaisi.",
+          "es": "Mapa de la ruta del tour de esquí de invierno de 11 días desde Kutaisi, con el recorrido de Kutaisi a Gudauri, después a Bakuriani y de vuelta a Kutaisi.",
+          "fr": "Carte de l'itinéraire du circuit de ski d'hiver de 11 jours au départ de Koutaïssi, de Koutaïssi à Goudaouri, puis Bakouriani, et retour à Koutaïssi.",
+          "de": "Streckenkarte der 11-tägigen Winter-Skireise ab Kutaissi, von Kutaissi nach Gudauri, weiter nach Bakuriani und zurück nach Kutaissi.",
+          "pl": "Mapa trasy 11-dniowej zimowej wycieczki narciarskiej z Kutaisi: z Kutaisi do Gudauri, następnie do Bakuriani i z powrotem do Kutaisi.",
+          "cs": "Mapa trasy 11denního zimního lyžařského zájezdu z Kutaisi: z Kutaisi do Gudauri, poté do Bakuriani a zpět do Kutaisi.",
+          "nl": "Routekaart van de 11-daagse winterse skireis vanuit Koetaisi, van Koetaisi naar Gudauri, daarna Bakuriani en terug naar Koetaisi."
+        }
+      },
       {
         "src": "/images/files/gudauri-ski-view-1448.webp",
         "caption": {
