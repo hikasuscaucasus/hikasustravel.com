@@ -295,14 +295,11 @@ export default function TourDetailPage() {
     ? (tour.pricePerPerson ? parseFloat(tour.pricePerPerson.replace(/[^0-9.]/g, '')) : null)
     : getStartingPrice(tour.pricing)
 
-  // Tour highlights for the overview: the tour's own `highlights` list
-  // (translated or base) and nothing else. There used to be a fallback to the
-  // first 4 `included` items, which just repeated the top of "What's Included"
-  // a few sections further down — generic service lines (accommodation,
-  // transfers, entrance fees, still water) rather than anything specific to the
-  // route. Tours without real highlights now render no block at all; the
-  // included list itself is untouched and still renders in its own section.
-  const highlightItems = tt?.highlights || tour.highlights || []
+  // The icon list of tour highlights that used to sit between the Overview
+  // paragraphs and the Itinerary is no longer rendered. The `highlights` arrays
+  // stay in tours.js and in the locale files — nothing else in the project
+  // reads them, but they are the authored copy and removing the rendering is
+  // what was asked for. Overview now runs straight into Itinerary.
 
   return (
     <>
@@ -348,19 +345,6 @@ export default function TourDetailPage() {
               {(tt?.description || tour.description || '').split(/\n{2,}/).map((para, i) => (
                 <p key={i} className="td-overview__text">{autolinkNodes(para, lang, pages)}</p>
               ))}
-
-              {highlightItems.length > 0 && (
-                <div className="td-overview__highlights">
-                  {highlightItems.map((item, i) => (
-                    <div key={i} className="td-overview__highlight">
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4caf50" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                        <polyline points="20 6 9 17 4 12"/>
-                      </svg>
-                      <span>{autolinkNodes(item.replace(/;$/, ''), lang, pages)}</span>
-                    </div>
-                  ))}
-                </div>
-              )}
             </FadeUp>
           </section>
 

@@ -6190,30 +6190,6 @@ tour-info h2 a,
   box-shadow: 0 6px 20px rgba(255, 255, 255, 0.15);
 }
 
-/* Overview Highlights */
-.td-overview__highlights {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px 24px;
-  margin-top: calc(var(--indent) * 1.2);
-  max-width: 720px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.td-overview__highlight {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  font-size: 0.92em;
-  line-height: 1.6;
-  color: #444;
-}
-.td-overview__highlight svg {
-  flex-shrink: 0;
-  margin-top: 3px;
-}
-
-
 /* Pricing Cards */
 .td-price-cards {
   display: grid;
@@ -8166,9 +8142,6 @@ select option:checked {
   .td-hero__actions {
     flex-direction: column;
     align-items: center;
-  }
-  .td-overview__highlights {
-    grid-template-columns: 1fr;
   }
   .td-benefits__grid {
     grid-template-columns: 1fr;
