@@ -4514,13 +4514,6 @@ export const tours = [
       "From €415 per person",
       "Customizable route"
     ],
-    "rightForYou": [
-      "Skiers who want a relaxed, well-organized ski week with transfers and hotels handled, then ski at their own pace rather than follow a rigid program",
-      "Beginners (gentle slopes and affordable instructors), intermediates and confident skiers (long, varied runs)",
-      "Freeriders and off-piste skiers (open, above-the-tree-line terrain and heli-skiing in season)",
-      "Couples, friends and small groups who want a private, flexible trip",
-      "Less suited to travelers looking for a packed sightseeing itinerary — the days are deliberately free for skiing and mountain time rather than guided touring"
-    ],
     "faq": [
       {
         "title": "Where is Gudauri, and how do I get there from Tbilisi?",
@@ -4792,7 +4785,7 @@ export const tours = [
     ],
     "included": [
       "Accommodation in double/twin rooms, with breakfast included;",
-      "All transfers as per the itinerary by comfortable vehicle (airport and Tbilisi–Gudauri–airport)."
+      "All transfers as per the itinerary by comfortable vehicle."
     ],
     "notIncluded": [
       "Lunches and dinners;",
