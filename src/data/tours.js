@@ -11922,14 +11922,6 @@ export const tours = [
       "From €745 per person",
       "Customizable route"
     ],
-    "rightForYou": [
-      "Skiers and snowboarders who want maximum mountain time rather than a sightseeing itinerary",
-      "Travelers who want to experience two different Georgian ski resorts in one trip",
-      "Confident skiers and freeriders who will appreciate Gudauri's high, open terrain",
-      "Beginners, families and relaxed skiers who will appreciate Bakuriani's gentler forested runs",
-      "Couples, families, friends and small private groups who want flexible ski days rather than a fixed daily programme",
-      "Less suited to travelers expecting ski passes, equipment, lessons or meals to be bundled into the package"
-    ],
     "faq": [
       {
         "title": "How many ski days are included in the 11-day tour?",
@@ -12258,12 +12250,12 @@ export const tours = [
         "city": "Gudauri (5 nights)",
         "luxury": "Gudauri Lodge",
         "midRange": "Marco Polo",
-        "economy": "Gudauri Inn (not ski in/ski out)"
+        "economy": "Gudauri Inn"
       },
       {
         "city": "Bakuriani (4 nights)",
         "luxury": "Kokhta Bakuriani",
-        "midRange": "On request",
+        "midRange": "Crystal Hotel & Spa",
         "economy": "Bakuriani Inn"
       }
     ],

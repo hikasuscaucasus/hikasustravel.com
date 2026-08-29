@@ -787,6 +787,45 @@ const hotelData = {
       'Near the Ikalto Monastery & Academy',
     ],
   },
+  // The three Bakuriani hotels on the 11-day winter ski tour. Facts come from
+  // each hotel's own site (silkhospitality.com/kokhta-bakuriani, hotelcrystal.ge).
+  // Bakuriani Inn's site sits behind a Cloudflare bot check that neither curl
+  // nor a headless browser can pass, so its record claims only what we can
+  // stand behind — no stars, amenities or location highlights.
+  'Kokhta Bakuriani': {
+    images: [],
+    stars: 5,
+    description: 'A five-star hotel by the Kokhta slopes in Bakuriani, part of the Silk Hospitality group, built in natural materials that sit easily against the surrounding forest and ridges. It has 92 rooms across standard, superior, deluxe and suite categories, a full-service restaurant and bar with in-room dining, and a guests-only fitness center open around the clock two floors above the rooms. An entertainment zone adds indoor ice skating and a children’s indoor playground for days off the slopes.',
+    amenities: [
+      { icon: 'restaurant', label: 'Restaurant & Bar' },
+      { icon: 'gym', label: 'Fitness Center' },
+      { icon: 'concierge', label: 'In-Room Dining' },
+    ],
+    locationHighlights: [
+      'By the Kokhta / Kokhta-Mitarbi ski zone',
+      'Indoor ice rink & children’s playground',
+      'Meeting and event rooms on site',
+    ],
+  },
+  'Crystal Hotel & Spa': {
+    images: [],
+    stars: 5,
+    description: 'A five-star hotel in Bakuriani, 185 km from Tbilisi and a few minutes from the Didveli ski lift. It forms part of the Crystal Resort complex, which brings gondola and chairlift systems, 12 km of snowmaking-equipped slopes with night skiing, a 1,500-metre toboggan run, an ice rink, ski rental and instructors together in one place. The hotel itself has an indoor swimming pool and spa, with cafes, restaurants and bars across the resort.',
+    amenities: [
+      { icon: 'pool', label: 'Indoor Pool' },
+      { icon: 'spa', label: 'Spa & Wellness' },
+      { icon: 'restaurant', label: 'Restaurants & Bars' },
+    ],
+    locationHighlights: [
+      'Minutes from the Didveli ski lift',
+      'Part of the Crystal Resort complex',
+      '1,500 m toboggan run & ice rink',
+    ],
+  },
+  'Bakuriani Inn': {
+    images: [],
+    description: 'The classic-tier base for the Bakuriani nights of our winter ski tour, in the pine-forested ski town on the northern slope of the Trialeti Range.',
+  },
 }
 
 // Retired spellings that map onto a canonical entry. Nothing in tours.js uses
