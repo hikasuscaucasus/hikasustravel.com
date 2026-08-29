@@ -100,7 +100,7 @@ export const tours = [
     ],
     "pricing": [],
     "included": [
-      "Accommodation in double or twin rooms, with breakfast included;",
+      "Accommodation in double/twin rooms, with breakfast included;",
       "Transfers as per itinerary by comfortable, air-conditioned vehicle throughout the tour;",
       "Guide service;",
       "Entrance fees as per itinerary;",
@@ -1553,7 +1553,7 @@ export const tours = [
       }
     ],
     "included": [
-      "Accommodation based on double/twin room sharing, with breakfast included;",
+      "Accommodation in double/twin rooms, with breakfast included;",
       "Transfers as per the itinerary;",
       "Entrance tickets;",
       "Guide service;",
@@ -1981,7 +1981,7 @@ export const tours = [
       }
     ],
     "included": [
-      "Accommodation based on double/twin room sharing, with breakfast included;",
+      "Accommodation in double/twin rooms, with breakfast included;",
       "Transfers as per the itinerary;",
       "Batumi–Tbilisi train tickets;",
       "All activities and entrance fees as per the itinerary;",
@@ -2573,7 +2573,7 @@ export const tours = [
       }
     ],
     "included": [
-      "Accommodation in double or twin rooms, with breakfast included;",
+      "Accommodation in double/twin rooms, with breakfast included;",
       "Transfers as per the itinerary in a comfortable, air-conditioned vehicle, with an English-speaking guide driver;",
       "Entrance fees as per itinerary;",
       "Still water;",
@@ -3128,7 +3128,7 @@ export const tours = [
       }
     ],
     "included": [
-      "Accommodation in double or twin rooms, with breakfast included;",
+      "Accommodation in double/twin rooms, with breakfast included;",
       "Transfers as per the itinerary in a comfortable, air-conditioned vehicle, with an English-speaking guide driver;",
       "Entrance fees as per itinerary;",
       "Still water;",
@@ -3630,7 +3630,7 @@ export const tours = [
       }
     ],
     "included": [
-      "Accommodation in double or twin rooms, with breakfast included;",
+      "Accommodation in double/twin rooms, with breakfast included;",
       "Transfers as per the itinerary in a comfortable, air-conditioned vehicle, with an English-speaking guide driver;",
       "Entrance fees as per itinerary;",
       "Still water;",
@@ -4791,7 +4791,7 @@ export const tours = [
       }
     ],
     "included": [
-      "Six nights' accommodation (1 in Tbilisi, 5 in Gudauri), double/twin room sharing, with breakfast;",
+      "Accommodation in double/twin rooms, with breakfast included;",
       "All transfers as per the itinerary by comfortable vehicle (airport and Tbilisi–Gudauri–airport)."
     ],
     "notIncluded": [
@@ -4903,7 +4903,7 @@ export const tours = [
       }
     ],
     "included": [
-      "Accommodation in double or twin rooms, with breakfast included;",
+      "Accommodation in double/twin rooms, with breakfast included;",
       "Transfers as per the itinerary in a comfortable, air-conditioned vehicle, with an English-speaking guide driver;",
       "Entrance fees as per itinerary;",
       "Still water;",
@@ -6081,7 +6081,7 @@ export const tours = [
       }
     ],
     "included": [
-      "Accommodation in double or twin rooms, with breakfast included;",
+      "Accommodation in double/twin rooms, with breakfast included;",
       "Transfers as per the itinerary in a comfortable, air-conditioned vehicle, with an English-speaking guide driver;",
       "Entrance fees as per itinerary;",
       "Still water;",
@@ -6745,7 +6745,7 @@ export const tours = [
       }
     ],
     "included": [
-      "Accommodation in double or twin rooms, with breakfast included;",
+      "Accommodation in double/twin rooms, with breakfast included;",
       "Transfers as per the itinerary in a comfortable, air-conditioned vehicle, with an English-speaking guide driver;",
       "Entrance fees as per itinerary;",
       "Still water;",
@@ -7670,7 +7670,7 @@ export const tours = [
       }
     ],
     "included": [
-      "Accommodation in double or twin rooms, with breakfast included;",
+      "Accommodation in double/twin rooms, with breakfast included;",
       "Transfers as per the itinerary in a comfortable, air-conditioned vehicle, with an English-speaking guide driver;",
       "Entrance fees as per itinerary;",
       "Still water."
@@ -8814,7 +8814,7 @@ export const tours = [
       }
     ],
     "included": [
-      "Accommodation in double or twin rooms, with breakfast included;",
+      "Accommodation in double/twin rooms, with breakfast included;",
       "Transfers as per the itinerary in a comfortable, air-conditioned vehicle, with an English-speaking guide driver;",
       "Entrance fees as per itinerary;",
       "Still water;",
@@ -9861,7 +9861,7 @@ export const tours = [
       }
     ],
     "included": [
-      "Accommodation in double or twin rooms, with breakfast included;",
+      "Accommodation in double/twin rooms, with breakfast included;",
       "Transfers as per the itinerary in a comfortable, air-conditioned vehicle, with an English-speaking guide driver;",
       "Entrance fees as per itinerary;",
       "Still water;",
@@ -11025,7 +11025,7 @@ export const tours = [
       }
     ],
     "included": [
-      "Accommodation in double or twin rooms, with breakfast included;",
+      "Accommodation in double/twin rooms, with breakfast included;",
       "Transfers as per the itinerary in a comfortable, air-conditioned vehicle, with an English-speaking guide driver;",
       "Entrance fees as per itinerary;",
       "Still water;",
@@ -12454,7 +12454,7 @@ export const tours = [
       }
     ],
     "included": [
-      "Accommodation in double or twin rooms, with breakfast included;",
+      "Accommodation in double/twin rooms, with breakfast included;",
       "Transfers as per the itinerary in a comfortable, air-conditioned vehicle, with an English-speaking guide driver;",
       "Entrance fees as per itinerary;",
       "Still water;",
@@ -13710,7 +13710,7 @@ export const tours = [
       }
     ],
     "included": [
-      "Accommodation in double or twin rooms, with breakfast included;",
+      "Accommodation in double/twin rooms, with breakfast included;",
       "Transfers as per the itinerary in a comfortable, air-conditioned vehicle, with an English-speaking guide driver;",
       "Entrance fees as per itinerary;",
       "Still water;",
@@ -14891,7 +14891,7 @@ export const tours = [
       }
     ],
     "included": [
-      "Accommodation in double or twin rooms, with breakfast included;",
+      "Accommodation in double/twin rooms, with breakfast included;",
       "Transfers as per the itinerary in a comfortable, air-conditioned vehicle, with an English-speaking guide driver;",
       "Entrance fees as per itinerary;",
       "Still water;",
@@ -16518,7 +16518,7 @@ export const tours = [
       }
     ],
     "included": [
-      "Accommodation in double or twin rooms, with breakfast included;",
+      "Accommodation in double/twin rooms, with breakfast included;",
       "Transfers as per the itinerary in a comfortable, air-conditioned vehicle, with an English-speaking guide driver;",
       "Entrance fees as per itinerary;",
       "Still water;",
