@@ -238,6 +238,8 @@ const hotelData = {
       { src: '/images/hotels/marco-polo-2.webp', alt: 'Marco Polo Hotel Gudauri indoor swimming pool with mountain views' },
       { src: '/images/hotels/marco-polo-3.webp', alt: 'Marco Polo Hotel Gudauri lobby lounge with sofas and staircase' },
       { src: '/images/hotels/marco-polo-4.webp', alt: 'Marco Polo Hotel Gudauri comfortable guest room' },
+      // Bathroom added from the hotel's own site (marcopolo.ge).
+      { src: '/images/hotels/marco-polo-5.webp', alt: 'Bathroom at Marco Polo Hotel Gudauri with freestanding bath and louvred shutters' },
     ],
     stars: 5,
     description: 'Gudauri\'s original ski hotel, welcoming guests since 1988 and still one of the resort\'s landmarks. Marco Polo sits slope-side at around 2,000 metres with ski-in, ski-out access, backed by a large spa and wellness center — indoor and outdoor pools, saunas and a hot tub — plus a bowling alley, padel courts and the Soliko restaurant serving Georgian and European cuisine. A lively, full-service base in the middle of the resort.',
@@ -261,6 +263,10 @@ const hotelData = {
       { src: '/images/hotels/gudauri-inn-2.webp', alt: 'Gudauri Inn comfortable double guest room' },
       { src: '/images/hotels/gudauri-inn-3.webp', alt: 'Gudauri Inn bright twin guest room' },
       { src: '/images/hotels/gudauri-inn-4.webp', alt: 'Gudauri Inn twin guest room with balcony and mountain views' },
+      // Exterior and bathroom added from the hotel's own site (gudauriinn.org)
+      // so the modal covers exterior / common area / room / bathroom.
+      { src: '/images/hotels/gudauri-inn-5.webp', alt: 'Exterior of Gudauri Inn at dusk below the snowy peaks in Gudauri, Georgia' },
+      { src: '/images/hotels/gudauri-inn-6.webp', alt: 'Bathroom at Gudauri Inn with walk-in shower and stone-tiled walls' },
     ],
     stars: 4,
     description: 'A comfortable, easy-going hotel in the heart of Gudauri at 2,200 metres, with a relaxed mountain atmosphere and wide views over the surrounding peaks. It has its own wellness center with an indoor pool, jacuzzi and sauna, a restaurant serving Georgian and international dishes, and a bar for local wines. Good value and welcoming, it makes a solid classic-tier base for a Gudauri ski trip.',

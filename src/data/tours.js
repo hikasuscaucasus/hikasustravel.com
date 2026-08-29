@@ -6619,6 +6619,386 @@ export const tours = [
     "tourFormTitle": "Immerse Yourself in Georgia: 8-Day Cultural and Adventure Journey Through the Caucasus"
   },
   {
+    "slug": "8-day-winter-ski-tour-from-kutaisi",
+    "type": "private",
+    "title": "8-Day Winter Ski Tour from Kutaisi",
+    "heroImage": "/images/files/gudauri-ski-resort-caucasus-georgia-1024.webp",
+    "ogImage": {
+      "src": "/images/files/gudauri-ski-resort-caucasus-georgia-og.jpg",
+      "width": 1200,
+      "height": 630
+    },
+    "imageMeta": {
+      "width": 1024,
+      "height": 1536,
+      "contentUrl": "/images/files/gudauri-ski-resort-caucasus-georgia-1024.webp",
+      "description": "The base area of Gudauri ski resort in the Greater Caucasus, with chairlifts rising to the open snow slopes above, Mtskheta-Mtianeti, Georgia.",
+      "locationName": "Gudauri",
+      "geo": {
+        "lat": 42.4772,
+        "lng": 44.4783
+      },
+      "alt": {
+        "en": "Chairlifts and open snow slopes above the base area of Gudauri ski resort, Georgia",
+        "de": "Sessellifte und offene Schneehänge über dem Talbereich des Skigebiets Gudauri, Georgien",
+        "fr": "Télésièges et pentes enneigées au-dessus du front de neige de la station de Gudauri, Géorgie",
+        "es": "Telesillas y laderas nevadas sobre la zona base de la estación de esquí de Gudauri, Georgia",
+        "nl": "Stoeltjesliften en open sneeuwhellingen boven het dalstation van skigebied Gudauri, Georgië",
+        "cs": "Sedačkové lanovky a otevřené zasněžené svahy nad dolní částí střediska Gudauri, Gruzie",
+        "pl": "Wyciągi krzesełkowe i otwarte ośnieżone stoki nad dolną częścią ośrodka Gudauri, Gruzja"
+      },
+      "caption": {
+        "en": "Chairlifts climbing from the base of Gudauri towards the open slopes above",
+        "de": "Sessellifte, die vom Talbereich Gudauris zu den offenen Hängen hinaufführen",
+        "fr": "Télésièges montant du bas de Gudauri vers les pentes ouvertes",
+        "es": "Telesillas que ascienden desde la base de Gudauri hacia las laderas abiertas",
+        "nl": "Stoeltjesliften die vanaf het dal van Gudauri naar de open hellingen klimmen",
+        "cs": "Sedačkové lanovky stoupající z dolní části Gudauri k otevřeným svahům",
+        "pl": "Wyciągi krzesełkowe wznoszące się od podnóża Gudauri ku otwartym stokom"
+      }
+    },
+    "tileImage": "/images/files/gudauri-ski-resort-caucasus-georgia-768.webp",
+    "listingImage": "/images/files/gudauri-ski-resort-caucasus-georgia-768.webp",
+    "days": 8,
+    "description": "Eight days, one mountain, and five days to ski it. This is a straightforward ski trip from Kutaisi — a night either side to travel, and everything in between spent at Gudauri, Georgia’s main resort high on the Caucasus ridge.\n\nYou transfer up from Kutaisi to Gudauri, at around 2,200 metres, and settle in for five nights on wide, treeless slopes served by modern lifts — long open runs for strong skiers, gentle terrain for beginners, and the off-piste bowls the resort is known for. There’s no sightseeing to break it up: just the mountain, at whatever pace suits you.\n\nMountain weather runs the show up here, so lift openings and conditions shape each day — the vehicle and pace are yours, and the ski days flex around whatever the snow gives.",
+    "listingDescription": "A private 8-day Gudauri ski holiday from Kutaisi with five nights in the mountains, four full ski days, hotels and transfers arranged.",
+    "heroH1": "8-Day Winter Ski Tour from Kutaisi",
+    "heroSubtitle": "A private eight-day ski holiday from Kutaisi — five nights at Gudauri on the Caucasus ridge, with four full free ski days and transfers and hotels arranged.",
+    "seoTitle": "8-Day Winter Ski Tour from Kutaisi",
+    "metaDescription": "Private 8-day Gudauri ski tour from Kutaisi with two nights in Kutaisi, five nights in Gudauri, four full ski days, breakfast and transfers arranged.",
+    "heroFacts": [
+      "8 days / 7 nights",
+      "Private tour",
+      "Starts & ends in Kutaisi",
+      "Main resort: Gudauri",
+      "Five nights in Gudauri",
+      "Two nights in Kutaisi",
+      "Hotels included",
+      "4 full free ski days",
+      "From €535 per person",
+      "Customizable route"
+    ],
+    "faq": [
+      {
+        "title": "How much skiing is included in the 8-day tour?",
+        "content": "<p>Days 3 to 6 are four full free ski days in Gudauri. Depending on your arrival time, lift operations, snow and weather conditions, there may also be time for a first run after arriving in Gudauri on day 2.</p>"
+      },
+      {
+        "title": "Is Gudauri suitable for beginners?",
+        "content": "<p>Yes. Gudauri has terrain for beginners as well as intermediate and experienced skiers. Lessons can be arranged locally if required, but lessons are not included in the tour price.</p>"
+      },
+      {
+        "title": "Are ski passes, equipment and lessons included?",
+        "content": "<p>No. Ski passes, ski or snowboard hire, lessons and personal winter equipment are not included. They can be arranged locally in Gudauri according to each traveler's needs.</p>"
+      },
+      {
+        "title": "Can experienced skiers go off-piste?",
+        "content": "<p>Gudauri is known for its open off-piste terrain above the tree line. Off-piste skiing should only be undertaken by appropriately experienced skiers with a qualified local guide and when snow, avalanche and weather conditions are suitable. Off-piste guiding is not included in the tour price.</p>"
+      },
+      {
+        "title": "What happens if the weather affects the ski lifts?",
+        "content": "<p>Mountain weather determines lift operations and skiing conditions. The ski days are deliberately flexible, so you can adapt your plans to the conditions during your stay.</p>"
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/images/files/gudauri-ski-view-1448.webp",
+        "caption": {
+          "en": "Ski Slopes, Gudauri",
+          "de": "Skipisten, Gudauri",
+          "fr": "Pistes de ski, Gudauri",
+          "es": "Pistas de esquí, Gudauri",
+          "nl": "Skipistes, Gudauri",
+          "cs": "Sjezdovky, Gudauri",
+          "pl": "Stoki narciarskie, Gudauri"
+        },
+        "altText": {
+          "en": "A skier at the top of Gudauri above a sea of cloud, snow-covered Caucasus peaks behind, Georgia",
+          "de": "Ein Skifahrer am Gipfel von Gudauri über einem Wolkenmeer, dahinter verschneite Kaukasusgipfel, Georgien",
+          "fr": "Un skieur au sommet de Gudauri au-dessus d'une mer de nuages, sommets enneigés du Caucase derrière, Géorgie",
+          "es": "Un esquiador en lo alto de Gudauri sobre un mar de nubes, con cumbres nevadas del Cáucaso detrás, Georgia",
+          "nl": "Een skiër boven op Gudauri boven een wolkenzee, met besneeuwde Kaukasustoppen erachter, Georgië",
+          "cs": "Lyžař na vrcholu Gudauri nad mořem oblaků, v pozadí zasněžené vrcholy Kavkazu, Gruzie",
+          "pl": "Narciarz na szczycie Gudauri nad morzem chmur, w tle ośnieżone szczyty Kaukazu, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/gudauri-ski-piste-1448.webp",
+        "caption": {
+          "en": "Ski Piste, Gudauri",
+          "de": "Skipiste, Gudauri",
+          "fr": "Piste de ski, Gudauri",
+          "es": "Pista de esquí, Gudauri",
+          "nl": "Skipiste, Gudauri",
+          "cs": "Sjezdovka, Gudauri",
+          "pl": "Stok narciarski, Gudauri"
+        },
+        "altText": {
+          "en": "A wide open ski piste and chairlift at Gudauri under a blue sky, distant Caucasus peaks, Georgia",
+          "de": "Eine weite Skipiste und ein Sessellift in Gudauri unter blauem Himmel, ferne Kaukasusgipfel, Georgien",
+          "fr": "Une large piste de ski et un télésiège à Gudauri sous un ciel bleu, sommets du Caucase au loin, Géorgie",
+          "es": "Una amplia pista de esquí y una telesilla en Gudauri bajo un cielo azul, con cumbres del Cáucaso al fondo, Georgia",
+          "nl": "Een brede skipiste en stoeltjeslift in Gudauri onder een blauwe hemel, Kaukasustoppen in de verte, Georgië",
+          "cs": "Široká sjezdovka a sedačková lanovka v Gudauri pod modrou oblohou, v dálce vrcholy Kavkazu, Gruzie",
+          "pl": "Szeroki stok narciarski i wyciąg krzesełkowy w Gudauri pod błękitnym niebem, w oddali szczyty Kaukazu, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/gudauri-ski-lift-1448.webp",
+        "caption": {
+          "en": "Ski Lift, Gudauri",
+          "de": "Skilift, Gudauri",
+          "fr": "Remontée mécanique, Gudauri",
+          "es": "Telesilla, Gudauri",
+          "nl": "Skilift, Gudauri",
+          "cs": "Lyžařský vlek, Gudauri",
+          "pl": "Wyciąg narciarski, Gudauri"
+        },
+        "altText": {
+          "en": "Skiers and snowboarders at a Gudauri lift top station above the clouds, Greater Caucasus, Georgia",
+          "de": "Skifahrer und Snowboarder an einer Bergstation in Gudauri über den Wolken, Großer Kaukasus, Georgien",
+          "fr": "Skieurs et snowboardeurs à la gare d'arrivée d'un téléski à Gudauri au-dessus des nuages, Grand Caucase, Géorgie",
+          "es": "Esquiadores y practicantes de snowboard en la estación superior de un remonte de Gudauri sobre las nubes, Gran Cáucaso, Georgia",
+          "nl": "Skiërs en snowboarders bij een bergstation in Gudauri boven de wolken, Grote Kaukasus, Georgië",
+          "cs": "Lyžaři a snowboardisté u horní stanice vleku v Gudauri nad oblaky, Velký Kavkaz, Gruzie",
+          "pl": "Narciarze i snowboardziści przy górnej stacji wyciągu w Gudauri nad chmurami, Wielki Kaukaz, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/gudauri-ski-slopes-caucasus-georgia-1448.webp",
+        "caption": {
+          "en": "Open Slopes, Gudauri",
+          "de": "Offene Hänge, Gudauri",
+          "fr": "Pentes ouvertes, Gudauri",
+          "es": "Laderas abiertas, Gudauri",
+          "nl": "Open hellingen, Gudauri",
+          "cs": "Otevřené svahy, Gudauri",
+          "pl": "Otwarte stoki, Gudauri"
+        },
+        "altText": {
+          "en": "Open treeless ski slopes and chairlifts under snow-covered peaks at Gudauri ski resort, Greater Caucasus, Georgia",
+          "de": "Offene, baumfreie Skihänge und Sessellifte unter verschneiten Gipfeln im Skigebiet Gudauri, Großer Kaukasus, Georgien",
+          "fr": "Pistes de ski ouvertes et sans arbres et télésièges sous des sommets enneigés à la station de Gudauri, Grand Caucase, Géorgie",
+          "es": "Laderas de esquí abiertas y sin árboles y telesillas bajo cumbres nevadas en la estación de Gudauri, Gran Cáucaso, Georgia",
+          "nl": "Open, boomloze skihellingen en stoeltjesliften onder besneeuwde toppen in skigebied Gudauri, Grote Kaukasus, Georgië",
+          "cs": "Otevřené bezlesé sjezdovky a sedačkové lanovky pod zasněženými vrcholy ve středisku Gudauri, Velký Kavkaz, Gruzie",
+          "pl": "Otwarte, bezleśne stoki i wyciągi krzesełkowe pod ośnieżonymi szczytami w ośrodku Gudauri, Wielki Kaukaz, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/gudauri-panorama-friendship-monument-georgia-1448.webp",
+        "caption": {
+          "en": "Mountain Views, Gudauri",
+          "de": "Bergblick, Gudauri",
+          "fr": "Vue sur les montagnes, Gudauri",
+          "es": "Vistas de montaña, Gudauri",
+          "nl": "Bergzicht, Gudauri",
+          "cs": "Výhledy na hory, Gudauri",
+          "pl": "Widoki na góry, Gudauri"
+        },
+        "altText": {
+          "en": "Panorama over the Greater Caucasus from the viewpoint above Gudauri on the Georgian Military Highway, Georgia",
+          "de": "Panorama über den Großen Kaukasus vom Aussichtspunkt oberhalb von Gudauri an der Georgischen Heerstraße, Georgien",
+          "fr": "Panorama sur le Grand Caucase depuis le belvédère au-dessus de Gudauri, sur la route militaire géorgienne, Géorgie",
+          "es": "Panorama del Gran Cáucaso desde el mirador sobre Gudauri, en la Carretera Militar Georgiana, Georgia",
+          "nl": "Panorama over de Grote Kaukasus vanaf het uitzichtpunt boven Gudauri aan de Georgische Militaire Weg, Georgië",
+          "cs": "Panorama Velkého Kavkazu z vyhlídky nad Gudauri na Gruzínské vojenské cestě, Gruzie",
+          "pl": "Panorama Wielkiego Kaukazu z punktu widokowego nad Gudauri przy Gruzińskiej Drodze Wojennej, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/devils-valley-view-gudauri-georgia-1024.webp",
+        "caption": {
+          "en": "Devil’s Valley, Gudauri",
+          "de": "Teufelstal, Gudauri",
+          "fr": "Vallée du Diable, Gudauri",
+          "es": "Valle del Diablo, Gudauri",
+          "nl": "Duivelsvallei, Gudauri",
+          "cs": "Ďáblovo údolí, Gudauri",
+          "pl": "Diabelska Dolina, Gudauri"
+        },
+        "altText": {
+          "en": "The Devil's Valley gorge below the Georgian Military Highway near Gudauri, Greater Caucasus, Georgia",
+          "de": "Die Schlucht des Teufelstals unterhalb der Georgischen Heerstraße bei Gudauri, Großer Kaukasus, Georgien",
+          "fr": "Les gorges de la Vallée du Diable en contrebas de la route militaire géorgienne près de Gudauri, Grand Caucase, Géorgie",
+          "es": "El desfiladero del Valle del Diablo bajo la Carretera Militar Georgiana cerca de Gudauri, Gran Cáucaso, Georgia",
+          "nl": "De kloof van de Duivelsvallei onder de Georgische Militaire Weg bij Gudauri, Grote Kaukasus, Georgië",
+          "cs": "Soutěska Ďáblova údolí pod Gruzínskou vojenskou cestou u Gudauri, Velký Kavkaz, Gruzie",
+          "pl": "Wąwóz Diabelskiej Doliny poniżej Gruzińskiej Drogi Wojennej koło Gudauri, Wielki Kaukaz, Gruzja"
+        }
+      }
+    ],
+    "enTouristTrip": {
+      "@context": "https://schema.org",
+      "@type": "TouristTrip",
+      "name": "8-Day Winter Ski Tour from Kutaisi",
+      "description": "A private eight-day ski holiday from Kutaisi to Gudauri, Georgia's largest ski resort in the Greater Caucasus, with five nights at the resort, four full free ski days, and transfers and hotels included.",
+      "url": "https://www.hikasustravel.com/en/private-tours/8-day-winter-ski-tour-from-kutaisi/",
+      "touristType": [
+        "Ski tourism",
+        "Winter sports",
+        "Adventure tourism"
+      ],
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "Hikasus Travel",
+        "url": "https://www.hikasustravel.com/"
+      },
+      "itinerary": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Day 1 — Arrival in Kutaisi"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Day 2 — Kutaisi – Gudauri"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Day 3-6 — Gudauri – Skiing"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Day 7 — Gudauri – Kutaisi"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Day 8 — Departure from Kutaisi"
+          }
+        ]
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "EUR",
+        "lowPrice": "535",
+        "highPrice": "2580",
+        "offerCount": "3",
+        "url": "https://www.hikasustravel.com/en/private-tours/8-day-winter-ski-tour-from-kutaisi/"
+      }
+    },
+    "enBreadcrumb": {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.hikasustravel.com/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Private Tours",
+          "item": "https://www.hikasustravel.com/en/private-tours/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "8-Day Winter Ski Tour from Kutaisi",
+          "item": "https://www.hikasustravel.com/en/private-tours/8-day-winter-ski-tour-from-kutaisi/"
+        }
+      ]
+    },
+    "highlights": [
+      "Private 8-day winter ski holiday from Kutaisi",
+      "Five nights in high-altitude Gudauri",
+      "Four complete free ski days in Gudauri",
+      "Possibility of a first run on arrival in Gudauri if timing and conditions allow",
+      "Wide, treeless pistes served by modern lifts",
+      "Terrain suitable for beginners through confident skiers",
+      "Gudauri's open off-piste terrain for appropriately experienced skiers",
+      "Hotels and private transfers arranged",
+      "Flexible ski days rather than a fixed sightseeing programme"
+    ],
+    "itinerary": [
+      {
+        "title": "Day 1 — Arrival in Kutaisi",
+        "content": "<p>You'll be met at Kutaisi International Airport and transferred to your hotel. Check-in is from 14:00. The rest of the day is free to rest before heading up to the mountains in the morning. Overnight stay in Kutaisi.</p><ul><li>Arrival at Kutaisi International Airport;</li><li>Transfer to hotel and check-in;</li><li>Free time in Kutaisi;</li><li>Overnight stay in Kutaisi.</li><li><strong>Driving duration:</strong> 30 minutes</li></ul>"
+      },
+      {
+        "title": "Day 2 — Kutaisi – Gudauri",
+        "content": "<p>A transfer day up to the resort. You drive from Kutaisi up into the Greater Caucasus along the Georgian Military Highway to Gudauri, Georgia's biggest ski resort, high on the ridge at around 2,200 metres. You settle into your base for the next five nights — if you arrive with time to spare, the lower lifts are right on the doorstep for a first run.</p><ul><li>Drive up to Gudauri;</li><li>Hotel check-in and free time;</li><li>Overnight stay in Gudauri.</li><li><strong>Driving duration:</strong> 2 hours</li></ul>"
+      },
+      {
+        "title": "Day 3-6 — Gudauri – Skiing",
+        "content": "<p>Four full days on the mountain, to ski however you like. Gudauri is wide and open — treeless runs on a sunny, south-facing slope, modern lifts, and room for everyone from first-timers to people chasing a long, fast descent. Pick up a lift pass and rentals at the base, take a lesson if you need one, and settle into the rhythm of the week. Above the tree line the slopes spill into the wide off-piste bowls Gudauri is known for — a treat for strong skiers, though you're never pushed off the groomed runs; if you do go off-piste, take a qualified local guide and only when the snow and weather are right. There's room in the four days to rest the legs, too — a spa afternoon, some snowshoeing, or a slow lunch with the peaks in front of you.</p><ul><li>Free days skiing or snowboarding at Gudauri;</li><li>Optional lessons, guided off-piste, or a rest day;</li><li>Overnight stays in Gudauri.</li><li><strong>Duration of the tour:</strong> Free days on the slopes</li></ul>"
+      },
+      {
+        "title": "Day 7 — Gudauri – Kutaisi",
+        "content": "<p>You come down out of the mountains today, driving back along the Georgian Military Highway to Kutaisi for your final night before flying out. It's a travel day, but a scenic one, tracing the route back from the high Caucasus to the lowlands.</p><ul><li>Drive down to Kutaisi;</li><li>Hotel check-in and free time;</li><li>Overnight stay in Kutaisi.</li><li><strong>Driving duration:</strong> 2 hours</li></ul>"
+      },
+      {
+        "title": "Day 8 — Departure from Kutaisi",
+        "content": "<p>Check out of your hotel by 12:00 p.m. When it's time, we'll transfer you to Kutaisi International Airport for your departure.</p><ul><li>Hotel check-out by 12:00 p.m.;</li><li>Transfer to Kutaisi International Airport;</li><li>Departure.</li><li><strong>Driving duration:</strong> 30 minutes</li></ul>"
+      }
+    ],
+    "accommodations": [
+      {
+        "city": "Kutaisi (2 nights)",
+        "luxury": "Newport Hotel Kutaisi",
+        "midRange": "Boutique Hotel Argo",
+        "economy": "Hotel West Way"
+      },
+      {
+        "city": "Gudauri (5 nights)",
+        "luxury": "Gudauri Lodge",
+        "midRange": "Marco Polo",
+        "economy": "Gudauri Inn"
+      }
+    ],
+    "pricing": [
+      {
+        "travelers": "Single Supplement",
+        "luxury": "€995",
+        "midRange": "€560",
+        "economy": "€275"
+      },
+      {
+        "travelers": "1",
+        "luxury": "€2580",
+        "midRange": "€1740",
+        "economy": "€1130"
+      },
+      {
+        "travelers": "2",
+        "luxury": "€1340",
+        "midRange": "€935",
+        "economy": "€595"
+      },
+      {
+        "travelers": "3",
+        "luxury": "€1280",
+        "midRange": "€890",
+        "economy": "€570"
+      },
+      {
+        "travelers": "4",
+        "luxury": "€1235",
+        "midRange": "€840",
+        "economy": "€535"
+      }
+    ],
+    "included": [
+      "Accommodation in double/twin rooms, with breakfast included;",
+      "Transfers as per itinerary by comfortable vehicle."
+    ],
+    "notIncluded": [
+      "Lunches and dinners;",
+      "Additional hotel expenses;",
+      "Ski passes, ski hire, lessons and personal winter equipment;",
+      "Travel insurance."
+    ],
+    "tourFormTitle": "8-Day Winter Ski Tour from Kutaisi"
+  },
+  {
     "slug": "9-day-georgia-private-tour-kutaisi-to-tbilisi",
     "formerSlug": "ultimate-georgia-exploration-9-day-tour-from-kutaisi-to-tbilisi-and-hidden-gems",
     "type": "private",
