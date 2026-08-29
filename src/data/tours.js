@@ -12081,22 +12081,13 @@ export const tours = [
         "width": 1080,
         "height": 1350,
         "caption": {
-          "en": "11-Day Winter Ski Tour from Kutaisi — Route Map",
-          "de": "11-tägige Winter-Skitour ab Kutaissi — Streckenkarte",
-          "fr": "Séjour ski de 11 jours depuis Koutaïssi — Carte de l'itinéraire",
-          "es": "Tour de esquí de 11 días desde Kutaisi — Mapa de la ruta",
-          "nl": "11-daagse winterskireis vanuit Kutaisi — Routekaart",
-          "cs": "11denní zimní lyžařský zájezd z Kutaisi — Mapa trasy",
-          "pl": "11-dniowy zimowy tour narciarski z Kutaisi — Mapa trasy"
-        },
-        "alt": {
-          "en": "Kutaisi to Gudauri on day 2, Gudauri to Bakuriani on day 7, Bakuriani to Kutaisi on day 11. Four ski days in Gudauri, three in Bakuriani.",
-          "es": "De Kutaisi a Gudauri el día 2, de Gudauri a Bakuriani el día 7 y de Bakuriani a Kutaisi el día 11. Cuatro días de esquí en Gudauri y tres en Bakuriani.",
-          "fr": "De Koutaïssi à Goudaouri le jour 2, de Goudaouri à Bakouriani le jour 7, de Bakouriani à Koutaïssi le jour 11. Quatre jours de ski à Goudaouri, trois à Bakouriani.",
-          "de": "Von Kutaissi nach Gudauri an Tag 2, von Gudauri nach Bakuriani an Tag 7, von Bakuriani nach Kutaissi an Tag 11. Vier Skitage in Gudauri, drei in Bakuriani.",
-          "pl": "Z Kutaisi do Gudauri drugiego dnia, z Gudauri do Bakuriani siódmego, z Bakuriani do Kutaisi jedenastego. Cztery dni na nartach w Gudauri, trzy w Bakuriani.",
-          "cs": "Z Kutaisi do Gudauri druhý den, z Gudauri do Bakuriani sedmý, z Bakuriani do Kutaisi jedenáctý. Čtyři dny na lyžích v Gudauri, tři v Bakuriani.",
-          "nl": "Van Koetaisi naar Gudauri op dag 2, van Gudauri naar Bakuriani op dag 7, van Bakuriani naar Koetaisi op dag 11. Vier skidagen in Gudauri, drie in Bakuriani."
+          "en": "Route Map",
+          "de": "Streckenkarte",
+          "fr": "Carte de l'itinéraire",
+          "es": "Mapa de la ruta",
+          "nl": "Routekaart",
+          "cs": "Mapa trasy",
+          "pl": "Mapa trasy"
         },
         "altText": {
           "en": "Route map of the 11-Day Winter Ski Tour from Kutaisi, showing the loop from Kutaisi to Gudauri, on to Bakuriani, and back to Kutaisi.",
@@ -12119,7 +12110,7 @@ export const tours = [
           "cs": "Sjezdovky, Gudauri",
           "pl": "Stoki narciarskie, Gudauri"
         },
-        "alt": {
+        "altText": {
           "en": "A skier at the top of Gudauri above a sea of cloud, snow-covered Caucasus peaks behind, Georgia",
           "de": "Ein Skifahrer am Gipfel von Gudauri über einem Wolkenmeer, dahinter verschneite Kaukasusgipfel, Georgien",
           "fr": "Un skieur au sommet de Gudauri au-dessus d'une mer de nuages, sommets enneigés du Caucase derrière, Géorgie",
@@ -12140,7 +12131,7 @@ export const tours = [
           "cs": "Sjezdovka, Gudauri",
           "pl": "Stok narciarski, Gudauri"
         },
-        "alt": {
+        "altText": {
           "en": "A wide open ski piste and chairlift at Gudauri under a blue sky, distant Caucasus peaks, Georgia",
           "de": "Eine weite offene Skipiste und ein Sessellift in Gudauri unter blauem Himmel, ferne Kaukasusgipfel, Georgien",
           "fr": "Une large piste de ski ouverte et un télésiège à Gudauri sous un ciel bleu, sommets lointains du Caucase, Géorgie",
@@ -12161,7 +12152,7 @@ export const tours = [
           "cs": "Lyžařský vlek, Gudauri",
           "pl": "Wyciąg narciarski, Gudauri"
         },
-        "alt": {
+        "altText": {
           "en": "Skiers and snowboarders at a Gudauri lift top station above the clouds, Greater Caucasus, Georgia",
           "de": "Skifahrer und Snowboarder an einer Bergstation in Gudauri über den Wolken, Großer Kaukasus, Georgien",
           "fr": "Skieurs et snowboardeurs à la gare d'arrivée d'un téléski à Gudauri au-dessus des nuages, Grand Caucase, Géorgie",
@@ -12182,7 +12173,7 @@ export const tours = [
           "cs": "Otevřené svahy, Gudauri",
           "pl": "Otwarte stoki, Gudauri"
         },
-        "alt": {
+        "altText": {
           "en": "Open treeless ski slopes and chairlifts under snow-covered peaks at Gudauri ski resort, Greater Caucasus, Georgia",
           "de": "Offene baumlose Skipisten und Sessellifte unter schneebedeckten Gipfeln im Skigebiet Gudauri, Großer Kaukasus, Georgien",
           "fr": "Pistes de ski ouvertes et sans arbres et télésièges sous des sommets enneigés à la station de Gudauri, Grand Caucase, Géorgie",
@@ -12203,7 +12194,7 @@ export const tours = [
           "cs": "Sedačková lanovka, Bakuriani",
           "pl": "Wyciąg krzesełkowy, Bakuriani"
         },
-        "alt": {
+        "altText": {
           "en": "A chairlift climbing above the pistes at Bakuriani ski resort, Trialeti Range, Georgia",
           "de": "Ein Sessellift über den Pisten des Skigebiets Bakuriani, Trialeti-Gebirge, Georgien",
           "fr": "Un télésiège s'élevant au-dessus des pistes de la station de Bakuriani, chaîne du Trialeti, Géorgie",
@@ -12224,7 +12215,7 @@ export const tours = [
           "cs": "Zalesněné svahy, Bakuriani",
           "pl": "Zalesione stoki, Bakuriani"
         },
-        "alt": {
+        "altText": {
           "en": "A chairlift rising through snow-covered spruce forest toward the summit at Bakuriani, Georgia",
           "de": "Ein Sessellift steigt durch verschneiten Fichtenwald zum Gipfel von Bakuriani, Georgien",
           "fr": "Un télésiège s'élève à travers la forêt d'épicéas enneigée vers le sommet de Bakuriani, Géorgie",
@@ -12245,7 +12236,7 @@ export const tours = [
           "cs": "Horské panorama, Bakuriani",
           "pl": "Panorama gór, Bakuriani"
         },
-        "alt": {
+        "altText": {
           "en": "Snow-covered ridges and open pistes above the tree line at Bakuriani, Trialeti Range, Georgia",
           "de": "Verschneite Bergrücken und offene Pisten oberhalb der Baumgrenze in Bakuriani, Trialeti-Gebirge, Georgien",
           "fr": "Crêtes enneigées et pistes dégagées au-dessus de la limite des arbres à Bakuriani, chaîne du Trialeti, Géorgie",
@@ -12266,7 +12257,7 @@ export const tours = [
           "cs": "Kavárna u sjezdovky, Bakuriani",
           "pl": "Kawiarnia przy stoku, Bakuriani"
         },
-        "alt": {
+        "altText": {
           "en": "A café beside the piste among snow-laden pines at Bakuriani ski resort, Georgia",
           "de": "Ein Café an der Piste zwischen schneebedeckten Kiefern im Skigebiet Bakuriani, Georgien",
           "fr": "Un café au bord de la piste parmi les pins enneigés à la station de Bakuriani, Géorgie",
