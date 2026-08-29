@@ -22,8 +22,12 @@ function ChevronIcon({ open }) {
    still uses; `Dia` likewise for Spanish. */
 const DAY_WORDS = new Set(['day', 'tag', 'jour', 'día', 'dia', 'dag', 'den', 'dzień', 'dzien'])
 
+/* A day heading may cover a range of days rather than one ("Day 3-6 — ..."),
+   where several identical days are collapsed into a single entry; the badge
+   then shows the range as written. The range is optional, so a plain
+   "Day 3 — ..." still parses exactly as before. */
 function parseDayTitle(title) {
-  const match = title.match(/^(\p{L}+)\s+(\d+)\s*[:\-–—]\s*(.+)$/u)
+  const match = title.match(/^(\p{L}+)\s+(\d+(?:\s*[-–—]\s*\d+)?)\s*[:\-–—]\s*(.+)$/u)
   if (match && DAY_WORDS.has(match[1].toLowerCase())) {
     return { dayNum: match[2], description: match[3].trim() }
   }

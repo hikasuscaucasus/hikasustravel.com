@@ -4729,31 +4729,19 @@ export const tours = [
     "itinerary": [
       {
         "title": "Day 1 — Arrival in Tbilisi",
-        "content": "<p>Your driver meets you at Tbilisi International Airport and takes you to your hotel in the city. The rest of the day is free to settle in and rest after your flight, so you arrive at the mountains the next day feeling ready. If you're up for it, there's time for a short walk or a meal in town, but there's no plan today beyond a good night's sleep.</p><ul><li>Arrival and private airport transfer;</li><li>Overnight stay in Tbilisi;</li><li><strong>Driving duration:</strong> 30 minutes</li></ul>"
+        "content": "<p>You'll be met at Tbilisi International Airport and transferred to your hotel. Check-in is from 14:00. The rest of the day is free. Overnight stay in Tbilisi.</p><ul><li>Arrival at Tbilisi International Airport;</li><li>Transfer to hotel and check-in;</li><li>Free time in Tbilisi;</li><li>Overnight stay in Tbilisi.</li><li><strong>Driving duration:</strong> 30 minutes</li></ul>"
       },
       {
-        "title": "Day 2 — Tbilisi to Gudauri",
-        "content": "<p>After breakfast you leave the city and head north into the Greater Caucasus along the Georgian Military Highway. It's a scenic drive at any time of year, but in winter it's especially striking, with the landscape turning fully alpine as you climb toward the resort.</p><p>You'll reach Gudauri in the afternoon and check into your hotel. The rest of the day is yours — sort out your lift pass, have a look around the resort, or simply relax and get used to the mountain air before your first day on the slopes.</p><ul><li>Morning: scenic transfer from Tbilisi to Gudauri;</li><li>Afternoon: hotel check-in and free time;</li><li>Overnight stay in Gudauri;</li><li><strong>Driving duration:</strong> 2.5 hours</li></ul>"
+        "title": "Day 2 — Tbilisi – Gudauri",
+        "content": "<p>You leave the city after breakfast and drive north into the Greater Caucasus along the Georgian Military Highway. It's a fine drive — the road climbing steadily, the country turning white and alpine as you go — and by early afternoon you're at Gudauri, Georgia's biggest ski resort, spread across a high ridge at around 2,200 metres. This is home for the next five nights, so once you've checked in the rest of the day is yours: pick up a lift pass and rentals, wander the resort, or just let your body adjust to the altitude before the skiing starts.</p><ul><li>Drive up to Gudauri;</li><li>Hotel check-in and free time;</li><li>Overnight stay in Gudauri.</li><li><strong>Driving duration:</strong> 2.5 hours</li></ul>"
       },
       {
-        "title": "Day 3 — First day on the slopes",
-        "content": "<p>Your first full ski day. Gudauri has slopes for different levels, from gentle beginner runs to longer pistes for more confident skiers, all served by modern lifts and high-altitude winter conditions. You can ski on your own or arrange an instructor if you'd like some guidance.</p><p>If you're not skiing, there are other ways to enjoy the day — winter walks where local conditions permit, cafés with mountain views, a spa, or a quiet morning in the fresh air.</p><ul><li>Full free day for skiing and winter activities;</li><li>Overnight stay in Gudauri.</li></ul>"
+        "title": "Day 3-6 — Gudauri – Skiing",
+        "content": "<p>Four full days on the mountain, to ski however you like. Gudauri is wide and open — treeless runs on a sunny, south-facing slope, modern lifts, and room for everyone from first-timers to people chasing a long, fast descent. Pick up a lift pass and rentals at the base, take a lesson if you're finding your feet, and let the week settle into its own rhythm. Above the tree line the slopes spill into the wide off-piste bowls Gudauri is known for — a treat for strong skiers, though you're never pushed off the groomed runs; if you do go off-piste, take a qualified local guide and only when the snow and weather are right. And not every day has to be all skiing — there's snowshoeing, ski-touring, a spa, or a slow lunch with the peaks in front of you.</p><ul><li>Free days skiing or snowboarding at Gudauri;</li><li>Optional lessons, guided off-piste, or a break from the slopes;</li><li>Overnight stays in Gudauri.</li><li><strong>Duration of the tour:</strong> Free days on the slopes</li></ul>"
       },
       {
-        "title": "Day 4 — Freeride and open snow",
-        "content": "<p>Another full day on the mountain. Because Gudauri's terrain sits above the tree line, it opens up into wide off-piste areas — the freeride and powder skiing the resort is known for. This can be a real draw for more experienced skiers, although there is no pressure to leave the marked pistes if you prefer to keep things relaxed.</p><p>Freeride or off-piste skiing should only be considered by appropriately experienced participants and should be undertaken with a qualified local mountain professional, subject to weather, snow and safety conditions.</p><ul><li>Free day for skiing, freeride, or leisure;</li><li>Overnight stay in Gudauri.</li></ul>"
-      },
-      {
-        "title": "Day 5 — A flexible ski day",
-        "content": "<p>By now the resort feels familiar, and you can settle into the rhythm of the week. Spend the day however suits you — work on your technique, explore runs you haven't tried yet, or take a longer lunch with a view. There is no fixed schedule, so the day is yours to shape.</p><ul><li>Flexible skiing and winter leisure;</li><li>Overnight stay in Gudauri.</li></ul>"
-      },
-      {
-        "title": "Day 6 — Last full day in the mountains",
-        "content": "<p>Your final full day at the resort. It is a good chance to return to the runs you enjoyed most, enjoy one more day of skiing or snowboarding, or take things easier before the trip ends. The pace stays flexible until the end, so you can make the most of your last full day in Gudauri in the way that suits you best.</p><ul><li>Final full ski day and leisure time;</li><li>Overnight stay in Gudauri.</li></ul>"
-      },
-      {
-        "title": "Day 7 — Gudauri to Tbilisi Airport",
-        "content": "<p>After breakfast you check out of your hotel. Depending on your flight time, there may be a little of the morning left for a slow start or a short walk before your driver collects you. From there, it is the drive back down the Georgian Military Highway to Tbilisi International Airport for your departure.</p><p>In winter, the departure time should allow enough margin for mountain road and weather conditions.</p><ul><li>Hotel check-out and transfer to Tbilisi International Airport;</li><li>End of the tour;</li><li><strong>Driving duration:</strong> 2.5 hours</li></ul>"
+        "title": "Day 7 — Departure from Gudauri",
+        "content": "<p>After breakfast you check out of your hotel. Depending on your flight, there may be time for a slow morning or a short walk before your driver collects you for the drive back down the Military Highway to Tbilisi International Airport. In winter, departure times allow extra margin for mountain road and weather conditions.</p><ul><li>Hotel check-out;</li><li>Transfer to Tbilisi International Airport;</li><li>Departure.</li><li><strong>Driving duration:</strong> 2.5 hours</li></ul>"
       }
     ],
     "accommodations": [
