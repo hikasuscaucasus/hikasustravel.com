@@ -284,7 +284,6 @@ export default function TourDetailPage() {
   const itineraryItems = tt?.itinerary || tour.itinerary
   const includedItems = tt?.included || tour.included
   const notIncludedItems = tt?.notIncluded || tour.notIncluded
-  const rightForYouItems = tt?.rightForYou || tour.rightForYou
   const faqList = tt?.faq || tour.faq
   // Auto-link destination mentions in the itinerary day + FAQ answer HTML. Plain
   // functions (not the hooks) because this runs after the `!tour` early return.
@@ -434,24 +433,12 @@ export default function TourDetailPage() {
             </section>
           )}
 
-          {/* Is this tour right for you? (only when the tour supplies the data) */}
-          {rightForYouItems?.length > 0 && (
-            <section className="td-section">
-              <FadeUp>
-                <h2 className="td-section__title">{t('tour.rightForYou')}</h2>
-                <div className="td-overview__highlights">
-                  {rightForYouItems.map((item, i) => (
-                    <div key={i} className="td-overview__highlight">
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4caf50" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                        <polyline points="20 6 9 17 4 12"/>
-                      </svg>
-                      <span>{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </FadeUp>
-            </section>
-          )}
+          {/* The "Is this tour right for you?" suitability section was retired
+              from the tour-detail template. It sat here, between What's
+              Included/Not Included and the FAQ, and rendered `tour.rightForYou`
+              (or its per-locale override). Removed centrally so no current or
+              future tour can show it; the remaining `rightForYou` data was
+              deleted with it. */}
         </main>
       </div>
 

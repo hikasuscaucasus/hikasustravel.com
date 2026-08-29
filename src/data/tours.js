@@ -1413,13 +1413,6 @@ export const tours = [
       "From €590 per person",
       "Customizable route"
     ],
-    "rightForYou": [
-      "Wine lovers and food-focused travelers who want to experience Kakheti, the cradle of wine",
-      "Couples, families and small private groups",
-      "Travelers short on time who want a focused introduction to Georgia's wine region",
-      "Anyone looking for a premium short program or an extension to a longer Georgia itinerary",
-      "Travelers who'd rather have hotels, transport, tastings and logistics handled for them"
-    ],
     "faq": [
       {
         "title": "How long is the Kakheti wine and food tour, and where does it go?",
@@ -1882,12 +1875,6 @@ export const tours = [
       "Hotels included",
       "From €645 per person",
       "Customizable route"
-    ],
-    "rightForYou": [
-      "Couples, families and small private groups",
-      "Travelers who want to see more of Georgia than Tbilisi without committing to a long itinerary",
-      "Anyone who prefers a comfortable private route from Tbilisi to western Georgia and Batumi",
-      "Travelers who'd rather not arrange hotels, transport, regional logistics and sightseeing themselves"
     ],
     "faq": [
       { "title": "Can this tour be customized?", "content": "<p>Yes. It's a private tour, so the route, pace, hotels and stops can be adjusted to suit you. Tell us what you have in mind and we'll shape the plan around it.</p>" },
