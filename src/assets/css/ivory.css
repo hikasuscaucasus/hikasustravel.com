@@ -210,7 +210,7 @@
   position: static;
   margin: 0;
   width: auto;
-  height: 44px;
+  height: 52px;
   text-align: left;
   flex: 0 0 auto;
 }
@@ -219,14 +219,25 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 44px;
-  width: 44px;
+  height: 52px;
+  width: 52px;
   background: var(--accent);
-  border-radius: 12px;
+  border-radius: 14px;
 }
 
+/* The mark is a stacked badge: emblem on top, "HIKASUS TRAVEL" beneath it,
+   then "SINCE 2024". Measured against the artwork, the brand wording is only
+   8.7% of the badge height, so at the old 32px it rendered a 2.8px cap height
+   and read as a smudge. The tile was also holding a 32px mark in a 44px box,
+   spending 12px on padding inside a 64px bar. Reclaiming that padding first,
+   then growing the tile, lifts the mark to 44px inside the SAME 64px header.
+   That is the most this stacked lockup can give here: it takes the wording to
+   a 3.8px cap height, clearly sharper, but genuinely legible lettering would
+   need a ~90px badge, which is a banner, not this navbar. A horizontal lockup
+   would solve it properly and is the recommendation, not something to invent
+   here. */
 .theme-ivory .logo img {
-  height: 32px;
+  height: 44px;
   width: auto;
 }
 
@@ -1112,12 +1123,16 @@
     position: static;
     top: auto;
     left: auto;
-    height: 40px;
+    height: 44px;
   }
 
   .theme-ivory .logo a {
-    height: 40px;
-    width: 40px;
+    height: 44px;
+    width: 44px;
+  }
+
+  .theme-ivory .logo img {
+    height: 36px;
   }
 
   /* The mobile drawer is a fixed panel hung off the header; it keeps its own
