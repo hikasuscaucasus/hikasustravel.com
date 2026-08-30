@@ -1,5 +1,13 @@
 <!doctype html>
-<html lang="en">
+<!--
+  `theme-ivory` carries the site's Ivory design (src/assets/css/ivory.css).
+  It sits on <html> in the template, so every prerendered page and the dev
+  server get it statically — no JavaScript decides the theme, and there is no
+  flash of the previous design before hydration. The pilot applied it to tour
+  routes only, from scripts/prerender.js and Layout.jsx; both of those hooks
+  are gone now that the theme is site-wide.
+-->
+<html lang="en" class="theme-ivory">
   <head>
     <meta charset="UTF-8" />
 
@@ -47,10 +55,7 @@
     <meta name="geo.position" content="41.7151;44.8271" />
     <meta name="ICBM" content="41.7151, 44.8271" />
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- No webfonts: the Ivory theme is Verdana. See src/assets/css/ivory.css. -->
 
     <!-- Structured Data: TravelAgency -->
     <script type="application/ld+json">

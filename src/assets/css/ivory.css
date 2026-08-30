@@ -208,7 +208,9 @@
 .theme-ivory .main-menu,
 .theme-ivory .main-menu.sticky {
   position: static;
-  margin: 0 0 0 auto;
+  margin: 0;
+  /* Logical, not left: the only direction-dependent property the theme adds. */
+  margin-inline-start: auto;
   padding: 0;
   background: transparent;
   backdrop-filter: none;
@@ -1263,7 +1265,7 @@
   border: 1px solid var(--line);
   border-radius: var(--chipr);
   color: var(--accent);
-  margin-left: auto;
+  margin-inline-start: auto;
 }
 
 .theme-ivory .nav-search--bar:hover,
@@ -1326,4 +1328,661 @@
   color: var(--bg);
   border-radius: var(--btnr);
   padding: 9px 16px;
+}
+
+
+/* ============================================================================
+   PHASE 2 — Ivory site-wide
+   ----------------------------------------------------------------------------
+   Everything above this line is the approved pilot, which was scoped to
+   tour-detail pages. The theme class now ships on <html> for every route (see
+   index.html), so those rules apply site-wide and the rest of the site is
+   brought onto the same palette below.
+
+   Design only. No rule here changes, hides or reorders any text: sections that
+   used to be dark bands become ivory surfaces and their type flips from cream
+   to ink, but every string, link and image stays exactly where it was.
+   ========================================================================= */
+
+/* --- Legacy palette remap ---------------------------------------------------
+   styles.css is 11k lines built on three colour variables, used 286 times
+   between them. Remapping the variables moves the whole site onto the Ivory
+   palette in one place instead of rewriting hundreds of declarations — and it
+   means reverting is deleting this block, not unpicking a diff.
+
+     --color-bg   cream  #efefd7 -> the ivory page ground, and the type that
+                                   sits on pine surfaces
+     --color-h2   pine   #2b4e47 -> the Ivory accent pine
+     --color-h3   yellow #fcc013 -> the Ivory accent pine as well. It was the
+                                   bright accent of the old palette and is used
+                                   97 times, mostly as small heading and label
+                                   text; gold at 13px would sit near 3:1 on
+                                   ivory, so gold stays reserved for the
+                                   deliberate small accents the spec names (day
+                                   labels, tier/city lines, breadcrumb slash)
+                                   and everything else takes the pine. The 21
+                                   places that used it as a BACKGROUND are
+                                   restyled explicitly below — pine on pine
+                                   would be invisible. */
+.theme-ivory {
+  --color-bg: #fcf8ec;
+  --color-h2: #2f533d;
+  --color-h3: #2f533d;
+}
+
+/* --- Page ground and running prose ---------------------------------------- */
+
+.theme-ivory main {
+  background: var(--bg);
+}
+
+.theme-ivory p,
+.theme-ivory li {
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.theme-ivory h1 {
+  font-size: clamp(1.8rem, 4vw, 2.375rem);
+  line-height: 1.15;
+}
+
+.theme-ivory h2 {
+  font-size: clamp(1.35rem, 2.6vw, 1.6875rem);
+}
+
+.theme-ivory h3 {
+  font-size: 1.125rem;
+}
+
+/* --- Photographic heroes ----------------------------------------------------
+   A hero is a photograph, not a decorative dark band, so it keeps its image and
+   the scrim that makes the overlaid H1 legible — the spec keeps functional
+   overlays. What changes is the clearance: the old header was a 300px
+   transparent overlay, so the hero-less bands padded 380px to get out from
+   under it. The header is a 64px opaque bar now and that padding would leave a
+   void at the top of every such page. */
+.theme-ivory .dest-title-band {
+  --dtb-header-safe: 40px;
+  background-color: var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+
+.theme-ivory .dest-title-band h1 {
+  color: var(--ink);
+}
+
+@media (max-width: 900px) {
+  .theme-ivory .dest-title-band { --dtb-header-safe: 28px; }
+}
+
+.theme-ivory .hero--infographic {
+  background-color: var(--bg);
+  color: var(--ink);
+  padding-top: 40px;
+}
+
+@media (max-width: 900px) {
+  .theme-ivory .hero--infographic { padding-top: 28px; }
+}
+
+.theme-ivory .hero--infographic__title h1 {
+  color: var(--ink);
+}
+
+/* --- Alternating content bands ---------------------------------------------
+   .page-items alternates odd/even down a destination or utility page; the even
+   band was solid pine with cream type and gold headings. The rhythm is kept —
+   it is what separates one section from the next — but expressed as ivory
+   ground against white surface, and every piece of type that relied on the dark
+   ground is flipped to ink. */
+.theme-ivory .page-items:nth-child(odd) {
+  background-color: var(--bg);
+  color: var(--ink);
+}
+
+.theme-ivory .page-items:nth-child(even) {
+  background-color: var(--surface);
+  color: var(--ink);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.theme-ivory .page-items:nth-child(even) h2,
+.theme-ivory .page-items:nth-child(even) h3,
+.theme-ivory .page-items:nth-child(even) h4 {
+  color: var(--ink);
+}
+
+.theme-ivory .page-items:nth-child(even) .acc__trigger {
+  color: var(--ink);
+}
+
+.theme-ivory .page-items:nth-child(even) .acc__trigger:hover {
+  background: color-mix(in srgb, var(--accent) 6%, transparent);
+}
+
+.theme-ivory .home-items {
+  background-color: var(--surface);
+  color: var(--ink);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.theme-ivory .taxi-items:nth-child(odd) {
+  background-color: var(--surface);
+  color: var(--ink);
+}
+
+/* --- Buttons: one pill everywhere ------------------------------------------
+   Wording, destinations and element types are untouched; only the paint. */
+.theme-ivory .button,
+.theme-ivory .tc__cta,
+.theme-ivory .td-hero__cta,
+.theme-ivory .tour-item-card .more a,
+.theme-ivory .blog-back-link,
+.theme-ivory .embassy-card__map-btn,
+.theme-ivory .tour-inquiry-form .button,
+.theme-ivory .gallery-show-more__btn {
+  background: var(--accent);
+  color: var(--bg);
+  border: 1px solid var(--accent);
+  border-radius: var(--btnr);
+  padding: 11px 24px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: none;
+}
+
+.theme-ivory .button:hover,
+.theme-ivory .tc__cta:hover,
+.theme-ivory .td-hero__cta:hover,
+.theme-ivory .tour-item-card .more a:hover,
+.theme-ivory .blog-back-link:hover,
+.theme-ivory .embassy-card__map-btn:hover,
+.theme-ivory .tour-inquiry-form .button:hover,
+.theme-ivory .gallery-show-more__btn:hover {
+  background: color-mix(in srgb, var(--accent) 84%, #000);
+  color: var(--bg);
+  border-color: var(--accent);
+  transform: none;
+  box-shadow: none;
+}
+
+/* --- Chips -----------------------------------------------------------------
+   Applied to metadata that already exists; no chip invents its own content. */
+.theme-ivory .date-chip,
+.theme-ivory .tc__tag,
+.theme-ivory .tc__badge,
+.theme-ivory .ptc-chip,
+.theme-ivory .blog-item__tag,
+.theme-ivory .gallery-card__day,
+.theme-ivory .td-pricing__from,
+.theme-ivory .tour-item-card .date-chip {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--chipr);
+  color: var(--ink);
+  font-size: 12px;
+  padding: 5px 12px;
+  box-shadow: none;
+}
+
+.theme-ivory .tc__tag:hover,
+.theme-ivory .ptc-chip:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--surface);
+}
+
+.theme-ivory .ptc-chip:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  background: var(--surface);
+  color: var(--ink);
+}
+
+/* --- Cards ------------------------------------------------------------------
+   The frame language, applied to discrete surfaces. Running prose is never
+   framed — only cards, panels and images. */
+.theme-ivory .tc,
+.theme-ivory .tour-item-card,
+.theme-ivory .blog-item,
+.theme-ivory .contact-card,
+.theme-ivory .embassy-card,
+.theme-ivory .dest-hub-card,
+.theme-ivory .testimonial-card,
+.theme-ivory .td-testimonial {
+  background: var(--surface);
+  border: 1px solid var(--accent);
+  border-radius: var(--r);
+  box-shadow: none;
+  color: var(--ink);
+}
+
+.theme-ivory .tc:hover,
+.theme-ivory .tour-item-card:hover,
+.theme-ivory .blog-item:hover,
+.theme-ivory .contact-card:hover,
+.theme-ivory .dest-hub-card:hover {
+  box-shadow: none;
+  transform: none;
+  background: var(--surface);
+  color: var(--ink);
+}
+
+.theme-ivory .td-testimonials-section {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+/* --- Tables ---------------------------------------------------------------- */
+
+.theme-ivory table,
+.theme-ivory .taxi-list {
+  background: var(--surface);
+  border-color: var(--line);
+  color: var(--ink);
+}
+
+.theme-ivory th,
+.theme-ivory .blog-article__content thead,
+.theme-ivory .taxi-list-row:first-child {
+  background: #eef1ee;
+  color: var(--accent);
+  border-color: var(--line);
+}
+
+.theme-ivory td {
+  background: transparent;
+  color: var(--ink);
+  border-color: var(--line);
+}
+
+.theme-ivory .blog-article__content tbody tr:nth-child(even) {
+  background: #fbfaf5;
+  color: var(--ink);
+}
+
+.theme-ivory .pricing-grid-row:hover,
+.theme-ivory .pricing-grid-travelers .pricing-grid-row:last-child {
+  background: #f6f5ef;
+  color: var(--ink);
+}
+
+.theme-ivory .tour-group-summary,
+.theme-ivory .tour-summary-premium {
+  background: var(--surface);
+  border: 1px solid var(--accent);
+  border-radius: var(--r);
+  color: var(--ink);
+}
+
+.theme-ivory .tour-summary-premium .date-range--available {
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+  color: var(--accent);
+}
+
+/* --- Forms, site-wide ------------------------------------------------------ */
+
+.theme-ivory input,
+.theme-ivory textarea,
+.theme-ivory select {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  color: var(--ink);
+  font-size: 14px;
+}
+
+.theme-ivory input:focus,
+.theme-ivory textarea:focus,
+.theme-ivory select:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.theme-ivory select:hover {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.theme-ivory select option {
+  background: var(--surface);
+  color: var(--ink);
+}
+
+/* --- Navigation surfaces --------------------------------------------------- */
+
+.theme-ivory .submenu {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.theme-ivory .submenu a {
+  color: var(--ink);
+}
+
+.theme-ivory .submenu a:hover {
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+  color: var(--accent);
+}
+
+.theme-ivory .site-search__panel {
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+}
+
+.theme-ivory .dish-modal__ingredient {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  color: var(--ink);
+}
+
+/* --- About Georgia list blocks --------------------------------------------- */
+
+.theme-ivory .about-georgia li,
+.theme-ivory .about-georgia ul.visa-list,
+.theme-ivory .about-georgia .visa-group {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  color: var(--ink);
+}
+
+/* --- Breadcrumbs ------------------------------------------------------------
+   Wording, links, order and schema untouched; the separator takes the gold. */
+.theme-ivory .breadcrumbs,
+.theme-ivory .breadcrumb {
+  color: var(--sub);
+  font-size: 12px;
+}
+
+.theme-ivory .breadcrumbs a,
+.theme-ivory .breadcrumb a {
+  color: var(--sub);
+  text-decoration: none;
+  background: none;
+  padding: 0;
+}
+
+.theme-ivory .breadcrumbs a:hover,
+.theme-ivory .breadcrumb a:hover {
+  color: var(--accent);
+  background: none;
+}
+
+.theme-ivory .breadcrumbs__sep,
+.theme-ivory .breadcrumbs span[aria-hidden],
+.theme-ivory .breadcrumb span[aria-hidden] {
+  color: var(--gold);
+}
+
+/* --- In-content tint links, site-wide ---------------------------------------
+   Restricted to running content. Header and footer navigation, buttons, cards,
+   breadcrumbs and chips are deliberately excluded — the tint is for links
+   inside prose, and painting a whole nav with it reads as noise. Every href is
+   untouched; this is paint only. */
+.theme-ivory .page-items a.entity-link,
+.theme-ivory .home-items a.entity-link,
+.theme-ivory .blog-article__content a:not(.blog-back-link):not(.button),
+.theme-ivory .city-body a.entity-link,
+.theme-ivory .dest-body a.entity-link,
+.theme-ivory .site-body a.entity-link,
+.theme-ivory .region-body a.entity-link {
+  color: var(--linkc);
+  font-weight: 700;
+  text-decoration: none;
+  background: color-mix(in srgb, var(--linkc) 9%, transparent);
+  padding: 1px 5px;
+  border-radius: 7px;
+}
+
+.theme-ivory .page-items a.entity-link:hover,
+.theme-ivory .home-items a.entity-link:hover,
+.theme-ivory .blog-article__content a:not(.blog-back-link):not(.button):hover,
+.theme-ivory .city-body a.entity-link:hover,
+.theme-ivory .dest-body a.entity-link:hover,
+.theme-ivory .site-body a.entity-link:hover,
+.theme-ivory .region-body a.entity-link:hover {
+  background: color-mix(in srgb, var(--linkc) 17%, transparent);
+}
+
+/* --- Figures and captions --------------------------------------------------- */
+
+.theme-ivory figcaption {
+  color: var(--sub);
+  font-size: 12px;
+}
+
+/* --- Overlays keep their dark backdrops ------------------------------------
+   Functional, not decorative: a lightbox or modal scrim has to darken the page
+   behind it to do its job. */
+.theme-ivory .dish-modal-backdrop {
+  background: rgba(16, 21, 18, 0.62);
+}
+
+/* --- Decorative shadows off ------------------------------------------------- */
+
+.theme-ivory .tc,
+.theme-ivory .tour-item-card,
+.theme-ivory .blog-item,
+.theme-ivory .contact-card,
+.theme-ivory .dest-hub-card,
+.theme-ivory .incl__card,
+.theme-ivory .td-price-card,
+.theme-ivory .acc__item,
+.theme-ivory .pricing-grid {
+  box-shadow: none;
+}
+
+
+/* --- Type over photographic heroes -----------------------------------------
+   The theme sets headings to ink, which is right on the ivory ground and wrong
+   over a photograph: the H1 that sits on a hero image has to stay light or it
+   disappears into the picture. These are the only headings on the site painted
+   over an image, and they keep the light type the scrim was built for. */
+.theme-ivory .coverme h1,
+.theme-ivory .hometop-item h1,
+.theme-ivory .th__title,
+.theme-ivory .th__subtitle,
+.theme-ivory .th__center,
+.theme-ivory .taxiH1 {
+  color: #fff;
+}
+
+/* The tours listing hero keeps its own darker scrim so the search and sort
+   controls sitting on the photo stay readable. */
+.theme-ivory .th__overlay {
+  background: rgba(16, 21, 18, 0.5);
+}
+
+
+/* --- Leftovers from the dark bands ------------------------------------------
+   These rules painted type cream because the surface underneath used to be
+   pine. The surfaces are ivory now, so the type has to come back to ink. Found
+   by the contrast sweep, not by eye — cream on white measures 1.1:1 and looks
+   like missing content rather than a styling bug. */
+
+/* .button is a WRAPPER div with the link inside it, so the pill's colour has to
+   reach the anchor or the label stays pine on pine. */
+.theme-ivory .button a,
+.theme-ivory .button p {
+  color: var(--bg);
+}
+
+.theme-ivory .button:hover a {
+  color: var(--bg);
+}
+
+/* The accordion inside an even .page-items band (destination and utility page
+   FAQs) carried a full cream-on-pine treatment. */
+.theme-ivory .page-items:nth-child(even) .acc__panel-inner {
+  color: var(--ink);
+}
+
+.theme-ivory .page-items:nth-child(even) .acc__item {
+  border-bottom-color: var(--line);
+}
+
+.theme-ivory .page-items:nth-child(even) .acc__item--open {
+  background: transparent;
+}
+
+.theme-ivory .page-items:nth-child(even) .acc__toggle-all {
+  color: var(--accent);
+  border-color: var(--line);
+}
+
+.theme-ivory .page-items:nth-child(even) .acc__toggle-all:hover {
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+  border-color: var(--accent);
+}
+
+
+/* The Contact page uses the plain .td-book-inline card (the tour page's is
+   .td-section.td-book-inline and was converted with the pilot). It was still a
+   pine block, which put the ink heading at 1.46:1 on it. */
+.theme-ivory .td-book-inline {
+  background: var(--bg);
+  color: var(--ink);
+  border-radius: 0;
+}
+
+.theme-ivory .td-book-inline .td-section__title,
+.theme-ivory .td-book-inline h2,
+.theme-ivory .td-book-inline h3 {
+  color: var(--ink);
+}
+
+/* Legacy mid-grey secondary text, below AA on white. The theme has a token for
+   exactly this role. */
+.theme-ivory .td-testimonial__location,
+.theme-ivory .testimonial-location,
+.theme-ivory .td-testimonial__meta {
+  color: var(--sub);
+}
+
+
+/* --- Shuttle-Service (taxi) sub-theme ---------------------------------------
+   The shuttle page carries its own palette: alternating pine bands, a yellow
+   fare-table header and cream cell text. Under the remap that became pine text
+   on a pine header and cream text on a white table — 117 cells reading 1:1.
+   Converted here, cell for cell. No fare, route, label or row changes; the
+   table renders exactly the same data it did before. */
+.theme-ivory .taxi-items:nth-child(odd),
+.theme-ivory .taxi-items:nth-child(even) {
+  background-color: var(--bg);
+  color: var(--ink);
+}
+
+.theme-ivory .taxi-items:nth-child(even) {
+  background-color: var(--surface);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.theme-ivory .taxi-items:nth-child(odd) h1,
+.theme-ivory .taxi-items:nth-child(odd) h2,
+.theme-ivory .taxi-items h1,
+.theme-ivory .taxi-items h2 {
+  color: var(--ink);
+}
+
+.theme-ivory .taxi-list {
+  border: 1px solid var(--accent);
+  border-radius: var(--r);
+  background: var(--surface);
+}
+
+.theme-ivory .taxi-list-row-from,
+.theme-ivory .taxi-list-row-to,
+.theme-ivory .taxi-list-row-duration,
+.theme-ivory .taxi-list-row-sedan,
+.theme-ivory .taxi-list-row-minivan,
+.theme-ivory .taxi-list-row-minibus {
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+}
+
+.theme-ivory .taxi-list-row:first-child,
+.theme-ivory .taxi-list-row:first-child .taxi-list-row-from,
+.theme-ivory .taxi-list-row:first-child .taxi-list-row-to,
+.theme-ivory .taxi-list-row:first-child .taxi-list-row-duration,
+.theme-ivory .taxi-list-row:first-child .taxi-list-row-sedan,
+.theme-ivory .taxi-list-row:first-child .taxi-list-row-minivan,
+.theme-ivory .taxi-list-row:first-child .taxi-list-row-minibus {
+  background-color: #eef1ee;
+  color: var(--accent);
+}
+
+.theme-ivory .taxi-list-row.active:hover > div {
+  background: color-mix(in srgb, var(--accent) 6%, transparent);
+}
+
+/* The shuttle page's own footer variant. */
+.theme-ivory .taxi-footer {
+  background-color: var(--surface);
+  color: var(--ink);
+  border-top: 1px solid var(--accent);
+}
+
+.theme-ivory .taxi-footer .footer-col__title {
+  color: var(--ink);
+}
+
+.theme-ivory .taxi-footer .footer-col__list a,
+.theme-ivory .taxi-footer .footer-social a,
+.theme-ivory .taxi-footer .footer-bottom__right a {
+  color: var(--sub);
+}
+
+.theme-ivory .taxi-menu a,
+.theme-ivory .taxi-menu a:hover,
+.theme-ivory .taxi-menu a.active {
+  color: var(--accent);
+}
+
+.theme-ivory .taxi-menu .hamburger span {
+  background-color: var(--accent);
+}
+
+
+/* --- Legacy #999 secondary text ---------------------------------------------
+   Six places set a mid grey that measures 2.85:1 on white — below AA for the
+   small text it is used on. The theme has a token for secondary text; these
+   take it. (The two inside the tours hero sit on a photo and keep their own
+   treatment.) */
+.theme-ivory .blog-item__meta,
+.theme-ivory .embassy-no-results,
+.theme-ivory .marker-popup .close-btn {
+  color: var(--sub);
+}
+
+/* --- Card cover images ------------------------------------------------------
+   The tour cards on the homepage and both listings now render their cover as a
+   real <img> (see CardImage.jsx) instead of a CSS background, so the photograph
+   is in the served HTML. The box geometry is unchanged — the image fills the
+   card frame the stylesheet already sized — so nothing shifts. */
+.theme-ivory .card-img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* The available-dates chip wraps onto two lines, so the pill radius turns it
+   into an ellipse. It keeps a card radius instead — same palette, readable box.
+   Its content is untouched. */
+.theme-ivory .date-chip,
+.theme-ivory .tour-item-card .date-chip {
+  border-radius: 12px;
+  padding: 8px 12px;
+  line-height: 1.35;
 }

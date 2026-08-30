@@ -2,7 +2,7 @@ import { lazy, Suspense, useContext } from 'react'
 import HeroSection from '../shared/HeroSection'
 import FadeUp from '../shared/FadeUp'
 import PrivateTourCollectionLinks from '../shared/PrivateTourCollectionLinks'
-import BlurUpBackground from '../shared/BlurUpBackground'
+import CardImage from '../shared/CardImage'
 // mapbox-gl is ~450 kB gzipped. Loading it lazily keeps it out of the main
 // bundle, so it no longer downloads on the ~370 routes that render no map at
 // all, and here it arrives after the page itself rather than blocking it.
@@ -64,12 +64,12 @@ export default function HomePage() {
                     className="tour-image-link"
                     aria-label={tt?.title || groupTour.title}
                   >
-                    <BlurUpBackground
+                    <CardImage
                       src={groupTour.listingImage || groupTour.heroImage}
                       className="tour-image"
                     >
                       <div className="tour-image-scrim" aria-hidden="true" />
-                    </BlurUpBackground>
+                    </CardImage>
                   </LocaleLink>
                   <div className="tour-info">
                     <h2>
@@ -135,7 +135,7 @@ export default function HomePage() {
                       to={`/${tour.type === 'group' ? 'group-tours' : 'private-tours'}/${tour.slug}`}
                       className="tour-tile-link"
                     >
-                      <BlurUpBackground
+                      <CardImage
                         src={tour.tileImage || tour.heroImage}
                         position={tour.cardPosition}
                         className="tour-tile-image"

@@ -1,4 +1,4 @@
-import BlurUpBackground from './BlurUpBackground'
+import CardImage from './CardImage'
 import FadeUp from './FadeUp'
 import LocaleLink from '../../i18n/LocaleLink'
 import useT from '../../i18n/useT'
@@ -25,7 +25,7 @@ export default function TourCard({ tour, translation, index = 0, basePath = '/pr
     <FadeUp>
       <article className={`tc${isReversed ? ' tc--rev' : ''}`}>
         <LocaleLink to={tourUrl} className="tc__img-link" aria-label={title}>
-          <BlurUpBackground
+          <CardImage
             src={tour.listingImage || tour.heroImage}
             position={tour.cardPosition}
             className="tc__img"
@@ -37,7 +37,7 @@ export default function TourCard({ tour, translation, index = 0, basePath = '/pr
                 {classicPrice && <> / {t('sidebar.startingFrom')} €{classicPrice.toLocaleString('en-US')}</>}
               </span>
             )}
-          </BlurUpBackground>
+          </CardImage>
         </LocaleLink>
 
         <div className="tc__body">
