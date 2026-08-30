@@ -1324,18 +1324,33 @@
   border: 1px solid var(--accent);
 }
 
+/* styles.css keeps the hamburger `display: none` and only reveals it inside its
+   own media queries — `@media (max-width: 600px)` and
+   `@media (min-width: 601px) and (max-width: 900px)` — i.e. exactly where
+   `.main-menu` collapses out of the header. The Ivory theme had set
+   `display: flex` on it unconditionally, purely to centre its two bars in the
+   new 64px bar, and that outranked the default: every laptop and desktop showed
+   a redundant menu toggle beside the full navigation. The box and the centring
+   stay unconditional (harmless when the element is hidden); only the flex
+   LAYOUT is scoped to the widths where the control is actually displayed, so
+   the project's own 900px breakpoint decides visibility again. */
 .theme-ivory .hamburger {
   align-self: center;
   margin-top: auto;
   margin-bottom: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 6px;
   width: 40px;
   height: 40px;
   padding: 8px;
   box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .theme-ivory .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+  }
 }
 
 .theme-ivory .hamburger span {
@@ -2037,4 +2052,18 @@
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
+}
+
+/* --- Navbar label casing ----------------------------------------------------
+   The two dropdown toggles rendered as OUR TOURS / DESTINATIONS while the plain
+   nav links did not. The source strings are correct ("Our Tours",
+   "Destinations" in each locale's ui.json); the cause is CSS. The theme turns
+   off `text-transform` on `.main-menu`, but styles.css also sets
+   `text-transform: uppercase` directly on `.main-menu .nav-dropdown__toggle` —
+   and a declaration made ON an element always beats a value inherited from its
+   parent, whatever the specificity. So the toggles kept transforming while
+   their <a> siblings inherited the reset. Turning it off on the toggle itself
+   is the fix; no string is touched, in any locale. */
+.theme-ivory .main-menu .nav-dropdown__toggle {
+  text-transform: none;
 }
