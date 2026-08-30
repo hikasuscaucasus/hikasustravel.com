@@ -59,7 +59,6 @@ export default function Footer({ variant = 'default' }) {
           <ul className="footer-col__list">
             <li><LocaleLink to="/shuttle-service">{t('footer.shuttleService')}</LocaleLink></li>
             <li><LocaleLink to="/georgia-visa-entry-requirements">{t('footer.visa')}</LocaleLink></li>
-            <li><LocaleLink to="/kutaisi-international-airport">{t('footer.airport')}</LocaleLink></li>
           </ul>
         </div>
 
