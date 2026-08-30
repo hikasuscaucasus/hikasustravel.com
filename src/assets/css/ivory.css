@@ -2067,3 +2067,136 @@
 .theme-ivory .main-menu .nav-dropdown__toggle {
   text-transform: none;
 }
+
+
+/* --- Global search overlay --------------------------------------------------
+   The search panel was built for the old design: a dark pine surface with cream
+   type, so almost every element inside it declares its own cream colour
+   (`var(--color-bg)`, or `rgba(239, 239, 215, α)`). The Ivory rollout turned the
+   panel white but only reset the colour on the panel itself — the children kept
+   their own declarations, and a child's own colour beats anything inherited. The
+   result was cream-on-white: measured at 1.06:1 for result titles, 1.12:1 for
+   descriptions, 1.11:1 for the meta line and URL, 1.09:1 for the footer. Ten
+   results rendered and none of them could be read.
+
+   It escaped the rollout's contrast sweep because the overlay only exists after
+   someone clicks Search and types, so a page-load audit never sees it.
+
+   Every piece of type below is brought onto the Ivory tokens: primary text and
+   result titles take --text, supporting text takes --sub, and interactive
+   emphasis takes --accent. The backdrop stays dark: it is a functional overlay
+   scrim, not a decorative panel. No search string, ranking or behaviour is
+   touched — this is colour only. */
+
+.theme-ivory .site-search__panel {
+  border: 1px solid var(--line);
+  color: var(--text);
+}
+
+.theme-ivory .site-search__bar {
+  border-bottom: 1px solid var(--line);
+}
+
+.theme-ivory .site-search__bar-icon {
+  color: var(--sub);
+}
+
+.theme-ivory .site-search__input {
+  color: var(--text);
+}
+
+.theme-ivory .site-search__input::placeholder {
+  color: var(--sub);
+}
+
+.theme-ivory .site-search__close {
+  color: var(--accent);
+}
+
+.theme-ivory .site-search__close:hover {
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+  color: var(--accent);
+}
+
+.theme-ivory .site-search__close:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Result rows -------------------------------------------------------------- */
+
+.theme-ivory .site-search__result {
+  color: var(--text);
+}
+
+.theme-ivory .site-search__result-title {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.theme-ivory .site-search__result-desc,
+.theme-ivory .site-search__result-meta,
+.theme-ivory .site-search__result-url,
+.theme-ivory .site-search__result-loc {
+  color: var(--sub);
+}
+
+/* The row is a link, so hovering or arrowing onto it reads as selection: a
+   quiet accent wash plus the accent rail, instead of the old white-on-pine
+   wash that was invisible on a white panel. */
+.theme-ivory .site-search__result:hover,
+.theme-ivory .site-search__result:focus {
+  background: color-mix(in srgb, var(--accent) 7%, transparent);
+  border-left-color: var(--accent);
+}
+
+.theme-ivory .site-search__result:hover .site-search__result-title,
+.theme-ivory .site-search__result:focus .site-search__result-title {
+  color: var(--accent);
+}
+
+.theme-ivory .site-search__result:focus-visible {
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+  border-left-color: var(--accent);
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+
+/* The type badge already read well enough, but it kept the old palette's yellow
+   tint; on the Ivory panel it takes the accent tint the rest of the theme uses. */
+.theme-ivory .site-search__result-type {
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+}
+
+/* Empty / hint states ------------------------------------------------------- */
+
+.theme-ivory .site-search__hint,
+.theme-ivory .site-search__empty {
+  color: var(--sub);
+}
+
+.theme-ivory .site-search__empty-title {
+  color: var(--text);
+}
+
+/* Footer and scrollbar ------------------------------------------------------ */
+
+.theme-ivory .site-search__footer {
+  background: var(--bg);
+  border-top: 1px solid var(--line);
+  color: var(--sub);
+}
+
+.theme-ivory .site-search__keys kbd {
+  border: 1px solid var(--line);
+  color: var(--sub);
+}
+
+.theme-ivory .site-search__body::-webkit-scrollbar-thumb {
+  background: var(--line);
+}
+
+.theme-ivory .site-search__body::-webkit-scrollbar-thumb:hover {
+  background: color-mix(in srgb, var(--accent) 40%, transparent);
+}
