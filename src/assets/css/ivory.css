@@ -1363,8 +1363,13 @@
 }
 
 /* The premium column keeps its highlight, in the theme's own palette. */
+/* The Premium column header used to carry a gold wash while City, Mid-Range and
+   Classic sat on the plain header ground — the one thing on a tour page that
+   singled out a tier. Hikasus does not steer anyone toward a package, so the
+   four header cells now look the same. (This wash was introduced with the Ivory
+   rollout, carried over from the old palette's highlighted column.) */
 .theme-ivory .pricing-grid-header .pricing-luxury {
-  background: color-mix(in srgb, var(--gold) 12%, transparent);
+  background: transparent;
 }
 
 /* styles.css centres the hamburger with `top:50%; transform:translateY(-50%)`
@@ -2377,4 +2382,19 @@
     width: 44px;
     height: 44px;
   }
+}
+
+/* --- Neutral pricing rows ---------------------------------------------------
+   styles.css marks the cheapest traveller count in each tier card as "best
+   value": a yellow wash on the row and a gold price. It is applied to the same
+   row in all three cards, so it never favoured a PACKAGE — but it is still a
+   best-value recommendation made in colour, inside a section whose job is to
+   let people compare objectively. The row keeps its spacing so nothing shifts;
+   it just stops shouting. */
+.theme-ivory .td-price-card__row--best {
+  background: transparent;
+}
+
+.theme-ivory .td-price-card__row--best span:last-child {
+  color: inherit;
 }
