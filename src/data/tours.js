@@ -6841,15 +6841,6 @@ export const tours = [
         "fallbackWidth": 1200,
         "width": 2400,
         "height": 1600,
-        "alt": {
-          "en": "Kutaisi to Gudauri on day 2, back to Kutaisi on day 7. Five nights at about 2,200 m in Gudauri, four full days on the slopes.",
-          "de": "Von Kutaissi nach Gudauri an Tag 2, zurück nach Kutaissi an Tag 7. Fünf Nächte auf rund 2.200 m in Gudauri, vier volle Tage auf der Piste.",
-          "fr": "De Koutaïssi à Goudaouri le jour 2, retour à Koutaïssi le jour 7. Cinq nuits à environ 2 200 m à Goudaouri, quatre journées complètes sur les pistes.",
-          "es": "De Kutaisi a Gudauri el día 2 y de vuelta a Kutaisi el día 7. Cinco noches a unos 2.200 m en Gudauri y cuatro días completos en las pistas.",
-          "nl": "Van Koetaisi naar Gudauri op dag 2, terug naar Koetaisi op dag 7. Vijf nachten op ongeveer 2.200 m in Gudauri, vier volle dagen op de piste.",
-          "cs": "Z Kutaisi do Gudauri druhý den, zpět do Kutaisi sedmý. Pět nocí ve výšce zhruba 2200 m v Gudauri a čtyři celé dny na sjezdovkách.",
-          "pl": "Z Kutaisi do Gudauri drugiego dnia, powrót do Kutaisi siódmego. Pięć nocy na wysokości około 2200 m w Gudauri i cztery pełne dni na stokach."
-        },
         "caption": {
           "en": "Route Map",
           "de": "Streckenkarte",
@@ -12617,15 +12608,6 @@ export const tours = [
         "fallbackWidth": 1200,
         "width": 2400,
         "height": 1600,
-        "alt": {
-          "en": "Kutaisi to Gudauri on day 2, Gudauri to Bakuriani on day 7, Bakuriani to Kutaisi on day 11. Five nights in Gudauri, four in Bakuriani.",
-          "de": "Von Kutaissi nach Gudauri an Tag 2, von Gudauri nach Bakuriani an Tag 7, von Bakuriani nach Kutaissi an Tag 11. Fünf Nächte in Gudauri, vier in Bakuriani.",
-          "fr": "De Koutaïssi à Goudaouri le jour 2, de Goudaouri à Bakouriani le jour 7, de Bakouriani à Koutaïssi le jour 11. Cinq nuits à Goudaouri, quatre à Bakouriani.",
-          "es": "De Kutaisi a Gudauri el día 2, de Gudauri a Bakuriani el día 7 y de Bakuriani a Kutaisi el día 11. Cinco noches en Gudauri y cuatro en Bakuriani.",
-          "nl": "Van Koetaisi naar Gudauri op dag 2, van Gudauri naar Bakuriani op dag 7, van Bakuriani naar Koetaisi op dag 11. Vijf nachten in Gudauri, vier in Bakuriani.",
-          "cs": "Z Kutaisi do Gudauri druhý den, z Gudauri do Bakuriani sedmý, z Bakuriani do Kutaisi jedenáctý. Pět nocí v Gudauri, čtyři v Bakuriani.",
-          "pl": "Z Kutaisi do Gudauri drugiego dnia, z Gudauri do Bakuriani siódmego, z Bakuriani do Kutaisi jedenastego. Pięć nocy w Gudauri, cztery w Bakuriani."
-        },
         "caption": {
           "en": "Route Map",
           "de": "Streckenkarte",
