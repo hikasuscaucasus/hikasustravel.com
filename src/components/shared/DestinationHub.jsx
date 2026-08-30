@@ -138,13 +138,19 @@ export default function DestinationHub({
   const regionItems = (pages.destinationsRegions && pages.destinationsRegions.items) || {}
   const enCityItems = (enPages.destinationsCities && enPages.destinationsCities.items) || {}
   const enRegionItems = (enPages.destinationsRegions && enPages.destinationsRegions.items) || {}
-  // Optional card cover. Only the Cities hub supplies one (from the same
-  // `cities[].image` field the /georgia strip reads, so the two pages show the
-  // identical photo for a given slug). An entry without `image` renders exactly
-  // the markup this component produced before covers existed — which is why the
-  // Regions and Places to Visit hubs are byte-identical after this change.
+  // Optional card cover. The Cities hub supplies one from the same
+  // `cities[].image` field the /georgia strip reads, and the Regions hub from
+  // `regions[].cardImage` (the region's own hero family), so a card and its
+  // detail page can never show different photos. An entry without `image`
+  // renders exactly the markup this component produced before covers existed —
+  // which is how Abkhazia and the Places to Visit hub stay text-only.
+  // `imagePosition` anchors the crop the way the detail-page hero anchors its
+  // background; omitting it keeps BlurUpBackground's 'center' default, so every
+  // Cities card is unaffected.
   const cover = (e) =>
-    e.image ? <BlurUpBackground src={e.image} className="dest-hub-card__image" /> : null
+    e.image
+      ? <BlurUpBackground src={e.image} position={e.imagePosition || 'center'} className="dest-hub-card__image" />
+      : null
   // The cover has to bleed to the card's edges, but the padding lives on the
   // link/pending element itself. Rather than restructure the card (which would
   // move markup on all three hubs), the image is pulled out with negative

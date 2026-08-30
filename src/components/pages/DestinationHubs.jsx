@@ -25,6 +25,13 @@ export function RegionsHubPage() {
       // region detail page only once published.
       published: r.published || !!r.linkPath,
       to: r.linkPath || (r.published ? regionPath(r.slug) : null),
+      // Card cover, read straight from the registry exactly as the Cities hub
+      // reads `cities[].image` — so a region's card and its detail-page hero can
+      // never drift apart. `cardImage` is the same hero family at its smallest
+      // existing rung, and `cardPosition` carries the hero's own focal point.
+      // A region without a cover (Abkhazia) renders the text-only card unchanged.
+      image: r.cardImage,
+      imagePosition: r.cardPosition,
     }))
   return (
     <DestinationHub

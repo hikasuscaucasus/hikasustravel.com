@@ -92,6 +92,9 @@ export const regions = [
     // still auto-derive from `image` via useSEO, matching the Kakheti region
     // pattern — region pages have no page-specific OG convention.
     image: '/images/adjara/adjara-black-sea-coast-georgia-1448.webp',
+    // Regions-overview card cover: the same hero family, at the smallest rung
+    // that exists, so the listing never pulls the full-size hero.
+    cardImage: '/images/adjara/adjara-black-sea-coast-georgia-768.webp',
     imageAvif: '/images/adjara/adjara-black-sea-coast-georgia-1448.avif',
     heroClass: 'hero--adjara',
     // Hero + three contextual body photos. The three body ones render as real
@@ -385,6 +388,9 @@ export const regions = [
     // used here. All four Ureki frames already ship on the Ureki Beach site page;
     // roles are set so neither Guria page opens on that page's hero.
     image: '/images/files/ureki-beach-shoreline-guria-georgia-1448.webp',
+    // Regions-overview card cover: the same hero family, at the smallest rung
+    // that exists, so the listing never pulls the full-size hero.
+    cardImage: '/images/files/ureki-beach-shoreline-guria-georgia-768.webp',
     imageAvif: '/images/files/ureki-beach-shoreline-guria-georgia-1448.avif',
     heroClass: 'hero--guria',
     // Landscape 4:3 hero, so og:image can safely fall back to `image` — no
@@ -576,6 +582,9 @@ export const regions = [
     // and Kakheti region pattern — region pages have no page-specific OG
     // convention. Native width is 1491, so that is the top rung; no 1600 rung.
     image: '/images/files/gelati-monastery-kutaisi-georgia-1491.webp',
+    // Regions-overview card cover: the same hero family, at the smallest rung
+    // that exists, so the listing never pulls the full-size hero.
+    cardImage: '/images/files/gelati-monastery-kutaisi-georgia-768.webp',
     imageAvif: '/images/files/gelati-monastery-kutaisi-georgia-1491.avif',
     heroClass: 'hero--imereti',
     // Hero + two contextual body photos. The two body ones render as real
@@ -877,6 +886,9 @@ export const regions = [
     // on a different surface, not another destination page's hero, and the owner
     // approved the reuse (cf. the Gelati hero on the Imereti region page).
     image: '/images/kakheti/sighnaghi-sunrise-alazani-valley-kakheti-georgia-1448.webp',
+    // Regions-overview card cover: the same hero family, at the smallest rung
+    // that exists, so the listing never pulls the full-size hero.
+    cardImage: '/images/kakheti/sighnaghi-sunrise-alazani-valley-kakheti-georgia-768.webp',
     imageAvif: '/images/kakheti/sighnaghi-sunrise-alazani-valley-kakheti-georgia-1448.avif',
     heroClass: 'hero--kakheti',
     // Cover + the one contextual body photo (our own). The vineyard renders as a real
@@ -1324,6 +1336,11 @@ export const regions = [
     // was a single JPG). og:image/twitter auto-derive from `image` via useSEO,
     // matching the other region pages. Native max is 1445, so that is the top rung.
     image: '/images/kvemo-kartli/diamond-bridge-dashbashi-canyon-georgia-1445.webp',
+    // Regions-overview card cover: the same hero family, at the smallest rung
+    // that exists, so the listing never pulls the full-size hero.
+    // Focal point copied from .hero--kvemo-kartli so the card crops like the hero.
+    cardImage: '/images/kvemo-kartli/diamond-bridge-dashbashi-canyon-georgia-768.webp',
+    cardPosition: '25% center',
     imageAvif: '/images/kvemo-kartli/diamond-bridge-dashbashi-canyon-georgia-1445.avif',
     heroClass: 'hero--kvemo-kartli',
     // Hero + three contextual body photos, each spliced into every locale's content
@@ -1598,6 +1615,11 @@ export const regions = [
     // things-to-do guide got nothing: it never names Khvamli at all.
     // ⚠️ PORTRAIT SOURCE (1086x1448) — ladder caps at 768/1086; no 1200/1448 rung.
     image: '/images/racha-lechkhumi/khvamli-mountain-georgia-1086.webp',
+    // Regions-overview card cover: the same hero family, at the smallest rung
+    // that exists, so the listing never pulls the full-size hero.
+    // Focal point copied from .hero--lechkhumi so the card crops like the hero.
+    cardImage: '/images/racha-lechkhumi/khvamli-mountain-georgia-768.webp',
+    cardPosition: 'center 55%',
     imageAvif: '/images/racha-lechkhumi/khvamli-mountain-georgia-1086.avif',
     heroClass: 'hero--lechkhumi',
     // Regions normally declare no ogImage, but this hero is 3:4 and would make a
@@ -1787,6 +1809,9 @@ export const regions = [
     // width with no ladder and no ImageObject. Flagged, not fixed: this pass adds
     // body images only. og:image/twitter continue to auto-derive from this value.
     image: '/images/files/Ananuri%20Fortress%20and%20Zhinvali%20Reservoir.jpg',
+    // Regions-overview card cover: the same hero family, at the smallest rung
+    // that exists, so the listing never pulls the full-size hero.
+    cardImage: '/images/files/Ananuri%20Fortress%20and%20Zhinvali%20Reservoir.jpg',
     // Three contextual body photos, spliced into each locale's content at a fixed
     // BLOCK INDEX (all 7 locales share a 28-block shape), one per major section:
     // Jvari in the Mtskheta section, Gudauri on the Military Highway, Gergeti in
@@ -2096,6 +2121,11 @@ export const regions = [
     // ⚠️ The old Shaori frame is NOT deleted: the Racha things-to-do guide below
     // still uses it, and so may other pages.
     image: '/images/files/racha-mountains-georgia-1672.webp',
+    // Regions-overview card cover: the same hero family, at the smallest rung
+    // that exists, so the listing never pulls the full-size hero.
+    // Focal point copied from .hero--racha so the card crops like the hero.
+    cardImage: '/images/files/racha-mountains-georgia-768.webp',
+    cardPosition: 'center 48%',
     imageAvif: '/images/files/racha-mountains-georgia-1672.avif',
     heroClass: 'hero--racha',
     // The hero is landscape, so og:image would fall back to `image` (a WebP rung).
@@ -2150,6 +2180,11 @@ export const regions = [
     // pages do not lead with the same frame.
     // ⚠️ PORTRAIT SOURCE (1086x1448) — native ceiling 1086, ladder 768/1086 only.
     image: '/images/martvili/martvili-canyon-turquoise-river-georgia-1086.webp',
+    // Regions-overview card cover: the same hero family, at the smallest rung
+    // that exists, so the listing never pulls the full-size hero.
+    // Focal point copied from .hero--samegrelo so the card crops like the hero.
+    cardImage: '/images/martvili/martvili-canyon-turquoise-river-georgia-768.webp',
+    cardPosition: 'center 35%',
     imageAvif: '/images/martvili/martvili-canyon-turquoise-river-georgia-1086.avif',
     heroClass: 'hero--samegrelo',
     // ⚠️ DELIBERATE DEVIATION from the other regions, which declare no `ogImage`:
@@ -2355,6 +2390,9 @@ export const regions = [
     // frame — tours.js carries none — so a region hub can only duplicate or keep
     // a weaker photo. Same call as the Gelati hero on the Imereti region page.
     image: '/images/files/vardzia-cave-monastery-cliff-face-georgia-1448.webp',
+    // Regions-overview card cover: the same hero family, at the smallest rung
+    // that exists, so the listing never pulls the full-size hero.
+    cardImage: '/images/files/vardzia-cave-monastery-cliff-face-georgia-768.webp',
     imageAvif: '/images/files/vardzia-cave-monastery-cliff-face-georgia-1448.avif',
     heroClass: 'hero--samtskhe-javakheti',
     // Hero + four contextual body photos, spliced into each locale's content at a
@@ -2708,6 +2746,9 @@ export const regions = [
     // `heroClass` gives the page its first ladder — it previously served one raw
     // 1920px JPG to every viewport. og:image/twitter auto-derive from `image`.
     image: '/images/files/uplistsikhe-mtkvari-valley-view-georgia-1448.webp',
+    // Regions-overview card cover: the same hero family, at the smallest rung
+    // that exists, so the listing never pulls the full-size hero.
+    cardImage: '/images/files/uplistsikhe-mtkvari-valley-view-georgia-768.webp',
     imageAvif: '/images/files/uplistsikhe-mtkvari-valley-view-georgia-1448.avif',
     heroClass: 'hero--shida-kartli',
     // Hero + three contextual body photos, spliced into each locale's content at a
@@ -2998,6 +3039,9 @@ export const regions = [
     slug: 'svaneti', name: 'Svaneti', published: true,
     seoKey: 'svaneti', contentKey: 'svaneti',
     image: '/images/files/Koruldi%20Lakes.jpg',
+    // Regions-overview card cover: the same hero family, at the smallest rung
+    // that exists, so the listing never pulls the full-size hero.
+    cardImage: '/images/files/Koruldi%20Lakes.jpg',
     // Region-level "things to do" guide, served at
     // /georgia/svaneti/things-to-do-in-svaneti via the CitySubPage dispatcher.
     thingsToDo: {
