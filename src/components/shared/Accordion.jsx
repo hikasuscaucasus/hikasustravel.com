@@ -192,7 +192,12 @@ export function AccordionItem({ title, children, isOpen, onToggle, index, itiner
   )
 }
 
-export default function Accordion({ items, renderContent, headingKey, itinerary }) {
+/* `hideHeading` drops the accordion's own <h2>, leaving the Expand All control
+   in its header row. Only the dedicated /faq page uses it: that page carries its
+   title in a heading band above, so the accordion's heading would repeat it
+   word for word. Every other caller omits the prop and keeps the <h2>, which is
+   correct there because the FAQ is a subsection under the page's own <h1>. */
+export default function Accordion({ items, renderContent, headingKey, itinerary, hideHeading = false }) {
   const [openItems, setOpenItems] = useState(itinerary ? { 0: true } : {})
   const [allOpen, setAllOpen] = useState(false)
   const t = useT()
@@ -214,7 +219,7 @@ export default function Accordion({ items, renderContent, headingKey, itinerary 
   return (
     <div className={`acc${itinerary ? ' acc--itinerary' : ''}`}>
       <div className="acc__header">
-        <h2 className="acc__heading">{heading}</h2>
+        {!hideHeading && <h2 className="acc__heading">{heading}</h2>}
         <button className="acc__toggle-all" onClick={toggleAll} type="button">
           {allOpen ? t('accordion.collapseAll') : t('accordion.expandAll')}
           <ChevronIcon open={allOpen} />
