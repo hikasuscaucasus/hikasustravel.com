@@ -5750,13 +5750,16 @@
     "intro": "Gruzja dzieli się na wyraźnie odrębne regiony, z których każdy ma własny krajobraz, kuchnię i historię — od piwnic winiarskich na wschodzie po wysokie szczyty Kaukazu i wybrzeże Morza Czarnego. Skorzystaj z tego przeglądu, aby znaleźć region pasujący do Twojej podróży; szczegółowe przewodniki po regionach dodajemy z czasem.",
     "items": {
       "abkhazia": {
-        "name": "Abchazja"
+        "name": "Abchazja",
+        "description": "Region nad Morzem Czarnym o spektakularnym wybrzeżu i zalesionych stokach Kaukazu, obecnie niedostępny turystycznie od strony Gruzji."
       },
       "lechkhumi": {
-        "name": "Leczchumi"
+        "name": "Leczchumi",
+        "description": "Spokojny region na północnym zachodzie, z zielonymi dolinami rzek i małymi wioskami winiarskimi, znany z Tvishi i rzadkiego Usakhelouri."
       },
       "racha": {
-        "name": "Racza"
+        "name": "Racza",
+        "description": "Odległy region górski zalesionych dolin Rioni, wina Khvanchkara i średniowiecznej katedry Nikortsminda."
       },
       "kakheti": {
         "name": "Kachetia",

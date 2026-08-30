@@ -5750,13 +5750,16 @@
     "intro": "Georgië is opgedeeld in afzonderlijke regio's, elk met een eigen landschap, keuken en geschiedenis — van de wijnkelders in het oosten tot de hoge Kaukasustoppen en de kust van de Zwarte Zee. Gebruik dit overzicht om de regio te vinden die bij je reis past; gedetailleerde regionale gidsen worden na verloop van tijd toegevoegd.",
     "items": {
       "abkhazia": {
-        "name": "Abchazië"
+        "name": "Abchazië",
+        "description": "Een Zwarte Zee-regio met een dramatische kustlijn en beboste Kaukasushellingen, momenteel niet toegankelijk vanuit Georgië voor toerisme."
       },
       "lechkhumi": {
-        "name": "Lechkhumi"
+        "name": "Lechkhumi",
+        "description": "Een rustige regio in het noordwesten met groene riviervalleien en kleine wijndorpen, vooral bekend om Tvishi en de zeldzame Usakhelouri."
       },
       "racha": {
-        "name": "Racha"
+        "name": "Racha",
+        "description": "Een afgelegen bergregio met beboste valleien van de Rioni, Khvanchkara-wijn en de middeleeuwse kathedraal van Nikortsminda."
       },
       "kakheti": {
         "name": "Kachetië",

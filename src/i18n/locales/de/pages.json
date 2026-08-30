@@ -5750,13 +5750,16 @@
     "intro": "Georgien gliedert sich in deutlich unterschiedliche Regionen, jede mit ihrer eigenen Landschaft, Kuche und Geschichte - von den Weinkellern im Osten uber die hohen Kaukasusgipfel bis zur Schwarzmeerkuste. Nutzen Sie diesen Uberblick, um die Region zu finden, die zu Ihrer Reise passt; ausfuhrliche Regionalfuhrer kommen mit der Zeit hinzu.",
     "items": {
       "abkhazia": {
-        "name": "Abchasien"
+        "name": "Abchasien",
+        "description": "Eine Schwarzmeerregion mit spektakulärer Küste und bewaldeten Kaukasushängen, von Georgien aus derzeit nicht für den Tourismus zugänglich."
       },
       "lechkhumi": {
-        "name": "Letschchumi"
+        "name": "Letschchumi",
+        "description": "Eine ruhige Region im Nordwesten mit grünen Flusstälern und kleinen Weindörfern, bekannt vor allem für Tvishi und den seltenen Usakhelouri."
       },
       "racha": {
-        "name": "Ratscha"
+        "name": "Ratscha",
+        "description": "Eine abgelegene Bergregion mit bewaldeten Tälern des Rioni, dem Wein Khvanchkara und der mittelalterlichen Kathedrale von Nikortsminda."
       },
       "kakheti": {
         "name": "Kachetien",

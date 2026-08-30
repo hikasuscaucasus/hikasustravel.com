@@ -5750,13 +5750,16 @@
     "intro": "La Georgie se divise en regions bien distinctes, chacune avec son propre paysage, sa cuisine et son histoire — des caves a vin de l'est aux hauts sommets du Caucase et a la cote de la mer Noire. Utilisez cet apercu pour trouver la region qui correspond a votre voyage ; des guides regionaux detailles sont ajoutes au fil du temps.",
     "items": {
       "abkhazia": {
-        "name": "Abkhazie"
+        "name": "Abkhazie",
+        "description": "Une région de la mer Noire au littoral spectaculaire et aux versants boisés du Caucase, actuellement inaccessible au tourisme depuis la Géorgie."
       },
       "lechkhumi": {
-        "name": "Lechkhumi"
+        "name": "Lechkhumi",
+        "description": "Une région paisible du nord-ouest, faite de vallées fluviales verdoyantes et de petits villages viticoles, connue pour le Tvishi et le rare Usakhelouri."
       },
       "racha": {
-        "name": "Racha"
+        "name": "Racha",
+        "description": "Une région montagneuse isolée, aux vallées boisées du Rioni, célèbre pour le vin Khvanchkara et la cathédrale médiévale de Nikortsminda."
       },
       "kakheti": {
         "name": "Kakhétie",

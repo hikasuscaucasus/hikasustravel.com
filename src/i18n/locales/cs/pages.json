@@ -5750,13 +5750,16 @@
     "intro": "Gruzie se dělí na výrazně odlišné regiony, každý s vlastní krajinou, jídlem a historií — od vinných sklepů na východě po vysoké kavkazské vrcholky a pobřeží Černého moře. Použijte tento přehled k nalezení regionu, který se hodí pro vaši cestu; podrobní průvodci jednotlivými regiony postupem času přibývají.",
     "items": {
       "abkhazia": {
-        "name": "Abcházie"
+        "name": "Abcházie",
+        "description": "Černomořský region s dramatickým pobřežím a zalesněnými svahy Kavkazu, z Gruzie v současnosti turisticky nepřístupný."
       },
       "lechkhumi": {
-        "name": "Lečchumi"
+        "name": "Lečchumi",
+        "description": "Klidný region na severozápadě se zelenými říčními údolími a malými vinařskými vesnicemi, proslulý vínem Tvishi a vzácným Usakhelouri."
       },
       "racha": {
-        "name": "Rača"
+        "name": "Rača",
+        "description": "Odlehlý horský region zalesněných údolí řeky Rioni, vína Khvanchkara a středověké katedrály Nikortsminda."
       },
       "kakheti": {
         "name": "Kachetie",

@@ -5750,13 +5750,16 @@
     "intro": "Georgia se divide en regiones bien diferenciadas, cada una con su propio paisaje, gastronomia e historia: desde las bodegas vinicolas del este hasta los altos picos del Caucaso y la costa del mar Negro. Usa esta vision general para encontrar la region que encaja con tu viaje; las guias regionales detalladas se van anadiendo con el tiempo.",
     "items": {
       "abkhazia": {
-        "name": "Abjasia"
+        "name": "Abjasia",
+        "description": "Una región del mar Negro de costa espectacular y laderas boscosas del Cáucaso, actualmente no accesible desde Georgia para el turismo."
       },
       "lechkhumi": {
-        "name": "Lechkhumi"
+        "name": "Lechkhumi",
+        "description": "Una tranquila región del noroeste de verdes valles fluviales y pequeños pueblos vinícolas, conocida por el Tvishi y el raro Usakhelouri."
       },
       "racha": {
-        "name": "Racha"
+        "name": "Racha",
+        "description": "Una remota región de montaña de valles boscosos del Rioni, el vino Khvanchkara y la catedral medieval de Nikortsminda."
       },
       "kakheti": {
         "name": "Kakheti",
