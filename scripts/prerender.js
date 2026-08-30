@@ -169,11 +169,6 @@ function parseTours(source) {
 
 const tours = parseTours(toursFile)
 
-// Locale-less paths that carry the Ivory-badge pilot theme (see emitHtml).
-const IVORY_ROUTES = new Set(
-  tours.map((t) => `/${t.type === 'group' ? 'group-tours' : 'private-tours'}/${t.slug}`),
-)
-
 // --- Tour translations (per language) ---
 function loadTourTranslations(lang) {
   try {
@@ -451,17 +446,10 @@ async function emitHtml(filePath, lang, { title, description, keywords, canonica
   // Build the path portion from canonical (everything after SITE_URL/{lang})
   const canonicalPath = canonical.replace(`${SITE_URL}/${lang}`, '')
 
-  // Ivory-badge design pilot (branch design-ivory-pilot). The theme is scoped to
-  // `.theme-ivory` on <html> and applied to tour-detail routes only; Layout.jsx
-  // sets the identical class on client navigation, so the static and hydrated
-  // documents agree. Matching against the tour registry (not the URL shape)
-  // keeps the private-tour collection pages, which share /private-tours/<slug>,
-  // out of the pilot. The theme is Verdana-only, so these pages also drop the
-  // Google Fonts request the rest of the site still uses.
-  if (IVORY_ROUTES.has(canonicalPath.replace(/\/$/, ''))) {
-    $('html').addClass('theme-ivory')
-    $('link[href*="fonts.googleapis.com"], link[href*="fonts.gstatic.com"]').remove()
-  }
+  // The Ivory theme is site-wide now, so `theme-ivory` lives on <html> in
+  // index.html and arrives here with the template — there is no per-route hook
+  // any more. The Google Fonts link it used to strip is gone from the template
+  // too, so nothing needs removing here either.
 
   for (const altLang of LANGS) {
     const altUrl = `${SITE_URL}/${altLang}${canonicalPath}`

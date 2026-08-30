@@ -1,7 +1,7 @@
 import { useContext, useEffect } from 'react'
 import HeroSection from '../shared/HeroSection'
 import FadeUp from '../shared/FadeUp'
-import BlurUpBackground from '../shared/BlurUpBackground'
+import CardImage from '../shared/CardImage'
 import { tours } from '../../data/tours'
 import useT from '../../i18n/useT'
 import useLang from '../../i18n/useLang'
@@ -47,12 +47,12 @@ export default function GroupToursPage() {
                   className="tour-image-link"
                   aria-label={tt?.title || tour.title}
                 >
-                  <BlurUpBackground
+                  <CardImage
                     src={tour.listingImage || tour.heroImage}
                     className="tour-image"
                   >
                     <div className="tour-image-scrim" aria-hidden="true" />
-                  </BlurUpBackground>
+                  </CardImage>
                 </LocaleLink>
                 <div className="tour-info">
                   <h2>

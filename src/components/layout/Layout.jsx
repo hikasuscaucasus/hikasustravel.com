@@ -5,22 +5,6 @@ import Footer from './Footer'
 import BackToTop from './BackToTop'
 import ScrollToTop from './ScrollToTop'
 import WhatsAppButton from './WhatsAppButton'
-import { tours } from '../../data/tours'
-
-/* Ivory-badge design pilot (branch design-ivory-pilot).
-   The theme lives in assets/css/ivory.css, entirely under `.theme-ivory`, and
-   the class is put on <html> for tour-detail routes only. scripts/prerender.js
-   writes the same class into the static HTML, so the served page and the
-   hydrated page agree; this effect keeps it correct across SPA navigation.
-   Matching on the tour registry rather than the URL shape is deliberate — the
-   private-tour COLLECTION pages share the /private-tours/<slug> path and must
-   not be themed. */
-const TOUR_DETAIL_PATH = /^\/[a-z]{2}\/(?:private-tours|group-tours)\/([^/]+)\/?$/
-const TOUR_SLUGS = new Set(tours.map((t) => t.slug))
-const isIvoryRoute = (pathname) => {
-  const m = pathname.match(TOUR_DETAIL_PATH)
-  return !!m && TOUR_SLUGS.has(m[1])
-}
 
 export default function Layout() {
   const location = useLocation()
@@ -33,9 +17,8 @@ export default function Layout() {
     if (lang) document.documentElement.lang = lang
   }, [lang])
 
-  useEffect(() => {
-    document.documentElement.classList.toggle('theme-ivory', isIvoryRoute(location.pathname))
-  }, [location.pathname])
+  /* The Ivory theme class used to be toggled here per route. It is site-wide
+     now and ships on <html> in index.html, so there is nothing to toggle. */
 
   // App-wide soft-navigation for auto-generated in-content links. The linker
   // emits <a data-internal="/georgia/..."> (lang-less) plus a full-href

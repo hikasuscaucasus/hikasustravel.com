@@ -8,13 +8,12 @@
   font-size: var(--font-size);
 }
 
-@font-face {
-  font-family: "rockwell";
-  src: url("../fonts/rockwellnova-webfont.woff2") format("woff2"),
-    url("../fonts/rockwellnova-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
+/* The "rockwell" @font-face was removed with the Ivory rollout: the theme sets
+   Verdana everywhere, so no element ever resolved to it and the woff2 would
+   only have been dead weight in the network panel. The many
+   `font-family: "rockwell"` declarations further down are left in place — they
+   are overridden by the theme and reverting the theme restores them intact.
+   The font files themselves are still in src/assets/fonts/. */
 
 html {
   scroll-behavior: smooth;
