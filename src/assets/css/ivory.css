@@ -2236,3 +2236,145 @@
 .theme-ivory .ptc-links__heading {
   text-transform: none;
 }
+
+
+/* --- Hotel photo viewer -----------------------------------------------------
+   The hotel modal's photos open in the site's existing lightbox. Two things are
+   specific to this use and are opt-in on the shared component, so the tour
+   gallery is untouched: the large left/right click zones, and the stacking.
+
+   Stacking: the hotel modal sits at 2000 and the shared lightbox backdrop is
+   also 2000 — it only wins today because it portals into <body> and therefore
+   paints later. That is implicit, so the hotel variant states it: 2100 for the
+   backdrop and 2101 for its controls, which is above the modal (2000), the
+   sticky header (999), the tour sub-nav (120) and the mobile booking bar (900),
+   and still below the search overlay (10001). */
+.theme-ivory .gallery-lightbox-backdrop--hotel {
+  z-index: 2100;
+  /* No magnifier anywhere in this viewer — the arrows carry the direction. */
+  cursor: default;
+}
+
+.theme-ivory .gallery-lightbox-backdrop--hotel .gallery-lightbox__close,
+.theme-ivory .gallery-lightbox-backdrop--hotel .gallery-lightbox__nav,
+.theme-ivory .gallery-lightbox-backdrop--hotel .gallery-lightbox__caption {
+  z-index: 2101;
+}
+
+/* The click zones. They flank the image rather than covering it, so the photo
+   itself stays clear and its swipe handling is undisturbed. They sit BELOW the
+   arrows, the close button and the caption, all of which are later siblings
+   with a higher z-index — so a click on any real control is handled by that
+   control and never by the zone behind it. */
+.gallery-lightbox__zone {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 26vw;
+  max-width: 240px;
+  z-index: 2050;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  /* A wash that deepens toward the edge, so the navigable side reads as
+     interactive without putting a slab over the photograph. */
+  opacity: 0;
+  transition: opacity 0.18s ease;
+}
+
+.gallery-lightbox__zone--prev {
+  left: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.34), rgba(0, 0, 0, 0));
+}
+
+.gallery-lightbox__zone--next {
+  right: 0;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.34), rgba(0, 0, 0, 0));
+}
+
+/* Fine pointers only: the wash and the arrow emphasis are hover affordances,
+   and on touch there is no hover, so the arrows simply stay at their normal
+   (already visible) strength and the zones stay tappable. */
+@media (hover: hover) and (pointer: fine) {
+  .gallery-lightbox__zone:hover {
+    opacity: 1;
+  }
+
+  /* The zones are rendered before the arrows, so a sibling combinator can
+     brighten the matching arrow while its side is hovered. The arrows are
+     visible at rest — this emphasises them, it does not reveal them. */
+  .gallery-lightbox__zone--prev:hover ~ .gallery-lightbox__nav--prev,
+  .gallery-lightbox__zone--next:hover ~ .gallery-lightbox__nav--next {
+    background: rgba(0, 0, 0, 0.85);
+    transform: translateY(-50%) scale(1.06);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gallery-lightbox__zone,
+  .gallery-lightbox__nav {
+    transition: none;
+  }
+
+  .gallery-lightbox__zone--prev:hover ~ .gallery-lightbox__nav--prev,
+  .gallery-lightbox__zone--next:hover ~ .gallery-lightbox__nav--next {
+    transform: translateY(-50%);
+  }
+}
+
+/* Narrow screens: keep the zones clear of the 48px arrows' tap targets and of
+   the middle of the photo, and never let them push the layout. */
+@media (max-width: 600px) {
+  .gallery-lightbox__zone {
+    width: 22vw;
+    max-width: none;
+  }
+}
+
+/* --- Hotel modal thumbnails -------------------------------------------------
+   Each thumbnail is a button wrapping its image, so the whole picture is the
+   target. Hand pointer, never a magnifier. */
+.theme-ivory .iv-hotel__photo-btn {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.theme-ivory .iv-hotel__photo-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.theme-ivory .iv-hotel__photo-btn img {
+  transition: transform 0.2s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .theme-ivory .iv-hotel__photo-btn:hover img {
+    transform: scale(1.04);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-ivory .iv-hotel__photo-btn img,
+  .theme-ivory .iv-hotel__photo-btn:hover img {
+    transition: none;
+    transform: none;
+  }
+}
+
+/* Below 768px styles.css drops the lightbox arrows to 40x40. For the hotel
+   viewer they carry the primary navigation on touch, where there is no hover
+   and no keyboard, so they keep a 44px target — the practical minimum. Scoped
+   to the hotel variant: the tour gallery keeps the size it has always had. */
+@media (max-width: 768px) {
+  .theme-ivory .gallery-lightbox-backdrop--hotel .gallery-lightbox__nav {
+    width: 44px;
+    height: 44px;
+  }
+}

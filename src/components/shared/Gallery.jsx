@@ -27,7 +27,24 @@ const GALLERY_SIZES = '(max-width:768px) 50vw, 300px'
 const srcSetFor = (base, widths, ext) =>
   widths.map((w) => `${asset(`${base}-${w}.${ext}`)} ${w}w`).join(', ')
 
-export function GalleryLightbox({ images, startIndex, onClose, label }) {
+/**
+ * The shared full-screen image viewer.
+ *
+ * Two callers: the tour Gallery, and the hotel-information modal. Everything
+ * the hotel viewer needs beyond the gallery's behaviour is OPT-IN, so the tour
+ * gallery renders exactly what it rendered before:
+ *
+ *   sideNav    large previous/next click zones down the left and right of the
+ *              viewer, so a visitor does not have to hit a 48px arrow
+ *   className  a modifier for stacking — the hotel viewer opens on top of the
+ *              hotel modal, which already sits at z-index 2000
+ *   navLabels  aria-labels for the arrows; the hotel viewer passes its own
+ *              already-translated "previous/next photo" strings
+ *
+ * Each caller passes its own `images` array and owns its own open/index state,
+ * so the two can never share an index or leak images into one another.
+ */
+export function GalleryLightbox({ images, startIndex, onClose, label, sideNav = false, className = '', navLabels }) {
   const t = useT()
   const [index, setIndex] = useState(startIndex)
   const closeBtnRef = useRef(null)
@@ -59,7 +76,12 @@ export function GalleryLightbox({ images, startIndex, onClose, label }) {
   if (!image) return null
 
   const caption = image.caption ? image.caption.replace(/<[^>]*>/g, '') : ''
-  const alt = caption || (image.description || '')
+  /* `lightboxAlt` lets a caller state the alt outright instead of having it
+     derived from the visible caption. The hotel viewer uses it so the enlarged
+     photo keeps the hotel record's own descriptive, already-localized alt while
+     the visible caption stays the short category label. No gallery item carries
+     this key, so the tour gallery's alt is unchanged. */
+  const alt = image.lightboxAlt || caption || (image.description || '')
 
   /* The expanded view is the one place that wants the biggest rendition the
      pipeline built. `src` is whatever width the tile's fallback happened to
@@ -81,7 +103,31 @@ export function GalleryLightbox({ images, startIndex, onClose, label }) {
   }
 
   return createPortal(
-    <div className="gallery-lightbox-backdrop" onClick={onClose} role="dialog" aria-modal="true" aria-label={label || t('tour.gallery')}>
+    <div className={`gallery-lightbox-backdrop${className ? ` ${className}` : ''}`} onClick={onClose} role="dialog" aria-modal="true" aria-label={label || t('tour.gallery')}>
+      {/* The side zones come FIRST so the arrows, close button and caption are
+          later siblings: they paint above the zones and a click on any of them
+          is handled by that control, never by the zone underneath. The CSS also
+          uses this order to brighten the matching arrow while a zone is hovered
+          (`.zone--prev:hover ~ .nav--prev`). Real <button>s, so they are
+          reachable and operable from the keyboard like any other control. */}
+      {sideNav && count > 1 && (
+        <>
+          <button
+            type="button"
+            className="gallery-lightbox__zone gallery-lightbox__zone--prev"
+            onClick={(e) => { e.stopPropagation(); goPrev() }}
+            aria-label={navLabels?.prev || t('tour.prevImage')}
+            tabIndex={-1}
+          />
+          <button
+            type="button"
+            className="gallery-lightbox__zone gallery-lightbox__zone--next"
+            onClick={(e) => { e.stopPropagation(); goNext() }}
+            aria-label={navLabels?.next || t('tour.nextImage')}
+            tabIndex={-1}
+          />
+        </>
+      )}
       <button ref={closeBtnRef} className="gallery-lightbox__close" onClick={onClose} aria-label={t('hotel.close')}>
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
           <line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />
@@ -91,7 +137,7 @@ export function GalleryLightbox({ images, startIndex, onClose, label }) {
         <button
           className="gallery-lightbox__nav gallery-lightbox__nav--prev"
           onClick={(e) => { e.stopPropagation(); goPrev() }}
-          aria-label={t('tour.prevImage')}
+          aria-label={navLabels?.prev || t('tour.prevImage')}
         >
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
             <polyline points="15 18 9 12 15 6" />
@@ -120,7 +166,7 @@ export function GalleryLightbox({ images, startIndex, onClose, label }) {
         <button
           className="gallery-lightbox__nav gallery-lightbox__nav--next"
           onClick={(e) => { e.stopPropagation(); goNext() }}
-          aria-label={t('tour.nextImage')}
+          aria-label={navLabels?.next || t('tour.nextImage')}
         >
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
             <polyline points="9 18 15 12 9 6" />

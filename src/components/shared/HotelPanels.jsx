@@ -1,4 +1,5 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import { GalleryLightbox } from './Gallery'
 import useT from '../../i18n/useT'
 import useLang from '../../i18n/useLang'
 
@@ -38,21 +39,47 @@ function StarIcon() {
 function HotelPanel({ entry, hotel, open, onClose, showCategories }) {
   const t = useT()
   const closeRef = useRef(null)
+  // Index of the photo shown in the enlarged viewer, or null when it is closed.
+  // Each hotel panel owns its own index, so one hotel's photos can never run on
+  // into the next hotel's — the viewer is handed this hotel's array and nothing
+  // else.
+  const [photoIndex, setPhotoIndex] = useState(null)
+  // The thumbnail that opened the viewer, so focus can go back to it on close.
+  const photoOpener = useRef(null)
 
+  /* Scroll lock and focus are tied to the MODAL's own lifetime and nothing
+     else. They deliberately do not depend on `photoIndex`: opening a photo
+     would then tear this effect down and set it up again, and the restore on
+     the way out would fight the viewer's own lock — which left `overflow`
+     stuck on `hidden` after both layers had closed. It would also have pulled
+     focus back to the accommodation table mid-interaction. */
   useEffect(() => {
     if (!open) return
     const prev = document.body.style.overflow
     document.body.style.overflow = 'hidden'
     const opener = document.activeElement
     closeRef.current?.focus()
-    const onKey = (e) => { if (e.key === 'Escape') onClose() }
-    document.addEventListener('keydown', onKey)
     return () => {
       document.body.style.overflow = prev
-      document.removeEventListener('keydown', onKey)
       if (opener instanceof HTMLElement) opener.focus()
     }
-  }, [open, onClose])
+  }, [open])
+
+  /* Escape unstacks one layer at a time. While the photo viewer is open it owns
+     Escape, so this handler stands down: the first press closes the photo and
+     leaves the modal exactly as it was — same scroll position, still open — and
+     the second press closes the modal. Rebinding on `photoIndex` is what keeps
+     that guard current, and it is cheap because it is only a listener. */
+  useEffect(() => {
+    if (!open) return
+    const onKey = (e) => { if (e.key === 'Escape' && photoIndex === null) onClose() }
+    document.addEventListener('keydown', onKey)
+    return () => document.removeEventListener('keydown', onKey)
+  }, [open, onClose, photoIndex])
+
+  // A hotel modal that gets closed while its viewer is open must not leave the
+  // viewer behind on the next open.
+  useEffect(() => { if (!open) setPhotoIndex(null) }, [open])
 
   const images = hotel.images || (hotel.image ? [{ src: hotel.image, alt: hotel.name }] : [])
   const amenities = hotel.amenities || []
@@ -62,6 +89,7 @@ function HotelPanel({ entry, hotel, open, onClose, showCategories }) {
   const meta = [entry.tier, entry.city].filter(Boolean).join(' · ')
 
   return (
+    <>
     <div
       className="iv-hotel"
       hidden={!open}
@@ -94,7 +122,19 @@ function HotelPanel({ entry, hotel, open, onClose, showCategories }) {
           <div className="iv-hotel__photos">
             {images.map((img, i) => (
               <figure key={i} className="iv-hotel__photo">
-                <img src={img.src} alt={img.alt || hotel.name} loading="lazy" decoding="async" />
+                {/* Every photo opens the viewer, not just the first, and it
+                    opens on the one that was clicked. A real <button> so it is
+                    reachable and operable from the keyboard; the whole image is
+                    the target. The <img> keeps its own src, alt, lazy loading
+                    and decoding, so the prerendered markup is unchanged. */}
+                <button
+                  type="button"
+                  className="iv-hotel__photo-btn"
+                  onClick={(e) => { photoOpener.current = e.currentTarget; setPhotoIndex(i) }}
+                  aria-label={img.alt || hotel.name}
+                >
+                  <img src={img.src} alt={img.alt || hotel.name} loading="lazy" decoding="async" />
+                </button>
                 {showCategories && CATEGORY_KEYS[i] && <figcaption>{CATEGORY_KEYS[i]}</figcaption>}
               </figure>
             ))}
@@ -113,6 +153,41 @@ function HotelPanel({ entry, hotel, open, onClose, showCategories }) {
         )}
       </div>
     </div>
+
+      {/* The enlarged photo, on top of this modal rather than replacing it —
+          closing the viewer returns to the same modal, still scrolled where it
+          was. The array is THIS hotel's photos, so previous/next wrap within
+          the hotel and stop nowhere else; with a single photo the shared viewer
+          renders no arrows at all. `lightboxAlt` keeps the hotel record's own
+          localized alt on the big image while the visible caption stays the
+          short category label. Hotel images are single files with no width
+          ladder, so the enlarged view uses the same source — which is the
+          largest that exists.
+
+          Deliberately a SIBLING of the hotel backdrop, not a child. The viewer
+          portals into <body>, but React events bubble through the React tree,
+          not the DOM: nested inside, every click on an arrow or the viewer's
+          own backdrop would also reach the hotel backdrop's onClick and close
+          the modal underneath. */}
+      {photoIndex !== null && (
+        <GalleryLightbox
+          images={images.map((img, i) => ({
+            src: img.src,
+            lightboxAlt: img.alt || hotel.name,
+            caption: showCategories ? CATEGORY_KEYS[i] : undefined,
+          }))}
+          startIndex={photoIndex}
+          onClose={() => {
+            setPhotoIndex(null)
+            if (photoOpener.current instanceof HTMLElement) photoOpener.current.focus()
+          }}
+          label={hotel.name}
+          sideNav
+          className="gallery-lightbox-backdrop--hotel"
+          navLabels={{ prev: t('hotel.prevPhoto'), next: t('hotel.nextPhoto') }}
+        />
+      )}
+    </>
   )
 }
 
