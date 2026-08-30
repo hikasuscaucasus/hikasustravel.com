@@ -2089,7 +2089,38 @@ export const regions = [
   {
     slug: 'racha', name: 'Racha', published: true,
     seoKey: 'racha', contentKey: 'racha',
-    image: '/images/files/shaori-reservoir.jpg',
+    // Hero = the Racha mountain panorama (forested Rioni-side ridges, a winding
+    // road, the Greater Caucasus behind), replacing /images/files/shaori-reservoir.jpg,
+    // which had no responsive ladder at all. Native ceiling 1672x941 — the ladder
+    // is 768/1200/1600/1672 in .hero--racha, nothing upscaled.
+    // ⚠️ The old Shaori frame is NOT deleted: the Racha things-to-do guide below
+    // still uses it, and so may other pages.
+    image: '/images/files/racha-mountains-georgia-1672.webp',
+    imageAvif: '/images/files/racha-mountains-georgia-1672.avif',
+    heroClass: 'hero--racha',
+    // The hero is landscape, so og:image would fall back to `image` (a WebP rung).
+    // The package ships a proper 1.91:1 social crop, so name it explicitly —
+    // this is what emits og:image / twitter:image / og:image:width / :height.
+    ogImage: { src: '/images/files/racha-mountains-georgia-og-1200x630.jpg', width: 1200, height: 630 },
+    // Opt-in: point the TouristDestination node's `image` at the same social crop
+    // so schema.org, og:image and twitter:image all name one file (the mechanism
+    // Batumi Boulevard and Gombori Pass already use on site pages). Every other
+    // region omits this field and keeps `image` exactly as before.
+    jsonLdImage: '/images/files/racha-mountains-georgia-og-1200x630.jpg',
+    // The hero is a CSS background (no <img>), so there is no <img alt> to set —
+    // the localized alt lives here and feeds og:image:alt / twitter:image:alt per
+    // locale, exactly as Samegrelo's does.
+    imageMeta: {
+      alt: {
+        en: 'Forested ridges and a winding mountain road below the Greater Caucasus in the Racha region, Georgia',
+        de: 'Bewaldete Bergrücken und eine kurvenreiche Bergstraße unterhalb des Großen Kaukasus in der Region Ratscha, Georgien',
+        fr: 'Crêtes boisées et une route de montagne sinueuse sous le Grand Caucase dans la région de Racha, Géorgie',
+        es: 'Cordilleras boscosas y una sinuosa carretera de montaña bajo el Gran Cáucaso en la región de Racha, Georgia',
+        nl: 'Beboste bergkammen en een kronkelende bergweg onder de Grote Kaukasus in de regio Ratsja, Georgië',
+        cs: 'Zalesněné hřebeny a klikatá horská silnice pod Velkým Kavkazem v regionu Rača, Gruzie',
+        pl: 'Zalesione grzbiety i kręta górska droga pod Wielkim Kaukazem w regionie Racza, Gruzja',
+      },
+    },
     // Region-level "things to do" guide, served (like Samegrelo's/Lechkhumi's) at
     // /georgia/racha/things-to-do-in-racha via the CitySubPage dispatcher.
     thingsToDo: {

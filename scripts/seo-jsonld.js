@@ -144,7 +144,9 @@ export function createJsonLdBuilder({ seoFor }) {
           name: r.name,
           description: seo.description,
           url,
-          image: `${SITE_URL}${r.image}`,
+          // Opt-in `jsonLdImage`, same as the sites branch below: a region may
+          // name a dedicated social crop here. Regions without it are unchanged.
+          image: `${SITE_URL}${r.jsonLdImage || r.image}`,
           containedInPlace: { '@type': 'Country', name: 'Georgia' },
         },
         breadcrumbs([HOME, ALL_DEST, { name: t('nav.regions'), to: '/georgia/regions' }, { name: r.name }], url),

@@ -1923,6 +1923,50 @@ section {
 }
 /* Native is 1086 — that is the top rung. Do not add a 1200/1448 breakpoint. */
 
+/* Racha region hero — forested ridges and a winding mountain road under the
+   Greater Caucasus, replacing the Shaori reservoir frame, which shipped as a
+   single JPEG with no responsive ladder. Same opt-in .heroClass mechanism as
+   the other region heroes.
+   background-position: center 48% — the ridge line and the road sit just below
+   the middle of the frame, so a centred cover crop on a tall phone viewport
+   pushes both out of view; 48% holds the road and the valley while keeping the
+   cloud bank along the top.
+   plain url() = image-set() fallback. Native is 1672 — that is the top rung. */
+.hero--racha {
+  background-image: url("/images/files/racha-mountains-georgia-1200.webp");
+  background-image: image-set(
+    url("/images/files/racha-mountains-georgia-768.avif") type("image/avif"),
+    url("/images/files/racha-mountains-georgia-768.webp") type("image/webp")
+  );
+  background-position: center 48%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .hero--racha {
+    background-image: image-set(
+      url("/images/files/racha-mountains-georgia-1200.avif") type("image/avif"),
+      url("/images/files/racha-mountains-georgia-1200.webp") type("image/webp")
+    );
+  }
+}
+@media (min-width: 1200px) {
+  .hero--racha {
+    background-image: image-set(
+      url("/images/files/racha-mountains-georgia-1600.avif") type("image/avif"),
+      url("/images/files/racha-mountains-georgia-1600.webp") type("image/webp")
+    );
+  }
+}
+@media (min-width: 1600px) {
+  .hero--racha {
+    background-image: image-set(
+      url("/images/files/racha-mountains-georgia-1672.avif") type("image/avif"),
+      url("/images/files/racha-mountains-georgia-1672.webp") type("image/webp")
+    );
+  }
+}
+
 .hero--kvemo-kartli {
   background-image: url("/images/kvemo-kartli/diamond-bridge-dashbashi-canyon-georgia-1200.webp");
   background-image: image-set(

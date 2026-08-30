@@ -108,7 +108,11 @@ export default function RegionPage() {
           name: region.name,
           description: seo.description,
           url,
-          image: `${SITE_URL}${heroImage}`,
+          // Opt-in: a region may point this node at a dedicated 1.91:1 social
+          // crop via `jsonLdImage` so schema.org, og:image and twitter:image all
+          // name the same file — the mechanism SitePage already uses. Every
+          // region without the field keeps the hero rung exactly as before.
+          image: `${SITE_URL}${region.jsonLdImage || heroImage}`,
           containedInPlace: { '@type': 'Country', name: 'Georgia' },
         },
         // The cover photo plus the contextual body photos (our own). The non-hero
