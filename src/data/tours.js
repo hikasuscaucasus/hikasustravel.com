@@ -6700,7 +6700,175 @@ export const tours = [
         "content": "<p>Mountain weather determines lift operations and skiing conditions. The ski days are deliberately flexible, so you can adapt your plans to the conditions during your stay.</p>"
       }
     ],
+    "routeMapImage": {
+      "en": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-winter-ski-tour-from-kutaisi/route-map-8-day-winter-ski-tour-from-kutaisi-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/8-day-winter-ski-tour-from-kutaisi/route-map-8-day-winter-ski-tour-from-kutaisi-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "8-Day Winter Ski Tour from Kutaisi — Route Map",
+        "description": "Route map of the 8-Day Winter Ski Tour from Kutaisi, showing the drive up the Georgian Military Highway to Gudauri and back to Kutaisi.",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel LTD"
+        },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/en/terms-and-conditions",
+        "inLanguage": "en"
+      },
+      "de": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-winter-ski-tour-from-kutaisi/route-map-8-day-winter-ski-tour-from-kutaisi-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/8-day-winter-ski-tour-from-kutaisi/route-map-8-day-winter-ski-tour-from-kutaisi-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "8-tägige Winter-Skitour ab Kutaissi — Streckenkarte",
+        "description": "Streckenkarte der 8-tägigen Winter-Skireise ab Kutaissi, mit der Fahrt über die Georgische Heerstraße nach Gudauri und zurück nach Kutaissi.",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel LTD"
+        },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/de/terms-and-conditions",
+        "inLanguage": "de"
+      },
+      "fr": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-winter-ski-tour-from-kutaisi/route-map-8-day-winter-ski-tour-from-kutaisi-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/8-day-winter-ski-tour-from-kutaisi/route-map-8-day-winter-ski-tour-from-kutaisi-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "Séjour ski de 8 jours depuis Koutaïssi — Carte de l'itinéraire",
+        "description": "Carte de l'itinéraire du circuit de ski d'hiver de 8 jours au départ de Koutaïssi, montrant la route militaire géorgienne jusqu'à Goudaouri et le retour à Koutaïssi.",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel LTD"
+        },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/fr/terms-and-conditions",
+        "inLanguage": "fr"
+      },
+      "es": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-winter-ski-tour-from-kutaisi/route-map-8-day-winter-ski-tour-from-kutaisi-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/8-day-winter-ski-tour-from-kutaisi/route-map-8-day-winter-ski-tour-from-kutaisi-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "Tour de esquí de 8 días desde Kutaisi — Mapa de la ruta",
+        "description": "Mapa de la ruta del tour de esquí de invierno de 8 días desde Kutaisi, con el trayecto por la Carretera Militar Georgiana hasta Gudauri y el regreso a Kutaisi.",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel LTD"
+        },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/es/terms-and-conditions",
+        "inLanguage": "es"
+      },
+      "nl": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-winter-ski-tour-from-kutaisi/route-map-8-day-winter-ski-tour-from-kutaisi-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/8-day-winter-ski-tour-from-kutaisi/route-map-8-day-winter-ski-tour-from-kutaisi-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "8-daagse winterskireis vanuit Kutaisi — Routekaart",
+        "description": "Routekaart van de 8-daagse winterse skireis vanuit Koetaisi, met de rit over de Georgische Militaire Weg naar Gudauri en terug naar Koetaisi.",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel LTD"
+        },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/nl/terms-and-conditions",
+        "inLanguage": "nl"
+      },
+      "cs": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-winter-ski-tour-from-kutaisi/route-map-8-day-winter-ski-tour-from-kutaisi-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/8-day-winter-ski-tour-from-kutaisi/route-map-8-day-winter-ski-tour-from-kutaisi-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "8denní zimní lyžařský zájezd z Kutaisi — Mapa trasy",
+        "description": "Mapa trasy 8denního zimního lyžařského zájezdu z Kutaisi: cesta Gruzínskou vojenskou cestou do Gudauri a zpět do Kutaisi.",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel LTD"
+        },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/cs/terms-and-conditions",
+        "inLanguage": "cs"
+      },
+      "pl": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-winter-ski-tour-from-kutaisi/route-map-8-day-winter-ski-tour-from-kutaisi-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/8-day-winter-ski-tour-from-kutaisi/route-map-8-day-winter-ski-tour-from-kutaisi-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "8-dniowy zimowy tour narciarski z Kutaisi — Mapa trasy",
+        "description": "Mapa trasy 8-dniowej zimowej wycieczki narciarskiej z Kutaisi: przejazd Gruzińską Drogą Wojenną do Gudauri i powrót do Kutaisi.",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel LTD"
+        },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/pl/terms-and-conditions",
+        "inLanguage": "pl"
+      }
+    },
     "gallery": [
+      {
+        "src": "/images/tours/8-day-winter-ski-tour-from-kutaisi/route-map-8-day-winter-ski-tour-from-kutaisi-2400.webp",
+        "base": "/images/tours/8-day-winter-ski-tour-from-kutaisi/route-map-8-day-winter-ski-tour-from-kutaisi",
+        "widths": [
+          768,
+          1200,
+          1600,
+          2400
+        ],
+        "fallbackWidth": 1200,
+        "width": 2400,
+        "height": 1600,
+        "alt": {
+          "en": "Kutaisi to Gudauri on day 2, back to Kutaisi on day 7. Five nights at about 2,200 m in Gudauri, four full days on the slopes.",
+          "de": "Von Kutaissi nach Gudauri an Tag 2, zurück nach Kutaissi an Tag 7. Fünf Nächte auf rund 2.200 m in Gudauri, vier volle Tage auf der Piste.",
+          "fr": "De Koutaïssi à Goudaouri le jour 2, retour à Koutaïssi le jour 7. Cinq nuits à environ 2 200 m à Goudaouri, quatre journées complètes sur les pistes.",
+          "es": "De Kutaisi a Gudauri el día 2 y de vuelta a Kutaisi el día 7. Cinco noches a unos 2.200 m en Gudauri y cuatro días completos en las pistas.",
+          "nl": "Van Koetaisi naar Gudauri op dag 2, terug naar Koetaisi op dag 7. Vijf nachten op ongeveer 2.200 m in Gudauri, vier volle dagen op de piste.",
+          "cs": "Z Kutaisi do Gudauri druhý den, zpět do Kutaisi sedmý. Pět nocí ve výšce zhruba 2200 m v Gudauri a čtyři celé dny na sjezdovkách.",
+          "pl": "Z Kutaisi do Gudauri drugiego dnia, powrót do Kutaisi siódmego. Pięć nocy na wysokości około 2200 m w Gudauri i cztery pełne dni na stokach."
+        },
+        "caption": {
+          "en": "Route Map",
+          "de": "Streckenkarte",
+          "fr": "Carte de l'itinéraire",
+          "es": "Mapa de la ruta",
+          "nl": "Routekaart",
+          "cs": "Mapa trasy",
+          "pl": "Mapa trasy"
+        },
+        "altText": {
+          "en": "Route map of the 8-Day Winter Ski Tour from Kutaisi, showing the drive up the Georgian Military Highway to Gudauri and back to Kutaisi.",
+          "de": "Streckenkarte der 8-tägigen Winter-Skireise ab Kutaissi, mit der Fahrt über die Georgische Heerstraße nach Gudauri und zurück nach Kutaissi.",
+          "fr": "Carte de l'itinéraire du circuit de ski d'hiver de 8 jours au départ de Koutaïssi, montrant la route militaire géorgienne jusqu'à Goudaouri et le retour à Koutaïssi.",
+          "es": "Mapa de la ruta del tour de esquí de invierno de 8 días desde Kutaisi, con el trayecto por la Carretera Militar Georgiana hasta Gudauri y el regreso a Kutaisi.",
+          "nl": "Routekaart van de 8-daagse winterse skireis vanuit Koetaisi, met de rit over de Georgische Militaire Weg naar Gudauri en terug naar Koetaisi.",
+          "cs": "Mapa trasy 8denního zimního lyžařského zájezdu z Kutaisi: cesta Gruzínskou vojenskou cestou do Gudauri a zpět do Kutaisi.",
+          "pl": "Mapa trasy 8-dniowej zimowej wycieczki narciarskiej z Kutaisi: przejazd Gruzińską Drogą Wojenną do Gudauri i powrót do Kutaisi."
+        }
+      },
       {
         "src": "/images/files/gudauri-ski-view-1448.webp",
         "caption": {
