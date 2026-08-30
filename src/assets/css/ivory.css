@@ -2398,3 +2398,31 @@
 .theme-ivory .td-price-card__row--best span:last-child {
   color: inherit;
 }
+
+/* --- Embassy cards ----------------------------------------------------------
+   styles.css shapes running prose inside a content band with
+   `.page-items p { max-width: 800px; width: 50vw; margin-inline: auto }`. The
+   embassy list lives in one of those bands, so that rule reached the <p> holding
+   each embassy's name: every one of the 38 cards rendered its name 720px wide
+   inside a ~438px card at 1440px. Short names happened to fit on one line and
+   looked fine; longer ones ran straight out of the card, and the page itself
+   picked up horizontal scroll that grew with the viewport — 83px at 1024,
+   311px at 1440, 478px at 1920.
+
+   The fix is to stop the page-prose rule applying to text inside the card, so
+   the name is laid out by the card like every other element in it. No offsets,
+   no negative margins — the paragraph simply stops being 50vw wide. */
+.theme-ivory .embassy-card p {
+  width: auto;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Safety net for an unusually long unbroken string (a very long domain in the
+   website row); ordinary names still wrap at spaces. */
+.theme-ivory .embassy-card__name,
+.theme-ivory .embassy-card__row {
+  min-width: 0;
+  overflow-wrap: break-word;
+}
