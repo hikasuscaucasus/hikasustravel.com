@@ -568,8 +568,13 @@
   box-shadow: none;
 }
 
+/* The gallery trigger reads as an ordinary clickable element. It used to use
+   `zoom-in`, which promised a magnifier the lightbox does not offer — it opens a
+   larger rendition, it does not zoom. `cursor` inherits, so the <picture> and
+   <img> inside the trigger pick this up and the whole clickable area is one
+   pointer. This is the only rule that set a zoom cursor on a tour gallery. */
 .theme-ivory .gallery-card__img-wrap {
-  cursor: zoom-in;
+  cursor: pointer;
 }
 
 .theme-ivory .gallery-card__img {
