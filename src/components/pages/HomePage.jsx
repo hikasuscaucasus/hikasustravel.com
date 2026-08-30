@@ -36,20 +36,6 @@ export default function HomePage() {
         title={t('home.heroTitle')}
       />
 
-      <section className="home-items">
-        <div className="home-items">
-          <FadeUp>
-            <h2>{t('home.exploreTitle')}</h2>
-          </FadeUp>
-          <p>{t('home.exploreText')}</p>
-          <FadeUp>
-            <div className="button">
-              <p><LocaleLink to="/private-tours">{t('home.startJourney')}</LocaleLink></p>
-            </div>
-          </FadeUp>
-        </div>
-      </section>
-
       {(() => {
         const groupTour = tours.find((tour) => tour.type === 'group')
         if (!groupTour) return null
