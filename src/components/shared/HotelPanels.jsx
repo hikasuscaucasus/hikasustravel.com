@@ -18,7 +18,17 @@ import useLang from '../../i18n/useLang'
  * nothing is downloaded until a panel is opened.
  */
 
-const CATEGORY_KEYS = ['Exterior', 'Lobby', 'Room', 'Bathroom']
+/* Each photo carries its OWN category in hotelData.js. It used to be read off
+   a fixed ['Exterior','Lobby','Room','Bathroom'] list by array position, which
+   assumed every hotel held exactly those four shots in exactly that order.
+   Most did not: an audit of all 131 photographs found 23 captioned as something
+   they plainly were not — Boutique Hotel Argo's fourth photo is a table laid for
+   dinner and was captioned "Bathroom"; Park Hotel Tsinandali's indoor pool was
+   too; Lileo Inn's photos are room/bathroom/room and were labelled
+   lobby/room/bathroom. The alt text was right in all 23 cases, so nothing was
+   ever mis-described to a screen reader or a crawler — only the visible caption
+   guessed, and it guessed from position. A photo with no category shows no
+   caption at all, which is the honest outcome when we are not sure. */
 
 function CloseIcon() {
   return (
@@ -135,7 +145,7 @@ function HotelPanel({ entry, hotel, open, onClose, showCategories }) {
                 >
                   <img src={img.src} alt={img.alt || hotel.name} loading="lazy" decoding="async" />
                 </button>
-                {showCategories && CATEGORY_KEYS[i] && <figcaption>{CATEGORY_KEYS[i]}</figcaption>}
+                {showCategories && img.category && <figcaption>{img.category}</figcaption>}
               </figure>
             ))}
           </div>
@@ -171,10 +181,10 @@ function HotelPanel({ entry, hotel, open, onClose, showCategories }) {
           the modal underneath. */}
       {photoIndex !== null && (
         <GalleryLightbox
-          images={images.map((img, i) => ({
+          images={images.map((img) => ({
             src: img.src,
             lightboxAlt: img.alt || hotel.name,
-            caption: showCategories ? CATEGORY_KEYS[i] : undefined,
+            caption: showCategories ? img.category : undefined,
           }))}
           startIndex={photoIndex}
           onClose={() => {
