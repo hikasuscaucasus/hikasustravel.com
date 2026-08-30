@@ -95,18 +95,12 @@ export default function TourDetailPage() {
       }
     }
 
-    // When the tour provides an FAQ, expose it as FAQPage alongside the trip.
-    const faqList = tt?.faq || tour.faq
-    const faqNode = faqList?.length > 0
-      ? {
-          '@type': 'FAQPage',
-          mainEntity: faqList.map((f) => ({
-            '@type': 'Question',
-            name: f.title,
-            acceptedAnswer: { '@type': 'Answer', text: f.content },
-          })),
-        }
-      : null
+    // The FAQ section was retired from the tour-detail template, so no FAQPage
+    // node is emitted here any more — schema must not describe content the page
+    // no longer shows. Every other page type that has an FAQ (city, region,
+    // site, blog, airport, border, the main FAQ page …) keeps its own FAQPage;
+    // only the tour graph lost one. The `faq` data stays in tours.js and in the
+    // locale files, untouched.
 
     // Hero ImageObject (representativeOfPage) built from the tour's imageMeta,
     // localized per locale; added to the @graph on every locale alongside the
@@ -198,7 +192,6 @@ export default function TourDetailPage() {
         ...(routeMapNode ? [routeMapNode] : []),
         ...(heroImageObject ? [heroImageObject] : []),
         ...packagedImages,
-        ...(faqNode ? [faqNode] : []),
       ]
       finalJsonLd = { '@context': 'https://schema.org', '@graph': nodes.map(stripCtx) }
     } else {
@@ -206,7 +199,6 @@ export default function TourDetailPage() {
         ...(routeMapNode ? [routeMapNode] : []),
         ...(heroImageObject ? [heroImageObject] : []),
         ...packagedImages,
-        ...(faqNode ? [faqNode] : []),
       ]
       finalJsonLd = extra.length
         ? { '@context': 'https://schema.org', '@graph': [jsonLd, ...extra] }
@@ -284,11 +276,10 @@ export default function TourDetailPage() {
   const itineraryItems = tt?.itinerary || tour.itinerary
   const includedItems = tt?.included || tour.included
   const notIncludedItems = tt?.notIncluded || tour.notIncluded
-  const faqList = tt?.faq || tour.faq
-  // Auto-link destination mentions in the itinerary day + FAQ answer HTML. Plain
-  // functions (not the hooks) because this runs after the `!tour` early return.
+  // Auto-link destination mentions in the itinerary day HTML. A plain function
+  // (not the hook) because this runs after the `!tour` early return. The FAQ
+  // answers used to be linked here too; that went with the FAQ section.
   const linkedItinerary = (itineraryItems || []).map((it) => ({ ...it, content: autolinkHtml(it.content, lang, pages) }))
-  const linkedFaq = (faqList || []).map((it) => ({ ...it, content: autolinkHtml(it.content, lang, pages) }))
 
   // Extract starting price
   const startingPrice = isGroup
@@ -431,18 +422,15 @@ export default function TourDetailPage() {
           gallery. `tour.map` data stays in tours.js — MapboxMap itself is still
           used by HomePage. */}
 
-      {/* FAQ (only when the tour supplies the data) */}
-      {faqList?.length > 0 && (
-        <div className="td-layout">
-          <main className="td-main">
-            <section id="faq" className="td-section">
-              <FadeUp>
-                <Accordion items={linkedFaq} headingKey="faq.heroTitle" />
-              </FadeUp>
-            </section>
-          </main>
-        </div>
-      )}
+      {/* The FAQ section sat here, between What's Included/Not Included and the
+          inquiry form, as its own `<div class="td-layout">` wrapper with a
+          `#faq` section. Removed centrally, so no current or future tour renders
+          one. It was the last block on the page before the form, so nothing
+          needed re-joining — What's Included now runs straight into Book This
+          Tour. The `faq` arrays stay in tours.js and the locale files, and the
+          shared Accordion is untouched: the itinerary uses it here, and a dozen
+          other page types (city, region, site, blog, airport, the main FAQ
+          page) still render their own FAQs with it. */}
 
       {/* 8. Send inquiry */}
       <div className="td-layout">
