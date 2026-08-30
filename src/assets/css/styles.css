@@ -6578,7 +6578,14 @@ img.gallery-card__img {
   background: rgba(0, 0, 0, 0.85);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  cursor: zoom-out;
+  /* Clicking the dark area closes the lightbox, but it is not a zoom control:
+     the lightbox shows a larger rendition, it never zooms out of one. It used
+     to say zoom-out, and because cursor inherits, the magnifier covered the
+     whole dark field. The normal arrow is what an ordinary click target
+     outside a control should show. The image already sets its own default;
+     the close button, the arrows and the side zones set their own pointer, so
+     each real control still reads as clickable. */
+  cursor: default;
 }
 .gallery-lightbox__img {
   max-width: 100%;
