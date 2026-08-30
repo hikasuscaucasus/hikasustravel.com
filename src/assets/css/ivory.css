@@ -129,29 +129,56 @@
   color: var(--bg);
 }
 
-/* Tinted in-content links. Applies to the autolinked entity links in the
-   itinerary, the Overview and the What's Included lists — every existing href
-   is kept exactly as it was; only the paint changes. */
-.theme-ivory .td-main a.entity-link,
-.theme-ivory .acc__panel-inner a,
+/* --- In-content links -------------------------------------------------------
+   One shared rule for every editorial link on the site. These used to carry a
+   tinted capsule (a color-mix background plus 1px/5px padding and a 7px
+   radius), which at the density the autolinker produces made a paragraph read
+   as a row of chips. Links are now identified by COLOUR ALONE.
+
+   Deliberately excluded, because each already has its own component styling:
+   header and footer navigation, buttons and CTAs, chips, breadcrumbs, card
+   wrappers, the language switcher, modal close buttons and the hotel-name
+   buttons in the accommodation table.
+
+   Every href is untouched — this is paint only. */
+.theme-ivory a.entity-link,
+.theme-ivory .blog-article__content a:not(.blog-back-link):not(.button),
+.theme-ivory .acc__panel-inner a:not(.button),
 .theme-ivory .td-overview__text a,
 .theme-ivory .incl__list a,
 .theme-ivory .iv-sites__list a {
   color: var(--linkc);
-  font-weight: 700;
+  font-weight: 500;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
   text-decoration: none;
-  background: color-mix(in srgb, var(--linkc) 9%, transparent);
-  padding: 1px 5px;
-  border-radius: 7px;
-  transition: background 0.18s ease;
+  transition: color 0.15s ease;
 }
 
-.theme-ivory .td-main a.entity-link:hover,
-.theme-ivory .acc__panel-inner a:hover,
+.theme-ivory a.entity-link:hover,
+.theme-ivory .blog-article__content a:not(.blog-back-link):not(.button):hover,
+.theme-ivory .acc__panel-inner a:not(.button):hover,
 .theme-ivory .td-overview__text a:hover,
 .theme-ivory .incl__list a:hover,
 .theme-ivory .iv-sites__list a:hover {
-  background: color-mix(in srgb, var(--linkc) 17%, transparent);
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  background: transparent;
+}
+
+/* Colour alone is not a focus indicator, so keyboard focus keeps a real ring. */
+.theme-ivory a.entity-link:focus-visible,
+.theme-ivory .blog-article__content a:not(.blog-back-link):not(.button):focus-visible,
+.theme-ivory .acc__panel-inner a:not(.button):focus-visible,
+.theme-ivory .td-overview__text a:focus-visible,
+.theme-ivory .incl__list a:focus-visible,
+.theme-ivory .iv-sites__list a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 3px;
+  text-decoration: underline;
 }
 
 /* --- Header ---------------------------------------------------------------
@@ -323,12 +350,6 @@
   align-items: center;
 }
 
-.theme-ivory .td-hero__breadcrumb {
-  justify-content: flex-start;
-  color: var(--sub);
-  font-size: 12px;
-}
-
 .theme-ivory .td-hero__breadcrumb a {
   color: var(--sub);
 }
@@ -341,9 +362,38 @@
   color: var(--gold);
 }
 
+.theme-ivory .td-hero__breadcrumb {
+  justify-content: flex-start;
+  color: var(--sub);
+  font-size: 12px;
+  /* Wraps instead of overflowing: the trailing crumb is the full tour title and
+     styles.css keeps it on one nowrap line with an ellipsis and a 300px cap
+     (160px under 600px). The Ivory hero lifted that cap so the title could show
+     in full, which at 320px let the nowrap line push the hero column — and with
+     it the H1 — past the viewport. Letting the row wrap keeps the whole title
+     AND keeps the page inside its width. */
+  flex-wrap: wrap;
+  row-gap: 2px;
+  min-width: 0;
+}
+
 .theme-ivory .td-hero__breadcrumb span:last-child {
   color: var(--sub);
   max-width: none;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+/* A grid item will not shrink below its content unless told to. */
+.theme-ivory .td-hero__copy {
+  min-width: 0;
+}
+
+.theme-ivory .td-hero--split .td-hero__title {
+  overflow-wrap: break-word;
 }
 
 .theme-ivory .td-hero--split .td-hero__title {
@@ -1722,36 +1772,6 @@
   color: var(--gold);
 }
 
-/* --- In-content tint links, site-wide ---------------------------------------
-   Restricted to running content. Header and footer navigation, buttons, cards,
-   breadcrumbs and chips are deliberately excluded — the tint is for links
-   inside prose, and painting a whole nav with it reads as noise. Every href is
-   untouched; this is paint only. */
-.theme-ivory .page-items a.entity-link,
-.theme-ivory .home-items a.entity-link,
-.theme-ivory .blog-article__content a:not(.blog-back-link):not(.button),
-.theme-ivory .city-body a.entity-link,
-.theme-ivory .dest-body a.entity-link,
-.theme-ivory .site-body a.entity-link,
-.theme-ivory .region-body a.entity-link {
-  color: var(--linkc);
-  font-weight: 700;
-  text-decoration: none;
-  background: color-mix(in srgb, var(--linkc) 9%, transparent);
-  padding: 1px 5px;
-  border-radius: 7px;
-}
-
-.theme-ivory .page-items a.entity-link:hover,
-.theme-ivory .home-items a.entity-link:hover,
-.theme-ivory .blog-article__content a:not(.blog-back-link):not(.button):hover,
-.theme-ivory .city-body a.entity-link:hover,
-.theme-ivory .dest-body a.entity-link:hover,
-.theme-ivory .site-body a.entity-link:hover,
-.theme-ivory .region-body a.entity-link:hover {
-  background: color-mix(in srgb, var(--linkc) 17%, transparent);
-}
-
 /* --- Figures and captions --------------------------------------------------- */
 
 .theme-ivory figcaption {
@@ -1985,4 +2005,36 @@
   border-radius: 12px;
   padding: 8px 12px;
   line-height: 1.35;
+}
+
+/* --- Accommodation alignment ------------------------------------------------
+   The table sat 76px right of its own heading. The cause was not a grid or a
+   stray padding: styles.css centres these tables inside the content column
+   (.pricing-grid--private is max-width:900px with margin-left/right:auto, and
+   .pricing-grid--accommodations the same at 600px), while the "Accommodation"
+   H2 spans the full 1052px column. Centring a narrower box under a full-width
+   heading is what produced the offset.
+
+   The fix is to stop centring them, so the heading and the table share the
+   section's content box and start on the same line — no negative margin, and
+   the max-width is lifted on the four-column private table so the extra room
+   goes to the hotel names rather than to empty gutters. */
+.theme-ivory .pricing-grid--private {
+  max-width: none;
+  margin-inline: 0;
+}
+
+.theme-ivory .pricing-grid--accommodations {
+  margin-inline: 0;
+}
+
+/* Below the desktop column the table needs to scroll rather than push the page
+   sideways; the wrapper scrolls, the page does not, and its left edge stays on
+   the heading. */
+@media (max-width: 700px) {
+  .theme-ivory .pricing-grid--private,
+  .theme-ivory .pricing-grid--accommodations {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 }

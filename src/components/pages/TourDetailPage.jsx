@@ -339,9 +339,11 @@ export default function TourDetailPage() {
               </FadeUp>
               {/* The 5-day Tbilisi→Batumi route map is a normal gallery item
                   (the closing tile), not a separate block — see its entry in
-                  tours.js. That tour also sets `galleryShowAll`, so the map
-                  isn't stranded behind the "show more" fold. */}
-              <Gallery images={localizedGallery} showAll={tour.galleryShowAll} />
+                  tours.js. The gallery no longer folds after six photos, so it
+                  needs no opt-out: every item is in the scroll strip from the
+                  first paint. (`galleryShowAll` is left in tours.js, now inert —
+                  removing it would be a data edit this task does not cover.) */}
+              <Gallery images={localizedGallery} />
             </section>
           )}
 

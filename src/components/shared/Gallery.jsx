@@ -4,23 +4,18 @@ import FadeUp from './FadeUp'
 import BlurUpBackground from './BlurUpBackground'
 import asset from '../../utils/basePath'
 import useT from '../../i18n/useT'
-import useLang from '../../i18n/useLang'
 
-/* Two rows of three on desktop (.gallery-grid is repeat(3, 1fr) above 600px);
-   2 columns ≤768px and 1 column on phones — 6 divides evenly into all three, so
-   the last visible row is never left with an empty slot. */
-const INITIAL_COUNT = 6
 const SWIPE_THRESHOLD = 50
 
-/* "Show more" label carries the number of hidden photos. Czech and Polish need
-   more than singular/plural (cs: 1 / 2-4 / 5+; pl: 1 / 2-4 / 5+ with the 12-14
-   exception), so the category comes from Intl.PluralRules rather than a
-   hand-rolled n===1 test. Falls back through `.other` to the original bare
-   `tour.showMore`, so a missing translation degrades to the old label instead of
-   printing a raw key. */
-const pluralCategory = (lang, n) => {
-  try { return new Intl.PluralRules(lang).select(n) } catch { return 'other' }
-}
+/* The gallery used to be a 3x2 grid with the rest of the photos folded behind a
+   "Show N more photos" button, and a per-tour `showAll` flag to opt out of the
+   fold. The Ivory design made it a horizontal scroll strip, where every photo is
+   already one swipe away — so the fold was asking people to click before they
+   could scroll to something that was never far off. The whole mechanism is gone:
+   no INITIAL_COUNT, no expanded state, no button, and no localized
+   "Show N more photos" label. Every item renders into the strip on first paint.
+   The images stay `loading="lazy"`, so the extra cards cost nothing until they
+   are scrolled to. */
 
 /* A gallery item opts into real responsive markup by supplying `base` + `widths`
    (plus the native `width`/`height`). Those render a crawlable
@@ -137,36 +132,16 @@ export function GalleryLightbox({ images, startIndex, onClose, label }) {
   )
 }
 
-/* `showAll` opts a single gallery out of the "show more" fold and renders every
-   tile immediately. Added for the 5-day Tbilisi→Batumi tour, whose route map is
-   the closing tile: behind the 6-tile fold it was invisible until you pressed
-   the button, which read as the map having been dropped. Defaults to false, so
-   every other gallery keeps the fold exactly as before. */
-export default function Gallery({ images, showAll = false }) {
-  const [expanded, setExpanded] = useState(false)
+export default function Gallery({ images }) {
   const [lightboxIndex, setLightboxIndex] = useState(null)
   const lastFocused = useRef(null)
   const t = useT()
-  const { lang } = useLang()
 
   if (!images || images.length === 0) return null
 
-  /* `visible` drives the GRID only. The lightbox always receives the full
-     `images` array, so a visitor who opens the last visible card can page on
-     into the still-hidden photos without pressing "show more" first.
-     Because `visible` is a leading slice, a card's index within it IS its index
-     within `images` — keep that invariant if the grid order ever changes
-     (indexOf would misresolve a gallery that repeats the same src). */
-  const visible = (showAll || expanded) ? images : images.slice(0, INITIAL_COUNT)
-  const hasMore = !showAll && images.length > INITIAL_COUNT
-
-  /* How many photos the button will reveal. `t()` returns the key itself when a
-     string is missing, which is what the `!== k` probe below detects. */
-  const remainingCount = images.length - INITIAL_COUNT
-  const showMoreKey =
-    [`tour.showMorePhotos.${pluralCategory(lang, remainingCount)}`, 'tour.showMorePhotos.other']
-      .find((k) => t(k) !== k) || 'tour.showMore'
-  const showMoreLabel = t(showMoreKey, { count: remainingCount })
+  /* The strip and the lightbox now render from the same array, in the same
+     order, so a card's position IS its lightbox index — the invariant the old
+     leading-slice relied on, now true by construction. */
 
   const openLightbox = (index, el) => {
     lastFocused.current = el
@@ -181,9 +156,8 @@ export default function Gallery({ images, showAll = false }) {
   return (
     <>
       <div className="gallery-grid">
-        {visible.map((img, index) => {
+        {images.map((img, index) => {
           const caption = img.caption ? img.caption.replace(/<[^>]*>/g, '') : ''
-          const description = img.description || ''
           const day = img.day || ''
           const responsive = !!(img.base && img.widths?.length)
           const Card = responsive ? 'figure' : 'div'
@@ -246,10 +220,17 @@ export default function Gallery({ images, showAll = false }) {
                   )}
                   {day && <span className="gallery-card__day">{day}</span>}
                 </div>
-                {(caption || description) && (
+                {/* The card shows the short label only. Items whose data also
+                    carries a descriptive sentence (`description`, resolved from
+                    the per-locale `alt`) used to print it underneath, which gave
+                    the strip two competing text lengths — some cards a place
+                    name, others a full sentence. The sentence is not deleted: it
+                    still travels in the images array, so the lightbox caption and
+                    every structured-data consumer read exactly what they read
+                    before. This is a display change only. */}
+                {caption && (
                   <Info className="gallery-card__info">
-                    {caption && <h4 className="gallery-card__location">{caption}</h4>}
-                    {description && <p className="gallery-card__desc">{description}</p>}
+                    <h4 className="gallery-card__location">{caption}</h4>
                   </Info>
                 )}
               </Card>
@@ -257,13 +238,6 @@ export default function Gallery({ images, showAll = false }) {
           )
         })}
       </div>
-      {hasMore && !expanded && (
-        <div className="gallery-show-more">
-          <button className="gallery-show-more__btn" onClick={() => setExpanded(true)}>
-            {showMoreLabel}
-          </button>
-        </div>
-      )}
       {lightboxIndex !== null && (
         <GalleryLightbox images={images} startIndex={lightboxIndex} onClose={closeLightbox} />
       )}
