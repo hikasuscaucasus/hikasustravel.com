@@ -4541,9 +4541,13 @@ export const tours = [
            (English-only, native 642x428); now a normal gallery tile so it
            joins the lightbox queue. `base` + `widths` opt this tile into the
            responsive <picture> path (AVIF + WebP) that the three photos below
-           do not use — they keep their blur-up rendering. caption = the label,
-           altText = the <img alt>, alt = the visible description; the same
-           three slots the other route maps use. */
+           do not use — they keep their blur-up rendering. caption = the visible
+           label, altText = the <img alt>. The `alt` slot (the long visible line
+           under the tile) is deliberately absent here and on the three photos
+           below, so every tile shows its short label only — the same
+           presentation the other winter tours use. The descriptive text is not
+           lost: it stays in `altText`, and the route map's own wording is also
+           held by enRouteMapImage.caption for structured data. */
         "src": "/images/files/gudauri-ski-tour-route-map-georgia-2400.webp",
         "base": "/images/files/gudauri-ski-tour-route-map-georgia",
         "widths": [768, 1200, 1600, 2400],
@@ -4568,15 +4572,7 @@ export const tours = [
           "cs": "Zimní mapa trasy 7denního lyžařského zájezdu do Gudauri: z Tbilisi na sever po Gruzínské vojenské cestě kolem pevnosti Ananuri a Památníku přátelství do Gudauri, s pěti nocemi ve středisku a jednou v Tbilisi",
           "pl": "Zimowa mapa trasy 7-dniowej wycieczki narciarskiej do Gudauri: z Tbilisi na północ Gruzińską Drogą Wojenną obok twierdzy Ananuri i Pomnika Przyjaźni do Gudauri, z pięcioma nocami w ośrodku i jedną w Tbilisi"
         },
-        "alt": {
-          "en": "The 7-day winter route — Tbilisi to Gudauri and back up the Georgian Military Highway, with five nights at the resort",
-          "de": "Die 7-tägige Winterroute – von Tiflis nach Gudauri und zurück über die Georgische Heerstraße, mit fünf Nächten am Skiort",
-          "fr": "L'itinéraire hivernal de 7 jours – de Tbilissi à Gudauri et retour par la route militaire géorgienne, avec cinq nuits à la station",
-          "es": "La ruta invernal de 7 días: de Tiflis a Gudauri y vuelta por la Carretera Militar Georgiana, con cinco noches en la estación",
-          "nl": "De 7-daagse winterroute – van Tbilisi naar Gudauri en terug over de Georgische Militaire Weg, met vijf nachten bij de skiplaats",
-          "cs": "Zimní 7denní trasa – z Tbilisi do Gudauri a zpět po Gruzínské vojenské cestě, s pěti nocemi ve středisku",
-          "pl": "Zimowa 7-dniowa trasa – z Tbilisi do Gudauri i z powrotem Gruzińską Drogą Wojenną, z pięcioma nocami w ośrodku"
-        }
+
       },
       {
         "src": "/images/files/gudauri-ski-view-1448.webp",
@@ -4589,7 +4585,7 @@ export const tours = [
           "cs": "Sjezdovky, Gudauri",
           "pl": "Stoki narciarskie, Gudauri"
         },
-        "alt": {
+        "altText": {
           "en": "A skier at the top of Gudauri above a sea of cloud, snow-covered Caucasus peaks behind, Georgia",
           "de": "Ein Skifahrer am Gipfel von Gudauri über einem Wolkenmeer, dahinter verschneite Kaukasusgipfel, Georgien",
           "fr": "Un skieur au sommet de Gudauri au-dessus d'une mer de nuages, sommets enneigés du Caucase derrière, Géorgie",
@@ -4610,7 +4606,7 @@ export const tours = [
           "cs": "Sjezdovka, Gudauri",
           "pl": "Stok narciarski, Gudauri"
         },
-        "alt": {
+        "altText": {
           "en": "A wide open ski piste and chairlift at Gudauri under a blue sky, distant Caucasus peaks, Georgia",
           "de": "Eine weite offene Skipiste und ein Sessellift in Gudauri unter blauem Himmel, ferne Kaukasusgipfel, Georgien",
           "fr": "Une large piste de ski ouverte et un télésiège à Gudauri sous un ciel bleu, sommets lointains du Caucase, Géorgie",
@@ -4631,7 +4627,7 @@ export const tours = [
           "cs": "Lyžařský vlek, Gudauri",
           "pl": "Wyciąg narciarski, Gudauri"
         },
-        "alt": {
+        "altText": {
           "en": "Skiers and snowboarders at a Gudauri lift top station above the clouds, Greater Caucasus, Georgia",
           "de": "Skifahrer und Snowboarder an einer Bergstation in Gudauri über den Wolken, Großer Kaukasus, Georgien",
           "fr": "Skieurs et snowboardeurs à la gare d'arrivée d'un téléski à Gudauri au-dessus des nuages, Grand Caucase, Géorgie",
