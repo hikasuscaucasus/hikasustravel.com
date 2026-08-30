@@ -2200,3 +2200,20 @@
 .theme-ivory .site-search__body::-webkit-scrollbar-thumb:hover {
   background: color-mix(in srgb, var(--accent) 40%, transparent);
 }
+
+/* --- Homepage CTA casing ----------------------------------------------------
+   `.button` in styles.css carries `text-transform: uppercase`, so the homepage
+   CTA rendered as START YOUR JOURNEY! whatever the string said. The English
+   string is also now title case ("Start Your Journey!"); the transform had to
+   go as well, or the button would still have shouted it.
+
+   Scoped to the homepage band rather than to `.button` globally: the same class
+   is used by the city and region "Things to do" buttons and the 404 button, and
+   the brief asked not to change other CTAs. Dropping the transform here lets
+   each locale show the capitalisation its own translation already has —
+   "Starten Sie Ihre Reise!", "Commencez votre voyage !", "Vyrazte na cestu!" —
+   with no translated wording touched. */
+.theme-ivory .home-items .button,
+.theme-ivory .home-items .button a {
+  text-transform: none;
+}
