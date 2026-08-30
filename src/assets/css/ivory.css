@@ -1,0 +1,1329 @@
+/* ============================================================================
+   Ivory-badge theme — DESIGN PILOT (branch design-ivory-pilot)
+   ----------------------------------------------------------------------------
+   Everything here is scoped under `.theme-ivory`, a class put on <html> for
+   tour-detail routes only — by scripts/prerender.js in the static HTML and by
+   Layout.jsx on client navigation, so the served page and the hydrated page
+   agree. Nothing in this file can reach a page that does not carry the class,
+   which is why styles.css is left untouched: reverting the pilot is deleting
+   one import and one class.
+
+   Review target: /en/private-tours/5-day-private-tour-from-tbilisi-to-batumi/
+   ========================================================================= */
+
+:root {
+  --bg: #fcf8ec;       /* page ground (ivory) */
+  --surface: #ffffff;  /* cards, panels */
+  --ink: #2a362e;      /* headings + body ink */
+  --sub: #5f6b60;      /* secondary text */
+  --accent: #2f533d;   /* pine: CTAs, frames, icons, rails */
+  --line: #eae2cb;     /* hairlines, quiet borders */
+  --gold: #b78a00;     /* small accents */
+  --linkc: #147a48;    /* link green */
+  --r: 18px;           /* frame/card radius */
+  --btnr: 999px;       /* button radius (pills) */
+  --chipr: 999px;      /* chip radius */
+  --ivory-header: 64px;
+  --ivory-subnav: 46px;
+}
+
+/* `--text` is the token name in the spec; the site already ships a global
+   `--color-*` set, so the ink is aliased rather than renamed to avoid a
+   collision with anything styles.css may add later. */
+.theme-ivory {
+  --text: var(--ink);
+}
+
+/* --- Typography -----------------------------------------------------------
+   One family for everything. The override has to be blunt: styles.css sets
+   "rockwell" and "Proza Libre" from ~40 selectors, several of them more
+   specific than any single-class rule could be. No webfont is requested by
+   this theme; prerender.js also drops the Google Fonts <link> from these
+   pages, so the pilot route ships zero font bytes. */
+.theme-ivory body,
+.theme-ivory body * {
+  font-family: Verdana, Geneva, sans-serif !important;
+}
+
+.theme-ivory body {
+  background: var(--bg);
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.theme-ivory h1,
+.theme-ivory h2,
+.theme-ivory h3,
+.theme-ivory h4 {
+  color: var(--ink);
+  letter-spacing: 0;
+}
+
+.theme-ivory ::selection {
+  background: color-mix(in srgb, var(--accent) 22%, transparent);
+}
+
+/* Anchors clear the sticky header + sub-nav. */
+.theme-ivory section[id],
+.theme-ivory a[id] {
+  scroll-margin-top: calc(var(--ivory-header) + var(--ivory-subnav) + 16px);
+}
+
+/* --- Shared primitives ---------------------------------------------------- */
+
+.theme-ivory .frame {
+  border: 1px solid var(--accent);
+  border-radius: var(--r);
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.theme-ivory .iv-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--chipr);
+  color: var(--ink);
+  font-size: 13px;
+  line-height: 1;
+  padding: 8px 14px;
+  white-space: nowrap;
+}
+
+.theme-ivory .iv-chip svg {
+  color: var(--accent);
+  flex: 0 0 auto;
+}
+
+.theme-ivory button.iv-chip {
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.theme-ivory button.iv-chip:hover {
+  border-color: var(--accent);
+}
+
+.theme-ivory .iv-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--accent);
+  color: var(--bg);
+  border: 1px solid var(--accent);
+  border-radius: var(--btnr);
+  padding: 12px 26px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.18s ease, color 0.18s ease;
+}
+
+.theme-ivory .iv-pill:hover {
+  background: color-mix(in srgb, var(--accent) 84%, #000);
+  color: var(--bg);
+}
+
+/* Tinted in-content links. Applies to the autolinked entity links in the
+   itinerary, the Overview and the What's Included lists — every existing href
+   is kept exactly as it was; only the paint changes. */
+.theme-ivory .td-main a.entity-link,
+.theme-ivory .acc__panel-inner a,
+.theme-ivory .td-overview__text a,
+.theme-ivory .incl__list a,
+.theme-ivory .iv-sites__list a {
+  color: var(--linkc);
+  font-weight: 700;
+  text-decoration: none;
+  background: color-mix(in srgb, var(--linkc) 9%, transparent);
+  padding: 1px 5px;
+  border-radius: 7px;
+  transition: background 0.18s ease;
+}
+
+.theme-ivory .td-main a.entity-link:hover,
+.theme-ivory .acc__panel-inner a:hover,
+.theme-ivory .td-overview__text a:hover,
+.theme-ivory .incl__list a:hover,
+.theme-ivory .iv-sites__list a:hover {
+  background: color-mix(in srgb, var(--linkc) 17%, transparent);
+}
+
+/* --- Header ---------------------------------------------------------------
+   Same markup, same links, same labels — restyled into a slim sticky ivory
+   bar. The brand mark is the site's existing SVG, which is drawn for dark
+   grounds (its body shape is cream); on ivory it would all but disappear, so
+   it sits on a pine badge instead of being recoloured. */
+.theme-ivory header {
+  position: sticky;
+  top: 0;
+  height: var(--ivory-header);
+  min-height: var(--ivory-header);
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 999;
+}
+
+.theme-ivory header::before {
+  display: none;
+}
+
+.theme-ivory .logo {
+  position: static;
+  margin: 0;
+  width: auto;
+  height: 44px;
+  text-align: left;
+  flex: 0 0 auto;
+}
+
+.theme-ivory .logo a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+  background: var(--accent);
+  border-radius: 12px;
+}
+
+.theme-ivory .logo img {
+  height: 32px;
+  width: auto;
+}
+
+/* The nav is sticky by way of the header now, so its own scroll-driven fixed
+   mode is neutralised — otherwise it would detach and float over the bar. */
+.theme-ivory .main-menu,
+.theme-ivory .main-menu.sticky {
+  position: static;
+  margin: 0 0 0 auto;
+  padding: 0;
+  background: transparent;
+  backdrop-filter: none;
+  box-shadow: none;
+  animation: none;
+  text-transform: none;
+  gap: 2px;
+}
+
+.theme-ivory .main-menu a,
+.theme-ivory .main-menu .nav-dropdown__toggle {
+  color: var(--accent);
+  font-size: 13px;
+  filter: none;
+  padding: 6px 10px;
+  border-bottom: 2px solid transparent;
+}
+
+.theme-ivory .main-menu a:hover,
+.theme-ivory .main-menu a.active,
+.theme-ivory .main-menu.sticky a:hover,
+.theme-ivory .main-menu.sticky a.active {
+  color: var(--accent) !important;
+  border-bottom-color: var(--accent);
+}
+
+.theme-ivory .main-menu .nav-dropdown__menu {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.theme-ivory .main-menu .nav-dropdown__menu a {
+  color: var(--ink);
+}
+
+.theme-ivory .hamburger span {
+  background-color: var(--accent);
+}
+
+/* --- Sticky sub-nav (the existing anchor pills) --------------------------- */
+
+.theme-ivory .td-nav,
+.theme-ivory .td-nav--fixed {
+  position: sticky;
+  top: var(--ivory-header);
+  left: auto;
+  width: 100%;
+  height: var(--ivory-subnav);
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+  box-shadow: none;
+  z-index: 120;
+}
+
+.theme-ivory .td-nav__inner {
+  max-width: 1100px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  height: var(--ivory-subnav);
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.theme-ivory .td-nav__link {
+  color: var(--sub);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  border-radius: var(--chipr);
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 13px;
+  padding: 7px 14px;
+}
+
+.theme-ivory .td-nav__link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.theme-ivory .td-nav__link--active {
+  color: var(--bg);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+/* --- Split hero ----------------------------------------------------------- */
+
+.theme-ivory .td-hero--split {
+  min-height: 0;
+  padding: 34px 0 30px;
+  background: var(--bg) none;
+  text-align: left;
+  display: block;
+}
+
+.theme-ivory .td-hero--split::after {
+  display: none;
+}
+
+.theme-ivory .td-hero--split .td-hero__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: 32px;
+  align-items: center;
+}
+
+.theme-ivory .td-hero__breadcrumb {
+  justify-content: flex-start;
+  color: var(--sub);
+  font-size: 12px;
+}
+
+.theme-ivory .td-hero__breadcrumb a {
+  color: var(--sub);
+}
+
+.theme-ivory .td-hero__breadcrumb a:hover {
+  color: var(--accent);
+}
+
+.theme-ivory .td-hero__breadcrumb > span[aria-hidden] {
+  color: var(--gold);
+}
+
+.theme-ivory .td-hero__breadcrumb span:last-child {
+  color: var(--sub);
+  max-width: none;
+}
+
+.theme-ivory .td-hero--split .td-hero__title {
+  font-size: clamp(1.7rem, 3.4vw, 2.375rem);
+  line-height: 1.15;
+  color: var(--ink);
+  letter-spacing: 0;
+}
+
+.theme-ivory .td-hero--split .td-hero__meta {
+  justify-content: flex-start;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.theme-ivory .td-hero--split .td-hero__actions {
+  justify-content: flex-start;
+  margin-top: 22px;
+}
+
+.theme-ivory .td-hero__photo {
+  margin: 0;
+  aspect-ratio: 4 / 3;
+  max-height: 300px;
+}
+
+.theme-ivory .td-hero__photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* --- Sites panel (English-only; opened from the hero chip) ---------------- */
+
+.theme-ivory .iv-sites {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(20, 26, 22, 0.55);
+}
+
+.theme-ivory .iv-sites[hidden] {
+  display: none;
+}
+
+.theme-ivory .iv-sites__panel {
+  background: var(--surface);
+  border: 1px solid var(--accent);
+  border-radius: var(--r);
+  width: min(560px, 100%);
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 22px 24px 26px;
+  text-align: left;
+}
+
+.theme-ivory .iv-sites__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.theme-ivory .iv-sites__title {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: var(--ink);
+}
+
+.theme-ivory .iv-sites__close {
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  color: var(--accent);
+}
+
+.theme-ivory .iv-sites__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 2px;
+}
+
+.theme-ivory .iv-sites__list li {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 5px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 14px;
+}
+
+.theme-ivory .iv-sites__list li:last-child {
+  border-bottom: none;
+}
+
+.theme-ivory .iv-sites__n {
+  color: var(--gold);
+  font-size: 12px;
+  min-width: 18px;
+}
+
+/* --- Sections / layout ---------------------------------------------------- */
+
+.theme-ivory .td-layout {
+  max-width: 1100px;
+  padding: 0 24px;
+}
+
+.theme-ivory .td-section {
+  border-bottom: 1px solid var(--line);
+  padding: 40px 0;
+}
+
+.theme-ivory .td-section__title {
+  text-align: left;
+  color: var(--ink);
+  font-size: 27px;
+  margin-bottom: 6px;
+}
+
+.theme-ivory .td-section__subtitle {
+  color: var(--sub);
+  font-size: 13px;
+  margin: 0 0 20px;
+}
+
+.theme-ivory .td-overview__text {
+  max-width: 760px;
+  margin: 0 0 14px;
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* --- Gallery: horizontal scroll-snap strip -------------------------------- */
+
+.theme-ivory .gallery-grid {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+  scrollbar-width: thin;
+}
+
+.theme-ivory .gallery-grid > * {
+  flex: 0 0 268px;
+  scroll-snap-align: start;
+}
+
+.theme-ivory .gallery-card {
+  margin: 0;
+  height: 100%;
+  border: 1px solid var(--accent);
+  border-radius: var(--r);
+  background: var(--surface);
+  overflow: hidden;
+  box-shadow: none;
+}
+
+.theme-ivory .gallery-card__img-wrap {
+  cursor: zoom-in;
+}
+
+.theme-ivory .gallery-card__img {
+  display: block;
+  width: 100%;
+  height: 178px;
+  object-fit: cover;
+}
+
+.theme-ivory .gallery-card__info {
+  padding: 10px 12px 12px;
+}
+
+.theme-ivory .gallery-card__location {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  color: var(--ink);
+}
+
+.theme-ivory .gallery-card__desc {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: var(--sub);
+}
+
+.theme-ivory .gallery-lightbox-backdrop {
+  background: rgba(16, 21, 18, 0.92);
+}
+
+/* --- Itinerary accordion -------------------------------------------------- */
+
+.theme-ivory .acc__header {
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.theme-ivory .acc__heading {
+  color: var(--ink);
+  font-size: 27px;
+}
+
+.theme-ivory .acc__toggle-all {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--chipr);
+  color: var(--accent);
+  font-size: 13px;
+  padding: 7px 14px;
+}
+
+.theme-ivory .acc__timeline::before {
+  background: var(--line);
+}
+
+.theme-ivory .acc__item {
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  background: var(--surface);
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.theme-ivory .acc__item--open {
+  border-color: var(--accent);
+  background: var(--surface);
+}
+
+.theme-ivory .acc__trigger {
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  background: transparent;
+}
+
+.theme-ivory .acc__day-badge {
+  background: transparent;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-size: 12px;
+  min-width: 34px;
+  border-radius: var(--chipr);
+}
+
+.theme-ivory .acc__item--open .acc__day-badge {
+  background: var(--gold);
+  color: var(--surface);
+}
+
+.theme-ivory .acc__trigger-text {
+  color: var(--ink);
+  font-size: 21px;
+  line-height: 1.25;
+}
+
+.theme-ivory .acc__tag {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--chipr);
+  color: var(--sub);
+  font-size: 12px;
+  padding: 5px 10px;
+}
+
+.theme-ivory .acc__tag svg {
+  color: var(--accent);
+}
+
+/* Reserve the chevron's box so opening a day never nudges the header text. */
+.theme-ivory .acc__chevron {
+  flex: 0 0 20px;
+  color: var(--accent);
+}
+
+.theme-ivory .acc__panel-inner {
+  padding: 0 16px 18px;
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.theme-ivory .acc__panel-inner ul {
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.theme-ivory .acc__panel-inner li::marker {
+  color: var(--gold);
+}
+
+.theme-ivory .acc__daybody {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.theme-ivory .acc__dayfig {
+  margin: 0;
+  border: 1px solid var(--accent);
+  border-radius: var(--r);
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.theme-ivory .acc__dayfig img {
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.theme-ivory .acc__dayfig figcaption {
+  padding: 8px 12px 10px;
+  font-size: 12px;
+  color: var(--sub);
+}
+
+/* Photos alternate side by day, matching the approved sample. */
+.theme-ivory .acc__timeline .acc__item--itinerary:nth-of-type(even) .acc__dayfig {
+  order: -1;
+}
+
+/* --- Accommodation -------------------------------------------------------- */
+
+.theme-ivory .pricing-grid {
+  border: 1px solid var(--accent);
+  border-radius: var(--r);
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.theme-ivory .pricing-grid-header {
+  background: #eef1ee;
+  color: var(--accent);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.theme-ivory .pricing-grid-row {
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+}
+
+.theme-ivory .pricing-grid-row > div:first-child {
+  color: var(--gold);
+}
+
+.theme-ivory .hotel-link {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--linkc);
+  font-size: 14px;
+  text-align: left;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.theme-ivory .hotel-link:hover {
+  text-decoration-style: solid;
+}
+
+/* Hotel panels: rendered into the served HTML for every hotel on the page and
+   revealed on demand, so the descriptions and the four photos are crawlable
+   rather than client-injected. A hidden panel is display:none, so no browser
+   fetches its images until it is opened. */
+.theme-ivory .iv-hotel {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(20, 26, 22, 0.55);
+}
+
+.theme-ivory .iv-hotel[hidden] {
+  display: none;
+}
+
+.theme-ivory .iv-hotel__panel {
+  background: var(--surface);
+  border: 1px solid var(--accent);
+  border-radius: var(--r);
+  width: min(720px, 100%);
+  max-height: 86vh;
+  overflow-y: auto;
+  padding: 22px 24px 26px;
+  text-align: left;
+}
+
+.theme-ivory .iv-hotel__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.theme-ivory .iv-hotel__name {
+  margin: 0;
+  padding: 0;
+  font-size: 21px;
+  color: var(--ink);
+}
+
+.theme-ivory .iv-hotel__meta {
+  margin: 4px 0 12px;
+  font-size: 12px;
+  color: var(--gold);
+}
+
+.theme-ivory .iv-hotel__desc {
+  margin: 0 0 16px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--ink);
+}
+
+.theme-ivory .iv-hotel__photos {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.theme-ivory .iv-hotel__photo {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.theme-ivory .iv-hotel__photo img {
+  display: block;
+  width: 100%;
+  height: 96px;
+  object-fit: cover;
+}
+
+.theme-ivory .iv-hotel__photo figcaption {
+  padding: 6px 8px;
+  font-size: 11px;
+  color: var(--sub);
+  text-align: center;
+}
+
+.theme-ivory .iv-hotel__list {
+  list-style: none;
+  margin: 14px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.theme-ivory .iv-hotel__list li {
+  font-size: 12px;
+  color: var(--sub);
+  border: 1px solid var(--line);
+  border-radius: var(--chipr);
+  padding: 5px 10px;
+}
+
+/* --- Pricing: three equal tiers ------------------------------------------- */
+
+.theme-ivory .td-price-card,
+.theme-ivory .td-price-card--featured {
+  background: var(--surface);
+  border: 1px solid var(--accent);
+  border-radius: var(--r);
+  box-shadow: none;
+  transform: none;
+}
+
+.theme-ivory .td-price-card:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.theme-ivory .td-price-card__tier {
+  color: var(--gold);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.theme-ivory .td-price-card__price-value {
+  color: var(--ink);
+}
+
+.theme-ivory .td-price-card__price-from,
+.theme-ivory .td-price-card__price-pp {
+  color: var(--sub);
+}
+
+.theme-ivory .td-price-card__row {
+  border-bottom: 1px solid var(--line);
+  font-size: 13px;
+}
+
+.theme-ivory .td-price-card__cta {
+  background: var(--accent);
+  color: var(--bg);
+  border-radius: var(--btnr);
+  padding: 12px 26px;
+  font-weight: 700;
+}
+
+/* --- What's included ------------------------------------------------------ */
+
+.theme-ivory .incl__card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+}
+
+.theme-ivory .incl__title {
+  color: var(--ink);
+  font-size: 17px;
+}
+
+.theme-ivory .incl__item {
+  font-size: 14px;
+  color: var(--ink);
+}
+
+/* --- Booking form --------------------------------------------------------- */
+
+.theme-ivory .td-book-inline .td-form,
+.theme-ivory .td-form {
+  background: var(--surface);
+  border: 1px solid var(--accent);
+  border-radius: var(--r);
+  padding: 22px;
+}
+
+.theme-ivory .td-form__group label {
+  color: var(--sub);
+  font-size: 12px;
+}
+
+.theme-ivory .td-form__group input,
+.theme-ivory .td-form__group textarea,
+.theme-ivory .td-form__group select {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  color: var(--ink);
+  font-size: 14px;
+}
+
+.theme-ivory .td-form__group input:focus,
+.theme-ivory .td-form__group textarea:focus,
+.theme-ivory .td-form__group select:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.theme-ivory .td-form__submit {
+  background: var(--accent);
+  color: var(--bg);
+  border: 1px solid var(--accent);
+  border-radius: var(--btnr);
+  padding: 12px 26px;
+  font-weight: 700;
+}
+
+.theme-ivory .td-form__submit:hover {
+  background: color-mix(in srgb, var(--accent) 84%, #000);
+}
+
+/* --- Mobile booking bar (<900px) ------------------------------------------ */
+
+.theme-ivory .iv-mobilebar {
+  display: none;
+}
+
+/* --- Footer --------------------------------------------------------------- */
+
+.theme-ivory footer {
+  background: var(--surface);
+  border-top: 1px solid var(--accent);
+  color: var(--ink);
+}
+
+.theme-ivory footer a {
+  color: var(--sub);
+}
+
+.theme-ivory footer a:hover {
+  color: var(--accent);
+}
+
+.theme-ivory .footer-col__title {
+  color: var(--ink);
+}
+
+.theme-ivory .footer-desc {
+  color: var(--sub);
+}
+
+/* --- Responsive ----------------------------------------------------------- */
+
+@media (max-width: 900px) {
+  .theme-ivory .iv-mobilebar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 900;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 16px;
+    background: var(--surface);
+    border-top: 1px solid var(--accent);
+  }
+
+  .theme-ivory .iv-mobilebar__price {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.25;
+  }
+
+  .theme-ivory .iv-mobilebar__amount {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--ink);
+  }
+
+  .theme-ivory .iv-mobilebar__note {
+    font-size: 11px;
+    color: var(--sub);
+  }
+
+  .theme-ivory .iv-mobilebar__cta {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+
+  /* Keep the page's own floating controls clear of the bar. */
+  .theme-ivory .backtotop {
+    bottom: 84px;
+  }
+
+  .theme-ivory .whatsapp-float {
+    bottom: 84px;
+  }
+
+  .theme-ivory .td-book-inline {
+    padding-bottom: 90px;
+  }
+
+  .theme-ivory .acc__daybody {
+    grid-template-columns: 1fr;
+  }
+
+  .theme-ivory .acc__timeline .acc__item--itinerary:nth-of-type(even) .acc__dayfig {
+    order: 0;
+  }
+
+  .theme-ivory .iv-hotel__photos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* The split hero goes single column with the PHOTO FIRST below 760px. */
+@media (max-width: 760px) {
+  .theme-ivory .td-hero--split .td-hero__inner {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .theme-ivory .td-hero__photo {
+    order: -1;
+    max-height: 220px;
+  }
+}
+
+@media (max-width: 600px) {
+  .theme-ivory header {
+    position: fixed;
+    height: var(--ivory-header);
+    background: var(--bg);
+    backdrop-filter: none;
+    padding: 0 16px;
+  }
+
+  .theme-ivory .logo {
+    position: static;
+    top: auto;
+    left: auto;
+    height: 40px;
+  }
+
+  .theme-ivory .logo a {
+    height: 40px;
+    width: 40px;
+  }
+
+  /* The mobile drawer is a fixed panel hung off the header; it keeps its own
+     open/closed animation and only changes colour. */
+  .theme-ivory .main-menu,
+  .theme-ivory .main-menu.sticky {
+    position: fixed;
+    top: var(--ivory-header);
+    left: 0;
+    width: 100%;
+    margin: 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .theme-ivory .main-menu.active {
+    height: calc(100dvh - var(--ivory-header));
+  }
+
+  .theme-ivory .td-nav,
+  .theme-ivory .td-nav--fixed {
+    position: sticky;
+    top: var(--ivory-header);
+  }
+
+  /* The fixed header no longer overlays a full-bleed hero, so the split hero
+     needs its own clearance. */
+  .theme-ivory .td-hero--split {
+    padding-top: calc(var(--ivory-header) + 20px);
+  }
+
+  .theme-ivory .td-nav__inner {
+    padding: 0 16px;
+  }
+
+  .theme-ivory .gallery-grid > * {
+    flex: 0 0 232px;
+  }
+}
+
+.theme-ivory .iv-hotel__stars {
+  display: inline-flex;
+  gap: 2px;
+  margin-left: 8px;
+  color: var(--gold);
+  vertical-align: middle;
+}
+
+.theme-ivory .acc__daytext > *:first-child {
+  margin-top: 0;
+}
+
+/* --- Header controls -------------------------------------------------------
+   The language switcher, the compact search button and the hamburger are all
+   position:fixed in the base theme, anchored to the corner of the old 300px
+   transparent overlay header. In a 64px opaque bar they have to be ordinary
+   flex children, and their cream-on-dark palette has to invert. No control is
+   added, removed or relabelled. */
+.theme-ivory .main-menu,
+.theme-ivory .main-menu.sticky {
+  order: 1;
+}
+
+.theme-ivory .nav-search--bar {
+  order: 2;
+}
+
+.theme-ivory .lang-switcher {
+  order: 3;
+}
+
+.theme-ivory .hamburger {
+  order: 4;
+}
+
+.theme-ivory .lang-switcher,
+.theme-ivory .nav-search--bar,
+.theme-ivory .hamburger {
+  position: static;
+  top: auto;
+  right: auto;
+  flex: 0 0 auto;
+  z-index: auto;
+}
+
+.theme-ivory .lang-switcher-btn {
+  background: var(--surface);
+  color: var(--accent);
+  border: 1px solid var(--line);
+  border-radius: var(--chipr);
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.theme-ivory .lang-switcher-btn:hover {
+  background: var(--bg);
+}
+
+.theme-ivory .lang-switcher-dropdown {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.theme-ivory .lang-switcher-dropdown button,
+.theme-ivory .lang-switcher-dropdown a {
+  color: var(--ink);
+}
+
+.theme-ivory .nav-search {
+  color: var(--accent);
+  filter: none;
+  text-transform: none;
+  font-size: 13px;
+  border: 1px solid var(--line);
+  border-radius: var(--chipr);
+  padding: 6px 12px;
+}
+
+.theme-ivory .nav-search:hover,
+.theme-ivory .nav-search[aria-expanded="true"] {
+  border: 1px solid var(--accent);
+}
+
+/* --- Book This Tour ---------------------------------------------------------
+   The base theme paints this section as a solid pine card with cream type.
+   On ivory that reads as a hole in the page, and the intro line — which keeps
+   its own grey — sat at ~1.5:1 against it. The section becomes ordinary page
+   ground; the form itself is the framed surface. */
+.theme-ivory .td-section.td-book-inline {
+  background: var(--bg);
+  color: var(--ink);
+  border-radius: 0;
+  padding: 40px 0;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.theme-ivory .td-section.td-book-inline .td-section__title {
+  color: var(--ink);
+}
+
+.theme-ivory .td-book-inline .td-section__subtitle {
+  color: var(--sub);
+}
+
+.theme-ivory .td-section__subtitle {
+  text-align: left;
+}
+
+.theme-ivory .td-form {
+  max-width: 640px;
+  margin: 18px 0 0;
+}
+
+/* --- Footer brand ----------------------------------------------------------
+   Same problem as the header: the mark's wordmark is cream, drawn for the dark
+   footer it used to sit on. On the surface-white footer it disappears, so it
+   gets the same pine badge treatment rather than being recoloured. */
+.theme-ivory .footer-logo {
+  background: var(--accent);
+  border-radius: var(--r);
+  padding: 12px 18px;
+}
+
+.theme-ivory .footer-logo img {
+  height: 96px;
+}
+
+.theme-ivory .footer-social a {
+  color: var(--accent);
+  border-color: var(--line);
+}
+
+.theme-ivory .footer-desc {
+  opacity: 1;
+  color: var(--sub);
+}
+
+/* The footer's Instagram glyph is a cream SVG injected through `content:url()`,
+   so it cannot be recoloured by `color`. Darkening it is the only way to keep
+   it visible on the surface-white footer. */
+.theme-ivory .instagram::before {
+  filter: brightness(0) opacity(0.72);
+}
+
+.theme-ivory .td-form {
+  margin: 18px auto 0;
+}
+
+/* --- Mobile header controls ------------------------------------------------
+   Below 600px the drawer nav leaves the flow, so nothing pushes the remaining
+   controls to the right edge any more; the compact search button also keeps a
+   pine background from the dark-header theme, which left a pine icon on a pine
+   pill. Both are corrected here — no control is added or relabelled. */
+.theme-ivory .nav-search--bar {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--chipr);
+  color: var(--accent);
+  margin-left: auto;
+}
+
+.theme-ivory .nav-search--bar:hover,
+.theme-ivory .nav-search--bar[aria-expanded="true"] {
+  background: var(--bg);
+  border: 1px solid var(--accent);
+}
+
+.theme-ivory .hamburger {
+  align-self: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.theme-ivory .hamburger span {
+  margin: 0;
+}
+
+/* The premium column keeps its highlight, in the theme's own palette. */
+.theme-ivory .pricing-grid-header .pricing-luxury {
+  background: color-mix(in srgb, var(--gold) 12%, transparent);
+}
+
+/* styles.css centres the hamburger with `top:50%; transform:translateY(-50%)`
+   against the old absolutely-positioned header. As an in-flow flex item that
+   transform lifts it 20px out of the bar, clipping its top edge. */
+.theme-ivory .hamburger,
+.theme-ivory .hamburger.active {
+  top: auto;
+  transform: none;
+}
+
+/* --- Overlay containing block ----------------------------------------------
+   `.fade-up.visible` keeps `transform: translateY(0)`, and ANY transform makes
+   an element the containing block for `position: fixed` descendants. The hotel
+   dialogs live inside the Accommodation section's FadeUp, so their backdrop was
+   being clipped to that box instead of covering the viewport. Mid-transition
+   the same wrapper also sits at opacity ~0.8, which is a stacking context, so a
+   dialog opened during the reveal was painted under the header. The theme drops
+   the scroll-reveal altogether — the reference design has no entry animation —
+   which removes both traps for every overlay inside a FadeUp. */
+.theme-ivory .fade-up,
+.theme-ivory .fade-up.visible {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+/* --- Floating controls ------------------------------------------------------ */
+.theme-ivory .backtotop a {
+  background-color: var(--accent);
+  color: var(--bg);
+  border-radius: var(--btnr);
+  padding: 9px 16px;
+}

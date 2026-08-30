@@ -3,7 +3,7 @@ import useT from '../../i18n/useT'
 import useHotel from '../../i18n/useHotel'
 import { I18nContext } from '../../i18n/I18nContext'
 import FadeUp from './FadeUp'
-import HotelModal from './HotelModal'
+import HotelPanels from './HotelPanels'
 
 // Selecting stores the hotel NAME, not a resolved record. The translated copy
 // arrives with the tour translations, a moment after the table itself renders
@@ -103,6 +103,29 @@ function useCityLabel() {
   }, [items, t])
 }
 
+/* Every hotel named in an accommodation table, in table order, each tagged with
+   the tier column and the (already localized) city it belongs to. Uses the same
+   splitting rule as <HotelName> so a compound cell contributes each of its
+   known hotels. Feeds <HotelPanels>, which renders one dialog per hotel into
+   the served HTML. */
+function hotelEntries(accommodations, getHotel, cityLabel, tiers) {
+  const out = []
+  for (const row of accommodations || []) {
+    const city = cityLabel(row.city)
+    for (const { key, label } of tiers) {
+      const cell = row[key]
+      if (!cell) continue
+      const names = getHotel(cell)
+        ? [cell]
+        : cell.replace(/\s+or similar\s*$/i, '').split(',').map((x) => x.trim()).filter(Boolean)
+      for (const name of names) {
+        if (getHotel(name)) out.push({ name, tier: label, city })
+      }
+    }
+  }
+  return out
+}
+
 export function AccommodationsTable({ accommodations }) {
   const t = useT()
   const getHotel = useHotel()
@@ -134,7 +157,17 @@ export function AccommodationsTable({ accommodations }) {
           )
         })}
       </div>
-      {selectedHotel && <HotelModal hotel={getHotel(selectedHotel)} onClose={() => setSelectedHotel(null)} />}
+      <HotelPanels
+        entries={hotelEntries(accommodations, getHotel, cityLabel, [
+          { key: 'hotel', label: '' },
+          { key: 'luxury', label: t('pricing.luxury') },
+          { key: 'midRange', label: t('pricing.midRange') },
+          { key: 'economy', label: t('pricing.economy') },
+        ])}
+        getHotel={getHotel}
+        openName={selectedHotel}
+        onClose={() => setSelectedHotel(null)}
+      />
     </>
   )
 }
@@ -191,7 +224,7 @@ function PricingCards({ pricing, onSelectPackage }) {
   // Premium), so clicking a package pre-selects the matching option.
   const tiers = [
     { key: 'economy', label: t('pricing.economy'), accommodation: 'Classic' },
-    { key: 'midRange', label: t('pricing.midRange'), featured: true, accommodation: 'Mid-Range' },
+    { key: 'midRange', label: t('pricing.midRange'), accommodation: 'Mid-Range' },
     { key: 'luxury', label: t('pricing.premium'), accommodation: 'Premium' },
   ]
 
@@ -218,13 +251,7 @@ function PricingCards({ pricing, onSelectPackage }) {
         const startPrice = getTierPrice(pricing, tier.key)
 
         return (
-          <div
-            key={tier.key}
-            className={`td-price-card${tier.featured ? ' td-price-card--featured' : ''}`}
-          >
-            {tier.featured && (
-              <div className="td-price-card__badge">{t('pricing.mostPopular')}</div>
-            )}
+          <div key={tier.key} className="td-price-card">
             <h3 className="td-price-card__tier">{tier.label}</h3>
             {startPrice && (
               <div className="td-price-card__price">
@@ -299,7 +326,16 @@ function PrivateAccommodationsTable({ accommodations }) {
           </div>
         ))}
       </div>
-      {selectedHotel && <HotelModal hotel={getHotel(selectedHotel)} onClose={() => setSelectedHotel(null)} />}
+      <HotelPanels
+        entries={hotelEntries(accommodations, getHotel, cityLabel, [
+          { key: 'luxury', label: t('pricing.premium') },
+          { key: 'midRange', label: t('pricing.midRange') },
+          { key: 'economy', label: t('pricing.economy') },
+        ])}
+        getHotel={getHotel}
+        openName={selectedHotel}
+        onClose={() => setSelectedHotel(null)}
+      />
     </>
   )
 }

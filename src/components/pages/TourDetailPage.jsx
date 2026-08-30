@@ -279,7 +279,24 @@ export default function TourDetailPage() {
   // Auto-link destination mentions in the itinerary day HTML. A plain function
   // (not the hook) because this runs after the `!tour` early return. The FAQ
   // answers used to be linked here too; that went with the FAQ section.
-  const linkedItinerary = (itineraryItems || []).map((it) => ({ ...it, content: autolinkHtml(it.content, lang, pages) }))
+  // Ivory-badge pilot additions, both opt-in per tour:
+  //  * `media` — the photo shown beside a day's text, taken from the tour's own
+  //    gallery by index (`dayGallery`), so it arrives already localized.
+  //  * `siteChip` — the per-day count of named stops. `enDaySites` is English
+  //    copy, so it is read on the English page only; the six translated pages
+  //    show exactly the duration chips they showed before.
+  const daySites = lang === 'en' ? tour.enDaySites : null
+  const linkedItinerary = (itineraryItems || []).map((it, i) => {
+    const mediaIndex = tour.dayGallery?.[i]
+    const media = typeof mediaIndex === 'number' ? localizedGallery[mediaIndex] : null
+    const count = daySites?.[i]
+    return {
+      ...it,
+      content: autolinkHtml(it.content, lang, pages),
+      ...(media ? { media } : {}),
+      ...(count ? { siteChip: `${count} sites` } : {}),
+    }
+  })
 
   // Extract starting price
   const startingPrice = isGroup
@@ -299,7 +316,10 @@ export default function TourDetailPage() {
         translatedTitle={tt?.title}
         heroH1={tt?.heroH1 || tour.heroH1}
         isGroup={isGroup}
-        startingPrice={startingPrice}
+        /* The hero's "N sites" chip and its panel are English copy (see
+           `enSites` in tours.js) and an opt-in per tour, so every other tour
+           and every translated page renders the chips row unchanged. */
+        sites={lang === 'en' ? tour.enSites : null}
       />
 
       <TourSectionNav sections={navSections} />
@@ -444,6 +464,27 @@ export default function TourDetailPage() {
           </section>
         </main>
       </div>
+
+      {/* Mobile booking bar — CSS-gated to <=900px (see ivory.css), so it is
+          inert on desktop. Shows the same starting price the pricing cards
+          derive, in the same "starting from / per person" wording the sidebar
+          and the cards already use; no new copy. */}
+      {startingPrice && (
+        <div className="iv-mobilebar">
+          <span className="iv-mobilebar__price">
+            <span className="iv-mobilebar__amount">€{startingPrice.toLocaleString('en-US')}</span>
+            <span className="iv-mobilebar__note">
+              {t('sidebar.startingFrom')} · {t('pricing.perPerson')}
+            </span>
+          </span>
+          <a href="#book" className="iv-pill iv-mobilebar__cta" onClick={(e) => {
+            e.preventDefault()
+            document.getElementById('book')?.scrollIntoView({ behavior: 'smooth' })
+          }}>
+            {t('tour.bookNow')}
+          </a>
+        </div>
+      )}
     </>
   )
 }

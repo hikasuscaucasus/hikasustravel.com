@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import useT from '../../i18n/useT'
+import asset from '../../utils/basePath'
 
 function ChevronIcon({ open }) {
   return (
@@ -137,6 +138,48 @@ function TrainIcon() {
   )
 }
 
+function PinIcon() {
+  return (
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+    </svg>
+  )
+}
+
+const DAY_SIZES = '(max-width: 900px) 100vw, 420px'
+
+/* Ivory-badge pilot: the photo that sits beside a day's text. `media` is an
+   item from the tour's own gallery (see `dayGallery` in tours.js), so its
+   caption and alt are already translated for every locale and no new image is
+   introduced. A day without `media` renders exactly as it did before. */
+function DayFigure({ media }) {
+  const responsive = !!(media.base && media.widths?.length)
+  const set = (ext) => media.widths.map((w) => `${asset(`${media.base}-${w}.${ext}`)} ${w}w`).join(', ')
+  const alt = media.imgAlt || media.caption || ''
+  return (
+    <figure className="acc__dayfig">
+      {responsive ? (
+        <picture>
+          <source type="image/avif" srcSet={set('avif')} sizes={DAY_SIZES} />
+          <source type="image/webp" srcSet={set('webp')} sizes={DAY_SIZES} />
+          <img
+            src={asset(`${media.base}-${media.widths[0]}.webp`)}
+            width={media.width}
+            height={media.height}
+            sizes={DAY_SIZES}
+            alt={alt}
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
+      ) : (
+        <img src={asset(media.src)} alt={alt} loading="lazy" decoding="async" />
+      )}
+      {media.caption && <figcaption>{media.caption}</figcaption>}
+    </figure>
+  )
+}
+
 export function AccordionItem({ title, children, isOpen, onToggle, index, itinerary, tags }) {
   const headingId = `acc-heading-${index}`
   const panelId = `acc-panel-${index}`
@@ -160,7 +203,7 @@ export function AccordionItem({ title, children, isOpen, onToggle, index, itiner
           <span className="acc__tags">
             {tags.map((tag, i) => (
               <span key={i} className="acc__tag">
-                {tag.icon === 'clock' ? <ClockIcon /> : tag.icon === 'train' ? <TrainIcon /> : <CarIcon />}
+                {tag.icon === 'clock' ? <ClockIcon /> : tag.icon === 'train' ? <TrainIcon /> : tag.icon === 'pin' ? <PinIcon /> : <CarIcon />}
                 {tag.label}
               </span>
             ))}
@@ -231,6 +274,13 @@ export default function Accordion({ items, renderContent, headingKey, itinerary,
             ? extractTags(item.content)
             : { tags: [], cleanedContent: item.content }
 
+          // Optional per-day count of named stops, supplied by the caller as an
+          // already-localized label (`siteChip`). Opt-in: a day without one
+          // shows exactly the duration chips it showed before.
+          const allTags = item.siteChip
+            ? [...tags, { icon: 'pin', label: item.siteChip }]
+            : tags
+
           return (
             <AccordionItem
               key={index}
@@ -239,9 +289,14 @@ export default function Accordion({ items, renderContent, headingKey, itinerary,
               onToggle={() => toggleItem(index)}
               index={index}
               itinerary={itinerary}
-              tags={tags}
+              tags={allTags}
             >
-              {renderContent ? renderContent(item) : (
+              {renderContent ? renderContent(item) : item.media ? (
+                <div className="acc__daybody">
+                  <div className="acc__daytext" dangerouslySetInnerHTML={{ __html: cleanedContent }} />
+                  <DayFigure media={item.media} />
+                </div>
+              ) : (
                 <div dangerouslySetInnerHTML={{ __html: cleanedContent }} />
               )}
             </AccordionItem>

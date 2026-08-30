@@ -6,6 +6,9 @@ import { langCodes, defaultLang } from './i18n/languages'
 import { initFirstTouchAttribution } from './utils/attribution'
 import './assets/css/reset_plus.css'
 import './assets/css/styles.css'
+// Ivory-badge design pilot: scoped to <html class="theme-ivory"> (tour-detail
+// routes only), so it cannot affect any other page. See ivory.css.
+import './assets/css/ivory.css'
 import './assets/css/blur-up.css'
 // mapbox-gl.css now travels with the lazily-loaded MapboxMap component instead
 // of the entry bundle, so pages without a map ship neither its JS nor its CSS.

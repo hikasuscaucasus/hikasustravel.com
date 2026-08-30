@@ -66,6 +66,14 @@ export function GalleryLightbox({ images, startIndex, onClose, label }) {
   const caption = image.caption ? image.caption.replace(/<[^>]*>/g, '') : ''
   const alt = caption || (image.description || '')
 
+  /* The expanded view is the one place that wants the biggest rendition the
+     pipeline built. `src` is whatever width the tile's fallback happened to
+     name — often the 768 rung — so when the item ships a `widths` ladder the
+     top rung is used instead. Items without a ladder keep their own `src`. */
+  const fullSrc = image.base && image.widths?.length
+    ? asset(`${image.base}-${Math.max(...image.widths)}.webp`)
+    : asset(image.src)
+
   const onTouchStart = (e) => { touchStartX.current = e.touches[0].clientX }
   const onTouchEnd = (e) => {
     if (touchStartX.current == null) return
@@ -96,7 +104,7 @@ export function GalleryLightbox({ images, startIndex, onClose, label }) {
         </button>
       )}
       <img
-        src={asset(image.src)}
+        src={fullSrc}
         alt={alt}
         className="gallery-lightbox__img"
         onClick={(e) => e.stopPropagation()}
