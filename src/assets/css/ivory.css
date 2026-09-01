@@ -1001,6 +1001,22 @@
   background: color-mix(in srgb, var(--accent) 84%, #000);
 }
 
+/* Post-submit confirmation. It replaces the .td-form card rather than sitting
+   inside it, so it inherits none of the card's paint and falls through to the
+   pre-Ivory rule in styles.css: color: var(--color-bg), written when this block
+   sat on a dark form panel. The legacy palette remap below points --color-bg at
+   the ivory page ground, so the message was being painted in exactly the colour
+   it sits on - measured at 1.00:1 on an ivory section and 1.06:1 on the white
+   homepage band. Ink instead. The heading is left alone: --color-h3 remaps to
+   pine, and inside .td-book-inline it already resolves to ink, so it was
+   readable in both places. Nothing else about the block changes - it keeps its
+   centred, box-free treatment. Both success states use this wrapper (the
+   contact form and the tour inquiry form), so this is the only place it needs
+   fixing. */
+.theme-ivory .td-form__success p {
+  color: var(--text);
+}
+
 /* --- Mobile booking bar (<900px) ------------------------------------------ */
 
 .theme-ivory .iv-mobilebar {
