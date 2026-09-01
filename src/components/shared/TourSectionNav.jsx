@@ -6,33 +6,111 @@ export default function TourSectionNav({ sections }) {
   const [isFixed, setIsFixed] = useState(false)
   const navRef = useRef(null)
   const sentinelRef = useRef(null)
+  // Set while a click-initiated smooth scroll is in flight; holds the clicked
+  // id so the pill cannot flicker through every section on the way there.
+  const lockRef = useRef(null)
+  const lockTimerRef = useRef(0)
+  const rafRef = useRef(0)
   const t = useT()
+
+  // Which section is "reached"? The browser puts a clicked section at its own
+  // `scroll-margin-top` (ivory.css: header + sub-nav + 16px), so that value IS
+  // the activation line — reading it back from the section means the scroll
+  // target and the scrollspy can never disagree, at any breakpoint, with no
+  // header height duplicated in JS. Previously the spy used a hard-coded 120px
+  // while the sections landed at 126px, so a clicked section never counted as
+  // reached and the previous one stayed active.
+  const computeActive = useCallback(() => {
+    let current = sections[0]?.id || ''
+    let lastRendered = null
+    let lastTop = 0
+
+    for (const section of sections) {
+      const el = document.getElementById(section.id)
+      // A section that is not rendered (or is hidden) must not take part.
+      if (!el || !el.offsetHeight) continue
+      const top = el.getBoundingClientRect().top
+      lastRendered = section.id
+      lastTop = top
+      const line = parseFloat(getComputedStyle(el).scrollMarginTop) || 0
+      // Tolerance covers fractional device pixels and smooth-scroll rounding,
+      // which can leave a section a hair below its own line.
+      if (top - line <= 1.5) current = section.id
+    }
+
+    // Bottom-of-document edge case: the last section (Book) can be shorter than
+    // the space under the activation line, so no amount of scrolling can bring
+    // it up to the line. Whoever is at the end of a scrollable page is looking
+    // at the last section.
+    const doc = document.documentElement
+    const scrollable = doc.scrollHeight - window.innerHeight > 4
+    const atBottom = Math.ceil(window.scrollY + window.innerHeight) >= doc.scrollHeight - 2
+    if (scrollable && atBottom && lastRendered && lastTop < window.innerHeight) {
+      current = lastRendered
+    }
+
+    return current
+  }, [sections])
+
+  const update = useCallback(() => {
+    const current = computeActive()
+    const locked = lockRef.current
+    if (locked) {
+      // Still travelling towards the clicked section: keep its pill lit.
+      if (current !== locked) return
+      lockRef.current = null
+      window.clearTimeout(lockTimerRef.current)
+    }
+    setActiveId(current)
+  }, [computeActive])
+
+  // rAF-coalesced: one layout read per frame however fast the wheel spins.
+  const schedule = useCallback(() => {
+    if (rafRef.current) return
+    rafRef.current = window.requestAnimationFrame(() => {
+      rafRef.current = 0
+      update()
+    })
+  }, [update])
 
   const handleClick = (e, id) => {
     e.preventDefault()
     const el = document.getElementById(id)
-    if (el) el.scrollIntoView({ behavior: 'smooth' })
+    if (!el) return
+    // Immediate feedback, held for the length of the smooth scroll.
+    setActiveId(id)
+    lockRef.current = id
+    window.clearTimeout(lockTimerRef.current)
+    // Safety net only: the lock normally releases the moment the geometry
+    // agrees (see `update`) or on `scrollend`.
+    lockTimerRef.current = window.setTimeout(() => {
+      lockRef.current = null
+      schedule()
+    }, 1500)
+    el.scrollIntoView({ behavior: 'smooth' })
   }
 
-  const onScroll = useCallback(() => {
-    const offset = 120
-    let current = sections[0]?.id || ''
-
-    for (const section of sections) {
-      const el = document.getElementById(section.id)
-      if (el) {
-        const rect = el.getBoundingClientRect()
-        if (rect.top <= offset) current = section.id
-      }
-    }
-
-    setActiveId(current)
-  }, [sections])
-
   useEffect(() => {
-    window.addEventListener('scroll', onScroll, { passive: true })
-    return () => window.removeEventListener('scroll', onScroll)
-  }, [onScroll])
+    const onScrollEnd = () => {
+      lockRef.current = null
+      window.clearTimeout(lockTimerRef.current)
+      schedule()
+    }
+    window.addEventListener('scroll', schedule, { passive: true })
+    window.addEventListener('resize', schedule)
+    if ('onscrollend' in window) window.addEventListener('scrollend', onScrollEnd)
+    // Settle the initial state: top of page, a restored scroll position, or a
+    // deep link such as #accommodation.
+    schedule()
+    return () => {
+      window.removeEventListener('scroll', schedule)
+      window.removeEventListener('resize', schedule)
+      if ('onscrollend' in window) window.removeEventListener('scrollend', onScrollEnd)
+      if (rafRef.current) window.cancelAnimationFrame(rafRef.current)
+      rafRef.current = 0
+      window.clearTimeout(lockTimerRef.current)
+    }
+  }, [schedule])
 
   // Use IntersectionObserver on sentinel to toggle fixed positioning.
   // rootMargin offsets the root's top edge by the fixed-nav offset (matching
