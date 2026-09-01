@@ -1358,12 +1358,13 @@ export const tours = [
     },
     "tourFormTitle": "Georgia Group Tour",
     "groupDates": [
-      { "start": "23 May", "end": "5 June", "year": "2026", "soldOut": true },
-      { "start": "5 September", "end": "18 September", "year": "2026", "soldOut": true },
-      { "start": "17 October", "end": "30 October", "year": "2026" }
+      { "start": "22 May", "end": "4 June", "year": "2027" },
+      { "start": "12 June", "end": "25 June", "year": "2027" },
+      { "start": "18 September", "end": "1 October", "year": "2027" },
+      { "start": "16 October", "end": "29 October", "year": "2027" }
     ],
-    "pricePerPerson": "2,590",
-    "singleSupplement": "450",
+    "pricePerPerson": "2,695",
+    "singleSupplement": "480",
     "groupSummary": [
       {
         "label": "Duration",
@@ -1377,14 +1378,15 @@ export const tours = [
         "label": "Available Dates",
         "type": "dates",
         "values": [
-          { "text": "23 May – 5 June 2026", "soldOut": true },
-          { "text": "5 September – 18 September 2026", "soldOut": true },
-          { "text": "17 October – 30 October 2026", "soldOut": false }
+          { "text": "22 May – 4 June 2027", "soldOut": false },
+          { "text": "12 June – 25 June 2027", "soldOut": false },
+          { "text": "18 September – 1 October 2027", "soldOut": false },
+          { "text": "16 October – 29 October 2027", "soldOut": false }
         ]
       },
       {
         "label": "Price",
-        "value": "€2,590 per person"
+        "value": "€2,695 per person"
       }
     ]
   },

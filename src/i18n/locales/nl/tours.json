@@ -275,22 +275,26 @@
         "type": "dates",
         "values": [
           {
-            "text": "23 mei – 5 juni 2026",
-            "soldOut": true
+            "text": "22 mei – 4 juni 2027",
+            "soldOut": false
           },
           {
-            "text": "5 september – 18 september 2026",
-            "soldOut": true
+            "text": "12 juni – 25 juni 2027",
+            "soldOut": false
           },
           {
-            "text": "17 oktober – 30 oktober 2026",
+            "text": "18 september – 1 oktober 2027",
+            "soldOut": false
+          },
+          {
+            "text": "16 oktober – 29 oktober 2027",
             "soldOut": false
           }
         ]
       },
       {
         "label": "Prijs",
-        "value": "€2.590 per persoon"
+        "value": "€2.695 per persoon"
       }
     ]
   },

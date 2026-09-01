@@ -396,8 +396,14 @@ export function PriceSection({ isGroup, pricing, pricePerPerson, singleSupplemen
                       </div>
                     </div>
                   )}
+                  {/* "Book Now" — the same key the mobile booking bar uses, so
+                      the wording is the site's own in all seven locales rather
+                      than a new translation. `tour.getExactPrice` was only ever
+                      rendered here (the per-tier private-tour cards above have
+                      their own CTA), so no other button changes. Destination,
+                      placement, styling and behaviour are untouched. */}
                   <a href="#book" onClick={scrollToBook} className="td-price-card__cta">
-                    {t('tour.getExactPrice')}
+                    {t('tour.bookNow')}
                   </a>
                 </div>
               </div>

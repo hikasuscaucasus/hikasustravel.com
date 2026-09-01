@@ -131,22 +131,26 @@
         "type": "dates",
         "values": [
           {
-            "text": "23 May – 5 June 2026",
-            "soldOut": true
+            "text": "22 May – 4 June 2027",
+            "soldOut": false
           },
           {
-            "text": "5 September – 18 September 2026",
-            "soldOut": true
+            "text": "12 June – 25 June 2027",
+            "soldOut": false
           },
           {
-            "text": "17 October – 30 October 2026",
+            "text": "18 September – 1 October 2027",
+            "soldOut": false
+          },
+          {
+            "text": "16 October – 29 October 2027",
             "soldOut": false
           }
         ]
       },
       {
         "label": "Price",
-        "value": "€2,590 per person"
+        "value": "€2,695 per person"
       }
     ]
   },

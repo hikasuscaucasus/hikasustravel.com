@@ -10,6 +10,9 @@ export default function TourSectionNav({ sections }) {
   // id so the pill cannot flicker through every section on the way there.
   const lockRef = useRef(null)
   const lockTimerRef = useRef(0)
+  // The section the visitor last asked for, used only to break a tie between
+  // sections that share a row (see computeActive).
+  const preferredRef = useRef(null)
   const rafRef = useRef(0)
   const t = useT()
 
@@ -21,9 +24,9 @@ export default function TourSectionNav({ sections }) {
   // while the sections landed at 126px, so a clicked section never counted as
   // reached and the previous one stayed active.
   const computeActive = useCallback(() => {
-    let current = sections[0]?.id || ''
     let lastRendered = null
     let lastTop = 0
+    const passed = []
 
     for (const section of sections) {
       const el = document.getElementById(section.id)
@@ -35,7 +38,23 @@ export default function TourSectionNav({ sections }) {
       const line = parseFloat(getComputedStyle(el).scrollMarginTop) || 0
       // Tolerance covers fractional device pixels and smooth-scroll rounding,
       // which can leave a section a hair below its own line.
-      if (top - line <= 1.5) current = section.id
+      if (top - line <= 1.5) passed.push({ id: section.id, top })
+    }
+
+    let current = sections[0]?.id || ''
+    if (passed.length) {
+      // Normally the last section to pass the line is the one being read. But
+      // sections that share a row — the group tour puts Accommodation and
+      // Pricing side by side — cross the line in the same frame, and a tie is
+      // not a sequence: taking the last would make Pricing unbeatable and
+      // Accommodation unclickable. So the trailing run of equal tops is
+      // resolved by intent (the pill the visitor actually clicked) and
+      // otherwise by document order.
+      const top = passed[passed.length - 1].top
+      let i = passed.length - 1
+      while (i > 0 && Math.abs(passed[i - 1].top - top) <= 4) i--
+      const tied = passed.slice(i)
+      current = (tied.find((s) => s.id === preferredRef.current) || tied[0]).id
     }
 
     // Bottom-of-document edge case: the last section (Book) can be shorter than
@@ -79,6 +98,7 @@ export default function TourSectionNav({ sections }) {
     if (!el) return
     // Immediate feedback, held for the length of the smooth scroll.
     setActiveId(id)
+    preferredRef.current = id
     lockRef.current = id
     window.clearTimeout(lockTimerRef.current)
     // Safety net only: the lock normally releases the moment the geometry

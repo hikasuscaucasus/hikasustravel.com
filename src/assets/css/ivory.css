@@ -956,6 +956,31 @@
   color: var(--ink);
 }
 
+/* --- Accommodation + Pricing row (group tours) -----------------------------
+   Both blocks are short on a group tour, so from 1024px up they sit side by
+   side as equal companions. This is a grid around the two existing sections
+   and nothing more: ids, headings, nav targets and document order are
+   untouched, and below 1024px the single column renders exactly as it did.
+   Letting the two stretch to the row height (the grid default) keeps their
+   bottom hairlines on one line, while the content inside each still starts at
+   the top. */
+.theme-ivory .td-pair {
+  display: grid;
+  gap: 0 40px;
+}
+
+/* .td-section:last-child drops its border; inside the pair that would leave
+   the right-hand column without the hairline the left one keeps. */
+.theme-ivory .td-pair > .td-section {
+  border-bottom: 1px solid var(--line);
+}
+
+@media (min-width: 1024px) {
+  .theme-ivory .td-pair {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 /* --- Booking form --------------------------------------------------------- */
 
 .theme-ivory .td-book-inline .td-form,

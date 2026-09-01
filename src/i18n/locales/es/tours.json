@@ -275,22 +275,26 @@
         "type": "dates",
         "values": [
           {
-            "text": "23 mayo – 5 junio 2026",
-            "soldOut": true
+            "text": "22 mayo – 4 junio 2027",
+            "soldOut": false
           },
           {
-            "text": "5 septiembre – 18 septiembre 2026",
-            "soldOut": true
+            "text": "12 junio – 25 junio 2027",
+            "soldOut": false
           },
           {
-            "text": "17 octubre – 30 octubre 2026",
+            "text": "18 septiembre – 1 octubre 2027",
+            "soldOut": false
+          },
+          {
+            "text": "16 octubre – 29 octubre 2027",
             "soldOut": false
           }
         ]
       },
       {
         "label": "Precio",
-        "value": "2.590 € por persona"
+        "value": "2.695 € por persona"
       }
     ]
   },

@@ -303,6 +303,22 @@ export default function TourDetailPage() {
     ? (tour.pricePerPerson ? parseFloat(tour.pricePerPerson.replace(/[^0-9.]/g, '')) : null)
     : getStartingPrice(tour.pricing)
 
+  // Accommodation and Pricing are built here rather than inline because a group
+  // tour renders them as one row (see below); every other tour renders exactly
+  // the same two elements stacked, as before.
+  const accommodationSection = (
+    <AccommodationSection accommodations={tour.accommodations} isGroup={isGroup} />
+  )
+  const priceSection = (
+    <PriceSection
+      isGroup={isGroup}
+      pricing={tour.pricing}
+      pricePerPerson={tour.pricePerPerson}
+      singleSupplement={tour.singleSupplement}
+      onSelectPackage={handleSelectPackage}
+    />
+  )
+
   // The icon list of tour highlights that used to sit between the Overview
   // paragraphs and the Itinerary is no longer rendered. The `highlights` arrays
   // stay in tours.js and in the locale files — nothing else in the project
@@ -406,17 +422,24 @@ export default function TourDetailPage() {
             </section>
           )}
 
-          {/* 4. Accommodation */}
-          <AccommodationSection accommodations={tour.accommodations} isGroup={isGroup} />
-
-          {/* 5. Price */}
-          <PriceSection
-            isGroup={isGroup}
-            pricing={tour.pricing}
-            pricePerPerson={tour.pricePerPerson}
-            singleSupplement={tour.singleSupplement}
-            onSelectPackage={handleSelectPackage}
-          />
+          {/* 4. Accommodation and 5. Price. On a group tour both are short
+              blocks, so above 1024px they share one row (.td-pair in
+              ivory.css) instead of leaving two half-empty bands. They remain
+              two separate sections with their own ids, headings and nav
+              targets, in this same document order — the wrapper is a grid and
+              nothing else. Private tours, whose pricing table is tall, keep
+              them stacked. */}
+          {isGroup ? (
+            <div className="td-pair">
+              {accommodationSection}
+              {priceSection}
+            </div>
+          ) : (
+            <>
+              {accommodationSection}
+              {priceSection}
+            </>
+          )}
 
           {/* 6. What's included and not included */}
           {(includedItems || notIncludedItems) && (
