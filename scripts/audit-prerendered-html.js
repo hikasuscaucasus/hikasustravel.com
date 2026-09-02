@@ -12,6 +12,14 @@
  *   3. Pages with no <h1>, or more than one.
  *   4. A missing canonical, <title>, or meta description.
  *   5. JSON-LD that does not parse.
+ *   6. A heading level skipped (h2 -> h4). The footer's four column titles
+ *      were <h4> while every page's own sections were <h2>, so one shared
+ *      component put a gap in the outline of 2,716 pages.
+ *   7. A same-page #anchor with no matching id — the tour section nav is
+ *      nothing but such links, and a renamed section id makes one dead.
+ *   8. A referenced /images/… file that is not on disk. Two blur-up
+ *      placeholders 404'd on every homepage visit for want of a thumb twin;
+ *      nothing showed, because the full image arrives a moment later.
  *
  * Deliberately NOT checked here: anything requiring a network request, and
  * anything inside the JS bundles — a token in a compiled string table is not a
@@ -67,6 +75,8 @@ if (files.length < 100) {
 
 let jsonLdBlocks = 0
 let stubs = 0
+// Every /images/… URL any page references, collected once and resolved at the end.
+const imageRefs = new Set()
 
 for (const file of files) {
   const html = fs.readFileSync(file, 'utf8')
@@ -141,6 +151,56 @@ for (const file of files) {
       add(file, 'jsonld-parse', `${e.message} — ${raw.slice(0, 80)}`)
     }
   })
+
+  // --- 6. heading order ----------------------------------------------------
+  // A heading level may repeat or go back up, but stepping DOWN by more than
+  // one leaves a gap that assistive technology reports as a missing section.
+  // The footer's four column titles were <h4> after each page's own <h2>, so
+  // 2,716 of 2,765 pages shipped a skip from one shared component.
+  const levels = []
+  $('h1,h2,h3,h4,h5,h6').each((_, el) => levels.push(Number(el.tagName[1])))
+  for (let i = 1; i < levels.length; i++) {
+    if (levels[i] - levels[i - 1] > 1) {
+      add(file, 'heading-skip', `h${levels[i - 1]} -> h${levels[i]}`)
+      break
+    }
+  }
+
+  // --- 7. same-page anchors resolve ---------------------------------------
+  // The tour section nav is a row of #hash links; a renamed section id turns
+  // one of them into a control that scrolls nowhere.
+  const ids = new Set()
+  $('[id]').each((_, el) => ids.add($(el).attr('id')))
+  $('a[href^="#"]').each((_, el) => {
+    const id = decodeURIComponent(($(el).attr('href') || '').slice(1))
+    if (id && !ids.has(id)) add(file, 'dead-anchor', `#${id}`)
+  })
+
+  // --- 8. every referenced image exists ------------------------------------
+  // BlurUpBackground derives its placeholder by swapping /images/files/ for
+  // /images/files-thumb/, so a cover with no thumb twin 404s on every visit —
+  // invisibly, because the full image loads a moment later. Two shipped.
+  $('img[src], source[srcset], img[srcset]').each((_, el) => {
+    const raw = $(el).attr('src') || ''
+    const set = $(el).attr('srcset') || ''
+    const urls = [raw, ...set.split(',').map((s) => s.trim().split(/\s+/)[0])].filter((u) => u.startsWith('/images/'))
+    for (const u of urls) imageRefs.add(u)
+  })
+  for (const m of html.matchAll(/\/images\/files-thumb\/[^"'()\s\\]+\.(?:webp|avif|jpg|jpeg|png)/gi)) {
+    imageRefs.add(m[0])
+  }
+}
+
+// --- 8b. resolve the collected image references against disk ---------------
+// Done once at the end so each distinct URL is stat'ed a single time.
+const PUBLIC = path.resolve('public')
+for (const u of imageRefs) {
+  let decoded
+  try { decoded = decodeURIComponent(u) } catch { decoded = u }
+  const relPath = decoded.replace(/^\//, '')
+  if (!fs.existsSync(path.join(PUBLIC, relPath)) && !fs.existsSync(path.join(DIST, relPath))) {
+    errors.push({ file: '(site-wide)', kind: 'missing-image', detail: u })
+  }
 }
 
 // --- summary ---------------------------------------------------------------

@@ -72,6 +72,12 @@ function HotelPanel({ entry, hotel, open, onClose, showCategories }) {
     return () => {
       document.body.style.overflow = prev
       if (opener instanceof HTMLElement) opener.focus()
+      // A modal closed while its photo viewer was open must not bring the
+      // viewer back on the next open. Done in this effect's cleanup — which
+      // runs exactly when the panel closes — rather than in a second effect
+      // that called setState in its body on every render where `open` was
+      // false, which is a cascading render React asks us not to do.
+      setPhotoIndex(null)
     }
   }, [open])
 
@@ -86,10 +92,6 @@ function HotelPanel({ entry, hotel, open, onClose, showCategories }) {
     document.addEventListener('keydown', onKey)
     return () => document.removeEventListener('keydown', onKey)
   }, [open, onClose, photoIndex])
-
-  // A hotel modal that gets closed while its viewer is open must not leave the
-  // viewer behind on the next open.
-  useEffect(() => { if (!open) setPhotoIndex(null) }, [open])
 
   const images = hotel.images || (hotel.image ? [{ src: hotel.image, alt: hotel.name }] : [])
   const amenities = hotel.amenities || []
