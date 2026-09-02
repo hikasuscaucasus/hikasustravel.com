@@ -1,5 +1,4 @@
 import { useState, useMemo, useEffect, useSyncExternalStore } from 'react'
-import HeroSection from '../shared/HeroSection'
 import useT from '../../i18n/useT'
 import useLang from '../../i18n/useLang'
 import useSEO from '../../hooks/useSEO'
@@ -85,9 +84,20 @@ export default function EmbassiesPage() {
     })
   }, [highlightedId])
 
+  // This page renders no hero, permanently. It is a reference list of embassy
+  // contact details, not a destination, so there is no photograph to show and
+  // nothing is reserved for one: the <HeroSection> call is gone rather than
+  // hidden, so no fallback image, wrapper or reserved height can bring one
+  // back. It uses the same title band as the site's other hero-less pages
+  // (see FaqPage) — the band carries the single <h1>, and its solid background
+  // is what keeps the absolutely-positioned header's cream logo and nav
+  // legible, which a bare light page cannot. The og:image set above is
+  // unaffected: a social preview does not require a visible hero.
   return (
     <>
-      <HeroSection image="/images/files/georgia-tour-03.jpg" title={t('embassies.heroTitle')} />
+      <section className="dest-title-band">
+        <h1>{t('embassies.heroTitle')}</h1>
+      </section>
 
       {/* Emergency Numbers */}
       <section className="page-items">
