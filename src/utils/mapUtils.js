@@ -4,6 +4,31 @@ mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN
 
 const MAP_STYLE = 'mapbox://styles/matthekim/cm9u0hfgr001001s941ym33e3'
 
+/**
+ * Can this browser actually run the interactive map?
+ *
+ * `new mapboxgl.Map()` throws `Failed to initialize WebGL` when the browser
+ * has no working WebGL context — an old device, a locked-down build, a driver
+ * blocklist, or a browser where the user has turned hardware acceleration off.
+ * The throw happens inside our useEffect, where React treats it as a render
+ * error and unmounts the whole tree, so the check has to come first.
+ *
+ * `mapboxgl.supported()` is the library's own probe (it builds a throwaway
+ * context and reports the answer). It is wrapped because the probe itself can
+ * throw on hostile browsers, and because the SSR stub does not define it.
+ * A missing access token counts as unsupported too: the map would mount and
+ * then fail every tile request, which looks worse than no map at all.
+ */
+export function isMapSupported() {
+  if (typeof window === 'undefined') return false
+  if (!mapboxgl.accessToken) return false
+  try {
+    return typeof mapboxgl.supported === 'function' ? mapboxgl.supported() : true
+  } catch {
+    return false
+  }
+}
+
 export function initializeMap(containerId, coordinates, zoom) {
   const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0
   const map = new mapboxgl.Map({
