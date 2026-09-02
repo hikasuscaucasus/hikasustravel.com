@@ -2210,6 +2210,14 @@
   margin-inline: 0;
 }
 
+/* The per-cell tier label exists only for the card layout below 600px; above
+   it the header row names the columns and this would repeat it in every cell.
+   display:none keeps it out of the accessibility tree too, so a screen reader
+   is given the tier exactly once at either width. */
+.theme-ivory .pricing-grid-row__label {
+  display: none;
+}
+
 /* The header row has to shrink on the same terms as the body rows.
 
    Both rows are `1.2fr 1fr 1fr 1fr`, and `1fr` means `minmax(auto, 1fr)` — a
@@ -2256,6 +2264,101 @@
   .theme-ivory .pricing-grid--accommodations {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* --- Accommodation as cards on a narrow phone -------------------------------
+
+   The private-tour table is four columns wide — city plus three tiers — and on
+   a phone that is not a table any more, it is four slivers. Measured in German
+   on the 3-day Kakheti tour, where the tier names are longest:
+
+     600px   columns 131px   every header label on one line
+     480px   columns 102px   "MITTELKLASSE" breaks mid-word onto two lines
+     430px   columns  90px   same, and a cell runs to 13 lines
+     375px   columns  77px   same, 15 lines, the row 296px tall
+
+   So the header stops fitting somewhere between 480 and 600, not at 430: at
+   480 a reader scrolled past the top of the table sees a column headed "SE".
+   The switch is therefore at 600px, which is also where this component's own
+   mobile styling already begins, rather than at a new breakpoint of its own.
+
+   Each row becomes a card: the city as its heading, then the three tiers as
+   label-and-value pairs at full width. Nothing is hidden, reordered or
+   abbreviated — the same cities, the same hotels, the same "or similar", the
+   same hotel links opening the same panels. The tier label comes from real
+   markup rather than generated content, so it is available to a screen reader
+   exactly when the header row is not.
+
+   `overflow-x` goes back to visible because there is nothing left to scroll,
+   and the outer frame steps aside so the cards are the only boxes drawn. */
+@media (max-width: 600px) {
+  .theme-ivory .pricing-grid--private {
+    overflow-x: visible;
+    border: 0;
+    border-radius: 0;
+    background: none;
+  }
+
+  .theme-ivory .pricing-grid--private .pricing-grid-header {
+    display: none;
+  }
+
+  .theme-ivory .pricing-grid--private .pricing-grid-row {
+    display: block;
+    border: 1px solid var(--line);
+    border-top: 1px solid var(--line);
+    border-radius: var(--r);
+    background: var(--surface);
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+
+  .theme-ivory .pricing-grid--private .pricing-grid-row:last-child {
+    margin-bottom: 0;
+  }
+
+  /* A hover tint sized for a table row washes a whole card. */
+  .theme-ivory .pricing-grid--private .pricing-grid-row:hover {
+    background: var(--surface);
+  }
+
+  .theme-ivory .pricing-grid--private .pricing-grid-row > div {
+    display: block;
+    padding: 0;
+    text-align: left;
+    justify-content: flex-start;
+  }
+
+  .theme-ivory .pricing-grid--private .pricing-grid-row > div + div {
+    margin-top: 12px;
+  }
+
+  .theme-ivory .pricing-grid--private .pricing-grid-row__city {
+    font-size: 15px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .theme-ivory .pricing-grid--private .pricing-grid-row__label {
+    display: block;
+    margin-bottom: 3px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: var(--sub);
+  }
+
+  .theme-ivory .pricing-grid--private .td-hotel {
+    display: block;
+    text-align: left;
+  }
+
+  .theme-ivory .pricing-grid--private .hotel-link {
+    text-align: left;
   }
 }
 

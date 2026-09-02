@@ -308,6 +308,17 @@ function PricingCards({ pricing, onSelectPackage }) {
   )
 }
 
+/* The three accommodation tiers, in the order the table shows them. `key` is
+   the data key on the accommodation record; `labelKey` is what a visitor
+   reads. Named once so the header, the body cells, the per-cell mobile labels
+   and the hotel-panel entries can never drift apart — `luxury` is shown as
+   Premium, and that mapping used to be repeated in four places. */
+const TIERS = [
+  { key: 'luxury', labelKey: 'pricing.premium', headerClass: 'pricing-luxury' },
+  { key: 'midRange', labelKey: 'pricing.midRange' },
+  { key: 'economy', labelKey: 'pricing.economy' },
+]
+
 function PrivateAccommodationsTable({ accommodations }) {
   const t = useT()
   const getHotel = useHotel()
@@ -320,25 +331,34 @@ function PrivateAccommodationsTable({ accommodations }) {
       <div className="pricing-grid pricing-grid--private">
         <div className="pricing-grid-header">
           <div>{t('pricing.city')}</div>
-          <div className="pricing-luxury">{t('pricing.premium')}</div>
-          <div>{t('pricing.midRange')}</div>
-          <div>{t('pricing.economy')}</div>
+          {TIERS.map(({ key, labelKey, headerClass }) => (
+            <div key={key} className={headerClass}>{t(labelKey)}</div>
+          ))}
         </div>
         {accommodations.map((row, i) => (
           <div key={i} className="pricing-grid-row">
-            <div>{cityLabel(row.city)}</div>
-            <div><span className="td-hotel"><HotelName name={row.luxury} onSelect={setSelectedHotel} getHotel={getHotel} orSimilar={t('pricing.orSimilar')} /></span></div>
-            <div><span className="td-hotel"><HotelName name={row.midRange} onSelect={setSelectedHotel} getHotel={getHotel} orSimilar={t('pricing.orSimilar')} /></span></div>
-            <div><span className="td-hotel"><HotelName name={row.economy} onSelect={setSelectedHotel} getHotel={getHotel} orSimilar={t('pricing.orSimilar')} /></span></div>
+            <div className="pricing-grid-row__city">{cityLabel(row.city)}</div>
+            {TIERS.map(({ key, labelKey }) => (
+              <div key={key}>
+                {/* The tier name, repeated inside every cell. Below 600px the
+                    header row is gone and this is what tells a reader which
+                    tier a hotel belongs to; above it the header does that job
+                    and this label is display:none, so exactly one of the two
+                    is present at any width — for a screen reader as much as
+                    for the eye, since display:none also removes it from the
+                    accessibility tree. */}
+                <span className="pricing-grid-row__label">{t(labelKey)}</span>
+                <span className="td-hotel">
+                  <HotelName name={row[key]} onSelect={setSelectedHotel} getHotel={getHotel} orSimilar={t('pricing.orSimilar')} />
+                </span>
+              </div>
+            ))}
           </div>
         ))}
       </div>
       <HotelPanels
-        entries={hotelEntries(accommodations, getHotel, cityLabel, [
-          { key: 'luxury', label: t('pricing.premium') },
-          { key: 'midRange', label: t('pricing.midRange') },
-          { key: 'economy', label: t('pricing.economy') },
-        ])}
+        entries={hotelEntries(accommodations, getHotel, cityLabel,
+          TIERS.map(({ key, labelKey }) => ({ key, label: t(labelKey) })))}
         getHotel={getHotel}
         openName={selectedHotel}
         onClose={() => setSelectedHotel(null)}
