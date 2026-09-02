@@ -1,4 +1,5 @@
 import { useContext } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import HeroSection from '../shared/HeroSection'
 import FadeUp from '../shared/FadeUp'
 import ContactForm from '../shared/ContactForm'
@@ -8,6 +9,7 @@ import useLang from '../../i18n/useLang'
 import { useLinkedHtml } from '../../utils/autolinkReact'
 import useSEO from '../../hooks/useSEO'
 import { getSEO } from '../../data/seoData'
+import { shuttleRoutes } from '../../data/shuttleData'
 
 export default function ContactPage() {
   const { pages } = useContext(I18nContext)
@@ -18,9 +20,19 @@ export default function ContactPage() {
   const seo = getSEO('contact', lang)
   useSEO({ ...seo, lang, path: 'contact', image: '/images/files/contact-page.jpg' })
 
+  // Arriving from a shuttle route ("Request This Transfer"). Both names are
+  // matched against the real route list before anything is written, so the
+  // query string can only ever produce one of our own sentences about one of
+  // our own routes — never arbitrary text in the message box.
+  const [params] = useSearchParams()
+  const from = params.get('from')
+  const to = params.get('to')
+  const knownRoute = from && to && shuttleRoutes.some((r) => r.start === from && r.stop === to)
+  const initialMessage = knownRoute ? t('shuttle.transferRequest', { from, to }) : ''
+
   return (
     <>
-      <HeroSection image="/images/files/contact-page.jpg" title={page.heroTitle || t('contact.heroTitle')} />
+      <HeroSection className="hero--compact" image="/images/files/contact-page.jpg" title={page.heroTitle || t('contact.heroTitle')} />
       <section className="page-items contact">
         <FadeUp>
           <div className="contact-intro" dangerouslySetInnerHTML={{ __html: linkedIntro }} />
@@ -49,7 +61,7 @@ export default function ContactPage() {
 
           <div className="td-book-inline">
             <h2 className="td-section__title">{t('contact.formTitle')}</h2>
-            <ContactForm />
+            <ContactForm initialMessage={initialMessage} />
           </div>
 
           <p className="contact-reply">{t('contact.getBack')}</p>

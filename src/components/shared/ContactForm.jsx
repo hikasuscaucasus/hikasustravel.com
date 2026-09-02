@@ -7,10 +7,10 @@ import { getTurnstileToken } from '../../utils/turnstile'
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
-export default function ContactForm() {
+export default function ContactForm({ initialMessage = '' }) {
   const t = useT()
   const { status, submit } = useWeb3Form()
-  const [form, setForm] = useState({ name: '', email: '', phone: '', message: '', botcheck: '' })
+  const [form, setForm] = useState({ name: '', email: '', phone: '', message: initialMessage, botcheck: '' })
   const [errors, setErrors] = useState([])
 
   // Fallback when no key is configured yet — identical to the site's current behaviour.
@@ -60,11 +60,14 @@ export default function ContactForm() {
   }
 
   const invalid = (cond) => (errors.length && cond ? true : undefined)
+  // Points a field that failed at the summary that says why. Only while the
+  // summary is on screen, so the field is never described by nothing.
+  const describedBy = (cond) => (errors.length && cond ? 'cf-errors' : undefined)
 
   return (
     <form className="td-form" onSubmit={onSubmit} noValidate>
       {(errors.length > 0 || status === 'error') && (
-        <div className="td-form__errors" role="alert">
+        <div className="td-form__errors" id="cf-errors" role="alert" aria-live="assertive">
           {status === 'error' && <p>{t('form.errors.sendFailed')}</p>}
           {errors.length > 0 && (
             <>
@@ -77,19 +80,19 @@ export default function ContactForm() {
 
       <div className="td-form__group">
         <label htmlFor="cf-name">{t('form.name')} *</label>
-        <input id="cf-name" type="text" value={form.name} onChange={set('name')} aria-invalid={invalid(!form.name.trim())} />
+        <input id="cf-name" name="name" type="text" autoComplete="name" required value={form.name} onChange={set('name')} aria-invalid={invalid(!form.name.trim())} aria-describedby={describedBy(!form.name.trim())} />
       </div>
       <div className="td-form__group">
         <label htmlFor="cf-email">{t('form.email')} *</label>
-        <input id="cf-email" type="email" value={form.email} onChange={set('email')} aria-invalid={invalid(!EMAIL_RE.test(form.email.trim()))} />
+        <input id="cf-email" name="email" type="email" autoComplete="email" inputMode="email" required value={form.email} onChange={set('email')} aria-invalid={invalid(!EMAIL_RE.test(form.email.trim()))} aria-describedby={describedBy(!EMAIL_RE.test(form.email.trim()))} />
       </div>
       <div className="td-form__group">
         <label htmlFor="cf-phone">{t('form.whatsapp')}</label>
-        <input id="cf-phone" type="tel" value={form.phone} onChange={set('phone')} />
+        <input id="cf-phone" name="phone" type="tel" autoComplete="tel" inputMode="tel" value={form.phone} onChange={set('phone')} />
       </div>
       <div className="td-form__group">
         <label htmlFor="cf-message">{t('form.message')} *</label>
-        <textarea id="cf-message" rows="5" value={form.message} onChange={set('message')} aria-invalid={invalid(!form.message.trim())} />
+        <textarea id="cf-message" name="message" rows="5" required value={form.message} onChange={set('message')} aria-invalid={invalid(!form.message.trim())} aria-describedby={describedBy(!form.message.trim())} />
       </div>
 
       {/* Honeypot — hidden from real users */}
