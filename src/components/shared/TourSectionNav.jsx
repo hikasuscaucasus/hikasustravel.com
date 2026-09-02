@@ -186,7 +186,7 @@ export default function TourSectionNav({ sections }) {
   return (
     <>
       <div ref={sentinelRef} className="td-nav-sentinel" />
-      <nav className={`td-nav${isFixed ? ' td-nav--fixed' : ''}`} ref={navRef} aria-label="Tour sections">
+      <nav className={`td-nav${isFixed ? ' td-nav--fixed' : ''}`} ref={navRef} aria-label={t('a11y.tourSections')}>
         <div className="td-nav__inner">
           {sections.map(({ id, labelKey }) => (
             <a

@@ -67,7 +67,7 @@ export default function ShuttleServicePage() {
   return (
     <>
       <section ref={heroRef} className="fullscreen coverme hero--compact" style={{ backgroundImage: `url(${asset('/images/files/taxi-service.jpg')})` }}>
-        <div className="arrow-down taxi-arrow" onClick={scrollToNext} role="button" aria-label="Scroll down"></div>
+        <div className="arrow-down taxi-arrow" onClick={scrollToNext} role="button" aria-label={t('a11y.scrollDown')}></div>
       </section>
 
       <section className="taxi-items">

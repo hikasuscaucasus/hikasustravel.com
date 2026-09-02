@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { createPortal } from 'react-dom'
+import useT from '../../i18n/useT'
 
 function CloseIcon() {
   return (
@@ -27,6 +28,7 @@ function BulletIcon() {
 }
 
 export default function DishModal({ dish, lang, onClose }) {
+  const t = useT()
   useEffect(() => {
     const prev = document.body.style.overflow
     document.body.style.overflow = 'hidden'
@@ -53,7 +55,7 @@ export default function DishModal({ dish, lang, onClose }) {
   return createPortal(
     <div className="hotel-modal-backdrop" onClick={onClose}>
       <div className="dish-modal" onClick={(e) => e.stopPropagation()} role="dialog" aria-modal="true" aria-label={name}>
-        <button className="dish-modal__close" onClick={onClose} aria-label="Close">
+        <button className="dish-modal__close" onClick={onClose} aria-label={t('hotel.close')}>
           <CloseIcon />
         </button>
         <div className="dish-modal__layout">

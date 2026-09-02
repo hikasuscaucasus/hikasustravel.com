@@ -1,4 +1,5 @@
 import LocaleLink from '../../i18n/LocaleLink'
+import useT from '../../i18n/useT'
 
 /**
  * Visible breadcrumb trail for destination pages.
@@ -8,9 +9,10 @@ import LocaleLink from '../../i18n/LocaleLink'
  * each page (it reuses the same localized names).
  */
 export default function Breadcrumbs({ trail }) {
+  const t = useT()
   if (!trail || trail.length === 0) return null
   return (
-    <nav className="breadcrumbs" aria-label="Breadcrumb">
+    <nav className="breadcrumbs" aria-label={t('a11y.breadcrumb')}>
       <ol>
         {trail.map((crumb, i) => {
           const isLast = i === trail.length - 1

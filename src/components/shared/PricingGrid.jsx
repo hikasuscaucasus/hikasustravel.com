@@ -27,12 +27,17 @@ function HotelLink({ name, onSelect }) {
 // comma-separated list of options optionally ending in "or similar". We try an
 // exact match first so every existing single-hotel cell renders exactly as
 // before; only when that fails do we split a list and link the hotels we know.
-function HotelName({ name, onSelect, getHotel }) {
+function HotelName({ name, onSelect, getHotel, orSimilar }) {
   if (!name) return null
   if (getHotel(name)) return <HotelLink name={name} onSelect={onSelect} />
 
+  // The accommodation table is fed from tours.js in every language (no locale
+  // file carries an `accommodations` block), so a cell that ends in the English
+  // words "or similar" printed them untranslated on all seven locales. The
+  // suffix is already split off here to find the hotel names, so it is the one
+  // place that can swap in the localized wording.
   const trailingMatch = name.match(/\s+or similar\s*$/i)
-  const trailing = trailingMatch ? trailingMatch[0] : ''
+  const trailing = trailingMatch ? ` ${orSimilar}` : ''
   const core = trailingMatch ? name.slice(0, trailingMatch.index) : name
   const parts = core.split(',').map((p) => p.trim()).filter(Boolean)
 
@@ -149,7 +154,7 @@ export function AccommodationsTable({ accommodations }) {
                 {hotelNames.map((name, j) => (
                   <span key={j}>
                     {j > 0 && ', '}
-                    <HotelName name={name} onSelect={setSelectedHotel} getHotel={getHotel} />
+                    <HotelName name={name} onSelect={setSelectedHotel} getHotel={getHotel} orSimilar={t('pricing.orSimilar')} />
                   </span>
                 ))}
               </div>
@@ -322,9 +327,9 @@ function PrivateAccommodationsTable({ accommodations }) {
         {accommodations.map((row, i) => (
           <div key={i} className="pricing-grid-row">
             <div>{cityLabel(row.city)}</div>
-            <div><span className="td-hotel"><HotelName name={row.luxury} onSelect={setSelectedHotel} getHotel={getHotel} /></span></div>
-            <div><span className="td-hotel"><HotelName name={row.midRange} onSelect={setSelectedHotel} getHotel={getHotel} /></span></div>
-            <div><span className="td-hotel"><HotelName name={row.economy} onSelect={setSelectedHotel} getHotel={getHotel} /></span></div>
+            <div><span className="td-hotel"><HotelName name={row.luxury} onSelect={setSelectedHotel} getHotel={getHotel} orSimilar={t('pricing.orSimilar')} /></span></div>
+            <div><span className="td-hotel"><HotelName name={row.midRange} onSelect={setSelectedHotel} getHotel={getHotel} orSimilar={t('pricing.orSimilar')} /></span></div>
+            <div><span className="td-hotel"><HotelName name={row.economy} onSelect={setSelectedHotel} getHotel={getHotel} orSimilar={t('pricing.orSimilar')} /></span></div>
           </div>
         ))}
       </div>

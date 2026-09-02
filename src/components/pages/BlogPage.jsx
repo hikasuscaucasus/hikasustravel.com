@@ -88,10 +88,10 @@ export default function BlogPage() {
     <>
       <HeroSection className="hero--compact" image="/images/files/georgia-home.jpg" title={heroTitle} />
       <section className="page-items blog-listing">
-        <nav className="blog-breadcrumb">
-          <LocaleLink to="/">Home</LocaleLink>
-          <span className="blog-breadcrumb__sep">/</span>
-          <span>{heroTitle}</span>
+        <nav className="blog-breadcrumb" aria-label={t('a11y.breadcrumb')}>
+          <LocaleLink to="/">{t('breadcrumb.home')}</LocaleLink>
+          <span className="blog-breadcrumb__sep" aria-hidden="true">/</span>
+          <span aria-current="page">{heroTitle}</span>
         </nav>
 
         <FadeUp>

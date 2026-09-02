@@ -1,11 +1,14 @@
+import useT from '../../i18n/useT'
+
 export default function WhatsAppButton() {
+  const t = useT()
   return (
     <a
       href="https://wa.me/995551098077"
       target="_blank"
       rel="noopener noreferrer"
       className="whatsapp-float"
-      aria-label="Chat on WhatsApp"
+      aria-label={t('a11y.whatsapp')}
     >
       <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
         <path

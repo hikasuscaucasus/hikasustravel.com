@@ -173,12 +173,18 @@ export default function BlogArticlePage() {
           : null}
       />
       <section className="blog-article">
-        <nav className="blog-breadcrumb">
-          <LocaleLink to="/">Home</LocaleLink>
-          <span className="blog-breadcrumb__sep">/</span>
+        {/* "Home" was hard-coded English here, so every blog article printed it
+            untranslated in all seven locales — the `breadcrumb.home` string it
+            needed already existed (Startseite / Accueil / Inicio / Domů /
+            Strona główna). The trail also matches the shared <Breadcrumbs>
+            component now: a labelled landmark, decorative separators hidden
+            from assistive tech, and the current page marked as such. */}
+        <nav className="blog-breadcrumb" aria-label={t('a11y.breadcrumb')}>
+          <LocaleLink to="/">{t('breadcrumb.home')}</LocaleLink>
+          <span className="blog-breadcrumb__sep" aria-hidden="true">/</span>
           <LocaleLink to="/blog">{heroTitle}</LocaleLink>
-          <span className="blog-breadcrumb__sep">/</span>
-          <span>{articleTitle}</span>
+          <span className="blog-breadcrumb__sep" aria-hidden="true">/</span>
+          <span aria-current="page">{articleTitle}</span>
         </nav>
 
         <div className="blog-article__meta">

@@ -182,8 +182,8 @@ export default function Header({ variant = 'default' }) {
   return (
     <header className={isTaxi ? 'taxi-header' : ''} id="top">
       <div className="logo">
-        <LocaleLink to="/" title="Home">
-          <img src={asset('/img/hikasustravel.svg')} alt="Hikasus travel" />
+        <LocaleLink to="/" title={t('breadcrumb.home')}>
+          <img src={asset('/img/hikasustravel.svg')} alt="Hikasus Travel" />
         </LocaleLink>
       </div>
 
@@ -202,7 +202,7 @@ export default function Header({ variant = 'default' }) {
       <button
         className={`hamburger${menuOpen ? ' active' : ''}`}
         onClick={() => setMenuOpen(!menuOpen)}
-        aria-label="Toggle menu"
+        aria-label={t('a11y.toggleMenu')}
       >
         <span></span>
         <span></span>

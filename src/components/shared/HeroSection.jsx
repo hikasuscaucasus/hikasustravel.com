@@ -1,5 +1,6 @@
 import { useRef } from 'react'
 import asset from '../../utils/basePath'
+import useT from '../../i18n/useT'
 
 // Build the hero background value. Default to a plain url() so every browser
 // shows the WebP; when an AVIF variant is supplied and the browser supports
@@ -24,6 +25,7 @@ const srcSetFor = (base, widths, ext) =>
   widths.map((w) => `${asset(`${base}-${w}.${ext}`)} ${w}w`).join(', ')
 
 export default function HeroSection({ image, imageAvif, title, className = '', isTaxi = false, bgClass = '', infographic = null, actions = null }) {
+  const t = useT()
   const sectionRef = useRef(null)
 
   const scrollToNext = () => {
@@ -89,7 +91,7 @@ export default function HeroSection({ image, imageAvif, title, className = '', i
         className={`arrow-down${isTaxi ? ' taxi-arrow' : ''}`}
         onClick={scrollToNext}
         role="button"
-        aria-label="Scroll down"
+        aria-label={t('a11y.scrollDown')}
       ></div>
     </section>
   )

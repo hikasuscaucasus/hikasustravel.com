@@ -83,7 +83,7 @@ export default function ToursHero({
         className="th__scroll"
         onClick={scrollToNext}
         type="button"
-        aria-label="Scroll down"
+        aria-label={t('a11y.scrollDown')}
       >
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <polyline points="6 9 12 15 18 9"/>

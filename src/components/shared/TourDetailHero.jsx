@@ -53,6 +53,7 @@ function MapPinIcon({ size = 14 }) {
    `hidden`, so its 15 internal links are in the served HTML — renderToString
    does not support portals, and a crawler must be able to follow them. */
 function SitesPanel({ sites, label, open, onClose }) {
+  const t = useT()
   const closeRef = useRef(null)
 
   useEffect(() => {
@@ -73,7 +74,7 @@ function SitesPanel({ sites, label, open, onClose }) {
       <div className="iv-sites__panel" onClick={(e) => e.stopPropagation()}>
         <div className="iv-sites__head">
           <h2 className="iv-sites__title">{label}</h2>
-          <button type="button" ref={closeRef} className="iv-sites__close" onClick={onClose} aria-label="Close">
+          <button type="button" ref={closeRef} className="iv-sites__close" onClick={onClose} aria-label={t('hotel.close')}>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
               <line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />
             </svg>
@@ -122,7 +123,7 @@ export default function TourDetailHero({ tour, translatedTitle, heroH1, isGroup,
     <section className="td-hero td-hero--split">
       <div className="td-hero__inner">
         <div className="td-hero__copy">
-          <nav className="td-hero__breadcrumb" aria-label="Breadcrumb">
+          <nav className="td-hero__breadcrumb" aria-label={t('a11y.breadcrumb')}>
             <LocaleLink to={backPath}>{backLabel}</LocaleLink>
             <span aria-hidden="true">/</span>
             <span>{title}</span>

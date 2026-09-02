@@ -1,7 +1,9 @@
 import { useState, useRef, useEffect } from 'react'
 import useLang from '../../i18n/useLang'
+import useT from '../../i18n/useT'
 
 export default function LanguageSwitcher() {
+  const t = useT()
   const { lang, setLang, languages } = useLang()
   const [open, setOpen] = useState(false)
   const ref = useRef(null)
@@ -21,7 +23,7 @@ export default function LanguageSwitcher() {
       <button
         className="lang-switcher-btn"
         onClick={() => setOpen(!open)}
-        aria-label="Change language"
+        aria-label={t('a11y.changeLanguage')}
       >
         {current?.code.toUpperCase()}
       </button>

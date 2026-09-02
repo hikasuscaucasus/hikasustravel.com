@@ -47,7 +47,7 @@ export default function TourCard({ tour, translation, index = 0, basePath = '/pr
             </h2>
 
             {destinations.length > 0 && (
-              <div className="tc__tags" role="list" aria-label="Destinations">
+              <div className="tc__tags" role="list" aria-label={t('a11y.destinations')}>
                 {destinations.slice(0, 6).map((dest, i) => (
                   <span key={i} className="tc__tag" role="listitem">{dest}</span>
                 ))}
