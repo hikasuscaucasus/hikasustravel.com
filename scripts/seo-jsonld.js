@@ -108,7 +108,7 @@ export function createJsonLdBuilder({ seoFor }) {
     // Mirrors the custom t(): missing key renders as the key, {var} is replaced.
     const t = (key, params) => {
       let v = ui[key] ?? key
-      if (params) for (const [k, val] of Object.entries(params)) v = v.replace(`{${k}}`, val)
+      if (params) for (const [k, val] of Object.entries(params)) v = v.split(`{${k}}`).join(val)
       return v
     }
     const heroTitle = (contentKey) => (contentKey && pages[contentKey]?.heroTitle) || undefined

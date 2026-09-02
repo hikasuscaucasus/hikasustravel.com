@@ -8,7 +8,7 @@ export default function useT() {
     let value = translations[key] ?? key
     if (params) {
       Object.entries(params).forEach(([k, v]) => {
-        value = value.replace(`{${k}}`, v)
+        value = value.split(`{${k}}`).join(v)
       })
     }
     return value
