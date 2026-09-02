@@ -2097,6 +2097,43 @@
   color: var(--sub);
 }
 
+/* --- Legacy #888 / #ccc / #8c8c70 secondary text -----------------------------
+   The same story as the block above, in the places that pass missed. Measured
+   in the browser against the ground each one actually sits on:
+
+     .tour-item-card .tour-info h3   #8c8c70  3.44:1  (the "14 days" duration
+                                                       label on every tour card
+                                                       — homepage and both
+                                                       listings)
+     figcaption (blog / city / body) #888     3.34:1  (image captions in
+                                                       long-form articles)
+     .blog-breadcrumb                #888     3.34:1  (trail + current page)
+     .blog-article__meta             #888     3.34:1
+     .acc__tag                       #888
+     .td-price-card__price-from/-pp  #888
+
+   All are small text, so AA asks 4.5:1. `--sub` (#5F6B60) measures 5.26:1 on
+   the ivory ground and 5.59:1 on white, and is the token the rest of the site
+   already uses for exactly this kind of secondary line. Sizes, weights and
+   spacing are untouched — only the colour moves.
+
+   The two separators are a shade rather than a token: at #ccc the blog
+   breadcrumb slash measured 1.51:1, effectively invisible. They read as part
+   of the trail they punctuate, so they take the trail's own colour. */
+.theme-ivory .tour-item-card .tour-info h3,
+.theme-ivory .acc__tag,
+.theme-ivory .td-price-card__price-from,
+.theme-ivory .td-price-card__price-pp,
+.theme-ivory .blog-breadcrumb,
+.theme-ivory .blog-breadcrumb__sep,
+.theme-ivory .blog-article__meta,
+.theme-ivory .blog-article__meta span:not(:last-child)::after,
+.theme-ivory .blog-article__content .blog-img figcaption,
+.theme-ivory .city-body-figure__caption,
+.theme-ivory .body-img figcaption {
+  color: var(--sub);
+}
+
 /* --- Card cover images ------------------------------------------------------
    The tour cards on the homepage and both listings now render their cover as a
    real <img> (see CardImage.jsx) instead of a CSS background, so the photograph
