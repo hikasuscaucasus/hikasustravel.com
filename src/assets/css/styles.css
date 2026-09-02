@@ -8772,7 +8772,18 @@ select option:checked {
   margin-right: -50vw;
 }
 
-.tours-grid-container h2 {
+/* The container's OWN section heading, never a card title inside it.
+
+   This was a descendant selector. When the destination-hub card titles and
+   the /georgia sub-hub tile titles became <h2> for heading order, all 227 of
+   them started matching it and picked up the section heading's 72px top
+   padding and centring — every city card grew from 365px to 439px tall.
+
+   The heading is wrapped in a .fade-up, so both the wrapped and the bare
+   position are named explicitly; nothing inside .tours-grid or
+   .dest-hub-grid can match either. */
+.tours-grid-container > h2,
+.tours-grid-container > .fade-up > h2 {
   text-align: center;
   margin-bottom: calc(var(--indent) * 2);
   padding: calc(var(--indent) * 2) calc(var(--indent) * 2) 0
@@ -8850,7 +8861,7 @@ select option:checked {
   );
 }
 
-.tour-tile-overlay h3 {
+.tour-tile-overlay :is(h2, h3) {
   margin: 0;
   font-size: calc(var(--font-size) * 1.05);
   line-height: 1.22;
@@ -8866,11 +8877,11 @@ select option:checked {
    styling (Destinations hubs, etc.) and the Private Tours overview page
    (TourCard component) are unaffected. The existing dark gradient + subtle
    text-shadow keep contrast well above 4.5:1 in all states. */
-.tours-grid--private-home .tour-tile-overlay h3 {
+.tours-grid--private-home .tour-tile-overlay :is(h2, h3) {
   color: #F5F2EB;
 }
 
-.tour-tile-overlay h3::after {
+.tour-tile-overlay :is(h2, h3)::after {
   content: "";
   display: block;
   width: 32px;
@@ -8881,7 +8892,7 @@ select option:checked {
   transition: width 0.3s ease;
 }
 
-.tour-tile:hover .tour-tile-overlay h3::after {
+.tour-tile:hover .tour-tile-overlay :is(h2, h3)::after {
   width: 48px;
 }
 
@@ -8932,17 +8943,18 @@ select option:checked {
     margin-right: -50vw;
   }
 
-  .tours-grid-container h2 {
+  .tours-grid-container > h2,
+  .tours-grid-container > .fade-up > h2 {
     padding: var(--indent) var(--indent) 0 var(--indent);
     margin-bottom: var(--indent);
   }
 
-  .tour-tile-overlay h3 {
+  .tour-tile-overlay :is(h2, h3) {
     font-size: calc(var(--font-size) * 0.85);
     line-height: 1.2;
   }
 
-  .tour-tile-overlay h3::after {
+  .tour-tile-overlay :is(h2, h3)::after {
     width: 24px;
     margin-top: 7px;
   }
@@ -10495,7 +10507,7 @@ select option:checked {
 @media (max-width: 480px) {
   .dest-hub-card__image { height: 190px; }
 }
-.dest-hub-card h3 {
+.dest-hub-card h2 {
   margin: 0 0 10px;
   padding-bottom: 0;
   font-size: 1.2rem;
@@ -10504,7 +10516,7 @@ select option:checked {
 /* Secondary location line ("City, Region") on Places to Visit cards. Sits just
    under the title: smaller, muted, clearly readable, and visually distinct from
    the gold accent and the CTA so it never reads as a button or category tag. */
-.dest-hub-card h3:has(+ .dest-hub-card__loc) { margin-bottom: 4px; }
+.dest-hub-card h2:has(+ .dest-hub-card__loc) { margin-bottom: 4px; }
 .dest-hub-card__loc {
   display: block;
   margin: 0 0 12px;

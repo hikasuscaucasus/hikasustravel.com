@@ -295,7 +295,7 @@ export default function DestinationHub({
                   {e.published && e.to ? (
                     <LocaleLink to={e.to} className={mediaClass(e, 'dest-hub-card__link')}>
                       {cover(e)}
-                      <h3>{e.name}</h3>
+                      <h2>{e.name}</h2>
                       {locationLabel(e.location) && (
                         <span className="dest-hub-card__loc">{locationLabel(e.location)}</span>
                       )}
@@ -305,7 +305,7 @@ export default function DestinationHub({
                   ) : (
                     <div className={mediaClass(e, 'dest-hub-card__pending')}>
                       {cover(e)}
-                      <h3>{e.name}</h3>
+                      <h2>{e.name}</h2>
                       {locationLabel(e.location) && (
                         <span className="dest-hub-card__loc">{locationLabel(e.location)}</span>
                       )}

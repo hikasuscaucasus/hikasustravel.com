@@ -279,7 +279,7 @@ export default function Gallery({ images }) {
                     before. This is a display change only. */}
                 {caption && (
                   <Info className="gallery-card__info">
-                    <h4 className="gallery-card__location">{caption}</h4>
+                    <h3 className="gallery-card__location">{caption}</h3>
                   </Info>
                 )}
               </Card>

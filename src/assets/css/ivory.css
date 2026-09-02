@@ -1086,8 +1086,15 @@
   color: var(--accent);
 }
 
+/* The four column titles are <h2> (they were <h4> after the page's own <h2>s,
+   which skipped a level on every page of the site). `.theme-ivory h2` sets a
+   display size at 0,1,1 and would outrank `.footer-col__title` at 0,1,0, so
+   the size the footer has always used is restated here, where it wins. Nothing
+   else about these headings changes: family, weight, colour, spacing and the
+   mobile left-align all come from rules that already applied to both tags. */
 .theme-ivory .footer-col__title {
   color: var(--ink);
+  font-size: calc(var(--font-size) * 0.9);
 }
 
 .theme-ivory .footer-desc {
@@ -1553,6 +1560,30 @@
 
 .theme-ivory h2 {
   font-size: clamp(1.35rem, 2.6vw, 1.6875rem);
+}
+
+/* Card titles that are now <h2> for heading order, not for display size.
+
+   The blog listing and the destination hubs put their cards directly under the
+   page's <h1> with nothing in between, so an <h3> card title skipped a level.
+   They are <h2> now, and `.theme-ivory h2` above would have jumped them to the
+   section-heading size — so the size is restated here, at two classes, where
+   it cannot be outranked.
+
+   The value is `1.125rem` because that is what these titles have always
+   rendered at, measured on production: `.theme-ivory h3 { font-size: 1.125rem }`
+   was already winning over each component's own declaration (one class + one
+   element each way, and the theme loads last), so blog cards, hub cards and
+   tile titles all painted at the same 1.125rem rather than at the 1.25em /
+   1.2rem / 1.05em their own rules ask for. Reproducing that here keeps the
+   heading-level change invisible, which is the whole point of it.
+
+   That the theme silently flattens three different authored sizes is a real
+   but separate issue — the same collision that once painted these titles in
+   dark ink over photography. It is reported, not quietly changed here. */
+.theme-ivory .dest-hub-card h2,
+.theme-ivory .blog-item__title {
+  font-size: 1.125rem;
 }
 
 .theme-ivory h3 {
@@ -3060,7 +3091,7 @@
 
 /* --- Card titles over photography -----------------------------------------
 
-   styles.css sets `.tour-tile-overlay h3 { color: #fff }` for exactly this
+   styles.css sets `.tour-tile-overlay :is(h2, h3) { color: #fff }` for exactly this
    reason: the title sits on a dark gradient over a photograph. The theme's
    own `.theme-ivory h3 { color: var(--ink) }` has the same specificity
    (one class, one element) and loads later, so it silently won and painted
@@ -3070,8 +3101,28 @@
    Two classes here, so the intent is stated where it cannot be outranked by
    a generic heading rule again. The overlay gradient, the photograph and the
    existing text-shadow are untouched. */
-.theme-ivory .tour-tile-overlay h3,
+.theme-ivory .tour-tile-overlay :is(h2, h3),
 .theme-ivory .tour-tile-overlay p,
 .theme-ivory .tour-tile-overlay span {
   color: #ffffff;
+}
+
+/* The Privacy Policy and Terms pages author their section headings as <h2>
+   now — they are the pages' top-level sections and were <h3> under the <h1>,
+   which skipped a level. The change is semantic only: they keep the size they
+   have always rendered at, so neither page looks any different. */
+.theme-ivory .privacy-policy h2,
+.theme-ivory .terms-and-conditions h2 {
+  font-size: 1.125rem;
+}
+
+/* The /georgia hub's three sub-hub tiles are its first section and sit under
+   the page <h1>, so their titles are <h2> (an <h3> there skipped a level).
+   Every other tile — the featured cities below them, the homepage rows —
+   follows its own <h2> and stays <h3>. Both take the size tile titles have
+   always rendered at (see the note above: `.theme-ivory h3` was already
+   winning over `.tour-tile-overlay`'s own 1.05em), so the two tags are
+   indistinguishable and nothing on any tile grid moves. */
+.theme-ivory .tour-tile-overlay :is(h2, h3) {
+  font-size: 1.125rem;
 }

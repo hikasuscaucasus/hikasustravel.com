@@ -13,7 +13,7 @@ export default function Footer({ variant = 'default' }) {
       <div className="footer-top">
         {/* Brand column */}
         <div className="footer-col footer-col--brand">
-          <LocaleLink to="/" title="Home" className="footer-logo">
+          <LocaleLink to="/" title={t('breadcrumb.home')} className="footer-logo">
             <img src={asset('/img/hikasustravel.svg')} alt="Hikasus Travel" />
           </LocaleLink>
           <p className="footer-desc">{t('footer.description')}</p>
@@ -32,7 +32,7 @@ export default function Footer({ variant = 'default' }) {
 
         {/* Explore column */}
         <div className="footer-col">
-          <h4 className="footer-col__title">{t('footer.explore')}</h4>
+          <h2 className="footer-col__title">{t('footer.explore')}</h2>
           <ul className="footer-col__list">
             <li><LocaleLink to="/">{t('footer.home')}</LocaleLink></li>
             <li><LocaleLink to="/about-us">{t('footer.about')}</LocaleLink></li>
@@ -46,7 +46,7 @@ export default function Footer({ variant = 'default' }) {
 
         {/* Tours column */}
         <div className="footer-col">
-          <h4 className="footer-col__title">{t('footer.tours')}</h4>
+          <h2 className="footer-col__title">{t('footer.tours')}</h2>
           <ul className="footer-col__list">
             <li><LocaleLink to="/group-tours">{t('footer.allGroupTours')}</LocaleLink></li>
             <li><LocaleLink to="/private-tours">{t('footer.allPrivateTours')}</LocaleLink></li>
@@ -55,7 +55,7 @@ export default function Footer({ variant = 'default' }) {
 
         {/* Services column */}
         <div className="footer-col">
-          <h4 className="footer-col__title">{t('footer.services')}</h4>
+          <h2 className="footer-col__title">{t('footer.services')}</h2>
           <ul className="footer-col__list">
             <li><LocaleLink to="/shuttle-service">{t('footer.shuttleService')}</LocaleLink></li>
             <li><LocaleLink to="/georgia-visa-entry-requirements">{t('footer.visa')}</LocaleLink></li>
@@ -64,7 +64,7 @@ export default function Footer({ variant = 'default' }) {
 
         {/* Contact column */}
         <div className="footer-col">
-          <h4 className="footer-col__title">{t('footer.contactUs')}</h4>
+          <h2 className="footer-col__title">{t('footer.contactUs')}</h2>
           <ul className="footer-col__list footer-col__list--contact">
             <li>{contactInfo.address}</li>
             <li>

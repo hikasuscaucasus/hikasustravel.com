@@ -133,7 +133,13 @@ export default function DestinationsPage() {
                     <LocaleLink to={d.to} className="tour-tile-link" aria-label={title}>
                       <BlurUpBackground src={d.image} className="tour-tile-image" />
                       <div className="tour-tile-overlay">
-                        <h3>{title}</h3>
+                        {/* These three tiles are the page's first section and sit
+                            directly under its <h1>, so an <h3> here skipped a
+                            level. The featured-city tiles below keep <h3>: they
+                            follow the "Featured city guides" <h2>, which is the
+                            section they belong to. Same on the homepage, where
+                            every tile row has its own <h2> above it. */}
+                        <h2>{title}</h2>
                       </div>
                     </LocaleLink>
                   </div>

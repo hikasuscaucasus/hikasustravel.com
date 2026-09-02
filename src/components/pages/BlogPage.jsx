@@ -114,7 +114,7 @@ export default function BlogPage() {
                   />
                 </div>
                 <div className="blog-item__body">
-                  <h3 className="blog-item__title">{item.title}</h3>
+                  <h2 className="blog-item__title">{item.title}</h2>
                   <div className="blog-item__meta">
                     <span>{formatDate(item.date, lang)}</span>
                     <span className="blog-item__meta-dot">·</span>
