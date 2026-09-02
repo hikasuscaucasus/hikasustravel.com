@@ -8562,15 +8562,15 @@ select option:checked {
     font-size: calc(var(--font-size) * 0.9);
   }
 
-  .taxi-items {
-    text-align: justify;
-  }
+  /* Justification was applied to the shuttle page's running copy below 600px.
+     A justified column that narrow has nowhere to put the slack, so it comes
+     out as wide, uneven gaps between words — the one alignment fault the
+     desktop layout does not have. Both declarations are dropped, so the copy
+     inherits the centring it already uses above 600px and reads the same at
+     every width. Headings were centred here anyway and stay centred. */
   .taxi-items h1,
   .taxi-items h2 {
     text-align: center;
-  }
-  .taxi-items > div > p {
-    text-align: justify;
   }
   .filter-container {
     flex-direction: column;
