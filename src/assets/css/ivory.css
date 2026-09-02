@@ -1134,13 +1134,24 @@
     font-size: 13px;
   }
 
-  /* Keep the page's own floating controls clear of the bar. */
+  /* Keep the page's own floating controls clear of the bar — and of each
+     other. Both were lifted to the same `bottom: 84px` on the same right
+     edge, so the Back-to-top pill painted directly over the WhatsApp button
+     (measured: a full 55x38 overlap at every width from 320 to 900, on every
+     page). WhatsApp is a primary contact channel, and on touch it was neither
+     visible nor tappable.
+
+     They stack instead: WhatsApp sits closest to the bar, Back-to-top rides
+     above it (84 + 55 button + 12 gap = 151), and both share one right edge
+     so the pair reads as a column rather than two stray controls. */
   .theme-ivory .backtotop {
-    bottom: 84px;
+    bottom: 151px;
+    right: 20px;
   }
 
   .theme-ivory .whatsapp-float {
     bottom: 84px;
+    right: 20px;
   }
 
   .theme-ivory .td-book-inline {
