@@ -23,7 +23,7 @@ function heroBackground(image, imageAvif) {
 const srcSetFor = (base, widths, ext) =>
   widths.map((w) => `${asset(`${base}-${w}.${ext}`)} ${w}w`).join(', ')
 
-export default function HeroSection({ image, imageAvif, title, className = '', isTaxi = false, bgClass = '', infographic = null }) {
+export default function HeroSection({ image, imageAvif, title, className = '', isTaxi = false, bgClass = '', infographic = null, actions = null }) {
   const sectionRef = useRef(null)
 
   const scrollToNext = () => {
@@ -73,7 +73,17 @@ export default function HeroSection({ image, imageAvif, title, className = '', i
       style={bgClass ? undefined : { backgroundImage: heroBackground(image, imageAvif) }}
     >
       <div className="hometop-item">
-        <h1 className={isTaxi ? 'taxiH1' : ''}>{title}</h1>
+        {actions ? (
+          /* With actions the title and the buttons stack as one centred
+             block; .hometop-item is a centring flex row, so a second child
+             would otherwise sit beside the heading. */
+          <div className="hero-copy">
+            <h1 className={isTaxi ? 'taxiH1' : ''}>{title}</h1>
+            <div className="hero-actions">{actions}</div>
+          </div>
+        ) : (
+          <h1 className={isTaxi ? 'taxiH1' : ''}>{title}</h1>
+        )}
       </div>
       <div
         className={`arrow-down${isTaxi ? ' taxi-arrow' : ''}`}

@@ -3,6 +3,7 @@ import HeroSection from '../shared/HeroSection'
 import FadeUp from '../shared/FadeUp'
 import PrivateTourCollectionLinks from '../shared/PrivateTourCollectionLinks'
 import CardImage from '../shared/CardImage'
+import MapErrorBoundary from '../shared/MapErrorBoundary'
 // mapbox-gl is ~450 kB gzipped. Loading it lazily keeps it out of the main
 // bundle, so it no longer downloads on the ~370 routes that render no map at
 // all, and here it arrives after the page itself rather than blocking it.
@@ -34,6 +35,16 @@ export default function HomePage() {
       <HeroSection
         image="/images/files/Sighnaghi.jpg"
         title={t('home.heroTitle')}
+        actions={(
+          <>
+            <LocaleLink to="/private-tours" className="iv-pill">
+              {t('home.ctaPrivateTours')}
+            </LocaleLink>
+            <LocaleLink to="/contact" className="iv-pill iv-pill--onphoto">
+              {t('home.ctaTailorMade')}
+            </LocaleLink>
+          </>
+        )}
       />
 
       {(() => {
@@ -176,6 +187,7 @@ export default function HomePage() {
           match. A visitor sees no difference: the map already arrived with its
           chunk, after mount. */}
       {!hydrated ? <section><div className="page-map" /></section> : (
+      <MapErrorBoundary>
       <Suspense fallback={<section><div className="page-map" /></section>}>
         <MapboxMap
           id="map"
@@ -193,6 +205,7 @@ export default function HomePage() {
           isHomePage
         />
       </Suspense>
+      </MapErrorBoundary>
       )}
 
       <section className="home-items">

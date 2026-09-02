@@ -58,6 +58,7 @@ export default function PrivateToursPage() {
   return (
     <>
       <ToursHero
+        compact
         image="/images/files/georgia-tour-01.jpg"
         title={t('tour.privateTours')}
         subtitle={t('tour.privateToursSubtitle')}

@@ -86,7 +86,7 @@ export default function BlogPage() {
 
   return (
     <>
-      <HeroSection image="/images/files/georgia-home.jpg" title={heroTitle} />
+      <HeroSection className="hero--compact" image="/images/files/georgia-home.jpg" title={heroTitle} />
       <section className="page-items blog-listing">
         <nav className="blog-breadcrumb">
           <LocaleLink to="/">Home</LocaleLink>

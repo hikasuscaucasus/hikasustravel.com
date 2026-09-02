@@ -141,7 +141,7 @@ export default function BlogArticlePage() {
   if (!article) {
     return (
       <>
-        <HeroSection image="/images/files/georgia-home.jpg" title={heroTitle} />
+        <HeroSection className="hero--compact" image="/images/files/georgia-home.jpg" title={heroTitle} />
         <section className="blog-article">
           <div className="blog-article__not-found">
             <h2>{tf(t, 'blog.articleNotFound', 'Article Not Found')}</h2>
@@ -160,6 +160,7 @@ export default function BlogArticlePage() {
   return (
     <>
       <HeroSection
+        className="hero--compact"
         image={article.heroImage}
         title={articleTitle}
         bgClass={article.heroBgClass || ''}

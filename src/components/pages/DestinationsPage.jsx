@@ -107,7 +107,7 @@ export default function DestinationsPage() {
 
   return (
     <>
-      <HeroSection image={HERO_IMAGE} title={page.heroTitle} />
+      <HeroSection className="hero--compact" image={HERO_IMAGE} title={page.heroTitle} />
 
       <section className="home-items">
         <div className="tours-grid-container">
@@ -122,7 +122,10 @@ export default function DestinationsPage() {
             <p className="dest-intro">{page.intro}</p>
           </FadeUp>
           <FadeUp>
-            <div className="tours-grid">
+            {/* The three sub-hubs sit in a grid that is four across at desktop
+                widths, so the row shipped with a permanently blank fourth
+                column. data-count lets the stylesheet close it. */}
+            <div className="tours-grid" data-count={SUBHUBS.length}>
               {SUBHUBS.map((d) => {
                 const title = t(d.labelKey)
                 return (

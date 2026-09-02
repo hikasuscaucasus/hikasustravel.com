@@ -59,6 +59,7 @@ export function CitiesHubPage() {
     .map((c) => ({
       slug: c.slug,
       fallbackName: c.name,
+      seoKey: c.seoKey,
       published: c.published,
       to: c.published ? cityPath(c.slug) : null,
       // Card cover. Read straight from the registry — the SAME `cities[].image`
@@ -78,6 +79,9 @@ export function CitiesHubPage() {
       ctaKey="destinations.exploreCity"
       sortByName
       pinFirst="tbilisi"
+      // Bakhmaro has no curated card entry; this shows its authored SEO
+      // summary rather than an empty card. A no-op for the other 25.
+      seoFallback
     />
   )
 }
@@ -118,6 +122,7 @@ export function PlacesToVisitHubPage() {
       ctaKey="destinations.explorePlace"
       sortByName
       seoFallback
+      filterable
     />
   )
 }

@@ -18,7 +18,11 @@
   --sub: #5f6b60;      /* secondary text */
   --accent: #2f533d;   /* pine: CTAs, frames, icons, rails */
   --line: #eae2cb;     /* hairlines, quiet borders */
-  --gold: #b78a00;     /* small accents */
+  --gold: #b78a00;     /* small accents (decorative only: rules, markers) */
+  /* Same gold, darkened until small text on it clears 4.5:1. #b78a00 is a
+     2.98:1 pairing with the ivory ground, which is fine for a separator
+     glyph and not fine for a 12px day badge or a tier label. */
+  --gold-text: #8a6800;
   --linkc: #147a48;    /* link green */
   --r: 18px;           /* frame/card radius */
   --btnr: 999px;       /* button radius (pills) */
@@ -331,7 +335,17 @@
   border-color: var(--accent);
 }
 
-.theme-ivory .td-nav__link--active {
+/* The bare `:hover` rule above carries one class more than a plain
+   `--active` selector, so it won on the active pill and painted pine text on
+   the pine chip — 1.00:1, an invisible label. Naming --active in every
+   interaction state keeps the ivory-on-pine pairing (8.2:1) whatever the
+   pointer and the keyboard are doing. */
+.theme-ivory .td-nav__link--active,
+.theme-ivory .td-nav__link--active:hover,
+.theme-ivory .td-nav__link--active:focus,
+.theme-ivory .td-nav__link--active:focus-visible,
+.theme-ivory .td-nav__link--active:visited,
+.theme-ivory .td-nav__link--active:visited:hover {
   color: var(--bg);
   background: var(--accent);
   border-color: var(--accent);
@@ -514,7 +528,7 @@
 }
 
 .theme-ivory .iv-sites__n {
-  color: var(--gold);
+  color: var(--gold-text);
   font-size: 12px;
   min-width: 18px;
 }
@@ -663,15 +677,15 @@
 
 .theme-ivory .acc__day-badge {
   background: transparent;
-  border: 1px solid var(--gold);
-  color: var(--gold);
+  border: 1px solid var(--gold-text);
+  color: var(--gold-text);
   font-size: 12px;
   min-width: 34px;
   border-radius: var(--chipr);
 }
 
 .theme-ivory .acc__item--open .acc__day-badge {
-  background: var(--gold);
+  background: var(--gold-text);
   color: var(--surface);
 }
 
@@ -772,7 +786,7 @@
 }
 
 .theme-ivory .pricing-grid-row > div:first-child {
-  color: var(--gold);
+  color: var(--gold-text);
 }
 
 .theme-ivory .hotel-link {
@@ -838,7 +852,7 @@
 .theme-ivory .iv-hotel__meta {
   margin: 4px 0 12px;
   font-size: 12px;
-  color: var(--gold);
+  color: var(--gold-text);
 }
 
 .theme-ivory .iv-hotel__desc {
@@ -910,7 +924,7 @@
 }
 
 .theme-ivory .td-price-card__tier {
-  color: var(--gold);
+  color: var(--gold-text);
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.6px;
@@ -1040,6 +1054,14 @@
    fixing. */
 .theme-ivory .td-form__success p {
   color: var(--text);
+}
+
+/* The "form unavailable, write to us instead" notice inherits the same dead
+   pre-Ivory rule and was 1.10:1 — cream on ivory. Secondary ink instead,
+   which is what every other quiet paragraph in the theme uses (7.0:1). */
+.theme-ivory .td-form__notice p {
+  color: var(--sub);
+  opacity: 1;
 }
 
 /* --- Mobile booking bar (<900px) ------------------------------------------ */
@@ -1218,7 +1240,7 @@
   display: inline-flex;
   gap: 2px;
   margin-left: 8px;
-  color: var(--gold);
+  color: var(--gold-text);
   vertical-align: middle;
 }
 
@@ -2481,4 +2503,478 @@
 .theme-ivory .embassy-card__row {
   min-width: 0;
   overflow-wrap: break-word;
+}
+
+/* --- Map fallback ---------------------------------------------------------
+   Stands in for the interactive map when the browser cannot run it (no WebGL,
+   or a Mapbox failure at any point after mount). It needs no canvas and no
+   map chunk, so it renders on exactly the machines that made the map fail.
+
+   It does not keep the map's 70vh: there is no map coming, and reserving most
+   of a screen for a one-line notice would push the rest of the homepage down
+   for no reason. Height is content-led with a floor, so nothing collapses. */
+.theme-ivory .page-map.map-fallback {
+  height: auto;
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+  box-sizing: border-box;
+  background: var(--surface);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.theme-ivory .map-fallback__inner {
+  max-width: 480px;
+  text-align: center;
+}
+
+.theme-ivory .map-fallback__text {
+  margin: 0 0 16px;
+  color: var(--sub);
+  font-size: 15px;
+}
+
+/* Same pill as the theme's other secondary actions: pine on ivory, 8.2:1. */
+.theme-ivory .map-fallback__link {
+  display: inline-block;
+  padding: 9px 20px;
+  border: 1px solid var(--accent);
+  border-radius: var(--btnr);
+  color: var(--accent);
+  background: transparent;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.theme-ivory .map-fallback__link:hover,
+.theme-ivory .map-fallback__link:focus-visible {
+  color: var(--bg);
+  background: var(--accent);
+}
+
+/* --- Compact listing / service heroes -------------------------------------
+   Opt-in, per page. Tour-detail heroes (.td-hero, already ~364px), the
+   homepage, city/region/site pages and the deliberately hero-less pages are
+   all untouched: this class only lands where a page exists to show a list or
+   a service and a full-viewport photo was pushing that list off the screen.
+
+   Measured at 1440x900 before: the hero ran 64 -> 964px, so the first tour
+   card, the first blog card and the contact form all began below the fold.
+   The photography is unchanged; only how much of the first screen it takes.
+
+   dvh rather than vh so a mobile browser's collapsing URL bar cannot make the
+   hero taller than the screen it is measured against. */
+.theme-ivory .fullscreen.hero--compact {
+  height: 62dvh;
+  min-height: 360px;
+}
+
+@media (max-width: 600px) {
+  .theme-ivory .fullscreen.hero--compact {
+    height: 54dvh;
+    min-height: 300px;
+  }
+}
+
+/* The tours hero carries real content — title, subtitle, search, sort, count —
+   so it is given a floor and allowed to grow past it rather than a fixed
+   height that could clip the controls at a short viewport.
+
+   --th-header-safe is the clearance for the site header above the hero. The
+   base value is 380px, from a time when the header was a tall absolute
+   overlay; the header is now a 64px bar whose lowest edge measures 58px at
+   every width from 950px up, and the hero already starts below it. On the
+   compact variant that padding is therefore 300px of empty sky, and 120px
+   both clears the bar and keeps the title off it. */
+.theme-ivory .th.th--compact {
+  height: auto;
+  min-height: 62vh;
+  --th-header-safe: 120px;
+  padding-bottom: 64px;
+}
+
+@media (max-width: 900px) {
+  /* Below 950px the header's nav is taller, and at <=600px it is a fixed bar
+     the hero sits under; the base stylesheet already sets 100px there, which
+     is the right clearance for both. Only the height cap changes. */
+  .theme-ivory .th.th--compact {
+    min-height: 56dvh;
+  }
+}
+
+/* --- Shuttle service ------------------------------------------------------ */
+
+/* The header row used to carry `display: contents` as an inline style, which
+   no stylesheet could turn off. Same rule, now overridable. */
+.theme-ivory .taxi-list-head {
+  display: contents;
+}
+
+/* Labelled route selects. The label sits above its control; the placeholder
+   option stays as the "nothing chosen yet" value. */
+.theme-ivory .filter-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-start;
+  min-width: 0;
+}
+
+.theme-ivory .filter-field label {
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--sub);
+}
+
+.theme-ivory .filter-field select {
+  width: 100%;
+}
+
+/* Page-purpose CTA under the intro, and the enquiry action that appears once a
+   single route is resolved. Same pine pill as the theme's other actions. */
+.theme-ivory .taxi-cta-row {
+  width: auto;
+  max-width: none;
+  margin: 20px 0 0;
+  text-align: center;
+}
+
+.theme-ivory a.taxi-cta {
+  display: inline-block;
+  padding: 11px 24px;
+  border-radius: var(--btnr);
+  background: var(--accent);
+  color: var(--bg);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.theme-ivory a.taxi-cta:hover,
+.theme-ivory a.taxi-cta:focus-visible {
+  background: var(--ink);
+  color: var(--bg);
+}
+
+@media (max-width: 600px) {
+  /* Six columns at 12px is not a table a thumb can read. Each route becomes
+     its own card, and every value carries the column name it lost when the
+     header row went away — from the same translated strings the header used,
+     so nothing here needs a new locale key. */
+  .theme-ivory .taxi-list {
+    display: block;
+    font-size: 14px;
+  }
+
+  /* Beats `.taxi-list-row:first-child { display: contents !important }` in
+     styles.css, which no normal declaration can outrank. The header's
+     labels move onto each card via data-label instead. */
+  .theme-ivory .taxi-list-head {
+    display: none !important;
+  }
+
+  .theme-ivory .taxi-list-row.active {
+    display: block;
+    margin-bottom: 12px;
+    padding: 4px 14px;
+    border: 1px solid var(--line);
+    border-radius: var(--r);
+    background: var(--surface);
+  }
+
+  .theme-ivory .taxi-list-row.active > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    padding: 9px 0;
+    text-align: right;
+    color: var(--ink);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .theme-ivory .taxi-list-row.active > div:last-child {
+    border-bottom: none;
+  }
+
+  .theme-ivory .taxi-list-row.active > div[data-label]::before {
+    content: attr(data-label);
+    flex: 1 1 auto;
+    text-align: left;
+    color: var(--sub);
+    font-size: 12px;
+  }
+
+  /* The two place names lead the card. */
+  .theme-ivory .taxi-list-row.active > .taxi-list-row-from,
+  .theme-ivory .taxi-list-row.active > .taxi-list-row-to {
+    font-size: 16px;
+  }
+
+  /* "No routes found" is a sentence, not a value: no label, no split row. */
+  .theme-ivory .taxi-list-empty > div {
+    display: block;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  .theme-ivory .filter-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+/* --- Lightbox position indicator ------------------------------------------
+   Top-left: clear of the top-right close button, clear of the mid-height
+   arrows, and clear of the caption bar, which is fixed to bottom: 0 with a
+   z-index of 2001 and would have sat on top of a bottom-centre chip.
+   pointer-events stay off so a click still falls through to the backdrop and
+   closes the lightbox, exactly as the caption already does. */
+.theme-ivory .gallery-lightbox__counter {
+  position: fixed;
+  top: 18px;
+  left: 20px;
+  z-index: 2002;
+  margin: 0;
+  padding: 5px 13px;
+  border-radius: var(--chipr);
+  background: rgba(20, 26, 22, 0.62);
+  color: #ffffff;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.4px;
+  pointer-events: none;
+}
+
+@media (max-width: 600px) {
+  .theme-ivory .gallery-lightbox__counter {
+    top: 14px;
+    left: 14px;
+    font-size: 12px;
+  }
+}
+
+/* --- Full-bleed card grids ------------------------------------------------
+
+   .tours-grid-container breaks out of its section's padding to run edge to
+   edge. It did that with `width: 100vw` and `margin-left: -50vw`, and 100vw
+   counts the scrollbar while the document's client width does not — so every
+   page carrying this container scrolled 8px sideways at every desktop width
+   (measured 1280 through 2560, and on the live site).
+
+   The parent is always `section.home-items`, whose padding is var(--indent).
+   Pulling out by exactly that padding reaches the same edges without ever
+   naming a viewport unit, so the bleed is identical and the overflow is
+   gone. */
+.theme-ivory .tours-grid-container {
+  width: auto;
+  max-width: none;
+  left: auto;
+  right: auto;
+  margin-left: calc(var(--indent) * -1);
+  margin-right: calc(var(--indent) * -1);
+}
+
+/* A row with fewer cards than the grid has columns leaves a blank column, not
+   a shorter row — /georgia has three sub-hubs in a four-across grid. Under
+   four cards, the grid stops bleeding and becomes a centred, content-width
+   row; the tiles keep their square ratio and land within 6px of the size they
+   had before. Four or more are untouched. */
+@media (min-width: 901px) {
+  .theme-ivory .tours-grid[data-count="1"],
+  .theme-ivory .tours-grid[data-count="2"],
+  .theme-ivory .tours-grid[data-count="3"] {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .theme-ivory .tours-grid[data-count="3"] {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .theme-ivory .tours-grid[data-count="2"] {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .theme-ivory .tours-grid[data-count="1"] {
+    grid-template-columns: minmax(0, 366px);
+  }
+}
+
+/* --- Hub filters (Places to Visit) ----------------------------------------
+   The section around them is centre-aligned, so the bar re-establishes its
+   own left alignment for the labels. Wraps to one control per line on a
+   phone; the count keeps its own line so it never squeezes a select. */
+.theme-ivory .hub-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 14px;
+  max-width: 900px;
+  margin: 8px auto 28px;
+  text-align: left;
+}
+
+.theme-ivory .hub-filters__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+  flex: 1 1 180px;
+}
+
+.theme-ivory .hub-filters__field--search {
+  flex: 2 1 260px;
+}
+
+.theme-ivory .hub-filters__field label {
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--sub);
+}
+
+.theme-ivory .hub-filters__field input,
+.theme-ivory .hub-filters__field select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 9px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--btnr);
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 14px;
+}
+
+.theme-ivory .hub-filters__clear {
+  align-self: flex-end;
+  padding: 9px 18px;
+  border: 1px solid var(--accent);
+  border-radius: var(--btnr);
+  background: transparent;
+  color: var(--accent);
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.theme-ivory .hub-filters__clear:hover,
+.theme-ivory .hub-filters__clear:focus-visible {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.theme-ivory .hub-filters__count {
+  flex: 1 0 100%;
+  width: auto;
+  max-width: none;
+  margin: 0;
+  text-align: center;
+  color: var(--sub);
+  font-size: 13px;
+}
+
+.theme-ivory .hub-filters__empty {
+  width: auto;
+  max-width: 520px;
+  margin: 0 auto 32px;
+  color: var(--sub);
+}
+
+@media (max-width: 600px) {
+  .theme-ivory .hub-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .theme-ivory .hub-filters__clear {
+    align-self: stretch;
+  }
+}
+
+/* --- Hero actions ---------------------------------------------------------
+   Homepage only. Deliberately small: two pills under the headline, sized like
+   the tour pages' own CTA, not a banner. */
+.theme-ivory .hero-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+}
+
+.theme-ivory .hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  padding: 0 var(--indent);
+}
+
+/* The second action sits on photography rather than on the page ground, so it
+   is outlined in white over a dark scrim instead of taking the ivory-on-pine
+   pairing — white on that scrim measures well past 4.5:1 whatever the photo
+   underneath happens to be doing. */
+.theme-ivory .iv-pill--onphoto {
+  background: rgba(20, 26, 22, 0.42);
+  border-color: rgba(255, 255, 255, 0.9);
+  color: #ffffff;
+  backdrop-filter: blur(2px);
+}
+
+.theme-ivory .iv-pill--onphoto:hover,
+.theme-ivory .iv-pill--onphoto:focus-visible {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: var(--ink);
+}
+
+@media (max-width: 600px) {
+  .theme-ivory .hero-copy {
+    gap: 20px;
+  }
+
+  .theme-ivory .hero-actions .iv-pill {
+    padding: 11px 20px;
+    font-size: 13px;
+  }
+}
+
+/* --- About Us -------------------------------------------------------------
+   The page's section headings are h2 under the hero's single h1; the old copy
+   used h3, which skipped a level. Sized here so the rank change does not also
+   change how the page looks. */
+.theme-ivory .about-us h2 {
+  margin: 34px 0 10px;
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+/* One action, at the end, at the size of the site's other CTAs. */
+.theme-ivory .about-cta-row {
+  width: auto;
+  max-width: none;
+  margin: 34px 0 0;
+  text-align: center;
+}
+
+/* --- Card titles over photography -----------------------------------------
+
+   styles.css sets `.tour-tile-overlay h3 { color: #fff }` for exactly this
+   reason: the title sits on a dark gradient over a photograph. The theme's
+   own `.theme-ivory h3 { color: var(--ink) }` has the same specificity
+   (one class, one element) and loads later, so it silently won and painted
+   the titles in dark ink on that dark gradient — measured at rgb(42, 54, 46)
+   on the Georgia hub, the Featured Cities strip and the homepage tour grid.
+
+   Two classes here, so the intent is stated where it cannot be outranked by
+   a generic heading rule again. The overlay gradient, the photograph and the
+   existing text-shadow are untouched. */
+.theme-ivory .tour-tile-overlay h3,
+.theme-ivory .tour-tile-overlay p,
+.theme-ivory .tour-tile-overlay span {
+  color: #ffffff;
 }

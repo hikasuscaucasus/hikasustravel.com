@@ -31,6 +31,7 @@ export default function GroupToursPage() {
           /images/files/Gergeti-Church.jpg is still referenced by a blog post,
           so it stays on disk. */}
       <HeroSection
+        className="hero--compact"
         image="/images/group-tours/georgia-group-tour/gergeti-trinity-church-kazbegi-georgia-1448.webp"
         imageAvif="/images/group-tours/georgia-group-tour/gergeti-trinity-church-kazbegi-georgia-1448.avif"
         title={t('tour.groupTours')}

@@ -105,6 +105,7 @@ export default function PrivateTourCollectionPage({ slug }) {
       </div>
 
       <ToursHero
+        compact
         image={HERO}
         title={h1}
         tourCount={filtered.length}

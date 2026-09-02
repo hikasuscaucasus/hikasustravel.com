@@ -11,6 +11,7 @@ export default function ToursHero({
   onSearchChange,
   sortValue = '',
   onSortChange,
+  compact = false,
 }) {
   const sectionRef = useRef(null)
   const t = useT()
@@ -23,7 +24,7 @@ export default function ToursHero({
   return (
     <section
       ref={sectionRef}
-      className="th"
+      className={`th${compact ? ' th--compact' : ''}`}
       style={{ backgroundImage: `url(${asset(image)})` }}
     >
       <div className="th__overlay" aria-hidden="true" />

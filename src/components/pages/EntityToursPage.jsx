@@ -83,7 +83,7 @@ export default function EntityToursPage() {
       <div className="dest-breadcrumbs">
         <Breadcrumbs trail={trail} />
       </div>
-      <HeroSection image="/images/files/georgia-tour-01.jpg" title={t('tours.entityToursCta', { name })} />
+      <HeroSection className="hero--compact" image="/images/files/georgia-tour-01.jpg" title={t('tours.entityToursCta', { name })} />
       <section className="page-items entity-tours-header">
         <FadeUp>
           <p className="entity-tours-intro">{t('tours.listIntro', { name })}</p>

@@ -1,4 +1,4 @@
-import { useContext, useMemo } from 'react'
+import { useContext, useMemo, useState } from 'react'
 import HeroSection from './HeroSection'
 import FadeUp from './FadeUp'
 import BlurUpBackground from './BlurUpBackground'
@@ -37,9 +37,13 @@ export default function DestinationHub({
   sortByName = false,
   pinFirst = null,
   seoFallback = false,
+  filterable = false,
 }) {
   const t = useT()
   const { lang } = useLang()
+  const [query, setQuery] = useState('')
+  const [regionId, setRegionId] = useState('')
+  const [cityId, setCityId] = useState('')
   const { pages, enPages } = useContext(I18nContext)
   const page = pages[pageKey] || enPages[pageKey]
   const seo = getSEO(seoKey, lang)
@@ -176,9 +180,55 @@ export default function DestinationHub({
     return ''
   }
 
+  // Facets, built from the entries themselves so a new place appears in the
+  // dropdowns the moment it appears in the registry. Regions and cities are
+  // labelled with the same translated names the cards show, and sorted the
+  // way the visitor reads them.
+  const regionName = (id) =>
+    (regionItems[id] && regionItems[id].name) || (enRegionItems[id] && enRegionItems[id].name) || id
+  const cityName = (id) =>
+    (cityItems[id] && cityItems[id].name) || (enCityItems[id] && enCityItems[id].name) || id
+
+  const facetOf = (list, key, label) => {
+    const ids = [...new Set(list.map((e) => e.location && e.location[key]).filter(Boolean))]
+    return ids
+      .map((id) => ({ id, name: label(id) }))
+      .sort((a, b) => a.name.localeCompare(b.name, lang, { sensitivity: 'base' }))
+  }
+
+  const regionOptions = filterable ? facetOf(resolved, 'regionId', regionName) : []
+  // Cities narrow to the chosen region, so the second select can never offer
+  // a combination that has no places in it.
+  const cityOptions = filterable
+    ? facetOf(
+      regionId ? resolved.filter((e) => e.location && e.location.regionId === regionId) : resolved,
+      'cityId',
+      cityName
+    )
+    : []
+
+  const normalized = query.trim().toLowerCase()
+  const shown = filterable
+    ? resolved.filter((e) => {
+      if (regionId && (!e.location || e.location.regionId !== regionId)) return false
+      if (cityId && (!e.location || e.location.cityId !== cityId)) return false
+      if (!normalized) return true
+      const haystack = `${e.name} ${locationLabel(e.location)} ${e.slug.split('-').join(' ')}`.toLowerCase()
+      return haystack.includes(normalized)
+    })
+    : resolved
+
+  const filtering = filterable && (normalized || regionId || cityId)
+
+  const clearFilters = () => {
+    setQuery('')
+    setRegionId('')
+    setCityId('')
+  }
+
   return (
     <>
-      <HeroSection image={heroImage} title={page.heroTitle} />
+      <HeroSection className="hero--compact" image={heroImage} title={page.heroTitle} />
       <section className="home-items">
         <div className="tours-grid-container">
           <FadeUp>
@@ -187,9 +237,60 @@ export default function DestinationHub({
           <FadeUp>
             <p>{page.intro}</p>
           </FadeUp>
+          {filterable && (
+            <FadeUp>
+              <div className="hub-filters">
+                <div className="hub-filters__field hub-filters__field--search">
+                  <label htmlFor="hub-search">{t('search.open')}</label>
+                  <input
+                    id="hub-search"
+                    type="search"
+                    value={query}
+                    onChange={(e) => setQuery(e.target.value)}
+                    placeholder={t('hub.searchPlaceholder')}
+                  />
+                </div>
+                <div className="hub-filters__field">
+                  <label htmlFor="hub-region">{t('nav.regions')}</label>
+                  <select
+                    id="hub-region"
+                    value={regionId}
+                    onChange={(e) => { setRegionId(e.target.value); setCityId('') }}
+                  >
+                    <option value="">{t('hub.allRegions')}</option>
+                    {regionOptions.map((o) => (
+                      <option key={o.id} value={o.id}>{o.name}</option>
+                    ))}
+                  </select>
+                </div>
+                <div className="hub-filters__field">
+                  <label htmlFor="hub-city">{t('nav.cities')}</label>
+                  <select id="hub-city" value={cityId} onChange={(e) => setCityId(e.target.value)}>
+                    <option value="">{t('hub.allCities')}</option>
+                    {cityOptions.map((o) => (
+                      <option key={o.id} value={o.id}>{o.name}</option>
+                    ))}
+                  </select>
+                </div>
+                {filtering && (
+                  <button type="button" className="hub-filters__clear" onClick={clearFilters}>
+                    {t('hub.clearFilters')}
+                  </button>
+                )}
+                <p className="hub-filters__count" role="status" aria-live="polite">
+                  {t('search.results', { count: shown.length })}
+                </p>
+              </div>
+            </FadeUp>
+          )}
+          {filterable && shown.length === 0 && (
+            <FadeUp>
+              <p className="hub-filters__empty">{t('hub.noResults')}</p>
+            </FadeUp>
+          )}
           <FadeUp>
             <ul className="dest-hub-grid">
-              {resolved.map((e) => (
+              {shown.map((e) => (
                 <li className="dest-hub-card" key={e.slug}>
                   {e.published && e.to ? (
                     <LocaleLink to={e.to} className={mediaClass(e, 'dest-hub-card__link')}>

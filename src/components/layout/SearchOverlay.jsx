@@ -11,6 +11,46 @@ import { searchEntries } from '../../utils/searchRank'
 // its own. Nothing is paginated: refining the query is faster than scrolling.
 const MAX_RESULTS = 10
 
+// URL sections a visitor can be shown by name. Every key here is a string the
+// site already ships in all seven locales, so the trail is translated without
+// a single new entry in ui.json.
+const SECTION_KEYS = {
+  'private-tours': 'tour.privateTours',
+  'group-tours': 'tour.groupTours',
+  tours: 'nav.tours',
+  georgia: 'destinations.country',
+  regions: 'nav.regions',
+  cities: 'nav.cities',
+  'places-to-visit': 'nav.placesToVisit',
+  'border-crossings': 'nav.borderCrossings',
+  blog: 'footer.blog',
+  embassies: 'footer.embassies',
+  'shuttle-service': 'shuttle.title',
+  'about-us': 'footer.about',
+  'about-georgia': 'footer.aboutGeorgia',
+  contact: 'footer.contact',
+  faq: 'footer.faq',
+}
+
+const titleize = (slug) => slug.split('-').map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
+
+/**
+ * The sections a result sits in, for display only — the link's href is
+ * untouched. "/en/georgia/regions/samtskhe-javakheti" reads as
+ * "Georgia › Regions" rather than as a path.
+ *
+ * The language prefix goes (the visitor is already in that language) and so
+ * does the last segment, which is the slug of the page whose title is the
+ * first line of this very result. A top-level page has nothing left after
+ * that, so it shows no trail at all rather than a lone repeat of its title.
+ */
+function resultTrail(url, t) {
+  const parts = String(url || '').split('/').filter(Boolean).slice(1)
+  const trail = parts.slice(0, -1)
+  if (!trail.length) return null
+  return trail.map((seg) => (SECTION_KEYS[seg] ? t(SECTION_KEYS[seg]) : titleize(seg))).join(' › ')
+}
+
 function CloseIcon() {
   return (
     <svg
@@ -217,10 +257,14 @@ export default function SearchOverlay({ onClose }) {
                     {r.description && (
                       <span className="site-search__result-desc">{r.description}</span>
                     )}
-                    <span className="site-search__result-meta">
-                      {r.location && <span className="site-search__result-loc">{r.location}</span>}
-                      <span className="site-search__result-url">{r.url}</span>
-                    </span>
+                    {(r.location || resultTrail(r.url, t)) && (
+                      <span className="site-search__result-meta">
+                        {r.location && <span className="site-search__result-loc">{r.location}</span>}
+                        {resultTrail(r.url, t) && (
+                          <span className="site-search__result-url">{resultTrail(r.url, t)}</span>
+                        )}
+                      </span>
+                    )}
                   </Link>
                 </li>
               ))}
