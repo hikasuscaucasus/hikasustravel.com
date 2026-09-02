@@ -2142,6 +2142,44 @@
   margin-inline: 0;
 }
 
+/* The header row has to shrink on the same terms as the body rows.
+
+   Both rows are `1.2fr 1fr 1fr 1fr`, and `1fr` means `minmax(auto, 1fr)` — a
+   track can never go below its content's min-content width. The body cells
+   carry `min-width: 0` (styles.css) so their automatic minimum is zero and the
+   four tracks land on the declared ratio. The header cells did not, so a single
+   long word set their floor: German "MITTELKLASSE" forced its track to 112px
+   at a 375px viewport, and the row resolved to 57/77/112/89 = 335px inside a
+   327px table. Two consequences, both visible: "KLASSISCH" was cut off by the
+   table's own `overflow: hidden`, and every header label sat over the wrong
+   column, because the header tracks no longer matched the body tracks.
+
+   `min-width: 0` restores the ratio; `overflow-wrap: break-word` then lets a
+   word that is still wider than its (correct) track wrap instead of spilling
+   into the neighbouring column. It only ever acts on a word that cannot fit,
+   so ordinary labels and hotel names wrap at spaces exactly as before.
+
+   The same wrap is applied to the body cells, where long hotel names were
+   overflowing their column — "Communal Hotel Telavi" by 12px at 375px in six
+   locales, "Newport Hotel Kutaisi" by 5px at 320px in English. */
+.theme-ivory .pricing-grid-header > div,
+.theme-ivory .pricing-grid-row > div {
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+/* The body cell is a flex container and `.td-hotel` is its only item, so the
+   cell shrinking is not enough on its own: a flex item's automatic minimum
+   size is its min-content width, which put "Communal" back outside the column.
+   The item has to be allowed to shrink too, and the button inside it — the
+   hotel name is a <button>, which is also a flex/inline box of its own. */
+.theme-ivory .pricing-grid-row .td-hotel,
+.theme-ivory .pricing-grid-row .hotel-link {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
 /* Below the desktop column the table needs to scroll rather than push the page
    sideways; the wrapper scrolls, the page does not, and its left edge stays on
    the heading. */
@@ -2482,6 +2520,17 @@
    it just stops shouting. */
 .theme-ivory .td-price-card__row--best {
   background: transparent;
+}
+
+/* With the wash gone, the padding and matching negative margin that used to
+   shape it are inert geometry: they cancel out, so the text sits where it
+   always did, but the row still measures 16px wider than its siblings and
+   pushes `.td-price-card__breakdown`'s scrollWidth 8px past its clientWidth.
+   Zeroing both keeps the row exactly where it is and leaves the card with no
+   overflow to explain. */
+.theme-ivory .td-price-card__row--best {
+  padding-inline: 0;
+  margin-inline: 0;
 }
 
 .theme-ivory .td-price-card__row--best span:last-child {
