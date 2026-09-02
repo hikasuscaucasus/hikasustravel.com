@@ -160,7 +160,9 @@ export function AccommodationsTable({ accommodations }) {
       <HotelPanels
         entries={hotelEntries(accommodations, getHotel, cityLabel, [
           { key: 'hotel', label: '' },
-          { key: 'luxury', label: t('pricing.luxury') },
+          // `luxury` is the data key on the accommodation record; the tier is
+          // shown to visitors as Premium, matching the pricing table header.
+          { key: 'luxury', label: t('pricing.premium') },
           { key: 'midRange', label: t('pricing.midRange') },
           { key: 'economy', label: t('pricing.economy') },
         ])}

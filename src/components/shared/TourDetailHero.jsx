@@ -92,7 +92,16 @@ function SitesPanel({ sites, label, open, onClose }) {
   )
 }
 
-export default function TourDetailHero({ tour, translatedTitle, heroH1, isGroup, sites }) {
+function TagIcon() {
+  return (
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M20.59 13.41 13.42 20.58a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82Z" />
+      <circle cx="7" cy="7" r="1.4" />
+    </svg>
+  )
+}
+
+export default function TourDetailHero({ tour, translatedTitle, heroH1, isGroup, sites, startingPrice }) {
   const t = useT()
   const [sitesOpen, setSitesOpen] = useState(false)
   const title = translatedTitle || tour.title
@@ -136,6 +145,13 @@ export default function TourDetailHero({ tour, translatedTitle, heroH1, isGroup,
               <UsersIcon />
               {isGroup ? t('tour.groupTours') : t('tour.privateTours')}
             </span>
+            {startingPrice > 0 && (
+              <span className="iv-chip iv-chip--price">
+                <TagIcon />
+                {!isGroup && `${t('sidebar.startingFrom')} `}
+                €{startingPrice.toLocaleString('en-US')} {t('pricing.perPerson')}
+              </span>
+            )}
             {sitesLabel && (
               <button
                 type="button"

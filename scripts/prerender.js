@@ -43,6 +43,17 @@ const { privateTourCollectionPages } = await import(
   pathToFileURL(join(__dirname, '../src/data/privateTourCollections.js')).href
 )
 
+// The complete tour records, and the shared builder that turns one into the
+// page's JSON-LD graph. Importing the module (rather than re-deriving the
+// graph here) is the point: the browser and the build cannot disagree about
+// structured data if they run the same function.
+const { tours: tourRecords } = await import(
+  pathToFileURL(join(__dirname, '../src/data/tours.js')).href
+)
+const { buildTourSeo } = await import(
+  pathToFileURL(join(__dirname, '../src/utils/tourSeo.js')).href
+)
+
 // Crawlable internal-link graph (parent / children / siblings / translations)
 // written into #root as fallback content — see scripts/seo-links.js.
 const { createLinkGraph } = await import(
@@ -375,7 +386,7 @@ async function drainPages() {
   }
 }
 
-async function emitHtml(filePath, lang, { title, description, keywords, canonical, image, ogImage, ogImageAlt, ogImageWidth, ogImageHeight, heroPreload, ogLocale }) {
+async function emitHtml(filePath, lang, { title, description, keywords, canonical, image, ogImage, ogImageAlt, ogImageWidth, ogImageHeight, heroPreload, ogLocale, jsonLd }) {
   // Use the trailing-slash form the host serves at 200; this also flows through
   // to the hreflang/x-default alternates and og:url derived from it below.
   canonical = withTrailingSlash(canonical)
@@ -464,7 +475,10 @@ async function emitHtml(filePath, lang, { title, description, keywords, canonica
 
   // Page-specific JSON-LD (see renderJsonLd). The generic TravelAgency block
   // from the template stays; this adds the entity/breadcrumb/image nodes.
-  const ldHtml = renderJsonLd(jsonLdBuilder.forRoute(lang, canonicalPath))
+  // A caller may hand over a finished graph instead of one looked up by
+  // route — tour pages do, because theirs is built by the same module the
+  // React page uses rather than by the route table in seo-jsonld.js.
+  const ldHtml = renderJsonLd(jsonLd || jsonLdBuilder.forRoute(lang, canonicalPath))
   if (ldHtml) $('head').append(ldHtml)
 
   // The page body, rendered from the same React tree the browser mounts, so the
@@ -656,6 +670,13 @@ for (const lang of LANGS) {
       ogImageWidth: tour.ogImage ? tour.ogImageWidth : undefined,
       ogImageHeight: tour.ogImage ? tour.ogImageHeight : undefined,
       ogLocale,
+      // The page graph, from the tour record proper (not the regex-parsed
+      // summary this loop iterates) and from this locale's translations.
+      jsonLd: buildTourSeo({
+        tour: tourRecords.find((r) => r.slug === tour.slug),
+        tt,
+        lang,
+      }).jsonLd,
     })
 
     // Renamed tour slug(s): every old URL 301-redirects to the new canonical
