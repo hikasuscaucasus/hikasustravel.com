@@ -1,3 +1,69 @@
+/**
+ * Destination navigation — single source of truth.
+ *
+ * The Destinations dropdown is two levels: a country at level 1, that country's
+ * entries at level 2. Level 2 for Georgia is the four hub links this dropdown
+ * has always carried, moved down a level verbatim — same labels, same URLs,
+ * same order. Nothing was reworded, reordered or re-slugged.
+ *
+ * `published` gates rendering, per entry and per country. A `published: false`
+ * entry is not rendered anywhere: not in the dropdown, not in a breadcrumb, not
+ * in any internal link list. It is also invisible to the sitemap for free —
+ * scripts/generate-sitemap.js builds from the src/data/places.js registry and
+ * has never read this file — so turning one on here is a nav change only, and
+ * still needs its page, route and registry entry before it can be linked.
+ *
+ * A published country with no published entries still shows at level 1; opening
+ * it shows the single non-linked `nav.destinations.comingSoon` line.
+ *
+ * Adding an entry is therefore one line, and needs no component change.
+ *
+ * `hubPath` is the country's own landing page. Set it ONLY when that route
+ * actually exists (Georgia: `/{lang}/georgia`, src/App.jsx). A country without
+ * one renders its level-1 label as a plain toggle instead of a link.
+ *
+ * Entry labels come from `labelKey` (a ui.json key) when the string is
+ * translated, or from `label` when it is the same in all seven locales —
+ * transliterated Armenian region names are identical across the locale files,
+ * so they carry no key.
+ */
+export const destinationCountries = [
+  {
+    id: 'georgia',
+    labelKey: 'nav.destinations.georgia',
+    published: true,
+    hubPath: '/georgia',
+    regions: [
+      { to: '/georgia', labelKey: 'nav.allDestinations', published: true },
+      { to: '/georgia/regions', labelKey: 'nav.regions', published: true },
+      { to: '/georgia/cities', labelKey: 'nav.cities', published: true },
+      { to: '/georgia/places-to-visit', labelKey: 'nav.placesToVisit', published: true },
+    ],
+  },
+  {
+    // No /{lang}/armenia route exists, so no hubPath — the label is a toggle.
+    // Every entry below is seeded unpublished: the paths mirror Georgia's region
+    // pattern (/georgia/regions/<slug>) and are inert until a page exists.
+    id: 'armenia',
+    labelKey: 'nav.destinations.armenia',
+    published: true,
+    hubPath: null,
+    regions: [
+      { to: '/armenia/regions/yerevan', label: 'Yerevan', published: false },
+      { to: '/armenia/regions/kotayk', label: 'Kotayk', published: false },
+      { to: '/armenia/regions/aragatsotn', label: 'Aragatsotn', published: false },
+      { to: '/armenia/regions/armavir', label: 'Armavir', published: false },
+      { to: '/armenia/regions/ararat', label: 'Ararat', published: false },
+      { to: '/armenia/regions/gegharkunik', label: 'Gegharkunik', published: false },
+      { to: '/armenia/regions/tavush', label: 'Tavush', published: false },
+      { to: '/armenia/regions/lori', label: 'Lori', published: false },
+      { to: '/armenia/regions/shirak', label: 'Shirak', published: false },
+      { to: '/armenia/regions/vayots-dzor', label: 'Vayots Dzor', published: false },
+      { to: '/armenia/regions/syunik', label: 'Syunik', published: false },
+    ],
+  },
+]
+
 export const navLinks = [
   { to: '/about-us', labelKey: 'nav.aboutUs' },
   {
@@ -9,12 +75,7 @@ export const navLinks = [
   },
   {
     labelKey: 'nav.destinations',
-    children: [
-      { to: '/georgia', labelKey: 'nav.allDestinations' },
-      { to: '/georgia/regions', labelKey: 'nav.regions' },
-      { to: '/georgia/cities', labelKey: 'nav.cities' },
-      { to: '/georgia/places-to-visit', labelKey: 'nav.placesToVisit' },
-    ],
+    countries: destinationCountries,
   },
   { to: '/about-georgia', labelKey: 'nav.aboutGeorgia' },
   { to: '/shuttle-service', labelKey: 'nav.shuttleService' },

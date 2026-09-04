@@ -289,6 +289,81 @@
   color: var(--ink);
 }
 
+/* Level 2 of the Destinations dropdown.
+
+   The country label is an <a>, so the rules above already reach it. The two
+   controls are <button>s and the coming-soon line is a <span>, and none of them
+   inherits a colour here — left as cream from styles.css they would be cream on
+   the ivory drawer and the white panel, the same 1.00:1 the rollout had to fix
+   elsewhere. They take this rule's metrics too, not the pre-Ivory ones in
+   styles.css: `.theme-ivory .main-menu a` ties `.main-menu .nav-dropdown__menu a`
+   at (0,2,1) and wins on order, so the theme owns the scale of every row in the
+   menu, and a country row has to line up with the entries beside it. */
+.theme-ivory .main-menu .nav-country__link--toggle,
+.theme-ivory .main-menu .nav-country__caret {
+  color: var(--ink);
+  font-size: 13px;
+  padding: 6px 10px;
+}
+
+.theme-ivory .main-menu .nav-country__caret {
+  padding-left: 0;
+}
+
+.theme-ivory .main-menu .nav-country__link--toggle:hover,
+.theme-ivory .main-menu .nav-country__caret:hover {
+  color: var(--accent);
+  /* The white wash from styles.css is invisible on these surfaces; the colour
+     shift is the feedback, exactly as it is for the links beside them. */
+  background: transparent;
+}
+
+/* Colour alone is not a focus indicator, so keyboard focus keeps a real ring —
+   the same one the theme already uses. */
+.theme-ivory .main-menu .nav-country__link--toggle:focus-visible,
+.theme-ivory .main-menu .nav-country__caret:focus-visible,
+.theme-ivory .main-menu .nav-country__panel a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 3px;
+  background: transparent;
+}
+
+.theme-ivory .nav-country__empty {
+  color: var(--sub);
+  font-size: 13px;
+  padding: 6px 10px;
+}
+
+@media (max-width: 900px) {
+  /* Drawer: level 2 opens in place, and the indent is what marks the level —
+     one step of the theme's own 16px gutter past the country row above it. */
+  .theme-ivory .main-menu .nav-country__panel a,
+  .theme-ivory .main-menu .nav-country__panel .nav-country__empty {
+    padding-left: 26px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 901px) {
+  /* The flyout is a panel in its own right, so it takes the same surface as the
+     menu it hangs off — and the rows it no longer clips take its corners. */
+  .theme-ivory .main-menu .nav-country__panel {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    box-shadow: none;
+  }
+
+  .theme-ivory .nav-dropdown--countries .nav-country:first-child .nav-country__row {
+    border-radius: 12px 12px 0 0;
+  }
+
+  .theme-ivory .nav-dropdown--countries .nav-country:last-child .nav-country__row {
+    border-radius: 0 0 12px 12px;
+  }
+}
+
 .theme-ivory .hamburger span {
   background-color: var(--accent);
 }

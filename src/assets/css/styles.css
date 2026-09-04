@@ -327,6 +327,147 @@ header > * {
   }
 }
 
+/* Destinations dropdown, level 2 — a country row plus that country's own panel.
+   The panel is always in the DOM and hidden with CSS, never mounted on demand,
+   so it ships in the prerendered HTML and hydrates without a mismatch.
+
+   The country label is an <a> inside .nav-dropdown__menu, so the level-1 rules
+   above already style it, and the label of a country that has no landing page
+   sits in its own <span> so it takes the same alignment rather than being
+   pinned left by the flex row. The chevrons carry their own class rather than
+   .nav-dropdown__caret, which .nav-dropdown.open already rotates — reusing it
+   would flip every level-2 caret whenever the parent menu opened.
+
+   Sizing for the mobile drawer lives in ivory.css beside the rules it has to
+   match: `.theme-ivory .main-menu a` and `.main-menu .nav-dropdown__menu a` are
+   both (0,2,1), so the theme already wins that tie and sets the drawer's scale.
+   Everything here reuses the existing palette — no new colour, radius, shadow
+   or spacing value is introduced. */
+.nav-country {
+  position: relative;
+}
+.nav-country__row {
+  display: flex;
+  align-items: stretch;
+}
+.main-menu .nav-country__link {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.main-menu .nav-country__link--toggle,
+.main-menu .nav-country__caret {
+  background: none;
+  border: none;
+  border-bottom: none;
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--color-bg);
+  text-align: left;
+  text-transform: none;
+  filter: none;
+  transition: background-color 0.15s ease;
+}
+.main-menu .nav-country__link--toggle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+  padding: 11px 18px;
+  font-size: calc(var(--font-size) * 0.85);
+}
+/* Fills the row so the label keeps whatever alignment its siblings have. */
+.main-menu .nav-country__label {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.main-menu .nav-country__caret {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  padding: 11px 18px 11px 0;
+}
+.main-menu .nav-country__link--toggle:hover,
+.main-menu .nav-country__link--toggle:focus-visible,
+.main-menu .nav-country__caret:hover,
+.main-menu .nav-country__caret:focus-visible {
+  background: rgba(255, 255, 255, 0.12);
+}
+.nav-country__chevron {
+  transition: transform 0.2s ease;
+}
+/* Accordion: down when closed, up when open. The desktop block below turns it
+   on its side, because there level 2 opens beside its country, not beneath it. */
+.nav-country.open .nav-country__chevron {
+  transform: rotate(180deg);
+}
+.nav-country__panel {
+  display: none;
+  flex-direction: column;
+}
+.nav-country.open .nav-country__panel {
+  display: flex;
+}
+/* A country with no published entries: one line, deliberately not a link. */
+.nav-country__empty {
+  display: block;
+  padding: 11px 18px;
+  color: var(--color-bg);
+  font-size: calc(var(--font-size) * 0.85);
+}
+
+@media (min-width: 901px) {
+  /* Level 2 is a flyout beside its country. The level-1 menu clips to its own
+     radius, which would cut the flyout off, so it stops clipping and the first
+     and last rows carry the corners it used to round. Scoped to the countries
+     dropdown, so the Tours one keeps clipping exactly as before. */
+  .nav-dropdown--countries .nav-dropdown__menu {
+    overflow: visible;
+  }
+  .nav-dropdown--countries .nav-country:first-child .nav-country__row {
+    border-radius: 4px 4px 0 0;
+  }
+  .nav-dropdown--countries .nav-country:last-child .nav-country__row {
+    border-radius: 0 0 4px 4px;
+  }
+  /* Same surface as the level-1 menu. Flush against the country row, with no
+     gap for the cursor to fall through on its way across — the panel is inside
+     .nav-country, so reaching it never fires the mouseleave that closes it. */
+  .nav-country__panel {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    min-width: 210px;
+    max-width: calc(100vw - 32px);
+    background: var(--color-h2);
+    border: 1px solid rgba(239, 239, 215, 0.2);
+    border-radius: 4px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    z-index: 1000;
+  }
+  /* Set by Header.jsx after measuring: the flyout would have run past the right
+     edge of the viewport, so it opens to the left of its country instead. */
+  .nav-country__panel[data-flip] {
+    left: auto;
+    right: 100%;
+  }
+  /* Level 1 centres its rows here, and the country toggle is a <button>, so
+     the `.main-menu a` rule that aligns the links never reaches it. Stated on
+     both sides rather than inherited, so the two country rows line up at
+     every width. */
+  .main-menu .nav-country__link--toggle {
+    text-align: center;
+  }
+
+  /* The chevron points at the flyout rather than along the accordion. */
+  .nav-country .nav-country__chevron,
+  .nav-country.open .nav-country__chevron {
+    transform: rotate(-90deg);
+  }
+  .nav-country:has(.nav-country__panel[data-flip]) .nav-country__chevron {
+    transform: rotate(90deg);
+  }
+}
+
 .taxi-menu a {
   color: var(--color-h3) !important;
 }
