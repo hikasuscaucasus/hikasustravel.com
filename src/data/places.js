@@ -3600,10 +3600,6 @@ export const regions = [
   // Tavush. Same shape as the eight Armenia regions above and as every Georgian
   // region — the only difference remains `country: 'armenia'`.
   //
-  // No `thingsToDo` block yet: the companion guide is a separate task, so the
-  // region page renders without the things-to-do CTA. Add the block when one
-  // is written.
-  //
   // Tavush had NO record here before — only an inert `published: false` row in
   // siteData.js, like every other seeded Armenia region.
   //
@@ -3620,6 +3616,28 @@ export const regions = [
     seoKey: 'tavush', contentKey: 'tavush',
     noHero: true,
     noAutolink: true,
+    // Companion guide at /armenia/regions/tavush/things-to-do — same block shape
+    // as the other Armenia regions' and as every Georgian region's.
+    thingsToDo: {
+      seoKey: 'thingsToDoTavush', contentKey: 'thingsToDoTavush',
+      noHero: true,
+      address: { addressRegion: 'Tavush' },
+      // Drawn from the guide's own body, in the order it covers them. Feeds the
+      // page's ItemList node and the search index's keywords.
+      //
+      // Akhtala is deliberately ABSENT: the Yell Sport Fest paragraph names it as
+      // a stage through LORI's canyons, and listing it here would assert it sits
+      // in Tavush.
+      attractions: [
+        'Dilijan', 'Dilijan National Park', 'Haghartsin Monastery',
+        'Goshavank Monastery', 'Lake Parz', 'Lake Gosh', 'Jukhtak Vank',
+        'Matosavank', 'Yenokavan', 'Yell Extreme Park', 'Khachaghbyur Gorge',
+        'Lastiver', 'Ijevan', 'Makaravank Monastery', 'Achajur',
+        'Nor Varagavank', 'Khoranashat Monastery', 'Aghjkaberd', 'Hovk',
+        'Mantasheaberd', 'Berdavan Fortress', 'Mount Dimats', 'Shaghot Waterfall',
+        'Mount Apakekar', 'Transcaucasian Trail', 'Dilijan Local Lore Museum',
+      ],
+    },
   },
 ]
 
