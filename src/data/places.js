@@ -3563,22 +3563,39 @@ export const regions = [
   // Syunik. Same shape as the seven Armenia regions above and as every Georgian
   // region — the only difference remains `country: 'armenia'`.
   //
-  // No `thingsToDo` block yet: the companion guide is a separate task, so the
-  // region page renders without the things-to-do CTA. Add the block when one
-  // is written.
-  //
   // Syunik had NO record here before — only an inert `published: false` row in
   // siteData.js, like every other seeded Armenia region. Tatev, Goris, Kapan and
   // Meghri have no destination pages either, so this hub publishes standalone
   // and re-parents nothing.
   //
   // `noHero` while no approved Syunik photograph exists; `noAutolink` keeps the
-  // authored body and FAQ free of editorial links, as specified.
+  // authored body and FAQ free of editorial links, as specified — and it covers
+  // the things-to-do guide too, which reads the parent place's flag.
   {
     slug: 'syunik', name: 'Syunik', published: true, country: 'armenia',
     seoKey: 'syunik', contentKey: 'syunik',
     noHero: true,
     noAutolink: true,
+    // Companion guide at /armenia/regions/syunik/things-to-do — same block shape
+    // as the other Armenia regions' and as every Georgian region's.
+    thingsToDo: {
+      seoKey: 'thingsToDoSyunik', contentKey: 'thingsToDoSyunik',
+      noHero: true,
+      address: { addressRegion: 'Syunik' },
+      // Drawn from the guide's own body, in the order it covers them. Feeds the
+      // page's ItemList node and the search index's keywords.
+      attractions: [
+        'Tatev Monastery', 'Wings of Tatev', 'Vorotan Gorge', "Devil's Bridge",
+        'Tatev Mets Anapat', 'Goris', 'Old Goris', 'Aksel Bakunts House-Museum',
+        'Goris Local Lore Museum', 'Old Khndzoresk', 'Hin Khot', 'Legends Trail',
+        'Zorats Karer', 'Shaki Waterfall', 'Sisian', 'Sisavan Church',
+        'Sisian History Museum', 'Aghitu Memorial', 'Ukhtasar', 'Tolors Reservoir',
+        'Vorotnavank', 'Vorotnaberd', 'Melik Tangi Bridge', 'Kapan',
+        'Mount Khustup', 'Vahanavank', 'Halidzor Fortress', 'Baghaberd',
+        'Shikahogh State Reserve', 'Arevik National Park', 'Meghri',
+        'Pokr Tagh', 'Meghri Fortress', 'Lichk', 'Shvanidzor',
+      ],
+    },
   },
 ]
 
