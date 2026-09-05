@@ -3440,6 +3440,26 @@ export const regions = [
       ],
     },
   },
+  // Kotayk. Same shape as the four Armenia regions above and as every Georgian
+  // region — the only difference remains `country: 'armenia'`.
+  //
+  // No `thingsToDo` block yet: the companion guide is a separate task, so the
+  // region page renders without the things-to-do CTA (exactly as an
+  // unpublished-guide Georgian region would). Add the block when one is written.
+  //
+  // Kotayk had NO record here before — only an inert `published: false` row in
+  // siteData.js, like every other seeded Armenia region. The Garni / Geghard /
+  // Tsaghkadzor destination pages the brief assumed do not exist yet (they 404),
+  // so this hub publishes standalone and re-parents nothing.
+  //
+  // `noHero` while no approved Kotayk photograph exists; `noAutolink` keeps the
+  // authored body and FAQ free of editorial links, as specified.
+  {
+    slug: 'kotayk', name: 'Kotayk', published: true, country: 'armenia',
+    seoKey: 'kotayk', contentKey: 'kotayk',
+    noHero: true,
+    noAutolink: true,
+  },
 ]
 
 // ---------------------------------------------------------------------------
