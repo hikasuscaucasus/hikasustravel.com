@@ -3380,17 +3380,33 @@ export const regions = [
   // Armavir. Same shape as Aragatsotn and Ararat above and as every Georgian
   // region — the only difference remains `country: 'armenia'`.
   //
-  // No `thingsToDo` block yet: the companion guide is a separate task, so the
-  // region page renders without the things-to-do CTA (exactly as an
-  // unpublished-guide Georgian region would). Add the block when one is written.
-  //
   // `noHero` while no approved Armavir photograph exists; `noAutolink` keeps the
-  // authored body and FAQ free of editorial links, as specified.
+  // authored body and FAQ free of editorial links, as specified — and it covers
+  // the things-to-do guide too, which reads the parent place's flag.
   {
     slug: 'armavir', name: 'Armavir', published: true, country: 'armenia',
     seoKey: 'armavir', contentKey: 'armavir',
     noHero: true,
     noAutolink: true,
+    // Companion guide at /armenia/regions/armavir/things-to-do — same block shape
+    // as Aragatsotn's and Ararat's, and as every Georgian region's.
+    thingsToDo: {
+      seoKey: 'thingsToDoArmavir', contentKey: 'thingsToDoArmavir',
+      noHero: true,
+      address: { addressRegion: 'Armavir' },
+      // Drawn from the guide's own body, in the order it covers them. Feeds the
+      // page's ItemList node and the search index's keywords.
+      attractions: [
+        'Mother Cathedral of Holy Etchmiadzin', 'Mother See of Holy Etchmiadzin',
+        'Alex and Marie Manoogian Treasury', 'Saint Hripsime Church',
+        'Saint Gayane Church', 'Saint Shoghakat Church',
+        'Vagharshapat Historical and Ethnographic Museum', 'Zvartnots',
+        'Sardarapat Memorial',
+        'Museum of Armenian Ethnography and the National Liberation Movement',
+        'Metsamor', 'Ancient Armavir', 'Yervandashat', 'Musaler Memorial',
+        'Vordan Karmir Nature Preserve', 'Saint Shushanik Church',
+      ],
+    },
   },
 ]
 
