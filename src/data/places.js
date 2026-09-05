@@ -3639,6 +3639,27 @@ export const regions = [
       ],
     },
   },
+  // Vayots Dzor. Same shape as the nine Armenia regions above and as every
+  // Georgian region — the only difference remains `country: 'armenia'`.
+  //
+  // No `thingsToDo` block yet: the companion guide is a separate task, so the
+  // region page renders without the things-to-do CTA. Add the block when one
+  // is written.
+  //
+  // Vayots Dzor had NO record here before — only an inert `published: false`
+  // row in siteData.js, like every other seeded Armenia region. The brief
+  // assumed an existing page to replace; /armenia/regions/vayots-dzor 404d
+  // live and no seo/content key existed, so this is a first publication, not
+  // a replacement. Nothing is renamed, re-parented or duplicated.
+  //
+  // `noHero` while no approved Vayots Dzor photograph exists; `noAutolink`
+  // keeps the authored body and FAQ free of editorial links, as specified.
+  {
+    slug: 'vayots-dzor', name: 'Vayots Dzor', published: true, country: 'armenia',
+    seoKey: 'vayotsDzor', contentKey: 'vayotsDzor',
+    noHero: true,
+    noAutolink: true,
+  },
 ]
 
 // ---------------------------------------------------------------------------
