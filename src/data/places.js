@@ -3377,6 +3377,21 @@ export const regions = [
       ],
     },
   },
+  // Armavir. Same shape as Aragatsotn and Ararat above and as every Georgian
+  // region — the only difference remains `country: 'armenia'`.
+  //
+  // No `thingsToDo` block yet: the companion guide is a separate task, so the
+  // region page renders without the things-to-do CTA (exactly as an
+  // unpublished-guide Georgian region would). Add the block when one is written.
+  //
+  // `noHero` while no approved Armavir photograph exists; `noAutolink` keeps the
+  // authored body and FAQ free of editorial links, as specified.
+  {
+    slug: 'armavir', name: 'Armavir', published: true, country: 'armenia',
+    seoKey: 'armavir', contentKey: 'armavir',
+    noHero: true,
+    noAutolink: true,
+  },
 ]
 
 // ---------------------------------------------------------------------------
