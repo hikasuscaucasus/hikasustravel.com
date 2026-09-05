@@ -1250,10 +1250,10 @@ section {
    readable text layer, so the package's optional ::before scrim is NOT enabled.
    plain url() line = fallback for browsers without image-set(). */
 .hero--mestia {
-  background-image: url("/images/files/mestia-svan-tower-houses-svaneti-georgia-1200.webp");
+  background-image: url("/images/files/mestia-town-svaneti-georgia-1200.webp");
   background-image: image-set(
-    url("/images/files/mestia-svan-tower-houses-svaneti-georgia-768.avif") type("image/avif"),
-    url("/images/files/mestia-svan-tower-houses-svaneti-georgia-768.webp") type("image/webp")
+    url("/images/files/mestia-town-svaneti-georgia-768.avif") type("image/avif"),
+    url("/images/files/mestia-town-svaneti-georgia-768.webp") type("image/webp")
   );
   background-position: center center;
   background-size: cover;
@@ -1262,16 +1262,16 @@ section {
 @media (min-width: 768px) {
   .hero--mestia {
     background-image: image-set(
-      url("/images/files/mestia-svan-tower-houses-svaneti-georgia-1200.avif") type("image/avif"),
-      url("/images/files/mestia-svan-tower-houses-svaneti-georgia-1200.webp") type("image/webp")
+      url("/images/files/mestia-town-svaneti-georgia-1200.avif") type("image/avif"),
+      url("/images/files/mestia-town-svaneti-georgia-1200.webp") type("image/webp")
     );
   }
 }
 @media (min-width: 1200px) {
   .hero--mestia {
     background-image: image-set(
-      url("/images/files/mestia-svan-tower-houses-svaneti-georgia-1541.avif") type("image/avif"),
-      url("/images/files/mestia-svan-tower-houses-svaneti-georgia-1541.webp") type("image/webp")
+      url("/images/files/mestia-town-svaneti-georgia-1448.avif") type("image/avif"),
+      url("/images/files/mestia-town-svaneti-georgia-1448.webp") type("image/webp")
     );
   }
 }

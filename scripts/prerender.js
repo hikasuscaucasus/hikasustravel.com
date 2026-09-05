@@ -362,6 +362,10 @@ function renderCrawlLinks(links) {
 }
 
 const template = readFileSync(join(DIST, 'index.html'), 'utf-8')
+// The company's own address, used for the geo tags on the home and contact
+// pages only. Identical to the values the shared template used to hardcode
+// onto every page.
+const COMPANY_GEO = { region: 'GE-TB', placename: 'Tbilisi', lat: '41.7151', lng: '44.8271' }
 let fileCount = 0
 
 // Set a meta tag's content, appending the tag if the template doesn't have it.
@@ -388,7 +392,7 @@ async function drainPages() {
   }
 }
 
-async function emitHtml(filePath, lang, { title, description, keywords, canonical, image, ogImage, ogImageAlt, ogImageWidth, ogImageHeight, heroPreload, ogLocale, jsonLd }) {
+async function emitHtml(filePath, lang, { title, description, keywords, canonical, image, ogImage, ogImageAlt, ogImageWidth, ogImageHeight, heroPreload, ogLocale, jsonLd, geo }) {
   // Use the trailing-slash form the host serves at 200; this also flows through
   // to the hreflang/x-default alternates and og:url derived from it below.
   canonical = withTrailingSlash(canonical)
@@ -474,6 +478,18 @@ async function emitHtml(filePath, lang, { title, description, keywords, canonica
   }
   // x-default points to English version
   $('head').append(`<link rel="alternate" hreflang="x-default" href="${SITE_URL}/en${canonicalPath}">`)
+
+  // Geo tags. Emitted ONLY for a page with one real location: a place record
+  // that carries `geoMeta`, or the two site pages that legitimately describe
+  // the company address. A hub, an index or a page with no coordinates gets no
+  // geo tags at all, which is the honest answer -- the template used to give
+  // every page Tbilisi's.
+  if (geo) {
+    setOrAppendMeta($, 'geo.region', geo.region, 'name')
+    setOrAppendMeta($, 'geo.placename', geo.placename, 'name')
+    setOrAppendMeta($, 'geo.position', `${geo.lat};${geo.lng}`, 'name')
+    setOrAppendMeta($, 'ICBM', `${geo.lat}, ${geo.lng}`, 'name')
+  }
 
   // Page-specific JSON-LD (see renderJsonLd). The generic TravelAgency block
   // from the template stays; this adds the entity/breadcrumb/image nodes.
@@ -589,6 +605,9 @@ for (const lang of LANGS) {
       canonical,
       image: staticPageImages[path] || '/images/files/georgia-home.jpg',
       ogLocale,
+      // The two pages that really are about the company's own address keep the
+      // geo tags the shared template used to give every page.
+      geo: (path === '' || path === 'contact') ? COMPANY_GEO : undefined,
     })
   }
 
@@ -611,6 +630,9 @@ for (const lang of LANGS) {
       ogImageHeight: dest.ogImageHeight,
       heroPreload: dest.heroPreload,
       ogLocale,
+      // The record's own coordinates, when it has them. Records without
+      // `geoMeta` emit no geo tags rather than inheriting a false Tbilisi.
+      geo: dest.geo,
     })
   }
 

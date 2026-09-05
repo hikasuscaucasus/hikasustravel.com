@@ -23,8 +23,19 @@ const SITE_URL = 'https://www.hikasustravel.com'
 // Brand used for ImageObject credit/creator (mirrors og:site_name / the Article
 // author & publisher below).
 const BRAND = 'Hikasus Travel'
-// Responsive-variant widths shipped for each gallery base name.
+// Responsive-variant widths shipped for each gallery base name. This is the
+// original convention: files named <base>-<width>w.<ext> on a fixed
+// 1200/1600/2400 ladder. A newer set declares its own `widths` on the gallery
+// entry instead, and those files ship WITHOUT the `w` suffix (the convention
+// every image package has used since). Both are read through the helpers below,
+// so a set that declares nothing keeps byte-identical URLs.
 const GALLERY_WIDTHS = [1200, 1600, 2400]
+const galleryWidths = (img) => img.widths || GALLERY_WIDTHS
+const gallerySuffix = (img) => (img.widths ? '' : 'w')
+const galleryUrl = (img, w, ext) => `/images/files/${img.base}-${w}${gallerySuffix(img)}.${ext}`
+// The <img> fallback and the ImageObject contentUrl: the 1600 rung for the
+// original sets, the largest declared rung for a set that ships its own.
+const galleryMain = (img) => galleryUrl(img, img.widths ? Math.max(...img.widths) : 1600, 'webp')
 
 /**
  * Brand credit for an image's ImageObject — applied by default, since these
@@ -219,8 +230,8 @@ export default function CityPage() {
         // pointing at the real file; caption localized per locale, brand credit.
         ...gallery.map((img) => ({
           '@type': 'ImageObject',
-          contentUrl: `${SITE_URL}/images/files/${img.base}-1600w.webp`,
-          url: `${SITE_URL}/images/files/${img.base}-1600w.webp`,
+          contentUrl: `${SITE_URL}${galleryMain(img)}`,
+          url: `${SITE_URL}${galleryMain(img)}`,
           width: img.width,
           height: img.height,
           representativeOfPage: !!img.hero,
@@ -535,16 +546,16 @@ export default function CityPage() {
                       <picture>
                         <source
                           type="image/avif"
-                          srcSet={GALLERY_WIDTHS.map((w) => `${asset(`/images/files/${img.base}-${w}w.avif`)} ${w}w`).join(', ')}
+                          srcSet={galleryWidths(img).map((w) => `${asset(galleryUrl(img, w, 'avif'))} ${w}w`).join(', ')}
                           sizes="(max-width: 768px) 100vw, 760px"
                         />
                         <source
                           type="image/webp"
-                          srcSet={GALLERY_WIDTHS.map((w) => `${asset(`/images/files/${img.base}-${w}w.webp`)} ${w}w`).join(', ')}
+                          srcSet={galleryWidths(img).map((w) => `${asset(galleryUrl(img, w, 'webp'))} ${w}w`).join(', ')}
                           sizes="(max-width: 768px) 100vw, 760px"
                         />
                         <img
-                          src={asset(`/images/files/${img.base}-1600w.webp`)}
+                          src={asset(galleryMain(img))}
                           width={img.width}
                           height={img.height}
                           alt={img.alt}

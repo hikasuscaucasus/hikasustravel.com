@@ -49,11 +49,12 @@
     <meta name="twitter:description" content="Explore Georgia with expertly curated private and group tours, shuttle transfers, and local experiences." />
     <meta name="twitter:image" content="https://www.hikasustravel.com/images/files/georgia-home.jpg" />
 
-    <!-- Geo tags -->
-    <meta name="geo.region" content="GE-TB" />
-    <meta name="geo.placename" content="Tbilisi" />
-    <meta name="geo.position" content="41.7151;44.8271" />
-    <meta name="ICBM" content="41.7151, 44.8271" />
+    <!-- Geo tags are NOT in this template. They used to be, hardcoded to the
+         company address in Tbilisi, which meant every prerendered page -- every
+         Georgian region, every Armenian one, every hub -- claimed Tbilisi's
+         coordinates. scripts/prerender.js now emits them per page from the
+         record's own `geoMeta`, and a page with no single real location (a hub,
+         an index) gets none rather than a false one. -->
 
     <!-- No webfonts: the Ivory theme is Verdana. See src/assets/css/ivory.css. -->
 

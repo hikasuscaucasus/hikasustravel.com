@@ -3698,6 +3698,9 @@ export const cities = [
   {
     slug: 'tbilisi', name: 'Tbilisi', region: null, published: true,
     seoKey: 'tbilisi', contentKey: 'tbilisi',
+    // Per-page geo tags. Tbilisi's are the values the shared template used to
+    // put on every page — correct here, and only here among the city pages.
+    geoMeta: { region: 'GE-TB', placename: 'Tbilisi', lat: '41.7151', lng: '44.8271' },
     // Hero REPLACEMENT: the old single georgia-home-style hero (/images/files/
     // tbilisi.jpg) is swapped for the owner's own Old-Town/Narikala/Mtkvari panorama
     // via the .hero--tbilisi image-set() ladder (styles.css). Native 4:3 (1448x1086),
@@ -6176,39 +6179,205 @@ export const cities = [
   {
     slug: 'mestia', name: 'Mestia', region: 'svaneti', published: true,
     seoKey: 'mestia', contentKey: 'mestia',
-    // Hero = owner's own Mestia Svan-tower photo. Native ceiling is 1541 (BELOW
-    // the usual 1600 rung), so the ladder is 768/1200/1541 only — NO 1600/2400
-    // variant is generated or referenced, and the ImageObject contentUrl points at
-    // the 1541 rung. Visible background is the `.hero--mestia` CSS class (heroClass)
-    // so the image-set ladder + `background-position: center center` apply;
-    // HeroSection then omits its inline background. Distinct from the Ushguli
-    // Svan-tower images and the Svaneti region page images — all kept.
-    image: '/images/files/mestia-svan-tower-houses-svaneti-georgia-1541.webp',
-    imageAvif: '/images/files/mestia-svan-tower-houses-svaneti-georgia-1541.avif',
+    // Per-page geo tags (geo.region / geo.placename / geo.position / ICBM).
+    // Before this field the shared index.html template gave EVERY page the
+    // company's Tbilisi coordinates, so this page claimed to be in Tbilisi.
+    geoMeta: { region: 'GE-SZ', placename: 'Mestia', lat: '43.0451', lng: '42.7289' },
+    // Hero = the owner's own aerial of Mestia town, REPLACING the Svan-tower-
+    // houses frame (which stays on disk: the things-to-do guide below and the
+    // Svaneti region page still use it). Native ceiling is 1448, BELOW the usual
+    // 1600 rung, so the ladder is 768/1200/1448 only — no 1600/2400 variant is
+    // generated or referenced, and the ImageObject contentUrl points at the 1448
+    // rung. Visible background is the `.hero--mestia` CSS class (heroClass) so
+    // the image-set ladder + `background-position: center center` apply;
+    // HeroSection then omits its inline background. The same 1448 file is the
+    // Mestia card cover on /georgia/cities — one field, so the two can never
+    // drift.
+    image: '/images/files/mestia-town-svaneti-georgia-1448.webp',
+    imageAvif: '/images/files/mestia-town-svaneti-georgia-1448.avif',
     heroClass: 'hero--mestia',
     // Dedicated 1.91:1 social-share image (og:image / twitter:image).
-    ogImage: { src: '/images/files/mestia-svan-tower-houses-svaneti-georgia-og.jpg', width: 1200, height: 630 },
+    ogImage: { src: '/images/files/mestia-town-svaneti-georgia-og.jpg', width: 1200, height: 630 },
     // Image SEO/AEO metadata (owner's own photo → brand credit, set by CityPage).
     // Hero is a CSS background (no <img alt>), so the localized alt lives here and
     // is emitted as the ImageObject caption + og:image:alt/twitter:image:alt per
-    // locale. Verbatim from mestia-hero-image-package.md. width/height = 1541 rung.
+    // locale. Verbatim from the supplied Mestia image batch. width/height = the
+    // 1448 rung.
     imageMeta: {
-      width: 1541, height: 1020,
-      name: 'Svan stone tower houses in Mestia with shingled roofs and a forested slope behind, Upper Svaneti, Georgia',
-      description: 'Svan stone tower houses in Mestia, seen past a dry-stone wall in the foreground, with shingle-roofed dwellings attached at their base and a forested slope and river gorge behind. Mestia is the administrative centre of Mestia Municipality in Samegrelo-Zemo Svaneti, in the Greater Caucasus of Georgia (the country).',
-      locationName: 'Mestia, Mestia Municipality, Samegrelo-Zemo Svaneti, Georgia',
+      width: 1448, height: 1086,
+      name: "Aerial view of Mestia town in a green valley below forested slopes and snow-capped Caucasus peaks, Upper Svaneti, Georgia",
+      description: "Aerial view over Mestia, the administrative centre of Mestia Municipality in Samegrelo-Zemo Svaneti, Georgia: the town spread along the valley floor with forested slopes, ski runs cut into the trees above it and the snow-capped Greater Caucasus behind.",
+      locationName: "Mestia, Mestia Municipality, Samegrelo-Zemo Svaneti, Georgia",
       locality: 'Mestia', region: 'Samegrelo-Zemo Svaneti', country: 'GE',
-      geo: { lat: 43.04556, lng: 42.72972 },
+      geo: { lat: 43.0451, lng: 42.7289 },
       alt: {
-        en: 'Svan stone tower houses in Mestia with shingled roofs and a forested slope behind, Upper Svaneti, Georgia',
-        de: 'Swanische Wehrtürme in Mestia mit Schindeldächern vor bewaldetem Hang, Oberswanetien, Georgien',
-        fr: "Tours-maisons svanes à Mestia, toits de bardeaux et versant boisé à l'arrière, Haute-Svanétie, Géorgie",
-        es: 'Torres-vivienda svanas en Mestia, con tejados de tablilla y ladera boscosa detrás, Alta Esvanetia, Georgia',
-        nl: 'Svanetische woontorens in Mestia met houten daken en een beboste helling erachter, Boven-Svaneti, Georgië',
-        cs: 'Svanské obytné věže v Mestii se šindelovými střechami a zalesněným svahem v pozadí, Horní Svanetie, Gruzie',
-        pl: 'Swańskie wieże mieszkalne w Mestii z gontowymi dachami i zalesionym stokiem w tle, Górna Swanetia, Gruzja',
+        en: "Aerial view of Mestia town in a green valley below forested slopes and snow-capped Caucasus peaks, Upper Svaneti, Georgia",
+        de: "Luftaufnahme der Stadt Mestia in einem grünen Tal unter bewaldeten Hängen und schneebedeckten Kaukasusgipfeln, Oberswanetien, Georgien",
+        fr: "Vue aérienne de la ville de Mestia dans une vallée verdoyante, sous des versants boisés et les sommets enneigés du Caucase, Haute-Svanétie, Géorgie",
+        es: "Vista aérea del pueblo de Mestia en un valle verde bajo laderas boscosas y las cumbres nevadas del Cáucaso, Alta Esvanetia, Georgia",
+        nl: "Luchtfoto van het stadje Mestia in een groen dal onder beboste hellingen en besneeuwde Kaukasustoppen, Boven-Svanetië, Georgië",
+        cs: "Letecký pohled na město Mestia v zeleném údolí pod zalesněnými svahy a zasněženými štíty Kavkazu, Horní Svanetie, Gruzie",
+        pl: "Widok z lotu ptaka na miasteczko Mestia w zielonej dolinie pod zalesionymi zboczami i ośnieżonymi szczytami Kaukazu, Górna Swanetia, Gruzja",
+      },
+      caption: {
+        en: "Mestia, Upper Svaneti",
+        de: "Mestia, Oberswanetien",
+        fr: "Mestia, Haute-Svanétie",
+        es: "Mestia, Alta Esvanetia",
+        nl: "Mestia, Boven-Svanetië",
+        cs: "Mestia, Horní Svanetie",
+        pl: "Mestia, Górna Swanetia",
       },
     },
+    // Five in-body figures from the supplied Mestia image batch, placed with the
+    // sections they illustrate (`afterChunk` counts the <h2>-split body chunks).
+    // Each set declares its own `widths`, which is also how CityPage knows the
+    // files ship WITHOUT the `w` suffix: the older gallery sets (Telavi) keep the
+    // fixed 1200/1600/2400 ladder and their `-1600w` filenames unchanged.
+    // alt/caption are verbatim per locale from the batch; no image is flagged
+    // `hero`, so the cover stays the CSS-background hero above.
+    gallery: [
+      {
+        base: "mestia-svan-towers-enguri-georgia",
+        width: 1448, height: 1086,
+        widths: [768, 1200, 1448],
+        afterChunk: 1,
+        name: "Aerial view of Mestia with medieval Svan stone towers among the houses along the Enguri river, Upper Svaneti, Georgia",
+        description: "Aerial view of Mestia with medieval Svan stone towers standing among the houses along the Enguri river, Upper Svaneti, Georgia.",
+        locationName: "Mestia, Mestia Municipality, Samegrelo-Zemo Svaneti, Georgia",
+        geo: { lat: 43.0451, lng: 42.7289 },
+        alt: {
+          en: "Aerial view of Mestia with medieval Svan stone towers among the houses along the Enguri river, Upper Svaneti, Georgia",
+          de: "Luftaufnahme von Mestia mit mittelalterlichen swanischen Steintürmen zwischen den Häusern am Fluss Enguri, Oberswanetien, Georgien",
+          fr: "Vue aérienne de Mestia avec ses tours de pierre svanes médiévales parmi les maisons le long de la rivière Enguri, Haute-Svanétie, Géorgie",
+          es: "Vista aérea de Mestia con torres de piedra svanas medievales entre las casas a orillas del río Enguri, Alta Esvanetia, Georgia",
+          nl: "Luchtfoto van Mestia met middeleeuwse Svanetische stenen torens tussen de huizen langs de rivier de Enguri, Boven-Svanetië, Georgië",
+          cs: "Letecký pohled na Mestii se středověkými svanskými kamennými věžemi mezi domy podél řeky Enguri, Horní Svanetie, Gruzie",
+          pl: "Widok z lotu ptaka na Mestię ze średniowiecznymi swańskimi kamiennymi wieżami wśród domów nad rzeką Enguri, Górna Swanetia, Gruzja",
+        },
+        caption: {
+          en: "Mestia and the Enguri valley",
+          de: "Mestia und das Enguri-Tal",
+          fr: "Mestia et la vallée de l'Enguri",
+          es: "Mestia y el valle del Enguri",
+          nl: "Mestia en het Enguri-dal",
+          cs: "Mestia a údolí Enguri",
+          pl: "Mestia i dolina Enguri",
+        },
+      },
+      {
+        base: "svaneti-museum-mestia-georgia",
+        width: 1448, height: 1086,
+        widths: [768, 1200, 1448],
+        afterChunk: 3,
+        name: "Modern stone-and-concrete building of the Svaneti Museum of History and Ethnography in Mestia, Georgia",
+        description: "The Svaneti Museum of History and Ethnography in Mestia, which holds medieval icons, illuminated manuscripts and Svan metalwork.",
+        locationName: "Svaneti Museum of History and Ethnography, Mestia, Samegrelo-Zemo Svaneti, Georgia",
+        geo: { lat: 43.0447, lng: 42.7314 },
+        alt: {
+          en: "Modern stone-and-concrete building of the Svaneti Museum of History and Ethnography in Mestia, Georgia",
+          de: "Modernes Gebäude aus Stein und Beton des Swaneti-Museums für Geschichte und Ethnographie in Mestia, Georgien",
+          fr: "Bâtiment moderne en pierre et béton du musée d'histoire et d'ethnographie de Svanétie à Mestia, Géorgie",
+          es: "Edificio moderno de piedra y hormigón del Museo de Historia y Etnografía de Esvanetia en Mestia, Georgia",
+          nl: "Modern gebouw van steen en beton van het Svaneti-museum voor geschiedenis en etnografie in Mestia, Georgië",
+          cs: "Moderní kamenná a betonová budova Svanetského muzea historie a etnografie v Mestii, Gruzie",
+          pl: "Nowoczesny kamienno-betonowy budynek Muzeum Historii i Etnografii Swanetii w Mestii, Gruzja",
+        },
+        caption: {
+          en: "Svaneti Museum of History and Ethnography, Mestia",
+          de: "Swaneti-Museum für Geschichte und Ethnographie, Mestia",
+          fr: "Musée d'histoire et d'ethnographie de Svanétie, Mestia",
+          es: "Museo de Historia y Etnografía de Esvanetia, Mestia",
+          nl: "Svaneti-museum voor geschiedenis en etnografie, Mestia",
+          cs: "Svanetské muzeum historie a etnografie, Mestia",
+          pl: "Muzeum Historii i Etnografii Swanetii, Mestia",
+        },
+      },
+      {
+        base: "hatsvali-chairlift-mestia-georgia",
+        width: 1448, height: 1086,
+        widths: [768, 1200, 1448],
+        afterChunk: 4,
+        name: "Chairlift tower and open chairs above a forested green summer slope at Hatsvali near Mestia, Upper Svaneti, Georgia",
+        description: "The Hatsvali chairlift above Mestia, which runs in summer as well as in the ski season and reaches viewpoints over the Greater Caucasus.",
+        locationName: "Hatsvali, Mestia Municipality, Samegrelo-Zemo Svaneti, Georgia",
+        geo: { lat: 43.0044, lng: 42.7261 },
+        alt: {
+          en: "Chairlift tower and open chairs above a forested green summer slope at Hatsvali near Mestia, Upper Svaneti, Georgia",
+          de: "Sessellift-Stütze und offene Sessel über einem bewaldeten grünen Sommerhang in Hatsvali bei Mestia, Oberswanetien, Georgien",
+          fr: "Pylône de télésiège et sièges ouverts au-dessus d'un versant estival boisé et verdoyant à Hatsvali, près de Mestia, Haute-Svanétie, Géorgie",
+          es: "Torre de telesilla y sillas abiertas sobre una ladera verde y boscosa en verano en Hatsvali, cerca de Mestia, Alta Esvanetia, Georgia",
+          nl: "Stoeltjeslift-mast en open stoeltjes boven een beboste groene zomerhelling bij Hatsvali nabij Mestia, Boven-Svanetië, Georgië",
+          cs: "Sloup sedačkové lanovky a otevřené sedačky nad zeleným zalesněným letním svahem v Hatsvali u Mestie, Horní Svanetie, Gruzie",
+          pl: "Podpora wyciągu krzesełkowego i otwarte krzesełka nad zalesionym zielonym letnim stokiem w Hatsvali koło Mestii, Górna Swanetia, Gruzja",
+        },
+        caption: {
+          en: "Hatsvali chairlift above Mestia",
+          de: "Sessellift von Hatsvali über Mestia",
+          fr: "Télésiège de Hatsvali au-dessus de Mestia",
+          es: "Telesilla de Hatsvali sobre Mestia",
+          nl: "Stoeltjeslift van Hatsvali boven Mestia",
+          cs: "Sedačková lanovka Hatsvali nad Mestií",
+          pl: "Wyciąg krzesełkowy Hatsvali nad Mestią",
+        },
+      },
+      {
+        base: "shkhara-peak-svaneti-georgia",
+        width: 1536, height: 1024,
+        widths: [768, 1200, 1536],
+        afterChunk: 5,
+        name: "Snow-capped peaks of the Shkhara massif in the high Caucasus rising above green foothills, Upper Svaneti, Georgia",
+        description: "Snow-capped peaks of the Shkhara massif in the high Caucasus above Svaneti — Shkhara, at 5,193 m, is Georgia's highest mountain.",
+        locationName: "Shkhara, Greater Caucasus, Samegrelo-Zemo Svaneti, Georgia",
+        geo: { lat: 43.0022, lng: 43.1108 },
+        alt: {
+          en: "Snow-capped peaks of the Shkhara massif in the high Caucasus rising above green foothills, Upper Svaneti, Georgia",
+          de: "Schneebedeckte Gipfel des Schchara-Massivs im Hohen Kaukasus über grünen Vorbergen, Oberswanetien, Georgien",
+          fr: "Sommets enneigés du massif du Chkhara dans le Haut-Caucase dominant des contreforts verdoyants, Haute-Svanétie, Géorgie",
+          es: "Cumbres nevadas del macizo de Shjara en el Alto Cáucaso sobre estribaciones verdes, Alta Esvanetia, Georgia",
+          nl: "Besneeuwde toppen van het Sjchara-massief in de Hoge Kaukasus boven groene uitlopers, Boven-Svanetië, Georgië",
+          cs: "Zasněžené vrcholy masivu Škhara ve Vysokém Kavkaze nad zelenými podhůřími, Horní Svanetie, Gruzie",
+          pl: "Ośnieżone szczyty masywu Szchara w Wysokim Kaukazie górujące nad zielonymi pogórzami, Górna Swanetia, Gruzja",
+        },
+        caption: {
+          en: "Shkhara, the high Caucasus above Svaneti",
+          de: "Schchara, der Hohe Kaukasus über Swanetien",
+          fr: "Chkhara, le Haut-Caucase au-dessus de la Svanétie",
+          es: "Shjara, el Alto Cáucaso sobre Esvanetia",
+          nl: "Sjchara, de Hoge Kaukasus boven Svanetië",
+          cs: "Škhara, Vysoký Kavkaz nad Svanetií",
+          pl: "Szchara, Wysoki Kaukaz nad Swanetią",
+        },
+      },
+      {
+        base: "ushguli-svan-towers-shkhara-georgia",
+        width: 1448, height: 1086,
+        widths: [768, 1200, 1448],
+        afterChunk: 6,
+        name: "Medieval Svan stone towers of Ushguli village on green slopes below the snow-capped Shkhara massif, Upper Svaneti, Georgia",
+        description: "Medieval Svan stone towers of Ushguli on green slopes below the Shkhara massif, part of the Upper Svaneti UNESCO World Heritage Site.",
+        locationName: "Ushguli, Mestia Municipality, Samegrelo-Zemo Svaneti, Georgia",
+        geo: { lat: 42.9186, lng: 43.0128 },
+        alt: {
+          en: "Medieval Svan stone towers of Ushguli village on green slopes below the snow-capped Shkhara massif, Upper Svaneti, Georgia",
+          de: "Mittelalterliche swanische Steintürme des Dorfes Ushguli an grünen Hängen unter dem schneebedeckten Schchara-Massiv, Oberswanetien, Georgien",
+          fr: "Tours de pierre svanes médiévales du village d'Ushguli sur des pentes verdoyantes sous le massif enneigé du Chkhara, Haute-Svanétie, Géorgie",
+          es: "Torres de piedra svanas medievales del pueblo de Ushguli en laderas verdes bajo el macizo nevado de Shjara, Alta Esvanetia, Georgia",
+          nl: "Middeleeuwse Svanetische stenen torens van het dorp Ushguli op groene hellingen onder het besneeuwde Sjchara-massief, Boven-Svanetië, Georgië",
+          cs: "Středověké svanské kamenné věže vesnice Ushguli na zelených svazích pod zasněženým masivem Škhara, Horní Svanetie, Gruzie",
+          pl: "Średniowieczne swańskie kamienne wieże wsi Uszguli na zielonych zboczach pod ośnieżonym masywem Szchara, Górna Swanetia, Gruzja",
+        },
+        caption: {
+          en: "Ushguli beneath the Shkhara massif",
+          de: "Ushguli unter dem Schchara-Massiv",
+          fr: "Ushguli au pied du massif du Chkhara",
+          es: "Ushguli al pie del macizo de Shjara",
+          nl: "Ushguli onder het Sjchara-massief",
+          cs: "Ushguli pod masivem Škhara",
+          pl: "Uszguli pod masywem Szchara",
+        },
+      },
+    ],
     thingsToDo: {
       seoKey: 'thingsToDoMestia', contentKey: 'thingsToDoMestia',
       // Cover/hero = the Mestia Svan-tower-houses frame, REPLACING the generic
@@ -13989,6 +14158,7 @@ export function publishedDestinationPages() {
   for (const r of regions) if (r.published) {
     pages.push({
       path: cleanPath(regionPath(r.slug)), seoKey: r.seoKey, image: r.image,
+      geo: r.geoMeta,
       // The region branch was the only one of the five here that dropped these
       // extras, so a region setting ogImage/imageMeta/heroPreload rendered them
       // client-side but never into the prerendered <head> — the same gap the
@@ -14021,6 +14191,11 @@ export function publishedDestinationPages() {
   for (const c of cities) if (c.published) {
     pages.push({
       path: cleanPath(cityPath(c.slug)), seoKey: c.seoKey, image: c.image,
+      // Optional per-place geo (`geoMeta`) for the page's geo.region /
+      // geo.placename / geo.position / ICBM tags. A record without it emits no
+      // geo tags at all — better than the hardcoded Tbilisi every page used to
+      // inherit from index.html.
+      geo: c.geoMeta,
       // Optional image-SEO extras (only cities that define them, e.g. Mestia):
       // dedicated social image + dimensions + per-locale alt for the static
       // og:image / og:image:alt tags. Mirrors the sites branch below.
