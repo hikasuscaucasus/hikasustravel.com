@@ -3597,6 +3597,30 @@ export const regions = [
       ],
     },
   },
+  // Tavush. Same shape as the eight Armenia regions above and as every Georgian
+  // region — the only difference remains `country: 'armenia'`.
+  //
+  // No `thingsToDo` block yet: the companion guide is a separate task, so the
+  // region page renders without the things-to-do CTA. Add the block when one
+  // is written.
+  //
+  // Tavush had NO record here before — only an inert `published: false` row in
+  // siteData.js, like every other seeded Armenia region.
+  //
+  // The brief's instruction to preserve an existing /armenia/dilijan destination
+  // family is moot: no Dilijan city record exists, and /armenia/dilijan and
+  // /armenia/dilijan/things-to-do both 404 live. Nothing is re-parented, renamed
+  // or duplicated here, and no child destination is created. The authored body
+  // refers to those Dilijan guides in plain text only, per the copy lock.
+  //
+  // `noHero` while no approved Tavush photograph exists; `noAutolink` keeps the
+  // authored body and FAQ free of editorial links, as specified.
+  {
+    slug: 'tavush', name: 'Tavush', published: true, country: 'armenia',
+    seoKey: 'tavush', contentKey: 'tavush',
+    noHero: true,
+    noAutolink: true,
+  },
 ]
 
 // ---------------------------------------------------------------------------
