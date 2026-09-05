@@ -3408,6 +3408,21 @@ export const regions = [
       ],
     },
   },
+  // Gegharkunik. Same shape as the three Armenia regions above and as every
+  // Georgian region — the only difference remains `country: 'armenia'`.
+  //
+  // No `thingsToDo` block yet: the companion guide is a separate task, so the
+  // region page renders without the things-to-do CTA (exactly as an
+  // unpublished-guide Georgian region would). Add the block when one is written.
+  //
+  // `noHero` while no approved Gegharkunik photograph exists; `noAutolink`
+  // keeps the authored body and FAQ free of editorial links, as specified.
+  {
+    slug: 'gegharkunik', name: 'Gegharkunik', published: true, country: 'armenia',
+    seoKey: 'gegharkunik', contentKey: 'gegharkunik',
+    noHero: true,
+    noAutolink: true,
+  },
 ]
 
 // ---------------------------------------------------------------------------
