@@ -9,7 +9,7 @@ import useLang from '../../i18n/useLang'
 import { I18nContext } from '../../i18n/I18nContext'
 import useSEO from '../../hooks/useSEO'
 import { getSEO } from '../../data/seoData'
-import { cities, cityPath } from '../../data/places'
+import { citiesOfCountry, cityPath, DEFAULT_COUNTRY } from '../../data/places'
 
 const HERO_IMAGE = '/images/files/tbilisi-old-town-narikala-mtkvari-georgia-1200.webp'
 const SITE_URL = 'https://www.hikasustravel.com'
@@ -37,7 +37,9 @@ const SUBHUBS = [
 // Existing important destination pages — the published city guides. Entries
 // reclassified as a place to visit (e.g. Gomismta) are not cities, so they are
 // excluded from the featured-cities strip.
-const FEATURED_CITIES = cities.filter((c) => c.published && c.classifyAs !== 'place')
+// Georgia's country hub, so Georgia's cities: `cities` is one array across
+// countries now, and a city outside Georgia is not featured here.
+const FEATURED_CITIES = citiesOfCountry(DEFAULT_COUNTRY).filter((c) => c.published && c.classifyAs !== 'place')
 
 export default function DestinationsPage() {
   const t = useT()

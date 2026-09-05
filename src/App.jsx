@@ -102,17 +102,22 @@ export function AppRoutes() {
               sites (sub === a city-parented site slug). CitySubPage dispatches
               between them and 404s otherwise. */}
           <Route path="georgia/:citySlug/:sub" element={<CitySubPage />} />
-          {/* Armenia destinations tree. Deliberately narrower than Georgia's:
-              only the country stub, the regions hub, region detail pages and
-              their things-to-do guides exist, because those are the only
-              Armenia pages that exist. There is no cities hub, no
-              places-to-visit hub and no :citySlug route to collide with, so the
-              guide can nest under its region as a static `things-to-do`
-              segment — a literal reading of the hierarchy. */}
-          <Route path="armenia" element={<CountryStubPage pageKey="armenia" seoKey="armenia" path="armenia" links={[{ to: '/armenia/regions', labelKey: 'nav.regions' }]} />} />
+          {/* Armenia destinations tree. Still narrower than Georgia's: the
+              country stub, the regions hub, region detail pages and their
+              things-to-do guides, plus city detail pages at /armenia/<city> —
+              the same one-level-under-the-country shape Georgia's cities have.
+              There is no cities hub yet (one published city does not make a
+              hub), and no places-to-visit hub.
+
+              `armenia/regions` and its children are static segments, so React
+              Router ranks them above `armenia/:citySlug` and the regions tree
+              cannot be shadowed by a city slug. Region guides keep nesting under
+              their region as a static `things-to-do` segment. */}
+          <Route path="armenia" element={<CountryStubPage pageKey="armenia" seoKey="armenia" path="armenia" links={[{ to: '/armenia/regions', labelKey: 'nav.regions' }, { to: '/armenia/yerevan', labelKey: 'nav.yerevan' }]} />} />
           <Route path="armenia/regions" element={<ArmeniaRegionsHubPage />} />
           <Route path="armenia/regions/:regionSlug" element={<RegionPage />} />
           <Route path="armenia/regions/:regionSlug/things-to-do" element={<ThingsToDoCityPage />} />
+          <Route path="armenia/:citySlug" element={<CityPage />} />
           {/* Legacy URL redirects -> their new /georgia home (mirror the static
               redirect stubs emitted by scripts/prerender.js). */}
           <Route path="destinations/*" element={<DestinationsRedirect />} />

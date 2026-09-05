@@ -11,7 +11,10 @@ import useT from '../../i18n/useT'
 import useLang from '../../i18n/useLang'
 import useSEO from '../../hooks/useSEO'
 import { getSEO } from '../../data/seoData'
-import { getCity, cityPath, thingsToDoPath, legacyRedirects } from '../../data/places'
+import {
+  getCity, cityPath, thingsToDoPath, legacyRedirects,
+  countryOf, countryBase, countryName, destinationsBase, citiesHubPath, placesHubPath, DEFAULT_COUNTRY,
+} from '../../data/places'
 import { autolinkHtml } from '../../utils/autolink'
 import asset from '../../utils/basePath'
 import NotFoundPage from './NotFoundPage'
@@ -73,13 +76,21 @@ export default function CityPage() {
   // Auto-link destination mentions in the editorial body + FAQ answers, skipping
   // self-links to this very page.
   const excludeKey = published ? `city:${city.slug}` : null
+  // A city whose body is authored under a zero-editorial-links rule opts out
+  // with `noAutolink: true` — the same flag RegionPage and ThingsToDoCityPage
+  // already honour. Inert for every city that does not set it, which is all of
+  // the Georgian ones: they keep exactly the autolinking they have always had.
+  const noAutolink = published && city.noAutolink
   const linkedContent = useMemo(
-    () => (page ? autolinkHtml(page.content, lang, pages, excludeKey) : ''),
-    [page, lang, pages, excludeKey],
+    () => (page ? (noAutolink ? page.content : autolinkHtml(page.content, lang, pages, excludeKey)) : ''),
+    [page, lang, pages, excludeKey, noAutolink],
   )
   const linkedFaq = useMemo(
-    () => faqItems.map((it) => ({ ...it, content: autolinkHtml(it.content, lang, pages, excludeKey) })),
-    [faqItems, lang, pages, excludeKey],
+    () => faqItems.map((it) => ({
+      ...it,
+      content: noAutolink ? it.content : autolinkHtml(it.content, lang, pages, excludeKey),
+    })),
+    [faqItems, lang, pages, excludeKey, noAutolink],
   )
   const path = published ? cityPath(city.slug).replace(/^\//, '') : ''
   const heroImage = published ? city.image : null
@@ -133,13 +144,29 @@ export default function CityPage() {
   // breadcrumb points back to the Places to Visit hub, where their card lives.
   const isPlace = published && city.classifyAs === 'place'
   const parentCrumb = isPlace
-    ? { name: t('nav.placesToVisit'), to: '/georgia/places-to-visit' }
-    : { name: t('nav.cities'), to: '/georgia/cities' }
+    ? { name: t('nav.placesToVisit'), to: placesHubPath }
+    : { name: t('nav.cities'), to: citiesHubPath }
+  // Country-aware, mirroring RegionPage. Georgia keeps the trail it has always
+  // had — "All Destinations" pointing at /georgia, then the Cities (or Places
+  // to Visit) hub. Another country uses its own name for the country crumb and
+  // skips the hub crumb entirely while it has no such hub: a breadcrumb must
+  // point at a page that exists.
+  const country = countryOf(published ? city : null)
+  const isGeorgia = country === DEFAULT_COUNTRY
+  // H1. Every Georgian city has always shown the bare city name here, and each
+  // keeps it: the authored `heroTitle` in pages.json is a longer, SEO-shaped
+  // headline that those pages deliberately do not display. A city whose brief
+  // specifies the headline AS the H1 opts in with `heroTitleAsH1: true` — the
+  // shape RegionPage/ThingsToDoCityPage use unconditionally. Falls back to the
+  // name if the content entry has no heroTitle, so the flag can never blank it.
+  const h1 = (published && city.heroTitleAsH1 && page?.heroTitle) || (published ? city.name : '')
   const trail = published
     ? [
         { name: t('breadcrumb.home'), to: '/' },
-        { name: t('nav.allDestinations'), to: '/georgia' },
-        parentCrumb,
+        isGeorgia
+          ? { name: t('nav.allDestinations'), to: destinationsBase }
+          : { name: t('nav.destinations.armenia'), to: countryBase(country) },
+        ...(isGeorgia ? [parentCrumb] : []),
         { name: city.name },
       ]
     : []
@@ -169,8 +196,11 @@ export default function CityPage() {
           name: city.name,
           description: seo.description,
           url,
-          image: `${SITE_URL}${heroImage}`,
-          containedInPlace: { '@type': 'Country', name: 'Georgia' },
+          ...(heroImage ? { image: `${SITE_URL}${heroImage}` } : {}),
+          // The country was hardcoded while every city was Georgian; it now
+          // reads the record, so a Georgian city still asserts Georgia and an
+          // Armenian one asserts Armenia rather than the wrong country.
+          containedInPlace: { '@type': 'Country', name: countryName(country) },
         },
         {
           '@type': 'Article',
@@ -178,7 +208,10 @@ export default function CityPage() {
           description: seo.description,
           inLanguage: lang,
           mainEntityOfPage: url,
-          image: `${SITE_URL}${heroImage}`,
+          // Omitted on a `noHero` city, exactly as RegionPage does: there is no
+          // image to name and `${SITE_URL}null` would be a broken URL in the
+          // graph. Every city with a hero is unchanged.
+          ...(heroImage ? { image: `${SITE_URL}${heroImage}` } : {}),
           author: { '@type': 'Organization', name: 'Hikasus Travel' },
           publisher: { '@type': 'Organization', name: 'Hikasus Travel', url: SITE_URL },
         },
@@ -414,10 +447,10 @@ export default function CityPage() {
           100dvh. */}
       {city.noHero ? (
         <section className="dest-title-band">
-          <h1>{city.name}</h1>
+          <h1>{h1}</h1>
         </section>
       ) : (
-        <HeroSection image={heroImage} imageAvif={city.imageAvif} bgClass={city.heroClass} title={city.name} />
+        <HeroSection image={heroImage} imageAvif={city.imageAvif} bgClass={city.heroClass} title={h1} />
       )}
       <section className="page-items about-georgia">
         <EntityToursTag type="city" slug={city.slug} name={city.name} />

@@ -1,7 +1,7 @@
 import DestinationHub from '../shared/DestinationHub'
 import useT from '../../i18n/useT'
 import {
-  cities,
+  citiesOfCountry,
   sites,
   regionPath,
   cityPath,
@@ -9,6 +9,7 @@ import {
   siteLocation,
   regionsOfCountry,
   armeniaBase,
+  DEFAULT_COUNTRY,
 } from '../../data/places'
 
 const HERO_IMAGE = '/images/files/tbilisi-old-town-narikala-mtkvari-georgia-1200.webp'
@@ -99,7 +100,9 @@ export function CitiesHubPage() {
   // of order in every other language. Entries reclassified as a place to visit
   // (e.g. the highland resort Gomismta) are excluded here and listed on the
   // Places to Visit hub instead.
-  const entries = cities
+  // Scoped to Georgia's cities, for the same reason RegionsHubPage is scoped:
+  // `cities` is one array across countries now and this hub is /georgia/cities.
+  const entries = citiesOfCountry(DEFAULT_COUNTRY)
     .filter((c) => c.classifyAs !== 'place')
     .map((c) => ({
       slug: c.slug,
@@ -145,7 +148,7 @@ export function PlacesToVisitHubPage() {
   // Entries classified as a place but kept in the cities registry for their
   // existing /georgia/<slug> detail page (e.g. Gomismta). They link to that same
   // detail URL and carry their own structured `placeLocation`.
-  const placeCityEntries = cities
+  const placeCityEntries = citiesOfCountry(DEFAULT_COUNTRY)
     .filter((c) => c.classifyAs === 'place')
     .map((c) => ({
       slug: c.slug,

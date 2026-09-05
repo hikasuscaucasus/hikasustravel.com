@@ -30,7 +30,7 @@ vary by plan — check yours before choosing this. Create each under
 >
 > `scripts/generate-redirects.js` refuses to write this file unless a simulation of the rules,
 > in this order, rewrites all 1617 legacy URLs correctly **and** matches none of the
-> 2821 live published URLs.
+> 2828 live published URLs.
 
 ### destinations-cities — 27 paths x 7 locales = 189 URLs
 

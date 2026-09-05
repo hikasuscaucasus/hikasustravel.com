@@ -34,7 +34,7 @@ const src = (p) => pathToFileURL(join(__dirname, '..', 'src', p)).href
 
 const {
   regions, cities, sites, getCity, getRegion,
-  regionPath, thingsToDoPath, countryOf, countryBase, countryName,
+  regionPath, cityPath, thingsToDoPath, countryOf, countryBase, countryName,
   regionsHubPathFor, DEFAULT_COUNTRY,
 } = await import(src('data/places.js'))
 const { publishedBorderPages, borderCrossings, borderOverview } = await import(src('data/borders.js'))
@@ -175,20 +175,31 @@ export function createJsonLdBuilder({ seoFor }) {
 
     // --- cities ----------------------------------------------------------
     for (const c of cities.filter((x) => x.published)) {
-      const path = `georgia/${c.slug}`
+      // Country-aware, exactly like the regions branch above and like CityPage's
+      // own runtime graph: the path comes from cityPath() instead of a hardcoded
+      // /georgia prefix, the country crumb and containedInPlace read the record,
+      // and the cities-hub crumb is emitted only for a country that HAS one.
+      // Every Georgian city keeps the identical graph it had.
+      const country = countryOf(c)
+      const path = clean(cityPath(c.slug))
       const url = `${SITE_URL}/${lang}/${path}`
       const seo = seoFor(c.seoKey, lang)
       const parentCrumb = c.classifyAs === 'place'
         ? { name: t('nav.placesToVisit'), to: '/georgia/places-to-visit' }
         : { name: t('nav.cities'), to: '/georgia/cities' }
+      const trail = country === DEFAULT_COUNTRY
+        ? [HOME, ALL_DEST, parentCrumb, { name: c.name }]
+        : [HOME, countryCrumb(country), { name: c.name }]
       put(path, [
         {
           '@type': 'TouristDestination',
           name: c.name,
           description: seo.description,
           url,
-          image: `${SITE_URL}${c.image}`,
-          containedInPlace: { '@type': 'Country', name: 'Georgia' },
+          // Omitted on a `noHero` city: there is no image to name, and
+          // `${SITE_URL}null` would be a broken URL in the graph.
+          ...(c.image ? { image: `${SITE_URL}${c.image}` } : {}),
+          containedInPlace: { '@type': 'Country', name: countryName(country) },
         },
         {
           '@type': 'Article',
@@ -196,12 +207,12 @@ export function createJsonLdBuilder({ seoFor }) {
           description: seo.description,
           inLanguage: lang,
           mainEntityOfPage: url,
-          image: `${SITE_URL}${c.image}`,
+          ...(c.image ? { image: `${SITE_URL}${c.image}` } : {}),
           author: ORG,
           publisher: PUBLISHER,
         },
         imageNode(c.imageMeta, c.image, lang, url),
-        breadcrumbs([HOME, ALL_DEST, parentCrumb, { name: c.name }], url),
+        breadcrumbs(trail, url),
       ])
     }
 

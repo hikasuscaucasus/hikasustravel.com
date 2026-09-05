@@ -8522,6 +8522,30 @@ export const cities = [
       ],
     },
   },
+  // Yerevan — the registry's first non-Georgian city, and the reason cityPath()
+  // resolves its record the way regionPath() already did: `country: 'armenia'`
+  // puts it at /armenia/yerevan. Every Georgian city keeps the exact URL it has
+  // always had.
+  //
+  // `region: null` is deliberate and factual, not a gap: Yerevan holds separate
+  // capital status and is NOT one of the ten marzer, so it belongs at the
+  // country's top level, never under /armenia/regions. Tbilisi carries the same
+  // null for the same reason.
+  //
+  // `noHero` while no approved Yerevan photograph exists (the same flag every
+  // Armenia page uses); `noAutolink` keeps the authored body and FAQ free of
+  // editorial links, as specified.
+  //
+  // No `thingsToDo` block yet: the companion guide is a separate task.
+  {
+    slug: 'yerevan', name: 'Yerevan', region: null, published: true, country: 'armenia',
+    seoKey: 'yerevan', contentKey: 'yerevan',
+    noHero: true,
+    // The brief specifies the authored headline as this page's H1; Georgian
+    // cities keep showing the bare city name, which is why this is opt-in.
+    heroTitleAsH1: true,
+    noAutolink: true,
+  },
 ]
 
 // ---------------------------------------------------------------------------
@@ -13876,7 +13900,18 @@ export const regionPath = (slug) => {
   const r = regions.find((x) => x.slug === slug)
   return `${regionsHubPathFor(countryOf(r))}/${slug}`
 }
-export const cityPath = (slug) => `/georgia/${slug}`
+// Cities resolve their record exactly the way regionPath does above, so every
+// existing call site keeps passing a bare slug. A Georgian city (i.e. any
+// record with no `country`) returns the identical string this function has
+// always returned; a city that opts in with `country: 'armenia'` lands at
+// /armenia/<slug>, one level under the country base — the same shape Georgia's
+// cities have always had, not a second convention.
+export const cityPath = (slug) => {
+  const c = cities.find((x) => x.slug === slug)
+  return `${countryBase(countryOf(c))}/${slug}`
+}
+/** Cities belonging to one country (Georgia covers every record without one). */
+export const citiesOfCountry = (country) => cities.filter((c) => countryOf(c) === country)
 // Things-to-do guides. Georgia's live at /georgia/<slug>/things-to-do-in-<slug>
 // for both cities and regions — unchanged. Armenia's regions nest the guide
 // under the region page instead: /armenia/regions/<slug>/things-to-do, which
@@ -14004,8 +14039,12 @@ export function legacyRedirects() {
     { from: 'destinations/cities', to: cleanPath(citiesHubPath) },
     { from: 'destinations/places-to-visit', to: cleanPath(placesHubPath) },
   ]
+  // Georgia only, for the same reason the region loop below is: /destinations/…
+  // and /things-to-do-in-… are Georgia-era URL shapes that a Georgian city
+  // genuinely used to live at. A city added under another country never had
+  // either URL, so emitting a redirect would invent a legacy that never existed.
   for (const c of cities) {
-    if (!c.published) continue
+    if (!c.published || countryOf(c) !== DEFAULT_COUNTRY) continue
     out.push({ from: `destinations/cities/${c.slug}`, to: cleanPath(cityPath(c.slug)) }) // old nested city
     out.push({ from: `destinations/${c.slug}`, to: cleanPath(cityPath(c.slug)) })        // legacy flat city
     if (c.thingsToDo) out.push({ from: `things-to-do-in-${c.slug}`, to: cleanPath(thingsToDoPath(c.slug)) })

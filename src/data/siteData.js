@@ -60,7 +60,13 @@ export const destinationCountries = [
     regions: [
       { to: '/armenia', labelKey: 'nav.allDestinations', published: true },
       { to: '/armenia/regions', labelKey: 'nav.regions', published: true },
-      { to: '/armenia/regions/yerevan', label: 'Yerevan', published: false },
+      // Yerevan holds separate capital status: it is NOT one of the ten marzer,
+      // so it never belonged under /armenia/regions. Corrected to its real route.
+      // Still inert here, like every other seeded entry below — individual
+      // destinations are not surfaced in the global Destinations menu on either
+      // country. It is reached from /armenia, exactly as Tbilisi is reached from
+      // /georgia.
+      { to: '/armenia/yerevan', label: 'Yerevan', published: false },
       { to: '/armenia/regions/kotayk', label: 'Kotayk', published: false },
       { to: '/armenia/regions/aragatsotn', label: 'Aragatsotn', published: false },
       { to: '/armenia/regions/armavir', label: 'Armavir', published: false },
