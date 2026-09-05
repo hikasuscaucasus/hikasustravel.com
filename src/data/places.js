@@ -3659,6 +3659,31 @@ export const regions = [
     seoKey: 'vayotsDzor', contentKey: 'vayotsDzor',
     noHero: true,
     noAutolink: true,
+    // Companion guide at /armenia/regions/vayots-dzor/things-to-do — same block
+    // shape as the other Armenia regions' and as every Georgian region's.
+    thingsToDo: {
+      seoKey: 'thingsToDoVayotsDzor', contentKey: 'thingsToDoVayotsDzor',
+      noHero: true,
+      address: { addressRegion: 'Vayots Dzor' },
+      // Drawn from the guide's own body, in the order it covers them. Feeds the
+      // page's ItemList node and the search index's keywords.
+      //
+      // Vardenyats Pass is deliberately ABSENT: the pass is the link between
+      // Vayots Dzor and Gegharkunik, so listing it as an in-region attraction
+      // would assert it sits wholly here. The Orbelians' Caravanserai on it does
+      // sit in Vayots Dzor and is listed.
+      attractions: [
+        'Areni', 'Areni-1 Cave', 'Saint Astvatsatsin Church of Areni',
+        'Gnishik Canyon', 'Noravank Monastery', 'Burtelashen Church',
+        'Jermuk', 'Mineral Water Gallery', 'Jermuk Waterfall',
+        'Gndevank Monastery', 'Kechut Reservoir', 'Yeghegis', 'Smbataberd',
+        'Tsakhats Kar Monastery', 'Yeghegis Jewish Cemetery', 'Zorats Church',
+        "Orbelians' Caravanserai", 'Spitakavor Monastery', 'Proshaberd Fortress',
+        'Martiros Holy Mother of God Church', 'Arates Monastery',
+        'Magellan Cave', 'Mozrov Cave', 'Bear Cave', 'Gomk',
+        'Arpa Protected Landscape',
+      ],
+    },
   },
 ]
 
