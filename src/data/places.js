@@ -3443,22 +3443,42 @@ export const regions = [
   // Kotayk. Same shape as the four Armenia regions above and as every Georgian
   // region — the only difference remains `country: 'armenia'`.
   //
-  // No `thingsToDo` block yet: the companion guide is a separate task, so the
-  // region page renders without the things-to-do CTA (exactly as an
-  // unpublished-guide Georgian region would). Add the block when one is written.
-  //
   // Kotayk had NO record here before — only an inert `published: false` row in
   // siteData.js, like every other seeded Armenia region. The Garni / Geghard /
   // Tsaghkadzor destination pages the brief assumed do not exist yet (they 404),
   // so this hub publishes standalone and re-parents nothing.
   //
   // `noHero` while no approved Kotayk photograph exists; `noAutolink` keeps the
-  // authored body and FAQ free of editorial links, as specified.
+  // authored body and FAQ free of editorial links, as specified — and it covers
+  // the things-to-do guide too, which reads the parent place's flag.
   {
     slug: 'kotayk', name: 'Kotayk', published: true, country: 'armenia',
     seoKey: 'kotayk', contentKey: 'kotayk',
     noHero: true,
     noAutolink: true,
+    // Companion guide at /armenia/regions/kotayk/things-to-do — same block shape
+    // as the other Armenia regions' and as every Georgian region's.
+    thingsToDo: {
+      seoKey: 'thingsToDoKotayk', contentKey: 'thingsToDoKotayk',
+      noHero: true,
+      address: { addressRegion: 'Kotayk' },
+      // Drawn from the guide's own body, in the order it covers them. Feeds the
+      // page's ItemList node and the search index's keywords.
+      //
+      // Two narrative cross-region references are deliberately ABSENT: Amberd /
+      // Vahramashen (Aragatsotn) and Mount Azhdahak, whose summit is in
+      // Gegharkunik. Both belong to the Pahlavuni and Gegham storylines in the
+      // body, but listing either here would assert it sits inside Kotayk.
+      attractions: [
+        'Garni Temple', 'Symphony of Stones', 'Geghard Monastery', 'Tsaghkadzor',
+        'Kecharis Monastery', 'Havuts Tar', 'Khosrov State Reserve', 'Goght',
+        'Bjni', 'Bjni Fortress', 'Surb Astvatsatsin', 'Surb Gevorg',
+        'Surb Sargis', 'Hankavan', 'Arzni', 'Arzakan', 'Aghveran',
+        'Meghradzor', 'Meghradzor Waterfall', 'Mount Artavaz',
+        'Gegham Mountains', 'Mount Hatis', 'Gutanasar', 'Yeghvard',
+        'Mankus Eco Park', 'Dzoraghbyur',
+      ],
+    },
   },
 ]
 
