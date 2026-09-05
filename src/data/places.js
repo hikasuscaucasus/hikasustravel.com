@@ -3518,6 +3518,26 @@ export const regions = [
       ],
     },
   },
+  // Shirak. Same shape as the six Armenia regions above and as every Georgian
+  // region — the only difference remains `country: 'armenia'`.
+  //
+  // No `thingsToDo` block yet: the companion guide is a separate task, so the
+  // region page renders without the things-to-do CTA. Add the block when one
+  // is written.
+  //
+  // Shirak had NO record here before — only an inert `published: false` row in
+  // siteData.js, like every other seeded Armenia region. Gyumri has no
+  // destination page either, so this hub publishes standalone and re-parents
+  // nothing.
+  //
+  // `noHero` while no approved Shirak photograph exists; `noAutolink` keeps the
+  // authored body and FAQ free of editorial links, as specified.
+  {
+    slug: 'shirak', name: 'Shirak', published: true, country: 'armenia',
+    seoKey: 'shirak', contentKey: 'shirak',
+    noHero: true,
+    noAutolink: true,
+  },
 ]
 
 // ---------------------------------------------------------------------------
