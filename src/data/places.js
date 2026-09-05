@@ -3411,17 +3411,34 @@ export const regions = [
   // Gegharkunik. Same shape as the three Armenia regions above and as every
   // Georgian region — the only difference remains `country: 'armenia'`.
   //
-  // No `thingsToDo` block yet: the companion guide is a separate task, so the
-  // region page renders without the things-to-do CTA (exactly as an
-  // unpublished-guide Georgian region would). Add the block when one is written.
-  //
   // `noHero` while no approved Gegharkunik photograph exists; `noAutolink`
-  // keeps the authored body and FAQ free of editorial links, as specified.
+  // keeps the authored body and FAQ free of editorial links, as specified —
+  // and it covers the things-to-do guide too, which reads the parent place's flag.
   {
     slug: 'gegharkunik', name: 'Gegharkunik', published: true, country: 'armenia',
     seoKey: 'gegharkunik', contentKey: 'gegharkunik',
     noHero: true,
     noAutolink: true,
+    // Companion guide at /armenia/regions/gegharkunik/things-to-do — same block
+    // shape as the other Armenia regions' and as every Georgian region's.
+    thingsToDo: {
+      seoKey: 'thingsToDoGegharkunik', contentKey: 'thingsToDoGegharkunik',
+      noHero: true,
+      address: { addressRegion: 'Gegharkunik' },
+      // Drawn from the guide's own body, in the order it covers them. Feeds the
+      // page's ItemList node and the search index's keywords.
+      //
+      // Selim (Orbelian's) Caravanserai is deliberately ABSENT: the guide covers
+      // it as an onward cross-region stop, but it sits in Vayots Dzor, so listing
+      // it here would assert it is an attraction located inside Gegharkunik.
+      attractions: [
+        'Lake Sevan', 'Sevanavank Monastery', 'Surp Arakelots', 'Surp Astvatsatsin',
+        'Hayravank Monastery', 'Saint Stephen Church', 'Noratus', 'Lchashen',
+        'Gavar', 'Geological Museum of Gegharkunik', 'Mount Artanish',
+        'Artanish Peninsula', 'Mount Armaghan', 'Mount Azhdahak',
+        'Vanevan Monastery', 'Kalavan', 'Norashen Reserve', 'Gull Island',
+      ],
+    },
   },
 ]
 
