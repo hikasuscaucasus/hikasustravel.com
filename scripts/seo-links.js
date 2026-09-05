@@ -28,7 +28,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 const src = (p) => pathToFileURL(join(__dirname, '..', 'src', p)).href
 
 const {
-  regions, cities, sites, regionPath, thingsToDoPath, countryOf, DEFAULT_COUNTRY,
+  regions, cities, sites, regionPath, cityPath, thingsToDoPath, countryOf, DEFAULT_COUNTRY,
 } = await import(src('data/places.js'))
 const { publishedBorderPages, borderHubPath } = await import(src('data/borders.js'))
 const { entityTourPages } = await import(src('data/entityTours.js'))
@@ -202,8 +202,12 @@ export function createLinkGraph({ tours, blogArticles, tourTitle, blogTitle, seo
     put(ARMENIA_HUB, ARMENIA_REGIONS_HUB, labelOfStatic(ARMENIA_REGIONS_HUB))
     put(ARMENIA_REGIONS_HUB, ARMENIA_HUB, labelOfStatic(ARMENIA_HUB))
     for (const c of pubCities) {
-      put(GEORGIA_HUB, `georgia/${c.slug}`, cityLabel.get(c.slug))
-      put(CITIES_HUB, `georgia/${c.slug}`, cityLabel.get(c.slug))
+      // A city hangs off its own country hub, and is listed on the cities hub
+      // only where one exists (Georgia). Armenia has no cities hub yet, so
+      // Yerevan is linked from /armenia directly — the same pattern the
+      // Armenia regions block above uses.
+      put(hubsFor(c).country, clean(cityPath(c.slug)), cityLabel.get(c.slug))
+      if (isGeorgian(c)) put(CITIES_HUB, `georgia/${c.slug}`, cityLabel.get(c.slug))
     }
     for (const s of pubSites) {
       put(PLACES_HUB, `georgia/${s.parent}/${s.slug}`, siteLabel.get(s.slug))
@@ -224,7 +228,7 @@ export function createLinkGraph({ tours, blogArticles, tourTitle, blogTitle, seo
       }
       // Cities and region-parented sites are Georgia-only today; a non-Georgian
       // region simply matches nothing here.
-      for (const c of pubCities.filter((c) => c.region === r.slug)) {
+      for (const c of pubCities.filter((c) => isGeorgian(c) && c.region === r.slug)) {
         put(self, `georgia/${c.slug}`, cityLabel.get(c.slug))
         put(`georgia/${c.slug}`, self, regionLabel.get(r.slug))
       }
@@ -235,9 +239,9 @@ export function createLinkGraph({ tours, blogArticles, tourTitle, blogTitle, seo
 
     // --- city detail pages ----------------------------------------------
     for (const c of pubCities) {
-      const self = `georgia/${c.slug}`
-      put(self, CITIES_HUB, labelOfStatic(CITIES_HUB))
-      put(self, GEORGIA_HUB, labelOfStatic(GEORGIA_HUB))
+      const self = clean(cityPath(c.slug))
+      if (isGeorgian(c)) put(self, CITIES_HUB, labelOfStatic(CITIES_HUB))
+      put(self, hubsFor(c).country, labelOfStatic(hubsFor(c).country))
       if (c.thingsToDo) {
         const ttd = `georgia/${c.slug}/things-to-do-in-${c.slug}`
         const text = ttdLabel(c, cityLabel.get(c.slug))
@@ -299,7 +303,7 @@ export function createLinkGraph({ tours, blogArticles, tourTitle, blogTitle, seo
       const self = clean(ep.path)
       const entityPath =
         ep.type === 'region' ? `georgia/regions/${ep.slug}`
-        : ep.type === 'city' ? `georgia/${ep.slug}`
+        : ep.type === 'city' ? clean(cityPath(ep.slug))
         : (() => { const s = pubSites.find((x) => x.slug === ep.slug); return s ? `georgia/${s.parent}/${s.slug}` : null })()
       const entityText =
         ep.type === 'region' ? regionLabel.get(ep.slug)

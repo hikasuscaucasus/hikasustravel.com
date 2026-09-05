@@ -308,12 +308,14 @@ export function createJsonLdBuilder({ seoFor }) {
                 { name: t('city.thingsToDoCta', { city: e.name }) },
               ]
             : [
-                // A non-Georgian guide nests under its region page, so the trail
+                // A non-Georgian guide nests under its parent page, so the trail
                 // spells out the hierarchy the URL does (mirrors ThingsToDoCityPage).
+                // A REGION guide has the Regions step; a CITY guide does not,
+                // because its parent is not a region — it sits at /armenia/<city>.
                 HOME,
                 countryCrumb(country),
-                { name: t('nav.regions'), to: regionsHubPathFor(country) },
-                { name: e.name, to: regionPath(e.slug) },
+                ...(isRegion ? [{ name: t('nav.regions'), to: regionsHubPathFor(country) }] : []),
+                { name: e.name, to: isRegion ? regionPath(e.slug) : cityPath(e.slug) },
                 { name: t('city.thingsToDoCta', { city: e.name }) },
               ],
           url,

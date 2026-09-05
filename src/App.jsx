@@ -118,6 +118,7 @@ export function AppRoutes() {
           <Route path="armenia/regions/:regionSlug" element={<RegionPage />} />
           <Route path="armenia/regions/:regionSlug/things-to-do" element={<ThingsToDoCityPage />} />
           <Route path="armenia/:citySlug" element={<CityPage />} />
+          <Route path="armenia/:citySlug/things-to-do" element={<ThingsToDoCityPage />} />
           {/* Legacy URL redirects -> their new /georgia home (mirror the static
               redirect stubs emitted by scripts/prerender.js). */}
           <Route path="destinations/*" element={<DestinationsRedirect />} />

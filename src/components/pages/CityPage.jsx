@@ -420,6 +420,20 @@ export default function CityPage() {
     jsonLd,
   } : {})
 
+  // A city is reachable from exactly one country's route. Both /georgia/:citySlug
+  // and /armenia/:citySlug resolve the same registry by slug, so without this a
+  // non-Georgian city would also render under /georgia/<slug> (and vice versa) —
+  // a duplicate of the same page at a URL that is factually wrong. Send any such
+  // request to the record's own canonical path. Inert for every city reached at
+  // its canonical URL, which is every link the site itself emits.
+  if (published) {
+    const canonical = `/${lang}/${path}`
+    const trim = (p) => p.replace(/\/+$/, '')
+    if (trim(location.pathname) !== trim(canonical)) {
+      return <Navigate to={`${canonical}${location.search}`} replace />
+    }
+  }
+
   if (!published) {
     // Renamed-slug redirect (the SPA mirror of the static stubs emitted by
     // scripts/prerender.js). An old city slug that no longer matches a registry

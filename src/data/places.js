@@ -8545,6 +8545,31 @@ export const cities = [
     // cities keep showing the bare city name, which is why this is opt-in.
     heroTitleAsH1: true,
     noAutolink: true,
+    // Companion guide at /armenia/yerevan/things-to-do — the same block shape
+    // the Armenia regions and every Georgian city use. Georgia's cities keep
+    // their flat /georgia/<city>/things-to-do-in-<city> URL; a city outside
+    // Georgia nests the guide under the city, mirroring the regions.
+    thingsToDo: {
+      seoKey: 'thingsToDoYerevan', contentKey: 'thingsToDoYerevan',
+      noHero: true,
+      address: { addressLocality: 'Yerevan' },
+      // Drawn from the guide's own body, in the order it covers them. Feeds the
+      // page's ItemList node and the search index's keywords. Every entry is
+      // inside Yerevan: Garni, Geghard, Khor Virap, Echmiadzin and Lake Sevan
+      // appear in the body as DAY TRIPS from the city and are deliberately
+      // absent here — listing them would assert they sit in the capital.
+      attractions: [
+        'Republic Square', 'Cascade Complex', 'Cafesjian Center for the Arts',
+        'Matenadaran', 'Tsitsernakaberd', 'Erebuni Fortress',
+        'History Museum of Armenia', 'Blue Mosque', 'Vernissage Market',
+        'GUM Market', 'Kond', 'Victory Park', 'Mother Armenia',
+        'Saint Gregory the Illuminator Cathedral', 'Katoghike Church',
+        'Saint Sarkis Cathedral', 'Zoravor Surp Astvatsatsin',
+        'Karen Demirchyan Sports and Concert Complex', 'Hrazdan Stadium',
+        'Yerevan Metro', 'Parajanov Museum', 'Saryan Street', 'Opera House',
+        'Northern Avenue',
+      ],
+    },
   },
 ]
 
@@ -13919,6 +13944,12 @@ export const citiesOfCountry = (country) => cities.filter((c) => countryOf(c) ==
 export const thingsToDoPath = (citySlug) => {
   const r = regions.find((x) => x.slug === citySlug)
   if (r && countryOf(r) !== DEFAULT_COUNTRY) return `${regionPath(citySlug)}/things-to-do`
+  // A city outside Georgia nests its guide the same way: <city>/things-to-do,
+  // a literal reading of the hierarchy. Georgia's flat
+  // /georgia/<city>/things-to-do-in-<city> shape is unchanged — it is the URL
+  // those guides have always lived at.
+  const c = cities.find((x) => x.slug === citySlug)
+  if (c && countryOf(c) !== DEFAULT_COUNTRY) return `${cityPath(citySlug)}/things-to-do`
   return `/georgia/${citySlug}/things-to-do-in-${citySlug}`
 }
 // Both city- and region-parented sites live directly under /georgia/<parent>/<slug>.

@@ -51,8 +51,9 @@ export default function ThingsToDoCityPage() {
   // Two routes reach this page:
   //   Georgia — /georgia/:citySlug/:sub via the CitySubPage dispatcher, where
   //     the guide is identified by :sub === things-to-do-in-<citySlug>.
-  //   Armenia — /armenia/regions/:regionSlug/things-to-do, a static segment, so
-  //     it carries :regionSlug and no :sub at all.
+  //   Armenia — /armenia/regions/:regionSlug/things-to-do and
+  //     /armenia/:citySlug/things-to-do. `things-to-do` is a literal segment of
+  //     the route in both, so neither carries a :sub.
   // `slug` normalises the two so everything below is written once.
   const { citySlug, regionSlug, sub: ttd } = useParams()
   const slug = citySlug || regionSlug
@@ -70,9 +71,11 @@ export default function ThingsToDoCityPage() {
 
   const config = place && place.published ? place.thingsToDo : null
   // Guard the exact slug so /georgia/tbilisi/anything doesn't render this page.
-  // The Armenia route has no :sub to guard — `things-to-do` is a literal segment
-  // in the route itself, so matching the route is already the guard.
-  const valid = !!config && (regionSlug ? true : ttd === `things-to-do-in-${slug}`)
+  // A route with no :sub at all (both Armenia shapes) has nothing to guard —
+  // `things-to-do` is a literal segment of the route, so matching the route is
+  // already the guard. Keyed on :sub rather than on :regionSlug, so the Armenia
+  // CITY route is covered too.
+  const valid = !!config && (ttd ? ttd === `things-to-do-in-${slug}` : true)
 
   const heroImage = config ? (config.image || place.image) : null
   // Optional image plumbing, all opt-in on the `thingsToDo` block and mirroring
@@ -121,12 +124,14 @@ export default function ThingsToDoCityPage() {
           { name: ttdLabel },
         ]
       : [
-          // Armenia's guide nests under its region page, so the trail spells out
-          // the full hierarchy the URL does: Home > Armenia > Regions > <Region>
-          // > Things to Do in <Region>.
+          // Armenia's guide nests under its parent page, so the trail spells out
+          // the full hierarchy the URL does: a REGION guide reads Home > Armenia
+          // > Regions > <Region> > Things to Do in <Region>; a CITY guide has no
+          // Regions step, because its parent is not one — Yerevan holds separate
+          // capital status and sits at /armenia/<city>, not under /armenia/regions.
           { name: t('breadcrumb.home'), to: '/' },
           { name: t('nav.destinations.armenia'), to: countryBase(country) },
-          { name: t('nav.regions'), to: regionsHubPathFor(country) },
+          ...(isCity ? [] : [{ name: t('nav.regions'), to: regionsHubPathFor(country) }]),
           { name: place.name, to: placePath },
           { name: ttdLabel },
         ]
