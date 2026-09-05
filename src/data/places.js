@@ -3345,6 +3345,21 @@ export const regions = [
       ],
     },
   },
+  // Ararat. Same shape as Aragatsotn above and as every Georgian region — the
+  // only difference remains `country: 'armenia'`.
+  //
+  // No `thingsToDo` block by design: Ararat has no companion guide yet, so the
+  // region page simply renders without the things-to-do CTA (exactly as an
+  // unpublished-guide Georgian region would). Add the block if one is written.
+  //
+  // `noHero` while no approved Ararat photograph exists; `noAutolink` keeps the
+  // authored body and FAQ free of editorial links, as specified.
+  {
+    slug: 'ararat', name: 'Ararat', published: true, country: 'armenia',
+    seoKey: 'ararat', contentKey: 'ararat',
+    noHero: true,
+    noAutolink: true,
+  },
 ]
 
 // ---------------------------------------------------------------------------
