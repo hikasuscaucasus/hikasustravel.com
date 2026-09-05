@@ -3359,6 +3359,23 @@ export const regions = [
     seoKey: 'ararat', contentKey: 'ararat',
     noHero: true,
     noAutolink: true,
+    // Companion guide at /armenia/regions/ararat/things-to-do — same block shape
+    // as Aragatsotn's and as every Georgian region's. `noAutolink` above covers
+    // this guide too (ThingsToDoCityPage reads the parent place's flag).
+    thingsToDo: {
+      seoKey: 'thingsToDoArarat', contentKey: 'thingsToDoArarat',
+      noHero: true,
+      address: { addressRegion: 'Ararat' },
+      // Drawn from the guide's own body, in the order it covers them. Feeds the
+      // page's ItemList node and the search index's keywords.
+      attractions: [
+        'Khor Virap', 'Saint Astvatsatsin Church', 'Ancient Artashat', 'Dvin',
+        'Khosrov Forest State Reserve', 'Astghik Waterfall', 'Vahagn Waterfall',
+        'Kakavaberd', 'Aghjots Monastery', 'Tapi Fortress', 'Urtsi Fortress',
+        'Azat Reservoir', "Angels' Canyon", "Hell's Canyon", 'Armash Ponds',
+        'Surenavan', 'Paruyr Sevak House-Museum',
+      ],
+    },
   },
 ]
 
