@@ -3480,6 +3480,24 @@ export const regions = [
       ],
     },
   },
+  // Lori. Same shape as the five Armenia regions above and as every Georgian
+  // region — the only difference remains `country: 'armenia'`.
+  //
+  // No `thingsToDo` block yet: the companion guide is a separate task, so the
+  // region page renders without the things-to-do CTA. Add the block when one
+  // is written.
+  //
+  // Lori had NO record here before — only an inert `published: false` row in
+  // siteData.js, like every other seeded Armenia region.
+  //
+  // `noHero` while no approved Lori photograph exists; `noAutolink` keeps the
+  // authored body and FAQ free of editorial links, as specified.
+  {
+    slug: 'lori', name: 'Lori', published: true, country: 'armenia',
+    seoKey: 'lori', contentKey: 'lori',
+    noHero: true,
+    noAutolink: true,
+  },
 ]
 
 // ---------------------------------------------------------------------------
