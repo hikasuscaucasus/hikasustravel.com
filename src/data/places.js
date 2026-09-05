@@ -8691,6 +8691,30 @@ export const cities = [
       ],
     },
   },
+  // Dilijan. Armenia's second published city, and the first that sits inside a
+  // marz: `region: 'tavush'` points at the published Tavush region record, the
+  // same way a Georgian city points at its region. It still lives at
+  // /armenia/dilijan, one level under the country — cities are NOT nested under
+  // regions on either country (Georgia has /georgia/telavi, not
+  // /georgia/kakheti/telavi), so this mirrors the established shape exactly.
+  //
+  // `noHero` while no approved Dilijan photograph exists; `noAutolink` because
+  // the body ships with zero editorial links by request (its references to the
+  // forthcoming things-to-do guide stay plain text); `heroTitleAsH1` because the
+  // supplied H1 is the authored headline, not the bare town name.
+  //
+  // No `thingsToDo` block: the "things to do in Dilijan" guide is a separate
+  // page that does not exist yet, so no CTA and no /things-to-do URL.
+  {
+    slug: 'dilijan', name: 'Dilijan', region: 'tavush', published: true, country: 'armenia',
+    seoKey: 'dilijan', contentKey: 'dilijan',
+    // Per-page geo tags (geo.region / geo.placename / geo.position / ICBM).
+    // AM-TV is Tavush's ISO 3166-2 code.
+    geoMeta: { region: 'AM-TV', placename: 'Dilijan', lat: '40.7414', lng: '44.8636' },
+    noHero: true,
+    heroTitleAsH1: true,
+    noAutolink: true,
+  },
   // Yerevan — the registry's first non-Georgian city, and the reason cityPath()
   // resolves its record the way regionPath() already did: `country: 'armenia'`
   // puts it at /armenia/yerevan. Every Georgian city keeps the exact URL it has

@@ -113,7 +113,7 @@ export function AppRoutes() {
               Router ranks them above `armenia/:citySlug` and the regions tree
               cannot be shadowed by a city slug. Region guides keep nesting under
               their region as a static `things-to-do` segment. */}
-          <Route path="armenia" element={<CountryStubPage pageKey="armenia" seoKey="armenia" path="armenia" links={[{ to: '/armenia/regions', labelKey: 'nav.regions' }, { to: '/armenia/yerevan', labelKey: 'nav.yerevan' }]} />} />
+          <Route path="armenia" element={<CountryStubPage pageKey="armenia" seoKey="armenia" path="armenia" links={[{ to: '/armenia/regions', labelKey: 'nav.regions' }, { to: '/armenia/yerevan', labelKey: 'nav.yerevan' }, { to: '/armenia/dilijan', labelKey: 'nav.dilijan' }]} />} />
           <Route path="armenia/regions" element={<ArmeniaRegionsHubPage />} />
           <Route path="armenia/regions/:regionSlug" element={<RegionPage />} />
           <Route path="armenia/regions/:regionSlug/things-to-do" element={<ThingsToDoCityPage />} />
