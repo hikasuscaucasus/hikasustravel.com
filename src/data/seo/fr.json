@@ -1478,5 +1478,25 @@
     "title": "Page Non Trouvée – Hikasus Travel",
     "description": "La page que vous cherchez n'existe pas. Retournez à l'accueil pour découvrir nos tours en Géorgie.",
     "keywords": "page non trouvée, 404, Hikasus Travel"
+  },
+  "armenia": {
+    "title": "Guide de voyage Arménie | Hikasus Travel",
+    "description": "Découvrez la collection grandissante de guides de voyage sur l'Arménie de Hikasus Travel, avec des informations pratiques sur les régions, les paysages, l'histoire et la culture du pays.",
+    "keywords": "guide de voyage Arménie, régions d'Arménie, visiter l'Arménie, destinations Arménie, voyage Caucase, Hikasus Travel"
+  },
+  "armeniaRegions": {
+    "title": "Régions d'Arménie : guides de voyage | Hikasus Travel",
+    "description": "Découvrez les guides régionaux de Hikasus Travel sur l'Arménie, avec des informations pratiques sur les paysages, l'histoire, les sites et la préparation du voyage.",
+    "keywords": "régions d'Arménie, provinces arméniennes, marzer, Aragatsotn, guides régionaux Arménie, préparer un voyage en Arménie"
+  },
+  "aragatsotn": {
+    "title": "Aragatsotn, Arménie : guide de l'Aragats et d'Amberd",
+    "description": "Un guide de la région arménienne de l'Aragatsotn : le mont Aragats et le lac Kari, la forteresse d'Amberd, les monastères de Saghmosavank et Hovhannavank, Byurakan et les domaines viticoles.",
+    "keywords": "Aragatsotn, mont Aragats, lac Kari, forteresse d'Amberd, Vahramashen, Saghmosavank, Hovhannavank, gorges de Kasagh, Ashtarak, Oshakan, Mesrop Mashtots, observatoire de Byurakan, Talin, Dashtadem, vin d'Arménie"
+  },
+  "thingsToDoAragatsotn": {
+    "title": "Que faire dans l'Aragatsotn, Arménie : guide complet",
+    "description": "Les meilleures choses à faire dans l'Aragatsotn : la marche Saghmosavank-Hovhannavank dans les gorges, Ashtarak, l'observatoire de Byurakan, les domaines viticoles, Dashtadem et la cascade de Gegharot.",
+    "keywords": "que faire dans l'Aragatsotn, marche Saghmosavank Hovhannavank, gorges de Kasagh, Ashtarak, observatoire de Byurakan, domaines viticoles Aragatsotn, Aparan, Talin, Dashtadem, cascade de Gegharot"
   }
 }

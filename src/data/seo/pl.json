@@ -1478,5 +1478,25 @@
     "title": "Strona Nie Znaleziona – Hikasus Travel",
     "description": "Strona, której szukasz, nie istnieje. Wróć na stronę główną, aby odkryć wycieczki po Gruzji.",
     "keywords": "strona nie znaleziona, 404, Hikasus Travel"
+  },
+  "armenia": {
+    "title": "Przewodnik po Armenii | Hikasus Travel",
+    "description": "Poznaj rosnącą kolekcję przewodników po Armenii od Hikasus Travel z praktycznymi informacjami o regionach, krajobrazach, historii i kulturze kraju.",
+    "keywords": "przewodnik po Armenii, regiony Armenii, zwiedzanie Armenii, atrakcje Armenii, podróże na Kaukaz, Hikasus Travel"
+  },
+  "armeniaRegions": {
+    "title": "Regiony Armenii: przewodniki | Hikasus Travel",
+    "description": "Poznaj przewodniki regionalne Hikasus Travel po Armenii z praktycznymi informacjami o krajobrazach, historii, zabytkach i planowaniu podróży.",
+    "keywords": "regiony Armenii, prowincje Armenii, marzer, Aragatsotn, przewodniki regionalne Armenia, planowanie podróży do Armenii"
+  },
+  "aragatsotn": {
+    "title": "Aragatsotn, Armenia: przewodnik po Aragats i Amberd",
+    "description": "Przewodnik po ormiańskim regionie Aragatsotn: góra Aragats i jezioro Kari, twierdza Amberd, klasztory Saghmosavank i Hovhannavank, Byurakan i winnice.",
+    "keywords": "Aragatsotn, góra Aragats, jezioro Kari, twierdza Amberd, Vahramashen, Saghmosavank, Hovhannavank, wąwóz Kasagh, Ashtarak, Oshakan, Mesrop Mashtots, Obserwatorium w Byurakanie, Talin, Dashtadem, wino Armenia"
+  },
+  "thingsToDoAragatsotn": {
+    "title": "Co robić w Aragatsotn, Armenia: pełny przewodnik",
+    "description": "Najlepsze atrakcje Aragatsotn: wędrówka wąwozem między Saghmosavankiem a Hovhannavankiem, Ashtarak, Obserwatorium w Byurakanie, winnice, Dashtadem i wodospad Gegharot.",
+    "keywords": "co robić w Aragatsotn, wędrówka Saghmosavank Hovhannavank, wąwóz Kasagh, Ashtarak, Obserwatorium w Byurakanie, winnice Aragatsotn, Aparan, Talin, Dashtadem, wodospad Gegharot"
   }
 }

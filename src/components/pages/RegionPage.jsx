@@ -11,7 +11,10 @@ import useT from '../../i18n/useT'
 import useLang from '../../i18n/useLang'
 import useSEO from '../../hooks/useSEO'
 import { getSEO } from '../../data/seoData'
-import { getRegion, regionPath, thingsToDoPath } from '../../data/places'
+import {
+  getRegion, regionPath, thingsToDoPath, countryOf, countryBase, countryName,
+  countryCode, regionsHubPathFor, destinationsBase, DEFAULT_COUNTRY,
+} from '../../data/places'
 import { autolinkHtml } from '../../utils/autolink'
 import NotFoundPage from './NotFoundPage'
 
@@ -75,11 +78,21 @@ export default function RegionPage() {
   // Abkhazia, which carry no `thingsToDo` block.
   const hasThingsToDo = published && !!region.thingsToDo
 
+  // Country of this region — 'georgia' for every record that predates the
+  // country field, so the Georgian trail below is exactly the one this page has
+  // always built (same labels, same targets, same order).
+  const country = countryOf(published ? region : null)
+  const isGeorgia = country === DEFAULT_COUNTRY
   const trail = published
     ? [
         { name: t('breadcrumb.home'), to: '/' },
-        { name: t('nav.allDestinations'), to: '/georgia' },
-        { name: t('nav.regions'), to: '/georgia/regions' },
+        // Georgia's country crumb is the long-standing "All Destinations" label
+        // pointing at /georgia. Armenia has no such hub label, so it uses the
+        // country's own name — the same ui key the Destinations dropdown uses.
+        isGeorgia
+          ? { name: t('nav.allDestinations'), to: destinationsBase }
+          : { name: t('nav.destinations.armenia'), to: countryBase(country) },
+        { name: t('nav.regions'), to: regionsHubPathFor(country) },
         { name: region.name },
       ]
     : []
@@ -112,8 +125,13 @@ export default function RegionPage() {
           // crop via `jsonLdImage` so schema.org, og:image and twitter:image all
           // name the same file — the mechanism SitePage already uses. Every
           // region without the field keeps the hero rung exactly as before.
-          image: `${SITE_URL}${region.jsonLdImage || heroImage}`,
-          containedInPlace: { '@type': 'Country', name: 'Georgia' },
+          // Omitted entirely on a `noHero` region: there is no image to name, and
+          // emitting `${SITE_URL}null` would be a broken URL in the graph. Every
+          // region with a hero is unchanged.
+          ...((region.jsonLdImage || heroImage)
+            ? { image: `${SITE_URL}${region.jsonLdImage || heroImage}` }
+            : {}),
+          containedInPlace: { '@type': 'Country', name: countryName(country) },
         },
         // The cover photo plus the contextual body photos (our own). The non-hero
         // ones render as inline <figure> blocks in the per-locale body HTML (not a
@@ -140,7 +158,7 @@ export default function RegionPage() {
               '@type': 'PostalAddress',
               addressLocality: img.locality,
               addressRegion: img.region,
-              addressCountry: 'GE',
+              addressCountry: countryCode(country),
             },
             geo: { '@type': 'GeoCoordinates', latitude: img.geo.lat, longitude: img.geo.lng },
           },
@@ -182,7 +200,7 @@ export default function RegionPage() {
                           '@type': 'PostalAddress',
                           addressLocality: img.locality,
                           addressRegion: img.region,
-                          addressCountry: 'GE',
+                          addressCountry: countryCode(country),
                         },
                       }
                     : {}),
@@ -213,7 +231,7 @@ export default function RegionPage() {
       ],
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [published, lang, path, seo.description, heroImage, faqItems])
+  }, [published, lang, path, seo.description, heroImage, faqItems, country])
 
   useSEO(published ? { ...seo, lang, path, image: heroImage, jsonLd } : {})
 
@@ -225,15 +243,30 @@ export default function RegionPage() {
       <div className="dest-breadcrumbs">
         <Breadcrumbs trail={trail} />
       </div>
-      {/* `heroClass` is optional: a region that sets it gets a responsive
+      {/* Hero. A region may opt out of the photo hero entirely (`noHero`) while
+          a genuine image is sourced — same flag and same replacement as CityPage
+          and SitePage. The title band is NOT a removal: it keeps <main>'s child
+          count stable so the .page-items :nth-child() banding below is
+          unaffected, it carries the H1 that otherwise lives inside the hero (so
+          the page still has exactly one), and its solid background keeps the
+          transparent header's cream logo/nav legible. No image, no placeholder,
+          no reserved 100dvh.
+
+          `heroClass` is optional: a region that sets it gets a responsive
           image-set() ladder from CSS (.hero--<slug>) instead of the single-width
           inline background. Regions without it are unchanged. */}
-      <HeroSection
-        image={heroImage}
-        imageAvif={region.imageAvif}
-        bgClass={region.heroClass}
-        title={(page && page.heroTitle) || region.name}
-      />
+      {region.noHero ? (
+        <section className="dest-title-band">
+          <h1>{(page && page.heroTitle) || region.name}</h1>
+        </section>
+      ) : (
+        <HeroSection
+          image={heroImage}
+          imageAvif={region.imageAvif}
+          bgClass={region.heroClass}
+          title={(page && page.heroTitle) || region.name}
+        />
+      )}
       <section className="page-items about-georgia">
         <EntityToursTag type="region" slug={region.slug} name={region.name} />
         <FadeUp>

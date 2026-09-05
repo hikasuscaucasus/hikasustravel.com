@@ -1478,5 +1478,25 @@
     "title": "Seite Nicht Gefunden – Hikasus Travel",
     "description": "Die gesuchte Seite existiert nicht. Kehren Sie zur Startseite zurück, um Touren in Georgien zu entdecken.",
     "keywords": "Seite nicht gefunden, 404, Hikasus Travel"
+  },
+  "armenia": {
+    "title": "Reiseführer Armenien | Hikasus Travel",
+    "description": "Entdecken Sie die wachsende Sammlung von Armenien-Reiseführern von Hikasus Travel, mit praktischen Informationen zu den Regionen, Landschaften, zur Geschichte und Kultur des Landes.",
+    "keywords": "Reiseführer Armenien, Regionen Armeniens, Armenien besuchen, Reiseziele Armenien, Reisen Kaukasus, Hikasus Travel"
+  },
+  "armeniaRegions": {
+    "title": "Regionen Armeniens: Reiseführer | Hikasus Travel",
+    "description": "Entdecken Sie die Regionalführer von Hikasus Travel zu Armenien, mit praktischen Informationen zu Landschaften, Geschichte, Sehenswürdigkeiten und Reiseplanung.",
+    "keywords": "Regionen Armeniens, armenische Provinzen, Marzer, Aragatsotn, Regionalführer Armenien, Reiseplanung Armenien"
+  },
+  "aragatsotn": {
+    "title": "Aragatsotn, Armenien: Aragats & Amberd Reiseführer",
+    "description": "Ein Führer durch die armenische Region Aragatsotn: der Berg Aragats und der Kari-See, die Festung Amberd, die Klöster Saghmosavank und Hovhannavank, Byurakan und die Weingüter.",
+    "keywords": "Aragatsotn, Berg Aragats, Kari-See, Festung Amberd, Vahramashen, Saghmosavank, Hovhannavank, Kasagh-Schlucht, Ashtarak, Oshakan, Mesrop Mashtots, Observatorium Byurakan, Talin, Dashtadem, Wein Armenien"
+  },
+  "thingsToDoAragatsotn": {
+    "title": "Aragatsotn, Armenien: Aktivitäten & Sehenswürdigkeiten",
+    "description": "Das Beste in Aragatsotn: die Schluchtwanderung Saghmosavank–Hovhannavank, Ashtarak, das Observatorium Byurakan, Weingüter, Dashtadem und der Gegharot-Wasserfall.",
+    "keywords": "Aragatsotn Aktivitäten, Wanderung Saghmosavank Hovhannavank, Kasagh-Schlucht, Ashtarak, Observatorium Byurakan, Weingüter Aragatsotn, Aparan, Talin, Dashtadem, Gegharot-Wasserfall, Sterne beobachten Armenien"
   }
 }

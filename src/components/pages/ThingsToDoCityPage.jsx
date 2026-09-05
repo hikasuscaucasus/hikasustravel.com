@@ -10,7 +10,10 @@ import useT from '../../i18n/useT'
 import useLang from '../../i18n/useLang'
 import useSEO from '../../hooks/useSEO'
 import { getSEO } from '../../data/seoData'
-import { getCity, getRegion, cityPath, regionPath, thingsToDoPath } from '../../data/places'
+import {
+  getCity, getRegion, cityPath, regionPath, thingsToDoPath, countryOf, countryBase,
+  countryCode, regionsHubPathFor, destinationsBase, DEFAULT_COUNTRY,
+} from '../../data/places'
 import { autolinkHtml } from '../../utils/autolink'
 import NotFoundPage from './NotFoundPage'
 
@@ -45,15 +48,20 @@ function creditFields(img) {
  * anything else renders the 404 page (never an empty stub).
  */
 export default function ThingsToDoCityPage() {
-  // Served via the /georgia/:citySlug/:sub dispatcher (CitySubPage); the second
-  // segment arrives as :sub.
-  const { citySlug, sub: ttd } = useParams()
+  // Two routes reach this page:
+  //   Georgia — /georgia/:citySlug/:sub via the CitySubPage dispatcher, where
+  //     the guide is identified by :sub === things-to-do-in-<citySlug>.
+  //   Armenia — /armenia/regions/:regionSlug/things-to-do, a static segment, so
+  //     it carries :regionSlug and no :sub at all.
+  // `slug` normalises the two so everything below is written once.
+  const { citySlug, regionSlug, sub: ttd } = useParams()
+  const slug = citySlug || regionSlug
   // The first segment is a city OR a published region (disjoint namespaces); a
   // region's things-to-do guide (e.g. Adjara) reuses this same page/template.
-  const city = getCity(citySlug)
-  const place = city || getRegion(citySlug)
+  const city = getCity(slug)
+  const place = city || getRegion(slug)
   const isCity = !!city
-  const placePath = isCity ? cityPath(citySlug) : regionPath(citySlug)
+  const placePath = isCity ? cityPath(slug) : regionPath(slug)
   const t = useT()
   const { pages, enPages } = useContext(I18nContext)
   const { lang } = useLang()
@@ -62,7 +70,9 @@ export default function ThingsToDoCityPage() {
 
   const config = place && place.published ? place.thingsToDo : null
   // Guard the exact slug so /georgia/tbilisi/anything doesn't render this page.
-  const valid = !!config && ttd === `things-to-do-in-${citySlug}`
+  // The Armenia route has no :sub to guard — `things-to-do` is a literal segment
+  // in the route itself, so matching the route is already the guard.
+  const valid = !!config && (regionSlug ? true : ttd === `things-to-do-in-${slug}`)
 
   const heroImage = config ? (config.image || place.image) : null
   // Optional image plumbing, all opt-in on the `thingsToDo` block and mirroring
@@ -94,16 +104,32 @@ export default function ThingsToDoCityPage() {
     () => faqItems.map((it) => ({ ...it, content: noLink ? it.content : autolinkHtml(it.content, lang, pages) })),
     [faqItems, lang, pages, noLink],
   )
-  const path = valid ? thingsToDoPath(citySlug).replace(/^\//, '') : ''
+  const path = valid ? thingsToDoPath(slug).replace(/^\//, '') : ''
   const ttdLabel = valid ? t('city.thingsToDoCta', { city: place.name }) : ''
 
+  // Country of the parent place — 'georgia' for every record that predates the
+  // country field, so the Georgian trail below is byte-for-byte the one this
+  // page has always built.
+  const country = countryOf(valid ? place : null)
+  const isGeorgia = country === DEFAULT_COUNTRY
   const trail = valid
-    ? [
-        { name: t('breadcrumb.home'), to: '/' },
-        { name: t('nav.allDestinations'), to: '/georgia' },
-        { name: place.name, to: placePath },
-        { name: ttdLabel },
-      ]
+    ? isGeorgia
+      ? [
+          { name: t('breadcrumb.home'), to: '/' },
+          { name: t('nav.allDestinations'), to: destinationsBase },
+          { name: place.name, to: placePath },
+          { name: ttdLabel },
+        ]
+      : [
+          // Armenia's guide nests under its region page, so the trail spells out
+          // the full hierarchy the URL does: Home > Armenia > Regions > <Region>
+          // > Things to Do in <Region>.
+          { name: t('breadcrumb.home'), to: '/' },
+          { name: t('nav.destinations.armenia'), to: countryBase(country) },
+          { name: t('nav.regions'), to: regionsHubPathFor(country) },
+          { name: place.name, to: placePath },
+          { name: ttdLabel },
+        ]
     : []
 
   // Intercept in-content internal links (data-internal) for same-tab SPA nav.
@@ -132,7 +158,10 @@ export default function ThingsToDoCityPage() {
           description: seo.description,
           inLanguage: lang,
           mainEntityOfPage: url,
-          image: `${SITE_URL}${heroImage}`,
+          // Omitted entirely on a `noHero` page: there is no image to name, and
+          // emitting `${SITE_URL}null` would be a broken URL in the graph. Every
+          // page with a hero is unchanged.
+          ...(heroImage ? { image: `${SITE_URL}${heroImage}` } : {}),
           author: { '@type': 'Organization', name: 'Hikasus Travel' },
           publisher: { '@type': 'Organization', name: 'Hikasus Travel', url: SITE_URL },
         },
@@ -154,7 +183,7 @@ export default function ThingsToDoCityPage() {
             item: {
               '@type': 'TouristAttraction',
               name,
-              address: { '@type': 'PostalAddress', ...config.address, addressCountry: 'GE' },
+              address: { '@type': 'PostalAddress', ...config.address, addressCountry: countryCode(country) },
             },
           })),
         },
@@ -226,7 +255,7 @@ export default function ThingsToDoCityPage() {
                             '@type': 'PostalAddress',
                             addressLocality: img.locality,
                             addressRegion: img.region,
-                            addressCountry: 'GE',
+                            addressCountry: countryCode(country),
                           },
                         }
                       : {}),
@@ -249,7 +278,7 @@ export default function ThingsToDoCityPage() {
       ],
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [valid, lang, path, seo.description, heroImage, faqItems, ttdLabel, heroImageMeta, heroAlt])
+  }, [valid, lang, path, seo.description, heroImage, faqItems, ttdLabel, heroImageMeta, heroAlt, country])
 
   useSEO(valid ? {
     ...seo, lang, path,
@@ -275,9 +304,19 @@ export default function ThingsToDoCityPage() {
       <div className="dest-breadcrumbs">
         <Breadcrumbs trail={trail} />
       </div>
-      <HeroSection image={heroImage} imageAvif={config.imageAvif} bgClass={config.heroClass} title={page.heroTitle} />
+      {/* Hero, or the no-image title band when the guide opts out (`noHero` on
+          the thingsToDo block) — the same flag and same replacement CityPage,
+          SitePage and RegionPage use. Keeps exactly one H1 and <main>'s child
+          count stable; no placeholder and no reserved 100dvh. */}
+      {config.noHero ? (
+        <section className="dest-title-band">
+          <h1>{page.heroTitle}</h1>
+        </section>
+      ) : (
+        <HeroSection image={heroImage} imageAvif={config.imageAvif} bgClass={config.heroClass} title={page.heroTitle} />
+      )}
       <section className="page-items about-georgia">
-        <EntityToursTag type={isCity ? 'city' : 'region'} slug={citySlug} name={place.name} />
+        <EntityToursTag type={isCity ? 'city' : 'region'} slug={slug} name={place.name} />
         <FadeUp>
           <div ref={contentRef} dangerouslySetInnerHTML={{ __html: linkedContent }} />
         </FadeUp>

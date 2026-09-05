@@ -32,7 +32,11 @@ import { fileURLToPath, pathToFileURL } from 'url'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const src = (p) => pathToFileURL(join(__dirname, '..', 'src', p)).href
 
-const { regions, cities, sites, getCity, getRegion } = await import(src('data/places.js'))
+const {
+  regions, cities, sites, getCity, getRegion,
+  regionPath, thingsToDoPath, countryOf, countryBase, countryName,
+  regionsHubPathFor, DEFAULT_COUNTRY,
+} = await import(src('data/places.js'))
 const { publishedBorderPages, borderCrossings, borderOverview } = await import(src('data/borders.js'))
 
 const SITE_URL = 'https://www.hikasustravel.com'
@@ -132,10 +136,20 @@ export function createJsonLdBuilder({ seoFor }) {
     })
     const HOME = { name: t('breadcrumb.home'), to: '/' }
     const ALL_DEST = { name: t('nav.allDestinations'), to: '/georgia' }
+    // Country crumb. Georgia keeps the long-standing "All Destinations" -> /georgia
+    // crumb; a country added later uses its own name (the same ui key the
+    // Destinations dropdown uses) pointing at its own landing page. Mirrors
+    // RegionPage/ThingsToDoCityPage exactly so the prerendered graph and the
+    // hydrated one stay identical.
+    const countryCrumb = (country) =>
+      country === DEFAULT_COUNTRY
+        ? ALL_DEST
+        : { name: t(`nav.destinations.${country}`), to: countryBase(country) }
 
     // --- regions ---------------------------------------------------------
     for (const r of regions.filter((x) => x.published)) {
-      const path = `georgia/regions/${r.slug}`
+      const country = countryOf(r)
+      const path = clean(regionPath(r.slug))
       const url = `${SITE_URL}/${lang}/${path}`
       const seo = seoFor(r.seoKey, lang)
       put(path, [
@@ -146,10 +160,16 @@ export function createJsonLdBuilder({ seoFor }) {
           url,
           // Opt-in `jsonLdImage`, same as the sites branch below: a region may
           // name a dedicated social crop here. Regions without it are unchanged.
-          image: `${SITE_URL}${r.jsonLdImage || r.image}`,
-          containedInPlace: { '@type': 'Country', name: 'Georgia' },
+          // Omitted entirely on a `noHero` region — there is no image to name.
+          ...((r.jsonLdImage || r.image) ? { image: `${SITE_URL}${r.jsonLdImage || r.image}` } : {}),
+          containedInPlace: { '@type': 'Country', name: countryName(country) },
         },
-        breadcrumbs([HOME, ALL_DEST, { name: t('nav.regions'), to: '/georgia/regions' }, { name: r.name }], url),
+        breadcrumbs([
+          HOME,
+          countryCrumb(country),
+          { name: t('nav.regions'), to: regionsHubPathFor(country) },
+          { name: r.name },
+        ], url),
       ])
     }
 
@@ -235,10 +255,12 @@ export function createJsonLdBuilder({ seoFor }) {
 
     // --- things-to-do guides (city- and region-owned) -----------------------
     for (const e of [...regions, ...cities].filter((x) => x.published && x.thingsToDo)) {
-      const path = `georgia/${e.slug}/things-to-do-in-${e.slug}`
+      const path = clean(thingsToDoPath(e.slug))
       const url = `${SITE_URL}/${lang}/${path}`
       const seo = seoFor(e.thingsToDo.seoKey, lang)
       const isRegion = regions.includes(e)
+      const country = countryOf(e)
+      const heroSrc = e.thingsToDo.image || e.image
       put(path, [
         {
           '@type': 'Article',
@@ -246,7 +268,8 @@ export function createJsonLdBuilder({ seoFor }) {
           description: seo.description,
           inLanguage: lang,
           mainEntityOfPage: url,
-          image: `${SITE_URL}${e.thingsToDo.image || e.image}`,
+          // Omitted entirely on a `noHero` guide — there is no image to name.
+          ...(heroSrc ? { image: `${SITE_URL}${heroSrc}` } : {}),
           author: ORG,
           publisher: PUBLISHER,
         },
@@ -264,13 +287,26 @@ export function createJsonLdBuilder({ seoFor }) {
         // (`config.image || place.image`) and the Article node's `image` above.
         // NOTE: the inline body-figure ImageObjects are still runtime-only here —
         // this closes the hero gap, not that one.
-        imageNode(e.thingsToDo.imageMeta, e.thingsToDo.image || e.image, lang, url),
-        breadcrumbs([
-          HOME,
-          ALL_DEST,
-          { name: e.name, to: isRegion ? `/georgia/regions/${e.slug}` : `/georgia/${e.slug}` },
-          { name: t('city.thingsToDoCta', { city: e.name }) },
-        ], url),
+        imageNode(e.thingsToDo.imageMeta, heroSrc, lang, url),
+        breadcrumbs(
+          country === DEFAULT_COUNTRY
+            ? [
+                HOME,
+                ALL_DEST,
+                { name: e.name, to: isRegion ? regionPath(e.slug) : `/georgia/${e.slug}` },
+                { name: t('city.thingsToDoCta', { city: e.name }) },
+              ]
+            : [
+                // A non-Georgian guide nests under its region page, so the trail
+                // spells out the hierarchy the URL does (mirrors ThingsToDoCityPage).
+                HOME,
+                countryCrumb(country),
+                { name: t('nav.regions'), to: regionsHubPathFor(country) },
+                { name: e.name, to: regionPath(e.slug) },
+                { name: t('city.thingsToDoCta', { city: e.name }) },
+              ],
+          url,
+        ),
       ])
     }
 

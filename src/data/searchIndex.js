@@ -20,6 +20,7 @@ import {
   regions, cities, sites,
   regionPath, cityPath, sitePath, thingsToDoPath, siteLocation,
   destinationsBase, regionsHubPath, citiesHubPath, placesHubPath,
+  armeniaBase, armeniaRegionsHubPath,
 } from './places.js'
 import { tours } from './tours.js'
 import { blogArticles } from './blogData.js'
@@ -77,6 +78,8 @@ const STATIC_PAGES = [
   { path: regionsHubPath, seoKey: 'destinationsRegions', type: 'info' },
   { path: citiesHubPath, seoKey: 'destinationsCities', type: 'info' },
   { path: placesHubPath, seoKey: 'destinationsPlaces', type: 'info' },
+  { path: armeniaBase, seoKey: 'armenia', type: 'info' },
+  { path: armeniaRegionsHubPath, seoKey: 'armeniaRegions', type: 'info' },
 ]
 
 const clean = (p) => String(p || '').replace(/^\//, '')
@@ -90,7 +93,7 @@ const clean = (p) => String(p || '').replace(/^\//, '')
 // pages that merely mention it) while the /georgia/regions hub itself keeps
 // "regions" as its own alias. `georgia` alone prefixes ~250 paths, so leaving it
 // in would make it match nearly everything.
-const PATH_CONTAINERS = new Set(['georgia', 'regions'])
+const PATH_CONTAINERS = new Set(['georgia', 'armenia', 'regions'])
 const pathAlias = (path) => {
   const segs = clean(path).split('/').filter(Boolean)
   return segs
@@ -166,7 +169,10 @@ export function buildSearchIndex({ lang, pages = {}, t, tourTranslations = null 
   // curated pages.json entry first, then the per-language SEO title trimmed to
   // a card name (non-English only, so English keeps its house-style name),
   // then the registry name.
-  const regionItems = pages.destinationsRegions?.items || {}
+  // Region card names/descriptions come from whichever regions hub owns the
+  // region — Georgia's or Armenia's. Region slugs are unique across countries,
+  // so merging the two maps can't collide, and Georgia's entries are unchanged.
+  const regionItems = { ...(pages.destinationsRegions?.items || {}), ...(pages.armeniaRegions?.items || {}) }
   const cityItems = pages.destinationsCities?.items || {}
   const placeItems = pages.destinationsPlaces?.items || {}
 

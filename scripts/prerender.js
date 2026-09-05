@@ -299,6 +299,8 @@ const seoPageMap = {
   'georgia/regions': 'destinationsRegions',
   'georgia/cities': 'destinationsCities',
   'georgia/places-to-visit': 'destinationsPlaces',
+  'armenia': 'armenia',
+  'armenia/regions': 'armeniaRegions',
   // City detail pages + their things-to-do guides are emitted from the
   // destination registry (publishedDestinationPages), not from this map.
   'private-tours': 'privateTours',

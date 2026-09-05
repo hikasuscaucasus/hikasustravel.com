@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { routeComponent } from './routeComponents'
 import I18nProvider from './i18n/I18nProvider'
 import Layout from './components/layout/Layout'
-import { cities, regions } from './data/places'
+import { cities, regions, countryOf, DEFAULT_COUNTRY } from './data/places'
 import { tours } from './data/tours'
 import { privateTourCollectionPages } from './data/privateTourCollections'
 
@@ -28,11 +28,16 @@ const AbkhaziaPage = routeComponent(() => import('./components/pages/AbkhaziaPag
 const DestinationsPage = routeComponent(() => import('./components/pages/DestinationsPage'))
 // Named exports need unwrapping — React.lazy resolves the `default` binding.
 const RegionsHubPage = routeComponent(() => import('./components/pages/DestinationHubs'), (m) => m.RegionsHubPage)
+const ArmeniaRegionsHubPage = routeComponent(() => import('./components/pages/DestinationHubs'), (m) => m.ArmeniaRegionsHubPage)
+const CountryStubPage = routeComponent(() => import('./components/pages/CountryStubPage'))
 const CitiesHubPage = routeComponent(() => import('./components/pages/DestinationHubs'), (m) => m.CitiesHubPage)
 const PlacesToVisitHubPage = routeComponent(() => import('./components/pages/DestinationHubs'), (m) => m.PlacesToVisitHubPage)
 const CityPage = routeComponent(() => import('./components/pages/CityPage'))
 const RegionPage = routeComponent(() => import('./components/pages/RegionPage'))
 const CitySubPage = routeComponent(() => import('./components/pages/CitySubPage'))
+// Georgia reaches this through the CitySubPage dispatcher; Armenia routes to it
+// directly, because its guide lives on a static `things-to-do` segment.
+const ThingsToDoCityPage = routeComponent(() => import('./components/pages/ThingsToDoCityPage'))
 const BorderCrossingPage = routeComponent(() => import('./components/pages/BorderCrossingPage'))
 const DestinationsRedirect = routeComponent(() => import('./components/pages/LegacyRedirects'), (m) => m.DestinationsRedirect)
 const ThingsToDoRedirect = routeComponent(() => import('./components/pages/LegacyRedirects'), (m) => m.ThingsToDoRedirect)
@@ -97,12 +102,26 @@ export function AppRoutes() {
               sites (sub === a city-parented site slug). CitySubPage dispatches
               between them and 404s otherwise. */}
           <Route path="georgia/:citySlug/:sub" element={<CitySubPage />} />
+          {/* Armenia destinations tree. Deliberately narrower than Georgia's:
+              only the country stub, the regions hub, region detail pages and
+              their things-to-do guides exist, because those are the only
+              Armenia pages that exist. There is no cities hub, no
+              places-to-visit hub and no :citySlug route to collide with, so the
+              guide can nest under its region as a static `things-to-do`
+              segment — a literal reading of the hierarchy. */}
+          <Route path="armenia" element={<CountryStubPage pageKey="armenia" seoKey="armenia" path="armenia" links={[{ to: '/armenia/regions', labelKey: 'nav.regions' }]} />} />
+          <Route path="armenia/regions" element={<ArmeniaRegionsHubPage />} />
+          <Route path="armenia/regions/:regionSlug" element={<RegionPage />} />
+          <Route path="armenia/regions/:regionSlug/things-to-do" element={<ThingsToDoCityPage />} />
           {/* Legacy URL redirects -> their new /georgia home (mirror the static
               redirect stubs emitted by scripts/prerender.js). */}
           <Route path="destinations/*" element={<DestinationsRedirect />} />
           <Route path="destinations" element={<DestinationsRedirect />} />
           {[...cities, ...regions]
-            .filter((p) => p.published && p.thingsToDo)
+            // Georgia only, matching legacyRedirects() in places.js: the flat
+            // /things-to-do-in-<slug> URL is a Georgia-era shape that a place
+            // outside Georgia never had, so there is nothing to redirect.
+            .filter((p) => p.published && p.thingsToDo && countryOf(p) === DEFAULT_COUNTRY)
             .map((p) => (
               <Route
                 key={p.slug}

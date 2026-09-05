@@ -41,14 +41,25 @@ export const destinationCountries = [
     ],
   },
   {
-    // No /{lang}/armenia route exists, so no hubPath — the label is a toggle.
-    // Every entry below is seeded unpublished: the paths mirror Georgia's region
-    // pattern (/georgia/regions/<slug>) and are inert until a page exists.
+    // Armenia now has its own landing page, so the level-1 label is a link.
+    //
+    // Level 2 lists HUBS, mirroring Georgia — not individual regions. Georgia
+    // shows four hub links and none of its twelve regions; Armenia shows the two
+    // hubs that exist (it has no cities or places-to-visit hub yet). An
+    // individual region is reached from /armenia/regions, exactly as Kakheti is
+    // reached from /georgia/regions.
+    //
+    // The eleven seeded region entries below stay `published: false`: they are
+    // inert placeholders, and Aragatsotn — the one published Armenia region —
+    // is deliberately NOT surfaced here, because regions do not belong in the
+    // global Destinations menu on either country.
     id: 'armenia',
     labelKey: 'nav.destinations.armenia',
     published: true,
-    hubPath: null,
+    hubPath: '/armenia',
     regions: [
+      { to: '/armenia', labelKey: 'nav.allDestinations', published: true },
+      { to: '/armenia/regions', labelKey: 'nav.regions', published: true },
       { to: '/armenia/regions/yerevan', label: 'Yerevan', published: false },
       { to: '/armenia/regions/kotayk', label: 'Kotayk', published: false },
       { to: '/armenia/regions/aragatsotn', label: 'Aragatsotn', published: false },

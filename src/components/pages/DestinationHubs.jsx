@@ -1,12 +1,14 @@
 import DestinationHub from '../shared/DestinationHub'
+import useT from '../../i18n/useT'
 import {
-  regions,
   cities,
   sites,
   regionPath,
   cityPath,
   sitePath,
   siteLocation,
+  regionsOfCountry,
+  armeniaBase,
 } from '../../data/places'
 
 const HERO_IMAGE = '/images/files/tbilisi-old-town-narikala-mtkvari-georgia-1200.webp'
@@ -14,7 +16,10 @@ const HERO_IMAGE = '/images/files/tbilisi-old-town-narikala-mtkvari-georgia-1200
 export function RegionsHubPage() {
   // `hideFromHub` entries (e.g. the combined Racha-Lechkhumi, kept for its
   // dependents) stay in the registry but are excluded from the listing.
-  const entries = regions
+  // Scoped to Georgia's regions: `regions` is one array across all countries
+  // now, and this hub is /georgia/regions. Every record without a `country`
+  // counts as Georgian, so the listing is exactly what it was before.
+  const entries = regionsOfCountry('georgia')
     .filter((r) => !r.hideFromHub)
     .map((r) => ({
       slug: r.slug,
@@ -39,6 +44,46 @@ export function RegionsHubPage() {
       seoKey="destinationsRegions"
       path="georgia/regions"
       heroImage={HERO_IMAGE}
+      entries={entries}
+      currentLabelKey="nav.regions"
+      ctaKey="destinations.exploreRegion"
+    />
+  )
+}
+
+/**
+ * Armenia's regions hub — the same shared DestinationHub the three Georgia hubs
+ * use, pointed at Armenia's own registry slice, content key and breadcrumb
+ * parent. No second hub implementation.
+ *
+ * Only PUBLISHED Armenia regions are listed: the other seeded marzer have no
+ * page yet, and a "guide coming soon" card for ten of them would be noise. The
+ * Georgia hub keeps listing unpublished regions as it always has — that is a
+ * mature hub where the coming-soon cards are informative.
+ *
+ * `noHero` until an approved Armenia photograph exists (same flag as the region
+ * pages themselves); it renders the solid `.dest-title-band` carrying the H1,
+ * not an empty hero.
+ */
+export function ArmeniaRegionsHubPage() {
+  const t = useT()
+  const entries = regionsOfCountry('armenia')
+    .filter((r) => r.published && !r.hideFromHub)
+    .map((r) => ({
+      slug: r.slug,
+      fallbackName: r.name,
+      published: true,
+      to: regionPath(r.slug),
+      image: r.cardImage,
+      imagePosition: r.cardPosition,
+    }))
+  return (
+    <DestinationHub
+      pageKey="armeniaRegions"
+      seoKey="armeniaRegions"
+      path="armenia/regions"
+      noHero
+      countryCrumb={{ name: t('nav.destinations.armenia'), to: armeniaBase }}
       entries={entries}
       currentLabelKey="nav.regions"
       ctaKey="destinations.exploreRegion"

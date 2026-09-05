@@ -1478,5 +1478,25 @@
     "title": "Page Not Found – Hikasus Travel",
     "description": "The page you are looking for does not exist. Return to our homepage to explore tours in Georgia.",
     "keywords": "page not found, 404, Hikasus Travel"
+  },
+  "armenia": {
+    "title": "Armenia Travel Guide | Hikasus Travel",
+    "description": "Explore Hikasus Travel's growing collection of Armenia travel guides, with practical information on the country's regions, landscapes, history and culture.",
+    "keywords": "Armenia travel guide, Armenia regions, visit Armenia, Armenia destinations, Armenia travel information, Caucasus travel, Hikasus Travel"
+  },
+  "armeniaRegions": {
+    "title": "Regions of Armenia: Travel Guides | Hikasus Travel",
+    "description": "Explore Hikasus Travel's regional guides to Armenia, with practical information on landscapes, history, sights and travel planning.",
+    "keywords": "regions of Armenia, Armenian provinces, marzer, Aragatsotn, Armenia regional guides, Armenia travel planning, Hikasus Travel"
+  },
+  "aragatsotn": {
+    "title": "Aragatsotn, Armenia: Mount Aragats & Amberd Guide",
+    "description": "A guide to Armenia's Aragatsotn region: Mount Aragats and Lake Kari, Amberd Fortress, the Saghmosavank and Hovhannavank monasteries, Byurakan and the wineries.",
+    "keywords": "Aragatsotn, Mount Aragats, Lake Kari, Amberd Fortress, Vahramashen, Saghmosavank, Hovhannavank, Kasagh gorge, Ashtarak, Oshakan, Mesrop Mashtots, Byurakan Observatory, Armenian Alphabet Monument, Talin, Dashtadem, Armenia wine region, Armenia travel"
+  },
+  "thingsToDoAragatsotn": {
+    "title": "Things to Do in Aragatsotn, Armenia: Full Guide",
+    "description": "The best things to do in Aragatsotn: the Saghmosavank–Hovhannavank gorge hike, Ashtarak, Byurakan's observatory, wineries, Dashtadem, and Gegharot Waterfall.",
+    "keywords": "things to do in Aragatsotn, Saghmosavank Hovhannavank hike, Kasagh gorge, Ashtarak, Byurakan Observatory, Aragatsotn wineries, Armenian Alphabet Monument, Aparan, Talin, Dashtadem, Gegharot Waterfall, stargazing Armenia"
   }
 }

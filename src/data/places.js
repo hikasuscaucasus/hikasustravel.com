@@ -3306,6 +3306,45 @@ export const regions = [
       },
     ],
   },
+  // ---------------------------------------------------------------------------
+  // Armenia. The first non-Georgian records in this registry.
+  //
+  // `country: 'armenia'` is the ONLY thing that distinguishes them: it routes
+  // the record through regionPath()/thingsToDoPath() to the /armenia tree, puts
+  // its card on /armenia/regions instead of /georgia/regions, and makes the page
+  // assert Armenia / AM in its breadcrumbs and structured data. Every field
+  // below it is the same field a Georgian region uses.
+  //
+  // `noHero` on both the region and its things-to-do block: no approved Armenia
+  // photograph exists yet, so each page renders the solid `.dest-title-band`
+  // carrying its H1 rather than an empty or borrowed hero. Add `image` /
+  // `cardImage` / `imageAvif` / `heroClass` and drop `noHero` once one does.
+  //
+  // `noAutolink` is deliberate and owner-mandated: the authored body and FAQ
+  // must carry ZERO editorial links. It also covers the things-to-do guide,
+  // which reads the parent place's flag.
+  // ---------------------------------------------------------------------------
+  {
+    slug: 'aragatsotn', name: 'Aragatsotn', published: true, country: 'armenia',
+    seoKey: 'aragatsotn', contentKey: 'aragatsotn',
+    noHero: true,
+    noAutolink: true,
+    thingsToDo: {
+      seoKey: 'thingsToDoAragatsotn', contentKey: 'thingsToDoAragatsotn',
+      noHero: true,
+      address: { addressRegion: 'Aragatsotn' },
+      // Drawn from the guide's own body — every one of these is a place the
+      // page actually covers, in the order it covers them. Feeds the page's
+      // ItemList node and the search index's keywords.
+      attractions: [
+        'Amberd Fortress', 'Mount Aragats', 'Lake Kari', 'Saghmosavank',
+        'Hovhannavank', 'Kasagh Gorge', 'Ashtarak', 'Karmravor Church',
+        'Byurakan Astrophysical Observatory', 'Wine History Museum of Armenia',
+        'Armenian Alphabet Monument', 'Aparan', 'Aparan Reservoir',
+        'Talin Cathedral', 'Dashtadem Fortress', 'Gegharot Waterfall',
+      ],
+    },
+  },
 ]
 
 // ---------------------------------------------------------------------------
@@ -13449,17 +13488,64 @@ export const getCity = (slug) => cities.find((c) => c.slug === slug) || null
 export const getSite = (slug) => sites.find((s) => s.slug === slug) || null
 
 // ---------------------------------------------------------------------------
+// Countries.
+//
+// The tree was rooted at /georgia alone until Armenia was added. A record's
+// country is OPTIONAL and defaults to 'georgia', so every pre-existing region,
+// city and site record is unchanged and every /georgia/... URL below is built
+// exactly as it was before this field existed. Only a record that opts in with
+// `country: 'armenia'` takes the Armenia branch.
+//
+// Cities and sites remain Georgia-only for now; the country dimension is read
+// from region records, which is the only place it is currently set.
+// ---------------------------------------------------------------------------
+const COUNTRIES = {
+  georgia: { base: '/georgia', name: 'Georgia', code: 'GE' },
+  armenia: { base: '/armenia', name: 'Armenia', code: 'AM' },
+}
+export const DEFAULT_COUNTRY = 'georgia'
+/** A record's country id, defaulting to Georgia for every record without one. */
+export const countryOf = (record) => (record && record.country) || DEFAULT_COUNTRY
+const countryConf = (country) => COUNTRIES[country] || COUNTRIES[DEFAULT_COUNTRY]
+/** Country landing path, e.g. '/armenia'. */
+export const countryBase = (country) => countryConf(country).base
+/** Country name as asserted in schema.org `containedInPlace`. */
+export const countryName = (country) => countryConf(country).name
+/** ISO country code as asserted in schema.org `addressCountry`. */
+export const countryCode = (country) => countryConf(country).code
+/** That country's regions hub, e.g. '/armenia/regions'. */
+export const regionsHubPathFor = (country) => `${countryBase(country)}/regions`
+/** Regions belonging to one country (Georgia covers every record without one). */
+export const regionsOfCountry = (country) => regions.filter((r) => countryOf(r) === country)
+
+// ---------------------------------------------------------------------------
 // Canonical path builders (NOT language-prefixed — callers add /<lang>).
-// The whole tree is rooted at /georgia.
+// Georgia's tree is rooted at /georgia; Armenia's at /armenia.
 // ---------------------------------------------------------------------------
 export const destinationsBase = '/georgia'
 export const regionsHubPath = '/georgia/regions'
 export const citiesHubPath = '/georgia/cities'
 export const placesHubPath = '/georgia/places-to-visit'
+export const armeniaBase = '/armenia'
+export const armeniaRegionsHubPath = '/armenia/regions'
 
-export const regionPath = (slug) => `/georgia/regions/${slug}`
+// Region paths resolve the record so every existing call site keeps passing a
+// bare slug. A Georgian region (i.e. any record with no `country`) returns the
+// identical string this function has always returned.
+export const regionPath = (slug) => {
+  const r = regions.find((x) => x.slug === slug)
+  return `${regionsHubPathFor(countryOf(r))}/${slug}`
+}
 export const cityPath = (slug) => `/georgia/${slug}`
-export const thingsToDoPath = (citySlug) => `/georgia/${citySlug}/things-to-do-in-${citySlug}`
+// Things-to-do guides. Georgia's live at /georgia/<slug>/things-to-do-in-<slug>
+// for both cities and regions — unchanged. Armenia's regions nest the guide
+// under the region page instead: /armenia/regions/<slug>/things-to-do, which
+// keeps the URL a literal reading of the hierarchy it belongs to.
+export const thingsToDoPath = (citySlug) => {
+  const r = regions.find((x) => x.slug === citySlug)
+  if (r && countryOf(r) !== DEFAULT_COUNTRY) return `${regionPath(citySlug)}/things-to-do`
+  return `/georgia/${citySlug}/things-to-do-in-${citySlug}`
+}
 // Both city- and region-parented sites live directly under /georgia/<parent>/<slug>.
 // For region-parented sites the region slug sits at the same level as a city slug
 // — region and city slug namespaces are disjoint, so there is no collision. The
@@ -13584,7 +13670,12 @@ export function legacyRedirects() {
     out.push({ from: `destinations/${c.slug}`, to: cleanPath(cityPath(c.slug)) })        // legacy flat city
     if (c.thingsToDo) out.push({ from: `things-to-do-in-${c.slug}`, to: cleanPath(thingsToDoPath(c.slug)) })
   }
-  for (const r of regions) if (r.published) {
+  // Georgia only. `/destinations/regions/<slug>` and `/things-to-do-in-<slug>`
+  // are Georgia-era URL shapes that a Georgian region genuinely used to live at.
+  // A region added under another country never had either URL, so emitting a
+  // redirect for it would invent a legacy that never existed — a rule pointing
+  // at a URL nobody has ever linked, plus a needless prerendered stub page.
+  for (const r of regions) if (r.published && countryOf(r) === DEFAULT_COUNTRY) {
     out.push({ from: `destinations/regions/${r.slug}`, to: cleanPath(regionPath(r.slug)) })
     // Bare /things-to-do-in-<region> -> the canonical nested URL (mirrors cities).
     if (r.thingsToDo) out.push({ from: `things-to-do-in-${r.slug}`, to: cleanPath(thingsToDoPath(r.slug)) })

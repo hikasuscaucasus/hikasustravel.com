@@ -1478,5 +1478,25 @@
     "title": "Stránka Nenalezena – Hikasus Travel",
     "description": "Stránka, kterou hledáte, neexistuje. Vraťte se na hlavní stránku a prozkoumejte zájezdy v Gruzii.",
     "keywords": "stránka nenalezena, 404, Hikasus Travel"
+  },
+  "armenia": {
+    "title": "Průvodce Arménií | Hikasus Travel",
+    "description": "Prozkoumejte rostoucí sbírku průvodců po Arménii od Hikasus Travel s praktickými informacemi o regionech, krajině, historii a kultuře země.",
+    "keywords": "průvodce Arménií, regiony Arménie, návštěva Arménie, cíle v Arménii, cestování po Kavkaze, Hikasus Travel"
+  },
+  "armeniaRegions": {
+    "title": "Regiony Arménie: průvodci | Hikasus Travel",
+    "description": "Prozkoumejte regionální průvodce Hikasus Travel po Arménii s praktickými informacemi o krajině, historii, památkách a plánování cesty.",
+    "keywords": "regiony Arménie, arménské provincie, marzer, Aragatsotn, regionální průvodci Arménie, plánování cesty do Arménie"
+  },
+  "aragatsotn": {
+    "title": "Aragatsotn, Arménie: průvodce Aragatsem a Amberdem",
+    "description": "Průvodce arménským regionem Aragatsotn: hora Aragats a jezero Kari, pevnost Amberd, kláštery Saghmosavank a Hovhannavank, Byurakan a vinařství.",
+    "keywords": "Aragatsotn, hora Aragats, jezero Kari, pevnost Amberd, Vahramashen, Saghmosavank, Hovhannavank, soutěska Kasagh, Ashtarak, Oshakan, Mesrop Mashtots, Byurakanská observatoř, Talin, Dashtadem, arménské víno"
+  },
+  "thingsToDoAragatsotn": {
+    "title": "Co dělat v Aragatsotnu, Arménie: kompletní průvodce",
+    "description": "To nejlepší v Aragatsotnu: procházka soutěskou mezi Saghmosavankem a Hovhannavankem, Ashtarak, Byurakanská observatoř, vinařství, Dashtadem a vodopád Gegharot.",
+    "keywords": "co dělat v Aragatsotnu, procházka Saghmosavank Hovhannavank, soutěska Kasagh, Ashtarak, Byurakanská observatoř, vinařství Aragatsotn, Aparan, Talin, Dashtadem, vodopád Gegharot"
   }
 }

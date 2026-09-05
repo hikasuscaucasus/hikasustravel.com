@@ -38,6 +38,12 @@ export default function DestinationHub({
   pinFirst = null,
   seoFallback = false,
   filterable = false,
+  // Country crumb between Home and this hub. Defaults to Georgia's long-standing
+  // "All Destinations" -> /georgia crumb, so the three Georgia hubs are unchanged.
+  countryCrumb = null,
+  // Opt out of the photo hero while a genuine image is sourced — the same flag
+  // and the same `.dest-title-band` replacement CityPage/SitePage/RegionPage use.
+  noHero = false,
 }) {
   const t = useT()
   const { lang } = useLang()
@@ -96,7 +102,7 @@ export default function DestinationHub({
 
   const trail = [
     { name: t('breadcrumb.home'), to: '/' },
-    { name: t('nav.allDestinations'), to: '/georgia' },
+    countryCrumb || { name: t('nav.allDestinations'), to: '/georgia' },
     { name: t(currentLabelKey) },
   ]
 
@@ -228,7 +234,13 @@ export default function DestinationHub({
 
   return (
     <>
-      <HeroSection className="hero--compact" image={heroImage} title={page.heroTitle} />
+      {noHero ? (
+        <section className="dest-title-band">
+          <h1>{page.heroTitle}</h1>
+        </section>
+      ) : (
+        <HeroSection className="hero--compact" image={heroImage} title={page.heroTitle} />
+      )}
       <section className="home-items">
         <div className="tours-grid-container">
           <FadeUp>

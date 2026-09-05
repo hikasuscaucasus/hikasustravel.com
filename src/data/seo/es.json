@@ -1478,5 +1478,25 @@
     "title": "Página No Encontrada – Hikasus Travel",
     "description": "La página que busca no existe. Vuelva a nuestra página de inicio para explorar tours en Georgia.",
     "keywords": "página no encontrada, 404, Hikasus Travel"
+  },
+  "armenia": {
+    "title": "Guía de viaje de Armenia | Hikasus Travel",
+    "description": "Descubre la creciente colección de guías de viaje sobre Armenia de Hikasus Travel, con información práctica sobre las regiones, los paisajes, la historia y la cultura del país.",
+    "keywords": "guía de viaje Armenia, regiones de Armenia, visitar Armenia, destinos de Armenia, viajar al Cáucaso, Hikasus Travel"
+  },
+  "armeniaRegions": {
+    "title": "Regiones de Armenia: guías de viaje | Hikasus Travel",
+    "description": "Descubre las guías regionales de Hikasus Travel sobre Armenia, con información práctica sobre paisajes, historia, lugares de interés y planificación del viaje.",
+    "keywords": "regiones de Armenia, provincias armenias, marzer, Aragatsotn, guías regionales de Armenia, planificar viaje Armenia"
+  },
+  "aragatsotn": {
+    "title": "Aragatsotn, Armenia: guía del Aragats y Amberd",
+    "description": "Una guía de la región armenia de Aragatsotn: el monte Aragats y el lago Kari, la fortaleza de Amberd, los monasterios de Saghmosavank y Hovhannavank, Byurakan y las bodegas.",
+    "keywords": "Aragatsotn, monte Aragats, lago Kari, fortaleza de Amberd, Vahramashen, Saghmosavank, Hovhannavank, desfiladero de Kasagh, Ashtarak, Oshakan, Mesrop Mashtots, Observatorio de Byurakan, Talin, Dashtadem, vino de Armenia"
+  },
+  "thingsToDoAragatsotn": {
+    "title": "Qué hacer en Aragatsotn, Armenia: guía completa",
+    "description": "Lo mejor que hacer en Aragatsotn: la caminata por el desfiladero entre Saghmosavank y Hovhannavank, Ashtarak, el observatorio de Byurakan, las bodegas, Dashtadem y la cascada de Gegharot.",
+    "keywords": "qué hacer en Aragatsotn, caminata Saghmosavank Hovhannavank, desfiladero de Kasagh, Ashtarak, Observatorio de Byurakan, bodegas de Aragatsotn, Aparan, Talin, Dashtadem, cascada de Gegharot"
   }
 }

@@ -1478,5 +1478,25 @@
     "title": "Pagina Niet Gevonden – Hikasus Travel",
     "description": "De pagina die u zoekt bestaat niet. Keer terug naar de homepage om tours in Georgië te ontdekken.",
     "keywords": "pagina niet gevonden, 404, Hikasus Travel"
+  },
+  "armenia": {
+    "title": "Reisgids Armenië | Hikasus Travel",
+    "description": "Ontdek de groeiende verzameling reisgidsen over Armenië van Hikasus Travel, met praktische informatie over de regio's, landschappen, geschiedenis en cultuur van het land.",
+    "keywords": "reisgids Armenië, regio's van Armenië, Armenië bezoeken, bestemmingen Armenië, reizen Kaukasus, Hikasus Travel"
+  },
+  "armeniaRegions": {
+    "title": "Regio's van Armenië: reisgidsen | Hikasus Travel",
+    "description": "Ontdek de regiogidsen van Hikasus Travel over Armenië, met praktische informatie over landschappen, geschiedenis, bezienswaardigheden en reisplanning.",
+    "keywords": "regio's van Armenië, Armeense provincies, marzer, Aragatsotn, regiogidsen Armenië, reis plannen Armenië"
+  },
+  "aragatsotn": {
+    "title": "Aragatsotn, Armenië: gids voor Aragats en Amberd",
+    "description": "Een gids voor de Armeense regio Aragatsotn: de berg Aragats en het Kari-meer, de vesting Amberd, de kloosters Saghmosavank en Hovhannavank, Byurakan en de wijnhuizen.",
+    "keywords": "Aragatsotn, berg Aragats, Kari-meer, vesting Amberd, Vahramashen, Saghmosavank, Hovhannavank, Kasagh-kloof, Ashtarak, Oshakan, Mesrop Mashtots, sterrenwacht Byurakan, Talin, Dashtadem, wijn Armenië"
+  },
+  "thingsToDoAragatsotn": {
+    "title": "Wat te doen in Aragatsotn, Armenië: complete gids",
+    "description": "Het beste wat u kunt doen in Aragatsotn: de kloofwandeling Saghmosavank–Hovhannavank, Ashtarak, de sterrenwacht van Byurakan, wijnhuizen, Dashtadem en de Gegharot-waterval.",
+    "keywords": "wat te doen in Aragatsotn, wandeling Saghmosavank Hovhannavank, Kasagh-kloof, Ashtarak, sterrenwacht Byurakan, wijnhuizen Aragatsotn, Aparan, Talin, Dashtadem, Gegharot-waterval"
   }
 }

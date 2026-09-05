@@ -27,7 +27,9 @@ import { fileURLToPath, pathToFileURL } from 'url'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const src = (p) => pathToFileURL(join(__dirname, '..', 'src', p)).href
 
-const { regions, cities, sites } = await import(src('data/places.js'))
+const {
+  regions, cities, sites, regionPath, thingsToDoPath, countryOf, DEFAULT_COUNTRY,
+} = await import(src('data/places.js'))
 const { publishedBorderPages, borderHubPath } = await import(src('data/borders.js'))
 const { entityTourPages } = await import(src('data/entityTours.js'))
 
@@ -48,6 +50,8 @@ const STATIC_PAGES = [
   ['georgia/regions', 'destinationsRegions'],
   ['georgia/cities', 'destinationsCities'],
   ['georgia/places-to-visit', 'destinationsPlaces'],
+  ['armenia', 'armenia'],
+  ['armenia/regions', 'armeniaRegions'],
   ['private-tours', 'privateTours'],
   ['group-tours', 'groupTours'],
   ['shuttle-service', 'shuttle'],
@@ -84,6 +88,14 @@ const REGIONS_HUB = 'georgia/regions'
 const CITIES_HUB = 'georgia/cities'
 const PLACES_HUB = 'georgia/places-to-visit'
 const GEORGIA_HUB = 'georgia'
+const ARMENIA_HUB = 'armenia'
+const ARMENIA_REGIONS_HUB = 'armenia/regions'
+// A published region's country decides which hub pair it hangs off and which
+// URLs its links use. Georgia covers every record with no `country`.
+const isGeorgian = (r) => countryOf(r) === DEFAULT_COUNTRY
+const hubsFor = (r) => (isGeorgian(r)
+  ? { country: GEORGIA_HUB, regions: REGIONS_HUB }
+  : { country: ARMENIA_HUB, regions: ARMENIA_REGIONS_HUB })
 const BORDER_HUB = clean(borderHubPath)
 
 // How many same-parent siblings a detail page links laterally. Enough to give
@@ -178,10 +190,17 @@ export function createLinkGraph({ tours, blogArticles, tourTitle, blogTitle, seo
       put(GEORGIA_HUB, hub, labelOfStatic(hub))
       put(hub, GEORGIA_HUB, labelOfStatic(GEORGIA_HUB))
     }
+    // Each region hangs off its OWN country's pair of hubs, at its own URL.
+    // Georgian regions are wired exactly as before.
     for (const r of pubRegions) {
-      put(GEORGIA_HUB, `georgia/regions/${r.slug}`, regionLabel.get(r.slug))
-      put(REGIONS_HUB, `georgia/regions/${r.slug}`, regionLabel.get(r.slug))
+      const h = hubsFor(r)
+      put(h.country, clean(regionPath(r.slug)), regionLabel.get(r.slug))
+      put(h.regions, clean(regionPath(r.slug)), regionLabel.get(r.slug))
     }
+    // Armenia's own hub pair, mirroring the Georgia block above it. Armenia has
+    // no cities/places-to-visit hub yet, so its country hub links one sub-hub.
+    put(ARMENIA_HUB, ARMENIA_REGIONS_HUB, labelOfStatic(ARMENIA_REGIONS_HUB))
+    put(ARMENIA_REGIONS_HUB, ARMENIA_HUB, labelOfStatic(ARMENIA_HUB))
     for (const c of pubCities) {
       put(GEORGIA_HUB, `georgia/${c.slug}`, cityLabel.get(c.slug))
       put(CITIES_HUB, `georgia/${c.slug}`, cityLabel.get(c.slug))
@@ -192,16 +211,19 @@ export function createLinkGraph({ tours, blogArticles, tourTitle, blogTitle, seo
 
     // --- region detail pages -------------------------------------------
     for (const r of pubRegions) {
-      const self = `georgia/regions/${r.slug}`
-      put(self, REGIONS_HUB, labelOfStatic(REGIONS_HUB))
-      put(self, GEORGIA_HUB, labelOfStatic(GEORGIA_HUB))
+      const h = hubsFor(r)
+      const self = clean(regionPath(r.slug))
+      put(self, h.regions, labelOfStatic(h.regions))
+      put(self, h.country, labelOfStatic(h.country))
       if (r.thingsToDo) {
-        const ttd = `georgia/${r.slug}/things-to-do-in-${r.slug}`
+        const ttd = clean(thingsToDoPath(r.slug))
         const text = ttdLabel(r, regionLabel.get(r.slug))
         put(self, ttd, text)
         put(ttd, self, regionLabel.get(r.slug))
-        put(ttd, REGIONS_HUB, labelOfStatic(REGIONS_HUB))
+        put(ttd, h.regions, labelOfStatic(h.regions))
       }
+      // Cities and region-parented sites are Georgia-only today; a non-Georgian
+      // region simply matches nothing here.
       for (const c of pubCities.filter((c) => c.region === r.slug)) {
         put(self, `georgia/${c.slug}`, cityLabel.get(c.slug))
         put(`georgia/${c.slug}`, self, regionLabel.get(r.slug))
