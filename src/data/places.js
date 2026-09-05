@@ -3483,20 +3483,40 @@ export const regions = [
   // Lori. Same shape as the five Armenia regions above and as every Georgian
   // region — the only difference remains `country: 'armenia'`.
   //
-  // No `thingsToDo` block yet: the companion guide is a separate task, so the
-  // region page renders without the things-to-do CTA. Add the block when one
-  // is written.
-  //
   // Lori had NO record here before — only an inert `published: false` row in
   // siteData.js, like every other seeded Armenia region.
   //
   // `noHero` while no approved Lori photograph exists; `noAutolink` keeps the
-  // authored body and FAQ free of editorial links, as specified.
+  // authored body and FAQ free of editorial links, as specified — and it covers
+  // the things-to-do guide too, which reads the parent place's flag.
   {
     slug: 'lori', name: 'Lori', published: true, country: 'armenia',
     seoKey: 'lori', contentKey: 'lori',
     noHero: true,
     noAutolink: true,
+    // Companion guide at /armenia/regions/lori/things-to-do — same block shape
+    // as the other Armenia regions' and as every Georgian region's.
+    thingsToDo: {
+      seoKey: 'thingsToDoLori', contentKey: 'thingsToDoLori',
+      noHero: true,
+      address: { addressRegion: 'Lori' },
+      // Drawn from the guide's own body, in the order it covers them. Feeds the
+      // page's ItemList node and the search index's keywords.
+      //
+      // Trchkan Waterfall is deliberately ABSENT: it straddles the Lori-Shirak
+      // boundary and the body says so explicitly, so listing it here would
+      // assert it sits inside Lori.
+      attractions: [
+        'Debed Canyon', 'Haghpat Monastery', 'Sanahin Monastery',
+        'Sanahin Bridge', 'Kayan Fortress', 'Akhtala Monastery',
+        'Aramyants Castle', 'Odzun', 'Odzun Church', 'Kobayr Monastery',
+        'Horomayr Monastery', 'Lori Fortress', 'Stepanavan',
+        'Sochut Dendropark', 'Gyulagarak', 'Dsegh', 'Hovhannes Tumanyan House-Museum',
+        'Lake Tsover', 'Bardzrakash Saint Gregory Monastery', 'Ardvi',
+        'Saint Hovhannes Monastery', 'Amrakits', 'Hnevank Monastery',
+        'Vanadzor', 'Vanadzor Fine Arts Museum', 'Tumanyan', 'Alaverdi',
+      ],
+    },
   },
 ]
 
