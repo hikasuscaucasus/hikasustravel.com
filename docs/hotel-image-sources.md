@@ -442,7 +442,34 @@ edge capped at 1600 px, never upscaled.
 | Hotel | Missing category | Why it is still open |
 |---|---|---|
 | Ani Central Inn | exterior | No standalone building photograph anywhere on anicentralinnyerevan.com (homepage, about-us, contacts and hotel pages all checked). The hotel appears to share a building with sister properties under the same operator (Dali Holding); nothing was substituted. |
-| DoubleTree by Hilton Yerevan City Centre | exterior, lobby, room, bathroom | hilton.com returns HTTP 403 to automated access (bot protection) and no Hilton Press Center property page exists for this hotel. Hilton's general media-library terms restrict use to "editorial material about Hilton," which does not cover a commercial travel agency's own marketing site, so that library was not used either. Attempting to bypass the 403 was not attempted, consistent with this manifest's rules. |
 
-Log a reply date here if the hotel or Hikasus later supplies DoubleTree photos or an
-Ani Central Inn exterior shot, then follow the "Adding a new hotel image" checklist.
+DoubleTree by Hilton Yerevan City Centre's gap (hilton.com blocked automated access and
+no Hilton press page existed for this hotel) was closed on 2026-09-13 when the owner
+supplied the property's own photos directly — see that section below.
+
+Log a reply date here if the hotel or Hikasus later supplies an Ani Central Inn exterior
+shot, then follow the "Adding a new hotel image" checklist.
+
+---
+
+## 2026-09-13 — DoubleTree by Hilton Yerevan City Centre (owner-supplied)
+
+The owner supplied four of the property's own photographs directly, dropped in
+`Images for tours/Hotels/Double Tree by Hilton in Yerevan/` outside the repo. Each was
+viewed individually before use (same standard as every other row in this manifest): the
+exterior shows the building's own signage, and the lobby has a visible "DoubleTree by
+Hilton — Yerevan City Centre" sign, confirming the property. Converted to WebP; the
+source files were already under the 1600px long-edge cap, so none were resized.
+
+| Hotel | Category | Source | Local file | Size |
+|---|---|---|---|---|
+| DoubleTree by Hilton Yerevan City Centre | exterior | Owner-supplied (property's own photo) | `doubletree-yerevan.webp` | 652x768, 103 KB |
+| DoubleTree by Hilton Yerevan City Centre | lobby | Owner-supplied (property's own photo) | `doubletree-yerevan-2.webp` | 1024x703, 71 KB |
+| DoubleTree by Hilton Yerevan City Centre | standard room | Owner-supplied (property's own photo) | `doubletree-yerevan-3.webp` | 1024x683, 43 KB |
+| DoubleTree by Hilton Yerevan City Centre | bathroom | Owner-supplied (property's own photo) | `doubletree-yerevan-4.webp` | 1024x683, 49 KB |
+
+DoubleTree by Hilton Yerevan City Centre is no longer in the outstanding table above.
+
+**Future workflow:** for any new tour or hotel entry, check
+`Images for tours/Hotels/` for owner-supplied photos FIRST, before falling back to the
+official-site / press-kit route this manifest otherwise documents.

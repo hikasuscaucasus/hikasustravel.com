@@ -863,15 +863,19 @@ const hotelData = {
   },
   // Yerevan hotels for the 10-Day Georgia and Armenia Tour. Facts verified
   // against each property's own site and aggregator listings in September
-  // 2026. Photo sourcing (September 2026, see
-  // docs/hotel-image-sources.md): Yerevan Place and Ani Central Inn now have
-  // four/three real photos from their own official sites; hilton.com blocks
-  // automated access (HTTP 403) and no Hilton press page exists for this
-  // property, so DoubleTree still has none -- `images: []` renders correctly
-  // with no photo grid (see the Bakuriani Inn entry above for the same
-  // pattern).
+  // 2026. Photo sourcing (September 2026, see docs/hotel-image-sources.md):
+  // Yerevan Place and Ani Central Inn have four/three real photos from their
+  // own official sites; hilton.com blocked automated access and no Hilton
+  // press page existed for this property, so DoubleTree ran with
+  // `images: []` until the owner supplied the hotel's own photos directly
+  // (2026-09-13, see docs/hotel-image-sources.md).
   'DoubleTree by Hilton Yerevan City Centre': {
-    images: [],
+    images: [
+      { src: '/images/hotels/doubletree-yerevan.webp', alt: 'Exterior of DoubleTree by Hilton Yerevan City Centre in Yerevan, Armenia', category: 'Exterior' },
+      { src: '/images/hotels/doubletree-yerevan-2.webp', alt: 'Lobby at DoubleTree by Hilton Yerevan City Centre with lounge seating and chandelier', category: 'Lobby' },
+      { src: '/images/hotels/doubletree-yerevan-3.webp', alt: 'Guest room at DoubleTree by Hilton Yerevan City Centre with king bed and workspace', category: 'Room' },
+      { src: '/images/hotels/doubletree-yerevan-4.webp', alt: 'Guest bathroom at DoubleTree by Hilton Yerevan City Centre with walk-in shower and vanity', category: 'Bathroom' },
+    ],
     stars: 4,
     description: 'A polished international hotel close to central Yerevan, combining spacious contemporary rooms with reliable Hilton comfort. DoubleTree by Hilton Yerevan City Centre is about a 10-minute walk from Republic Square and offers an on-site restaurant, a rooftop terrace, a spa and a fitness center, making it a comfortable premium base for three nights in the Armenian capital.',
     amenities: [
