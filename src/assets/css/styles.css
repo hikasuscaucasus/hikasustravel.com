@@ -10805,29 +10805,6 @@ img[data-lightbox] {
   color: var(--color-h2);
 }
 
-/* "Why Hikasus" fact tiles — plain text, no photos/icons, 4/2/1 responsive. */
-.why-tiles {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: calc(var(--indent) / 1.2);
-  max-width: 1100px;
-  margin: 0 auto;
-}
-.why-tile {
-  padding: calc(var(--indent) / 1.2);
-  border: 1px solid rgba(239, 239, 215, 0.3);
-  border-radius: 12px;
-  font-family: "rockwell";
-  font-size: 1rem;
-  line-height: 1.4;
-}
-@media (max-width: 1024px) {
-  .why-tiles { grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 480px) {
-  .why-tiles { grid-template-columns: 1fr; }
-}
-
 /* Compact shuttle teaser under "Build your own trip" — one line + one link,
    not a full section with its own large heading. */
 .home-shuttle-compact {

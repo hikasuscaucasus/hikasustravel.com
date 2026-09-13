@@ -286,23 +286,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Why Hikasus — four fact tiles, no photos/icons. */}
-      <section className="home-items">
-        <div className="tours-grid-container">
-          <FadeUp>
-            <h2>{t('home.whyHikasusTitle')}</h2>
-          </FadeUp>
-          <FadeUp>
-            <div className="why-tiles">
-              <div className="why-tile">{t('home.whyTile1')}</div>
-              <div className="why-tile">{t('home.whyTile2')}</div>
-              <div className="why-tile">{t('home.whyTile3')}</div>
-              <div className="why-tile">{t('home.whyTile4')}</div>
-            </div>
-          </FadeUp>
-        </div>
-      </section>
-
       {/* Reviews — existing testimonials, unchanged layout, retitled heading. */}
       <section className="td-testimonials-section">
         <FadeUp>
