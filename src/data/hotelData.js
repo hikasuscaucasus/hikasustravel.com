@@ -163,11 +163,14 @@ const hotelData = {
     ],
   },
   'Ginger Hotel': {
+    // Owner-supplied photos (2026-09-13, see docs/hotel-image-sources.md)
+    // replaced the earlier unsourced set, including a real lobby shot in
+    // place of the old meeting-room frame.
     images: [
-      { src: '/images/hotels/ginger-hotel.jpg', alt: 'Ginger Hotel building exterior in Tbilisi Old Town, Georgia', category: 'Exterior' },
-      { src: '/images/hotels/ginger-hotel-2.jpg', alt: 'Meeting room at Ginger Hotel in Tbilisi, Georgia', category: 'Meeting room' },
-      { src: '/images/hotels/ginger-hotel-3.jpg', alt: 'Ginger Hotel clean and comfortable guest room in Tbilisi', category: 'Room' },
-      { src: '/images/hotels/ginger-hotel-4.jpg', alt: 'Ginger Hotel bathroom with modern amenities in Tbilisi', category: 'Bathroom' },
+      { src: '/images/hotels/ginger-hotel.webp', alt: 'Ginger Hotel building exterior in Tbilisi Old Town, Georgia', category: 'Exterior' },
+      { src: '/images/hotels/ginger-hotel-2.webp', alt: 'Lobby and reception at Ginger Hotel in Tbilisi, Georgia', category: 'Lobby' },
+      { src: '/images/hotels/ginger-hotel-3.webp', alt: 'Ginger Hotel clean and comfortable guest room in Tbilisi', category: 'Room' },
+      { src: '/images/hotels/ginger-hotel-4.webp', alt: 'Ginger Hotel bathroom with modern amenities in Tbilisi', category: 'Bathroom' },
     ],
     stars: 3,
     description: 'A cheerful budget-friendly hotel tucked into the winding streets of Tbilisi\'s Old Town. Ginger Hotel offers clean, comfortable rooms with a warm atmosphere and friendly staff, making it a great-value base for travelers who want to be in the heart of the action.',
@@ -294,11 +297,18 @@ const hotelData = {
     ],
   },
   'Rooms Hotel Kazbegi': {
+    // Owner-supplied photos (2026-09-13, see docs/hotel-image-sources.md)
+    // replaced the earlier unsourced set, including a real guest bathroom in
+    // place of the old fireplace-lounge frame (kept below as its own,
+    // correctly captioned, extra photo).
     images: [
-      { src: '/images/hotels/rooms-hotel-kazbegi.jpg', alt: 'Rooms Hotel Kazbegi striking modern building against the Greater Caucasus mountains, Stepantsminda', category: 'Exterior' },
-      { src: '/images/hotels/rooms-hotel-kazbegi-2.jpg', alt: 'Rooms Hotel Kazbegi lobby and reception with mountain views', category: 'Lobby' },
-      { src: '/images/hotels/rooms-hotel-kazbegi-3.jpg', alt: 'Rooms Hotel Kazbegi luxurious guest room with Mount Kazbek views', category: 'Room' },
-      { src: '/images/hotels/rooms-hotel-kazbegi-4.jpg', alt: 'Fireplace lounge at Rooms Hotel Kazbegi in Stepantsminda, Georgia', category: 'Fireplace lounge' },
+      { src: '/images/hotels/rooms-hotel-kazbegi.webp', alt: 'Rooms Hotel Kazbegi striking modern building against the Greater Caucasus mountains, Stepantsminda', category: 'Exterior' },
+      { src: '/images/hotels/rooms-hotel-kazbegi-2.webp', alt: 'Library lounge at Rooms Hotel Kazbegi in Stepantsminda, Georgia', category: 'Lobby' },
+      { src: '/images/hotels/rooms-hotel-kazbegi-3.webp', alt: 'Rooms Hotel Kazbegi guest room with balcony and mountain views', category: 'Room' },
+      { src: '/images/hotels/rooms-hotel-kazbegi-4.webp', alt: 'Guest bathroom at Rooms Hotel Kazbegi with rainfall shower and bathrobe', category: 'Bathroom' },
+      { src: '/images/hotels/rooms-hotel-kazbegi-5.webp', alt: 'Indoor pool at Rooms Hotel Kazbegi with panoramic mountain views', category: 'Swimming Pool' },
+      { src: '/images/hotels/rooms-hotel-kazbegi-6.webp', alt: 'Outdoor terrace at Rooms Hotel Kazbegi with Caucasus mountain views', category: 'Terrace' },
+      { src: '/images/hotels/rooms-hotel-kazbegi-7.webp', alt: 'Fireplace lounge at Rooms Hotel Kazbegi in Stepantsminda, Georgia', category: 'Fireplace Lounge' },
     ],
     stars: 4,
     description: 'A design masterpiece set against the dramatic backdrop of Mount Kazbek. Rooms Hotel Kazbegi is one of Georgia\'s most iconic luxury retreats, offering floor-to-ceiling mountain views, a crackling fireplace lounge, an indoor pool, and a spa — the ultimate mountain escape.',
@@ -473,11 +483,23 @@ const hotelData = {
     ],
   },
   'Tsinandali Estate, A Radisson Collection Hotel': {
+    // Owner-supplied photos (2026-09-13, see docs/hotel-image-sources.md)
+    // replaced the earlier unsourced set and add the property's full
+    // amenity range (wine cellar, two pools, spa, gym, gardens).
     images: [
-      { src: '/images/hotels/tsinandali-estate.jpg', alt: 'Tsinandali Estate Radisson Collection Hotel grand exterior surrounded by historic gardens, Telavi', category: 'Exterior' },
-      { src: '/images/hotels/tsinandali-estate-2.jpg', alt: 'Tsinandali Estate hotel lobby and lounge with elegant interior design', category: 'Lobby' },
-      { src: '/images/hotels/tsinandali-estate-3.jpg', alt: 'Outdoor pool terrace at Tsinandali Estate, A Radisson Collection Hotel in Kakheti, Georgia', category: 'Pool terrace' },
-      { src: '/images/hotels/tsinandali-estate-4.jpg', alt: 'Tsinandali Estate hotel bathroom with premium amenities and marble finishes', category: 'Bathroom' },
+      { src: '/images/hotels/tsinandali-estate.webp', alt: 'Tsinandali Estate, A Radisson Collection Hotel green living-wall exterior surrounded by historic gardens, Telavi', category: 'Exterior' },
+      { src: '/images/hotels/tsinandali-estate-2.webp', alt: 'Lobby lounge at Tsinandali Estate, A Radisson Collection Hotel with vaulted brick ceiling', category: 'Lobby' },
+      { src: '/images/hotels/tsinandali-estate-3.webp', alt: 'Guest room at Tsinandali Estate, A Radisson Collection Hotel with contemporary decor', category: 'Room' },
+      { src: '/images/hotels/tsinandali-estate-4.webp', alt: 'Guest bathroom at Tsinandali Estate, A Radisson Collection Hotel with stone finishes and rainfall shower', category: 'Bathroom' },
+      { src: '/images/hotels/tsinandali-estate-5.webp', alt: 'Breakfast restaurant at Tsinandali Estate, A Radisson Collection Hotel in a converted stone cellar', category: 'Breakfast' },
+      { src: '/images/hotels/tsinandali-estate-6.webp', alt: 'Historic wine cellar at Tsinandali Estate, A Radisson Collection Hotel', category: 'Wine Cellar' },
+      { src: '/images/hotels/tsinandali-estate-7.webp', alt: 'Covered swimming pool at Tsinandali Estate, A Radisson Collection Hotel with retractable glass roof', category: 'Indoor-Outdoor Pool' },
+      { src: '/images/hotels/tsinandali-estate-8.webp', alt: 'Rooftop infinity pool at Tsinandali Estate, A Radisson Collection Hotel with mountain views', category: 'Outdoor Pool' },
+      { src: '/images/hotels/tsinandali-estate-9.webp', alt: 'Sauna at Tsinandali Estate, A Radisson Collection Hotel', category: 'Sauna' },
+      { src: '/images/hotels/tsinandali-estate-10.webp', alt: 'Spa massage room at Tsinandali Estate, A Radisson Collection Hotel', category: 'Massage Room' },
+      { src: '/images/hotels/tsinandali-estate-11.webp', alt: 'Fitness center at Tsinandali Estate, A Radisson Collection Hotel', category: 'Gym' },
+      { src: '/images/hotels/tsinandali-estate-12.webp', alt: 'Outdoor lounge terrace at Tsinandali Estate, A Radisson Collection Hotel with mountain views', category: 'Terrace Lounge' },
+      { src: '/images/hotels/tsinandali-estate-13.webp', alt: 'Historic gardens at Tsinandali Estate, A Radisson Collection Hotel', category: 'Garden' },
     ],
     stars: 5,
     description: 'Set within the legendary 19th-century Tsinandali Estate, this Radisson Collection property is the pinnacle of luxury in Georgia\'s wine country. Surrounded by historic gardens, a renowned wine cellar, and the Caucasus foothills, it offers an unforgettable blend of heritage, wine culture, and world-class hospitality.',
@@ -867,14 +889,19 @@ const hotelData = {
   // Yerevan Place and Ani Central Inn have four/three real photos from their
   // own official sites; hilton.com blocked automated access and no Hilton
   // press page existed for this property, so DoubleTree ran with
-  // `images: []` until the owner supplied the hotel's own photos directly
-  // (2026-09-13, see docs/hotel-image-sources.md).
+  // `images: []` until the owner supplied all nine of the hotel's own
+  // photos directly (2026-09-13, see docs/hotel-image-sources.md).
   'DoubleTree by Hilton Yerevan City Centre': {
     images: [
       { src: '/images/hotels/doubletree-yerevan.webp', alt: 'Exterior of DoubleTree by Hilton Yerevan City Centre in Yerevan, Armenia', category: 'Exterior' },
       { src: '/images/hotels/doubletree-yerevan-2.webp', alt: 'Lobby at DoubleTree by Hilton Yerevan City Centre with lounge seating and chandelier', category: 'Lobby' },
       { src: '/images/hotels/doubletree-yerevan-3.webp', alt: 'Guest room at DoubleTree by Hilton Yerevan City Centre with king bed and workspace', category: 'Room' },
       { src: '/images/hotels/doubletree-yerevan-4.webp', alt: 'Guest bathroom at DoubleTree by Hilton Yerevan City Centre with walk-in shower and vanity', category: 'Bathroom' },
+      { src: '/images/hotels/doubletree-yerevan-5.webp', alt: 'Breakfast buffet restaurant at DoubleTree by Hilton Yerevan City Centre', category: 'Breakfast' },
+      { src: '/images/hotels/doubletree-yerevan-6.webp', alt: 'Fitness center at DoubleTree by Hilton Yerevan City Centre with cardio equipment and city views', category: 'Gym' },
+      { src: '/images/hotels/doubletree-yerevan-7.webp', alt: 'Spa relaxation area at DoubleTree by Hilton Yerevan City Centre with lounge beds', category: 'Spa' },
+      { src: '/images/hotels/doubletree-yerevan-8.webp', alt: 'Sauna at DoubleTree by Hilton Yerevan City Centre', category: 'Sauna' },
+      { src: '/images/hotels/doubletree-yerevan-9.webp', alt: 'Massage treatment room at DoubleTree by Hilton Yerevan City Centre', category: 'Massage Room' },
     ],
     stars: 4,
     description: 'A polished international hotel close to central Yerevan, combining spacious contemporary rooms with reliable Hilton comfort. DoubleTree by Hilton Yerevan City Centre is about a 10-minute walk from Republic Square and offers an on-site restaurant, a rooftop terrace, a spa and a fitness center, making it a comfortable premium base for three nights in the Armenian capital.',
@@ -892,11 +919,15 @@ const hotelData = {
     ],
   },
   'Yerevan Place': {
+    // Owner-supplied photos (2026-09-13, see docs/hotel-image-sources.md)
+    // replaced the earlier official-site set.
     images: [
       { src: '/images/hotels/yerevan-place.webp', alt: 'Yerevan Place Hotel illuminated building exterior and entrance in central Yerevan, Armenia', category: 'Exterior' },
       { src: '/images/hotels/yerevan-place-2.webp', alt: 'Reception desk at Yerevan Place Hotel, Yerevan', category: 'Lobby' },
-      { src: '/images/hotels/yerevan-place-3.webp', alt: 'Guest room at Yerevan Place Hotel with king bed and city view', category: 'Room' },
-      { src: '/images/hotels/yerevan-place-4.webp', alt: 'Guest bathroom at Yerevan Place Hotel with bathtub and walk-in shower', category: 'Bathroom' },
+      { src: '/images/hotels/yerevan-place-3.webp', alt: 'Guest room at Yerevan Place Hotel with twin beds and workspace', category: 'Room' },
+      { src: '/images/hotels/yerevan-place-4.webp', alt: 'Guest bathroom at Yerevan Place Hotel with walk-in shower and bathrobe', category: 'Bathroom' },
+      { src: '/images/hotels/yerevan-place-5.webp', alt: 'Breakfast buffet restaurant at Yerevan Place Hotel, Yerevan', category: 'Breakfast' },
+      { src: '/images/hotels/yerevan-place-6.webp', alt: 'Fitness center at Yerevan Place Hotel, Yerevan', category: 'Gym' },
     ],
     stars: 4,
     description: 'A comfortable 4-star hotel in the heart of Yerevan, just steps from Republic Square. Yerevan Place combines modern rooms with an exceptionally central location, along with a restaurant and bar, a gym and useful guest services — a convenient mid-range choice for exploring the Armenian capital on foot.',
@@ -914,15 +945,18 @@ const hotelData = {
     ],
   },
   'Ani Central Inn': {
-    // No exterior building photograph exists on the property's own site
-    // (checked homepage, about-us, contacts and hotel pages) -- the hotel
-    // appears to share a building with sister properties under the same
-    // operator (Dali Holding). Nothing was substituted; see
-    // docs/hotel-image-sources.md.
+    // Owner-supplied photos (2026-09-13, see docs/hotel-image-sources.md)
+    // replaced the earlier official-site set. These include a genuine
+    // exterior, closing the gap noted below in the old comment: no exterior
+    // building photograph existed on the property's own site.
     images: [
-      { src: '/images/hotels/ani-central-inn.webp', alt: 'Lounge and lobby area at Ani Central Inn, Yerevan, with grand piano and seating', category: 'Lobby' },
-      { src: '/images/hotels/ani-central-inn-2.webp', alt: 'Guest room at Ani Central Inn with double bed and work desk', category: 'Room' },
-      { src: '/images/hotels/ani-central-inn-3.webp', alt: 'Guest bathroom at Ani Central Inn with walk-in shower and toilet', category: 'Bathroom' },
+      { src: '/images/hotels/ani-central-inn.webp', alt: 'Exterior of Ani Central Inn in central Yerevan, Armenia', category: 'Exterior' },
+      { src: '/images/hotels/ani-central-inn-2.webp', alt: 'Lounge and lobby area at Ani Central Inn, Yerevan, with seating', category: 'Lobby' },
+      { src: '/images/hotels/ani-central-inn-3.webp', alt: 'Guest room at Ani Central Inn with twin beds and work desk', category: 'Room' },
+      { src: '/images/hotels/ani-central-inn-4.webp', alt: 'Guest bathroom at Ani Central Inn with walk-in shower and toilet', category: 'Bathroom' },
+      { src: '/images/hotels/ani-central-inn-5.webp', alt: 'Breakfast buffet at Ani Central Inn in Yerevan', category: 'Breakfast' },
+      { src: '/images/hotels/ani-central-inn-6.webp', alt: 'Indoor swimming pool at Ani Central Inn in Yerevan', category: 'Swimming Pool' },
+      { src: '/images/hotels/ani-central-inn-7.webp', alt: 'Sauna at Ani Central Inn in Yerevan', category: 'Sauna' },
     ],
     stars: 4,
     description: 'A comfortable and good-value 4-star hotel in central Yerevan, within easy reach of Republic Square and the city\'s main sights. Ani Central Inn offers bright rooms, daily breakfast, an indoor swimming pool and a sauna, making it a practical Classic option with more facilities than its straightforward positioning might suggest.',

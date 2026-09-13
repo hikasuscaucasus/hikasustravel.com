@@ -17,7 +17,12 @@
       "Vue extérieure du DoubleTree by Hilton Yerevan City Centre à Erevan, Arménie",
       "Hall du DoubleTree by Hilton Yerevan City Centre avec salon et lustre",
       "Chambre du DoubleTree by Hilton Yerevan City Centre avec lit king-size et espace de travail",
-      "Salle de bains du DoubleTree by Hilton Yerevan City Centre avec douche à l'italienne et vasque"
+      "Salle de bains du DoubleTree by Hilton Yerevan City Centre avec douche à l'italienne et vasque",
+      "Restaurant buffet du petit-déjeuner au DoubleTree by Hilton Yerevan City Centre",
+      "Salle de sport du DoubleTree by Hilton Yerevan City Centre avec équipement cardio et vue sur la ville",
+      "Espace détente du spa au DoubleTree by Hilton Yerevan City Centre avec transats",
+      "Sauna du DoubleTree by Hilton Yerevan City Centre",
+      "Salle de massage au DoubleTree by Hilton Yerevan City Centre"
     ]
   },
   "Yerevan Place": {
@@ -37,8 +42,10 @@
     "imageAlts": [
       "Façade illuminée et entrée du Yerevan Place Hotel dans le centre d'Erevan, Arménie",
       "Réception du Yerevan Place Hotel, Erevan",
-      "Chambre confortable du Yerevan Place Hotel avec lit king-size et vue sur la ville",
-      "Salle de bains avec baignoire et douche à l'italienne du Yerevan Place Hotel"
+      "Chambre du Yerevan Place Hotel avec lits jumeaux et espace de travail",
+      "Salle de bains du Yerevan Place Hotel avec douche à l'italienne et peignoir",
+      "Restaurant buffet du petit-déjeuner au Yerevan Place Hotel, Erevan",
+      "Salle de sport du Yerevan Place Hotel, Erevan"
     ]
   },
   "Ani Central Inn": {
@@ -56,9 +63,13 @@
       "À distance de marche de la Galerie nationale d'Arménie"
     ],
     "imageAlts": [
-      "Salon et hall du Ani Central Inn à Erevan, avec piano à queue et salon",
-      "Chambre double confortable de l'Ani Central Inn avec bureau",
-      "Salle de bains avec douche à l'italienne et WC de l'Ani Central Inn"
+      "Extérieur de l'Ani Central Inn dans le centre d'Erevan, Arménie",
+      "Salon et hall de l'Ani Central Inn à Erevan, avec coin salon",
+      "Chambre de l'Ani Central Inn avec lits jumeaux et bureau",
+      "Salle de bains avec douche à l'italienne et WC de l'Ani Central Inn",
+      "Buffet du petit-déjeuner à l'Ani Central Inn à Erevan",
+      "Piscine intérieure de l'Ani Central Inn à Erevan",
+      "Sauna de l'Ani Central Inn à Erevan"
     ]
   },
   "Sandali Metekhi By Old Hospitality": {
@@ -144,7 +155,7 @@
     "locationHighlights": ["Au cœur de la vieille ville de Tbilissi", "À pied des bains de soufre et de la forteresse de Narikala", "Entouré de cafés, restaurants et boutiques"],
     "imageAlts": [
       "Façade du Ginger Hotel dans la vieille ville de Tbilissi, Géorgie",
-      "Salle de réunion du Ginger Hotel à Tbilissi, Géorgie",
+      "Hall et réception du Ginger Hotel à Tbilissi, Géorgie",
       "Chambre propre et confortable du Ginger Hotel à Tbilissi",
       "Salle de bains aux équipements modernes du Ginger Hotel à Tbilissi"
     ]
@@ -200,8 +211,11 @@
     "locationHighlights": ["Vues sur le mont Kazbek et l'église de la Trinité de Guergueti", "Porte d'entrée des sentiers du parc national de Kazbegi", "Au centre du village de Stepantsminda"],
     "imageAlts": [
       "Bâtiment moderne remarquable du Rooms Hotel Kazbegi face au Grand Caucase, Stepantsminda",
-      "Hall et réception du Rooms Hotel Kazbegi avec vue sur les montagnes",
-      "Chambre spacieuse du Rooms Hotel Kazbegi avec vue sur le mont Kazbek",
+      "Salon-bibliothèque du Rooms Hotel Kazbegi à Stepantsminda, Géorgie",
+      "Chambre du Rooms Hotel Kazbegi avec balcon et vue sur les montagnes",
+      "Salle de bains du Rooms Hotel Kazbegi avec douche à effet pluie et peignoir",
+      "Piscine intérieure du Rooms Hotel Kazbegi avec vue panoramique sur les montagnes",
+      "Terrasse extérieure du Rooms Hotel Kazbegi avec vue sur le Caucase",
       "Salon avec cheminée du Rooms Hotel Kazbegi à Stepantsminda, Géorgie"
     ]
   },
@@ -287,10 +301,19 @@
     "amenities": ["Wi-Fi gratuit", "Restaurant gastronomique", "Piscine extérieure", "Spa & centre de bien-être", "Cave historique"],
     "locationHighlights": ["Dans l'enceinte du domaine historique de Tsinandali", "Au cœur du vignoble de Kakhétie", "Près de la vieille ville de Telavi et de la forteresse Batonis Tsikhe"],
     "imageAlts": [
-      "Façade majestueuse du Tsinandali Estate, A Radisson Collection Hotel, entourée de jardins historiques, Telavi",
-      "Hall et salon du Tsinandali Estate au décor élégant",
-      "Terrasse avec piscine extérieure du Tsinandali Estate, A Radisson Collection Hotel en Kakhétie, Géorgie",
-      "Salle de bains en marbre aux équipements haut de gamme du Tsinandali Estate"
+      "Façade végétalisée du Tsinandali Estate, A Radisson Collection Hotel, entourée de jardins historiques, Telavi",
+      "Salon-lobby du Tsinandali Estate, A Radisson Collection Hotel avec plafond voûté en briques",
+      "Chambre du Tsinandali Estate, A Radisson Collection Hotel au décor contemporain",
+      "Salle de bains du Tsinandali Estate, A Radisson Collection Hotel avec finitions en pierre et douche à effet pluie",
+      "Restaurant du petit-déjeuner au Tsinandali Estate, A Radisson Collection Hotel dans une ancienne cave en pierre",
+      "Cave à vin historique du Tsinandali Estate, A Radisson Collection Hotel",
+      "Piscine couverte du Tsinandali Estate, A Radisson Collection Hotel avec toit en verre rétractable",
+      "Piscine à débordement sur le toit du Tsinandali Estate, A Radisson Collection Hotel avec vue sur les montagnes",
+      "Sauna du Tsinandali Estate, A Radisson Collection Hotel",
+      "Salle de massage du spa au Tsinandali Estate, A Radisson Collection Hotel",
+      "Salle de sport du Tsinandali Estate, A Radisson Collection Hotel",
+      "Terrasse-salon extérieure du Tsinandali Estate, A Radisson Collection Hotel avec vue sur les montagnes",
+      "Jardins historiques du Tsinandali Estate, A Radisson Collection Hotel"
     ]
   },
   "Park Hotel Tsinandali": {

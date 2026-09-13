@@ -17,7 +17,12 @@
       "Widok zewnętrzny hotelu DoubleTree by Hilton Yerevan City Centre w Erywaniu, Armenia",
       "Lobby hotelu DoubleTree by Hilton Yerevan City Centre z częścią wypoczynkową i żyrandolem",
       "Pokój w hotelu DoubleTree by Hilton Yerevan City Centre z łóżkiem king-size i miejscem do pracy",
-      "Łazienka w hotelu DoubleTree by Hilton Yerevan City Centre z prysznicem walk-in i umywalką"
+      "Łazienka w hotelu DoubleTree by Hilton Yerevan City Centre z prysznicem walk-in i umywalką",
+      "Restauracja z bufetem śniadaniowym w hotelu DoubleTree by Hilton Yerevan City Centre",
+      "Siłownia w hotelu DoubleTree by Hilton Yerevan City Centre ze sprzętem cardio i widokiem na miasto",
+      "Strefa relaksu spa w hotelu DoubleTree by Hilton Yerevan City Centre z leżankami",
+      "Sauna w hotelu DoubleTree by Hilton Yerevan City Centre",
+      "Gabinet masażu w hotelu DoubleTree by Hilton Yerevan City Centre"
     ]
   },
   "Yerevan Place": {
@@ -37,8 +42,10 @@
     "imageAlts": [
       "Oświetlona fasada i wejście do hotelu Yerevan Place w centrum Erywania, Armenia",
       "Recepcja hotelu Yerevan Place, Erywań",
-      "Pokój w hotelu Yerevan Place z łóżkiem king-size i widokiem na miasto",
-      "Łazienka w hotelu Yerevan Place z wanną i prysznicem"
+      "Pokój w hotelu Yerevan Place z dwoma łóżkami i miejscem do pracy",
+      "Łazienka w hotelu Yerevan Place z prysznicem walk-in i szlafrokiem",
+      "Restauracja z bufetem śniadaniowym w hotelu Yerevan Place, Erywań",
+      "Siłownia w hotelu Yerevan Place, Erywań"
     ]
   },
   "Ani Central Inn": {
@@ -56,9 +63,13 @@
       "Odległość spacerowa od Galerii Narodowej Armenii"
     ],
     "imageAlts": [
-      "Salon i lobby hotelu Ani Central Inn w Erywaniu z fortepianem i miejscami do siedzenia",
-      "Pokój dwuosobowy w hotelu Ani Central Inn z biurkiem",
-      "Łazienka w hotelu Ani Central Inn z prysznicem i WC"
+      "Widok zewnętrzny hotelu Ani Central Inn w centrum Erywania, Armenia",
+      "Salon i lobby hotelu Ani Central Inn w Erywaniu z miejscami do siedzenia",
+      "Pokój w hotelu Ani Central Inn z dwoma łóżkami i biurkiem",
+      "Łazienka w hotelu Ani Central Inn z prysznicem i WC",
+      "Bufet śniadaniowy w hotelu Ani Central Inn w Erywaniu",
+      "Basen kryty w hotelu Ani Central Inn w Erywaniu",
+      "Sauna w hotelu Ani Central Inn w Erywaniu"
     ]
   },
   "Sandali Metekhi By Old Hospitality": {
@@ -144,7 +155,7 @@
     "locationHighlights": ["W sercu Starego Miasta w Tbilisi", "Spacerem do łaźni siarkowych i twierdzy Narikala", "W otoczeniu kawiarni, restauracji i sklepów"],
     "imageAlts": [
       "Elewacja hotelu Ginger Hotel na Starym Mieście w Tbilisi, Gruzja",
-      "Sala konferencyjna w Ginger Hotel w Tbilisi, Gruzja",
+      "Lobby i recepcja w Ginger Hotel w Tbilisi, Gruzja",
       "Czysty i wygodny pokój gościnny w hotelu Ginger Hotel w Tbilisi",
       "Łazienka z nowoczesnym wyposażeniem w hotelu Ginger Hotel w Tbilisi"
     ]
@@ -200,8 +211,11 @@
     "locationHighlights": ["Widok na górę Kazbek i kościół Trójcy Świętej w Gergeti", "Punkt wyjścia na szlaki Parku Narodowego Kazbegi", "W centrum wsi Stepancminda"],
     "imageAlts": [
       "Charakterystyczny nowoczesny budynek hotelu Rooms Hotel Kazbegi na tle Wielkiego Kaukazu, Stepancminda",
-      "Lobby i recepcja hotelu Rooms Hotel Kazbegi z widokiem na góry",
-      "Przestronny pokój gościnny w hotelu Rooms Hotel Kazbegi z widokiem na górę Kazbek",
+      "Salon biblioteczny w hotelu Rooms Hotel Kazbegi w Stepancmindzie, Gruzja",
+      "Pokój w hotelu Rooms Hotel Kazbegi z balkonem i widokiem na góry",
+      "Łazienka w hotelu Rooms Hotel Kazbegi z prysznicem deszczowym i szlafrokiem",
+      "Basen kryty w hotelu Rooms Hotel Kazbegi z panoramicznym widokiem na góry",
+      "Taras zewnętrzny hotelu Rooms Hotel Kazbegi z widokiem na Kaukaz",
       "Salon z kominkiem w Rooms Hotel Kazbegi w Stepancmindzie, Gruzja"
     ]
   },
@@ -287,10 +301,19 @@
     "amenities": ["Bezpłatne Wi-Fi", "Restauracja fine dining", "Basen odkryty", "Spa i centrum wellness", "Historyczna piwnica winiarska"],
     "locationHighlights": ["Na terenie historycznej posiadłości Cinandali", "W sercu regionu winiarskiego Kachetia", "Blisko starego Telawi i twierdzy Batonis Cyche"],
     "imageAlts": [
-      "Okazała elewacja hotelu Tsinandali Estate, A Radisson Collection Hotel, otoczona historycznymi ogrodami, Telawi",
-      "Lobby i strefa wypoczynkowa hotelu Tsinandali Estate z eleganckim wnętrzem",
-      "Taras z basenem zewnętrznym w Tsinandali Estate, A Radisson Collection Hotel w Kachetii, Gruzja",
-      "Marmurowa łazienka z wysokiej klasy wyposażeniem w hotelu Tsinandali Estate"
+      "Zielona fasada z żywą ścianą roślinną hotelu Tsinandali Estate, A Radisson Collection Hotel, otoczona historycznymi ogrodami, Telawi",
+      "Lobby lounge hotelu Tsinandali Estate, A Radisson Collection Hotel ze sklepionym ceglanym sufitem",
+      "Pokój w hotelu Tsinandali Estate, A Radisson Collection Hotel z nowoczesnym wystrojem",
+      "Łazienka w hotelu Tsinandali Estate, A Radisson Collection Hotel z kamiennym wykończeniem i prysznicem deszczowym",
+      "Restauracja śniadaniowa w hotelu Tsinandali Estate, A Radisson Collection Hotel w przebudowanej kamiennej piwnicy",
+      "Zabytkowa piwnica win w hotelu Tsinandali Estate, A Radisson Collection Hotel",
+      "Kryty basen w hotelu Tsinandali Estate, A Radisson Collection Hotel z rozsuwanym szklanym dachem",
+      "Basen na dachu typu infinity w hotelu Tsinandali Estate, A Radisson Collection Hotel z widokiem na góry",
+      "Sauna w hotelu Tsinandali Estate, A Radisson Collection Hotel",
+      "Gabinet masażu w spa hotelu Tsinandali Estate, A Radisson Collection Hotel",
+      "Siłownia w hotelu Tsinandali Estate, A Radisson Collection Hotel",
+      "Zewnętrzny taras lounge hotelu Tsinandali Estate, A Radisson Collection Hotel z widokiem na góry",
+      "Zabytkowe ogrody hotelu Tsinandali Estate, A Radisson Collection Hotel"
     ]
   },
   "Park Hotel Tsinandali": {

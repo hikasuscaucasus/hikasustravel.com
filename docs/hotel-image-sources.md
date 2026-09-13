@@ -437,24 +437,21 @@ edge capped at 1600 px, never upscaled.
 | Ani Central Inn | standard room | https://anicentralinnyerevan.com/rooms/double-twin/ | `ani-central-inn-2.webp` | 1110x720, 43 KB |
 | Ani Central Inn | bathroom | https://anicentralinnyerevan.com/rooms/double-twin/ | `ani-central-inn-3.webp` | 1110x720, 48 KB |
 
-**Still outstanding:**
+**Still outstanding as of 2026-09-12:**
 
 | Hotel | Missing category | Why it is still open |
 |---|---|---|
 | Ani Central Inn | exterior | No standalone building photograph anywhere on anicentralinnyerevan.com (homepage, about-us, contacts and hotel pages all checked). The hotel appears to share a building with sister properties under the same operator (Dali Holding); nothing was substituted. |
 
-DoubleTree by Hilton Yerevan City Centre's gap (hilton.com blocked automated access and
-no Hilton press page existed for this hotel) was closed on 2026-09-13 when the owner
-supplied the property's own photos directly — see that section below.
-
-Log a reply date here if the hotel or Hikasus later supplies an Ani Central Inn exterior
-shot, then follow the "Adding a new hotel image" checklist.
+Both gaps were closed on 2026-09-13 when the owner supplied photos directly — DoubleTree
+by Hilton Yerevan City Centre and Ani Central Inn's exterior are covered in the sections
+below.
 
 ---
 
 ## 2026-09-13 — DoubleTree by Hilton Yerevan City Centre (owner-supplied)
 
-The owner supplied four of the property's own photographs directly, dropped in
+The owner supplied all nine of the property's own photographs directly, dropped in
 `Images for tours/Hotels/Double Tree by Hilton in Yerevan/` outside the repo. Each was
 viewed individually before use (same standard as every other row in this manifest): the
 exterior shows the building's own signage, and the lobby has a visible "DoubleTree by
@@ -467,8 +464,75 @@ source files were already under the 1600px long-edge cap, so none were resized.
 | DoubleTree by Hilton Yerevan City Centre | lobby | Owner-supplied (property's own photo) | `doubletree-yerevan-2.webp` | 1024x703, 71 KB |
 | DoubleTree by Hilton Yerevan City Centre | standard room | Owner-supplied (property's own photo) | `doubletree-yerevan-3.webp` | 1024x683, 43 KB |
 | DoubleTree by Hilton Yerevan City Centre | bathroom | Owner-supplied (property's own photo) | `doubletree-yerevan-4.webp` | 1024x683, 49 KB |
+| DoubleTree by Hilton Yerevan City Centre | breakfast restaurant | Owner-supplied (property's own photo) | `doubletree-yerevan-5.webp` | 1024x683, 55 KB |
+| DoubleTree by Hilton Yerevan City Centre | gym | Owner-supplied (property's own photo) | `doubletree-yerevan-6.webp` | 1024x697, 60 KB |
+| DoubleTree by Hilton Yerevan City Centre | spa | Owner-supplied (property's own photo) | `doubletree-yerevan-7.webp` | 1024x683, 80 KB |
+| DoubleTree by Hilton Yerevan City Centre | sauna | Owner-supplied (property's own photo) | `doubletree-yerevan-8.webp` | 1024x683, 57 KB |
+| DoubleTree by Hilton Yerevan City Centre | massage room | Owner-supplied (property's own photo) | `doubletree-yerevan-9.webp` | 1024x640, 51 KB |
 
 DoubleTree by Hilton Yerevan City Centre is no longer in the outstanding table above.
+
+---
+
+## 2026-09-13 — Global hotel-image replacement (owner-supplied)
+
+The owner supplied photos for five more properties directly in
+`Images for tours/Hotels/<hotel name>/`, alongside DoubleTree above. Each file was
+viewed individually before use. These are shared registry entries in `hotelData.js`,
+so replacing each hotel's `images[]` once propagates to every tour that names it:
+Ginger Hotel (15 tours), Rooms Hotel Kazbegi (12 tours), Tsinandali Estate, A Radisson
+Collection Hotel (7 tours), Yerevan Place and Ani Central Inn (1 tour each — both only
+appear on the 10-Day Georgia and Armenia Tour). The prior image sets (unsourced
+`UNVERIFIED` files, or the 2026-09-12 official-site pulls for Yerevan Place/Ani Central
+Inn) were fully replaced, not appended, and the now-orphaned old files
+(`ginger-hotel*.jpg`, `rooms-hotel-kazbegi*.jpg`, `tsinandali-estate*.jpg` under
+`public/images/hotels/`) were deleted after confirming no other reference (the
+`/images/files/tsinandali-estate.jpg` used in a tour's inline gallery is a different file
+in a different directory and was left untouched). Converted to WebP; all source files
+were already under the 1600px long-edge cap, so none were resized.
+
+| Hotel | Category | Local file | Size |
+|---|---|---|---|
+| Ani Central Inn | exterior | `ani-central-inn.webp` | 1024x708, 159 KB |
+| Ani Central Inn | lobby | `ani-central-inn-2.webp` | 1024x682, 75 KB |
+| Ani Central Inn | room | `ani-central-inn-3.webp` | 1024x650, 52 KB |
+| Ani Central Inn | bathroom | `ani-central-inn-4.webp` | 1110x720, 45 KB |
+| Ani Central Inn | breakfast | `ani-central-inn-5.webp` | 1024x680, 112 KB |
+| Ani Central Inn | swimming pool | `ani-central-inn-6.webp` | 1024x683, 59 KB |
+| Ani Central Inn | sauna | `ani-central-inn-7.webp` | 1024x683, 50 KB |
+| Ginger Hotel | exterior | `ginger-hotel.webp` | 1200x800, 165 KB |
+| Ginger Hotel | lobby | `ginger-hotel-2.webp` | 1024x758, 136 KB |
+| Ginger Hotel | room | `ginger-hotel-3.webp` | 1024x683, 82 KB |
+| Ginger Hotel | bathroom | `ginger-hotel-4.webp` | 1024x683, 75 KB |
+| Rooms Hotel Kazbegi | exterior | `rooms-hotel-kazbegi.webp` | 1024x683, 138 KB |
+| Rooms Hotel Kazbegi | lobby (library lounge) | `rooms-hotel-kazbegi-2.webp` | 1024x683, 112 KB |
+| Rooms Hotel Kazbegi | room | `rooms-hotel-kazbegi-3.webp` | 1024x683, 83 KB |
+| Rooms Hotel Kazbegi | bathroom | `rooms-hotel-kazbegi-4.webp` | 1024x768, 45 KB |
+| Rooms Hotel Kazbegi | swimming pool | `rooms-hotel-kazbegi-5.webp` | 1024x768, 142 KB |
+| Rooms Hotel Kazbegi | terrace | `rooms-hotel-kazbegi-6.webp` | 1024x683, 128 KB |
+| Rooms Hotel Kazbegi | fireplace lounge | `rooms-hotel-kazbegi-7.webp` | 1200x531, 165 KB |
+| Tsinandali Estate, A Radisson Collection Hotel | exterior | `tsinandali-estate.webp` | 1199x800, 275 KB |
+| Tsinandali Estate, A Radisson Collection Hotel | lobby | `tsinandali-estate-2.webp` | 1200x800, 132 KB |
+| Tsinandali Estate, A Radisson Collection Hotel | room | `tsinandali-estate-3.webp` | 1200x800, 53 KB |
+| Tsinandali Estate, A Radisson Collection Hotel | bathroom | `tsinandali-estate-4.webp` | 1200x800, 112 KB |
+| Tsinandali Estate, A Radisson Collection Hotel | breakfast | `tsinandali-estate-5.webp` | 1200x800, 192 KB |
+| Tsinandali Estate, A Radisson Collection Hotel | wine cellar | `tsinandali-estate-6.webp` | 1200x800, 114 KB |
+| Tsinandali Estate, A Radisson Collection Hotel | covered pool | `tsinandali-estate-7.webp` | 1200x800, 99 KB |
+| Tsinandali Estate, A Radisson Collection Hotel | rooftop pool | `tsinandali-estate-8.webp` | 1200x800, 276 KB |
+| Tsinandali Estate, A Radisson Collection Hotel | sauna | `tsinandali-estate-9.webp` | 1200x800, 159 KB |
+| Tsinandali Estate, A Radisson Collection Hotel | massage room | `tsinandali-estate-10.webp` | 1200x800, 77 KB |
+| Tsinandali Estate, A Radisson Collection Hotel | gym | `tsinandali-estate-11.webp` | 1200x800, 170 KB |
+| Tsinandali Estate, A Radisson Collection Hotel | terrace lounge | `tsinandali-estate-12.webp` | 1200x800, 200 KB |
+| Tsinandali Estate, A Radisson Collection Hotel | garden | `tsinandali-estate-13.webp` | 1200x800, 297 KB |
+| Yerevan Place | exterior | `yerevan-place.webp` | 1024x709, 76 KB |
+| Yerevan Place | lobby | `yerevan-place-2.webp` | 1024x683, 79 KB |
+| Yerevan Place | room | `yerevan-place-3.webp` | 1024x683, 27 KB |
+| Yerevan Place | bathroom | `yerevan-place-4.webp` | 1024x683, 54 KB |
+| Yerevan Place | breakfast | `yerevan-place-5.webp` | 1024x683, 114 KB |
+| Yerevan Place | gym | `yerevan-place-6.webp` | 1024x683, 102 KB |
+
+Ani Central Inn's exterior gap (noted above as still outstanding on 2026-09-12) is
+closed by this pass.
 
 **Future workflow:** for any new tour or hotel entry, check
 `Images for tours/Hotels/` for owner-supplied photos FIRST, before falling back to the

@@ -17,7 +17,12 @@
       "Vnější pohled na hotel DoubleTree by Hilton Yerevan City Centre v Jerevanu, Arménie",
       "Lobby hotelu DoubleTree by Hilton Yerevan City Centre s pohovkami a lustrem",
       "Pokoj v hotelu DoubleTree by Hilton Yerevan City Centre s manželskou postelí a pracovním koutem",
-      "Koupelna v hotelu DoubleTree by Hilton Yerevan City Centre se sprchovým koutem a umyvadlem"
+      "Koupelna v hotelu DoubleTree by Hilton Yerevan City Centre se sprchovým koutem a umyvadlem",
+      "Restaurace se snídaňovým bufetem v hotelu DoubleTree by Hilton Yerevan City Centre",
+      "Fitness centrum v hotelu DoubleTree by Hilton Yerevan City Centre s kardio vybavením a výhledem na město",
+      "Relaxační zóna spa v hotelu DoubleTree by Hilton Yerevan City Centre s lehátky",
+      "Sauna v hotelu DoubleTree by Hilton Yerevan City Centre",
+      "Masážní místnost v hotelu DoubleTree by Hilton Yerevan City Centre"
     ]
   },
   "Yerevan Place": {
@@ -37,8 +42,10 @@
     "imageAlts": [
       "Osvětlená fasáda a vchod hotelu Yerevan Place v centru Jerevanu, Arménie",
       "Recepce hotelu Yerevan Place, Jerevan",
-      "Pokoj v hotelu Yerevan Place s postelí king size a výhledem na město",
-      "Koupelna v hotelu Yerevan Place s vanou a sprchovým koutem"
+      "Pokoj v hotelu Yerevan Place se dvěma postelemi a pracovním koutem",
+      "Koupelna v hotelu Yerevan Place se sprchovým koutem a županem",
+      "Restaurace se snídaňovým bufetem v hotelu Yerevan Place, Jerevan",
+      "Fitness centrum v hotelu Yerevan Place, Jerevan"
     ]
   },
   "Ani Central Inn": {
@@ -56,9 +63,13 @@
       "Docházková vzdálenost k Národní galerii Arménie"
     ],
     "imageAlts": [
-      "Salonek a lobby hotelu Ani Central Inn v Jerevanu s klavírem a posezením",
+      "Vnější pohled na Ani Central Inn v centru Jerevanu, Arménie",
+      "Salonek a lobby hotelu Ani Central Inn v Jerevanu s posezením",
       "Dvoulůžkový pokoj v hotelu Ani Central Inn s pracovním stolem",
-      "Koupelna v hotelu Ani Central Inn se sprchovým koutem a WC"
+      "Koupelna v hotelu Ani Central Inn se sprchovým koutem a WC",
+      "Snídaňový bufet v hotelu Ani Central Inn v Jerevanu",
+      "Krytý bazén v hotelu Ani Central Inn v Jerevanu",
+      "Sauna v hotelu Ani Central Inn v Jerevanu"
     ]
   },
   "Sandali Metekhi By Old Hospitality": {
@@ -144,7 +155,7 @@
     "locationHighlights": ["V srdci tbiliského Starého Města", "Pěšky k sirným lázním a pevnosti Narikala", "Obklopen kavárnami, restauracemi a obchody"],
     "imageAlts": [
       "Exteriér hotelu Ginger Hotel ve Starém Městě v Tbilisi, Gruzie",
-      "Zasedací místnost v hotelu Ginger Hotel v Tbilisi, Gruzie",
+      "Lobby a recepce hotelu Ginger Hotel v Tbilisi, Gruzie",
       "Čistý a pohodlný pokoj pro hosty v hotelu Ginger Hotel v Tbilisi",
       "Koupelna s moderním vybavením v hotelu Ginger Hotel v Tbilisi"
     ]
@@ -200,8 +211,11 @@
     "locationHighlights": ["Výhled na horu Kazbek a kostel Nejsvětější Trojice v Gergeti", "Výchozí bod pro stezky Národního parku Kazbegi", "V centru vesnice Stepancminda"],
     "imageAlts": [
       "Výrazná moderní budova hotelu Rooms Hotel Kazbegi na pozadí Velkého Kavkazu, Stepancminda",
-      "Lobby a recepce hotelu Rooms Hotel Kazbegi s výhledem na hory",
-      "Prostorný pokoj pro hosty v hotelu Rooms Hotel Kazbegi s výhledem na horu Kazbek",
+      "Knihovní salonek v hotelu Rooms Hotel Kazbegi ve Stepancmindě, Gruzie",
+      "Pokoj v hotelu Rooms Hotel Kazbegi s balkonem a výhledem na hory",
+      "Koupelna v hotelu Rooms Hotel Kazbegi s dešťovou sprchou a županem",
+      "Krytý bazén v hotelu Rooms Hotel Kazbegi s panoramatickým výhledem na hory",
+      "Venkovní terasa hotelu Rooms Hotel Kazbegi s výhledem na Kavkaz",
       "Lounge s krbem v hotelu Rooms Hotel Kazbegi ve Stepancmindě, Gruzie"
     ]
   },
@@ -287,10 +301,19 @@
     "amenities": ["Wi-Fi zdarma", "Gastronomická restaurace", "Venkovní bazén", "Spa a wellness centrum", "Historický vinný sklep"],
     "locationHighlights": ["V areálu historického panství Cinandali", "V srdci vinařské oblasti Kachetie", "Blízko starého Telavi a pevnosti Batonis Cihe"],
     "imageAlts": [
-      "Majestátní exteriér hotelu Tsinandali Estate, A Radisson Collection Hotel, obklopený historickými zahradami, Telavi",
-      "Lobby a odpočinkový prostor hotelu Tsinandali Estate s elegantním interiérem",
-      "Terasa s venkovním bazénem v hotelu Tsinandali Estate, A Radisson Collection Hotel v Kachetii, Gruzie",
-      "Mramorová koupelna s prvotřídním vybavením v hotelu Tsinandali Estate"
+      "Zelená fasáda s živou zelenou stěnou hotelu Tsinandali Estate, A Radisson Collection Hotel, obklopená historickými zahradami, Telavi",
+      "Lobby lounge hotelu Tsinandali Estate, A Radisson Collection Hotel s klenutým cihlovým stropem",
+      "Pokoj v hotelu Tsinandali Estate, A Radisson Collection Hotel s moderním interiérem",
+      "Koupelna v hotelu Tsinandali Estate, A Radisson Collection Hotel s kamennými povrchy a dešťovou sprchou",
+      "Snídaňová restaurace v hotelu Tsinandali Estate, A Radisson Collection Hotel v přestavěném kamenném sklepení",
+      "Historický vinný sklep hotelu Tsinandali Estate, A Radisson Collection Hotel",
+      "Krytý bazén hotelu Tsinandali Estate, A Radisson Collection Hotel se zatahovací skleněnou střechou",
+      "Bazén na střeše s nekonečným okrajem hotelu Tsinandali Estate, A Radisson Collection Hotel s výhledem na hory",
+      "Sauna hotelu Tsinandali Estate, A Radisson Collection Hotel",
+      "Masážní místnost spa v hotelu Tsinandali Estate, A Radisson Collection Hotel",
+      "Fitness centrum hotelu Tsinandali Estate, A Radisson Collection Hotel",
+      "Venkovní terasa s lounge hotelu Tsinandali Estate, A Radisson Collection Hotel s výhledem na hory",
+      "Historické zahrady hotelu Tsinandali Estate, A Radisson Collection Hotel"
     ]
   },
   "Park Hotel Tsinandali": {

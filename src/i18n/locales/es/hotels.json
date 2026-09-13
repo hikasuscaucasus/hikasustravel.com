@@ -17,7 +17,12 @@
       "Fachada exterior del DoubleTree by Hilton Yerevan City Centre en Ereván, Armenia",
       "Vestíbulo del DoubleTree by Hilton Yerevan City Centre con zona de estar y lámpara de araña",
       "Habitación del DoubleTree by Hilton Yerevan City Centre con cama king size y zona de trabajo",
-      "Baño del DoubleTree by Hilton Yerevan City Centre con ducha a ras de suelo y lavabo"
+      "Baño del DoubleTree by Hilton Yerevan City Centre con ducha a ras de suelo y lavabo",
+      "Restaurante buffet de desayuno del DoubleTree by Hilton Yerevan City Centre",
+      "Gimnasio del DoubleTree by Hilton Yerevan City Centre con equipo de cardio y vistas a la ciudad",
+      "Zona de relajación del spa del DoubleTree by Hilton Yerevan City Centre con tumbonas",
+      "Sauna del DoubleTree by Hilton Yerevan City Centre",
+      "Sala de masajes del DoubleTree by Hilton Yerevan City Centre"
     ]
   },
   "Yerevan Place": {
@@ -37,8 +42,10 @@
     "imageAlts": [
       "Fachada iluminada y entrada del Yerevan Place Hotel en el centro de Ereván, Armenia",
       "Recepción del Yerevan Place Hotel, Ereván",
-      "Habitación del Yerevan Place Hotel con cama king size y vistas a la ciudad",
-      "Baño con bañera y ducha del Yerevan Place Hotel"
+      "Habitación del Yerevan Place Hotel con camas gemelas y zona de trabajo",
+      "Baño del Yerevan Place Hotel con ducha a ras de suelo y albornoz",
+      "Restaurante buffet de desayuno del Yerevan Place Hotel, Ereván",
+      "Gimnasio del Yerevan Place Hotel, Ereván"
     ]
   },
   "Ani Central Inn": {
@@ -56,9 +63,13 @@
       "A poca distancia a pie de la Galería Nacional de Armenia"
     ],
     "imageAlts": [
-      "Salón y vestíbulo del Ani Central Inn en Ereván, con piano de cola y zona de estar",
-      "Habitación doble del Ani Central Inn con escritorio",
-      "Baño con ducha y WC del Ani Central Inn"
+      "Fachada exterior del Ani Central Inn en el centro de Ereván, Armenia",
+      "Salón y vestíbulo del Ani Central Inn en Ereván, con zona de estar",
+      "Habitación del Ani Central Inn con camas gemelas y escritorio",
+      "Baño con ducha y WC del Ani Central Inn",
+      "Buffet de desayuno en el Ani Central Inn en Ereván",
+      "Piscina cubierta del Ani Central Inn en Ereván",
+      "Sauna del Ani Central Inn en Ereván"
     ]
   },
   "Sandali Metekhi By Old Hospitality": {
@@ -144,7 +155,7 @@
     "locationHighlights": ["En el corazón del casco antiguo de Tiflis", "A poca distancia de los baños de azufre y la fortaleza de Narikala", "Rodeado de cafés, restaurantes y tiendas"],
     "imageAlts": [
       "Fachada del Ginger Hotel en el casco antiguo de Tiflis, Georgia",
-      "Sala de reuniones del Ginger Hotel en Tiflis, Georgia",
+      "Vestíbulo y recepción del Ginger Hotel en Tiflis, Georgia",
       "Habitación limpia y cómoda del Ginger Hotel en Tiflis",
       "Baño con equipamiento moderno del Ginger Hotel en Tiflis"
     ]
@@ -200,8 +211,11 @@
     "locationHighlights": ["Vistas del monte Kazbek y la iglesia de la Trinidad de Guergueti", "Puerta de entrada a las rutas del parque nacional de Kazbegi", "En el centro del pueblo de Stepantsminda"],
     "imageAlts": [
       "Llamativo edificio moderno del Rooms Hotel Kazbegi frente al Gran Cáucaso, Stepantsminda",
-      "Vestíbulo y recepción del Rooms Hotel Kazbegi con vistas a la montaña",
-      "Amplia habitación del Rooms Hotel Kazbegi con vistas al monte Kazbek",
+      "Salón biblioteca del Rooms Hotel Kazbegi en Stepantsminda, Georgia",
+      "Habitación del Rooms Hotel Kazbegi con balcón y vistas a la montaña",
+      "Baño del Rooms Hotel Kazbegi con ducha efecto lluvia y albornoz",
+      "Piscina cubierta del Rooms Hotel Kazbegi con vistas panorámicas a la montaña",
+      "Terraza exterior del Rooms Hotel Kazbegi con vistas al Cáucaso",
       "Salón con chimenea del Rooms Hotel Kazbegi en Stepantsminda, Georgia"
     ]
   },
@@ -287,10 +301,19 @@
     "amenities": ["Wi-Fi gratuito", "Restaurante de alta cocina", "Piscina exterior", "Spa y centro de bienestar", "Bodega histórica"],
     "locationHighlights": ["Dentro del recinto histórico de la finca Tsinandali", "En el corazón de la región vinícola de Kajetia", "Cerca del casco antiguo de Telavi y la fortaleza Batonis Tsikhe"],
     "imageAlts": [
-      "Imponente fachada del Tsinandali Estate, A Radisson Collection Hotel, rodeada de jardines históricos, Telavi",
-      "Vestíbulo y sala de estar del Tsinandali Estate con interiorismo elegante",
-      "Terraza con piscina exterior del Tsinandali Estate, A Radisson Collection Hotel en Kajetia, Georgia",
-      "Baño de mármol con equipamiento de alta gama del Tsinandali Estate"
+      "Fachada con muro verde vegetal del Tsinandali Estate, A Radisson Collection Hotel, rodeada de jardines históricos, Telavi",
+      "Salón vestíbulo del Tsinandali Estate, A Radisson Collection Hotel con techo abovedado de ladrillo",
+      "Habitación del Tsinandali Estate, A Radisson Collection Hotel con decoración contemporánea",
+      "Baño del Tsinandali Estate, A Radisson Collection Hotel con acabados en piedra y ducha efecto lluvia",
+      "Restaurante de desayuno del Tsinandali Estate, A Radisson Collection Hotel en una bodega de piedra reformada",
+      "Bodega histórica del Tsinandali Estate, A Radisson Collection Hotel",
+      "Piscina cubierta del Tsinandali Estate, A Radisson Collection Hotel con techo de cristal retráctil",
+      "Piscina infinita en la azotea del Tsinandali Estate, A Radisson Collection Hotel con vistas a las montañas",
+      "Sauna del Tsinandali Estate, A Radisson Collection Hotel",
+      "Sala de masajes del spa en el Tsinandali Estate, A Radisson Collection Hotel",
+      "Gimnasio del Tsinandali Estate, A Radisson Collection Hotel",
+      "Terraza salón exterior del Tsinandali Estate, A Radisson Collection Hotel con vistas a las montañas",
+      "Jardines históricos del Tsinandali Estate, A Radisson Collection Hotel"
     ]
   },
   "Park Hotel Tsinandali": {

@@ -17,7 +17,12 @@
       "Buitenaanzicht van het DoubleTree by Hilton Yerevan City Centre in Jerevan, Armenië",
       "Lobby van het DoubleTree by Hilton Yerevan City Centre met loungezithoek en kroonluchter",
       "Gastenkamer in het DoubleTree by Hilton Yerevan City Centre met kingsize bed en werkplek",
-      "Gastenbadkamer in het DoubleTree by Hilton Yerevan City Centre met inloopdouche en wastafel"
+      "Gastenbadkamer in het DoubleTree by Hilton Yerevan City Centre met inloopdouche en wastafel",
+      "Ontbijtbuffetrestaurant in het DoubleTree by Hilton Yerevan City Centre",
+      "Fitnessruimte in het DoubleTree by Hilton Yerevan City Centre met cardioapparatuur en uitzicht over de stad",
+      "Spa-ontspanningsruimte in het DoubleTree by Hilton Yerevan City Centre met ligbedden",
+      "Sauna in het DoubleTree by Hilton Yerevan City Centre",
+      "Massageruimte in het DoubleTree by Hilton Yerevan City Centre"
     ]
   },
   "Yerevan Place": {
@@ -37,8 +42,10 @@
     "imageAlts": [
       "Verlichte gevel en ingang van het Yerevan Place Hotel in het centrum van Jerevan, Armenië",
       "Receptie van het Yerevan Place Hotel, Jerevan",
-      "Kamer in het Yerevan Place Hotel met kingsize bed en uitzicht op de stad",
-      "Badkamer in het Yerevan Place Hotel met ligbad en inloopdouche"
+      "Kamer in het Yerevan Place Hotel met twee bedden en werkplek",
+      "Badkamer in het Yerevan Place Hotel met inloopdouche en badjas",
+      "Ontbijtbuffetrestaurant in het Yerevan Place Hotel, Jerevan",
+      "Fitnessruimte in het Yerevan Place Hotel, Jerevan"
     ]
   },
   "Ani Central Inn": {
@@ -56,9 +63,13 @@
       "Loopafstand van de Nationale Galerie van Armenië"
     ],
     "imageAlts": [
-      "Lounge en lobby van het Ani Central Inn in Jerevan, met vleugel en zitgelegenheid",
-      "Tweepersoonskamer in het Ani Central Inn met bureau",
-      "Badkamer in het Ani Central Inn met inloopdouche en toilet"
+      "Buitenaanzicht van het Ani Central Inn in het centrum van Jerevan, Armenië",
+      "Lounge en lobby van het Ani Central Inn in Jerevan, met zitgelegenheid",
+      "Gastenkamer in het Ani Central Inn met twee bedden en bureau",
+      "Badkamer in het Ani Central Inn met inloopdouche en toilet",
+      "Ontbijtbuffet in het Ani Central Inn in Jerevan",
+      "Binnenzwembad van het Ani Central Inn in Jerevan",
+      "Sauna van het Ani Central Inn in Jerevan"
     ]
   },
   "Sandali Metekhi By Old Hospitality": {
@@ -144,7 +155,7 @@
     "locationHighlights": ["In het hart van de oude stad van Tbilisi", "Op loopafstand van de zwavelbaden en het Narikala-fort", "Omringd door cafés, restaurants en winkels"],
     "imageAlts": [
       "Buitenaanzicht van Ginger Hotel in de oude stad van Tbilisi, Georgië",
-      "Vergaderzaal in Ginger Hotel in Tbilisi, Georgië",
+      "Lobby en receptie van Ginger Hotel in Tbilisi, Georgië",
       "Schone en comfortabele gastenkamer in Ginger Hotel in Tbilisi",
       "Badkamer met moderne voorzieningen in Ginger Hotel in Tbilisi"
     ]
@@ -200,8 +211,11 @@
     "locationHighlights": ["Uitzicht op de berg Kazbek en de Drie-eenheidskerk van Gergeti", "Startpunt voor de routes in Nationaal Park Kazbegi", "In het centrum van het dorp Stepantsminda"],
     "imageAlts": [
       "Opvallend modern gebouw van Rooms Hotel Kazbegi tegen de Grote Kaukasus, Stepantsminda",
-      "Lobby en receptie van Rooms Hotel Kazbegi met bergzicht",
-      "Ruime gastenkamer in Rooms Hotel Kazbegi met uitzicht op de berg Kazbek",
+      "Bibliotheeklounge in Rooms Hotel Kazbegi in Stepantsminda, Georgië",
+      "Gastenkamer in Rooms Hotel Kazbegi met balkon en bergzicht",
+      "Badkamer in Rooms Hotel Kazbegi met regendouche en badjas",
+      "Binnenzwembad in Rooms Hotel Kazbegi met panoramisch uitzicht op de bergen",
+      "Buitenterras van Rooms Hotel Kazbegi met uitzicht op de Kaukasus",
       "Lounge met open haard in Rooms Hotel Kazbegi in Stepantsminda, Georgië"
     ]
   },
@@ -287,10 +301,19 @@
     "amenities": ["Gratis wifi", "Fijnproeversrestaurant", "Buitenzwembad", "Spa & wellnesscentrum", "Historische wijnkelder"],
     "locationHighlights": ["Op het historische landgoed Tsinandali", "In het hart van de wijnstreek Kachetië", "Vlak bij de oude stad van Telavi en het fort Batonis Tsikhe"],
     "imageAlts": [
-      "Imposante gevel van Tsinandali Estate, A Radisson Collection Hotel, omringd door historische tuinen, Telavi",
-      "Lobby en lounge van Tsinandali Estate met elegant interieur",
-      "Buitenzwembadterras bij Tsinandali Estate, A Radisson Collection Hotel in Kacheti, Georgië",
-      "Marmeren badkamer met hoogwaardige voorzieningen in Tsinandali Estate"
+      "Groene levende gevelwand van Tsinandali Estate, A Radisson Collection Hotel, omringd door historische tuinen, Telavi",
+      "Lobbylounge van Tsinandali Estate, A Radisson Collection Hotel met gewelfd bakstenen plafond",
+      "Gastenkamer in Tsinandali Estate, A Radisson Collection Hotel met eigentijdse inrichting",
+      "Badkamer in Tsinandali Estate, A Radisson Collection Hotel met stenen afwerking en regendouche",
+      "Ontbijtrestaurant in Tsinandali Estate, A Radisson Collection Hotel in een omgebouwde stenen kelder",
+      "Historische wijnkelder van Tsinandali Estate, A Radisson Collection Hotel",
+      "Overdekt zwembad bij Tsinandali Estate, A Radisson Collection Hotel met uitschuifbaar glazen dak",
+      "Infinity-zwembad op het dak van Tsinandali Estate, A Radisson Collection Hotel met bergzicht",
+      "Sauna bij Tsinandali Estate, A Radisson Collection Hotel",
+      "Massageruimte van de spa in Tsinandali Estate, A Radisson Collection Hotel",
+      "Fitnessruimte van Tsinandali Estate, A Radisson Collection Hotel",
+      "Buiten loungeterras van Tsinandali Estate, A Radisson Collection Hotel met bergzicht",
+      "Historische tuinen van Tsinandali Estate, A Radisson Collection Hotel"
     ]
   },
   "Park Hotel Tsinandali": {

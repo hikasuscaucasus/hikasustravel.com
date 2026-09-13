@@ -17,7 +17,12 @@
       "Außenansicht des DoubleTree by Hilton Yerevan City Centre in Jerewan, Armenien",
       "Lobby im DoubleTree by Hilton Yerevan City Centre mit Sitzlounge und Kronleuchter",
       "Gästezimmer im DoubleTree by Hilton Yerevan City Centre mit Kingsize-Bett und Arbeitsbereich",
-      "Gästebadezimmer im DoubleTree by Hilton Yerevan City Centre mit ebenerdiger Dusche und Waschtisch"
+      "Gästebadezimmer im DoubleTree by Hilton Yerevan City Centre mit ebenerdiger Dusche und Waschtisch",
+      "Frühstücksbuffet-Restaurant im DoubleTree by Hilton Yerevan City Centre",
+      "Fitnessraum im DoubleTree by Hilton Yerevan City Centre mit Cardiogeräten und Stadtblick",
+      "Spa-Ruhebereich im DoubleTree by Hilton Yerevan City Centre mit Liegen",
+      "Sauna im DoubleTree by Hilton Yerevan City Centre",
+      "Massageraum im DoubleTree by Hilton Yerevan City Centre"
     ]
   },
   "Yerevan Place": {
@@ -37,8 +42,10 @@
     "imageAlts": [
       "Beleuchtete Außenansicht und Eingang des Yerevan Place Hotel im Zentrum von Jerewan, Armenien",
       "Rezeption des Yerevan Place Hotel, Jerewan",
-      "Gästezimmer im Yerevan Place Hotel mit Kingsize-Bett und Stadtblick",
-      "Gästebadezimmer im Yerevan Place Hotel mit Badewanne und ebenerdiger Dusche"
+      "Gästezimmer im Yerevan Place Hotel mit zwei Betten und Arbeitsbereich",
+      "Gästebadezimmer im Yerevan Place Hotel mit ebenerdiger Dusche und Bademantel",
+      "Frühstücksbuffet-Restaurant im Yerevan Place Hotel, Jerewan",
+      "Fitnessraum im Yerevan Place Hotel, Jerewan"
     ]
   },
   "Ani Central Inn": {
@@ -56,9 +63,13 @@
       "Fußläufig zur Nationalgalerie von Armenien"
     ],
     "imageAlts": [
-      "Lounge- und Lobbybereich des Ani Central Inn in Jerewan mit Flügel und Sitzgelegenheiten",
-      "Gästezimmer im Ani Central Inn mit Doppelbett und Schreibtisch",
-      "Gästebadezimmer im Ani Central Inn mit ebenerdiger Dusche und WC"
+      "Außenansicht des Ani Central Inn im Zentrum von Jerewan, Armenien",
+      "Lounge- und Lobbybereich des Ani Central Inn in Jerewan mit Sitzgelegenheiten",
+      "Gästezimmer im Ani Central Inn mit zwei Betten und Schreibtisch",
+      "Gästebadezimmer im Ani Central Inn mit ebenerdiger Dusche und WC",
+      "Frühstücksbuffet im Ani Central Inn in Jerewan",
+      "Hallenbad im Ani Central Inn in Jerewan",
+      "Sauna im Ani Central Inn in Jerewan"
     ]
   },
   "Sandali Metekhi By Old Hospitality": {
@@ -144,7 +155,7 @@
     "locationHighlights": ["Im Herzen der Altstadt von Tiflis", "Zu Fuß zu den Schwefelbädern & zur Festung Narikala", "Umgeben von Cafés, Restaurants & Geschäften"],
     "imageAlts": [
       "Außenansicht des Ginger Hotel in der Altstadt von Tiflis, Georgien",
-      "Tagungsraum im Ginger Hotel in Tiflis, Georgien",
+      "Lobby und Empfang im Ginger Hotel in Tiflis, Georgien",
       "Sauberes und komfortables Gästezimmer im Ginger Hotel in Tiflis",
       "Badezimmer mit moderner Ausstattung im Ginger Hotel in Tiflis"
     ]
@@ -200,8 +211,11 @@
     "locationHighlights": ["Blick auf den Kasbek & die Gergeti-Dreifaltigkeitskirche", "Ausgangspunkt für Wege im Kasbegi-Nationalpark", "Im Zentrum von Stepanzminda"],
     "imageAlts": [
       "Markantes modernes Gebäude des Rooms Hotel Kazbegi vor dem Großen Kaukasus, Stepanzminda",
-      "Lobby und Empfang des Rooms Hotel Kazbegi mit Bergblick",
-      "Großzügiges Gästezimmer im Rooms Hotel Kazbegi mit Blick auf den Kasbek",
+      "Bibliothekslounge im Rooms Hotel Kazbegi in Stepanzminda, Georgien",
+      "Gästezimmer im Rooms Hotel Kazbegi mit Balkon und Bergblick",
+      "Gästebadezimmer im Rooms Hotel Kazbegi mit Regendusche und Bademantel",
+      "Innenpool im Rooms Hotel Kazbegi mit Panoramablick auf die Berge",
+      "Außenterrasse im Rooms Hotel Kazbegi mit Blick auf den Kaukasus",
       "Kaminlounge im Rooms Hotel Kazbegi in Stepanzminda, Georgien"
     ]
   },
@@ -287,10 +301,19 @@
     "amenities": ["Kostenloses WLAN", "Gehobenes Restaurant", "Außenpool", "Spa & Wellnessbereich", "Historischer Weinkeller"],
     "locationHighlights": ["Auf dem historischen Anwesen Tsinandali", "Im Herzen der Weinregion Kachetien", "Nahe der Altstadt von Telawi & der Festung Batonis Zikhe"],
     "imageAlts": [
-      "Prächtige Außenansicht des Tsinandali Estate, A Radisson Collection Hotel, umgeben von historischen Gärten, Telawi",
-      "Lobby und Lounge des Tsinandali Estate Hotels mit elegantem Interieur",
-      "Poolterrasse im Freien im Tsinandali Estate, A Radisson Collection Hotel in Kachetien, Georgien",
-      "Badezimmer mit hochwertiger Ausstattung und Marmor im Tsinandali Estate Hotel"
+      "Grüne Fassade mit lebender Pflanzenwand des Tsinandali Estate, A Radisson Collection Hotel, umgeben von historischen Gärten, Telawi",
+      "Lobbylounge des Tsinandali Estate, A Radisson Collection Hotel mit gewölbter Ziegeldecke",
+      "Gästezimmer im Tsinandali Estate, A Radisson Collection Hotel mit zeitgemäßem Design",
+      "Gästebadezimmer im Tsinandali Estate, A Radisson Collection Hotel mit Steinoberflächen und Regendusche",
+      "Frühstücksrestaurant im Tsinandali Estate, A Radisson Collection Hotel in einem umgebauten Gewölbekeller",
+      "Historischer Weinkeller im Tsinandali Estate, A Radisson Collection Hotel",
+      "Überdachter Swimmingpool im Tsinandali Estate, A Radisson Collection Hotel mit ausfahrbarem Glasdach",
+      "Infinity-Pool auf dem Dach des Tsinandali Estate, A Radisson Collection Hotel mit Bergblick",
+      "Sauna im Tsinandali Estate, A Radisson Collection Hotel",
+      "Massageraum im Spa des Tsinandali Estate, A Radisson Collection Hotel",
+      "Fitnessraum im Tsinandali Estate, A Radisson Collection Hotel",
+      "Lounge-Terrasse im Freien im Tsinandali Estate, A Radisson Collection Hotel mit Bergblick",
+      "Historische Gärten des Tsinandali Estate, A Radisson Collection Hotel"
     ]
   },
   "Park Hotel Tsinandali": {
