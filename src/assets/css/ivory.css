@@ -527,6 +527,19 @@
   object-fit: cover;
 }
 
+/* Click-to-expand affordance, matching Gallery.jsx's own gallery-card__img-wrap
+   convention exactly: cursor only, no icon overlay. */
+.theme-ivory .td-hero__photo-btn {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.theme-ivory .td-hero__photo-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+
 /* --- Sites panel (English-only; opened from the hero chip) ---------------- */
 
 .theme-ivory .iv-sites {

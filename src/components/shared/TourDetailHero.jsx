@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import asset from '../../utils/basePath'
 import LocaleLink from '../../i18n/LocaleLink'
 import useT from '../../i18n/useT'
+import { GalleryLightbox } from './Gallery'
 
 /* Ivory-badge pilot: the hero is a two-column split (copy left, framed cover
    photo right) instead of the full-viewport photo it used to be, so the photo
@@ -12,12 +13,16 @@ import useT from '../../i18n/useT'
    `base` + `widths` and whose base is the stem of `heroImage` is the same
    photograph at every size the image pipeline built. Any tour without such an
    item still renders, from the single `heroImage` file. Nothing new is
-   generated and no image is introduced that the page did not already use. */
-function heroRenditions(tour) {
+   generated and no image is introduced that the page did not already use.
+   The same lookup also gives the click-to-expand lightbox its highest-res
+   source (see heroLightboxImage below). */
+function findHeroGalleryItem(tour) {
   const src = tour.heroImage || ''
-  const item = (tour.gallery || []).find(
+  return (tour.gallery || []).find(
     (g) => g.base && g.widths?.length && src.startsWith(`${g.base}-`),
   )
+}
+function heroRenditions(item) {
   if (!item) return null
   const set = (ext) => item.widths.map((w) => `${asset(`${item.base}-${w}.${ext}`)} ${w}w`).join(', ')
   return { avif: set('avif'), webp: set('webp'), width: item.width, height: item.height }
@@ -105,10 +110,21 @@ function TagIcon() {
 export default function TourDetailHero({ tour, translatedTitle, heroH1, isGroup, sites, startingPrice }) {
   const t = useT()
   const [sitesOpen, setSitesOpen] = useState(false)
+  const [heroLightboxOpen, setHeroLightboxOpen] = useState(false)
+  const photoOpenerRef = useRef(null)
   const title = translatedTitle || tour.title
   const h1 = heroH1 || title
-  const rend = heroRenditions(tour)
+  const heroItem = findHeroGalleryItem(tour)
+  const rend = heroRenditions(heroItem)
   const sitesLabel = sites?.length ? `${sites.length} sites` : null
+
+  // Same array shape Gallery.jsx images carry: `base`/`widths` when a
+  // responsive ladder exists, else the single `src` the <img> already uses.
+  // `lightboxAlt` keeps the hero's own alt on the enlarged photo without
+  // inventing a new caption for a hero that has never shown one.
+  const heroLightboxImage = heroItem
+    ? { base: heroItem.base, widths: heroItem.widths, lightboxAlt: title }
+    : { src: tour.heroImage, lightboxAlt: title }
 
   const scrollToBook = (e) => {
     e.preventDefault()
@@ -175,25 +191,56 @@ export default function TourDetailHero({ tour, translatedTitle, heroH1, isGroup,
         </div>
 
         <figure className="td-hero__photo frame">
-          {rend ? (
-            <picture>
-              <source type="image/avif" srcSet={rend.avif} sizes={HERO_SIZES} />
-              <source type="image/webp" srcSet={rend.webp} sizes={HERO_SIZES} />
-              <img
-                src={asset(tour.heroImage)}
-                width={rend.width}
-                height={rend.height}
-                sizes={HERO_SIZES}
-                alt={title}
-                fetchPriority="high"
-                decoding="async"
-              />
-            </picture>
-          ) : (
-            <img src={asset(tour.heroImage)} alt={title} fetchPriority="high" decoding="async" />
-          )}
+          {/* Same click-to-expand pattern as Gallery.jsx's cards: a real,
+              keyboard-operable control around the <img>, opening the shared
+              lightbox. This is the ONLY thing that changed here — crop,
+              aspect ratio, srcset and fetchpriority are all untouched. */}
+          <div
+            className="td-hero__photo-btn"
+            role="button"
+            tabIndex={0}
+            aria-label={t('tour.viewImage')}
+            onClick={(e) => { photoOpenerRef.current = e.currentTarget; setHeroLightboxOpen(true) }}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault()
+                photoOpenerRef.current = e.currentTarget
+                setHeroLightboxOpen(true)
+              }
+            }}
+          >
+            {rend ? (
+              <picture>
+                <source type="image/avif" srcSet={rend.avif} sizes={HERO_SIZES} />
+                <source type="image/webp" srcSet={rend.webp} sizes={HERO_SIZES} />
+                <img
+                  src={asset(tour.heroImage)}
+                  width={rend.width}
+                  height={rend.height}
+                  sizes={HERO_SIZES}
+                  alt={title}
+                  fetchPriority="high"
+                  decoding="async"
+                />
+              </picture>
+            ) : (
+              <img src={asset(tour.heroImage)} alt={title} fetchPriority="high" decoding="async" />
+            )}
+          </div>
         </figure>
       </div>
+
+      {heroLightboxOpen && (
+        <GalleryLightbox
+          images={[heroLightboxImage]}
+          startIndex={0}
+          onClose={() => {
+            setHeroLightboxOpen(false)
+            if (photoOpenerRef.current instanceof HTMLElement) photoOpenerRef.current.focus()
+          }}
+          label={h1}
+        />
+      )}
 
       {sitesLabel && (
         <SitesPanel sites={sites} label={sitesLabel} open={sitesOpen} onClose={() => setSitesOpen(false)} />
