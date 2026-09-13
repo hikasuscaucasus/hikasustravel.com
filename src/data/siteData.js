@@ -6,6 +6,12 @@
  * has always carried, moved down a level verbatim — same labels, same URLs,
  * same order. Nothing was reworded, reordered or re-slugged.
  *
+ * Each country's level 2 also carries that country's Tours link plus Caucasus
+ * Tours, below a `divider: true` entry (see NavCountry in Header.jsx). These
+ * reuse the exact `to`/`labelKey` pairs the "Our Tours" dropdown uses for the
+ * same four categories in src/data/siteData.js's `navLinks` below — one
+ * tour-routing model, linked from two places, never a second one.
+ *
  * `published` gates rendering, per entry and per country. A `published: false`
  * entry is not rendered anywhere: not in the dropdown, not in a breadcrumb, not
  * in any internal link list. It is also invisible to the sitemap for free —
@@ -38,6 +44,11 @@ export const destinationCountries = [
       { to: '/georgia/regions', labelKey: 'nav.regions', published: true },
       { to: '/georgia/cities', labelKey: 'nav.cities', published: true },
       { to: '/georgia/places-to-visit', labelKey: 'nav.placesToVisit', published: true },
+      // Same route/labelKey as the "Our Tours" dropdown (Header.jsx's
+      // NavCountry renders a divider before the first entry flagged
+      // `divider: true` — no separate tour-routing model).
+      { to: '/tours/georgia', labelKey: 'nav.toursGeorgia', published: true, divider: true },
+      { to: '/tours/caucasus', labelKey: 'nav.toursCaucasus', published: true },
     ],
   },
   {
@@ -64,6 +75,9 @@ export const destinationCountries = [
       { to: '/armenia/regions', labelKey: 'nav.regions', published: true },
       { to: '/armenia/cities', labelKey: 'nav.cities', published: true },
       { to: '/armenia/places-to-visit', labelKey: 'nav.placesToVisit', published: true },
+      // Same route/labelKey as the "Our Tours" dropdown.
+      { to: '/tours/armenia', labelKey: 'nav.toursArmenia', published: true, divider: true },
+      { to: '/tours/caucasus', labelKey: 'nav.toursCaucasus', published: true },
       // Yerevan holds separate capital status: it is NOT one of the ten marzer,
       // so it never belonged under /armenia/regions. Corrected to its real route.
       // Still inert here, like every other seeded entry below — individual
@@ -100,6 +114,9 @@ export const destinationCountries = [
       { to: '/azerbaijan/regions', labelKey: 'nav.regions', published: true },
       { to: '/azerbaijan/cities', labelKey: 'nav.cities', published: true },
       { to: '/azerbaijan/places-to-visit', labelKey: 'nav.placesToVisit', published: true },
+      // Same route/labelKey as the "Our Tours" dropdown.
+      { to: '/tours/azerbaijan', labelKey: 'nav.toursAzerbaijan', published: true, divider: true },
+      { to: '/tours/caucasus', labelKey: 'nav.toursCaucasus', published: true },
     ],
   },
 ]

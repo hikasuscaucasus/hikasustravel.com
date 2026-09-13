@@ -407,6 +407,13 @@ header > * {
 .nav-country.open .nav-country__panel {
   display: flex;
 }
+/* Subtle break between a country's destination links and its tour links —
+   same border token already used for .nav-dropdown__menu's own border, so no
+   new colour is introduced. No visible "Tours" heading. */
+.nav-country__divider {
+  border-top: 1px solid rgba(239, 239, 215, 0.2);
+  margin: 4px 0;
+}
 /* A country with no published entries: one line, deliberately not a link. */
 .nav-country__empty {
   display: block;

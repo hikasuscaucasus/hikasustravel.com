@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback, useId, lazy, Suspense } from 'react'
+import { useState, useEffect, useRef, useCallback, useId, lazy, Suspense, Fragment } from 'react'
 import { useLocation } from 'react-router-dom'
 import { navLinks } from '../../data/siteData'
 import asset from '../../utils/basePath'
@@ -87,15 +87,21 @@ function NavCountry({ country, t, lang, pathname, open, setOpen, onNavigate }) {
     >
       {entries.length ? (
         entries.map((entry) => (
-          <LocaleLink
-            key={entry.to}
-            to={entry.to}
-            role="menuitem"
-            className={pathname === `/${lang}${entry.to}` ? 'active' : ''}
-            onClick={onNavigate}
-          >
-            {entry.labelKey ? t(entry.labelKey) : entry.label}
-          </LocaleLink>
+          <Fragment key={entry.to}>
+            {/* Opt-in separator before an entry that starts a new group —
+                e.g. the country/Caucasus tour links below the destination
+                links. No visible "Tours" heading: the task asked for a
+                subtle break, not a second labelled section. */}
+            {entry.divider && <div className="nav-country__divider" role="separator" aria-hidden="true" />}
+            <LocaleLink
+              to={entry.to}
+              role="menuitem"
+              className={pathname === `/${lang}${entry.to}` ? 'active' : ''}
+              onClick={onNavigate}
+            >
+              {entry.labelKey ? t(entry.labelKey) : entry.label}
+            </LocaleLink>
+          </Fragment>
         ))
       ) : (
         <span className="nav-country__empty">{t('nav.destinations.comingSoon')}</span>
