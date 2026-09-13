@@ -20,7 +20,10 @@ export default function FaqPage() {
       name: item.title,
       acceptedAnswer: {
         '@type': 'Answer',
-        text: item.content,
+        // The visible answer carries a couple of inline links (visa guides,
+        // Shuttle Service); Answer.text should be plain text, so those tags
+        // are stripped here only — the accordion still renders the full HTML.
+        text: item.content.replace(/<[^>]*>/g, ''),
       },
     })),
   }), [faq])
@@ -39,6 +42,7 @@ export default function FaqPage() {
         <h1>{t('faq.heroTitle')}</h1>
       </section>
       <section className="page-items faq" id="faq-section">
+        <p className="faq-intro">{t('faq.intro')}</p>
         <Accordion items={faq} headingKey="faq.heroTitle" hideHeading />
       </section>
     </>
