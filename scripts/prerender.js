@@ -346,6 +346,7 @@ const seoPageMap = {
   // SAME `tourHubRobots`/`countryHasAnyTours` tour-count check as the runtime
   // page — noindex while a country has zero tours, indexable the moment it
   // has one, with no manual toggle.
+  'tours/georgia': 'toursGeorgia',
   'tours/armenia': 'toursArmenia',
   'tours/azerbaijan': 'toursAzerbaijan',
   'tours/caucasus': 'toursCaucasus',
@@ -403,7 +404,10 @@ const staticPageRobots = {
   'azerbaijan/cities': countryHubMeta('azerbaijan'),
   'azerbaijan/places-to-visit': countryHubMeta('azerbaijan'),
   // Country tours hubs — a SEPARATE, tour-count-driven mechanism (unrelated to
-  // countryHubMeta above, which gates the destination-guide hubs).
+  // countryHubMeta above, which gates the destination-guide hubs). Georgia
+  // always has tours (it's the default tourCountry), so this always
+  // resolves to null — added for consistency with the other three.
+  'tours/georgia': tourHubRobots('georgia'),
   'tours/armenia': tourHubRobots('armenia'),
   'tours/azerbaijan': tourHubRobots('azerbaijan'),
   'tours/caucasus': tourHubRobots('caucasus'),

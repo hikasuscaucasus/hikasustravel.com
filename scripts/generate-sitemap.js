@@ -100,6 +100,7 @@ const staticPages = [
   // from `country`/countryHubIndexable above (which is for the destination-
   // guide hubs) — dropped from the sitemap while that country has zero tours,
   // admitted the moment its first tour is published, with no edit to this list.
+  { path: 'tours/georgia', changefreq: 'monthly', priority: '0.6', tourHubCountry: 'georgia' },
   { path: 'tours/armenia', changefreq: 'monthly', priority: '0.6', tourHubCountry: 'armenia' },
   { path: 'tours/azerbaijan', changefreq: 'monthly', priority: '0.6', tourHubCountry: 'azerbaijan' },
   { path: 'tours/caucasus', changefreq: 'monthly', priority: '0.6', tourHubCountry: 'caucasus' },

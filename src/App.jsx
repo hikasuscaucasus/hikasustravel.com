@@ -179,8 +179,9 @@ export function AppRoutes() {
           <Route path="group-tours/:slug" element={<TourDetailPage />} />
           {/* Country tours hubs — declared before the dynamic entity-tours
               route below. Safe: every EntityToursPage slug ends in the
-              literal "-tours" (e.g. tbilisi-tours), so armenia/azerbaijan/
-              caucasus never collide with one. */}
+              literal "-tours" (e.g. tbilisi-tours), so georgia/armenia/
+              azerbaijan/caucasus never collide with one. */}
+          <Route path="tours/georgia" element={<CountryToursHubPage country="georgia" />} />
           <Route path="tours/armenia" element={<CountryToursHubPage country="armenia" />} />
           <Route path="tours/azerbaijan" element={<CountryToursHubPage country="azerbaijan" />} />
           <Route path="tours/caucasus" element={<CountryToursHubPage country="caucasus" />} />

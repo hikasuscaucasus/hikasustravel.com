@@ -107,10 +107,18 @@ export const destinationCountries = [
 export const navLinks = [
   { to: '/about-us', labelKey: 'nav.aboutUs' },
   {
+    // Country-based categories, replacing the former Private/Group Tours
+    // split. Private and group tours still exist as their own pages
+    // (/private-tours, /group-tours) — only this dropdown's contents changed.
+    // Caucasus first: it is the broader multi-country offering. Georgia has
+    // no dedicated /georgia hub of its own the way Armenia/Azerbaijan do, so
+    // it reuses the same /tours/<country> hub template as the other three.
     labelKey: 'nav.tours',
     children: [
-      { to: '/group-tours', labelKey: 'nav.groupTours' },
-      { to: '/private-tours', labelKey: 'nav.privateTours' },
+      { to: '/tours/caucasus', labelKey: 'nav.toursCaucasus' },
+      { to: '/tours/georgia', labelKey: 'nav.toursGeorgia' },
+      { to: '/tours/armenia', labelKey: 'nav.toursArmenia' },
+      { to: '/tours/azerbaijan', labelKey: 'nav.toursAzerbaijan' },
     ],
   },
   {
