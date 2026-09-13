@@ -282,6 +282,27 @@ const blogArticles = [
     tags: ['armenia','travel-guide','planning','food','wine','culture'],
     keywords: "Armenia travel guide, traveling to Armenia, travel to Armenia, Armenia travel tips, visit Armenia, best time to visit Armenia, places to visit in Armenia, things to do in Armenia, Armenia itinerary, Yerevan, Lake Sevan, Armenian monasteries, Armenia and Georgia trip",
   },
+  {
+    slug: 'ultimate-guide-to-traveling-to-azerbaijan',
+    titleKey: 'blog.article6.title',
+    descKey: 'blog.article6.desc',
+    title: "The Ultimate Guide to Traveling to Azerbaijan",
+    seoTitle: "The Ultimate Guide to Traveling to Azerbaijan | Hikasus Travel",
+    excerpt: "Plan a trip to Azerbaijan: best time to visit, trip length, Baku, Sheki, mountains, food, visas, land border rules and how to combine it with Georgia and Armenia.",
+    metaDescription: "Plan a trip to Azerbaijan: best time to visit, trip length, Baku, Sheki, mountains, food, visas, land border rules and how to combine it with Georgia and Armenia.",
+    heroImage: '/images/files/baku-flame-towers-azerbaijan-1200.webp',
+    ogImageAlt: {
+      en: "Baku skyline across the Caspian waterfront — the three glass Flame Towers and the TV Tower above the city, with the Baku Boulevard promenade and an Azerbaijani flag in the foreground, Azerbaijan",
+      de: "Die Skyline von Baku am kaspischen Ufer — die drei gläsernen Flame Towers und der Fernsehturm über der Stadt, mit der Uferpromenade Baku Boulevard und einer aserbaidschanischen Flagge im Vordergrund, Aserbaidschan",
+      fr: "La silhouette de Bakou sur le front de mer caspien — les trois Flame Towers de verre et la tour de télévision au-dessus de la ville, avec la promenade du Boulevard de Bakou et un drapeau azerbaïdjanais au premier plan, Azerbaïdjan",
+      es: "El perfil urbano de Bakú sobre la orilla del Caspio — las tres Torres de la Llama de vidrio y la torre de televisión sobre la ciudad, con el paseo del Bulevar de Bakú y una bandera azerbaiyana en primer plano, Azerbaiyán",
+      nl: "De skyline van Bakoe aan de Kaspische boulevard — de drie glazen Flame Towers en de televisietoren boven de stad, met de promenade Baku Boulevard en een Azerbeidzjaanse vlag op de voorgrond, Azerbeidzjan",
+      cs: "Panorama Baku nad kaspickým nábřežím — tři skleněné Plamenné věže a televizní věž nad městem, s promenádou Baku Boulevard a ázerbájdžánskou vlajkou v popředí, Ázerbájdžán",
+      pl: "Panorama Baku nad kaspijskim nabrzeżem — trzy szklane Płomienne Wieże i wieża telewizyjna nad miastem, z promenadą Baku Boulevard i azerbejdżańską flagą na pierwszym planie, Azerbejdżan",
+    },
+    tags: ['azerbaijan','travel-guide','planning','food','culture'],
+    keywords: "Azerbaijan travel guide, traveling to Azerbaijan, travel to Azerbaijan, Azerbaijan travel tips, visit Azerbaijan, best time to visit Azerbaijan, places to visit in Azerbaijan, things to do in Azerbaijan, Azerbaijan itinerary, Baku, Sheki, Azerbaijan visa, Azerbaijan and Georgia trip",
+  },
 ]
 
 // Blog title translation for a given article key from ui.json

@@ -112,6 +112,7 @@ const staticPages = [
   { path: 'blog/why-georgia-is-called-georgia-sakartvelo', changefreq: 'monthly', priority: '0.8' },
   { path: 'blog/georgian-flag-history-meaning', changefreq: 'monthly', priority: '0.8' },
   { path: 'blog/ultimate-guide-to-traveling-to-armenia', changefreq: 'monthly', priority: '0.8' },
+  { path: 'blog/ultimate-guide-to-traveling-to-azerbaijan', changefreq: 'monthly', priority: '0.8' },
   { path: 'faq', changefreq: 'monthly', priority: '0.5' },
   { path: 'contact', changefreq: 'monthly', priority: '0.6' },
   { path: 'privacy-policy', changefreq: 'yearly', priority: '0.2' },
