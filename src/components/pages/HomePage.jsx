@@ -264,29 +264,28 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Build your own trip + compact shuttle teaser (same existing copy,
-          moved out of its own full section into one line under this CTA). */}
+      {/* Shuttle Service — compact standalone service block (Build Your Own
+          Trip removed per owner request; content not moved elsewhere). */}
       <section className="home-items">
         <div className="home-items">
           <FadeUp>
-            <h2>{t('home.buildTripTitle')}</h2>
+            <h2>{t('home.shuttleTitle')}</h2>
           </FadeUp>
-          <p>{t('home.buildTripText')}</p>
+          <p>{t('home.shuttleText')}</p>
+          <ul className="home-shuttle-benefits">
+            <li>{t('home.shuttleBenefit1')}</li>
+            <li>{t('home.shuttleBenefit2')}</li>
+            <li>{t('home.shuttleBenefit3')}</li>
+          </ul>
           <FadeUp>
             <div className="button">
-              <LocaleLink to="/contact">{t('home.requestItinerary')}</LocaleLink>
+              <LocaleLink to="/shuttle-service">{t('home.shuttleLink')}</LocaleLink>
             </div>
           </FadeUp>
-          <div className="home-shuttle-compact">
-            <p>
-              {t('home.shuttleText')}{' '}
-              <LocaleLink to="/shuttle-service">{t('home.shuttleLink')}</LocaleLink>
-            </p>
-          </div>
         </div>
       </section>
 
-      {/* Reviews — existing testimonials, unchanged layout, retitled heading. */}
+      {/* Reviews — existing testimonials, unchanged layout. */}
       <section className="td-testimonials-section">
         <FadeUp>
           <h2 className="td-section__title">{t('testimonials.title')}</h2>

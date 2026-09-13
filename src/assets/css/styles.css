@@ -10805,13 +10805,38 @@ img[data-lightbox] {
   color: var(--color-h2);
 }
 
-/* Compact shuttle teaser under "Build your own trip" — one line + one link,
-   not a full section with its own large heading. */
-.home-shuttle-compact {
-  padding-top: 0;
+/* Shuttle Service homepage block — three short benefits between the
+   description and the CTA, divided by hairlines rather than bullet glyphs
+   (kept out of the translated text so nothing is read aloud as "bullet").
+   Stacks to one column per line on narrow screens. */
+.home-shuttle-benefits {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0;
+  max-width: 900px;
+  margin: calc(var(--indent) / 2) auto;
+  padding: 0;
 }
-.home-shuttle-compact p {
-  margin-bottom: calc(var(--indent) / 2);
+.home-shuttle-benefits li {
+  padding: 0 calc(var(--indent) / 2);
+  border-left: 1px solid rgba(239, 239, 215, 0.35);
+  font-size: 0.95rem;
+}
+.home-shuttle-benefits li:first-child {
+  border-left: none;
+  padding-left: 0;
+}
+@media (max-width: 700px) {
+  .home-shuttle-benefits {
+    flex-direction: column;
+    gap: calc(var(--indent) / 4);
+  }
+  .home-shuttle-benefits li {
+    border-left: none;
+    padding: 0;
+  }
 }
 
 /* ──────────────────────────────────────────────────────────────────────────
