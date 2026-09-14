@@ -8,8 +8,30 @@ export const blogArticles = [
     author: 'Hikasus Travel',
     date: '2025-06-10',
     readTime: 18,
-    heroImage: '/images/files/georgia-home.jpg',
-    thumbnail: '/images/files/about-georgia.jpg',
+    heroImage: '/images/files/ushguli-svan-towers-shkhara-georgia-1200.webp',
+    heroImageMeta: {
+      width: 1200,
+      height: 900,
+      alt: {
+        en: "Medieval Svan stone towers of Ushguli village on green slopes below the snow-capped Shkhara massif, Upper Svaneti, Georgia",
+        de: "Mittelalterliche swanische Steintürme des Dorfes Ushguli an grünen Hängen unter dem schneebedeckten Schchara-Massiv, Oberswanetien, Georgien",
+        fr: "Tours de pierre svanes médiévales du village d'Ushguli sur des pentes verdoyantes sous le massif enneigé du Chkhara, Haute-Svanétie, Géorgie",
+        es: "Torres de piedra svanas medievales del pueblo de Ushguli en laderas verdes bajo el macizo nevado de Shjara, Alta Esvanetia, Georgia",
+        nl: "Middeleeuwse Svanetische stenen torens van het dorp Ushguli op groene hellingen onder het besneeuwde Sjchara-massief, Boven-Svanetië, Georgië",
+        cs: "Středověké svanské kamenné věže vesnice Ushguli na zelených svazích pod zasněženým masivem Škhara, Horní Svanetie, Gruzie",
+        pl: "Średniowieczne swańskie kamienne wieże wsi Uszguli na zielonych zboczach pod ośnieżonym masywem Szchara, Górna Swanetia, Gruzja",
+      },
+      caption: {
+        en: "Ushguli beneath the Shkhara massif",
+        de: "Ushguli unter dem Schchara-Massiv",
+        fr: "Ushguli au pied du massif du Chkhara",
+        es: "Ushguli al pie del macizo de Shjara",
+        nl: "Ushguli onder het Sjchara-massief",
+        cs: "Ushguli pod masivem Škhara",
+        pl: "Uszguli pod masywem Szchara",
+      },
+    },
+    thumbnail: '/images/files/ushguli-svan-towers-shkhara-georgia-768.webp',
     tags: ['travel-guide', 'visa', 'food', 'wine', 'culture'],
     content: `
 <p><a href="/en/blog/why-georgia-is-called-georgia-sakartvelo/">Georgia is not the U.S. state</a>. Let's get that out of the way first. We're talking about the country nestled between Europe and Asia, at the crossroads of the Caucasus Mountains and the Black Sea — a place where 8,000-year-old wine traditions meet Soviet-era architecture, where snow-capped peaks tower over subtropical coastlines, and where a stranger will invite you to a feast just because you looked slightly lost on the street.</p>

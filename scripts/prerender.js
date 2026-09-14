@@ -198,7 +198,16 @@ const blogArticles = [
     descKey: 'blog.article1.desc',
     title: 'The Ultimate Guide to Traveling to Georgia: Everything You Need to Know Before You Go',
     excerpt: 'From visa requirements and the best time to visit, to must-try dishes, ancient wine traditions, and hidden gems most tourists never find — this is the only Georgia travel guide you will ever need.',
-    heroImage: '/images/files/georgia-home.jpg',
+    heroImage: '/images/files/ushguli-svan-towers-shkhara-georgia-1200.webp',
+    ogImageAlt: {
+      en: "Medieval Svan stone towers of Ushguli village on green slopes below the snow-capped Shkhara massif, Upper Svaneti, Georgia",
+      de: "Mittelalterliche swanische Steintürme des Dorfes Ushguli an grünen Hängen unter dem schneebedeckten Schchara-Massiv, Oberswanetien, Georgien",
+      fr: "Tours de pierre svanes médiévales du village d'Ushguli sur des pentes verdoyantes sous le massif enneigé du Chkhara, Haute-Svanétie, Géorgie",
+      es: "Torres de piedra svanas medievales del pueblo de Ushguli en laderas verdes bajo el macizo nevado de Shjara, Alta Esvanetia, Georgia",
+      nl: "Middeleeuwse Svanetische stenen torens van het dorp Ushguli op groene hellingen onder het besneeuwde Sjchara-massief, Boven-Svanetië, Georgië",
+      cs: "Středověké svanské kamenné věže vesnice Ushguli na zelených svazích pod zasněženým masivem Škhara, Horní Svanetie, Gruzie",
+      pl: "Średniowieczne swańskie kamienne wieże wsi Uszguli na zielonych zboczach pod ośnieżonym masywem Szchara, Górna Swanetia, Gruzja",
+    },
     tags: ['travel-guide', 'visa', 'food', 'wine', 'culture'],
   },
   {
