@@ -29,6 +29,7 @@ export default function DestinationCard({
   name,
   description,
   image,
+  imageAlt = '',
   imagePosition = 'center',
   to,
   locationLine = '',
@@ -42,7 +43,7 @@ export default function DestinationCard({
   // margins and the modifier drops the now-redundant top padding.
   const cls = (base) => (image ? `${base} ${base}--media` : base)
   const cover = image
-    ? <BlurUpBackground src={image} position={imagePosition} className="dest-hub-card__image" />
+    ? <BlurUpBackground src={image} imageAlt={imageAlt} position={imagePosition} className="dest-hub-card__image" />
     : null
   const body = (
     <>

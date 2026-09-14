@@ -34,7 +34,7 @@ const cssUrl = (u) => (u ? `url("${String(u).replace(/["\\]/g, '\\$&')}")` : und
  * only 56% of its height, so a centred crop can cut the subject out entirely
  * (Martvili Canyon loses its water). Tours opt in via `tour.cardPosition`.
  */
-export default function BlurUpBackground({ src, thumbSrc, className = '', style = {}, position = 'center', children }) {
+export default function BlurUpBackground({ src, thumbSrc, className = '', style = {}, position = 'center', imageAlt = '', children }) {
   const [ref, isIntersecting] = useIntersectionObserver()
   const [loaded, setLoaded] = useState(false)
 
@@ -45,6 +45,15 @@ export default function BlurUpBackground({ src, thumbSrc, className = '', style 
     <div
       ref={ref}
       className={`${className}`}
+      // `imageAlt` is opt-in (default '', so every existing caller keeps its
+      // plain <div> with no role/label — byte-identical). A CSS
+      // background-image carries no alt text of its own, so a caller that
+      // wants the photo described — e.g. a destination card with no other
+      // <img> on the page — exposes it as role="img" + aria-label on the div
+      // itself. That is permanent for the component's lifetime, unlike the
+      // load-detector <img> below, which unmounts the moment it fires
+      // onLoad and so cannot carry accessible text of its own.
+      {...(imageAlt ? { role: 'img', 'aria-label': imageAlt } : {})}
       style={{
         ...style,
         backgroundImage: loaded ? cssUrl(fullSrc) : cssUrl(thumb),

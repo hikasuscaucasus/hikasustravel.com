@@ -164,6 +164,8 @@ export default function HomePage() {
               <li>
                 <DestinationCard
                   name={t('nav.destinations.azerbaijan')}
+                  image="/images/files/azerbaijan-home.jpg"
+                  imageAlt={t('home.azerbaijanCardAlt')}
                   to="/tours/azerbaijan"
                   locationLine={destStatus('azerbaijan')}
                   headingLevel="h3"
@@ -265,23 +267,27 @@ export default function HomePage() {
       </section>
 
       {/* Shuttle Service — compact standalone service block (Build Your Own
-          Trip removed per owner request; content not moved elsewhere). */}
+          Trip removed per owner request; content not moved elsewhere). The
+          three-item benefits list was later swapped for a photo (the same
+          hero image the Shuttle Service page itself uses) per owner request. */}
       <section className="home-items">
-        <div className="home-items">
-          <FadeUp>
-            <h2>{t('home.shuttleTitle')}</h2>
-          </FadeUp>
-          <p>{t('home.shuttleText')}</p>
-          <ul className="home-shuttle-benefits">
-            <li>{t('home.shuttleBenefit1')}</li>
-            <li>{t('home.shuttleBenefit2')}</li>
-            <li>{t('home.shuttleBenefit3')}</li>
-          </ul>
-          <FadeUp>
-            <div className="button">
-              <LocaleLink to="/shuttle-service">{t('home.shuttleLink')}</LocaleLink>
-            </div>
-          </FadeUp>
+        <div className="home-shuttle-card">
+          <CardImage
+            src="/images/files/taxi-service.jpg"
+            alt={t('home.shuttleImageAlt')}
+            className="home-shuttle-card__image"
+          />
+          <div className="home-shuttle-card__body">
+            <FadeUp>
+              <h2>{t('home.shuttleTitle')}</h2>
+            </FadeUp>
+            <p>{t('home.shuttleText')}</p>
+            <FadeUp>
+              <div className="button">
+                <LocaleLink to="/shuttle-service">{t('home.shuttleLink')}</LocaleLink>
+              </div>
+            </FadeUp>
+          </div>
         </div>
       </section>
 

@@ -10812,37 +10812,56 @@ img[data-lightbox] {
   color: var(--color-h2);
 }
 
-/* Shuttle Service homepage block — three short benefits between the
-   description and the CTA, divided by hairlines rather than bullet glyphs
-   (kept out of the translated text so nothing is read aloud as "bullet").
-   Stacks to one column per line on narrow screens. */
-.home-shuttle-benefits {
-  list-style: none;
+/* Shuttle Service homepage card — photo + text side by side (replaces the
+   three-item benefits list per owner request). Reuses the Shuttle Service
+   page's own hero photo (taxi-service.jpg) so the homepage teaser matches the
+   page it links to. `.home-items p` normally centres at 50vw for the
+   full-width text bands elsewhere on the page; the card body overrides that
+   to a natural left-aligned width. */
+.home-shuttle-card {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0;
-  max-width: 900px;
-  margin: calc(var(--indent) / 2) auto;
-  padding: 0;
+  align-items: center;
+  gap: calc(var(--indent) * 1.2);
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
 }
-.home-shuttle-benefits li {
-  padding: 0 calc(var(--indent) / 2);
-  border-left: 1px solid rgba(239, 239, 215, 0.35);
-  font-size: 0.95rem;
+.home-shuttle-card__image {
+  flex: 0 0 320px;
+  aspect-ratio: 4 / 3;
+  border-radius: 12px;
+  overflow: hidden;
 }
-.home-shuttle-benefits li:first-child {
-  border-left: none;
-  padding-left: 0;
+.home-shuttle-card__image .card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
-@media (max-width: 700px) {
-  .home-shuttle-benefits {
+.home-shuttle-card__body {
+  flex: 1;
+}
+.home-shuttle-card__body p {
+  width: auto;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+@media (max-width: 600px) {
+  .home-shuttle-card {
     flex-direction: column;
-    gap: calc(var(--indent) / 4);
+    text-align: center;
   }
-  .home-shuttle-benefits li {
-    border-left: none;
-    padding: 0;
+  .home-shuttle-card__image {
+    flex-basis: auto;
+    width: 100%;
+    max-width: 360px;
+  }
+  .home-shuttle-card__body p {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
