@@ -576,8 +576,8 @@ export const blogArticles = [
     "author": "Hikasus Travel",
     "date": "2026-07-16",
     "readTime": 11,
-    "heroImage": "/images/files/georgia-home.jpg",
-    "thumbnail": "/images/files/about-georgia.jpg",
+    "heroImage": "/images/files/kartlis-deda-statue-tbilisi-georgia-1200.webp",
+    "thumbnail": "/images/files/kartlis-deda-statue-tbilisi-georgia-768.webp",
     "tags": [
       "history",
       "culture",
@@ -1087,7 +1087,7 @@ export const blogGuides = [
     seoKey: 'lariGuide',
     date: '2026-02-19',
     readTime: 6,
-    thumbnail: '/images/files/georgia-home.jpg',
+    thumbnail: '/images/files/kutaisi-green-bazaar-produce-stalls-georgia-768.webp',
     tags: ['money', 'currency', 'travel-tips'],
   },
   {
@@ -1095,7 +1095,7 @@ export const blogGuides = [
     seoKey: 'languagesGuide',
     date: '2025-12-20',
     readTime: 9,
-    thumbnail: '/images/files/about-georgia.jpg',
+    thumbnail: '/images/files/mestia-svan-tower-houses-svaneti-georgia-768.webp',
     tags: ['language', 'culture', 'travel-tips'],
   },
   {

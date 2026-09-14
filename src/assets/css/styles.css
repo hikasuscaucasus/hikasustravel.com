@@ -9749,10 +9749,19 @@ select option:checked {
   color: inherit;
 }
 
+/* `aspect-ratio` (not `min-height`) is load-bearing: `min-height` gives the
+   wrapper no definite height for the <img>'s `height:100%` to resolve
+   against, so the flex row's hypothetical cross-size fell back to the
+   image's own intrinsic aspect ratio — invisible for landscape photos, but a
+   portrait source (e.g. the Armenia guide's 768x1024 thumbnail) forced the
+   *entire card row* to balloon to ~380px to fit it. `aspect-ratio` gives a
+   definite hypothetical size regardless of source orientation, so every
+   card's row height is governed by its text content instead, same as the
+   mobile breakpoint already does below. */
 .blog-item__img-wrap {
   flex-shrink: 0;
   width: 280px;
-  min-height: 200px;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
 }
 
@@ -10359,7 +10368,7 @@ img[data-lightbox] {
 @media (max-width: 900px) {
   .blog-item__img-wrap {
     width: 220px;
-    min-height: 170px;
+    aspect-ratio: 16 / 9;
   }
 
   .blog-item__body {

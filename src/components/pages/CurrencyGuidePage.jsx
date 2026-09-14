@@ -8,8 +8,11 @@ import { useLinkedHtml, useLinkedFaq } from '../../utils/autolinkReact'
 import useSEO from '../../hooks/useSEO'
 import { getSEO } from '../../data/seoData'
 
-// Placeholder hero — swap for a money/markets image if desired.
-const HERO_IMAGE = '/images/files/georgia-home.jpg'
+// No dedicated currency/banknote photo exists in the repository; a market
+// scene (where cash actually changes hands) is the closest relevant asset on
+// hand, and gives this guide its own visual identity distinct from the other
+// blog articles instead of reusing the generic georgia-home.jpg placeholder.
+const HERO_IMAGE = '/images/files/kutaisi-green-bazaar-produce-stalls-georgia-1200.webp'
 const SITE_URL = 'https://www.hikasustravel.com'
 const PATH = 'georgian-lari-currency-guide'
 

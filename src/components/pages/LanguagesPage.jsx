@@ -9,8 +9,12 @@ import useT from '../../i18n/useT'
 import useSEO from '../../hooks/useSEO'
 import { getSEO } from '../../data/seoData'
 
-// Placeholder hero — swap for a Georgian-script / signage image if desired.
-const HERO_IMAGE = '/images/files/georgia-home.jpg'
+// The Mkhedruli alphabet chart is already used by the sibling "Essential
+// Georgian Words and Phrases" article, so this guide (about the wider
+// Kartvelian language family — Georgian, Mingrelian, Svan, Laz) uses a
+// distinct image: the Svan stone towers of Mestia, tying to the Svan
+// language this article specifically discusses.
+const HERO_IMAGE = '/images/files/mestia-svan-tower-houses-svaneti-georgia-1200.webp'
 const SITE_URL = 'https://www.hikasustravel.com'
 const PATH = 'languages-of-georgia'
 

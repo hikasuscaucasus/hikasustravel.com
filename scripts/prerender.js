@@ -241,7 +241,7 @@ const blogArticles = [
     seoTitle: "Why Is Georgia Called Georgia — and Why Sakartvelo? | Hikasus Travel",
     excerpt: "Georgia is not named after St George — that's a medieval mistake that stuck. The real story runs through Persian, and Georgians call it Sakartvelo.",
     metaDescription: "Georgia is not named after St George — that's a medieval mistake that stuck. The real story runs through Persian, and Georgians call it Sakartvelo.",
-    heroImage: '/images/files/georgia-home.jpg',
+    heroImage: '/images/files/kartlis-deda-statue-tbilisi-georgia-1200.webp',
     tags: ['history', 'culture', 'language'],
   },
   {
