@@ -2,6 +2,7 @@ import CardImage from './CardImage'
 import FadeUp from './FadeUp'
 import LocaleLink from '../../i18n/LocaleLink'
 import useT from '../../i18n/useT'
+import { PRIVATE_TOUR_CATEGORIES, CATEGORY_LABEL_KEYS } from '../../data/tourCategories'
 
 function getClassicPrice(pricing) {
   if (!pricing || pricing.length === 0) return null
@@ -20,6 +21,9 @@ export default function TourCard({ tour, translation, index = 0, basePath = '/pr
   const description = tt?.listingDescription || tt?.description || tour.listingDescription || tour.description
   const tourUrl = `${basePath}/${tour.slug}`
   const classicPrice = getClassicPrice(tour.pricing)
+  // First (primary) category only — a tour may belong to several, but the
+  // card shows one chip, not the full taxonomy.
+  const primaryCategory = PRIVATE_TOUR_CATEGORIES[tour.slug]?.[0]
 
   return (
     <FadeUp>
@@ -42,6 +46,9 @@ export default function TourCard({ tour, translation, index = 0, basePath = '/pr
 
         <div className="tc__body">
           <div className="tc__content">
+            {primaryCategory && (
+              <span className="tc__category-chip">{t(CATEGORY_LABEL_KEYS[primaryCategory])}</span>
+            )}
             <h2 className="tc__title">
               <LocaleLink to={tourUrl}>{title}</LocaleLink>
             </h2>

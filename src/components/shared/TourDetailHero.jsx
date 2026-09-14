@@ -184,7 +184,10 @@ export default function TourDetailHero({ tour, translatedTitle, heroH1, isGroup,
           </div>
 
           <div className="td-hero__actions">
-            <a href="#book" onClick={scrollToBook} className="iv-pill">
+            {/* `id` gives StickyRequestBar (rendered by TourDetailPage) a
+                stable target to watch via IntersectionObserver — it shows
+                once this button scrolls out of view. */}
+            <a id="td-hero-cta" href="#book" onClick={scrollToBook} className="iv-pill">
               {isGroup ? t('tour.requestTour') : t('tour.requestTourCustom')}
             </a>
           </div>

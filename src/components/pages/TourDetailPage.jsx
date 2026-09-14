@@ -10,7 +10,10 @@ import { buildTourSeo } from '../../utils/tourSeo'
 import IncludedNotIncluded from '../shared/IncludedNotIncluded'
 import TourInquiryForm from '../shared/TourInquiryForm'
 import Gallery from '../shared/Gallery'
+import StickyRequestBar from '../shared/StickyRequestBar'
+import TourCard from '../shared/TourCard'
 import { tours } from '../../data/tours'
+import { PRIVATE_TOUR_CATEGORIES } from '../../data/tourCategories'
 import useT from '../../i18n/useT'
 import useLang from '../../i18n/useLang'
 import { I18nContext } from '../../i18n/I18nContext'
@@ -85,6 +88,27 @@ export default function TourDetailPage() {
     }),
     [tour, lang]
   )
+
+  // Similar tours: same primary category first, then nearest duration —
+  // deterministic, no randomness, current tour always excluded. A tour with
+  // no category entry (the group tour, the 10-Day Georgia+Armenia combined
+  // tour) simply never matches on category and falls back to pure duration
+  // proximity, which is still a sensible ordering. Declared before the
+  // `!tour` early return below so this hook always runs (rules of hooks).
+  const similarTours = useMemo(() => {
+    if (!tour) return []
+    const primaryCategory = PRIVATE_TOUR_CATEGORIES[tour.slug]?.[0]
+    return tours
+      .filter((candidate) => candidate.slug !== tour.slug)
+      .map((candidate) => ({
+        candidate,
+        sameCategory: PRIVATE_TOUR_CATEGORIES[candidate.slug]?.[0] === primaryCategory ? 0 : 1,
+        durationDiff: Math.abs((candidate.days || 0) - (tour.days || 0)),
+      }))
+      .sort((a, b) => a.sameCategory - b.sameCategory || a.durationDiff - b.durationDiff)
+      .slice(0, 3)
+      .map((r) => r.candidate)
+  }, [tour])
 
   if (!tour) {
     return (
@@ -318,6 +342,31 @@ export default function TourDetailPage() {
           </section>
         </div>
       </div>
+
+      {/* 9. Similar tours — after the booking form, before the footer (the
+          footer itself is rendered by the shared Layout, outside this page).
+          Reuses TourCard exactly as /private-tours does. */}
+      {similarTours.length > 0 && (
+        <section className="tour-listing" aria-label={t('tour.similarTours')}>
+          <FadeUp>
+            <h2 className="td-section__title" style={{ textAlign: 'center' }}>{t('tour.similarTours')}</h2>
+          </FadeUp>
+          {similarTours.map((similar, index) => (
+            <TourCard
+              key={similar.slug}
+              tour={similar}
+              translation={tourTranslations?.[similar.slug]}
+              index={index}
+              basePath={similar.type === 'group' ? '/group-tours' : '/private-tours'}
+            />
+          ))}
+        </section>
+      )}
+
+      {/* Desktop sticky request bar — shows once #td-hero-cta (the hero's own
+          CTA) scrolls out of view; inert ≤900px, where the mobile bar below
+          already covers the same job. */}
+      <StickyRequestBar startingPrice={startingPrice} />
 
       {/* Mobile booking bar — CSS-gated to <=900px (see ivory.css), so it is
           inert on desktop. Shows the same starting price the pricing cards

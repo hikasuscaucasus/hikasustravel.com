@@ -17,7 +17,7 @@ export const tours = [
     "listingImage": "/images/group-tours/georgia-group-tour/gergeti-trinity-church-kazbegi-georgia-1200.webp",
     "days": 14,
     "description": "Experience the essence of Georgia on this immersive 14-day journey through its diverse landscapes, rich cultural heritage, and renowned wine regions.",
-    "listingDescription": "Experience the essence of Georgia on this immersive 14-day journey through its diverse landscapes, rich cultural heritage, and renowned wine regions.",
+    "listingDescription": "A 14-day group tour through Tbilisi, Kazbegi, Gori and Uplistsikhe, Kutaisi, Batumi and Kakheti's wine country, with hotels, transport and a guide handled for you.",
     "itinerary": [
       {
         "title": "Day 1: Arrival in Tbilisi",
@@ -2517,7 +2517,7 @@ export const tours = [
     "listingImage": "/images/tours/tbilisi-wine-sulfur/ananuri-fortress-zhinvali-reservoir-georgia-1200.webp",
     "days": 5,
     "description": "Delve into the heart of Georgia's rich heritage on this 5-day tour, blending historic landmarks, breathtaking landscapes, and the country's celebrated hospitality.",
-    "listingDescription": "Delve into the heart of Georgia's rich heritage on this 5-day tour, blending historic landmarks, breathtaking landscapes, and the country's celebrated hospitality.",
+    "listingDescription": "A private 5-day route from Tbilisi through Kazbegi, Telavi and Kakheti wine country, with a stop in Sighnaghi, hotels, transport and a guide-driver handled for you.",
     "itinerary": [
       {
         "title": "Day 1: Arrival and city tour in Tbilisi",
@@ -3063,7 +3063,7 @@ export const tours = [
     },
     "days": 6,
     "description": "Georgia's rich culture, history, and natural beauty await on this 6-day tour that begins and ends in the vibrant city of Tbilisi.",
-    "listingDescription": "Georgia's rich culture, history, and natural beauty await on this 6-day tour that begins and ends in the vibrant city of Tbilisi.",
+    "listingDescription": "A private 6-day route from Tbilisi through Uplistsikhe, Borjomi and Vardzia to Kutaisi, with a stop at Martvili Canyon, hotels, transport and a guide-driver handled for you.",
     "itinerary": [
       {
         "title": "Day 1: Arrival and city tour in Tbilisi",
@@ -3573,7 +3573,7 @@ export const tours = [
     "days": 7,
     "description": "A week of Georgian culture, built around two cities. You spend three nights in Kutaisi, the old western capital, and three in Tbilisi, with the monasteries, cave towns and one big mountain day filling the space between.\n\nKutaisi comes first — its clifftop monasteries, the Green Bazaar, and the Prometheus Cave underground — before the drive east to Tbilisi. From the capital you head up the old Military Highway for a day at Kazbegi and the Gergeti church under Mount Kazbek, then work back west through the Uplistsikhe cave town and Gori to close the loop where it began.\n\nThe through-line is the old and the hand-carved: 12th-century Gelati on the UNESCO list, the rock-cut halls of Uplistsikhe, a lone church at 2,170 metres. Two of the days ask for real time on the road, but you unpack just twice, and since the tour runs only for your group, the route and pace stay open to change.",
     "metaDescription": "Immerse yourself in the captivating charm of Georgia on this 7-day cultural journey, beginning in the historic city of Kutaisi.",
-    "listingDescription": "Immerse yourself in the captivating charm of Georgia on this 7-day cultural journey, beginning in the historic city of Kutaisi.",
+    "listingDescription": "A private 7-day route from Kutaisi to Tbilisi taking in Gelati Monastery, Prometheus Cave, Kazbegi and Gergeti Trinity Church, with hotels, transport and a guide-driver handled for you.",
     "itinerary": [
       {
         "title": "Day 1: Arrival in Kutaisi",
@@ -4826,7 +4826,7 @@ export const tours = [
     "listingImage": "/images/tours/8-day-culture-nature-wine/sighnaghi-town-kakheti-georgia/sighnaghi-town-kakheti-georgia-1200.webp",
     "days": 8,
     "description": "Immerse yourself in the best of Georgia's cultural heritage, breathtaking landscapes, and celebrated wine traditions on this 8-day tour.",
-    "listingDescription": "Immerse yourself in the best of Georgia's cultural heritage, breathtaking landscapes, and celebrated wine traditions on this 8-day tour.",
+    "listingDescription": "A private 8-day route from Tbilisi through Kazbegi and Gergeti Trinity Church to Kakheti wine country, with stops at Uplistsikhe and Gori, hotels, transport and a guide-driver handled for you.",
     "itinerary": [
       {
         "title": "Day 1: Arrival and City Tour in Tbilisi",
@@ -5999,7 +5999,7 @@ export const tours = [
     "listingImage": "/images/tours/8-day-culture-adventure/gergeti-trinity-church-kazbegi-georgia-1200.webp",
     "days": 8,
     "description": "Dive into the wonders of Georgia on this 8-day adventure, blending cultural discovery, historic landmarks, and exhilarating outdoor activities.",
-    "listingDescription": "Dive into the wonders of Georgia on this 8-day adventure, blending cultural discovery, historic landmarks, and exhilarating outdoor activities.",
+    "listingDescription": "A private 8-day route from Tbilisi through Kakheti and Lagodekhi National Park to Kazbegi, with a cooking class in Telavi, hotels, transport and a guide-driver handled for you.",
     "itinerary": [
       {
         "title": "Day 1: Arrival and City Tour in Tbilisi",
@@ -7204,7 +7204,7 @@ export const tours = [
     "days": 9,
     "description": "Nine days across Georgia, from the western lowlands up to the high Caucasus and back. You base yourself four nights in Kutaisi and three in Tbilisi, with one night high in the mountains at Kazbegi.\n\nThe loop runs Kutaisi first — its hillside monasteries and the Green Bazaar — then east through the Prometheus Cave to Tbilisi, and north up the old Military Highway to sleep a night below Mount Kazbek beneath the Gergeti church. Heading back you pass through Mtskheta, the Uplistsikhe cave town and Gori, saving the quieter west for last.\n\nThat final day is the one shorter tours leave out: Nokalakevi, a fortress ruin known as the \"Georgian Troy,\" and the green water of Martvili Canyon. It's an unhurried take on the classic route, with a proper mountain overnight in place of a long day trip — and because you're travelling privately, none of it is fixed.",
     "metaDescription": "Start your Georgian journey in Kutaisi, a city steeped in history, where the serene Gelati and Motsameta Monasteries await.",
-    "listingDescription": "Start your Georgian journey in Kutaisi, a city steeped in history, where the serene Gelati and Motsameta Monasteries await.",
+    "listingDescription": "A private 9-day route from Kutaisi to Tbilisi via Kazbegi and Gergeti Trinity Church, with stops at Prometheus Cave, Uplistsikhe and Martvili Canyon, hotels, transport and a guide-driver handled for you.",
     "itinerary": [
       {
         "title": "Day 1: Arrival in Kutaisi",
@@ -8124,7 +8124,7 @@ export const tours = [
     "listingImage": "/images/tours/grand-tour-tbilisi-batumi/batumi-black-sea-beach-batumi-georgia/batumi-black-sea-beach-batumi-georgia-1200.webp",
     "days": 9,
     "description": "Unearth the rich layers of Georgia's history, culture, and natural beauty on this 9-day adventure.",
-    "listingDescription": "Unearth the rich layers of Georgia's history, culture, and natural beauty on this 9-day adventure.",
+    "listingDescription": "A private 9-day route from Tbilisi to Batumi via Kutaisi, Gelati Monastery and the Vardzia cave monastery, with hotels, transport and a guide-driver handled for you.",
     "itinerary": [
       {
         "title": "Day 1: Arrival in Tbilisi",
@@ -9274,7 +9274,7 @@ export const tours = [
     "cardPosition": "center",
     "days": 9,
     "description": "Discover the essence of Georgia on this 9-day tour packed with unforgettable experiences.",
-    "listingDescription": "Discover the essence of Georgia on this 9-day tour packed with unforgettable experiences.",
+    "listingDescription": "A private 9-day route from Tbilisi through Kazbegi, Truso Valley and Kakheti wine country, with stops in Sighnaghi and Telavi, hotels, transport and a guide-driver handled for you.",
     "itinerary": [
       {
         "title": "Day 1: Arrival in Tbilisi",
@@ -10311,7 +10311,7 @@ export const tours = [
     "listingImage": "/images/tours/georgia-10-days-celebration/batumi-sunset-black-sea-batumi-georgia/batumi-sunset-black-sea-batumi-georgia-1200.webp",
     "days": 10,
     "description": "This thoughtfully crafted itinerary invites you to explore Georgia's most iconic landmarks alongside its best-kept secrets.",
-    "listingDescription": "This thoughtfully crafted itinerary invites you to explore Georgia's most iconic landmarks alongside its best-kept secrets.",
+    "listingDescription": "A private 10-day route from Tbilisi through Kazbegi, Gori and Uplistsikhe to Kutaisi, Martvili Canyon and Batumi, with hotels, transport and a guide-driver handled for you.",
     "itinerary": [
       {
         "title": "Day 1: Arrival and City Tour in Tbilisi",
@@ -11471,7 +11471,7 @@ export const tours = [
     "days": 11,
     "description": "Eleven days and most of Georgia — the caves and monasteries of the west, the Black Sea coast, the capital, and the high mountains. This grand loop settles you in four bases: four nights in Kutaisi, two in Batumi, two in Tbilisi and two at Kazbegi.\n\nYou start among Kutaisi's monasteries, the Prometheus Cave and the green water of Martvili Canyon, then drop to the sea at Batumi. From the coast a scenic train carries you east to Tbilisi, and the old Military Highway climbs north to two nights under Mount Kazbek and the Gergeti church. The way home turns back west through Gori and Uplistsikhe to Kutaisi.\n\nIt's the widest sweep of the shorter tours — canyon, coast, capital and Caucasus in one trip, with the Batumi train a pleasure in itself. The long legs carry some real driving, but four bases keep the packing down, and with your own guide-driver, the plan bends to suit you.",
     "metaDescription": "Begin your Georgian adventure in the vibrant city of Kutaisi, where history and natural wonders collide.",
-    "listingDescription": "Begin your Georgian adventure in the vibrant city of Kutaisi, where history and natural wonders collide.",
+    "listingDescription": "A private 11-day route from Kutaisi through Batumi and Tbilisi to Kazbegi and Gergeti Trinity Church, with stops at Prometheus Cave and Martvili Canyon, hotels, transport and a guide-driver handled for you.",
     "itinerary": [
       {
         "title": "Day 1: Arrival in Kutaisi",
@@ -13041,7 +13041,7 @@ export const tours = [
     "cardPosition": "center",
     "days": 12,
     "description": "Embark on the ultimate Georgian adventure with this comprehensive 12-day journey through historic landmarks, breathtaking landscapes, and vibrant cities.",
-    "listingDescription": "Embark on the ultimate Georgian adventure with this comprehensive 12-day journey through historic landmarks, breathtaking landscapes, and vibrant cities.",
+    "listingDescription": "A private 12-day route from Tbilisi through Kazbegi, Kutaisi and Svaneti to Batumi, with stops at Ushguli, Prometheus Cave and Martvili Canyon, hotels, transport and a guide-driver handled for you.",
     "itinerary": [
       {
         "title": "Day 1: Arrival and City Tour in Tbilisi",
@@ -14293,7 +14293,7 @@ export const tours = [
     "days": 13,
     "description": "Thirteen days across Georgia, reaching the one region the shorter tours can't — Svaneti, the tower-village high country of the northwest. You settle into five bases: three nights in Kutaisi, two up in Mestia, two on the coast at Batumi, three in Tbilisi and two at Kazbegi.\n\nIt opens in Kutaisi with its monasteries and the Prometheus Cave, then climbs into Svaneti for Mestia and Ushguli, where stone towers stand beneath Georgia's highest peaks. Back down, you stop at Martvili Canyon en route to Batumi and the sea, ride the train east to Tbilisi — with a free day to spend as you like — and close with the Military Highway up to Kazbegi and the Gergeti church before the long drive back to Kutaisi.\n\nIt's the fullest of the loops — lowland churches, alpine towers, canyon, coast and Caucasus in one trip. A few mountain drives run long, but five settled bases and a free day keep it unhurried, and since it's yours alone, you set the pace.",
     "metaDescription": "Trace the pathways of Georgia's rich history and breathtaking landscapes, starting from the historic city of Kutaisi.",
-    "listingDescription": "Trace the pathways of Georgia's rich history and breathtaking landscapes, starting from the historic city of Kutaisi.",
+    "listingDescription": "A private 13-day route from Kutaisi through Svaneti and Batumi to Tbilisi and Kazbegi, with stops at Ushguli and Gergeti Trinity Church, hotels, transport and a guide-driver handled for you.",
     "itinerary": [
       {
         "title": "Day 1: Arrival in Kutaisi",
@@ -15461,7 +15461,7 @@ export const tours = [
     "cardPosition": "center",
     "days": 15,
     "description": "Embark on a 15-day adventure through Georgia, a land where ancient history, breathtaking landscapes, and rich traditions come together.",
-    "listingDescription": "Embark on a 15-day adventure through Georgia, a land where ancient history, breathtaking landscapes, and rich traditions come together.",
+    "listingDescription": "A private 15-day route from Tbilisi through Kakheti wine country, Kazbegi, Kutaisi and Svaneti to Batumi, with stops at Ushguli and Gergeti Trinity Church, hotels, transport and a guide-driver handled for you.",
     "itinerary": [
       {
         "title": "Day 1: Arrival and City Tour in Tbilisi",
@@ -17068,7 +17068,7 @@ export const tours = [
     "cardPosition": "center",
     "days": 20,
     "description": "Venture across Georgia on a 20-day adventure filled with cultural heritage, scenic landscapes, and culinary delights.",
-    "listingDescription": "Venture across Georgia on a 20-day adventure filled with cultural heritage, scenic landscapes, and culinary delights.",
+    "listingDescription": "A private 20-day route from Tbilisi through Kakheti, Kazbegi and Juta Village to Kutaisi, Svaneti and Batumi, with stops at Ushguli and Okatse Canyon, hotels, transport and a guide-driver handled for you.",
     "itinerary": [
       {
         "title": "Day 1: Arrival in Tbilisi",

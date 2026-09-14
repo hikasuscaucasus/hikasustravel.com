@@ -1,6 +1,7 @@
 import { useRef } from 'react'
 import asset from '../../utils/basePath'
 import useT from '../../i18n/useT'
+import usePluralT from '../../i18n/usePluralT'
 
 export default function ToursHero({
   image,
@@ -15,6 +16,7 @@ export default function ToursHero({
 }) {
   const sectionRef = useRef(null)
   const t = useT()
+  const tCount = usePluralT()
 
   const scrollToNext = () => {
     const next = sectionRef.current?.nextElementSibling
@@ -74,7 +76,7 @@ export default function ToursHero({
 
         {typeof tourCount === 'number' && (
           <p className="th__count">
-            {tourCount} {tourCount === 1 ? 'tour' : 'tours'}
+            {tCount('tour.countLabel', tourCount)}
           </p>
         )}
       </div>

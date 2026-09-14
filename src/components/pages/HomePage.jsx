@@ -4,10 +4,13 @@ import FadeUp from '../shared/FadeUp'
 import CardImage from '../shared/CardImage'
 import DestinationCard from '../shared/DestinationCard'
 import CountryTabs from '../shared/CountryTabs'
+import FeaturedTourTile from '../shared/FeaturedTourTile'
 import ContactForm from '../shared/ContactForm'
 import { tours, privateTourCountFor, countryHasAnyTours, featuredToursFor } from '../../data/tours'
 import { blogArticles } from '../../data/blogData'
+import { contactInfo } from '../../data/siteData'
 import useT from '../../i18n/useT'
+import usePluralT from '../../i18n/usePluralT'
 import useLang from '../../i18n/useLang'
 import LocaleLink from '../../i18n/LocaleLink'
 import { I18nContext } from '../../i18n/I18nContext'
@@ -23,6 +26,19 @@ const HOMEPAGE_BLOG_SLUGS = [
   'ultimate-guide-to-traveling-to-azerbaijan',
 ]
 
+// "Explore the Caucasus" destination cards — each a real, published
+// destination page (verified against src/App.jsx and src/data/places.js).
+// Names are proper nouns and stay identical in every locale; only the
+// City/Region type label (typeKey) is translated.
+const EXPLORE_CARDS = [
+  { to: '/georgia/tbilisi', image: '/images/files/old-town-tbilisi-georgia-1200.webp', name: 'Tbilisi', typeKey: 'pricing.city' },
+  { to: '/georgia/regions/kakheti', image: '/images/files/Sighnaghi.jpg', name: 'Kakheti', typeKey: 'search.typeRegion' },
+  { to: '/georgia/kazbegi', image: '/images/files/gergeti-trinity-church-kazbegi-georgia-1200.webp', name: 'Kazbegi (Stepantsminda)', typeKey: 'pricing.city' },
+  { to: '/georgia/regions/svaneti', image: '/images/files/svaneti-caucasus-mountains-georgia-1200.webp', name: 'Svaneti', typeKey: 'search.typeRegion' },
+  { to: '/armenia/yerevan', image: '/images/files/republic-square-yerevan-armenia-1200.webp', name: 'Yerevan', typeKey: 'pricing.city' },
+  { to: '/azerbaijan/baku', image: '/images/files/baku-flame-towers-azerbaijan-1200.webp', name: 'Baku', typeKey: 'pricing.city' },
+]
+
 // Same fallback helper BlogPage.jsx/BlogArticlePage.jsx use: a ui.json key
 // that resolves to itself (untranslated) falls back to the article's own
 // English copy instead of printing the raw key.
@@ -31,35 +47,17 @@ function tf(t, key, fallback) {
   return val === key ? fallback : val
 }
 
-function FeaturedTourTile({ tour, t, tourTranslations }) {
-  const tt = tourTranslations?.[tour.slug]
-  const classicRow = tour.pricing?.find((r) => r.travelers === '4')
-  const classicNum = classicRow ? parseFloat((classicRow.economy || '').replace(/[^0-9.]/g, '')) : NaN
-  const priceFrom = !isNaN(classicNum) && classicNum > 0 ? `€${classicNum.toLocaleString('en-US')}` : null
-  const basePath = tour.type === 'group' ? 'group-tours' : 'private-tours'
-  return (
-    <div className="tour-tile">
-      <LocaleLink to={`/${basePath}/${tour.slug}`} className="tour-tile-link">
-        <CardImage
-          src={tour.tileImage || tour.heroImage}
-          position={tour.cardPosition}
-          className="tour-tile-image"
-        />
-        <div className="tour-tile-overlay">
-          <h3>{tt?.title || tour.title}</h3>
-          <p>{tour.days} {t('tour.days')}</p>
-          {priceFrom && (
-            <p className="tour-tile-overlay__price">{t('tour.pricesFrom', { price: priceFrom })}</p>
-          )}
-        </div>
-      </LocaleLink>
-    </div>
-  )
-}
+// `extraTours` lets Armenia's panel surface the 10-Day Georgia and Armenia
+// combined tour (country:"caucasus", so `featuredToursFor('armenia')` alone
+// never returns it) without changing what Georgia/Caucasus show.
+// `guideLink`/`destinationLink` add the blog-guide and destination-hub CTAs
+// Armenia and Azerbaijan need so their tabs are never a dead end, while
+// Georgia/Caucasus (which pass neither) render exactly as before.
+function FeaturedCountryPanel({ country, comingSoonKey, t, tourTranslations, seeAllHref, seeAllLabel, extraTours = [], guideLink, destinationLink }) {
+  const countryTours = [...featuredToursFor(country), ...extraTours]
+  const hasLinks = Boolean(guideLink || destinationLink)
 
-function FeaturedCountryPanel({ country, comingSoonKey, t, tourTranslations, seeAllHref, seeAllLabel }) {
-  const countryTours = featuredToursFor(country)
-  if (!countryTours.length) {
+  if (!countryTours.length && !hasLinks) {
     return (
       <FadeUp>
         <p>{t(comingSoonKey)}</p>
@@ -71,14 +69,26 @@ function FeaturedCountryPanel({ country, comingSoonKey, t, tourTranslations, see
   }
   return (
     <FadeUp>
-      <div className="tours-grid">
-        {countryTours.map((tour) => (
-          <FeaturedTourTile key={tour.slug} tour={tour} t={t} tourTranslations={tourTranslations} />
-        ))}
-      </div>
-      {seeAllHref && (
+      {countryTours.length > 0 ? (
+        <div className="tours-grid">
+          {countryTours.map((tour) => (
+            <FeaturedTourTile key={tour.slug} tour={tour} t={t} tourTranslations={tourTranslations} />
+          ))}
+        </div>
+      ) : (
+        comingSoonKey && <p>{t(comingSoonKey)}</p>
+      )}
+      {(seeAllHref || hasLinks) && (
         <p className="city-ttd-cta">
-          <LocaleLink to={seeAllHref} className="button">{seeAllLabel}</LocaleLink>
+          {seeAllHref && (
+            <LocaleLink to={seeAllHref} className="button">{seeAllLabel}</LocaleLink>
+          )}
+          {guideLink && (
+            <LocaleLink to={guideLink.to} className="button">{t('home.readTravelGuide')}</LocaleLink>
+          )}
+          {destinationLink && (
+            <LocaleLink to={destinationLink.to} className="button">{t('home.exploreDestinations')}</LocaleLink>
+          )}
         </p>
       )}
     </FadeUp>
@@ -87,6 +97,7 @@ function FeaturedCountryPanel({ country, comingSoonKey, t, tourTranslations, see
 
 export default function HomePage() {
   const t = useT()
+  const tCount = usePluralT()
   const { lang } = useLang()
   const { tourTranslations, loadTourTranslations } = useContext(I18nContext)
   const seo = getSEO('home', lang)
@@ -98,12 +109,19 @@ export default function HomePage() {
   const georgiaTourCount = privateTourCountFor('georgia')
   const destStatus = (country, combined = false) => {
     if (countryHasAnyTours(country)) {
-      return t('home.destStatusTours', { n: privateTourCountFor(country) })
+      return tCount('home.destStatusTours', privateTourCountFor(country))
     }
-    return combined ? t('home.destStatusCombined') : t('home.destStatusComingSoon')
+    if (combined) return t('home.destStatusCombined')
+    // Armenia/Azerbaijan have no standalone tours yet, but each has an
+    // Ultimate Guide article — point visitors there instead of a dead end.
+    return t('home.destStatusSoonWithGuide')
   }
 
   const groupTours = tours.filter((tour) => tour.type === 'group')
+  // Available now (unlike a standalone Armenia tour), so it belongs on
+  // Armenia's tab even though `featuredToursFor('armenia')` alone would never
+  // surface a tour whose `country` is "caucasus".
+  const georgiaArmeniaTour = tours.find((tour) => tour.slug === '10-day-georgia-armenia-tour')
 
   const featuredTabs = [
     {
@@ -122,12 +140,31 @@ export default function HomePage() {
     {
       key: 'armenia',
       label: t('nav.destinations.armenia'),
-      content: <FeaturedCountryPanel country="armenia" comingSoonKey="home.featuredComingSoonArmenia" t={t} tourTranslations={tourTranslations} />,
+      content: (
+        <FeaturedCountryPanel
+          country="armenia"
+          comingSoonKey="home.featuredComingSoonArmenia"
+          t={t}
+          tourTranslations={tourTranslations}
+          extraTours={georgiaArmeniaTour ? [georgiaArmeniaTour] : []}
+          guideLink={{ to: '/blog/ultimate-guide-to-traveling-to-armenia' }}
+          destinationLink={{ to: '/armenia' }}
+        />
+      ),
     },
     {
       key: 'azerbaijan',
       label: t('nav.destinations.azerbaijan'),
-      content: <FeaturedCountryPanel country="azerbaijan" comingSoonKey="home.featuredComingSoonAzerbaijan" t={t} tourTranslations={tourTranslations} />,
+      content: (
+        <FeaturedCountryPanel
+          country="azerbaijan"
+          comingSoonKey="home.featuredComingSoonAzerbaijan"
+          t={t}
+          tourTranslations={tourTranslations}
+          guideLink={{ to: '/blog/ultimate-guide-to-traveling-to-azerbaijan' }}
+          destinationLink={{ to: '/azerbaijan' }}
+        />
+      ),
     },
     {
       key: 'caucasus',
@@ -143,9 +180,14 @@ export default function HomePage() {
         title={t('home.heroTitle')}
         subtitle={t('home.heroSubtitle')}
         actions={(
-          <div className="button">
-            <LocaleLink to="/contact">{t('home.ctaPlanTrip')}</LocaleLink>
-          </div>
+          <>
+            <div className="button">
+              <LocaleLink to="/private-tours">{t('home.seeOurTours')}</LocaleLink>
+            </div>
+            <div className="button button--outline">
+              <LocaleLink to="/contact">{t('home.ctaPlanTrip')}</LocaleLink>
+            </div>
+          </>
         )}
       />
 
@@ -173,7 +215,7 @@ export default function HomePage() {
                 <DestinationCard
                   name={t('nav.destinations.armenia')}
                   image="/images/files/amberd-fortress-aragats-armenia-1086.webp"
-                  to="/tours/armenia"
+                  to="/armenia"
                   locationLine={destStatus('armenia')}
                   headingLevel="h3"
                 />
@@ -183,7 +225,7 @@ export default function HomePage() {
                   name={t('nav.destinations.azerbaijan')}
                   image="/images/files/azerbaijan-home.jpg"
                   imageAlt={t('home.azerbaijanCardAlt')}
-                  to="/tours/azerbaijan"
+                  to="/azerbaijan"
                   locationLine={destStatus('azerbaijan')}
                   headingLevel="h3"
                 />
@@ -211,6 +253,44 @@ export default function HomePage() {
             <h2>{t('home.featuredToursTitle')}</h2>
           </FadeUp>
           <CountryTabs tabs={featuredTabs} ariaLabel={t('home.featuredToursTitle')} />
+        </div>
+      </section>
+
+      {/* Trust strip — three factual points plus a Tripadvisor link. No
+          invented ratings, review counts or quotes here or anywhere else. */}
+      <section className="home-items">
+        <div className="home-items">
+          <FadeUp>
+            <h2>{t('home.trustTitle')}</h2>
+          </FadeUp>
+          <FadeUp>
+            <ul className="home-trust-grid">
+              <li className="home-trust-item">
+                <strong>{t('home.trustItem1Title')}</strong>
+                <p>{t('home.trustItem1Desc')}</p>
+              </li>
+              <li className="home-trust-item">
+                <strong>{t('home.trustItem2Title')}</strong>
+                <p>{t('home.trustItem2Desc')}</p>
+              </li>
+              <li className="home-trust-item">
+                <strong>{t('home.trustItem3Title')}</strong>
+                <p>{t('home.trustItem3Desc')}</p>
+              </li>
+            </ul>
+          </FadeUp>
+          <FadeUp>
+            <p className="city-ttd-cta">
+              <a
+                href={contactInfo.tripadvisorUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="button"
+              >
+                {t('home.trustTripadvisorLink')}
+              </a>
+            </p>
+          </FadeUp>
         </div>
       </section>
 
@@ -308,6 +388,42 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Explore the Caucasus — destination guides, not tours. Reuses the
+          exact same DestinationCard/.dest-hub-grid the "Where do you want to
+          go?" section above uses, just with six place-level cards instead of
+          four country-level ones. */}
+      <section className="home-items">
+        <div className="tours-grid-container">
+          <FadeUp>
+            <h2>{t('home.exploreCaucasusTitle')}</h2>
+            <p className="blog-intro">{t('home.exploreCaucasusIntro')}</p>
+          </FadeUp>
+          <FadeUp>
+            <ul className="dest-hub-grid">
+              {EXPLORE_CARDS.map((c) => (
+                <li key={c.to}>
+                  <DestinationCard
+                    name={c.name}
+                    image={c.image}
+                    imageAlt={`${c.name} — ${t(c.typeKey)}`}
+                    to={c.to}
+                    locationLine={t(c.typeKey)}
+                    headingLevel="h3"
+                  />
+                </li>
+              ))}
+            </ul>
+          </FadeUp>
+          <FadeUp>
+            <p className="city-ttd-cta">
+              <LocaleLink to="/georgia" className="button">{t('home.exploreAllGeorgia')}</LocaleLink>
+              <LocaleLink to="/armenia" className="button">{t('home.exploreAllArmenia')}</LocaleLink>
+              <LocaleLink to="/azerbaijan" className="button">{t('home.exploreAllAzerbaijan')}</LocaleLink>
+            </p>
+          </FadeUp>
+        </div>
+      </section>
+
       {/* Travel Blogs — replaces the "What our travelers say" testimonials
           section per owner request. Reuses the exact card markup and CSS
           BlogArticlePage's "Related Articles" row already ships
@@ -342,6 +458,34 @@ export default function HomePage() {
             <LocaleLink to="/blog" className="button">{t('home.viewAllTravelBlogs')}</LocaleLink>
           </p>
         </FadeUp>
+      </section>
+
+      {/* How a private tour works — three steps, directly above Get in Touch. */}
+      <section className="home-items">
+        <div className="tours-grid-container">
+          <FadeUp>
+            <h2>{t('home.howItWorksTitle')}</h2>
+          </FadeUp>
+          <FadeUp>
+            <ol className="home-howit-grid">
+              <li className="home-howit-step">
+                <span className="home-howit-step__num" aria-hidden="true">1</span>
+                <strong>{t('home.howStep1Title')}</strong>
+                <p>{t('home.howStep1Desc')}</p>
+              </li>
+              <li className="home-howit-step">
+                <span className="home-howit-step__num" aria-hidden="true">2</span>
+                <strong>{t('home.howStep2Title')}</strong>
+                <p>{t('home.howStep2Desc')}</p>
+              </li>
+              <li className="home-howit-step">
+                <span className="home-howit-step__num" aria-hidden="true">3</span>
+                <strong>{t('home.howStep3Title')}</strong>
+                <p>{t('home.howStep3Desc')}</p>
+              </li>
+            </ol>
+          </FadeUp>
+        </div>
       </section>
 
       <section className="home-items">

@@ -5176,6 +5176,21 @@ tour-info h2 a,
   max-width: 1200px;
   margin: 0 auto;
 }
+/* Duration-band grouping on /private-tours: each band is a heading above its
+   own .tour-listing (unchanged card layout/spacing), so bands read as
+   sections of the same page rather than a redesigned listing. */
+.tour-listing-bands {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.tour-band__title {
+  text-align: center;
+  padding: calc(var(--indent) * 1.5) calc(var(--indent) * 2) 0;
+  margin: 0;
+}
+.tour-band .tour-listing {
+  padding-top: calc(var(--indent) * 1);
+}
 .tour-listing__empty {
   text-align: center;
   padding: calc(var(--indent) * 4) var(--indent);
@@ -5305,6 +5320,22 @@ tour-info h2 a,
   background: transparent;
   border: 1.5px dashed rgba(43, 78, 71, 0.25);
   color: rgba(43, 78, 71, 0.5);
+}
+
+/* Primary category chip — same pill shape as .tc__tag (the destination tags
+   below it), in the accent gold instead of green so "what kind of tour" reads
+   as visually distinct from "where it goes". */
+.tc__category-chip {
+  display: inline-block;
+  margin-bottom: 8px;
+  background: color-mix(in srgb, var(--color-h3) 16%, transparent);
+  color: var(--color-h3);
+  padding: 4px 12px;
+  border-radius: 14px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
 }
 
 /* Description */
@@ -10871,6 +10902,54 @@ img[data-lightbox] {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+/* Trust strip (three factual points) and "How a private tour works" (three
+   numbered steps) — both sit inside a dark `.home-items` band, so they
+   inherit its centred text and light (--color-bg) colour for free; only the
+   grid/number chrome is new. */
+.home-trust-grid,
+.home-howit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: calc(var(--indent) * 1.2);
+  max-width: 1100px;
+  margin: calc(var(--indent) / 2) auto;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.home-trust-item p,
+.home-howit-step p {
+  width: auto;
+  max-width: none;
+  margin: 8px auto 0;
+  font-size: calc(var(--font-size) * 0.92);
+  opacity: 0.9;
+}
+.home-howit-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-howit-step__num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-bottom: calc(var(--indent) / 3);
+  border-radius: 50%;
+  border: 1px solid var(--color-bg);
+  font-family: "rockwell";
+  font-weight: 700;
+}
+@media (max-width: 700px) {
+  .home-trust-grid,
+  .home-howit-grid {
+    grid-template-columns: 1fr;
+    gap: calc(var(--indent) * 0.8);
   }
 }
 
