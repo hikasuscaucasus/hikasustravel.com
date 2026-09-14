@@ -4,15 +4,32 @@ import FadeUp from '../shared/FadeUp'
 import CardImage from '../shared/CardImage'
 import DestinationCard from '../shared/DestinationCard'
 import CountryTabs from '../shared/CountryTabs'
-import Testimonials from '../shared/Testimonials'
 import ContactForm from '../shared/ContactForm'
 import { tours, privateTourCountFor, countryHasAnyTours, featuredToursFor } from '../../data/tours'
+import { blogArticles } from '../../data/blogData'
 import useT from '../../i18n/useT'
 import useLang from '../../i18n/useLang'
 import LocaleLink from '../../i18n/LocaleLink'
 import { I18nContext } from '../../i18n/I18nContext'
 import useSEO from '../../hooks/useSEO'
 import { getSEO } from '../../data/seoData'
+import asset from '../../utils/basePath'
+
+// Fixed Georgia → Armenia → Azerbaijan order for the homepage Travel Blogs
+// teaser (intentionally not the blog registry's own newest-first ordering).
+const HOMEPAGE_BLOG_SLUGS = [
+  'ultimate-guide-to-traveling-to-georgia',
+  'ultimate-guide-to-traveling-to-armenia',
+  'ultimate-guide-to-traveling-to-azerbaijan',
+]
+
+// Same fallback helper BlogPage.jsx/BlogArticlePage.jsx use: a ui.json key
+// that resolves to itself (untranslated) falls back to the article's own
+// English copy instead of printing the raw key.
+function tf(t, key, fallback) {
+  const val = t(key)
+  return val === key ? fallback : val
+}
 
 function FeaturedTourTile({ tour, t, tourTranslations }) {
   const tt = tourTranslations?.[tour.slug]
@@ -291,11 +308,36 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Reviews — existing testimonials, unchanged layout. */}
-      <section className="td-testimonials-section">
+      {/* Travel Blogs — replaces the "What our travelers say" testimonials
+          section per owner request. Reuses the exact card markup and CSS
+          BlogArticlePage's "Related Articles" row already ships
+          (.blog-related__grid/__card), so this teaser matches the site's
+          established blog-card design instead of inventing a new one. Fixed
+          Georgia → Armenia → Azerbaijan order, not the registry's own
+          newest-first sort. */}
+      <section className="blog-article blog-related">
         <FadeUp>
-          <h2 className="td-section__title">{t('testimonials.title')}</h2>
-          <Testimonials />
+          <h2 className="blog-related__heading">{tf(t, 'blog.heroTitle', 'Travel Blogs')}</h2>
+          <p className="blog-intro">{tf(t, 'home.blogsIntro', 'Practical guides to planning your journey through Georgia, Armenia and Azerbaijan.')}</p>
+          <div className="blog-related__grid">
+            {HOMEPAGE_BLOG_SLUGS.map((slug) => {
+              const a = blogArticles.find((x) => x.slug === slug)
+              if (!a) return null
+              const title = tf(t, a.titleKey, a.title)
+              const excerpt = a.descKey ? tf(t, a.descKey, a.excerpt) : a.excerpt
+              return (
+                <LocaleLink key={a.slug} to={`/blog/${a.slug}`} className="blog-related__card">
+                  <div className="blog-related__card-img-wrap">
+                    <img src={asset(a.thumbnail)} alt={title} className="blog-related__card-img" loading="lazy" />
+                  </div>
+                  <div className="blog-related__card-body">
+                    <h3 className="blog-related__card-title">{title}</h3>
+                    <p className="blog-related__card-excerpt">{excerpt}</p>
+                  </div>
+                </LocaleLink>
+              )
+            })}
+          </div>
         </FadeUp>
       </section>
 
