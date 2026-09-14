@@ -338,6 +338,9 @@ export default function HomePage() {
               )
             })}
           </div>
+          <p className="city-ttd-cta">
+            <LocaleLink to="/blog" className="button">{t('home.viewAllTravelBlogs')}</LocaleLink>
+          </p>
         </FadeUp>
       </section>
 
