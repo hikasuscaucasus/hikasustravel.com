@@ -72,7 +72,16 @@ const COUNTRY_HUBS = {
     // curated registry order). Baku is not listed here: the capital is its own
     // unit and lives on the Cities hub — its region record carries `hideFromHub`.
     regions: { pageKey: 'azerbaijanRegions', seoKey: 'azerbaijanRegions', includeUnpublished: true, sortByName: true, sortCanonical: true },
-    cities: { pageKey: 'azerbaijanCities', seoKey: 'azerbaijanCities', includeUnpublished: true, pinFirst: 'baku' },
+    // Curated editorial selection, not the full scaffolded registry (42 other
+    // Azerbaijan cities stay in places.js, unpublished, reachable once written —
+    // this only controls what the Cities hub *lists*). Fixed order, not A-Z;
+    // `only` overrides sortByName/pinFirst below rather than combining with them.
+    cities: {
+      pageKey: 'azerbaijanCities',
+      seoKey: 'azerbaijanCities',
+      includeUnpublished: true,
+      only: ['baku', 'gabala', 'ganja', 'khinalig', 'lahij', 'lankaran', 'quba', 'sheki'],
+    },
     places: { pageKey: 'azerbaijanPlaces', seoKey: 'azerbaijanPlaces' },
   },
 }
@@ -145,7 +154,7 @@ export function CitiesHubPage({ country = DEFAULT_COUNTRY }) {
   // of order in every other language. Entries reclassified as a place to visit
   // (e.g. the highland resort Gomismta) are excluded here and listed on the
   // Places to Visit hub instead.
-  const entries = citiesOfCountry(country)
+  let entries = citiesOfCountry(country)
     .filter((c) => c.classifyAs !== 'place' && (conf.includeUnpublished || c.published))
     .map((c) => ({
       slug: c.slug,
@@ -159,6 +168,12 @@ export function CitiesHubPage({ country = DEFAULT_COUNTRY }) {
       // both follow. A city without one renders the text-only card unchanged.
       image: c.image,
     }))
+  // `only`: a curated editorial subset of the registry, in a fixed order (not
+  // A-Z). The other scaffolded cities stay in places.js, just not listed here.
+  if (conf.only) {
+    const bySlug = new Map(entries.map((e) => [e.slug, e]))
+    entries = conf.only.map((slug) => bySlug.get(slug)).filter(Boolean)
+  }
   return (
     <DestinationHub
       pageKey={conf.pageKey}
@@ -172,8 +187,8 @@ export function CitiesHubPage({ country = DEFAULT_COUNTRY }) {
       entries={entries}
       currentLabelKey="nav.cities"
       ctaKey="destinations.exploreCity"
-      sortByName
-      pinFirst={conf.pinFirst}
+      sortByName={!conf.only}
+      pinFirst={conf.only ? null : conf.pinFirst}
       // Falls back to a city's own authored per-language SEO entry for the card
       // title and one-line summary. On Georgia only Bakhmaro needs it (the other
       // 25 have curated card text); on Armenia it carries every card, which is
