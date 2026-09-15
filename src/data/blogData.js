@@ -1087,7 +1087,7 @@ export const blogGuides = [
     seoKey: 'lariGuide',
     date: '2026-02-19',
     readTime: 6,
-    thumbnail: '/images/files/kutaisi-green-bazaar-produce-stalls-georgia-768.webp',
+    thumbnail: '/images/files/georgian-lari-banknotes-currency-georgia-768.webp',
     tags: ['money', 'currency', 'travel-tips'],
   },
   {

@@ -398,6 +398,7 @@ const staticPageImages = {
   'tbilisi-metro': '/images/files/tbilisi-metekhi-mtatsminda.jpg',
   'tbilisi-railway-station': '/images/files/old-tbilisi.jpg',
   'about-georgia': '/images/files/gergeti-church-kazbegi-panorama-georgia-og.jpg',
+  'georgian-lari-currency-guide': '/images/files/georgian-lari-banknotes-currency-georgia-og.jpg',
   // Armenia's own 1.91:1 social crop. Without it this page inherited the
   // site-wide georgia-home.jpg default — a Georgian photo on an Armenian page.
   'armenia': '/images/files/khor-virap-monastery-ararat-armenia-og.jpg',
@@ -443,6 +444,22 @@ const staticPageSocial = {
       nl: 'De Drie-eenheidskerk van Gergeti en de bergen van de Grote Kaukasus in Georgië',
       cs: 'Kostel Nejsvětější Trojice v Gergeti a hory Velkého Kavkazu v Gruzii',
       pl: 'Cerkiew Trójcy Świętej w Gergeti i góry Wielkiego Kaukazu w Gruzji',
+    },
+  },
+  // Georgian Lari guide's new hero/card image (20/50/100 lari banknotes),
+  // matching the -og.jpg crop generated alongside it.
+  'georgian-lari-currency-guide': {
+    src: '/images/files/georgian-lari-banknotes-currency-georgia-og.jpg',
+    width: 1200,
+    height: 630,
+    alt: {
+      en: 'Georgian lari banknotes: 20, 50 and 100 GEL',
+      de: 'Georgische Lari-Banknoten: 20, 50 und 100 GEL',
+      fr: 'Billets en lari géorgien : 20, 50 et 100 GEL',
+      es: 'Billetes de lari georgiano: 20, 50 y 100 GEL',
+      nl: 'Georgische laribiljetten: 20, 50 en 100 GEL',
+      cs: 'Bankovky gruzínského lari: 20, 50 a 100 GEL',
+      pl: 'Banknoty gruzińskiego lari: 20, 50 i 100 GEL',
     },
   },
 }

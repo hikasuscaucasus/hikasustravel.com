@@ -8,13 +8,29 @@ import { useLinkedHtml, useLinkedFaq } from '../../utils/autolinkReact'
 import useSEO from '../../hooks/useSEO'
 import { getSEO } from '../../data/seoData'
 
-// No dedicated currency/banknote photo exists in the repository; a market
-// scene (where cash actually changes hands) is the closest relevant asset on
-// hand, and gives this guide its own visual identity distinct from the other
-// blog articles instead of reusing the generic georgia-home.jpg placeholder.
-const HERO_IMAGE = '/images/files/kutaisi-green-bazaar-produce-stalls-georgia-1200.webp'
+// The 20/50/100 lari banknotes, National Bank of Georgia specimen artwork —
+// public domain under Georgian copyright law (banknotes are exempt as
+// official state symbols; commons.wikimedia.org/wiki/File:20,_50_and_100_
+// lari._Georgia,_2016_a.png, sourced from the National Bank of Georgia).
+// Replaces a Kutaisi market-produce photo that only loosely evoked "money"
+// and duplicated that market's own destination-page hero; this reads as
+// Georgian currency immediately. Same asset is used as the blog card image
+// (src/data/blogData.js's blogGuides entry) so the two match everywhere.
+const HERO_IMAGE = '/images/files/georgian-lari-banknotes-currency-georgia-1200.webp'
+const HERO_IMAGE_AVIF = '/images/files/georgian-lari-banknotes-currency-georgia-1200.avif'
+const OG_IMAGE = '/images/files/georgian-lari-banknotes-currency-georgia-og.jpg'
 const SITE_URL = 'https://www.hikasustravel.com'
 const PATH = 'georgian-lari-currency-guide'
+
+const HERO_ALT = {
+  en: 'Georgian lari banknotes: 20, 50 and 100 GEL',
+  de: 'Georgische Lari-Banknoten: 20, 50 und 100 GEL',
+  fr: 'Billets en lari géorgien : 20, 50 et 100 GEL',
+  es: 'Billetes de lari georgiano: 20, 50 y 100 GEL',
+  nl: 'Georgische laribiljetten: 20, 50 en 100 GEL',
+  cs: 'Bankovky gruzínského lari: 20, 50 a 100 GEL',
+  pl: 'Banknoty gruzińskiego lari: 20, 50 i 100 GEL',
+}
 
 export default function CurrencyGuidePage() {
   const { pages, enPages } = useContext(I18nContext)
@@ -64,11 +80,12 @@ export default function CurrencyGuidePage() {
     }
   }, [lang, seo.description, page.heroTitle, faqItems])
 
-  useSEO({ ...seo, lang, path: PATH, image: HERO_IMAGE, jsonLd })
+  const imageAlt = HERO_ALT[lang] || HERO_ALT.en
+  useSEO({ ...seo, lang, path: PATH, image: OG_IMAGE, imageAlt, jsonLd })
 
   return (
     <>
-      <HeroSection image={HERO_IMAGE} title={page.heroTitle} />
+      <HeroSection image={HERO_IMAGE} imageAvif={HERO_IMAGE_AVIF} title={page.heroTitle} />
       <section className="page-items about-georgia">
         <FadeUp>
           <div dangerouslySetInnerHTML={{ __html: linkedContent }} />
