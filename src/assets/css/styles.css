@@ -1209,27 +1209,6 @@ section {
 }
 /* No rung above 1448 (native ceiling). */
 
-/* About Georgia hero — per-page CSS background (same opt-in mechanism as
-   .hero--juta). Single native-resolution source (1600x1067, no ladder — this
-   page's traffic doesn't warrant one). Gergeti Trinity Church sits left of
-   centre (~30% across, ~46% down): a default `center center` cover crop pushes
-   it almost entirely out of frame on a narrow/tall mobile viewport (verified by
-   simulating a 9:19.5 crop), so `background-position: 30% 46%` keeps the church
-   itself as the anchor point across every aspect ratio. The .coverme::after
-   overlay already provides the readable text layer, so the package's optional
-   ::before scrim is NOT enabled. plain url() line = fallback for browsers
-   without image-set(). */
-.hero--about-georgia {
-  background-image: url("/images/files/gergeti-church-kazbegi-panorama-georgia.webp");
-  background-image: image-set(
-    url("/images/files/gergeti-church-kazbegi-panorama-georgia.avif") type("image/avif"),
-    url("/images/files/gergeti-church-kazbegi-panorama-georgia.webp") type("image/webp")
-  );
-  background-position: 30% 46%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 /* Truso Valley hero — per-page CSS background (same opt-in mechanism as
    .hero--juta). Ladder 768→2400 + deliberate `background-position: center 72%`:
    the subject (tower + church) sits low in a sky-less frame, so a centred crop

@@ -23,28 +23,29 @@ const ABOUT_PAGES = {
     pageKey: 'aboutGeorgia',
     seoKey: 'aboutGeorgia',
     path: 'about-georgia',
-    // A wide, uncropped view of Gergeti Trinity Church on its hilltop against
-    // the Greater Caucasus — replaces a generic, unrecognizable alpine-meadow
-    // photo that could have been any mountain range. Chosen over the
-    // gergeti-trinity-church-kazbegi-georgia-* asset family already used
-    // across the homepage, group tours and several tour pages: same landmark,
-    // but this frame has no tourists on the path and gives this page its own
-    // identity rather than repeating an already-heavily-used shot.
-    // Rendered via `.hero--about-georgia` (bgClass) rather than the plain
-    // image/imageAvif props below, because the church sits off-centre
-    // (~30% across) and needs a custom background-position to survive a
-    // narrow mobile crop — see the CSS comment in styles.css.
-    image: '/images/files/gergeti-church-kazbegi-panorama-georgia.webp',
-    ogImage: '/images/files/gergeti-church-kazbegi-panorama-georgia-og.jpg',
-    bgClass: 'hero--about-georgia',
+    // Ushguli's clustered Svan defensive towers, valley and river against the
+    // Greater Caucasus. Replaces the Gergeti Trinity Church panorama used
+    // previously: that photo's only source resolution (1600px wide) was
+    // visibly soft once stretched to fill a full-width retina/4K hero
+    // (verified by rendering the live page and inspecting a 1:1 pixel crop —
+    // reported as "very low quality"). This asset tops out at 2000px, a
+    // meaningfully sharper source, and its towers span most of the frame
+    // width so the default center crop keeps them in view on any viewport
+    // without a custom background-position. Already used as the hero for two
+    // Svaneti destination pages (Ushguli's own page and the Svaneti region
+    // page) — accepted since no sharper unique alternative exists in the
+    // repository; quality took priority over uniqueness per instruction.
+    image: '/images/files/ushguli-svan-towers-village-svaneti-georgia-2000w.webp',
+    imageAvif: '/images/files/ushguli-svan-towers-village-svaneti-georgia-2000w.avif',
+    ogImage: '/images/files/ushguli-svan-towers-village-svaneti-georgia-og-1200x630.jpg',
     imageAlt: {
-      en: 'Gergeti Trinity Church and the Greater Caucasus mountains in Georgia',
-      de: 'Gergeti-Dreifaltigkeitskirche und die Berge des Großen Kaukasus in Georgien',
-      fr: "L'église de la Trinité de Gergeti et les montagnes du Grand Caucase en Géorgie",
-      es: 'La iglesia de la Trinidad de Gergeti y las montañas del Gran Cáucaso en Georgia',
-      nl: 'De Drie-eenheidskerk van Gergeti en de bergen van de Grote Kaukasus in Georgië',
-      cs: 'Kostel Nejsvětější Trojice v Gergeti a hory Velkého Kavkazu v Gruzii',
-      pl: 'Cerkiew Trójcy Świętej w Gergeti i góry Wielkiego Kaukazu w Gruzji',
+      en: 'Svan defensive towers in Ushguli village beneath the Greater Caucasus mountains, Svaneti, Georgia',
+      de: 'Swanische Türme im Dorf Ushguli unter den Bergen des Großen Kaukasus, Svaneti, Georgien',
+      fr: "Tours svanes du village d'Ushguli sous les montagnes du Grand Caucase, Svaneti, Géorgie",
+      es: 'Torres svanas del pueblo de Ushguli bajo las montañas del Gran Cáucaso, Svaneti, Georgia',
+      nl: 'Svaanse torens in het dorp Ushguli onder de bergen van de Grote Kaukasus, Svaneti, Georgië',
+      cs: 'Svanské věže ve vesnici Ushguli pod horami Velkého Kavkazu, Svaneti, Gruzie',
+      pl: 'Svańskie wieże we wsi Ushguli pod górami Wielkiego Kaukazu, Svaneti, Gruzja',
     },
     hasDishModal: true,
   },
