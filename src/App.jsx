@@ -53,6 +53,7 @@ const ShuttleServicePage = routeComponent(() => import('./components/pages/Shutt
 const PrivacyPolicyPage = routeComponent(() => import('./components/pages/PrivacyPolicyPage'))
 const TermsPage = routeComponent(() => import('./components/pages/TermsPage'))
 const EmbassiesPage = routeComponent(() => import('./components/pages/EmbassiesPage'))
+const EmbassyDirectoryPage = routeComponent(() => import('./components/pages/EmbassyDirectoryPage'))
 const BlogPage = routeComponent(() => import('./components/pages/BlogPage'))
 const BlogArticlePage = routeComponent(() => import('./components/pages/BlogArticlePage'))
 const NotFoundPage = routeComponent(() => import('./components/pages/NotFoundPage'))
@@ -211,6 +212,9 @@ export function AppRoutes() {
             })}
           <Route path="shuttle-service" element={<ShuttleServicePage />} />
           <Route path="embassies" element={<EmbassiesPage />} />
+          <Route path="embassies/georgia" element={<EmbassyDirectoryPage country="georgia" />} />
+          <Route path="embassies/armenia" element={<EmbassyDirectoryPage country="armenia" />} />
+          <Route path="embassies/azerbaijan" element={<EmbassyDirectoryPage country="azerbaijan" />} />
           <Route path="blog" element={<BlogPage />} />
           <Route path="blog/:slug" element={<BlogArticlePage />} />
           <Route path="faq" element={<FaqPage />} />

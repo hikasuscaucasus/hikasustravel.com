@@ -9557,6 +9557,22 @@ select option:checked {
   height: 500px;
 }
 
+/* Hub / directory intro */
+.embassy-intro {
+  max-width: 760px;
+  margin: 0 auto calc(var(--indent) * 0.75);
+  text-align: center;
+}
+
+.embassy-intro p {
+  margin: 0 0 0.75em;
+}
+
+.embassy-checked {
+  color: #666;
+  font-size: 0.9em;
+}
+
 /* Count & no results */
 .embassy-count {
   text-align: center;

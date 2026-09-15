@@ -384,6 +384,9 @@ const seoPageMap = {
   'tours/caucasus': 'toursCaucasus',
   'shuttle-service': 'shuttle',
   'embassies': 'embassies',
+  'embassies/georgia': 'embassiesGeorgia',
+  'embassies/armenia': 'embassiesArmenia',
+  'embassies/azerbaijan': 'embassiesAzerbaijan',
   'blog': 'blog',
   'faq': 'faq',
   'contact': 'contact',
@@ -393,6 +396,12 @@ const seoPageMap = {
 
 // Per-path og:image overrides for static pages (default is georgia-home.jpg).
 const staticPageImages = {
+  // Mirrors the `image` each embassies page passes to useSEO (see
+  // EmbassiesPage.jsx / embassyData.js `embassyHosts`).
+  'embassies': '/images/files/georgia-tour-03.jpg',
+  'embassies/georgia': '/images/files/georgia-tour-03.jpg',
+  'embassies/armenia': '/images/files/khor-virap-monastery-ararat-armenia-og.jpg',
+  'embassies/azerbaijan': '/images/files/baku-flame-towers-azerbaijan-1200.webp',
   'kutaisi-international-airport': '/images/files/kutaisi-airport.jpg',
   'tbilisi-international-airport': '/images/files/tbilisi-old-town-narikala-mtkvari-georgia-1200.webp',
   'tbilisi-metro': '/images/files/tbilisi-metekhi-mtatsminda.jpg',
