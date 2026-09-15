@@ -28,6 +28,8 @@ const SECTION_KEYS = {
   'shuttle-service': 'shuttle.title',
   'about-us': 'footer.about',
   'about-georgia': 'footer.aboutGeorgia',
+  'about-armenia': 'nav.aboutArmenia',
+  'about-azerbaijan': 'nav.aboutAzerbaijan',
   contact: 'footer.contact',
   faq: 'footer.faq',
 }

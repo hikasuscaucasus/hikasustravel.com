@@ -342,6 +342,8 @@ const seoPageMap = {
   '': 'home',
   'about-us': 'aboutUs',
   'about-georgia': 'aboutGeorgia',
+  'about-armenia': 'aboutArmenia',
+  'about-azerbaijan': 'aboutAzerbaijan',
   'georgian-lari-currency-guide': 'lariGuide',
   'georgia-visa-entry-requirements': 'visaGuide',
   'armenia-visa-entry-requirements': 'armeniaVisaGuide',
@@ -399,6 +401,10 @@ const staticPageImages = {
   // site-wide georgia-home.jpg default — a Georgian photo on an Armenian page.
   'armenia': '/images/files/khor-virap-monastery-ararat-armenia-og.jpg',
   'armenia-visa-entry-requirements': '/images/files/khor-virap-monastery-ararat-armenia-og.jpg',
+  'about-armenia': '/images/files/khor-virap-monastery-ararat-armenia-og.jpg',
+  // No Azerbaijan photograph exists in the repo yet — strip the site-wide
+  // Georgian default rather than let this page inherit another country's photo.
+  'about-azerbaijan': null,
   // Azerbaijan has no photograph of its own yet. `null` (not a missing key)
   // tells emitHtml to strip the site-wide Georgian default rather than let a
   // country's pages inherit another country's social card.

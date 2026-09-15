@@ -127,7 +127,7 @@ const FAMILIES = [
 
 // Every route the build actually publishes — the set no rule may ever match.
 const livePaths = [
-  '', 'about-us', 'about-georgia', 'georgian-lari-currency-guide',
+  '', 'about-us', 'about-georgia', 'about-armenia', 'about-azerbaijan', 'georgian-lari-currency-guide',
   'georgia-visa-entry-requirements', 'armenia-visa-entry-requirements',
   'azerbaijan-visa-entry-requirements',
   'languages-of-georgia', 'kutaisi-international-airport',

@@ -142,7 +142,18 @@ export const navLinks = [
     labelKey: 'nav.destinations',
     countries: destinationCountries,
   },
-  { to: '/about-georgia', labelKey: 'nav.aboutGeorgia' },
+  {
+    // "About Georgia" used to be a single link here; it is now the first of
+    // three country overview pages, so this became a dropdown category the
+    // same way "Our Tours" above is one — same NavDropdown component, no new
+    // menu implementation, order fixed at Georgia -> Armenia -> Azerbaijan.
+    labelKey: 'nav.aboutCaucasus',
+    children: [
+      { to: '/about-georgia', labelKey: 'nav.aboutGeorgia' },
+      { to: '/about-armenia', labelKey: 'nav.aboutArmenia' },
+      { to: '/about-azerbaijan', labelKey: 'nav.aboutAzerbaijan' },
+    ],
+  },
   { to: '/shuttle-service', labelKey: 'nav.shuttleService' },
   { to: '/contact', labelKey: 'nav.contactUs' },
 ]

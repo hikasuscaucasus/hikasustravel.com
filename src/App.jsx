@@ -16,7 +16,7 @@ import { privateTourCollectionPages } from './data/privateTourCollections'
 // slugs), so they are needed before any route can match.
 const HomePage = routeComponent(() => import('./components/pages/HomePage'))
 const AboutUsPage = routeComponent(() => import('./components/pages/AboutUsPage'))
-const AboutGeorgiaPage = routeComponent(() => import('./components/pages/AboutGeorgiaPage'))
+const AboutCountryPage = routeComponent(() => import('./components/pages/AboutCountryPage'))
 const CurrencyGuidePage = routeComponent(() => import('./components/pages/CurrencyGuidePage'))
 const VisaPage = routeComponent(() => import('./components/pages/VisaPage'))
 const LanguagesPage = routeComponent(() => import('./components/pages/LanguagesPage'))
@@ -70,7 +70,9 @@ export function AppRoutes() {
         <Route path="/:lang" element={<I18nProvider><Layout /></I18nProvider>}>
           <Route index element={<HomePage />} />
           <Route path="about-us" element={<AboutUsPage />} />
-          <Route path="about-georgia" element={<AboutGeorgiaPage />} />
+          <Route path="about-georgia" element={<AboutCountryPage />} />
+          <Route path="about-armenia" element={<AboutCountryPage country="armenia" />} />
+          <Route path="about-azerbaijan" element={<AboutCountryPage country="azerbaijan" />} />
           <Route path="georgian-lari-currency-guide" element={<CurrencyGuidePage />} />
           <Route path="georgia-visa-entry-requirements" element={<VisaPage />} />
           <Route path="armenia-visa-entry-requirements" element={<VisaPage country="armenia" />} />

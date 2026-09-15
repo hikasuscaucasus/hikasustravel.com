@@ -57,6 +57,8 @@ const STATIC_PAGES = [
   { path: '', seoKey: 'home', type: 'info', titleKey: 'footer.home' },
   { path: 'about-us', seoKey: 'aboutUs', type: 'info' },
   { path: 'about-georgia', seoKey: 'aboutGeorgia', type: 'info' },
+  { path: 'about-armenia', seoKey: 'aboutArmenia', type: 'info' },
+  { path: 'about-azerbaijan', seoKey: 'aboutAzerbaijan', type: 'info' },
   { path: 'georgian-lari-currency-guide', seoKey: 'lariGuide', type: 'info' },
   { path: 'georgia-visa-entry-requirements', seoKey: 'visaGuide', type: 'info' },
   { path: 'armenia-visa-entry-requirements', seoKey: 'armeniaVisaGuide', type: 'info' },
