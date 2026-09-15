@@ -3709,8 +3709,15 @@ export const regions = [
   {
     slug: 'mountainous-shirvan', name: 'Mountainous Shirvan', published: true, country: 'azerbaijan',
     seoKey: 'mountainousShirvan', contentKey: 'mountainousShirvan',
-    noHero: true,
     noAutolink: true,
+    // Owner-supplied photograph of Shamakhi's rebuilt Juma Mosque — Shamakhi is
+    // itself part of Mountainous Shirvan, and this is the only region-correct
+    // image in the batch. No smaller rung exists, so `cardImage` reuses the
+    // same file rather than requesting one that doesn't exist (the same
+    // pattern already used for Ananuri/Koruldi Lakes above).
+    image: '/images/files/shamakhi-juma-mosque-azerbaijan-1564.webp',
+    imageAvif: '/images/files/shamakhi-juma-mosque-azerbaijan-1564.avif',
+    cardImage: '/images/files/shamakhi-juma-mosque-azerbaijan-1564.webp',
   },
   {
     slug: 'sheki-zagatala', name: 'Sheki-Zagatala', published: true, country: 'azerbaijan',
@@ -9347,7 +9354,42 @@ export const cities = [
     slug: 'baku', name: 'Baku', region: null, published: true, country: 'azerbaijan',
     seoKey: 'baku', contentKey: 'baku',
     featured: true,
-    noHero: true, heroTitleAsH1: true, noAutolink: true,
+    heroTitleAsH1: true, noAutolink: true,
+    // Owner-supplied photograph: the Flame Towers skyline seen from across the
+    // bay, with the TV tower and Government House also visible — genuinely
+    // identifiable as Baku, not a generic Azerbaijan stand-in. Already in the
+    // repo (from the Azerbaijan travel-guide blog article) with a full
+    // 768/1200/1448 WebP+AVIF ladder, so this reuses that family rather than
+    // duplicating it under a new name.
+    image: '/images/files/baku-flame-towers-azerbaijan-1448.webp',
+    imageAvif: '/images/files/baku-flame-towers-azerbaijan-1448.avif',
+    heroPreload: '/images/files/baku-flame-towers-azerbaijan-1200.avif',
+    imageMeta: {
+      width: 1448, height: 1086,
+      name: 'Baku Flame Towers and TV tower seen across the bay, Azerbaijan',
+      description: "Baku's Flame Towers and television tower rising above the city, seen across the bay from the seaside boulevard.",
+      locationName: 'Baku, Azerbaijan',
+      locality: 'Baku', country: 'AZ',
+      geo: { lat: 40.3777, lng: 49.8920 },
+      alt: {
+        en: 'Baku Flame Towers and TV tower seen across the bay, Azerbaijan',
+        de: 'Die Flame Towers und der Fernsehturm von Baku, von der anderen Seite der Bucht gesehen, Aserbaidschan',
+        fr: 'Les Flame Towers et la tour de télévision de Bakou, vues depuis l\'autre côté de la baie, Azerbaïdjan',
+        es: 'Las Flame Towers y la torre de televisión de Bakú, vistas desde el otro lado de la bahía, Azerbaiyán',
+        nl: 'De Flame Towers en de televisietoren van Bakoe, gezien vanaf de overkant van de baai, Azerbeidzjan',
+        cs: 'Věže Flame Towers a televizní věž v Baku, pohled z druhé strany zálivu, Ázerbájdžán',
+        pl: 'Wieże Flame Towers i wieża telewizyjna w Baku, widoczne z drugiej strony zatoki, Azerbejdżan',
+      },
+      caption: {
+        en: 'Flame Towers, Baku',
+        de: 'Flame Towers, Baku',
+        fr: 'Flame Towers, Bakou',
+        es: 'Flame Towers, Bakú',
+        nl: 'Flame Towers, Bakoe',
+        cs: 'Flame Towers, Baku',
+        pl: 'Flame Towers, Baku',
+      },
+    },
     thingsToDo: {
       seoKey: 'thingsToDoBaku', contentKey: 'thingsToDoBaku',
       noHero: true,
@@ -15944,30 +15986,38 @@ export const sites = [
     parentType: 'city', parent: 'baku', published: false,
     seoKey: 'maidenTower', contentKey: 'maidenTower',
     noHero: true, noAutolink: true,
+    // Owner-supplied photograph, unpublished page — wired for the Places to
+    // Visit hub's "coming soon" card cover only (siteEntries mapping below).
+    image: '/images/files/maiden-tower-icherisheher-baku-azerbaijan-1293.webp',
   },
   {
     slug: 'palace-of-the-shirvanshahs', name: 'Palace of the Shirvanshahs',
     parentType: 'city', parent: 'baku', published: false,
     seoKey: 'palaceOfTheShirvanshahs', contentKey: 'palaceOfTheShirvanshahs',
     noHero: true, noAutolink: true,
+    image: '/images/files/palace-of-the-shirvanshahs-baku-azerbaijan-1536.webp',
   },
   {
     slug: 'flame-towers', name: 'Flame Towers',
     parentType: 'city', parent: 'baku', published: false,
     seoKey: 'flameTowers', contentKey: 'flameTowers',
     noHero: true, noAutolink: true,
+    // Reuses Baku's own hero photo — it genuinely depicts the Flame Towers.
+    image: '/images/files/baku-flame-towers-azerbaijan-1448.webp',
   },
   {
     slug: 'heydar-aliyev-center', name: 'Heydar Aliyev Center',
     parentType: 'city', parent: 'baku', published: false,
     seoKey: 'heydarAliyevCenter', contentKey: 'heydarAliyevCenter',
     noHero: true, noAutolink: true,
+    image: '/images/files/heydar-aliyev-center-baku-azerbaijan-1672.webp',
   },
   {
     slug: 'baku-boulevard', name: 'Baku Boulevard',
     parentType: 'city', parent: 'baku', published: false,
     seoKey: 'bakuBoulevard', contentKey: 'bakuBoulevard',
     noHero: true, noAutolink: true,
+    image: '/images/files/baku-boulevard-flame-towers-azerbaijan-1536.webp',
   },
   {
     slug: 'carpet-museum', name: 'Azerbaijan Carpet Museum',
@@ -16074,12 +16124,15 @@ export const sites = [
     parentType: 'place', parent: 'gobustan', country: 'azerbaijan', published: false,
     seoKey: 'gobustanMudVolcanoes', contentKey: 'gobustanMudVolcanoes',
     noHero: true, noAutolink: true,
+    image: '/images/files/gobustan-mud-volcanoes-azerbaijan-1599.webp',
   },
   {
     slug: 'shamakhi-juma-mosque', name: 'Shamakhi Juma Mosque',
     parentType: 'region', parent: 'mountainous-shirvan', published: false,
     seoKey: 'shamakhiJumaMosque', contentKey: 'shamakhiJumaMosque',
     noHero: true, noAutolink: true,
+    // Reuses Mountainous Shirvan's own region hero photo — the same mosque.
+    image: '/images/files/shamakhi-juma-mosque-azerbaijan-1564.webp',
   },
   {
     slug: 'yeddi-gumbez-mausoleum', name: 'Yeddi Gumbez Mausoleum',

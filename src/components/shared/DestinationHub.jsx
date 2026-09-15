@@ -31,6 +31,10 @@ export default function DestinationHub({
   seoKey,
   path,
   heroImage,
+  // Optional AVIF upgrade for the hero (HeroSection falls back to the plain
+  // WebP `heroImage` on its own — see heroBackground() — so this is inert
+  // unless a hub actually supplies one).
+  heroImageAvif = null,
   entries,
   currentLabelKey,
   ctaKey,
@@ -254,7 +258,7 @@ export default function DestinationHub({
           <h1>{page.heroTitle}</h1>
         </section>
       ) : (
-        <HeroSection className="hero--compact" image={heroImage} title={page.heroTitle} />
+        <HeroSection className="hero--compact" image={heroImage} imageAvif={heroImageAvif} title={page.heroTitle} />
       )}
       <section className="home-items">
         <div className="tours-grid-container">

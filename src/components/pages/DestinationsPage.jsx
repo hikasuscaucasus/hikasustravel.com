@@ -136,9 +136,13 @@ const COUNTRY_LANDING = {
   azerbaijan: {
     pageKey: 'azerbaijan',
     seoKey: 'azerbaijan',
-    // No approved Azerbaijani photograph yet: no `hero`, so the page renders
-    // the solid `.dest-title-band` with the H1, and no `ogImage`, so og:image
-    // is not asserted at all rather than borrowing another country's picture.
+    // Owner-supplied Baku Boulevard photograph (Flame Towers visible in the
+    // background) — the broadest "this is Azerbaijan" image in the batch, so
+    // it leads the country page. Distinct from the Cities sub-hub tile and
+    // Baku's own city card/hero below, which both use the Flame Towers
+    // skyline shot instead.
+    hero: '/images/files/baku-boulevard-flame-towers-azerbaijan-1536.webp',
+    heroAvif: '/images/files/baku-boulevard-flame-towers-azerbaijan-1536.avif',
     crumbKey: null, // -> nav.destinations.azerbaijan
     itemListName: 'Destinations in Azerbaijan',
     cityItemsKey: 'azerbaijanCities',
@@ -151,9 +155,17 @@ const COUNTRY_LANDING = {
     // "coming soon" cards until each is flipped to `published: true`.
     featuredByFlag: true,
     pinFirstCity: 'baku',
-    // The three sub-hub tiles render on the brand-tone placeholder until a
-    // cover exists for each — the tile itself is never hidden.
-    subhubImages: { regions: null, cities: null, places: null },
+    // Distinct owner-supplied photograph per sub-hub tile: a Mountainous
+    // Shirvan mosque (the only region-correct image in the batch) for
+    // Regions, the Baku Flame Towers skyline for Cities, and the Maiden Tower
+    // for Places to Visit — matching the same three images RegionsHubPage /
+    // CitiesHubPage / PlacesToVisitHubPage use as their own index heroes
+    // (DestinationHubs.jsx), so a tile and the page it links to agree.
+    subhubImages: {
+      regions: '/images/files/shamakhi-juma-mosque-azerbaijan-1564.webp',
+      cities: '/images/files/baku-flame-towers-azerbaijan-1448.webp',
+      places: '/images/files/maiden-tower-icherisheher-baku-azerbaijan-1293.webp',
+    },
     // No curated `azerbaijanCities.items[].description` block exists (unlike
     // Armenia's), so the card summary falls back to each city's own authored
     // SEO description — the exact chain DestinationHub's `seoFallback` already

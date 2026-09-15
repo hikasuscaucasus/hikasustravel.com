@@ -86,6 +86,25 @@ const COUNTRY_HUBS = {
   },
 }
 
+// Per-hub-type hero override: Azerbaijan's three hub pages otherwise share one
+// country-level `heroImage`/`noHero` (as Georgia's and Armenia's still do,
+// unchanged — see RegionsHubPage/CitiesHubPage/PlacesToVisitHubPage below,
+// which read `conf.heroImage ?? COUNTRY_HUBS[country].heroImage`). Only
+// Azerbaijan's owner-supplied photographs give each hub type its own
+// distinguishable hero — a mountainous-Shirvan mosque for Regions (the only
+// region-correct photo in the batch), a Baku skyline for Cities, the Maiden
+// Tower for Places to Visit — so a country without one falls straight through
+// to the shared default and renders exactly as before.
+COUNTRY_HUBS.azerbaijan.regions.heroImage = '/images/files/shamakhi-juma-mosque-azerbaijan-1564.webp'
+COUNTRY_HUBS.azerbaijan.regions.heroImageAvif = '/images/files/shamakhi-juma-mosque-azerbaijan-1564.avif'
+COUNTRY_HUBS.azerbaijan.regions.noHero = false
+COUNTRY_HUBS.azerbaijan.cities.heroImage = '/images/files/baku-flame-towers-azerbaijan-1448.webp'
+COUNTRY_HUBS.azerbaijan.cities.heroImageAvif = '/images/files/baku-flame-towers-azerbaijan-1448.avif'
+COUNTRY_HUBS.azerbaijan.cities.noHero = false
+COUNTRY_HUBS.azerbaijan.places.heroImage = '/images/files/maiden-tower-icherisheher-baku-azerbaijan-1293.webp'
+COUNTRY_HUBS.azerbaijan.places.heroImageAvif = '/images/files/maiden-tower-icherisheher-baku-azerbaijan-1293.avif'
+COUNTRY_HUBS.azerbaijan.places.noHero = false
+
 const clean = (p) => String(p).replace(/^\//, '')
 
 /**
@@ -129,8 +148,9 @@ export function RegionsHubPage({ country = DEFAULT_COUNTRY }) {
       pageKey={conf.pageKey}
       seoKey={conf.seoKey}
       path={clean(regionsHubPathFor(country))}
-      heroImage={COUNTRY_HUBS[country].heroImage}
-      noHero={COUNTRY_HUBS[country].noHero}
+      heroImage={conf.heroImage ?? COUNTRY_HUBS[country].heroImage}
+      heroImageAvif={conf.heroImageAvif}
+      noHero={conf.noHero ?? COUNTRY_HUBS[country].noHero}
       socialImage={countryHubSocialImage(country, 'regions')}
       countryCrumb={countryCrumb}
       robots={countryHubMeta(country)}
@@ -179,8 +199,9 @@ export function CitiesHubPage({ country = DEFAULT_COUNTRY }) {
       pageKey={conf.pageKey}
       seoKey={conf.seoKey}
       path={clean(citiesHubPathFor(country))}
-      heroImage={COUNTRY_HUBS[country].heroImage}
-      noHero={COUNTRY_HUBS[country].noHero}
+      heroImage={conf.heroImage ?? COUNTRY_HUBS[country].heroImage}
+      heroImageAvif={conf.heroImageAvif}
+      noHero={conf.noHero ?? COUNTRY_HUBS[country].noHero}
       socialImage={countryHubSocialImage(country, 'cities')}
       countryCrumb={countryCrumb}
       robots={countryHubMeta(country)}
@@ -215,6 +236,12 @@ export function PlacesToVisitHubPage({ country = DEFAULT_COUNTRY }) {
     // Stable city/region IDs (from structured parent data) — the hub resolves
     // them to translated labels for the secondary location line.
     location: siteLocation(s),
+    // Card cover, read straight from the registry — mirrors how the Regions
+    // and Cities hubs already read `cardImage`/`image`. Most sites have none
+    // yet (unpublished, no confirmed photograph), so this is inert for them;
+    // a site with one renders its cover even on the non-clickable "coming
+    // soon" card, exactly as DestinationCard already supports.
+    image: s.image,
   }))
   // Entries classified as a place but kept in the cities registry for their
   // existing /<country>/<slug> detail page (e.g. Gomismta). They link to that
@@ -235,8 +262,9 @@ export function PlacesToVisitHubPage({ country = DEFAULT_COUNTRY }) {
       pageKey={conf.pageKey}
       seoKey={conf.seoKey}
       path={clean(placesHubPathFor(country))}
-      heroImage={COUNTRY_HUBS[country].heroImage}
-      noHero={COUNTRY_HUBS[country].noHero}
+      heroImage={conf.heroImage ?? COUNTRY_HUBS[country].heroImage}
+      heroImageAvif={conf.heroImageAvif}
+      noHero={conf.noHero ?? COUNTRY_HUBS[country].noHero}
       socialImage={countryHubSocialImage(country, 'places')}
       countryCrumb={countryCrumb}
       robots={countryHubMeta(country)}
