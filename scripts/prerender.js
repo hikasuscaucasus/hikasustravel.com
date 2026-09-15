@@ -397,6 +397,7 @@ const staticPageImages = {
   'tbilisi-international-airport': '/images/files/tbilisi-old-town-narikala-mtkvari-georgia-1200.webp',
   'tbilisi-metro': '/images/files/tbilisi-metekhi-mtatsminda.jpg',
   'tbilisi-railway-station': '/images/files/old-tbilisi.jpg',
+  'about-georgia': '/images/files/gergeti-church-kazbegi-panorama-georgia-og.jpg',
   // Armenia's own 1.91:1 social crop. Without it this page inherited the
   // site-wide georgia-home.jpg default — a Georgian photo on an Armenian page.
   'armenia': '/images/files/khor-virap-monastery-ararat-armenia-og.jpg',
@@ -428,6 +429,22 @@ const staticPageSocial = {
   'armenia/regions': countryHubSocialImage('armenia', 'regions'),
   'armenia/cities': countryHubSocialImage('armenia', 'cities'),
   'armenia/places-to-visit': countryHubSocialImage('armenia', 'places'),
+  // About Georgia's new hero (Gergeti Trinity Church, wide/uncropped frame),
+  // matching the width/height of the -og-1200x630 crop generated alongside it.
+  'about-georgia': {
+    src: '/images/files/gergeti-church-kazbegi-panorama-georgia-og.jpg',
+    width: 1200,
+    height: 630,
+    alt: {
+      en: 'Gergeti Trinity Church and the Greater Caucasus mountains in Georgia',
+      de: 'Gergeti-Dreifaltigkeitskirche und die Berge des Großen Kaukasus in Georgien',
+      fr: "L'église de la Trinité de Gergeti et les montagnes du Grand Caucase en Géorgie",
+      es: 'La iglesia de la Trinidad de Gergeti y las montañas del Gran Cáucaso en Georgia',
+      nl: 'De Drie-eenheidskerk van Gergeti en de bergen van de Grote Kaukasus in Georgië',
+      cs: 'Kostel Nejsvětější Trojice v Gergeti a hory Velkého Kavkazu v Gruzii',
+      pl: 'Cerkiew Trójcy Świętej w Gergeti i góry Wielkiego Kaukazu w Gruzji',
+    },
+  },
 }
 
 // Robots directive for a country's landing page and hubs, from the same

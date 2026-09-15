@@ -23,7 +23,29 @@ const ABOUT_PAGES = {
     pageKey: 'aboutGeorgia',
     seoKey: 'aboutGeorgia',
     path: 'about-georgia',
-    image: '/images/files/about-georgia.jpg',
+    // A wide, uncropped view of Gergeti Trinity Church on its hilltop against
+    // the Greater Caucasus — replaces a generic, unrecognizable alpine-meadow
+    // photo that could have been any mountain range. Chosen over the
+    // gergeti-trinity-church-kazbegi-georgia-* asset family already used
+    // across the homepage, group tours and several tour pages: same landmark,
+    // but this frame has no tourists on the path and gives this page its own
+    // identity rather than repeating an already-heavily-used shot.
+    // Rendered via `.hero--about-georgia` (bgClass) rather than the plain
+    // image/imageAvif props below, because the church sits off-centre
+    // (~30% across) and needs a custom background-position to survive a
+    // narrow mobile crop — see the CSS comment in styles.css.
+    image: '/images/files/gergeti-church-kazbegi-panorama-georgia.webp',
+    ogImage: '/images/files/gergeti-church-kazbegi-panorama-georgia-og.jpg',
+    bgClass: 'hero--about-georgia',
+    imageAlt: {
+      en: 'Gergeti Trinity Church and the Greater Caucasus mountains in Georgia',
+      de: 'Gergeti-Dreifaltigkeitskirche und die Berge des Großen Kaukasus in Georgien',
+      fr: "L'église de la Trinité de Gergeti et les montagnes du Grand Caucase en Géorgie",
+      es: 'La iglesia de la Trinidad de Gergeti y las montañas del Gran Cáucaso en Georgia',
+      nl: 'De Drie-eenheidskerk van Gergeti en de bergen van de Grote Kaukasus in Georgië',
+      cs: 'Kostel Nejsvětější Trojice v Gergeti a hory Velkého Kavkazu v Gruzii',
+      pl: 'Cerkiew Trójcy Świętej w Gergeti i góry Wielkiego Kaukazu w Gruzji',
+    },
     hasDishModal: true,
   },
   armenia: {
@@ -130,7 +152,8 @@ export default function AboutCountryPage({ country = 'georgia' }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [lang, seo.description, page.heroTitle, faqItems, conf])
 
-  useSEO({ ...seo, lang, path: conf.path, image: conf.ogImage || conf.image, jsonLd })
+  const imageAlt = conf.imageAlt?.[lang] || conf.imageAlt?.en
+  useSEO({ ...seo, lang, path: conf.path, image: conf.ogImage || conf.image, imageAlt, jsonLd })
 
   return (
     <>
@@ -139,7 +162,12 @@ export default function AboutCountryPage({ country = 'georgia' }) {
           <h1>{page.heroTitle}</h1>
         </section>
       ) : (
-        <HeroSection image={conf.image} imageAvif={conf.imageAvif} title={page.heroTitle} />
+        <HeroSection
+          image={conf.image}
+          imageAvif={conf.imageAvif}
+          bgClass={conf.bgClass || ''}
+          title={page.heroTitle}
+        />
       )}
       <section className="page-items about-georgia">
         <FadeUp>
