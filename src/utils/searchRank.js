@@ -81,11 +81,20 @@ const SECONDARY_WEIGHT = 0.1
 // "private tour" beats two pages that each match only one of the words.
 const PHRASE_EXACT = 2000
 const PHRASE_STARTS = 1200
+// The phrase appears verbatim somewhere in the title, just not at position 0
+// ("Embassy of the United States of America" for "united states"). Without
+// this, two titles that each contain every query word — but in a different
+// order or split apart, e.g. "Embassy of the United Mexican States" — score
+// identically per-token and fall back to the title-length tie-break, which
+// has no idea one of them is the actual phrase and one only coincidentally
+// contains both words. The bonus only needs to clear that tie-break's small
+// spread, but is kept well below PHRASE_STARTS so a prefix match still wins.
+const PHRASE_CONTAINS = 150
 
 // Tiny nudge so equally-matching pages order by usefulness rather than by
 // registry order. Small enough that it never outranks a better field match.
 const TYPE_WEIGHT = {
-  tour: 40, city: 35, region: 30, place: 25, guide: 15, blog: 12, info: 10,
+  tour: 40, city: 35, region: 30, place: 25, guide: 15, embassy: 14, blog: 12, info: 10,
 }
 
 /**
@@ -182,6 +191,7 @@ export function searchEntries(index, query, limit = 10) {
     if (tokens.length > 1) {
       if (entry.nTitle === phrase) total += PHRASE_EXACT
       else if (entry.nTitle.startsWith(phrase)) total += PHRASE_STARTS
+      else if (entry.nTitle.includes(phrase)) total += PHRASE_CONTAINS
     }
 
     total += TYPE_WEIGHT[entry.type] || 0

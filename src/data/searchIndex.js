@@ -4,12 +4,15 @@
  * DERIVED, not generated: every field comes from data the app has already
  * downloaded — seoData.js (localized title/description/keywords for every
  * `seoKey`, statically imported by ~28 page components), places.js / tours.js /
- * blogData.js / borders.js (the route registries), plus the active locale's
- * pages.json and ui.json. Nothing is fetched and no bytes are duplicated, so
- * the index can never drift out of sync with the pages it points at.
+ * blogData.js / borders.js / embassyData.js (the route + entity registries),
+ * plus the active locale's pages.json and ui.json. Nothing is fetched and no
+ * bytes are duplicated, so the index can never drift out of sync with the
+ * pages it points at — a new tour, city or embassy record is searchable the
+ * moment it is added to its registry, with no separate step.
  *
- * Built once per locale on first use and memoised. ~390 records; the build is
- * a few milliseconds.
+ * Built once per locale on first use and memoised. ~590 records (roughly a
+ * third of them individual embassy missions); the build is a few
+ * milliseconds.
  *
  * URLs are emitted already language-prefixed (`/de/georgia/tbilisi`), always
  * from the canonical path builders in places.js — never from a legacy or
@@ -26,6 +29,7 @@ import {
 import { tours } from './tours.js'
 import { blogArticles } from './blogData.js'
 import { publishedBorderPages } from './borders.js'
+import { embassiesByCountry, embassyHosts, embassyCountries } from './embassyData.js'
 import { getSEO } from './seoData.js'
 import { normalize } from '../utils/searchRank.js'
 
@@ -123,6 +127,26 @@ const pathAlias = (path) => {
 /** Drop repeated words so "tbilisi tbilisi" (slug + registry name) reads as an exact alias. */
 const dedupeWords = (str) => [...new Set(str.split(' ').filter(Boolean))].join(' ')
 
+// Localized country names for embassy aliasing, from the runtime's own CLDR
+// data (Intl.DisplayNames) rather than a hand-maintained synonym table: it
+// already knows "Germany" is "Deutschland" in German, "Allemagne" in French,
+// "Alemania" in Spanish, "Duitsland" in Dutch, "Niemcy" in Polish and
+// "Německo" in Czech, for every ISO 3166-1 code the embassy data uses
+// (including the 'EU' and 'VA' pseudo-codes flagcdn also accepts). One
+// instance per locale is enough for the whole index build, so it is cached
+// at module scope rather than reconstructed per entry.
+const regionDisplayNamesCache = new Map()
+function localizedCountryName(code, lang) {
+  if (!code) return ''
+  let dn = regionDisplayNamesCache.get(lang)
+  if (dn === undefined) {
+    try { dn = new Intl.DisplayNames([lang], { type: 'region' }) } catch { dn = null }
+    regionDisplayNamesCache.set(lang, dn)
+  }
+  if (!dn) return ''
+  try { return dn.of(code.toUpperCase()) || '' } catch { return '' }
+}
+
 /**
  * Turn a raw record into an index entry: attaches the language-prefixed URL,
  * the localized type label, and the pre-normalised haystacks the ranker reads.
@@ -174,6 +198,7 @@ export function buildSearchIndex({ lang, pages = {}, t, tourTranslations = null 
     guide: tf(t, 'search.typeGuide', 'Things to Do'),
     blog: tf(t, 'search.typeBlog', 'Blog'),
     info: tf(t, 'search.typeInfo', 'Travel Info'),
+    embassy: tf(t, 'search.typeEmbassy', 'Diplomatic Mission'),
   }
 
   const push = (record) => {
@@ -312,6 +337,39 @@ export function buildSearchIndex({ lang, pages = {}, t, tourTranslations = null 
       description: seo.description,
       keywords: seo.keywords,
     })
+  }
+
+  // --- Embassies (individual missions) ---------------------------------------
+  // One entry per foreign mission in embassyData.js, so a query like "Germany"
+  // surfaces every German mission the site documents rather than only the
+  // parent "Embassies in Georgia" directory page. Each result links straight
+  // to that mission's own card via the stable id embassyData already gives
+  // every record (`embassy-<id>`, e.g. `embassy-de`) — the same anchor
+  // EmbassyDirectoryPage scrolls a visitor's own embassy to, so this is a
+  // second way to reach it, not a new mechanism.
+  //
+  // `alias` carries the sending country's identity — its English name plus
+  // this locale's own name for it (Intl.DisplayNames, not a hardcoded
+  // synonym table) — so "Germany", "Deutschland" and "Allemagne" all match at
+  // the same high tier a title match would, even for a mission whose official
+  // name doesn't literally contain the country word (e.g. "British Embassy
+  // Tbilisi" for "United Kingdom"). `location` carries only the host country
+  // (a low-weight field), so these never crowd out a capital city's own page
+  // for an unrelated query like "Baku".
+  for (const country of embassyCountries) {
+    const host = embassyHosts[country]
+    const hostLabel = t(`nav.destinations.${country}`)
+    for (const e of embassiesByCountry[country] || []) {
+      push({
+        id: `embassy:${country}:${e.id}`,
+        path: `embassies/${country}#embassy-${e.id}`,
+        type: 'embassy',
+        title: e.embassyName,
+        description: e.address,
+        alias: [e.countryName, localizedCountryName(e.countryCode, lang)].filter(Boolean).join(' '),
+        location: [host.capital, hostLabel].filter(Boolean).join(' · '),
+      })
+    }
   }
 
   // --- Tours -----------------------------------------------------------------

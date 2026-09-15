@@ -1,4 +1,5 @@
 import { useState, useMemo, useEffect, useSyncExternalStore } from 'react'
+import { useLocation } from 'react-router-dom'
 import useT from '../../i18n/useT'
 import useLang from '../../i18n/useLang'
 import useSEO from '../../hooks/useSEO'
@@ -39,6 +40,7 @@ function getUserCountryCode() {
 export default function EmbassyDirectoryPage({ country = 'georgia' }) {
   const t = useT()
   const { lang } = useLang()
+  const location = useLocation()
   const host = embassyHosts[country]
   const list = embassiesByCountry[country]
   const path = `embassies/${country}`
@@ -60,6 +62,17 @@ export default function EmbassyDirectoryPage({ country = 'georgia' }) {
     },
     () => null,
   )
+
+  // A search result (or any other link) can point straight at one mission via
+  // its stable id, e.g. /embassies/georgia#embassy-de — the same `embassy-<id>`
+  // anchor every card already carries below. When present, it takes priority
+  // over the visitor-locale highlight: someone who followed a link asking for
+  // Germany specifically should see Germany highlighted, not their own embassy.
+  const hashTargetId = useMemo(() => {
+    const m = /^#embassy-(.+)$/.exec(location.hash || '')
+    return m ? m[1] : null
+  }, [location.hash])
+  const activeId = hashTargetId || highlightedId
 
   const filtered = useMemo(() => filterEmbassies(query, country), [query, country])
 
@@ -111,14 +124,16 @@ export default function EmbassyDirectoryPage({ country = 'georgia' }) {
 
   useSEO({ ...seo, lang, path, image: host.image, jsonLd })
 
-  // Scroll the visitor's embassy into view on mount (DOM side-effect only).
+  // Scroll the active embassy (hash target, else the visitor's own) into view.
+  // requestAnimationFrame defers past Layout's own ScrollToTop-on-pathname
+  // effect, which runs in the same commit when this page was just navigated to.
   useEffect(() => {
-    if (!highlightedId) return
+    if (!activeId) return
     requestAnimationFrame(() => {
-      const el = document.getElementById(`embassy-${highlightedId}`)
+      const el = document.getElementById(`embassy-${activeId}`)
       if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' })
     })
-  }, [highlightedId])
+  }, [activeId])
 
   // Hero-less by design (see the original EmbassiesPage note): a reference list
   // has no photograph to show, so the title band carries the single <h1>.
@@ -183,7 +198,7 @@ export default function EmbassyDirectoryPage({ country = 'georgia' }) {
               <div
                 key={e.id}
                 id={`embassy-${e.id}`}
-                className={`embassy-card${highlightedId === e.id ? ' embassy-card--highlighted' : ''}`}
+                className={`embassy-card${activeId === e.id ? ' embassy-card--highlighted' : ''}`}
               >
                 <div className="embassy-card__header">
                   <span className="embassy-card__flag"><FlagImg code={e.countryCode} size={32} /></span>
