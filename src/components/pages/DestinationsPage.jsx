@@ -9,7 +9,7 @@ import useT from '../../i18n/useT'
 import useLang from '../../i18n/useLang'
 import { I18nContext } from '../../i18n/I18nContext'
 import useSEO from '../../hooks/useSEO'
-import { getSEO } from '../../data/seoData'
+import { getSEO, hasSEO } from '../../data/seoData'
 import {
   citiesOfCountry, cityPath, countryBase, countryHubSocialImage, countryHubMeta,
   regionsHubPathFor, citiesHubPathFor, placesHubPathFor,
@@ -154,6 +154,12 @@ const COUNTRY_LANDING = {
     // The three sub-hub tiles render on the brand-tone placeholder until a
     // cover exists for each — the tile itself is never hidden.
     subhubImages: { regions: null, cities: null, places: null },
+    // No curated `azerbaijanCities.items[].description` block exists (unlike
+    // Armenia's), so the card summary falls back to each city's own authored
+    // SEO description — the exact chain DestinationHub's `seoFallback` already
+    // uses for /azerbaijan/cities, so the two pages read the same text and can
+    // never drift.
+    seoFallbackDescription: true,
   },
 }
 
@@ -220,7 +226,14 @@ export default function DestinationsPage({ country = DEFAULT_COUNTRY }) {
   // this locale first, then English, so a city whose text has not been
   // translated yet still shows a summary rather than an empty card. Only the
   // card layout reads it; the tile layout has nowhere to put it.
-  const cityDescription = (c) => cityItems[c.slug]?.description || enCityItems[c.slug]?.description || ''
+  const cityDescription = (c) => {
+    const curated = cityItems[c.slug]?.description || enCityItems[c.slug]?.description
+    if (curated) return curated
+    if (conf.seoFallbackDescription && c.seoKey && hasSEO(c.seoKey, lang)) {
+      return getSEO(c.seoKey, lang).description || ''
+    }
+    return ''
+  }
   const cityTitle = (c) => {
     const navLabel = conf.cityNameNavFallback ? t(`nav.${c.slug}`) : null
     return cityItems[c.slug]?.name || enCityItems[c.slug]?.name
