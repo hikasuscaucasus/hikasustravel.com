@@ -26,7 +26,7 @@
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/cs/armenia-visa-entry-requirements/": {
-      "sig": "6c36a6691700988f",
+      "sig": "bbac3a79265d1bde",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/cs/armenia/": {
@@ -130,7 +130,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/cs/armenia/places-to-visit/": {
-      "sig": "c73aaa56f6394cc9",
+      "sig": "4e930aac56bb347c",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/cs/armenia/regions/": {
@@ -278,12 +278,64 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/cs/azerbaijan-visa-entry-requirements/": {
-      "sig": "e510f637fb6d5726",
+      "sig": "fea643ee48ad2981",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/cs/azerbaijan/baku/": {
-      "sig": "ac35e43a76235925",
-      "lastmod": "2026-09-12"
+      "sig": "aa7bb8095a40c2ef",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/cs/azerbaijan/baku/things-to-do/": {
+      "sig": "d635ea6034e6be94",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/cs/azerbaijan/gabala/": {
+      "sig": "cad5786864fd862c",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/cs/azerbaijan/gabala/things-to-do/": {
+      "sig": "5c2be0a55047833c",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/cs/azerbaijan/ganja/": {
+      "sig": "a436106f7e882b27",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/cs/azerbaijan/ganja/things-to-do/": {
+      "sig": "ee8a062d3c8e3298",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/cs/azerbaijan/khinalig/": {
+      "sig": "9b9fe13e8f6e2893",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/cs/azerbaijan/khinalig/things-to-do/": {
+      "sig": "bd99586530e0a034",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/cs/azerbaijan/lahij/": {
+      "sig": "fca2082cf7ec9ac5",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/cs/azerbaijan/lahij/things-to-do/": {
+      "sig": "e07edd0a8e229044",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/cs/azerbaijan/lankaran/": {
+      "sig": "3d906858af68b601",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/cs/azerbaijan/lankaran/things-to-do/": {
+      "sig": "3fc31767b4355f86",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/cs/azerbaijan/quba/": {
+      "sig": "38390236c5fede21",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/cs/azerbaijan/quba/things-to-do/": {
+      "sig": "6f10928e213d0e2e",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/cs/azerbaijan/regions/absheron/": {
       "sig": "4d973ba7399ca5c2",
@@ -294,32 +346,40 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/cs/azerbaijan/regions/ganja-dashkasan/": {
-      "sig": "e82c91d0304d8109",
-      "lastmod": "2026-09-12"
+      "sig": "e5c3ba342ab060c3",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/cs/azerbaijan/regions/gazakh-tovuz/": {
       "sig": "1e93432f7ecd927d",
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/cs/azerbaijan/regions/lankaran-astara/": {
-      "sig": "e5a067dd7f96bb4b",
-      "lastmod": "2026-09-12"
+      "sig": "b89983260ffc6a7e",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/cs/azerbaijan/regions/mountainous-shirvan/": {
-      "sig": "48991ccd624e36dd",
-      "lastmod": "2026-09-12"
+      "sig": "af5389a8234de2da",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/cs/azerbaijan/regions/nakhchivan/": {
       "sig": "7e84db5a8e6094ab",
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/cs/azerbaijan/regions/quba-khachmaz/": {
-      "sig": "35861e6a0485003f",
-      "lastmod": "2026-09-12"
+      "sig": "32595d4881acba3d",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/cs/azerbaijan/regions/sheki-zagatala/": {
-      "sig": "bc084ede4c16154b",
-      "lastmod": "2026-09-12"
+      "sig": "2efdf0fb541ef7e7",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/cs/azerbaijan/sheki/": {
+      "sig": "c70ddb92e57e0095",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/cs/azerbaijan/sheki/things-to-do/": {
+      "sig": "6eff2ed8e3846b31",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/cs/blog/": {
       "sig": "825511140bc8eb05",
@@ -362,11 +422,11 @@
       "lastmod": "2026-09-13"
     },
     "https://www.hikasustravel.com/cs/georgia-visa-entry-requirements/": {
-      "sig": "7a4f51ba2ace6fef",
+      "sig": "452a83feb0e042db",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/cs/georgia/": {
-      "sig": "a578358e445a8a71",
+      "sig": "d8b33e9f3d820ed7",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/cs/georgia/abastumani/abastumani-observatory/": {
@@ -602,7 +662,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/cs/georgia/cities/": {
-      "sig": "891fc473eaa7ddb3",
+      "sig": "694c4c77f5f36697",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/cs/georgia/dmanisi/": {
@@ -974,7 +1034,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/cs/georgia/places-to-visit/": {
-      "sig": "2a947e283b99984c",
+      "sig": "b639e29680aed40c",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/cs/georgia/racha-lechkhumi/askhi-massif/": {
@@ -1054,7 +1114,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/cs/georgia/regions/": {
-      "sig": "0433b853e40b5416",
+      "sig": "c98b3c527ee9f933",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/cs/georgia/regions/adjara/": {
@@ -1466,7 +1526,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/cs/georgian-lari-currency-guide/": {
-      "sig": "f21ac823124fab15",
+      "sig": "1a87bfa40d56ed64",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/cs/group-tours/": {
@@ -1478,11 +1538,11 @@
       "lastmod": "2026-09-14"
     },
     "https://www.hikasustravel.com/cs/kutaisi-international-airport/": {
-      "sig": "e9342f2ec0c374f0",
+      "sig": "29709406b004096d",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/cs/languages-of-georgia/": {
-      "sig": "0f7a5422e65ce470",
+      "sig": "6c3d206995635541",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/cs/privacy-policy/": {
@@ -1606,11 +1666,11 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/cs/shuttle-service/": {
-      "sig": "d98b82c8401e825f",
+      "sig": "39646406610ed70e",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/cs/tbilisi-international-airport/": {
-      "sig": "5ca151bb5212c04f",
+      "sig": "b9fdb4f093f71034",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/cs/tbilisi-metro/": {
@@ -1622,7 +1682,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/cs/terms-and-conditions/": {
-      "sig": "5904b4b081aa850d",
+      "sig": "9474c8fe58985370",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/cs/tours/abanotubani-sulfur-baths-tours/": {
@@ -1930,7 +1990,7 @@
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/de/armenia-visa-entry-requirements/": {
-      "sig": "b45285f7a164f4a3",
+      "sig": "2384dbba72a2fb62",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/de/armenia/": {
@@ -2034,7 +2094,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/de/armenia/places-to-visit/": {
-      "sig": "d200993915598def",
+      "sig": "9e7a82cfafc7ede6",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/de/armenia/regions/": {
@@ -2182,12 +2242,64 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/de/azerbaijan-visa-entry-requirements/": {
-      "sig": "c6a8a53733794e9f",
+      "sig": "c77e58b911027c5b",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/de/azerbaijan/baku/": {
-      "sig": "0bb3e644146549c3",
-      "lastmod": "2026-09-12"
+      "sig": "3465e36960e15a5e",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/de/azerbaijan/baku/things-to-do/": {
+      "sig": "e35fc0ddef4e4615",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/de/azerbaijan/gabala/": {
+      "sig": "b9cf6082cc38a262",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/de/azerbaijan/gabala/things-to-do/": {
+      "sig": "f5ffadb6efc7e92c",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/de/azerbaijan/ganja/": {
+      "sig": "c08c83be88c22a7a",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/de/azerbaijan/ganja/things-to-do/": {
+      "sig": "04cc84eddb449176",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/de/azerbaijan/khinalig/": {
+      "sig": "eabf8f543045d6f1",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/de/azerbaijan/khinalig/things-to-do/": {
+      "sig": "1e9bd17ff6ed79ed",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/de/azerbaijan/lahij/": {
+      "sig": "f5d322703bb757e7",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/de/azerbaijan/lahij/things-to-do/": {
+      "sig": "06b07ce55da62c01",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/de/azerbaijan/lankaran/": {
+      "sig": "053a045090283dcc",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/de/azerbaijan/lankaran/things-to-do/": {
+      "sig": "11af004c7df58657",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/de/azerbaijan/quba/": {
+      "sig": "600e8c16376302c3",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/de/azerbaijan/quba/things-to-do/": {
+      "sig": "e6d8f9665fa9f98f",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/de/azerbaijan/regions/absheron/": {
       "sig": "87f1c8e012d9ef27",
@@ -2198,32 +2310,40 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/de/azerbaijan/regions/ganja-dashkasan/": {
-      "sig": "e5cbf90d6a151656",
-      "lastmod": "2026-09-12"
+      "sig": "9b21b679502e18a4",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/de/azerbaijan/regions/gazakh-tovuz/": {
       "sig": "60f9b778340b62ba",
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/de/azerbaijan/regions/lankaran-astara/": {
-      "sig": "0c78136afc4ddc52",
-      "lastmod": "2026-09-12"
+      "sig": "6394fa6c5281c8ba",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/de/azerbaijan/regions/mountainous-shirvan/": {
-      "sig": "2718cc9b10cee5ef",
-      "lastmod": "2026-09-12"
+      "sig": "079c3f6d24f84cc6",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/de/azerbaijan/regions/nakhchivan/": {
       "sig": "10fd9c449e28ed00",
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/de/azerbaijan/regions/quba-khachmaz/": {
-      "sig": "de0c40c7f00fe905",
-      "lastmod": "2026-09-12"
+      "sig": "65c89157ab4e5f3e",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/de/azerbaijan/regions/sheki-zagatala/": {
-      "sig": "ec8b3d9c7c130bb7",
-      "lastmod": "2026-09-12"
+      "sig": "e6c65046e752cf6e",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/de/azerbaijan/sheki/": {
+      "sig": "5a1cb9e864c4f61c",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/de/azerbaijan/sheki/things-to-do/": {
+      "sig": "5791977026907cde",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/de/blog/": {
       "sig": "e43b86e44ac5be85",
@@ -2266,11 +2386,11 @@
       "lastmod": "2026-09-13"
     },
     "https://www.hikasustravel.com/de/georgia-visa-entry-requirements/": {
-      "sig": "50fa33fc09be963e",
+      "sig": "2793e2ad1782a727",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/de/georgia/": {
-      "sig": "f5d45e9b96580fed",
+      "sig": "6804653e5bcb2d39",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/de/georgia/abastumani/abastumani-observatory/": {
@@ -2506,7 +2626,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/de/georgia/cities/": {
-      "sig": "0f71a06ee366898d",
+      "sig": "19f47956ed5e5bcb",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/de/georgia/dmanisi/": {
@@ -2878,7 +2998,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/de/georgia/places-to-visit/": {
-      "sig": "1dcdaf334ce41a00",
+      "sig": "1eb398d3af2daacf",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/de/georgia/racha-lechkhumi/askhi-massif/": {
@@ -2958,7 +3078,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/de/georgia/regions/": {
-      "sig": "c865d93d68d2c4ef",
+      "sig": "eb0ba406e9abcab7",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/de/georgia/regions/adjara/": {
@@ -3370,7 +3490,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/de/georgian-lari-currency-guide/": {
-      "sig": "24aed2b19916f64c",
+      "sig": "af940389a41978ae",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/de/group-tours/": {
@@ -3382,11 +3502,11 @@
       "lastmod": "2026-09-14"
     },
     "https://www.hikasustravel.com/de/kutaisi-international-airport/": {
-      "sig": "131f2fbc6e41110f",
+      "sig": "5a88594b4bef9b18",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/de/languages-of-georgia/": {
-      "sig": "495e40042ec9b8b8",
+      "sig": "302c7a5760ed877b",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/de/privacy-policy/": {
@@ -3510,11 +3630,11 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/de/shuttle-service/": {
-      "sig": "17b9241d0910b39f",
+      "sig": "b66cd084eea27ed7",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/de/tbilisi-international-airport/": {
-      "sig": "2875de9b856da3a0",
+      "sig": "1a7e9d9509ef96d3",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/de/tbilisi-metro/": {
@@ -3526,7 +3646,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/de/terms-and-conditions/": {
-      "sig": "64bade80c080fb3a",
+      "sig": "f9ae35182d051dca",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/de/tours/abanotubani-sulfur-baths-tours/": {
@@ -3834,7 +3954,7 @@
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/en/armenia-visa-entry-requirements/": {
-      "sig": "fdff0bdfd239b377",
+      "sig": "07430c79e2f5d59b",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/en/armenia/": {
@@ -3938,7 +4058,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/en/armenia/places-to-visit/": {
-      "sig": "6e02d3b6aa827476",
+      "sig": "6d0c4088bad8f3ef",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/en/armenia/regions/": {
@@ -4086,12 +4206,64 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/en/azerbaijan-visa-entry-requirements/": {
-      "sig": "24874e4a5b0777dd",
+      "sig": "4f7f00e0e8313c92",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/en/azerbaijan/baku/": {
-      "sig": "aa92524bba052fc7",
-      "lastmod": "2026-09-12"
+      "sig": "422b74de23a6f106",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/en/azerbaijan/baku/things-to-do/": {
+      "sig": "db10fade3cada954",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/en/azerbaijan/gabala/": {
+      "sig": "bf8f577c0147c4b8",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/en/azerbaijan/gabala/things-to-do/": {
+      "sig": "6a418415c8eaa431",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/en/azerbaijan/ganja/": {
+      "sig": "2909fcdd91b5f0c7",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/en/azerbaijan/ganja/things-to-do/": {
+      "sig": "489005af1a287b8e",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/en/azerbaijan/khinalig/": {
+      "sig": "72b35dd4eef8f5b9",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/en/azerbaijan/khinalig/things-to-do/": {
+      "sig": "27c897095bc07af8",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/en/azerbaijan/lahij/": {
+      "sig": "296f11184429d8cf",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/en/azerbaijan/lahij/things-to-do/": {
+      "sig": "60d91528fb05ccd4",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/en/azerbaijan/lankaran/": {
+      "sig": "472fb7a106f01643",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/en/azerbaijan/lankaran/things-to-do/": {
+      "sig": "628c409ef8fec2a1",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/en/azerbaijan/quba/": {
+      "sig": "58444b5f8faacf4c",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/en/azerbaijan/quba/things-to-do/": {
+      "sig": "7160c89795a50667",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/en/azerbaijan/regions/absheron/": {
       "sig": "ea98020406a7a331",
@@ -4102,32 +4274,40 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/en/azerbaijan/regions/ganja-dashkasan/": {
-      "sig": "f5a4372a9b262c39",
-      "lastmod": "2026-09-12"
+      "sig": "cfcac4d998982bb3",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/en/azerbaijan/regions/gazakh-tovuz/": {
       "sig": "64ffc638f87209da",
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/en/azerbaijan/regions/lankaran-astara/": {
-      "sig": "b1b67fd77ac8d14e",
-      "lastmod": "2026-09-12"
+      "sig": "a9cb574f46432122",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/en/azerbaijan/regions/mountainous-shirvan/": {
-      "sig": "ca5275086fb40e0f",
-      "lastmod": "2026-09-12"
+      "sig": "f4dcf0295ceb0ced",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/en/azerbaijan/regions/nakhchivan/": {
       "sig": "5db37c484edf2021",
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/en/azerbaijan/regions/quba-khachmaz/": {
-      "sig": "a2743e639e601b1a",
-      "lastmod": "2026-09-12"
+      "sig": "afd0767915911bd8",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/en/azerbaijan/regions/sheki-zagatala/": {
-      "sig": "9575f01a689a8f96",
-      "lastmod": "2026-09-12"
+      "sig": "1e8252d2d8d05faa",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/en/azerbaijan/sheki/": {
+      "sig": "473aef6f95ddf712",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/en/azerbaijan/sheki/things-to-do/": {
+      "sig": "72b666cfa3ecf0f6",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/en/blog/": {
       "sig": "d8212220f2a41098",
@@ -4170,11 +4350,11 @@
       "lastmod": "2026-09-13"
     },
     "https://www.hikasustravel.com/en/georgia-visa-entry-requirements/": {
-      "sig": "f54fc63dc022c243",
+      "sig": "a7f32f74a851dd92",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/en/georgia/": {
-      "sig": "55d1a66673f2088a",
+      "sig": "81e80174d2cd4f62",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/en/georgia/abastumani/abastumani-observatory/": {
@@ -4410,7 +4590,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/en/georgia/cities/": {
-      "sig": "9865aa5c797bc3fc",
+      "sig": "aae33632e96bccd1",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/en/georgia/dmanisi/": {
@@ -4782,7 +4962,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/en/georgia/places-to-visit/": {
-      "sig": "2c5f39ebd61a024a",
+      "sig": "1ac5ec2f3a0c7215",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/en/georgia/racha-lechkhumi/askhi-massif/": {
@@ -4862,7 +5042,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/en/georgia/regions/": {
-      "sig": "c70ca3eb69594952",
+      "sig": "5a73169c9b272368",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/en/georgia/regions/adjara/": {
@@ -5274,7 +5454,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/en/georgian-lari-currency-guide/": {
-      "sig": "45a0492c571ad6b3",
+      "sig": "4bc4e3ab916c967e",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/en/group-tours/": {
@@ -5286,11 +5466,11 @@
       "lastmod": "2026-09-14"
     },
     "https://www.hikasustravel.com/en/kutaisi-international-airport/": {
-      "sig": "a67353b10a5f0664",
+      "sig": "a8de7dcf98f0d9a1",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/en/languages-of-georgia/": {
-      "sig": "6eab21baa02779bf",
+      "sig": "5e81c75a07c50473",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/en/privacy-policy/": {
@@ -5414,11 +5594,11 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/en/shuttle-service/": {
-      "sig": "98d476ac6d669f69",
+      "sig": "0acfca43432e5c33",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/en/tbilisi-international-airport/": {
-      "sig": "89ed0d1081d0a5d2",
+      "sig": "3c5f0ae0b353bc76",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/en/tbilisi-metro/": {
@@ -5430,7 +5610,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/en/terms-and-conditions/": {
-      "sig": "82ba701aee4f9591",
+      "sig": "8aee2bf133ac3e31",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/en/tours/abanotubani-sulfur-baths-tours/": {
@@ -5738,7 +5918,7 @@
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/es/armenia-visa-entry-requirements/": {
-      "sig": "63659baae2bfca9b",
+      "sig": "b3c7acc565da6a77",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/es/armenia/": {
@@ -5842,7 +6022,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/es/armenia/places-to-visit/": {
-      "sig": "856d3a61c25afa41",
+      "sig": "b977185689274666",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/es/armenia/regions/": {
@@ -5990,12 +6170,64 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/es/azerbaijan-visa-entry-requirements/": {
-      "sig": "4d761f5a97f7e5a5",
+      "sig": "729457c062f80703",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/es/azerbaijan/baku/": {
-      "sig": "135a45bf6ac85bfc",
-      "lastmod": "2026-09-12"
+      "sig": "3dac80d74160b6b6",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/es/azerbaijan/baku/things-to-do/": {
+      "sig": "d811e9aaeb2937ad",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/es/azerbaijan/gabala/": {
+      "sig": "7acdf459bb77fccd",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/es/azerbaijan/gabala/things-to-do/": {
+      "sig": "298498544d2fb00c",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/es/azerbaijan/ganja/": {
+      "sig": "435bbe0a88df9b5b",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/es/azerbaijan/ganja/things-to-do/": {
+      "sig": "e075fd8ad2bb7e1a",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/es/azerbaijan/khinalig/": {
+      "sig": "14090c3be1a7c274",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/es/azerbaijan/khinalig/things-to-do/": {
+      "sig": "6ca38e4106651fa8",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/es/azerbaijan/lahij/": {
+      "sig": "242f6a55879fcaba",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/es/azerbaijan/lahij/things-to-do/": {
+      "sig": "39c3b627cc5cc1bb",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/es/azerbaijan/lankaran/": {
+      "sig": "fa8f47fd69873bc2",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/es/azerbaijan/lankaran/things-to-do/": {
+      "sig": "32c494f2a64d7096",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/es/azerbaijan/quba/": {
+      "sig": "338c3b38f9e7195e",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/es/azerbaijan/quba/things-to-do/": {
+      "sig": "5806a7fa93ef7d07",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/es/azerbaijan/regions/absheron/": {
       "sig": "cef725cfe55f53f7",
@@ -6006,32 +6238,40 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/es/azerbaijan/regions/ganja-dashkasan/": {
-      "sig": "ee9d80144c78d9fe",
-      "lastmod": "2026-09-12"
+      "sig": "07b26e7bfbd6702b",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/es/azerbaijan/regions/gazakh-tovuz/": {
       "sig": "00541ca052d528a4",
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/es/azerbaijan/regions/lankaran-astara/": {
-      "sig": "ec40cbbcc115b8e0",
-      "lastmod": "2026-09-12"
+      "sig": "d8bc4e34ed447727",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/es/azerbaijan/regions/mountainous-shirvan/": {
-      "sig": "e8c91f305e9b34e0",
-      "lastmod": "2026-09-12"
+      "sig": "19263d7694e4c3aa",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/es/azerbaijan/regions/nakhchivan/": {
       "sig": "7cc7d65abb892252",
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/es/azerbaijan/regions/quba-khachmaz/": {
-      "sig": "036934b7a7cc315a",
-      "lastmod": "2026-09-12"
+      "sig": "b56374c8ee08d4ca",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/es/azerbaijan/regions/sheki-zagatala/": {
-      "sig": "857cf70864c867f2",
-      "lastmod": "2026-09-12"
+      "sig": "9e4b329b3d61428a",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/es/azerbaijan/sheki/": {
+      "sig": "280b23b66b4e86c3",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/es/azerbaijan/sheki/things-to-do/": {
+      "sig": "be8a475050fb1a2c",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/es/blog/": {
       "sig": "f22432f996529678",
@@ -6074,11 +6314,11 @@
       "lastmod": "2026-09-13"
     },
     "https://www.hikasustravel.com/es/georgia-visa-entry-requirements/": {
-      "sig": "30e9632440a7f233",
+      "sig": "234e8a82b59db1dc",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/es/georgia/": {
-      "sig": "ec869be4e5e119bf",
+      "sig": "a937536d9f07741e",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/es/georgia/abastumani/abastumani-observatory/": {
@@ -6314,7 +6554,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/es/georgia/cities/": {
-      "sig": "604d380598c3eddb",
+      "sig": "336bc11f9add2f6d",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/es/georgia/dmanisi/": {
@@ -6686,7 +6926,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/es/georgia/places-to-visit/": {
-      "sig": "0bd1749b56c7501f",
+      "sig": "b3dbac266a17be6d",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/es/georgia/racha-lechkhumi/askhi-massif/": {
@@ -6766,7 +7006,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/es/georgia/regions/": {
-      "sig": "1a6ac7f05966d895",
+      "sig": "6685b9f5ee619e64",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/es/georgia/regions/adjara/": {
@@ -7178,7 +7418,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/es/georgian-lari-currency-guide/": {
-      "sig": "25d9784531ebb843",
+      "sig": "5d797588818bbaa2",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/es/group-tours/": {
@@ -7190,11 +7430,11 @@
       "lastmod": "2026-09-14"
     },
     "https://www.hikasustravel.com/es/kutaisi-international-airport/": {
-      "sig": "19049e3e77e4c8ed",
+      "sig": "961028f688b47c4b",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/es/languages-of-georgia/": {
-      "sig": "8eec8b9a2efb6375",
+      "sig": "7e3da5553821df87",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/es/privacy-policy/": {
@@ -7318,11 +7558,11 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/es/shuttle-service/": {
-      "sig": "6142a7ebdf77f73b",
+      "sig": "a8eff40b71374e26",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/es/tbilisi-international-airport/": {
-      "sig": "70159a00f2515f86",
+      "sig": "4598f0d40bbfa250",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/es/tbilisi-metro/": {
@@ -7334,7 +7574,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/es/terms-and-conditions/": {
-      "sig": "f49c9854195dd2de",
+      "sig": "52f21286b594b8f4",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/es/tours/abanotubani-sulfur-baths-tours/": {
@@ -7642,7 +7882,7 @@
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/fr/armenia-visa-entry-requirements/": {
-      "sig": "cb914ae65bca5139",
+      "sig": "6a0bcbd9aad40cbe",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/fr/armenia/": {
@@ -7746,7 +7986,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/fr/armenia/places-to-visit/": {
-      "sig": "001437179c1b6b23",
+      "sig": "475fd1405c556734",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/fr/armenia/regions/": {
@@ -7894,12 +8134,64 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/fr/azerbaijan-visa-entry-requirements/": {
-      "sig": "86f3f6ac152cf481",
+      "sig": "ec75ac9c52ea4985",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/fr/azerbaijan/baku/": {
-      "sig": "0883148e60332a6b",
-      "lastmod": "2026-09-12"
+      "sig": "bd405d8d5a8ec59a",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/fr/azerbaijan/baku/things-to-do/": {
+      "sig": "ed855004a5f1787e",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/fr/azerbaijan/gabala/": {
+      "sig": "1d7fc24e19b005f0",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/fr/azerbaijan/gabala/things-to-do/": {
+      "sig": "eea8cf7dbe4c6335",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/fr/azerbaijan/ganja/": {
+      "sig": "4cbd156c67a1a947",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/fr/azerbaijan/ganja/things-to-do/": {
+      "sig": "dac8ff3b4ce41fed",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/fr/azerbaijan/khinalig/": {
+      "sig": "6ff09b5f45041fb8",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/fr/azerbaijan/khinalig/things-to-do/": {
+      "sig": "518f05f238d58d60",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/fr/azerbaijan/lahij/": {
+      "sig": "13cdb9d8ecb34f5d",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/fr/azerbaijan/lahij/things-to-do/": {
+      "sig": "1bd199cfccc75c53",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/fr/azerbaijan/lankaran/": {
+      "sig": "fc041ffd16d3bc69",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/fr/azerbaijan/lankaran/things-to-do/": {
+      "sig": "4e96810727a8b1c1",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/fr/azerbaijan/quba/": {
+      "sig": "f17bded4b58ff1d4",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/fr/azerbaijan/quba/things-to-do/": {
+      "sig": "c2788d01c6aa8369",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/fr/azerbaijan/regions/absheron/": {
       "sig": "2ad2b279c980d8de",
@@ -7910,32 +8202,40 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/fr/azerbaijan/regions/ganja-dashkasan/": {
-      "sig": "826942b30e83b9f5",
-      "lastmod": "2026-09-12"
+      "sig": "16c88a6b2e74910f",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/fr/azerbaijan/regions/gazakh-tovuz/": {
       "sig": "baf652cea4e18040",
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/fr/azerbaijan/regions/lankaran-astara/": {
-      "sig": "5fb6939235cfa873",
-      "lastmod": "2026-09-12"
+      "sig": "ba382c511fc97b20",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/fr/azerbaijan/regions/mountainous-shirvan/": {
-      "sig": "99a14e92406f97e6",
-      "lastmod": "2026-09-12"
+      "sig": "26493fadbb3704d9",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/fr/azerbaijan/regions/nakhchivan/": {
       "sig": "755fe172d232fbd5",
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/fr/azerbaijan/regions/quba-khachmaz/": {
-      "sig": "893a833b6b0909a9",
-      "lastmod": "2026-09-12"
+      "sig": "9ab8b1817695173c",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/fr/azerbaijan/regions/sheki-zagatala/": {
-      "sig": "c970112fcb498cbc",
-      "lastmod": "2026-09-12"
+      "sig": "a61011ffafad890d",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/fr/azerbaijan/sheki/": {
+      "sig": "32a442cffc758bb6",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/fr/azerbaijan/sheki/things-to-do/": {
+      "sig": "abb255a629de6986",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/fr/blog/": {
       "sig": "05bac331bd956e47",
@@ -7978,11 +8278,11 @@
       "lastmod": "2026-09-13"
     },
     "https://www.hikasustravel.com/fr/georgia-visa-entry-requirements/": {
-      "sig": "5a017ddae44c1f3e",
+      "sig": "80c8163011629b7f",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/fr/georgia/": {
-      "sig": "6e103a10d03e27bd",
+      "sig": "8b84b4554232bf6f",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/fr/georgia/abastumani/abastumani-observatory/": {
@@ -8218,7 +8518,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/fr/georgia/cities/": {
-      "sig": "1ebaeeefb6bc0b8a",
+      "sig": "252fe75ae05723ae",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/fr/georgia/dmanisi/": {
@@ -8590,7 +8890,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/fr/georgia/places-to-visit/": {
-      "sig": "1810a93c75fe68ba",
+      "sig": "e649c2699a1a0ab8",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/fr/georgia/racha-lechkhumi/askhi-massif/": {
@@ -8670,7 +8970,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/fr/georgia/regions/": {
-      "sig": "ffd9a7335ed077bb",
+      "sig": "c356e298685c2009",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/fr/georgia/regions/adjara/": {
@@ -9082,7 +9382,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/fr/georgian-lari-currency-guide/": {
-      "sig": "55cb6e7a2c40207e",
+      "sig": "d20507d051dd1517",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/fr/group-tours/": {
@@ -9094,11 +9394,11 @@
       "lastmod": "2026-09-14"
     },
     "https://www.hikasustravel.com/fr/kutaisi-international-airport/": {
-      "sig": "98ad7aa7121e118d",
+      "sig": "04e11ecfbdbc9fbc",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/fr/languages-of-georgia/": {
-      "sig": "1b54e1a33c212300",
+      "sig": "4feadc30ff6c34e9",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/fr/privacy-policy/": {
@@ -9222,11 +9522,11 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/fr/shuttle-service/": {
-      "sig": "584b35a718fee6d6",
+      "sig": "75bb6e79a4689706",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/fr/tbilisi-international-airport/": {
-      "sig": "1052b3d64db80e1e",
+      "sig": "122b157dd28ce76c",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/fr/tbilisi-metro/": {
@@ -9238,7 +9538,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/fr/terms-and-conditions/": {
-      "sig": "c94410cafc11e0a4",
+      "sig": "58e9ca0f8ec8ae5d",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/fr/tours/abanotubani-sulfur-baths-tours/": {
@@ -9546,7 +9846,7 @@
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/nl/armenia-visa-entry-requirements/": {
-      "sig": "7e0bda965a1951e0",
+      "sig": "0320e736c53f14c8",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/nl/armenia/": {
@@ -9650,7 +9950,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/nl/armenia/places-to-visit/": {
-      "sig": "c3fd684c68ef020e",
+      "sig": "01b0aa9dca463ace",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/nl/armenia/regions/": {
@@ -9798,12 +10098,64 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/nl/azerbaijan-visa-entry-requirements/": {
-      "sig": "0b4f9933189ee278",
+      "sig": "d057bfc20a6415ae",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/nl/azerbaijan/baku/": {
-      "sig": "a169e49abb6dfb3d",
-      "lastmod": "2026-09-12"
+      "sig": "abd6df6cb1d73a95",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/nl/azerbaijan/baku/things-to-do/": {
+      "sig": "d246cb2c112e1b26",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/nl/azerbaijan/gabala/": {
+      "sig": "ea516461347a7dae",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/nl/azerbaijan/gabala/things-to-do/": {
+      "sig": "8a0f65ff50922245",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/nl/azerbaijan/ganja/": {
+      "sig": "9452e23ce37c456b",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/nl/azerbaijan/ganja/things-to-do/": {
+      "sig": "31a0195c06f4c325",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/nl/azerbaijan/khinalig/": {
+      "sig": "435b21d3c39ab451",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/nl/azerbaijan/khinalig/things-to-do/": {
+      "sig": "6eb86fd5a329931a",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/nl/azerbaijan/lahij/": {
+      "sig": "f805d04f3e0dfa55",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/nl/azerbaijan/lahij/things-to-do/": {
+      "sig": "ee59282ce2962140",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/nl/azerbaijan/lankaran/": {
+      "sig": "34341e4be9ac90e5",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/nl/azerbaijan/lankaran/things-to-do/": {
+      "sig": "ddb6fbc08e7bfc46",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/nl/azerbaijan/quba/": {
+      "sig": "729f5a0c2e4477ac",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/nl/azerbaijan/quba/things-to-do/": {
+      "sig": "c551a2eb0e35bb94",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/nl/azerbaijan/regions/absheron/": {
       "sig": "793404bfac53310e",
@@ -9814,32 +10166,40 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/nl/azerbaijan/regions/ganja-dashkasan/": {
-      "sig": "8838be91e0b3c214",
-      "lastmod": "2026-09-12"
+      "sig": "954c9e7f7dbf8e63",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/nl/azerbaijan/regions/gazakh-tovuz/": {
       "sig": "7f73fa7ba55d2d1b",
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/nl/azerbaijan/regions/lankaran-astara/": {
-      "sig": "96ff8cdecdd04bd6",
-      "lastmod": "2026-09-12"
+      "sig": "f36485ee5b9a7901",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/nl/azerbaijan/regions/mountainous-shirvan/": {
-      "sig": "bfd734b051c95881",
-      "lastmod": "2026-09-12"
+      "sig": "e7a2663bac1686f2",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/nl/azerbaijan/regions/nakhchivan/": {
       "sig": "cc3adb49c0523bfc",
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/nl/azerbaijan/regions/quba-khachmaz/": {
-      "sig": "7f11be0e126e0881",
-      "lastmod": "2026-09-12"
+      "sig": "b1ace18c269ad6d0",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/nl/azerbaijan/regions/sheki-zagatala/": {
-      "sig": "2f82a6a6d41cc3de",
-      "lastmod": "2026-09-12"
+      "sig": "297a9aef60110386",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/nl/azerbaijan/sheki/": {
+      "sig": "aba2f54ef26a1e73",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/nl/azerbaijan/sheki/things-to-do/": {
+      "sig": "86596351d635c281",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/nl/blog/": {
       "sig": "d5be157bd3b177f5",
@@ -9882,11 +10242,11 @@
       "lastmod": "2026-09-13"
     },
     "https://www.hikasustravel.com/nl/georgia-visa-entry-requirements/": {
-      "sig": "f4f3201b159cb39a",
+      "sig": "ceefc18b13d10125",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/nl/georgia/": {
-      "sig": "3a3d017f17a856a2",
+      "sig": "f76902f8a072fcc2",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/nl/georgia/abastumani/abastumani-observatory/": {
@@ -10122,7 +10482,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/nl/georgia/cities/": {
-      "sig": "245b3803b93c0142",
+      "sig": "42ab9da117660de8",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/nl/georgia/dmanisi/": {
@@ -10494,7 +10854,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/nl/georgia/places-to-visit/": {
-      "sig": "a589fadc919b689a",
+      "sig": "73d490a06e1e814e",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/nl/georgia/racha-lechkhumi/askhi-massif/": {
@@ -10574,7 +10934,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/nl/georgia/regions/": {
-      "sig": "d9246feaaffb0e8c",
+      "sig": "c145cf69e3f730cb",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/nl/georgia/regions/adjara/": {
@@ -10986,7 +11346,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/nl/georgian-lari-currency-guide/": {
-      "sig": "c4bfc6be1a4d9d8b",
+      "sig": "1865a7b811d299a3",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/nl/group-tours/": {
@@ -10998,11 +11358,11 @@
       "lastmod": "2026-09-14"
     },
     "https://www.hikasustravel.com/nl/kutaisi-international-airport/": {
-      "sig": "28cf327571eebf03",
+      "sig": "4212744534fb6da8",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/nl/languages-of-georgia/": {
-      "sig": "26db7a21052b8598",
+      "sig": "1f977de5030d0b32",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/nl/privacy-policy/": {
@@ -11126,11 +11486,11 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/nl/shuttle-service/": {
-      "sig": "2018f52bce044742",
+      "sig": "88df90c956969b30",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/nl/tbilisi-international-airport/": {
-      "sig": "9f11e558a29c32de",
+      "sig": "51008d67d584662a",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/nl/tbilisi-metro/": {
@@ -11142,7 +11502,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/nl/terms-and-conditions/": {
-      "sig": "141060a735d7028a",
+      "sig": "9e567dfcafeeb582",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/nl/tours/abanotubani-sulfur-baths-tours/": {
@@ -11450,7 +11810,7 @@
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/pl/armenia-visa-entry-requirements/": {
-      "sig": "2b70fe016dbf506e",
+      "sig": "99d0c307300f37f7",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/pl/armenia/": {
@@ -11554,7 +11914,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/pl/armenia/places-to-visit/": {
-      "sig": "33346fee88d75b2f",
+      "sig": "86c72a6328636180",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/pl/armenia/regions/": {
@@ -11702,12 +12062,64 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/pl/azerbaijan-visa-entry-requirements/": {
-      "sig": "46c9ea9b81655252",
+      "sig": "cf5f07b005b77995",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/pl/azerbaijan/baku/": {
-      "sig": "f49d8985b865d603",
-      "lastmod": "2026-09-12"
+      "sig": "c26a7c7f2eb45c04",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/pl/azerbaijan/baku/things-to-do/": {
+      "sig": "26615102332bc42d",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/pl/azerbaijan/gabala/": {
+      "sig": "d5a09412090ce9e3",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/pl/azerbaijan/gabala/things-to-do/": {
+      "sig": "4fe154c3563ed26a",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/pl/azerbaijan/ganja/": {
+      "sig": "85745af15c6c4539",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/pl/azerbaijan/ganja/things-to-do/": {
+      "sig": "a9340d477b0ef7d1",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/pl/azerbaijan/khinalig/": {
+      "sig": "e53c9fe8d9e5a158",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/pl/azerbaijan/khinalig/things-to-do/": {
+      "sig": "93354cf7d1ec86f0",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/pl/azerbaijan/lahij/": {
+      "sig": "ae7ce80ecf205031",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/pl/azerbaijan/lahij/things-to-do/": {
+      "sig": "a82ff6878fba010b",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/pl/azerbaijan/lankaran/": {
+      "sig": "994e07bad0e2d603",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/pl/azerbaijan/lankaran/things-to-do/": {
+      "sig": "06a636591a49dcec",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/pl/azerbaijan/quba/": {
+      "sig": "a79d203ad707e3b6",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/pl/azerbaijan/quba/things-to-do/": {
+      "sig": "e6e3b3a031781f32",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/pl/azerbaijan/regions/absheron/": {
       "sig": "e5735ae93b5d2e28",
@@ -11718,32 +12130,40 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/pl/azerbaijan/regions/ganja-dashkasan/": {
-      "sig": "1809c52467ea9488",
-      "lastmod": "2026-09-12"
+      "sig": "e1f76bdd2c8e969f",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/pl/azerbaijan/regions/gazakh-tovuz/": {
       "sig": "3448312da5126479",
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/pl/azerbaijan/regions/lankaran-astara/": {
-      "sig": "270465d1ed28399c",
-      "lastmod": "2026-09-12"
+      "sig": "07dcc61655e1cccf",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/pl/azerbaijan/regions/mountainous-shirvan/": {
-      "sig": "0bd20b141f551c99",
-      "lastmod": "2026-09-12"
+      "sig": "7eb2bbf8fe4f7b52",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/pl/azerbaijan/regions/nakhchivan/": {
       "sig": "263da447ad54c0b5",
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/pl/azerbaijan/regions/quba-khachmaz/": {
-      "sig": "1396982c6846a0bd",
-      "lastmod": "2026-09-12"
+      "sig": "423ac79d8f5ac5db",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/pl/azerbaijan/regions/sheki-zagatala/": {
-      "sig": "73fc9c2b53081d16",
-      "lastmod": "2026-09-12"
+      "sig": "c547548911def3cf",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/pl/azerbaijan/sheki/": {
+      "sig": "3460fa7d9ca2c6c5",
+      "lastmod": "2026-09-15"
+    },
+    "https://www.hikasustravel.com/pl/azerbaijan/sheki/things-to-do/": {
+      "sig": "2d75cacfb3c76113",
+      "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/pl/blog/": {
       "sig": "d598b2efa0dec314",
@@ -11786,11 +12206,11 @@
       "lastmod": "2026-09-13"
     },
     "https://www.hikasustravel.com/pl/georgia-visa-entry-requirements/": {
-      "sig": "4867f419eea5101a",
+      "sig": "4cc4276890674e60",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/pl/georgia/": {
-      "sig": "8b93007bd754591b",
+      "sig": "36a2512cf52eddaf",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/pl/georgia/abastumani/abastumani-observatory/": {
@@ -12026,7 +12446,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/pl/georgia/cities/": {
-      "sig": "c89fe8eab6c96da0",
+      "sig": "d3e4a49bbcf8d228",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/pl/georgia/dmanisi/": {
@@ -12398,7 +12818,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/pl/georgia/places-to-visit/": {
-      "sig": "8319a4dff99c21c3",
+      "sig": "09457b0d7b17d7b4",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/pl/georgia/racha-lechkhumi/askhi-massif/": {
@@ -12478,7 +12898,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/pl/georgia/regions/": {
-      "sig": "3adcb8fee21b6601",
+      "sig": "0f1fe2387437dc82",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/pl/georgia/regions/adjara/": {
@@ -12890,7 +13310,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/pl/georgian-lari-currency-guide/": {
-      "sig": "199ca56a7ea0f6ba",
+      "sig": "bd93b31169276b09",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/pl/group-tours/": {
@@ -12902,11 +13322,11 @@
       "lastmod": "2026-09-14"
     },
     "https://www.hikasustravel.com/pl/kutaisi-international-airport/": {
-      "sig": "c550627a594b8fac",
+      "sig": "4eebbd0f94b76a97",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/pl/languages-of-georgia/": {
-      "sig": "c1e5a0e0656805c3",
+      "sig": "654b62f70d65f880",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/pl/privacy-policy/": {
@@ -13030,11 +13450,11 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/pl/shuttle-service/": {
-      "sig": "b93a03d8eaeafdc3",
+      "sig": "599a8e93d7026e1e",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/pl/tbilisi-international-airport/": {
-      "sig": "6a2b2047e9bcd5f8",
+      "sig": "3a823f780ce130f6",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/pl/tbilisi-metro/": {
@@ -13046,7 +13466,7 @@
       "lastmod": "2026-09-12"
     },
     "https://www.hikasustravel.com/pl/terms-and-conditions/": {
-      "sig": "85fb13750bcf9704",
+      "sig": "72d995686fa0f0a5",
       "lastmod": "2026-09-15"
     },
     "https://www.hikasustravel.com/pl/tours/abanotubani-sulfur-baths-tours/": {

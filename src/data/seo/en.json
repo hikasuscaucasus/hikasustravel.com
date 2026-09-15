@@ -1574,6 +1574,81 @@
     "description": "Visit Baku, Azerbaijan's Caspian capital. Discover UNESCO-listed Icherisheher, the Shirvanshahs' Palace, oil-boom architecture, Flame Towers and practical travel tips.",
     "keywords": "Baku, Baku Azerbaijan, Icherisheher, Old City Baku, Maiden Tower, Palace of the Shirvanshahs, Flame Towers, Heydar Aliyev Center, Baku Boulevard, Carpet Museum Baku, things to do in Baku, Baku travel guide"
   },
+  "gabala": {
+    "title": "Gabala, Azerbaijan | Tufandag, Nohur Lake & Old Gabala",
+    "description": "Explore Gabala: Tufandag Mountain Resort's skiing and cable cars, Nohur Lake, Yeddi Gozel Waterfall, ancient Caucasian Albania and Nij's Udi culture.",
+    "keywords": "Gabala, Gabala Azerbaijan, Tufandag Mountain Resort, Nohur Lake, Yeddi Gozel Waterfall, Old Gabala, Nij, Udi culture, Savalan Winery, Gabala travel guide"
+  },
+  "ganja": {
+    "title": "Ganja, Azerbaijan | Nizami, Shah Abbas Mosque & History",
+    "description": "Explore Ganja: Nizami Ganjavi's legacy, the 17th-century Shah Abbas Mosque complex, Javad Khan's history, Imamzadeh's blue dome, and western Azerbaijan's strongest regional cuisine.",
+    "keywords": "Ganja, Ganja Azerbaijan, Nizami Ganjavi, Shah Abbas Mosque, Chokek Hamam, Javad Khan, Imamzadeh, Bottle House, Ganja travel guide"
+  },
+  "lahij": {
+    "title": "Lahij, Azerbaijan | UNESCO Copper Craftsmanship & Mountain Village",
+    "description": "Explore Lahij: living copper craftsmanship recognized by UNESCO, cobbled mountain streets, Tat culture and centuries-old artisan traditions in Azerbaijan's Greater Caucasus.",
+    "keywords": "Lahij, Lahij Azerbaijan, Lahic, copper craftsmanship UNESCO, Tat culture, Ismayilli, Lahij travel guide"
+  },
+  "lankaran": {
+    "title": "Lankaran, Azerbaijan | Tea Culture, Cuisine & Caspian Coast",
+    "description": "Explore Lankaran: Azerbaijan's tea capital, fish lavangi and subtropical cuisine, historic fortress towers, and the gateway to Hirkan National Park and the Talysh Mountains.",
+    "keywords": "Lankaran, Lankaran Azerbaijan, Azerbaijani tea, lavangi, Round Tower, Hazi Aslanov, Talysh, Hirkan National Park, Lankaran travel guide"
+  },
+  "quba": {
+    "title": "Quba, Azerbaijan | Red Village, Carpets & Gateway to Khinalig",
+    "description": "Explore Quba: Mountain Jewish heritage in Red Village, historic carpet weaving, the 19th-century Arched Bridge, and the gateway to UNESCO-listed Khinalig.",
+    "keywords": "Quba, Quba Azerbaijan, Guba, Red Village Qirmizi Qasaba, Museum of Mountain Jews, Quba carpets, Arched Bridge, Quba travel guide"
+  },
+  "sheki": {
+    "title": "Sheki, Azerbaijan | UNESCO Khan's Palace & Silk Road City",
+    "description": "Explore Sheki: the UNESCO-listed Khan's Palace, shabaka craftsmanship, historic caravanserais, Sheki halva and piti, and the nearby Kish Church of ancient Caucasian Albania.",
+    "keywords": "Sheki, Sheki Azerbaijan, Palace of the Sheki Khans, shabaka, Sheki Fortress, caravanserai, Kish Church, Sheki halva, Sheki travel guide"
+  },
+  "thingsToDoBaku": {
+    "title": "Best Things to Do in Baku, Azerbaijan | 69 Ideas",
+    "description": "Discover the best things to do in Baku: the UNESCO-listed Old City, Maiden Tower, Heydar Aliyev Centre, Caspian Boulevard, Azerbaijani cuisine, and day trips to Gobustan and Absheron.",
+    "keywords": "Best Things to Do in Baku, Azerbaijan"
+  },
+  "thingsToDoGabala": {
+    "title": "Best Things to Do in Gabala, Azerbaijan | 30 Ideas",
+    "description": "Discover the best things to do in Gabala: Tufandag cable cars and skiing, Nohur Lake, ancient Gabala, Nij village, Savalan Winery and seasonal lavender fields.",
+    "keywords": "Best Things to Do in Gabala, Azerbaijan"
+  },
+  "thingsToDoGanja": {
+    "title": "Best Things to Do in Ganja, Azerbaijan | 38 Ideas",
+    "description": "Discover the best things to do in Ganja: Nizami Ganjavi's mausoleum, the Shah Abbas Mosque, Javad Khan heritage, the Bottle House, regional cuisine and a Goygol excursion.",
+    "keywords": "Best Things to Do in Ganja, Azerbaijan"
+  },
+  "thingsToDoLahij": {
+    "title": "Best Things to Do in Lahij, Azerbaijan | 41 Ideas",
+    "description": "Discover the best things to do in Lahij: UNESCO-recognized copper craftsmanship, historic stone streets, Tat culture, mountain hiking and regional cuisine.",
+    "keywords": "Best Things to Do in Lahij, Azerbaijan"
+  },
+  "thingsToDoLankaran": {
+    "title": "Best Things to Do in Lankaran, Azerbaijan | 49 Ideas",
+    "description": "Discover the best things to do in Lankaran: tea plantations, fish lavangi, historic fortress towers, Hirkan National Park's ancient forests, and Khanbulan Lake.",
+    "keywords": "Best Things to Do in Lankaran, Azerbaijan"
+  },
+  "thingsToDoQuba": {
+    "title": "Best Things to Do in Quba, Azerbaijan | 40 Ideas",
+    "description": "Discover the best things to do in Quba: Red Village's Mountain Jewish heritage, carpet workshops, the historic Arched Bridge, and the gateway to UNESCO-listed Khinalig.",
+    "keywords": "Best Things to Do in Quba, Azerbaijan"
+  },
+  "thingsToDoSheki": {
+    "title": "Best Things to Do in Sheki, Azerbaijan | 44 Ideas",
+    "description": "Discover the best things to do in Sheki: the UNESCO-listed Khan's Palace, shabaka craftsmanship, historic caravanserais, Sheki halva and piti, and the Kish Church.",
+    "keywords": "Best Things to Do in Sheki, Azerbaijan"
+  },
+  "thingsToDoKhinalig": {
+    "title": "Best Things to Do in Khinalig, Azerbaijan | 38 Ideas",
+    "description": "Discover the best things to do in Khinalig: UNESCO transhumance heritage, village walks, the Galakhudat hike, wool crafts, local hospitality and Greater Caucasus scenery.",
+    "keywords": "Best Things to Do in Khinalig, Azerbaijan"
+  },
+  "khinalig": {
+    "title": "Khinalig, Azerbaijan | UNESCO Mountain Village & Köç Yolu",
+    "description": "Explore Khinalig: a UNESCO World Heritage mountain village at 2,300m, its own language, ancient transhumance traditions, wool crafts and dramatic Greater Caucasus scenery.",
+    "keywords": "Khinalig, Khinalig Azerbaijan, Köç Yolu, Ketsh language, Bazarduzu, Shahdag, Galakhudat, Khinalig travel guide"
+  },
   "qubaKhachmaz": {
     "title": "Quba-Khachmaz, Azerbaijan | Khinalig, Shahdag & Red Village",
     "description": "Explore Quba-Khachmaz: UNESCO-listed Khinalig, Mountain Jewish heritage in Red Village, Shahdag's high peaks and skiing, waterfalls and Caspian coast at Nabran.",

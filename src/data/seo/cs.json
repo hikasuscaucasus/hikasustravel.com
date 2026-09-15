@@ -1574,6 +1574,81 @@
     "description": "Navštivte Baku, kaspickou metropoli Ázerbájdžánu: Icherisheher na seznamu UNESCO, Palác Šírvánšáhů, architektura ropného boomu, Flame Towers a praktické rady.",
     "keywords": "Baku, Baku Ázerbájdžán, Icherisheher, Staré město Baku, Panenská věž, Palác Šírvánšáhů, Flame Towers, Centrum Hejdara Alijeva, Bakuský bulvár, Muzeum koberců Baku, co dělat v Baku, průvodce Baku"
   },
+  "gabala": {
+    "title": "Gabala, Ázerbájdžán | Tufandag, jezero Nohur a Stará Gabala",
+    "description": "Objevte Gabalu: lyžování a lanovky Tufandagu, jezero Nohur, vodopád Yeddi Gozel, starověkou kavkazskou Albánii a udijskou kulturu vesnice Nij.",
+    "keywords": "Gabala, Gabala Ázerbájdžán, Tufandag, jezero Nohur, vodopád Yeddi Gozel, Stará Gabala, Nij, udijská kultura, vinařství Savalan, průvodce Gabala"
+  },
+  "ganja": {
+    "title": "Ganja, Ázerbájdžán | Nizami, mešita Shah Abbas a historie",
+    "description": "Objevte Ganju: odkaz Nizamiho Gandžaviho, mešitový komplex Shah Abbas ze 17. století, historii Javada Khana, modrou kupoli Imamzadehu a nejsilnější regionální kuchyni západního Ázerbájdžánu.",
+    "keywords": "Ganja, Ganja Ázerbájdžán, Nizami Gandžavi, mešita Shah Abbas, hamam Chokek, Javad Khan, Imamzadeh, Bottle House, průvodce Ganja"
+  },
+  "lahij": {
+    "title": "Lahij, Ázerbájdžán | Měditepectví UNESCO a horská vesnice",
+    "description": "Objevte Lahij: živé měditepectví uznávané UNESCO, dlážděné horské uličky, tatskou kulturu a staletí staré řemeslné tradice ve Velkém Kavkaze Ázerbájdžánu.",
+    "keywords": "Lahij, Lahij Ázerbájdžán, Lahıc, měditepectví UNESCO, tatská kultura, Ismayilli, průvodce Lahij"
+  },
+  "lankaran": {
+    "title": "Lankaran, Ázerbájdžán | Čajová kultura, kuchyně a pobřeží Kaspiku",
+    "description": "Objevte Lankaran: čajovou metropoli Ázerbájdžánu, rybí lavangi a subtropickou kuchyni, historické pevnostní věže a bránu k národnímu parku Hirkan a Talyšským horám.",
+    "keywords": "Lankaran, Lankaran Ázerbájdžán, ázerbájdžánský čaj, lavangi, Kulatá věž, Hazi Aslanov, Talyši, národní park Hirkan, průvodce Lankaran"
+  },
+  "quba": {
+    "title": "Quba, Ázerbájdžán | Červená vesnice, koberce a brána ke Khinaligu",
+    "description": "Objevte Qubu: dědictví horských Židů v Červené vesnici, historické tkaní koberců, Klenutý most z 19. století a bránu ke Khinaligu na seznamu UNESCO.",
+    "keywords": "Quba, Quba Ázerbájdžán, Guba, Červená vesnice Qirmizi Qasaba, Muzeum horských Židů, koberce z Quby, Klenutý most, průvodce Quba"
+  },
+  "sheki": {
+    "title": "Şeki, Ázerbájdžán | Chánův palác UNESCO a město Hedvábné stezky",
+    "description": "Objevte Şeki: Palác şekijských chánů na seznamu UNESCO, řemeslo šebeke, historické karavanseraje, şekijskou chalvu a piti, a nedaleký kostel v Kishi ze starověké kavkazské Albánie.",
+    "keywords": "Şeki, Şeki Ázerbájdžán, Palác şekijských chánů, šebeke, Pevnost Şeki, karavanseraj, kostel v Kishi, şekijská chalva, průvodce Şeki"
+  },
+  "thingsToDoBaku": {
+    "title": "Nejlepší věci k vidění v Baku, Ázerbájdžán | 69 tipů",
+    "description": "Objevte nejlepší věci k vidění v Baku: Staré město zapsané na seznamu UNESCO, Panenskou věž, Centrum Hejdara Alijeva, kaspický bulvár, ázerbájdžánskou kuchyni a výlety do Gobustanu a na Apšeron.",
+    "keywords": "Nejlepší věci k vidění v Baku, Ázerbájdžán"
+  },
+  "thingsToDoGabala": {
+    "title": "Nejlepší věci k vidění v Gabale, Ázerbájdžán | 30 tipů",
+    "description": "Objevte nejlepší věci k vidění v Gabale: lanovky horského střediska Tufandag, jezero Nohur, vodopád Yeddi Gozel, starou Gabalu, udijskou kulturu vesnice Nij a vinařství Savalan.",
+    "keywords": "Nejlepší věci k vidění v Gabale, Ázerbájdžán"
+  },
+  "thingsToDoGanja": {
+    "title": "Nejlepší věci k vidění v Ganje, Ázerbájdžán | 38 tipů",
+    "description": "Objevte nejlepší věci k vidění v Ganje: odkaz Nizamiho Gandžaviho, mešitu Shah Abbas, komplex Imamzadeh, neobvyklý Bottle House a výlet do Goygolu s jeho německým dědictvím.",
+    "keywords": "Nejlepší věci k vidění v Ganje, Ázerbájdžán"
+  },
+  "thingsToDoLahij": {
+    "title": "Nejlepší věci k vidění v Lahiji, Ázerbájdžán | 41 tipů",
+    "description": "Objevte nejlepší věci k vidění v Lahiji: měditepecké řemeslo uznané UNESCO, historické kamenné ulice, tatskou kulturu, horskou turistiku a regionální kuchyni.",
+    "keywords": "Nejlepší věci k vidění v Lahiji, Ázerbájdžán"
+  },
+  "thingsToDoLankaran": {
+    "title": "Nejlepší věci k vidění v Lankaranu, Ázerbájdžán | 49 tipů",
+    "description": "Objevte nejlepší věci k vidění v Lankaranu: čajové plantáže, rybí lavangi, historické pevnostní věže, starobylé lesy Národního parku Hirkan a jezero Khanbulan.",
+    "keywords": "Nejlepší věci k vidění v Lankaranu, Ázerbájdžán"
+  },
+  "thingsToDoQuba": {
+    "title": "Nejlepší věci k vidění v Qubě, Ázerbájdžán | 40 tipů",
+    "description": "Objevte nejlepší věci k vidění v Qubě: dědictví horských Židů v Červené vesnici, kobercové dílny, historický Klenutý most a bránu k Khinaligu na seznamu UNESCO.",
+    "keywords": "Nejlepší věci k vidění v Qubě, Ázerbájdžán"
+  },
+  "thingsToDoSheki": {
+    "title": "Nejlepší věci k vidění v Şeki, Ázerbájdžán | 44 tipů",
+    "description": "Objevte nejlepší věci k vidění v Şeki: chánův palác na seznamu UNESCO, řemeslo šebeke, historické karavanseraje, şekijskou chalvu a piti a kostel v Kish.",
+    "keywords": "Nejlepší věci k vidění v Şeki, Ázerbájdžán"
+  },
+  "thingsToDoKhinalig": {
+    "title": "Nejlepší věci k vidění v Khinaligu, Ázerbájdžán | 38 tipů",
+    "description": "Objevte nejlepší věci k vidění v Khinaligu: dědictví transhumance UNESCO, procházky vesnicí, túru do Galakhudatu, vlněná řemesla, místní pohostinnost a scenérie Velkého Kavkazu.",
+    "keywords": "Nejlepší věci k vidění v Khinaligu, Ázerbájdžán"
+  },
+  "khinalig": {
+    "title": "Khinalig, Ázerbájdžán | Horská vesnice UNESCO a Köç Yolu",
+    "description": "Objevte Khinalig: horskou vesnici na Seznamu světového dědictví UNESCO ve výšce 2 300 m, vlastní jazyk, starobylé transhumanční tradice, vlněná řemesla a dramatickou scenérii Velkého Kavkazu.",
+    "keywords": "Khinalig, Khinalig Ázerbájdžán, Köç Yolu, jazyk Ketsh, Bazarduzu, Shahdag, Galakhudat, průvodce Khinalig"
+  },
   "qubaKhachmaz": {
     "title": "Quba-Khachmaz, Ázerbájdžán | Khinalig, Shahdag a Red Village",
     "description": "Poznejte Quba-Khachmaz: Khinalig (UNESCO), dědictví horských Židů v Red Village, vrcholy a lyžování na Shahdagu, vodopády a kaspické pobřeží u Nabranu.",

@@ -1574,6 +1574,81 @@
     "description": "Odwiedź Baku, kaspijską stolicę Azerbejdżanu: Icherisheher z listy UNESCO, Pałac Szirwanszachów, architekturę boomu naftowego, Flame Towers i praktyczne rady.",
     "keywords": "Baku, Baku Azerbejdżan, Icherisheher, Stare Miasto Baku, Baszta Dziewicza, Pałac Szirwanszachów, Flame Towers, Centrum Hejdara Alijewa, Bulwar Bakijski, Muzeum Dywanów Baku, co zobaczyć w Baku, przewodnik po Baku"
   },
+  "gabala": {
+    "title": "Gabala, Azerbejdżan | Tufandag, jezioro Nohur i Stara Gabala",
+    "description": "Odkryj Gabalę: narciarstwo i kolejki linowe Tufandag Mountain Resort, jezioro Nohur, wodospad Yeddi Gozel, starożytną Kaukaską Albanię i kulturę Udinów w Nij.",
+    "keywords": "Gabala, Gabala Azerbejdżan, Tufandag Mountain Resort, jezioro Nohur, wodospad Yeddi Gozel, Stara Gabala, Nij, kultura Udinów, winnica Savalan, przewodnik po Gabali"
+  },
+  "ganja": {
+    "title": "Ganja, Azerbejdżan | Nizami, meczet Shah Abbas i historia",
+    "description": "Odkryj Gandżę: dziedzictwo Nizamiego Gandżawiego, XVII-wieczny kompleks meczetu Shah Abbas, historię Javad Khana, niebieską kopułę Imamzadeh oraz najsilniejszą kuchnię regionalną zachodniego Azerbejdżanu.",
+    "keywords": "Ganja, Ganja Azerbejdżan, Nizami Gandżawi, meczet Shah Abbas, hammam Chokek, Javad Khan, Imamzadeh, Dom z Butelek, przewodnik po Gandży"
+  },
+  "lahij": {
+    "title": "Lahij, Azerbejdżan | Rzemiosło miedziarskie UNESCO i górska wieś",
+    "description": "Odkryj Lahij: żywe rzemiosło miedziarskie uznane przez UNESCO, brukowane górskie uliczki, kulturę Tatów oraz wielowiekowe tradycje rzemieślnicze w azerbejdżańskim Wielkim Kaukazie.",
+    "keywords": "Lahij, Lahij Azerbejdżan, Lahic, rzemiosło miedziarskie UNESCO, kultura Tatów, Ismayilli, przewodnik po Lahij"
+  },
+  "lankaran": {
+    "title": "Lankaran, Azerbejdżan | Kultura herbaty, kuchnia i wybrzeże Kaspijskie",
+    "description": "Odkryj Lankaran: stolicę herbaty Azerbejdżanu, rybę lavangi i kuchnię subtropikalną, historyczne wieże forteczne oraz bramę do Parku Narodowego Hirkan i gór Talyszu.",
+    "keywords": "Lankaran, Lankaran Azerbejdżan, azerbejdżańska herbata, lavangi, Wieża Okrągła, Hazi Aslanov, Talysze, Park Narodowy Hirkan, przewodnik po Lankaranie"
+  },
+  "quba": {
+    "title": "Quba, Azerbejdżan | Red Village, dywany i brama do Khinaligu",
+    "description": "Odkryj Qubę: dziedzictwo Żydów Górskich w Red Village, historyczne tkactwo dywanów, XIX-wieczny Łukowy Most oraz bramę do wpisanego na listę UNESCO Khinaligu.",
+    "keywords": "Quba, Quba Azerbejdżan, Guba, Red Village Qirmizi Qasaba, Muzeum Żydów Górskich, dywany z Quby, Łukowy Most, przewodnik po Qubie"
+  },
+  "sheki": {
+    "title": "Szeki, Azerbejdżan | Pałac Chana UNESCO i miasto Jedwabnego Szlaku",
+    "description": "Odkryj Szeki: wpisany na listę UNESCO Pałac Chana, rzemiosło szebeke, historyczne karawanseraje, chałwę i piti z Szeki oraz pobliski kościół w Kish ze starożytnej Kaukaskiej Albanii.",
+    "keywords": "Szeki, Sheki Azerbejdżan, Pałac Chanów Szeki, szebeke, Twierdza Szeki, karawanseraj, kościół w Kish, chałwa z Szeki, przewodnik po Szeki"
+  },
+  "thingsToDoBaku": {
+    "title": "Najlepsze atrakcje w Baku, Azerbejdżan | 69 pomysłów",
+    "description": "Odkryj najlepsze atrakcje w Baku: wpisane na listę UNESCO Stare Miasto, Basztę Dziewiczą, Centrum Heydara Alijewa, kaspijski bulwar, azerbejdżańską kuchnię oraz wycieczki do Gobustanu i na Absheron.",
+    "keywords": "Najlepsze atrakcje w Baku, Azerbejdżan"
+  },
+  "thingsToDoGabala": {
+    "title": "Najlepsze atrakcje w Gabali, Azerbejdżan | 30 pomysłów",
+    "description": "Odkryj najlepsze atrakcje w Gabali: narciarstwo i kolejki linowe Tufandag Mountain Resort, jezioro Nohur, wodospad Yeddi Gozel, Starą Gabalę i wioskę Nij.",
+    "keywords": "Najlepsze atrakcje w Gabali, Azerbejdżan"
+  },
+  "thingsToDoGanja": {
+    "title": "Najlepsze atrakcje w Gandży, Azerbejdżan | 38 pomysłów",
+    "description": "Odkryj najlepsze atrakcje w Gandży: Mauzoleum Nizamiego, Meczet Szacha Abbasa, Dom z Butelek, historię Dżawada Chana i wycieczkę do Goygolu.",
+    "keywords": "Najlepsze atrakcje w Gandży, Azerbejdżan"
+  },
+  "thingsToDoLahij": {
+    "title": "Najlepsze atrakcje w Lahij, Azerbejdżan | 41 pomysłów",
+    "description": "Odkryj najlepsze atrakcje w Lahij: uznane przez UNESCO rzemiosło miedziarskie, historyczne kamienne uliczki, kulturę Tatów, wędrówki górskie i kuchnię regionalną.",
+    "keywords": "Najlepsze atrakcje w Lahij, Azerbejdżan"
+  },
+  "thingsToDoLankaran": {
+    "title": "Najlepsze atrakcje w Lankaranie, Azerbejdżan | 49 pomysłów",
+    "description": "Odkryj najlepsze atrakcje w Lankaranie: plantacje herbaty, rybę lavangi, historyczne wieże twierdzy, pradawne lasy Parku Narodowego Hirkan i jezioro Khanbulan.",
+    "keywords": "Najlepsze atrakcje w Lankaranie, Azerbejdżan"
+  },
+  "thingsToDoQuba": {
+    "title": "Najlepsze atrakcje w Qubie, Azerbejdżan | 40 pomysłów",
+    "description": "Odkryj najlepsze atrakcje w Qubie: dziedzictwo Żydów Górskich w Czerwonej Wiosce, warsztaty tkactwa dywanów, historyczny Łukowy Most oraz bramę do wpisanego na listę UNESCO Khinaligu.",
+    "keywords": "Najlepsze atrakcje w Qubie, Azerbejdżan"
+  },
+  "thingsToDoSheki": {
+    "title": "Najlepsze atrakcje w Szeki, Azerbejdżan | 44 pomysły",
+    "description": "Odkryj najlepsze atrakcje w Szeki: wpisany na listę UNESCO Pałac Chana, rzemiosło szabaka, historyczne karawanseraje, halwę i piti z Szeki oraz kościół w Kiszu.",
+    "keywords": "Najlepsze atrakcje w Szeki, Azerbejdżan"
+  },
+  "thingsToDoKhinalig": {
+    "title": "Najlepsze atrakcje w Khinaligu, Azerbejdżan | 38 pomysłów",
+    "description": "Odkryj najlepsze atrakcje w Khinaligu: dziedzictwo transhumancji UNESCO, spacery po wiosce, wędrówkę do Galakhudat, rzemiosło wełniane oraz krajobraz Wielkiego Kaukazu.",
+    "keywords": "Najlepsze atrakcje w Khinaligu, Azerbejdżan"
+  },
+  "khinalig": {
+    "title": "Khinalig, Azerbejdżan | Górska wieś UNESCO i Köç Yolu",
+    "description": "Odkryj Khinalig: górską wieś wpisaną na listę Światowego Dziedzictwa UNESCO na wysokości 2300 m, własny język, starożytne tradycje transhumancji, rzemiosło wełniane i dramatyczną scenerię Wielkiego Kaukazu.",
+    "keywords": "Khinalig, Khinalig Azerbejdżan, Köç Yolu, język ketsz, Bazarduzu, Shahdag, Galakhudat, przewodnik po Khinaligu"
+  },
   "qubaKhachmaz": {
     "title": "Quba-Khachmaz, Azerbejdżan | Khinalig, Shahdag i Red Village",
     "description": "Odkryj Quba-Khachmaz: Khinalig (UNESCO), dziedzictwo Żydów górskich w Red Village, szczyty i narciarstwo Shahdagu, wodospady i kaspijskie wybrzeże w Nabranie.",

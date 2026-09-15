@@ -1574,6 +1574,81 @@
     "description": "Visitez Bakou, capitale caspienne de l'Azerbaïdjan : Icherisheher (UNESCO), palais des Chirvanchahs, boom pétrolier, Flame Towers et conseils pratiques.",
     "keywords": "Bakou, Bakou Azerbaïdjan, Icherisheher, vieille ville de Bakou, tour de la Vierge, palais des Chirvanchahs, Flame Towers, Centre Heydar Aliyev, boulevard de Bakou, musée du tapis Bakou, que faire à Bakou, guide de voyage Bakou"
   },
+  "gabala": {
+    "title": "Gabala, Azerbaïdjan | Tufandag, lac Nohur et ancienne Gabala",
+    "description": "Découvrez Gabala : le ski et les téléphériques de la station de Tufandag, le lac Nohur, la cascade de Yeddi Gozel, l'ancienne Albanie caucasienne et la culture udie de Nij.",
+    "keywords": "Gabala, Gabala Azerbaïdjan, station de Tufandag, lac Nohur, cascade de Yeddi Gozel, ancienne Gabala, Nij, culture udie, domaine Savalan, guide de voyage Gabala"
+  },
+  "ganja": {
+    "title": "Ganja, Azerbaïdjan | Nizami, mosquée Shah Abbas et histoire",
+    "description": "Découvrez Ganja : l'héritage de Nizami Ganjavi, le complexe de la mosquée Shah Abbas du XVIIe siècle, l'histoire de Javad Khan, la coupole bleue de l'Imamzadeh, et la plus forte cuisine régionale de l'ouest de l'Azerbaïdjan.",
+    "keywords": "Ganja, Ganja Azerbaïdjan, Nizami Ganjavi, mosquée Shah Abbas, hammam Chokek, Javad Khan, Imamzadeh, maison aux bouteilles, guide de voyage Ganja"
+  },
+  "lahij": {
+    "title": "Lahij, Azerbaïdjan | Artisanat du cuivre UNESCO et village de montagne",
+    "description": "Découvrez Lahij : un artisanat du cuivre vivant reconnu par l'UNESCO, des rues pavées de montagne, la culture tate et des traditions artisanales séculaires dans le Grand Caucase azerbaïdjanais.",
+    "keywords": "Lahij, Lahij Azerbaïdjan, Lahic, artisanat du cuivre UNESCO, culture tate, Ismayilli, guide de voyage Lahij"
+  },
+  "lankaran": {
+    "title": "Lankaran, Azerbaïdjan | Culture du thé, gastronomie et côte caspienne",
+    "description": "Découvrez Lankaran : la capitale théière d'Azerbaïdjan, le lavangi de poisson et la cuisine subtropicale, des tours de forteresse historiques, et la porte d'entrée vers le parc national de Hirkan et les montagnes du Talysh.",
+    "keywords": "Lankaran, Lankaran Azerbaïdjan, thé azerbaïdjanais, lavangi, Tour ronde, Hazi Aslanov, Talysh, parc national de Hirkan, guide de voyage Lankaran"
+  },
+  "quba": {
+    "title": "Quba, Azerbaïdjan | Village Rouge, tapis et porte vers Khinalig",
+    "description": "Découvrez Quba : l'héritage des Juifs des montagnes au Village Rouge, le tissage historique de tapis, le pont en arches du XIXe siècle, et la porte d'entrée vers Khinalig, classée à l'UNESCO.",
+    "keywords": "Quba, Quba Azerbaïdjan, Guba, Village Rouge Qirmizi Qasaba, musée des Juifs des montagnes, tapis de Quba, pont en arches, guide de voyage Quba"
+  },
+  "sheki": {
+    "title": "Sheki, Azerbaïdjan | Palais du Khan UNESCO et ville de la route de la Soie",
+    "description": "Découvrez Sheki : le palais des khans classé à l'UNESCO, l'artisanat du shabaka, des caravansérails historiques, le halva et le piti de Sheki, et l'église voisine de Kish, héritage de l'ancienne Albanie caucasienne.",
+    "keywords": "Sheki, Sheki Azerbaïdjan, palais des khans de Sheki, shabaka, forteresse de Sheki, caravansérail, église de Kish, halva de Sheki, guide de voyage Sheki"
+  },
+  "thingsToDoBaku": {
+    "title": "Les meilleures choses à faire à Bakou, Azerbaïdjan | 69 idées",
+    "description": "Découvrez les meilleures choses à faire à Bakou : la vieille ville classée à l'UNESCO, la Tour de la Vierge, le Centre Heydar Aliyev, le Boulevard caspien, la cuisine azerbaïdjanaise, et des excursions à Gobustan et Absheron.",
+    "keywords": "Les meilleures choses à faire à Bakou, Azerbaïdjan"
+  },
+  "thingsToDoGabala": {
+    "title": "Les meilleures choses à faire à Gabala, Azerbaïdjan | 30 idées",
+    "description": "Découvrez les meilleures choses à faire à Gabala : les téléphériques de Tufandag, le lac Nohur, la cascade de Yeddi Gozel, l'ancienne Gabala et la culture udie de Nij.",
+    "keywords": "Les meilleures choses à faire à Gabala, Azerbaïdjan"
+  },
+  "thingsToDoGanja": {
+    "title": "Les meilleures choses à faire à Ganja, Azerbaïdjan | 38 idées",
+    "description": "Découvrez les meilleures choses à faire à Ganja : le mausolée de Nizami, la mosquée Shah Abbas, la maison aux bouteilles et l'excursion à Goygol.",
+    "keywords": "Les meilleures choses à faire à Ganja, Azerbaïdjan"
+  },
+  "thingsToDoLahij": {
+    "title": "Les meilleures choses à faire à Lahij, Azerbaïdjan | 41 idées",
+    "description": "Découvrez les meilleures choses à faire à Lahij : l'artisanat du cuivre reconnu par l'UNESCO, les rues historiques pavées, la culture tate et la randonnée en montagne.",
+    "keywords": "Les meilleures choses à faire à Lahij, Azerbaïdjan"
+  },
+  "thingsToDoLankaran": {
+    "title": "Les meilleures choses à faire à Lankaran, Azerbaïdjan | 49 idées",
+    "description": "Découvrez les meilleures choses à faire à Lankaran : les plantations de thé, le lavangi de poisson, les tours de forteresse historiques, les forêts anciennes du parc national de Hirkan et le lac Khanbulan.",
+    "keywords": "Les meilleures choses à faire à Lankaran, Azerbaïdjan"
+  },
+  "thingsToDoQuba": {
+    "title": "Les meilleures choses à faire à Quba, Azerbaïdjan | 40 idées",
+    "description": "Découvrez les meilleures choses à faire à Quba : le patrimoine des Juifs des montagnes du Village Rouge, les ateliers de tapis, le Pont en arc historique, et la porte d'entrée vers Khinalig, classée à l'UNESCO.",
+    "keywords": "Les meilleures choses à faire à Quba, Azerbaïdjan"
+  },
+  "thingsToDoSheki": {
+    "title": "Les meilleures choses à faire à Sheki, Azerbaïdjan | 44 idées",
+    "description": "Découvrez les meilleures choses à faire à Sheki : le Palais des khans classé à l'UNESCO, l'artisanat du shabaka, les caravansérails historiques, le halva et le piti de Sheki, et l'église de Kish.",
+    "keywords": "Les meilleures choses à faire à Sheki, Azerbaïdjan"
+  },
+  "thingsToDoKhinalig": {
+    "title": "Les meilleures choses à faire à Khinalig, Azerbaïdjan | 38 idées",
+    "description": "Découvrez les meilleures choses à faire à Khinalig : le patrimoine de transhumance UNESCO, les promenades dans le village, la randonnée vers Galakhudat, l'artisanat de la laine et l'hospitalité locale.",
+    "keywords": "Les meilleures choses à faire à Khinalig, Azerbaïdjan"
+  },
+  "khinalig": {
+    "title": "Khinalig, Azerbaïdjan | Village de montagne UNESCO et Köç Yolu",
+    "description": "Découvrez Khinalig : un village de montagne classé au patrimoine mondial de l'UNESCO à 2 300 m, sa propre langue, d'anciennes traditions de transhumance, l'artisanat de la laine et les spectaculaires paysages du Grand Caucase.",
+    "keywords": "Khinalig, Khinalig Azerbaïdjan, Köç Yolu, langue ketsh, Bazarduzu, Shahdag, Galakhudat, guide de voyage Khinalig"
+  },
   "qubaKhachmaz": {
     "title": "Quba-Khachmaz, Azerbaïdjan | Khinalig, Shahdag et Red Village",
     "description": "Explorez Quba-Khachmaz : Khinalig (UNESCO), l'héritage juif de Red Village, les sommets et le ski de Shahdag, des cascades et la côte caspienne de Nabran.",

@@ -9348,6 +9348,12 @@ export const cities = [
     seoKey: 'baku', contentKey: 'baku',
     featured: true,
     noHero: true, heroTitleAsH1: true, noAutolink: true,
+    thingsToDo: {
+      seoKey: 'thingsToDoBaku', contentKey: 'thingsToDoBaku',
+      noHero: true,
+      address: { addressLocality: 'Baku' },
+      attractions: ["Icherisheher","Maiden Tower","Palace of the Shirvanshahs","Mohammed Mosque","Nizami Street","Fountains Square","Baku Boulevard","Azerbaijan National Carpet Museum","Highland Park","Martyrs' Lane","Flame Towers","Heydar Aliyev Centre","International Mugham Center","Yashil Bazaar","National Museum of History of Azerbaijan","Villa Petrolea","YARAT Contemporary Art Space","Azerbaijan National Museum of Art","Little Venice","Baku Eye","Gobustan","Ateshgah Fire Temple","Yanar Dag"],
+    },
   },
   {
     slug: 'mardakan', name: 'Mardakan', region: 'absheron', published: false, country: 'azerbaijan',
@@ -9375,10 +9381,16 @@ export const cities = [
     noHero: true, heroTitleAsH1: true, noAutolink: true,
   },
   {
-    slug: 'lahij', name: 'Lahij', region: 'mountainous-shirvan', published: false, country: 'azerbaijan',
+    slug: 'lahij', name: 'Lahij', region: 'mountainous-shirvan', published: true, country: 'azerbaijan',
     seoKey: 'lahij', contentKey: 'lahij',
     featured: true,
     noHero: true, heroTitleAsH1: true, noAutolink: true,
+    thingsToDo: {
+      seoKey: 'thingsToDoLahij', contentKey: 'thingsToDoLahij',
+      noHero: true,
+      address: { addressLocality: 'Lahij' },
+      attractions: ["Lahij Museum of History and Ethnography","Ancient Tea House","Girdiman Fortress","Mount Niyaldag","Seven Waterfalls","Juma Mosque of Lahij"],
+    },
   },
   {
     slug: 'basqal', name: 'Basqal', region: 'mountainous-shirvan', published: false, country: 'azerbaijan',
@@ -9391,16 +9403,28 @@ export const cities = [
     noHero: true, heroTitleAsH1: true, noAutolink: true,
   },
   {
-    slug: 'sheki', name: 'Sheki', region: 'sheki-zagatala', published: false, country: 'azerbaijan',
+    slug: 'sheki', name: 'Sheki', region: 'sheki-zagatala', published: true, country: 'azerbaijan',
     seoKey: 'sheki', contentKey: 'sheki',
     featured: true,
     noHero: true, heroTitleAsH1: true, noAutolink: true,
+    thingsToDo: {
+      seoKey: 'thingsToDoSheki', contentKey: 'thingsToDoSheki',
+      noHero: true,
+      address: { addressLocality: 'Sheki' },
+      attractions: ["Palace of the Sheki Khans","Sheki Fortress","Shabaka Workshop","Upper Caravanserai","Lower Caravanserai","Shekikhanovs' House","Sheki History and Ethnography Museum","Kish Church","Kish Adasi","Gelersen-Gorersen Fortress","Sheki Bazaar","Sheki Wines"],
+    },
   },
   {
-    slug: 'gabala', name: 'Gabala', region: 'sheki-zagatala', published: false, country: 'azerbaijan',
+    slug: 'gabala', name: 'Gabala', region: 'sheki-zagatala', published: true, country: 'azerbaijan',
     seoKey: 'gabala', contentKey: 'gabala',
     featured: true,
     noHero: true, heroTitleAsH1: true, noAutolink: true,
+    thingsToDo: {
+      seoKey: 'thingsToDoGabala', contentKey: 'thingsToDoGabala',
+      noHero: true,
+      address: { addressLocality: 'Gabala' },
+      attractions: ["Tufandag Mountain Resort","Nohur Lake","Yeddi Gozel Waterfall","Old Gabala","Gabala Archaeological Centre","Nij","Chotari Church","Duruja","Savalan (ASPI) Winery","Essenso Lavender Plantation","Turyanchay River","Yengija Thermal Springs","Gamarvan Thermal Springs","Vandam"],
+    },
   },
   {
     slug: 'zagatala', name: 'Zagatala', region: 'sheki-zagatala', published: false, country: 'azerbaijan',
@@ -9443,10 +9467,16 @@ export const cities = [
     noHero: true, heroTitleAsH1: true, noAutolink: true,
   },
   {
-    slug: 'quba', name: 'Quba', region: 'quba-khachmaz', published: false, country: 'azerbaijan',
+    slug: 'quba', name: 'Quba', region: 'quba-khachmaz', published: true, country: 'azerbaijan',
     seoKey: 'quba', contentKey: 'quba',
     featured: true,
     noHero: true, heroTitleAsH1: true, noAutolink: true,
+    thingsToDo: {
+      seoKey: 'thingsToDoQuba', contentKey: 'thingsToDoQuba',
+      noHero: true,
+      address: { addressLocality: 'Quba' },
+      attractions: ["Arched Bridge","Red Village","Museum of Mountain Jews","Grand Synagogue","Gadim Guba","Azerkhalcha","Quba Bazaar","Juma Mosque","Chukhur Hammam","Museum of History and Local Lore","Qechresh","Gurgur Waterfall","Galakhudat","Griz","Khinalig","Shahdag Mountain Resort"],
+    },
   },
   {
     slug: 'qusar', name: 'Qusar', region: 'quba-khachmaz', published: false, country: 'azerbaijan',
@@ -9454,10 +9484,16 @@ export const cities = [
     noHero: true, heroTitleAsH1: true, noAutolink: true,
   },
   {
-    slug: 'khinalig', name: 'Khinalig', region: 'quba-khachmaz', published: false, country: 'azerbaijan',
+    slug: 'khinalig', name: 'Khinalig', region: 'quba-khachmaz', published: true, country: 'azerbaijan',
     seoKey: 'khinalig', contentKey: 'khinalig',
     featured: true,
     noHero: true, heroTitleAsH1: true, noAutolink: true,
+    thingsToDo: {
+      seoKey: 'thingsToDoKhinalig', contentKey: 'thingsToDoKhinalig',
+      noHero: true,
+      address: { addressLocality: 'Khinalig' },
+      attractions: ["Juma Mosque, Khinalig","Khinalig–Galakhudat Trail","Khinalig Pirs","Khinalig Historic Cemeteries","Khinalig Wool Craft Workshops","Griz Trail","Köç Yolu Transhumance Route","Mount Gizilgaya Viewpoint"],
+    },
   },
   {
     slug: 'laza', name: 'Laza', region: 'quba-khachmaz', published: false, country: 'azerbaijan',
@@ -9480,10 +9516,16 @@ export const cities = [
     noHero: true, heroTitleAsH1: true, noAutolink: true,
   },
   {
-    slug: 'ganja', name: 'Ganja', region: 'ganja-dashkasan', published: false, country: 'azerbaijan',
+    slug: 'ganja', name: 'Ganja', region: 'ganja-dashkasan', published: true, country: 'azerbaijan',
     seoKey: 'ganja', contentKey: 'ganja',
     featured: true,
     noHero: true, heroTitleAsH1: true, noAutolink: true,
+    thingsToDo: {
+      seoKey: 'thingsToDoGanja', contentKey: 'thingsToDoGanja',
+      noHero: true,
+      address: { addressLocality: 'Ganja' },
+      attractions: ["Shah Abbas Mosque","Chokek Hamam","Javad Khan Mausoleum","Khan's Garden","Nizami Ganjavi Mausoleum","Nizami Museum","Imamzadeh","Bottle House","Ganja State Puppet Theatre","Ganja Fortress Gates","History and Ethnography Museum","Ganja Bazaar","Ganjachay River","Lake Goygol","Naftalan"],
+    },
   },
   {
     slug: 'naftalan', name: 'Naftalan', region: 'ganja-dashkasan', published: false, country: 'azerbaijan',
@@ -9526,10 +9568,16 @@ export const cities = [
     noHero: true, heroTitleAsH1: true, noAutolink: true,
   },
   {
-    slug: 'lankaran', name: 'Lankaran', region: 'lankaran-astara', published: false, country: 'azerbaijan',
+    slug: 'lankaran', name: 'Lankaran', region: 'lankaran-astara', published: true, country: 'azerbaijan',
     seoKey: 'lankaran', contentKey: 'lankaran',
     featured: true,
     noHero: true, heroTitleAsH1: true, noAutolink: true,
+    thingsToDo: {
+      seoKey: 'thingsToDoLankaran', contentKey: 'thingsToDoLankaran',
+      noHero: true,
+      address: { addressLocality: 'Lankaran' },
+      attractions: ["Lankaran History Museum","Round Tower","Lankaran Lighthouse","Hazi Aslanov House Museum","Hirkan National Park","Khanbulan Lake","Gizil Aghaj","Lerik Museum of Longevity","Sim Village","Yanar Bulag"],
+    },
   },
   {
     slug: 'lerik', name: 'Lerik', region: 'lankaran-astara', published: false, country: 'azerbaijan',
