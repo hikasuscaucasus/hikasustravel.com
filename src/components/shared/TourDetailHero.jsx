@@ -107,6 +107,15 @@ function TagIcon() {
   )
 }
 
+function SeasonIcon() {
+  return (
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <line x1="12" y1="2" x2="12" y2="22" /><line x1="2" y1="12" x2="22" y2="12" />
+      <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" /><line x1="19.07" y1="4.93" x2="4.93" y2="19.07" />
+    </svg>
+  )
+}
+
 export default function TourDetailHero({ tour, translatedTitle, heroH1, isGroup, sites, startingPrice }) {
   const t = useT()
   const [sitesOpen, setSitesOpen] = useState(false)
@@ -162,6 +171,15 @@ export default function TourDetailHero({ tour, translatedTitle, heroH1, isGroup,
               <UsersIcon />
               {isGroup ? t('tour.groupTours') : t('tour.privateTours')}
             </span>
+            {/* Seasonality is a private-tour fact only — group tours run on
+                fixed announced dates (see the "Available Dates" block
+                further down the page), so this chip does not apply there. */}
+            {!isGroup && (
+              <span className="iv-chip">
+                <SeasonIcon />
+                {tour.seasonality === 'winter' ? t('tour.seasonalityWinter') : t('tour.seasonalityAllYear')}
+              </span>
+            )}
             {startingPrice > 0 && (
               <span className="iv-chip iv-chip--price">
                 <TagIcon />

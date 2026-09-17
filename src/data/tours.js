@@ -4481,6 +4481,7 @@ export const tours = [
   {
     "slug": "7-day-gudauri-ski-tour-from-tbilisi",
     "type": "private",
+    "seasonality": "winter",
     "featured": true,
     "title": "7-Day Gudauri Ski Tour from Tbilisi",
     // Hero: real Gudauri ski photo via the .hero--gudauri-ski image-set() ladder
@@ -6653,6 +6654,7 @@ export const tours = [
   {
     "slug": "8-day-winter-ski-tour-from-kutaisi",
     "type": "private",
+    "seasonality": "winter",
     "title": "8-Day Winter Ski Tour from Kutaisi",
     "heroImage": "/images/files/gudauri-ski-resort-caucasus-georgia-1024.webp",
     "ogImage": {
@@ -12417,6 +12419,7 @@ export const tours = [
   {
     "slug": "11-day-winter-ski-tour-from-kutaisi",
     "type": "private",
+    "seasonality": "winter",
     "title": "11-Day Winter Ski Tour from Kutaisi",
     "heroImage": "/images/files/bakuriani-ski-slope-georgia-1600w.webp",
     "ogImage": {
