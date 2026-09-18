@@ -2,6 +2,7 @@ import DestinationHub from '../shared/DestinationHub'
 import useT from '../../i18n/useT'
 import {
   citiesOfCountry,
+  cityCardImage,
   countryHubSocialImage,
   countryHubMeta,
   sites,
@@ -186,7 +187,7 @@ export function CitiesHubPage({ country = DEFAULT_COUNTRY }) {
       // field the featured-city strip on the country landing renders — so the
       // two pages can never drift: a city's photo is changed in one place and
       // both follow. A city without one renders the text-only card unchanged.
-      image: c.image,
+      image: cityCardImage(c),
     }))
   // `only`: a curated editorial subset of the registry, in a fixed order (not
   // A-Z). The other scaffolded cities stay in places.js, just not listed here.

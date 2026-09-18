@@ -8,15 +8,9 @@ import useT from '../../i18n/useT'
 import useLang from '../../i18n/useLang'
 import { I18nContext } from '../../i18n/I18nContext'
 import useSEO from '../../hooks/useSEO'
-import { getSEO, hasSEO } from '../../data/seoData'
+import { getSEO, hasSEO, seoCardName } from '../../data/seoData'
 
 const SITE_URL = 'https://www.hikasustravel.com'
-
-// Derive a clean, translated card title from a site's per-language SEO title,
-// e.g. "Festung Ujarma: königliche Hochburg …" -> "Festung Ujarma" and
-// "Forteresse d'Ujarma : bastion …" -> "Forteresse d'Ujarma". Cuts at the first
-// tagline / locator separator so marketing and ", City"/", Country" suffixes drop off.
-const seoCardName = (title) => (title || '').split(/[|:]/)[0].split(',')[0].trim()
 
 /**
  * Generic sub-hub page (Regions / Cities / Places to Visit).

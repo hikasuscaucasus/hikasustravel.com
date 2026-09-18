@@ -38,3 +38,9 @@ export function hasSEO(pageKey, lang = 'en') {
   const table = store[lang] || store.en
   return !!(table && table[pageKey])
 }
+
+// Derive a clean, translated card title from a per-language SEO title, e.g.
+// "Festung Ujarma: königliche Hochburg …" -> "Festung Ujarma" and
+// "Forteresse d'Ujarma : bastion …" -> "Forteresse d'Ujarma". Cuts at the first
+// tagline / locator separator so marketing and ", City"/", Country" suffixes drop off.
+export const seoCardName = (title) => (title || '').split(/[|:]/)[0].split(',')[0].trim()

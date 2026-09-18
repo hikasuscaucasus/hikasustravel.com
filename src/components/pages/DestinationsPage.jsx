@@ -9,9 +9,9 @@ import useT from '../../i18n/useT'
 import useLang from '../../i18n/useLang'
 import { I18nContext } from '../../i18n/I18nContext'
 import useSEO from '../../hooks/useSEO'
-import { getSEO, hasSEO } from '../../data/seoData'
+import { getSEO, hasSEO, seoCardName } from '../../data/seoData'
 import {
-  citiesOfCountry, cityPath, countryBase, countryHubSocialImage, countryHubMeta,
+  citiesOfCountry, cityCardImage, cityPath, countryBase, countryHubSocialImage, countryHubMeta,
   regionsHubPathFor, citiesHubPathFor, placesHubPathFor,
   DEFAULT_COUNTRY,
 } from '../../data/places'
@@ -46,6 +46,13 @@ const COUNTRY_LANDING = {
     // through the SAME chain as the Cities hub is what keeps a city named
     // identically on /georgia and /georgia/cities in every language.
     cityItemsKey: 'destinationsCities',
+    // The featured cities render as the same DestinationCard, with the same
+    // name/summary/cover, as /georgia/cities. The two `seoFallback*` flags give
+    // this strip the Cities hub's own last-resort chain (a city's authored SEO
+    // entry), which only Bakhmaro reaches — it has no curated card text.
+    featuredCityCards: true,
+    seoFallbackName: true,
+    seoFallbackDescription: true,
     pinFirstCity: 'tbilisi',
     // ⚠️ Card covers must live under /images/files/ AND have a matching file in
     // /images/files-thumb/ — BlurUpBackground derives the blur placeholder by
@@ -92,11 +99,9 @@ const COUNTRY_LANDING = {
     cityNameNavFallback: true,
     // Render the featured cities as the site's standard destination CARD
     // (DestinationCard — the same one every hub uses) instead of the square photo
-    // tiles. Georgia keeps the tiles: all 26 of its featured cities have a
-    // photograph, so a tile row there is a wall of pictures. Armenia has two
-    // photographed cities out of eleven, which as tiles meant nine brand-tone
-    // blocks; as cards it is eleven real summaries, with a cover where one
-    // honestly exists. Opt-in per country, so /georgia is byte-identical.
+    // tiles. Armenia has two photographed cities out of eleven, which as tiles
+    // meant nine brand-tone blocks; as cards it is eleven real summaries, with a
+    // cover where one honestly exists. Opt-in per country.
     featuredCityCards: true,
     // The capital leads, exactly as Tbilisi does on /georgia. Matched on the
     // stable slug, never the label, which is localized.
@@ -210,9 +215,7 @@ export default function DestinationsPage({ country = DEFAULT_COUNTRY }) {
 
   // Published city guides for this country. Entries reclassified as a place to
   // visit (e.g. Gomismta) are not cities, so they are excluded from the strip.
-  // A city without a cover still gets its card, on the same brand-tone
-  // placeholder the sub-hub tiles use. Inert for Georgia: all 26 of its featured
-  // cities have a photograph, so every Georgia tile takes the image branch.
+  // A city without a card cover (see cityCardImage) still gets its card, text-only.
   //
   // A country that opts into `featuredByFlag` lists its `featured: true` cities
   // instead — published or not — so a scaffolded country can show which guides
@@ -248,8 +251,14 @@ export default function DestinationsPage({ country = DEFAULT_COUNTRY }) {
   }
   const cityTitle = (c) => {
     const navLabel = conf.cityNameNavFallback ? t(`nav.${c.slug}`) : null
+    // Same rule as DestinationHub: the SEO-derived name is non-English only, so
+    // English keeps the exact registry name.
+    const seoName = conf.seoFallbackName && lang !== 'en' && c.seoKey && hasSEO(c.seoKey, lang)
+      ? seoCardName(getSEO(c.seoKey, lang).title)
+      : null
     return cityItems[c.slug]?.name || enCityItems[c.slug]?.name
       || (navLabel && navLabel !== `nav.${c.slug}` ? navLabel : null)
+      || seoName
       || c.name
   }
 
@@ -402,7 +411,7 @@ export default function DestinationsPage({ country = DEFAULT_COUNTRY }) {
                         <DestinationCard
                           name={title}
                           description={cityDescription(c)}
-                          image={c.image}
+                          image={cityCardImage(c)}
                           imagePosition={c.imagePosition}
                           to={c.published ? cityPath(c.slug) : null}
                           ctaLabel={t('destinations.exploreCity')}

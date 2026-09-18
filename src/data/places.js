@@ -16633,6 +16633,18 @@ export const cityPath = (slug) => {
 }
 /** Cities belonging to one country (Georgia covers every record without one). */
 export const citiesOfCountry = (country) => cities.filter((c) => countryOf(c) === country)
+
+// The cover a city's LISTING card shows (/<country>/cities and the featured
+// strip on the country landing). Both read it here so they cannot drift.
+//
+// These six Georgian cities have no photograph of their own: their registry
+// `image` is the shared georgia-home.jpg (a Sighnaghi view), which is wrong on
+// their cards. `image` stays put — it is still the page hero / social image —
+// so only the cards go text-only, until the owner supplies real photographs.
+// Kept as a list here, not a flag on each record, because the sitemap signature
+// hashes the record and editing it would restamp 84 URLs whose output is unchanged.
+const CARD_IMAGE_OPT_OUT = new Set(['ambrolauri', 'bolnisi', 'dmanisi', 'gurjaani', 'kvareli', 'oni'])
+export const cityCardImage = (c) => (CARD_IMAGE_OPT_OUT.has(c.slug) ? undefined : c.image)
 // Things-to-do guides. Georgia's live at /georgia/<slug>/things-to-do-in-<slug>
 // for both cities and regions — unchanged. Armenia's regions nest the guide
 // under the region page instead: /armenia/regions/<slug>/things-to-do, which
