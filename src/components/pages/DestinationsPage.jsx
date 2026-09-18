@@ -11,7 +11,7 @@ import { I18nContext } from '../../i18n/I18nContext'
 import useSEO from '../../hooks/useSEO'
 import { getSEO, hasSEO, seoCardName } from '../../data/seoData'
 import {
-  citiesOfCountry, cityCardImage, cityPath, countryBase, countryHubSocialImage, countryHubMeta,
+  citiesOfCountry, cityPath, countryBase, countryHubSocialImage, countryHubMeta,
   regionsHubPathFor, citiesHubPathFor, placesHubPathFor,
   DEFAULT_COUNTRY,
 } from '../../data/places'
@@ -215,7 +215,7 @@ export default function DestinationsPage({ country = DEFAULT_COUNTRY }) {
 
   // Published city guides for this country. Entries reclassified as a place to
   // visit (e.g. Gomismta) are not cities, so they are excluded from the strip.
-  // A city without a card cover (see cityCardImage) still gets its card, text-only.
+  // A city without an `image` still gets its card, text-only.
   //
   // A country that opts into `featuredByFlag` lists its `featured: true` cities
   // instead — published or not — so a scaffolded country can show which guides
@@ -411,7 +411,7 @@ export default function DestinationsPage({ country = DEFAULT_COUNTRY }) {
                         <DestinationCard
                           name={title}
                           description={cityDescription(c)}
-                          image={cityCardImage(c)}
+                          image={c.image}
                           imagePosition={c.imagePosition}
                           to={c.published ? cityPath(c.slug) : null}
                           ctaLabel={t('destinations.exploreCity')}

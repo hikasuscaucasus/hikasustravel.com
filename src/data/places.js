@@ -4158,7 +4158,7 @@ export const cities = [
   },
   {
     slug: 'ambrolauri', name: 'Ambrolauri', region: 'racha-lechkhumi', published: true,
-    seoKey: 'ambrolauri', contentKey: 'ambrolauri', image: '/images/files/georgia-home.jpg',
+    seoKey: 'ambrolauri', contentKey: 'ambrolauri', noHero: true, // TEMPORARY — no correct photo yet; `image` removed on purpose
     thingsToDo: {
       seoKey: 'thingsToDoAmbrolauri', contentKey: 'thingsToDoAmbrolauri', image: '/images/files/georgia-home.jpg',
       address: { addressRegion: 'Racha' },
@@ -7477,7 +7477,7 @@ export const cities = [
   },
   {
     slug: 'oni', name: 'Oni', region: 'racha-lechkhumi', published: true,
-    seoKey: 'oni', contentKey: 'oni', image: '/images/files/georgia-home.jpg',
+    seoKey: 'oni', contentKey: 'oni', noHero: true, // TEMPORARY — no correct photo yet; `image` removed on purpose
     thingsToDo: {
       seoKey: 'thingsToDoOni', contentKey: 'thingsToDoOni', image: '/images/files/georgia-home.jpg',
       address: { addressLocality: 'Oni' },
@@ -7486,7 +7486,7 @@ export const cities = [
   },
   {
     slug: 'gurjaani', name: 'Gurjaani', region: 'kakheti', published: true,
-    seoKey: 'gurjaani', contentKey: 'gurjaani', image: '/images/files/georgia-home.jpg',
+    seoKey: 'gurjaani', contentKey: 'gurjaani', noHero: true, // TEMPORARY — no correct photo yet; `image` removed on purpose
     thingsToDo: {
       seoKey: 'thingsToDoGurjaani', contentKey: 'thingsToDoGurjaani', image: '/images/files/georgia-home.jpg',
       address: { addressLocality: 'Gurjaani' },
@@ -7717,7 +7717,7 @@ export const cities = [
   },
   {
     slug: 'kvareli', name: 'Kvareli', region: 'kakheti', published: true,
-    seoKey: 'kvareli', contentKey: 'kvareli', image: '/images/files/georgia-home.jpg',
+    seoKey: 'kvareli', contentKey: 'kvareli', noHero: true, // TEMPORARY — no correct photo yet; `image` removed on purpose
     thingsToDo: {
       seoKey: 'thingsToDoKvareli', contentKey: 'thingsToDoKvareli', image: '/images/files/georgia-home.jpg',
       address: { addressLocality: 'Kvareli' },
@@ -8779,7 +8779,7 @@ export const cities = [
   },
   {
     slug: 'dmanisi', name: 'Dmanisi', region: 'kvemo-kartli', published: true,
-    seoKey: 'dmanisi', contentKey: 'dmanisi', image: '/images/files/georgia-home.jpg',
+    seoKey: 'dmanisi', contentKey: 'dmanisi', noHero: true, // TEMPORARY — no correct photo yet; `image` removed on purpose
     thingsToDo: {
       seoKey: 'thingsToDoDmanisi', contentKey: 'thingsToDoDmanisi', image: '/images/files/georgia-home.jpg',
       address: { addressLocality: 'Dmanisi' },
@@ -8788,7 +8788,7 @@ export const cities = [
   },
   {
     slug: 'bolnisi', name: 'Bolnisi', region: 'kvemo-kartli', published: true,
-    seoKey: 'bolnisi', contentKey: 'bolnisi', image: '/images/files/georgia-home.jpg',
+    seoKey: 'bolnisi', contentKey: 'bolnisi', noHero: true, // TEMPORARY — no correct photo yet; `image` removed on purpose
     thingsToDo: {
       seoKey: 'thingsToDoBolnisi', contentKey: 'thingsToDoBolnisi', image: '/images/files/georgia-home.jpg',
       address: { addressLocality: 'Bolnisi' },
@@ -16634,17 +16634,6 @@ export const cityPath = (slug) => {
 /** Cities belonging to one country (Georgia covers every record without one). */
 export const citiesOfCountry = (country) => cities.filter((c) => countryOf(c) === country)
 
-// The cover a city's LISTING card shows (/<country>/cities and the featured
-// strip on the country landing). Both read it here so they cannot drift.
-//
-// These six Georgian cities have no photograph of their own: their registry
-// `image` is the shared georgia-home.jpg (a Sighnaghi view), which is wrong on
-// their cards. `image` stays put — it is still the page hero / social image —
-// so only the cards go text-only, until the owner supplies real photographs.
-// Kept as a list here, not a flag on each record, because the sitemap signature
-// hashes the record and editing it would restamp 84 URLs whose output is unchanged.
-const CARD_IMAGE_OPT_OUT = new Set(['ambrolauri', 'bolnisi', 'dmanisi', 'gurjaani', 'kvareli', 'oni'])
-export const cityCardImage = (c) => (CARD_IMAGE_OPT_OUT.has(c.slug) ? undefined : c.image)
 // Things-to-do guides. Georgia's live at /georgia/<slug>/things-to-do-in-<slug>
 // for both cities and regions — unchanged. Armenia's regions nest the guide
 // under the region page instead: /armenia/regions/<slug>/things-to-do, which
