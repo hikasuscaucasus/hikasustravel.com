@@ -27,6 +27,27 @@ const GALLERY_SIZES = '(max-width:768px) 50vw, 300px'
 const srcSetFor = (base, widths, ext) =>
   widths.map((w) => `${asset(`${base}-${w}.${ext}`)} ${w}w`).join(', ')
 
+/* The expanded view wants the biggest rendition the pipeline built. `src` is
+   whatever width the tile's fallback happened to name — often the 768 rung — so
+   when the item ships a `widths` ladder the top rung is used instead. Items
+   without a ladder keep their own `src`.
+   `url` is an already-resolved URL used verbatim (no `asset()` prefixing).
+   ContentImageLightbox reads its sources off live DOM <img>/<source>
+   elements, which are absolute URLs; running those through asset() would
+   prepend the base path a second time. No gallery or hotel item carries this
+   key, so both existing callers resolve exactly as before. */
+const lightboxSrc = (image) => (
+  image.url
+    ? image.url
+    : image.base && image.widths?.length
+      ? asset(`${image.base}-${Math.max(...image.widths)}.webp`)
+      : asset(image.src)
+)
+
+const FADE_MS = 160
+const prefersReducedMotion = () =>
+  typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
+
 /**
  * The shared full-screen image viewer.
  *
@@ -49,10 +70,56 @@ export function GalleryLightbox({ images, startIndex, onClose, label, sideNav = 
   const [index, setIndex] = useState(startIndex)
   const closeBtnRef = useRef(null)
   const touchStartX = useRef(null)
+  const imgRef = useRef(null)
+  const fadeRef = useRef(null)
+  const warm = useRef(new Map())
+  const travel = useRef(0)
+  /* Index of the photo that has finished loading. Warming is keyed on this, not
+     on `index`, so the neighbours never compete with the photo the visitor is
+     actually waiting for — on a slow connection they would split its bandwidth. */
+  const [loadedIndex, setLoadedIndex] = useState(null)
 
   const count = images.length
-  const goPrev = useCallback(() => setIndex((i) => (i - 1 + count) % count), [count])
-  const goNext = useCallback(() => setIndex((i) => (i + 1) % count), [count])
+  const goPrev = useCallback(() => { travel.current = -1; setIndex((i) => (i - 1 + count) % count) }, [count])
+  const goNext = useCallback(() => { travel.current = 1; setIndex((i) => (i + 1) % count) }, [count])
+
+  /* Each step used to wait on a full-size download of a photo never fetched (the
+     tile only loads a small rung). Fetch and decode the neighbours early: prev,
+     next, and one further in the direction of travel. Same URL, same file, so no
+     quality change; anything outside that window is released. */
+  useEffect(() => {
+    if (count < 2 || loadedIndex === null) return
+    const wrap = (n) => ((n % count) + count) % count
+    const wanted = new Set([loadedIndex, wrap(loadedIndex + 1), wrap(loadedIndex - 1)])
+    if (travel.current) wanted.add(wrap(loadedIndex + 2 * travel.current))
+    const keep = new Set()
+    for (const i of wanted) {
+      const item = images[i]
+      if (!item) continue
+      const url = lightboxSrc(item)
+      keep.add(url)
+      if (warm.current.has(url)) continue
+      const img = new Image()
+      img.decoding = 'async'
+      img.src = url
+      img.decode?.().catch(() => {})
+      warm.current.set(url, img)
+    }
+    for (const url of warm.current.keys()) if (!keep.has(url)) warm.current.delete(url)
+  }, [loadedIndex, images, count])
+
+  /* A short fade-in once the new photo has actually loaded, so a swap reads as
+     soft rather than abrupt without ever holding the next photo back. It runs on
+     the element's own opacity, so there is no remount (no blank frame), a fresh
+     click cancels the previous fade instead of queueing behind it, and it is
+     skipped entirely for visitors who ask for reduced motion. */
+  const onImgLoad = () => {
+    setLoadedIndex(index)
+    const el = imgRef.current
+    if (!el || !el.animate || prefersReducedMotion()) return
+    fadeRef.current?.cancel()
+    fadeRef.current = el.animate([{ opacity: 0.55 }, { opacity: 1 }], { duration: FADE_MS, easing: 'ease-out' })
+  }
 
   useEffect(() => {
     const prevOverflow = document.body.style.overflow
@@ -83,20 +150,7 @@ export function GalleryLightbox({ images, startIndex, onClose, label, sideNav = 
      this key, so the tour gallery's alt is unchanged. */
   const alt = image.lightboxAlt || caption || (image.description || '')
 
-  /* The expanded view is the one place that wants the biggest rendition the
-     pipeline built. `src` is whatever width the tile's fallback happened to
-     name — often the 768 rung — so when the item ships a `widths` ladder the
-     top rung is used instead. Items without a ladder keep their own `src`. */
-  /* `url` is an already-resolved URL used verbatim (no `asset()` prefixing).
-     ContentImageLightbox reads its sources off live DOM <img>/<source>
-     elements, which are absolute URLs; running those through asset() would
-     prepend the base path a second time. No gallery or hotel item carries this
-     key, so both existing callers resolve exactly as before. */
-  const fullSrc = image.url
-    ? image.url
-    : image.base && image.widths?.length
-      ? asset(`${image.base}-${Math.max(...image.widths)}.webp`)
-      : asset(image.src)
+  const fullSrc = lightboxSrc(image)
 
   const onTouchStart = (e) => { touchStartX.current = e.touches[0].clientX }
   const onTouchEnd = (e) => {
@@ -155,8 +209,11 @@ export function GalleryLightbox({ images, startIndex, onClose, label, sideNav = 
         </button>
       )}
       <img
+        ref={imgRef}
         src={fullSrc}
         alt={alt}
+        decoding="async"
+        onLoad={onImgLoad}
         className="gallery-lightbox__img"
         onClick={(e) => e.stopPropagation()}
         onTouchStart={onTouchStart}
