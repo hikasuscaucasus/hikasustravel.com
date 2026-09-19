@@ -592,13 +592,9 @@ it: 9 tours currently do (1 group tour, 8 private tours). The prior four-photo s
 (unsourced `UNVERIFIED` files, one held with no confident category) was fully
 replaced, not appended.
 
-Four of the six supplied photos were used, keeping this hotel at the same four-image
-convention most records in this file follow, and — unlike the prior set — filling the
-"exterior" gap flagged on 2026-08-29. The swimming-pool and front-yard/garden photos
-were not used: the new exterior photo already shows the lit pool and terrace, and
-exterior/lobby/room/bathroom is the dominant four-image pattern across this registry.
-Converted to WebP; all source files were already under the 1600px long-edge cap, so
-none were resized.
+Four of the six supplied photos were used initially, filling the "exterior" gap
+flagged on 2026-08-29. Converted to WebP; all source files were already under the
+1600px long-edge cap, so none were resized.
 
 | Hotel | Category | Local file | Size |
 |---|---|---|---|
@@ -612,9 +608,17 @@ Hotel & Wine Cellar ARGE's "exterior" gap (noted above as still outstanding on
 2026-08-29 audit (`hotel-arge-3.jpg`, "could not classify with confidence") is also
 retired by this replacement — the new room photo is confidently categorised.
 
-Not used, retained on disk outside the repo in the owner's own folder (not copied into
-`public/images/hotels/`): `Swimming pool.jpg`, `Front Yard.png`.
-
 The four prior files (`hotel-arge.jpg`, `-2.jpg`, `-3.jpg`, `-4.jpg`) were superseded by
 this change and, once no other reference to them remained in the repository, deleted
 from `public/images/hotels/` on 2026-09-19 with owner confirmation.
+
+**Follow-up, same day:** the owner asked for the remaining two supplied photos
+(front yard, swimming pool) to be added as well, so the gallery now runs to six
+images — front yard resized to a 1200px long edge (the source PNG's foliage detail
+made the full 1536px WebP unusually large at 506 KB; 1200px brings it in line with
+this file's other garden/terrace shots).
+
+| Hotel | Category | Local file | Size |
+|---|---|---|---|
+| Hotel & Wine Cellar ARGE | front yard | `hotel-arge-5.webp` | 1200x800, 312 KB |
+| Hotel & Wine Cellar ARGE | swimming pool | `hotel-arge-6.webp` | 1024x683, 75 KB |
