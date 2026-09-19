@@ -94,11 +94,14 @@ const hotelData = {
   // spelling everywhere. Facts below are the verified set; only confirmed
   // details are listed. The old spelling still resolves via `hotelAliases`.
   'Hotel & Wine Cellar ARGE': {
+    // Owner-supplied photos (2026-09-19, see docs/hotel-image-sources.md)
+    // replaced the earlier unsourced set and add the exterior shot this
+    // record previously lacked.
     images: [
-      { src: '/images/hotels/hotel-arge.jpg', alt: 'Guest room with balcony doors at Hotel & Wine Cellar ARGE in Telavi, Georgia', category: 'Room' },
-      { src: '/images/hotels/hotel-arge-2.jpg', alt: 'Hotel ARGE lobby and lounge area in Telavi, Georgia', category: 'Lounge' },
-      { src: '/images/hotels/hotel-arge-3.jpg', alt: 'Hotel ARGE guest room with vineyard views in Kakheti, Georgia' },
-      { src: '/images/hotels/hotel-arge-4.jpg', alt: 'Hotel ARGE bathroom with modern amenities in Telavi, Georgia', category: 'Bathroom' },
+      { src: '/images/hotels/hotel-arge.webp', alt: 'Exterior of Hotel & Wine Cellar ARGE with poolside terrace at night, Telavi, Georgia', category: 'Exterior' },
+      { src: '/images/hotels/hotel-arge-2.webp', alt: 'Lobby lounge with wood-burning stove at Hotel & Wine Cellar ARGE in Telavi, Georgia', category: 'Lobby' },
+      { src: '/images/hotels/hotel-arge-3.webp', alt: 'Standard guest room at Hotel & Wine Cellar ARGE in Telavi, Georgia', category: 'Room' },
+      { src: '/images/hotels/hotel-arge-4.webp', alt: 'Guest bathroom with modern amenities at Hotel & Wine Cellar ARGE in Telavi, Georgia', category: 'Bathroom' },
     ],
     stars: null,
     description: 'A vineyard hotel in the village of Ruispiri, a few kilometres from Telavi, welcoming guests since 2018. Hotel Arge has its own wine cellar for tastings, an outdoor pool and a garden restaurant, with most rooms opening onto balconies that look out over the Alazani Valley and the Greater Caucasus.',

@@ -578,3 +578,45 @@ The four prior files (`park-hotel-tsinandali.jpg`, `-2.jpg`, `-3.jpg`, `-4.jpg`)
 superseded by this change. They were left in place pending owner/operator confirmation
 that they may be deleted, since local deletion of asset files was blocked by this
 session's tooling; no other reference to them remains in the repository.
+
+---
+
+## 2026-09-19 — Hotel & Wine Cellar ARGE (owner-supplied)
+
+The owner supplied six of the property's own photographs directly, dropped in
+`Images for tours/Hotels/Hotel & Wine Cellar ARGE/` outside the repo (exterior,
+lobby, guest room, bathroom, swimming pool, front yard/garden). Each was viewed
+individually before use. This is a shared registry entry in `hotelData.js`
+(`Hotel & Wine Cellar ARGE`, also resolved from the older `Hotel Arge` spelling via
+`hotelAliases`), so replacing its `images[]` once propagates to every tour that names
+it: 9 tours currently do (1 group tour, 8 private tours). The prior four-photo set
+(unsourced `UNVERIFIED` files, one held with no confident category) was fully
+replaced, not appended.
+
+Four of the six supplied photos were used, keeping this hotel at the same four-image
+convention most records in this file follow, and — unlike the prior set — filling the
+"exterior" gap flagged on 2026-08-29. The swimming-pool and front-yard/garden photos
+were not used: the new exterior photo already shows the lit pool and terrace, and
+exterior/lobby/room/bathroom is the dominant four-image pattern across this registry.
+Converted to WebP; all source files were already under the 1600px long-edge cap, so
+none were resized.
+
+| Hotel | Category | Local file | Size |
+|---|---|---|---|
+| Hotel & Wine Cellar ARGE | exterior | `hotel-arge.webp` | 1024x683, 120 KB |
+| Hotel & Wine Cellar ARGE | lobby | `hotel-arge-2.webp` | 1024x683, 145 KB |
+| Hotel & Wine Cellar ARGE | room | `hotel-arge-3.webp` | 1024x683, 54 KB |
+| Hotel & Wine Cellar ARGE | bathroom | `hotel-arge-4.webp` | 1024x683, 22 KB |
+
+Hotel & Wine Cellar ARGE's "exterior" gap (noted above as still outstanding on
+2026-08-29) is closed by this pass. The uncategorised third photo noted in the
+2026-08-29 audit (`hotel-arge-3.jpg`, "could not classify with confidence") is also
+retired by this replacement — the new room photo is confidently categorised.
+
+Not used, retained on disk outside the repo in the owner's own folder (not copied into
+`public/images/hotels/`): `Swimming pool.jpg`, `Front Yard.png`.
+
+The four prior files (`hotel-arge.jpg`, `-2.jpg`, `-3.jpg`, `-4.jpg`) are superseded by
+this change. They were left in place pending owner/operator confirmation that they may
+be deleted, since local deletion of asset files was blocked by this session's tooling;
+no other reference to them remains in the repository.
