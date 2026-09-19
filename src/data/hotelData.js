@@ -517,11 +517,15 @@ const hotelData = {
     ],
   },
   'Park Hotel Tsinandali': {
+    // Owner-supplied photos (2026-09-19, see docs/hotel-image-sources.md)
+    // replaced the earlier unsourced set. No lobby shot exists, so the
+    // terrace fills that slot — the same substitution already used for
+    // Boutique Hotel Borjomi Verde.
     images: [
-      { src: '/images/hotels/park-hotel-tsinandali-2.jpg', alt: 'Exterior terrace at Park Hotel Tsinandali in Kakheti, Georgia', category: 'Exterior' },
-      { src: '/images/hotels/park-hotel-tsinandali-3.jpg', alt: 'Standard guest room at Park Hotel Tsinandali in Kakheti, Georgia', category: 'Room' },
-      { src: '/images/hotels/park-hotel-tsinandali-4.jpg', alt: 'Guest bathroom at Park Hotel Tsinandali in Kakheti, Georgia', category: 'Bathroom' },
-      { src: '/images/hotels/park-hotel-tsinandali.jpg', alt: 'Indoor swimming pool at Park Hotel Tsinandali in Kakheti, Georgia', category: 'Indoor pool' },
+      { src: '/images/hotels/park-hotel-tsinandali.webp', alt: 'Exterior of Park Hotel Tsinandali in Kakheti, Georgia', category: 'Exterior' },
+      { src: '/images/hotels/park-hotel-tsinandali-2.webp', alt: 'Outdoor terrace with seating at Park Hotel Tsinandali in Kakheti, Georgia', category: 'Terrace' },
+      { src: '/images/hotels/park-hotel-tsinandali-3.webp', alt: 'Standard guest room at Park Hotel Tsinandali in Kakheti, Georgia', category: 'Room' },
+      { src: '/images/hotels/park-hotel-tsinandali-4.webp', alt: 'Guest bathroom at Park Hotel Tsinandali in Kakheti, Georgia', category: 'Bathroom' },
     ],
     stars: 4,
     description: 'A modern and comfortable hotel set amid the lush greenery of the Tsinandali area in Kakheti. Park Hotel Tsinandali offers a peaceful retreat with well-appointed rooms, a lovely garden terrace, and easy access to the region\'s famous wineries and historic estates.',

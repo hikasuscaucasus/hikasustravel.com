@@ -537,3 +537,44 @@ closed by this pass.
 **Future workflow:** for any new tour or hotel entry, check
 `Images for tours/Hotels/` for owner-supplied photos FIRST, before falling back to the
 official-site / press-kit route this manifest otherwise documents.
+
+---
+
+## 2026-09-19 — Park Hotel Tsinandali (owner-supplied)
+
+The owner supplied six of the property's own photographs directly, dropped in
+`Images for tours/Hotels/Park Hotel Tsinandali/` outside the repo (exterior, terrace,
+guest room, bathroom, indoor pool, outdoor pool). Each was viewed individually before
+use. This is a shared registry entry in `hotelData.js` (`Park Hotel Tsinandali`, not to
+be confused with the separate `Tsinandali Estate, A Radisson Collection Hotel` record),
+so replacing its `images[]` once propagates to every tour that names it: 7 private
+tours currently do. The prior four-photo set (unsourced `UNVERIFIED` files, order
+already corrected on 2026-08-29 so the pool no longer led) was fully replaced, not
+appended.
+
+Four of the six supplied photos were used, keeping this hotel at the same four-image
+convention most records in this file follow. The property has no lobby of its own —
+noted as a gap on 2026-08-29 — so its terrace photo fills that slot, the same
+substitution already accepted for Boutique Hotel Borjomi Verde. The two pool photos
+(indoor and outdoor) were not used: the hotel's description and amenities list make no
+mention of a pool, and exterior/terrace/room/bathroom is a stronger guest-oriented set
+within a four-image gallery. Converted to WebP; all source files were already under the
+1600px long-edge cap, so none were resized.
+
+| Hotel | Category | Local file | Size |
+|---|---|---|---|
+| Park Hotel Tsinandali | exterior | `park-hotel-tsinandali.webp` | 1024x683, 174 KB |
+| Park Hotel Tsinandali | terrace | `park-hotel-tsinandali-2.webp` | 1024x683, 116 KB |
+| Park Hotel Tsinandali | room | `park-hotel-tsinandali-3.webp` | 1200x675, 97 KB |
+| Park Hotel Tsinandali | bathroom | `park-hotel-tsinandali-4.webp` | 1024x683, 66 KB |
+
+Park Hotel Tsinandali's "lobby" gap (noted above as still outstanding on 2026-08-29) is
+closed by this pass via the terrace substitute.
+
+Not used, retained on disk outside the repo in the owner's own folder (not copied into
+`public/images/hotels/`): `Indoor Pool.jpg`, `Outdoor Pool.jpg`.
+
+The four prior files (`park-hotel-tsinandali.jpg`, `-2.jpg`, `-3.jpg`, `-4.jpg`) are
+superseded by this change. They were left in place pending owner/operator confirmation
+that they may be deleted, since local deletion of asset files was blocked by this
+session's tooling; no other reference to them remains in the repository.
