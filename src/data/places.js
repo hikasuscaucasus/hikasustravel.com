@@ -16014,10 +16014,11 @@ export const sites = [
   },
   {
     slug: 'baku-boulevard', name: 'Baku Boulevard',
-    parentType: 'city', parent: 'baku', published: false,
+    parentType: 'city', parent: 'baku', published: true,
     seoKey: 'bakuBoulevard', contentKey: 'bakuBoulevard',
-    noHero: true, noAutolink: true,
+    noAutolink: true,
     image: '/images/files/baku-boulevard-flame-towers-azerbaijan-1536.webp',
+    imageAvif: '/images/files/baku-boulevard-flame-towers-azerbaijan-1536.avif',
   },
   {
     slug: 'carpet-museum', name: 'Azerbaijan Carpet Museum',
