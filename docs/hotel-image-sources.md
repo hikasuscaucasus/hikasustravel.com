@@ -574,10 +574,9 @@ closed by this pass via the terrace substitute.
 Not used, retained on disk outside the repo in the owner's own folder (not copied into
 `public/images/hotels/`): `Indoor Pool.jpg`, `Outdoor Pool.jpg`.
 
-The four prior files (`park-hotel-tsinandali.jpg`, `-2.jpg`, `-3.jpg`, `-4.jpg`) are
-superseded by this change. They were left in place pending owner/operator confirmation
-that they may be deleted, since local deletion of asset files was blocked by this
-session's tooling; no other reference to them remains in the repository.
+The four prior files (`park-hotel-tsinandali.jpg`, `-2.jpg`, `-3.jpg`, `-4.jpg`) were
+superseded by this change and, once no other reference to them remained in the
+repository, deleted from `public/images/hotels/` on 2026-09-19 with owner confirmation.
 
 ---
 
@@ -616,7 +615,6 @@ retired by this replacement — the new room photo is confidently categorised.
 Not used, retained on disk outside the repo in the owner's own folder (not copied into
 `public/images/hotels/`): `Swimming pool.jpg`, `Front Yard.png`.
 
-The four prior files (`hotel-arge.jpg`, `-2.jpg`, `-3.jpg`, `-4.jpg`) are superseded by
-this change. They were left in place pending owner/operator confirmation that they may
-be deleted, since local deletion of asset files was blocked by this session's tooling;
-no other reference to them remains in the repository.
+The four prior files (`hotel-arge.jpg`, `-2.jpg`, `-3.jpg`, `-4.jpg`) were superseded by
+this change and, once no other reference to them remained in the repository, deleted
+from `public/images/hotels/` on 2026-09-19 with owner confirmation.
