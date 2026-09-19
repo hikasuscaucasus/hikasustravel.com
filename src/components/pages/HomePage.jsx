@@ -32,11 +32,11 @@ const HOMEPAGE_BLOG_SLUGS = [
 // City/Region type label (typeKey) is translated.
 const EXPLORE_CARDS = [
   { to: '/georgia/tbilisi', image: '/images/files/old-town-tbilisi-georgia-1200.webp', name: 'Tbilisi', typeKey: 'pricing.city' },
-  { to: '/georgia/regions/kakheti', image: '/images/files/Sighnaghi.jpg', name: 'Kakheti', typeKey: 'search.typeRegion' },
-  { to: '/georgia/kazbegi', image: '/images/files/gergeti-trinity-church-kazbegi-georgia-1200.webp', name: 'Kazbegi (Stepantsminda)', typeKey: 'pricing.city' },
-  { to: '/georgia/regions/svaneti', image: '/images/files/svaneti-caucasus-mountains-georgia-1200.webp', name: 'Svaneti', typeKey: 'search.typeRegion' },
   { to: '/armenia/yerevan', image: '/images/files/republic-square-yerevan-armenia-1200.webp', name: 'Yerevan', typeKey: 'pricing.city' },
   { to: '/azerbaijan/baku', image: '/images/files/baku-flame-towers-azerbaijan-1200.webp', name: 'Baku', typeKey: 'pricing.city' },
+  { to: '/georgia/regions/svaneti', image: '/images/files/svaneti-caucasus-mountains-georgia-1200.webp', name: 'Svaneti', typeKey: 'search.typeRegion' },
+  { to: '/georgia/regions/kakheti', image: '/images/files/Sighnaghi.jpg', name: 'Kakheti', typeKey: 'search.typeRegion' },
+  { to: '/georgia/kazbegi', image: '/images/files/gergeti-trinity-church-kazbegi-georgia-1200.webp', name: 'Kazbegi (Stepantsminda)', typeKey: 'pricing.city' },
 ]
 
 // Same fallback helper BlogPage.jsx/BlogArticlePage.jsx use: a ui.json key
