@@ -1,5 +1,4 @@
 import { useContext } from 'react'
-import HeroSection from '../shared/HeroSection'
 import FadeUp from '../shared/FadeUp'
 import { I18nContext } from '../../i18n/I18nContext'
 import useLang from '../../i18n/useLang'
@@ -15,7 +14,9 @@ export default function TermsPage() {
 
   return (
     <>
-      <HeroSection image="/images/files/georgia-tour-13.jpg" title={page.heroTitle} />
+      <section className="dest-title-band">
+        <h1>{page.heroTitle}</h1>
+      </section>
       <section className="page-items terms-and-conditions">
         <FadeUp>
           <div dangerouslySetInnerHTML={{ __html: page.content }} />
