@@ -16129,16 +16129,19 @@ export const sites = [
   },
   {
     slug: 'shamakhi-juma-mosque', name: 'Shamakhi Juma Mosque',
-    parentType: 'region', parent: 'mountainous-shirvan', published: false,
+    parentType: 'region', parent: 'mountainous-shirvan', published: true,
     seoKey: 'shamakhiJumaMosque', contentKey: 'shamakhiJumaMosque',
-    noHero: true, noAutolink: true,
+    noAutolink: true,
     // Reuses Mountainous Shirvan's own region hero photo — the same mosque.
     image: '/images/files/shamakhi-juma-mosque-azerbaijan-1564.webp',
+    imageAvif: '/images/files/shamakhi-juma-mosque-azerbaijan-1564.avif',
   },
   {
     slug: 'yeddi-gumbez-mausoleum', name: 'Yeddi Gumbez Mausoleum',
-    parentType: 'region', parent: 'mountainous-shirvan', published: false,
+    parentType: 'region', parent: 'mountainous-shirvan', published: true,
     seoKey: 'yeddiGumbezMausoleum', contentKey: 'yeddiGumbezMausoleum',
+    // No genuine Yeddi Gumbez photograph exists in the asset library yet —
+    // noHero rather than reusing the (unrelated) Juma Mosque photo.
     noHero: true, noAutolink: true,
   },
   {
