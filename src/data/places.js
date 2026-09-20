@@ -16076,8 +16076,9 @@ export const sites = [
   },
   {
     slug: 'yanar-dag', name: 'Yanar Dag',
-    parentType: 'region', parent: 'absheron', published: false,
+    parentType: 'region', parent: 'absheron', published: true,
     seoKey: 'yanarDag', contentKey: 'yanarDag',
+    // No genuine Yanar Dag photograph exists in the asset library yet.
     noHero: true, noAutolink: true,
   },
   {
