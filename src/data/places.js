@@ -15992,6 +15992,13 @@ export const sites = [
     noHero: true, noAutolink: true,
   },
   {
+    slug: 'caravanserai', name: 'Sheki Caravanserai',
+    parentType: 'city', parent: 'sheki', published: true,
+    seoKey: 'shekiCaravanserai', contentKey: 'shekiCaravanserai',
+    // No Sheki imagery of any kind exists in the asset library yet.
+    noHero: true, noAutolink: true,
+  },
+  {
     slug: 'multani-caravanserai', name: 'Multani Caravanserai',
     // Brief specified /azerbaijan/baku/icherisheher/multani-caravanserai, but
     // sitePath() only supports one level of nesting under a city/region/place
