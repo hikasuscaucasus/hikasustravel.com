@@ -1314,10 +1314,74 @@
     "description": "Katedrála Svetitskhoveli v Mtskhetě v Gruzii: „mateřská katedrála\" z 11. století, místo uložení Kristova roucha, památka UNESCO a srdce gruzínské víry.",
     "keywords": "katedrála Svetitskhoveli, Svetitskhoveli, Mtskheta, mateřská katedrála, Kristovo roucho, životodárný sloup, Melkisedek I., Jiří I., Arsukidze, svatá Nino, Eliáš, Sidonia, Bagrationi, Erekle II., UNESCO Mtskheta, Jvari, Samtavro, gruzínská pravoslavná katedrála, druhý Jeruzalém, co vidět u Tbilisi, výlet do Mtskhety"
   },
+  "bakuBoulevard": {
+    "title": "Baku Boulevard, Baku | Kaspická promenáda a Muzeum koberců",
+    "description": "Baku Boulevard: promenáda u Kaspického moře s Ázerbájdžánským národním muzeem koberců, Malými Benátkami, Baku Eye a nejhezčí procházkou při západu slunce ve městě."
+  },
   "russiaGeorgiaFriendshipMonument": {
     "title": "Panorama Gudauri, Gudauri",
     "description": "Panorama Gudauri: sovětský mozaikový pomník z roku 1983 a vyhlídka nad Ďáblovým údolím na Gruzínské vojenské cestě.",
     "keywords": "Gudauri Panorama, Panorama Gudauri, Gudauri, Gruzínská vojenská cesta, sovětské mozaiky, Zurab Cereteli, Giorgi Čachava, Georgijevská smlouva, Erekle II., Ďáblovo údolí, Aragvi, průsmyk Jvari, paragliding Gudauri, vyhlídka Kavkaz, z Tbilisi do Kazbegi, co vidět u Gudauri"
+  },
+  "shamakhiJumaMosque": {
+    "title": "Mešita Juma v Šamachy | Nejstarší mešita Ázerbájdžánu, založená roku 743",
+    "description": "Objevte mešitu Juma v Šamachy: podle tradice založenou roku 743, po staletích zemětřesení znovu postavenou, s neobvyklým třídílným modlitebním sálem a restaurováním v roce 2013.",
+    "keywords": "mešita Juma Šamachy, nejstarší mešita Ázerbájdžánu, Šamachy, Šírván, rok 743, Gasim bey Hajibababayov, Zivar bey Ahmadbeyov, Józef Płoszko, Yeddi Gumbez, mauzoleum Diri Baba, šírvánšáhové, Horský Šírván"
+  },
+  "yeddiGumbezMausoleum": {
+    "title": "Mauzoleum Yeddi Gumbez | Královský hřbitov šamachského chanátu",
+    "description": "Navštivte Yeddi Gumbez, hřbitov Sedmi kupolí u Šamachy s hrobem Mustafy chána, posledního vládce Šírvánského chanátu, s širokým výhledem na okolní kopce.",
+    "keywords": "Yeddi Gumbez, Sedm kupolí, Šamachy, Mustafa chán, Šírvánský chanát, Ustad Taghi, Mirza Alakbar Sabir, mešita Juma Šamachy, šírvánšáhové, Horský Šírván, královský hřbitov Ázerbájdžán"
+  },
+  "maidenTower": {
+    "title": "Panenská věž, Baku | Tajemná památka Icherisheheru",
+    "description": "Navštivte Panenskou věž v bakuském starém městě: spornou stavbu ze 12. století s nejasným původem, malým muzeem a jedním z nejlepších výhledů na Icherisheher.",
+    "keywords": "Panenská věž, Qız Qalası, Icherisheher, staré město Baku, UNESCO Baku, co vidět v Baku"
+  },
+  "shirvanshahsPalace": {
+    "title": "Palác Šírvánšáhů, Baku | Středověký královský komplex UNESCO",
+    "description": "Objevte Palác Šírvánšáhů: bakuský královský komplex ze 15. století s Divankhanou, královským mauzoleem, palácovou mešitou a nejkrásnější středověkou architekturou Ázerbájdžánu.",
+    "keywords": "Palác Šírvánšáhů, Divankhana, šírvánšáhové, Icherisheher, staré město Baku, UNESCO Baku"
+  },
+  "flameTowers": {
+    "title": "Ohnivé věže, Baku | Moderní symbol ázerbájdžánské siluety",
+    "description": "Prohlédněte si bakuské Ohnivé věže: tři zakřivené skleněné mrakodrapy dokončené v roce 2012, v noci osvětlené animovanými LED plameny, nejlépe viditelné z Highland Parku.",
+    "keywords": "Ohnivé věže, silueta Baku, Highland Park, co vidět v Baku, moderní Baku, Země ohně"
+  },
+  "heydarAliyevCenter": {
+    "title": "Centrum Hejdara Alijeva, Baku | Ikonická budova Zahy Hadid",
+    "description": "Objevte Centrum Hejdara Alijeva: oceňovanou plynule bílou budovu Zahy Hadid v Baku s muzeem a výstavami o ázerbájdžánské historii a designu.",
+    "keywords": "Centrum Hejdara Alijeva, Zaha Hadid, architektura Baku, muzeum Baku, co vidět v Baku"
+  },
+  "gobustanMudVolcanoes": {
+    "title": "Bahenní sopky Gobustan | Bublající krajina Ázerbájdžánu",
+    "description": "Navštivte bahenní sopky Gobustan u Baku: jednu z nejhustších koncentrací tohoto vzácného přírodního jevu na světě, snadno kombinovatelnou s nalezištěm skalního umění Gobustan.",
+    "keywords": "bahenní sopky Gobustan, Gobustan, bahenní sopky Ázerbájdžán, výlety z Baku, skalní umění Gobustan"
+  },
+  "ateshgahFireTempleBaku": {
+    "title": "Chrám ohně Ateshgah, Baku | Historické poutní místo v Surachani",
+    "description": "Objevte Chrám ohně Ateshgah v Surachani: pětiúhelníkový ohrazený areál postavený hinduistickými a sikhskými poutníky kolem kdysi přírodního plamene, na ázerbájdžánském předběžném seznamu UNESCO.",
+    "keywords": "Chrám ohně Ateshgah, Surachani, poloostrov Apšeron, zoroastrijský chrám ohně Baku, co vidět v Baku"
+  },
+  "yanarDag": {
+    "title": "Yanar Dag, Baku | Ázerbájdžánská přírodní hořící hora",
+    "description": "Navštivte Yanar Dag: skutečně přírodní plynový plamen na poloostrově Apšeron, nejlépe kombinovaný s Chrámem ohně Ateshgah při polodenním výletu z Baku.",
+    "keywords": "Yanar Dag, hořící hora Ázerbájdžán, poloostrov Apšeron, přírodní plynový plamen, Mammadli, výlety z Baku, Ateshgah"
+  },
+  "icherisheher": {
+    "title": "Icherisheher, Baku | Průvodce památkovým starým městem UNESCO",
+    "description": "Objevte Icherisheher: živoucí staré město Baku zapsané na seznamu UNESCO, s Panenskou věží, Palácem Šírvánšáhů, historickými karavanseraji, mešitami a staletými uličkami.",
+    "keywords": "Icherisheher, staré město Baku, Opevněné město Baku, UNESCO Baku, Panenská věž, Palác Šírvánšáhů, co vidět v Baku"
+  },
+  "multaniCaravanserai": {
+    "title": "Karavanseráj Multani, Baku | Středověký obchod v Icherisheher",
+    "description": "Objevte karavanseráj Multani ze 14. století v bakuském starém městě zapsaném na seznamu UNESCO, postavený pro obchodníky z Multanu v Pákistánu, a historické vazby Baku na jižní Asii.",
+    "keywords": "karavanseráj Multani, Icherisheher, staré město Baku, Multan Pákistán, UNESCO Baku, středověký obchod, co vidět v Baku"
+  },
+  "palaceOfTheShekiKhans": {
+    "title": "Palác şekijských chánů | Okna šebeke a fresky UNESCO",
+    "description": "Objevte Palác şekijských chánů: propracovaná vitrážová okna šebeke, malované bitevní scény a řemeslo chanátu z 18. století v şekijské lokalitě UNESCO.",
+    "keywords": "Palác şekijských chánů, Şekijský chánův palác, okna šebeke, Şeki UNESCO, ázerbájdžánská architektura chanátu"
   },
   "kutaisi": {
     "title": "Kutaisi, Gruzie: Bagrati, Gelati a kaňony",
@@ -1520,9 +1584,24 @@
     "keywords": "cestovní blog Gruzie, cestovní tipy Gruzie, průvodce Gruzie, co dělat v Gruzii, průvodce Tbilisi"
   },
   "embassies": {
-    "title": "Ambasády v Gruzii – Nouzové Kontakty a Adresy | Hikasus Travel",
-    "description": "Najděte svou ambasádu v Tbilisi, Gruzie. Nouzové kontakty, adresy, telefony a interaktivní mapa ambasád a konzulátů.",
-    "keywords": "ambasády Tbilisi, konzuláty Gruzie, ambasáda Gruzie, nouzové kontakty Tbilisi, mapa ambasád Gruzie"
+    "title": "Ambasády v Gruzii, Arménii a Ázerbájdžánu | Hikasus Travel",
+    "description": "Najděte informace o ambasádách a diplomatických misích v Gruzii, Arménii a Ázerbájdžánu s adresáři pro jednotlivé země a aktuálními kontaktními údaji.",
+    "keywords": "ambasády Kavkaz, ambasády Gruzie, ambasády Arménie, ambasády Ázerbájdžán, ambasáda Tbilisi, ambasáda Jerevan, ambasáda Baku"
+  },
+  "embassiesGeorgia": {
+    "title": "Ambasády v Gruzii | Kontaktní Údaje a Adresy",
+    "description": "Adresář zahraničních ambasád a diplomatických misí v Tbilisi, Gruzie: adresy, telefonní čísla, e-mailové adresy, webové stránky a otevírací doba z oficiálních zdrojů.",
+    "keywords": "ambasády Tbilisi, ambasády Gruzie, konzuláty Gruzie, adresa ambasády Gruzie, zahraniční ambasády Tbilisi"
+  },
+  "embassiesArmenia": {
+    "title": "Ambasády v Arménii | Kontaktní Údaje a Adresy",
+    "description": "Adresář zahraničních ambasád a diplomatických misí v Jerevanu, Arménie: adresy, telefonní čísla, e-mailové adresy, webové stránky a otevírací doba z oficiálních zdrojů.",
+    "keywords": "ambasády Jerevan, ambasády Arménie, konzuláty Arménie, adresa ambasády Arménie, zahraniční ambasády Jerevan"
+  },
+  "embassiesAzerbaijan": {
+    "title": "Ambasády v Ázerbájdžánu | Kontaktní Údaje a Adresy",
+    "description": "Adresář zahraničních ambasád a diplomatických misí v Baku, Ázerbájdžán: adresy, telefonní čísla, e-mailové adresy a webové stránky z oficiálních zdrojů.",
+    "keywords": "ambasády Baku, ambasády Ázerbájdžán, konzuláty Ázerbájdžán, adresa ambasády Ázerbájdžán, zahraniční ambasády Baku"
   },
   "notFound": {
     "title": "Stránka Nenalezena – Hikasus Travel",

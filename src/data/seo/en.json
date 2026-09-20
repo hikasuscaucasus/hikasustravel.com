@@ -1314,10 +1314,75 @@
     "description": "Svetitskhoveli Cathedral in Mtskheta, Georgia: the 11th-century \"Mother Cathedral,\" burial site of Christ's robe, a UNESCO monument and the heart of Georgian faith.",
     "keywords": "Svetitskhoveli Cathedral, Svetitskhoveli, Mtskheta, Mother Cathedral, robe of Christ, life-giving pillar, Melkisedek I, George I, Arsukidze, St. Nino, Elias, Sidonia, Bagrationi, Erekle II, UNESCO Mtskheta, Jvari, Samtavro, Georgian Orthodox cathedral, second Jerusalem, things to do near Tbilisi, Mtskheta day trip"
   },
+  "bakuBoulevard": {
+    "title": "Baku Boulevard | Caspian Promenade, Carpet Museum & Little Venice",
+    "description": "Explore Baku Boulevard: the Caspian waterfront promenade, the Azerbaijan National Carpet Museum, Little Venice, the Baku Eye, and the city's best sunset walk.",
+    "keywords": "Baku Boulevard, Seaside National Park Baku, Denizkenari Milli Park, Azerbaijan National Carpet Museum, Franz Janz, Little Venice Baku, International Mugham Center, Baku Eye, Deniz Mall, National Flag Square, Baku Crystal Hall, Surakhani Ship Museum, YARAT Contemporary Art Space, Caspian Sea promenade, things to do in Baku, Baku sunset walk"
+  },
   "russiaGeorgiaFriendshipMonument": {
     "title": "Gudauri Panorama | Georgia Travel Guide | Hikasus Travel",
     "description": "Gudauri Panorama: a 1983 Soviet mosaic monument and clifftop viewpoint over the Devil's Valley on the Georgian Military Highway.",
     "keywords": "Gudauri Panorama, Panorama Gudauri, Gudauri, Georgian Military Highway, Soviet mosaics, Zurab Tsereteli, Giorgi Chakhava, Treaty of Georgievsk, Erekle II, Devil's Valley, Aragvi, Jvari Pass, paragliding Gudauri, viewpoint Caucasus, Tbilisi to Kazbegi, things to do near Gudauri"
+  },
+  "shamakhiJumaMosque": {
+    "title": "Shamakhi Juma Mosque | Azerbaijan's Oldest Mosque, Founded 743 AD",
+    "description": "Discover Shamakhi Juma Mosque: traditionally founded in 743 AD, rebuilt after centuries of earthquakes, with an unusual three-part prayer hall and 2013 restoration.",
+    "keywords": "Shamakhi Juma Mosque, oldest mosque in Azerbaijan, Shamakhi, Shirvan, 743 AD, Gasim bey Hajibababayov, Zivar bey Ahmadbeyov, Józef Płoszko, Yeddi Gumbez, Diri Baba Mausoleum, Shirvanshahs, Mountainous Shirvan, things to do in Shamakhi"
+  },
+  "yeddiGumbezMausoleum": {
+    "title": "Yeddi Gumbez Mausoleum | Shamakhi's Royal Khanate Cemetery",
+    "description": "Visit Yeddi Gumbez, the Seven Domes cemetery outside Shamakhi holding the tomb of Mustafa Khan, last ruler of the Shirvan Khanate, with sweeping hillside views.",
+    "keywords": "Yeddi Gumbez, Seven Domes, Shamakhi, Mustafa Khan, Shirvan Khanate, Ustad Taghi, Mirza Alakbar Sabir, Shamakhi Juma Mosque, Shirvanshahs, Mountainous Shirvan, royal cemetery Azerbaijan"
+  },
+  "maidenTower": {
+    "title": "Maiden Tower, Baku | Icherisheher's Mysterious Landmark",
+    "description": "Visit the Maiden Tower in Baku's Old City: a debated 12th-century monument with unresolved origins, a small museum, and one of the best rooftop views in Icherisheher.",
+    "keywords": "Maiden Tower, Qız Qalası, Icherisheher, Baku Old City, UNESCO Baku, Baku attractions, things to do in Baku"
+  },
+  "shirvanshahsPalace": {
+    "title": "Shirvanshahs' Palace, Baku | Icherisheher's Medieval UNESCO Complex",
+    "description": "Explore the Shirvanshahs' Palace: Baku's 15th-century royal complex with the Divankhana, royal mausoleum, palace mosque, and Azerbaijan's finest medieval architecture.",
+    "keywords": "Palace of the Shirvanshahs, Divankhana, Shirvanshahs, Icherisheher, Baku Old City, UNESCO Baku, things to do in Baku"
+  },
+  "flameTowers": {
+    "title": "Flame Towers, Baku | Azerbaijan's Iconic Illuminated Skyscrapers",
+    "description": "Discover the Flame Towers: Baku's three flame-shaped skyscrapers, best viewed from Highland Park at sunset as 10,000 LEDs illuminate the city's modern skyline.",
+    "keywords": "Flame Towers, Baku skyline, Highland Park, Baku attractions, modern Baku, Land of Fire, things to do in Baku"
+  },
+  "heydarAliyevCenter": {
+    "title": "Heydar Aliyev Center, Baku | Zaha Hadid's Award-Winning Architecture",
+    "description": "Explore the Heydar Aliyev Center: Zaha Hadid's flowing white landmark, winner of the 2014 Design of the Year award, with museums, exhibitions and a classic-car collection.",
+    "keywords": "Heydar Aliyev Center, Zaha Hadid, Baku architecture, Baku museum, things to do in Baku, modern Baku"
+  },
+  "gobustanMudVolcanoes": {
+    "title": "Gobustan Mud Volcanoes, Azerbaijan | Bubbling Geology Near Baku",
+    "description": "Explore the Gobustan Mud Volcanoes: bubbling vents, Guinness World Record-holding Toraghai, and the new Mud Volcanoes Tourism Complex, near UNESCO-listed rock art.",
+    "keywords": "Gobustan mud volcanoes, Gobustan, mud volcanoes Azerbaijan, day trips from Baku, Gobustan Rock Art"
+  },
+  "ateshgahFireTempleBaku": {
+    "title": "Ateshgah Fire Temple, Baku | Hindu & Sikh Pilgrimage Sanctuary",
+    "description": "Explore Ateshgah Fire Temple: a 17th–18th century sanctuary built around naturally burning gas, with Hindu and Sikh inscriptions and Azerbaijan's \"Land of Fire\" story.",
+    "keywords": "Ateshgah Fire Temple, Surakhani, Absheron Peninsula, Zoroastrian fire temple Baku, things to do in Baku"
+  },
+  "yanarDag": {
+    "title": "Yanar Dag, Baku | Azerbaijan's Natural Burning Mountain",
+    "description": "Visit Yanar Dag: a genuinely natural gas flame on the Absheron Peninsula, best combined with Ateshgah Fire Temple as a half-day excursion from Baku.",
+    "keywords": "Yanar Dag, burning mountain Azerbaijan, Absheron Peninsula, natural gas flame, Mammadli, things to do near Baku, Ateshgah"
+  },
+  "icherisheher": {
+    "title": "Icherisheher, Baku | UNESCO Old City Walking Guide",
+    "description": "Explore Icherisheher: Baku's living UNESCO Old City, home to the Maiden Tower, Shirvanshahs' Palace, historic caravanserais, mosques and centuries-old streets.",
+    "keywords": "Icherisheher, Baku Old City, Walled City of Baku, UNESCO Baku, Maiden Tower, Shirvanshahs Palace, things to do in Baku"
+  },
+  "multaniCaravanserai": {
+    "title": "Multani Caravanserai, Baku | Medieval Trade in Icherisheher",
+    "description": "Discover the 14th-century Multani Caravanserai in Baku's UNESCO-listed Old City, built for merchants from Multan, Pakistan, and Baku's historic South Asian ties.",
+    "keywords": "Multani Caravanserai, Icherisheher, Baku Old City, Multan Pakistan, UNESCO Baku, medieval trade, things to do in Baku"
+  },
+  "palaceOfTheShekiKhans": {
+    "title": "Palace of the Sheki Khans | UNESCO Shabaka Windows & Frescoes",
+    "description": "Discover the Palace of the Sheki Khans: intricate shabaka stained-glass windows, painted battle scenes, and 18th-century khanate craftsmanship in UNESCO-listed Sheki.",
+    "keywords": "Palace of the Sheki Khans, Sheki Khan Palace, shabaka windows, Sheki UNESCO, Azerbaijan khanate architecture"
   },
   "kutaisi": {
     "title": "Kutaisi, Georgia: Bagrati, Gelati & Canyons Guide",
@@ -1520,9 +1585,24 @@
     "keywords": "Georgia travel blog, travel tips Georgia, Georgia guide, things to do in Georgia, Georgia travel stories, Tbilisi guide, Georgian food blog, Georgia hidden gems"
   },
   "embassies": {
-    "title": "Embassies in Georgia – Emergency Contacts & Addresses | Hikasus Travel",
-    "description": "Find your embassy in Tbilisi, Georgia. Emergency contacts, addresses, phone numbers, and an interactive map of all embassies and consulates.",
-    "keywords": "embassies Tbilisi, consulates Georgia, embassy Georgia, emergency contacts Tbilisi, foreign embassies Tbilisi, embassy map Georgia, consular services Georgia"
+    "title": "Embassies in Georgia, Armenia & Azerbaijan | Hikasus Travel",
+    "description": "Find embassy and diplomatic mission information for Georgia, Armenia and Azerbaijan, with country-specific directories and current contact details.",
+    "keywords": "embassies Caucasus, embassies Georgia, embassies Armenia, embassies Azerbaijan, embassy Tbilisi, embassy Yerevan, embassy Baku, consulates Caucasus"
+  },
+  "embassiesGeorgia": {
+    "title": "Embassies in Georgia | Contact Information & Addresses",
+    "description": "Directory of foreign embassies and diplomatic missions in Tbilisi, Georgia: addresses, telephone numbers, email addresses, websites and opening hours from official sources.",
+    "keywords": "embassies Tbilisi, embassies Georgia, consulates Georgia, embassy Georgia address, foreign embassies Tbilisi, consular services Georgia"
+  },
+  "embassiesArmenia": {
+    "title": "Embassies in Armenia | Contact Information & Addresses",
+    "description": "Directory of foreign embassies and diplomatic missions in Yerevan, Armenia: addresses, telephone numbers, email addresses, websites and opening hours from official sources.",
+    "keywords": "embassies Yerevan, embassies Armenia, consulates Armenia, embassy Armenia address, foreign embassies Yerevan, consular services Armenia"
+  },
+  "embassiesAzerbaijan": {
+    "title": "Embassies in Azerbaijan | Contact Information & Addresses",
+    "description": "Directory of foreign embassies and diplomatic missions in Baku, Azerbaijan: addresses, telephone numbers, email addresses and websites from official sources.",
+    "keywords": "embassies Baku, embassies Azerbaijan, consulates Azerbaijan, embassy Azerbaijan address, foreign embassies Baku, consular services Azerbaijan"
   },
   "notFound": {
     "title": "Page Not Found – Hikasus Travel",

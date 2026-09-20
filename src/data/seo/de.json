@@ -1314,10 +1314,74 @@
     "description": "Die Svetitskhoveli-Kathedrale in Mtskheta, Georgien: die „Mutterkathedrale\" aus dem 11. Jahrhundert, Grabstätte des Gewands Christi, UNESCO-Denkmal und Herz des georgischen Glaubens.",
     "keywords": "Svetitskhoveli-Kathedrale, Svetitskhoveli, Mtskheta, Mutterkathedrale, Gewand Christi, lebensspendende Säule, Melkisedek I., Georg I., Arsukidse, heilige Nino, Elias, Sidonia, Bagrationi, Erekle II., UNESCO Mtskheta, Jvari, Samtavro, georgisch-orthodoxe Kathedrale, zweites Jerusalem, Sehenswürdigkeiten bei Tiflis, Tagesausflug Mtskheta"
   },
+  "bakuBoulevard": {
+    "title": "Baku-Boulevard, Baku | Kaspische Promenade & Teppichmuseum",
+    "description": "Der Baku-Boulevard: die Uferpromenade am Kaspischen Meer mit dem Aserbaidschanischen Nationalen Teppichmuseum, Klein-Venedig, dem Baku Eye und dem schönsten Sonnenuntergangsspaziergang der Stadt."
+  },
   "russiaGeorgiaFriendshipMonument": {
     "title": "Panorama Gudauri, Gudauri",
     "description": "Das Panorama Gudauri: ein sowjetisches Mosaikdenkmal von 1983 und ein Aussichtspunkt über dem Teufelstal an der Georgischen Heerstraße.",
     "keywords": "Gudauri Panorama, Panorama Gudauri, Gudauri, Georgische Heerstraße, sowjetische Mosaike, Zurab Tsereteli, Giorgi Tschachawa, Vertrag von Georgijewsk, Erekle II., Teufelstal, Aragvi, Jvari-Pass, Gleitschirmfliegen Gudauri, Aussichtspunkt Kaukasus, von Tiflis nach Kazbegi, Sehenswürdigkeiten bei Gudauri"
+  },
+  "shamakhiJumaMosque": {
+    "title": "Freitagsmoschee von Schamachi | Aserbaidschans älteste Moschee, gegründet 743",
+    "description": "Entdecken Sie die Freitagsmoschee von Schamachi: der Überlieferung nach 743 n. Chr. gegründet, nach Jahrhunderten von Erdbeben wiederaufgebaut, mit ungewöhnlichem dreiteiligem Gebetssaal und Restaurierung 2013.",
+    "keywords": "Freitagsmoschee Schamachi, älteste Moschee Aserbaidschans, Schamachi, Schirwan, 743 n. Chr., Gasim bey Hajibababayov, Zivar bey Ahmadbeyov, Józef Płoszko, Yeddi Gumbez, Diri-Baba-Mausoleum, Schirwanschahs, Bergiges Schirwan"
+  },
+  "yeddiGumbezMausoleum": {
+    "title": "Yeddi-Gumbez-Mausoleum | Der königliche Khanats-Friedhof von Schamachi",
+    "description": "Besuchen Sie Yeddi Gumbez, den Friedhof der Sieben Kuppeln bei Schamachi mit dem Grab von Mustafa Khan, dem letzten Herrscher des Khanats Schirwan, und weitem Blick über die Hügel.",
+    "keywords": "Yeddi Gumbez, Sieben Kuppeln, Schamachi, Mustafa Khan, Khanat Schirwan, Ustad Taghi, Mirza Alakbar Sabir, Freitagsmoschee Schamachi, Schirwanschahs, Bergiges Schirwan, königlicher Friedhof Aserbaidschan"
+  },
+  "maidenTower": {
+    "title": "Jungfrauenturm, Baku | Das rätselhafte Wahrzeichen von Icherisheher",
+    "description": "Besuchen Sie den Jungfrauenturm in Bakus Altstadt: ein umstrittenes Bauwerk aus dem 12. Jahrhundert mit ungeklärter Herkunft, einem kleinen Museum und einer der besten Aussichten über Icherisheher.",
+    "keywords": "Jungfrauenturm, Qız Qalası, Icherisheher, Bakus Altstadt, UNESCO Baku, Sehenswürdigkeiten Baku"
+  },
+  "shirvanshahsPalace": {
+    "title": "Palast der Schirwanschahs, Baku | Mittelalterlicher UNESCO-Königskomplex",
+    "description": "Entdecken Sie den Palast der Schirwanschahs: Bakus königlicher Komplex aus dem 15. Jahrhundert mit Divankhana, Königsmausoleum, Palastmoschee und der schönsten mittelalterlichen Architektur Aserbaidschans.",
+    "keywords": "Palast der Schirwanschahs, Divankhana, Schirwanschahs, Icherisheher, Bakus Altstadt, UNESCO Baku"
+  },
+  "flameTowers": {
+    "title": "Flame Towers, Baku | Aserbaidschans modernes Skyline-Wahrzeichen",
+    "description": "Sehen Sie Bakus Flame Towers: drei geschwungene Glastürme aus dem Jahr 2012, nachts mit animierten LED-Flammen beleuchtet, am besten vom Highland Park aus zu sehen.",
+    "keywords": "Flame Towers, Baku Skyline, Highland Park, Sehenswürdigkeiten Baku, modernes Baku, Land des Feuers"
+  },
+  "heydarAliyevCenter": {
+    "title": "Heydar-Aliyev-Zentrum, Baku | Zaha Hadids Wahrzeichen",
+    "description": "Entdecken Sie das Heydar-Aliyev-Zentrum: Zaha Hadids preisgekröntes, fließend weißes Gebäude in Baku mit Museum und Ausstellungen zu aserbaidschanischer Geschichte und Design.",
+    "keywords": "Heydar-Aliyev-Zentrum, Zaha Hadid, Architektur Baku, Museum Baku, Sehenswürdigkeiten Baku"
+  },
+  "gobustanMudVolcanoes": {
+    "title": "Schlammvulkane von Gobustan | Aserbaidschans blubbernde Landschaft",
+    "description": "Besuchen Sie die Schlammvulkane von Gobustan bei Baku: eine der dichtesten Konzentrationen dieses seltenen Naturphänomens weltweit, leicht mit der Felskunst-Stätte von Gobustan zu kombinieren.",
+    "keywords": "Schlammvulkane Gobustan, Gobustan, Schlammvulkane Aserbaidschan, Tagesausflüge ab Baku, Felskunst Gobustan"
+  },
+  "ateshgahFireTempleBaku": {
+    "title": "Feuertempel Ateshgah, Baku | Historische Pilgerstätte in Surachani",
+    "description": "Entdecken Sie den Feuertempel Ateshgah in Surachani: eine fünfeckige Anlage hinduistischer und sikhischer Pilger um eine einst natürliche Flamme, auf Aserbaidschans UNESCO-Vorschlagsliste.",
+    "keywords": "Feuertempel Ateshgah, Surachani, Absheron-Halbinsel, zoroastrischer Feuertempel Baku, Sehenswürdigkeiten Baku"
+  },
+  "yanarDag": {
+    "title": "Yanar Dag, Baku | Aserbaidschans natürlicher brennender Berg",
+    "description": "Besuchen Sie Yanar Dag: eine echte natürliche Gasflamme auf der Halbinsel Absheron, am besten mit dem Feuertempel Ateshgah als halbtägigem Ausflug ab Baku zu kombinieren.",
+    "keywords": "Yanar Dag, brennender Berg Aserbaidschan, Halbinsel Absheron, natürliche Gasflamme, Mammadli, Ausflüge ab Baku, Ateshgah"
+  },
+  "icherisheher": {
+    "title": "Icherisheher, Baku | UNESCO-Altstadt-Reiseführer",
+    "description": "Entdecken Sie Icherisheher: Bakus lebendige UNESCO-Altstadt mit dem Jungfrauenturm, dem Palast der Schirwanschahs, historischen Karawansereien, Moscheen und jahrhundertealten Gassen.",
+    "keywords": "Icherisheher, Altstadt Baku, Ummauerte Stadt Baku, UNESCO Baku, Jungfrauenturm, Palast der Schirwanschahs, Sehenswürdigkeiten Baku"
+  },
+  "multaniCaravanserai": {
+    "title": "Multani-Karawanserei, Baku | Mittelalterlicher Handel in Icherisheher",
+    "description": "Entdecken Sie die Multani-Karawanserei aus dem 14. Jahrhundert in Bakus UNESCO-gelisteter Altstadt, erbaut für Kaufleute aus Multan, Pakistan, und Bakus historische Verbindungen nach Südasien.",
+    "keywords": "Multani-Karawanserei, Icherisheher, Altstadt Baku, Multan Pakistan, UNESCO Baku, mittelalterlicher Handel, Sehenswürdigkeiten Baku"
+  },
+  "palaceOfTheShekiKhans": {
+    "title": "Palast der Sheki-Khane | UNESCO-Shabaka-Fenster & Fresken",
+    "description": "Entdecken Sie den Palast der Sheki-Khane: kunstvolle Shabaka-Fenster, bemalte Kampfszenen und Handwerkskunst des Khanats aus dem 18. Jahrhundert im UNESCO-gelisteten Sheki.",
+    "keywords": "Palast der Sheki-Khane, Sheki-Khan-Palast, Shabaka-Fenster, Sheki UNESCO, Khanatsarchitektur Aserbaidschan"
   },
   "kutaisi": {
     "title": "Kutaissi, Georgien: Bagrati, Gelati & Schluchten",
@@ -1520,9 +1584,24 @@
     "keywords": "Reiseblog Georgien, Reisetipps Georgien, Reiseführer Georgien, Aktivitäten Georgien, Tiflis Guide"
   },
   "embassies": {
-    "title": "Botschaften in Georgien – Notfallkontakte und Adressen | Hikasus Travel",
-    "description": "Finden Sie Ihre Botschaft in Tiflis, Georgien. Notfallkontakte, Adressen, Telefonnummern und interaktive Karte aller Botschaften.",
-    "keywords": "Botschaften Tiflis, Konsulate Georgien, Botschaft Georgien, Notfallkontakte Tiflis, Karte Botschaften Georgien"
+    "title": "Botschaften in Georgien, Armenien und Aserbaidschan | Hikasus Travel",
+    "description": "Informationen zu Botschaften und diplomatischen Vertretungen in Georgien, Armenien und Aserbaidschan mit Länderverzeichnissen und aktuellen Kontaktdaten.",
+    "keywords": "Botschaften Kaukasus, Botschaften Georgien, Botschaften Armenien, Botschaften Aserbaidschan, Botschaft Tiflis, Botschaft Jerewan, Botschaft Baku"
+  },
+  "embassiesGeorgia": {
+    "title": "Botschaften in Georgien | Kontaktdaten und Adressen",
+    "description": "Verzeichnis ausländischer Botschaften und diplomatischer Vertretungen in Tiflis, Georgien: Adressen, Telefonnummern, E-Mail-Adressen, Webseiten und Öffnungszeiten aus offiziellen Quellen.",
+    "keywords": "Botschaften Tiflis, Botschaften Georgien, Konsulate Georgien, Botschaft Georgien Adresse, ausländische Botschaften Tiflis"
+  },
+  "embassiesArmenia": {
+    "title": "Botschaften in Armenien | Kontaktdaten und Adressen",
+    "description": "Verzeichnis ausländischer Botschaften und diplomatischer Vertretungen in Jerewan, Armenien: Adressen, Telefonnummern, E-Mail-Adressen, Webseiten und Öffnungszeiten aus offiziellen Quellen.",
+    "keywords": "Botschaften Jerewan, Botschaften Armenien, Konsulate Armenien, Botschaft Armenien Adresse, ausländische Botschaften Jerewan"
+  },
+  "embassiesAzerbaijan": {
+    "title": "Botschaften in Aserbaidschan | Kontaktdaten und Adressen",
+    "description": "Verzeichnis ausländischer Botschaften und diplomatischer Vertretungen in Baku, Aserbaidschan: Adressen, Telefonnummern, E-Mail-Adressen und Webseiten aus offiziellen Quellen.",
+    "keywords": "Botschaften Baku, Botschaften Aserbaidschan, Konsulate Aserbaidschan, Botschaft Aserbaidschan Adresse, ausländische Botschaften Baku"
   },
   "notFound": {
     "title": "Seite Nicht Gefunden – Hikasus Travel",

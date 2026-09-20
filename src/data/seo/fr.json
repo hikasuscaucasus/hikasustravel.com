@@ -1314,10 +1314,74 @@
     "description": "La cathédrale de Svetitskhoveli à Mtskheta, en Géorgie : la « cathédrale mère » du XIe siècle, lieu de sépulture de la tunique du Christ, monument de l'UNESCO et cœur de la foi géorgienne.",
     "keywords": "cathédrale de Svetitskhoveli, Svetitskhoveli, Mtskheta, cathédrale mère, tunique du Christ, pilier vivifiant, Melkisedek Ier, Georges Ier, Arsukidze, sainte Nino, Élias, Sidonia, Bagrationi, Erekle II, UNESCO Mtskheta, Jvari, Samtavro, cathédrale orthodoxe géorgienne, seconde Jérusalem, que voir près de Tbilisi, excursion à Mtskheta"
   },
+  "bakuBoulevard": {
+    "title": "Boulevard de Bakou | Promenade caspienne et musée du Tapis",
+    "description": "Le boulevard de Bakou : la promenade du bord de mer Caspienne, le musée national du Tapis d'Azerbaïdjan, la Petite Venise, le Baku Eye et la plus belle promenade au coucher du soleil de la ville."
+  },
   "russiaGeorgiaFriendshipMonument": {
     "title": "Panorama Gudauri, Gudauri (Géorgie)",
     "description": "Le Panorama Gudauri : un monument en mosaïques soviétiques de 1983 et un belvédère au-dessus de la Vallée du Diable, sur la route militaire géorgienne.",
     "keywords": "Gudauri Panorama, Panorama Gudauri, Gudauri, route militaire géorgienne, mosaïques soviétiques, Zurab Tsereteli, Giorgi Chakhava, traité de Guéorguievsk, Erekle II, Vallée du Diable, Aragvi, col de Jvari, parapente Gudauri, belvédère Caucase, de Tbilisi à Kazbegi, que voir près de Gudauri"
+  },
+  "shamakhiJumaMosque": {
+    "title": "Mosquée Juma de Chamakhi | La plus ancienne mosquée d'Azerbaïdjan, fondée en 743",
+    "description": "Découvrez la mosquée Juma de Chamakhi : fondée selon la tradition en 743, reconstruite après des siècles de tremblements de terre, avec une salle de prière en trois parties et une restauration de 2013.",
+    "keywords": "mosquée Juma de Chamakhi, plus ancienne mosquée d'Azerbaïdjan, Chamakhi, Chirvan, 743, Gasim bey Hajibababayov, Zivar bey Ahmadbeyov, Józef Płoszko, Yeddi Gumbez, mausolée de Diri Baba, Chirvanchahs, Chirvan montagneux"
+  },
+  "yeddiGumbezMausoleum": {
+    "title": "Mausolée de Yeddi Gumbez | Le cimetière royal du khanat de Chamakhi",
+    "description": "Visitez Yeddi Gumbez, le cimetière des Sept Coupoles près de Chamakhi, abritant la tombe de Mustafa Khan, dernier souverain du khanat de Chirvan, avec une vue panoramique sur les collines.",
+    "keywords": "Yeddi Gumbez, Sept Coupoles, Chamakhi, Mustafa Khan, khanat de Chirvan, Ustad Taghi, Mirza Alakbar Sabir, mosquée Juma de Chamakhi, Chirvanchahs, Chirvan montagneux, cimetière royal Azerbaïdjan"
+  },
+  "maidenTower": {
+    "title": "Tour de la Vierge, Bakou | Le monument mystérieux d'Icherisheher",
+    "description": "Découvrez la Tour de la Vierge dans la vieille ville de Bakou : un monument du XIIe siècle aux origines débattues, avec un petit musée et l'une des meilleures vues sur Icherisheher.",
+    "keywords": "Tour de la Vierge, Qız Qalası, Icherisheher, vieille ville de Bakou, UNESCO Bakou, que voir à Bakou"
+  },
+  "shirvanshahsPalace": {
+    "title": "Palais des Chirvanchahs, Bakou | Complexe royal médiéval de l'UNESCO",
+    "description": "Explorez le Palais des Chirvanchahs : le complexe royal du XVe siècle de Bakou avec le Divankhana, le mausolée royal, la mosquée du palais et la plus belle architecture médiévale d'Azerbaïdjan.",
+    "keywords": "Palais des Chirvanchahs, Divankhana, Chirvanchahs, Icherisheher, vieille ville de Bakou, UNESCO Bakou"
+  },
+  "flameTowers": {
+    "title": "Tours de Flamme, Bakou | L'icône moderne de l'horizon azerbaïdjanais",
+    "description": "Découvrez les Tours de Flamme de Bakou : trois gratte-ciel de verre incurvés achevés en 2012, illuminés par des flammes LED animées la nuit, mieux vus depuis Highland Park.",
+    "keywords": "Tours de Flamme, horizon de Bakou, Highland Park, que voir à Bakou, Bakou moderne, Pays du Feu"
+  },
+  "heydarAliyevCenter": {
+    "title": "Centre Heydar Aliyev, Bakou | Le bâtiment emblématique de Zaha Hadid",
+    "description": "Découvrez le Centre Heydar Aliyev : le bâtiment blanc fluide primé de Zaha Hadid à Bakou, abritant un musée et des expositions sur l'histoire et le design azerbaïdjanais.",
+    "keywords": "Centre Heydar Aliyev, Zaha Hadid, architecture de Bakou, musée de Bakou, que voir à Bakou"
+  },
+  "gobustanMudVolcanoes": {
+    "title": "Volcans de boue de Gobustan | Le paysage bouillonnant d'Azerbaïdjan",
+    "description": "Visitez les volcans de boue de Gobustan près de Bakou : l'une des concentrations les plus denses de ce phénomène naturel rare au monde, facile à combiner avec le site rupestre de Gobustan.",
+    "keywords": "volcans de boue de Gobustan, Gobustan, volcans de boue Azerbaïdjan, excursions depuis Bakou, art rupestre de Gobustan"
+  },
+  "ateshgahFireTempleBaku": {
+    "title": "Temple du feu d'Ateshgah, Bakou | Site de pèlerinage historique à Sourakhany",
+    "description": "Explorez le temple du feu d'Ateshgah à Sourakhany : une enceinte pentagonale construite par des pèlerins hindous et sikhs autour d'une flamme autrefois naturelle, sur la liste indicative de l'UNESCO en Azerbaïdjan.",
+    "keywords": "temple du feu d'Ateshgah, Sourakhany, péninsule d'Absheron, temple du feu zoroastrien Bakou, que voir à Bakou"
+  },
+  "yanarDag": {
+    "title": "Yanar Dag, Bakou | La montagne brûlante naturelle d'Azerbaïdjan",
+    "description": "Visitez Yanar Dag : une flamme de gaz véritablement naturelle sur la péninsule d'Absheron, à combiner idéalement avec le temple du feu d'Ateshgah lors d'une excursion d'une demi-journée depuis Bakou.",
+    "keywords": "Yanar Dag, montagne brûlante Azerbaïdjan, péninsule d'Absheron, flamme de gaz naturelle, Mammadli, excursions depuis Bakou, Ateshgah"
+  },
+  "icherisheher": {
+    "title": "Icherisheher, Bakou | Guide de la vieille ville UNESCO",
+    "description": "Découvrez Icherisheher : la vieille ville vivante de Bakou classée UNESCO, avec la tour de la Vierge, le palais des Chirvanchahs, des caravansérails historiques, des mosquées et des ruelles centenaires.",
+    "keywords": "Icherisheher, vieille ville de Bakou, Ville fortifiée de Bakou, UNESCO Bakou, tour de la Vierge, palais des Chirvanchahs, que voir à Bakou"
+  },
+  "multaniCaravanserai": {
+    "title": "Caravansérail Multani, Bakou | Commerce médiéval à Icherisheher",
+    "description": "Découvrez le caravansérail Multani du XIVe siècle dans la vieille ville de Bakou classée UNESCO, construit pour les marchands de Multan, au Pakistan, et les liens historiques de Bakou avec l'Asie du Sud.",
+    "keywords": "caravansérail Multani, Icherisheher, vieille ville de Bakou, Multan Pakistan, UNESCO Bakou, commerce médiéval, que voir à Bakou"
+  },
+  "palaceOfTheShekiKhans": {
+    "title": "Palais des khans de Sheki | Fenêtres en shabaka & fresques UNESCO",
+    "description": "Découvrez le palais des khans de Sheki : fenêtres en shabaka aux vitraux raffinés, scènes de bataille peintes et artisanat du khanat du XVIIIe siècle, au cœur du Sheki classé UNESCO.",
+    "keywords": "palais des khans de Sheki, palais du Khan de Sheki, fenêtres en shabaka, Sheki UNESCO, architecture des khanats d'Azerbaïdjan"
   },
   "kutaisi": {
     "title": "Koutaïssi, Géorgie : Bagrati, Guélati et les canyons",
@@ -1520,9 +1584,24 @@
     "keywords": "blog voyage Géorgie, conseils voyage Géorgie, guide Géorgie, que faire en Géorgie, guide Tbilissi"
   },
   "embassies": {
-    "title": "Ambassades en Géorgie – Contacts d'Urgence et Adresses | Hikasus Travel",
-    "description": "Trouvez votre ambassade à Tbilissi, Géorgie. Contacts d'urgence, adresses, téléphones et carte interactive des ambassades et consulats.",
-    "keywords": "ambassades Tbilissi, consulats Géorgie, ambassade Géorgie, contacts urgence Tbilissi, carte ambassades Géorgie"
+    "title": "Ambassades en Géorgie, Arménie et Azerbaïdjan | Hikasus Travel",
+    "description": "Retrouvez les informations sur les ambassades et missions diplomatiques en Géorgie, en Arménie et en Azerbaïdjan, avec des annuaires par pays et des coordonnées à jour.",
+    "keywords": "ambassades Caucase, ambassades Géorgie, ambassades Arménie, ambassades Azerbaïdjan, ambassade Tbilissi, ambassade Erevan, ambassade Bakou"
+  },
+  "embassiesGeorgia": {
+    "title": "Ambassades en Géorgie | Coordonnées et Adresses",
+    "description": "Annuaire des ambassades étrangères et missions diplomatiques à Tbilissi, Géorgie : adresses, numéros de téléphone, e-mails, sites web et horaires issus de sources officielles.",
+    "keywords": "ambassades Tbilissi, ambassades Géorgie, consulats Géorgie, adresse ambassade Géorgie, ambassades étrangères Tbilissi"
+  },
+  "embassiesArmenia": {
+    "title": "Ambassades en Arménie | Coordonnées et Adresses",
+    "description": "Annuaire des ambassades étrangères et missions diplomatiques à Erevan, Arménie : adresses, numéros de téléphone, e-mails, sites web et horaires issus de sources officielles.",
+    "keywords": "ambassades Erevan, ambassades Arménie, consulats Arménie, adresse ambassade Arménie, ambassades étrangères Erevan"
+  },
+  "embassiesAzerbaijan": {
+    "title": "Ambassades en Azerbaïdjan | Coordonnées et Adresses",
+    "description": "Annuaire des ambassades étrangères et missions diplomatiques à Bakou, Azerbaïdjan : adresses, numéros de téléphone, e-mails et sites web issus de sources officielles.",
+    "keywords": "ambassades Bakou, ambassades Azerbaïdjan, consulats Azerbaïdjan, adresse ambassade Azerbaïdjan, ambassades étrangères Bakou"
   },
   "notFound": {
     "title": "Page Non Trouvée – Hikasus Travel",

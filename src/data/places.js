@@ -15985,6 +15985,13 @@ export const sites = [
     noHero: true, noAutolink: true,
   },
   {
+    slug: 'palace-of-the-sheki-khans', name: 'Palace of the Sheki Khans',
+    parentType: 'city', parent: 'sheki', published: true,
+    seoKey: 'palaceOfTheShekiKhans', contentKey: 'palaceOfTheShekiKhans',
+    // No Sheki imagery of any kind exists in the asset library yet.
+    noHero: true, noAutolink: true,
+  },
+  {
     slug: 'multani-caravanserai', name: 'Multani Caravanserai',
     // Brief specified /azerbaijan/baku/icherisheher/multani-caravanserai, but
     // sitePath() only supports one level of nesting under a city/region/place

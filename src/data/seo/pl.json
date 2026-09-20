@@ -1314,10 +1314,74 @@
     "description": "Katedra Svetitskhoveli w Mtskhecie w Gruzji: XI-wieczna „katedra-matka”, miejsce pochówku szaty Chrystusa, zabytek UNESCO i serce gruzińskiej wiary.",
     "keywords": "katedra Svetitskhoveli, Svetitskhoveli, Mtskheta, katedra-matka, szata Chrystusa, ożywiający filar, Melkisedek I, Jerzy I, Arsukidze, święta Nino, Eliasz, Sidonia, Bagrationi, Erekle II, UNESCO Mtskheta, Jvari, Samtavro, gruzińska katedra prawosławna, druga Jerozolima, atrakcje koło Tbilisi, wycieczka do Mtskhety"
   },
+  "bakuBoulevard": {
+    "title": "Bulwar Bakijski, Baku | Nadmorska promenada i Muzeum Dywanu",
+    "description": "Bulwar Bakijski: nadmorska promenada nad Morzem Kaspijskim z Azerbejdżańskim Narodowym Muzeum Dywanu, Małą Wenecją, Baku Eye i najlepszym spacerem o zachodzie słońca w mieście."
+  },
   "russiaGeorgiaFriendshipMonument": {
     "title": "Panorama Gudauri, Gudauri",
     "description": "Panorama Gudauri: radziecki pomnik z mozaikami z 1983 roku i punkt widokowy nad Diabelską Doliną przy Gruzińskiej Drodze Wojennej.",
     "keywords": "Gudauri Panorama, Panorama Gudauri, Gudauri, Gruzińska Droga Wojenna, radzieckie mozaiki, Zurab Cereteli, Giorgi Czachawa, traktat gieorgijewski, Erekle II, Diabelska Dolina, Aragwi, przełęcz Jvari, paralotniarstwo Gudauri, punkt widokowy Kaukaz, z Tbilisi do Kazbegi, atrakcje koło Gudauri"
+  },
+  "shamakhiJumaMosque": {
+    "title": "Meczet Dżuma w Szamachy | Najstarszy meczet Azerbejdżanu, założony w 743 roku",
+    "description": "Odkryj Meczet Dżuma w Szamachy: według tradycji założony w 743 roku, odbudowywany po wiekach trzęsień ziemi, z niezwykłą trzyczęściową salą modlitewną i renowacją z 2013 roku.",
+    "keywords": "Meczet Dżuma Szamachy, najstarszy meczet Azerbejdżanu, Szamachy, Szyrwan, rok 743, Gasim bey Hajibababayov, Zivar bey Ahmadbeyov, Józef Płoszko, Yeddi Gumbez, Mauzoleum Diri Baba, szyrwanszachowie, Górski Szyrwan"
+  },
+  "yeddiGumbezMausoleum": {
+    "title": "Mauzoleum Yeddi Gumbez | Królewski cmentarz chanatu w Szamachy",
+    "description": "Odwiedź Yeddi Gumbez, cmentarz Siedmiu Kopuł pod Szamachy z grobem Mustafy Chana, ostatniego władcy Chanatu Szyrwańskiego, z rozległym widokiem na wzgórza.",
+    "keywords": "Yeddi Gumbez, Siedem Kopuł, Szamachy, Mustafa Chan, Chanat Szyrwański, Ustad Taghi, Mirza Alakbar Sabir, Meczet Dżuma Szamachy, szyrwanszachowie, Górski Szyrwan, królewski cmentarz Azerbejdżan"
+  },
+  "maidenTower": {
+    "title": "Wieża Dziewicza, Baku | Tajemniczy zabytek Icherisheher",
+    "description": "Odwiedź Wieżę Dziewiczą w starym mieście Baku: sporną budowlę z XII wieku o niejasnym pochodzeniu, z małym muzeum i jednym z najlepszych widoków na Icherisheher.",
+    "keywords": "Wieża Dziewicza, Qız Qalası, Icherisheher, stare miasto Baku, UNESCO Baku, co zobaczyć w Baku"
+  },
+  "shirvanshahsPalace": {
+    "title": "Pałac Szyrwanszachów, Baku | Średniowieczny królewski kompleks UNESCO",
+    "description": "Odkryj Pałac Szyrwanszachów: XV-wieczny królewski kompleks w Baku z Divankhaną, mauzoleum królewskim, meczetem pałacowym i najpiękniejszą średniowieczną architekturą Azerbejdżanu.",
+    "keywords": "Pałac Szyrwanszachów, Divankhana, szyrwanszachowie, Icherisheher, stare miasto Baku, UNESCO Baku"
+  },
+  "flameTowers": {
+    "title": "Płonące Wieże, Baku | Nowoczesna ikona panoramy Azerbejdżanu",
+    "description": "Zobacz bakijskie Płonące Wieże: trzy zakrzywione szklane wieżowce ukończone w 2012 roku, nocą podświetlane animowanymi płomieniami LED, najlepiej widoczne z Highland Parku.",
+    "keywords": "Płonące Wieże, panorama Baku, Highland Park, co zobaczyć w Baku, nowoczesne Baku, Kraina Ognia"
+  },
+  "heydarAliyevCenter": {
+    "title": "Centrum Hejdara Alijewa, Baku | Ikoniczny budynek Zahy Hadid",
+    "description": "Odkryj Centrum Hejdara Alijewa: nagradzany, płynnie biały budynek Zahy Hadid w Baku z muzeum i wystawami o historii i designie Azerbejdżanu.",
+    "keywords": "Centrum Hejdara Alijewa, Zaha Hadid, architektura Baku, muzeum Baku, co zobaczyć w Baku"
+  },
+  "gobustanMudVolcanoes": {
+    "title": "Wulkany błotne Gobustanu | Bulgocący krajobraz Azerbejdżanu",
+    "description": "Odwiedź wulkany błotne Gobustanu pod Baku: jedno z najgęstszych skupisk tego rzadkiego zjawiska naturalnego na świecie, łatwe do połączenia ze stanowiskiem sztuki naskalnej Gobustan.",
+    "keywords": "wulkany błotne Gobustan, Gobustan, wulkany błotne Azerbejdżan, wycieczki z Baku, sztuka naskalna Gobustan"
+  },
+  "ateshgahFireTempleBaku": {
+    "title": "Świątynia Ognia Ateshgah, Baku | Historyczne miejsce pielgrzymkowe w Surachanach",
+    "description": "Odkryj Świątynię Ognia Ateshgah w Surachanach: pięcioboczny murowany kompleks zbudowany przez hinduskich i sikhijskich pielgrzymów wokół niegdyś naturalnego płomienia, na wstępnej liście UNESCO Azerbejdżanu.",
+    "keywords": "Świątynia Ognia Ateshgah, Surachany, Półwysep Apszerański, zaratusztriańska świątynia ognia Baku, co zobaczyć w Baku"
+  },
+  "yanarDag": {
+    "title": "Yanar Dag, Baku | Naturalna płonąca góra Azerbejdżanu",
+    "description": "Odwiedź Yanar Dag: prawdziwie naturalny płomień gazowy na Półwyspie Apszerońskim, najlepiej łączony ze Świątynią Ognia Ateshgah podczas półdniowej wycieczki z Baku.",
+    "keywords": "Yanar Dag, płonąca góra Azerbejdżan, Półwysep Apszeroński, naturalny płomień gazowy, Mammadli, wycieczki z Baku, Ateshgah"
+  },
+  "icherisheher": {
+    "title": "Icherisheher, Baku | Przewodnik po Starym Mieście UNESCO",
+    "description": "Odkryj Icherisheher: tętniące życiem Stare Miasto Baku wpisane na listę UNESCO, z Wieżą Dziewiczą, Pałacem Szirwanszachów, zabytkowymi karawanserajami, meczetami i wiekowymi uliczkami.",
+    "keywords": "Icherisheher, Stare Miasto Baku, Otoczone murami miasto Baku, UNESCO Baku, Wieża Dziewicza, Pałac Szirwanszachów, co zobaczyć w Baku"
+  },
+  "multaniCaravanserai": {
+    "title": "Karawanseraj Multani, Baku | Średniowieczny handel w Icherisheher",
+    "description": "Odkryj XIV-wieczny Karawanseraj Multani na Starym Mieście Baku wpisanym na listę UNESCO, zbudowany dla kupców z Multanu w Pakistanie, oraz historyczne więzi Baku z Azją Południową.",
+    "keywords": "Karawanseraj Multani, Icherisheher, Stare Miasto Baku, Multan Pakistan, UNESCO Baku, średniowieczny handel, co zobaczyć w Baku"
+  },
+  "palaceOfTheShekiKhans": {
+    "title": "Pałac Chanów Szeki | Okna Szebeke i Freski UNESCO",
+    "description": "Odkryj Pałac Chanów Szeki: misterne witrażowe okna szebeke, malowane sceny bitewne i XVIII-wieczne rzemiosło chanackie w wpisanym na listę UNESCO Szeki.",
+    "keywords": "Pałac Chanów Szeki, Pałac Chana w Szeki, okna szebeke, Szeki UNESCO, architektura chanacka Azerbejdżanu"
   },
   "kutaisi": {
     "title": "Kutaisi, Gruzja: Bagrati, Gelati i przewodnik po kanionach",
@@ -1520,9 +1584,24 @@
     "keywords": "blog podróżniczy Gruzja, porady podróżnicze Gruzja, przewodnik Gruzja, co robić w Gruzji, przewodnik Tbilisi"
   },
   "embassies": {
-    "title": "Ambasady w Gruzji – Kontakty Alarmowe i Adresy | Hikasus Travel",
-    "description": "Znajdź swoją ambasadę w Tbilisi, Gruzja. Kontakty alarmowe, adresy, telefony i interaktywna mapa ambasad i konsulatów.",
-    "keywords": "ambasady Tbilisi, konsulaty Gruzja, ambasada Gruzja, kontakty alarmowe Tbilisi, mapa ambasad Gruzja"
+    "title": "Ambasady w Gruzji, Armenii i Azerbejdżanie | Hikasus Travel",
+    "description": "Znajdź informacje o ambasadach i misjach dyplomatycznych w Gruzji, Armenii i Azerbejdżanie, z wykazami dla poszczególnych krajów i aktualnymi danymi kontaktowymi.",
+    "keywords": "ambasady Kaukaz, ambasady Gruzja, ambasady Armenia, ambasady Azerbejdżan, ambasada Tbilisi, ambasada Erywań, ambasada Baku"
+  },
+  "embassiesGeorgia": {
+    "title": "Ambasady w Gruzji | Dane Kontaktowe i Adresy",
+    "description": "Wykaz zagranicznych ambasad i misji dyplomatycznych w Tbilisi, Gruzja: adresy, numery telefonów, adresy e-mail, strony internetowe i godziny otwarcia z oficjalnych źródeł.",
+    "keywords": "ambasady Tbilisi, ambasady Gruzja, konsulaty Gruzja, adres ambasady Gruzja, zagraniczne ambasady Tbilisi"
+  },
+  "embassiesArmenia": {
+    "title": "Ambasady w Armenii | Dane Kontaktowe i Adresy",
+    "description": "Wykaz zagranicznych ambasad i misji dyplomatycznych w Erywaniu, Armenia: adresy, numery telefonów, adresy e-mail, strony internetowe i godziny otwarcia z oficjalnych źródeł.",
+    "keywords": "ambasady Erywań, ambasady Armenia, konsulaty Armenia, adres ambasady Armenia, zagraniczne ambasady Erywań"
+  },
+  "embassiesAzerbaijan": {
+    "title": "Ambasady w Azerbejdżanie | Dane Kontaktowe i Adresy",
+    "description": "Wykaz zagranicznych ambasad i misji dyplomatycznych w Baku, Azerbejdżan: adresy, numery telefonów, adresy e-mail i strony internetowe z oficjalnych źródeł.",
+    "keywords": "ambasady Baku, ambasady Azerbejdżan, konsulaty Azerbejdżan, adres ambasady Azerbejdżan, zagraniczne ambasady Baku"
   },
   "notFound": {
     "title": "Strona Nie Znaleziona – Hikasus Travel",
