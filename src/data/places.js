@@ -15985,6 +15985,17 @@ export const sites = [
     noHero: true, noAutolink: true,
   },
   {
+    slug: 'multani-caravanserai', name: 'Multani Caravanserai',
+    // Brief specified /azerbaijan/baku/icherisheher/multani-caravanserai, but
+    // sitePath() only supports one level of nesting under a city/region/place
+    // — matches the flat convention already used by every other Baku
+    // attraction page (Maiden Tower, Shirvanshahs' Palace, etc.).
+    parentType: 'city', parent: 'baku', published: true,
+    seoKey: 'multaniCaravanserai', contentKey: 'multaniCaravanserai',
+    // No Multani Caravanserai photograph exists in the asset library yet.
+    noHero: true, noAutolink: true,
+  },
+  {
     slug: 'maiden-tower', name: 'Maiden Tower',
     parentType: 'city', parent: 'baku', published: true,
     seoKey: 'maidenTower', contentKey: 'maidenTower',
