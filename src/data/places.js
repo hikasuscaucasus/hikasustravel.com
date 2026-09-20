@@ -15990,9 +15990,9 @@ export const sites = [
     imageAvif: '/images/files/maiden-tower-icherisheher-baku-azerbaijan-1293.avif',
   },
   {
-    slug: 'palace-of-the-shirvanshahs', name: 'Palace of the Shirvanshahs',
+    slug: 'shirvanshahs-palace', name: "Shirvanshahs' Palace",
     parentType: 'city', parent: 'baku', published: true,
-    seoKey: 'palaceOfTheShirvanshahs', contentKey: 'palaceOfTheShirvanshahs',
+    seoKey: 'shirvanshahsPalace', contentKey: 'shirvanshahsPalace',
     noAutolink: true,
     image: '/images/files/palace-of-the-shirvanshahs-baku-azerbaijan-1536.webp',
     imageAvif: '/images/files/palace-of-the-shirvanshahs-baku-azerbaijan-1536.avif',
