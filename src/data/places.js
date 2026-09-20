@@ -15983,34 +15983,46 @@ export const sites = [
   },
   {
     slug: 'maiden-tower', name: 'Maiden Tower',
-    parentType: 'city', parent: 'baku', published: false,
+    parentType: 'city', parent: 'baku', published: true,
     seoKey: 'maidenTower', contentKey: 'maidenTower',
-    noHero: true, noAutolink: true,
-    // Owner-supplied photograph, unpublished page — wired for the Places to
-    // Visit hub's "coming soon" card cover only (siteEntries mapping below).
+    noAutolink: true,
     image: '/images/files/maiden-tower-icherisheher-baku-azerbaijan-1293.webp',
+    imageAvif: '/images/files/maiden-tower-icherisheher-baku-azerbaijan-1293.avif',
   },
   {
     slug: 'palace-of-the-shirvanshahs', name: 'Palace of the Shirvanshahs',
-    parentType: 'city', parent: 'baku', published: false,
+    parentType: 'city', parent: 'baku', published: true,
     seoKey: 'palaceOfTheShirvanshahs', contentKey: 'palaceOfTheShirvanshahs',
-    noHero: true, noAutolink: true,
+    noAutolink: true,
     image: '/images/files/palace-of-the-shirvanshahs-baku-azerbaijan-1536.webp',
+    imageAvif: '/images/files/palace-of-the-shirvanshahs-baku-azerbaijan-1536.avif',
+  },
+  {
+    slug: 'ateshgah-fire-temple', name: 'Ateshgah Fire Temple',
+    parentType: 'city', parent: 'baku', published: true,
+    seoKey: 'ateshgahFireTempleBaku', contentKey: 'ateshgahFireTempleBaku',
+    // Distinct from the Georgian 'ateshgah-fire-temple' site (parent: 'tbilisi') —
+    // a genuinely different Zoroastrian fire-temple site. Different contentKey/
+    // seoKey to avoid a global dictionary collision; the identical slug string
+    // is fine since routing resolves a site by (slug, parentSlug) together.
+    noHero: true, noAutolink: true,
   },
   {
     slug: 'flame-towers', name: 'Flame Towers',
-    parentType: 'city', parent: 'baku', published: false,
+    parentType: 'city', parent: 'baku', published: true,
     seoKey: 'flameTowers', contentKey: 'flameTowers',
-    noHero: true, noAutolink: true,
+    noAutolink: true,
     // Reuses Baku's own hero photo — it genuinely depicts the Flame Towers.
     image: '/images/files/baku-flame-towers-azerbaijan-1448.webp',
+    imageAvif: '/images/files/baku-flame-towers-azerbaijan-1448.avif',
   },
   {
     slug: 'heydar-aliyev-center', name: 'Heydar Aliyev Center',
-    parentType: 'city', parent: 'baku', published: false,
+    parentType: 'city', parent: 'baku', published: true,
     seoKey: 'heydarAliyevCenter', contentKey: 'heydarAliyevCenter',
-    noHero: true, noAutolink: true,
+    noAutolink: true,
     image: '/images/files/heydar-aliyev-center-baku-azerbaijan-1672.webp',
+    imageAvif: '/images/files/heydar-aliyev-center-baku-azerbaijan-1672.avif',
   },
   {
     slug: 'baku-boulevard', name: 'Baku Boulevard',
@@ -16122,10 +16134,11 @@ export const sites = [
   },
   {
     slug: 'gobustan-mud-volcanoes', name: 'Gobustan Mud Volcanoes',
-    parentType: 'place', parent: 'gobustan', country: 'azerbaijan', published: false,
+    parentType: 'place', parent: 'gobustan', country: 'azerbaijan', published: true,
     seoKey: 'gobustanMudVolcanoes', contentKey: 'gobustanMudVolcanoes',
-    noHero: true, noAutolink: true,
+    noAutolink: true,
     image: '/images/files/gobustan-mud-volcanoes-azerbaijan-1599.webp',
+    imageAvif: '/images/files/gobustan-mud-volcanoes-azerbaijan-1599.avif',
   },
   {
     slug: 'shamakhi-juma-mosque', name: 'Shamakhi Juma Mosque',
