@@ -15999,6 +15999,14 @@ export const sites = [
     noHero: true, noAutolink: true,
   },
   {
+    slug: 'carpet-museum', name: 'Azerbaijan Carpet Museum',
+    parentType: 'city', parent: 'baku', published: true,
+    seoKey: 'azerbaijanCarpetMuseum', contentKey: 'azerbaijanCarpetMuseum',
+    // No dedicated Carpet Museum photo exists in the asset library yet
+    // (Baku Boulevard's own hero is a Flame Towers/skyline shot).
+    noHero: true, noAutolink: true,
+  },
+  {
     slug: 'multani-caravanserai', name: 'Multani Caravanserai',
     // Brief specified /azerbaijan/baku/icherisheher/multani-caravanserai, but
     // sitePath() only supports one level of nesting under a city/region/place
