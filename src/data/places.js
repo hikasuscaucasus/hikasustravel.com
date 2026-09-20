@@ -15977,8 +15977,11 @@ export const sites = [
   // ---------------------------------------------------------------------------
   {
     slug: 'icherisheher', name: 'Icherisheher (Old City)',
-    parentType: 'city', parent: 'baku', published: false,
+    parentType: 'city', parent: 'baku', published: true,
     seoKey: 'icherisheher', contentKey: 'icherisheher',
+    // No genuine wide-shot Icherisheher photograph exists in the asset
+    // library yet (only the Maiden Tower's own close photo, already used
+    // on that dedicated page).
     noHero: true, noAutolink: true,
   },
   {
