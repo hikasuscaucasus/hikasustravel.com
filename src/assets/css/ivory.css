@@ -450,6 +450,14 @@
   align-items: center;
 }
 
+/* A tour with no approved photo yet drops the photo column (see
+   TourDetailHero.jsx's `hasPhoto`) — the copy column then takes the full
+   width instead of leaving an empty second grid track. */
+.theme-ivory .td-hero--no-photo .td-hero__inner {
+  grid-template-columns: 1fr;
+  max-width: 760px;
+}
+
 .theme-ivory .td-hero__breadcrumb a {
   color: var(--sub);
 }

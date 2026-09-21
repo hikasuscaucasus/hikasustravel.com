@@ -65,6 +65,7 @@ export const PRIVATE_TOUR_ORIGINS = {
   '13-day-georgia-grand-tour-from-kutaisi-culture-and-nature': 'kutaisi',
   'ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty': 'tbilisi',
   '20-day-georgia-grand-tour-wine-hiking-and-culture': 'tbilisi',
+  '7-day-svaneti-tour-from-kutaisi': 'kutaisi',
 }
 
 // Per-tour category assignments, keyed by stable slug.
@@ -95,4 +96,5 @@ export const PRIVATE_TOUR_CATEGORIES = {
   'ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty': ['nature-mountain', 'wine-food', 'cultural-heritage', 'black-sea'],
   '20-day-georgia-grand-tour-wine-hiking-and-culture': ['wine-food', 'adventure-hiking', 'nature-mountain', 'black-sea'],
   '7-day-gudauri-ski-tour-from-tbilisi': ['winter-tours', 'nature-mountain', 'adventure-hiking'],
+  '7-day-svaneti-tour-from-kutaisi': ['nature-mountain', 'adventure-hiking', 'cultural-heritage'],
 }

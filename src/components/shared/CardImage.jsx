@@ -56,15 +56,20 @@ export default function CardImage({
         position: 'relative',
       }}
     >
-      <img
-        className="card-img"
-        src={fullSrc}
-        alt={alt}
-        loading={eager ? 'eager' : 'lazy'}
-        decoding="async"
-        onLoad={() => setLoaded(true)}
-        style={{ objectPosition: position }}
-      />
+      {/* A tour/place with no approved photo yet (src is falsy) renders the
+          card shell only, no <img> — avoiding a broken-image icon rather than
+          inventing or substituting a photo. */}
+      {src && (
+        <img
+          className="card-img"
+          src={fullSrc}
+          alt={alt}
+          loading={eager ? 'eager' : 'lazy'}
+          decoding="async"
+          onLoad={() => setLoaded(true)}
+          style={{ objectPosition: position }}
+        />
+      )}
       {children}
     </div>
   )

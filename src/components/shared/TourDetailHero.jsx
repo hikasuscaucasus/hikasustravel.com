@@ -155,9 +155,10 @@ export default function TourDetailHero({ tour, translatedTitle, heroH1, isGroup,
 
   const backPath = isGroup ? '/group-tours' : '/private-tours'
   const backLabel = isGroup ? t('tour.groupTours') : t('tour.privateTours')
+  const hasPhoto = Boolean(tour.heroImage)
 
   return (
-    <section className="td-hero td-hero--split">
+    <section className={`td-hero td-hero--split${hasPhoto ? '' : ' td-hero--no-photo'}`}>
       <div className="td-hero__inner">
         <div className="td-hero__copy">
           <nav className="td-hero__breadcrumb" aria-label={t('a11y.breadcrumb')}>
@@ -223,44 +224,49 @@ export default function TourDetailHero({ tour, translatedTitle, heroH1, isGroup,
           </div>
         </div>
 
-        <figure className="td-hero__photo frame">
-          {/* Same click-to-expand pattern as Gallery.jsx's cards: a real,
-              keyboard-operable control around the <img>, opening the shared
-              lightbox. This is the ONLY thing that changed here — crop,
-              aspect ratio, srcset and fetchpriority are all untouched. */}
-          <div
-            className="td-hero__photo-btn"
-            role="button"
-            tabIndex={0}
-            aria-label={t('tour.viewImage')}
-            onClick={(e) => { photoOpenerRef.current = e.currentTarget; setHeroLightboxOpen(true) }}
-            onKeyDown={(e) => {
-              if (e.key === 'Enter' || e.key === ' ') {
-                e.preventDefault()
-                photoOpenerRef.current = e.currentTarget
-                setHeroLightboxOpen(true)
-              }
-            }}
-          >
-            {rend ? (
-              <picture>
-                <source type="image/avif" srcSet={rend.avif} sizes={HERO_SIZES} />
-                <source type="image/webp" srcSet={rend.webp} sizes={HERO_SIZES} />
-                <img
-                  src={asset(tour.heroImage)}
-                  width={rend.width}
-                  height={rend.height}
-                  sizes={HERO_SIZES}
-                  alt={title}
-                  fetchPriority="high"
-                  decoding="async"
-                />
-              </picture>
-            ) : (
-              <img src={asset(tour.heroImage)} alt={title} fetchPriority="high" decoding="async" />
-            )}
-          </div>
-        </figure>
+        {/* A tour with no approved photo yet (hasPhoto false) omits this
+            figure entirely rather than rendering a broken image — the
+            copy column then spans the full width via .td-hero--no-photo. */}
+        {hasPhoto && (
+          <figure className="td-hero__photo frame">
+            {/* Same click-to-expand pattern as Gallery.jsx's cards: a real,
+                keyboard-operable control around the <img>, opening the shared
+                lightbox. This is the ONLY thing that changed here — crop,
+                aspect ratio, srcset and fetchpriority are all untouched. */}
+            <div
+              className="td-hero__photo-btn"
+              role="button"
+              tabIndex={0}
+              aria-label={t('tour.viewImage')}
+              onClick={(e) => { photoOpenerRef.current = e.currentTarget; setHeroLightboxOpen(true) }}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault()
+                  photoOpenerRef.current = e.currentTarget
+                  setHeroLightboxOpen(true)
+                }
+              }}
+            >
+              {rend ? (
+                <picture>
+                  <source type="image/avif" srcSet={rend.avif} sizes={HERO_SIZES} />
+                  <source type="image/webp" srcSet={rend.webp} sizes={HERO_SIZES} />
+                  <img
+                    src={asset(tour.heroImage)}
+                    width={rend.width}
+                    height={rend.height}
+                    sizes={HERO_SIZES}
+                    alt={title}
+                    fetchPriority="high"
+                    decoding="async"
+                  />
+                </picture>
+              ) : (
+                <img src={asset(tour.heroImage)} alt={title} fetchPriority="high" decoding="async" />
+              )}
+            </div>
+          </figure>
+        )}
       </div>
 
       {heroLightboxOpen && (
