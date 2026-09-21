@@ -19348,7 +19348,21 @@ export const tours = [
     "slug": "7-day-svaneti-tour-from-kutaisi",
     "type": "private",
     "title": "7-Day Svaneti Tour from Kutaisi",
-    "heroImage": null,
+    "heroImage": "/images/tours/7-day-svaneti-tour-from-kutaisi/lamaria-church-ushguli-shkhara-georgia-1200.webp",
+    "ogImage": {
+      "src": "/images/tours/7-day-svaneti-tour-from-kutaisi/lamaria-church-ushguli-shkhara-georgia-og-1200x630.jpg",
+      "width": 1200,
+      "height": 630
+    },
+    "alt": {
+      "en": "The medieval Lamaria Church and its stone tower at Ushguli, below the snow-capped east face of Shkhara, Upper Svaneti, Georgia",
+      "de": "Die mittelalterliche Lamaria-Kirche und ihr Steinturm in Ushguli, unterhalb der schneebedeckten Ostwand des Schchara, Oberswanetien, Georgien",
+      "fr": "L'église médiévale de Lamaria et sa tour de pierre à Ushguli, au pied de la face est enneigée du Chkhara, Haute-Svanétie, Géorgie",
+      "es": "La iglesia medieval de Lamaria y su torre de piedra en Ushguli, bajo la cara este nevada del Shjara, Alta Esvanetia, Georgia",
+      "nl": "De middeleeuwse Lamaria-kerk en haar stenen toren bij Ushguli, onder de besneeuwde oostwand van de Sjchara, Boven-Svanetië, Georgië",
+      "cs": "Středověký kostel Lamaria a jeho kamenná věž v Ušguli, pod zasněženou východní stěnou Škhary, Horní Svanetie, Gruzie",
+      "pl": "Średniowieczny kościół Lamaria i jego kamienna wieża w Uszguli, pod ośnieżoną wschodnią ścianą Szchary, Górna Swanetia, Gruzja"
+    },
     "days": 7,
     "description": "Svaneti is the part of Georgia people remember longest — glaciers hanging above hay meadows, stone towers built for feuds that ended centuries ago, and villages where the road runs out and the footpaths begin. This private seven-day tour gives it the time it deserves.\n\nYou start and finish at Kutaisi International Airport, take in Martvili Canyon on the way north, then settle into the mountains: three nights in Mestia, a night in Ushguli beneath Georgia's highest peak, and a last night in the quiet Becho Valley under the twin summits of Ushba. There's a proper walk on most days — the Koruldi Lakes, the Shkhara glacier valley, the Shdugra waterfall — but the pace isn't punishing.\n\nMornings are for the trail, afternoons for a village, a tower house or a long lunch. Nothing is scheduled just to fill the day, and because it's private, the walks flex with the weather and with you.",
     "listingDescription": "Private 7-day Svaneti tour from Kutaisi via Martvili, Mestia and Ushguli, with Koruldi Lakes, Shkhara Glacier and the Becho Valley.",
@@ -19489,6 +19503,408 @@ export const tours = [
           "cs": "Mapa trasy 7denního zájezdu do Svanetie z Kutaisi, zobrazující jízdu z letiště Kutaisi do Martvili, vzhůru údolím Enguri do Mestie a Ushguli, dál do údolí Becho a zpět přes Zugdidi na letiště Kutaisi.",
           "pl": "Mapa trasy 7-dniowej wycieczki po Swanetii z Kutaisi, pokazująca przejazd z lotniska w Kutaisi do Martvili, w górę doliny Enguri do Mestii i Ushguli, dalej do doliny Becho, a następnie z powrotem przez Zugdidi na lotnisko w Kutaisi."
         }
+      },
+      {
+        "src": "/images/tours/7-day-svaneti-tour-from-kutaisi/enguri-reservoir-svaneti-georgia-1200.webp",
+        "base": "/images/tours/7-day-svaneti-tour-from-kutaisi/enguri-reservoir-svaneti-georgia",
+        "widths": [
+          768,
+          1200,
+          1600,
+          2048
+        ],
+        "fallbackWidth": 1200,
+        "width": 2048,
+        "height": 1536,
+        "caption": {
+          "en": "Enguri Reservoir",
+          "de": "Enguri-Stausee",
+          "fr": "Réservoir de l'Enguri",
+          "es": "Embalse del Enguri",
+          "nl": "Enguri-stuwmeer",
+          "cs": "Přehrada Enguri",
+          "pl": "Zbiornik Enguri"
+        },
+        "altText": {
+          "en": "The long turquoise Enguri reservoir winding between forested mountains, Svaneti, Georgia",
+          "de": "Der lange türkisfarbene Enguri-Stausee, der sich zwischen bewaldeten Bergen windet, Swanetien, Georgien",
+          "fr": "Le long réservoir turquoise de l'Enguri serpentant entre des montagnes boisées, Svanétie, Géorgie",
+          "es": "El largo embalse turquesa del Enguri serpenteando entre montañas boscosas, Esvanetia, Georgia",
+          "nl": "Het lange turkooizen Enguri-stuwmeer dat zich tussen beboste bergen slingert, Svanetië, Georgië",
+          "cs": "Dlouhá tyrkysová přehrada Enguri klikatící se mezi zalesněnými horami, Svanetie, Gruzie",
+          "pl": "Długi turkusowy zbiornik Enguri wijący się między zalesionymi górami, Swanetia, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/7-day-svaneti-tour-from-kutaisi/mountain-road-upper-svaneti-georgia-1200.webp",
+        "base": "/images/tours/7-day-svaneti-tour-from-kutaisi/mountain-road-upper-svaneti-georgia",
+        "widths": [
+          768,
+          1200,
+          1600,
+          2048
+        ],
+        "fallbackWidth": 1200,
+        "width": 2048,
+        "height": 1536,
+        "caption": {
+          "en": "Mountain Road, Upper Svaneti",
+          "de": "Bergstraße, Oberswanetien",
+          "fr": "Route de montagne, Haute-Svanétie",
+          "es": "Carretera de montaña, Alta Esvanetia",
+          "nl": "Bergweg, Boven-Svanetië",
+          "cs": "Horská silnice, Horní Svanetie",
+          "pl": "Górska droga, Górna Swanetia"
+        },
+        "altText": {
+          "en": "A mountain road winding up through the forested valleys of Upper Svaneti toward the high Caucasus, Georgia",
+          "de": "Eine Bergstraße, die sich durch die bewaldeten Täler Oberswanetiens zum Hohen Kaukasus hinaufwindet, Georgien",
+          "fr": "Une route de montagne serpentant à travers les vallées boisées de Haute-Svanétie vers le Haut-Caucase, Géorgie",
+          "es": "Una carretera de montaña que asciende serpenteando por los valles boscosos de la Alta Esvanetia hacia el Alto Cáucaso, Georgia",
+          "nl": "Een bergweg die omhoog kronkelt door de beboste dalen van Boven-Svanetië richting de Hoge Kaukasus, Georgië",
+          "cs": "Horská silnice stoupající zalesněnými údolími Horní Svanetie k Vysokému Kavkazu, Gruzie",
+          "pl": "Górska droga wijąca się przez zalesione doliny Górnej Swanetii ku Wysokiemu Kaukazowi, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/7-day-svaneti-tour-from-kutaisi/mestia-svan-towers-svaneti-georgia-1200.webp",
+        "base": "/images/tours/7-day-svaneti-tour-from-kutaisi/mestia-svan-towers-svaneti-georgia",
+        "widths": [
+          768,
+          1200,
+          1600,
+          2048
+        ],
+        "fallbackWidth": 1200,
+        "width": 2048,
+        "height": 1365,
+        "caption": {
+          "en": "Mestia",
+          "de": "Mestia",
+          "fr": "Mestia",
+          "es": "Mestia",
+          "nl": "Mestia",
+          "cs": "Mestia",
+          "pl": "Mestia"
+        },
+        "altText": {
+          "en": "The town of Mestia with its medieval Svan stone towers on a forested mountainside, Upper Svaneti, Georgia",
+          "de": "Die Stadt Mestia mit ihren mittelalterlichen swanischen Steintürmen an einem bewaldeten Berghang, Oberswanetien, Georgien",
+          "fr": "La ville de Mestia et ses tours de pierre svanes médiévales sur un versant boisé, Haute-Svanétie, Géorgie",
+          "es": "La localidad de Mestia con sus torres de piedra svanas medievales en una ladera boscosa, Alta Esvanetia, Georgia",
+          "nl": "Het stadje Mestia met zijn middeleeuwse Svanetische stenen torens op een beboste berghelling, Boven-Svanetië, Georgië",
+          "cs": "Město Mestia se středověkými svanskými kamennými věžemi na zalesněném horském svahu, Horní Svanetie, Gruzie",
+          "pl": "Miasteczko Mestia ze średniowiecznymi swańskimi kamiennymi wieżami na zalesionym zboczu, Górna Swanetia, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/7-day-svaneti-tour-from-kutaisi/koruldi-lakes-svaneti-georgia-1200.webp",
+        "base": "/images/tours/7-day-svaneti-tour-from-kutaisi/koruldi-lakes-svaneti-georgia",
+        "widths": [
+          768,
+          1200,
+          1600,
+          2048
+        ],
+        "fallbackWidth": 1200,
+        "width": 2048,
+        "height": 1152,
+        "caption": {
+          "en": "Koruldi Lakes",
+          "de": "Koruldi-Seen",
+          "fr": "Lacs Koruldi",
+          "es": "Lagos Koruldi",
+          "nl": "Koruldi-meren",
+          "cs": "Koruldská jezera",
+          "pl": "Jeziora Koruldi"
+        },
+        "altText": {
+          "en": "A hiker beside a small alpine tarn on the Koruldi Lakes ridge, with the Caucasus peaks reflected in the water, Svaneti, Georgia",
+          "de": "Ein Wanderer an einem kleinen Bergsee auf dem Koruldi-Seen-Grat, mit den Kaukasusgipfeln im Wasser gespiegelt, Swanetien, Georgien",
+          "fr": "Un randonneur au bord d'un petit lac d'altitude sur la crête des lacs Koruldi, les sommets du Caucase se reflétant dans l'eau, Svanétie, Géorgie",
+          "es": "Un excursionista junto a una pequeña laguna alpina en la cresta de los lagos Koruldi, con las cumbres del Cáucaso reflejadas en el agua, Esvanetia, Georgia",
+          "nl": "Een wandelaar bij een klein bergmeertje op de Koruldi-merenrug, met de Kaukasustoppen weerspiegeld in het water, Svanetië, Georgië",
+          "cs": "Turista u malého horského jezírka na hřebeni Koruldských jezer, s vrcholy Kavkazu zrcadlícími se ve vodě, Svanetie, Gruzie",
+          "pl": "Turysta nad małym górskim jeziorkiem na grani Jezior Koruldi, ze szczytami Kaukazu odbijającymi się w wodzie, Swanetia, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/7-day-svaneti-tour-from-kutaisi/greater-caucasus-peaks-svaneti-georgia-1200.webp",
+        "base": "/images/tours/7-day-svaneti-tour-from-kutaisi/greater-caucasus-peaks-svaneti-georgia",
+        "widths": [
+          768,
+          1200,
+          1600,
+          2048
+        ],
+        "fallbackWidth": 1200,
+        "width": 2048,
+        "height": 1536,
+        "caption": {
+          "en": "Greater Caucasus Peaks",
+          "de": "Gipfel des Großen Kaukasus",
+          "fr": "Sommets du Grand Caucase",
+          "es": "Cumbres del Gran Cáucaso",
+          "nl": "Toppen van de Grote Kaukasus",
+          "cs": "Vrcholy Velkého Kavkazu",
+          "pl": "Szczyty Wielkiego Kaukazu"
+        },
+        "altText": {
+          "en": "Cloud-draped snow peaks of the Greater Caucasus above forested valleys, Upper Svaneti, Georgia",
+          "de": "Wolkenverhangene Schneegipfel des Großen Kaukasus über bewaldeten Tälern, Oberswanetien, Georgien",
+          "fr": "Sommets enneigés du Grand Caucase enveloppés de nuages au-dessus de vallées boisées, Haute-Svanétie, Géorgie",
+          "es": "Cumbres nevadas del Gran Cáucaso cubiertas de nubes sobre valles boscosos, Alta Esvanetia, Georgia",
+          "nl": "In wolken gehulde besneeuwde toppen van de Grote Kaukasus boven beboste dalen, Boven-Svanetië, Georgië",
+          "cs": "Zasněžené vrcholy Velkého Kavkazu zahalené v oblacích nad zalesněnými údolími, Horní Svanetie, Gruzie",
+          "pl": "Ośnieżone szczyty Wielkiego Kaukazu spowite chmurami nad zalesionymi dolinami, Górna Swanetia, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/7-day-svaneti-tour-from-kutaisi/upper-svaneti-valley-georgia-1200.webp",
+        "base": "/images/tours/7-day-svaneti-tour-from-kutaisi/upper-svaneti-valley-georgia",
+        "widths": [
+          768,
+          1200,
+          1600,
+          2048
+        ],
+        "fallbackWidth": 1200,
+        "width": 2048,
+        "height": 1536,
+        "caption": {
+          "en": "Upper Svaneti Valley",
+          "de": "Tal in Oberswanetien",
+          "fr": "Vallée de Haute-Svanétie",
+          "es": "Valle de la Alta Esvanetia",
+          "nl": "Vallei in Boven-Svanetië",
+          "cs": "Údolí Horní Svanetie",
+          "pl": "Dolina Górnej Swanetii"
+        },
+        "altText": {
+          "en": "A green Upper Svaneti valley of hay meadows and scattered hamlets below cloud-topped forested ridges, Georgia",
+          "de": "Ein grünes Tal in Oberswanetien mit Heuwiesen und verstreuten Weilern unterhalb wolkenverhangener bewaldeter Kämme, Georgien",
+          "fr": "Une vallée verdoyante de Haute-Svanétie, prairies de fauche et hameaux épars sous des crêtes boisées coiffées de nuages, Géorgie",
+          "es": "Un verde valle de la Alta Esvanetia con prados de siega y caseríos dispersos bajo crestas boscosas cubiertas de nubes, Georgia",
+          "nl": "Een groen dal in Boven-Svanetië met hooivelden en verspreide gehuchten onder met wolken bedekte beboste bergkammen, Georgië",
+          "cs": "Zelené údolí Horní Svanetie s loukami a roztroušenými osadami pod zalesněnými hřebeny zahalenými v oblacích, Gruzie",
+          "pl": "Zielona dolina Górnej Swanetii z łąkami i rozproszonymi przysiółkami pod zalesionymi grzbietami spowitymi chmurami, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/7-day-svaneti-tour-from-kutaisi/lamaria-church-ushguli-shkhara-georgia-1200.webp",
+        "base": "/images/tours/7-day-svaneti-tour-from-kutaisi/lamaria-church-ushguli-shkhara-georgia",
+        "widths": [
+          768,
+          1200,
+          1600,
+          2048
+        ],
+        "fallbackWidth": 1200,
+        "width": 2048,
+        "height": 1365,
+        "caption": {
+          "en": "Lamaria Church, Ushguli",
+          "de": "Lamaria-Kirche, Ushguli",
+          "fr": "Église de Lamaria, Ushguli",
+          "es": "Iglesia de Lamaria, Ushguli",
+          "nl": "Lamaria-kerk, Ushguli",
+          "cs": "Kostel Lamaria, Ušguli",
+          "pl": "Kościół Lamaria, Uszguli"
+        },
+        "altText": {
+          "en": "The medieval Lamaria Church and its stone tower at Ushguli, below the snow-capped east face of Shkhara, Upper Svaneti, Georgia",
+          "de": "Die mittelalterliche Lamaria-Kirche und ihr Steinturm in Ushguli, unterhalb der schneebedeckten Ostwand des Schchara, Oberswanetien, Georgien",
+          "fr": "L'église médiévale de Lamaria et sa tour de pierre à Ushguli, au pied de la face est enneigée du Chkhara, Haute-Svanétie, Géorgie",
+          "es": "La iglesia medieval de Lamaria y su torre de piedra en Ushguli, bajo la cara este nevada del Shjara, Alta Esvanetia, Georgia",
+          "nl": "De middeleeuwse Lamaria-kerk en haar stenen toren bij Ushguli, onder de besneeuwde oostwand van de Sjchara, Boven-Svanetië, Georgië",
+          "cs": "Středověký kostel Lamaria a jeho kamenná věž v Ušguli, pod zasněženou východní stěnou Škhary, Horní Svanetie, Gruzie",
+          "pl": "Średniowieczny kościół Lamaria i jego kamienna wieża w Uszguli, pod ośnieżoną wschodnią ścianą Szchary, Górna Swanetia, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/7-day-svaneti-tour-from-kutaisi/ushguli-village-svan-towers-georgia-1200.webp",
+        "base": "/images/tours/7-day-svaneti-tour-from-kutaisi/ushguli-village-svan-towers-georgia",
+        "widths": [
+          768,
+          1200,
+          1600,
+          2048
+        ],
+        "fallbackWidth": 1200,
+        "width": 2048,
+        "height": 1536,
+        "caption": {
+          "en": "Ushguli Village",
+          "de": "Dorf Ushguli",
+          "fr": "Village d'Ushguli",
+          "es": "Pueblo de Ushguli",
+          "nl": "Dorp Ushguli",
+          "cs": "Vesnice Ušguli",
+          "pl": "Wieś Uszguli"
+        },
+        "altText": {
+          "en": "The village of Ushguli with its medieval Svan stone towers along a green valley, Upper Svaneti, Georgia",
+          "de": "Das Dorf Ushguli mit seinen mittelalterlichen swanischen Steintürmen entlang eines grünen Tals, Oberswanetien, Georgien",
+          "fr": "Le village de Ushguli et ses tours de pierre svanes médiévales le long d'une vallée verdoyante, Haute-Svanétie, Géorgie",
+          "es": "El pueblo de Ushguli con sus torres de piedra svanas medievales a lo largo de un valle verde, Alta Esvanetia, Georgia",
+          "nl": "Het dorp Ushguli met zijn middeleeuwse Svanetische stenen torens langs een groen dal, Boven-Svanetië, Georgië",
+          "cs": "Vesnice Ušguli se středověkými svanskými kamennými věžemi podél zeleného údolí, Horní Svanetie, Gruzie",
+          "pl": "Wieś Uszguli ze średniowiecznymi swańskimi kamiennymi wieżami wzdłuż zielonej doliny, Górna Swanetia, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/7-day-svaneti-tour-from-kutaisi/ushguli-towers-svaneti-georgia-1200.webp",
+        "base": "/images/tours/7-day-svaneti-tour-from-kutaisi/ushguli-towers-svaneti-georgia",
+        "widths": [
+          768,
+          1200,
+          1600,
+          2048
+        ],
+        "fallbackWidth": 1200,
+        "width": 2048,
+        "height": 1365,
+        "caption": {
+          "en": "Ushguli Towers",
+          "de": "Türme von Ushguli",
+          "fr": "Tours d'Ushguli",
+          "es": "Torres de Ushguli",
+          "nl": "Torens van Ushguli",
+          "cs": "Věže Ušguli",
+          "pl": "Wieże Uszguli"
+        },
+        "altText": {
+          "en": "Medieval Svan tower houses of Ushguli in sunlight below a green mountainside, Upper Svaneti, Georgia",
+          "de": "Mittelalterliche swanische Wehrtürme von Ushguli im Sonnenlicht unterhalb eines grünen Berghangs, Oberswanetien, Georgien",
+          "fr": "Maisons-tours svanes médiévales d'Ushguli au soleil, au pied d'un versant verdoyant, Haute-Svanétie, Géorgie",
+          "es": "Casas-torre svanas medievales de Ushguli a la luz del sol, bajo una ladera verde, Alta Esvanetia, Georgia",
+          "nl": "Middeleeuwse Svanetische woontorens van Ushguli in het zonlicht onder een groene berghelling, Boven-Svanetië, Georgië",
+          "cs": "Středověké svanské obytné věže v Ušguli ve slunci pod zeleným horským svahem, Horní Svanetie, Gruzie",
+          "pl": "Średniowieczne swańskie wieże mieszkalne w Uszguli w słońcu u stóp zielonego zbocza, Górna Swanetia, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/7-day-svaneti-tour-from-kutaisi/shkhara-upper-enguri-valley-georgia-1200.webp",
+        "base": "/images/tours/7-day-svaneti-tour-from-kutaisi/shkhara-upper-enguri-valley-georgia",
+        "widths": [
+          768,
+          1200,
+          1600,
+          2048
+        ],
+        "fallbackWidth": 1200,
+        "width": 2048,
+        "height": 1365,
+        "caption": {
+          "en": "Shkhara & Upper Enguri Valley",
+          "de": "Schchara & oberes Enguri-Tal",
+          "fr": "Chkhara et haute vallée de l'Enguri",
+          "es": "Shjara y valle alto del Enguri",
+          "nl": "Sjchara & bovenste Enguri-dal",
+          "cs": "Škhara a horní údolí Enguri",
+          "pl": "Szchara i górna dolina Enguri"
+        },
+        "altText": {
+          "en": "The snow-capped Shkhara massif rising above the green Upper Enguri valley, Upper Svaneti, Georgia",
+          "de": "Das schneebedeckte Schchara-Massiv über dem grünen oberen Enguri-Tal, Oberswanetien, Georgien",
+          "fr": "Le massif enneigé du Chkhara dominant la haute vallée verdoyante de l'Enguri, Haute-Svanétie, Géorgie",
+          "es": "El macizo nevado del Shjara sobre el verde valle alto del Enguri, Alta Esvanetia, Georgia",
+          "nl": "Het besneeuwde Sjchara-massief boven het groene bovenste Enguri-dal, Boven-Svanetië, Georgië",
+          "cs": "Zasněžený masiv Škhara nad zeleným horním údolím Enguri, Horní Svanetie, Gruzie",
+          "pl": "Ośnieżony masyw Szchary nad zieloną górną doliną Enguri, Górna Swanetia, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/7-day-svaneti-tour-from-kutaisi/becho-valley-trail-svaneti-georgia-1200.webp",
+        "base": "/images/tours/7-day-svaneti-tour-from-kutaisi/becho-valley-trail-svaneti-georgia",
+        "widths": [
+          768,
+          1200,
+          1600,
+          2048
+        ],
+        "fallbackWidth": 1200,
+        "width": 2048,
+        "height": 1536,
+        "caption": {
+          "en": "Becho Valley",
+          "de": "Becho-Tal",
+          "fr": "Vallée de Becho",
+          "es": "Valle de Becho",
+          "nl": "Becho-vallei",
+          "cs": "Údolí Becho",
+          "pl": "Dolina Becho"
+        },
+        "altText": {
+          "en": "A grassy trail through the Becho Valley below steep forested and scree-covered mountainsides, Svaneti, Georgia",
+          "de": "Ein Wiesenpfad durch das Becho-Tal unterhalb steiler bewaldeter und geröllbedeckter Berghänge, Swanetien, Georgien",
+          "fr": "Un sentier herbeux traversant la vallée de Becho au pied de versants abrupts boisés et couverts d'éboulis, Svanétie, Géorgie",
+          "es": "Un sendero de hierba por el valle de Becho al pie de laderas escarpadas boscosas y cubiertas de pedregal, Esvanetia, Georgia",
+          "nl": "Een graspad door de Becho-vallei onder steile beboste en met puin bedekte berghellingen, Svanetië, Georgië",
+          "cs": "Travnatá stezka údolím Becho pod strmými zalesněnými a suťovými svahy, Svanetie, Gruzie",
+          "pl": "Trawiasta ścieżka doliną Becho u stóp stromych, zalesionych i pokrytych piargiem zboczy, Swanetia, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/7-day-svaneti-tour-from-kutaisi/ushba-glacier-meadows-svaneti-georgia-1200.webp",
+        "base": "/images/tours/7-day-svaneti-tour-from-kutaisi/ushba-glacier-meadows-svaneti-georgia",
+        "widths": [
+          768,
+          1200,
+          1600,
+          2048
+        ],
+        "fallbackWidth": 1200,
+        "width": 2048,
+        "height": 1536,
+        "caption": {
+          "en": "Ushba Glacier Meadows",
+          "de": "Uschba-Gletscherwiesen",
+          "fr": "Prairies du glacier de l'Ouchba",
+          "es": "Prados del glaciar del Ushba",
+          "nl": "Ushba-gletsjerweiden",
+          "cs": "Ledovcové louky pod Ušbou",
+          "pl": "Łąki lodowcowe pod Uszbą"
+        },
+        "altText": {
+          "en": "Wildflower meadows below a glacier and cloud-wrapped snow peaks in the Becho Valley beneath Ushba, Svaneti, Georgia",
+          "de": "Blumenwiesen unterhalb eines Gletschers und wolkenverhangener Schneegipfel im Becho-Tal unterhalb des Uschba, Swanetien, Georgien",
+          "fr": "Prairies fleuries au pied d'un glacier et de sommets enneigés enveloppés de nuages dans la vallée de Becho, sous l'Ouchba, Svanétie, Géorgie",
+          "es": "Prados floridos al pie de un glaciar y de cumbres nevadas cubiertas de nubes en el valle de Becho, bajo el Ushba, Esvanetia, Georgia",
+          "nl": "Bloemenweiden onder een gletsjer en in wolken gehulde besneeuwde toppen in de Becho-vallei onder de Ushba, Svanetië, Georgië",
+          "cs": "Květnaté louky pod ledovcem a zasněženými vrcholy zahalenými v oblacích v údolí Becho pod Ušbou, Svanetie, Gruzie",
+          "pl": "Kwietne łąki u stóp lodowca i ośnieżonych szczytów spowitych chmurami w dolinie Becho pod Uszbą, Swanetia, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/7-day-svaneti-tour-from-kutaisi/shdugra-waterfall-svaneti-georgia-768.webp",
+        "base": "/images/tours/7-day-svaneti-tour-from-kutaisi/shdugra-waterfall-svaneti-georgia",
+        "widths": [
+          768,
+          1536
+        ],
+        "fallbackWidth": 768,
+        "width": 1536,
+        "height": 2048,
+        "caption": {
+          "en": "Shdugra Waterfall",
+          "de": "Schdugra-Wasserfall",
+          "fr": "Cascade de Shdugra",
+          "es": "Cascada de Shdugra",
+          "nl": "Shdugra-waterval",
+          "cs": "Vodopád Šdugra",
+          "pl": "Wodospad Szdugra"
+        },
+        "altText": {
+          "en": "The tall, thin Shdugra Waterfall dropping down a steep forested mountainside in the Becho Valley, Svaneti, Georgia",
+          "de": "Der hohe, schmale Schdugra-Wasserfall, der einen steilen bewaldeten Berghang im Becho-Tal hinabstürzt, Swanetien, Georgien",
+          "fr": "La haute et fine cascade de Shdugra dévalant un versant boisé escarpé de la vallée de Becho, Svanétie, Géorgie",
+          "es": "La alta y delgada cascada de Shdugra cayendo por una escarpada ladera boscosa en el valle de Becho, Esvanetia, Georgia",
+          "nl": "De hoge, dunne Shdugra-waterval die langs een steile beboste berghelling in de Becho-vallei naar beneden valt, Svanetië, Georgië",
+          "cs": "Vysoký, tenký vodopád Šdugra padající po strmém zalesněném svahu v údolí Becho, Svanetie, Gruzie",
+          "pl": "Wysoki, cienki wodospad Szdugra spadający po stromym, zalesionym zboczu w dolinie Becho, Swanetia, Gruzja"
+        },
+        "objectPosition": "center"
       }
     ],
     "routeMapImage": {
