@@ -475,5 +475,64 @@
   },
   "Bakuriani Inn": {
     "description": "Velký hotel v lyžařském středisku Bakuriani, v ulici Koba Tsakadze mezi dvěma lyžařskými areály obce. Podle vlastních údajů má 153 pokojů a kapacitu až 450 hostů a nabízí wellness centrum s bazénem, vířivkami, saunou, masážními místnostmi a posilovnou. Leží v borovicovém lese na severním svahu Trialetského hřbetu a je zaměřený na rodiny a aktivní hosty."
+  },
+  "Karma Hostel": {
+    "description": "Hostel v bohémském stylu na zeleném pozemku v Martvili, provozovaný v duchu gruzínského vesnického ubytování s evropským nádechem. Karma Hostel nabízí soukromé pokoje a lůžka na společné ložnici kolem sdílené kuchyně a zahrady, kde se hosté scházejí u domácích jídel.",
+    "amenities": [
+      "Wi-Fi zdarma",
+      "Domácí jídla",
+      "Zahrada a terasa",
+      "Sdílená kuchyně a prádelna"
+    ],
+    "locationHighlights": [
+      "Centrum Martvili, blízko kláštera Martvili",
+      "Kousek autem od kaňonu Martvili",
+      "Zhruba v polovině cesty mezi Kutaisi a Zugdidi"
+    ],
+    "imageAlts": [
+      "Vstupní brána a dvoupatrová budova Karma Hostel v Martvili, Gruzie",
+      "Domácí snídaně ve sdílené kuchyni Karma Hostel, Martvili",
+      "Pokoj s dřevěnou postelí na podestě v Karma Hostel, Martvili, Gruzie",
+      "Soukromá dřevěná terasa s posezením v Karma Hostel, Martvili, Gruzie"
+    ]
+  },
+  "Old House Mestia": {
+    "description": "Rodinný hotel na svahu nad Mestií, postavený kolem vlastní kamenné svanské věže, s terasou s výhledem na město a okolní vrcholy. Old House Mestia spojuje pohodlné pokoje s vlastní restaurací a snadným přístupem k turistickým trasám nad městem.",
+    "amenities": [
+      "Wi-Fi zdarma",
+      "Restaurace a snídaně",
+      "Terasa s výhledem na hory",
+      "Recepce 24 hodin denně"
+    ],
+    "locationHighlights": [
+      "Poloha na svahu nad Mestií s výhledem na hory a ledovce",
+      "Asi 20 minut pěšky od centra města",
+      "Blízko sjezdovek v Mestii a turistických tras"
+    ],
+    "imageAlts": [
+      "Old House Mestia s vlastní kamennou svanskou věží, v pozadí hory, Gruzie",
+      "Recepce a salonek v Old House Mestia, Svanetie, Gruzie",
+      "Pokoj v Old House Mestia ve Svanetii, Gruzie",
+      "Koupelna se skleněným sprchovým koutem v Old House Mestia, Svanetie"
+    ]
+  },
+  "Old House Ushguli": {
+    "description": "Tradiční kamenný svanský dům s vlastní věží ve vesnici Ušguli na horním konci údolí Enguri. Old House Ushguli si uchovává svůj historický ráz zvenčí i uvnitř, s jednoduchými pokoji a domácími jídly na místě, kam cestovatelé obvykle dorazí jen na jednu noc.",
+    "amenities": [
+      "Wi-Fi zdarma",
+      "Domácí jídla",
+      "Bezplatné soukromé parkování",
+      "Recepce 24 hodin denně"
+    ],
+    "locationHighlights": [
+      "V Ušguli, vesnici zapsané na seznamu světového dědictví UNESCO",
+      "Tradiční kamenná svanská věž přímo na pozemku",
+      "Výhled na hory údolí Enguri"
+    ],
+    "imageAlts": [
+      "Kamenná věž a vyřezávaná cedule „Old House\" v Old House Ushguli, Horní Svanetie",
+      "Tradičně dřevem obložený pokoj v Old House Ushguli, Gruzie",
+      "Domácí gruzínská jídla servírovaná hostům v Old House Ushguli"
+    ]
   }
 }

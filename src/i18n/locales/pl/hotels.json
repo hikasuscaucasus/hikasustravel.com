@@ -475,5 +475,64 @@
   },
   "Bakuriani Inn": {
     "description": "Duży hotel w kurorcie narciarskim Bakuriani, przy ulicy Koby Cakadzego, między dwoma terenami narciarskimi miejscowości. Według informacji hotelu ma 153 pokoje i mieści do 450 gości, a także centrum wellness z basenem, jacuzzi, sauną, gabinetami masażu i siłownią. Leży w sosnowym lesie na północnym stoku pasma Trialeti i jest nastawiony na rodziny oraz aktywnych gości."
+  },
+  "Karma Hostel": {
+    "description": "Hostel w bohemiańskim stylu na zielonej posesji w Martvili, prowadzony w duchu gruzińskiego pobytu wiejskiego z europejskim akcentem. Karma Hostel oferuje pokoje prywatne i łóżka w pokojach wieloosobowych wokół wspólnej kuchni i ogrodu, gdzie goście spotykają się przy domowych posiłkach.",
+    "amenities": [
+      "Bezpłatne Wi-Fi",
+      "Domowe posiłki",
+      "Ogród i taras",
+      "Wspólna kuchnia i pralnia"
+    ],
+    "locationHighlights": [
+      "Centrum Martvili, blisko klasztoru w Martvili",
+      "Krótki dojazd do kanionu Martvili",
+      "Mniej więcej w połowie drogi między Kutaisi a Zugdidi"
+    ],
+    "imageAlts": [
+      "Brama wjazdowa i dwupiętrowy budynek Karma Hostel w Martvili, Gruzja",
+      "Domowe śniadanie we wspólnej kuchni Karma Hostel, Martvili",
+      "Pokój z drewnianym łóżkiem na podeście w Karma Hostel, Martvili, Gruzja",
+      "Prywatny drewniany taras z miejscami siedzącymi w Karma Hostel, Martvili, Gruzja"
+    ]
+  },
+  "Old House Mestia": {
+    "description": "Rodzinny hotel na zboczu nad Mestią, zbudowany wokół własnej kamiennej swańskiej wieży, z tarasem z widokiem na miasto i okoliczne szczyty. Old House Mestia łączy wygodne pokoje z restauracją na miejscu i łatwym dostępem do szlaków powyżej miasta.",
+    "amenities": [
+      "Bezpłatne Wi-Fi",
+      "Restauracja i śniadanie",
+      "Taras z widokiem na góry",
+      "Recepcja czynna całą dobę"
+    ],
+    "locationHighlights": [
+      "Położenie na zboczu nad Mestią, z widokiem na góry i lodowce",
+      "Około 20 minut pieszo od centrum miasta",
+      "Blisko stoków narciarskich Mestii i szlaków turystycznych"
+    ],
+    "imageAlts": [
+      "Old House Mestia z własną kamienną swańską wieżą, w tle góry, Gruzja",
+      "Recepcja i lounge w Old House Mestia, Swanetia, Gruzja",
+      "Pokój w Old House Mestia w Swanetii, Gruzja",
+      "Łazienka z prysznicem w szklanej kabinie w Old House Mestia, Swanetia"
+    ]
+  },
+  "Old House Ushguli": {
+    "description": "Tradycyjny kamienny swański dom z własną wieżą we wsi Uszguli, u początku doliny Enguri. Old House Ushguli zachowuje swój historyczny charakter na zewnątrz i wewnątrz, z prostymi pokojami i domowymi posiłkami w miejscu, do którego podróżni docierają zwykle tylko na jedną noc.",
+    "amenities": [
+      "Bezpłatne Wi-Fi",
+      "Domowe posiłki",
+      "Bezpłatny prywatny parking",
+      "Recepcja czynna całą dobę"
+    ],
+    "locationHighlights": [
+      "W Uszguli, wsi wpisanej na Listę Światowego Dziedzictwa UNESCO",
+      "Tradycyjna kamienna swańska wieża na terenie posesji",
+      "Widok na góry doliny Enguri"
+    ],
+    "imageAlts": [
+      "Kamienna wieża i rzeźbiony szyld „Old House\" w Old House Ushguli, Górna Swanetia",
+      "Tradycyjny drewniany pokój w Old House Ushguli, Gruzja",
+      "Domowe gruzińskie potrawy podane gościom w Old House Ushguli"
+    ]
   }
 }

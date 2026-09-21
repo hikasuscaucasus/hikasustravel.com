@@ -475,5 +475,64 @@
   },
   "Bakuriani Inn": {
     "description": "Een groot hotel in het skidorp Bakuriani, aan de Koba Tsakadzestraat tussen de twee skigebieden van het dorp. Volgens het hotel zelf heeft het 153 kamers en plaats voor maximaal 450 gasten, plus een wellnesscentrum met zwembad, jacuzzi’s, sauna, massageruimten en een fitnessruimte. Het ligt in het dennenbos op de noordhelling van het Trialetigebergte en richt zich op gezinnen en actieve gasten."
+  },
+  "Karma Hostel": {
+    "description": "Een hostel in bohemienstijl op een groen terrein in Martvili, gerund in de geest van een Georgisch dorpsverblijf met een Europees tintje. Karma Hostel biedt privékamers en slaapzaalbedden rond een gedeelde keuken en tuin, waar gasten samenkomen voor huisgemaakte maaltijden.",
+    "amenities": [
+      "Gratis wifi",
+      "Huisgemaakte maaltijden",
+      "Tuin en terras",
+      "Gedeelde keuken en wasruimte"
+    ],
+    "locationHighlights": [
+      "Centraal Martvili, dicht bij het klooster van Martvili",
+      "Een korte rit van de Martvili-kloof",
+      "Ongeveer halverwege Kutaisi en Zugdidi"
+    ],
+    "imageAlts": [
+      "Poortentree en tweeverdiepingen tellend gebouw van Karma Hostel in Martvili, Georgië",
+      "Huisgemaakt ontbijt in de gedeelde keuken van Karma Hostel, Martvili",
+      "Kamer met een houten platformbed bij Karma Hostel, Martvili, Georgië",
+      "Privéterras van hout met zitplaatsen bij Karma Hostel, Martvili, Georgië"
+    ]
+  },
+  "Old House Mestia": {
+    "description": "Een familiehotel op een heuvel boven Mestia, gebouwd rond een eigen stenen Svanetische toren, met een terras dat uitkijkt over de stad en de omliggende bergen. Old House Mestia combineert comfortabele kamers met een eigen restaurant en eenvoudige toegang tot de wandelroutes boven de stad.",
+    "amenities": [
+      "Gratis wifi",
+      "Restaurant en ontbijt",
+      "Terras met bergzicht",
+      "24-uurs receptie"
+    ],
+    "locationHighlights": [
+      "Ligging op een heuvel boven Mestia, met uitzicht op bergen en gletsjers",
+      "Ongeveer 20 minuten lopen van het centrum",
+      "Dicht bij de skipistes van Mestia en de wandelroutes"
+    ],
+    "imageAlts": [
+      "Old House Mestia met eigen stenen Svanetische toren, bergen op de achtergrond, Georgië",
+      "Receptie en lounge van Old House Mestia, Svanetië, Georgië",
+      "Kamer bij Old House Mestia in Svanetië, Georgië",
+      "Badkamer met glazen douchecabine bij Old House Mestia, Svanetië"
+    ]
+  },
+  "Old House Ushguli": {
+    "description": "Een traditioneel stenen Svanetisch huis met een eigen toren, in het dorp Ushguli aan het begin van de Enguri-vallei. Old House Ushguli behoudt zijn historische karakter van binnen en van buiten, met eenvoudige kamers en huisgemaakte maaltijden op een plek die reizigers doorgaans alleen voor een overnachting bereiken.",
+    "amenities": [
+      "Gratis wifi",
+      "Huisgemaakte maaltijden",
+      "Gratis privéparkeren",
+      "24-uurs receptie"
+    ],
+    "locationHighlights": [
+      "In Ushguli, een dorp op de Werelderfgoedlijst van UNESCO",
+      "Traditionele stenen Svanetische toren op het terrein",
+      "Uitzicht op de bergen van de Enguri-vallei"
+    ],
+    "imageAlts": [
+      "Stenen toren en uitgesneden bord \"Old House\" bij Old House Ushguli, Boven-Svanetië",
+      "Traditionele houten kamer bij Old House Ushguli, Georgië",
+      "Huisgemaakte Georgische gerechten geserveerd aan gasten bij Old House Ushguli"
+    ]
   }
 }

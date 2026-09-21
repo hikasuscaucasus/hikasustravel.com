@@ -475,5 +475,64 @@
   },
   "Bakuriani Inn": {
     "description": "Ein großes Hotel im Skiort Bakuriani, an der Koba-Tsakadze-Straße zwischen den beiden Skigebieten des Ortes gelegen. Nach eigenen Angaben verfügt es über 153 Zimmer und Platz für bis zu 450 Gäste sowie einen Wellnessbereich mit Schwimmbad, Whirlpools, Sauna, Massageräumen und Fitnessraum. Das Haus liegt im Kiefernwald am Nordhang des Trialeti-Gebirges und ist auf Familien und aktive Gäste ausgerichtet."
+  },
+  "Karma Hostel": {
+    "description": "Ein Hostel im Bohème-Stil auf einem begrünten Grundstück in Martvili, geführt im Geist eines georgischen Dorf-Homestays mit europäischem Touch. Karma Hostel bietet Privatzimmer und Schlafsaalbetten rund um eine gemeinsame Küche und einen Garten, wo sich die Gäste bei hausgemachten Mahlzeiten treffen.",
+    "amenities": [
+      "Kostenloses WLAN",
+      "Hausgemachte Mahlzeiten",
+      "Garten & Terrasse",
+      "Gemeinschaftsküche & Wäscherei"
+    ],
+    "locationHighlights": [
+      "Zentrales Martvili, nahe dem Kloster Martvili",
+      "Kurze Fahrt zur Schlucht von Martvili",
+      "Etwa auf halbem Weg zwischen Kutaisi und Zugdidi"
+    ],
+    "imageAlts": [
+      "Torzufahrt und zweistöckiges Gebäude des Karma Hostel in Martvili, Georgien",
+      "Hausgemachtes Frühstück in der Gemeinschaftsküche des Karma Hostel, Martvili",
+      "Gästezimmer mit hölzernem Podestbett im Karma Hostel, Martvili, Georgien",
+      "Private Holzterrasse mit Sitzgelegenheit im Karma Hostel, Martvili, Georgien"
+    ]
+  },
+  "Old House Mestia": {
+    "description": "Ein familiengeführtes Hotel an einem Hang oberhalb von Mestia, errichtet um einen eigenen steinernen Swanen-Turm, mit einer Terrasse mit Blick über die Stadt und die umliegenden Gipfel. Old House Mestia verbindet komfortable Zimmer mit einem hauseigenen Restaurant und einfachem Zugang zu den Wanderwegen oberhalb der Stadt.",
+    "amenities": [
+      "Kostenloses WLAN",
+      "Restaurant & Frühstück",
+      "Terrasse mit Bergblick",
+      "24-Stunden-Rezeption"
+    ],
+    "locationHighlights": [
+      "Hanglage oberhalb von Mestia mit Blick auf Berge und Gletscher",
+      "Etwa 20 Gehminuten vom Stadtzentrum entfernt",
+      "Nahe den Skipisten von Mestia und den Wanderwegen"
+    ],
+    "imageAlts": [
+      "Old House Mestia mit eigenem steinernem Swanen-Turm, im Hintergrund Berge, Georgien",
+      "Rezeption und Lounge im Old House Mestia, Swanetien, Georgien",
+      "Gästezimmer im Old House Mestia in Swanetien, Georgien",
+      "Badezimmer mit verglaster Dusche im Old House Mestia, Swanetien"
+    ]
+  },
+  "Old House Ushguli": {
+    "description": "Ein traditionelles steinernes Swanen-Haus mit eigenem Turm im Dorf Ushguli am oberen Ende des Enguri-Tals. Old House Ushguli bewahrt seinen historischen Charakter innen wie außen, mit einfachen Gästezimmern und hausgemachten Mahlzeiten an einem Ort, den Reisende meist nur für eine Übernachtung erreichen.",
+    "amenities": [
+      "Kostenloses WLAN",
+      "Hausgemachte Mahlzeiten",
+      "Kostenlose Privatparkplätze",
+      "24-Stunden-Rezeption"
+    ],
+    "locationHighlights": [
+      "In Ushguli, einem UNESCO-Welterbedorf",
+      "Traditioneller steinerner Swanen-Turm auf dem Grundstück",
+      "Bergblick über das Enguri-Tal"
+    ],
+    "imageAlts": [
+      "Steinturm und geschnitztes „Old House\"-Schild im Old House Ushguli, Oberswanetien",
+      "Traditionell holzverkleidetes Gästezimmer im Old House Ushguli, Georgien",
+      "Hausgemachte georgische Gerichte für die Gäste im Old House Ushguli"
+    ]
   }
 }

@@ -475,5 +475,64 @@
   },
   "Bakuriani Inn": {
     "description": "Un grand hôtel de la station de Bakuriani, situé rue Koba Tsakadze, entre les deux domaines skiables du village. Selon l'établissement, il compte 153 chambres et peut accueillir jusqu'à 450 personnes, avec un espace bien-être doté d'une piscine, de jacuzzis, d'un sauna, de salles de massage et d'une salle de sport. Il se trouve dans la pinède du versant nord de la chaîne du Trialeti et s'adresse aux familles comme aux amateurs d'activités."
+  },
+  "Karma Hostel": {
+    "description": "Une auberge de style bohème sur une propriété verdoyante à Martvili, tenue dans l'esprit d'un séjour chez l'habitant géorgien avec une touche européenne. Karma Hostel propose des chambres privées et des lits en dortoir autour d'une cuisine commune et d'un jardin, où les voyageurs se retrouvent autour de repas faits maison.",
+    "amenities": [
+      "Wi-Fi gratuit",
+      "Repas faits maison",
+      "Jardin et terrasse",
+      "Cuisine commune et laverie"
+    ],
+    "locationHighlights": [
+      "Centre de Martvili, près du monastère de Martvili",
+      "À quelques minutes en voiture des gorges de Martvili",
+      "À mi-chemin environ entre Koutaïssi et Zougdidi"
+    ],
+    "imageAlts": [
+      "Entrée à portail et bâtiment de deux étages du Karma Hostel à Martvili, Géorgie",
+      "Petit-déjeuner fait maison dans la cuisine commune du Karma Hostel, Martvili",
+      "Chambre avec lit sur plateforme en bois au Karma Hostel, Martvili, Géorgie",
+      "Terrasse en bois privée avec assises au Karma Hostel, Martvili, Géorgie"
+    ]
+  },
+  "Old House Mestia": {
+    "description": "Un hôtel familial situé sur une colline au-dessus de Mestia, construit autour de sa propre tour svane en pierre, avec une terrasse offrant une vue sur la ville et les sommets environnants. Old House Mestia associe des chambres confortables à un restaurant sur place et un accès facile aux départs de randonnée au-dessus de la ville.",
+    "amenities": [
+      "Wi-Fi gratuit",
+      "Restaurant et petit-déjeuner",
+      "Terrasse avec vue sur les montagnes",
+      "Réception 24h/24"
+    ],
+    "locationHighlights": [
+      "Situation en hauteur au-dessus de Mestia, avec vue sur les montagnes et les glaciers",
+      "À environ 20 minutes à pied du centre-ville",
+      "Proche des pistes de ski de Mestia et des départs de randonnée"
+    ],
+    "imageAlts": [
+      "Old House Mestia avec sa propre tour svane en pierre, montagnes en arrière-plan, Géorgie",
+      "Réception et salon de l'Old House Mestia, Svanétie, Géorgie",
+      "Chambre à l'Old House Mestia en Svanétie, Géorgie",
+      "Salle de bain avec douche vitrée à l'Old House Mestia, Svanétie"
+    ]
+  },
+  "Old House Ushguli": {
+    "description": "Une maison svane traditionnelle en pierre avec sa propre tour, dans le village d'Ushguli à la tête de la vallée de l'Enguri. Old House Ushguli conserve son caractère historique, à l'intérieur comme à l'extérieur, avec des chambres simples et des repas faits maison dans un cadre que les voyageurs n'atteignent généralement que pour une nuit.",
+    "amenities": [
+      "Wi-Fi gratuit",
+      "Repas faits maison",
+      "Parking privé gratuit",
+      "Réception 24h/24"
+    ],
+    "locationHighlights": [
+      "À Ushguli, village classé au patrimoine mondial de l'UNESCO",
+      "Tour svane en pierre traditionnelle sur la propriété",
+      "Vue sur les montagnes de la vallée de l'Enguri"
+    ],
+    "imageAlts": [
+      "Tour en pierre et enseigne sculptée « Old House » à l'Old House Ushguli, Haute-Svanétie",
+      "Chambre traditionnelle lambrissée à l'Old House Ushguli, Géorgie",
+      "Plats géorgiens faits maison servis aux hôtes à l'Old House Ushguli"
+    ]
   }
 }

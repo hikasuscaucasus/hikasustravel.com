@@ -983,6 +983,72 @@ const hotelData = {
       'Within walking distance of the National Gallery of Armenia',
     ],
   },
+  // Three Svaneti/Samegrelo properties added for the 7-Day Svaneti Tour, built
+  // as canonical shared records (not tour-specific data) so any current or
+  // future tour naming one of these exact hotel names gets the same clickable
+  // info/gallery automatically. Facts verified against each property's own
+  // booking-platform listing (see the task's final report for sources); no
+  // amenity is listed that could not be corroborated, and no star rating is
+  // given since none of the three carries an official classification.
+  'Karma Hostel': {
+    images: [
+      { src: '/images/hotels/karma-hostel.jpg', alt: 'Gated entrance and two-storey building of Karma Hostel in Martvili, Georgia', category: 'Exterior' },
+      { src: '/images/hotels/karma-hostel-2.jpg', alt: 'Home-cooked breakfast spread in the shared kitchen at Karma Hostel, Martvili', category: 'Kitchen' },
+      { src: '/images/hotels/karma-hostel-3.jpg', alt: 'Guest room with a wooden platform bed at Karma Hostel, Martvili, Georgia', category: 'Room' },
+      { src: '/images/hotels/karma-hostel-4.jpg', alt: 'Private wooden terrace with seating at Karma Hostel, Martvili, Georgia', category: 'Terrace' },
+    ],
+    description: 'A bohemian-style hostel on a leafy property in Martvili, run in the spirit of a village homestay with a European twist. Karma Hostel offers private rooms and dorm beds around a shared kitchen and garden, with guests coming together over home-cooked meals.',
+    amenities: [
+      { icon: 'wifi', label: 'Free Wi-Fi' },
+      { icon: 'restaurant', label: 'Home-Cooked Meals' },
+      { icon: 'garden', label: 'Garden & Terrace' },
+      { icon: 'laundry', label: 'Shared Kitchen & Laundry' },
+    ],
+    locationHighlights: [
+      'Central Martvili, close to Martvili Monastery',
+      'A short drive from Martvili Canyon',
+      'Roughly halfway between Kutaisi and Zugdidi',
+    ],
+  },
+  'Old House Mestia': {
+    images: [
+      { src: '/images/hotels/old-house-mestia.jpg', alt: 'Old House Mestia with its own Svan stone tower, mountains behind, Georgia', category: 'Exterior' },
+      { src: '/images/hotels/old-house-mestia-2.jpg', alt: 'Reception and lobby lounge at Old House Mestia, Svaneti, Georgia', category: 'Lobby' },
+      { src: '/images/hotels/old-house-mestia-3.jpg', alt: 'Guest room at Old House Mestia in Svaneti, Georgia', category: 'Room' },
+      { src: '/images/hotels/old-house-mestia-4.jpg', alt: 'Bathroom with a glass-enclosed shower at Old House Mestia, Svaneti', category: 'Bathroom' },
+    ],
+    description: 'A family-run hotel set on a hillside above Mestia, built around its own Svan stone tower with a terrace looking out over the town and the surrounding peaks. Old House Mestia pairs comfortable rooms with an on-site restaurant and easy access to the trailheads above town.',
+    amenities: [
+      { icon: 'wifi', label: 'Free Wi-Fi' },
+      { icon: 'restaurant', label: 'Restaurant & Breakfast' },
+      { icon: 'terrace', label: 'Mountain-View Terrace' },
+      { icon: 'concierge', label: '24-Hour Front Desk' },
+    ],
+    locationHighlights: [
+      'Hillside setting above Mestia, with mountain and glacier views',
+      'About a 20-minute walk from the town centre',
+      'Close to the Mestia ski slopes and hiking trailheads',
+    ],
+  },
+  'Old House Ushguli': {
+    images: [
+      { src: '/images/hotels/old-house-ushguli.jpg', alt: 'Stone tower and carved "Old House" sign at Old House Ushguli, Upper Svaneti', category: 'Exterior' },
+      { src: '/images/hotels/old-house-ushguli-2.jpg', alt: 'Traditional wood-panelled guest room at Old House Ushguli, Georgia', category: 'Room' },
+      { src: '/images/hotels/old-house-ushguli-3.jpg', alt: 'Home-cooked Georgian dishes laid out for guests at Old House Ushguli', category: 'Dining' },
+    ],
+    description: 'A traditional stone Svan house with its own tower, in the village of Ushguli at the head of the Enguri Valley. Old House Ushguli keeps its historic character inside and out, with simple guest rooms and home-cooked meals in a setting travelers rarely reach outside an overnight stay.',
+    amenities: [
+      { icon: 'wifi', label: 'Free Wi-Fi' },
+      { icon: 'restaurant', label: 'Home-Cooked Meals' },
+      { icon: 'parking', label: 'Free Private Parking' },
+      { icon: 'concierge', label: '24-Hour Front Desk' },
+    ],
+    locationHighlights: [
+      'In Ushguli, a UNESCO World Heritage village',
+      'Traditional Svan stone tower on the property',
+      'Mountain views over the Enguri Valley',
+    ],
+  },
 }
 
 // Retired spellings that map onto a canonical entry. Nothing in tours.js uses
