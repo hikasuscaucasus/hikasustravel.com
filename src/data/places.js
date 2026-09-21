@@ -16165,7 +16165,7 @@ export const sites = [
     // both are parented on the Gobustan settlement (parentType 'place', no
     // landing page of its own), giving /azerbaijan/gobustan/<slug>.
     slug: 'gobustan-petroglyphs', name: 'Gobustan Petroglyphs',
-    parentType: 'place', parent: 'gobustan', country: 'azerbaijan', published: false,
+    parentType: 'place', parent: 'gobustan', country: 'azerbaijan', published: true,
     seoKey: 'gobustanPetroglyphs', contentKey: 'gobustanPetroglyphs',
     noHero: true, noAutolink: true,
   },
