@@ -9445,6 +9445,20 @@ export const cities = [
     noHero: true, heroTitleAsH1: true, noAutolink: true,
   },
   {
+    slug: 'diri-baba-mausoleum', name: 'Diri Baba Mausoleum',
+    region: 'mountainous-shirvan', published: true, country: 'azerbaijan',
+    seoKey: 'diriBabaMausoleum', contentKey: 'diriBabaMausoleum',
+    // Same fix as zagatala-nature-reserve above: a region-parented `sites`
+    // entry with this exact slug already existed (published: false) but
+    // sitePath() would nest it under /azerbaijan/mountainous-shirvan/, not
+    // the flat route the brief asked for. Modeled as a `cities` place
+    // instead (Gomismta pattern) for the flat cityPath() route; the old
+    // `sites` placeholder is left unpublished and unused.
+    classifyAs: 'place',
+    placeLocation: { cityId: null, municipalityId: null, regionId: 'mountainous-shirvan' },
+    noHero: true, noAutolink: true,
+  },
+  {
     slug: 'sheki', name: 'Sheki', region: 'sheki-zagatala', published: true, country: 'azerbaijan',
     seoKey: 'sheki', contentKey: 'sheki',
     featured: true,
