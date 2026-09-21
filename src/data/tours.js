@@ -19870,8 +19870,8 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/7-day-svaneti-tour-from-kutaisi/shdugra-waterfall-svaneti-georgia-768.webp",
-        "base": "/images/tours/7-day-svaneti-tour-from-kutaisi/shdugra-waterfall-svaneti-georgia",
+        "src": "/images/tours/7-day-svaneti-tour-from-kutaisi/mountain-stream-becho-valley-georgia-768.webp",
+        "base": "/images/tours/7-day-svaneti-tour-from-kutaisi/mountain-stream-becho-valley-georgia",
         "widths": [
           768,
           1536
@@ -19880,22 +19880,22 @@ export const tours = [
         "width": 1536,
         "height": 2048,
         "caption": {
-          "en": "Shdugra Waterfall",
-          "de": "Schdugra-Wasserfall",
-          "fr": "Cascade de Shdugra",
-          "es": "Cascada de Shdugra",
-          "nl": "Shdugra-waterval",
-          "cs": "Vodopád Šdugra",
-          "pl": "Wodospad Szdugra"
+          "en": "Mountain Stream, Becho Valley",
+          "de": "Bergbach, Becho-Tal",
+          "fr": "Ruisseau de montagne, vallée de Becho",
+          "es": "Arroyo de montaña, valle de Becho",
+          "nl": "Bergbeek, Becho-vallei",
+          "cs": "Horský potok, údolí Becho",
+          "pl": "Górski potok, dolina Becho"
         },
         "altText": {
-          "en": "The tall, thin Shdugra Waterfall dropping down a steep forested mountainside in the Becho Valley, Svaneti, Georgia",
-          "de": "Der hohe, schmale Schdugra-Wasserfall, der einen steilen bewaldeten Berghang im Becho-Tal hinabstürzt, Swanetien, Georgien",
-          "fr": "La haute et fine cascade de Shdugra dévalant un versant boisé escarpé de la vallée de Becho, Svanétie, Géorgie",
-          "es": "La alta y delgada cascada de Shdugra cayendo por una escarpada ladera boscosa en el valle de Becho, Esvanetia, Georgia",
-          "nl": "De hoge, dunne Shdugra-waterval die langs een steile beboste berghelling in de Becho-vallei naar beneden valt, Svanetië, Georgië",
-          "cs": "Vysoký, tenký vodopád Šdugra padající po strmém zalesněném svahu v údolí Becho, Svanetie, Gruzie",
-          "pl": "Wysoki, cienki wodospad Szdugra spadający po stromym, zalesionym zboczu w dolinie Becho, Swanetia, Gruzja"
+          "en": "A narrow mountain stream cascading down a steep, densely forested slope in the Becho Valley, Svaneti, Georgia",
+          "de": "Ein schmaler Gebirgsbach, der einen steilen, dicht bewaldeten Hang im Becho-Tal hinabstürzt, Swanetien, Georgien",
+          "fr": "Un étroit ruisseau de montagne dévalant un versant escarpé et densément boisé dans la vallée de Becho, Svanétie, Géorgie",
+          "es": "Un estrecho arroyo de montaña que desciende por una ladera empinada y densamente boscosa en el valle de Becho, Esvanetia, Georgia",
+          "nl": "Een smalle bergbeek die langs een steile, dicht beboste helling in de Becho-vallei naar beneden stroomt, Svanetië, Georgië",
+          "cs": "Úzký horský potok stékající po strmém, hustě zalesněném svahu v údolí Becho, Svanetie, Gruzie",
+          "pl": "Wąski górski potok spływający po stromym, gęsto zalesionym zboczu w dolinie Becho, Swanetia, Gruzja"
         },
         "objectPosition": "center"
       }
