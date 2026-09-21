@@ -19396,7 +19396,7 @@ export const tours = [
       },
       {
         "title": "Day 7 — Mazeri – Zugdidi – Kutaisi International Airport",
-        "content": "<p>A last morning under Ushba, then down the Enguri road out of the mountains. If your flight allows, there's a stop in Zugdidi for a Megrelian lunch — elarji, gebzhalia and the local approach to chilli that Svaneti doesn't share — and the Dadiani Palace and its park can be added for anyone curious about how the princes of Samegrelo lived, though the day is better slightly empty than crowded. You continue to Kutaisi International Airport in good time for check-in.</p><ul><li>Drive down the Enguri Valley;</li><li>Optional stop in Zugdidi for lunch;</li><li>Transfer to Kutaisi International Airport;</li><li>Departure.</li><li><strong>Driving duration:</strong> 4 hours</li></ul>"
+        "content": "<p>A last morning under Ushba, then down the Enguri road out of the mountains. If your flight allows, there's a stop in Zugdidi for a Megrelian lunch — elarji, gebzhalia and the local approach to chilli that Svaneti doesn't share — and the Dadiani Palace and its park can be added for anyone curious about how the princes of Samegrelo lived, though the day is better slightly empty than crowded. You continue to Kutaisi International Airport in good time for check-in.</p><ul><li>Drive down the Enguri Valley;</li><li>Optional stop in Zugdidi for lunch;</li><li>Transfer to Kutaisi International Airport;</li><li>Departure.</li><li><strong>Driving duration:</strong> 4.5 hours</li></ul>"
       }
     ],
     "accommodationMode": "single",
@@ -19868,36 +19868,6 @@ export const tours = [
           "cs": "Květnaté louky pod ledovcem a zasněženými vrcholy zahalenými v oblacích v údolí Becho pod Ušbou, Svanetie, Gruzie",
           "pl": "Kwietne łąki u stóp lodowca i ośnieżonych szczytów spowitych chmurami w dolinie Becho pod Uszbą, Swanetia, Gruzja"
         }
-      },
-      {
-        "src": "/images/tours/7-day-svaneti-tour-from-kutaisi/mountain-stream-becho-valley-georgia-768.webp",
-        "base": "/images/tours/7-day-svaneti-tour-from-kutaisi/mountain-stream-becho-valley-georgia",
-        "widths": [
-          768,
-          1536
-        ],
-        "fallbackWidth": 768,
-        "width": 1536,
-        "height": 2048,
-        "caption": {
-          "en": "Mountain Stream, Becho Valley",
-          "de": "Bergbach, Becho-Tal",
-          "fr": "Ruisseau de montagne, vallée de Becho",
-          "es": "Arroyo de montaña, valle de Becho",
-          "nl": "Bergbeek, Becho-vallei",
-          "cs": "Horský potok, údolí Becho",
-          "pl": "Górski potok, dolina Becho"
-        },
-        "altText": {
-          "en": "A narrow mountain stream cascading down a steep, densely forested slope in the Becho Valley, Svaneti, Georgia",
-          "de": "Ein schmaler Gebirgsbach, der einen steilen, dicht bewaldeten Hang im Becho-Tal hinabstürzt, Swanetien, Georgien",
-          "fr": "Un étroit ruisseau de montagne dévalant un versant escarpé et densément boisé dans la vallée de Becho, Svanétie, Géorgie",
-          "es": "Un estrecho arroyo de montaña que desciende por una ladera empinada y densamente boscosa en el valle de Becho, Esvanetia, Georgia",
-          "nl": "Een smalle bergbeek die langs een steile, dicht beboste helling in de Becho-vallei naar beneden stroomt, Svanetië, Georgië",
-          "cs": "Úzký horský potok stékající po strmém, hustě zalesněném svahu v údolí Becho, Svanetie, Gruzie",
-          "pl": "Wąski górski potok spływający po stromym, gęsto zalesionym zboczu w dolinie Becho, Swanetia, Gruzja"
-        },
-        "objectPosition": "center"
       }
     ],
     "routeMapImage": {
