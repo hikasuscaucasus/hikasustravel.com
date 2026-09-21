@@ -9467,7 +9467,7 @@ export const cities = [
       seoKey: 'thingsToDoSheki', contentKey: 'thingsToDoSheki',
       noHero: true,
       address: { addressLocality: 'Sheki' },
-      attractions: ["Palace of the Sheki Khans","Sheki Fortress","Shabaka Workshop","Upper Caravanserai","Lower Caravanserai","Shekikhanovs' House","Sheki History and Ethnography Museum","Kish Church","Kish Adasi","Gelersen-Gorersen Fortress","Sheki Bazaar","Sheki Wines"],
+      attractions: ["Palace of the Sheki Khans","Sheki Fortress","Shabaka Workshop","Upper Caravanserai","Lower Caravanserai","Shekikhanovs' House","Sheki History and Ethnography Museum","Church of Kish","Kish Adasi","Gelersen-Gorersen Fortress","Sheki Bazaar","Sheki Wines"],
     },
   },
   {
@@ -16025,6 +16025,13 @@ export const sites = [
     slug: 'caravanserai', name: 'Sheki Caravanserai',
     parentType: 'city', parent: 'sheki', published: true,
     seoKey: 'shekiCaravanserai', contentKey: 'shekiCaravanserai',
+    // No Sheki imagery of any kind exists in the asset library yet.
+    noHero: true, noAutolink: true,
+  },
+  {
+    slug: 'church-of-kish', name: 'Church of Kish',
+    parentType: 'city', parent: 'sheki', published: true,
+    seoKey: 'churchOfKish', contentKey: 'churchOfKish',
     // No Sheki imagery of any kind exists in the asset library yet.
     noHero: true, noAutolink: true,
   },
