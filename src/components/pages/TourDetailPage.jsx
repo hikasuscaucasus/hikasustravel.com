@@ -342,7 +342,11 @@ export default function TourDetailPage() {
             <FadeUp>
               <h2 className="td-section__title">{t('tour.bookThisTour')}</h2>
               {!isGroup && <p className="td-section__subtitle">{t('form.privateIntro')}</p>}
-              <TourInquiryForm tourTitle={tour.tourFormTitle || tour.title} selectedPackage={packageSelection} />
+              <TourInquiryForm
+                tourTitle={tour.tourFormTitle || tour.title}
+                selectedPackage={packageSelection}
+                hideAccommodationType={tour.accommodationMode === 'single'}
+              />
             </FadeUp>
           </section>
         </div>

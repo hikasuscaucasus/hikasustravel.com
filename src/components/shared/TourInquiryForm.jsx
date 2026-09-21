@@ -7,7 +7,7 @@ import { getTurnstileToken } from '../../utils/turnstile'
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
-export default function TourInquiryForm({ tourTitle, selectedPackage }) {
+export default function TourInquiryForm({ tourTitle, selectedPackage, hideAccommodationType = false }) {
   const t = useT()
   const { status, submit } = useWeb3Form()
   const [form, setForm] = useState({
@@ -65,7 +65,12 @@ export default function TourInquiryForm({ tourTitle, selectedPackage }) {
       travelers: form.travelers,
       start_date: form.startDate,
       end_date: form.endDate,
-      accommodation: form.accommodation,
+      // Omitted entirely (not sent as an empty/blank value) on a tour with a
+      // single accommodation option — the field is never shown, so there is
+      // nothing for the visitor to have chosen. Web3Forms only emails the
+      // keys present in this object, so the inquiry simply has no
+      // Accommodation line for this tour rather than a blank or "undefined" one.
+      ...(hideAccommodationType ? {} : { accommodation: form.accommodation }),
       message: form.message.trim(),
       botcheck: '',
       'cf-turnstile-response': getTurnstileToken(),
@@ -150,17 +155,24 @@ export default function TourInquiryForm({ tourTitle, selectedPackage }) {
         </div>
       </div>
 
-      <div className="td-form__group">
-        <label htmlFor="ti-accommodation">{t('form.accommodation')}</label>
-        <select id="ti-accommodation" name="accommodation" value={form.accommodation} onChange={set('accommodation')}>
-          <option value="">{t('form.salutationNone')}</option>
-          <option value="Classic">{t('pricing.economy')}</option>
-          <option value="Mid-Range">{t('pricing.midRange')}</option>
-          {/* One name for the top tier on every tour, group and private alike —
-              the same "Premium" the pricing table and the hotel viewer show. */}
-          <option value="Premium">{t('pricing.premium')}</option>
-        </select>
-      </div>
+      {/* A tour with a single accommodation option (accommodationMode: 'single'
+          in tours.js, e.g. the 7-Day Svaneti Tour) has nothing for this field
+          to offer a choice between, so it is omitted entirely rather than
+          shown disabled or with only one real option — no label, no select,
+          no reserved space. Every other tour is unaffected. */}
+      {!hideAccommodationType && (
+        <div className="td-form__group">
+          <label htmlFor="ti-accommodation">{t('form.accommodation')}</label>
+          <select id="ti-accommodation" name="accommodation" value={form.accommodation} onChange={set('accommodation')}>
+            <option value="">{t('form.salutationNone')}</option>
+            <option value="Classic">{t('pricing.economy')}</option>
+            <option value="Mid-Range">{t('pricing.midRange')}</option>
+            {/* One name for the top tier on every tour, group and private alike —
+                the same "Premium" the pricing table and the hotel viewer show. */}
+            <option value="Premium">{t('pricing.premium')}</option>
+          </select>
+        </div>
+      )}
 
       <div className="td-form__group">
         <label htmlFor="ti-message">{t('form.message')}</label>
