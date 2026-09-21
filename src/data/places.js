@@ -9474,6 +9474,22 @@ export const cities = [
     noHero: true, heroTitleAsH1: true, noAutolink: true,
   },
   {
+    slug: 'zagatala-nature-reserve', name: 'Zagatala Nature Reserve',
+    region: 'sheki-zagatala', published: true, country: 'azerbaijan',
+    seoKey: 'zagatalaNatureReserve', contentKey: 'zagatalaNatureReserve',
+    // Brief asked for the flat route /azerbaijan/zagatala-nature-reserve with a
+    // 2-level breadcrumb (Home -> Azerbaijan -> Zagatala Nature Reserve). A
+    // region-parented `sites` entry with this exact slug already existed
+    // (published: false) but its regionPath()-based route would nest under
+    // /azerbaijan/regions/sheki-zagatala/, a 3-level breadcrumb the brief never
+    // asked for. Modeling it as a `cities` place instead (like Gomismta) gives
+    // the flat cityPath() route the brief wants; the old `sites` placeholder is
+    // left unpublished and unused rather than deleted.
+    classifyAs: 'place',
+    placeLocation: { cityId: null, municipalityId: null, regionId: 'sheki-zagatala' },
+    noHero: true, noAutolink: true,
+  },
+  {
     slug: 'gakh', name: 'Gakh', region: 'sheki-zagatala', published: false, country: 'azerbaijan',
     seoKey: 'gakh', contentKey: 'gakh',
     noHero: true, heroTitleAsH1: true, noAutolink: true,
