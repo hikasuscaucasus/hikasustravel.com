@@ -62,11 +62,12 @@ const COUNTRY_HUBS = {
   },
   azerbaijan: {
     // Scaffolded country: no photograph yet, so the solid `.dest-title-band`
-    // carries the H1, as on Armenia. All three hubs list every scaffolded
-    // entry as the non-clickable "coming soon" card — nothing is published
-    // yet, so a published-only listing would be three empty pages. Flipping
-    // an entry's `published` flag in places.js is what turns its card into a
-    // link; no change here is needed.
+    // carries the H1, as on Armenia. Regions and Cities still list every
+    // scaffolded entry as the non-clickable "coming soon" card. Places to
+    // Visit no longer does (see `publishedOnly` below) — enough Azerbaijan
+    // attractions are published now that the hub reads as real content;
+    // flipping an entry's `published` flag in places.js is still all that is
+    // needed to make it eligible here, automatically.
     noHero: true,
     // Regions sort A–Z by canonical name (Georgia and Armenia keep their
     // curated registry order). Baku is not listed here: the capital is its own
@@ -82,7 +83,17 @@ const COUNTRY_HUBS = {
       includeUnpublished: true,
       only: ['baku', 'gabala', 'ganja', 'khinalig', 'lahij', 'lankaran', 'quba', 'sheki'],
     },
-    places: { pageKey: 'azerbaijanPlaces', seoKey: 'azerbaijanPlaces' },
+    // `publishedOnly`: unlike Regions/Cities above (and unlike Georgia's and
+    // Armenia's own Places hubs), Azerbaijan's Places to Visit hub excludes
+    // every unpublished entry rather than rendering it as a non-clickable
+    // "guide coming soon" card — this hub had accumulated several such cards
+    // that duplicated an attraction already published elsewhere (e.g. an old
+    // region-parented placeholder left behind when Diri Baba Mausoleum and
+    // Zagatala Nature Reserve were later modelled as `cities` places instead).
+    // Scoped to this one config object: PlacesToVisitHubPage only reads this
+    // flag for the country it is building, so Georgia's and Armenia's Places
+    // hubs — whose configs never set it — are completely unaffected.
+    places: { pageKey: 'azerbaijanPlaces', seoKey: 'azerbaijanPlaces', publishedOnly: true },
   },
 }
 
@@ -227,27 +238,29 @@ export function PlacesToVisitHubPage({ country = DEFAULT_COUNTRY }) {
   // A site's country is its parent's (countryOfSite), and every record whose
   // parent has no `country` counts as Georgian — so this listing is exactly what
   // it was before.
-  const siteEntries = sites.filter((s) => countryOfSite(s) === country).map((s) => ({
-    slug: s.slug,
-    fallbackName: s.name,
-    seoKey: s.seoKey,
-    published: s.published,
-    to: s.published ? sitePath(s) : null,
-    // Stable city/region IDs (from structured parent data) — the hub resolves
-    // them to translated labels for the secondary location line.
-    location: siteLocation(s),
-    // Card cover, read straight from the registry — mirrors how the Regions
-    // and Cities hubs already read `cardImage`/`image`. Most sites have none
-    // yet (unpublished, no confirmed photograph), so this is inert for them;
-    // a site with one renders its cover even on the non-clickable "coming
-    // soon" card, exactly as DestinationCard already supports.
-    image: s.image,
-  }))
+  const siteEntries = sites
+    .filter((s) => countryOfSite(s) === country && (!conf.publishedOnly || s.published))
+    .map((s) => ({
+      slug: s.slug,
+      fallbackName: s.name,
+      seoKey: s.seoKey,
+      published: s.published,
+      to: s.published ? sitePath(s) : null,
+      // Stable city/region IDs (from structured parent data) — the hub resolves
+      // them to translated labels for the secondary location line.
+      location: siteLocation(s),
+      // Card cover, read straight from the registry — mirrors how the Regions
+      // and Cities hubs already read `cardImage`/`image`. Most sites have none
+      // yet (unpublished, no confirmed photograph), so this is inert for them;
+      // a site with one renders its cover even on the non-clickable "coming
+      // soon" card, exactly as DestinationCard already supports.
+      image: s.image,
+    }))
   // Entries classified as a place but kept in the cities registry for their
   // existing /<country>/<slug> detail page (e.g. Gomismta). They link to that
   // same detail URL and carry their own structured `placeLocation`.
   const placeCityEntries = citiesOfCountry(country)
-    .filter((c) => c.classifyAs === 'place')
+    .filter((c) => c.classifyAs === 'place' && (!conf.publishedOnly || c.published))
     .map((c) => ({
       slug: c.slug,
       fallbackName: c.name,
