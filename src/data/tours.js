@@ -19399,30 +19399,23 @@ export const tours = [
         "content": "<p>A last morning under Ushba, then down the Enguri road out of the mountains. If your flight allows, there's a stop in Zugdidi for a Megrelian lunch — elarji, gebzhalia and the local approach to chilli that Svaneti doesn't share — and the Dadiani Palace and its park can be added for anyone curious about how the princes of Samegrelo lived, though the day is better slightly empty than crowded. You continue to Kutaisi International Airport in good time for check-in.</p><ul><li>Drive down the Enguri Valley;</li><li>Optional stop in Zugdidi for lunch;</li><li>Transfer to Kutaisi International Airport;</li><li>Departure.</li><li><strong>Driving duration:</strong> 4 hours</li></ul>"
       }
     ],
+    "accommodationMode": "single",
     "accommodations": [
       {
         "city": "Martvili (1 night)",
-        "luxury": "Karma Hostel",
-        "midRange": "Karma Hostel",
-        "economy": "Karma Hostel"
+        "hotel": "Karma Hostel"
       },
       {
         "city": "Mestia (3 nights)",
-        "luxury": "Old House Mestia",
-        "midRange": "Old House Mestia",
-        "economy": "Old House Mestia"
+        "hotel": "Old House Mestia"
       },
       {
         "city": "Ushguli (1 night)",
-        "luxury": "Old House Ushguli",
-        "midRange": "Old House Ushguli",
-        "economy": "Old House Ushguli"
+        "hotel": "Old House Ushguli"
       },
       {
-        "city": "Mazeri – Becho Valley (1 night)",
-        "luxury": "Local guesthouse",
-        "midRange": "Local guesthouse",
-        "economy": "Local guesthouse"
+        "city": "Becho (1 night)",
+        "hotel": "Local Guesthouse"
       }
     ],
     "pricing": [

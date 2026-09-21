@@ -156,7 +156,11 @@ export default function TourDetailPage() {
   // tour renders them as one row (see below); every other tour renders exactly
   // the same two elements stacked, as before.
   const accommodationSection = (
-    <AccommodationSection accommodations={tour.accommodations} isGroup={isGroup} />
+    <AccommodationSection
+      accommodations={tour.accommodations}
+      isGroup={isGroup}
+      singleOption={tour.accommodationMode === 'single'}
+    />
   )
   const priceSection = (
     <PriceSection
@@ -165,6 +169,7 @@ export default function TourDetailPage() {
       pricePerPerson={tour.pricePerPerson}
       singleSupplement={tour.singleSupplement}
       onSelectPackage={handleSelectPackage}
+      singleOption={tour.accommodationMode === 'single'}
     />
   )
 

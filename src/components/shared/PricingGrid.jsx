@@ -308,6 +308,69 @@ function PricingCards({ pricing, onSelectPackage }) {
   )
 }
 
+/* A single-card version of PricingCards for a tour that intentionally has only
+   one accommodation arrangement (accommodationMode: 'single' — e.g. the 7-Day
+   Svaneti Tour). The price still varies by traveler count, exactly as the
+   tiered cards do; what disappears is the tier choice itself. Reads the
+   `luxury` column, which — for a single-option tour — holds the tour's one
+   real price (all three tier columns are identical by construction, so any
+   of the three would give the same number; `luxury` is used elsewhere as the
+   "first" column and keeps this consistent with getTierPrice's own default).
+   Reuses the exact CSS classes the group single-price card already uses
+   (`td-price-cards--single`, `td-price-card--featured`, …), so no new styling
+   is introduced for this mode. */
+function SinglePricingCard({ pricing, onSelectPackage }) {
+  const t = useT()
+  const numericRows = pricing.filter((r) => r.travelers !== 'Single Supplement')
+  const singleSupplement = pricing.find((r) => r.travelers === 'Single Supplement')
+  const startPrice = getTierPrice(pricing, 'luxury')
+
+  return (
+    <div className="td-price-cards td-price-cards--single">
+      <div className="td-price-card td-price-card--featured">
+        {startPrice && (
+          <div className="td-price-card__price">
+            <span className="td-price-card__price-from">{t('sidebar.startingFrom')}</span>
+            <span className="td-price-card__price-value">€{startPrice.toLocaleString('en-US')}</span>
+            <span className="td-price-card__price-pp">{t('pricing.perPerson')}</span>
+          </div>
+        )}
+        {numericRows.length > 0 && (
+          <div className="td-price-card__breakdown">
+            {numericRows.map((row, i) => (
+              <div key={i} className="td-price-card__row">
+                <span>
+                  {row.travelers === '1'
+                    ? `1 ${t('pricing.travelers').replace(/s$/i, '')}`
+                    : `${row.travelers} ${t('pricing.travelers')}`
+                  }
+                </span>
+                <span>{formatEuro(row.luxury)}</span>
+              </div>
+            ))}
+            {singleSupplement && (
+              <div className="td-price-card__row">
+                <span>{t('pricing.singleSupplement')}</span>
+                <span>{formatEuro(singleSupplement.luxury)}</span>
+              </div>
+            )}
+          </div>
+        )}
+        <a
+          href="#book"
+          onClick={(e) => {
+            if (onSelectPackage) onSelectPackage('')
+            scrollToBook(e)
+          }}
+          className="td-price-card__cta"
+        >
+          {t('tour.bookNow')}
+        </a>
+      </div>
+    </div>
+  )
+}
+
 /* The three accommodation tiers, in the order the table shows them. `key` is
    the data key on the accommodation record; `labelKey` is what a visitor
    reads. Named once so the header, the body cells, the per-cell mobile labels
@@ -368,9 +431,14 @@ function PrivateAccommodationsTable({ accommodations }) {
 }
 
 // Accommodation section (id="accommodation"). Group tours use the single-hotel
-// table; private tours use the per-tier table. Same content as before, now in
-// its own section so the navbar can link to it directly.
-export function AccommodationSection({ accommodations, isGroup }) {
+// table; private tours use the per-tier table. A private tour may opt into
+// that same single-hotel table via `singleOption` (accommodationMode: 'single'
+// in tours.js) — a page-specific EXCEPTION to the normal three-tier private
+// model, for a tour with only one real accommodation arrangement (the 7-Day
+// Svaneti Tour). `AccommodationsTable` already reads a plain `row.hotel`
+// field instead of `luxury`/`midRange`/`economy`, so no table changes were
+// needed — only this routing and the tour's own data shape.
+export function AccommodationSection({ accommodations, isGroup, singleOption }) {
   const t = useT()
   if (!accommodations || accommodations.length === 0) return null
 
@@ -378,7 +446,7 @@ export function AccommodationSection({ accommodations, isGroup }) {
     <section id="accommodation" className="td-section">
       <FadeUp>
         <h2 className="td-section__title">{t('pricing.accommodations')}</h2>
-        {isGroup ? (
+        {isGroup || singleOption ? (
           <AccommodationsTable accommodations={accommodations} />
         ) : (
           <PrivateAccommodationsTable accommodations={accommodations} />
@@ -389,8 +457,11 @@ export function AccommodationSection({ accommodations, isGroup }) {
 }
 
 // Price section (id="pricing"). Private tours show the per-tier pricing cards;
-// group tours show their fixed per-person price (existing data, unchanged).
-export function PriceSection({ isGroup, pricing, pricePerPerson, singleSupplement, onSelectPackage }) {
+// group tours show their fixed per-person price (existing data, unchanged). A
+// private tour with `singleOption` (pricingMode: 'single' in tours.js) shows
+// SinglePricingCard instead — one traveler-count price table, no tier choice
+// and no tier name anywhere on the page (the 7-Day Svaneti Tour exception).
+export function PriceSection({ isGroup, pricing, pricePerPerson, singleSupplement, onSelectPackage, singleOption }) {
   const t = useT()
   const hasPricing = pricing && pricing.length > 0
   const hasGroupPrice = isGroup && pricePerPerson
@@ -406,7 +477,11 @@ export function PriceSection({ isGroup, pricing, pricePerPerson, singleSupplemen
 
           <div className="td-pricing__block">
             {hasPricing ? (
-              <PricingCards pricing={pricing} onSelectPackage={onSelectPackage} />
+              singleOption ? (
+                <SinglePricingCard pricing={pricing} onSelectPackage={onSelectPackage} />
+              ) : (
+                <PricingCards pricing={pricing} onSelectPackage={onSelectPackage} />
+              )
             ) : (
               <div className="td-price-cards td-price-cards--single">
                 <div className="td-price-card td-price-card--featured">
