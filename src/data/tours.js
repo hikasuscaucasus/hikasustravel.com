@@ -20006,7 +20006,19 @@ export const tours = [
     "country": "caucasus",
     "areaServed": ["Azerbaijan", "Georgia", "Armenia"],
     "title": "14-Day Caucasus Tour: Azerbaijan, Georgia & Armenia",
-    "heroImage": null,
+    "heroImage": "/images/files/baku-boulevard-caspian-azerbaijan-1536.webp",
+    "ogImage": { "src": "/images/files/baku-boulevard-caspian-azerbaijan-og.jpg", "width": 1200, "height": 630 },
+    "tileImage": "/images/files/baku-boulevard-caspian-azerbaijan-1200.webp",
+    "listingImage": "/images/files/baku-boulevard-caspian-azerbaijan-1200.webp",
+    "alt": {
+      "en": "Baku Boulevard, the Caspian seafront promenade, with modern glass towers and an archway building along the waterfront under a blue sky, Azerbaijan",
+      "de": "Der Baku Boulevard, die Uferpromenade am Kaspischen Meer, mit modernen Glastürmen und einem Bogengebäude entlang des Ufers unter blauem Himmel, Aserbaidschan",
+      "fr": "Le Boulevard de Bakou, la promenade du front de mer caspien, avec des tours de verre modernes et un bâtiment en arche le long du rivage sous un ciel bleu, Azerbaïdjan",
+      "es": "El Bulevar de Bakú, el paseo marítimo del Caspio, con modernas torres de cristal y un edificio en forma de arco junto a la orilla bajo un cielo azul, Azerbaiyán",
+      "nl": "De Baku Boulevard, de kustpromenade aan de Kaspische Zee, met moderne glazen torens en een booggebouw langs de waterkant onder een blauwe hemel, Azerbeidzjan",
+      "cs": "Bakuský bulvár, pobřežní promenáda u Kaspického moře, s moderními skleněnými věžemi a obloukovou budovou podél nábřeží pod modrou oblohou, Ázerbájdžán",
+      "pl": "Bulwar Nadmorski w Baku, promenada nad Morzem Kaspijskim, z nowoczesnymi szklanymi wieżami i budynkiem w kształcie łuku wzdłuż nabrzeża pod błękitnym niebem, Azerbejdżan"
+    },
     "days": 14,
     "description": "Fourteen days across three countries, each with its own script — Azerbaijan's mix of Soviet-era Baku and eternal flames, Georgia's mountains and wine, Armenia's monasteries and the shadow of Ararat. This private tour crosses two land borders on foot, with a new guide and driver waiting on the far side of each.\n\nYou begin in Baku, with its walled Old City and the fire-worship sites of the Absheron peninsula, then head inland to the Khan's palace at Sheki before crossing into Georgia at Lagodekhi. Kakheti's wine country and Tbilisi's old town follow, along with a night under Mount Kazbek, before a second border crossing takes you into Armenia for Lake Sevan, Yerevan and the great sights around Mount Ararat.\n\nBoth border crossings are on foot and are built into the day rather than treated as a footnote — you'll find exactly what to expect at each. It's a full itinerary, and a couple of the days carry real driving, but because it's private, the pace and the stops bend around you.",
     "listingDescription": "A private 14-day route across Azerbaijan, Georgia and Armenia — Baku's Old City and fire temples, Sheki's Khan's Palace, Kakheti wine country, Tbilisi and Kazbegi, then Lake Sevan, Yerevan and the sights around Mount Ararat.",
@@ -20124,6 +20136,506 @@ export const tours = [
           "nl": "Geïllustreerde routekaart van de 14-daagse privétour door Azerbeidzjan, Georgië en Armenië: Bakoe, Gobustan en Shamakhi, Sheki, de grensovergang Lagodekhi, Kacheti en Telavi, Sighnaghi en Bodbe, Tbilisi, Mtskheta, Ananuri en Kazbegi, de grensovergang Sadakhlo–Bagratashen, Haghpat, het Sevanmeer en Jerevan, met dagtochten naar Khor Virap, Garni en Geghard",
           "cs": "Ilustrovaná mapa trasy 14denního soukromého zájezdu po Ázerbájdžánu, Gruzii a Arménii: Baku, Gobustan a Šamachi, Šeki, hraniční přechod Lagodechi, Kachetie a Telavi, Sighnaghi a Bodbe, Tbilisi, Mccheta, Ananuri a Kazbegi, hraniční přechod Sadakhlo–Bagratašen, Haghpat, jezero Sevan a Jerevan, s výlety do Khor Virapu, Garni a Geghardu",
           "pl": "Ilustrowana mapa trasy 14-dniowej prywatnej wycieczki po Azerbejdżanie, Gruzji i Armenii: Baku, Gobustan i Szamachy, Sheki, przejście graniczne Lagodechi, Kachetia i Telavi, Sighnaghi i Bodbe, Tbilisi, Mccheta, Ananuri i Kazbegi, przejście graniczne Sadakhlo–Bagratashen, Haghpat, jezioro Sewan i Erywań, z wycieczkami do Khor Virap, Garni i Geghardu"
+        }
+      },
+      {
+        "src": "/images/files/maiden-tower-baku-azerbaijan-1293.webp",
+        "base": "/images/files/maiden-tower-baku-azerbaijan",
+        "widths": [768, 1200, 1293],
+        "width": 1293,
+        "height": 1217,
+        "caption": {
+          "en": "Maiden Tower, Baku",
+          "de": "Jungfrauenturm, Baku",
+          "fr": "Tour de la Vierge, Bakou",
+          "es": "Torre de la Doncella, Bakú",
+          "nl": "Maagdentoren, Bakoe",
+          "cs": "Panenská věž, Baku",
+          "pl": "Baszta Dziewicza, Baku"
+        },
+        "altText": {
+          "en": "The medieval Maiden Tower in the UNESCO-listed Walled City of Baku, a tall cylindrical stone tower with a flowering tree in front, Azerbaijan",
+          "de": "Der mittelalterliche Jungfrauenturm in der UNESCO-gelisteten Altstadt von Baku, ein hoher zylindrischer Steinturm mit einem blühenden Baum davor, Aserbaidschan",
+          "fr": "La tour de la Vierge médiévale dans la vieille ville fortifiée de Bakou, inscrite à l'UNESCO, une haute tour de pierre cylindrique avec un arbre en fleurs devant, Azerbaïdjan",
+          "es": "La medieval Torre de la Doncella en la ciudad amurallada de Bakú, declarada por la UNESCO, una alta torre cilíndrica de piedra con un árbol en flor delante, Azerbaiyán",
+          "nl": "De middeleeuwse Maagdentoren in de door UNESCO erkende ommuurde stad Bakoe, een hoge cilindrische stenen toren met een bloeiende boom ervoor, Azerbeidzjan",
+          "cs": "Středověká Panenská věž v hrazeném Starém Městě Baku zapsaném na seznamu UNESCO, vysoká válcová kamenná věž s kvetoucím stromem před ní, Ázerbájdžán",
+          "pl": "Średniowieczna Baszta Dziewicza w otoczonym murami Starym Mieście Baku wpisanym na listę UNESCO, wysoka cylindryczna kamienna wieża z kwitnącym drzewem przed nią, Azerbejdżan"
+        }
+      },
+      {
+        "src": "/images/files/baku-boulevard-caspian-azerbaijan-1536.webp",
+        "base": "/images/files/baku-boulevard-caspian-azerbaijan",
+        "widths": [768, 1200, 1536],
+        "width": 1536,
+        "height": 1024,
+        "caption": {
+          "en": "Baku Boulevard",
+          "de": "Baku Boulevard",
+          "fr": "Boulevard de Bakou",
+          "es": "Bulevar de Bakú",
+          "nl": "Baku Boulevard",
+          "cs": "Bakuský bulvár",
+          "pl": "Bulwar Nadmorski w Baku"
+        },
+        "altText": {
+          "en": "Baku Boulevard, the Caspian seafront promenade, with modern glass towers and an archway building along the waterfront under a blue sky, Azerbaijan",
+          "de": "Der Baku Boulevard, die Uferpromenade am Kaspischen Meer, mit modernen Glastürmen und einem Bogengebäude entlang des Ufers unter blauem Himmel, Aserbaidschan",
+          "fr": "Le Boulevard de Bakou, la promenade du front de mer caspien, avec des tours de verre modernes et un bâtiment en arche le long du rivage sous un ciel bleu, Azerbaïdjan",
+          "es": "El Bulevar de Bakú, el paseo marítimo del Caspio, con modernas torres de cristal y un edificio en forma de arco junto a la orilla bajo un cielo azul, Azerbaiyán",
+          "nl": "De Baku Boulevard, de kustpromenade aan de Kaspische Zee, met moderne glazen torens en een booggebouw langs de waterkant onder een blauwe hemel, Azerbeidzjan",
+          "cs": "Bakuský bulvár, pobřežní promenáda u Kaspického moře, s moderními skleněnými věžemi a obloukovou budovou podél nábřeží pod modrou oblohou, Ázerbájdžán",
+          "pl": "Bulwar Nadmorski w Baku, promenada nad Morzem Kaspijskim, z nowoczesnymi szklanymi wieżami i budynkiem w kształcie łuku wzdłuż nabrzeża pod błękitnym niebem, Azerbejdżan"
+        }
+      },
+      {
+        "src": "/images/files/baku-flame-towers-azerbaijan-1448.webp",
+        "base": "/images/files/baku-flame-towers-azerbaijan",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Flame Towers, Baku",
+          "de": "Flame Towers, Baku",
+          "fr": "Flame Towers, Bakou",
+          "es": "Flame Towers, Bakú",
+          "nl": "Flame Towers, Bakoe",
+          "cs": "Flame Towers, Baku",
+          "pl": "Flame Towers, Baku"
+        },
+        "altText": {
+          "en": "Baku Flame Towers and TV tower seen across the bay, Azerbaijan",
+          "de": "Die Flame Towers und der Fernsehturm von Baku, von der anderen Seite der Bucht gesehen, Aserbaidschan",
+          "fr": "Les Flame Towers et la tour de télévision de Bakou, vues depuis l'autre côté de la baie, Azerbaïdjan",
+          "es": "Las Flame Towers y la torre de televisión de Bakú, vistas desde el otro lado de la bahía, Azerbaiyán",
+          "nl": "De Flame Towers en de televisietoren van Bakoe, gezien vanaf de overkant van de baai, Azerbeidzjan",
+          "cs": "Věže Flame Towers a televizní věž v Baku, pohled z druhé strany zálivu, Ázerbájdžán",
+          "pl": "Wieże Flame Towers i wieża telewizyjna w Baku, widoczne z drugiej strony zatoki, Azerbejdżan"
+        }
+      },
+      {
+        "src": "/images/files/mud-volcanoes-gobustan-azerbaijan-1599.webp",
+        "base": "/images/files/mud-volcanoes-gobustan-azerbaijan",
+        "widths": [768, 1200, 1599],
+        "width": 1599,
+        "height": 984,
+        "caption": {
+          "en": "Gobustan Mud Volcanoes",
+          "de": "Schlammvulkane, Gobustan",
+          "fr": "Volcans de boue, Gobustan",
+          "es": "Volcanes de lodo, Gobustán",
+          "nl": "Moddervulkanen, Gobustan",
+          "cs": "Bahenní sopky, Gobustan",
+          "pl": "Wulkany błotne, Gobustan"
+        },
+        "altText": {
+          "en": "Cold grey mud bubbling from low cones at the mud volcanoes near Gobustan, on a bare semi-desert plain under a cloud-dotted sky, Azerbaijan",
+          "de": "Kalter grauer Schlamm, der aus niedrigen Kegeln der Schlammvulkane bei Gobustan quillt, auf einer kahlen Halbwüstenebene unter einem von Wolken gesprenkelten Himmel, Aserbaidschan",
+          "fr": "De la boue grise et froide bouillonnant de petits cônes aux volcans de boue près de Gobustan, sur une plaine semi-désertique nue sous un ciel parsemé de nuages, Azerbaïdjan",
+          "es": "Barro gris y frío burbujeando en conos bajos en los volcanes de lodo cerca de Gobustán, en una llanura semidesértica desnuda bajo un cielo salpicado de nubes, Azerbaiyán",
+          "nl": "Koude grijze modder die opborrelt uit lage kegels bij de moddervulkanen nabij Gobustan, op een kale halfwoestijnvlakte onder een met wolken bespikkelde hemel, Azerbeidzjan",
+          "cs": "Studené šedé bahno bublající z nízkých kuželů u bahenních sopek poblíž Gobustanu, na holé polopouštní pláni pod oblohou posetou mraky, Ázerbájdžán",
+          "pl": "Zimne szare błoto bulgoczące z niskich stożków przy wulkanach błotnych koło Gobustanu, na nagiej półpustynnej równinie pod niebem usianym chmurami, Azerbejdżan"
+        }
+      },
+      {
+        "src": "/images/files/kakheti-vineyard-georgia-1280.webp",
+        "base": "/images/files/kakheti-vineyard-georgia",
+        "widths": [768,1200,1280],
+        "width": 1280,
+        "height": 853,
+        "caption": {
+          "en": "Kakheti Vineyards",
+          "de": "Weinberge Kachetiens",
+          "fr": "Vignobles de Kakhétie",
+          "es": "Viñedos de Kajetia",
+          "nl": "Wijngaarden van Kacheti",
+          "cs": "Vinice Kachetie",
+          "pl": "Winnice Kachetii"
+        },
+        "altText": {
+          "en": "Rows of grapevines in a vineyard at sunrise, with mist over the surrounding fields, Kakheti wine country, Georgia",
+          "de": "Rebzeilen in einem Weinberg bei Sonnenaufgang, mit Nebel über den umliegenden Feldern, Weinregion Kachetien, Georgien",
+          "fr": "Rangées de vignes dans un vignoble au lever du soleil, avec de la brume sur les champs alentour, région viticole de Kakhétie, Géorgie",
+          "es": "Hileras de vides en un viñedo al amanecer, con niebla sobre los campos circundantes, región vinícola de Kajetia, Georgia",
+          "nl": "Rijen wijnstokken in een wijngaard bij zonsopgang, met mist over de omliggende velden, wijnstreek Kacheti, Georgië",
+          "cs": "Řady vinné révy ve vinici za svítání, s mlhou nad okolními poli, vinařský kraj Kachetie, Gruzie",
+          "pl": "Rzędy winorośli w winnicy o wschodzie słońca, z mgłą nad okolicznymi polami, region winiarski Kachetia, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/holy-trinity-cathedral-tbilisi-georgia-1672.webp",
+        "base": "/images/files/holy-trinity-cathedral-tbilisi-georgia",
+        "widths": [768,1200,1600,1672],
+        "width": 1672,
+        "height": 941,
+        "caption": {
+          "en": "Holy Trinity Cathedral (Sameba)",
+          "de": "Dreifaltigkeitskathedrale Sameba",
+          "fr": "Cathédrale de la Sainte-Trinité (Sameba)",
+          "es": "Catedral de la Santísima Trinidad (Sameba)",
+          "nl": "Heilige-Drie-eenheidskathedraal (Sameba)",
+          "cs": "Katedrála Nejsvětější Trojice (Sameba)",
+          "pl": "Katedra Trójcy Świętej (Sameba)"
+        },
+        "altText": {
+          "en": "The Holy Trinity Cathedral of Tbilisi (Sameba), a large golden-domed Georgian Orthodox church, under a blue sky with clouds, Georgia",
+          "de": "Die Heilige-Dreifaltigkeits-Kathedrale von Tiflis (Sameba), eine große georgisch-orthodoxe Kirche mit goldener Kuppel, unter blauem Wolkenhimmel, Georgien",
+          "fr": "La cathédrale de la Sainte-Trinité de Tbilissi (Sameba), grande église orthodoxe géorgienne à coupole dorée, sous un ciel bleu nuageux, Géorgie",
+          "es": "La catedral de la Santísima Trinidad de Tiflis (Sameba), gran iglesia ortodoxa georgiana de cúpula dorada, bajo un cielo azul con nubes, Georgia",
+          "nl": "De Heilige-Drie-eenheidskathedraal van Tbilisi (Sameba), een grote Georgisch-orthodoxe kerk met gouden koepel, onder een blauwe bewolkte hemel, Georgië",
+          "cs": "Katedrála Nejsvětější Trojice v Tbilisi (Sameba), velký gruzínský pravoslavný chrám se zlatou kupolí, pod modrou oblohou s mraky, Gruzie",
+          "pl": "Katedra Trójcy Świętej w Tbilisi (Sameba), wielki gruziński prawosławny kościół ze złotą kopułą, pod błękitnym, zachmurzonym niebem, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/narikala-fortress-tbilisi-georgia-1448.webp",
+        "base": "/images/files/narikala-fortress-tbilisi-georgia",
+        "widths": [768,1200,1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Narikala Fortress",
+          "de": "Festung Narikala",
+          "fr": "Forteresse de Narikala",
+          "es": "Fortaleza de Narikala",
+          "nl": "Fort Narikala",
+          "cs": "Pevnost Narikala",
+          "pl": "Twierdza Narikala"
+        },
+        "altText": {
+          "en": "The stone walls and gate of Narikala Fortress above Tbilisi Old Town, with the brick church of Saint Nicholas, under a blue sky, Georgia",
+          "de": "Die Steinmauern und das Tor der Festung Narikala über der Altstadt von Tiflis, mit der Backsteinkirche St. Nikolaus, unter blauem Himmel, Georgien",
+          "fr": "Les murs de pierre et la porte de la forteresse de Narikala au-dessus de la vieille ville de Tbilissi, avec l'église en brique Saint-Nicolas, sous un ciel bleu, Géorgie",
+          "es": "Los muros de piedra y la puerta de la fortaleza de Narikala sobre el casco antiguo de Tiflis, con la iglesia de ladrillo de San Nicolás, bajo un cielo azul, Georgia",
+          "nl": "De stenen muren en poort van de Narikala-vesting boven de oude stad van Tbilisi, met de bakstenen Sint-Nicolaaskerk, onder een blauwe hemel, Georgië",
+          "cs": "Kamenné hradby a brána pevnosti Narikala nad tbiliským Starým Městem, s cihlovým kostelem svatého Mikuláše, pod modrou oblohou, Gruzie",
+          "pl": "Kamienne mury i brama twierdzy Narikala nad tbiliską starówką, z ceglaną cerkwią św. Mikołaja, pod błękitnym niebem, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/jvari-monastery-mtskheta-georgia-1540.webp",
+        "base": "/images/files/jvari-monastery-mtskheta-georgia",
+        "widths": [768,1200,1540],
+        "width": 1540,
+        "height": 1021,
+        "caption": {
+          "en": "Jvari Monastery, Mtskheta",
+          "de": "Dschwari-Kloster, Mzcheta",
+          "fr": "Monastère de Djvari, Mtskheta",
+          "es": "Monasterio de Jvari, Mtsjeta",
+          "nl": "Jvari-klooster, Mtscheta",
+          "cs": "Klášter Džvari, Mccheta",
+          "pl": "Klasztor Dżwari, Mccheta"
+        },
+        "altText": {
+          "en": "The UNESCO-listed Jvari Monastery, a 6th-century stone church on a hilltop above the confluence of the Aragvi and Mtkvari rivers at Mtskheta, Georgia",
+          "de": "Das UNESCO-gelistete Dschwari-Kloster, eine Steinkirche aus dem 6. Jahrhundert auf einem Hügel über dem Zusammenfluss von Aragwi und Kura bei Mzcheta, Georgien",
+          "fr": "Le monastère de Djvari, inscrit à l'UNESCO, église de pierre du VIe siècle sur une colline dominant le confluent de l'Aragvi et de la Koura à Mtskheta, Géorgie",
+          "es": "El monasterio de Jvari, declarado por la UNESCO, iglesia de piedra del siglo VI en una colina sobre la confluencia de los ríos Aragvi y Mtkvari en Mtsjeta, Georgia",
+          "nl": "Het door UNESCO erkende Jvari-klooster, een 6e-eeuwse stenen kerk op een heuvel boven de samenvloeiing van de Aragvi en de Mtkvari bij Mtscheta, Georgië",
+          "cs": "Klášter Džvari zapsaný na seznamu UNESCO, kamenný kostel ze 6. století na kopci nad soutokem řek Aragvi a Mtkvari u Mcchety, Gruzie",
+          "pl": "Wpisany na listę UNESCO klasztor Dżwari, kamienny kościół z VI wieku na wzgórzu nad zbiegiem rzek Aragwi i Mtkwari w Mcchecie, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/ananuri-fortress-georgia-1920.webp",
+        "base": "/images/files/ananuri-fortress-georgia",
+        "widths": [768,1200,1600,1920],
+        "width": 1920,
+        "height": 1271,
+        "caption": {
+          "en": "Ananuri Fortress",
+          "de": "Festung Ananuri",
+          "fr": "Forteresse d'Ananouri",
+          "es": "Fortaleza de Ananuri",
+          "nl": "Vesting Ananuri",
+          "cs": "Pevnost Ananuri",
+          "pl": "Twierdza Ananuri"
+        },
+        "altText": {
+          "en": "The Ananuri fortress and its domed church on a green hillside above the turquoise Zhinvali reservoir, backed by forested mountains, Georgia",
+          "de": "Die Festung Ananuri und ihre Kuppelkirche an einem grünen Hang über dem türkisfarbenen Schinwali-Stausee, dahinter bewaldete Berge, Georgien",
+          "fr": "La forteresse d'Ananouri et son église à coupole sur un versant verdoyant au-dessus du réservoir turquoise de Jinvali, adossées à des montagnes boisées, Géorgie",
+          "es": "La fortaleza de Ananuri y su iglesia de cúpula en una ladera verde sobre el embalse turquesa de Zhinvali, con montañas boscosas al fondo, Georgia",
+          "nl": "De vesting Ananuri en haar koepelkerk op een groene helling boven het turkooizen Zhinvali-stuwmeer, met beboste bergen erachter, Georgië",
+          "cs": "Pevnost Ananuri a její kupolový kostel na zeleném svahu nad tyrkysovou přehradou Žinvali, v pozadí zalesněné hory, Gruzie",
+          "pl": "Twierdza Ananuri i jej kopułowy kościół na zielonym zboczu nad turkusowym zbiornikiem Żinwali, na tle zalesionych gór, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/gudauri-panorama-friendship-monument-georgia-1448.webp",
+        "base": "/images/files/gudauri-panorama-friendship-monument-georgia",
+        "widths": [768,1200,1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Gudauri Panorama",
+          "de": "Gudauri-Panorama",
+          "fr": "Panorama de Gudauri",
+          "es": "Panorama de Gudauri",
+          "nl": "Panorama Gudauri",
+          "cs": "Panorama Gudauri",
+          "pl": "Panorama Gudauri"
+        },
+        "altText": {
+          "en": "The Russia–Georgia Friendship Monument at Gudauri, a curved stone terrace with a colourful mosaic mural, above the Caucasus mountains, Georgia",
+          "de": "Das russisch-georgische Freundschaftsdenkmal in Gudauri, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild, über den Kaukasusbergen, Georgien",
+          "fr": "Le monument de l'amitié russo-géorgienne à Gudauri, une terrasse de pierre incurvée ornée d'une fresque en mosaïque colorée, au-dessus des montagnes du Caucase, Géorgie",
+          "es": "El Monumento a la Amistad ruso-georgiana en Gudauri, una terraza de piedra curva con un colorido mural de mosaico, sobre las montañas del Cáucaso, Georgia",
+          "nl": "Het Russisch-Georgische Vriendschapsmonument bij Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering, boven de Kaukasusbergen, Georgië",
+          "cs": "Rusko-gruzínský památník přátelství v Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou, nad kavkazskými horami, Gruzie",
+          "pl": "Pomnik Przyjaźni Rosyjsko-Gruzińskiej w Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem, nad górami Kaukazu, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/gergeti-trinity-church-kazbegi-georgia-1448.webp",
+        "base": "/images/files/gergeti-trinity-church-kazbegi-georgia",
+        "widths": [768,1200,1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Gergeti Trinity Church",
+          "de": "Gergeti-Dreifaltigkeitskirche",
+          "fr": "Église de la Trinité de Gergeti",
+          "es": "Iglesia de la Trinidad de Gergeti",
+          "nl": "Drie-eenheidskerk van Gergeti",
+          "cs": "Gergetský kostel Nejsvětější Trojice",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti"
+        },
+        "altText": {
+          "en": "The Gergeti Trinity Church, a lone stone church with a bell tower on a hill below steep rocky Caucasus mountains near Kazbegi, Georgia",
+          "de": "Die Gergeti-Dreifaltigkeitskirche, eine einzeln stehende Steinkirche mit Glockenturm auf einem Hügel unter steilen felsigen Kaukasusbergen bei Kazbegi, Georgien",
+          "fr": "L'église de la Trinité de Guerguéti, église de pierre isolée avec clocher sur une colline au pied d'abruptes montagnes rocheuses du Caucase, près de Kazbegi, Géorgie",
+          "es": "La iglesia de la Trinidad de Gergeti, iglesia de piedra solitaria con campanario en una colina al pie de escarpadas montañas rocosas del Cáucaso, cerca de Kazbegi, Georgia",
+          "nl": "De Drie-eenheidskerk van Gergeti, een alleenstaande stenen kerk met klokkentoren op een heuvel onder steile rotsachtige Kaukasusbergen bij Kazbegi, Georgië",
+          "cs": "Gergetský kostel Nejsvětější Trojice, osamělý kamenný kostel se zvonicí na kopci pod strmými skalnatými kavkazskými horami u Kazbegi, Gruzie",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti, samotny kamienny kościół z dzwonnicą na wzgórzu u stóp stromych, skalistych gór Kaukazu koło Kazbegi, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/haghpat-monastery-armenia-1672.webp",
+        "base": "/images/files/haghpat-monastery-armenia",
+        "widths": [768,1200,1600,1672],
+        "width": 1672,
+        "height": 941,
+        "caption": {
+          "en": "Haghpat Monastery",
+          "de": "Kloster Haghpat",
+          "fr": "Monastère de Haghpat",
+          "es": "Monasterio de Haghpat",
+          "nl": "Klooster Haghpat",
+          "cs": "Klášter Haghpat",
+          "pl": "Klasztor Haghpat"
+        },
+        "altText": {
+          "en": "The UNESCO-listed Haghpat Monastery — the medieval basalt church of Saint Nshan with its tiled conical dome on a grassy hillside under a clear blue sky, Lori, Armenia",
+          "de": "Das UNESCO-gelistete Kloster Haghpat — die mittelalterliche Basaltkirche Surb Nschan mit ihrer ziegelgedeckten Kegelkuppel auf einem grasbewachsenen Hang unter klarem blauem Himmel, Lori, Armenien",
+          "fr": "Le monastère de Haghpat, inscrit à l'UNESCO — l'église médiévale en basalte de Saint-Nshan et sa coupole conique en tuiles sur un versant herbeux sous un ciel bleu limpide, Lori, Arménie",
+          "es": "El monasterio de Haghpat, declarado por la UNESCO — la iglesia medieval de basalto de San Nshan con su cúpula cónica de tejas en una ladera cubierta de hierba bajo un cielo azul despejado, Lori, Armenia",
+          "nl": "Het door UNESCO erkende klooster Haghpat — de middeleeuwse basaltkerk Sint-Nshan met haar met dakpannen bedekte kegelkoepel op een grazige helling onder een strakblauwe hemel, Lori, Armenië",
+          "cs": "Klášter Haghpat zapsaný na seznamu UNESCO — středověký čedičový kostel svatého Nšana s taškovou kuželovou kupolí na travnatém svahu pod jasně modrou oblohou, Lori, Arménie",
+          "pl": "Wpisany na listę UNESCO klasztor Haghpat — średniowieczny bazaltowy kościół św. Nszana z krytą dachówką stożkową kopułą na trawiastym zboczu pod bezchmurnym błękitnym niebem, Lori, Armenia"
+        }
+      },
+      {
+        "src": "/images/files/lake-sevan-armenia-1672.webp",
+        "base": "/images/files/lake-sevan-armenia",
+        "widths": [768,1200,1600,1672],
+        "width": 1672,
+        "height": 941,
+        "caption": {
+          "en": "Lake Sevan",
+          "de": "Sewansee",
+          "fr": "Lac Sevan",
+          "es": "Lago Sevan",
+          "nl": "Sevanmeer",
+          "cs": "Jezero Sevan",
+          "pl": "Jezioro Sewan"
+        },
+        "altText": {
+          "en": "The deep blue water of Lake Sevan under a summer sky, with a wooded shore in the foreground and a lakeside village below bare hills on the far shore, Gegharkunik, Armenia",
+          "de": "Das tiefblaue Wasser des Sewansees unter sommerlichem Himmel, im Vordergrund ein bewaldetes Ufer, am gegenüberliegenden Ufer ein Dorf unter kahlen Hügeln, Gegharkunik, Armenien",
+          "fr": "Les eaux d'un bleu profond du lac Sevan sous un ciel d'été, avec une rive boisée au premier plan et un village au bord de l'eau au pied de collines dénudées sur la rive opposée, Gegharkunik, Arménie",
+          "es": "Las aguas de un azul profundo del lago Seván bajo un cielo de verano, con una orilla arbolada en primer plano y un pueblo a la orilla del agua al pie de colinas peladas en la ribera opuesta, Gegharkunik, Armenia",
+          "nl": "Het diepblauwe water van het Sevanmeer onder een zomerse hemel, met een beboste oever op de voorgrond en een dorp aan het water onder kale heuvels aan de overkant, Gegharkunik, Armenië",
+          "cs": "Sytě modrá voda Sevanského jezera pod letní oblohou, v popředí zalesněný břeh a na protějším břehu vesnice pod holými kopci, Gegharkunik, Arménie",
+          "pl": "Głęboko niebieska woda jeziora Sewan pod letnim niebem, z zalesionym brzegiem na pierwszym planie i wioską nad wodą u stóp nagich wzgórz na przeciwległym brzegu, Gegharkunik, Armenia"
+        }
+      },
+      {
+        "src": "/images/files/etchmiadzin-cathedral-armenia-1448.webp",
+        "base": "/images/files/etchmiadzin-cathedral-armenia",
+        "widths": [768,1200,1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Etchmiadzin Cathedral",
+          "de": "Kathedrale von Etschmiadsin",
+          "fr": "Cathédrale d'Etchmiadzine",
+          "es": "Catedral de Etchmiadzin",
+          "nl": "Kathedraal van Etchmiadzin",
+          "cs": "Katedrála v Ečmiadzinu",
+          "pl": "Katedra w Eczmiadzynie"
+        },
+        "altText": {
+          "en": "The UNESCO-listed Mother Cathedral of Holy Etchmiadzin — a cruciform tuff-stone church with a central conical dome and corner bell-towers, behind autumn shrubs under a blue sky, Vagharshapat, Armenia",
+          "de": "Die UNESCO-gelistete Mutterkathedrale von Heilig-Etschmiadsin — eine kreuzförmige Kirche aus Tuffstein mit zentraler Kegelkuppel und Ecktürmen, hinter herbstlichen Sträuchern unter blauem Himmel, Wagharschapat, Armenien",
+          "fr": "La cathédrale mère de Saint-Etchmiadzin, inscrite à l'UNESCO — une église cruciforme en tuf à coupole conique centrale et clochetons d'angle, derrière des arbustes automnaux sous un ciel bleu, Vagharchapat, Arménie",
+          "es": "La Catedral Madre de la Santa Etchmiadzin, declarada por la UNESCO — una iglesia cruciforme de toba con cúpula cónica central y campanarios en las esquinas, tras arbustos otoñales bajo un cielo azul, Vagharshapat, Armenia",
+          "nl": "De door UNESCO erkende Moederkathedraal van Heilig Etchmiadzin — een kruisvormige tufstenen kerk met een centrale kegelkoepel en hoektorentjes, achter herfstige struiken onder een blauwe hemel, Vagharsjapat, Armenië",
+          "cs": "Katedrála Matky Boží ve Svatém Ečmiadzinu zapsaná na seznamu UNESCO — křížový kostel z tufu s ústřední kuželovou kupolí a nárožními zvonicemi, za podzimními keři pod modrou oblohou, Vagharšapat, Arménie",
+          "pl": "Wpisana na listę UNESCO Katedra Matki Bożej w Świętym Eczmiadzynie — krzyżowy kościół z tufu z centralną stożkową kopułą i narożnymi dzwonnicami, za jesiennymi krzewami pod błękitnym niebem, Wagharszapat, Armenia"
+        }
+      },
+      {
+        "src": "/images/files/republic-square-yerevan-armenia-1672.webp",
+        "base": "/images/files/republic-square-yerevan-armenia",
+        "widths": [768,1200,1600,1672],
+        "width": 1672,
+        "height": 941,
+        "caption": {
+          "en": "Republic Square, Yerevan",
+          "de": "Platz der Republik, Jerewan",
+          "fr": "Place de la République, Erevan",
+          "es": "Plaza de la República, Ereván",
+          "nl": "Plein van de Republiek, Jerevan",
+          "cs": "Náměstí Republiky, Jerevan",
+          "pl": "Plac Republiki, Erywań"
+        },
+        "altText": {
+          "en": "Republic Square in Yerevan — pink-and-yellow tuff neoclassical buildings around the Singing Fountains pool, with Government House's clock tower flying the Armenian flag and flowerbeds in the foreground under a clear blue sky, Armenia",
+          "de": "Der Platz der Republik in Eriwan — neoklassizistische Gebäude aus rosa-gelbem Tuffstein rund um das Becken der Singenden Fontänen, mit dem Uhrturm des Regierungsgebäudes und der armenischen Flagge sowie Blumenbeeten im Vordergrund unter klarem blauem Himmel, Armenien",
+          "fr": "La place de la République à Erevan — des bâtiments néoclassiques en tuf rose et jaune autour du bassin des Fontaines chantantes, avec la tour de l'horloge de la Maison du gouvernement arborant le drapeau arménien et des parterres de fleurs au premier plan sous un ciel bleu limpide, Arménie",
+          "es": "La plaza de la República en Ereván — edificios neoclásicos de toba rosa y amarilla en torno al estanque de las Fuentes Cantarinas, con la torre del reloj de la Casa de Gobierno ondeando la bandera armenia y parterres de flores en primer plano bajo un cielo azul despejado, Armenia",
+          "nl": "Het Republiekplein in Jerevan — neoclassicistische gebouwen van roze-gele tufsteen rond het bassin van de Zingende Fonteinen, met de klokkentoren van het Regeringsgebouw en de Armeense vlag en bloemperken op de voorgrond onder een strakblauwe hemel, Armenië",
+          "cs": "Náměstí Republiky v Jerevanu — novoklasicistní budovy z růžovo-žlutého tufu kolem bazénu Zpívajících fontán, s hodinovou věží vládní budovy a arménskou vlajkou a květinovými záhony v popředí pod jasně modrou oblohou, Arménie",
+          "pl": "Plac Republiki w Erywaniu — neoklasycystyczne budynki z różowo-żółtego tufu wokół basenu Śpiewających Fontann, z wieżą zegarową Domu Rządowego z flagą Armenii i rabatami kwiatowymi na pierwszym planie pod bezchmurnym błękitnym niebem, Armenia"
+        }
+      },
+      {
+        "src": "/images/files/yerevan-cascade-armenia-1024.webp",
+        "base": "/images/files/yerevan-cascade-armenia",
+        "widths": [768,1024],
+        "width": 1024,
+        "height": 1536,
+        "caption": {
+          "en": "The Cascade, Yerevan",
+          "de": "Kaskade, Jerewan",
+          "fr": "Cascade, Erevan",
+          "es": "Cascada, Ereván",
+          "nl": "Cascade, Jerevan",
+          "cs": "Kaskáda, Jerevan",
+          "pl": "Kaskada, Erywań"
+        },
+        "altText": {
+          "en": "The Yerevan Cascade — a monumental limestone stairway with terraced gardens, fountains and modern bronze sculptures, rising toward a Soviet-era obelisk under a blue sky, Yerevan, Armenia",
+          "de": "Die Kaskade von Eriwan — eine monumentale Kalksteintreppe mit terrassierten Gärten, Brunnen und modernen Bronzeskulpturen, ansteigend zu einem sowjetischen Obelisken unter blauem Himmel, Eriwan, Armenien",
+          "fr": "La Cascade d'Erevan — un escalier monumental en calcaire avec jardins en terrasses, fontaines et sculptures de bronze modernes, s'élevant vers un obélisque de l'époque soviétique sous un ciel bleu, Erevan, Arménie",
+          "es": "La Cascada de Ereván — una monumental escalinata de piedra caliza con jardines aterrazados, fuentes y esculturas de bronce modernas, ascendiendo hacia un obelisco de la época soviética bajo un cielo azul, Ereván, Armenia",
+          "nl": "De Cascade van Jerevan — een monumentale kalkstenen trap met terrastuinen, fonteinen en moderne bronzen sculpturen, oplopend naar een Sovjet-obelisk onder een blauwe hemel, Jerevan, Armenië",
+          "cs": "Jerevanská Kaskáda — monumentální vápencové schodiště s terasovými zahradami, fontánami a moderními bronzovými sochami, stoupající k sovětskému obelisku pod modrou oblohou, Jerevan, Arménie",
+          "pl": "Kaskada w Erywaniu — monumentalne wapienne schody z tarasowymi ogrodami, fontannami i nowoczesnymi rzeźbami z brązu, wznoszące się ku sowieckiemu obeliskowi pod błękitnym niebem, Erywań, Armenia"
+        }
+      },
+      {
+        "src": "/images/files/khor-virap-monastery-ararat-armenia-1086.webp",
+        "base": "/images/files/khor-virap-monastery-ararat-armenia",
+        "widths": [768,1086],
+        "width": 1086,
+        "height": 1448,
+        "caption": {
+          "en": "Khor Virap Monastery",
+          "de": "Kloster Khor Virap",
+          "fr": "Monastère de Khor Virap",
+          "es": "Monasterio de Khor Virap",
+          "nl": "Klooster Khor Virap",
+          "cs": "Klášter Khor Virap",
+          "pl": "Klasztor Khor Virap"
+        },
+        "altText": {
+          "en": "Aerial view of Khor Virap Monastery on a hill above the green Ararat plain, with the twin snow-capped peaks of Mount Ararat behind, Armenia",
+          "de": "Luftaufnahme des Klosters Chor Virap auf einem Hügel über der grünen Araratebene, dahinter die beiden schneebedeckten Gipfel des Ararat, Armenien",
+          "fr": "Vue aérienne du monastère de Khor Virap sur une colline dominant la plaine verdoyante de l'Ararat, avec les deux sommets enneigés du mont Ararat en arrière-plan, Arménie",
+          "es": "Vista aérea del monasterio de Khor Virap sobre una colina dominando la verde llanura del Ararat, con las dos cumbres nevadas del monte Ararat al fondo, Armenia",
+          "nl": "Luchtfoto van het klooster Chor Virap op een heuvel boven de groene Araratvlakte, met daarachter de twee besneeuwde toppen van de berg Ararat, Armenië",
+          "cs": "Letecký pohled na klášter Chor Virap na kopci nad zelenou Araratskou nížinou, v pozadí dva zasněžené vrcholy hory Ararat, Arménie",
+          "pl": "Widok z lotu ptaka na klasztor Chor Wirap na wzgórzu nad zieloną Równiną Araratską, w tle dwa ośnieżone szczyty góry Ararat, Armenia"
+        }
+      },
+      {
+        "src": "/images/files/mount-ararat-armenia-1448.webp",
+        "base": "/images/files/mount-ararat-armenia",
+        "widths": [768,1200,1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Mount Ararat",
+          "de": "Berg Ararat",
+          "fr": "Mont Ararat",
+          "es": "Monte Ararat",
+          "nl": "Berg Ararat",
+          "cs": "Hora Ararat",
+          "pl": "Góra Ararat"
+        },
+        "altText": {
+          "en": "Snow-capped summit of Mount Ararat (Greater Ararat) rising above brown volcanic slopes and the green Ararat plain under a clear blue sky, seen from Armenia — the mountain lies across the border in Turkey",
+          "de": "Schneebedeckter Gipfel des Ararat (Großer Ararat) über braunen Vulkanhängen und der grünen Araratebene unter klarem blauem Himmel, von Armenien aus gesehen — der Berg liegt jenseits der Grenze in der Türkei",
+          "fr": "Sommet enneigé du mont Ararat (Grand Ararat) dominant des pentes volcaniques brunes et la plaine verdoyante de l'Ararat sous un ciel bleu limpide, vu depuis l'Arménie — la montagne se trouve de l'autre côté de la frontière, en Turquie",
+          "es": "Cumbre nevada del monte Ararat (Ararat Mayor) alzándose sobre laderas volcánicas pardas y la verde llanura del Ararat bajo un cielo azul despejado, vista desde Armenia — la montaña se encuentra al otro lado de la frontera, en Turquía",
+          "nl": "Besneeuwde top van de berg Ararat (Grote Ararat) boven bruine vulkanische hellingen en de groene Araratvlakte onder een strakblauwe hemel, gezien vanuit Armenië — de berg ligt over de grens in Turkije",
+          "cs": "Zasněžený vrchol hory Ararat (Velký Ararat) tyčící se nad hnědými sopečnými svahy a zelenou Araratskou nížinou pod jasně modrou oblohou, pohled z Arménie — hora leží za hranicí v Turecku",
+          "pl": "Ośnieżony szczyt góry Ararat (Wielki Ararat) wznoszący się nad brązowymi wulkanicznymi zboczami i zieloną Równiną Araratską pod bezchmurnym błękitnym niebem, widziany z Armenii — góra leży po drugiej stronie granicy, w Turcji"
+        }
+      },
+      {
+        "src": "/images/files/garni-temple-armenia-1448.webp",
+        "base": "/images/files/garni-temple-armenia",
+        "widths": [768,1200,1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Garni Temple",
+          "de": "Garni-Tempel",
+          "fr": "Temple de Garni",
+          "es": "Templo de Garni",
+          "nl": "Tempel van Garni",
+          "cs": "Chrám v Garni",
+          "pl": "Świątynia w Garni"
+        },
+        "altText": {
+          "en": "The Temple of Garni — a 1st-century Greco-Roman colonnaded temple of dark basalt on a raised podium, under a blue sky with clouds, Kotayk, Armenia",
+          "de": "Der Tempel von Garni — ein griechisch-römischer Säulentempel aus dunklem Basalt aus dem 1. Jahrhundert auf einem erhöhten Podium, unter blauem Wolkenhimmel, Kotayk, Armenien",
+          "fr": "Le temple de Garni — un temple gréco-romain à colonnes en basalte sombre du Ier siècle sur un podium surélevé, sous un ciel bleu nuageux, Kotayk, Arménie",
+          "es": "El templo de Garni — un templo grecorromano de columnas de basalto oscuro del siglo I sobre un podio elevado, bajo un cielo azul con nubes, Kotayk, Armenia",
+          "nl": "De tempel van Garni — een 1e-eeuwse Grieks-Romeinse zuilentempel van donker basalt op een verhoogd podium, onder een blauwe bewolkte hemel, Kotayk, Armenië",
+          "cs": "Chrám v Garni — řecko-římský sloupový chrám z tmavého čediče z 1. století na vyvýšeném podiu, pod modrou oblohou s mraky, Kotajk, Arménie",
+          "pl": "Świątynia w Garni — grecko-rzymska kolumnowa świątynia z ciemnego bazaltu z I wieku na podwyższonym podium, pod błękitnym, zachmurzonym niebem, Kotajk, Armenia"
+        }
+      },
+      {
+        "src": "/images/files/geghard-monastery-armenia-1672.webp",
+        "base": "/images/files/geghard-monastery-armenia",
+        "widths": [768,1200,1600,1672],
+        "width": 1672,
+        "height": 941,
+        "caption": {
+          "en": "Geghard Monastery",
+          "de": "Kloster Geghard",
+          "fr": "Monastère de Geghard",
+          "es": "Monasterio de Geghard",
+          "nl": "Klooster Geghard",
+          "cs": "Klášter Geghard",
+          "pl": "Klasztor Geghard"
+        },
+        "altText": {
+          "en": "The UNESCO-listed Geghard Monastery — its medieval domed stone church in a paved courtyard below steep rocky cliffs, Upper Azat Valley, Armenia",
+          "de": "Das UNESCO-gelistete Kloster Geghard — seine mittelalterliche kuppelbekrönte Steinkirche in einem gepflasterten Hof unter steilen Felswänden, oberes Azat-Tal, Armenien",
+          "fr": "Le monastère de Geghard, inscrit à l'UNESCO — son église médiévale en pierre à coupole dans une cour pavée au pied de falaises abruptes, haute vallée de l'Azat, Arménie",
+          "es": "El monasterio de Geghard, declarado por la UNESCO — su iglesia medieval de piedra con cúpula en un patio empedrado al pie de escarpados acantilados, alto valle del Azat, Armenia",
+          "nl": "Het door UNESCO erkende klooster Geghard — de middeleeuwse stenen koepelkerk op een geplaveide binnenplaats onder steile rotswanden, boven-Azatdal, Armenië",
+          "cs": "Klášter Geghard zapsaný na seznamu UNESCO — jeho středověký kamenný kostel s kupolí na dlážděném nádvoří pod strmými skalními stěnami, horní údolí Azat, Arménie",
+          "pl": "Wpisany na listę UNESCO klasztor Geghard — jego średniowieczny kamienny kościół z kopułą na brukowanym dziedzińcu u stóp stromych skalnych ścian, górna dolina Azat, Armenia"
         }
       }
     ],

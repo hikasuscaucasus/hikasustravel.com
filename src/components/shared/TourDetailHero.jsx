@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import asset from '../../utils/basePath'
 import LocaleLink from '../../i18n/LocaleLink'
 import useT from '../../i18n/useT'
+import useLang from '../../i18n/useLang'
 import { GalleryLightbox } from './Gallery'
 
 /* Ivory-badge pilot: the hero is a two-column split (copy left, framed cover
@@ -130,11 +131,18 @@ function SunIcon() {
 
 export default function TourDetailHero({ tour, translatedTitle, heroH1, isGroup, sites, startingPrice }) {
   const t = useT()
+  const { lang } = useLang()
   const [sitesOpen, setSitesOpen] = useState(false)
   const [heroLightboxOpen, setHeroLightboxOpen] = useState(false)
   const photoOpenerRef = useRef(null)
   const title = translatedTitle || tour.title
   const h1 = heroH1 || title
+  // A tour whose hero photo has real per-locale alt copy (`tour.alt`, the
+  // same top-level field og:image:alt/twitter:image:alt already read — see
+  // buildTourSeo) uses it here too, so the photo is described rather than
+  // just restating the page title a second time. Every tour without the
+  // field keeps exactly the title-as-alt behaviour it always had.
+  const imgAlt = tour.alt ? (tour.alt[lang] || tour.alt.en || title) : title
   const heroItem = findHeroGalleryItem(tour)
   const rend = heroRenditions(heroItem)
   const sitesLabel = sites?.length ? `${sites.length} sites` : null
@@ -144,8 +152,8 @@ export default function TourDetailHero({ tour, translatedTitle, heroH1, isGroup,
   // `lightboxAlt` keeps the hero's own alt on the enlarged photo without
   // inventing a new caption for a hero that has never shown one.
   const heroLightboxImage = heroItem
-    ? { base: heroItem.base, widths: heroItem.widths, lightboxAlt: title }
-    : { src: tour.heroImage, lightboxAlt: title }
+    ? { base: heroItem.base, widths: heroItem.widths, lightboxAlt: imgAlt }
+    : { src: tour.heroImage, lightboxAlt: imgAlt }
 
   const scrollToBook = (e) => {
     e.preventDefault()
@@ -256,13 +264,13 @@ export default function TourDetailHero({ tour, translatedTitle, heroH1, isGroup,
                     width={rend.width}
                     height={rend.height}
                     sizes={HERO_SIZES}
-                    alt={title}
+                    alt={imgAlt}
                     fetchPriority="high"
                     decoding="async"
                   />
                 </picture>
               ) : (
-                <img src={asset(tour.heroImage)} alt={title} fetchPriority="high" decoding="async" />
+                <img src={asset(tour.heroImage)} alt={imgAlt} fetchPriority="high" decoding="async" />
               )}
             </div>
           </figure>
