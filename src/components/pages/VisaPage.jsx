@@ -11,30 +11,33 @@ import { getSEO } from '../../data/seoData'
 
 const SITE_URL = 'https://www.hikasustravel.com'
 
-// Per-country settings for this one shared page. Georgia's are the defaults,
-// so its route renders exactly as before; Armenia passes `country="armenia"`.
-// `breadcrumbName` is the English schema label — the visible breadcrumb comes
-// from the localized content, but this JSON-LD name has always been English on
-// the Georgia page, so both countries keep that behaviour.
+// Per-country settings for this one shared page. Armenia passes
+// `country="armenia"`. `breadcrumbName` is the English schema label — the
+// visible breadcrumb comes from the localized content, but this JSON-LD name
+// has always been English on the Georgia page, so both countries keep that
+// behaviour.
 const VISA_PAGES = {
   georgia: {
     pageKey: 'visaGuide',
     seoKey: 'visaGuide',
     path: 'georgia-visa-entry-requirements',
     breadcrumbName: 'Georgia Visa & Entry Requirements',
-    // Placeholder hero — swap for a passport/border image if desired.
-    hero: '/images/files/georgia-home.jpg',
+    // Permanently no hero (matches the Azerbaijan visa page): the solid
+    // `.dest-title-band` carries the H1 instead. og:image/twitter:image keep
+    // the site-wide default (georgia-home.jpg) via prerender.js's
+    // staticPageImages fallback — unaffected by this page having no hero.
+    noHero: true,
   },
   armenia: {
     pageKey: 'armeniaVisaGuide',
     seoKey: 'armeniaVisaGuide',
     path: 'armenia-visa-entry-requirements',
     breadcrumbName: 'Armenia Visa & Entry Requirements',
-    // Khor Virap under Mount Ararat — the repository's Armenian photograph.
-    // Using georgia-home.jpg here would put a Georgian picture on an Armenian
-    // page and in its og:image.
-    hero: '/images/files/khor-virap-monastery-ararat-armenia-1086.webp',
-    heroAvif: '/images/files/khor-virap-monastery-ararat-armenia-1086.avif',
+    // Permanently no hero (matches the Azerbaijan visa page): the solid
+    // `.dest-title-band` carries the H1 instead. `ogImage` keeps this page on
+    // its own Khor Virap social crop (also set in prerender.js's
+    // staticPageImages) rather than falling back to Georgia's default photo.
+    noHero: true,
     ogImage: '/images/files/khor-virap-monastery-ararat-armenia-og.jpg',
   },
   azerbaijan: {
