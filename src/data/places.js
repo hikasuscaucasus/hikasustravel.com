@@ -3328,7 +3328,6 @@ export const regions = [
     slug: 'aragatsotn', name: 'Aragatsotn', published: true, country: 'armenia',
     seoKey: 'aragatsotn', contentKey: 'aragatsotn',
     noHero: true,
-    noAutolink: true,
     thingsToDo: {
       seoKey: 'thingsToDoAragatsotn', contentKey: 'thingsToDoAragatsotn',
       noHero: true,
@@ -3358,10 +3357,6 @@ export const regions = [
     slug: 'ararat', name: 'Ararat', published: true, country: 'armenia',
     seoKey: 'ararat', contentKey: 'ararat',
     noHero: true,
-    noAutolink: true,
-    // Companion guide at /armenia/regions/ararat/things-to-do — same block shape
-    // as Aragatsotn's and as every Georgian region's. `noAutolink` above covers
-    // this guide too (ThingsToDoCityPage reads the parent place's flag).
     thingsToDo: {
       seoKey: 'thingsToDoArarat', contentKey: 'thingsToDoArarat',
       noHero: true,
@@ -3387,7 +3382,6 @@ export const regions = [
     slug: 'armavir', name: 'Armavir', published: true, country: 'armenia',
     seoKey: 'armavir', contentKey: 'armavir',
     noHero: true,
-    noAutolink: true,
     // Companion guide at /armenia/regions/armavir/things-to-do — same block shape
     // as Aragatsotn's and Ararat's, and as every Georgian region's.
     thingsToDo: {
@@ -3418,7 +3412,6 @@ export const regions = [
     slug: 'gegharkunik', name: 'Gegharkunik', published: true, country: 'armenia',
     seoKey: 'gegharkunik', contentKey: 'gegharkunik',
     noHero: true,
-    noAutolink: true,
     // Companion guide at /armenia/regions/gegharkunik/things-to-do — same block
     // shape as the other Armenia regions' and as every Georgian region's.
     thingsToDo: {
@@ -3455,7 +3448,6 @@ export const regions = [
     slug: 'kotayk', name: 'Kotayk', published: true, country: 'armenia',
     seoKey: 'kotayk', contentKey: 'kotayk',
     noHero: true,
-    noAutolink: true,
     // Companion guide at /armenia/regions/kotayk/things-to-do — same block shape
     // as the other Armenia regions' and as every Georgian region's.
     thingsToDo: {
@@ -3493,7 +3485,6 @@ export const regions = [
     slug: 'lori', name: 'Lori', published: true, country: 'armenia',
     seoKey: 'lori', contentKey: 'lori',
     noHero: true,
-    noAutolink: true,
     // Companion guide at /armenia/regions/lori/things-to-do — same block shape
     // as the other Armenia regions' and as every Georgian region's.
     thingsToDo: {
@@ -3533,7 +3524,6 @@ export const regions = [
     slug: 'shirak', name: 'Shirak', published: true, country: 'armenia',
     seoKey: 'shirak', contentKey: 'shirak',
     noHero: true,
-    noAutolink: true,
     // Companion guide at /armenia/regions/shirak/things-to-do — same block shape
     // as the other Armenia regions' and as every Georgian region's.
     thingsToDo: {
@@ -3575,7 +3565,6 @@ export const regions = [
     slug: 'syunik', name: 'Syunik', published: true, country: 'armenia',
     seoKey: 'syunik', contentKey: 'syunik',
     noHero: true,
-    noAutolink: true,
     // Companion guide at /armenia/regions/syunik/things-to-do — same block shape
     // as the other Armenia regions' and as every Georgian region's.
     thingsToDo: {
@@ -3615,7 +3604,6 @@ export const regions = [
     slug: 'tavush', name: 'Tavush', published: true, country: 'armenia',
     seoKey: 'tavush', contentKey: 'tavush',
     noHero: true,
-    noAutolink: true,
     // Companion guide at /armenia/regions/tavush/things-to-do — same block shape
     // as the other Armenia regions' and as every Georgian region's.
     thingsToDo: {
@@ -3658,7 +3646,6 @@ export const regions = [
     slug: 'vayots-dzor', name: 'Vayots Dzor', published: true, country: 'armenia',
     seoKey: 'vayotsDzor', contentKey: 'vayotsDzor',
     noHero: true,
-    noAutolink: true,
     // Companion guide at /armenia/regions/vayots-dzor/things-to-do — same block
     // shape as the other Armenia regions' and as every Georgian region's.
     thingsToDo: {
@@ -3704,12 +3691,10 @@ export const regions = [
     slug: 'absheron', name: 'Absheron Peninsula', published: true, country: 'azerbaijan',
     seoKey: 'absheron', contentKey: 'absheron',
     noHero: true,
-    noAutolink: true,
   },
   {
     slug: 'mountainous-shirvan', name: 'Mountainous Shirvan', published: true, country: 'azerbaijan',
     seoKey: 'mountainousShirvan', contentKey: 'mountainousShirvan',
-    noAutolink: true,
     // Owner-supplied photograph of Shamakhi's rebuilt Juma Mosque — Shamakhi is
     // itself part of Mountainous Shirvan, and this is the only region-correct
     // image in the batch. No smaller rung exists, so `cardImage` reuses the
@@ -3723,7 +3708,6 @@ export const regions = [
     slug: 'sheki-zagatala', name: 'Sheki-Zagatala', published: true, country: 'azerbaijan',
     seoKey: 'shekiZagatala', contentKey: 'shekiZagatala',
     noHero: true,
-    noAutolink: true,
   },
   // Quba-Khachmaz is the first PUBLISHED Azerbaijani region: its guide lives in
   // pages.json under `qubaKhachmaz` and its SEO entry in seoData.source.js. No
@@ -3732,7 +3716,6 @@ export const regions = [
     slug: 'quba-khachmaz', name: 'Quba-Khachmaz', published: true, country: 'azerbaijan',
     seoKey: 'qubaKhachmaz', contentKey: 'qubaKhachmaz',
     noHero: true,
-    noAutolink: true,
   },
   // Region article covers Ganja (corrected Elisabethpol/Kirovabad chronology,
   // Shah Abbas Mosque's 1606 build vs. 1776 minarets, Nizami kept
@@ -3747,7 +3730,6 @@ export const regions = [
     slug: 'ganja-dashkasan', name: 'Ganja-Dashkasan', published: true, country: 'azerbaijan',
     seoKey: 'ganjaDashkasan', contentKey: 'ganjaDashkasan',
     noHero: true,
-    noAutolink: true,
   },
   // Region article covers Gazakh/Avey/Damjili/Goyazan, Red Bridge (historic vs.
   // current border status), Tovuz/Baltiya winery, Shamkir/Annenfeld, Gadabey/
@@ -3757,7 +3739,6 @@ export const regions = [
     slug: 'gazakh-tovuz', name: 'Gazakh-Tovuz', published: true, country: 'azerbaijan',
     seoKey: 'gazakhTovuz', contentKey: 'gazakhTovuz',
     noHero: true,
-    noAutolink: true,
   },
   {
     // Region article covers Hirkan National Park / UNESCO Hyrcanian Forests
@@ -3770,13 +3751,11 @@ export const regions = [
     slug: 'lankaran-astara', name: 'Lankaran-Astara', published: true, country: 'azerbaijan',
     seoKey: 'lankaranAstara', contentKey: 'lankaranAstara',
     noHero: true,
-    noAutolink: true,
   },
   {
     slug: 'central-aran', name: 'Central Aran', published: true, country: 'azerbaijan',
     seoKey: 'centralAran', contentKey: 'centralAran',
     noHero: true,
-    noAutolink: true,
   },
   {
     // Region article covers Momine Khatun's corrected height (34 m original,
@@ -3790,7 +3769,6 @@ export const regions = [
     slug: 'nakhchivan', name: 'Nakhchivan', published: true, country: 'azerbaijan',
     seoKey: 'nakhchivan', contentKey: 'nakhchivan',
     noHero: true,
-    noAutolink: true,
   },
 ]
 
@@ -8820,7 +8798,6 @@ export const cities = [
     geoMeta: { region: 'AM-TV', placename: 'Dilijan', lat: '40.7414', lng: '44.8636' },
     noHero: true,
     heroTitleAsH1: true,
-    noAutolink: true,
   },
   // Yerevan — the registry's first non-Georgian city, and the reason cityPath()
   // resolves its record the way regionPath() already did: `country: 'armenia'`
@@ -8888,7 +8865,6 @@ export const cities = [
     // The brief specifies the authored headline as this page's H1; Georgian
     // cities keep showing the bare city name, which is why this is opt-in.
     heroTitleAsH1: true,
-    noAutolink: true,
     // Companion guide at /armenia/yerevan/things-to-do — the same block shape
     // the Armenia regions and every Georgian city use. Georgia's cities keep
     // their flat /georgia/<city>/things-to-do-in-<city> URL; a city outside
@@ -8984,7 +8960,6 @@ export const cities = [
       },
     },
     heroTitleAsH1: true,
-    noAutolink: true,
   },
   // Garni — the village below the temple, and Armenia's fourth published city.
   // `region: 'kotayk'` points at the published Kotayk region record, while the
@@ -9053,7 +9028,6 @@ export const cities = [
       },
     },
     heroTitleAsH1: true,
-    noAutolink: true,
     // Companion guide at /armenia/garni/things-to-do — the same block shape
     // Yerevan and every Georgian city use, and the reason no new routing was
     // needed: the shared armenia/:citySlug/things-to-do route already existed.
@@ -9119,7 +9093,6 @@ export const cities = [
     geoMeta: { region: 'AM-SU', placename: 'Goris', lat: '39.5108', lng: '46.3403' },
     noHero: true,
     heroTitleAsH1: true,
-    noAutolink: true,
     // Companion guide at /armenia/goris/things-to-do — the same block shape
     // Yerevan and Garni use. No new routing: the shared
     // armenia/:citySlug/things-to-do route already existed. The guide inherits
@@ -9158,7 +9131,6 @@ export const cities = [
     geoMeta: { region: 'AM-SH', placename: 'Gyumri', lat: '40.7894', lng: '43.8475' },
     noHero: true,
     heroTitleAsH1: true,
-    noAutolink: true,
   },
   // Jermuk — completed IN PLACE like Gyumri above it. cityPath() puts it at
   // /armenia/jermuk; `region: 'vayots-dzor'` carries the association without
@@ -9220,7 +9192,6 @@ export const cities = [
       },
     },
     heroTitleAsH1: true,
-    noAutolink: true,
   },
   // Oshakan — completed IN PLACE at /armenia/oshakan.
   //
@@ -9243,7 +9214,6 @@ export const cities = [
     geoMeta: { region: 'AM-AG', placename: 'Oshakan', lat: '40.2617', lng: '44.3106' },
     noHero: true,
     heroTitleAsH1: true,
-    noAutolink: true,
   },
   // Sevan — the CITY, completed IN PLACE at /armenia/sevan. Three separate
   // records now share the name and must not be conflated: this city, the
@@ -9265,7 +9235,6 @@ export const cities = [
     geoMeta: { region: 'AM-GR', placename: 'Sevan', lat: '40.5497', lng: '44.9519' },
     noHero: true,
     heroTitleAsH1: true,
-    noAutolink: true,
   },
   // Sisian — completed IN PLACE at /armenia/sisian.
   //
@@ -9285,7 +9254,6 @@ export const cities = [
     geoMeta: { region: 'AM-SU', placename: 'Sisian', lat: '39.5231', lng: '46.0322' },
     noHero: true,
     heroTitleAsH1: true,
-    noAutolink: true,
   },
   // Tsaghkadzor — the scaffolded entry completed IN PLACE, like Goris before
   // it: same slug, same region, same country, now published with its content
@@ -9312,7 +9280,6 @@ export const cities = [
     geoMeta: { region: 'AM-KT', placename: 'Tsaghkadzor', lat: '40.5333', lng: '44.7167' },
     noHero: true,
     heroTitleAsH1: true,
-    noAutolink: true,
   },
   // Armenian Khachkar — a COUNTRY-LEVEL cultural-heritage guide, not a city and
   // not an attraction. It lives here for one reason: `/armenia/:citySlug` is
@@ -9337,7 +9304,6 @@ export const cities = [
     seoKey: 'armenianKhachkar', contentKey: 'armenianKhachkar',
     noHero: true,
     heroTitleAsH1: true,
-    noAutolink: true,
     classifyAs: 'place',
     placeLocation: { cityId: null, municipalityId: null, regionId: null },
   },
@@ -9354,7 +9320,7 @@ export const cities = [
     slug: 'baku', name: 'Baku', region: null, published: true, country: 'azerbaijan',
     seoKey: 'baku', contentKey: 'baku',
     featured: true,
-    heroTitleAsH1: true, noAutolink: true,
+    heroTitleAsH1: true,
     // Owner-supplied photograph: the Flame Towers skyline seen from across the
     // bay, with the TV tower and Government House also visible — genuinely
     // identifiable as Baku, not a generic Azerbaijan stand-in. Already in the
@@ -9426,7 +9392,7 @@ export const cities = [
     slug: 'lahij', name: 'Lahij', region: 'mountainous-shirvan', published: true, country: 'azerbaijan',
     seoKey: 'lahij', contentKey: 'lahij',
     featured: true,
-    noHero: true, heroTitleAsH1: true, noAutolink: true,
+    noHero: true, heroTitleAsH1: true,
     thingsToDo: {
       seoKey: 'thingsToDoLahij', contentKey: 'thingsToDoLahij',
       noHero: true,
@@ -9456,13 +9422,13 @@ export const cities = [
     // `sites` placeholder is left unpublished and unused.
     classifyAs: 'place',
     placeLocation: { cityId: null, municipalityId: null, regionId: 'mountainous-shirvan' },
-    noHero: true, noAutolink: true,
+    noHero: true,
   },
   {
     slug: 'sheki', name: 'Sheki', region: 'sheki-zagatala', published: true, country: 'azerbaijan',
     seoKey: 'sheki', contentKey: 'sheki',
     featured: true,
-    noHero: true, heroTitleAsH1: true, noAutolink: true,
+    noHero: true, heroTitleAsH1: true,
     thingsToDo: {
       seoKey: 'thingsToDoSheki', contentKey: 'thingsToDoSheki',
       noHero: true,
@@ -9474,7 +9440,7 @@ export const cities = [
     slug: 'gabala', name: 'Gabala', region: 'sheki-zagatala', published: true, country: 'azerbaijan',
     seoKey: 'gabala', contentKey: 'gabala',
     featured: true,
-    noHero: true, heroTitleAsH1: true, noAutolink: true,
+    noHero: true, heroTitleAsH1: true,
     thingsToDo: {
       seoKey: 'thingsToDoGabala', contentKey: 'thingsToDoGabala',
       noHero: true,
@@ -9501,7 +9467,7 @@ export const cities = [
     // left unpublished and unused rather than deleted.
     classifyAs: 'place',
     placeLocation: { cityId: null, municipalityId: null, regionId: 'sheki-zagatala' },
-    noHero: true, noAutolink: true,
+    noHero: true,
   },
   {
     slug: 'gakh', name: 'Gakh', region: 'sheki-zagatala', published: false, country: 'azerbaijan',
@@ -9542,7 +9508,7 @@ export const cities = [
     slug: 'quba', name: 'Quba', region: 'quba-khachmaz', published: true, country: 'azerbaijan',
     seoKey: 'quba', contentKey: 'quba',
     featured: true,
-    noHero: true, heroTitleAsH1: true, noAutolink: true,
+    noHero: true, heroTitleAsH1: true,
     thingsToDo: {
       seoKey: 'thingsToDoQuba', contentKey: 'thingsToDoQuba',
       noHero: true,
@@ -9559,7 +9525,7 @@ export const cities = [
     slug: 'khinalig', name: 'Khinalig', region: 'quba-khachmaz', published: true, country: 'azerbaijan',
     seoKey: 'khinalig', contentKey: 'khinalig',
     featured: true,
-    noHero: true, heroTitleAsH1: true, noAutolink: true,
+    noHero: true, heroTitleAsH1: true,
     thingsToDo: {
       seoKey: 'thingsToDoKhinalig', contentKey: 'thingsToDoKhinalig',
       noHero: true,
@@ -9591,7 +9557,7 @@ export const cities = [
     slug: 'ganja', name: 'Ganja', region: 'ganja-dashkasan', published: true, country: 'azerbaijan',
     seoKey: 'ganja', contentKey: 'ganja',
     featured: true,
-    noHero: true, heroTitleAsH1: true, noAutolink: true,
+    noHero: true, heroTitleAsH1: true,
     thingsToDo: {
       seoKey: 'thingsToDoGanja', contentKey: 'thingsToDoGanja',
       noHero: true,
@@ -9643,7 +9609,7 @@ export const cities = [
     slug: 'lankaran', name: 'Lankaran', region: 'lankaran-astara', published: true, country: 'azerbaijan',
     seoKey: 'lankaran', contentKey: 'lankaran',
     featured: true,
-    noHero: true, heroTitleAsH1: true, noAutolink: true,
+    noHero: true, heroTitleAsH1: true,
     thingsToDo: {
       seoKey: 'thingsToDoLankaran', contentKey: 'thingsToDoLankaran',
       noHero: true,
@@ -15042,7 +15008,6 @@ export const sites = [
     // the crop. The padded `-og.jpg` and both `-og*.webp` sit on disk
     // unreferenced; useSEO/prerender emit exactly one og:image.
     ogImage: { src: '/images/files/amberd-fortress-aragats-armenia-og-crop.jpg', width: 1200, height: 630 },
-    noAutolink: true,
     // Hero image SEO/AEO metadata. The hero is a CSS background (there is no
     // <img alt> anywhere on this site), so the localized alt lives here and is
     // what feeds og:image:alt / twitter:image:alt per locale and the hero
@@ -15106,7 +15071,6 @@ export const sites = [
     // `-og-crop.*` pair and `-og.webp` sit on disk unreferenced; useSEO and
     // prerender emit exactly one og:image.
     ogImage: { src: '/images/files/yerevan-cascade-armenia-og.jpg', width: 1200, height: 630 },
-    noAutolink: true,
     // Hero image SEO/AEO metadata. The hero is a CSS background (this site has
     // no <img> heroes at all), so the localized alt lives here and feeds
     // og:image:alt / twitter:image:alt per locale and the hero ImageObject
@@ -15146,7 +15110,6 @@ export const sites = [
     parentType: 'city', parent: 'yerevan', published: true,
     seoKey: 'operaAndBalletTheatre', contentKey: 'operaAndBalletTheatre',
     noHero: true,
-    noAutolink: true,
   },
   // Republic Square — the third CITY-parented child of Yerevan, at
   // /armenia/yerevan/republic-square. Note this is a DIFFERENT square from
@@ -15176,7 +15139,6 @@ export const sites = [
     // Dedicated 1.91:1 social image; the matching `-og.webp` ships alongside
     // unreferenced (one og:image URL only).
     ogImage: { src: '/images/files/republic-square-yerevan-armenia-og.jpg', width: 1200, height: 630 },
-    noAutolink: true,
     // Hero image SEO/AEO metadata — the hero is a CSS background, so this is
     // where the localized alt lives; it feeds og:image:alt / twitter:image:alt
     // per locale and the hero ImageObject caption. width/height describe the
@@ -15219,7 +15181,6 @@ export const sites = [
     parentType: 'city', parent: 'yerevan', published: true,
     seoKey: 'armenianGenocideMuseum', contentKey: 'armenianGenocideMuseum',
     noHero: true,
-    noAutolink: true,
   },
   // Tsitsernakaberd Memorial Complex — the fifth CITY-parented child of
   // Yerevan, at /armenia/yerevan/tsitsernakaberd-memorial-complex. It is a
@@ -15238,7 +15199,6 @@ export const sites = [
     parentType: 'city', parent: 'yerevan', published: true,
     seoKey: 'tsitsernakaberdMemorial', contentKey: 'tsitsernakaberdMemorial',
     noHero: true,
-    noAutolink: true,
   },
   // Vernissage Market — the open-air crafts-and-souvenir market along Aram
   // and Buzand streets, a few minutes from Republic Square. City-parented
@@ -15257,7 +15217,6 @@ export const sites = [
     parentType: 'city', parent: 'yerevan', published: true,
     seoKey: 'vernissageMarket', contentKey: 'vernissageMarket',
     noHero: true,
-    noAutolink: true,
   },
   // Etchmiadzin is NOT here: it is a published CITY (see the cities array
   // above), living at /armenia/etchmiadzin. It was scaffolded here as a
@@ -15292,7 +15251,6 @@ export const sites = [
     parentType: 'region', parent: 'syunik', published: true,
     seoKey: 'zoratsKarer', contentKey: 'zoratsKarer',
     noHero: true,
-    noAutolink: true,
   },
   // Mount Aragats — REGION-parented onto Aragatsotn, at
   // /armenia/aragatsotn/mount-aragats, the same shape as Amberd Fortress
@@ -15314,7 +15272,6 @@ export const sites = [
     parentType: 'region', parent: 'aragatsotn', published: true,
     seoKey: 'mountAragats', contentKey: 'mountAragats',
     noHero: true,
-    noAutolink: true,
   },
   // Symphony of Stones — CITY-parented onto the published Garni city page, at
   // /armenia/garni/symphony-of-stones, exactly like Geghard below it. The
@@ -15333,7 +15290,6 @@ export const sites = [
     parentType: 'city', parent: 'garni', published: true,
     seoKey: 'symphonyOfStones', contentKey: 'symphonyOfStones',
     noHero: true,
-    noAutolink: true,
   },
   // Geghard Monastery — re-parented from the Kotayk region onto the published
   // Garni city and published. `parentType: 'city'` is what puts it at
@@ -15370,7 +15326,6 @@ export const sites = [
     // Dedicated 1.91:1 social image. The matching `-og.webp` ships alongside and
     // stays unreferenced — useSEO/prerender emit a single og:image URL.
     ogImage: { src: '/images/files/geghard-monastery-armenia-og.jpg', width: 1200, height: 630 },
-    noAutolink: true,
     // Hero image SEO/AEO metadata. The hero is a CSS background (no <img alt>
     // anywhere on this site), so the localized alt lives here and feeds
     // og:image:alt / twitter:image:alt per locale plus the hero ImageObject
@@ -15426,7 +15381,6 @@ export const sites = [
     // Dedicated 1.91:1 social image; the matching `-og.webp` ships alongside
     // unreferenced (one og:image URL only).
     ogImage: { src: '/images/files/haghpat-monastery-armenia-og.jpg', width: 1200, height: 630 },
-    noAutolink: true,
     // Hero image SEO/AEO metadata — the hero is a CSS background, so this is
     // where the localized alt lives; it feeds og:image:alt / twitter:image:alt
     // per locale and the hero ImageObject caption. width/height describe the
@@ -15491,7 +15445,6 @@ export const sites = [
     // TouristAttraction node on that same file, exactly as before.
     ogImage: { src: '/images/files/khor-virap-monastery-ararat-armenia-og.jpg', width: 1200, height: 630 },
     jsonLdImage: '/images/files/khor-virap-monastery-ararat-armenia-og.jpg',
-    noAutolink: true,
     // Hero image SEO/AEO metadata. The hero is a CSS background (no <img alt>),
     // so the localized alt lives here; it feeds og:image:alt /
     // twitter:image:alt per locale — which this page previously had NONE of —
@@ -15556,7 +15509,6 @@ export const sites = [
     // Keep the TouristAttraction node on the same social crop as og:image, as
     // this record already did — only the file changes.
     jsonLdImage: '/images/files/mount-ararat-armenia-og.jpg',
-    noAutolink: true,
     // Hero image SEO/AEO metadata. The hero is a CSS background (no <img alt>),
     // so the localized alt lives here and feeds og:image:alt /
     // twitter:image:alt per locale plus the hero ImageObject caption.
@@ -15607,7 +15559,6 @@ export const sites = [
     parentType: 'region', parent: 'vayots-dzor', published: true,
     seoKey: 'areni1Cave', contentKey: 'areni1Cave',
     noHero: true,
-    noAutolink: true,
     // No `image`: the only Armenian photograph on disk is the Khor Virap
     // crop, which shows a different place. og:image falls back to
     // COUNTRIES.armenia.socialImage — the SAME file — so the social card is
@@ -15647,7 +15598,6 @@ export const sites = [
     // Dedicated 1.91:1 social image; the matching `-og.webp` ships alongside
     // unreferenced (one og:image URL only).
     ogImage: { src: '/images/files/noravank-monastery-armenia-og.jpg', width: 1200, height: 630 },
-    noAutolink: true,
     // Hero image SEO/AEO metadata — the hero is a CSS background, so this is
     // where the localized alt lives; it feeds og:image:alt / twitter:image:alt
     // per locale and the hero ImageObject caption. width/height describe the
@@ -15684,7 +15634,6 @@ export const sites = [
     parentType: 'region', parent: 'lori', published: true,
     seoKey: 'sanahinMonastery', contentKey: 'sanahinMonastery',
     noHero: true,
-    noAutolink: true,
   },
   // Lake Sevan — published in place as a REGION-parented site, which puts it
   // at /armenia/gegharkunik/lake-sevan through the shared country-aware
@@ -15727,7 +15676,6 @@ export const sites = [
     // Dedicated 1.91:1 social image; the matching `-og.webp` ships alongside
     // unreferenced (one og:image URL only).
     ogImage: { src: '/images/files/lake-sevan-armenia-og.jpg', width: 1200, height: 630 },
-    noAutolink: true,
     // Hero image SEO/AEO metadata — the hero is a CSS background, so this is
     // where the localized alt lives; it feeds og:image:alt / twitter:image:alt
     // per locale and the hero ImageObject caption. width/height describe the
@@ -15787,7 +15735,6 @@ export const sites = [
     // Dedicated 1.91:1 social image; the matching `-og.webp` ships alongside
     // unreferenced (one og:image URL only).
     ogImage: { src: '/images/files/sevanavank-monastery-armenia-og.jpg', width: 1200, height: 630 },
-    noAutolink: true,
     // Hero image SEO/AEO metadata — the hero is a CSS background, so this is
     // where the localized alt lives; it feeds og:image:alt / twitter:image:alt
     // per locale and the hero ImageObject caption. width/height describe the
@@ -15845,7 +15792,6 @@ export const sites = [
     // Dedicated 1.91:1 social image; the matching `-og.webp` ships alongside
     // unreferenced (one og:image URL only).
     ogImage: { src: '/images/files/noratus-cemetery-khachkars-armenia-og.jpg', width: 1200, height: 630 },
-    noAutolink: true,
     // Hero image SEO/AEO metadata — the hero is a CSS background, so this is
     // where the localized alt lives; it feeds og:image:alt / twitter:image:alt
     // per locale and the hero ImageObject caption. width/height describe the
@@ -15890,7 +15836,6 @@ export const sites = [
     parentType: 'region', parent: 'aragatsotn', published: true,
     seoKey: 'saintMesropMashtotsChurch', contentKey: 'saintMesropMashtotsChurch',
     noHero: true,
-    noAutolink: true,
   },
   // Tatev — region-parented under Syunik, like every other Armenian
   // attraction. Goris is the practical base the copy recommends, but a city
@@ -15922,7 +15867,6 @@ export const sites = [
     // Dedicated 1.91:1 social image; the matching `-og.webp` ships alongside
     // unreferenced (one og:image URL only).
     ogImage: { src: '/images/files/tatev-monastery-armenia-og.jpg', width: 1200, height: 630 },
-    noAutolink: true,
     // Hero image SEO/AEO metadata — the hero is a CSS background, so this is
     // where the localized alt lives; it feeds og:image:alt / twitter:image:alt
     // per locale and the hero ImageObject caption. width/height describe the
@@ -15976,7 +15920,6 @@ export const sites = [
     // Dedicated 1.91:1 social image; the matching `-og.webp` ships alongside
     // unreferenced (one og:image URL only).
     ogImage: { src: '/images/files/zvartnots-cathedral-armenia-og.jpg', width: 1200, height: 630 },
-    noAutolink: true,
     // Hero image SEO/AEO metadata — the hero is a CSS background, so this is
     // where the localized alt lives; it feeds og:image:alt / twitter:image:alt
     // per locale and the hero ImageObject caption. width/height describe the
@@ -16012,28 +15955,28 @@ export const sites = [
     // No genuine wide-shot Icherisheher photograph exists in the asset
     // library yet (only the Maiden Tower's own close photo, already used
     // on that dedicated page).
-    noHero: true, noAutolink: true,
+    noHero: true,
   },
   {
     slug: 'palace-of-the-sheki-khans', name: 'Palace of the Sheki Khans',
     parentType: 'city', parent: 'sheki', published: true,
     seoKey: 'palaceOfTheShekiKhans', contentKey: 'palaceOfTheShekiKhans',
     // No Sheki imagery of any kind exists in the asset library yet.
-    noHero: true, noAutolink: true,
+    noHero: true,
   },
   {
     slug: 'caravanserai', name: 'Sheki Caravanserai',
     parentType: 'city', parent: 'sheki', published: true,
     seoKey: 'shekiCaravanserai', contentKey: 'shekiCaravanserai',
     // No Sheki imagery of any kind exists in the asset library yet.
-    noHero: true, noAutolink: true,
+    noHero: true,
   },
   {
     slug: 'church-of-kish', name: 'Church of Kish',
     parentType: 'city', parent: 'sheki', published: true,
     seoKey: 'churchOfKish', contentKey: 'churchOfKish',
     // No Sheki imagery of any kind exists in the asset library yet.
-    noHero: true, noAutolink: true,
+    noHero: true,
   },
   {
     slug: 'carpet-museum', name: 'Azerbaijan Carpet Museum',
@@ -16041,7 +15984,7 @@ export const sites = [
     seoKey: 'azerbaijanCarpetMuseum', contentKey: 'azerbaijanCarpetMuseum',
     // No dedicated Carpet Museum photo exists in the asset library yet
     // (Baku Boulevard's own hero is a Flame Towers/skyline shot).
-    noHero: true, noAutolink: true,
+    noHero: true,
   },
   {
     slug: 'multani-caravanserai', name: 'Multani Caravanserai',
@@ -16052,13 +15995,12 @@ export const sites = [
     parentType: 'city', parent: 'baku', published: true,
     seoKey: 'multaniCaravanserai', contentKey: 'multaniCaravanserai',
     // No Multani Caravanserai photograph exists in the asset library yet.
-    noHero: true, noAutolink: true,
+    noHero: true,
   },
   {
     slug: 'maiden-tower', name: 'Maiden Tower',
     parentType: 'city', parent: 'baku', published: true,
     seoKey: 'maidenTower', contentKey: 'maidenTower',
-    noAutolink: true,
     image: '/images/files/maiden-tower-icherisheher-baku-azerbaijan-1293.webp',
     imageAvif: '/images/files/maiden-tower-icherisheher-baku-azerbaijan-1293.avif',
   },
@@ -16066,7 +16008,6 @@ export const sites = [
     slug: 'shirvanshahs-palace', name: "Shirvanshahs' Palace",
     parentType: 'city', parent: 'baku', published: true,
     seoKey: 'shirvanshahsPalace', contentKey: 'shirvanshahsPalace',
-    noAutolink: true,
     image: '/images/files/palace-of-the-shirvanshahs-baku-azerbaijan-1536.webp',
     imageAvif: '/images/files/palace-of-the-shirvanshahs-baku-azerbaijan-1536.avif',
   },
@@ -16078,13 +16019,12 @@ export const sites = [
     // a genuinely different Zoroastrian fire-temple site. Different contentKey/
     // seoKey to avoid a global dictionary collision; the identical slug string
     // is fine since routing resolves a site by (slug, parentSlug) together.
-    noHero: true, noAutolink: true,
+    noHero: true,
   },
   {
     slug: 'flame-towers', name: 'Flame Towers',
     parentType: 'city', parent: 'baku', published: true,
     seoKey: 'flameTowers', contentKey: 'flameTowers',
-    noAutolink: true,
     // Reuses Baku's own hero photo — it genuinely depicts the Flame Towers.
     image: '/images/files/baku-flame-towers-azerbaijan-1448.webp',
     imageAvif: '/images/files/baku-flame-towers-azerbaijan-1448.avif',
@@ -16093,7 +16033,6 @@ export const sites = [
     slug: 'heydar-aliyev-center', name: 'Heydar Aliyev Center',
     parentType: 'city', parent: 'baku', published: true,
     seoKey: 'heydarAliyevCenter', contentKey: 'heydarAliyevCenter',
-    noAutolink: true,
     image: '/images/files/heydar-aliyev-center-baku-azerbaijan-1672.webp',
     imageAvif: '/images/files/heydar-aliyev-center-baku-azerbaijan-1672.avif',
   },
@@ -16101,7 +16040,6 @@ export const sites = [
     slug: 'baku-boulevard', name: 'Baku Boulevard',
     parentType: 'city', parent: 'baku', published: true,
     seoKey: 'bakuBoulevard', contentKey: 'bakuBoulevard',
-    noAutolink: true,
     image: '/images/files/baku-boulevard-flame-towers-azerbaijan-1536.webp',
     imageAvif: '/images/files/baku-boulevard-flame-towers-azerbaijan-1536.avif',
   },
@@ -16152,7 +16090,7 @@ export const sites = [
     parentType: 'region', parent: 'absheron', published: true,
     seoKey: 'yanarDag', contentKey: 'yanarDag',
     // No genuine Yanar Dag photograph exists in the asset library yet.
-    noHero: true, noAutolink: true,
+    noHero: true,
   },
   {
     slug: 'mardakan-castle', name: 'Mardakan Castle',
@@ -16204,13 +16142,12 @@ export const sites = [
     slug: 'gobustan-petroglyphs', name: 'Gobustan Petroglyphs',
     parentType: 'place', parent: 'gobustan', country: 'azerbaijan', published: true,
     seoKey: 'gobustanPetroglyphs', contentKey: 'gobustanPetroglyphs',
-    noHero: true, noAutolink: true,
+    noHero: true,
   },
   {
     slug: 'gobustan-mud-volcanoes', name: 'Gobustan Mud Volcanoes',
     parentType: 'place', parent: 'gobustan', country: 'azerbaijan', published: true,
     seoKey: 'gobustanMudVolcanoes', contentKey: 'gobustanMudVolcanoes',
-    noAutolink: true,
     image: '/images/files/gobustan-mud-volcanoes-azerbaijan-1599.webp',
     imageAvif: '/images/files/gobustan-mud-volcanoes-azerbaijan-1599.avif',
   },
@@ -16218,7 +16155,6 @@ export const sites = [
     slug: 'shamakhi-juma-mosque', name: 'Shamakhi Juma Mosque',
     parentType: 'region', parent: 'mountainous-shirvan', published: true,
     seoKey: 'shamakhiJumaMosque', contentKey: 'shamakhiJumaMosque',
-    noAutolink: true,
     // Reuses Mountainous Shirvan's own region hero photo — the same mosque.
     image: '/images/files/shamakhi-juma-mosque-azerbaijan-1564.webp',
     imageAvif: '/images/files/shamakhi-juma-mosque-azerbaijan-1564.avif',
@@ -16229,7 +16165,7 @@ export const sites = [
     seoKey: 'yeddiGumbezMausoleum', contentKey: 'yeddiGumbezMausoleum',
     // No genuine Yeddi Gumbez photograph exists in the asset library yet —
     // noHero rather than reusing the (unrelated) Juma Mosque photo.
-    noHero: true, noAutolink: true,
+    noHero: true,
   },
   {
     slug: 'diri-baba-mausoleum', name: 'Diri Baba Mausoleum',
