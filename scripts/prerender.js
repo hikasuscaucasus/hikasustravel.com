@@ -129,6 +129,15 @@ function parseTours(source) {
     const titleM = chunk.match(/"title":\s*"([^"]+)"/)
     const descM = chunk.match(/"description":\s*"([^"]+)"/)
     const heroM = chunk.match(/"heroImage":\s*"([^"]+)"/)
+    // A tour with no approved photo yet sets `"heroImage": null` (rather than
+    // omitting the key) so og:image/twitter:image are explicitly stripped
+    // instead of silently inheriting the template's Georgian default — same
+    // `=== null` sentinel staticPageImages already uses for a country page
+    // with no photo of its own. The regex above only matches a quoted
+    // string, so it would otherwise see this tour as heroless-but-undefined
+    // (empty string) rather than heroless-on-purpose (null), and the
+    // fallback-stays-Georgian branch below would run unintentionally.
+    const heroIsExplicitNull = /"heroImage":\s*null\b/.test(chunk)
     // Optional dedicated 1.91:1 social image + dimensions (e.g. the Gudauri ski
     // tour). `ogImage` is `{ src, width, height }`; when absent, og:image falls
     // back to the hero below.
@@ -165,7 +174,7 @@ function parseTours(source) {
       description: descM?.[1] || '',
       seoTitle: seoTitleM?.[1] || '',
       metaDescription: metaDescM?.[1] || '',
-      heroImage: heroM?.[1] || '',
+      heroImage: heroIsExplicitNull ? null : (heroM?.[1] || ''),
       ogImage: ogImageM?.[1] || '',
       ogImageWidth: ogImageM?.[2] || '',
       ogImageHeight: ogImageM?.[3] || '',

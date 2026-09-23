@@ -36,10 +36,6 @@ const GUIDE_LINKS = {
     { to: '/azerbaijan', labelKey: 'nav.destinations.azerbaijan' },
   ],
 }
-// Available now (unlike a standalone Armenia tour), so it belongs on the
-// Armenia hub even though it carries `country: "caucasus"` and therefore
-// isn't among `featuredToursFor('armenia')`'s own results.
-const GEORGIA_ARMENIA_TOUR_SLUG = '10-day-georgia-armenia-tour'
 
 /**
  * Shared template for the four country tours hubs (/tours/georgia,
@@ -64,10 +60,10 @@ export default function CountryToursHubPage({ country }) {
     { name: t(TITLE_KEY[country]) },
   ]
 
-  const extraTours = country === 'armenia'
-    ? tours.filter((tour) => tour.slug === GEORGIA_ARMENIA_TOUR_SLUG)
-    : []
-  const countryTours = [...featuredToursFor(country), ...extraTours]
+  // `featuredToursFor` already folds in any `country: "caucasus"` tour whose
+  // `areaServed` covers this hub's country (see `toursForCountry` in
+  // src/data/tours.js), so a multi-country tour needs no per-slug listing here.
+  const countryTours = featuredToursFor(country)
   const showToursGrid = countryTours.length > 0
   // Georgia's hub gets the same "See all N tours" link (same dynamic count
   // and reused translations as the homepage's Featured Tours tab) and

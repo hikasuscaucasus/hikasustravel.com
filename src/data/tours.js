@@ -19999,6 +19999,242 @@ export const tours = [
       }
     },
     "tourFormTitle": "7-Day Svaneti Tour from Kutaisi"
+  },
+  {
+    "slug": "14-day-caucasus-tour",
+    "type": "private",
+    "country": "caucasus",
+    "areaServed": ["Azerbaijan", "Georgia", "Armenia"],
+    "title": "14-Day Caucasus Tour: Azerbaijan, Georgia & Armenia",
+    "heroImage": null,
+    "days": 14,
+    "description": "Fourteen days across three countries, each with its own script — Azerbaijan's mix of Soviet-era Baku and eternal flames, Georgia's mountains and wine, Armenia's monasteries and the shadow of Ararat. This private tour crosses two land borders on foot, with a new guide and driver waiting on the far side of each.\n\nYou begin in Baku, with its walled Old City and the fire-worship sites of the Absheron peninsula, then head inland to the Khan's palace at Sheki before crossing into Georgia at Lagodekhi. Kakheti's wine country and Tbilisi's old town follow, along with a night under Mount Kazbek, before a second border crossing takes you into Armenia for Lake Sevan, Yerevan and the great sights around Mount Ararat.\n\nBoth border crossings are on foot and are built into the day rather than treated as a footnote — you'll find exactly what to expect at each. It's a full itinerary, and a couple of the days carry real driving, but because it's private, the pace and the stops bend around you.",
+    "listingDescription": "A private 14-day route across Azerbaijan, Georgia and Armenia — Baku's Old City and fire temples, Sheki's Khan's Palace, Kakheti wine country, Tbilisi and Kazbegi, then Lake Sevan, Yerevan and the sights around Mount Ararat.",
+    "seoTitle": "14-Day Caucasus Tour: Azerbaijan, Georgia & Armenia",
+    "metaDescription": "Private 14-day Caucasus tour from Baku to Yerevan through Azerbaijan, Georgia and Armenia, including Sheki, Kakheti, Tbilisi, Kazbegi, Lake Sevan and Yerevan.",
+    "itinerary": [
+      {
+        "title": "Day 1: Arrival in Baku",
+        "content": "<p>You'll be met at Heydar Aliyev International Airport and transferred to your hotel. Check-in is from 14:00. The rest of the day is free. Overnight stay in Baku.</p><ul><li>Arrival at Heydar Aliyev International Airport;</li><li>Transfer to hotel and check-in;</li><li>Free time in Baku;</li><li>Overnight stay in Baku.</li><li><strong>Driving duration:</strong> 30 minutes</li></ul>"
+      },
+      {
+        "title": "Day 2: Baku City Tour",
+        "content": "<p>The tour starts in Icherisheher, Baku's walled Old City and a UNESCO site, with its narrow lanes, the Maiden Tower rising above the rooftops, and the Shirvanshahs' Palace, the seat of the region's medieval rulers. From there you drive out to the Heydar Aliyev Center, a flowing white building by the architect Zaha Hadid that has become one of Baku's best-known modern landmarks, before returning to walk the newer part of the city — Fountains Square, the seafront Baku Boulevard along the Caspian, and the view up to the three glass Flame Towers that have come to define the skyline. The day ends with a dinner of Azerbaijani food in the Old City.</p><ul><li>Walk through Icherisheher (UNESCO World Heritage Site);</li><li>Photo stop at the Maiden Tower;</li><li>Visit the Shirvanshahs' Palace;</li><li>Visit the Heydar Aliyev Center;</li><li>Walk along Baku Boulevard;</li><li>See the Flame Towers;</li><li>Dinner in Baku;</li><li>Overnight stay in Baku.</li><li><strong>Duration of the tour:</strong> 6-7 hours</li><li><strong>Driving duration:</strong> 45 minutes</li></ul>"
+      },
+      {
+        "title": "Day 3: Baku – Gobustan – Mud Volcanoes – Ateshgah – Yanar Dag – Baku",
+        "content": "<p>A day of the strange and the ancient south of the city. <a href=\"/en/azerbaijan/gobustan/gobustan-petroglyphs\" data-internal=\"/azerbaijan/gobustan/gobustan-petroglyphs\" class=\"entity-link\">Gobustan National Park</a>, a UNESCO site, holds thousands of rock carvings going back some 40,000 years, scratched onto a hillside of bare stone; nearby, a short 4WD ride out onto open ground brings you to the <a href=\"/en/azerbaijan/gobustan/gobustan-mud-volcanoes\" data-internal=\"/azerbaijan/gobustan/gobustan-mud-volcanoes\" class=\"entity-link\">mud volcanoes</a>, small cones that bubble and hiss with cold grey mud rather than lava. In the afternoon you visit <a href=\"/en/azerbaijan/baku/ateshgah-fire-temple\" data-internal=\"/azerbaijan/baku/ateshgah-fire-temple\" class=\"entity-link\">Ateshgah</a>, a walled fire temple built around a natural gas flame that has drawn Zoroastrian, Hindu and Sikh pilgrims for centuries, and Yanar Dag, a hillside where gas seeping from the rock has burned continuously for decades. Back to Baku for the night.</p><ul><li>Visit Gobustan National Park (UNESCO World Heritage Site);</li><li>See the mud volcanoes by 4WD;</li><li>Visit the Ateshgah Fire Temple;</li><li>See Yanar Dag, the burning hillside;</li><li>Overnight stay in Baku.</li><li><strong>Duration of the tour:</strong> 7-8 hours</li><li><strong>Driving duration:</strong> 3 hours</li></ul>"
+      },
+      {
+        "title": "Day 4: Baku – Shamakhi – Sheki",
+        "content": "<p>West today, into the foothills of the Greater Caucasus. On the way you'll stop in Shamakhi, once the capital of a medieval khanate, for the <a href=\"/en/azerbaijan/mountainous-shirvan/shamakhi-juma-mosque\" data-internal=\"/azerbaijan/mountainous-shirvan/shamakhi-juma-mosque\" class=\"entity-link\">Juma Mosque</a>, before continuing to Sheki, a town of caravanserais and craftsmen tucked into the hills. In Sheki you visit the <a href=\"/en/azerbaijan/sheki/palace-of-the-sheki-khans\" data-internal=\"/azerbaijan/sheki/palace-of-the-sheki-khans\" class=\"entity-link\">Khan's Palace</a>, a small 18th-century summer residence with stained-glass windows and painted walls that took no nails to build, added to the UNESCO list in 2019, and the old stone <a href=\"/en/azerbaijan/sheki/caravanserai\" data-internal=\"/azerbaijan/sheki/caravanserai\" class=\"entity-link\">caravanserai</a> that once sheltered Silk Road traders — many now converted into hotels, including some where you may be staying tonight.</p><ul><li>Stop in Shamakhi and see the Juma Mosque;</li><li>Visit the Sheki Khan's Palace (UNESCO World Heritage Site);</li><li>Visit a Sheki caravanserai;</li><li>Overnight stay in Sheki.</li><li><strong>Duration of the tour:</strong> 8-9 hours</li><li><strong>Driving duration:</strong> 5-6 hours</li></ul>"
+      },
+      {
+        "title": "Day 5: Sheki Bazaar – Lagodekhi Border Crossing – Winery Visit – Telavi",
+        "content": "<p>This morning you leave Azerbaijan, but not before a stop at Sheki Bazaar, a lively local market filled with fresh produce, spices, traditional sweets and everyday local life. From there it's a short drive from Sheki to the Balakan–Lagodekhi crossing, the main land border between Azerbaijan and Georgia in this part of the country. The crossing itself is on foot: you'll clear Azerbaijani exit control, walk through the neutral zone — a paved stretch of around 300 metres, entirely manageable with wheeled suitcases, though there's no porter service, so you carry your own bags — and then clear Georgian entry control on the other side. The whole process usually takes 30 to 60 minutes outside of peak holiday periods, longer at weekends. Your Georgian guide and driver will be waiting just past the checkpoint. From there you continue into Kakheti to a local winery for lunch and a tasting of the local wine, before settling into Telavi, the heart of the wine region, for the first of two nights.</p><ul><li>Visit Sheki Bazaar;</li><li>Cross the Azerbaijan–Georgia border at Lagodekhi (on foot, about 300 metres, 30-60 minutes);</li><li>Meet your Georgian guide and driver;</li><li>Lunch and wine tasting at a local winery;</li><li>Overnight stay in Telavi.</li><li><strong>Duration of the tour:</strong> 8-9 hours</li><li><strong>Driving duration:</strong> 3.5 hours</li></ul>"
+      },
+      {
+        "title": "Day 6: Telavi – Batonistsikhe – Tsinandali – Lunch and Wine Tasting at the Winery – Telavi",
+        "content": "<p>The day starts with a walk through Telavi — the old town, the giant 900-year-old plane tree, and the Batonistsikhe castle, the former royal residence of the kings of Kakheti. Then out to the Tsinandali estate, the 19th-century home and gardens of Prince Alexander Chavchavadze, before a stop at a local winery for lunch and a tasting, with the chance to get hands-on with a qvevri — the buried clay vessel Georgians have fermented wine in for millennia. Back to Telavi for the night.</p><ul><li>Walk through Telavi and see the 900-year-old plane tree;</li><li>Visit Batonistsikhe Castle;</li><li>Visit Tsinandali Estate;</li><li>Lunch and wine tasting at a local winery;</li><li>Overnight stay in Telavi.</li><li><strong>Duration of the tour:</strong> 7-8 hours</li><li><strong>Driving duration:</strong> 1.5 hours</li></ul>"
+      },
+      {
+        "title": "Day 7: Telavi – Sighnaghi – Bodbe – Tbilisi",
+        "content": "<p>You leave Telavi and drive to Sighnaghi, the small walled “City of Love” with its cobbled streets and long views over the Alazani valley, then on to Bodbe, a hilltop convent nearby and the burial place of St. Nino, who brought Christianity to Georgia. From there it's a straightforward drive to Tbilisi for the evening.</p><ul><li>Visit Sighnaghi;</li><li>Visit Bodbe Monastery;</li><li>Drive to Tbilisi;</li><li>Overnight stay in Tbilisi.</li><li><strong>Duration of the tour:</strong> 5-6 hours</li><li><strong>Driving duration:</strong> 2.5 hours</li></ul>"
+      },
+      {
+        "title": "Day 8: Tbilisi City Tour",
+        "content": "<p>The tour starts at Holy Trinity Cathedral — Sameba — one of the largest Orthodox churches in the world, rising above the city. From there you'll visit the clifftop Metekhi church, perched above the river, then ride the cable car up to the Narikala fortress for the view over the whole of Tbilisi. Walking down from the fortress, you'll pass through <a href=\"/en/georgia/tbilisi/abanotubani-sulfur-baths\" data-internal=\"/georgia/tbilisi/abanotubani-sulfur-baths\" class=\"entity-link\">Abanotubani</a>, the district of brick-domed sulfur bathhouses the city was built on and named after, then wander the Old Town lanes to the leaning clock tower of the <a href=\"/en/georgia/tbilisi/rezo-gabriadze-marionette-theatre\" data-internal=\"/georgia/tbilisi/rezo-gabriadze-marionette-theatre\" class=\"entity-link\">Rezo Gabriadze theatre</a>. The day ends with a welcome dinner of Georgian food and local wine.</p><ul><li>Visit Holy Trinity Cathedral (Sameba);</li><li>See Metekhi Church;</li><li>Ride the cable car to Narikala Fortress;</li><li>Walk through the Abanotubani sulfur bath district;</li><li>See the Rezo Gabriadze Theatre clock tower;</li><li>Walk across the Peace Bridge;</li><li>Dinner and overnight stay in Tbilisi.</li><li><strong>Duration of the tour:</strong> 4-5 hours</li><li><strong>Driving duration:</strong> 30 minutes</li></ul>"
+      },
+      {
+        "title": "Day 9: Tbilisi – Jvari – Mtskheta – Ananuri – Stepantsminda (Kazbegi)",
+        "content": "<p>North today, up the old Georgian Military Highway into the Caucasus. First stop is Mtskheta, Georgia's spiritual heart — the great Svetitskhoveli cathedral in the town, and Jvari monastery on the hill above it, both UNESCO sites. Then a pause at <a href=\"/en/georgia/mtskheta-mtianeti/ananuri-fortress\" data-internal=\"/georgia/mtskheta-mtianeti/ananuri-fortress\" class=\"entity-link\">Ananuri</a>, a fortress standing over the turquoise Jinvali reservoir. Further up you'll stop where the black and white Aragvi rivers meet, their two colours running side by side before they blend into one, and again at the Gudauri Panorama for the wide view back down the valley. From there the road climbs to Kazbegi, a small town under the snows of Mount Kazbek where the air changes completely.</p><ul><li>Visit Jvari Monastery (UNESCO World Heritage Site);</li><li>Explore Mtskheta and Svetitskhoveli Cathedral;</li><li>Stop at Ananuri Architectural Complex and enjoy views of Jinvali Reservoir;</li><li>See the confluence of Black and White Aragvi rivers;</li><li>Stop at Gudauri Panorama;</li><li>Overnight stay in Kazbegi.</li><li><strong>Duration of the tour:</strong> 8-9 hours</li><li><strong>Driving duration:</strong> 3.5 hours</li></ul>"
+      },
+      {
+        "title": "Day 10: Kazbegi – Gergeti Trinity Church – Uplistsikhe – Tbilisi",
+        "content": "<p>Your morning is the big one — up to Gergeti Trinity, the lone church at 2,170 metres with Mount Kazbek behind it, one of Georgia's great views and best in the early light. You then leave the mountains and head south, stopping at Uplistsikhe, a town carved into the rock that goes back to the Iron Age, its halls and tunnels still climbing the hillside, before continuing to Tbilisi for your last Georgian night.</p><ul><li>Visit Gergeti Trinity Church;</li><li>Visit Uplistsikhe cave town;</li><li>Drive to Tbilisi;</li><li>Overnight stay in Tbilisi.</li><li><strong>Duration of the tour:</strong> 8-9 hours</li><li><strong>Driving duration:</strong> 5 hours</li></ul>"
+      },
+      {
+        "title": "Day 11: Tbilisi – Sadakhlo Border – Bagratashen – Haghpat – Lake Sevan – Sevanavank – Yerevan",
+        "content": "<p>Your second border crossing, and a much quieter one. Your Georgian guide and driver take you south from Tbilisi to the Sadakhlo crossing, where you again cross on foot — a short, well-marked walk between checkpoints, usually quicker than Lagodekhi since less freight passes through here, typically 20 to 40 minutes in all. On the Armenian side, at Bagratashen, your new guide and driver are waiting. First stop is <a href=\"/en/armenia/lori/haghpat-monastery\" data-internal=\"/armenia/lori/haghpat-monastery\" class=\"entity-link\">Haghpat</a>, a 10th-century monastery on a green plateau in the <a href=\"/en/armenia/regions/lori\" data-internal=\"/armenia/regions/lori\" class=\"entity-link\">Lori</a> hills and one of Armenia's UNESCO sites. The road then climbs to Lake Sevan, a vast alpine lake at nearly 1,900 metres, where the Sevanavank monastery sits on a headland above the blue water. From there it's on to Yerevan for the first of three nights.</p><ul><li>Cross the Georgia–Armenia border at Sadakhlo–Bagratashen (on foot, about 20-40 minutes);</li><li>Meet your Armenian guide and driver;</li><li>Visit Haghpat Monastery (UNESCO World Heritage Site);</li><li>Stop at Lake Sevan;</li><li>Visit Sevanavank Monastery;</li><li>Overnight stay in Yerevan.</li><li><strong>Duration of the tour:</strong> 11-12 hours</li><li><strong>Driving duration:</strong> 6 hours</li></ul>"
+      },
+      {
+        "title": "Day 12: Yerevan – Echmiadzin – Zvartnots – Yerevan City Tour",
+        "content": "<p>Today pairs Armenia's spiritual heart with its capital. You'll drive out to <a href=\"/en/armenia/etchmiadzin\" data-internal=\"/armenia/etchmiadzin\" class=\"entity-link\">Echmiadzin</a>, the seat of the Armenian Apostolic Church, home to a cathedral founded in the 4th century — one of the oldest in the world and a UNESCO site — and stop at the ruins of <a href=\"/en/armenia/armavir/zvartnots-temple\" data-internal=\"/armenia/armavir/zvartnots-temple\" class=\"entity-link\">Zvartnots</a>, a 7th-century cathedral whose great ring of columns stands open to the sky, also on the UNESCO list. Back in Yerevan, the city tour takes in Republic Square, the <a href=\"/en/armenia/yerevan/cascade-monument\" data-internal=\"/armenia/yerevan/cascade-monument\" class=\"entity-link\">Cascade</a> with its view to Mount Ararat, the <a href=\"/en/armenia/yerevan/opera-and-ballet-theatre\" data-internal=\"/armenia/yerevan/opera-and-ballet-theatre\" class=\"entity-link\">Opera House</a> and the Matenadaran manuscript museum. The day ends with a dinner of Armenian food and local wine.</p><ul><li>Visit Echmiadzin Cathedral (UNESCO World Heritage Site);</li><li>See the Zvartnots ruins;</li><li>Yerevan city tour;</li><li>Dinner at an Armenian restaurant;</li><li>Overnight stay in Yerevan.</li><li><strong>Duration of the tour:</strong> 6-7 hours</li><li><strong>Driving duration:</strong> 1.5 hours</li></ul>"
+      },
+      {
+        "title": "Day 13: Yerevan – Khor Virap – Garni – Symphony of Stones – Geghard – Yerevan",
+        "content": "<p>A full day to Armenia's three most famous sights. You start south at <a href=\"/en/armenia/ararat/khor-virap-monastery\" data-internal=\"/armenia/ararat/khor-virap-monastery\" class=\"entity-link\">Khor Virap</a>, a monastery set right below Mount Ararat with the finest views of the mountain in the country — the place where Gregory the Illuminator was imprisoned before Armenia adopted Christianity. Then east to Garni, a 1st-century Greco-Roman temple standing above a river gorge — the only colonnaded pagan temple of its kind in the region — with a walk down to the Symphony of Stones, a wall of natural basalt columns in the canyon below. Nearby is <a href=\"/en/armenia/garni/geghard-monastery\" data-internal=\"/armenia/garni/geghard-monastery\" class=\"entity-link\">Geghard</a>, a UNESCO-listed monastery partly hewn straight into the rock. Back in Yerevan for your last night.</p><ul><li>Visit Khor Virap Monastery with views of Mount Ararat;</li><li>Visit the Garni Temple;</li><li>See the Symphony of Stones basalt columns;</li><li>Visit Geghard Monastery (UNESCO World Heritage Site);</li><li>Overnight stay in Yerevan.</li><li><strong>Duration of the tour:</strong> 8-9 hours</li><li><strong>Driving duration:</strong> 3.5 hours</li></ul>"
+      },
+      {
+        "title": "Day 14: Departure from Yerevan",
+        "content": "<p>Check out of your hotel by 12:00 p.m. When it's time, we'll transfer you to Zvartnots International Airport for your departure.</p><ul><li>Hotel check-out by 12:00 p.m.;</li><li>Transfer to Zvartnots International Airport;</li><li>Departure.</li><li><strong>Driving duration:</strong> 30 minutes</li></ul>"
+      }
+    ],
+    "accommodations": [
+      { "city": "Baku (3 nights)", "luxury": "Sheraton Baku Intourist, Boutique 19 Hotel", "midRange": "Radisson Hotel Baku, Mövenpick Hotel Winter Park Baku", "economy": "Shah Palace Hotel, Midway Park Hotel" },
+      { "city": "Sheki (1 night)", "luxury": "Marxal Resort & Spa", "midRange": "Sheki Palace, Macara", "economy": "Karavansaray, Old Town Sheki" },
+      { "city": "Telavi (2 nights)", "luxury": "Tsinandali Estate, A Radisson Collection Hotel", "midRange": "Park Hotel Tsinandali", "economy": "Hotel & Wine Cellar ARGE" },
+      { "city": "Tbilisi (3 nights)", "luxury": "Rooms Hotel Tbilisi", "midRange": "Ibis Styles Tbilisi Center", "economy": "Ginger Hotel" },
+      { "city": "Kazbegi (1 night)", "luxury": "Rooms Hotel Kazbegi", "midRange": "Northgate", "economy": "Hotel Horizon" },
+      { "city": "Yerevan (3 nights)", "luxury": "DoubleTree by Hilton Yerevan City Centre", "midRange": "Yerevan Place", "economy": "Ani Central Inn" }
+    ],
+    "pricing": [
+      { "travelers": "Single Supplement", "luxury": "€1090", "midRange": "€695", "economy": "€395" },
+      { "travelers": "1", "luxury": "€6495", "midRange": "€5655", "economy": "€4985" },
+      { "travelers": "2", "luxury": "€3695", "midRange": "€3145", "economy": "€2895" },
+      { "travelers": "3", "luxury": "€3390", "midRange": "€2795", "economy": "€2435" },
+      { "travelers": "4", "luxury": "€2850", "midRange": "€2395", "economy": "€2040" }
+    ],
+    "included": [
+      "Accommodation in standard double/twin room, with breakfast included;",
+      "Transfers as per itinerary;",
+      "English-speaking guide and driver in each country throughout the whole tour;",
+      "Entrance fees;",
+      "Dinner in Baku, Tbilisi and Yerevan;",
+      "2 lunches and 2 wine tastings;",
+      "Visa for Azerbaijan;",
+      "Still water."
+    ],
+    "notIncluded": [
+      "Lunches and dinners not mentioned in the itinerary;",
+      "Additional hotel expenses;",
+      "Travel insurance."
+    ],
+    "gallery": [
+      {
+        "src": "/images/tours/14-day-caucasus-tour/route-map-14-day-caucasus-tour-2400.webp",
+        "base": "/images/tours/14-day-caucasus-tour/route-map-14-day-caucasus-tour",
+        "widths": [768, 1200, 1600, 2400],
+        "width": 2400,
+        "height": 1600,
+        "caption": {
+          "en": "Route Map",
+          "de": "Routenkarte",
+          "fr": "Carte de l'itinéraire",
+          "es": "Mapa de la ruta",
+          "nl": "Routekaart",
+          "cs": "Mapa trasy",
+          "pl": "Mapa trasy"
+        },
+        "altText": {
+          "en": "Illustrated route map of the 14-day private tour across Azerbaijan, Georgia and Armenia: Baku, Gobustan and Shamakhi, Sheki, the Lagodekhi border crossing, Kakheti and Telavi, Sighnaghi and Bodbe, Tbilisi, Mtskheta, Ananuri and Kazbegi, the Sadakhlo–Bagratashen border crossing, Haghpat, Lake Sevan and Yerevan, with day trips to Khor Virap, Garni and Geghard",
+          "de": "Illustrierte Routenkarte der 14-tägigen Privatreise durch Aserbaidschan, Georgien und Armenien: Baku, Gobustan und Schemacha, Sheki, der Grenzübergang Lagodechi, Kachetien und Telawi, Sighnaghi und Bodbe, Tiflis, Mzcheta, Ananuri und Kasbegi, der Grenzübergang Sadakhlo–Bagratashen, Haghpat, der Sewansee und Jerewan, mit Tagesausflügen nach Khor Virap, Garni und Geghard",
+          "fr": "Carte illustrée de l'itinéraire du circuit privé de 14 jours en Azerbaïdjan, en Géorgie et en Arménie : Bakou, Gobustan et Chamakhi, Sheki, le passage frontalier de Lagodekhi, la Kakhétie et Telavi, Sighnaghi et Bodbe, Tbilissi, Mtskheta, Ananouri et Kazbegi, le passage frontalier de Sadakhlo–Bagratashen, Haghpat, le lac Sevan et Erevan, avec des excursions à Khor Virap, Garni et Guégard",
+          "es": "Mapa ilustrado de la ruta del tour privado de 14 días por Azerbaiyán, Georgia y Armenia: Bakú, Gobustán y Shamajá, Sheki, el paso fronterizo de Lagodekhi, Kajetia y Telavi, Sighnaghi y Bodbe, Tiflis, Mtsjeta, Ananuri y Kazbegi, el paso fronterizo de Sadakhlo–Bagratashen, Haghpat, el lago Sevan y Ereván, con excursiones a Khor Virap, Garni y Geghard",
+          "nl": "Geïllustreerde routekaart van de 14-daagse privétour door Azerbeidzjan, Georgië en Armenië: Bakoe, Gobustan en Shamakhi, Sheki, de grensovergang Lagodekhi, Kacheti en Telavi, Sighnaghi en Bodbe, Tbilisi, Mtskheta, Ananuri en Kazbegi, de grensovergang Sadakhlo–Bagratashen, Haghpat, het Sevanmeer en Jerevan, met dagtochten naar Khor Virap, Garni en Geghard",
+          "cs": "Ilustrovaná mapa trasy 14denního soukromého zájezdu po Ázerbájdžánu, Gruzii a Arménii: Baku, Gobustan a Šamachi, Šeki, hraniční přechod Lagodechi, Kachetie a Telavi, Sighnaghi a Bodbe, Tbilisi, Mccheta, Ananuri a Kazbegi, hraniční přechod Sadakhlo–Bagratašen, Haghpat, jezero Sevan a Jerevan, s výlety do Khor Virapu, Garni a Geghardu",
+          "pl": "Ilustrowana mapa trasy 14-dniowej prywatnej wycieczki po Azerbejdżanie, Gruzji i Armenii: Baku, Gobustan i Szamachy, Sheki, przejście graniczne Lagodechi, Kachetia i Telavi, Sighnaghi i Bodbe, Tbilisi, Mccheta, Ananuri i Kazbegi, przejście graniczne Sadakhlo–Bagratashen, Haghpat, jezioro Sewan i Erywań, z wycieczkami do Khor Virap, Garni i Geghardu"
+        }
+      }
+    ],
+    "routeMapImage": {
+      "en": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/14-day-caucasus-tour/route-map-14-day-caucasus-tour-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/14-day-caucasus-tour/route-map-14-day-caucasus-tour-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "14-Day Caucasus Tour: Azerbaijan, Georgia & Armenia — Route Map",
+        "description": "Illustrated route map of the 14-day private tour across Azerbaijan, Georgia and Armenia: Baku, Gobustan and Shamakhi, Sheki, the Lagodekhi border crossing, Kakheti and Telavi, Sighnaghi and Bodbe, Tbilisi, Mtskheta, Ananuri and Kazbegi, the Sadakhlo–Bagratashen border crossing, Haghpat, Lake Sevan and Yerevan, with day trips to Khor Virap, Garni and Geghard.",
+        "creditText": "Hikasus Travel",
+        "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/en/terms-and-conditions",
+        "inLanguage": "en"
+      },
+      "de": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/14-day-caucasus-tour/route-map-14-day-caucasus-tour-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/14-day-caucasus-tour/route-map-14-day-caucasus-tour-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "14-Day Caucasus Tour: Azerbaijan, Georgia & Armenia — Routenkarte",
+        "description": "Illustrierte Routenkarte der 14-tägigen Privatreise durch Aserbaidschan, Georgien und Armenien: Baku, Gobustan und Schemacha, Sheki, der Grenzübergang Lagodechi, Kachetien und Telawi, Sighnaghi und Bodbe, Tiflis, Mzcheta, Ananuri und Kasbegi, der Grenzübergang Sadakhlo–Bagratashen, Haghpat, der Sewansee und Jerewan, mit Tagesausflügen nach Khor Virap, Garni und Geghard.",
+        "creditText": "Hikasus Travel",
+        "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/de/terms-and-conditions",
+        "inLanguage": "de"
+      },
+      "fr": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/14-day-caucasus-tour/route-map-14-day-caucasus-tour-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/14-day-caucasus-tour/route-map-14-day-caucasus-tour-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "14-Day Caucasus Tour: Azerbaijan, Georgia & Armenia — Carte de l'itinéraire",
+        "description": "Carte illustrée de l'itinéraire du circuit privé de 14 jours en Azerbaïdjan, en Géorgie et en Arménie : Bakou, Gobustan et Chamakhi, Sheki, le passage frontalier de Lagodekhi, la Kakhétie et Telavi, Sighnaghi et Bodbe, Tbilissi, Mtskheta, Ananouri et Kazbegi, le passage frontalier de Sadakhlo–Bagratashen, Haghpat, le lac Sevan et Erevan, avec des excursions à Khor Virap, Garni et Guégard.",
+        "creditText": "Hikasus Travel",
+        "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/fr/terms-and-conditions",
+        "inLanguage": "fr"
+      },
+      "es": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/14-day-caucasus-tour/route-map-14-day-caucasus-tour-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/14-day-caucasus-tour/route-map-14-day-caucasus-tour-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "14-Day Caucasus Tour: Azerbaijan, Georgia & Armenia — Mapa de la ruta",
+        "description": "Mapa ilustrado de la ruta del tour privado de 14 días por Azerbaiyán, Georgia y Armenia: Bakú, Gobustán y Shamajá, Sheki, el paso fronterizo de Lagodekhi, Kajetia y Telavi, Sighnaghi y Bodbe, Tiflis, Mtsjeta, Ananuri y Kazbegi, el paso fronterizo de Sadakhlo–Bagratashen, Haghpat, el lago Sevan y Ereván, con excursiones a Khor Virap, Garni y Geghard.",
+        "creditText": "Hikasus Travel",
+        "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/es/terms-and-conditions",
+        "inLanguage": "es"
+      },
+      "nl": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/14-day-caucasus-tour/route-map-14-day-caucasus-tour-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/14-day-caucasus-tour/route-map-14-day-caucasus-tour-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "14-Day Caucasus Tour: Azerbaijan, Georgia & Armenia — Routekaart",
+        "description": "Geïllustreerde routekaart van de 14-daagse privétour door Azerbeidzjan, Georgië en Armenië: Bakoe, Gobustan en Shamakhi, Sheki, de grensovergang Lagodekhi, Kacheti en Telavi, Sighnaghi en Bodbe, Tbilisi, Mtskheta, Ananuri en Kazbegi, de grensovergang Sadakhlo–Bagratashen, Haghpat, het Sevanmeer en Jerevan, met dagtochten naar Khor Virap, Garni en Geghard.",
+        "creditText": "Hikasus Travel",
+        "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/nl/terms-and-conditions",
+        "inLanguage": "nl"
+      },
+      "cs": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/14-day-caucasus-tour/route-map-14-day-caucasus-tour-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/14-day-caucasus-tour/route-map-14-day-caucasus-tour-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "14-Day Caucasus Tour: Azerbaijan, Georgia & Armenia — Mapa trasy",
+        "description": "Ilustrovaná mapa trasy 14denního soukromého zájezdu po Ázerbájdžánu, Gruzii a Arménii: Baku, Gobustan a Šamachi, Šeki, hraniční přechod Lagodechi, Kachetie a Telavi, Sighnaghi a Bodbe, Tbilisi, Mccheta, Ananuri a Kazbegi, hraniční přechod Sadakhlo–Bagratašen, Haghpat, jezero Sevan a Jerevan, s výlety do Khor Virapu, Garni a Geghardu.",
+        "creditText": "Hikasus Travel",
+        "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/cs/terms-and-conditions",
+        "inLanguage": "cs"
+      },
+      "pl": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/14-day-caucasus-tour/route-map-14-day-caucasus-tour-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/14-day-caucasus-tour/route-map-14-day-caucasus-tour-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "14-Day Caucasus Tour: Azerbaijan, Georgia & Armenia — Mapa trasy",
+        "description": "Ilustrowana mapa trasy 14-dniowej prywatnej wycieczki po Azerbejdżanie, Gruzji i Armenii: Baku, Gobustan i Szamachy, Sheki, przejście graniczne Lagodechi, Kachetia i Telavi, Sighnaghi i Bodbe, Tbilisi, Mccheta, Ananuri i Kazbegi, przejście graniczne Sadakhlo–Bagratashen, Haghpat, jezioro Sewan i Erywań, z wycieczkami do Khor Virap, Garni i Geghardu.",
+        "creditText": "Hikasus Travel",
+        "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/pl/terms-and-conditions",
+        "inLanguage": "pl"
+      }
+    },
+    "tourFormTitle": "14-Day Caucasus Tour: Azerbaijan, Georgia & Armenia"
   }
 ]
 
@@ -20006,7 +20242,15 @@ export const tours = [
 // country tours hub pages. A tour's `country` is OPTIONAL and defaults to
 // 'georgia' — the 20 tours above stay untouched.
 export const tourCountry = (tour) => tour.country || 'georgia'
-export const toursForCountry = (country) => tours.filter((t) => tourCountry(t) === country)
+// A `country: "caucasus"` tour also counts for every single country in its
+// own `areaServed` — so a country's hub (list AND indexability, see
+// `tourHubRobots` below) picks up a multi-country tour automatically, with no
+// per-slug hack. Single-country tours are unaffected (tourCountry still
+// decides their one hub).
+export const toursForCountry = (country) => tours.filter((t) =>
+  tourCountry(t) === country
+  || (t.country === 'caucasus' && (t.areaServed || []).some((a) => a.toLowerCase() === country)),
+)
 export const privateTourCountFor = (country) =>
   toursForCountry(country).filter((t) => t.type === 'private').length
 export const countryHasAnyTours = (country) => toursForCountry(country).length > 0
