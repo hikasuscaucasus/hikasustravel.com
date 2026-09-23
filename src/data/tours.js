@@ -20116,7 +20116,7 @@ export const tours = [
       {
         "src": "/images/tours/14-day-caucasus-tour/route-map-14-day-caucasus-tour-2400.webp",
         "base": "/images/tours/14-day-caucasus-tour/route-map-14-day-caucasus-tour",
-        "widths": [768, 1200, 1600, 2400],
+        "widths": [768,1200,1600,2400],
         "width": 2400,
         "height": 1600,
         "caption": {
@@ -20141,7 +20141,7 @@ export const tours = [
       {
         "src": "/images/files/maiden-tower-baku-azerbaijan-1293.webp",
         "base": "/images/files/maiden-tower-baku-azerbaijan",
-        "widths": [768, 1200, 1293],
+        "widths": [768,1200,1293],
         "width": 1293,
         "height": 1217,
         "caption": {
@@ -20164,9 +20164,59 @@ export const tours = [
         }
       },
       {
+        "src": "/images/files/shirvanshahs-palace-baku-azerbaijan-1536.webp",
+        "base": "/images/files/shirvanshahs-palace-baku-azerbaijan",
+        "widths": [768,1200,1536],
+        "width": 1536,
+        "height": 1024,
+        "caption": {
+          "en": "Shirvanshahs' Palace, Baku",
+          "de": "Palast der Schirwanschahs, Baku",
+          "fr": "Palais des Chirvanchahs, Bakou",
+          "es": "Palacio de los Shirvanshahs, Bakú",
+          "nl": "Paleis van de Shirvansjahs, Bakoe",
+          "cs": "Palác širvánšáhů, Baku",
+          "pl": "Pałac Szirwanszachów, Baku"
+        },
+        "altText": {
+          "en": "The Palace of the Shirvanshahs in the UNESCO-listed Walled City of Baku, a medieval sandstone palace complex with domes, above the modern city skyline, Azerbaijan",
+          "de": "Der Palast der Schirwanschahs in der UNESCO-gelisteten Altstadt von Baku, ein mittelalterlicher Sandsteinpalast mit Kuppeln, über der modernen Stadtsilhouette, Aserbaidschan",
+          "fr": "Le palais des Chirvanchahs dans la vieille ville fortifiée de Bakou, inscrite à l'UNESCO, un palais médiéval en grès à coupoles, au-dessus des gratte-ciel modernes, Azerbaïdjan",
+          "es": "El Palacio de los Shirvanshahs en la ciudad amurallada de Bakú, declarada por la UNESCO, un complejo palaciego medieval de arenisca con cúpulas, sobre el perfil moderno de la ciudad, Azerbaiyán",
+          "nl": "Het Paleis van de Shirvansjahs in de door UNESCO erkende ommuurde stad Bakoe, een middeleeuws zandstenen paleiscomplex met koepels, boven de moderne skyline, Azerbeidzjan",
+          "cs": "Palác širvánšáhů v hrazeném Starém Městě Baku zapsaném na seznamu UNESCO, středověký pískovcový palácový komplex s kupolemi nad moderní panoramatem města, Ázerbájdžán",
+          "pl": "Pałac Szirwanszachów w otoczonym murami Starym Mieście Baku wpisanym na listę UNESCO, średniowieczny piaskowcowy kompleks pałacowy z kopułami, nad nowoczesną panoramą miasta, Azerbejdżan"
+        }
+      },
+      {
+        "src": "/images/files/heydar-aliyev-center-baku-azerbaijan-1672.webp",
+        "base": "/images/files/heydar-aliyev-center-baku-azerbaijan",
+        "widths": [768,1200,1600,1672],
+        "width": 1672,
+        "height": 941,
+        "caption": {
+          "en": "Heydar Aliyev Center, Baku",
+          "de": "Heydar-Aliyev-Zentrum, Baku",
+          "fr": "Centre Heydar-Aliyev, Bakou",
+          "es": "Centro Heydar Aliyev, Bakú",
+          "nl": "Heydar Aliyev-centrum, Bakoe",
+          "cs": "Centrum Hejdara Alijeva, Baku",
+          "pl": "Centrum Hejdara Alijewa, Baku"
+        },
+        "altText": {
+          "en": "The Heydar Aliyev Center in Baku, a flowing white curvilinear building by Zaha Hadid, with colourful animal sculptures on the green lawn, Azerbaijan",
+          "de": "Das Heydar-Aliyev-Zentrum in Baku, ein fließend geschwungener weißer Bau von Zaha Hadid, mit bunten Tierskulpturen auf dem grünen Rasen, Aserbaidschan",
+          "fr": "Le centre Heydar-Aliyev à Bakou, un bâtiment blanc aux courbes fluides signé Zaha Hadid, avec des sculptures d'animaux colorées sur la pelouse verte, Azerbaïdjan",
+          "es": "El Centro Heydar Aliyev en Bakú, un edificio blanco de curvas fluidas obra de Zaha Hadid, con coloridas esculturas de animales en el césped verde, Azerbaiyán",
+          "nl": "Het Heydar Aliyev-centrum in Bakoe, een vloeiend gebogen wit gebouw van Zaha Hadid, met kleurrijke diersculpturen op het groene gazon, Azerbeidzjan",
+          "cs": "Centrum Hejdara Alijeva v Baku, plynule zakřivená bílá stavba od Zahy Hadid, s barevnými sochami zvířat na zeleném trávníku, Ázerbájdžán",
+          "pl": "Centrum Hejdara Alijewa w Baku, płynnie wygięty biały budynek autorstwa Zahy Hadid, z kolorowymi rzeźbami zwierząt na zielonym trawniku, Azerbejdżan"
+        }
+      },
+      {
         "src": "/images/files/baku-boulevard-caspian-azerbaijan-1536.webp",
         "base": "/images/files/baku-boulevard-caspian-azerbaijan",
-        "widths": [768, 1200, 1536],
+        "widths": [768,1200,1536],
         "width": 1536,
         "height": 1024,
         "caption": {
@@ -20191,7 +20241,7 @@ export const tours = [
       {
         "src": "/images/files/baku-flame-towers-azerbaijan-1448.webp",
         "base": "/images/files/baku-flame-towers-azerbaijan",
-        "widths": [768, 1200, 1448],
+        "widths": [768,1200,1448],
         "width": 1448,
         "height": 1086,
         "caption": {
@@ -20216,7 +20266,7 @@ export const tours = [
       {
         "src": "/images/files/mud-volcanoes-gobustan-azerbaijan-1599.webp",
         "base": "/images/files/mud-volcanoes-gobustan-azerbaijan",
-        "widths": [768, 1200, 1599],
+        "widths": [768,1200,1599],
         "width": 1599,
         "height": 984,
         "caption": {
@@ -20236,6 +20286,31 @@ export const tours = [
           "nl": "Koude grijze modder die opborrelt uit lage kegels bij de moddervulkanen nabij Gobustan, op een kale halfwoestijnvlakte onder een met wolken bespikkelde hemel, Azerbeidzjan",
           "cs": "Studené šedé bahno bublající z nízkých kuželů u bahenních sopek poblíž Gobustanu, na holé polopouštní pláni pod oblohou posetou mraky, Ázerbájdžán",
           "pl": "Zimne szare błoto bulgoczące z niskich stożków przy wulkanach błotnych koło Gobustanu, na nagiej półpustynnej równinie pod niebem usianym chmurami, Azerbejdżan"
+        }
+      },
+      {
+        "src": "/images/files/shamakhi-juma-mosque-azerbaijan-1564.webp",
+        "base": "/images/files/shamakhi-juma-mosque-azerbaijan",
+        "widths": [768,1200,1564],
+        "width": 1564,
+        "height": 1006,
+        "caption": {
+          "en": "Juma Mosque, Shamakhi",
+          "de": "Juma-Moschee, Schamachy",
+          "fr": "Mosquée Juma, Chamakhi",
+          "es": "Mezquita Juma, Shamají",
+          "nl": "Juma-moskee, Şamaxı",
+          "cs": "Mešita Džuma, Šamachy",
+          "pl": "Meczet Dżuma, Szamachy"
+        },
+        "altText": {
+          "en": "The Juma (Friday) Mosque of Shamakhi, a large pale-stone mosque with tall minarets and a dome under a cloud-dotted sky, Azerbaijan",
+          "de": "Die Juma-Moschee (Freitagsmoschee) von Schamachy, eine große Moschee aus hellem Stein mit hohen Minaretten und einer Kuppel unter einem wolkigen Himmel, Aserbaidschan",
+          "fr": "La mosquée Juma (du vendredi) de Chamakhi, une grande mosquée en pierre claire aux hauts minarets et à la coupole, sous un ciel parsemé de nuages, Azerbaïdjan",
+          "es": "La mezquita Juma (del viernes) de Shamají, una gran mezquita de piedra clara con altos alminares y una cúpula bajo un cielo con nubes, Azerbaiyán",
+          "nl": "De Juma- (vrijdag)moskee van Şamaxı, een grote moskee van lichte steen met hoge minaretten en een koepel onder een met wolken bespikkelde hemel, Azerbeidzjan",
+          "cs": "Páteční mešita Džuma v Šamachy, velká mešita ze světlého kamene s vysokými minarety a kupolí pod oblohou posetou mraky, Ázerbájdžán",
+          "pl": "Meczet Dżuma (piątkowy) w Szamachy, duży meczet z jasnego kamienia z wysokimi minaretami i kopułą pod niebem usianym chmurami, Azerbejdżan"
         }
       },
       {
@@ -20261,6 +20336,94 @@ export const tours = [
           "nl": "Rijen wijnstokken in een wijngaard bij zonsopgang, met mist over de omliggende velden, wijnstreek Kacheti, Georgië",
           "cs": "Řady vinné révy ve vinici za svítání, s mlhou nad okolními poli, vinařský kraj Kachetie, Gruzie",
           "pl": "Rzędy winorośli w winnicy o wschodzie słońca, z mgłą nad okolicznymi polami, region winiarski Kachetia, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/erekle-ii-monument-telavi-georgia-1448.webp",
+        "base": "/images/files/erekle-ii-monument-telavi-georgia",
+        "widths": [768,1200,1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Monument to King Erekle II, Telavi",
+          "de": "Denkmal für König Erekle II., Telawi",
+          "fr": "Monument au roi Erekle II, Telavi",
+          "es": "Monumento al rey Erekle II, Telavi",
+          "nl": "Standbeeld van koning Erekle II, Telavi",
+          "cs": "Pomník krále Erekleho II., Telavi",
+          "pl": "Pomnik króla Erekle II, Telawi"
+        },
+        "altText": {
+          "en": "The bronze equestrian monument to King Erekle II, raising a sword on horseback against a blue sky, Telavi, Georgia",
+          "de": "Das bronzene Reiterdenkmal für König Erekle II., der zu Pferd ein Schwert erhebt, vor blauem Himmel, Telawi, Georgien",
+          "fr": "Le monument équestre en bronze du roi Erekle II, brandissant une épée à cheval sur fond de ciel bleu, Telavi, Géorgie",
+          "es": "El monumento ecuestre de bronce al rey Erekle II, alzando una espada a caballo contra un cielo azul, Telavi, Georgia",
+          "nl": "Het bronzen ruiterstandbeeld van koning Erekle II, te paard een zwaard heffend tegen een blauwe hemel, Telavi, Georgië",
+          "cs": "Bronzový jezdecký pomník krále Erekleho II., pozvedajícího na koni meč proti modré obloze, Telavi, Gruzie",
+          "pl": "Brązowy pomnik konny króla Erekle II, wznoszącego miecz na koniu na tle błękitnego nieba, Telawi, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/tsinandali-estate-garden-autumn-kakheti-georgia-1536.webp",
+        "base": "/images/files/tsinandali-estate-garden-autumn-kakheti-georgia",
+        "widths": [768,1200,1536],
+        "width": 1536,
+        "height": 1024,
+        "caption": {
+          "en": "Tsinandali Estate",
+          "de": "Anwesen Zinandali",
+          "fr": "Domaine de Tsinandali",
+          "es": "Finca de Tsinandali",
+          "nl": "Landgoed Tsinandali",
+          "cs": "Usedlost Cinandali",
+          "pl": "Majątek Cinandali"
+        },
+        "altText": {
+          "en": "The 19th-century Tsinandali estate house and its landscaped gardens in autumn colours, Kakheti, Georgia",
+          "de": "Das Herrenhaus des Anwesens Zinandali aus dem 19. Jahrhundert und seine angelegten Gärten in Herbstfarben, Kachetien, Georgien",
+          "fr": "La maison de maître du domaine de Tsinandali (XIXe siècle) et ses jardins paysagers aux couleurs d'automne, Kakhétie, Géorgie",
+          "es": "La casa señorial de la finca de Tsinandali (siglo XIX) y sus jardines paisajísticos con colores otoñales, Kajetia, Georgia",
+          "nl": "Het 19e-eeuwse landhuis van het landgoed Tsinandali en zijn aangelegde tuinen in herfstkleuren, Kacheti, Georgië",
+          "cs": "Panské sídlo usedlosti Cinandali z 19. století a jeho zahrady v podzimních barvách, Kachetie, Gruzie",
+          "pl": "Dziewiętnastowieczny dwór w majątku Cinandali i jego ogrody w jesiennych barwach, Kachetia, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/sighnaghi-kakheti.jpg",
+        "caption": {
+          "en": "Sighnaghi, the City of Love",
+          "de": "Sighnaghi, the City of Love",
+          "fr": "Sighnaghi, the City of Love",
+          "es": "Sighnaghi, the City of Love",
+          "nl": "Sighnaghi, the City of Love",
+          "cs": "Sighnaghi, the City of Love",
+          "pl": "Sighnaghi, the City of Love"
+        },
+        "description": "Hilltop walled town with views over the Alazani Valley, near Bodbe Monastery"
+      },
+      {
+        "src": "/images/files/tbilisi-old-town-narikala-mtkvari-georgia-1448.webp",
+        "base": "/images/files/tbilisi-old-town-narikala-mtkvari-georgia",
+        "widths": [768,1200,1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Tbilisi Old Town",
+          "de": "Altstadt von Tiflis",
+          "fr": "Vieille ville de Tbilissi",
+          "es": "Casco antiguo de Tiflis",
+          "nl": "Oude stad van Tbilisi",
+          "cs": "Staré Město Tbilisi",
+          "pl": "Starówka w Tbilisi"
+        },
+        "altText": {
+          "en": "Tbilisi Old Town on a green hillside above the Mtkvari river, with Narikala Fortress, the brick Saint Nicholas church and a cable car above the rooftops, Georgia",
+          "de": "Die Altstadt von Tiflis an einem grünen Hang über dem Fluss Mtkwari, mit der Festung Narikala, der Backsteinkirche St. Nikolaus und einer Seilbahn über den Dächern, Georgien",
+          "fr": "La vieille ville de Tbilissi sur un versant verdoyant au-dessus de la Mtkvari, avec la forteresse de Narikala, l'église en brique Saint-Nicolas et un téléphérique au-dessus des toits, Géorgie",
+          "es": "El casco antiguo de Tiflis en una ladera verde sobre el río Mtkvari, con la fortaleza de Narikala, la iglesia de ladrillo de San Nicolás y un teleférico sobre los tejados, Georgia",
+          "nl": "De oude stad van Tbilisi op een groene helling boven de rivier de Mtkvari, met de Narikala-vesting, de bakstenen Sint-Nicolaaskerk en een kabelbaan boven de daken, Georgië",
+          "cs": "Tbiliské Staré Město na zeleném svahu nad řekou Mtkvari, s pevností Narikala, cihlovým kostelem svatého Mikuláše a lanovkou nad střechami, Gruzie",
+          "pl": "Tbiliska starówka na zielonym zboczu nad rzeką Mtkwari, z twierdzą Narikala, ceglaną cerkwią św. Mikołaja i kolejką linową nad dachami, Gruzja"
         }
       },
       {
@@ -20314,6 +20477,31 @@ export const tours = [
         }
       },
       {
+        "src": "/images/files/rezo-gabriadze-clock-tower-10day-tour-georgia-1086.webp",
+        "base": "/images/files/rezo-gabriadze-clock-tower-10day-tour-georgia",
+        "widths": [768,1086],
+        "width": 1086,
+        "height": 1448,
+        "caption": {
+          "en": "Rezo Gabriadze Clock Tower",
+          "de": "Uhrturm des Rezo-Gabriadze-Theaters",
+          "fr": "Tour de l'horloge du théâtre Rezo Gabriadze",
+          "es": "Torre del reloj del teatro Rezo Gabriadze",
+          "nl": "Klokkentoren van het Rezo Gabriadze-theater",
+          "cs": "Hodinová věž divadla Reza Gabriadzeho",
+          "pl": "Wieża zegarowa teatru Rezo Gabriadze"
+        },
+        "altText": {
+          "en": "The leaning, richly decorated clock tower of the Rezo Gabriadze Theatre in Tbilisi Old Town, Georgia",
+          "de": "Der schiefe, reich verzierte Uhrturm des Rezo-Gabriadse-Theaters in der Altstadt von Tiflis, Georgien",
+          "fr": "La tour de l'horloge penchée et richement décorée du théâtre Rezo Gabriadze, dans la vieille ville de Tbilissi, Géorgie",
+          "es": "La inclinada y ricamente decorada torre del reloj del teatro Rezo Gabriadze, en el casco antiguo de Tiflis, Georgia",
+          "nl": "De scheve, rijk versierde klokkentoren van het Rezo Gabriadze-theater in de oude stad van Tbilisi, Georgië",
+          "cs": "Nakloněná, bohatě zdobená hodinová věž divadla Rezo Gabriadzeho v tbiliském Starém Městě, Gruzie",
+          "pl": "Pochylona, bogato zdobiona wieża zegarowa teatru Rezo Gabriadzego na tbiliskiej starówce, Gruzja"
+        }
+      },
+      {
         "src": "/images/files/jvari-monastery-mtskheta-georgia-1540.webp",
         "base": "/images/files/jvari-monastery-mtskheta-georgia",
         "widths": [768,1200,1540],
@@ -20336,6 +20524,31 @@ export const tours = [
           "nl": "Het door UNESCO erkende Jvari-klooster, een 6e-eeuwse stenen kerk op een heuvel boven de samenvloeiing van de Aragvi en de Mtkvari bij Mtscheta, Georgië",
           "cs": "Klášter Džvari zapsaný na seznamu UNESCO, kamenný kostel ze 6. století na kopci nad soutokem řek Aragvi a Mtkvari u Mcchety, Gruzie",
           "pl": "Wpisany na listę UNESCO klasztor Dżwari, kamienny kościół z VI wieku na wzgórzu nad zbiegiem rzek Aragwi i Mtkwari w Mcchecie, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
+        "base": "/images/files/svetitskhoveli-cathedral-mtskheta-georgia",
+        "widths": [768,1200,1540],
+        "width": 1540,
+        "height": 1021,
+        "caption": {
+          "en": "Svetitskhoveli Cathedral, Mtskheta",
+          "de": "Swetizchoweli-Kathedrale, Mzcheta",
+          "fr": "Cathédrale de Svétitskhovéli, Mtskheta",
+          "es": "Catedral de Svetitsjoveli, Mtsjeta",
+          "nl": "Svetitschoveli-kathedraal, Mtscheta",
+          "cs": "Katedrála Sveticchoveli, Mccheta",
+          "pl": "Katedra Sweticchoweli, Mccheta"
+        },
+        "altText": {
+          "en": "The UNESCO-listed Svetitskhoveli Cathedral, an 11th-century domed stone cathedral within its walled courtyard at Mtskheta, Georgia",
+          "de": "Die UNESCO-gelistete Swetizchoweli-Kathedrale, eine kuppelbekrönte Steinkathedrale aus dem 11. Jahrhundert in ihrem ummauerten Hof in Mzcheta, Georgien",
+          "fr": "La cathédrale de Svétitskhovéli, inscrite à l'UNESCO, cathédrale de pierre à coupole du XIe siècle dans son enceinte fortifiée à Mtskheta, Géorgie",
+          "es": "La catedral de Svetitsjoveli, declarada por la UNESCO, catedral de piedra con cúpula del siglo XI en su recinto amurallado de Mtsjeta, Georgia",
+          "nl": "De door UNESCO erkende Svetitschoveli-kathedraal, een 11e-eeuwse stenen koepelkathedraal binnen haar ommuurde hof in Mtscheta, Georgië",
+          "cs": "Katedrála Sveticchoveli zapsaná na seznamu UNESCO, kamenná kupolová katedrála z 11. století ve svém hrazeném areálu v Mcchetě, Gruzie",
+          "pl": "Wpisana na listę UNESCO katedra Sweticchoweli, kamienna kopułowa katedra z XI wieku w obrębie murowanego dziedzińca w Mcchecie, Gruzja"
         }
       },
       {
@@ -20414,6 +20627,31 @@ export const tours = [
         }
       },
       {
+        "src": "/images/files/uplistsikhe-cave-town-georgia-1448.webp",
+        "base": "/images/files/uplistsikhe-cave-town-georgia",
+        "widths": [768,1200,1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Uplistsikhe Cave Town",
+          "de": "Höhlenstadt Uplisziche",
+          "fr": "Cité troglodytique d'Ouplistsikhé",
+          "es": "Ciudad rupestre de Uplistsije",
+          "nl": "Grotstad Uplistsiche",
+          "cs": "Jeskynní město Uplisciche",
+          "pl": "Skalne miasto Upliscyche"
+        },
+        "altText": {
+          "en": "The Uplistsikhe cave town — an ancient settlement carved into a rocky hillside above the green Mtkvari valley, Georgia",
+          "de": "Die Höhlenstadt Uplisziche — eine antike Siedlung, in einen felsigen Hang über dem grünen Mtkwari-Tal gehauen, Georgien",
+          "fr": "La cité troglodytique d'Ouplistsikhé — un ancien site creusé dans un versant rocheux au-dessus de la vallée verdoyante de la Mtkvari, Géorgie",
+          "es": "La ciudad rupestre de Uplistsije — un antiguo asentamiento excavado en una ladera rocosa sobre el verde valle del Mtkvari, Georgia",
+          "nl": "De grotstad Uplistsiche — een oude nederzetting uitgehouwen in een rotsachtige helling boven het groene Mtkvari-dal, Georgië",
+          "cs": "Jeskynní město Uplisciche — starobylé sídlo vytesané do skalnatého svahu nad zeleným údolím Mtkvari, Gruzie",
+          "pl": "Skalne miasto Upliscyche — starożytna osada wykuta w skalistym zboczu nad zieloną doliną Mtkwari, Gruzja"
+        }
+      },
+      {
         "src": "/images/files/haghpat-monastery-armenia-1672.webp",
         "base": "/images/files/haghpat-monastery-armenia",
         "widths": [768,1200,1600,1672],
@@ -20464,6 +20702,31 @@ export const tours = [
         }
       },
       {
+        "src": "/images/files/sevanavank-monastery-armenia-1672.webp",
+        "base": "/images/files/sevanavank-monastery-armenia",
+        "widths": [768,1200,1600,1672],
+        "width": 1672,
+        "height": 941,
+        "caption": {
+          "en": "Sevanavank Monastery",
+          "de": "Kloster Sevanavank",
+          "fr": "Monastère de Sevanavank",
+          "es": "Monasterio de Sevanavank",
+          "nl": "Klooster Sevanavank",
+          "cs": "Klášter Sevanavank",
+          "pl": "Klasztor Sewanawank"
+        },
+        "altText": {
+          "en": "Sevanavank Monastery — its two 9th-century dark basalt churches with tiled conical domes on the Sevan peninsula above Lake Sevan under a blue sky, Gegharkunik, Armenia",
+          "de": "Kloster Sevanavank — seine beiden Kirchen aus dunklem Basalt aus dem 9. Jahrhundert mit ziegelgedeckten Kegelkuppeln auf der Sewan-Halbinsel über dem Sewansee unter blauem Himmel, Gegharkunik, Armenien",
+          "fr": "Le monastère de Sevanavank — ses deux églises du IXe siècle en basalte sombre, coiffées de coupoles coniques en tuiles, sur la presqu'île de Sevan au-dessus du lac Sevan sous un ciel bleu, Gegharkunik, Arménie",
+          "es": "El monasterio de Sevanavank — sus dos iglesias del siglo IX de basalto oscuro con cúpulas cónicas de tejas en la península de Seván sobre el lago Seván bajo un cielo azul, Gegharkunik, Armenia",
+          "nl": "Klooster Sevanavank — de twee 9e-eeuwse kerken van donker basalt met met dakpannen bedekte kegelkoepels op het schiereiland Sevan boven het Sevanmeer onder een blauwe hemel, Gegharkunik, Armenië",
+          "cs": "Klášter Sevanavank — jeho dva kostely z 9. století z tmavého čediče s taškovými kuželovými kupolemi na Sevanském poloostrově nad Sevanským jezerem pod modrou oblohou, Gegharkunik, Arménie",
+          "pl": "Klasztor Sewanawank — jego dwa kościoły z IX wieku z ciemnego bazaltu z krytymi dachówką stożkowymi kopułami na półwyspie Sewan nad jeziorem Sewan pod błękitnym niebem, Gegharkunik, Armenia"
+        }
+      },
+      {
         "src": "/images/files/etchmiadzin-cathedral-armenia-1448.webp",
         "base": "/images/files/etchmiadzin-cathedral-armenia",
         "widths": [768,1200,1448],
@@ -20486,6 +20749,31 @@ export const tours = [
           "nl": "De door UNESCO erkende Moederkathedraal van Heilig Etchmiadzin — een kruisvormige tufstenen kerk met een centrale kegelkoepel en hoektorentjes, achter herfstige struiken onder een blauwe hemel, Vagharsjapat, Armenië",
           "cs": "Katedrála Matky Boží ve Svatém Ečmiadzinu zapsaná na seznamu UNESCO — křížový kostel z tufu s ústřední kuželovou kupolí a nárožními zvonicemi, za podzimními keři pod modrou oblohou, Vagharšapat, Arménie",
           "pl": "Wpisana na listę UNESCO Katedra Matki Bożej w Świętym Eczmiadzynie — krzyżowy kościół z tufu z centralną stożkową kopułą i narożnymi dzwonnicami, za jesiennymi krzewami pod błękitnym niebem, Wagharszapat, Armenia"
+        }
+      },
+      {
+        "src": "/images/files/zvartnots-cathedral-armenia-1672.webp",
+        "base": "/images/files/zvartnots-cathedral-armenia",
+        "widths": [768,1200,1600,1672],
+        "width": 1672,
+        "height": 941,
+        "caption": {
+          "en": "Zvartnots Cathedral",
+          "de": "Kathedrale von Zvartnots",
+          "fr": "Cathédrale de Zvartnots",
+          "es": "Catedral de Zvartnots",
+          "nl": "Kathedraal van Zvartnots",
+          "cs": "Katedrála Zvartnoc",
+          "pl": "Katedra Zwartnoc"
+        },
+        "altText": {
+          "en": "The 7th-century ruined cathedral of Zvartnots, its round colonnaded remains standing open to the sky, Armavir, Armenia",
+          "de": "Die Ruinen der Kathedrale von Zvartnots aus dem 7. Jahrhundert, ihr runder Säulenbau offen zum Himmel, Armavir, Armenien",
+          "fr": "Les ruines de la cathédrale de Zvartnots (VIIe siècle), son enceinte circulaire à colonnes ouverte sur le ciel, Armavir, Arménie",
+          "es": "Las ruinas de la catedral de Zvartnots del siglo VII, su recinto circular de columnas abierto al cielo, Armavir, Armenia",
+          "nl": "De ruïnes van de 7e-eeuwse kathedraal van Zvartnots, de ronde zuilenbouw open naar de hemel, Armavir, Armenië",
+          "cs": "Zříceniny katedrály Zvartnoc ze 7. století, její kruhová sloupová stavba otevřená k obloze, Armavir, Arménie",
+          "pl": "Ruiny siódmowiecznej katedry Zwartnoc, jej okrągła kolumnowa budowla otwarta na niebo, Armavir, Armenia"
         }
       },
       {
