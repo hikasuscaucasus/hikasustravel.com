@@ -231,6 +231,17 @@ export function CitiesHubPage({ country = DEFAULT_COUNTRY }) {
   )
 }
 
+// `georgia-home.jpg` is the sitewide fallback photo (a Sighnaghi image) that
+// ~200 registry entries without a confirmed photograph of their own fall back
+// to for their hero/JSON-LD `image`. That fallback is legitimate everywhere it
+// already renders (heroes, og:image, etc.) — Sighnaghi's own city record uses
+// it too — but on the Places to Visit card grid it reads as the SAME wrong
+// photo repeated across a hundred unrelated cards. `siteCardImage` filters it
+// out for the card only; `s.image` itself is untouched, so every other use
+// (the site's own hero, JSON-LD, Sighnaghi's own card) is unaffected.
+const PLACES_HUB_FALLBACK_IMAGE = '/images/files/georgia-home.jpg'
+const siteCardImage = (s) => (s.image === PLACES_HUB_FALLBACK_IMAGE ? undefined : s.image)
+
 export function PlacesToVisitHubPage({ country = DEFAULT_COUNTRY }) {
   const conf = COUNTRY_HUBS[country].places
   const countryCrumb = useCountryCrumb(country)
@@ -253,8 +264,10 @@ export function PlacesToVisitHubPage({ country = DEFAULT_COUNTRY }) {
       // and Cities hubs already read `cardImage`/`image`. Most sites have none
       // yet (unpublished, no confirmed photograph), so this is inert for them;
       // a site with one renders its cover even on the non-clickable "coming
-      // soon" card, exactly as DestinationCard already supports.
-      image: s.image,
+      // soon" card, exactly as DestinationCard already supports. Sites still
+      // carrying the sitewide fallback photo render card-image-free instead —
+      // see `siteCardImage` above.
+      image: siteCardImage(s),
     }))
   // Entries classified as a place but kept in the cities registry for their
   // existing /<country>/<slug> detail page (e.g. Gomismta). They link to that
