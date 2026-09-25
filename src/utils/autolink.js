@@ -64,6 +64,7 @@ const ALIASES = [
   ['Haghpat', 'place:haghpat-monastery'],
   ['Tatev', 'place:tatev-monastery'],
   ['Noravank', 'place:noravank-monastery'],
+  ['Geghard', 'place:geghard-monastery'],
   ['Gergeti Trinity', 'place:gergeti-trinity-church'],
   ['Yerevan Cascade', 'place:cascade-monument'],
   ["Sheki Khan's Palace", 'place:palace-of-the-sheki-khans'],
