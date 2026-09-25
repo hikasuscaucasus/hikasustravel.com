@@ -41,6 +41,35 @@ const GENERIC = new Set([
 
 const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
 
+// Verified alternate names/spellings for a published entity's canonical
+// registry `name` — every one of these is copied from real, already-existing
+// wording found elsewhere in the site's own content (tours, guides, blogs),
+// never an invented translation or a generic word. Kept separate from
+// `variants()` because these aren't mechanical normalisations of one string;
+// each is a distinct proper-noun form that a different page happens to use
+// for the same real-world place. Deliberately excludes bare generic/ambiguous
+// forms ("Cascade", "Old City", "Khan's Palace" without "Sheki", "Sameba",
+// "Opera") per the same ambiguity rule the rest of the linker already follows
+// — see the ambiguity-collapse below, which still applies to every alias.
+const ALIASES = [
+  ['Peace Bridge', 'place:bridge-of-peace'],
+  ['Echmiadzin', 'city:etchmiadzin'],
+  ['Stepantsminda', 'city:kazbegi'],
+  ['Zvartnots Cathedral', 'place:zvartnots-temple'],
+  ['Walled City of Baku', 'place:icherisheher'],
+  ['Heydar Aliyev Centre', 'place:heydar-aliyev-center'],
+  ['Ananuri Architectural Complex', 'place:ananuri-fortress'],
+  ['Khor Virap', 'place:khor-virap-monastery'],
+  ['Sevanavank', 'place:sevanavank-monastery'],
+  ['Haghpat', 'place:haghpat-monastery'],
+  ['Tatev', 'place:tatev-monastery'],
+  ['Noravank', 'place:noravank-monastery'],
+  ['Gergeti Trinity', 'place:gergeti-trinity-church'],
+  ['Yerevan Cascade', 'place:cascade-monument'],
+  ["Sheki Khan's Palace", 'place:palace-of-the-sheki-khans'],
+  ["Sheki's Khan's Palace", 'place:palace-of-the-sheki-khans'],
+]
+
 // Derive conservative name variants — NOT invented spellings, only safe
 // normalisations: drop a trailing "(gloss)" and a leading English article.
 function variants(name, lang) {
@@ -71,6 +100,7 @@ function buildIndex(lang, pages) {
   const cityItems = (pages && pages.destinationsCities && pages.destinationsCities.items) || {}
   const placeItems = (pages && pages.destinationsPlaces && pages.destinationsPlaces.items) || {}
   const raw = [] // { name, url, key }
+  const keyToUrl = new Map()
 
   // Published regions are auto-linked to their canonical detail page
   // (/georgia/regions/<slug>). For non-English, we match BOTH the localized
@@ -84,6 +114,7 @@ function buildIndex(lang, pages) {
     if (!r.published || r.noAutolink) continue
     const url = regionPath(r.slug)
     const key = `region:${r.slug}`
+    keyToUrl.set(key, url)
     const names = new Set([r.name])
     if (lang !== 'en') {
       const loc = localizedName(regionItems, r.slug)
@@ -96,6 +127,7 @@ function buildIndex(lang, pages) {
     if (!c.published) continue
     const url = cityPath(c.slug)
     const key = `city:${c.slug}`
+    keyToUrl.set(key, url)
     // EN uses the registry name; other languages use the verified localized name
     // (falling back to the registry proper noun for the few cities without one —
     // these are transliterated proper nouns, not invented translations).
@@ -107,11 +139,22 @@ function buildIndex(lang, pages) {
     if (!s.published) continue
     const url = sitePath(s)
     const key = `place:${s.slug}`
+    keyToUrl.set(key, url)
     // EN uses the registry name; other languages link ONLY places that have a
     // verified curated localized name (no invented translations for the rest).
     const display = lang === 'en' ? s.name : localizedName(placeItems, s.slug)
     if (!display) continue
     for (const v of variants(display, lang)) raw.push({ name: v, url, key })
+  }
+
+  // Verified alias forms (see ALIASES above). Applied for every language: each
+  // one is a proper noun already confirmed present, as-is, in this locale's own
+  // content, not a translation — so there is nothing to invent. A target whose
+  // entity was filtered out above (unpublished, or a region with `noAutolink`)
+  // has no entry in `keyToUrl` and is silently skipped.
+  for (const [name, key] of ALIASES) {
+    const url = keyToUrl.get(key)
+    if (url) raw.push({ name, url, key })
   }
 
   // Collapse + drop ambiguous names (same string -> multiple distinct URLs).
