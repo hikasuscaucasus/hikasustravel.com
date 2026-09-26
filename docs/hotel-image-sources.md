@@ -640,3 +640,18 @@ Source: `Images for tours/Hotels/Gudauri Lodge/` (owner-approved). Converted to 
 | Gudauri Lodge | Fitness room | `gudauri-lodge-gym.webp` | 1024x737 |
 | Gudauri Lodge | Terrace | `gudauri-lodge-terrace.webp` | 1024x683 |
 | Gudauri Lodge | Outdoor pool | `gudauri-lodge-outdoor-pool.webp` | 1024x717 |
+
+
+## Marco Polo gallery replaced 2026-09-26 (owner-supplied photos)
+
+Source: `Images for tours/Hotels/Marco Polo Gudauri` (owner-approved). Converted to WebP q82 at source width (no upscaling).
+
+| Hotel | Category | Local file | Size |
+|---|---|---|---|
+| Marco Polo | Exterior | `marco-polo-exterior.webp` | 1024x723 |
+| Marco Polo | Room | `marco-polo-room.webp` | 1024x656 |
+| Marco Polo | Bathroom | `marco-polo-bathroom.webp` | 1024x685 |
+| Marco Polo | Breakfast buffet | `marco-polo-breakfast.webp` | 1024x683 |
+| Marco Polo | Indoor pool | `marco-polo-indoor-pool.webp` | 1024x683 |
+| Marco Polo | Sauna | `marco-polo-sauna.webp` | 1024x683 |
+| Marco Polo | Fitness room | `marco-polo-gym.webp` | 1024x683 |

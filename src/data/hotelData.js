@@ -252,15 +252,14 @@ const hotelData = {
   },
   'Marco Polo': {
     images: [
-      // Exterior / lobby / standard room / bathroom, then the indoor pool as a
-      // single extra. The record previously carried an indoor AND an outdoor
-      // pool shot but no guest room at all; the room below comes from the
-      // hotel's own site, and the duplicate outdoor pool frame is dropped.
-      { src: '/images/hotels/marco-polo.webp', alt: 'Exterior of Marco Polo Hotel Gudauri illuminated at night in the winter mountains, Georgia', category: 'Exterior' },
-      { src: '/images/hotels/marco-polo-3.webp', alt: 'Lobby lounge at Marco Polo Hotel Gudauri in Gudauri, Georgia', category: 'Lobby' },
-      { src: '/images/hotels/marco-polo-6.webp', alt: 'Standard guest room at Marco Polo Hotel Gudauri in Gudauri, Georgia', category: 'Room' },
-      { src: '/images/hotels/marco-polo-5.webp', alt: 'Guest bathroom at Marco Polo Hotel Gudauri with freestanding bath and louvred shutters', category: 'Bathroom' },
-      { src: '/images/hotels/marco-polo-2.webp', alt: 'Indoor swimming pool with mountain views at Marco Polo Hotel Gudauri, Georgia', category: 'Indoor pool' },
+      // Owner-supplied photos (Images for tours/Hotels/Marco Polo Gudauri), shown in this order.
+      { src: '/images/hotels/marco-polo-exterior.webp', alt: 'Exterior of Marco Polo Hotel Gudauri at night with its illuminated sign and snowy mountains, Georgia', category: 'Exterior' },
+      { src: '/images/hotels/marco-polo-room.webp', alt: 'Guest room with a double bed and mountain view at Marco Polo Hotel Gudauri, Georgia', category: 'Room' },
+      { src: '/images/hotels/marco-polo-bathroom.webp', alt: 'Guest bathroom with dark stone tiles and a backlit mirror at Marco Polo Hotel Gudauri, Georgia', category: 'Bathroom' },
+      { src: '/images/hotels/marco-polo-breakfast.webp', alt: 'Breakfast buffet at Marco Polo Hotel Gudauri, Georgia', category: 'Breakfast buffet' },
+      { src: '/images/hotels/marco-polo-indoor-pool.webp', alt: 'Indoor pool with large windows onto the snowy grounds at Marco Polo Hotel Gudauri, Georgia', category: 'Indoor pool' },
+      { src: '/images/hotels/marco-polo-sauna.webp', alt: 'Wooden sauna at Marco Polo Hotel Gudauri, Georgia', category: 'Sauna' },
+      { src: '/images/hotels/marco-polo-gym.webp', alt: 'Fitness room at Marco Polo Hotel Gudauri, Georgia', category: 'Fitness room' },
     ],
     stars: 5,
     description: 'Gudauri\'s original ski hotel, welcoming guests since 1988 and still one of the resort\'s landmarks. Marco Polo sits slope-side at around 2,000 metres with ski-in, ski-out access, backed by a large spa and wellness center — indoor and outdoor pools, saunas and a hot tub — plus a bowling alley, padel courts and the Soliko restaurant serving Georgian and European cuisine. A lively, full-service base in the middle of the resort.',
