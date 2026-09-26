@@ -189,6 +189,19 @@
       "Siłownia, Marxal Resort & Spa w Szeki, Azerbejdżan"
     ]
   },
+  "Sheki Palace": {
+    "imageAlts": [
+      "Budynek, Sheki Palace w Szeki, Azerbejdżan",
+      "Lobby z czerwonymi sofami, Sheki Palace w Szeki, Azerbejdżan",
+      "Pokój gościnny z łóżkiem małżeńskim, Sheki Palace w Szeki, Azerbejdżan",
+      "Łazienka z prysznicem, Sheki Palace w Szeki, Azerbejdżan",
+      "Bufet śniadaniowy, Sheki Palace w Szeki, Azerbejdżan",
+      "Basen kryty z leżakami, Sheki Palace w Szeki, Azerbejdżan",
+      "Siłownia, Sheki Palace w Szeki, Azerbejdżan",
+      "Kort tenisowy, Sheki Palace w Szeki, Azerbejdżan",
+      "Plac zabaw dla dzieci, Sheki Palace w Szeki, Azerbejdżan"
+    ]
+  },
   "Gudauri Lodge": {
     "description": "Nowoczesny pięciogwiazdkowy górski lodge tuż przy stokach w centrum Gudauri, z prawdziwym dostępem ski-in, ski-out. Po dniu na śniegu można odpocząć w strefie wellness — baseny kryty i odkryty, jacuzzi na zewnątrz, sauna i łaźnia parowa — a potem zjeść kolację w gruzińskiej restauracji. Przestronne nowoczesne pokoje, narciarnia i taras słoneczny czynią z niego wygodną, samowystarczalną bazę na tydzień na nartach.",
     "amenities": ["Baseny kryty i odkryty", "Spa, sauna i jacuzzi", "Siłownia", "Restauracja i bar", "Bezpłatne Wi-Fi", "Taras słoneczny"],

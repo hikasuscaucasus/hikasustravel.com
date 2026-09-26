@@ -237,6 +237,20 @@ const hotelData = {
       { src: '/images/hotels/marxal-resort-spa-gym.webp', alt: 'Fitness room at Marxal Resort & Spa in Sheki, Azerbaijan', category: 'Fitness room' },
     ],
   },
+  'Sheki Palace': {
+    images: [
+      // Owner-supplied photos (Images for tours/Hotels/Sheki Palace), shown in this order.
+      { src: '/images/hotels/sheki-palace-exterior.webp', alt: 'Exterior of Sheki Palace in Sheki, Azerbaijan', category: 'Exterior' },
+      { src: '/images/hotels/sheki-palace-lobby.webp', alt: 'Lobby lounge with red sofas at Sheki Palace in Sheki, Azerbaijan', category: 'Lobby' },
+      { src: '/images/hotels/sheki-palace-room.webp', alt: 'Guest room with a double bed at Sheki Palace in Sheki, Azerbaijan', category: 'Room' },
+      { src: '/images/hotels/sheki-palace-bathroom.webp', alt: 'Guest bathroom with a shower at Sheki Palace in Sheki, Azerbaijan', category: 'Bathroom' },
+      { src: '/images/hotels/sheki-palace-breakfast.webp', alt: 'Breakfast buffet at Sheki Palace in Sheki, Azerbaijan', category: 'Breakfast buffet' },
+      { src: '/images/hotels/sheki-palace-indoor-pool.webp', alt: 'Indoor pool with sun loungers at Sheki Palace in Sheki, Azerbaijan', category: 'Indoor pool' },
+      { src: '/images/hotels/sheki-palace-gym.webp', alt: 'Fitness room at Sheki Palace in Sheki, Azerbaijan', category: 'Fitness room' },
+      { src: '/images/hotels/sheki-palace-tennis-court.webp', alt: 'Tennis court at Sheki Palace in Sheki, Azerbaijan', category: 'Tennis court' },
+      { src: '/images/hotels/sheki-palace-playground.webp', alt: 'Children\'s playground at Sheki Palace in Sheki, Azerbaijan', category: 'Playground' },
+    ],
+  },
   'Gudauri Lodge': {
     images: [
       // Owner-supplied photos (Images for tours/Hotels/Gudauri Lodge), shown in this order.

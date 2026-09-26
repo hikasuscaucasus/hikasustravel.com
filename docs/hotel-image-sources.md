@@ -690,3 +690,20 @@ Source: `Images for tours/Hotels/Marxal Resort & Spa` (owner-approved). Converte
 | Marxal Resort & Spa | Steam room | `marxal-resort-spa-steam-room.webp` | 1024x683 |
 | Marxal Resort & Spa | Massage room | `marxal-resort-spa-massage-room.webp` | 1024x683 |
 | Marxal Resort & Spa | Fitness room | `marxal-resort-spa-gym.webp` | 1024x683 |
+
+
+## Sheki Palace gallery replaced 2026-09-26 (owner-supplied photos)
+
+Source: `Images for tours/Hotels/Sheki Palace` (owner-approved). Converted to WebP q82 at source width (no upscaling).
+
+| Hotel | Category | Local file | Size |
+|---|---|---|---|
+| Sheki Palace | Exterior | `sheki-palace-exterior.webp` | 1024x575 |
+| Sheki Palace | Lobby | `sheki-palace-lobby.webp` | 1024x683 |
+| Sheki Palace | Room | `sheki-palace-room.webp` | 1024x683 |
+| Sheki Palace | Bathroom | `sheki-palace-bathroom.webp` | 1024x683 |
+| Sheki Palace | Breakfast buffet | `sheki-palace-breakfast.webp` | 1024x683 |
+| Sheki Palace | Indoor pool | `sheki-palace-indoor-pool.webp` | 1024x683 |
+| Sheki Palace | Fitness room | `sheki-palace-gym.webp` | 1024x683 |
+| Sheki Palace | Tennis court | `sheki-palace-tennis-court.webp` | 1024x683 |
+| Sheki Palace | Playground | `sheki-palace-playground.webp` | 1024x683 |
