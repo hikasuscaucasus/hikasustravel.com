@@ -218,6 +218,20 @@
       "Baño con ducha, Old Town Sheki en Sheki, Azerbaiyán"
     ]
   },
+  "Sheraton Baku Intourist": {
+    "description": "El Sheraton Baku Intourist se encuentra junto al paseo marítimo, en el centro de Bakú, a poca distancia de la ciudad vieja, la Torre de la Doncella y las Torres Flame. Sus habitaciones tienen vistas a los jardines o al mar Caspio. El hotel cuenta con el restaurante ABAKUZ y el ABAKUZ Lounge & Terraza, un centro de bienestar con masajes y tratamientos de spa y un gimnasio abierto las 24 horas.",
+    "amenities": ["Restaurante ABAKUZ", "ABAKUZ Lounge & Terraza", "Centro de bienestar", "Gimnasio 24 horas"],
+    "locationHighlights": ["Junto al paseo marítimo, en el centro de Bakú", "Habitaciones con vistas a los jardines o al mar Caspio"],
+    "imageAlts": [
+      "Exterior al anochecer, Sheraton Baku Intourist en Bakú, Azerbaiyán",
+      "Zona de salón y bar, Sheraton Baku Intourist en Bakú, Azerbaiyán",
+      "Habitación con cama doble, Sheraton Baku Intourist en Bakú, Azerbaiyán",
+      "Baño con lavabo sobre encimera, Sheraton Baku Intourist en Bakú, Azerbaiyán",
+      "Buffet de desayuno, Sheraton Baku Intourist en Bakú, Azerbaiyán",
+      "Terraza con zona de asientos al aire libre, Sheraton Baku Intourist en Bakú, Azerbaiyán",
+      "Sala de fitness, Sheraton Baku Intourist en Bakú, Azerbaiyán"
+    ]
+  },
   "Gudauri Lodge": {
     "description": "Un moderno lodge de montaña de cinco estrellas situado junto a las pistas en el centro de Gudauri, con auténtico acceso a pie de pista. Tras un día en la nieve puedes relajarte en el centro de bienestar —piscinas cubierta y exterior, bañera de hidromasaje al aire libre, sauna y baño de vapor— y después cenar en el restaurante georgiano. Habitaciones amplias y modernas, guardaesquís y terraza solárium lo convierten en una base cómoda y autosuficiente para una semana de esquí.",
     "amenities": ["Piscinas cubierta y exterior", "Spa, sauna y jacuzzi", "Gimnasio", "Restaurante y bar", "Wi-Fi gratuito", "Terraza solárium"],

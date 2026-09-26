@@ -218,6 +218,20 @@
       "Koupelna se sprchovým koutem, Old Town Sheki v Šeki, Ázerbájdžán"
     ]
   },
+  "Sheraton Baku Intourist": {
+    "description": "Sheraton Baku Intourist stojí na nábřeží v centru Baku, v docházkové vzdálenosti od Starého města, Dívčí věže a Plamenných věží. Pokoje mají výhled do zahrad nebo na Kaspické moře. V hotelu najdete restauraci ABAKUZ a ABAKUZ Lounge & Terasu, wellness centrum s masážemi a spa procedurami a fitness centrum otevřené 24 hodin denně.",
+    "amenities": ["Restaurace ABAKUZ", "ABAKUZ Lounge & Terasa", "Wellness centrum", "Fitness centrum 24 hodin denně"],
+    "locationHighlights": ["Na nábřeží v centru Baku", "Pokoje s výhledem do zahrad nebo na Kaspické moře"],
+    "imageAlts": [
+      "Exteriér za soumraku, Sheraton Baku Intourist v Baku, Ázerbájdžán",
+      "Lounge a bar, Sheraton Baku Intourist v Baku, Ázerbájdžán",
+      "Hotelový pokoj s manželskou postelí, Sheraton Baku Intourist v Baku, Ázerbájdžán",
+      "Koupelna s umyvadlem na desce, Sheraton Baku Intourist v Baku, Ázerbájdžán",
+      "Snídaňový bufet, Sheraton Baku Intourist v Baku, Ázerbájdžán",
+      "Terasa s venkovním posezením, Sheraton Baku Intourist v Baku, Ázerbájdžán",
+      "Fitness, Sheraton Baku Intourist v Baku, Ázerbájdžán"
+    ]
+  },
   "Gudauri Lodge": {
     "description": "Moderní pětihvězdičková horská lodge přímo u sjezdovek v centru Gudauri se skutečným přístupem ski-in, ski-out. Po dni na sněhu se můžete uvolnit ve wellness centru — vnitřní i venkovní bazén, venkovní vířivka, sauna a parní lázeň — a poté povečeřet v gruzínské restauraci. Prostorné moderní pokoje, lyžárna a sluneční terasa z ní dělají pohodlnou soběstačnou základnu pro lyžařský týden.",
     "amenities": ["Vnitřní a venkovní bazén", "Spa, sauna a vířivka", "Fitness centrum", "Restaurace a bar", "Wi-Fi zdarma", "Sluneční terasa"],

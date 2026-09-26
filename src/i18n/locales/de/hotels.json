@@ -218,6 +218,20 @@
       "Gästebadezimmer mit Dusche, Old Town Sheki in Sheki, Aserbaidschan"
     ]
   },
+  "Sheraton Baku Intourist": {
+    "description": "Das Sheraton Baku Intourist liegt an der Uferpromenade im Zentrum von Baku, in bequemer Reichweite von Altstadt, Jungfrauenturm und Flame Towers. Die Zimmer bieten Blick auf Gärten oder das Kaspische Meer. Zum Hotel gehören das Restaurant ABAKUZ sowie die ABAKUZ Lounge & Terrasse, ein Wellnesscenter mit Massagen und Spa-Anwendungen und ein rund um die Uhr geöffnetes Fitnesscenter.",
+    "amenities": ["Restaurant ABAKUZ", "ABAKUZ Lounge & Terrasse", "Wellnesscenter", "Fitnesscenter rund um die Uhr"],
+    "locationHighlights": ["An der Uferpromenade im Zentrum von Baku", "Zimmer mit Blick auf Gärten oder das Kaspische Meer"],
+    "imageAlts": [
+      "Außenansicht in der Dämmerung, Sheraton Baku Intourist in Baku, Aserbaidschan",
+      "Lounge- und Barbereich, Sheraton Baku Intourist in Baku, Aserbaidschan",
+      "Gästezimmer mit Doppelbett, Sheraton Baku Intourist in Baku, Aserbaidschan",
+      "Gästebadezimmer mit Aufsatzwaschbecken, Sheraton Baku Intourist in Baku, Aserbaidschan",
+      "Frühstücksbuffet, Sheraton Baku Intourist in Baku, Aserbaidschan",
+      "Terrasse mit Sitzbereich im Freien, Sheraton Baku Intourist in Baku, Aserbaidschan",
+      "Fitnessraum, Sheraton Baku Intourist in Baku, Aserbaidschan"
+    ]
+  },
   "Gudauri Lodge": {
     "description": "Eine zeitgemäße Fünf-Sterne-Berglodge direkt an den Pisten im Zentrum von Gudauri, mit echtem Ski-in-Ski-out-Zugang. Nach einem Tag im Schnee entspannen Sie im Wellnessbereich – Innen- und Außenpool, Außenwhirlpool, Sauna und Dampfbad – und speisen anschließend im georgischen Restaurant. Geräumige moderne Zimmer, ein Skidepot und eine Sonnenterrasse machen sie zu einer eigenständigen Basis für eine Skiwoche.",
     "amenities": ["Innen- & Außenpool", "Spa, Sauna & Whirlpool", "Fitnessbereich", "Restaurant & Bar", "Kostenloses WLAN", "Sonnenterrasse"],

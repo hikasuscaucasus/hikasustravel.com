@@ -218,6 +218,20 @@
       "Łazienka z prysznicem, Old Town Sheki w Szeki, Azerbejdżan"
     ]
   },
+  "Sheraton Baku Intourist": {
+    "description": "Sheraton Baku Intourist stoi nad nabrzeżem w centrum Baku, w niewielkiej odległości od Starego Miasta, Baszty Dziewiczej i Flame Towers. Pokoje mają widok na ogrody lub Morze Kaspijskie. W hotelu znajdują się restauracja ABAKUZ oraz ABAKUZ Lounge & Terrace, centrum wellness z masażami i zabiegami spa oraz centrum fitness czynne całą dobę.",
+    "amenities": ["Restauracja ABAKUZ", "ABAKUZ Lounge & Terrace", "Centrum wellness", "Centrum fitness czynne całą dobę"],
+    "locationHighlights": ["Nad nabrzeżem w centrum Baku", "Pokoje z widokiem na ogrody lub Morze Kaspijskie"],
+    "imageAlts": [
+      "Budynek o zmierzchu, Sheraton Baku Intourist w Baku, Azerbejdżan",
+      "Strefa lounge i bar, Sheraton Baku Intourist w Baku, Azerbejdżan",
+      "Pokój gościnny z łóżkiem małżeńskim, Sheraton Baku Intourist w Baku, Azerbejdżan",
+      "Łazienka z umywalką nablatową, Sheraton Baku Intourist w Baku, Azerbejdżan",
+      "Bufet śniadaniowy, Sheraton Baku Intourist w Baku, Azerbejdżan",
+      "Taras z miejscami siedzącymi na świeżym powietrzu, Sheraton Baku Intourist w Baku, Azerbejdżan",
+      "Siłownia, Sheraton Baku Intourist w Baku, Azerbejdżan"
+    ]
+  },
   "Gudauri Lodge": {
     "description": "Nowoczesny pięciogwiazdkowy górski lodge tuż przy stokach w centrum Gudauri, z prawdziwym dostępem ski-in, ski-out. Po dniu na śniegu można odpocząć w strefie wellness — baseny kryty i odkryty, jacuzzi na zewnątrz, sauna i łaźnia parowa — a potem zjeść kolację w gruzińskiej restauracji. Przestronne nowoczesne pokoje, narciarnia i taras słoneczny czynią z niego wygodną, samowystarczalną bazę na tydzień na nartach.",
     "amenities": ["Baseny kryty i odkryty", "Spa, sauna i jacuzzi", "Siłownia", "Restauracja i bar", "Bezpłatne Wi-Fi", "Taras słoneczny"],

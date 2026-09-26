@@ -218,6 +218,20 @@
       "Badkamer met douche, Old Town Sheki in Sheki, Azerbeidzjan"
     ]
   },
+  "Sheraton Baku Intourist": {
+    "description": "Het Sheraton Baku Intourist ligt aan de kustpromenade in het centrum van Bakoe, op korte afstand van de oude stad, de Maagdentoren en de Flame Towers. De kamers kijken uit op tuinen of de Kaspische Zee. Het hotel heeft het ABAKUZ Restaurant en de ABAKUZ Lounge & Terras, een wellnesscentrum met massages en spabehandelingen en een fitnessruimte die 24 uur per dag open is.",
+    "amenities": ["Restaurant ABAKUZ", "ABAKUZ Lounge & Terras", "Wellnesscentrum", "Fitnessruimte 24 uur per dag"],
+    "locationHighlights": ["Aan de kustpromenade in het centrum van Bakoe", "Kamers met uitzicht op tuinen of de Kaspische Zee"],
+    "imageAlts": [
+      "Buitenaanzicht in de schemering, Sheraton Baku Intourist in Bakoe, Azerbeidzjan",
+      "Lounge en bar, Sheraton Baku Intourist in Bakoe, Azerbeidzjan",
+      "Gastenkamer met tweepersoonsbed, Sheraton Baku Intourist in Bakoe, Azerbeidzjan",
+      "Badkamer met opbouwwastafel, Sheraton Baku Intourist in Bakoe, Azerbeidzjan",
+      "Ontbijtbuffet, Sheraton Baku Intourist in Bakoe, Azerbeidzjan",
+      "Terras met buitenzitplaatsen, Sheraton Baku Intourist in Bakoe, Azerbeidzjan",
+      "Fitnessruimte, Sheraton Baku Intourist in Bakoe, Azerbeidzjan"
+    ]
+  },
   "Gudauri Lodge": {
     "description": "Een eigentijdse vijfsterren-berglodge direct aan de pistes in het centrum van Gudauri, met echte ski-in-ski-outtoegang. Na een dag in de sneeuw ontspan je in het wellnesscentrum — binnen- en buitenzwembad, buitenjacuzzi, sauna en stoombad — en dineer je in het Georgische restaurant. Ruime moderne kamers, een skidepot en een zonneterras maken het een comfortabele, zelfvoorzienende basis voor een skiweek.",
     "amenities": ["Binnen- & buitenzwembad", "Spa, sauna & jacuzzi", "Fitnessruimte", "Restaurant & bar", "Gratis wifi", "Zonneterras"],

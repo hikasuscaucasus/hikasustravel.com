@@ -269,6 +269,29 @@ const hotelData = {
       { src: '/images/hotels/old-town-sheki-bathroom.webp', alt: 'Guest bathroom with a shower at Old Town Sheki in Sheki, Azerbaijan', category: 'Bathroom' },
     ],
   },
+  'Sheraton Baku Intourist': {
+    images: [
+      // Owner-supplied photos (Images for tours/Hotels/Sheraton Baku Intourist), shown in this order.
+      { src: '/images/hotels/sheraton-baku-intourist-exterior.webp', alt: 'Exterior at dusk of Sheraton Baku Intourist in Baku, Azerbaijan', category: 'Exterior' },
+      { src: '/images/hotels/sheraton-baku-intourist-lounge-bar.webp', alt: 'Lounge and bar area at Sheraton Baku Intourist in Baku, Azerbaijan', category: 'Lounge & bar' },
+      { src: '/images/hotels/sheraton-baku-intourist-room.webp', alt: 'Guest room with a double bed at Sheraton Baku Intourist in Baku, Azerbaijan', category: 'Room' },
+      { src: '/images/hotels/sheraton-baku-intourist-bathroom.webp', alt: 'Guest bathroom with a vessel sink at Sheraton Baku Intourist in Baku, Azerbaijan', category: 'Bathroom' },
+      { src: '/images/hotels/sheraton-baku-intourist-breakfast.webp', alt: 'Breakfast buffet at Sheraton Baku Intourist in Baku, Azerbaijan', category: 'Breakfast buffet' },
+      { src: '/images/hotels/sheraton-baku-intourist-terrace.webp', alt: 'Terrace with outdoor seating at Sheraton Baku Intourist in Baku, Azerbaijan', category: 'Terrace' },
+      { src: '/images/hotels/sheraton-baku-intourist-gym.webp', alt: 'Fitness room at Sheraton Baku Intourist in Baku, Azerbaijan', category: 'Fitness room' },
+    ],
+    description: 'Sheraton Baku Intourist stands by the seafront in the centre of Baku, within easy reach of the Old City, the Maiden Tower and the Flame Towers. Its rooms look out over gardens or the Caspian Sea. The hotel has the ABAKUZ Restaurant and the ABAKUZ Lounge & Terrace, a wellness centre offering massages and spa treatments, and a fitness centre open 24 hours a day.',
+    amenities: [
+      { icon: 'restaurant', label: 'ABAKUZ Restaurant' },
+      { icon: 'terrace', label: 'ABAKUZ Lounge & Terrace' },
+      { icon: 'spa', label: 'Wellness Center' },
+      { icon: 'gym', label: '24-Hour Fitness Center' },
+    ],
+    locationHighlights: [
+      'By the seafront in central Baku',
+      'Garden or Caspian Sea views from the rooms',
+    ],
+  },
   'Gudauri Lodge': {
     images: [
       // Owner-supplied photos (Images for tours/Hotels/Gudauri Lodge), shown in this order.

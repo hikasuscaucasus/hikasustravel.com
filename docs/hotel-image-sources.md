@@ -731,3 +731,20 @@ Source: `Images for tours/Hotels/Old Town Sheki` (owner-approved). Converted to 
 | Old Town Sheki | Lobby | `old-town-sheki-lobby.webp` | 1024x576 |
 | Old Town Sheki | Room | `old-town-sheki-room.webp` | 1024x683 |
 | Old Town Sheki | Bathroom | `old-town-sheki-bathroom.webp` | 1024x683 |
+
+
+## Sheraton Baku Intourist gallery added 2026-09-26 (owner-supplied photos)
+
+Source: `Images for tours/Hotels/Sheraton Baku Intourist` (owner-approved). Converted to WebP q82 at source width (no upscaling).
+
+Facts checked against marriott.com search results for the property (seafront position in central Baku, garden or Caspian Sea room views, ABAKUZ Restaurant and ABAKUZ Lounge & Terrace, wellness centre, 24-hour fitness centre). The Marriott page itself returned HTTP 403 to the fetcher, so the star rating, check-in/out times and parking were NOT reconfirmed and are omitted.
+
+| Hotel | Category | Local file | Size |
+|---|---|---|---|
+| Sheraton Baku Intourist | Exterior | `sheraton-baku-intourist-exterior.webp` | 1024x640 |
+| Sheraton Baku Intourist | Lounge & bar | `sheraton-baku-intourist-lounge-bar.webp` | 1024x683 |
+| Sheraton Baku Intourist | Room | `sheraton-baku-intourist-room.webp` | 1024x640 |
+| Sheraton Baku Intourist | Bathroom | `sheraton-baku-intourist-bathroom.webp` | 1024x640 |
+| Sheraton Baku Intourist | Breakfast buffet | `sheraton-baku-intourist-breakfast.webp` | 1024x683 |
+| Sheraton Baku Intourist | Terrace | `sheraton-baku-intourist-terrace.webp` | 1024x683 |
+| Sheraton Baku Intourist | Fitness room | `sheraton-baku-intourist-gym.webp` | 1024x683 |
