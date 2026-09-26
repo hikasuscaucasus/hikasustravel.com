@@ -232,6 +232,18 @@
       "Siłownia, Sheraton Baku Intourist w Baku, Azerbejdżan"
     ]
   },
+  "Boutique 19 Hotel": {
+    "description": "Boutique 19 Hotel mieści się w zabytkowym budynku przy ulicy Aziza Alijewa w historycznym centrum Baku i łączy dawną architekturę ze współczesnym komfortem. Goście mogą zjeść w restauracji Sabah, napić się w winiarni Bade i odpocząć w Damda Pool & Lounge.",
+    "amenities": ["Restauracja Sabah", "Winiarnia Bade", "Damda Pool & Lounge"],
+    "locationHighlights": ["Zabytkowy budynek przy ulicy Aziza Alijewa", "W historycznym centrum Baku"],
+    "imageAlts": [
+      "Pokój gościnny z oknami łukowymi i łóżkiem małżeńskim, Boutique 19 Hotel w Baku, Azerbejdżan",
+      "Salon z zieloną skórzaną sofą i witryną, Boutique 19 Hotel w Baku, Azerbejdżan",
+      "Łazienka z prysznicem walk-in, Boutique 19 Hotel w Baku, Azerbejdżan",
+      "Bufet śniadaniowy, Boutique 19 Hotel w Baku, Azerbejdżan",
+      "Basen z leżakami pod szklanym dachem, Boutique 19 Hotel w Baku, Azerbejdżan"
+    ]
+  },
   "Gudauri Lodge": {
     "description": "Nowoczesny pięciogwiazdkowy górski lodge tuż przy stokach w centrum Gudauri, z prawdziwym dostępem ski-in, ski-out. Po dniu na śniegu można odpocząć w strefie wellness — baseny kryty i odkryty, jacuzzi na zewnątrz, sauna i łaźnia parowa — a potem zjeść kolację w gruzińskiej restauracji. Przestronne nowoczesne pokoje, narciarnia i taras słoneczny czynią z niego wygodną, samowystarczalną bazę na tydzień na nartach.",
     "amenities": ["Baseny kryty i odkryty", "Spa, sauna i jacuzzi", "Siłownia", "Restauracja i bar", "Bezpłatne Wi-Fi", "Taras słoneczny"],

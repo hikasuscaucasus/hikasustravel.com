@@ -232,6 +232,18 @@
       "Fitnessruimte, Sheraton Baku Intourist in Bakoe, Azerbeidzjan"
     ]
   },
+  "Boutique 19 Hotel": {
+    "description": "Het Boutique 19 Hotel bevindt zich in een historisch pand aan de Aziz Aliyevstraat in het historische centrum van Bakoe en combineert klassieke architectuur met eigentijds comfort. Gasten kunnen dineren in Restaurant Sabah, iets drinken in de wijnbar Bade en ontspannen in Damda Pool & Lounge.",
+    "amenities": ["Restaurant Sabah", "Wijnbar Bade", "Damda Pool & Lounge"],
+    "locationHighlights": ["Historisch pand aan de Aziz Aliyevstraat", "In het historische centrum van Bakoe"],
+    "imageAlts": [
+      "Gastenkamer met boogramen en tweepersoonsbed, Boutique 19 Hotel in Bakoe, Azerbeidzjan",
+      "Lounge met groene leren bank en vitrinekast, Boutique 19 Hotel in Bakoe, Azerbeidzjan",
+      "Badkamer met inloopdouche, Boutique 19 Hotel in Bakoe, Azerbeidzjan",
+      "Ontbijtbuffet, Boutique 19 Hotel in Bakoe, Azerbeidzjan",
+      "Zwembad met ligbedden onder een glazen dak, Boutique 19 Hotel in Bakoe, Azerbeidzjan"
+    ]
+  },
   "Gudauri Lodge": {
     "description": "Een eigentijdse vijfsterren-berglodge direct aan de pistes in het centrum van Gudauri, met echte ski-in-ski-outtoegang. Na een dag in de sneeuw ontspan je in het wellnesscentrum — binnen- en buitenzwembad, buitenjacuzzi, sauna en stoombad — en dineer je in het Georgische restaurant. Ruime moderne kamers, een skidepot en een zonneterras maken het een comfortabele, zelfvoorzienende basis voor een skiweek.",
     "amenities": ["Binnen- & buitenzwembad", "Spa, sauna & jacuzzi", "Fitnessruimte", "Restaurant & bar", "Gratis wifi", "Zonneterras"],

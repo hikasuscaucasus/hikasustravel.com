@@ -748,3 +748,18 @@ Facts checked against marriott.com search results for the property (seafront pos
 | Sheraton Baku Intourist | Breakfast buffet | `sheraton-baku-intourist-breakfast.webp` | 1024x683 |
 | Sheraton Baku Intourist | Terrace | `sheraton-baku-intourist-terrace.webp` | 1024x683 |
 | Sheraton Baku Intourist | Fitness room | `sheraton-baku-intourist-gym.webp` | 1024x683 |
+
+
+## Boutique 19 Hotel gallery added 2026-09-26 (owner-supplied photos)
+
+Source: `Images for tours/Hotels/Boutique 19 Hotel Baku` (owner-approved). Converted to WebP q82 at source width (no upscaling).
+
+Facts checked against the hotel's own site boutique19hotel.com (heritage building, Aziz Aliyev 19 in the historic centre of Baku, Sabah Restaurant, Bade Wine Bar, Damda Pool & Lounge). The site states NO star category, so none is shown; third-party sources conflict. Indoor pool, gym and Wi-Fi are not stated on the official page and are omitted. The folder has no exterior photo, so the guest room leads.
+
+| Hotel | Category | Local file | Size |
+|---|---|---|---|
+| Boutique 19 Hotel | Room | `boutique-19-hotel-room.webp` | 1024x683 |
+| Boutique 19 Hotel | Lounge | `boutique-19-hotel-lounge.webp` | 1024x683 |
+| Boutique 19 Hotel | Bathroom | `boutique-19-hotel-bathroom.webp` | 1024x683 |
+| Boutique 19 Hotel | Breakfast buffet | `boutique-19-hotel-breakfast.webp` | 1024x683 |
+| Boutique 19 Hotel | Pool | `boutique-19-hotel-pool.webp` | 1024x683 |

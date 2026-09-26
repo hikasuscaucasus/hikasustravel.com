@@ -292,6 +292,26 @@ const hotelData = {
       'Garden or Caspian Sea views from the rooms',
     ],
   },
+  'Boutique 19 Hotel': {
+    images: [
+      // Owner-supplied photos (Images for tours/Hotels/Boutique 19 Hotel Baku), shown in this order.
+      { src: '/images/hotels/boutique-19-hotel-room.webp', alt: 'Guest room with arched windows and a double bed at Boutique 19 Hotel in Baku, Azerbaijan', category: 'Room' },
+      { src: '/images/hotels/boutique-19-hotel-lounge.webp', alt: 'Lounge with a green leather sofa and a display cabinet at Boutique 19 Hotel in Baku, Azerbaijan', category: 'Lounge' },
+      { src: '/images/hotels/boutique-19-hotel-bathroom.webp', alt: 'Guest bathroom with a walk-in shower at Boutique 19 Hotel in Baku, Azerbaijan', category: 'Bathroom' },
+      { src: '/images/hotels/boutique-19-hotel-breakfast.webp', alt: 'Breakfast buffet at Boutique 19 Hotel in Baku, Azerbaijan', category: 'Breakfast buffet' },
+      { src: '/images/hotels/boutique-19-hotel-pool.webp', alt: 'Swimming pool with sun loungers under a glass roof at Boutique 19 Hotel in Baku, Azerbaijan', category: 'Pool' },
+    ],
+    description: 'Boutique 19 Hotel occupies a heritage building on Aziz Aliyev Street in the historic centre of Baku, combining period architecture with contemporary comfort. Guests can dine at Sabah Restaurant, enjoy a drink at Bade Wine Bar and relax at Damda Pool & Lounge.',
+    amenities: [
+      { icon: 'restaurant', label: 'Sabah Restaurant' },
+      { icon: 'wine', label: 'Bade Wine Bar' },
+      { icon: 'pool', label: 'Damda Pool & Lounge' },
+    ],
+    locationHighlights: [
+      'Heritage building on Aziz Aliyev Street',
+      'In the historic centre of Baku',
+    ],
+  },
   'Gudauri Lodge': {
     images: [
       // Owner-supplied photos (Images for tours/Hotels/Gudauri Lodge), shown in this order.
