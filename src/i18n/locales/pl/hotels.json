@@ -209,10 +209,13 @@
     "amenities": ["Bezpłatne Wi-Fi", "Basen kryty", "Sauna i jacuzzi", "Restauracja i bar", "Bezpłatny parking"],
     "locationHighlights": ["W centrum Gudauri na wysokości 2200 m", "Strefa wellness z basenem krytym, jacuzzi i sauną", "Panoramiczne widoki na Wielki Kaukaz"],
     "imageAlts": [
-      "Budynek Gudauri Inn o zmierzchu pod ośnieżonymi szczytami w Gudauri, Gruzja",
-      "Strefa wypoczynkowa z widokiem na góry i wiszącymi fotelami w Gudauri Inn, Gudauri, Gruzja",
-      "Wygodny pokój dwuosobowy w Gudauri Inn",
-      "Łazienka z prysznicem walk-in w Gudauri Inn, Gudauri, Gruzja"
+      "Budynek Gudauri Inn o zmierzchu na tle ośnieżonych szczytów Kaukazu, Gudauri, Gruzja",
+      "Lounge i bar z niebieskimi sofami w Gudauri Inn w Gudauri, Gruzja",
+      "Pokój dwuosobowy z osobnymi łóżkami w Gudauri Inn w Gudauri, Gruzja",
+      "Łazienka z prysznicem walk-in w Gudauri Inn w Gudauri, Gruzja",
+      "Sala z bufetem śniadaniowym w Gudauri Inn w Gudauri, Gruzja",
+      "Basen kryty z leżakami i oknami na góry w Gudauri Inn w Gudauri, Gruzja",
+      "Drewniana sauna w Gudauri Inn w Gudauri, Gruzja"
     ]
   },
   "Rooms Hotel Kazbegi": {

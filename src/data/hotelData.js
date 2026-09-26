@@ -279,14 +279,14 @@ const hotelData = {
   },
   'Gudauri Inn': {
     images: [
-      // Exterior / lobby / standard room / bathroom. The record held three
-      // near-identical twin-room frames before the exterior and bathroom were
-      // even reached; the two redundant ones are dropped so the set matches
-      // the four-category order used everywhere else.
-      { src: '/images/hotels/gudauri-inn-5.webp', alt: 'Exterior of Gudauri Inn at dusk below the snowy peaks in Gudauri, Georgia', category: 'Exterior' },
-      { src: '/images/hotels/gudauri-inn.webp', alt: 'Mountain-view lounge with hanging chairs at Gudauri Inn in Gudauri, Georgia', category: 'Lounge' },
-      { src: '/images/hotels/gudauri-inn-2.webp', alt: 'Standard double guest room at Gudauri Inn in Gudauri, Georgia', category: 'Room' },
-      { src: '/images/hotels/gudauri-inn-6.webp', alt: 'Guest bathroom at Gudauri Inn with walk-in shower and stone-tiled walls', category: 'Bathroom' },
+      // Owner-supplied photos (Images for tours/Hotels/Gudauri Inn), shown in this order.
+      { src: '/images/hotels/gudauri-inn-exterior.webp', alt: 'Exterior of Gudauri Inn at dusk with the snowy Caucasus peaks behind, Gudauri, Georgia', category: 'Exterior' },
+      { src: '/images/hotels/gudauri-inn-lounge-bar.webp', alt: 'Lounge and bar with blue sofas at Gudauri Inn in Gudauri, Georgia', category: 'Lounge & bar' },
+      { src: '/images/hotels/gudauri-inn-room.webp', alt: 'Twin guest room at Gudauri Inn in Gudauri, Georgia', category: 'Room' },
+      { src: '/images/hotels/gudauri-inn-bathroom.webp', alt: 'Guest bathroom with walk-in shower at Gudauri Inn in Gudauri, Georgia', category: 'Bathroom' },
+      { src: '/images/hotels/gudauri-inn-breakfast.webp', alt: 'Breakfast buffet room at Gudauri Inn in Gudauri, Georgia', category: 'Breakfast buffet' },
+      { src: '/images/hotels/gudauri-inn-indoor-pool.webp', alt: 'Indoor pool with sun loungers and mountain-facing windows at Gudauri Inn in Gudauri, Georgia', category: 'Indoor pool' },
+      { src: '/images/hotels/gudauri-inn-sauna.webp', alt: 'Wooden sauna at Gudauri Inn in Gudauri, Georgia', category: 'Sauna' },
     ],
     stars: 4,
     description: 'A comfortable, easy-going hotel in the heart of Gudauri at 2,200 metres, with a relaxed mountain atmosphere and wide views over the surrounding peaks. It has its own wellness center with an indoor pool, jacuzzi and sauna, a restaurant serving Georgian and international dishes, and a bar for local wines. Good value and welcoming, it makes a solid classic-tier base for a Gudauri ski trip.',

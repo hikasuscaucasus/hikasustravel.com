@@ -655,3 +655,18 @@ Source: `Images for tours/Hotels/Marco Polo Gudauri` (owner-approved). Converted
 | Marco Polo | Indoor pool | `marco-polo-indoor-pool.webp` | 1024x683 |
 | Marco Polo | Sauna | `marco-polo-sauna.webp` | 1024x683 |
 | Marco Polo | Fitness room | `marco-polo-gym.webp` | 1024x683 |
+
+
+## Gudauri Inn gallery replaced 2026-09-26 (owner-supplied photos)
+
+Source: `Images for tours/Hotels/Gudauri Inn` (owner-approved). Converted to WebP q82 at source width (no upscaling).
+
+| Hotel | Category | Local file | Size |
+|---|---|---|---|
+| Gudauri Inn | Exterior | `gudauri-inn-exterior.webp` | 1280x1024 |
+| Gudauri Inn | Lounge & bar | `gudauri-inn-lounge-bar.webp` | 1024x575 |
+| Gudauri Inn | Room | `gudauri-inn-room.webp` | 1280x1024 |
+| Gudauri Inn | Bathroom | `gudauri-inn-bathroom.webp` | 1280x1024 |
+| Gudauri Inn | Breakfast buffet | `gudauri-inn-breakfast.webp` | 1024x684 |
+| Gudauri Inn | Indoor pool | `gudauri-inn-indoor-pool.webp` | 1280x1024 |
+| Gudauri Inn | Sauna | `gudauri-inn-sauna.webp` | 1280x1024 |
