@@ -284,6 +284,17 @@
       "Sauna de madera, Shah Palace Hotel en Bakú, Azerbaiyán"
     ]
   },
+  "Midway Park Hotel": {
+    "description": "El Midway Park Hotel está en Bakú, cerca de la calle Nizami y del Baku City Circuit. El hotel cuenta con un restaurante con buffet de desayuno, Wi-Fi gratuito y recepción abierta las 24 horas.",
+    "amenities": ["Restaurante y buffet de desayuno", "Wi-Fi gratuito", "Recepción 24 horas"],
+    "locationHighlights": ["Cerca de la calle Nizami", "Junto al Baku City Circuit"],
+    "imageAlts": [
+      "Entrada con el letrero del hotel, Midway Park Hotel en Bakú, Azerbaiyán",
+      "Habitación con cama doble y escritorio, Midway Park Hotel en Bakú, Azerbaiyán",
+      "Baño con ducha y lavabo con encimera de mármol, Midway Park Hotel en Bakú, Azerbaiyán",
+      "Buffet de desayuno, Midway Park Hotel en Bakú, Azerbaiyán"
+    ]
+  },
   "Gudauri Lodge": {
     "description": "Un moderno lodge de montaña de cinco estrellas situado junto a las pistas en el centro de Gudauri, con auténtico acceso a pie de pista. Tras un día en la nieve puedes relajarte en el centro de bienestar —piscinas cubierta y exterior, bañera de hidromasaje al aire libre, sauna y baño de vapor— y después cenar en el restaurante georgiano. Habitaciones amplias y modernas, guardaesquís y terraza solárium lo convierten en una base cómoda y autosuficiente para una semana de esquí.",
     "amenities": ["Piscinas cubierta y exterior", "Spa, sauna y jacuzzi", "Gimnasio", "Restaurante y bar", "Wi-Fi gratuito", "Terraza solárium"],

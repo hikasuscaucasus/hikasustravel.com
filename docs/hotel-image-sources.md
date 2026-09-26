@@ -812,3 +812,17 @@ Facts cross-checked across several current listing pages (the former official do
 | Shah Palace Hotel | Breakfast buffet | `shah-palace-hotel-breakfast.webp` | 1024x683 |
 | Shah Palace Hotel | Fitness room | `shah-palace-hotel-gym.webp` | 1024x768 |
 | Shah Palace Hotel | Sauna | `shah-palace-hotel-sauna.webp` | 1024x683 |
+
+
+## Midway Park Hotel gallery added 2026-09-26 (owner-supplied photos)
+
+Source: `Images for tours/Hotels/Midway Park Hotel Baku` (owner-approved). Converted to WebP q82 at source width (no upscaling).
+
+Identity: the exterior photo shows the sign "MIDWAY PARK HOTEL"; current listings (Expedia, Hotels.com, Booking, Agoda) carry "Midway Park Hotel" separately from "Midway Baku Boutique Hotel" (midwaybaku.com, 19 Samed Vurgun Street), which is a different property and has no record here. Facts kept: close to Nizami Street and the Baku City Circuit, restaurant with breakfast buffet, free Wi-Fi, 24-hour front desk. Bar, terrace, room service, star rating and the street address could not be reconfirmed and are omitted.
+
+| Hotel | Category | Local file | Size |
+|---|---|---|---|
+| Midway Park Hotel | Exterior | `midway-park-hotel-exterior.webp` | 1024x765 |
+| Midway Park Hotel | Room | `midway-park-hotel-room.webp` | 1024x765 |
+| Midway Park Hotel | Bathroom | `midway-park-hotel-bathroom.webp` | 1024x765 |
+| Midway Park Hotel | Breakfast buffet | `midway-park-hotel-breakfast.webp` | 1024x765 |

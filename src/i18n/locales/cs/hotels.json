@@ -284,6 +284,17 @@
       "Dřevěná sauna, Shah Palace Hotel v Baku, Ázerbájdžán"
     ]
   },
+  "Midway Park Hotel": {
+    "description": "Midway Park Hotel se nachází v Baku, poblíž ulice Nizami a okruhu Baku City Circuit. V hotelu je restaurace se snídaňovým bufetem, bezplatné Wi-Fi a recepce otevřená 24 hodin denně.",
+    "amenities": ["Restaurace a snídaňový bufet", "Wi-Fi zdarma", "Recepce 24 hodin denně"],
+    "locationHighlights": ["Nedaleko ulice Nizami", "V blízkosti okruhu Baku City Circuit"],
+    "imageAlts": [
+      "Vchod s nápisem hotelu, Midway Park Hotel v Baku, Ázerbájdžán",
+      "Hotelový pokoj s manželskou postelí a psacím stolem, Midway Park Hotel v Baku, Ázerbájdžán",
+      "Koupelna se sprchovým koutem a umyvadlem s mramorovou deskou, Midway Park Hotel v Baku, Ázerbájdžán",
+      "Snídaňový bufet, Midway Park Hotel v Baku, Ázerbájdžán"
+    ]
+  },
   "Gudauri Lodge": {
     "description": "Moderní pětihvězdičková horská lodge přímo u sjezdovek v centru Gudauri se skutečným přístupem ski-in, ski-out. Po dni na sněhu se můžete uvolnit ve wellness centru — vnitřní i venkovní bazén, venkovní vířivka, sauna a parní lázeň — a poté povečeřet v gruzínské restauraci. Prostorné moderní pokoje, lyžárna a sluneční terasa z ní dělají pohodlnou soběstačnou základnu pro lyžařský týden.",
     "amenities": ["Vnitřní a venkovní bazén", "Spa, sauna a vířivka", "Fitness centrum", "Restaurace a bar", "Wi-Fi zdarma", "Sluneční terasa"],

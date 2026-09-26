@@ -284,6 +284,17 @@
       "Houten sauna, Shah Palace Hotel in Bakoe, Azerbeidzjan"
     ]
   },
+  "Midway Park Hotel": {
+    "description": "Het Midway Park Hotel ligt in Bakoe, vlak bij de Nizamistraat en het Baku City Circuit. Het hotel heeft een restaurant met ontbijtbuffet, gratis wifi en een receptie die 24 uur per dag bezet is.",
+    "amenities": ["Restaurant en ontbijtbuffet", "Gratis wifi", "Receptie 24 uur per dag"],
+    "locationHighlights": ["Vlak bij de Nizamistraat", "In de buurt van het Baku City Circuit"],
+    "imageAlts": [
+      "Ingang met hotelbord, Midway Park Hotel in Bakoe, Azerbeidzjan",
+      "Gastenkamer met tweepersoonsbed en bureau, Midway Park Hotel in Bakoe, Azerbeidzjan",
+      "Badkamer met douche en wastafel met marmeren blad, Midway Park Hotel in Bakoe, Azerbeidzjan",
+      "Ontbijtbuffet, Midway Park Hotel in Bakoe, Azerbeidzjan"
+    ]
+  },
   "Gudauri Lodge": {
     "description": "Een eigentijdse vijfsterren-berglodge direct aan de pistes in het centrum van Gudauri, met echte ski-in-ski-outtoegang. Na een dag in de sneeuw ontspan je in het wellnesscentrum — binnen- en buitenzwembad, buitenjacuzzi, sauna en stoombad — en dineer je in het Georgische restaurant. Ruime moderne kamers, een skidepot en een zonneterras maken het een comfortabele, zelfvoorzienende basis voor een skiweek.",
     "amenities": ["Binnen- & buitenzwembad", "Spa, sauna & jacuzzi", "Fitnessruimte", "Restaurant & bar", "Gratis wifi", "Zonneterras"],

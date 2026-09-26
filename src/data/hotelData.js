@@ -383,6 +383,25 @@ const hotelData = {
       'Central atrium with arched galleries',
     ],
   },
+  'Midway Park Hotel': {
+    images: [
+      // Owner-supplied photos (Images for tours/Hotels/Midway Park Hotel Baku), shown in this order.
+      { src: '/images/hotels/midway-park-hotel-exterior.webp', alt: 'Entrance with the hotel sign at Midway Park Hotel in Baku, Azerbaijan', category: 'Exterior' },
+      { src: '/images/hotels/midway-park-hotel-room.webp', alt: 'Guest room with a double bed and a desk at Midway Park Hotel in Baku, Azerbaijan', category: 'Room' },
+      { src: '/images/hotels/midway-park-hotel-bathroom.webp', alt: 'Guest bathroom with a shower and marble-topped vanity at Midway Park Hotel in Baku, Azerbaijan', category: 'Bathroom' },
+      { src: '/images/hotels/midway-park-hotel-breakfast.webp', alt: 'Breakfast buffet at Midway Park Hotel in Baku, Azerbaijan', category: 'Breakfast buffet' },
+    ],
+    description: 'Midway Park Hotel is in Baku, close to Nizami Street and the Baku City Circuit. The hotel has a restaurant serving a breakfast buffet, free Wi-Fi and a 24-hour front desk.',
+    amenities: [
+      { icon: 'restaurant', label: 'Restaurant & Breakfast Buffet' },
+      { icon: 'wifi', label: 'Free Wi-Fi' },
+      { icon: 'concierge', label: '24-Hour Front Desk' },
+    ],
+    locationHighlights: [
+      'Close to Nizami Street',
+      'Near the Baku City Circuit',
+    ],
+  },
   'Gudauri Lodge': {
     images: [
       // Owner-supplied photos (Images for tours/Hotels/Gudauri Lodge), shown in this order.
