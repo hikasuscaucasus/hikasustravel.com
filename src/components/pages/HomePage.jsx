@@ -47,14 +47,11 @@ function tf(t, key, fallback) {
   return val === key ? fallback : val
 }
 
-// `extraTours` lets Armenia's panel surface the 10-Day Georgia and Armenia
-// combined tour (country:"caucasus", so `featuredToursFor('armenia')` alone
-// never returns it) without changing what Georgia/Caucasus show.
 // `guideLink`/`destinationLink` add the blog-guide and destination-hub CTAs
 // Armenia and Azerbaijan need so their tabs are never a dead end, while
 // Georgia/Caucasus (which pass neither) render exactly as before.
-function FeaturedCountryPanel({ country, comingSoonKey, t, tourTranslations, seeAllHref, seeAllLabel, extraTours = [], guideLink, destinationLink }) {
-  const countryTours = [...featuredToursFor(country), ...extraTours]
+function FeaturedCountryPanel({ country, comingSoonKey, t, tourTranslations, seeAllHref, seeAllLabel, guideLink, destinationLink }) {
+  const countryTours = featuredToursFor(country)
   const hasLinks = Boolean(guideLink || destinationLink)
 
   if (!countryTours.length && !hasLinks) {
@@ -118,10 +115,6 @@ export default function HomePage() {
   }
 
   const groupTours = tours.filter((tour) => tour.type === 'group')
-  // Available now (unlike a standalone Armenia tour), so it belongs on
-  // Armenia's tab even though `featuredToursFor('armenia')` alone would never
-  // surface a tour whose `country` is "caucasus".
-  const georgiaArmeniaTour = tours.find((tour) => tour.slug === '10-day-georgia-armenia-tour')
 
   const featuredTabs = [
     {
@@ -146,7 +139,6 @@ export default function HomePage() {
           comingSoonKey="home.featuredComingSoonArmenia"
           t={t}
           tourTranslations={tourTranslations}
-          extraTours={georgiaArmeniaTour ? [georgiaArmeniaTour] : []}
           guideLink={{ to: '/blog/ultimate-guide-to-traveling-to-armenia' }}
           destinationLink={{ to: '/armenia' }}
         />
