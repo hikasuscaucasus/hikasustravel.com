@@ -178,10 +178,16 @@
     "amenities": ["Vnitřní a venkovní bazén", "Spa, sauna a vířivka", "Fitness centrum", "Restaurace a bar", "Wi-Fi zdarma", "Sluneční terasa"],
     "locationHighlights": ["Ski-in, ski-out — přímo u sjezdovek", "V centru Gudauri, hned vedle vleků", "Wellness centrum s vnitřním i venkovním bazénem"],
     "imageAlts": [
-      "Exteriér Gudauri Lodge pod kavkazskými štíty v Gudauri, Gruzie",
-      "Knihovna a odpočinkový prostor v Gudauri Lodge",
-      "Moderní dvoulůžkový pokoj v Gudauri Lodge",
-      "Obývací část apartmá v Gudauri Lodge s výhledem na zasněžené hory"
+      "Exteriér Gudauri Lodge v Gudauri, Gruzie",
+      "Lobby a posezení v Gudauri Lodge v Gudauri, Gruzie",
+      "Hotelový pokoj s výhledem na hory v Gudauri Lodge v Gudauri, Gruzie",
+      "Koupelna hotelového pokoje v Gudauri Lodge v Gudauri, Gruzie",
+      "Snídaňový bufet v Gudauri Lodge v Gudauri, Gruzie",
+      "Vnitřní bazén v Gudauri Lodge v Gudauri, Gruzie",
+      "Sauna v Gudauri Lodge v Gudauri, Gruzie",
+      "Fitness v Gudauri Lodge v Gudauri, Gruzie",
+      "Terasa s výhledem na hory u Gudauri Lodge v Gudauri, Gruzie",
+      "Venkovní bazén s výhledem na zasněžené hory u Gudauri Lodge v Gudauri, Gruzie"
     ]
   },
   "Marco Polo": {

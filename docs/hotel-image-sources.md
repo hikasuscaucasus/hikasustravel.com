@@ -622,3 +622,21 @@ this file's other garden/terrace shots).
 |---|---|---|---|
 | Hotel & Wine Cellar ARGE | front yard | `hotel-arge-5.webp` | 1200x800, 312 KB |
 | Hotel & Wine Cellar ARGE | swimming pool | `hotel-arge-6.webp` | 1024x683, 75 KB |
+
+
+## Gudauri Lodge gallery replaced 2026-09-26 (owner-supplied photos)
+
+Source: `Images for tours/Hotels/Gudauri Lodge/` (owner-approved). Converted to WebP q82 at source width (no upscaling). Old `gudauri-lodge*.webp` files removed (orphaned).
+
+| Hotel | Category | Local file | Size |
+|---|---|---|---|
+| Gudauri Lodge | Exterior | `gudauri-lodge-exterior.webp` | 1024x683 |
+| Gudauri Lodge | Lobby | `gudauri-lodge-lobby.webp` | 1024x668 |
+| Gudauri Lodge | Room | `gudauri-lodge-room.webp` | 1024x683 |
+| Gudauri Lodge | Bathroom | `gudauri-lodge-bathroom.webp` | 1024x683 |
+| Gudauri Lodge | Breakfast buffet | `gudauri-lodge-breakfast.webp` | 996x768 |
+| Gudauri Lodge | Indoor pool | `gudauri-lodge-indoor-pool.webp` | 1024x595 |
+| Gudauri Lodge | Sauna | `gudauri-lodge-sauna.webp` | 1024x727 |
+| Gudauri Lodge | Fitness room | `gudauri-lodge-gym.webp` | 1024x737 |
+| Gudauri Lodge | Terrace | `gudauri-lodge-terrace.webp` | 1024x683 |
+| Gudauri Lodge | Outdoor pool | `gudauri-lodge-outdoor-pool.webp` | 1024x717 |

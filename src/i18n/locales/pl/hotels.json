@@ -178,10 +178,16 @@
     "amenities": ["Baseny kryty i odkryty", "Spa, sauna i jacuzzi", "Siłownia", "Restauracja i bar", "Bezpłatne Wi-Fi", "Taras słoneczny"],
     "locationHighlights": ["Ski-in, ski-out — tuż przy stokach", "W centrum Gudauri, obok wyciągów", "Strefa wellness z basenem krytym i odkrytym"],
     "imageAlts": [
-      "Budynek Gudauri Lodge pod szczytami Kaukazu w Gudauri, Gruzja",
-      "Biblioteka i strefa wypoczynkowa w Gudauri Lodge",
-      "Nowoczesny pokój dwuosobowy w Gudauri Lodge",
-      "Salon apartamentu w Gudauri Lodge z widokiem na ośnieżone góry"
+      "Budynek Gudauri Lodge w Gudauri, Gruzja",
+      "Lobby i strefa wypoczynkowa w Gudauri Lodge w Gudauri, Gruzja",
+      "Pokój gościnny z widokiem na góry w Gudauri Lodge w Gudauri, Gruzja",
+      "Łazienka pokoju gościnnego w Gudauri Lodge w Gudauri, Gruzja",
+      "Bufet śniadaniowy w Gudauri Lodge w Gudauri, Gruzja",
+      "Basen kryty w Gudauri Lodge w Gudauri, Gruzja",
+      "Sauna w Gudauri Lodge w Gudauri, Gruzja",
+      "Siłownia w Gudauri Lodge w Gudauri, Gruzja",
+      "Taras z widokiem na góry przy Gudauri Lodge w Gudauri, Gruzja",
+      "Basen zewnętrzny z widokiem na ośnieżone góry przy Gudauri Lodge w Gudauri, Gruzja"
     ]
   },
   "Marco Polo": {

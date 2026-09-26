@@ -222,15 +222,17 @@ const hotelData = {
   },
   'Gudauri Lodge': {
     images: [
-      // Ordered exterior / lobby / standard room, the order the modal shows.
-      // The previous lead image showed the building as a dark sliver against
-      // the mountain; this one, from the hotel's own site, actually identifies
-      // the property. No guest-bathroom photograph is published anywhere on
-      // gudaurilodge.com, so that category is still outstanding.
-      { src: '/images/hotels/gudauri-lodge-5.webp', alt: 'Exterior of Gudauri Lodge below the Caucasus peaks in Gudauri, Georgia', category: 'Exterior' },
-      { src: '/images/hotels/gudauri-lodge-4.webp', alt: 'Library lounge at Gudauri Lodge in Gudauri, Georgia', category: 'Library lounge' },
-      { src: '/images/hotels/gudauri-lodge-3.webp', alt: 'Standard twin guest room at Gudauri Lodge in Gudauri, Georgia', category: 'Room' },
-      { src: '/images/hotels/gudauri-lodge-2.webp', alt: 'Suite living area with mountain views at Gudauri Lodge in Gudauri, Georgia', category: 'Suite living area' },
+      // Owner-supplied photos (Images for tours/Hotels/Gudauri Lodge), shown in this order.
+      { src: '/images/hotels/gudauri-lodge-exterior.webp', alt: 'Exterior of Gudauri Lodge in Gudauri, Georgia', category: 'Exterior' },
+      { src: '/images/hotels/gudauri-lodge-lobby.webp', alt: 'Lobby and lounge at Gudauri Lodge in Gudauri, Georgia', category: 'Lobby' },
+      { src: '/images/hotels/gudauri-lodge-room.webp', alt: 'Guest room with mountain view at Gudauri Lodge in Gudauri, Georgia', category: 'Room' },
+      { src: '/images/hotels/gudauri-lodge-bathroom.webp', alt: 'Guest bathroom at Gudauri Lodge in Gudauri, Georgia', category: 'Bathroom' },
+      { src: '/images/hotels/gudauri-lodge-breakfast.webp', alt: 'Breakfast buffet at Gudauri Lodge in Gudauri, Georgia', category: 'Breakfast buffet' },
+      { src: '/images/hotels/gudauri-lodge-indoor-pool.webp', alt: 'Indoor pool at Gudauri Lodge in Gudauri, Georgia', category: 'Indoor pool' },
+      { src: '/images/hotels/gudauri-lodge-sauna.webp', alt: 'Sauna at Gudauri Lodge in Gudauri, Georgia', category: 'Sauna' },
+      { src: '/images/hotels/gudauri-lodge-gym.webp', alt: 'Fitness room at Gudauri Lodge in Gudauri, Georgia', category: 'Fitness room' },
+      { src: '/images/hotels/gudauri-lodge-terrace.webp', alt: 'Terrace with mountain views at Gudauri Lodge in Gudauri, Georgia', category: 'Terrace' },
+      { src: '/images/hotels/gudauri-lodge-outdoor-pool.webp', alt: 'Outdoor pool with snowy mountain views at Gudauri Lodge in Gudauri, Georgia', category: 'Outdoor pool' },
     ],
     stars: 5,
     description: 'A contemporary five-star mountain lodge set right beside the pistes in the center of Gudauri, with genuine ski-in, ski-out access. After a day on the snow you can unwind in the wellness center — indoor and outdoor pools, an outdoor hot tub, sauna and steam room — then dine in the signature Georgian restaurant. Spacious modern rooms, a ski depot and a sun terrace make it a comfortable, self-contained base for a ski week.',
