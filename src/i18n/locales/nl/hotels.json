@@ -270,6 +270,20 @@
       "Fitnessruimte, Mövenpick Winter Park Baku in Bakoe, Azerbeidzjan"
     ]
   },
+  "Shah Palace Hotel": {
+    "description": "Het Shah Palace Hotel is een 4-sterrenhotel in de historische oude stad van Bakoe (Icherisheher), op korte loopafstand van metrostation Icheri Sheher. De klassiek ingerichte kamers en de traditionele decoratie liggen rond een centraal atrium met galerijen met bogen. Het hotel heeft een restaurant, een fitnessruimte, een sauna en wifi.",
+    "amenities": ["Restaurant", "Fitnessruimte", "Sauna", "Wifi"],
+    "locationHighlights": ["In het hart van de oude stad van Bakoe (Icherisheher)", "Op een paar stappen van metrostation Icheri Sheher", "Centraal atrium met galerijen met bogen"],
+    "imageAlts": [
+      "Buitenaanzicht met rode luifels en balkons met klimplanten, Shah Palace Hotel in Bakoe, Azerbeidzjan",
+      "Centraal atrium met zitplekken en galerijen met bogen, Shah Palace Hotel in Bakoe, Azerbeidzjan",
+      "Gastenkamer met tweepersoonsbed en klassiek meubilair, Shah Palace Hotel in Bakoe, Azerbeidzjan",
+      "Badkamer met hoekdouche, Shah Palace Hotel in Bakoe, Azerbeidzjan",
+      "Ontbijtbuffet, Shah Palace Hotel in Bakoe, Azerbeidzjan",
+      "Fitnessruimte, Shah Palace Hotel in Bakoe, Azerbeidzjan",
+      "Houten sauna, Shah Palace Hotel in Bakoe, Azerbeidzjan"
+    ]
+  },
   "Gudauri Lodge": {
     "description": "Een eigentijdse vijfsterren-berglodge direct aan de pistes in het centrum van Gudauri, met echte ski-in-ski-outtoegang. Na een dag in de sneeuw ontspan je in het wellnesscentrum — binnen- en buitenzwembad, buitenjacuzzi, sauna en stoombad — en dineer je in het Georgische restaurant. Ruime moderne kamers, een skidepot en een zonneterras maken het een comfortabele, zelfvoorzienende basis voor een skiweek.",
     "amenities": ["Binnen- & buitenzwembad", "Spa, sauna & jacuzzi", "Fitnessruimte", "Restaurant & bar", "Gratis wifi", "Zonneterras"],

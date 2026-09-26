@@ -358,6 +358,31 @@ const hotelData = {
       'Restaurant with city and sea views',
     ],
   },
+  'Shah Palace Hotel': {
+    images: [
+      // Owner-supplied photos (Images for tours/Hotels/Shah Palace Hotel Baku), shown in this order.
+      { src: '/images/hotels/shah-palace-hotel-exterior.webp', alt: 'Exterior with red awnings and vine-covered balconies of Shah Palace Hotel in Baku, Azerbaijan', category: 'Exterior' },
+      { src: '/images/hotels/shah-palace-hotel-atrium.webp', alt: 'Central atrium with seating and arched galleries at Shah Palace Hotel in Baku, Azerbaijan', category: 'Atrium' },
+      { src: '/images/hotels/shah-palace-hotel-room.webp', alt: 'Guest room with a double bed and classic-style furniture at Shah Palace Hotel in Baku, Azerbaijan', category: 'Room' },
+      { src: '/images/hotels/shah-palace-hotel-bathroom.webp', alt: 'Guest bathroom with a corner shower at Shah Palace Hotel in Baku, Azerbaijan', category: 'Bathroom' },
+      { src: '/images/hotels/shah-palace-hotel-breakfast.webp', alt: 'Breakfast buffet at Shah Palace Hotel in Baku, Azerbaijan', category: 'Breakfast buffet' },
+      { src: '/images/hotels/shah-palace-hotel-gym.webp', alt: 'Fitness room at Shah Palace Hotel in Baku, Azerbaijan', category: 'Fitness room' },
+      { src: '/images/hotels/shah-palace-hotel-sauna.webp', alt: 'Wooden sauna at Shah Palace Hotel in Baku, Azerbaijan', category: 'Sauna' },
+    ],
+    stars: 4,
+    description: 'Shah Palace Hotel is a 4-star hotel inside Baku\'s historic Old City (Icherisheher), a short walk from Icheri Sheher metro station. Its classic-style rooms and traditional decoration are arranged around a central atrium with arched galleries. The hotel has a restaurant, a fitness room, a sauna and Wi-Fi.',
+    amenities: [
+      { icon: 'restaurant', label: 'Restaurant' },
+      { icon: 'gym', label: 'Fitness Center' },
+      { icon: 'spa', label: 'Sauna' },
+      { icon: 'wifi', label: 'Wi-Fi' },
+    ],
+    locationHighlights: [
+      'In the heart of Baku\'s Old City (Icherisheher)',
+      'Steps from Icheri Sheher metro station',
+      'Central atrium with arched galleries',
+    ],
+  },
   'Gudauri Lodge': {
     images: [
       // Owner-supplied photos (Images for tours/Hotels/Gudauri Lodge), shown in this order.

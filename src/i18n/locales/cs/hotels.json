@@ -270,6 +270,20 @@
       "Fitness, Mövenpick Winter Park Baku v Baku, Ázerbájdžán"
     ]
   },
+  "Shah Palace Hotel": {
+    "description": "Shah Palace Hotel je čtyřhvězdičkový hotel v historickém Starém městě v Baku (Icherisheher), jen kousek od stanice metra Icheri Sheher. Klasicky zařízené pokoje a tradiční výzdoba jsou uspořádány kolem centrálního atria s obloukovými galeriemi. V hotelu je restaurace, fitness místnost, sauna a Wi-Fi.",
+    "amenities": ["Restaurace", "Fitness centrum", "Sauna", "Wi-Fi"],
+    "locationHighlights": ["V srdci Starého města v Baku (Icherisheher)", "Několik kroků od stanice metra Icheri Sheher", "Centrální atrium s obloukovými galeriemi"],
+    "imageAlts": [
+      "Exteriér s červenými markýzami a balkony porostlými popínavými rostlinami, Shah Palace Hotel v Baku, Ázerbájdžán",
+      "Centrální atrium s posezením a obloukovými galeriemi, Shah Palace Hotel v Baku, Ázerbájdžán",
+      "Hotelový pokoj s manželskou postelí a klasickým nábytkem, Shah Palace Hotel v Baku, Ázerbájdžán",
+      "Koupelna s rohovým sprchovým koutem, Shah Palace Hotel v Baku, Ázerbájdžán",
+      "Snídaňový bufet, Shah Palace Hotel v Baku, Ázerbájdžán",
+      "Fitness, Shah Palace Hotel v Baku, Ázerbájdžán",
+      "Dřevěná sauna, Shah Palace Hotel v Baku, Ázerbájdžán"
+    ]
+  },
   "Gudauri Lodge": {
     "description": "Moderní pětihvězdičková horská lodge přímo u sjezdovek v centru Gudauri se skutečným přístupem ski-in, ski-out. Po dni na sněhu se můžete uvolnit ve wellness centru — vnitřní i venkovní bazén, venkovní vířivka, sauna a parní lázeň — a poté povečeřet v gruzínské restauraci. Prostorné moderní pokoje, lyžárna a sluneční terasa z ní dělají pohodlnou soběstačnou základnu pro lyžařský týden.",
     "amenities": ["Vnitřní a venkovní bazén", "Spa, sauna a vířivka", "Fitness centrum", "Restaurace a bar", "Wi-Fi zdarma", "Sluneční terasa"],

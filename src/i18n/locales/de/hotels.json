@@ -270,6 +270,20 @@
       "Fitnessraum, Mövenpick Winter Park Baku in Baku, Aserbaidschan"
     ]
   },
+  "Shah Palace Hotel": {
+    "description": "Das Shah Palace Hotel ist ein 4-Sterne-Hotel in der historischen Altstadt von Baku (Icherisheher), nur einen kurzen Fußweg von der Metrostation Icheri Sheher entfernt. Die klassisch eingerichteten Zimmer und die traditionelle Dekoration gruppieren sich um ein zentrales Atrium mit Bogengalerien. Zum Hotel gehören ein Restaurant, ein Fitnessraum, eine Sauna und WLAN.",
+    "amenities": ["Restaurant", "Fitnesscenter", "Sauna", "WLAN"],
+    "locationHighlights": ["Im Herzen der Altstadt von Baku (Icherisheher)", "Nur wenige Schritte von der Metrostation Icheri Sheher", "Zentrales Atrium mit Bogengalerien"],
+    "imageAlts": [
+      "Außenansicht mit roten Markisen und berankten Balkonen, Shah Palace Hotel in Baku, Aserbaidschan",
+      "Zentrales Atrium mit Sitzbereichen und Bogengalerien, Shah Palace Hotel in Baku, Aserbaidschan",
+      "Gästezimmer mit Doppelbett und klassischen Möbeln, Shah Palace Hotel in Baku, Aserbaidschan",
+      "Gästebadezimmer mit Eckdusche, Shah Palace Hotel in Baku, Aserbaidschan",
+      "Frühstücksbuffet, Shah Palace Hotel in Baku, Aserbaidschan",
+      "Fitnessraum, Shah Palace Hotel in Baku, Aserbaidschan",
+      "Holzsauna, Shah Palace Hotel in Baku, Aserbaidschan"
+    ]
+  },
   "Gudauri Lodge": {
     "description": "Eine zeitgemäße Fünf-Sterne-Berglodge direkt an den Pisten im Zentrum von Gudauri, mit echtem Ski-in-Ski-out-Zugang. Nach einem Tag im Schnee entspannen Sie im Wellnessbereich – Innen- und Außenpool, Außenwhirlpool, Sauna und Dampfbad – und speisen anschließend im georgischen Restaurant. Geräumige moderne Zimmer, ein Skidepot und eine Sonnenterrasse machen sie zu einer eigenständigen Basis für eine Skiwoche.",
     "amenities": ["Innen- & Außenpool", "Spa, Sauna & Whirlpool", "Fitnessbereich", "Restaurant & Bar", "Kostenloses WLAN", "Sonnenterrasse"],

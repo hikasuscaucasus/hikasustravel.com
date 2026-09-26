@@ -270,6 +270,20 @@
       "Siłownia, Mövenpick Winter Park Baku w Baku, Azerbejdżan"
     ]
   },
+  "Shah Palace Hotel": {
+    "description": "Shah Palace Hotel to czterogwiazdkowy hotel w zabytkowym Starym Mieście w Baku (Icherisheher), tuż przy stacji metra Icheri Sheher. Klasycznie urządzone pokoje i tradycyjny wystrój otaczają centralne atrium z arkadowymi galeriami. W hotelu jest restauracja, siłownia, sauna i Wi-Fi.",
+    "amenities": ["Restauracja", "Siłownia", "Sauna", "Wi-Fi"],
+    "locationHighlights": ["W sercu Starego Miasta w Baku (Icherisheher)", "Kilka kroków od stacji metra Icheri Sheher", "Centralne atrium z arkadowymi galeriami"],
+    "imageAlts": [
+      "Budynek z czerwonymi markizami i balkonami porośniętymi pnączami, Shah Palace Hotel w Baku, Azerbejdżan",
+      "Centralne atrium z miejscami wypoczynku i arkadowymi galeriami, Shah Palace Hotel w Baku, Azerbejdżan",
+      "Pokój gościnny z łóżkiem małżeńskim i klasycznymi meblami, Shah Palace Hotel w Baku, Azerbejdżan",
+      "Łazienka z narożną kabiną prysznicową, Shah Palace Hotel w Baku, Azerbejdżan",
+      "Bufet śniadaniowy, Shah Palace Hotel w Baku, Azerbejdżan",
+      "Siłownia, Shah Palace Hotel w Baku, Azerbejdżan",
+      "Drewniana sauna, Shah Palace Hotel w Baku, Azerbejdżan"
+    ]
+  },
   "Gudauri Lodge": {
     "description": "Nowoczesny pięciogwiazdkowy górski lodge tuż przy stokach w centrum Gudauri, z prawdziwym dostępem ski-in, ski-out. Po dniu na śniegu można odpocząć w strefie wellness — baseny kryty i odkryty, jacuzzi na zewnątrz, sauna i łaźnia parowa — a potem zjeść kolację w gruzińskiej restauracji. Przestronne nowoczesne pokoje, narciarnia i taras słoneczny czynią z niego wygodną, samowystarczalną bazę na tydzień na nartach.",
     "amenities": ["Baseny kryty i odkryty", "Spa, sauna i jacuzzi", "Siłownia", "Restauracja i bar", "Bezpłatne Wi-Fi", "Taras słoneczny"],

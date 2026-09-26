@@ -270,6 +270,20 @@
       "Sala de fitness, Mövenpick Winter Park Baku en Bakú, Azerbaiyán"
     ]
   },
+  "Shah Palace Hotel": {
+    "description": "El Shah Palace Hotel es un hotel de 4 estrellas situado en la ciudad vieja histórica de Bakú (Icherisheher), a pocos pasos de la estación de metro Icheri Sheher. Sus habitaciones de estilo clásico y su decoración tradicional se distribuyen alrededor de un atrio central con galerías de arcos. El hotel cuenta con restaurante, sala de fitness, sauna y Wi-Fi.",
+    "amenities": ["Restaurante", "Gimnasio", "Sauna", "Wi-Fi"],
+    "locationHighlights": ["En el corazón de la ciudad vieja de Bakú (Icherisheher)", "A pocos pasos de la estación de metro Icheri Sheher", "Atrio central con galerías de arcos"],
+    "imageAlts": [
+      "Exterior con toldos rojos y balcones cubiertos de enredaderas, Shah Palace Hotel en Bakú, Azerbaiyán",
+      "Atrio central con zonas de estar y galerías de arcos, Shah Palace Hotel en Bakú, Azerbaiyán",
+      "Habitación con cama doble y mobiliario de estilo clásico, Shah Palace Hotel en Bakú, Azerbaiyán",
+      "Baño con ducha de esquina, Shah Palace Hotel en Bakú, Azerbaiyán",
+      "Buffet de desayuno, Shah Palace Hotel en Bakú, Azerbaiyán",
+      "Sala de fitness, Shah Palace Hotel en Bakú, Azerbaiyán",
+      "Sauna de madera, Shah Palace Hotel en Bakú, Azerbaiyán"
+    ]
+  },
   "Gudauri Lodge": {
     "description": "Un moderno lodge de montaña de cinco estrellas situado junto a las pistas en el centro de Gudauri, con auténtico acceso a pie de pista. Tras un día en la nieve puedes relajarte en el centro de bienestar —piscinas cubierta y exterior, bañera de hidromasaje al aire libre, sauna y baño de vapor— y después cenar en el restaurante georgiano. Habitaciones amplias y modernas, guardaesquís y terraza solárium lo convierten en una base cómoda y autosuficiente para una semana de esquí.",
     "amenities": ["Piscinas cubierta y exterior", "Spa, sauna y jacuzzi", "Gimnasio", "Restaurante y bar", "Wi-Fi gratuito", "Terraza solárium"],

@@ -795,3 +795,20 @@ Facts checked against the official Accor ALL page (all.accor.com/hotel/C0F3): 4 
 | Mövenpick Winter Park Baku | Room | `movenpick-winter-park-baku-room.webp` | 1024x768 |
 | Mövenpick Winter Park Baku | Bathroom | `movenpick-winter-park-baku-bathroom.webp` | 1024x768 |
 | Mövenpick Winter Park Baku | Fitness room | `movenpick-winter-park-baku-gym.webp` | 1024x768 |
+
+
+## Shah Palace Hotel gallery added 2026-09-26 (owner-supplied photos)
+
+Source: `Images for tours/Hotels/Shah Palace Hotel Baku` (owner-approved). Converted to WebP q82 at source width (no upscaling).
+
+Facts cross-checked across several current listing pages (the former official domain shahpalacehotel.com is parked and was NOT used): Old City / Icherisheher location, steps from Icheri Sheher metro, 4-star, central atrium, restaurant, gym, sauna, free Wi-Fi. Listings call the property "Shah Palace Luxury Museum Hotel (formerly Shah Palace Hotel)"; Hikasus keeps "Shah Palace Hotel" as used in the tour data. Room count (35 vs 47) and street-name spelling conflict between sources, so both are omitted.
+
+| Hotel | Category | Local file | Size |
+|---|---|---|---|
+| Shah Palace Hotel | Exterior | `shah-palace-hotel-exterior.webp` | 576x768 |
+| Shah Palace Hotel | Atrium | `shah-palace-hotel-atrium.webp` | 1023x768 |
+| Shah Palace Hotel | Room | `shah-palace-hotel-room.webp` | 1024x683 |
+| Shah Palace Hotel | Bathroom | `shah-palace-hotel-bathroom.webp` | 1024x768 |
+| Shah Palace Hotel | Breakfast buffet | `shah-palace-hotel-breakfast.webp` | 1024x683 |
+| Shah Palace Hotel | Fitness room | `shah-palace-hotel-gym.webp` | 1024x768 |
+| Shah Palace Hotel | Sauna | `shah-palace-hotel-sauna.webp` | 1024x683 |

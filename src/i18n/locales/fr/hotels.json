@@ -270,6 +270,20 @@
       "Salle de fitness, Mövenpick Winter Park Baku à Bakou, Azerbaïdjan"
     ]
   },
+  "Shah Palace Hotel": {
+    "description": "Le Shah Palace Hotel est un hôtel 4 étoiles situé dans la vieille ville historique de Bakou (Icherisheher), à quelques pas de la station de métro Icheri Sheher. Ses chambres de style classique et son décor traditionnel s'organisent autour d'un atrium central bordé de galeries à arcades. L'hôtel dispose d'un restaurant, d'une salle de fitness, d'un sauna et du Wi-Fi.",
+    "amenities": ["Restaurant", "Salle de fitness", "Sauna", "Wi-Fi"],
+    "locationHighlights": ["Au cœur de la vieille ville de Bakou (Icherisheher)", "À quelques pas de la station de métro Icheri Sheher", "Atrium central bordé de galeries à arcades"],
+    "imageAlts": [
+      "Extérieur avec auvents rouges et balcons couverts de vigne, Shah Palace Hotel à Bakou, Azerbaïdjan",
+      "Atrium central avec espaces salon et galeries à arcades, Shah Palace Hotel à Bakou, Azerbaïdjan",
+      "Chambre avec lit double et mobilier de style classique, Shah Palace Hotel à Bakou, Azerbaïdjan",
+      "Salle de bain avec douche d'angle, Shah Palace Hotel à Bakou, Azerbaïdjan",
+      "Buffet du petit-déjeuner, Shah Palace Hotel à Bakou, Azerbaïdjan",
+      "Salle de fitness, Shah Palace Hotel à Bakou, Azerbaïdjan",
+      "Sauna en bois, Shah Palace Hotel à Bakou, Azerbaïdjan"
+    ]
+  },
   "Gudauri Lodge": {
     "description": "Un lodge de montagne cinq étoiles contemporain, installé au bord des pistes au centre de Gudauri, avec un véritable accès ski aux pieds. Après une journée sur la neige, on se détend au centre de bien-être — piscines intérieure et extérieure, bain à remous extérieur, sauna et hammam — puis on dîne au restaurant géorgien. Chambres modernes et spacieuses, local à skis et terrasse ensoleillée en font une base autonome pour une semaine de ski.",
     "amenities": ["Piscines intérieure & extérieure", "Spa, sauna & bain à remous", "Salle de sport", "Restaurant & bar", "Wi-Fi gratuit", "Terrasse ensoleillée"],
