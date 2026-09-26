@@ -220,6 +220,23 @@ const hotelData = {
       'Rooftop terrace overlooking old Tbilisi',
     ],
   },
+  'Marxal Resort & Spa': {
+    images: [
+      // Owner-supplied photos (Images for tours/Hotels/Marxal Resort & Spa), shown in this order.
+      { src: '/images/hotels/marxal-resort-spa-exterior.webp', alt: 'Aerial view of the exterior of Marxal Resort & Spa in Sheki, Azerbaijan', category: 'Exterior' },
+      { src: '/images/hotels/marxal-resort-spa-lobby.webp', alt: 'Lobby lounge at Marxal Resort & Spa in Sheki, Azerbaijan', category: 'Lobby' },
+      { src: '/images/hotels/marxal-resort-spa-room.webp', alt: 'Guest room with a double bed at Marxal Resort & Spa in Sheki, Azerbaijan', category: 'Room' },
+      { src: '/images/hotels/marxal-resort-spa-bathroom.webp', alt: 'Guest bathroom with a bathtub and shower enclosure at Marxal Resort & Spa in Sheki, Azerbaijan', category: 'Bathroom' },
+      { src: '/images/hotels/marxal-resort-spa-breakfast.webp', alt: 'Breakfast buffet at Marxal Resort & Spa in Sheki, Azerbaijan', category: 'Breakfast buffet' },
+      { src: '/images/hotels/marxal-resort-spa-indoor-pool.webp', alt: 'Indoor pool under a glass dome at Marxal Resort & Spa in Sheki, Azerbaijan', category: 'Indoor pool' },
+      { src: '/images/hotels/marxal-resort-spa-outdoor-pool.webp', alt: 'Outdoor pool with sun loungers and parasols at Marxal Resort & Spa in Sheki, Azerbaijan', category: 'Outdoor pool' },
+      { src: '/images/hotels/marxal-resort-spa-spa-relaxation.webp', alt: 'Spa relaxation room with loungers at Marxal Resort & Spa in Sheki, Azerbaijan', category: 'Spa relaxation room' },
+      { src: '/images/hotels/marxal-resort-spa-sauna.webp', alt: 'Wooden sauna at Marxal Resort & Spa in Sheki, Azerbaijan', category: 'Sauna' },
+      { src: '/images/hotels/marxal-resort-spa-steam-room.webp', alt: 'Steam room with blue mosaic tiles at Marxal Resort & Spa in Sheki, Azerbaijan', category: 'Steam room' },
+      { src: '/images/hotels/marxal-resort-spa-massage-room.webp', alt: 'Massage room at Marxal Resort & Spa in Sheki, Azerbaijan', category: 'Massage room' },
+      { src: '/images/hotels/marxal-resort-spa-gym.webp', alt: 'Fitness room at Marxal Resort & Spa in Sheki, Azerbaijan', category: 'Fitness room' },
+    ],
+  },
   'Gudauri Lodge': {
     images: [
       // Owner-supplied photos (Images for tours/Hotels/Gudauri Lodge), shown in this order.

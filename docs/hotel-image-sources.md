@@ -670,3 +670,23 @@ Source: `Images for tours/Hotels/Gudauri Inn` (owner-approved). Converted to Web
 | Gudauri Inn | Breakfast buffet | `gudauri-inn-breakfast.webp` | 1024x684 |
 | Gudauri Inn | Indoor pool | `gudauri-inn-indoor-pool.webp` | 1280x1024 |
 | Gudauri Inn | Sauna | `gudauri-inn-sauna.webp` | 1280x1024 |
+
+
+## Marxal Resort & Spa gallery replaced 2026-09-26 (owner-supplied photos)
+
+Source: `Images for tours/Hotels/Marxal Resort & Spa` (owner-approved). Converted to WebP q82 at source width (no upscaling).
+
+| Hotel | Category | Local file | Size |
+|---|---|---|---|
+| Marxal Resort & Spa | Exterior | `marxal-resort-spa-exterior.webp` | 1024x767 |
+| Marxal Resort & Spa | Lobby | `marxal-resort-spa-lobby.webp` | 1024x683 |
+| Marxal Resort & Spa | Room | `marxal-resort-spa-room.webp` | 1024x683 |
+| Marxal Resort & Spa | Bathroom | `marxal-resort-spa-bathroom.webp` | 1024x768 |
+| Marxal Resort & Spa | Breakfast buffet | `marxal-resort-spa-breakfast.webp` | 1024x683 |
+| Marxal Resort & Spa | Indoor pool | `marxal-resort-spa-indoor-pool.webp` | 1024x455 |
+| Marxal Resort & Spa | Outdoor pool | `marxal-resort-spa-outdoor-pool.webp` | 1024x690 |
+| Marxal Resort & Spa | Spa relaxation room | `marxal-resort-spa-spa-relaxation.webp` | 1024x683 |
+| Marxal Resort & Spa | Sauna | `marxal-resort-spa-sauna.webp` | 1024x683 |
+| Marxal Resort & Spa | Steam room | `marxal-resort-spa-steam-room.webp` | 1024x683 |
+| Marxal Resort & Spa | Massage room | `marxal-resort-spa-massage-room.webp` | 1024x683 |
+| Marxal Resort & Spa | Fitness room | `marxal-resort-spa-gym.webp` | 1024x683 |
