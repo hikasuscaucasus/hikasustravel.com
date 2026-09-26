@@ -707,3 +707,15 @@ Source: `Images for tours/Hotels/Sheki Palace` (owner-approved). Converted to We
 | Sheki Palace | Fitness room | `sheki-palace-gym.webp` | 1024x683 |
 | Sheki Palace | Tennis court | `sheki-palace-tennis-court.webp` | 1024x683 |
 | Sheki Palace | Playground | `sheki-palace-playground.webp` | 1024x683 |
+
+
+## Macara gallery replaced 2026-09-26 (owner-supplied photos)
+
+Source: `Images for tours/Hotels/Macara Hotel Sheki` (owner-approved). Converted to WebP q82 at source width (no upscaling).
+
+| Hotel | Category | Local file | Size |
+|---|---|---|---|
+| Macara | Exterior | `macara-exterior.webp` | 867x768 |
+| Macara | Room | `macara-room.webp` | 1024x768 |
+| Macara | Bathroom | `macara-bathroom.webp` | 576x768 |
+| Macara | Breakfast buffet | `macara-breakfast.webp` | 1024x683 |

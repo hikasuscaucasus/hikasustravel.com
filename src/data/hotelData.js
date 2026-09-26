@@ -251,6 +251,15 @@ const hotelData = {
       { src: '/images/hotels/sheki-palace-playground.webp', alt: 'Children\'s playground at Sheki Palace in Sheki, Azerbaijan', category: 'Playground' },
     ],
   },
+  'Macara': {
+    images: [
+      // Owner-supplied photos (Images for tours/Hotels/Macara Hotel Sheki), shown in this order.
+      { src: '/images/hotels/macara-exterior.webp', alt: 'Exterior with a tiled arched facade of Macara in Sheki, Azerbaijan', category: 'Exterior' },
+      { src: '/images/hotels/macara-room.webp', alt: 'Guest room with a double bed at Macara in Sheki, Azerbaijan', category: 'Room' },
+      { src: '/images/hotels/macara-bathroom.webp', alt: 'Guest bathroom with a shower at Macara in Sheki, Azerbaijan', category: 'Bathroom' },
+      { src: '/images/hotels/macara-breakfast.webp', alt: 'Breakfast buffet at Macara in Sheki, Azerbaijan', category: 'Breakfast buffet' },
+    ],
+  },
   'Gudauri Lodge': {
     images: [
       // Owner-supplied photos (Images for tours/Hotels/Gudauri Lodge), shown in this order.
