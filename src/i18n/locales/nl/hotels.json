@@ -258,6 +258,18 @@
       "Fitnessruimte, Radisson Hotel Baku in Bakoe, Azerbeidzjan"
     ]
   },
+  "Mövenpick Winter Park Baku": {
+    "description": "Het Mövenpick Winter Park Baku is een 4-sterrenhotel in de wijk Nasimi, dicht bij het centrum van Bakoe, met de Nizamistraat, Winter Park en de oude stad op loopafstand. Het restaurant op de 15e verdieping biedt uitzicht op de stad en de zee, en de lobbybar is 24 uur per dag open. Gasten kunnen gebruikmaken van de fitnessruimte, de sauna en massagediensten.",
+    "amenities": ["Restaurant op de 15e verdieping", "Lobbybar 24 uur per dag", "Fitnessruimte", "Sauna en massage", "Wifi", "Parkeren bij het hotel"],
+    "locationHighlights": ["Nizamistraat, Winter Park en oude stad op loopafstand", "Twee metrostations op minder dan 10 minuten lopen", "Restaurant met uitzicht op stad en zee"],
+    "imageAlts": [
+      "Buitenaanzicht, Mövenpick Winter Park Baku in Bakoe, Azerbeidzjan",
+      "Lobby met koffiebar en fauteuils, Mövenpick Winter Park Baku in Bakoe, Azerbeidzjan",
+      "Gastenkamer met tweepersoonsbed, Mövenpick Winter Park Baku in Bakoe, Azerbeidzjan",
+      "Badkamer met glazen douche en wastafel, Mövenpick Winter Park Baku in Bakoe, Azerbeidzjan",
+      "Fitnessruimte, Mövenpick Winter Park Baku in Bakoe, Azerbeidzjan"
+    ]
+  },
   "Gudauri Lodge": {
     "description": "Een eigentijdse vijfsterren-berglodge direct aan de pistes in het centrum van Gudauri, met echte ski-in-ski-outtoegang. Na een dag in de sneeuw ontspan je in het wellnesscentrum — binnen- en buitenzwembad, buitenjacuzzi, sauna en stoombad — en dineer je in het Georgische restaurant. Ruime moderne kamers, een skidepot en een zonneterras maken het een comfortabele, zelfvoorzienende basis voor een skiweek.",
     "amenities": ["Binnen- & buitenzwembad", "Spa, sauna & jacuzzi", "Fitnessruimte", "Restaurant & bar", "Gratis wifi", "Zonneterras"],

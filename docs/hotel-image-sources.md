@@ -780,3 +780,18 @@ Facts checked against radissonhotels.com search results for the property (Azadli
 | Radisson Hotel Baku | Restaurant | `radisson-hotel-baku-restaurant.webp` | 1200x800 |
 | Radisson Hotel Baku | Breakfast buffet | `radisson-hotel-baku-breakfast.webp` | 1200x800 |
 | Radisson Hotel Baku | Fitness room | `radisson-hotel-baku-gym.webp` | 1200x800 |
+
+
+## Mövenpick Winter Park Baku gallery added 2026-09-26 (owner-supplied photos)
+
+Source: `Images for tours/Hotels/Movenpick Winter Park Baku` (owner-approved). Converted to WebP q82 at source width (no upscaling).
+
+Facts checked against the official Accor ALL page (all.accor.com/hotel/C0F3): 4 stars, 210 Mirzaagha Aliyev street, Nasimi district, 15th-floor restaurant with city and sea views, 24-hour lobby bar, fitness centre, sauna, massage, Wi-Fi, private parking, Nizami Street / Winter Park / Old City within walking distance, two metro stations under 10 minutes. The tour row spells the hotel "Mövenpick Hotel Winter Park Baku" (tour data untouched), so that spelling is a hotelAliases entry. Room count and floor count were not stated on the page and are omitted.
+
+| Hotel | Category | Local file | Size |
+|---|---|---|---|
+| Mövenpick Winter Park Baku | Exterior | `movenpick-winter-park-baku-exterior.webp` | 1024x768 |
+| Mövenpick Winter Park Baku | Lobby | `movenpick-winter-park-baku-lobby.webp` | 1024x768 |
+| Mövenpick Winter Park Baku | Room | `movenpick-winter-park-baku-room.webp` | 1024x768 |
+| Mövenpick Winter Park Baku | Bathroom | `movenpick-winter-park-baku-bathroom.webp` | 1024x768 |
+| Mövenpick Winter Park Baku | Fitness room | `movenpick-winter-park-baku-gym.webp` | 1024x768 |

@@ -258,6 +258,18 @@
       "Fitness, Radisson Hotel Baku v Baku, Ázerbájdžán"
     ]
   },
+  "Mövenpick Winter Park Baku": {
+    "description": "Mövenpick Winter Park Baku je čtyřhvězdičkový hotel ve čtvrti Nasimi, nedaleko centra Baku; ulice Nizami, Winter Park i Staré Město jsou v docházkové vzdálenosti. Restaurace v 15. patře nabízí výhled na město a moře a lobby bar je otevřený 24 hodin denně. Hosté mohou využít fitness centrum, saunu a masáže.",
+    "amenities": ["Restaurace v 15. patře", "Lobby bar 24 hodin denně", "Fitness centrum", "Sauna a masáže", "Wi-Fi", "Parkování v hotelu"],
+    "locationHighlights": ["Ulice Nizami, Winter Park a Staré Město v docházkové vzdálenosti", "Dvě stanice metra do 10 minut chůze", "Restaurace s výhledem na město a moře"],
+    "imageAlts": [
+      "Exteriér, Mövenpick Winter Park Baku v Baku, Ázerbájdžán",
+      "Lobby s kavárnou a křesly, Mövenpick Winter Park Baku v Baku, Ázerbájdžán",
+      "Hotelový pokoj s manželskou postelí, Mövenpick Winter Park Baku v Baku, Ázerbájdžán",
+      "Koupelna se skleněným sprchovým koutem a umyvadlem, Mövenpick Winter Park Baku v Baku, Ázerbájdžán",
+      "Fitness, Mövenpick Winter Park Baku v Baku, Ázerbájdžán"
+    ]
+  },
   "Gudauri Lodge": {
     "description": "Moderní pětihvězdičková horská lodge přímo u sjezdovek v centru Gudauri se skutečným přístupem ski-in, ski-out. Po dni na sněhu se můžete uvolnit ve wellness centru — vnitřní i venkovní bazén, venkovní vířivka, sauna a parní lázeň — a poté povečeřet v gruzínské restauraci. Prostorné moderní pokoje, lyžárna a sluneční terasa z ní dělají pohodlnou soběstačnou základnu pro lyžařský týden.",
     "amenities": ["Vnitřní a venkovní bazén", "Spa, sauna a vířivka", "Fitness centrum", "Restaurace a bar", "Wi-Fi zdarma", "Sluneční terasa"],

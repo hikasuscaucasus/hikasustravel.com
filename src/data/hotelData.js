@@ -333,6 +333,31 @@ const hotelData = {
       '255 rooms, studios and apartments',
     ],
   },
+  'Mövenpick Winter Park Baku': {
+    images: [
+      // Owner-supplied photos (Images for tours/Hotels/Movenpick Winter Park Baku), shown in this order.
+      { src: '/images/hotels/movenpick-winter-park-baku-exterior.webp', alt: 'Exterior of Mövenpick Winter Park Baku in Baku, Azerbaijan', category: 'Exterior' },
+      { src: '/images/hotels/movenpick-winter-park-baku-lobby.webp', alt: 'Lobby with a coffee bar and armchairs at Mövenpick Winter Park Baku in Baku, Azerbaijan', category: 'Lobby' },
+      { src: '/images/hotels/movenpick-winter-park-baku-room.webp', alt: 'Guest room with a double bed at Mövenpick Winter Park Baku in Baku, Azerbaijan', category: 'Room' },
+      { src: '/images/hotels/movenpick-winter-park-baku-bathroom.webp', alt: 'Guest bathroom with a glass shower and vanity at Mövenpick Winter Park Baku in Baku, Azerbaijan', category: 'Bathroom' },
+      { src: '/images/hotels/movenpick-winter-park-baku-gym.webp', alt: 'Fitness room at Mövenpick Winter Park Baku in Baku, Azerbaijan', category: 'Fitness room' },
+    ],
+    stars: 4,
+    description: 'Mövenpick Winter Park Baku is a 4-star hotel in the Nasimi district, close to the centre of Baku, with Nizami Street, Winter Park and the Old City within walking distance. The 15th-floor restaurant offers views of the city and the sea, and there is a 24-hour lobby bar. Guests can use the fitness centre, sauna and massage services.',
+    amenities: [
+      { icon: 'restaurant', label: '15th-Floor Restaurant' },
+      { icon: 'wine', label: '24-Hour Lobby Bar' },
+      { icon: 'gym', label: 'Fitness Center' },
+      { icon: 'spa', label: 'Sauna & Massage' },
+      { icon: 'wifi', label: 'Wi-Fi' },
+      { icon: 'parking', label: 'On-site Parking' },
+    ],
+    locationHighlights: [
+      'Nizami Street, Winter Park and the Old City within walking distance',
+      'Two metro stations within a 10-minute walk',
+      'Restaurant with city and sea views',
+    ],
+  },
   'Gudauri Lodge': {
     images: [
       // Owner-supplied photos (Images for tours/Hotels/Gudauri Lodge), shown in this order.
@@ -1171,6 +1196,7 @@ const hotelData = {
 // reintroduce an old name. An alias makes that resolve to the right hotel
 // instead of silently dropping back to unlinked plain text.
 export const hotelAliases = {
+  'Mövenpick Hotel Winter Park Baku': 'Mövenpick Winter Park Baku',
   'Hotel Arge': 'Hotel & Wine Cellar ARGE',
   // The 10-Day Georgia and Armenia Tour's accommodation table uses the
   // shorter "DoubleTree by Hilton" for the Premium cell (unchanged, per the

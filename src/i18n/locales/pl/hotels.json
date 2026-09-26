@@ -258,6 +258,18 @@
       "Siłownia, Radisson Hotel Baku w Baku, Azerbejdżan"
     ]
   },
+  "Mövenpick Winter Park Baku": {
+    "description": "Mövenpick Winter Park Baku to czterogwiazdkowy hotel w dzielnicy Nasimi, niedaleko centrum Baku; ulica Nizami, Winter Park i Stare Miasto są w zasięgu spaceru. Restauracja na 15. piętrze oferuje widok na miasto i morze, a bar w lobby jest czynny całą dobę. Goście mogą korzystać z centrum fitness, sauny i usług masażu.",
+    "amenities": ["Restauracja na 15. piętrze", "Bar w lobby czynny całą dobę", "Centrum fitness", "Sauna i masaże", "Wi-Fi", "Parking przy hotelu"],
+    "locationHighlights": ["Ulica Nizami, Winter Park i Stare Miasto w zasięgu spaceru", "Dwie stacje metra w mniej niż 10 minut spacerem", "Restauracja z widokiem na miasto i morze"],
+    "imageAlts": [
+      "Budynek, Mövenpick Winter Park Baku w Baku, Azerbejdżan",
+      "Lobby z kawiarnią i fotelami, Mövenpick Winter Park Baku w Baku, Azerbejdżan",
+      "Pokój gościnny z łóżkiem małżeńskim, Mövenpick Winter Park Baku w Baku, Azerbejdżan",
+      "Łazienka ze szklaną kabiną prysznicową i umywalką, Mövenpick Winter Park Baku w Baku, Azerbejdżan",
+      "Siłownia, Mövenpick Winter Park Baku w Baku, Azerbejdżan"
+    ]
+  },
   "Gudauri Lodge": {
     "description": "Nowoczesny pięciogwiazdkowy górski lodge tuż przy stokach w centrum Gudauri, z prawdziwym dostępem ski-in, ski-out. Po dniu na śniegu można odpocząć w strefie wellness — baseny kryty i odkryty, jacuzzi na zewnątrz, sauna i łaźnia parowa — a potem zjeść kolację w gruzińskiej restauracji. Przestronne nowoczesne pokoje, narciarnia i taras słoneczny czynią z niego wygodną, samowystarczalną bazę na tydzień na nartach.",
     "amenities": ["Baseny kryty i odkryty", "Spa, sauna i jacuzzi", "Siłownia", "Restauracja i bar", "Bezpłatne Wi-Fi", "Taras słoneczny"],
