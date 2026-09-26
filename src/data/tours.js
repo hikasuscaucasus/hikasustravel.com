@@ -20084,7 +20084,7 @@ export const tours = [
     ],
     "accommodations": [
       { "city": "Baku (3 nights)", "luxury": "Sheraton Baku Intourist, Boutique 19 Hotel", "midRange": "Radisson Hotel Baku, Mövenpick Hotel Winter Park Baku", "economy": "Shah Palace Hotel, Midway Park Hotel" },
-      { "city": "Sheki (1 night)", "luxury": "Marxal Resort & Spa", "midRange": "Sheki Palace, Macara", "economy": "Karavansaray, Old Town Sheki" },
+      { "city": "Sheki (1 night)", "luxury": "Marxal Resort & Spa", "midRange": "Sheki Palace, Macara", "economy": "Old Town Sheki" },
       { "city": "Telavi (2 nights)", "luxury": "Tsinandali Estate, A Radisson Collection Hotel", "midRange": "Park Hotel Tsinandali", "economy": "Hotel & Wine Cellar ARGE" },
       { "city": "Tbilisi (3 nights)", "luxury": "Rooms Hotel Tbilisi", "midRange": "Ibis Styles Tbilisi Center", "economy": "Ginger Hotel" },
       { "city": "Kazbegi (1 night)", "luxury": "Rooms Hotel Kazbegi", "midRange": "Northgate", "economy": "Hotel Horizon" },
