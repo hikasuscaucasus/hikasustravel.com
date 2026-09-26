@@ -210,6 +210,14 @@
       "Bufet śniadaniowy, Macara w Szeki, Azerbejdżan"
     ]
   },
+  "Old Town Sheki": {
+    "imageAlts": [
+      "Kamienna fasada z lampkami w nocy, Old Town Sheki w Szeki, Azerbejdżan",
+      "Recepcja z czerwonymi sofami i rzeźbioną ladą, Old Town Sheki w Szeki, Azerbejdżan",
+      "Pokój gościnny z łóżkiem małżeńskim, Old Town Sheki w Szeki, Azerbejdżan",
+      "Łazienka z prysznicem, Old Town Sheki w Szeki, Azerbejdżan"
+    ]
+  },
   "Gudauri Lodge": {
     "description": "Nowoczesny pięciogwiazdkowy górski lodge tuż przy stokach w centrum Gudauri, z prawdziwym dostępem ski-in, ski-out. Po dniu na śniegu można odpocząć w strefie wellness — baseny kryty i odkryty, jacuzzi na zewnątrz, sauna i łaźnia parowa — a potem zjeść kolację w gruzińskiej restauracji. Przestronne nowoczesne pokoje, narciarnia i taras słoneczny czynią z niego wygodną, samowystarczalną bazę na tydzień na nartach.",
     "amenities": ["Baseny kryty i odkryty", "Spa, sauna i jacuzzi", "Siłownia", "Restauracja i bar", "Bezpłatne Wi-Fi", "Taras słoneczny"],

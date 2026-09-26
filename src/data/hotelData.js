@@ -260,6 +260,15 @@ const hotelData = {
       { src: '/images/hotels/macara-breakfast.webp', alt: 'Breakfast buffet at Macara in Sheki, Azerbaijan', category: 'Breakfast buffet' },
     ],
   },
+  'Old Town Sheki': {
+    images: [
+      // Owner-supplied photos (Images for tours/Hotels/Old Town Sheki), shown in this order.
+      { src: '/images/hotels/old-town-sheki-exterior.webp', alt: 'Stone facade with string lights at night of Old Town Sheki in Sheki, Azerbaijan', category: 'Exterior' },
+      { src: '/images/hotels/old-town-sheki-lobby.webp', alt: 'Reception area with red sofas and a carved desk at Old Town Sheki in Sheki, Azerbaijan', category: 'Lobby' },
+      { src: '/images/hotels/old-town-sheki-room.webp', alt: 'Guest room with a double bed at Old Town Sheki in Sheki, Azerbaijan', category: 'Room' },
+      { src: '/images/hotels/old-town-sheki-bathroom.webp', alt: 'Guest bathroom with a shower at Old Town Sheki in Sheki, Azerbaijan', category: 'Bathroom' },
+    ],
+  },
   'Gudauri Lodge': {
     images: [
       // Owner-supplied photos (Images for tours/Hotels/Gudauri Lodge), shown in this order.

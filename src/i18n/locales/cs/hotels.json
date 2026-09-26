@@ -210,6 +210,14 @@
       "Snídaňový bufet, Macara v Šeki, Ázerbájdžán"
     ]
   },
+  "Old Town Sheki": {
+    "imageAlts": [
+      "Kamenná fasáda s řetězy světýlek v noci, Old Town Sheki v Šeki, Ázerbájdžán",
+      "Recepce s červenými pohovkami a vyřezávaným pultem, Old Town Sheki v Šeki, Ázerbájdžán",
+      "Hotelový pokoj s manželskou postelí, Old Town Sheki v Šeki, Ázerbájdžán",
+      "Koupelna se sprchovým koutem, Old Town Sheki v Šeki, Ázerbájdžán"
+    ]
+  },
   "Gudauri Lodge": {
     "description": "Moderní pětihvězdičková horská lodge přímo u sjezdovek v centru Gudauri se skutečným přístupem ski-in, ski-out. Po dni na sněhu se můžete uvolnit ve wellness centru — vnitřní i venkovní bazén, venkovní vířivka, sauna a parní lázeň — a poté povečeřet v gruzínské restauraci. Prostorné moderní pokoje, lyžárna a sluneční terasa z ní dělají pohodlnou soběstačnou základnu pro lyžařský týden.",
     "amenities": ["Vnitřní a venkovní bazén", "Spa, sauna a vířivka", "Fitness centrum", "Restaurace a bar", "Wi-Fi zdarma", "Sluneční terasa"],

@@ -719,3 +719,15 @@ Source: `Images for tours/Hotels/Macara Hotel Sheki` (owner-approved). Converted
 | Macara | Room | `macara-room.webp` | 1024x768 |
 | Macara | Bathroom | `macara-bathroom.webp` | 576x768 |
 | Macara | Breakfast buffet | `macara-breakfast.webp` | 1024x683 |
+
+
+## Old Town Sheki gallery replaced 2026-09-26 (owner-supplied photos)
+
+Source: `Images for tours/Hotels/Old Town Sheki` (owner-approved). Converted to WebP q82 at source width (no upscaling).
+
+| Hotel | Category | Local file | Size |
+|---|---|---|---|
+| Old Town Sheki | Exterior | `old-town-sheki-exterior.webp` | 1024x683 |
+| Old Town Sheki | Lobby | `old-town-sheki-lobby.webp` | 1024x576 |
+| Old Town Sheki | Room | `old-town-sheki-room.webp` | 1024x683 |
+| Old Town Sheki | Bathroom | `old-town-sheki-bathroom.webp` | 1024x683 |
