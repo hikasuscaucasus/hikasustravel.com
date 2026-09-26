@@ -244,6 +244,20 @@
       "Basen z leżakami pod szklanym dachem, Boutique 19 Hotel w Baku, Azerbejdżan"
     ]
   },
+  "Radisson Hotel Baku": {
+    "description": "Radisson Hotel Baku stoi nad nabrzeżem przy Azadlig Avenue 1, w pobliżu Baku Boulevard. Wśród 255 pokoi są pokoje Superior i Junior oraz studia i apartamenty z aneksem kuchennym. W hotelu działa całodzienna restauracja z barem Lagom, centrum fitness czynne całą dobę oraz elastyczne sale konferencyjne.",
+    "amenities": ["Restauracja i bar Lagom", "Centrum fitness czynne całą dobę"],
+    "locationHighlights": ["Nad nabrzeżem, w pobliżu Baku Boulevard", "255 pokoi, studiów i apartamentów"],
+    "imageAlts": [
+      "Budynek, Radisson Hotel Baku w Baku, Azerbejdżan",
+      "Lobby z niebieską sofą, Radisson Hotel Baku w Baku, Azerbejdżan",
+      "Pokój gościnny z łóżkiem małżeńskim, Radisson Hotel Baku w Baku, Azerbejdżan",
+      "Łazienka z umywalką, Radisson Hotel Baku w Baku, Azerbejdżan",
+      "Sala restauracji z pnączami, Radisson Hotel Baku w Baku, Azerbejdżan",
+      "Bufet śniadaniowy z samowarami, Radisson Hotel Baku w Baku, Azerbejdżan",
+      "Siłownia, Radisson Hotel Baku w Baku, Azerbejdżan"
+    ]
+  },
   "Gudauri Lodge": {
     "description": "Nowoczesny pięciogwiazdkowy górski lodge tuż przy stokach w centrum Gudauri, z prawdziwym dostępem ski-in, ski-out. Po dniu na śniegu można odpocząć w strefie wellness — baseny kryty i odkryty, jacuzzi na zewnątrz, sauna i łaźnia parowa — a potem zjeść kolację w gruzińskiej restauracji. Przestronne nowoczesne pokoje, narciarnia i taras słoneczny czynią z niego wygodną, samowystarczalną bazę na tydzień na nartach.",
     "amenities": ["Baseny kryty i odkryty", "Spa, sauna i jacuzzi", "Siłownia", "Restauracja i bar", "Bezpłatne Wi-Fi", "Taras słoneczny"],

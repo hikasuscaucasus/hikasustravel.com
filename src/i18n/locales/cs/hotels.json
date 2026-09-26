@@ -244,6 +244,20 @@
       "Bazén s lehátky pod skleněnou střechou, Boutique 19 Hotel v Baku, Ázerbájdžán"
     ]
   },
+  "Radisson Hotel Baku": {
+    "description": "Radisson Hotel Baku stojí na nábřeží na adrese Azadlig Avenue 1, poblíž Baku Boulevard. Mezi 255 pokoji najdete pokoje Superior a Junior, dále studia a apartmány s kuchyňským koutem. V hotelu je celodenní restaurace a bar Lagom, fitness centrum otevřené 24 hodin denně a variabilní prostory pro jednání.",
+    "amenities": ["Restaurace a bar Lagom", "Fitness centrum 24 hodin denně"],
+    "locationHighlights": ["Na nábřeží poblíž Baku Boulevard", "255 pokojů, studií a apartmánů"],
+    "imageAlts": [
+      "Exteriér, Radisson Hotel Baku v Baku, Ázerbájdžán",
+      "Lobby s modrou pohovkou, Radisson Hotel Baku v Baku, Ázerbájdžán",
+      "Hotelový pokoj s manželskou postelí, Radisson Hotel Baku v Baku, Ázerbájdžán",
+      "Koupelna s umyvadlem, Radisson Hotel Baku v Baku, Ázerbájdžán",
+      "Restaurace s popínavou zelení, Radisson Hotel Baku v Baku, Ázerbájdžán",
+      "Snídaňový bufet se samovary, Radisson Hotel Baku v Baku, Ázerbájdžán",
+      "Fitness, Radisson Hotel Baku v Baku, Ázerbájdžán"
+    ]
+  },
   "Gudauri Lodge": {
     "description": "Moderní pětihvězdičková horská lodge přímo u sjezdovek v centru Gudauri se skutečným přístupem ski-in, ski-out. Po dni na sněhu se můžete uvolnit ve wellness centru — vnitřní i venkovní bazén, venkovní vířivka, sauna a parní lázeň — a poté povečeřet v gruzínské restauraci. Prostorné moderní pokoje, lyžárna a sluneční terasa z ní dělají pohodlnou soběstačnou základnu pro lyžařský týden.",
     "amenities": ["Vnitřní a venkovní bazén", "Spa, sauna a vířivka", "Fitness centrum", "Restaurace a bar", "Wi-Fi zdarma", "Sluneční terasa"],

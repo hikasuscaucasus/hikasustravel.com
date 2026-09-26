@@ -763,3 +763,20 @@ Facts checked against the hotel's own site boutique19hotel.com (heritage buildin
 | Boutique 19 Hotel | Bathroom | `boutique-19-hotel-bathroom.webp` | 1024x683 |
 | Boutique 19 Hotel | Breakfast buffet | `boutique-19-hotel-breakfast.webp` | 1024x683 |
 | Boutique 19 Hotel | Pool | `boutique-19-hotel-pool.webp` | 1024x683 |
+
+
+## Radisson Hotel Baku gallery added 2026-09-26 (owner-supplied photos)
+
+Source: `Images for tours/Hotels/Radisson Hotel Baku` (owner-approved). Converted to WebP q82 at source width (no upscaling).
+
+Facts checked against radissonhotels.com search results for the property (Azadlig Avenue 1, seafront location near Baku Boulevard, 255 rooms incl. Superior/Junior rooms, studios and apartments with kitchenette, all-day Lagom restaurant and bar, 24/7 fitness centre, meeting spaces). The official page itself returned HTTP 403 to the fetcher, so free Wi-Fi, parking wording, check-in/out times, Caspian views and any star rating were NOT reconfirmed and are omitted. Source files were AVIF/WebP/JPEG; all converted to WebP.
+
+| Hotel | Category | Local file | Size |
+|---|---|---|---|
+| Radisson Hotel Baku | Exterior | `radisson-hotel-baku-exterior.webp` | 1024x683 |
+| Radisson Hotel Baku | Lobby | `radisson-hotel-baku-lobby.webp` | 1200x800 |
+| Radisson Hotel Baku | Room | `radisson-hotel-baku-room.webp` | 1200x800 |
+| Radisson Hotel Baku | Bathroom | `radisson-hotel-baku-bathroom.webp` | 1200x800 |
+| Radisson Hotel Baku | Restaurant | `radisson-hotel-baku-restaurant.webp` | 1200x800 |
+| Radisson Hotel Baku | Breakfast buffet | `radisson-hotel-baku-breakfast.webp` | 1200x800 |
+| Radisson Hotel Baku | Fitness room | `radisson-hotel-baku-gym.webp` | 1200x800 |

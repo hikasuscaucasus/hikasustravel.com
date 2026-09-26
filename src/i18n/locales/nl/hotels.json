@@ -244,6 +244,20 @@
       "Zwembad met ligbedden onder een glazen dak, Boutique 19 Hotel in Bakoe, Azerbeidzjan"
     ]
   },
+  "Radisson Hotel Baku": {
+    "description": "Het Radisson Hotel Baku ligt aan de kust op Azadlig Avenue 1, vlak bij Baku Boulevard. De 255 kamers omvatten Superior- en Junior-kamers, evenals studio's en appartementen met kitchenette. Het hotel heeft het de hele dag geopende restaurant en de bar Lagom, een fitnessruimte die 24 uur per dag open is en flexibele vergaderruimtes.",
+    "amenities": ["Restaurant en bar Lagom", "Fitnessruimte 24 uur per dag"],
+    "locationHighlights": ["Aan de kust, vlak bij Baku Boulevard", "255 kamers, studio's en appartementen"],
+    "imageAlts": [
+      "Buitenaanzicht, Radisson Hotel Baku in Bakoe, Azerbeidzjan",
+      "Lobbylounge met blauwe bank, Radisson Hotel Baku in Bakoe, Azerbeidzjan",
+      "Gastenkamer met tweepersoonsbed, Radisson Hotel Baku in Bakoe, Azerbeidzjan",
+      "Badkamer met wastafel, Radisson Hotel Baku in Bakoe, Azerbeidzjan",
+      "Restaurantzaal met klimplanten, Radisson Hotel Baku in Bakoe, Azerbeidzjan",
+      "Ontbijtbuffet met samovaren, Radisson Hotel Baku in Bakoe, Azerbeidzjan",
+      "Fitnessruimte, Radisson Hotel Baku in Bakoe, Azerbeidzjan"
+    ]
+  },
   "Gudauri Lodge": {
     "description": "Een eigentijdse vijfsterren-berglodge direct aan de pistes in het centrum van Gudauri, met echte ski-in-ski-outtoegang. Na een dag in de sneeuw ontspan je in het wellnesscentrum — binnen- en buitenzwembad, buitenjacuzzi, sauna en stoombad — en dineer je in het Georgische restaurant. Ruime moderne kamers, een skidepot en een zonneterras maken het een comfortabele, zelfvoorzienende basis voor een skiweek.",
     "amenities": ["Binnen- & buitenzwembad", "Spa, sauna & jacuzzi", "Fitnessruimte", "Restaurant & bar", "Gratis wifi", "Zonneterras"],

@@ -312,6 +312,27 @@ const hotelData = {
       'In the historic centre of Baku',
     ],
   },
+  'Radisson Hotel Baku': {
+    images: [
+      // Owner-supplied photos (Images for tours/Hotels/Radisson Hotel Baku), shown in this order.
+      { src: '/images/hotels/radisson-hotel-baku-exterior.webp', alt: 'Exterior of Radisson Hotel Baku in Baku, Azerbaijan', category: 'Exterior' },
+      { src: '/images/hotels/radisson-hotel-baku-lobby.webp', alt: 'Lobby lounge with a blue sofa at Radisson Hotel Baku in Baku, Azerbaijan', category: 'Lobby' },
+      { src: '/images/hotels/radisson-hotel-baku-room.webp', alt: 'Guest room with a double bed at Radisson Hotel Baku in Baku, Azerbaijan', category: 'Room' },
+      { src: '/images/hotels/radisson-hotel-baku-bathroom.webp', alt: 'Guest bathroom with a vanity at Radisson Hotel Baku in Baku, Azerbaijan', category: 'Bathroom' },
+      { src: '/images/hotels/radisson-hotel-baku-restaurant.webp', alt: 'Restaurant dining room with climbing plants at Radisson Hotel Baku in Baku, Azerbaijan', category: 'Restaurant' },
+      { src: '/images/hotels/radisson-hotel-baku-breakfast.webp', alt: 'Breakfast buffet with samovars at Radisson Hotel Baku in Baku, Azerbaijan', category: 'Breakfast buffet' },
+      { src: '/images/hotels/radisson-hotel-baku-gym.webp', alt: 'Fitness room at Radisson Hotel Baku in Baku, Azerbaijan', category: 'Fitness room' },
+    ],
+    description: 'Radisson Hotel Baku stands by the seafront at Azadlig Avenue 1, close to Baku Boulevard. Its 255 rooms include Superior and Junior rooms as well as studios and apartments with a kitchenette. The hotel has the all-day Lagom restaurant and bar, a fitness centre open 24 hours a day and flexible meeting spaces.',
+    amenities: [
+      { icon: 'restaurant', label: 'Lagom Restaurant & Bar' },
+      { icon: 'gym', label: '24-Hour Fitness Center' },
+    ],
+    locationHighlights: [
+      'By the seafront near Baku Boulevard',
+      '255 rooms, studios and apartments',
+    ],
+  },
   'Gudauri Lodge': {
     images: [
       // Owner-supplied photos (Images for tours/Hotels/Gudauri Lodge), shown in this order.

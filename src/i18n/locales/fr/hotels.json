@@ -244,6 +244,20 @@
       "Piscine avec transats sous une verrière, Boutique 19 Hotel à Bakou, Azerbaïdjan"
     ]
   },
+  "Radisson Hotel Baku": {
+    "description": "Le Radisson Hotel Baku se trouve en bord de mer, au 1 Azadlig Avenue, à proximité de Baku Boulevard. Ses 255 chambres comprennent des chambres Superior et Junior, ainsi que des studios et des appartements avec kitchenette. L'hôtel propose le restaurant-bar Lagom, ouvert toute la journée, une salle de fitness ouverte 24 h/24 et des salles de réunion modulables.",
+    "amenities": ["Restaurant et bar Lagom", "Salle de fitness 24 h/24"],
+    "locationHighlights": ["En bord de mer, près de Baku Boulevard", "255 chambres, studios et appartements"],
+    "imageAlts": [
+      "Extérieur, Radisson Hotel Baku à Bakou, Azerbaïdjan",
+      "Salon du hall avec canapé bleu, Radisson Hotel Baku à Bakou, Azerbaïdjan",
+      "Chambre avec lit double, Radisson Hotel Baku à Bakou, Azerbaïdjan",
+      "Salle de bain avec plan vasque, Radisson Hotel Baku à Bakou, Azerbaïdjan",
+      "Salle du restaurant avec plantes grimpantes, Radisson Hotel Baku à Bakou, Azerbaïdjan",
+      "Buffet du petit-déjeuner avec samovars, Radisson Hotel Baku à Bakou, Azerbaïdjan",
+      "Salle de fitness, Radisson Hotel Baku à Bakou, Azerbaïdjan"
+    ]
+  },
   "Gudauri Lodge": {
     "description": "Un lodge de montagne cinq étoiles contemporain, installé au bord des pistes au centre de Gudauri, avec un véritable accès ski aux pieds. Après une journée sur la neige, on se détend au centre de bien-être — piscines intérieure et extérieure, bain à remous extérieur, sauna et hammam — puis on dîne au restaurant géorgien. Chambres modernes et spacieuses, local à skis et terrasse ensoleillée en font une base autonome pour une semaine de ski.",
     "amenities": ["Piscines intérieure & extérieure", "Spa, sauna & bain à remous", "Salle de sport", "Restaurant & bar", "Wi-Fi gratuit", "Terrasse ensoleillée"],

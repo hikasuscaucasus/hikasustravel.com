@@ -244,6 +244,20 @@
       "Schwimmbecken mit Liegen unter einem Glasdach, Boutique 19 Hotel in Baku, Aserbaidschan"
     ]
   },
+  "Radisson Hotel Baku": {
+    "description": "Das Radisson Hotel Baku liegt an der Uferpromenade an der Azadlig Avenue 1, nahe dem Baku Boulevard. Die 255 Zimmer umfassen Superior- und Junior-Zimmer sowie Studios und Apartments mit Küchenzeile. Zum Hotel gehören das ganztägig geöffnete Restaurant mit Bar Lagom, ein rund um die Uhr geöffnetes Fitnesscenter und flexible Tagungsräume.",
+    "amenities": ["Restaurant & Bar Lagom", "Fitnesscenter rund um die Uhr"],
+    "locationHighlights": ["An der Uferpromenade, nahe dem Baku Boulevard", "255 Zimmer, Studios und Apartments"],
+    "imageAlts": [
+      "Außenansicht, Radisson Hotel Baku in Baku, Aserbaidschan",
+      "Lobby-Lounge mit blauem Sofa, Radisson Hotel Baku in Baku, Aserbaidschan",
+      "Gästezimmer mit Doppelbett, Radisson Hotel Baku in Baku, Aserbaidschan",
+      "Gästebadezimmer mit Waschtisch, Radisson Hotel Baku in Baku, Aserbaidschan",
+      "Speisesaal des Restaurants mit Kletterpflanzen, Radisson Hotel Baku in Baku, Aserbaidschan",
+      "Frühstücksbuffet mit Samowaren, Radisson Hotel Baku in Baku, Aserbaidschan",
+      "Fitnessraum, Radisson Hotel Baku in Baku, Aserbaidschan"
+    ]
+  },
   "Gudauri Lodge": {
     "description": "Eine zeitgemäße Fünf-Sterne-Berglodge direkt an den Pisten im Zentrum von Gudauri, mit echtem Ski-in-Ski-out-Zugang. Nach einem Tag im Schnee entspannen Sie im Wellnessbereich – Innen- und Außenpool, Außenwhirlpool, Sauna und Dampfbad – und speisen anschließend im georgischen Restaurant. Geräumige moderne Zimmer, ein Skidepot und eine Sonnenterrasse machen sie zu einer eigenständigen Basis für eine Skiwoche.",
     "amenities": ["Innen- & Außenpool", "Spa, Sauna & Whirlpool", "Fitnessbereich", "Restaurant & Bar", "Kostenloses WLAN", "Sonnenterrasse"],
