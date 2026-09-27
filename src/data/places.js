@@ -14254,39 +14254,67 @@ export const sites = [
     slug: 'svaneti-museum-history-ethnography', name: 'Svaneti Museum of History and Ethnography',
     parentType: 'city', parent: 'mestia', published: true,
     seoKey: 'svanetiMuseumHistoryEthnography', contentKey: 'svanetiMuseumHistoryEthnography',
-    // Hero: three medieval icons in the treasury hall — the museum's own subject IS
-    // its collection, so an interior treasury shot reads as the page's identity
-    // better than an exterior would. Native 3:2 (1536x1024), ladder 768/1200/1536,
-    // no upscale — matches SitePage's own default GALLERY_WIDTHS exactly.
-    image: '/images/files/svaneti-museum-treasury-icons-mestia-georgia-1536.webp',
-    imageAvif: '/images/files/svaneti-museum-treasury-icons-mestia-georgia-1536.avif',
+    // Hero: FIXED per owner instruction — the museum's actual exterior, its
+    // Georgian/English "SVANETI MUSEUM" signage clearly legible. Replaces the
+    // previous treasury-hall interior hero (now demoted to an in-body figure
+    // below, not discarded). Native 4:3 (1448x1086), ladder 768/1200/1448, no
+    // upscale — the standard house ladder.
+    image: '/images/files/svaneti-museum-exterior-mestia-georgia-1448.webp',
+    imageAvif: '/images/files/svaneti-museum-exterior-mestia-georgia-1448.avif',
     heroClass: 'hero--svaneti-museum',
-    heroPreload: '/images/files/svaneti-museum-treasury-icons-mestia-georgia-1200.avif',
-    ogImage: { src: '/images/files/svaneti-museum-treasury-icons-mestia-georgia-og-1200x630.jpg', width: 1200, height: 630 },
-    jsonLdImage: '/images/files/svaneti-museum-treasury-icons-mestia-georgia-og-1200x630.jpg',
+    heroPreload: '/images/files/svaneti-museum-exterior-mestia-georgia-1200.avif',
+    ogImage: { src: '/images/files/svaneti-museum-exterior-mestia-georgia-og-1200x630.jpg', width: 1200, height: 630 },
+    jsonLdImage: '/images/files/svaneti-museum-exterior-mestia-georgia-og-1200x630.jpg',
     imageMeta: {
-      width: 1536, height: 1024, imageId: 'hero-image',
-      name: 'Medieval icons in the treasury hall of the Svaneti Museum, Mestia, Georgia',
-      description: "Painted and gilded medieval Georgian icons displayed in the treasury hall of the Svaneti Museum of History and Ethnography in Mestia, Svaneti (Samegrelo-Zemo Svaneti), Georgia.",
+      width: 1448, height: 1086, imageId: 'hero-image',
+      name: 'Exterior of the Svaneti Museum of History and Ethnography, Mestia, Georgia',
+      description: 'The modern stone-and-concrete façade of the Svaneti Museum of History and Ethnography in Mestia, with its Georgian and English signage and glass entrance, in Svaneti (Samegrelo-Zemo Svaneti), Georgia.',
       locationName: 'Svaneti Museum of History and Ethnography, Mestia, Georgia',
       locality: 'Mestia', region: 'Samegrelo-Zemo Svaneti', country: 'GE',
       alt: {
-        en: "Painted and gilded medieval icons on display in the Svaneti Museum's treasury hall, Mestia, Georgia",
-        de: 'Bemalte und vergoldete mittelalterliche Ikonen in der Schatzkammer des Swanetien-Museums, Mestia, Georgien',
-        fr: 'Icônes médiévales peintes et dorées exposées dans la salle du trésor du musée de Svanétie, Mestia, Géorgie',
-        es: 'Iconos medievales pintados y dorados expuestos en la sala del tesoro del Museo de Svaneti, Mestia, Georgia',
-        nl: 'Beschilderde en verguld middeleeuwse iconen tentoongesteld in de schatkamerzaal van het Svaneti Museum, Mestia, Georgië',
-        cs: 'Malované a zlacené středověké ikony vystavené v pokladnici Svanetského muzea, Mestia, Gruzie',
-        pl: 'Malowane i złocone średniowieczne ikony wystawione w skarbcu Muzeum Swanetii, Mestia, Gruzja',
+        en: 'Exterior of the Svaneti Museum of History and Ethnography in Mestia, Georgia',
+        de: 'Außenansicht des Swanetien-Museums für Geschichte und Ethnographie in Mestia, Georgien',
+        fr: "Extérieur du musée d'Histoire et d'Ethnographie de Svanétie à Mestia, Géorgie",
+        es: 'Exterior del Museo de Historia y Etnografía de Svaneti en Mestia, Georgia',
+        nl: 'Buitenaanzicht van het Svaneti Museum voor Geschiedenis en Etnografie in Mestia, Georgië',
+        cs: 'Exteriér Svanetského muzea historie a etnografie v Mestii, Gruzie',
+        pl: 'Widok zewnętrzny Muzeum Historii i Etnografii Swanetii w Mestii, Gruzja',
       },
     },
-    // Two contextual body photos: the Bronze Age archaeology paragraph and the
-    // ecclesiastical-metalwork paragraph in "The collections", both real museum
-    // display-case photos. afterParagraph:2 weaves the reliquary INSIDE the chunk
-    // (right after the metalwork paragraph); the archaeology shot lands at the end
-    // (after the manuscripts/ethnographic paragraph, which also mentions
-    // archaeology). Native 3:2 landscape / 2:3 portrait, no upscale.
+    // Four contextual body photos. The former hero (three treasury icons) is
+    // demoted here, not discarded — it fits the overview paragraph as well as it
+    // fit the hero. Bronze Age archaeology (previously here) is swapped out for
+    // the manuscripts photo: the text names four specific Gospel manuscripts in
+    // that same paragraph, a stronger, more specific match than the parenthetical
+    // archaeology mention. A new wide gallery-hall shot illustrates "Visiting"
+    // ("six well-lit halls"). Native 4:3, no upscale.
     gallery: [
+      {
+        base: 'svaneti-museum-treasury-icons-mestia-georgia', width: 1536, height: 1024,
+        widths: [768, 1200, 1536], plainWidths: true, afterChunk: 1,
+        name: 'Medieval icons in the treasury hall of the Svaneti Museum, Mestia, Georgia',
+        description: 'Painted and gilded medieval Georgian icons displayed in the treasury hall of the Svaneti Museum of History and Ethnography in Mestia, Svaneti (Samegrelo-Zemo Svaneti), Georgia.',
+        locationName: 'Svaneti Museum of History and Ethnography, Mestia, Georgia',
+        locality: 'Mestia', region: 'Samegrelo-Zemo Svaneti', country: 'GE',
+        alt: {
+          en: "Painted and gilded medieval icons on display in the Svaneti Museum's treasury hall, Mestia, Georgia",
+          de: 'Bemalte und vergoldete mittelalterliche Ikonen in der Schatzkammer des Swanetien-Museums, Mestia, Georgien',
+          fr: 'Icônes médiévales peintes et dorées exposées dans la salle du trésor du musée de Svanétie, Mestia, Géorgie',
+          es: 'Iconos medievales pintados y dorados expuestos en la sala del tesoro del Museo de Svaneti, Mestia, Georgia',
+          nl: 'Beschilderde en verguld middeleeuwse iconen tentoongesteld in de schatkamerzaal van het Svaneti Museum, Mestia, Georgië',
+          cs: 'Malované a zlacené středověké ikony vystavené v pokladnici Svanetského muzea, Mestia, Gruzie',
+          pl: 'Malowane i złocone średniowieczne ikony wystawione w skarbcu Muzeum Swanetii, Mestia, Gruzja',
+        },
+        caption: {
+          en: 'Svaneti Museum of History and Ethnography, Mestia',
+          de: 'Swanetien-Museum für Geschichte und Ethnographie, Mestia',
+          fr: "Musée d'Histoire et d'Ethnographie de Svanétie, Mestia",
+          es: 'Museo de Historia y Etnografía de Svaneti, Mestia',
+          nl: 'Svaneti Museum voor Geschiedenis en Etnografie, Mestia',
+          cs: 'Svanetské muzeum historie a etnografie, Mestia',
+          pl: 'Muzeum Historii i Etnografii Swanetii, Mestia',
+        },
+      },
       {
         base: 'svaneti-museum-reliquary-mestia-georgia', width: 1024, height: 1536,
         widths: [768, 1024], fallbackWidth: 1024, afterChunk: 3, afterParagraph: 2,
@@ -14314,29 +14342,55 @@ export const sites = [
         },
       },
       {
-        base: 'svaneti-museum-archaeology-mestia-georgia', width: 1536, height: 1024,
-        widths: [768, 1200, 1536], afterChunk: 3,
-        name: 'Bronze Age archaeology in the Svaneti Museum, Mestia, Georgia',
-        description: "Bronze Age ceremonial bronzes and a Scythian weapon-sheath fitting from the Svaneti Museum's archaeological collection, Mestia, Svaneti (Samegrelo-Zemo Svaneti), Georgia.",
+        base: 'svaneti-museum-manuscripts-mestia-georgia', width: 1448, height: 1086,
+        widths: [768, 1200, 1448], afterChunk: 3,
+        name: 'Illuminated manuscript fragments in the Svaneti Museum, Mestia, Georgia',
+        description: "Inscribed wooden manuscript strips displayed on museum stands, part of the Svaneti Museum's collection of illuminated religious texts, Mestia, Svaneti (Samegrelo-Zemo Svaneti), Georgia.",
         locationName: 'Svaneti Museum of History and Ethnography, Mestia, Georgia',
         locality: 'Mestia', region: 'Samegrelo-Zemo Svaneti', country: 'GE',
         alt: {
-          en: 'Bronze Age bronze ceremonial objects and a Scythian weapon fitting displayed in the Svaneti Museum, Mestia, Georgia',
-          de: 'Bronzezeitliche Bronzeobjekte und ein skythischer Waffenbeschlag im Swanetien-Museum, Mestia, Georgien',
-          fr: "Objets en bronze de l'âge du bronze et une garniture d'arme scythe exposés au musée de Svanétie, Mestia, Géorgie",
-          es: 'Objetos de bronce de la Edad del Bronce y un herraje de arma escita expuestos en el Museo de Svaneti, Mestia, Georgia',
-          nl: 'Bronstijd-bronzen voorwerpen en een Scythisch wapenbeslag tentoongesteld in het Svaneti Museum, Mestia, Georgië',
-          cs: 'Bronzové předměty z doby bronzové a scythský kování zbraně vystavené ve Svanetském muzeu, Mestia, Gruzie',
-          pl: 'Przedmioty z brązu z epoki brązu i scytyjskie okucie broni wystawione w Muzeum Swanetii, Mestia, Gruzja',
+          en: 'Inscribed manuscript strips on display in the Svaneti Museum, Mestia, Georgia',
+          de: 'Beschriftete Manuskriptstreifen im Swanetien-Museum, Mestia, Georgien',
+          fr: 'Fragments de manuscrits inscrits exposés au musée de Svanétie, Mestia, Géorgie',
+          es: 'Tiras de manuscrito con inscripciones expuestas en el Museo de Svaneti, Mestia, Georgia',
+          nl: 'Beschreven manuscriptstroken tentoongesteld in het Svaneti Museum, Mestia, Georgië',
+          cs: 'Popsané pruhy rukopisů vystavené ve Svanetském muzeu, Mestia, Gruzie',
+          pl: 'Zapisane paski rękopisów wystawione w Muzeum Swanetii, Mestia, Gruzja',
         },
         caption: {
-          en: 'Bronze Age artifacts, Svaneti Museum',
-          de: 'Bronzezeitliche Funde, Swanetien-Museum',
-          fr: "Objets de l'âge du bronze, musée de Svanétie",
-          es: 'Objetos de la Edad del Bronce, Museo de Svaneti',
-          nl: 'Bronstijdvondsten, Svaneti Museum',
-          cs: 'Nálezy z doby bronzové, Svanetské muzeum',
-          pl: 'Zabytki z epoki brązu, Muzeum Swanetii',
+          en: 'Manuscripts, Svaneti Museum',
+          de: 'Manuskripte, Swanetien-Museum',
+          fr: 'Manuscrits, musée de Svanétie',
+          es: 'Manuscritos, Museo de Svaneti',
+          nl: 'Manuscripten, Svaneti Museum',
+          cs: 'Rukopisy, Svanetské muzeum',
+          pl: 'Rękopisy, Muzeum Swanetii',
+        },
+      },
+      {
+        base: 'svaneti-museum-gallery-hall-mestia-georgia', width: 1448, height: 1086,
+        widths: [768, 1200, 1448], afterChunk: 4,
+        name: 'A gallery hall in the Svaneti Museum, Mestia, Georgia',
+        description: 'A modern gallery hall of the Svaneti Museum of History and Ethnography, its glass cases holding icons, crosses and ecclesiastical metalwork, Mestia, Svaneti (Samegrelo-Zemo Svaneti), Georgia.',
+        locationName: 'Svaneti Museum of History and Ethnography, Mestia, Georgia',
+        locality: 'Mestia', region: 'Samegrelo-Zemo Svaneti', country: 'GE',
+        alt: {
+          en: 'A modern gallery hall of the Svaneti Museum with glass cases of icons and metalwork, Mestia, Georgia',
+          de: 'Eine moderne Galeriehalle des Swanetien-Museums mit Glasvitrinen voller Ikonen und Metallarbeiten, Mestia, Georgien',
+          fr: "Une salle d'exposition moderne du musée de Svanétie avec des vitrines d'icônes et d'orfèvrerie, Mestia, Géorgie",
+          es: 'Una moderna sala de exposición del Museo de Svaneti con vitrinas de iconos y orfebrería, Mestia, Georgia',
+          nl: 'Een moderne galerijzaal van het Svaneti Museum met vitrines vol iconen en metaalwerk, Mestia, Georgië',
+          cs: 'Moderní výstavní sál Svanetského muzea se skleněnými vitrínami ikon a kovových prací, Mestia, Gruzie',
+          pl: 'Nowoczesna sala wystawowa Muzeum Swanetii ze szklanymi gablotami ikon i wyrobów metalowych, Mestia, Gruzja',
+        },
+        caption: {
+          en: 'Inside the Svaneti Museum, Mestia',
+          de: 'Im Inneren des Swanetien-Museums, Mestia',
+          fr: "À l'intérieur du musée de Svanétie, Mestia",
+          es: 'En el interior del Museo de Svaneti, Mestia',
+          nl: 'Binnen in het Svaneti Museum, Mestia',
+          cs: 'Uvnitř Svanetského muzea, Mestia',
+          pl: 'Wewnątrz Muzeum Swanetii, Mestia',
         },
       },
     ],
@@ -14767,7 +14821,45 @@ export const sites = [
         },
       },
       {
-        base: 'lamaria-church-tower-ushguli-svaneti-georgia', width: 1448, height: 1086,
+        // Mandatory owner-selected image (file "3" in the source folder): a
+        // closer, different-angle detail of the same tower — its upper stonework
+        // and arched corbelled top just above the church's own roofline, a
+        // distinct rocky (non-snow) peak behind. Placed with "History, frescoes,
+        // and the Tamar association", the paragraph that names the tower
+        // ("a defensive wall that ends in a Svan tower on the west").
+        base: 'lamaria-church-tower-detail-ushguli-svaneti-georgia', width: 1448, height: 1086,
+        widths: [768, 1200, 1448], afterChunk: 3,
+        name: "The upper stonework of Lamaria Church's Svan tower, Ushguli, Svaneti, Georgia",
+        description: "The stone shaft and arched, corbelled top of Lamaria Church's Svan tower rising just above its slate roof, with a rocky peak behind, above Ushguli, in Svaneti (Samegrelo-Zemo Svaneti), Georgia.",
+        locationName: 'Lamaria Church, Zhibiani, Ushguli, Svaneti, Georgia',
+        locality: 'Ushguli', region: 'Samegrelo-Zemo Svaneti', country: 'GE',
+        alt: {
+          en: "The upper stonework of Lamaria Church's Svan tower rising above its slate roof, Ushguli, Georgia",
+          de: 'Das obere Mauerwerk des swanischen Turms der Lamaria-Kirche über ihrem Schieferdach, Ushguli, Georgien',
+          fr: "La partie supérieure de la tour svane de l'église de Lamaria s'élevant au-dessus de son toit d'ardoise, Ushguli, Géorgie",
+          es: 'La parte superior de la torre svana de la iglesia de Lamaria alzándose sobre su tejado de pizarra, Ushguli, Georgia',
+          nl: 'Het bovenste metselwerk van de Svanische toren van de Lamaria-kerk boven haar leistenen dak, Ushguli, Georgië',
+          cs: 'Horní zdivo svanské věže kostela Lamaria nad jejich břidlicovou střechou, Ushguli, Gruzie',
+          pl: 'Górna część muru swańskiej wieży kościoła Lamaria nad jego łupkowym dachem, Ushguli, Gruzja',
+        },
+        caption: {
+          en: 'The tower of Lamaria Church, close up',
+          de: 'Der Turm der Lamaria-Kirche im Detail',
+          fr: "La tour de l'église de Lamaria, en détail",
+          es: 'La torre de la iglesia de Lamaria, en detalle',
+          nl: 'De toren van de Lamaria-kerk, close-up',
+          cs: 'Věž kostela Lamaria zblízka',
+          pl: 'Wieża kościoła Lamaria z bliska',
+        },
+      },
+      {
+        // MANDATORY owner-selected hero-candidate image (file "4"): the church's
+        // genuine Svan tower + fortified perimeter wall, wide angle. Replaces an
+        // earlier entry that was sourced from a different photo (file 7) showing
+        // the church's OWN gable/roof, not a separate tower — its alt/caption had
+        // wrongly described that frame as "the Svan tower". This is the accurate
+        // tower shot; file 7's derived assets are now unreferenced (left on disk).
+        base: 'lamaria-church-tower-wall-ushguli-svaneti-georgia', width: 1448, height: 1086,
         widths: [768, 1200, 1448], afterChunk: 4,
         name: 'The Svan tower of Lamaria Church, Ushguli, Svaneti, Georgia',
         description: 'The stone Svan tower and fortified perimeter wall that enclose Lamaria Church, rising against the sky above Ushguli, in Svaneti (Samegrelo-Zemo Svaneti), Georgia.',

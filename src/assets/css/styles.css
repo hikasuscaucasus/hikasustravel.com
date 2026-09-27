@@ -4166,37 +4166,39 @@ section {
 }
 /* No rung above 1448 exists (Chalaadi Glacier). Do not add a 1600/2400 breakpoint. */
 /* Svaneti Museum hero — per-page CSS background; AVIF-first + WebP fallback ride
-   on image-set(), three rungs as breakpoints. Native 3:2 (1536x1024, an owner
-   photo with a ChatGPT contrast edit) — matches SitePage's own default
-   GALLERY_WIDTHS ladder exactly. background-position: center keeps the three
-   icons centred in the treasury-hall frame. */
+   on image-set(), three rungs as breakpoints. FIXED per owner instruction: the
+   museum's own exterior (image 61 from the source folder), its Georgian/English
+   signage clearly legible. Native 4:3 (1448x1086), the standard house ladder —
+   replaces the earlier treasury-hall interior hero (now an in-body figure, not
+   discarded). background-position: center 40% keeps the signage + entrance in
+   frame rather than the grass foreground. */
 .hero--svaneti-museum {
-  background-image: url("/images/files/svaneti-museum-treasury-icons-mestia-georgia-1200.webp");
+  background-image: url("/images/files/svaneti-museum-exterior-mestia-georgia-1200.webp");
   background-image: image-set(
-    url("/images/files/svaneti-museum-treasury-icons-mestia-georgia-768.avif") type("image/avif"),
-    url("/images/files/svaneti-museum-treasury-icons-mestia-georgia-768.webp") type("image/webp")
+    url("/images/files/svaneti-museum-exterior-mestia-georgia-768.avif") type("image/avif"),
+    url("/images/files/svaneti-museum-exterior-mestia-georgia-768.webp") type("image/webp")
   );
-  background-position: center;
+  background-position: center 40%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
   .hero--svaneti-museum {
     background-image: image-set(
-      url("/images/files/svaneti-museum-treasury-icons-mestia-georgia-1200.avif") type("image/avif"),
-      url("/images/files/svaneti-museum-treasury-icons-mestia-georgia-1200.webp") type("image/webp")
+      url("/images/files/svaneti-museum-exterior-mestia-georgia-1200.avif") type("image/avif"),
+      url("/images/files/svaneti-museum-exterior-mestia-georgia-1200.webp") type("image/webp")
     );
   }
 }
 @media (min-width: 1200px) {
   .hero--svaneti-museum {
     background-image: image-set(
-      url("/images/files/svaneti-museum-treasury-icons-mestia-georgia-1536.avif") type("image/avif"),
-      url("/images/files/svaneti-museum-treasury-icons-mestia-georgia-1536.webp") type("image/webp")
+      url("/images/files/svaneti-museum-exterior-mestia-georgia-1448.avif") type("image/avif"),
+      url("/images/files/svaneti-museum-exterior-mestia-georgia-1448.webp") type("image/webp")
     );
   }
 }
-/* No rung above 1536 exists (Svaneti Museum). Do not add a 1600/2400 breakpoint. */
+/* No rung above 1448 exists (Svaneti Museum). Do not add a 1600/2400 breakpoint. */
 /* Lamaria Church hero — per-page CSS background; AVIF-first + WebP fallback ride
    on image-set(), three rungs as breakpoints. Native 4:3 (1448x1086, an owner
    photo with a ChatGPT contrast edit) — no rung above 1448 exists.
