@@ -14053,11 +14053,14 @@ export const sites = [
     // file) — a real photo of the arch itself is still needed.
     noHero: true,
     image: '/images/files/georgia-home.jpg',
-    // Two contextual body photos of what the text actually describes in "The
+    // Three contextual body photos of what the text actually describes in "The
     // visual experience" and "The gorge and surrounding landscape" — the turquoise
-    // reservoir and the gorge it fills. Neither shows the dam itself (none exists
-    // in the library), so they illustrate the approach/landscape, not the
-    // structure; the hero stays a placeholder until a real dam photo is found.
+    // reservoir, the gorge it fills, and the road cut into the cliff above it
+    // (afterParagraph:1 weaves the gorge photo INSIDE that section, right after
+    // the paragraph it depicts; the road photo lands at the end, matching the
+    // paragraph that names the road specifically). Re-checked the full 20-photo
+    // folder exhaustively (twice, across two tasks) — none shows the dam itself,
+    // so the hero stays a placeholder until a real dam photo is found.
     gallery: [
       {
         base: 'enguri-reservoir-turquoise-samegrelo-georgia', width: 1448, height: 1086,
@@ -14087,7 +14090,7 @@ export const sites = [
       },
       {
         base: 'enguri-gorge-samegrelo-georgia', width: 1448, height: 1086,
-        widths: [768, 1200, 1448], afterChunk: 5,
+        widths: [768, 1200, 1448], afterChunk: 5, afterParagraph: 1,
         name: 'The Enguri gorge, Samegrelo-Zemo Svaneti, Georgia',
         description: 'The steep, forested walls of the Enguri gorge enclosing the turquoise reservoir above the dam, in Samegrelo-Zemo Svaneti, Georgia.',
         locationName: 'Enguri gorge, Samegrelo-Zemo Svaneti, Georgia',
@@ -14109,6 +14112,32 @@ export const sites = [
           nl: 'De Enguri-kloof',
           cs: 'Soutěska Enguri',
           pl: 'Wąwóz Enguri',
+        },
+      },
+      {
+        base: 'enguri-reservoir-road-samegrelo-georgia', width: 1448, height: 1086,
+        widths: [768, 1200, 1448], afterChunk: 5,
+        name: 'The road along the Enguri reservoir, Samegrelo-Zemo Svaneti, Georgia',
+        description: 'The Zugdidi–Mestia road cut into the cliff above the turquoise Enguri reservoir, running alongside the water for a long stretch on the way into Svaneti, Georgia.',
+        locationName: 'Enguri Reservoir road, Samegrelo-Zemo Svaneti, Georgia',
+        region: 'Samegrelo-Zemo Svaneti', country: 'GE',
+        alt: {
+          en: 'The Zugdidi–Mestia road cut into the cliffside above the turquoise Enguri reservoir, Georgia',
+          de: 'Die Straße Zugdidi–Mestia, in den Felshang über dem türkisfarbenen Enguri-Stausee geschlagen, Georgien',
+          fr: "La route Zugdidi–Mestia taillée dans la falaise au-dessus du réservoir turquoise de l'Enguri, Géorgie",
+          es: 'La carretera Zugdidi–Mestia excavada en el acantilado sobre el embalse turquesa del Enguri, Georgia',
+          nl: 'De weg Zugdidi–Mestia, uitgehakt in de rotswand boven het turquoise Enguri-stuwmeer, Georgië',
+          cs: 'Silnice Zugdidi–Mestia vytesaná do skalního svahu nad tyrkysovou nádrží Enguri, Gruzie',
+          pl: 'Droga Zugdidi–Mestia wycięta w skalnym zboczu nad turkusowym zbiornikiem Enguri, Gruzja',
+        },
+        caption: {
+          en: 'The road above the Enguri reservoir',
+          de: 'Die Straße über dem Enguri-Stausee',
+          fr: "La route au-dessus du réservoir de l'Enguri",
+          es: 'La carretera sobre el embalse del Enguri',
+          nl: 'De weg boven het Enguri-stuwmeer',
+          cs: 'Silnice nad nádrží Enguri',
+          pl: 'Droga nad zbiornikiem Enguri',
         },
       },
     ],
