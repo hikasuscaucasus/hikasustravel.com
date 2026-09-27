@@ -14047,8 +14047,71 @@ export const sites = [
     slug: 'enguri-dam', name: 'The Enguri Dam',
     parentType: 'region', parent: 'samegrelo', published: true,
     seoKey: 'enguriDam', contentKey: 'enguriDam',
-    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
+    // Still noHero: the owner's library has reservoir/gorge photos but NO photo of
+    // the actual dam structure this page is about — using one as the hero would
+    // misrepresent the subject. TEMPORARY (see the noHero note at the top of this
+    // file) — a real photo of the arch itself is still needed.
+    noHero: true,
     image: '/images/files/georgia-home.jpg',
+    // Two contextual body photos of what the text actually describes in "The
+    // visual experience" and "The gorge and surrounding landscape" — the turquoise
+    // reservoir and the gorge it fills. Neither shows the dam itself (none exists
+    // in the library), so they illustrate the approach/landscape, not the
+    // structure; the hero stays a placeholder until a real dam photo is found.
+    gallery: [
+      {
+        base: 'enguri-reservoir-turquoise-samegrelo-georgia', width: 1448, height: 1086,
+        widths: [768, 1200, 1448], afterChunk: 4,
+        name: 'The Enguri reservoir, Samegrelo-Zemo Svaneti, Georgia',
+        description: 'The turquoise-green Enguri reservoir reaching back into a forested mountain gorge above the dam, in Samegrelo-Zemo Svaneti, Georgia.',
+        locationName: 'Enguri Reservoir, Samegrelo-Zemo Svaneti, Georgia',
+        region: 'Samegrelo-Zemo Svaneti', country: 'GE',
+        alt: {
+          en: 'The vivid turquoise Enguri reservoir winding between forested mountainsides, Georgia',
+          de: 'Der leuchtend türkisfarbene Enguri-Stausee windet sich zwischen bewaldeten Berghängen, Georgien',
+          fr: "Le réservoir turquoise de l'Enguri serpentant entre des versants boisés, Géorgie",
+          es: 'El embalse turquesa del Enguri serpenteando entre laderas boscosas, Georgia',
+          nl: 'Het levendig turquoise Enguri-stuwmeer kronkelend tussen beboste berghellingen, Georgië',
+          cs: 'Sytě tyrkysová přehradní nádrž Enguri vinoucí se mezi zalesněnými svahy, Gruzie',
+          pl: 'Intensywnie turkusowy zbiornik zaporowy Enguri wijący się między zalesionymi zboczami, Gruzja',
+        },
+        caption: {
+          en: 'The turquoise Enguri reservoir',
+          de: 'Der türkisfarbene Enguri-Stausee',
+          fr: "Le réservoir turquoise de l'Enguri",
+          es: 'El embalse turquesa del Enguri',
+          nl: 'Het turquoise Enguri-stuwmeer',
+          cs: 'Tyrkysová nádrž Enguri',
+          pl: 'Turkusowy zbiornik Enguri',
+        },
+      },
+      {
+        base: 'enguri-gorge-samegrelo-georgia', width: 1448, height: 1086,
+        widths: [768, 1200, 1448], afterChunk: 5,
+        name: 'The Enguri gorge, Samegrelo-Zemo Svaneti, Georgia',
+        description: 'The steep, forested walls of the Enguri gorge enclosing the turquoise reservoir above the dam, in Samegrelo-Zemo Svaneti, Georgia.',
+        locationName: 'Enguri gorge, Samegrelo-Zemo Svaneti, Georgia',
+        region: 'Samegrelo-Zemo Svaneti', country: 'GE',
+        alt: {
+          en: 'The steep, forested Enguri gorge enclosing the turquoise reservoir, Georgia',
+          de: 'Die steile, bewaldete Enguri-Schlucht umschließt den türkisfarbenen Stausee, Georgien',
+          fr: "Les parois abruptes et boisées des gorges de l'Enguri enserrant le réservoir turquoise, Géorgie",
+          es: 'Las escarpadas y boscosas gargantas del Enguri encerrando el embalse turquesa, Georgia',
+          nl: 'De steile, beboste Enguri-kloof rond het turquoise stuwmeer, Georgië',
+          cs: 'Strmá zalesněná soutěska Enguri obklopující tyrkysovou nádrž, Gruzie',
+          pl: 'Strome, zalesione wąwozy Enguri otaczające turkusowy zbiornik, Gruzja',
+        },
+        caption: {
+          en: 'The Enguri gorge',
+          de: 'Die Enguri-Schlucht',
+          fr: "Les gorges de l'Enguri",
+          es: 'El desfiladero del Enguri',
+          nl: 'De Enguri-kloof',
+          cs: 'Soutěska Enguri',
+          pl: 'Wąwóz Enguri',
+        },
+      },
+    ],
   },
   {
     slug: 'intsra-waterfall', name: 'The Intsra Waterfall',
@@ -14191,8 +14254,92 @@ export const sites = [
     slug: 'svaneti-museum-history-ethnography', name: 'Svaneti Museum of History and Ethnography',
     parentType: 'city', parent: 'mestia', published: true,
     seoKey: 'svanetiMuseumHistoryEthnography', contentKey: 'svanetiMuseumHistoryEthnography',
-    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
-    image: '/images/files/georgia-home.jpg',
+    // Hero: three medieval icons in the treasury hall — the museum's own subject IS
+    // its collection, so an interior treasury shot reads as the page's identity
+    // better than an exterior would. Native 3:2 (1536x1024), ladder 768/1200/1536,
+    // no upscale — matches SitePage's own default GALLERY_WIDTHS exactly.
+    image: '/images/files/svaneti-museum-treasury-icons-mestia-georgia-1536.webp',
+    imageAvif: '/images/files/svaneti-museum-treasury-icons-mestia-georgia-1536.avif',
+    heroClass: 'hero--svaneti-museum',
+    heroPreload: '/images/files/svaneti-museum-treasury-icons-mestia-georgia-1200.avif',
+    ogImage: { src: '/images/files/svaneti-museum-treasury-icons-mestia-georgia-og-1200x630.jpg', width: 1200, height: 630 },
+    jsonLdImage: '/images/files/svaneti-museum-treasury-icons-mestia-georgia-og-1200x630.jpg',
+    imageMeta: {
+      width: 1536, height: 1024, imageId: 'hero-image',
+      name: 'Medieval icons in the treasury hall of the Svaneti Museum, Mestia, Georgia',
+      description: "Painted and gilded medieval Georgian icons displayed in the treasury hall of the Svaneti Museum of History and Ethnography in Mestia, Svaneti (Samegrelo-Zemo Svaneti), Georgia.",
+      locationName: 'Svaneti Museum of History and Ethnography, Mestia, Georgia',
+      locality: 'Mestia', region: 'Samegrelo-Zemo Svaneti', country: 'GE',
+      alt: {
+        en: "Painted and gilded medieval icons on display in the Svaneti Museum's treasury hall, Mestia, Georgia",
+        de: 'Bemalte und vergoldete mittelalterliche Ikonen in der Schatzkammer des Swanetien-Museums, Mestia, Georgien',
+        fr: 'Icônes médiévales peintes et dorées exposées dans la salle du trésor du musée de Svanétie, Mestia, Géorgie',
+        es: 'Iconos medievales pintados y dorados expuestos en la sala del tesoro del Museo de Svaneti, Mestia, Georgia',
+        nl: 'Beschilderde en verguld middeleeuwse iconen tentoongesteld in de schatkamerzaal van het Svaneti Museum, Mestia, Georgië',
+        cs: 'Malované a zlacené středověké ikony vystavené v pokladnici Svanetského muzea, Mestia, Gruzie',
+        pl: 'Malowane i złocone średniowieczne ikony wystawione w skarbcu Muzeum Swanetii, Mestia, Gruzja',
+      },
+    },
+    // Two contextual body photos: the Bronze Age archaeology paragraph and the
+    // ecclesiastical-metalwork paragraph in "The collections", both real museum
+    // display-case photos. afterParagraph:2 weaves the reliquary INSIDE the chunk
+    // (right after the metalwork paragraph); the archaeology shot lands at the end
+    // (after the manuscripts/ethnographic paragraph, which also mentions
+    // archaeology). Native 3:2 landscape / 2:3 portrait, no upscale.
+    gallery: [
+      {
+        base: 'svaneti-museum-reliquary-mestia-georgia', width: 1024, height: 1536,
+        widths: [768, 1024], fallbackWidth: 1024, afterChunk: 3, afterParagraph: 2,
+        name: 'A gilded medieval reliquary cover in the Svaneti Museum, Mestia, Georgia',
+        description: 'A medieval gilded book or reliquary cover set with turquoise and garnet stones, part of the ecclesiastical metalwork collection of the Svaneti Museum, Mestia, Svaneti (Samegrelo-Zemo Svaneti), Georgia.',
+        locationName: 'Svaneti Museum of History and Ethnography, Mestia, Georgia',
+        locality: 'Mestia', region: 'Samegrelo-Zemo Svaneti', country: 'GE',
+        alt: {
+          en: 'A gilded medieval book cover set with gemstones, displayed in the Svaneti Museum, Mestia, Georgia',
+          de: 'Ein vergoldeter mittelalterlicher Bucheinband mit Edelsteinen im Swanetien-Museum, Mestia, Georgien',
+          fr: 'Une reliure médiévale dorée sertie de pierres précieuses, exposée au musée de Svanétie, Mestia, Géorgie',
+          es: 'Una cubierta medieval dorada de libro engastada con piedras preciosas, en el Museo de Svaneti, Mestia, Georgia',
+          nl: 'Een verguld middeleeuws boekomslag bezet met edelstenen, tentoongesteld in het Svaneti Museum, Mestia, Georgië',
+          cs: 'Zlacená středověká knižní vazba osazená drahými kameny ve Svanetském muzeu, Mestia, Gruzie',
+          pl: 'Złocona średniowieczna oprawa księgi wysadzana kamieniami szlachetnymi w Muzeum Swanetii, Mestia, Gruzja',
+        },
+        caption: {
+          en: 'A gilded reliquary cover, Svaneti Museum',
+          de: 'Ein vergoldeter Reliquiendeckel, Swanetien-Museum',
+          fr: 'Une reliure de reliquaire dorée, musée de Svanétie',
+          es: 'Una cubierta dorada de relicario, Museo de Svaneti',
+          nl: 'Een vergulde reliekomslag, Svaneti Museum',
+          cs: 'Zlacený obal relikviáře, Svanetské muzeum',
+          pl: 'Złocona oprawa relikwiarza, Muzeum Swanetii',
+        },
+      },
+      {
+        base: 'svaneti-museum-archaeology-mestia-georgia', width: 1536, height: 1024,
+        widths: [768, 1200, 1536], afterChunk: 3,
+        name: 'Bronze Age archaeology in the Svaneti Museum, Mestia, Georgia',
+        description: "Bronze Age ceremonial bronzes and a Scythian weapon-sheath fitting from the Svaneti Museum's archaeological collection, Mestia, Svaneti (Samegrelo-Zemo Svaneti), Georgia.",
+        locationName: 'Svaneti Museum of History and Ethnography, Mestia, Georgia',
+        locality: 'Mestia', region: 'Samegrelo-Zemo Svaneti', country: 'GE',
+        alt: {
+          en: 'Bronze Age bronze ceremonial objects and a Scythian weapon fitting displayed in the Svaneti Museum, Mestia, Georgia',
+          de: 'Bronzezeitliche Bronzeobjekte und ein skythischer Waffenbeschlag im Swanetien-Museum, Mestia, Georgien',
+          fr: "Objets en bronze de l'âge du bronze et une garniture d'arme scythe exposés au musée de Svanétie, Mestia, Géorgie",
+          es: 'Objetos de bronce de la Edad del Bronce y un herraje de arma escita expuestos en el Museo de Svaneti, Mestia, Georgia',
+          nl: 'Bronstijd-bronzen voorwerpen en een Scythisch wapenbeslag tentoongesteld in het Svaneti Museum, Mestia, Georgië',
+          cs: 'Bronzové předměty z doby bronzové a scythský kování zbraně vystavené ve Svanetském muzeu, Mestia, Gruzie',
+          pl: 'Przedmioty z brązu z epoki brązu i scytyjskie okucie broni wystawione w Muzeum Swanetii, Mestia, Gruzja',
+        },
+        caption: {
+          en: 'Bronze Age artifacts, Svaneti Museum',
+          de: 'Bronzezeitliche Funde, Swanetien-Museum',
+          fr: "Objets de l'âge du bronze, musée de Svanétie",
+          es: 'Objetos de la Edad del Bronce, Museo de Svaneti',
+          nl: 'Bronstijdvondsten, Svaneti Museum',
+          cs: 'Nálezy z doby bronzové, Svanetské muzeum',
+          pl: 'Zabytki z epoki brązu, Muzeum Swanetii',
+        },
+      },
+    ],
   },
   {
     slug: 'koruldi-lakes', name: 'Koruldi Lakes',
@@ -14242,6 +14389,91 @@ export const sites = [
         pl: 'Turysta z plecakiem nad jeziorami Koruldi pod szczytami Wielkiego Kaukazu powyżej Mestii, Swanetia, Gruzja',
       },
     },
+    // Three contextual body photos, distinct from the hiker+reflection hero:
+    // the 4WD track winding across the lake-dotted terrace ("Getting there"), a
+    // wider terrace panorama ("The terrace and the views"), and two of the lakes
+    // linked by paths ("Time on the terrace"). None claims to show Ushba — same
+    // caution as the hero's own imageMeta note above.
+    gallery: [
+      {
+        base: 'koruldi-lakes-4wd-track-svaneti-georgia', width: 1448, height: 1086,
+        widths: [768, 1200, 1448], afterChunk: 2,
+        name: 'The 4WD track to the Koruldi Lakes, Svaneti, Georgia',
+        description: 'The rough switchback track climbing across the open, lake-dotted Koruldi terrace above Mestia, with the descending Enguri valley and the Greater Caucasus behind, in Svaneti (Samegrelo-Zemo Svaneti), Georgia.',
+        locationName: 'Koruldi Lakes, above Mestia, Samegrelo-Zemo Svaneti, Georgia',
+        locality: 'Mestia', region: 'Samegrelo-Zemo Svaneti', country: 'GE',
+        alt: {
+          en: 'The rough 4WD track winding across the lake-dotted Koruldi terrace, Svaneti, Georgia',
+          de: 'Die raue Geländewagen-Piste, die über die seenübersäte Koruldi-Hochebene führt, Swanetien, Georgien',
+          fr: 'La piste 4×4 sinueuse traversant le plateau de Koruldi parsemé de lacs, Svanétie, Géorgie',
+          es: 'La accidentada pista para 4x4 que cruza la meseta de Koruldi salpicada de lagos, Svaneti, Georgia',
+          nl: 'Het ruige 4WD-spoor dat over het met meren bezaaide Koruldi-plateau slingert, Svaneti, Georgië',
+          cs: 'Hrubá terénní cesta klikatící se přes jezery posetou náhorní plošinu Koruldi, Svanetie, Gruzie',
+          pl: 'Wyboista droga terenowa wijąca się przez usianą jeziorami wyżynę Koruldi, Swanetia, Gruzja',
+        },
+        caption: {
+          en: 'The 4WD track across the Koruldi terrace, Svaneti',
+          de: 'Die 4x4-Piste über die Koruldi-Hochebene, Swanetien',
+          fr: 'La piste 4×4 sur le plateau de Koruldi, Svanétie',
+          es: 'La pista 4x4 por la meseta de Koruldi, Svaneti',
+          nl: 'Het 4WD-spoor over het Koruldi-plateau, Svaneti',
+          cs: 'Terénní cesta přes náhorní plošinu Koruldi, Svanetie',
+          pl: 'Droga terenowa przez wyżynę Koruldi, Swanetia',
+        },
+      },
+      {
+        base: 'koruldi-lakes-terrace-panorama-svaneti-georgia', width: 1448, height: 1086,
+        widths: [768, 1200, 1448], afterChunk: 3,
+        name: 'The Koruldi Lakes terrace, Svaneti, Georgia',
+        description: 'The open alpine terrace above Mestia holding the small, wind-ruffled Koruldi lakes, with the snow-streaked peaks of the Greater Caucasus filling the horizon, in Svaneti (Samegrelo-Zemo Svaneti), Georgia.',
+        locationName: 'Koruldi Lakes, above Mestia, Samegrelo-Zemo Svaneti, Georgia',
+        locality: 'Mestia', region: 'Samegrelo-Zemo Svaneti', country: 'GE',
+        alt: {
+          en: 'The open Koruldi terrace with its cluster of small alpine lakes below the Svaneti peaks, Georgia',
+          de: 'Die offene Koruldi-Hochebene mit ihrer Gruppe kleiner alpiner Seen unterhalb der swanetischen Gipfel, Georgien',
+          fr: 'Le plateau ouvert de Koruldi avec son ensemble de petits lacs alpins sous les sommets de Svanétie, Géorgie',
+          es: 'La meseta abierta de Koruldi con su conjunto de pequeños lagos alpinos bajo los picos de Svaneti, Georgia',
+          nl: 'Het open Koruldi-plateau met zijn cluster kleine alpiene meren onder de toppen van Svaneti, Georgië',
+          cs: 'Otevřená náhorní plošina Koruldi se skupinou malých alpských jezer pod svanetskými vrcholy, Gruzie',
+          pl: 'Otwarta wyżyna Koruldi ze skupiskiem małych alpejskich jezior pod szczytami Swanetii, Gruzja',
+        },
+        caption: {
+          en: 'The Koruldi terrace and its lakes, Svaneti',
+          de: 'Die Koruldi-Hochebene mit ihren Seen, Swanetien',
+          fr: 'Le plateau de Koruldi et ses lacs, Svanétie',
+          es: 'La meseta de Koruldi y sus lagos, Svaneti',
+          nl: 'Het Koruldi-plateau en zijn meren, Svaneti',
+          cs: 'Náhorní plošina Koruldi a její jezera, Svanetie',
+          pl: 'Wyżyna Koruldi i jej jeziora, Swanetia',
+        },
+      },
+      {
+        base: 'koruldi-lakes-cluster-svaneti-georgia', width: 1448, height: 1086,
+        widths: [768, 1200, 1448], afterChunk: 4,
+        name: 'Between the Koruldi Lakes, Svaneti, Georgia',
+        description: 'Grassy paths linking two of the small Koruldi lakes on the open ridge above Mestia, with a further lake visible in the distance and the Greater Caucasus behind, in Svaneti (Samegrelo-Zemo Svaneti), Georgia.',
+        locationName: 'Koruldi Lakes, above Mestia, Samegrelo-Zemo Svaneti, Georgia',
+        locality: 'Mestia', region: 'Samegrelo-Zemo Svaneti', country: 'GE',
+        alt: {
+          en: 'Two of the Koruldi lakes linked by grassy paths on the open ridge, Svaneti, Georgia',
+          de: 'Zwei der Koruldi-Seen, verbunden durch Graspfade auf dem offenen Bergkamm, Swanetien, Georgien',
+          fr: 'Deux des lacs de Koruldi reliés par des sentiers herbeux sur la crête dégagée, Svanétie, Géorgie',
+          es: 'Dos de los lagos Koruldi unidos por senderos entre la hierba en la cresta abierta, Svaneti, Georgia',
+          nl: 'Twee van de Koruldi-meren verbonden door graspaden op de open bergkam, Svaneti, Georgië',
+          cs: 'Dvě z jezer Koruldi spojená travnatými pěšinami na otevřeném hřebeni, Svanetie, Gruzie',
+          pl: 'Dwa z jezior Koruldi połączone trawiastymi ścieżkami na otwartej grani, Swanetia, Gruzja',
+        },
+        caption: {
+          en: 'Walking between the Koruldi lakes, Svaneti',
+          de: 'Zwischen den Koruldi-Seen unterwegs, Swanetien',
+          fr: 'En marchant entre les lacs de Koruldi, Svanétie',
+          es: 'Caminando entre los lagos Koruldi, Svaneti',
+          nl: 'Wandelen tussen de Koruldi-meren, Svaneti',
+          cs: 'Procházka mezi jezery Koruldi, Svanetie',
+          pl: 'Spacer między jeziorami Koruldi, Swanetia',
+        },
+      },
+    ],
   },
   {
     slug: 'mount-ushba', name: 'Mount Ushba',
@@ -14413,13 +14645,154 @@ export const sites = [
         pl: 'Swańskie domy-wieże — koshki — wznoszą się na trzy do pięciu kondygnacji zwężającego się kamienia nad domami machubi, których strzegą. Wzniesione w średniowieczu, dawały rodzinom schronienie przed najazdami, a przede wszystkim przed krwawymi waśniami, które przez wieki przenikały swańskie społeczeństwo.',
       },
     },
+    // Two contextual body photos, distinct from the hero village view: a Mestia
+    // street-level cluster of towers ("The towers in Mestia") and a close-up
+    // machicolated tower top ("Architecture and construction"). Neither claims a
+    // specific village beyond what's visible (the Mestia shot shows a Georgian
+    // flag and forested hillside consistent with the town).
+    gallery: [
+      {
+        base: 'svan-towers-architecture-svaneti-georgia', width: 1086, height: 1448,
+        widths: [768, 1086], fallbackWidth: 1086, afterChunk: 3,
+        name: 'The machicolated top of a Svan tower, Svaneti, Georgia',
+        description: 'The tapering dry-stone shaft of a Svan tower rising to its crenellated, machicolated parapet against the sky, in Svaneti (Samegrelo-Zemo Svaneti), Georgia.',
+        locationName: 'Upper Svaneti, Mestia Municipality, Samegrelo-Zemo Svaneti, Georgia',
+        region: 'Samegrelo-Zemo Svaneti', country: 'GE',
+        alt: {
+          en: "Looking up at a Svan tower's tapering stone shaft and machicolated parapet against the sky, Georgia",
+          de: 'Blick hinauf an einem swanischen Turm entlang, dem sich verjüngenden Steinschaft bis zur Maschikuli-Krone gegen den Himmel, Georgien',
+          fr: 'Vue vers le haut d\'une tour svane, le fût de pierre se rétrécissant jusqu\'au couronnement à mâchicoulis contre le ciel, Géorgie',
+          es: 'Vista hacia arriba de una torre svana, el fuste de piedra estrechándose hasta el remate de matacanes contra el cielo, Georgia',
+          nl: 'Omhoogkijkend langs een Svanische toren, de taps toelopende stenen schacht tot aan de machicoulis-kroon tegen de lucht, Georgië',
+          cs: 'Pohled vzhůru podél svanské věže, zužující se kamenný dřík až ke krakorcové koruně proti obloze, Gruzie',
+          pl: 'Widok w górę wzdłuż swańskiej wieży, zwężający się kamienny trzon aż po koronę z machikułami na tle nieba, Gruzja',
+        },
+        caption: {
+          en: "A Svan tower's machicolated parapet",
+          de: 'Die Maschikuli-Krone eines swanischen Turms',
+          fr: 'Le couronnement à mâchicoulis d\'une tour svane',
+          es: 'El remate de matacanes de una torre svana',
+          nl: 'De machicoulis-kroon van een Svanische toren',
+          cs: 'Krakorcová koruna svanské věže',
+          pl: 'Korona z machikułami swańskiej wieży',
+        },
+      },
+      {
+        base: 'svan-towers-mestia-svaneti-georgia', width: 1448, height: 1086,
+        widths: [768, 1200, 1448], afterChunk: 4,
+        name: 'Svan towers in Mestia, Svaneti, Georgia',
+        description: 'Three medieval Svan towers rising above the rooftops and trees of a Mestia neighborhood, a Georgian flag flying from one, with the forested hillside behind, in Svaneti (Samegrelo-Zemo Svaneti), Georgia.',
+        locationName: 'Mestia, Samegrelo-Zemo Svaneti, Georgia',
+        locality: 'Mestia', region: 'Samegrelo-Zemo Svaneti', country: 'GE',
+        alt: {
+          en: 'Three Svan stone towers rising above trees in a Mestia neighborhood, with the forested hillside behind, Georgia',
+          de: 'Drei swanische Steintürme, die über Bäumen in einem Mestia-Viertel aufragen, dahinter der bewaldete Hang, Georgien',
+          fr: 'Trois tours svanes en pierre s\'élevant au-dessus des arbres dans un quartier de Mestia, la colline boisée derrière, Géorgie',
+          es: 'Tres torres svanas de piedra alzándose sobre los árboles en un barrio de Mestia, con la ladera boscosa detrás, Georgia',
+          nl: 'Drie stenen Svanische torens boven de bomen in een wijk van Mestia, met de beboste helling erachter, Georgië',
+          cs: 'Tři svanské kamenné věže vyčnívající nad stromy ve čtvrti Mestie, za nimi zalesněný svah, Gruzie',
+          pl: 'Trzy swańskie kamienne wieże wznoszące się nad drzewami w dzielnicy Mestii, z zalesionym zboczem w tle, Gruzja',
+        },
+        caption: {
+          en: 'Svan towers in a Mestia neighborhood',
+          de: 'Swanische Türme in einem Mestia-Viertel',
+          fr: 'Tours svanes dans un quartier de Mestia',
+          es: 'Torres svanas en un barrio de Mestia',
+          nl: 'Svanische torens in een wijk van Mestia',
+          cs: 'Svanské věže ve čtvrti Mestie',
+          pl: 'Swańskie wieże w dzielnicy Mestii',
+        },
+      },
+    ],
   },
   {
     slug: 'lamaria-church', name: 'Lamaria Church',
     parentType: 'city', parent: 'ushguli', published: true,
     seoKey: 'lamariaChurch', contentKey: 'lamariaChurch',
-    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
-    image: '/images/files/georgia-home.jpg',
+    // Hero: the church's bells against the immense glaciated wall of Shkhara
+    // filling the horizon — the iconic Lamaria view the page's own text describes.
+    // Native 4:3 (1448x1086, owner photo with a ChatGPT contrast edit), ladder
+    // 768/1200/1448, no upscale. This page's own prose leaves "Shkhara"/"Ushguli"
+    // UNADAPTED in every locale — matched here rather than the adapted forms used
+    // on the separate Shkhara Glacier page.
+    image: '/images/files/lamaria-church-shkhara-ushguli-svaneti-georgia-1448.webp',
+    imageAvif: '/images/files/lamaria-church-shkhara-ushguli-svaneti-georgia-1448.avif',
+    heroClass: 'hero--lamaria-church',
+    heroPreload: '/images/files/lamaria-church-shkhara-ushguli-svaneti-georgia-1200.avif',
+    ogImage: { src: '/images/files/lamaria-church-shkhara-ushguli-svaneti-georgia-og-1200x630.jpg', width: 1200, height: 630 },
+    jsonLdImage: '/images/files/lamaria-church-shkhara-ushguli-svaneti-georgia-og-1200x630.jpg',
+    imageMeta: {
+      width: 1448, height: 1086, imageId: 'hero-image',
+      name: "Lamaria Church's bells before the Shkhara massif, Ushguli, Svaneti, Georgia",
+      description: "Three bronze bells hang from a wooden frame on Lamaria Church's stone wall, with the immense glaciated wall of Shkhara filling the horizon above Ushguli, in Svaneti (Samegrelo-Zemo Svaneti), Georgia.",
+      locationName: 'Lamaria Church, Zhibiani, Ushguli, Svaneti, Georgia',
+      locality: 'Ushguli', region: 'Samegrelo-Zemo Svaneti', country: 'GE',
+      alt: {
+        en: 'Bronze bells at Lamaria Church with the glaciated wall of Shkhara filling the horizon, Ushguli, Georgia',
+        de: 'Bronzeglocken an der Lamaria-Kirche vor der vergletscherten Wand des Shkhara, Ushguli, Georgien',
+        fr: "Cloches de bronze à l'église de Lamaria devant la muraille glaciaire du Shkhara, Ushguli, Géorgie",
+        es: 'Campanas de bronce en la iglesia de Lamaria ante la muralla glaciar del Shkhara, Ushguli, Georgia',
+        nl: 'Bronzen klokken bij de Lamaria-kerk voor de vergletsjerde wand van de Shkhara, Ushguli, Georgië',
+        cs: 'Bronzové zvony u kostela Lamaria před zaledněnou stěnou Shkhary, Ushguli, Gruzie',
+        pl: 'Brązowe dzwony przy kościele Lamaria na tle zlodowaciałej ściany Shkhary, Ushguli, Gruzja',
+      },
+    },
+    // Two contextual body photos: the church exterior ("What is Lamaria Church?")
+    // and its defensive Svan tower + wall ("The setting and the approach").
+    gallery: [
+      {
+        base: 'lamaria-church-exterior-ushguli-svaneti-georgia', width: 1448, height: 1086,
+        widths: [768, 1200, 1448], afterChunk: 1,
+        name: 'Lamaria Church, Ushguli, Svaneti, Georgia',
+        description: 'The small single-nave stone church of Lamaria, its slate roof weathered with age, standing on a grassy hillside above Ushguli, in Svaneti (Samegrelo-Zemo Svaneti), Georgia.',
+        locationName: 'Lamaria Church, Zhibiani, Ushguli, Svaneti, Georgia',
+        locality: 'Ushguli', region: 'Samegrelo-Zemo Svaneti', country: 'GE',
+        alt: {
+          en: 'The small stone church of Lamaria with its slate roof on a green hillside above Ushguli, Georgia',
+          de: 'Die kleine Steinkirche von Lamaria mit ihrem Schieferdach auf einem grünen Hang oberhalb von Ushguli, Georgien',
+          fr: "La petite église en pierre de Lamaria, toit d'ardoise, sur une colline verdoyante au-dessus d'Ushguli, Géorgie",
+          es: 'La pequeña iglesia de piedra de Lamaria, con su tejado de pizarra, en una ladera verde sobre Ushguli, Georgia',
+          nl: 'De kleine stenen Lamaria-kerk met haar leistenen dak op een groene helling boven Ushguli, Georgië',
+          cs: 'Malý kamenný kostel Lamaria s břidlicovou střechou na zeleném svahu nad Ushguli, Gruzie',
+          pl: 'Mały kamienny kościół Lamaria z łupkowym dachem na zielonym zboczu nad Ushguli, Gruzja',
+        },
+        caption: {
+          en: 'Lamaria Church above Ushguli',
+          de: 'Die Lamaria-Kirche oberhalb von Ushguli',
+          fr: "L'église de Lamaria au-dessus d'Ushguli",
+          es: 'La iglesia de Lamaria sobre Ushguli',
+          nl: 'De Lamaria-kerk boven Ushguli',
+          cs: 'Kostel Lamaria nad Ushguli',
+          pl: 'Kościół Lamaria nad Ushguli',
+        },
+      },
+      {
+        base: 'lamaria-church-tower-ushguli-svaneti-georgia', width: 1448, height: 1086,
+        widths: [768, 1200, 1448], afterChunk: 4,
+        name: 'The Svan tower of Lamaria Church, Ushguli, Svaneti, Georgia',
+        description: 'The stone Svan tower and fortified perimeter wall that enclose Lamaria Church, rising against the sky above Ushguli, in Svaneti (Samegrelo-Zemo Svaneti), Georgia.',
+        locationName: 'Lamaria Church, Zhibiani, Ushguli, Svaneti, Georgia',
+        locality: 'Ushguli', region: 'Samegrelo-Zemo Svaneti', country: 'GE',
+        alt: {
+          en: "Lamaria Church's defensive Svan tower rising above its stone perimeter wall, Ushguli, Georgia",
+          de: 'Der wehrhafte swanische Turm der Lamaria-Kirche erhebt sich über der steinernen Umfassungsmauer, Ushguli, Georgien',
+          fr: "La tour svane défensive de l'église de Lamaria s'élevant au-dessus de son mur d'enceinte en pierre, Ushguli, Géorgie",
+          es: 'La torre svana defensiva de la iglesia de Lamaria alzándose sobre su muro perimetral de piedra, Ushguli, Georgia',
+          nl: 'De verdedigende Svanische toren van de Lamaria-kerk boven de stenen omheiningsmuur, Ushguli, Georgië',
+          cs: 'Obranná svanská věž kostela Lamaria tyčící se nad kamennou ohradní zdí, Ushguli, Gruzie',
+          pl: 'Obronna swańska wieża kościoła Lamaria wznosząca się nad kamiennym murem otaczającym, Ushguli, Gruzja',
+        },
+        caption: {
+          en: 'The Svan tower guarding Lamaria Church',
+          de: 'Der swanische Turm der Lamaria-Kirche',
+          fr: "La tour svane de l'église de Lamaria",
+          es: 'La torre svana de la iglesia de Lamaria',
+          nl: 'De Svanische toren van de Lamaria-kerk',
+          cs: 'Svanská věž kostela Lamaria',
+          pl: 'Swańska wieża kościoła Lamaria',
+        },
+      },
+    ],
   },
   {
     slug: 'margiani-house-museum', name: 'Margiani House Museum',

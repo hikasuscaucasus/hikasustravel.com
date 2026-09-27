@@ -4165,6 +4165,70 @@ section {
   }
 }
 /* No rung above 1448 exists (Chalaadi Glacier). Do not add a 1600/2400 breakpoint. */
+/* Svaneti Museum hero — per-page CSS background; AVIF-first + WebP fallback ride
+   on image-set(), three rungs as breakpoints. Native 3:2 (1536x1024, an owner
+   photo with a ChatGPT contrast edit) — matches SitePage's own default
+   GALLERY_WIDTHS ladder exactly. background-position: center keeps the three
+   icons centred in the treasury-hall frame. */
+.hero--svaneti-museum {
+  background-image: url("/images/files/svaneti-museum-treasury-icons-mestia-georgia-1200.webp");
+  background-image: image-set(
+    url("/images/files/svaneti-museum-treasury-icons-mestia-georgia-768.avif") type("image/avif"),
+    url("/images/files/svaneti-museum-treasury-icons-mestia-georgia-768.webp") type("image/webp")
+  );
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .hero--svaneti-museum {
+    background-image: image-set(
+      url("/images/files/svaneti-museum-treasury-icons-mestia-georgia-1200.avif") type("image/avif"),
+      url("/images/files/svaneti-museum-treasury-icons-mestia-georgia-1200.webp") type("image/webp")
+    );
+  }
+}
+@media (min-width: 1200px) {
+  .hero--svaneti-museum {
+    background-image: image-set(
+      url("/images/files/svaneti-museum-treasury-icons-mestia-georgia-1536.avif") type("image/avif"),
+      url("/images/files/svaneti-museum-treasury-icons-mestia-georgia-1536.webp") type("image/webp")
+    );
+  }
+}
+/* No rung above 1536 exists (Svaneti Museum). Do not add a 1600/2400 breakpoint. */
+/* Lamaria Church hero — per-page CSS background; AVIF-first + WebP fallback ride
+   on image-set(), three rungs as breakpoints. Native 4:3 (1448x1086, an owner
+   photo with a ChatGPT contrast edit) — no rung above 1448 exists.
+   background-position: center 40% keeps the bells and the Shkhara wall behind
+   them in frame rather than the foreground stone wall. */
+.hero--lamaria-church {
+  background-image: url("/images/files/lamaria-church-shkhara-ushguli-svaneti-georgia-1200.webp");
+  background-image: image-set(
+    url("/images/files/lamaria-church-shkhara-ushguli-svaneti-georgia-768.avif") type("image/avif"),
+    url("/images/files/lamaria-church-shkhara-ushguli-svaneti-georgia-768.webp") type("image/webp")
+  );
+  background-position: center 40%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .hero--lamaria-church {
+    background-image: image-set(
+      url("/images/files/lamaria-church-shkhara-ushguli-svaneti-georgia-1200.avif") type("image/avif"),
+      url("/images/files/lamaria-church-shkhara-ushguli-svaneti-georgia-1200.webp") type("image/webp")
+    );
+  }
+}
+@media (min-width: 1200px) {
+  .hero--lamaria-church {
+    background-image: image-set(
+      url("/images/files/lamaria-church-shkhara-ushguli-svaneti-georgia-1448.avif") type("image/avif"),
+      url("/images/files/lamaria-church-shkhara-ushguli-svaneti-georgia-1448.webp") type("image/webp")
+    );
+  }
+}
+/* No rung above 1448 exists (Lamaria Church). Do not add a 1600/2400 breakpoint. */
 /* Shekvetili Dendrological Park hero — per-page CSS background (the hero is a
    background, not an <img>), so AVIF-first + WebP fallback ride on image-set()
    and the three rungs are breakpoints rather than a srcset. background-size:
