@@ -4131,6 +4131,40 @@ section {
   }
 }
 /* No rung above 1364 exists (Koruldi Lakes). Do not add a 1600/2400 breakpoint. */
+/* Chalaadi Glacier hero — per-page CSS background (the hero is a background, not
+   an <img>), so AVIF-first + WebP fallback ride on image-set() and the three
+   rungs are breakpoints rather than a srcset. background-size: cover is the
+   object-fit equivalent; background-position: center 45% keeps the glacier and
+   peaks (mid-frame) in view rather than the meadow foreground. Native 4:3
+   (1448x1086, an owner photo with a ChatGPT contrast edit) — no rung above 1448
+   exists; do not add a 1600/2400 breakpoint. */
+.hero--chalaadi-glacier {
+  background-image: url("/images/files/chalaadi-glacier-panorama-svaneti-georgia-1200.webp");
+  background-image: image-set(
+    url("/images/files/chalaadi-glacier-panorama-svaneti-georgia-768.avif") type("image/avif"),
+    url("/images/files/chalaadi-glacier-panorama-svaneti-georgia-768.webp") type("image/webp")
+  );
+  background-position: center 45%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .hero--chalaadi-glacier {
+    background-image: image-set(
+      url("/images/files/chalaadi-glacier-panorama-svaneti-georgia-1200.avif") type("image/avif"),
+      url("/images/files/chalaadi-glacier-panorama-svaneti-georgia-1200.webp") type("image/webp")
+    );
+  }
+}
+@media (min-width: 1200px) {
+  .hero--chalaadi-glacier {
+    background-image: image-set(
+      url("/images/files/chalaadi-glacier-panorama-svaneti-georgia-1448.avif") type("image/avif"),
+      url("/images/files/chalaadi-glacier-panorama-svaneti-georgia-1448.webp") type("image/webp")
+    );
+  }
+}
+/* No rung above 1448 exists (Chalaadi Glacier). Do not add a 1600/2400 breakpoint. */
 /* Shekvetili Dendrological Park hero — per-page CSS background (the hero is a
    background, not an <img>), so AVIF-first + WebP fallback ride on image-set()
    and the three rungs are breakpoints rather than a srcset. background-size:

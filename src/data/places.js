@@ -14068,8 +14068,117 @@ export const sites = [
     slug: 'chalaadi-glacier', name: 'Chalaadi Glacier',
     parentType: 'city', parent: 'mestia', formerParent: 'svaneti', published: true,
     seoKey: 'chalaadiGlacier', contentKey: 'chalaadiGlacier',
-    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
-    image: '/images/files/georgia-home.jpg',
+    // Hero: the glacier tongue descending through its rocky, partly cloud-wrapped
+    // gap above the valley — reads clearly as Chalaadi rather than a generic
+    // Svaneti peak. Native 4:3 (1448x1086, an owner photo with a ChatGPT contrast
+    // edit applied), so the ladder is 768/1200/1448 only; no upscale.
+    image: '/images/files/chalaadi-glacier-panorama-svaneti-georgia-1448.webp',
+    imageAvif: '/images/files/chalaadi-glacier-panorama-svaneti-georgia-1448.avif',
+    heroClass: 'hero--chalaadi-glacier',
+    heroPreload: '/images/files/chalaadi-glacier-panorama-svaneti-georgia-1200.avif',
+    ogImage: { src: '/images/files/chalaadi-glacier-panorama-svaneti-georgia-og-1200x630.jpg', width: 1200, height: 630 },
+    jsonLdImage: '/images/files/chalaadi-glacier-panorama-svaneti-georgia-og-1200x630.jpg',
+    imageMeta: {
+      width: 1448, height: 1086, imageId: 'hero-image',
+      name: 'Chalaadi Glacier and its surrounding peaks, Svaneti, Georgia',
+      description: 'The blue-white tongue of Chalaadi Glacier descending through a gap in jagged, partly snow-covered peaks above its glacial valley, with green slopes below and scattered cloud over the ridge, in Svaneti (Samegrelo-Zemo Svaneti), Georgia.',
+      locationName: 'Chalaadi Glacier, near Mestia, Svaneti, Georgia',
+      locality: 'Mestia', region: 'Samegrelo-Zemo Svaneti', country: 'GE',
+      alt: {
+        en: 'Chalaadi Glacier descending between rocky peaks above its valley, Svaneti, Georgia',
+        de: 'Der Chalaadi-Gletscher zwischen schroffen Gipfeln oberhalb seines Tals, Swanetien, Georgien',
+        fr: 'Le glacier de Chalaadi descendant entre des sommets rocheux au-dessus de sa vallée, Svanétie, Géorgie',
+        es: 'El glaciar Chalaadi descendiendo entre picos rocosos sobre su valle, Svaneti, Georgia',
+        nl: 'De Chalaadi-gletsjer dalend tussen rotsachtige toppen boven zijn dal, Svaneti, Georgië',
+        cs: 'Ledovec Chalaadi sestupující mezi skalnatými vrcholy nad svým údolím, Svanetie, Gruzie',
+        pl: 'Lodowiec Chalaadi schodzący między skalistymi szczytami nad swoją doliną, Swanetia, Gruzja',
+      },
+    },
+    // Three contextual body photos, placed at the end of "The trail", "Seeing
+    // the glacier safely" and "A glacier in retreat" (bodyChunks 2/3/4) — the
+    // sections whose subject they actually depict. A fourth candidate frame
+    // (near-duplicate ice-cave view) was held back rather than added just to
+    // use it; the two brought-in-good-weather list sections stay text-only.
+    gallery: [
+      {
+        base: 'chalaadi-glacier-valley-svaneti-georgia', width: 1448, height: 1086,
+        widths: [768, 1200, 1448], afterChunk: 2,
+        name: 'The Chalaadi Glacier valley trail, Svaneti, Georgia',
+        description: 'Wildflowers and forest in the foreground of the Chalaadi valley, with the glacier tongue and surrounding peaks visible in the distance, on the walk from Mestia in Svaneti (Samegrelo-Zemo Svaneti), Georgia.',
+        locationName: 'Chalaadi valley trail, near Mestia, Svaneti, Georgia',
+        locality: 'Mestia', region: 'Samegrelo-Zemo Svaneti', country: 'GE',
+        alt: {
+          en: 'View through forest and wildflower meadow toward the distant Chalaadi Glacier and peaks, Svaneti, Georgia',
+          de: 'Blick durch Wald und Bergwiese auf den fernen Chalaadi-Gletscher und die Gipfel, Swanetien, Georgien',
+          fr: 'Vue à travers la forêt et la prairie fleurie vers le glacier de Chalaadi et les sommets au loin, Svanétie, Géorgie',
+          es: 'Vista a través del bosque y el prado florido hacia el lejano glaciar Chalaadi y sus picos, Svaneti, Georgia',
+          nl: 'Uitzicht door bos en bloemrijke bergweide naar de verre Chalaadi-gletsjer en de toppen, Svaneti, Georgië',
+          cs: 'Pohled lesem a horskou loukou na vzdálený ledovec Chalaadi a okolní vrcholy, Svanetie, Gruzie',
+          pl: 'Widok przez las i kwietną łąkę na odległy lodowiec Chalaadi i okoliczne szczyty, Swanetia, Gruzja',
+        },
+        caption: {
+          en: 'The Chalaadi valley trail, glacier ahead, Svaneti',
+          de: 'Der Chalaadi-Talpfad mit dem Gletscher voraus, Swanetien',
+          fr: 'Le sentier de la vallée de Chalaadi, glacier en vue, Svanétie',
+          es: 'El sendero del valle de Chalaadi, con el glaciar al fondo, Svaneti',
+          nl: 'Het dalpad van Chalaadi, met de gletsjer in zicht, Svaneti',
+          cs: 'Stezka údolím Chalaadi s ledovcem v dálce, Svanetie',
+          pl: 'Szlak doliną Chalaadi z lodowcem w oddali, Swanetia',
+        },
+      },
+      {
+        base: 'chalaadi-glacier-terminus-svaneti-georgia', width: 1448, height: 1086,
+        widths: [768, 1200, 1448], afterChunk: 3,
+        name: 'The terminus of Chalaadi Glacier, Svaneti, Georgia',
+        description: 'The debris-streaked ice front of Chalaadi Glacier, with a pale-blue ice cave at its base and rocky moraine in the foreground, seen from a safe distance below the snow-covered ridge, in Svaneti (Samegrelo-Zemo Svaneti), Georgia.',
+        locationName: 'Chalaadi Glacier terminus, near Mestia, Svaneti, Georgia',
+        locality: 'Mestia', region: 'Samegrelo-Zemo Svaneti', country: 'GE',
+        alt: {
+          en: 'The moraine-streaked terminus of Chalaadi Glacier with an ice cave at its base, Svaneti, Georgia',
+          de: 'Das von Moränenschutt durchzogene Ende des Chalaadi-Gletschers mit einer Eishöhle an seiner Basis, Swanetien, Georgien',
+          fr: 'Le front du glacier de Chalaadi strié de moraine, avec une grotte de glace à sa base, Svanétie, Géorgie',
+          es: 'El frente del glaciar Chalaadi surcado de morrena, con una cueva de hielo en su base, Svaneti, Georgia',
+          nl: 'Het met morenepuin doorschoten front van de Chalaadi-gletsjer met een ijsgrot aan de voet, Svaneti, Georgië',
+          cs: 'Čelo ledovce Chalaadi rozbrázděné morénou s ledovou jeskyní u paty, Svanetie, Gruzie',
+          pl: 'Czoło lodowca Chalaadi pobrużdżone moreną, z lodową jaskinią u podstawy, Swanetia, Gruzja',
+        },
+        caption: {
+          en: "Chalaadi Glacier's ice front above the moraine, Svaneti",
+          de: 'Die Eisfront des Chalaadi-Gletschers über der Moräne, Swanetien',
+          fr: 'Le front glaciaire de Chalaadi au-dessus de la moraine, Svanétie',
+          es: 'El frente helado del glaciar Chalaadi sobre la morrena, Svaneti',
+          nl: 'Het ijsfront van de Chalaadi-gletsjer boven de morene, Svaneti',
+          cs: 'Ledové čelo ledovce Chalaadi nad morénou, Svanetie',
+          pl: 'Lodowe czoło lodowca Chalaadi nad moreną, Swanetia',
+        },
+      },
+      {
+        base: 'chalaadi-glacial-river-svaneti-georgia', width: 1448, height: 1086,
+        widths: [768, 1200, 1448], afterChunk: 4,
+        name: 'The glacial river below Chalaadi Glacier, Svaneti, Georgia',
+        description: 'The fast, pale meltwater of the Chalaadi glacial river running through boulder-strewn moraine, with the glacier and a snow-covered peak visible up the valley, in Svaneti (Samegrelo-Zemo Svaneti), Georgia.',
+        locationName: 'Chalaadi glacial river, near Mestia, Svaneti, Georgia',
+        locality: 'Mestia', region: 'Samegrelo-Zemo Svaneti', country: 'GE',
+        alt: {
+          en: 'The glacial meltwater river running through boulders below Chalaadi Glacier, Svaneti, Georgia',
+          de: 'Der Gletscherfluss des Chalaadi, der zwischen Felsblöcken unterhalb des Gletschers fließt, Swanetien, Georgien',
+          fr: 'La rivière glaciaire du Chalaadi coulant entre les blocs rocheux en contrebas du glacier, Svanétie, Géorgie',
+          es: 'El río glaciar de Chalaadi corriendo entre bloques de roca bajo el glaciar, Svaneti, Georgia',
+          nl: 'De gletsjerrivier van Chalaadi, stromend tussen rotsblokken onder de gletsjer, Svaneti, Georgië',
+          cs: 'Ledovcová řeka Chalaadi tekoucí mezi balvany pod ledovcem, Svanetie, Gruzie',
+          pl: 'Lodowcowa rzeka Chalaadi płynąca wśród głazów poniżej lodowca, Swanetia, Gruzja',
+        },
+        caption: {
+          en: 'The Chalaadi glacial river below the moraine, Svaneti',
+          de: 'Der Chalaadi-Gletscherfluss unterhalb der Moräne, Swanetien',
+          fr: 'La rivière glaciaire de Chalaadi sous la moraine, Svanétie',
+          es: 'El río glaciar de Chalaadi bajo la morrena, Svaneti',
+          nl: 'De Chalaadi-gletsjerrivier onder de morene, Svaneti',
+          cs: 'Ledovcová řeka Chalaadi pod morénou, Svanetie',
+          pl: 'Lodowcowa rzeka Chalaadi poniżej moreny, Swanetia',
+        },
+      },
+    ],
   },
   {
     slug: 'mikheil-khergiani-house-museum', name: 'Mikheil Khergiani House Museum',
