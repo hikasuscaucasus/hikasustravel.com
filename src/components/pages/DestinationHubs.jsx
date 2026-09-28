@@ -240,7 +240,12 @@ export function CitiesHubPage({ country = DEFAULT_COUNTRY }) {
 // out for the card only; `s.image` itself is untouched, so every other use
 // (the site's own hero, JSON-LD, Sighnaghi's own card) is unaffected.
 const PLACES_HUB_FALLBACK_IMAGE = '/images/files/georgia-home.jpg'
-const siteCardImage = (s) => (s.image === PLACES_HUB_FALLBACK_IMAGE ? undefined : s.image)
+// A site's own `cardImage` (places.js) wins when present — `false` keeps a deliberately text-only
+// card text-only although the page now has a real hero; a string pins the card to that file.
+const siteCardImage = (s) => {
+  if ('cardImage' in s) return s.cardImage || undefined
+  return s.image === PLACES_HUB_FALLBACK_IMAGE ? undefined : s.image
+}
 
 export function PlacesToVisitHubPage({ country = DEFAULT_COUNTRY }) {
   const conf = COUNTRY_HUBS[country].places

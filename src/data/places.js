@@ -60,6 +60,14 @@ export const SITE_URL = 'https://www.hikasustravel.com'
 // ---------------------------------------------------------------------------
 
 // ---------------------------------------------------------------------------
+// `cardImage` (sites only) — overrides the /georgia/places-to-visit CARD image independently of the
+// page hero. The card otherwise reads the same `image` field as the hero (DestinationHubs.jsx
+// `siteCardImage`), so giving a page a hero would silently change its card. `cardImage: false`
+// keeps a deliberately text-only card text-only; a string pins the card to that file. Set only
+// where the hero was added after the card state was decided; delete it to let the hero show.
+// ---------------------------------------------------------------------------
+
+// ---------------------------------------------------------------------------
 // Regions of Georgia (tourism taxonomy). `name` is the English/house-style
 // proper name used for schema + fallback; localized names come from pages.json.
 // ---------------------------------------------------------------------------
@@ -10706,8 +10714,42 @@ export const sites = [
     slug: 'david-gareja-monastery', name: 'David Gareja',
     parentType: 'region', parent: 'kakheti', published: true,
     seoKey: 'davidGarejaMonastery', contentKey: 'davidGarejaMonastery',
-    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
-    image: '/images/files/georgia-home.jpg',
+    // Hero: the owner's real photograph of the Lavra (source: Heros only/David Gareja.jpg,
+    // 4233x2826 JPG, no AI/C2PA provenance markers), replacing the georgia-home.jpg
+    // placeholder. The responsive ladder already ships with the 20-day tour
+    // (768/1200/1600/2400, same photograph, verified by pixel comparison), so it is
+    // REUSED rather than re-encoded; only the 1.91:1 social crop is new. Single 1600
+    // rung as image/imageAvif (the Kutaisi city pattern) — no new CSS.
+    image: '/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/david-gareja-monastery-georgia-1600.webp',
+    imageAvif: '/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/david-gareja-monastery-georgia-1600.avif',
+    heroPreload: '/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/david-gareja-monastery-georgia-1600.avif',
+    ogImage: { src: '/images/files/david-gareja-monastery-georgia-og-1200x630.jpg', width: 1200, height: 630 },
+    cardImage: false, // card was image-free before this hero; the hub card stays text-only
+    imageMeta: {
+      width: 1600, height: 1068,
+      name: 'The Lavra monastery buildings at David Gareja, Georgia',
+      description: 'Stone monastery buildings with wooden galleries and a small bell tower beneath a sandstone cliff in the Lavra of the David Gareja monastery complex, on the Gareja plateau in Georgia.',
+      locationName: 'David Gareja monastery complex, Georgia',
+      region: 'Kakheti', country: 'GE',
+      alt: {
+        en: 'Stone monastery buildings with wooden galleries and a small bell tower beneath a sandstone cliff at the David Gareja Lavra, Georgia',
+        de: 'Steinerne Klostergebäude mit Holzgalerien und einem kleinen Glockenturm unterhalb einer Sandsteinwand in der Lavra von David Gareja, Georgien',
+        fr: 'Bâtiments monastiques en pierre avec galeries en bois et un petit clocher au pied d\'une falaise de grès à la Lavra de David Gareja, Géorgie',
+        es: 'Edificios monásticos de piedra con galerías de madera y un pequeño campanario al pie de un acantilado de arenisca en la Lavra de David Gareja, Georgia',
+        nl: 'Stenen kloostergebouwen met houten galerijen en een kleine klokkentoren onder een zandsteenwand in de Lavra van David Gareja, Georgië',
+        cs: 'Kamenné klášterní budovy s dřevěnými ochozy a malou zvonicí pod pískovcovou skalou v Lavře David Gareja, Gruzie',
+        pl: 'Kamienne budynki klasztorne z drewnianymi galeriami i małą dzwonnicą pod piaskowcową ścianą w Lavrze David Gareja, Gruzja',
+      },
+      caption: {
+        en: 'The Lavra monastery, David Gareja',
+        de: 'Die Lavra, David Gareja',
+        fr: 'La Lavra, David Gareja',
+        es: 'La Lavra, David Gareja',
+        nl: 'De Lavra, David Gareja',
+        cs: 'Lavra, David Gareja',
+        pl: 'Lavra, David Gareja',
+      },
+    },
   },
   {
     slug: 'bodbe-monastery', name: 'Bodbe Monastery',
@@ -11187,8 +11229,46 @@ export const sites = [
     slug: 'batumi-dancing-fountains', name: 'Batumi Dancing Fountains',
     parentType: 'city', parent: 'batumi', published: true,
     seoKey: 'batumiDancingFountains', contentKey: 'batumiDancingFountains',
-    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
-    image: '/images/files/Batumi%20Black%20Sea%20Coast.jpg',
+    // Hero: a real phone photograph (PXL_20260730_171224767.jpg, 4080x3072, camera JPG, no AI
+    // markers) of the illuminated boulevard fountains at night. It replaces the unrelated
+    // Batumi Black Sea Coast image. Caption is deliberately neutral ("fountains on the Batumi
+    // Boulevard"): the frame shows a round pool, not the lake, so the Ardagani Lake section is
+    // NOT asserted. The library's other boulevard-fountain image is an OpenAI-generated PNG
+    // (and the shipped batumi-boulevard-fountains-night ladder derives from it) — not used here.
+    image: '/images/batumi/batumi-dancing-fountains-boulevard-night-georgia-1600.webp',
+    imageAvif: '/images/batumi/batumi-dancing-fountains-boulevard-night-georgia-1600.avif',
+    heroPreload: '/images/batumi/batumi-dancing-fountains-boulevard-night-georgia-1600.avif',
+    ogImage: { src: '/images/batumi/batumi-dancing-fountains-boulevard-night-georgia-og-1200x630.jpg', width: 1200, height: 630 },
+    // The card keeps showing the unrelated "Batumi Black Sea Coast" photo it showed before this hero
+    // existed (pinned on purpose: the hub is out of scope for the image audit). That photo is a
+    // pre-existing wrong card image — delete this line to let the new hero appear on the card, or set
+    // `cardImage: false` for a text-only card.
+    cardImage: '/images/files/Batumi%20Black%20Sea%20Coast.jpg',
+    imageMeta: {
+      width: 1600, height: 1205,
+      name: 'Illuminated fountains on the Batumi Boulevard at night, Georgia',
+      description: 'Fountain jets lit at night in a round pool on the chequered promenade of the Batumi Boulevard, with a blue-lit building behind and visitors gathered around the rim, Adjara, Georgia.',
+      locationName: 'Batumi Boulevard, Batumi, Georgia',
+      locality: 'Batumi', region: 'Adjara', country: 'GE',
+      alt: {
+        en: 'Illuminated fountain jets rising from a round pool on the chequered promenade of the Batumi Boulevard at night, with a blue-lit building behind, Georgia',
+        de: 'Beleuchtete Fontänen steigen bei Nacht aus einem runden Becken auf der schachbrettartig gepflasterten Promenade des Boulevards von Batumi, dahinter ein blau beleuchtetes Gebäude, Georgien',
+        fr: 'Jets d\'eau illuminés jaillissant d\'un bassin circulaire sur la promenade en damier du boulevard de Batumi la nuit, avec un immeuble éclairé en bleu derrière, Géorgie',
+        es: 'Chorros de agua iluminados que brotan de una fuente circular en el paseo ajedrezado del bulevar de Batumi de noche, con un edificio iluminado de azul detrás, Georgia',
+        nl: 'Verlichte waterstralen uit een rond bassin op de dambordvormig geplaveide promenade van de boulevard van Batumi bij nacht, met daarachter een blauw verlicht gebouw, Georgië',
+        cs: 'Osvětlené proudy vody z kruhové kašny na šachovnicově dlážděné promenádě batumského bulváru v noci, za nimi modře osvětlená budova, Gruzie',
+        pl: 'Podświetlone strumienie wody z okrągłej fontanny na szachownicowo brukowanej promenadzie bulwaru w Batumi nocą, w tle podświetlony na niebiesko budynek, Gruzja',
+      },
+      caption: {
+        en: 'Fountains on the Batumi Boulevard at night',
+        de: 'Die Brunnen am Boulevard von Batumi bei Nacht',
+        fr: 'Fontaines du boulevard de Batumi la nuit',
+        es: 'Fuentes del bulevar de Batumi de noche',
+        nl: 'Fonteinen aan de boulevard van Batumi bij nacht',
+        cs: 'Fontány na batumském bulváru v noci',
+        pl: 'Fontanny na bulwarze w Batumi nocą',
+      },
+    },
   },
   {
     slug: 'europe-square-batumi', name: 'Europe Square',
@@ -12097,13 +12177,111 @@ export const sites = [
     seoKey: 'gabriadzeMarionetteTheatre', contentKey: 'gabriadzeMarionetteTheatre',
     noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/georgia-home.jpg',
+    // One contextual photograph, in "The clock and the tower": the owner's real portrait
+    // JPG (New folder/Rezo Gabriadze Clock Tower.jpg, 2421x3441, no AI markers), cut to the
+    // 4:3 frame BodyFigure shows anyway (belfry, bell, clock face, planted roof). NOT the shipped
+    // gabriadze-clock-tower ladders — those come from an OpenAI-generated PNG. The hero stays a
+    // placeholder: a portrait tower does not give a landscape hero frame without new CSS.
+    gallery: [
+      {
+        base: 'rezo-gabriadze-leaning-clock-tower-tbilisi-georgia', width: 1536, height: 1152,
+        widths: [768, 1200, 1536], plainWidths: true, afterChunk: 2,
+        name: 'The leaning Gabriadze Clock Tower, Old Town, Tbilisi, Georgia',
+        description: 'The leaning brick clock tower beside the Rezo Gabriadze Marionette Theatre in Tbilisi\'s Old Town, with its gold-rimmed clock face and small bell house beneath a planted roof, Georgia.',
+        locationName: 'Rezo Gabriadze Clock Tower, Tbilisi, Georgia',
+        locality: 'Tbilisi', region: 'Tbilisi', country: 'GE',
+        alt: {
+          en: 'The leaning Gabriadze clock tower in Tbilisi\'s Old Town, with its gold-rimmed clock face, small bell house under a planted roof and hand-built brick and ceramic details',
+          de: 'Der schiefe Gabriadze-Uhrturm in der Altstadt von Tiflis mit goldumrandetem Zifferblatt, kleinem Glockenhaus unter einem bepflanzten Dach und handgefertigten Ziegel- und Keramikdetails',
+          fr: 'La tour de l\'horloge penchée de Gabriadze dans la vieille ville de Tbilissi, avec son cadran doré, son petit clocher sous un toit planté et ses détails en brique et en céramique faits main',
+          es: 'La torre del reloj inclinada de Gabriadze en el Casco Antiguo de Tbilisi, con su esfera de marco dorado, una pequeña casa de campanas bajo un tejado con plantas y detalles artesanales de ladrillo y cerámica',
+          nl: 'De scheve klokkentoren van Gabriadze in de oude stad van Tbilisi, met een gouden wijzerplaat, een klein klokkenhuisje onder een beplant dak en met de hand gemaakte details van baksteen en keramiek',
+          cs: 'Nakloněná Gabriadzeho hodinová věž ve Starém Městě Tbilisi se zlatě orámovaným ciferníkem, malým zvonovým domkem pod osázenou střechou a ručně vyrobenými cihlovými a keramickými detaily',
+          pl: 'Pochylona wieża zegarowa Gabriadze na Starym Mieście w Tbilisi ze złotą tarczą zegara, małą dzwonnicą pod obsadzonym dachem i ręcznie wykonanymi detalami z cegły i ceramiki',
+        },
+        caption: {
+          en: 'The Gabriadze Clock Tower, Old Town, Tbilisi',
+          de: 'Der Gabriadze-Uhrturm, Altstadt, Tiflis',
+          fr: 'La tour de l\'horloge de Gabriadze, vieille ville, Tbilissi',
+          es: 'La Torre del Reloj de Gabriadze, Casco Antiguo, Tbilisi',
+          nl: 'De Gabriadze-klokkentoren, oude stad, Tbilisi',
+          cs: 'Gabriadzeho hodinová věž, Staré Město, Tbilisi',
+          pl: 'Wieża Zegarowa Gabriadze, Stare Miasto, Tbilisi',
+        },
+      },
+    ],
   },
   {
     slug: 'rike-park', name: 'Rike Park',
     parentType: 'city', parent: 'tbilisi', published: true,
     seoKey: 'rikePark', contentKey: 'rikePark',
-    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
-    image: '/images/files/georgia-home.jpg',
+    // Hero: the owner's real Bridge of Peace photograph (Peace Bridge.jpg, 4096x2730 JPG,
+    // no AI provenance markers; the shipped ladder matches it pixel-for-pixel) with the
+    // landscaped Rike Park beds in the foreground. Reuses the existing
+    // .hero--bridge-of-peace image-set() ladder and og crop — no new asset, no new CSS.
+    // Same photograph as The Bridge of Peace page's hero: the bridge is the park's
+    // landmark and no separate photograph of the park exists in the owner library.
+    image: '/images/files/bridge-of-peace-tbilisi-georgia-2400.webp',
+    imageAvif: '/images/files/bridge-of-peace-tbilisi-georgia-2400.avif',
+    heroClass: 'hero--bridge-of-peace',
+    ogImage: { src: '/images/files/bridge-of-peace-tbilisi-georgia-og.jpg', width: 1200, height: 630 },
+    cardImage: false, // card was image-free before this hero; the hub card stays text-only
+    imageMeta: {
+      width: 2400, height: 1600,
+      name: 'The Bridge of Peace and the gardens of Rike Park, Tbilisi, Georgia',
+      description: 'The steel-and-glass Bridge of Peace rising behind the landscaped flower beds of Rike Park on the left bank of the Mtkvari River in Tbilisi, Georgia.',
+      locationName: 'Rike Park, Tbilisi, Georgia',
+      locality: 'Tbilisi', region: 'Tbilisi', country: 'GE',
+      alt: {
+        en: 'The steel-and-glass Bridge of Peace rising behind the landscaped flower beds of Rike Park, Tbilisi, Georgia',
+        de: 'Die Friedensbrücke aus Stahl und Glas erhebt sich hinter den gepflegten Blumenbeeten des Rike-Parks, Tiflis, Georgien',
+        fr: 'Le pont de la Paix en acier et en verre s\'élève derrière les massifs fleuris aménagés du parc de Rike, Tbilissi, Géorgie',
+        es: 'El puente de la Paz, de acero y vidrio, se alza detrás de los parterres del parque Rike, Tbilisi, Georgia',
+        nl: 'De Vredesbrug van staal en glas rijst op achter de aangelegde bloemperken van het Rikepark, Tbilisi, Georgië',
+        cs: 'Ocelová a skleněná lávka Most míru se zvedá za upravenými záhony parku Rike, Tbilisi, Gruzie',
+        pl: 'Stalowo-szklany Most Pokoju wznosi się za zadbanymi rabatami parku Rike, Tbilisi, Gruzja',
+      },
+      caption: {
+        en: 'The Bridge of Peace and Rike Park, Tbilisi',
+        de: 'Die Friedensbrücke und der Rike-Park, Tiflis',
+        fr: 'Le pont de la Paix et le parc de Rike, Tbilissi',
+        es: 'El puente de la Paz y el parque Rike, Tbilisi',
+        nl: 'De Vredesbrug en het Rikepark, Tbilisi',
+        cs: 'Most míru a park Rike, Tbilisi',
+        pl: 'Most Pokoju i park Rike, Tbilisi',
+      },
+    },
+    // "The two modern landmarks" section: the owner's own view from Narikala shows exactly what
+    // it describes — the metal "tubes" at the park's north end and the domed former presidential
+    // palace on the Avlabari slope — with the Bridge of Peace between them.
+    gallery: [
+      {
+        base: 'rike-park-bridge-of-peace-panorama-tbilisi-georgia', width: 1536, height: 1079,
+        widths: [768, 1200, 1536], plainWidths: true, afterChunk: 4,
+        name: 'Rike Park, the Bridge of Peace and the Mtkvari seen from Narikala, Tbilisi, Georgia',
+        description: 'A view from Narikala over the Old Town roofs to the Mtkvari River, the glass Bridge of Peace, the metal tubes of Rike Park and the domed former presidential palace on the Avlabari slope, Tbilisi, Georgia.',
+        locationName: 'Rike Park, Tbilisi, Georgia',
+        locality: 'Tbilisi', region: 'Tbilisi', country: 'GE',
+        alt: {
+          en: 'View from Narikala over the Old Town roofs to the Mtkvari, the glass Bridge of Peace, the metal "tubes" of Rike Park and the domed former presidential palace on the slope beyond',
+          de: 'Blick von Narikala über die Dächer der Altstadt zur Mtkvari, zur gläsernen Friedensbrücke, zu den metallenen „Röhren“ im Rike-Park und zum kuppelgekrönten ehemaligen Präsidentenpalast am Hang dahinter',
+          fr: 'Vue depuis Narikala sur les toits de la vieille ville, la Mtkvari, le pont de la Paix en verre, les « tubes » métalliques du parc de Rike et l\'ancien palais présidentiel à coupole sur la pente au fond',
+          es: 'Vista desde Narikala sobre los tejados del Casco Antiguo, el Mtkvari, el puente de la Paz de cristal, los «tubos» metálicos del parque Rike y el antiguo palacio presidencial con cúpula en la ladera del fondo',
+          nl: 'Uitzicht vanaf Narikala over de daken van de oude stad naar de Mtkvari, de glazen Vredesbrug, de metalen "buizen" in het Rikepark en het voormalige presidentiële paleis met koepel op de helling erachter',
+          cs: 'Pohled z pevnosti Narikala přes střechy Starého Města na Mtkvari, skleněný Most míru, kovové „trubky“ v parku Rike a bývalý prezidentský palác s kupolí na svahu za nimi',
+          pl: 'Widok z twierdzy Narikala na dachy Starego Miasta, Mtkvari, szklany Most Pokoju, metalowe „rury” w parku Rike i dawny pałac prezydencki z kopułą na zboczu w tle',
+        },
+        caption: {
+          en: 'Rike Park and the Bridge of Peace from Narikala, Tbilisi',
+          de: 'Der Rike-Park und die Friedensbrücke von Narikala aus, Tiflis',
+          fr: 'Le parc de Rike et le pont de la Paix vus de Narikala, Tbilissi',
+          es: 'El parque Rike y el puente de la Paz desde Narikala, Tbilisi',
+          nl: 'Het Rikepark en de Vredesbrug vanaf Narikala, Tbilisi',
+          cs: 'Park Rike a Most míru z pevnosti Narikala, Tbilisi',
+          pl: 'Park Rike i Most Pokoju widziane z twierdzy Narikala, Tbilisi',
+        },
+      },
+    ],
   },
   {
     slug: 'rike-narikala-cable-car', name: 'Rike–Narikala Cable Car',
@@ -12439,8 +12617,41 @@ export const sites = [
     slug: 'metekhi-church', name: 'Metekhi Church',
     parentType: 'city', parent: 'tbilisi', published: true,
     seoKey: 'metekhiChurch', contentKey: 'metekhiChurch',
-    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
-    image: '/images/files/georgia-home.jpg',
+    // Hero: the owner's real photograph of the Metekhi cliff (New folder/Mtkvari River.jpg,
+    // 5616x3744 JPG, no AI/C2PA markers) — cliff, church on its rim, old balconied houses and the
+    // reflection in the river. NOT the tour-gallery "metekhi-cliff" / "mtkvari-river-old-tbilisi-
+    // cliffs" ladders: those were cut from an OpenAI-generated PNG of the same scene.
+    // Single 1600 rung as image/imageAvif; new 1.91:1 social crop.
+    image: '/images/files/metekhi-church-cliff-mtkvari-tbilisi-georgia-1600.webp',
+    imageAvif: '/images/files/metekhi-church-cliff-mtkvari-tbilisi-georgia-1600.avif',
+    heroPreload: '/images/files/metekhi-church-cliff-mtkvari-tbilisi-georgia-1600.avif',
+    ogImage: { src: '/images/files/metekhi-church-cliff-mtkvari-tbilisi-georgia-og-1200x630.jpg', width: 1200, height: 630 },
+    cardImage: false, // card was image-free before this hero; the hub card stays text-only
+    imageMeta: {
+      width: 1600, height: 1067,
+      name: 'The Metekhi cliff and church above the Mtkvari River, Tbilisi, Georgia',
+      description: 'The Metekhi cliff rising sheer above the Mtkvari River in Tbilisi, with Metekhi Church and old balconied houses along its rim and the cliff reflected in the water, Georgia.',
+      locationName: 'Metekhi Church, Tbilisi, Georgia',
+      locality: 'Tbilisi', region: 'Tbilisi', country: 'GE',
+      alt: {
+        en: 'The sheer Metekhi cliff above the Mtkvari, with the church and old Tbilisi houses on its rim and the cliff mirrored in the calm river, Georgia',
+        de: 'Die schroffe Metekhi-Klippe über der Mtkvari, auf ihrem Rand die Kirche und alte Häuser von Tiflis, im ruhigen Fluss gespiegelt, Georgien',
+        fr: 'La falaise abrupte de Metekhi au-dessus de la Mtkvari, avec l\'église et les vieilles maisons de Tbilissi sur son rebord, se reflétant dans la rivière calme, Géorgie',
+        es: 'El escarpado acantilado de Metekhi sobre el Mtkvari, con la iglesia y las casas antiguas de Tbilisi en su borde, reflejado en el río en calma, Georgia',
+        nl: 'De steile Metekhi-klif boven de Mtkvari, met op de rand de kerk en oude huizen van Tbilisi, weerspiegeld in de rustige rivier, Georgië',
+        cs: 'Příkrý útes Metekhi nad Mtkvari s kostelem a starými tbilisskými domy na okraji, zrcadlící se v klidné řece, Gruzie',
+        pl: 'Stromy klif Metekhi nad Mtkvari z kościołem i starymi domami Tbilisi na krawędzi, odbijający się w spokojnej rzece, Gruzja',
+      },
+      caption: {
+        en: 'Metekhi cliff and church above the Mtkvari, Tbilisi',
+        de: 'Die Metekhi-Klippe mit der Kirche über der Mtkvari, Tiflis',
+        fr: 'La falaise et l\'église de Metekhi au-dessus de la Mtkvari, Tbilissi',
+        es: 'El acantilado y la iglesia de Metekhi sobre el Mtkvari, Tbilisi',
+        nl: 'De Metekhi-klif en -kerk boven de Mtkvari, Tbilisi',
+        cs: 'Útes a kostel Metekhi nad Mtkvari, Tbilisi',
+        pl: 'Klif i kościół Metekhi nad Mtkvari, Tbilisi',
+      },
+    },
   },
   {
     slug: 'mother-of-georgia-kartlis-deda', name: 'Mother of Georgia (Kartlis Deda)',
