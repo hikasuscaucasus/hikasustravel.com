@@ -1232,6 +1232,114 @@ const hotelData = {
       'Mountain views over the Enguri Valley',
     ],
   },
+  // Six Goris/Dilijan properties added for the 7-Day Armenia Tour: Yerevan,
+  // Tatev & Dilijan. Facts verified against each property's own listing on
+  // Tripadvisor/Booking.com/its own site (see the task's final report for
+  // sources). No owner photography exists for any of the six, so each ships
+  // with `images: []`, matching the existing 'Bakuriani Inn' precedent for a
+  // canonical record with no photos yet.
+  'Hotel Mirhav': {
+    images: [],
+    stars: 4,
+    description: 'A boutique hotel on Mashtots Street in Goris, with stone façades and wooden furnishings. Hotel Mirhav has 31 guest rooms, a restaurant, a meeting room and gardens looking out over the surrounding Zangezur mountains, and is about a 30-minute drive from Tatev Monastery.',
+    amenities: [
+      { icon: 'wifi', label: 'Free Wi-Fi' },
+      { icon: 'breakfast', label: 'Free Buffet Breakfast' },
+      { icon: 'restaurant', label: 'Restaurant & Bar' },
+      { icon: 'parking', label: 'Free Self Parking' },
+      { icon: 'garden', label: 'Garden with Mountain Views' },
+    ],
+    locationHighlights: [
+      'Central Goris, on Mashtots Street',
+      'A few minutes\' drive from Goris\'s historic centre',
+      'About a 30-minute drive from Tatev Monastery',
+    ],
+  },
+  'Christy Hotel': {
+    images: [],
+    stars: 3,
+    description: 'A 3-star hotel in the centre of Goris, with 17 single, double, triple and family rooms in a modern style. Christy Hotel has a restaurant, a garden and terrace, and free Wi-Fi, and is within easy walking distance of the town\'s museums, shops and cafés.',
+    amenities: [
+      { icon: 'wifi', label: 'Free Wi-Fi' },
+      { icon: 'breakfast', label: 'Breakfast Available' },
+      { icon: 'restaurant', label: 'On-Site Restaurant' },
+      { icon: 'garden', label: 'Garden & Terrace' },
+      { icon: 'parking', label: 'Free Private Parking' },
+    ],
+    locationHighlights: [
+      'Central Goris, on Mashtots Street',
+      'An 8-minute walk from the Museum of Ancient History',
+      'Within walking distance of Goris\'s shops and restaurants',
+    ],
+  },
+  'Yeghevnut Hotel': {
+    images: [],
+    stars: 3,
+    description: 'A 3-star hotel in the hills above Goris, about a 5-minute drive from the town centre, with 34 guest rooms, a garden, a shared lounge and a terrace. Yeghevnut Hotel serves a complimentary buffet breakfast daily and can help arrange local tours.',
+    amenities: [
+      { icon: 'wifi', label: 'Free Wi-Fi' },
+      { icon: 'breakfast', label: 'Free Buffet Breakfast' },
+      { icon: 'restaurant', label: 'Restaurant' },
+      { icon: 'garden', label: 'Garden & Terrace' },
+      { icon: 'parking', label: 'Free Private Parking' },
+    ],
+    locationHighlights: [
+      'In the hills above Goris, about a 5-minute drive from the centre',
+      'Close to the Museum of Ancient History and the Axel Bakunts Museum',
+      'Mountain views over the Goris area',
+    ],
+  },
+  'Best Western Plus Paradise Hotel Dilijan': {
+    images: [],
+    stars: 4,
+    description: 'A 4-star hotel in Dilijan with 72 rooms, built in 2011 close to the town\'s historic centre. Best Western Plus Paradise Hotel Dilijan has an indoor swimming pool, a spa and wellness centre, a gym, a sauna and an on-site restaurant serving Armenian and European dishes.',
+    amenities: [
+      { icon: 'wifi', label: 'Free Wi-Fi' },
+      { icon: 'pool', label: 'Indoor Swimming Pool' },
+      { icon: 'spa', label: 'Spa & Wellness Centre' },
+      { icon: 'gym', label: 'Fitness Centre' },
+      { icon: 'restaurant', label: 'Restaurant & Bar' },
+    ],
+    locationHighlights: [
+      'Close to Dilijan\'s historic centre',
+      'About a 5-minute drive from the M4 highway to Georgia',
+      'Indoor pool and spa on site',
+    ],
+  },
+  'Dili Town Resort and Spa': {
+    images: [],
+    stars: 5,
+    description: 'A 5-star aparthotel resort about 1.8 km from central Dilijan, with self-contained units including a kitchen, balcony and garden views. Dili Town Resort and Spa has an infinity pool, a spa and wellness centre with sauna and hammam, a fitness centre, and a restaurant serving European cuisine.',
+    amenities: [
+      { icon: 'wifi', label: 'Free Wi-Fi' },
+      { icon: 'pool', label: 'Infinity Swimming Pool' },
+      { icon: 'spa', label: 'Spa, Sauna & Hammam' },
+      { icon: 'gym', label: 'Fitness Centre' },
+      { icon: 'restaurant', label: 'Restaurant' },
+    ],
+    locationHighlights: [
+      'About 1.8 km from central Dilijan',
+      'Self-contained units with kitchen and balcony',
+      'Infinity pool and full spa facilities on site',
+    ],
+  },
+  'Casanova Inn': {
+    images: [],
+    stars: 3,
+    description: 'A 3-star boutique guesthouse in Dilijan, split across two buildings about 3 km from the town centre. Casanova Inn has 10 rooms, an indoor pool, a spa and wellness centre, and a restaurant and bar serving a complimentary buffet breakfast each morning.',
+    amenities: [
+      { icon: 'wifi', label: 'Free Wi-Fi' },
+      { icon: 'breakfast', label: 'Free Buffet Breakfast' },
+      { icon: 'pool', label: 'Indoor Pool' },
+      { icon: 'spa', label: 'Spa & Wellness Centre' },
+      { icon: 'restaurant', label: 'Restaurant & Bar' },
+    ],
+    locationHighlights: [
+      'About 3 km from central Dilijan',
+      'Roughly 95 km from Yerevan',
+      'Within easy reach of Haghartsin Monastery',
+    ],
+  },
 }
 
 // Retired spellings that map onto a canonical entry. Nothing in tours.js uses

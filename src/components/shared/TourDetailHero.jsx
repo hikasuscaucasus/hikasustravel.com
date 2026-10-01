@@ -198,7 +198,11 @@ export default function TourDetailHero({ tour, translatedTitle, heroH1, isGroup,
             {!isGroup && (
               <span className="iv-chip">
                 {tour.seasonality === 'winter' ? <SnowflakeIcon /> : <SunIcon />}
-                {tour.seasonality === 'winter' ? t('tour.seasonalityWinter') : t('tour.seasonalityAllYear')}
+                {tour.seasonality === 'winter'
+                  ? t('tour.seasonalityWinter')
+                  : tour.seasonality === 'seasonal'
+                    ? t('tour.seasonalitySeasonal')
+                    : t('tour.seasonalityAllYear')}
               </span>
             )}
             {startingPrice > 0 && (
