@@ -13,10 +13,13 @@
 // unfinished or unverified crossing never shows a half-built stub.
 
 // The overview / complete-guide hub. It lives at the section index URL.
+// noHero: no visible hero (solid title band instead); `image` is kept because
+// it still feeds og:image / twitter:image / the Article JSON-LD.
 export const borderOverview = {
   seoKey: 'borderCrossingsOverview',
   contentKey: 'borderCrossingsOverview',
   image: '/images/files/georgia-home.jpg',
+  noHero: true,
   published: true,
 }
 

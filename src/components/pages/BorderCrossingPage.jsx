@@ -133,7 +133,16 @@ export default function BorderCrossingPage({ overview = false }) {
       <div className="dest-breadcrumbs">
         <Breadcrumbs trail={trail} />
       </div>
-      <HeroSection image={heroImage} title={page.heroTitle} />
+      {entry.noHero ? (
+        // Hero-free page: the same solid title band the other no-hero pages use,
+        // carrying the H1. It stays in <main> so the alternating page-items
+        // bands below keep their order. `heroImage` still feeds og/JSON-LD.
+        <section className="dest-title-band">
+          <h1>{page.heroTitle}</h1>
+        </section>
+      ) : (
+        <HeroSection image={heroImage} title={page.heroTitle} />
+      )}
       <section className="page-items about-georgia">
         <FadeUp>
           <div ref={contentRef} dangerouslySetInnerHTML={{ __html: linkedContent }} />
