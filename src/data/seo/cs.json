@@ -939,6 +939,16 @@
     "description": "Pozemní hranice Gruzie s Tureckem, Arménií, Ázerbájdžánem a Ruskem: který přechod se hodí k jaké trase, silniční a železniční pravidla Ázerbájdžánu a co si před cestou ověřit.",
     "keywords": "hraniční přechody Gruzie, pozemní hranice Gruzie, hraniční přechod Sarpi, Horní Lars, hranice Gruzie Arménie, hranice Gruzie Turecko, hranice Gruzie Ázerbájdžán, vstup do Gruzie po zemi"
   },
+  "armeniaBorderCrossings": {
+    "title": "Hraniční přechody Arménie: kompletní průvodce",
+    "description": "Pozemní hranice Arménie s Gruzií, Íránem, Tureckem a Ázerbájdžánem: které přechody mohou cestující využít, co je uzavřeno, železnice, letiště a co si před cestou ověřit.",
+    "keywords": "hraniční přechody Arménie, hranice Arménie, hranice Gruzie Arménie, hranice Arménie Írán, Agarak Norduz, hranice Arménie Turecko, Margara Alican, hranice Arménie Ázerbájdžán, vlak Jerevan Tbilisi, vstup do Arménie po zemi"
+  },
+  "azerbaijanBorderCrossings": {
+    "title": "Hraniční přechody Ázerbájdžánu: kompletní průvodce",
+    "description": "Pozemní hranice Ázerbájdžánu s Gruzií, Ruskem, Íránem a Arménií: silnice a železnice, odjezd po souši, Nakhchivan a co si před cestou ověřit.",
+    "keywords": "hraniční přechody Ázerbájdžánu, hranice Ázerbájdžánu, pozemní hranice Ázerbájdžánu, hranice Gruzie Ázerbájdžán, Červený most, Balakan Lagodekhi, vlak Ázerbájdžán Gruzie, vlak Baku Tbilisi, hranice Ázerbájdžán Rusko, Samur, hranice Ázerbájdžán Írán, Astara, Nakhchivan, hranice Ázerbájdžán Arménie"
+  },
   "akhkerpiBorderCrossing": {
     "title": "Hraniční přechod Akhkerpi: Gruzie–Arménie",
     "description": "Akhkerpi je nejmenší a nejméně využívaný hraniční přechod mezi Gruzií a Arménií, v Kvemo Kartli poblíž Sadachla. Kde leží, pro koho je vhodný a co si předem ověřit.",

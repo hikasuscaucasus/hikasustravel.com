@@ -11,11 +11,12 @@ import { useLinkedHtml, useLinkedFaq } from '../../utils/autolinkReact'
 import useSEO from '../../hooks/useSEO'
 import { getSEO } from '../../data/seoData'
 import {
-  borderOverview,
+  countryBorderOverviews,
   getBorderCrossing,
-  borderHubPath,
+  borderHubPathFor,
   borderCrossingPath,
 } from '../../data/borders'
+import { countryBase, countryName } from '../../data/places'
 import NotFoundPage from './NotFoundPage'
 
 const SITE_URL = 'https://www.hikasustravel.com'
@@ -30,9 +31,9 @@ const SITE_URL = 'https://www.hikasustravel.com'
  * without destination-only widgets (maps, "best time to visit"), since a border
  * crossing is a reference page, not a destination.
  */
-export default function BorderCrossingPage({ overview = false }) {
+export default function BorderCrossingPage({ overview = false, country = 'georgia' }) {
   const { borderSlug } = useParams()
-  const entry = overview ? borderOverview : getBorderCrossing(borderSlug)
+  const entry = overview ? countryBorderOverviews[country] : getBorderCrossing(borderSlug)
   const t = useT()
   const { pages, enPages } = useContext(I18nContext)
   const { lang } = useLang()
@@ -49,7 +50,7 @@ export default function BorderCrossingPage({ overview = false }) {
   const linkedFaq = useLinkedFaq(faqItems)
   const heroImage = published ? entry.image : null
   const path = overview
-    ? borderHubPath.replace(/^\//, '')
+    ? borderHubPathFor(country).replace(/^\//, '')
     : published
       ? borderCrossingPath(entry.slug).replace(/^\//, '')
       : ''
@@ -59,7 +60,11 @@ export default function BorderCrossingPage({ overview = false }) {
     : overview
       ? [
           { name: t('breadcrumb.home'), to: '/' },
-          { name: t('nav.allDestinations'), to: '/georgia' },
+          // Georgia keeps its long-standing "All Destinations" crumb; a later
+          // country uses its own name and landing page (mirrors seo-jsonld.js).
+          country === 'georgia'
+            ? { name: t('nav.allDestinations'), to: '/georgia' }
+            : { name: t(`nav.destinations.${country}`), to: countryBase(country) },
           { name: t('nav.borderCrossings') },
         ]
       : [
@@ -97,7 +102,7 @@ export default function BorderCrossingPage({ overview = false }) {
           inLanguage: lang,
           mainEntityOfPage: url,
           image: `${SITE_URL}${heroImage}`,
-          about: { '@type': 'Country', name: 'Georgia' },
+          about: { '@type': 'Country', name: countryName(entry.country || country) },
           author: { '@type': 'Organization', name: 'Hikasus Travel' },
           publisher: { '@type': 'Organization', name: 'Hikasus Travel', url: SITE_URL },
         },

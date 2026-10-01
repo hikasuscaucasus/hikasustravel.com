@@ -118,6 +118,7 @@ export function AppRoutes() {
               cannot be shadowed by a city slug. Region guides keep nesting under
               their region as a static `things-to-do` segment. */}
           <Route path="armenia" element={<DestinationsPage country="armenia" />} />
+          <Route path="armenia/border-crossings" element={<BorderCrossingPage overview country="armenia" />} />
           <Route path="armenia/regions" element={<RegionsHubPage country="armenia" />} />
           <Route path="armenia/cities" element={<CitiesHubPage country="armenia" />} />
           <Route path="armenia/places-to-visit" element={<PlacesToVisitHubPage country="armenia" />} />
@@ -146,6 +147,7 @@ export function AppRoutes() {
               render now, listing everything as non-clickable "coming soon"
               cards. */}
           <Route path="azerbaijan" element={<DestinationsPage country="azerbaijan" />} />
+          <Route path="azerbaijan/border-crossings" element={<BorderCrossingPage overview country="azerbaijan" />} />
           <Route path="azerbaijan/regions" element={<RegionsHubPage country="azerbaijan" />} />
           <Route path="azerbaijan/cities" element={<CitiesHubPage country="azerbaijan" />} />
           <Route path="azerbaijan/places-to-visit" element={<PlacesToVisitHubPage country="azerbaijan" />} />

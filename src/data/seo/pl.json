@@ -939,6 +939,16 @@
     "description": "Granice lądowe Gruzji z Turcją, Armenią, Azerbejdżanem i Rosją: które przejście pasuje do jakiej trasy, zasady drogowe i kolejowe Azerbejdżanu i co sprawdzić przed podróżą.",
     "keywords": "przejścia graniczne Gruzja, granice lądowe Gruzji, przejście graniczne Sarpi, Wierchnij Łars, granica Gruzja Armenia, granica Gruzja Turcja, granica Gruzja Azerbejdżan, wjazd do Gruzji drogą lądową"
   },
+  "armeniaBorderCrossings": {
+    "title": "Przejścia graniczne Armenii: kompletny przewodnik",
+    "description": "Granice lądowe Armenii z Gruzją, Iranem, Turcją i Azerbejdżanem: z których przejść mogą korzystać podróżni, co jest zamknięte, kolej, lotniska i co sprawdzić przed podróżą.",
+    "keywords": "przejścia graniczne Armenia, granica Armenii, granica Gruzja Armenia, granica Armenia Iran, Agarak Norduz, granica Armenia Turcja, Margara Alican, granica Armenia Azerbejdżan, pociąg Erywań Tbilisi, wjazd do Armenii drogą lądową"
+  },
+  "azerbaijanBorderCrossings": {
+    "title": "Przejścia graniczne Azerbejdżanu: kompletny przewodnik",
+    "description": "Granice lądowe Azerbejdżanu z Gruzją, Rosją, Iranem i Armenią: droga i kolej, wyjazd drogą lądową, Nakhchivan i co sprawdzić przed podróżą.",
+    "keywords": "przejścia graniczne Azerbejdżan, granica Azerbejdżanu, granica lądowa Azerbejdżan, granica Gruzja Azerbejdżan, Czerwony Most, Balakan Lagodekhi, pociąg Azerbejdżan Gruzja, pociąg Baku Tbilisi, granica Azerbejdżan Rosja, Samur, granica Azerbejdżan Iran, Astara, Nakhchivan, granica Azerbejdżan Armenia"
+  },
   "akhkerpiBorderCrossing": {
     "title": "Przejście graniczne Akhkerpi: Gruzja–Armenia",
     "description": "Akhkerpi to najmniejsze i najrzadziej używane przejście graniczne między Gruzją a Armenią, w Kwemo Kartli koło Sadachlo. Gdzie leży, dla kogo jest i co sprawdzić przed wyjazdem.",

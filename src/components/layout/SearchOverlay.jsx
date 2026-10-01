@@ -30,6 +30,8 @@ const SECTION_KEYS = {
   'about-georgia': 'footer.aboutGeorgia',
   'about-armenia': 'nav.aboutArmenia',
   'about-azerbaijan': 'nav.aboutAzerbaijan',
+  armenia: 'nav.destinations.armenia',
+  azerbaijan: 'nav.destinations.azerbaijan',
   contact: 'footer.contact',
   faq: 'footer.faq',
 }

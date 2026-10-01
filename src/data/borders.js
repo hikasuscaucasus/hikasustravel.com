@@ -23,6 +23,33 @@ export const borderOverview = {
   published: true,
 }
 
+// The sister guides for Armenia and Azerbaijan. Same hero-free article layout,
+// one hub each at /<country>/border-crossings (a static segment, so it outranks
+// /<country>/:citySlug). Each carries an existing approved country photo for
+// og:image / the Article JSON-LD only; no visible hero. Georgia keeps its
+// individual crossing pages under /georgia/border-crossings/<slug>; Armenia and
+// Azerbaijan are single guides.
+export const countryBorderOverviews = {
+  georgia: { country: 'georgia', ...borderOverview },
+  armenia: {
+    country: 'armenia',
+    seoKey: 'armeniaBorderCrossings',
+    contentKey: 'armeniaBorderCrossings',
+    image: '/images/files/khor-virap-monastery-ararat-armenia-og.jpg',
+    noHero: true,
+    published: true,
+  },
+  azerbaijan: {
+    country: 'azerbaijan',
+    seoKey: 'azerbaijanBorderCrossings',
+    contentKey: 'azerbaijanBorderCrossings',
+    image: '/images/files/baku-flame-towers-azerbaijan-1200.webp',
+    noHero: true,
+    published: true,
+  },
+}
+export const borderHubPathFor = (country) => `/${country}/border-crossings`
+
 // Individual crossings. Add an entry here (with matching seoData + pages.json
 // keys) to publish a new one; flip published to false to hide it again.
 export const borderCrossings = [
@@ -119,11 +146,14 @@ const strip = (p) => p.replace(/^\//, '')
 // the prerenderer. Same shape as places.js publishedDestinationPages().
 export function publishedBorderPages() {
   const pages = []
-  if (borderOverview.published) {
+  for (const hub of Object.values(countryBorderOverviews)) {
+    if (!hub.published) continue
     pages.push({
-      path: strip(borderHubPath),
-      seoKey: borderOverview.seoKey,
-      image: borderOverview.image,
+      path: strip(borderHubPathFor(hub.country)),
+      seoKey: hub.seoKey,
+      image: hub.image,
+      country: hub.country,
+      hub: true,
     })
   }
   for (const b of borderCrossings) {
@@ -132,6 +162,7 @@ export function publishedBorderPages() {
       path: strip(borderCrossingPath(b.slug)),
       seoKey: b.seoKey,
       image: b.image,
+      country: 'georgia',
     })
   }
   return pages

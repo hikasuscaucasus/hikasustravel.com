@@ -352,12 +352,12 @@ export function createJsonLdBuilder({ seoFor }) {
     }
 
     // --- border crossings ---------------------------------------------------
-    const hubPath = clean(borderOverview?.path || 'georgia/border-crossings')
+    const hubPath = 'georgia/border-crossings' // parent of the individual (Georgian) crossings
     for (const bp of publishedBorderPages()) {
       const path = clean(bp.path)
       const url = `${SITE_URL}/${lang}/${path}`
       const seo = seoFor(bp.seoKey, lang)
-      const isHub = path === hubPath
+      const isHub = !!bp.hub
       const crossing = borderCrossings?.find((c) => clean(c.path || '') === path)
       put(path, [
         {
@@ -367,12 +367,12 @@ export function createJsonLdBuilder({ seoFor }) {
           inLanguage: lang,
           mainEntityOfPage: url,
           image: `${SITE_URL}${bp.image}`,
-          about: { '@type': 'Country', name: 'Georgia' },
+          about: { '@type': 'Country', name: countryName(bp.country || DEFAULT_COUNTRY) },
           author: ORG,
           publisher: PUBLISHER,
         },
         breadcrumbs(isHub
-          ? [HOME, ALL_DEST, { name: t('nav.borderCrossings') }]
+          ? [HOME, countryCrumb(bp.country || DEFAULT_COUNTRY), { name: t('nav.borderCrossings') }]
           : [HOME, ALL_DEST,
              { name: t('nav.borderCrossings'), to: `/${hubPath}` },
              { name: crossing?.name || seo.title }],

@@ -131,6 +131,9 @@ const hubsForSite = (s) => {
   }
 }
 const BORDER_HUB = clean(borderHubPath)
+// Armenia and Azerbaijan each have a sister border guide at /<country>/border-crossings.
+const COUNTRY_BORDER_HUBS = { armenia: 'armenia/border-crossings', azerbaijan: 'azerbaijan/border-crossings' }
+const COUNTRY_BORDER_KEYS = { armenia: 'armeniaBorderCrossings', azerbaijan: 'azerbaijanBorderCrossings' }
 
 // How many same-parent siblings a detail page links laterally. Enough to give
 // every page more than one inbound path without turning each into a link farm;
@@ -213,6 +216,7 @@ export function createLinkGraph({ tours, blogArticles, tourTitle, blogTitle, seo
       STATIC_PAGES.map(([path, key]) => [path, shortTitle(seoTitle(key, lang).title)]),
     )
     staticLabel.set(BORDER_HUB, shortTitle(seoTitle('borderCrossingsOverview', lang).title))
+    for (const [c, p] of Object.entries(COUNTRY_BORDER_HUBS)) staticLabel.set(p, shortTitle(seoTitle(COUNTRY_BORDER_KEYS[c], lang).title))
     const labelOfStatic = (p) => staticLabel.get(p) || p
 
     // --- home: the full top level --------------------------------------
@@ -340,6 +344,13 @@ export function createLinkGraph({ tours, blogArticles, tourTitle, blogTitle, seo
     for (const b of publishedBorderPages()) {
       const self = clean(b.path)
       if (self === BORDER_HUB) continue
+      if (b.hub) {
+        // A sister guide: reached from its country landing, and links back.
+        put(clean(countryBase(b.country)), self, labelOfStatic(self))
+        put(self, clean(countryBase(b.country)), labelOfStatic(clean(countryBase(b.country))))
+        put(self, BORDER_HUB, borderHubLabel)
+        continue
+      }
       put(BORDER_HUB, self, shortTitle(seoTitle(b.seoKey, lang).title))
       put(self, BORDER_HUB, borderHubLabel)
       put(self, GEORGIA_HUB, labelOfStatic(GEORGIA_HUB))
