@@ -355,29 +355,41 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Shuttle Service — compact standalone service block (Build Your Own
-          Trip removed per owner request; content not moved elsewhere). The
-          three-item benefits list was later swapped for a photo (the same
-          hero image the Shuttle Service page itself uses) per owner request. */}
-      <section className="home-items">
-        <div className="home-shuttle-card">
-          <CardImage
-            src="/images/files/taxi-service.jpg"
-            alt={t('home.shuttleImageAlt')}
-            className="home-shuttle-card__image"
-          />
-          <div className="home-shuttle-card__body">
-            <FadeUp>
-              <h2>{t('home.shuttleTitle')}</h2>
-            </FadeUp>
-            <p>{t('home.shuttleText')}</p>
-            <FadeUp>
-              <div className="button">
-                <LocaleLink to="/shuttle-service">{t('home.shuttleLink')}</LocaleLink>
-              </div>
-            </FadeUp>
+      {/* Travel Blogs — replaces the "What our travelers say" testimonials
+          section per owner request. Reuses the exact card markup and CSS
+          BlogArticlePage's "Related Articles" row already ships
+          (.blog-related__grid/__card), so this teaser matches the site's
+          established blog-card design instead of inventing a new one. Fixed
+          Georgia → Armenia → Azerbaijan order, not the registry's own
+          newest-first sort. Ordered directly after the group-tour sections,
+          above Explore the Caucasus, per owner request. */}
+      <section className="blog-article blog-related">
+        <FadeUp>
+          <h2 className="blog-related__heading">{tf(t, 'blog.heroTitle', 'Travel Blogs')}</h2>
+          <p className="blog-intro">{tf(t, 'home.blogsIntro', 'Practical guides to planning your journey through Georgia, Armenia and Azerbaijan.')}</p>
+          <div className="blog-related__grid">
+            {HOMEPAGE_BLOG_SLUGS.map((slug) => {
+              const a = blogArticles.find((x) => x.slug === slug)
+              if (!a) return null
+              const title = tf(t, a.titleKey, a.title)
+              const excerpt = a.descKey ? tf(t, a.descKey, a.excerpt) : a.excerpt
+              return (
+                <LocaleLink key={a.slug} to={`/blog/${a.slug}`} className="blog-related__card">
+                  <div className="blog-related__card-img-wrap">
+                    <img src={asset(a.thumbnail)} alt={title} className="blog-related__card-img" loading="lazy" />
+                  </div>
+                  <div className="blog-related__card-body">
+                    <h3 className="blog-related__card-title">{title}</h3>
+                    <p className="blog-related__card-excerpt">{excerpt}</p>
+                  </div>
+                </LocaleLink>
+              )
+            })}
           </div>
-        </div>
+          <p className="city-ttd-cta">
+            <LocaleLink to="/blog" className="button">{t('home.viewAllTravelBlogs')}</LocaleLink>
+          </p>
+        </FadeUp>
       </section>
 
       {/* Explore the Caucasus — destination guides, not tours. Reuses the
@@ -416,40 +428,30 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Travel Blogs — replaces the "What our travelers say" testimonials
-          section per owner request. Reuses the exact card markup and CSS
-          BlogArticlePage's "Related Articles" row already ships
-          (.blog-related__grid/__card), so this teaser matches the site's
-          established blog-card design instead of inventing a new one. Fixed
-          Georgia → Armenia → Azerbaijan order, not the registry's own
-          newest-first sort. */}
-      <section className="blog-article blog-related">
-        <FadeUp>
-          <h2 className="blog-related__heading">{tf(t, 'blog.heroTitle', 'Travel Blogs')}</h2>
-          <p className="blog-intro">{tf(t, 'home.blogsIntro', 'Practical guides to planning your journey through Georgia, Armenia and Azerbaijan.')}</p>
-          <div className="blog-related__grid">
-            {HOMEPAGE_BLOG_SLUGS.map((slug) => {
-              const a = blogArticles.find((x) => x.slug === slug)
-              if (!a) return null
-              const title = tf(t, a.titleKey, a.title)
-              const excerpt = a.descKey ? tf(t, a.descKey, a.excerpt) : a.excerpt
-              return (
-                <LocaleLink key={a.slug} to={`/blog/${a.slug}`} className="blog-related__card">
-                  <div className="blog-related__card-img-wrap">
-                    <img src={asset(a.thumbnail)} alt={title} className="blog-related__card-img" loading="lazy" />
-                  </div>
-                  <div className="blog-related__card-body">
-                    <h3 className="blog-related__card-title">{title}</h3>
-                    <p className="blog-related__card-excerpt">{excerpt}</p>
-                  </div>
-                </LocaleLink>
-              )
-            })}
+      {/* Shuttle Service — compact standalone service block (Build Your Own
+          Trip removed per owner request; content not moved elsewhere). The
+          three-item benefits list was later swapped for a photo (the same
+          hero image the Shuttle Service page itself uses) per owner request.
+          Ordered after Explore the Caucasus, per owner request. */}
+      <section className="home-items">
+        <div className="home-shuttle-card">
+          <CardImage
+            src="/images/files/taxi-service.jpg"
+            alt={t('home.shuttleImageAlt')}
+            className="home-shuttle-card__image"
+          />
+          <div className="home-shuttle-card__body">
+            <FadeUp>
+              <h2>{t('home.shuttleTitle')}</h2>
+            </FadeUp>
+            <p>{t('home.shuttleText')}</p>
+            <FadeUp>
+              <div className="button">
+                <LocaleLink to="/shuttle-service">{t('home.shuttleLink')}</LocaleLink>
+              </div>
+            </FadeUp>
           </div>
-          <p className="city-ttd-cta">
-            <LocaleLink to="/blog" className="button">{t('home.viewAllTravelBlogs')}</LocaleLink>
-          </p>
-        </FadeUp>
+        </div>
       </section>
 
       {/* How a private tour works — three steps, directly above Get in Touch. */}
