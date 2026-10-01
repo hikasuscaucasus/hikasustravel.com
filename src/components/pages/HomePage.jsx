@@ -207,7 +207,7 @@ export default function HomePage() {
                 <DestinationCard
                   name={t('nav.destinations.armenia')}
                   image="/images/files/amberd-fortress-aragats-armenia-1086.webp"
-                  to="/armenia"
+                  to="/tours/armenia"
                   locationLine={destStatus('armenia')}
                   headingLevel="h3"
                 />
@@ -217,7 +217,7 @@ export default function HomePage() {
                   name={t('nav.destinations.azerbaijan')}
                   image="/images/files/azerbaijan-home.jpg"
                   imageAlt={t('home.azerbaijanCardAlt')}
-                  to="/azerbaijan"
+                  to="/tours/azerbaijan"
                   locationLine={destStatus('azerbaijan')}
                   headingLevel="h3"
                 />
