@@ -63,6 +63,13 @@ docs/content-freshness.md." The run does this, in order:
 11. Record the run: write `docs/freshness/audit-YYYY-MM-DD.md`, set
     `lastFullAudit` to the run date and `nextFullAudit` to that date + 90 days.
 
+**Scheduler caveat:** GitHub runs scheduled workflows only from the
+repository's default branch, which is `main`, while the site lives on `react`.
+Until `.github/workflows/freshness-due.yml` is also present on `main` (it
+checks out `react` itself), the weekly reminder does not fire. Until then the
+due date is carried by `nextFullAudit` in the registry and by
+`npm run content:freshness`.
+
 A known rule change between audits is fixed immediately; 90 days is the
 maximum interval, not a reason to wait.
 
