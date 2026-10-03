@@ -17,9 +17,18 @@ import {
   borderCrossingPath,
 } from '../../data/borders'
 import { countryBase, countryName } from '../../data/places'
+import { reviewedDateFor, changedDateFor } from '../../data/freshness'
 import NotFoundPage from './NotFoundPage'
 
 const SITE_URL = 'https://www.hikasustravel.com'
+
+function formatDate(dateStr, lang) {
+  try {
+    return new Date(dateStr).toLocaleDateString(lang, { year: 'numeric', month: 'long', day: 'numeric' })
+  } catch {
+    return dateStr
+  }
+}
 
 /**
  * Generic border-crossing page. Driven by the borders.js registry and serves
@@ -49,6 +58,10 @@ export default function BorderCrossingPage({ overview = false, country = 'georgi
   const linkedContent = useLinkedHtml(page.content)
   const linkedFaq = useLinkedFaq(faqItems)
   const heroImage = published ? entry.image : null
+  // From the freshness registry: when the facts were last checked against
+  // official sources, and when the copy last materially changed.
+  const reviewed = reviewedDateFor(contentKey)
+  const modified = changedDateFor(contentKey)
   const path = overview
     ? borderHubPathFor(country).replace(/^\//, '')
     : published
@@ -103,6 +116,7 @@ export default function BorderCrossingPage({ overview = false, country = 'georgi
           mainEntityOfPage: url,
           image: `${SITE_URL}${heroImage}`,
           about: { '@type': 'Country', name: countryName(entry.country || country) },
+          ...(modified && { dateModified: modified }),
           author: { '@type': 'Organization', name: 'Hikasus Travel' },
           publisher: { '@type': 'Organization', name: 'Hikasus Travel', url: SITE_URL },
         },
@@ -126,7 +140,7 @@ export default function BorderCrossingPage({ overview = false, country = 'georgi
       ],
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [published, lang, path, seo.description, heroImage, faqItems])
+  }, [published, lang, path, seo.description, heroImage, faqItems, modified])
 
   useSEO(published ? { ...seo, lang, path, image: heroImage, jsonLd } : {})
 
@@ -150,6 +164,9 @@ export default function BorderCrossingPage({ overview = false, country = 'georgi
       )}
       <section className="page-items about-georgia">
         <FadeUp>
+          {reviewed && (
+            <p className="page-published">{t('page.lastReviewed')} {formatDate(reviewed, lang)}</p>
+          )}
           <div ref={contentRef} dangerouslySetInnerHTML={{ __html: linkedContent }} />
         </FadeUp>
       </section>

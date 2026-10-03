@@ -8,6 +8,7 @@ import { useLinkedHtml, useLinkedFaq } from '../../utils/autolinkReact'
 import useT from '../../i18n/useT'
 import useSEO from '../../hooks/useSEO'
 import { getSEO } from '../../data/seoData'
+import { reviewedDateFor, changedDateFor } from '../../data/freshness'
 
 const SITE_URL = 'https://www.hikasustravel.com'
 
@@ -77,6 +78,10 @@ export default function VisaPage({ country = 'georgia' }) {
   const linkedContent = useLinkedHtml(page.content)
   const linkedFaq = useLinkedFaq(faqItems)
   const published = page.date
+  // From the freshness registry: when the facts were last checked against
+  // official sources, and when the copy last materially changed.
+  const reviewed = reviewedDateFor(conf.pageKey)
+  const modified = changedDateFor(conf.pageKey)
 
   const jsonLd = useMemo(() => {
     const url = `${SITE_URL}/${lang}/${PATH}`
@@ -90,7 +95,8 @@ export default function VisaPage({ country = 'georgia' }) {
           inLanguage: lang,
           mainEntityOfPage: url,
           ...(HERO_IMAGE ? { image: `${SITE_URL}${HERO_IMAGE}` } : {}),
-          ...(published && { datePublished: published, dateModified: published }),
+          ...(published && { datePublished: published, dateModified: modified || published }),
+          ...(!published && modified && { dateModified: modified }),
           author: { '@type': 'Organization', name: 'Hikasus Travel' },
           publisher: {
             '@type': 'Organization',
@@ -116,7 +122,7 @@ export default function VisaPage({ country = 'georgia' }) {
       ],
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [lang, seo.description, page.heroTitle, faqItems, published, conf])
+  }, [lang, seo.description, page.heroTitle, faqItems, published, modified, conf])
 
   useSEO({ ...seo, lang, path: PATH, image: conf.ogImage || HERO_IMAGE, jsonLd })
 
@@ -135,6 +141,9 @@ export default function VisaPage({ country = 'georgia' }) {
         <FadeUp>
           {published && (
             <p className="page-published">{t('page.publishedOn')} {formatDate(published, lang)}</p>
+          )}
+          {reviewed && (
+            <p className="page-published">{t('page.lastReviewed')} {formatDate(reviewed, lang)}</p>
           )}
           <div dangerouslySetInnerHTML={{ __html: linkedContent }} />
         </FadeUp>

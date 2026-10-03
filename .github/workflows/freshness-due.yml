@@ -1,0 +1,49 @@
+name: Factual freshness check
+
+# Runs weekly and on demand. It does NOT research or edit anything: it reads
+# the freshness registry and, once 90 days have passed since the last full
+# audit (or a blog publication date has moved), opens an issue saying the
+# audit is due. The audit itself is a research run — see
+# docs/content-freshness.md.
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: react
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - id: report
+        run: |
+          set +e
+          node scripts/content-freshness.js --ci > report.md
+          echo "code=$?" >> "$GITHUB_OUTPUT"
+          cat report.md
+
+      - name: Open an issue when the audit is due
+        if: steps.report.outputs.code != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          CODE: ${{ steps.report.outputs.code }}
+        run: |
+          if [ "$CODE" = "2" ]; then TITLE="Factual audit due"; else TITLE="Freshness check failed"; fi
+          OPEN=$(gh issue list --state open --search "$TITLE in:title" --json number --jq 'length')
+          if [ "$OPEN" = "0" ]; then
+            gh issue create --title "$TITLE" --body-file report.md
+          else
+            echo "An open issue already exists."
+          fi

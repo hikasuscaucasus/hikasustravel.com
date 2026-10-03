@@ -10,7 +10,8 @@
     "redirects": "node scripts/generate-redirects.js",
     "lint": "eslint .",
     "preview": "vite preview",
-    "generate-thumbs": "node scripts/generate-thumbnails.js"
+    "generate-thumbs": "node scripts/generate-thumbnails.js",
+    "content:freshness": "node scripts/content-freshness.js"
   },
   "dependencies": {
     "mapbox-gl": "^3.18.1",

@@ -58,7 +58,7 @@ export const tours = [
       },
       {
         "title": "Day 10: Batumi – Tbilisi (Train)",
-        "content": "<p>Check out of your hotel by 12:00 p.m., with the rest of the morning free in Batumi. At 16:00 you'll be transferred to Batumi Railway Station for the 16:55 train to Tbilisi, arriving at 22:15.</p><ul><li>Check out of the hotel by 12:00 p.m.;</li><li>Free time in Batumi until departure;</li><li>Transfer to Batumi Railway Station at 16:00;</li><li>Train from Batumi to Tbilisi (16:55–22:15);</li><li>Overnight stay in Tbilisi.</li><li><strong>Train ride:</strong> 5 hours</li></ul>"
+        "content": "<p>Check out of your hotel by 12:00 p.m., with the rest of the morning free in Batumi. At 16:00 you'll be transferred to Batumi Railway Station for the 16:50 train to Tbilisi, arriving at 20:50.</p><ul><li>Check out of the hotel by 12:00 p.m.;</li><li>Free time in Batumi until departure;</li><li>Transfer to Batumi Railway Station at 16:00;</li><li>Train from Batumi to Tbilisi (16:50–20:50);</li><li>Overnight stay in Tbilisi.</li><li><strong>Train ride:</strong> 4 hours</li></ul>"
       },
       {
         "title": "Day 11: Tbilisi – Telavi – Tsinandali – Lunch and Wine Tasting at the Winery – Telavi",
