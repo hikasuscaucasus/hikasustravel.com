@@ -850,3 +850,19 @@ Source: `Images for tours/Hotels/Christy Hotel Goris` (owner-approved). Converte
 | Christy Hotel | Breakfast | `christy-hotel-breakfast.webp` | 576x768 |
 | Christy Hotel | Garden | `christy-hotel-garden.webp` | 1024x768 |
 
+## Best Western Plus Paradise Hotel Dilijan gallery added 2026-10-03 (owner-supplied photos)
+
+Source: `Images for tours/Hotels/Best Western Plus Paradise Hotel Dilijan` (owner-approved). Converted to WebP q82 at source width (no upscaling, no colour grading, no scene edits).
+
+| Hotel | Category | Local file | Size |
+|---|---|---|---|
+| Best Western Plus Paradise Hotel Dilijan | Exterior | `best-western-paradise-dilijan-exterior.webp` | 1024x698 |
+| Best Western Plus Paradise Hotel Dilijan | Lobby | `best-western-paradise-dilijan-lobby.webp` | 1024x683 |
+| Best Western Plus Paradise Hotel Dilijan | Room | `best-western-paradise-dilijan-room.webp` | 1024x683 |
+| Best Western Plus Paradise Hotel Dilijan | Bathroom | `best-western-paradise-dilijan-bathroom.webp` | 1024x682 |
+| Best Western Plus Paradise Hotel Dilijan | Indoor pool | `best-western-paradise-dilijan-indoor-pool.webp` | 995x768 |
+| Best Western Plus Paradise Hotel Dilijan | Jacuzzi | `best-western-paradise-dilijan-jacuzzi.webp` | 1024x683 |
+| Best Western Plus Paradise Hotel Dilijan | Sauna | `best-western-paradise-dilijan-sauna.webp` | 1024x576 |
+| Best Western Plus Paradise Hotel Dilijan | Fitness room | `best-western-paradise-dilijan-gym.webp` | 1024x683 |
+| Best Western Plus Paradise Hotel Dilijan | Outdoor pool | `best-western-paradise-dilijan-outdoor-pool.webp` | 512x768 |
+

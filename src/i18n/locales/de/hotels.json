@@ -710,5 +710,31 @@
       "Gedeckter Frühstückstisch im Garten, Christy Hotel in Goris, Armenien",
       "Garten mit Rosen und überdachtem Sitzbereich, Christy Hotel in Goris, Armenien"
     ]
+  },
+  "Best Western Plus Paradise Hotel Dilijan": {
+    "description": "Ein 4-Sterne-Hotel in Dilijan mit 72 Zimmern, 2011 nahe dem historischen Zentrum der Stadt erbaut. Das Best Western Plus Paradise Hotel Dilijan verfügt über ein Hallenbad, ein Spa- und Wellnesscenter, einen Fitnessraum, eine Sauna und ein hoteleigenes Restaurant mit armenischer und europäischer Küche.",
+    "amenities": [
+      "Kostenloses WLAN",
+      "Hallenbad",
+      "Spa- und Wellnesscenter",
+      "Fitnesscenter",
+      "Restaurant & Bar"
+    ],
+    "locationHighlights": [
+      "Nahe dem historischen Zentrum von Dilijan",
+      "Etwa 5 Fahrminuten von der Fernstraße M4 nach Georgien",
+      "Hallenbad und Spa im Haus"
+    ],
+    "imageAlts": [
+      "Außenansicht mit roten Dächern inmitten bewaldeter Hügel, Best Western Plus Paradise Hotel Dilijan, Armenien",
+      "Lobby mit Rezeption und Kronleuchter, Best Western Plus Paradise Hotel Dilijan, Armenien",
+      "Gästezimmer mit Doppelbett und Sessel, Best Western Plus Paradise Hotel Dilijan, Armenien",
+      "Gästebadezimmer mit bodengleicher Dusche, Best Western Plus Paradise Hotel Dilijan, Armenien",
+      "Hallenbad mit Liegen, Best Western Plus Paradise Hotel Dilijan, Armenien",
+      "Whirlpool im Innenbereich, Best Western Plus Paradise Hotel Dilijan, Armenien",
+      "Sauna, Best Western Plus Paradise Hotel Dilijan, Armenien",
+      "Fitnessraum mit Trainingsgeräten, Best Western Plus Paradise Hotel Dilijan, Armenien",
+      "Außenpool und Whirlpool neben dem Hotelgebäude, Best Western Plus Paradise Hotel Dilijan, Armenien"
+    ]
   }
 }

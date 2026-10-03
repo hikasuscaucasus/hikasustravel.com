@@ -1235,7 +1235,8 @@ const hotelData = {
   // Six Goris/Dilijan properties added for the 7-Day Armenia Tour: Yerevan,
   // Tatev & Dilijan. Facts verified against each property's own listing on
   // Tripadvisor/Booking.com/its own site (see the task's final report for
-  // sources). No owner photography exists for any of the six, so each ships
+  // sources). Hotel Mirhav, Christy Hotel and Best Western Plus Paradise Hotel
+  // Dilijan have owner photos (added 2026-10-03); the other three still ship
   // with `images: []`, matching the existing 'Bakuriani Inn' precedent for a
   // canonical record with no photos yet.
   'Hotel Mirhav': {
@@ -1303,7 +1304,18 @@ const hotelData = {
     ],
   },
   'Best Western Plus Paradise Hotel Dilijan': {
-    images: [],
+    images: [
+      // Owner-supplied photos (Images for tours/Hotels/Best Western Plus Paradise Hotel Dilijan), shown in this order.
+      { src: '/images/hotels/best-western-paradise-dilijan-exterior.webp', alt: 'Red-roofed exterior of Best Western Plus Paradise Hotel Dilijan among forested hills in Dilijan, Armenia', category: 'Exterior' },
+      { src: '/images/hotels/best-western-paradise-dilijan-lobby.webp', alt: 'Lobby with reception desk and chandelier at Best Western Plus Paradise Hotel Dilijan, Armenia', category: 'Lobby' },
+      { src: '/images/hotels/best-western-paradise-dilijan-room.webp', alt: 'Guest room with a double bed and an armchair at Best Western Plus Paradise Hotel Dilijan, Armenia', category: 'Room' },
+      { src: '/images/hotels/best-western-paradise-dilijan-bathroom.webp', alt: 'Guest bathroom with a walk-in shower at Best Western Plus Paradise Hotel Dilijan, Armenia', category: 'Bathroom' },
+      { src: '/images/hotels/best-western-paradise-dilijan-indoor-pool.webp', alt: 'Indoor swimming pool with sun loungers at Best Western Plus Paradise Hotel Dilijan, Armenia', category: 'Indoor pool' },
+      { src: '/images/hotels/best-western-paradise-dilijan-jacuzzi.webp', alt: 'Indoor whirlpool at Best Western Plus Paradise Hotel Dilijan, Armenia', category: 'Jacuzzi' },
+      { src: '/images/hotels/best-western-paradise-dilijan-sauna.webp', alt: 'Sauna at Best Western Plus Paradise Hotel Dilijan, Armenia', category: 'Sauna' },
+      { src: '/images/hotels/best-western-paradise-dilijan-gym.webp', alt: 'Fitness room with exercise machines at Best Western Plus Paradise Hotel Dilijan, Armenia', category: 'Fitness room' },
+      { src: '/images/hotels/best-western-paradise-dilijan-outdoor-pool.webp', alt: 'Outdoor pool and whirlpool beside the hotel building at Best Western Plus Paradise Hotel Dilijan, Armenia', category: 'Outdoor pool' },
+    ],
     stars: 4,
     description: 'A 4-star hotel in Dilijan with 72 rooms, built in 2011 close to the town\'s historic centre. Best Western Plus Paradise Hotel Dilijan has an indoor swimming pool, a spa and wellness centre, a gym, a sauna and an on-site restaurant serving Armenian and European dishes.',
     amenities: [

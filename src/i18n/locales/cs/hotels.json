@@ -710,5 +710,31 @@
       "Prostřený snídaňový stůl venku na zahradě, Christy Hotel v Gorisu, Arménie",
       "Zahrada s růžemi a krytým posezením, Christy Hotel v Gorisu, Arménie"
     ]
+  },
+  "Best Western Plus Paradise Hotel Dilijan": {
+    "description": "Čtyřhvězdičkový hotel v Dilidžanu se 72 pokoji, postavený v roce 2011 nedaleko historického centra města. Best Western Plus Paradise Hotel Dilijan má krytý bazén, spa a wellness centrum, posilovnu, saunu a vlastní restauraci s arménskou a evropskou kuchyní.",
+    "amenities": [
+      "Wi-Fi zdarma",
+      "Krytý bazén",
+      "Spa a wellness centrum",
+      "Fitness centrum",
+      "Restaurace a bar"
+    ],
+    "locationHighlights": [
+      "Nedaleko historického centra Dilidžanu",
+      "Asi 5 minut jízdy od silnice M4 do Gruzie",
+      "Krytý bazén a spa v hotelu"
+    ],
+    "imageAlts": [
+      "Exteriér s červenými střechami mezi zalesněnými kopci, Best Western Plus Paradise Hotel Dilijan, Arménie",
+      "Lobby s recepcí a lustrem, Best Western Plus Paradise Hotel Dilijan, Arménie",
+      "Pokoj s manželskou postelí a křeslem, Best Western Plus Paradise Hotel Dilijan, Arménie",
+      "Koupelna se sprchovým koutem bez vaničky, Best Western Plus Paradise Hotel Dilijan, Arménie",
+      "Krytý bazén s lehátky, Best Western Plus Paradise Hotel Dilijan, Arménie",
+      "Vnitřní vířivka, Best Western Plus Paradise Hotel Dilijan, Arménie",
+      "Sauna, Best Western Plus Paradise Hotel Dilijan, Arménie",
+      "Posilovna s cvičebními stroji, Best Western Plus Paradise Hotel Dilijan, Arménie",
+      "Venkovní bazén a vířivka vedle budovy hotelu, Best Western Plus Paradise Hotel Dilijan, Arménie"
+    ]
   }
 }
