@@ -736,5 +736,27 @@
       "Siłownia ze sprzętem do ćwiczeń, Best Western Plus Paradise Hotel Dilijan, Armenia",
       "Basen zewnętrzny i jacuzzi obok budynku hotelu, Best Western Plus Paradise Hotel Dilijan, Armenia"
     ]
+  },
+  "Casanova Inn": {
+    "description": "Trzygwiazdkowy pensjonat butikowy w Dilidżanie, mieszczący się w dwóch budynkach około 3 km od centrum miasta. Casanova Inn ma 10 pokoi, kryty basen, spa i centrum wellness oraz restaurację z barem, w której co rano podawane jest bezpłatne śniadanie w formie bufetu.",
+    "amenities": [
+      "Bezpłatne Wi-Fi",
+      "Bezpłatne śniadanie w formie bufetu",
+      "Kryty basen",
+      "Spa i centrum wellness",
+      "Restauracja i bar"
+    ],
+    "locationHighlights": [
+      "Około 3 km od centrum Dilidżanu",
+      "Mniej więcej 95 km od Erywania",
+      "Klasztor Haghartsin w zasięgu krótkiej jazdy"
+    ],
+    "imageAlts": [
+      "Budynek z balkonami wśród drzew i pnączy, Casanova Inn w Dilidżanie, Armenia",
+      "Pokój z łóżkiem małżeńskim i lampkami nocnymi, Casanova Inn w Dilidżanie, Armenia",
+      "Łazienka z prysznicem, Casanova Inn w Dilidżanie, Armenia",
+      "Długi stół nakryty do śniadania, Casanova Inn w Dilidżanie, Armenia",
+      "Ścieżka ogrodowa wśród kwitnących krzewów, Casanova Inn w Dilidżanie, Armenia"
+    ]
   }
 }

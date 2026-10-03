@@ -736,5 +736,27 @@
       "Fitnessruimte met toestellen, Best Western Plus Paradise Hotel Dilijan, Armenië",
       "Buitenzwembad en bubbelbad naast het hotelgebouw, Best Western Plus Paradise Hotel Dilijan, Armenië"
     ]
+  },
+  "Casanova Inn": {
+    "description": "Een driesterren boetiekguesthouse in Dilijan, verdeeld over twee gebouwen op ongeveer 3 km van het centrum. Casanova Inn heeft 10 kamers, een binnenzwembad, een spa- en wellnesscentrum en een restaurant met bar waar elke ochtend een gratis ontbijtbuffet wordt geserveerd.",
+    "amenities": [
+      "Gratis wifi",
+      "Gratis ontbijtbuffet",
+      "Binnenzwembad",
+      "Spa- en wellnesscentrum",
+      "Restaurant en bar"
+    ],
+    "locationHighlights": [
+      "Op ongeveer 3 km van het centrum van Dilijan",
+      "Op ruwweg 95 km van Jerevan",
+      "Haghartsin-klooster goed bereikbaar"
+    ],
+    "imageAlts": [
+      "Buitenaanzicht met balkons tussen bomen en klimplanten, Casanova Inn in Dilijan, Armenië",
+      "Gastenkamer met tweepersoonsbed en nachtlampjes, Casanova Inn in Dilijan, Armenië",
+      "Badkamer met douche, Casanova Inn in Dilijan, Armenië",
+      "Lange tafel gedekt voor het ontbijt, Casanova Inn in Dilijan, Armenië",
+      "Tuinpad tussen bloeiende struiken, Casanova Inn in Dilijan, Armenië"
+    ]
   }
 }

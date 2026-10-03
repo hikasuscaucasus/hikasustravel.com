@@ -736,5 +736,27 @@
       "Salle de sport avec appareils, Best Western Plus Paradise Hotel Dilijan, Arménie",
       "Piscine extérieure et bain à remous à côté de l'hôtel, Best Western Plus Paradise Hotel Dilijan, Arménie"
     ]
+  },
+  "Casanova Inn": {
+    "description": "Une maison d'hôtes de charme 3 étoiles à Dilijan, répartie sur deux bâtiments à environ 3 km du centre-ville. Le Casanova Inn compte 10 chambres, une piscine intérieure, un spa et centre de bien-être, ainsi qu'un restaurant-bar où un petit-déjeuner buffet gratuit est servi chaque matin.",
+    "amenities": [
+      "Wi-Fi gratuit",
+      "Petit-déjeuner buffet gratuit",
+      "Piscine intérieure",
+      "Spa et centre de bien-être",
+      "Restaurant et bar"
+    ],
+    "locationHighlights": [
+      "À environ 3 km du centre de Dilijan",
+      "À environ 95 km d'Erevan",
+      "Monastère de Haghartsin facilement accessible"
+    ],
+    "imageAlts": [
+      "Façade avec balcons parmi les arbres et les plantes grimpantes, Casanova Inn à Dilijan, Arménie",
+      "Chambre avec lit double et lampes de chevet, Casanova Inn à Dilijan, Arménie",
+      "Salle de bains avec douche, Casanova Inn à Dilijan, Arménie",
+      "Longue table dressée pour le petit-déjeuner, Casanova Inn à Dilijan, Arménie",
+      "Allée de jardin entre des arbustes en fleurs, Casanova Inn à Dilijan, Arménie"
+    ]
   }
 }

@@ -1235,8 +1235,8 @@ const hotelData = {
   // Six Goris/Dilijan properties added for the 7-Day Armenia Tour: Yerevan,
   // Tatev & Dilijan. Facts verified against each property's own listing on
   // Tripadvisor/Booking.com/its own site (see the task's final report for
-  // sources). Hotel Mirhav, Christy Hotel and Best Western Plus Paradise Hotel
-  // Dilijan have owner photos (added 2026-10-03); the other three still ship
+  // sources). Hotel Mirhav, Christy Hotel, Best Western Plus Paradise Hotel
+  // Dilijan and Casanova Inn have owner photos (added 2026-10-03); the other two ship
   // with `images: []`, matching the existing 'Bakuriani Inn' precedent for a
   // canonical record with no photos yet.
   'Hotel Mirhav': {
@@ -1349,7 +1349,14 @@ const hotelData = {
     ],
   },
   'Casanova Inn': {
-    images: [],
+    images: [
+      // Owner-supplied photos (Images for tours/Hotels/Casanova Inn Dilijan), shown in this order.
+      { src: '/images/hotels/casanova-inn-exterior.webp', alt: 'Exterior of Casanova Inn with balconies among trees and climbing plants in Dilijan, Armenia', category: 'Exterior' },
+      { src: '/images/hotels/casanova-inn-room.webp', alt: 'Guest room with a double bed and bedside lamps at Casanova Inn in Dilijan, Armenia', category: 'Room' },
+      { src: '/images/hotels/casanova-inn-bathroom.webp', alt: 'Guest bathroom with a shower at Casanova Inn in Dilijan, Armenia', category: 'Bathroom' },
+      { src: '/images/hotels/casanova-inn-breakfast.webp', alt: 'Long table laid for breakfast at Casanova Inn in Dilijan, Armenia', category: 'Breakfast' },
+      { src: '/images/hotels/casanova-inn-garden.webp', alt: 'Garden path between flowering shrubs at Casanova Inn in Dilijan, Armenia', category: 'Garden' },
+    ],
     stars: 3,
     description: 'A 3-star boutique guesthouse in Dilijan, split across two buildings about 3 km from the town centre. Casanova Inn has 10 rooms, an indoor pool, a spa and wellness centre, and a restaurant and bar serving a complimentary buffet breakfast each morning.',
     amenities: [

@@ -736,5 +736,27 @@
       "Posilovna s cvičebními stroji, Best Western Plus Paradise Hotel Dilijan, Arménie",
       "Venkovní bazén a vířivka vedle budovy hotelu, Best Western Plus Paradise Hotel Dilijan, Arménie"
     ]
+  },
+  "Casanova Inn": {
+    "description": "Tříhvězdičkový butikový penzion v Dilidžanu, rozdělený do dvou budov asi 3 km od centra města. Casanova Inn má 10 pokojů, krytý bazén, spa a wellness centrum a restauraci s barem, kde se každé ráno podává snídaně formou bufetu zdarma.",
+    "amenities": [
+      "Wi-Fi zdarma",
+      "Snídaně formou bufetu zdarma",
+      "Krytý bazén",
+      "Spa a wellness centrum",
+      "Restaurace a bar"
+    ],
+    "locationHighlights": [
+      "Asi 3 km od centra Dilidžanu",
+      "Zhruba 95 km od Jerevanu",
+      "Klášter Haghartsin v snadném dosahu"
+    ],
+    "imageAlts": [
+      "Exteriér s balkony mezi stromy a popínavými rostlinami, Casanova Inn v Dilidžanu, Arménie",
+      "Pokoj s manželskou postelí a nočními lampičkami, Casanova Inn v Dilidžanu, Arménie",
+      "Koupelna se sprchou, Casanova Inn v Dilidžanu, Arménie",
+      "Dlouhý stůl prostřený ke snídani, Casanova Inn v Dilidžanu, Arménie",
+      "Zahradní cestička mezi kvetoucími keři, Casanova Inn v Dilidžanu, Arménie"
+    ]
   }
 }

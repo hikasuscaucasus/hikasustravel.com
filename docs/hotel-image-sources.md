@@ -866,3 +866,15 @@ Source: `Images for tours/Hotels/Best Western Plus Paradise Hotel Dilijan` (owne
 | Best Western Plus Paradise Hotel Dilijan | Fitness room | `best-western-paradise-dilijan-gym.webp` | 1024x683 |
 | Best Western Plus Paradise Hotel Dilijan | Outdoor pool | `best-western-paradise-dilijan-outdoor-pool.webp` | 512x768 |
 
+## Casanova Inn gallery added 2026-10-03 (owner-supplied photos)
+
+Source: `Images for tours/Hotels/Casanova Inn Dilijan` (owner-approved). Converted to WebP q82 at source width (no upscaling, no colour grading, no scene edits).
+
+| Hotel | Category | Local file | Size |
+|---|---|---|---|
+| Casanova Inn | Exterior | `casanova-inn-exterior.webp` | 1024x481 |
+| Casanova Inn | Room | `casanova-inn-room.webp` | 553x768 |
+| Casanova Inn | Bathroom | `casanova-inn-bathroom.webp` | 1024x683 |
+| Casanova Inn | Breakfast | `casanova-inn-breakfast.webp` | 614x768 |
+| Casanova Inn | Garden | `casanova-inn-garden.webp` | 1024x768 |
+

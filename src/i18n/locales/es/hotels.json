@@ -736,5 +736,27 @@
       "Gimnasio con máquinas de ejercicio, Best Western Plus Paradise Hotel Dilijan, Armenia",
       "Piscina exterior y jacuzzi junto al edificio del hotel, Best Western Plus Paradise Hotel Dilijan, Armenia"
     ]
+  },
+  "Casanova Inn": {
+    "description": "Una casa de huéspedes boutique de 3 estrellas en Dilijan, repartida en dos edificios a unos 3 km del centro. El Casanova Inn tiene 10 habitaciones, piscina cubierta, spa y centro de bienestar, y un restaurante con bar donde cada mañana se sirve un desayuno bufé gratuito.",
+    "amenities": [
+      "Wi-Fi gratuito",
+      "Desayuno bufé gratuito",
+      "Piscina cubierta",
+      "Spa y centro de bienestar",
+      "Restaurante y bar"
+    ],
+    "locationHighlights": [
+      "A unos 3 km del centro de Dilijan",
+      "A unos 95 km de Ereván",
+      "Monasterio de Haghartsin a poca distancia"
+    ],
+    "imageAlts": [
+      "Exterior con balcones entre árboles y plantas trepadoras, Casanova Inn en Dilijan, Armenia",
+      "Habitación con cama doble y lámparas de noche, Casanova Inn en Dilijan, Armenia",
+      "Baño con ducha, Casanova Inn en Dilijan, Armenia",
+      "Mesa larga preparada para el desayuno, Casanova Inn en Dilijan, Armenia",
+      "Sendero del jardín entre arbustos en flor, Casanova Inn en Dilijan, Armenia"
+    ]
   }
 }
