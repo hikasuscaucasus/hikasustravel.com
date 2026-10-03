@@ -667,5 +667,26 @@
       "Tradycyjny drewniany pokój w Old House Ushguli, Gruzja",
       "Domowe gruzińskie potrawy podane gościom w Old House Ushguli"
     ]
+  },
+  "Hotel Mirhav": {
+    "description": "Hotel butikowy przy ulicy Masztoca w Goris, z kamiennymi fasadami i drewnianymi meblami. Hotel Mirhav ma 31 pokoi, restaurację, salę spotkań i ogrody z widokiem na okoliczne Góry Zangezurskie, a od klasztoru Tatew dzieli go około 30 minut jazdy.",
+    "amenities": [
+      "Bezpłatne Wi-Fi",
+      "Bezpłatne śniadanie w formie bufetu",
+      "Restauracja i bar",
+      "Bezpłatny parking",
+      "Ogród z widokiem na góry"
+    ],
+    "locationHighlights": [
+      "W centrum Goris, przy ulicy Masztoca",
+      "Kilka minut jazdy od historycznego centrum Goris",
+      "Około 30 minut jazdy od klasztoru Tatew"
+    ],
+    "imageAlts": [
+      "Budynek z przyciętymi żywopłotami i srebrnym świerkiem, Hotel Mirhav w Goris, Armenia",
+      "Pokój z łóżkiem małżeńskim, drewnianą podłogą i kamienną ścianą, Hotel Mirhav w Goris, Armenia",
+      "Łazienka z prysznicem, Hotel Mirhav w Goris, Armenia",
+      "Bufet śniadaniowy z owocami, serem i wędlinami, Hotel Mirhav w Goris, Armenia"
+    ]
   }
 }

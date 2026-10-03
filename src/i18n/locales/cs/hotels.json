@@ -667,5 +667,26 @@
       "Tradičně dřevem obložený pokoj v Old House Ushguli, Gruzie",
       "Domácí gruzínská jídla servírovaná hostům v Old House Ushguli"
     ]
+  },
+  "Hotel Mirhav": {
+    "description": "Butikový hotel v Maštocově ulici v Gorisu s kamennými fasádami a dřevěným nábytkem. Hotel Mirhav má 31 pokojů, restauraci, zasedací místnost a zahrady s výhledem na okolní Zangezurské hory a leží asi 30 minut jízdy od kláštera Tatev.",
+    "amenities": [
+      "Wi-Fi zdarma",
+      "Snídaně formou bufetu zdarma",
+      "Restaurace a bar",
+      "Parkování zdarma",
+      "Zahrada s výhledem na hory"
+    ],
+    "locationHighlights": [
+      "V centru Gorisu, v Maštocově ulici",
+      "Pár minut jízdy od historického centra Gorisu",
+      "Asi 30 minut jízdy od kláštera Tatev"
+    ],
+    "imageAlts": [
+      "Exteriér se střiženými živými ploty a stříbrným smrkem, Hotel Mirhav v Gorisu, Arménie",
+      "Pokoj s manželskou postelí, dřevěnou podlahou a kamennou stěnou, Hotel Mirhav v Gorisu, Arménie",
+      "Koupelna se sprchou, Hotel Mirhav v Gorisu, Arménie",
+      "Snídaňový bufet s ovocem, sýrem a uzeninami, Hotel Mirhav v Gorisu, Arménie"
+    ]
   }
 }

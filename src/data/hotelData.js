@@ -1239,7 +1239,13 @@ const hotelData = {
   // with `images: []`, matching the existing 'Bakuriani Inn' precedent for a
   // canonical record with no photos yet.
   'Hotel Mirhav': {
-    images: [],
+    images: [
+      // Owner-supplied photos (Images for tours/Hotels/Hotel Mirhav Goris), shown in this order.
+      { src: '/images/hotels/hotel-mirhav-exterior.webp', alt: 'Exterior of Hotel Mirhav with clipped hedges and a blue spruce in Goris, Armenia', category: 'Exterior' },
+      { src: '/images/hotels/hotel-mirhav-room.webp', alt: 'Guest room with a double bed, wooden floor and a stone wall at Hotel Mirhav in Goris, Armenia', category: 'Room' },
+      { src: '/images/hotels/hotel-mirhav-bathroom.webp', alt: 'Guest bathroom with a shower at Hotel Mirhav in Goris, Armenia', category: 'Bathroom' },
+      { src: '/images/hotels/hotel-mirhav-breakfast.webp', alt: 'Breakfast buffet with fruit, cheese and cold cuts at Hotel Mirhav in Goris, Armenia', category: 'Breakfast buffet' },
+    ],
     stars: 4,
     description: 'A boutique hotel on Mashtots Street in Goris, with stone façades and wooden furnishings. Hotel Mirhav has 31 guest rooms, a restaurant, a meeting room and gardens looking out over the surrounding Zangezur mountains, and is about a 30-minute drive from Tatev Monastery.',
     amenities: [

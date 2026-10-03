@@ -826,3 +826,15 @@ Identity: the exterior photo shows the sign "MIDWAY PARK HOTEL"; current listing
 | Midway Park Hotel | Room | `midway-park-hotel-room.webp` | 1024x765 |
 | Midway Park Hotel | Bathroom | `midway-park-hotel-bathroom.webp` | 1024x765 |
 | Midway Park Hotel | Breakfast buffet | `midway-park-hotel-breakfast.webp` | 1024x765 |
+
+## Hotel Mirhav gallery added 2026-10-03 (owner-supplied photos)
+
+Source: `Images for tours/Hotels/Hotel Mirhav Goris` (owner-approved). Converted to WebP q82 at source width (no upscaling, no colour grading, no scene edits).
+
+| Hotel | Category | Local file | Size |
+|---|---|---|---|
+| Hotel Mirhav | Exterior | `hotel-mirhav-exterior.webp` | 1024x683 |
+| Hotel Mirhav | Room | `hotel-mirhav-room.webp` | 1024x683 |
+| Hotel Mirhav | Bathroom | `hotel-mirhav-bathroom.webp` | 1024x683 |
+| Hotel Mirhav | Breakfast buffet | `hotel-mirhav-breakfast.webp` | 1024x665 |
+

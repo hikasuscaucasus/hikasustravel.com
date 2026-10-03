@@ -667,5 +667,26 @@
       "Traditionele houten kamer bij Old House Ushguli, Georgië",
       "Huisgemaakte Georgische gerechten geserveerd aan gasten bij Old House Ushguli"
     ]
+  },
+  "Hotel Mirhav": {
+    "description": "Een boetiekhotel aan de Mashtotsstraat in Goris, met stenen gevels en houten meubilair. Hotel Mirhav heeft 31 kamers, een restaurant, een vergaderruimte en tuinen met uitzicht op het omringende Zangezurgebergte, en ligt op ongeveer 30 minuten rijden van het Tatev-klooster.",
+    "amenities": [
+      "Gratis wifi",
+      "Gratis ontbijtbuffet",
+      "Restaurant en bar",
+      "Gratis parkeren",
+      "Tuin met uitzicht op de bergen"
+    ],
+    "locationHighlights": [
+      "Centraal in Goris, aan de Mashtotsstraat",
+      "Op enkele minuten rijden van het historische centrum van Goris",
+      "Op ongeveer 30 minuten rijden van het Tatev-klooster"
+    ],
+    "imageAlts": [
+      "Buitenaanzicht met gesnoeide hagen en een blauwspar, Hotel Mirhav in Goris, Armenië",
+      "Gastenkamer met tweepersoonsbed, houten vloer en stenen wand, Hotel Mirhav in Goris, Armenië",
+      "Badkamer met douche, Hotel Mirhav in Goris, Armenië",
+      "Ontbijtbuffet met fruit, kaas en vleeswaren, Hotel Mirhav in Goris, Armenië"
+    ]
   }
 }

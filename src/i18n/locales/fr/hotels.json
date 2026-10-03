@@ -667,5 +667,26 @@
       "Chambre traditionnelle lambrissée à l'Old House Ushguli, Géorgie",
       "Plats géorgiens faits maison servis aux hôtes à l'Old House Ushguli"
     ]
+  },
+  "Hotel Mirhav": {
+    "description": "Un hôtel de charme situé rue Machtots à Goris, avec façades en pierre et mobilier en bois. L'Hotel Mirhav compte 31 chambres, un restaurant, une salle de réunion et des jardins donnant sur les monts Zanguezour environnants ; il se trouve à environ 30 minutes de route du monastère de Tatev.",
+    "amenities": [
+      "Wi-Fi gratuit",
+      "Petit-déjeuner buffet gratuit",
+      "Restaurant et bar",
+      "Parking gratuit",
+      "Jardin avec vue sur les montagnes"
+    ],
+    "locationHighlights": [
+      "Au centre de Goris, rue Machtots",
+      "À quelques minutes en voiture du centre historique de Goris",
+      "À environ 30 minutes de route du monastère de Tatev"
+    ],
+    "imageAlts": [
+      "Façade avec haies taillées et épicéa bleu, Hotel Mirhav à Goris, Arménie",
+      "Chambre avec lit double, parquet et mur en pierre, Hotel Mirhav à Goris, Arménie",
+      "Salle de bains avec douche, Hotel Mirhav à Goris, Arménie",
+      "Buffet de petit-déjeuner avec fruits, fromage et charcuterie, Hotel Mirhav à Goris, Arménie"
+    ]
   }
 }

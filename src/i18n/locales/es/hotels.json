@@ -667,5 +667,26 @@
       "Habitación tradicional revestida de madera en Old House Ushguli, Georgia",
       "Platos georgianos caseros servidos a los huéspedes en Old House Ushguli"
     ]
+  },
+  "Hotel Mirhav": {
+    "description": "Un hotel boutique en la calle Mashtots de Goris, con fachadas de piedra y mobiliario de madera. El Hotel Mirhav tiene 31 habitaciones, un restaurante, una sala de reuniones y jardines con vistas a los montes Zangezur que lo rodean, y está a unos 30 minutos en coche del monasterio de Tatev.",
+    "amenities": [
+      "Wi-Fi gratuito",
+      "Desayuno bufé gratuito",
+      "Restaurante y bar",
+      "Aparcamiento gratuito",
+      "Jardín con vistas a las montañas"
+    ],
+    "locationHighlights": [
+      "En el centro de Goris, en la calle Mashtots",
+      "A pocos minutos en coche del centro histórico de Goris",
+      "A unos 30 minutos en coche del monasterio de Tatev"
+    ],
+    "imageAlts": [
+      "Exterior con setos recortados y un abeto azul, Hotel Mirhav en Goris, Armenia",
+      "Habitación con cama doble, suelo de madera y pared de piedra, Hotel Mirhav en Goris, Armenia",
+      "Baño con ducha, Hotel Mirhav en Goris, Armenia",
+      "Bufé de desayuno con fruta, queso y embutidos, Hotel Mirhav en Goris, Armenia"
+    ]
   }
 }
