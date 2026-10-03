@@ -2,7 +2,7 @@
 
 - Last full audit: **2026-10-03**
 - Next full audit: **2027-01-01** (in 90 days)
-- Tracked pages: 44 (A 16, B 10, C 9, D 9)
+- Tracked pages: 45 (A 16, B 10, C 10, D 9)
 - Shared facts: 11; source URLs: 21
 - Overdue: 0; due within 14 days: 0; never verified: 2
 - Blog publication dates changed: 0
@@ -49,6 +49,7 @@
 |---|---|---|---|---|---|
 | blog:essential-armenian-words | armenia | blog | 2026-10-03 | 2027-01-01 | OK |
 | blog:ultimate-guide-to-traveling-to-armenia | armenia | blog | 2026-10-03 | 2027-01-01 | OK |
+| blog:essential-azerbaijani-words-phrases | azerbaijan | blog | 2026-10-03 | 2027-01-01 | OK |
 | blog:ultimate-guide-to-traveling-to-azerbaijan | azerbaijan | blog | 2026-10-03 | 2027-01-01 | OK |
 | blog:azerbaijan-georgia-armenia-2-weeks-current-borders | caucasus | blog | 2026-10-03 | 2027-01-01 | OK |
 | blog:essential-georgian-words-phrases | georgia | blog | 2026-10-03 | 2027-01-01 | OK |

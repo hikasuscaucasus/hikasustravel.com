@@ -120,6 +120,7 @@ const staticPages = [
   { path: 'blog/ultimate-guide-to-traveling-to-azerbaijan', changefreq: 'monthly', priority: '0.8' },
   { path: 'blog/azerbaijan-georgia-armenia-2-weeks-current-borders', changefreq: 'monthly', priority: '0.8' },
   { path: 'blog/essential-armenian-words', changefreq: 'monthly', priority: '0.8' },
+  { path: 'blog/essential-azerbaijani-words-phrases', changefreq: 'monthly', priority: '0.8' },
   { path: 'faq', changefreq: 'monthly', priority: '0.5' },
   { path: 'contact', changefreq: 'monthly', priority: '0.6' },
   { path: 'privacy-policy', changefreq: 'yearly', priority: '0.2' },

@@ -369,6 +369,30 @@ const blogArticles = [
     tags: ['armenia','language','culture','travel-tips'],
     keywords: "Armenian words, Armenian phrases, essential Armenian words, hello in Armenian, thank you in Armenian, Armenian for tourists, Armenian for travelers, Armenian language travel, Eastern Armenian phrases, Armenian alphabet, cheers in Armenian, Armenia travel tips",
   },
+  {
+    slug: 'essential-azerbaijani-words-phrases',
+    titleKey: 'blog.article9.title',
+    descKey: 'blog.article9.desc',
+    title: "25 Essential Azerbaijani Words and Phrases for Travelers",
+    seoTitle: "25 Essential Azerbaijani Words & Phrases for Travelers | Hikasus",
+    excerpt: "Learn 25 useful Azerbaijani words and phrases for your trip, with simple pronunciation, meanings and practical examples for everyday travel in Azerbaijan.",
+    metaDescription: "Learn 25 useful Azerbaijani words and phrases for your trip, with simple pronunciation, meanings and practical examples for everyday travel in Azerbaijan.",
+    heroImage: '/images/files/azerbaijani-alphabet-chart-1200.webp',
+    ogImage: '/images/files/azerbaijani-alphabet-chart-og-1200x630.jpg',
+    ogImageWidth: 1200,
+    ogImageHeight: 630,
+    ogImageAlt: {
+      en: "Chart of the 32 letters of the Azerbaijani Latin alphabet, each shown in capital and small form",
+      de: "Tafel der 32 Buchstaben des aserbaidschanischen Lateinalphabets, jeweils als Groß- und Kleinbuchstabe",
+      fr: "Tableau des 32 lettres de l'alphabet latin azerbaïdjanais, chacune en majuscule et en minuscule",
+      es: "Tabla de las 32 letras del alfabeto latino azerbaiyano, cada una en mayúscula y minúscula",
+      nl: "Overzicht van de 32 letters van het Azerbeidzjaanse Latijnse alfabet, elk als hoofdletter en kleine letter",
+      cs: "Přehled 32 písmen ázerbájdžánské latinské abecedy, každé ve velké i malé podobě",
+      pl: "Tablica 32 liter azerbejdżańskiego alfabetu łacińskiego, każda w postaci wielkiej i małej",
+    },
+    tags: ['azerbaijan','language','culture','travel-tips'],
+    keywords: "Azerbaijani words, Azerbaijani phrases, essential Azerbaijani phrases, hello in Azerbaijani, thank you in Azerbaijani, Azerbaijani for tourists, Azerbaijani for travelers, Azerbaijan language, Azeri phrases, Azeri words, Azerbaijani alphabet, Azerbaijan travel tips",
+  },
 ]
 
 // Blog title translation for a given article key from ui.json

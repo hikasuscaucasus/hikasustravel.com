@@ -5,11 +5,11 @@
     "nextFullAudit": "2027-01-01",
     "daysToAudit": 90,
     "auditDue": false,
-    "totalTracked": 44,
+    "totalTracked": 45,
     "byTier": {
       "A": 16,
       "B": 10,
-      "C": 9,
+      "C": 10,
       "D": 9
     },
     "overdue": 0,
@@ -325,6 +325,16 @@
       "id": "blog:essential-georgian-words-phrases",
       "path": "/blog/essential-georgian-words-phrases",
       "country": "georgia",
+      "type": "blog",
+      "tier": "C",
+      "lastVerified": "2026-10-03",
+      "nextReview": "2027-01-01",
+      "state": "OK"
+    },
+    {
+      "id": "blog:essential-azerbaijani-words-phrases",
+      "path": "/blog/essential-azerbaijani-words-phrases",
+      "country": "azerbaijan",
       "type": "blog",
       "tier": "C",
       "lastVerified": "2026-10-03",
