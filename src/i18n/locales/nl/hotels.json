@@ -688,5 +688,27 @@
       "Badkamer met douche, Hotel Mirhav in Goris, Armenië",
       "Ontbijtbuffet met fruit, kaas en vleeswaren, Hotel Mirhav in Goris, Armenië"
     ]
+  },
+  "Christy Hotel": {
+    "description": "Een driesterrenhotel in het centrum van Goris, met 17 eenpersoons-, tweepersoons-, driepersoons- en familiekamers in moderne stijl. Christy Hotel heeft een restaurant, een tuin met terras en gratis wifi; de musea, winkels en cafés van de stad liggen op loopafstand.",
+    "amenities": [
+      "Gratis wifi",
+      "Ontbijt beschikbaar",
+      "Eigen restaurant",
+      "Tuin en terras",
+      "Gratis privéparkeerplaats"
+    ],
+    "locationHighlights": [
+      "Centraal in Goris, aan de Mashtotsstraat",
+      "Op 8 minuten lopen van het Museum voor Oude Geschiedenis",
+      "Winkels en restaurants van Goris op loopafstand"
+    ],
+    "imageAlts": [
+      "Stenen gevel en entreetrap in de schemering, Christy Hotel in Goris, Armenië",
+      "Gastenkamer met tweepersoonsbed en twee fauteuils, Christy Hotel in Goris, Armenië",
+      "Badkamer met douchecabine, Christy Hotel in Goris, Armenië",
+      "Gedekte ontbijttafel buiten in de tuin, Christy Hotel in Goris, Armenië",
+      "Tuin met rozen en een overdekte zithoek, Christy Hotel in Goris, Armenië"
+    ]
   }
 }

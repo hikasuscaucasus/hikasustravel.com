@@ -1262,7 +1262,14 @@ const hotelData = {
     ],
   },
   'Christy Hotel': {
-    images: [],
+    images: [
+      // Owner-supplied photos (Images for tours/Hotels/Christy Hotel Goris), shown in this order.
+      { src: '/images/hotels/christy-hotel-exterior.webp', alt: 'Stone exterior and entrance staircase of Christy Hotel at dusk in Goris, Armenia', category: 'Exterior' },
+      { src: '/images/hotels/christy-hotel-room.webp', alt: 'Guest room with a double bed and two armchairs at Christy Hotel in Goris, Armenia', category: 'Room' },
+      { src: '/images/hotels/christy-hotel-bathroom.webp', alt: 'Guest bathroom with a shower cabin at Christy Hotel in Goris, Armenia', category: 'Bathroom' },
+      { src: '/images/hotels/christy-hotel-breakfast.webp', alt: 'Breakfast table laid outdoors in the garden at Christy Hotel in Goris, Armenia', category: 'Breakfast' },
+      { src: '/images/hotels/christy-hotel-garden.webp', alt: 'Garden with roses and a covered seating area at Christy Hotel in Goris, Armenia', category: 'Garden' },
+    ],
     stars: 3,
     description: 'A 3-star hotel in the centre of Goris, with 17 single, double, triple and family rooms in a modern style. Christy Hotel has a restaurant, a garden and terrace, and free Wi-Fi, and is within easy walking distance of the town\'s museums, shops and cafés.',
     amenities: [

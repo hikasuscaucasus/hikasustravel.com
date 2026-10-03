@@ -688,5 +688,27 @@
       "Salle de bains avec douche, Hotel Mirhav à Goris, Arménie",
       "Buffet de petit-déjeuner avec fruits, fromage et charcuterie, Hotel Mirhav à Goris, Arménie"
     ]
+  },
+  "Christy Hotel": {
+    "description": "Un hôtel 3 étoiles au centre de Goris, avec 17 chambres simples, doubles, triples et familiales de style moderne. Le Christy Hotel dispose d'un restaurant, d'un jardin avec terrasse et du Wi-Fi gratuit ; les musées, boutiques et cafés de la ville sont facilement accessibles à pied.",
+    "amenities": [
+      "Wi-Fi gratuit",
+      "Petit-déjeuner disponible",
+      "Restaurant sur place",
+      "Jardin et terrasse",
+      "Parking privé gratuit"
+    ],
+    "locationHighlights": [
+      "Au centre de Goris, rue Machtots",
+      "À 8 minutes à pied du musée d'Histoire ancienne",
+      "Boutiques et restaurants de Goris accessibles à pied"
+    ],
+    "imageAlts": [
+      "Façade en pierre et escalier d'entrée au crépuscule, Christy Hotel à Goris, Arménie",
+      "Chambre avec lit double et deux fauteuils, Christy Hotel à Goris, Arménie",
+      "Salle de bains avec cabine de douche, Christy Hotel à Goris, Arménie",
+      "Table de petit-déjeuner dressée dans le jardin, Christy Hotel à Goris, Arménie",
+      "Jardin avec rosiers et coin repas couvert, Christy Hotel à Goris, Arménie"
+    ]
   }
 }

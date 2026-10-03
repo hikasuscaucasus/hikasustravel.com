@@ -688,5 +688,27 @@
       "Łazienka z prysznicem, Hotel Mirhav w Goris, Armenia",
       "Bufet śniadaniowy z owocami, serem i wędlinami, Hotel Mirhav w Goris, Armenia"
     ]
+  },
+  "Christy Hotel": {
+    "description": "Trzygwiazdkowy hotel w centrum Goris, z 17 pokojami jedno-, dwu- i trzyosobowymi oraz rodzinnymi w nowoczesnym stylu. Christy Hotel ma restaurację, ogród z tarasem i bezpłatne Wi-Fi, a do muzeów, sklepów i kawiarni miasta można wygodnie dojść pieszo.",
+    "amenities": [
+      "Bezpłatne Wi-Fi",
+      "Śniadanie dostępne",
+      "Restauracja na miejscu",
+      "Ogród i taras",
+      "Bezpłatny prywatny parking"
+    ],
+    "locationHighlights": [
+      "W centrum Goris, przy ulicy Masztoca",
+      "8 minut spacerem od Muzeum Historii Starożytnej",
+      "Sklepy i restauracje Goris w zasięgu spaceru"
+    ],
+    "imageAlts": [
+      "Kamienna fasada i schody wejściowe o zmierzchu, Christy Hotel w Goris, Armenia",
+      "Pokój z łóżkiem małżeńskim i dwoma fotelami, Christy Hotel w Goris, Armenia",
+      "Łazienka z kabiną prysznicową, Christy Hotel w Goris, Armenia",
+      "Stół nakryty do śniadania w ogrodzie, Christy Hotel w Goris, Armenia",
+      "Ogród z różami i zadaszonym miejscem do siedzenia, Christy Hotel w Goris, Armenia"
+    ]
   }
 }

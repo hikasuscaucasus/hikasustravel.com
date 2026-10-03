@@ -688,5 +688,27 @@
       "Koupelna se sprchou, Hotel Mirhav v Gorisu, Arménie",
       "Snídaňový bufet s ovocem, sýrem a uzeninami, Hotel Mirhav v Gorisu, Arménie"
     ]
+  },
+  "Christy Hotel": {
+    "description": "Tříhvězdičkový hotel v centru Gorisu se 17 jednolůžkovými, dvoulůžkovými, třílůžkovými a rodinnými pokoji v moderním stylu. Christy Hotel má restauraci, zahradu s terasou a Wi-Fi zdarma; muzea, obchody a kavárny města jsou v pohodlné docházkové vzdálenosti.",
+    "amenities": [
+      "Wi-Fi zdarma",
+      "Možnost snídaně",
+      "Vlastní restaurace",
+      "Zahrada a terasa",
+      "Soukromé parkování zdarma"
+    ],
+    "locationHighlights": [
+      "V centru Gorisu, v Maštocově ulici",
+      "8 minut chůze od Muzea starověké historie",
+      "Obchody a restaurace Gorisu v docházkové vzdálenosti"
+    ],
+    "imageAlts": [
+      "Kamenná fasáda a vstupní schodiště za soumraku, Christy Hotel v Gorisu, Arménie",
+      "Pokoj s manželskou postelí a dvěma křesly, Christy Hotel v Gorisu, Arménie",
+      "Koupelna se sprchovým koutem, Christy Hotel v Gorisu, Arménie",
+      "Prostřený snídaňový stůl venku na zahradě, Christy Hotel v Gorisu, Arménie",
+      "Zahrada s růžemi a krytým posezením, Christy Hotel v Gorisu, Arménie"
+    ]
   }
 }

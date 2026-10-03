@@ -838,3 +838,15 @@ Source: `Images for tours/Hotels/Hotel Mirhav Goris` (owner-approved). Converted
 | Hotel Mirhav | Bathroom | `hotel-mirhav-bathroom.webp` | 1024x683 |
 | Hotel Mirhav | Breakfast buffet | `hotel-mirhav-breakfast.webp` | 1024x665 |
 
+## Christy Hotel gallery added 2026-10-03 (owner-supplied photos)
+
+Source: `Images for tours/Hotels/Christy Hotel Goris` (owner-approved). Converted to WebP q82 at source width (no upscaling, no colour grading, no scene edits).
+
+| Hotel | Category | Local file | Size |
+|---|---|---|---|
+| Christy Hotel | Exterior | `christy-hotel-exterior.webp` | 1024x741 |
+| Christy Hotel | Room | `christy-hotel-room.webp` | 1024x768 |
+| Christy Hotel | Bathroom | `christy-hotel-bathroom.webp` | 1024x768 |
+| Christy Hotel | Breakfast | `christy-hotel-breakfast.webp` | 576x768 |
+| Christy Hotel | Garden | `christy-hotel-garden.webp` | 1024x768 |
+
