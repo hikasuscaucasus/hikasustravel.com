@@ -20364,9 +20364,13 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/tsinandali-estate-garden-autumn-kakheti-georgia-1536.webp",
-        "base": "/images/files/tsinandali-estate-garden-autumn-kakheti-georgia",
-        "widths": [768,1200,1536],
+        "src": "/images/files/tsinandali-estate-georgia-1536.webp",
+        "base": "/images/files/tsinandali-estate-georgia",
+        "widths": [
+          768,
+          1200,
+          1536
+        ],
         "width": 1536,
         "height": 1024,
         "caption": {
@@ -20379,27 +20383,44 @@ export const tours = [
           "pl": "Majątek Cinandali"
         },
         "altText": {
-          "en": "The 19th-century Tsinandali estate house and its landscaped gardens in autumn colours, Kakheti, Georgia",
-          "de": "Das Herrenhaus des Anwesens Zinandali aus dem 19. Jahrhundert und seine angelegten Gärten in Herbstfarben, Kachetien, Georgien",
-          "fr": "La maison de maître du domaine de Tsinandali (XIXe siècle) et ses jardins paysagers aux couleurs d'automne, Kakhétie, Géorgie",
-          "es": "La casa señorial de la finca de Tsinandali (siglo XIX) y sus jardines paisajísticos con colores otoñales, Kajetia, Georgia",
-          "nl": "Het 19e-eeuwse landhuis van het landgoed Tsinandali en zijn aangelegde tuinen in herfstkleuren, Kacheti, Georgië",
-          "cs": "Panské sídlo usedlosti Cinandali z 19. století a jeho zahrady v podzimních barvách, Kachetie, Gruzie",
-          "pl": "Dziewiętnastowieczny dwór w majątku Cinandali i jego ogrody w jesiennych barwach, Kachetia, Gruzja"
+          "en": "The Chavchavadze house at Tsinandali Estate across a lawn framed by tall trees, Kakheti, Georgia",
+          "de": "Das Chavchavadze-Haus des Anwesens Zinandali hinter einer von hohen Bäumen gesäumten Rasenfläche, Kachetien, Georgien",
+          "fr": "La maison Chavchavadze du domaine de Tsinandali, au-delà d'une pelouse bordée de grands arbres, Kakhétie, Géorgie",
+          "es": "La casa Chavchavadze de la finca de Tsinandali tras una pradera rodeada de árboles altos, Kajetia, Georgia",
+          "nl": "Het Chavchavadze-huis van het landgoed Tsinandali achter een gazon omzoomd door hoge bomen, Kacheti, Georgië",
+          "cs": "Dům Čavčavadzeů v usedlosti Cinandali za trávníkem lemovaným vysokými stromy, Kachetie, Gruzie",
+          "pl": "Dom Czawczawadzego w majątku Cinandali za trawnikiem otoczonym wysokimi drzewami, Kachetia, Gruzja"
         }
       },
       {
-        "src": "/images/files/sighnaghi-kakheti.jpg",
+        "src": "/images/kakheti/sighnaghi-ridge-alazani-valley-kakheti-georgia-1448.webp",
+        "base": "/images/kakheti/sighnaghi-ridge-alazani-valley-kakheti-georgia",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "fallbackWidth": 1200,
+        "width": 1448,
+        "height": 877,
         "caption": {
-          "en": "Sighnaghi, the City of Love",
-          "de": "Sighnaghi, the City of Love",
-          "fr": "Sighnaghi, the City of Love",
-          "es": "Sighnaghi, the City of Love",
-          "nl": "Sighnaghi, the City of Love",
-          "cs": "Sighnaghi, the City of Love",
-          "pl": "Sighnaghi, the City of Love"
+          "en": "Sighnaghi, Kakheti",
+          "de": "Sighnaghi, Kachetien",
+          "fr": "Sighnaghi, Kakhétie",
+          "es": "Sighnaghi, Kajetia",
+          "nl": "Sighnaghi, Kachetië",
+          "cs": "Sighnaghi, Kachetie",
+          "pl": "Sighnaghi, Kachetia"
         },
-        "description": "Hilltop walled town with views over the Alazani Valley, near Bodbe Monastery"
+        "altText": {
+          "en": "Hilltop town of Sighnaghi overlooking the Alazani Valley in Kakheti, Georgia",
+          "de": "Die Hügelstadt Sighnaghi mit Blick über das Alasani-Tal in Kachetien, Georgien",
+          "fr": "La ville perchée de Sighnaghi dominant la vallée de l'Alazani en Kakhétie, Géorgie",
+          "es": "El pueblo en la colina de Sighnaghi con vistas al valle de Alazani en Kajetia, Georgia",
+          "nl": "Het heuveltopstadje Sighnaghi met uitzicht over de Alazani-vallei in Kachetië, Georgië",
+          "cs": "Městečko Sighnaghi na kopci s výhledem na Alazanské údolí v Kachetii, Gruzie",
+          "pl": "Miasteczko Sighnaghi na wzgórzu z widokiem na Dolinę Alazani w Kachetii, Gruzja"
+        }
       },
       {
         "src": "/images/files/tbilisi-old-town-narikala-mtkvari-georgia-1448.webp",
