@@ -345,6 +345,30 @@ const blogArticles = [
     tags: ['caucasus','itinerary','planning','borders'],
     keywords: "Azerbaijan Georgia Armenia itinerary, Caucasus 2 weeks, two week Caucasus itinerary, 14 day Caucasus, Georgia Armenia Azerbaijan route, Caucasus borders, Azerbaijan Georgia border, Georgia Armenia border, Azerbaijan land border, Baku to Yerevan overland, Caucasus tour",
   },
+  {
+    slug: 'essential-armenian-words',
+    titleKey: 'blog.article8.title',
+    descKey: 'blog.article8.desc',
+    title: "25 Essential Armenian Words",
+    seoTitle: "25 Essential Armenian Words for Travelers | Hikasus Travel",
+    excerpt: "Learn 25 useful Armenian words and phrases for your trip, with Armenian script, simple pronunciation and practical examples for everyday travel in Armenia.",
+    metaDescription: "Learn 25 useful Armenian words and phrases for your trip, with Armenian script, simple pronunciation and practical examples for everyday travel in Armenia.",
+    heroImage: '/images/files/armenian-alphabet-chart-1200.webp',
+    ogImage: '/images/files/armenian-alphabet-chart-og-1200x630.jpg',
+    ogImageWidth: 1200,
+    ogImageHeight: 630,
+    ogImageAlt: {
+      en: "Chart of the 39 letters of the Armenian alphabet, each shown in capital and small form with its Latin transliteration",
+      de: "Tafel der 39 Buchstaben des armenischen Alphabets, jeweils als Groß- und Kleinbuchstabe mit lateinischer Umschrift",
+      fr: "Tableau des 39 lettres de l'alphabet arménien, chacune en majuscule et en minuscule avec sa translittération latine",
+      es: "Tabla de las 39 letras del alfabeto armenio, cada una en mayúscula y minúscula con su transliteración latina",
+      nl: "Overzicht van de 39 letters van het Armeense alfabet, elk als hoofdletter en kleine letter met de Latijnse transliteratie",
+      cs: "Přehled 39 písmen arménské abecedy, každé ve velké i malé podobě s přepisem do latinky",
+      pl: "Tablica 39 liter alfabetu ormiańskiego, każda w postaci wielkiej i małej z transliteracją łacińską",
+    },
+    tags: ['armenia','language','culture','travel-tips'],
+    keywords: "Armenian words, Armenian phrases, essential Armenian words, hello in Armenian, thank you in Armenian, Armenian for tourists, Armenian for travelers, Armenian language travel, Eastern Armenian phrases, Armenian alphabet, cheers in Armenian, Armenia travel tips",
+  },
 ]
 
 // Blog title translation for a given article key from ui.json
