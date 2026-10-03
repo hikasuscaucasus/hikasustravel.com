@@ -54,7 +54,7 @@ export const blogArticles = [
 <li><strong>Many Central Asian countries</strong> — Kazakhstan, Uzbekistan, etc.</li>
 </ul>
 
-<p>If your country isn't on the visa-free list, Georgia offers a straightforward <strong>e-Visa</strong> system. You can apply online; processing typically takes 5–10 working days, and the state fee is around US$20 plus a small service charge (the portal shows the exact amount).</p>
+<p>If your country isn't on the visa-free list, Georgia offers a straightforward <strong>e-Visa</strong> system. You can apply online; processing takes up to 5 working days, and the state fee is around US$20 plus a small service charge (the portal shows the exact amount).</p>
 
 <p><strong>Official resource:</strong> Always check the latest requirements on the <a href="https://www.evisa.gov.ge/GeoVisa/" target="_blank" rel="noopener noreferrer">Georgian Ministry of Foreign Affairs visa portal</a> before booking your flights. Visa policies can change, and this is the only source you should trust.</p>
 
@@ -115,6 +115,8 @@ export const blogArticles = [
 <tr><td>Narikala cable car / Mtatsminda funicular</td><td>2.5 GEL / 10 GEL</td><td>€1 / €3</td></tr>
 </tbody>
 </table>
+
+<p>Prices change. Entrance fees, cable-car fares and shuttle or transfer prices in particular are revised from time to time, so treat these figures as a guide and check the current price before you go.</p>
 
 <p><strong>Money tips:</strong></p>
 <ul>
