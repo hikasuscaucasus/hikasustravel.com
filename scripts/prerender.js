@@ -321,6 +321,30 @@ const blogArticles = [
     tags: ['azerbaijan','travel-guide','planning','food','culture'],
     keywords: "Azerbaijan travel guide, traveling to Azerbaijan, travel to Azerbaijan, Azerbaijan travel tips, visit Azerbaijan, best time to visit Azerbaijan, places to visit in Azerbaijan, things to do in Azerbaijan, Azerbaijan itinerary, Baku, Sheki, Azerbaijan visa, Azerbaijan and Georgia trip",
   },
+  {
+    slug: 'azerbaijan-georgia-armenia-2-weeks-current-borders',
+    titleKey: 'blog.article7.title',
+    descKey: 'blog.article7.desc',
+    title: "Azerbaijan, Georgia and Armenia in 2 Weeks: A Route That Works with Current Borders",
+    seoTitle: "Azerbaijan, Georgia & Armenia in 2 Weeks: Current Border Route | Hikasus",
+    excerpt: "A practical 14-day route through Azerbaijan, Georgia and Armenia that fits current border rules: fly into Baku, cross two land borders, fly home from Yerevan.",
+    metaDescription: "A practical 14-day route through Azerbaijan, Georgia and Armenia that fits current border rules: fly into Baku, cross two land borders, fly home from Yerevan.",
+    heroImage: '/images/files/gergeti-trinity-church-kazbegi-georgia-1200.webp',
+    ogImage: '/images/files/gergeti-trinity-church-kazbegi-georgia-og.jpg',
+    ogImageWidth: 1200,
+    ogImageHeight: 630,
+    ogImageAlt: {
+      en: "Gergeti Trinity Church on its ridge above Stepantsminda with the snow-covered slopes of Mount Kazbek behind, Kazbegi, Georgia",
+      de: "Die Gergeti-Dreifaltigkeitskirche auf ihrem Bergrücken über Stepanzminda, dahinter die schneebedeckten Hänge des Kasbek, Kasbegi, Georgien",
+      fr: "L'église de la Trinité de Guerguéti sur sa crête au-dessus de Stepantsminda, avec les pentes enneigées du mont Kazbek en arrière-plan, Kazbegi, Géorgie",
+      es: "La iglesia de la Trinidad de Gergeti sobre su cresta encima de Stepantsminda, con las laderas nevadas del monte Kazbek al fondo, Kazbegi, Georgia",
+      nl: "De Drievuldigheidskerk van Gergeti op haar bergrug boven Stepantsminda, met de besneeuwde hellingen van de Kazbek erachter, Kazbegi, Georgië",
+      cs: "Kostel Nejsvětější Trojice v Gergeti na hřebeni nad Stepancmindou, za ním zasněžené svahy hory Kazbek, Kazbegi, Gruzie",
+      pl: "Kościół Świętej Trójcy w Gergeti na grzbiecie nad Stepancmindą, w tle ośnieżone zbocza góry Kazbek, Kazbegi, Gruzja",
+    },
+    tags: ['caucasus','itinerary','planning','borders'],
+    keywords: "Azerbaijan Georgia Armenia itinerary, Caucasus 2 weeks, two week Caucasus itinerary, 14 day Caucasus, Georgia Armenia Azerbaijan route, Caucasus borders, Azerbaijan Georgia border, Georgia Armenia border, Azerbaijan land border, Baku to Yerevan overland, Caucasus tour",
+  },
 ]
 
 // Blog title translation for a given article key from ui.json
