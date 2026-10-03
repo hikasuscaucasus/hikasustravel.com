@@ -878,3 +878,19 @@ Source: `Images for tours/Hotels/Casanova Inn Dilijan` (owner-approved). Convert
 | Casanova Inn | Breakfast | `casanova-inn-breakfast.webp` | 614x768 |
 | Casanova Inn | Garden | `casanova-inn-garden.webp` | 1024x768 |
 
+## Dili Town Resort and Spa gallery added 2026-10-03 (owner-supplied photos)
+
+Source: `Images for tours/Hotels/Dili Town Resort and Spa Dilijan` (owner-approved). Converted to WebP q82 at source width (no upscaling, no colour grading, no scene edits).
+
+| Hotel | Category | Local file | Size |
+|---|---|---|---|
+| Dili Town Resort and Spa | Exterior | `dili-town-exterior.webp` | 1024x683 |
+| Dili Town Resort and Spa | Room | `dili-town-room.webp` | 1024x683 |
+| Dili Town Resort and Spa | Bathroom | `dili-town-bathroom.webp` | 1024x701 |
+| Dili Town Resort and Spa | Restaurant | `dili-town-restaurant.webp` | 1024x683 |
+| Dili Town Resort and Spa | Breakfast buffet | `dili-town-breakfast.webp` | 1024x683 |
+| Dili Town Resort and Spa | Indoor pool | `dili-town-pool.webp` | 1024x683 |
+| Dili Town Resort and Spa | Outdoor jacuzzi | `dili-town-jacuzzi.webp` | 1024x683 |
+| Dili Town Resort and Spa | Hammam | `dili-town-hammam.webp` | 1024x683 |
+| Dili Town Resort and Spa | Fitness room | `dili-town-gym.webp` | 1024x683 |
+

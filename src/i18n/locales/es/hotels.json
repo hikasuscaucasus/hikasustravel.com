@@ -758,5 +758,31 @@
       "Mesa larga preparada para el desayuno, Casanova Inn en Dilijan, Armenia",
       "Sendero del jardín entre arbustos en flor, Casanova Inn en Dilijan, Armenia"
     ]
+  },
+  "Dili Town Resort and Spa": {
+    "description": "Un resort aparthotel de 5 estrellas a unos 1,8 km del centro de Dilijan, con alojamientos independientes que incluyen cocina, balcón y vistas al jardín. El Dili Town Resort and Spa cuenta con piscina infinita, spa y centro de bienestar con sauna y hammam, gimnasio y un restaurante de cocina europea.",
+    "amenities": [
+      "Wi-Fi gratuito",
+      "Piscina infinita",
+      "Spa, sauna y hammam",
+      "Gimnasio",
+      "Restaurante"
+    ],
+    "locationHighlights": [
+      "A unos 1,8 km del centro de Dilijan",
+      "Alojamientos independientes con cocina y balcón",
+      "Piscina infinita y spa completo en el hotel"
+    ],
+    "imageAlts": [
+      "Exterior con balcones y colinas boscosas al fondo, Dili Town Resort and Spa en Dilijan, Armenia",
+      "Habitación con cama doble y ventanales, Dili Town Resort and Spa en Dilijan, Armenia",
+      "Baño con ducha a ras de suelo y espejo redondo, Dili Town Resort and Spa en Dilijan, Armenia",
+      "Comedor del restaurante con mesas de mármol, Dili Town Resort and Spa en Dilijan, Armenia",
+      "Bufé de desayuno con bollería, fruta y frutos secos, Dili Town Resort and Spa en Dilijan, Armenia",
+      "Piscina cubierta con tumbonas, Dili Town Resort and Spa en Dilijan, Armenia",
+      "Jacuzzi exterior en una terraza, Dili Town Resort and Spa en Dilijan, Armenia",
+      "Hammam alicatado con bancos calefactados, Dili Town Resort and Spa en Dilijan, Armenia",
+      "Gimnasio con máquinas de ejercicio, Dili Town Resort and Spa en Dilijan, Armenia"
+    ]
   }
 }

@@ -758,5 +758,31 @@
       "Dlouhý stůl prostřený ke snídani, Casanova Inn v Dilidžanu, Arménie",
       "Zahradní cestička mezi kvetoucími keři, Casanova Inn v Dilidžanu, Arménie"
     ]
+  },
+  "Dili Town Resort and Spa": {
+    "description": "Pětihvězdičkový apartmánový resort asi 1,8 km od centra Dilidžanu se samostatnými jednotkami s kuchyní, balkonem a výhledem do zahrady. Dili Town Resort and Spa má nekonečný bazén, spa a wellness centrum se saunou a hammamem, fitness centrum a restauraci s evropskou kuchyní.",
+    "amenities": [
+      "Wi-Fi zdarma",
+      "Nekonečný bazén",
+      "Spa, sauna a hammam",
+      "Fitness centrum",
+      "Restaurace"
+    ],
+    "locationHighlights": [
+      "Asi 1,8 km od centra Dilidžanu",
+      "Samostatné jednotky s kuchyní a balkonem",
+      "Nekonečný bazén a kompletní spa v hotelu"
+    ],
+    "imageAlts": [
+      "Exteriér s balkony a zalesněnými kopci v pozadí, Dili Town Resort and Spa v Dilidžanu, Arménie",
+      "Pokoj s manželskou postelí a francouzskými okny, Dili Town Resort and Spa v Dilidžanu, Arménie",
+      "Koupelna se sprchovým koutem a kulatým zrcadlem, Dili Town Resort and Spa v Dilidžanu, Arménie",
+      "Jídelna restaurace s mramorovými stoly, Dili Town Resort and Spa v Dilidžanu, Arménie",
+      "Snídaňový bufet s pečivem, ovocem a ořechy, Dili Town Resort and Spa v Dilidžanu, Arménie",
+      "Krytý bazén s lehátky, Dili Town Resort and Spa v Dilidžanu, Arménie",
+      "Venkovní vířivka na terase, Dili Town Resort and Spa v Dilidžanu, Arménie",
+      "Obložený hammam s vyhřívanými lavicemi, Dili Town Resort and Spa v Dilidžanu, Arménie",
+      "Posilovna s cvičebními stroji, Dili Town Resort and Spa v Dilidžanu, Arménie"
+    ]
   }
 }

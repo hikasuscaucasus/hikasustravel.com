@@ -758,5 +758,31 @@
       "Długi stół nakryty do śniadania, Casanova Inn w Dilidżanie, Armenia",
       "Ścieżka ogrodowa wśród kwitnących krzewów, Casanova Inn w Dilidżanie, Armenia"
     ]
+  },
+  "Dili Town Resort and Spa": {
+    "description": "Pięciogwiazdkowy resort typu aparthotel około 1,8 km od centrum Dilidżanu, z samodzielnymi apartamentami z kuchnią, balkonem i widokiem na ogród. Dili Town Resort and Spa ma basen typu infinity, spa i centrum wellness z sauną i hammamem, centrum fitness oraz restaurację z kuchnią europejską.",
+    "amenities": [
+      "Bezpłatne Wi-Fi",
+      "Basen typu infinity",
+      "Spa, sauna i hammam",
+      "Centrum fitness",
+      "Restauracja"
+    ],
+    "locationHighlights": [
+      "Około 1,8 km od centrum Dilidżanu",
+      "Samodzielne apartamenty z kuchnią i balkonem",
+      "Basen typu infinity i pełne spa na miejscu"
+    ],
+    "imageAlts": [
+      "Budynek z balkonami na tle zalesionych wzgórz, Dili Town Resort and Spa w Dilidżanie, Armenia",
+      "Pokój z łóżkiem małżeńskim i dużymi oknami do podłogi, Dili Town Resort and Spa w Dilidżanie, Armenia",
+      "Łazienka z prysznicem bez brodzika i okrągłym lustrem, Dili Town Resort and Spa w Dilidżanie, Armenia",
+      "Sala restauracyjna z marmurowymi stołami, Dili Town Resort and Spa w Dilidżanie, Armenia",
+      "Bufet śniadaniowy z wypiekami, owocami i orzechami, Dili Town Resort and Spa w Dilidżanie, Armenia",
+      "Kryty basen z leżakami, Dili Town Resort and Spa w Dilidżanie, Armenia",
+      "Jacuzzi na zewnątrz na tarasie, Dili Town Resort and Spa w Dilidżanie, Armenia",
+      "Wyłożony płytkami hammam z podgrzewanymi ławami, Dili Town Resort and Spa w Dilidżanie, Armenia",
+      "Siłownia ze sprzętem do ćwiczeń, Dili Town Resort and Spa w Dilidżanie, Armenia"
+    ]
   }
 }

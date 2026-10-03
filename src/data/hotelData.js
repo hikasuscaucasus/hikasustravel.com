@@ -1236,7 +1236,7 @@ const hotelData = {
   // Tatev & Dilijan. Facts verified against each property's own listing on
   // Tripadvisor/Booking.com/its own site (see the task's final report for
   // sources). Hotel Mirhav, Christy Hotel, Best Western Plus Paradise Hotel
-  // Dilijan and Casanova Inn have owner photos (added 2026-10-03); the other two ship
+  // Dilijan, Dili Town Resort and Spa and Casanova Inn have owner photos (added 2026-10-03); Yeghevnut Hotel still ships
   // with `images: []`, matching the existing 'Bakuriani Inn' precedent for a
   // canonical record with no photos yet.
   'Hotel Mirhav': {
@@ -1332,7 +1332,18 @@ const hotelData = {
     ],
   },
   'Dili Town Resort and Spa': {
-    images: [],
+    images: [
+      // Owner-supplied photos (Images for tours/Hotels/Dili Town Resort and Spa Dilijan), shown in this order.
+      { src: '/images/hotels/dili-town-exterior.webp', alt: 'Exterior of Dili Town Resort and Spa with balconies and forested hills behind in Dilijan, Armenia', category: 'Exterior' },
+      { src: '/images/hotels/dili-town-room.webp', alt: 'Guest room with a double bed and floor-to-ceiling windows at Dili Town Resort and Spa in Dilijan, Armenia', category: 'Room' },
+      { src: '/images/hotels/dili-town-bathroom.webp', alt: 'Guest bathroom with a walk-in shower and a round mirror at Dili Town Resort and Spa in Dilijan, Armenia', category: 'Bathroom' },
+      { src: '/images/hotels/dili-town-restaurant.webp', alt: 'Restaurant dining room with marble-top tables at Dili Town Resort and Spa in Dilijan, Armenia', category: 'Restaurant' },
+      { src: '/images/hotels/dili-town-breakfast.webp', alt: 'Breakfast buffet with pastries, fruit and nuts at Dili Town Resort and Spa in Dilijan, Armenia', category: 'Breakfast buffet' },
+      { src: '/images/hotels/dili-town-pool.webp', alt: 'Indoor swimming pool with sun loungers at Dili Town Resort and Spa in Dilijan, Armenia', category: 'Indoor pool' },
+      { src: '/images/hotels/dili-town-jacuzzi.webp', alt: 'Outdoor whirlpool on a terrace at Dili Town Resort and Spa in Dilijan, Armenia', category: 'Outdoor jacuzzi' },
+      { src: '/images/hotels/dili-town-hammam.webp', alt: 'Tiled hammam with heated benches at Dili Town Resort and Spa in Dilijan, Armenia', category: 'Hammam' },
+      { src: '/images/hotels/dili-town-gym.webp', alt: 'Fitness room with exercise machines at Dili Town Resort and Spa in Dilijan, Armenia', category: 'Fitness room' },
+    ],
     stars: 5,
     description: 'A 5-star aparthotel resort about 1.8 km from central Dilijan, with self-contained units including a kitchen, balcony and garden views. Dili Town Resort and Spa has an infinity pool, a spa and wellness centre with sauna and hammam, a fitness centre, and a restaurant serving European cuisine.',
     amenities: [
