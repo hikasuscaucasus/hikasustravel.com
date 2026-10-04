@@ -1864,7 +1864,7 @@ export const tours = [
     "tileImage": "/images/tours/tbilisi-to-batumi/batumi-skyline-beach-georgia-768.webp",
     "listingImage": "/images/tours/tbilisi-to-batumi/batumi-skyline-beach-georgia-768.webp",
     "days": 5,
-    "description": "This is a compact five-day private tour across western Georgia, from Tbilisi to the Black Sea at Batumi. It works well for travelers who want to see more than the capital but don't have time for a long trip. Along the way you visit the hilltop Jvari Monastery and ancient Mtskheta, the rock-cut town of Uplistsikhe and the Stalin Museum in Gori, then Kutaisi with its Gelati and Motsameta monasteries, the underground halls of Prometheus Cave, and Batumi on the coast — before driving back to Tbilisi on the final day. Hikasus Travel handles the transport, hotels, guiding and day-to-day logistics, and because the tour is private the route and pace stay flexible.",
+    "description": "This is a compact five-day private tour across western Georgia, from Tbilisi to the Black Sea at Batumi. It works well for travelers who want to see more than the capital but don't have time for a long trip. Along the way you visit the hilltop Jvari Monastery and ancient Mtskheta, the rock-cut town of Uplistsikhe and the Stalin Museum in Gori, then Kutaisi with its Gelati and Motsameta monasteries, the underground halls of Prometheus Cave, and Batumi on the coast — before taking the train back to Tbilisi on the final day. Hikasus Travel handles the transport, hotels, guiding and day-to-day logistics, and because the tour is private the route and pace stay flexible.",
     "listingDescription": "A private 5-day route from Tbilisi to Batumi taking in Mtskheta, Uplistsikhe, Gori, Kutaisi, Prometheus Cave and the Black Sea coast — hotels, transport and a guide-driver handled for you.",
     "heroH1": "5-Day Private Tour from Tbilisi to Batumi",
     "heroSubtitle": "A private, guide-driven route from Tbilisi through Georgia's historic heartland to Kutaisi, Prometheus Cave and Batumi on the Black Sea — then back to Tbilisi.",
@@ -2053,13 +2053,13 @@ export const tours = [
           "pl": "Mapa trasy"
         },
         "altText": {
-          "en": "Illustrated route map of the 5-day private tour from Tbilisi to Batumi, west through Mtskheta and Jvari, Gori and Uplistsikhe to Kutaisi with Gelati and Motsameta, then Prometheus Cave and the coast to Batumi, before driving back to Tbilisi",
-          "de": "Illustrierte Routenkarte der 5-tägigen Privatreise von Tiflis nach Batumi, westwärts über Mtskheta und Jvari, Gori und Uplistsikhe nach Kutaisi mit Gelati und Motsameta, dann zur Prometheus-Höhle und über die Küste nach Batumi, mit Rückfahrt nach Tiflis",
-          "fr": "Carte illustrée de l'itinéraire du circuit privé de 5 jours de Tbilissi à Batumi, vers l'ouest par Mtskheta et Jvari, Gori et Uplistsikhe jusqu'à Koutaïssi avec Gélati et Motsaméta, puis la grotte de Prométhée et la côte jusqu'à Batumi, avant le retour à Tbilissi",
-          "es": "Mapa ilustrado de la ruta del tour privado de 5 días de Tiflis a Batumi, hacia el oeste por Mtskheta y Jvari, Gori y Uplistsikhe hasta Kutaisi con Gelati y Motsameta, luego la cueva de Prometeo y la costa hasta Batumi, antes de regresar a Tiflis",
-          "nl": "Geïllustreerde routekaart van de 5-daagse privétour van Tbilisi naar Batumi, westwaarts via Mtskheta en Jvari, Gori en Uplistsikhe naar Koetaisi met Gelati en Motsameta, dan de Prometheusgrot en de kust naar Batumi, voor de terugrit naar Tbilisi",
-          "cs": "Ilustrovaná mapa trasy 5denního soukromého zájezdu z Tbilisi do Batumi, na západ přes Mtskhetu a Jvari, Gori a Uplistsikhe do Kutaisi s Gelati a Mocameta, poté k Prométheově jeskyni a po pobřeží do Batumi, před návratem do Tbilisi",
-          "pl": "Ilustrowana mapa trasy 5-dniowej prywatnej wycieczki z Tbilisi do Batumi, na zachód przez Mtskhetę i Jvari, Gori i Uplistsikhe do Kutaisi z Gelati i Mocameta, następnie do Jaskini Prometeusza i wzdłuż wybrzeża do Batumi, przed powrotem do Tbilisi"
+          "en": "Illustrated route map of the 5-day private tour from Tbilisi to Batumi, west through Mtskheta and Jvari, Gori and Uplistsikhe to Kutaisi with Gelati and Motsameta, then Prometheus Cave and the coast to Batumi, with the return to Tbilisi by train on Day 5",
+          "de": "Illustrierte Routenkarte der 5-tägigen Privatreise von Tiflis nach Batumi, westwärts über Mtskheta und Jvari, Gori und Uplistsikhe nach Kutaisi mit Gelati und Motsameta, dann zur Prometheus-Höhle und über die Küste nach Batumi, mit Rückfahrt per Zug nach Tiflis am 5. Tag",
+          "fr": "Carte illustrée de l'itinéraire du circuit privé de 5 jours de Tbilissi à Batumi, vers l'ouest par Mtskheta et Jvari, Gori et Uplistsikhe jusqu'à Koutaïssi avec Gélati et Motsaméta, puis la grotte de Prométhée et la côte jusqu'à Batumi, avant le retour à Tbilissi en train le 5e jour",
+          "es": "Mapa ilustrado de la ruta del tour privado de 5 días de Tiflis a Batumi, hacia el oeste por Mtskheta y Jvari, Gori y Uplistsikhe hasta Kutaisi con Gelati y Motsameta, luego la cueva de Prometeo y la costa hasta Batumi, antes de regresar a Tiflis en tren el día 5",
+          "nl": "Geïllustreerde routekaart van de 5-daagse privétour van Tbilisi naar Batumi, westwaarts via Mtskheta en Jvari, Gori en Uplistsikhe naar Koetaisi met Gelati en Motsameta, dan de Prometheusgrot en de kust naar Batumi, voor de terugreis per trein naar Tbilisi op dag 5",
+          "cs": "Ilustrovaná mapa trasy 5denního soukromého zájezdu z Tbilisi do Batumi, na západ přes Mtskhetu a Jvari, Gori a Uplistsikhe do Kutaisi s Gelati a Mocameta, poté k Prométheově jeskyni a po pobřeží do Batumi, před návratem vlakem do Tbilisi 5. den",
+          "pl": "Ilustrowana mapa trasy 5-dniowej prywatnej wycieczki z Tbilisi do Batumi, na zachód przez Mtskhetę i Jvari, Gori i Uplistsikhe do Kutaisi z Gelati i Mocameta, następnie do Jaskini Prometeusza i wzdłuż wybrzeża do Batumi, przed powrotem pociągiem do Tbilisi w 5. dniu"
         }
       },
       {
@@ -2318,7 +2318,7 @@ export const tours = [
         "width": 2400,
         "height": 1600,
         "caption": "Route Map",
-        "description": "Illustrated route map of the 5-day private tour from Tbilisi to Batumi, west through Mtskheta and Jvari, Gori and Uplistsikhe to Kutaisi with Gelati and Motsameta, then Prometheus Cave and the coast to Batumi, before driving back to Tbilisi",
+        "description": "Illustrated route map of the 5-day private tour from Tbilisi to Batumi, west through Mtskheta and Jvari, Gori and Uplistsikhe to Kutaisi with Gelati and Motsameta, then Prometheus Cave and the coast to Batumi, with the return to Tbilisi by train on Day 5",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -17260,13 +17260,13 @@ export const tours = [
           "pl": "Mapa trasy"
         },
         "altText": {
-          "en": "Illustrated route map of the 20-day Georgia grand tour, based in Tbilisi, Telavi, Kazbegi, Kutaisi, Zugdidi, Mestia and Batumi, taking in Sighnaghi and David Gareja, Ananuri and Gergeti Trinity Church, Juta trekking, Gelati and Prometheus Cave, Okatse and Martvili canyons, the Svan towers of Mestia and Ushguli, and the Batumi coast",
-          "de": "Illustrierte Routenkarte der 20-tägigen Georgien-Grand-Tour mit Standorten in Tiflis, Telawi, Kasbegi, Kutaissi, Sugdidi, Mestia und Batumi, mit Sighnaghi und David Gareja, Ananuri und der Gergeti-Dreifaltigkeitskirche, Juta-Trekking, Gelati und der Prometheus-Höhle, den Schluchten Okatse und Martvili, den Swanentürmen von Mestia und Uschguli sowie der Küste von Batumi",
-          "fr": "Carte illustrée de l'itinéraire de la grande tournée de 20 jours en Géorgie, basée à Tbilissi, Telavi, Kazbegi, Koutaïssi, Zougdidi, Mestia et Batoumi, avec Sighnaghi et David Gareja, Ananouri et l'église de la Trinité de Guerguéti, le trek de Juta, Gélati et la grotte de Prométhée, les canyons d'Okatse et de Martvili, les tours svanes de Mestia et d'Ouchgouli, ainsi que la côte de Batoumi",
-          "es": "Mapa ilustrado de la ruta del gran tour de 20 días por Georgia, con base en Tiflis, Telavi, Kazbegi, Kutaisi, Zugdidi, Mestia y Batumi, con Sighnaghi y David Gareja, Ananuri y la iglesia de la Trinidad de Gergeti, el trekking de Juta, Gelati y la cueva de Prometeo, los cañones de Okatse y Martvili, las torres svanas de Mestia y Ushguli, y la costa de Batumi",
-          "nl": "Geïllustreerde routekaart van de 20-daagse Georgische grand tour met standplaatsen in Tbilisi, Telavi, Kazbegi, Koetaisi, Zugdidi, Mestia en Batumi, met Sighnaghi en David Gareja, Ananuri en de Gergeti-Drie-eenheidskerk, de Juta-trektocht, Gelati en de Prometheus-grot, de canyons Okatse en Martvili, de Svan-torens van Mestia en Oesjgoeli, en de kust van Batumi",
-          "cs": "Ilustrovaná mapa trasy 20denní gruzínské grand tour se základnami v Tbilisi, Telavi, Kazbegi, Kutaisi, Zugdidi, Mestii a Batumi, se Sighnaghi a David Gareja, Ananuri a kostelem Nejsvětější Trojice v Gergeti, trekem do Juty, Gelati a Prométheovou jeskyní, kaňony Okatse a Martvili, svanskými věžemi v Mestii a Ušguli a pobřežím Batumi",
-          "pl": "Ilustrowana mapa trasy 20-dniowej gruzińskiej wielkiej wycieczki z bazami w Tbilisi, Telawi, Kazbegi, Kutaisi, Zugdidi, Mestii i Batumi, obejmująca Sighnaghi i David Gareja, Ananuri i cerkiew Trójcy Świętej w Gergeti, trekking w Jucie, Gelati i Jaskinię Prometeusza, kaniony Okatse i Martvili, swańskie wieże w Mestii i Uszguli oraz wybrzeże Batumi"
+          "en": "Illustrated route map of the 20-day Georgia grand tour, based in Tbilisi, Telavi, Kazbegi, Kutaisi, Zugdidi, Mestia and Batumi, taking in Sighnaghi and David Gareja, Ananuri and Gergeti Trinity Church, Juta trekking, Gelati and Prometheus Cave, Okatse and Martvili canyons, the Svan towers of Mestia and Ushguli, and the Batumi coast, with the train back to Tbilisi on Day 19",
+          "de": "Illustrierte Routenkarte der 20-tägigen Georgien-Grand-Tour mit Standorten in Tiflis, Telawi, Kasbegi, Kutaissi, Sugdidi, Mestia und Batumi, mit Sighnaghi und David Gareja, Ananuri und der Gergeti-Dreifaltigkeitskirche, Juta-Trekking, Gelati und der Prometheus-Höhle, den Schluchten Okatse und Martvili, den Swanentürmen von Mestia und Uschguli sowie der Küste von Batumi, mit der Zugfahrt zurück nach Tiflis am 19. Tag",
+          "fr": "Carte illustrée de l'itinéraire de la grande tournée de 20 jours en Géorgie, basée à Tbilissi, Telavi, Kazbegi, Koutaïssi, Zougdidi, Mestia et Batoumi, avec Sighnaghi et David Gareja, Ananouri et l'église de la Trinité de Guerguéti, le trek de Juta, Gélati et la grotte de Prométhée, les canyons d'Okatse et de Martvili, les tours svanes de Mestia et d'Ouchgouli, ainsi que la côte de Batoumi, avec le retour en train à Tbilissi le 19e jour",
+          "es": "Mapa ilustrado de la ruta del gran tour de 20 días por Georgia, con base en Tiflis, Telavi, Kazbegi, Kutaisi, Zugdidi, Mestia y Batumi, con Sighnaghi y David Gareja, Ananuri y la iglesia de la Trinidad de Gergeti, el trekking de Juta, Gelati y la cueva de Prometeo, los cañones de Okatse y Martvili, las torres svanas de Mestia y Ushguli, y la costa de Batumi, con el regreso en tren a Tiflis el día 19",
+          "nl": "Geïllustreerde routekaart van de 20-daagse Georgische grand tour met standplaatsen in Tbilisi, Telavi, Kazbegi, Koetaisi, Zugdidi, Mestia en Batumi, met Sighnaghi en David Gareja, Ananuri en de Gergeti-Drie-eenheidskerk, de Juta-trektocht, Gelati en de Prometheus-grot, de canyons Okatse en Martvili, de Svan-torens van Mestia en Oesjgoeli, en de kust van Batumi, met de treinreis terug naar Tbilisi op dag 19",
+          "cs": "Ilustrovaná mapa trasy 20denní gruzínské grand tour se základnami v Tbilisi, Telavi, Kazbegi, Kutaisi, Zugdidi, Mestii a Batumi, se Sighnaghi a David Gareja, Ananuri a kostelem Nejsvětější Trojice v Gergeti, trekem do Juty, Gelati a Prométheovou jeskyní, kaňony Okatse a Martvili, svanskými věžemi v Mestii a Ušguli a pobřežím Batumi, s návratem vlakem do Tbilisi 19. den",
+          "pl": "Ilustrowana mapa trasy 20-dniowej gruzińskiej wielkiej wycieczki z bazami w Tbilisi, Telawi, Kazbegi, Kutaisi, Zugdidi, Mestii i Batumi, obejmująca Sighnaghi i David Gareja, Ananuri i cerkiew Trójcy Świętej w Gergeti, trekking w Jucie, Gelati i Jaskinię Prometeusza, kaniony Okatse i Martvili, swańskie wieże w Mestii i Uszguli oraz wybrzeże Batumi, z powrotem pociągiem do Tbilisi w 19. dniu"
         }
       },
       {
@@ -17748,7 +17748,7 @@ export const tours = [
         "width": 2400,
         "height": 1600,
         "caption": "Route Map",
-        "description": "Illustrated route map of the 20-day Georgia grand tour, based in Tbilisi, Telavi, Kazbegi, Kutaisi, Zugdidi, Mestia and Batumi, taking in Sighnaghi and David Gareja, Ananuri and Gergeti Trinity Church, Juta trekking, Gelati and Prometheus Cave, Okatse and Martvili canyons, the Svan towers of Mestia and Ushguli, and the Batumi coast",
+        "description": "Illustrated route map of the 20-day Georgia grand tour, based in Tbilisi, Telavi, Kazbegi, Kutaisi, Zugdidi, Mestia and Batumi, taking in Sighnaghi and David Gareja, Ananuri and Gergeti Trinity Church, Juta trekking, Gelati and Prometheus Cave, Okatse and Martvili canyons, the Svan towers of Mestia and Ushguli, and the Batumi coast, with the train back to Tbilisi on Day 19",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
