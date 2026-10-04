@@ -398,7 +398,7 @@ export function buildSearchIndex({ lang, pages = {}, t, tourTranslations = null 
       type: 'blog',
       title: tf(t, a.titleKey, a.title),
       description: tf(t, a.descKey, a.excerpt),
-      keywords: (a.tags || []).join(', '),
+      keywords: [...(a.tags || []), a.keywords].filter(Boolean).join(', '),
       alias: a.title,
     })
   }

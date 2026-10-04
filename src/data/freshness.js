@@ -131,6 +131,7 @@ export const pages = [
   page('blog:ultimate-guide-to-traveling-to-armenia', '/blog/ultimate-guide-to-traveling-to-armenia', 'armenia', 'blog', C, ['visa', 'borders', 'transport', 'UNESCO'], ['amVisa', 'amBorders', 'unesco']),
   page('blog:ultimate-guide-to-traveling-to-azerbaijan', '/blog/ultimate-guide-to-traveling-to-azerbaijan', 'azerbaijan', 'blog', C, ['e-Visa', 'land border', 'registration', 'UNESCO'], ['azEvisa', 'azLandEntry', 'azGeRail', 'unesco']),
   page('blog:azerbaijan-georgia-armenia-2-weeks-current-borders', '/blog/azerbaijan-georgia-armenia-2-weeks-current-borders', 'caucasus', 'blog', C, ['border direction', 'rail exception', 'insurance', 'visa'], ['azLandEntry', 'azGeRail', 'azEvisa', 'geInsurance', 'amBorders']),
+  page('blog:food-drink-caucasus-georgia-armenia-azerbaijan', '/blog/food-drink-caucasus-georgia-armenia-azerbaijan', 'caucasus', 'blog', C, ['UNESCO intangible-heritage inscriptions', 'Cognac naming rule', 'tour inclusions'], [], { lastVerified: '2026-10-04' }),
   page('blog:essential-georgian-words-phrases', '/blog/essential-georgian-words-phrases', 'georgia', 'blog', C, ['none time-sensitive'], []),
   page('blog:essential-azerbaijani-words-phrases', '/blog/essential-azerbaijani-words-phrases', 'azerbaijan', 'blog', C, ['English proficiency statement'], []),
   page('blog:essential-armenian-words', '/blog/essential-armenian-words', 'armenia', 'blog', C, ['English proficiency statement'], []),

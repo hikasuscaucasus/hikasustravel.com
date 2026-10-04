@@ -393,6 +393,30 @@ const blogArticles = [
     tags: ['azerbaijan','language','culture','travel-tips'],
     keywords: "Azerbaijani words, Azerbaijani phrases, essential Azerbaijani phrases, hello in Azerbaijani, thank you in Azerbaijani, Azerbaijani for tourists, Azerbaijani for travelers, Azerbaijan language, Azeri phrases, Azeri words, Azerbaijani alphabet, Azerbaijan travel tips",
   },
+  {
+    slug: 'food-drink-caucasus-georgia-armenia-azerbaijan',
+    titleKey: 'blog.article10.title',
+    descKey: 'blog.article10.desc',
+    title: "Food and Drink in the Caucasus: A Traveler's Guide to Georgia, Armenia and Azerbaijan",
+    seoTitle: "Food & Drink in the Caucasus: Georgia, Armenia & Azerbaijan | Hikasus",
+    excerpt: "What to eat and drink in Georgia, Armenia and Azerbaijan: qvevri wine, Armenian brandy, Azerbaijani tea, dolma, kebabs, bread and how a Caucasian feast works.",
+    metaDescription: "What to eat and drink in Georgia, Armenia and Azerbaijan: qvevri wine, Armenian brandy, Azerbaijani tea, dolma, kebabs, bread and how a Caucasian feast works.",
+    heroImage: '/images/files/kakheti-vineyard-georgia-1200.webp',
+    ogImage: '/images/files/kakheti-vineyard-georgia-og.jpg',
+    ogImageWidth: 1200,
+    ogImageHeight: 630,
+    ogImageAlt: {
+      en: "Rows of grapevines in a vineyard in Kakheti at sunset, with the low sun casting long shadows across the grass, Georgia",
+      de: "Rebzeilen in einem Weinberg in Kachetien bei Sonnenuntergang, die tief stehende Sonne wirft lange Schatten über das Gras, Georgien",
+      fr: "Rangées de vignes dans un vignoble de Kakhétie au coucher du soleil, le soleil bas projetant de longues ombres sur l'herbe, Géorgie",
+      es: "Hileras de vides en un viñedo de Kajetia al atardecer, con el sol bajo proyectando sombras alargadas sobre la hierba, Georgia",
+      nl: "Rijen wijnstokken in een wijngaard in Kacheti bij zonsondergang, waarbij de lage zon lange schaduwen over het gras werpt, Georgië",
+      cs: "Řady vinné révy na vinici v Kachetii při západu slunce, nízké slunce vrhá dlouhé stíny přes trávu, Gruzie",
+      pl: "Rzędy winorośli w winnicy w Kachetii o zachodzie słońca, niskie słońce rzuca długie cienie na trawę, Gruzja",
+    },
+    tags: ['caucasus','food','wine','culture'],
+    keywords: "Caucasus food, Caucasus cuisine, South Caucasus food, food and drink in the Caucasus, what to eat in the Caucasus, Georgia Armenia Azerbaijan food, Georgian wine, qvevri, Caucasus wine, Armenian brandy, Azerbaijani tea, armudu, dolma, tolma, khorovats, mtsvadi, lavash, Georgian supra, tamada",
+  },
 ]
 
 // Blog title translation for a given article key from ui.json
