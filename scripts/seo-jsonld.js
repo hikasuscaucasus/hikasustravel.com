@@ -39,6 +39,8 @@ const {
   regionsHubPathFor, citiesHubPathFor, placesHubPathFor, DEFAULT_COUNTRY,
 } = await import(src('data/places.js'))
 const { publishedBorderPages, borderCrossings, borderOverview } = await import(src('data/borders.js'))
+const { primaryToursFor } = await import(src('data/tours.js'))
+const { TOUR_HUBS } = await import(src('data/tourHubs.js'))
 
 const SITE_URL = 'https://www.hikasustravel.com'
 const BRAND = 'Hikasus Travel'
@@ -378,6 +380,61 @@ export function createJsonLdBuilder({ seoFor }) {
              { name: crossing?.name || seo.title }],
           url),
       ])
+    }
+
+    // --- tour hubs: the /private-tours chooser + /tours/<country> ----------
+    // Mirrors PrivateToursPage / CountryToursHubPage node for node (same
+    // trail, same CollectionPage + ItemList, tour titles from this locale's
+    // tours.json exactly as the hydrated page reads tourTranslations), so a
+    // crawler that never runs JavaScript sees the graph the browser builds.
+    {
+      const tourTitles = locale('tours.json')
+      const toursCrumb = { name: t('footer.tours'), to: '/private-tours' }
+      const chooserUrl = `${SITE_URL}/${lang}/private-tours`
+      put('private-tours', [
+        breadcrumbs([HOME, { name: t('footer.tours') }], chooserUrl),
+        {
+          '@type': 'CollectionPage',
+          name: t('tourHub.title'),
+          description: seoFor('privateTours', lang).description,
+          url: chooserUrl,
+          inLanguage: lang,
+          mainEntity: {
+            '@type': 'ItemList',
+            itemListElement: TOUR_HUBS.map((hub, i) => ({
+              '@type': 'ListItem',
+              position: i + 1,
+              url: `${SITE_URL}/${lang}${hub.path}`,
+              name: t(hub.titleKey),
+            })),
+          },
+        },
+      ])
+      for (const hub of TOUR_HUBS) {
+        const hubUrl = `${SITE_URL}/${lang}${hub.path}`
+        const primary = primaryToursFor(hub.id)
+        put(hub.path, [
+          breadcrumbs([HOME, toursCrumb, { name: t(hub.nameKey) }], hubUrl),
+          primary.length
+            ? {
+                '@type': 'CollectionPage',
+                name: t(hub.titleKey),
+                description: seoFor(hub.seoKey, lang).description,
+                url: hubUrl,
+                inLanguage: lang,
+                mainEntity: {
+                  '@type': 'ItemList',
+                  itemListElement: primary.map((tour, i) => ({
+                    '@type': 'ListItem',
+                    position: i + 1,
+                    url: `${SITE_URL}/${lang}/${tour.type === 'group' ? 'group-tours' : 'private-tours'}/${tour.slug}`,
+                    name: tourTitles[tour.slug]?.title || tour.title,
+                  })),
+                },
+              }
+            : null,
+        ])
+      }
     }
 
     return graphs
