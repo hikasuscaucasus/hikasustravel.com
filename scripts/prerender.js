@@ -50,6 +50,11 @@ const { privateTourCollectionPages } = await import(
 const { tours: tourRecords, tourHubRobots } = await import(
   pathToFileURL(join(__dirname, '../src/data/tours.js')).href
 )
+// Hub registry: the chooser/hub social images below come from the same record
+// the runtime pages read, so the static and hydrated <head> cannot disagree.
+const { tourHubById, TOUR_HUB_CHOOSER_IMAGE } = await import(
+  pathToFileURL(join(__dirname, '../src/data/tourHubs.js')).href
+)
 const { buildTourSeo } = await import(
   pathToFileURL(join(__dirname, '../src/utils/tourSeo.js')).href
 )
@@ -529,9 +534,14 @@ const staticPageImages = {
   'azerbaijan/cities': null,
   'azerbaijan/places-to-visit': null,
   'azerbaijan-visa-entry-requirements': null,
-  // No Azerbaijan photograph exists in the repo yet — strip the site-wide
-  // Georgian default rather than let this hub inherit another country's photo.
-  'tours/azerbaijan': null,
+  // The tour chooser and the four tour hubs: the same photo each hub's card
+  // shows on /private-tours, from the one hub registry the runtime page also
+  // reads (useSEO `image`), so the static head and the hydrated head agree.
+  'private-tours': TOUR_HUB_CHOOSER_IMAGE,
+  'tours/georgia': tourHubById.georgia.image,
+  'tours/armenia': tourHubById.armenia.image,
+  'tours/azerbaijan': tourHubById.azerbaijan.image,
+  'tours/caucasus': tourHubById.caucasus.image,
 }
 
 // Dedicated social records ({ src, width, height, alt{lang} }) for a country's

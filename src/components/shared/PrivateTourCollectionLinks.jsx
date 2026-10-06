@@ -1,6 +1,6 @@
 import LocaleLink from '../../i18n/LocaleLink'
 import useT from '../../i18n/useT'
-import { privateTourCollectionPages } from '../../data/privateTourCollections'
+import { privateTourCollectionPages, collectionsForCountry } from '../../data/privateTourCollections'
 
 /**
  * Crawlable links to the Private Tours collection pages.
@@ -8,17 +8,23 @@ import { privateTourCollectionPages } from '../../data/privateTourCollections'
  * These are real <a> links to indexable landing pages — not client-side
  * filters — so each subset is a genuine entry point for search.
  *
- * variant "hub"  (/private-tours): both groups, with visible headings, in place
- *                of the old "Tours From" and "Tour Categories" dropdowns.
+ * variant "hub"  (a country tours hub, /tours/<country>): both groups, with
+ *                visible headings, in place of the old "Tours From" and "Tour
+ *                Categories" dropdowns. Pass `country` to show only the
+ *                collections whose tours belong to that hub — Georgia's
+ *                Tbilisi/Kutaisi and category chips never appear on another
+ *                country's hub. Renders nothing when the country has none.
  * variant "home" (homepage Private Tours section): the six CATEGORIES only,
  *                compact and unheaded so it stays secondary to the section's
  *                own h2 and to the tour cards. The starting-point links are
  *                deliberately left off the homepage.
  */
-export default function PrivateTourCollectionLinks({ variant = 'hub' }) {
+export default function PrivateTourCollectionLinks({ variant = 'hub', country }) {
   const t = useT()
-  const origins = privateTourCollectionPages.filter((c) => c.kind === 'origin')
-  const categories = privateTourCollectionPages.filter((c) => c.kind === 'category')
+  const pages = country ? collectionsForCountry(country) : privateTourCollectionPages
+  const origins = pages.filter((c) => c.kind === 'origin')
+  const categories = pages.filter((c) => c.kind === 'category')
+  if (!pages.length) return null
 
   const chips = (items) => (
     <div className="ptc-links__chips">

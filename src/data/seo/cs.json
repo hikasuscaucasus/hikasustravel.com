@@ -1125,19 +1125,19 @@
     "keywords": "zájezdy Gruzie, zájezdy Arménie, zájezdy Ázerbájdžán, cestování Kavkaz, soukromé zájezdy Kavkaz, kombinovaná trasa Kavkaz"
   },
   "toursGeorgia": {
-    "title": "Zájezdy do Gruzie | Hikasus Travel",
+    "title": "Zájezdy do Gruzie: soukromé a skupinové | Hikasus Travel",
     "description": "Soukromé a skupinové zájezdy po celé Gruzii — Tbilisi, Kazbegi, vinařský kraj Kachetie, Svaneti a pobřeží Černého moře. Místní průvodce na každém zájezdu; lze kombinovat s Arménií nebo Ázerbájdžánem.",
     "keywords": "zájezdy Gruzie, soukromé zájezdy Gruzie, skupinové zájezdy Gruzie, Tbilisi, Kazbegi, Kachetie, Svaneti"
   },
   "toursArmenia": {
-    "title": "Zájezdy do Arménie | Hikasus Travel",
-    "description": "Soukromé a skupinové zájezdy do Arménie — Jerevan, jezero Sevan, Dilidžan a další. Místní průvodce na každém zájezdu; lze kombinovat s Gruzií nebo Ázerbájdžánem.",
-    "keywords": "zájezdy Arménie, soukromé zájezdy Arménie, skupinové zájezdy Arménie, Jerevan, jezero Sevan, Dilidžan"
+    "title": "Zájezdy do Arménie: soukromé zájezdy | Hikasus Travel",
+    "description": "Soukromé zájezdy do Arménie — Jerevan, jezero Sevan, Dilidžan, Tatev a kláštery Geghard a Khor Virap. Místní průvodce na každém zájezdu; lze kombinovat s Gruzií nebo Ázerbájdžánem.",
+    "keywords": "zájezdy Arménie, soukromé zájezdy Arménie, Jerevan, jezero Sevan, Dilidžan, Tatev"
   },
   "toursAzerbaijan": {
-    "title": "Zájezdy do Ázerbájdžánu | Hikasus Travel",
-    "description": "Soukromé a skupinové zájezdy do Ázerbájdžánu — Baku, Abšeron, Gobustan, Šeki. Místní průvodce na každém zájezdu; lze kombinovat s Gruzií nebo Arménií.",
-    "keywords": "zájezdy Ázerbájdžán, soukromé zájezdy Ázerbájdžán, skupinové zájezdy Ázerbájdžán, Baku, Gobustan, Šeki"
+    "title": "Zájezdy do Ázerbájdžánu: soukromé a kombinované po Kavkaze | Hikasus Travel",
+    "description": "Soukromé zájezdy do Ázerbájdžánu — Baku, Abšeron, Gobustan, Šeki — samostatně nebo v rámci kombinované trasy po Kavkaze s Gruzií a Arménií. Místní průvodce na každém zájezdu.",
+    "keywords": "zájezdy Ázerbájdžán, soukromé zájezdy Ázerbájdžán, Baku, Gobustan, Šeki, kombinované zájezdy Kavkaz"
   },
   "toursCaucasus": {
     "title": "Zájezdy po Kavkaze: Gruzie, Arménie a Ázerbájdžán | Hikasus Travel",
@@ -1584,9 +1584,9 @@
     "keywords": "co dělat v Tbilisi, co vidět v Tbilisi, atrakce Tbilisi, staré město Tbilisi, sirné lázně Abanotubani, pevnost Narikala, katedrála Sameba, Gruzínské národní muzeum, jídlo Tbilisi, vinné bary Tbilisi"
   },
   "privateTours": {
-    "title": "Soukromé Zájezdy v Gruzii | Hikasus Travel",
-    "description": "Prohlédněte si naše soukromé zájezdy po Gruzii a kombinované trasy Gruzie-Arménie. Přizpůsobitelné itineráře od 3 do 20 dnů přes Tbilisi, Kazbegi, Kachetii, Svanetii a Batumi.",
-    "keywords": "soukromé zájezdy Gruzie, individuální zájezdy Gruzie, itinerář Gruzie, zájezd Tbilisi, zájezd Kazbegi, zájezd Svanetie"
+    "title": "Soukromé zájezdy po Kavkaze: Gruzie, Arménie a Ázerbájdžán | Hikasus Travel",
+    "description": "Vyberte si destinaci: soukromé zájezdy do Gruzie, Arménie a Ázerbájdžánu a kombinované trasy po Kavkaze přes dvě nebo tři země, vždy s místním průvodcem.",
+    "keywords": "soukromé zájezdy Kavkaz, zájezdy Gruzie, zájezdy Arménie, zájezdy Ázerbájdžán, kombinované zájezdy Kavkaz, zájezdy na míru Kavkaz"
   },
   "groupTours": {
     "title": "Skupinové Zájezdy v Gruzii | Hikasus Travel",

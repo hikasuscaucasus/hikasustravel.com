@@ -6,7 +6,7 @@ import DestinationCard from '../shared/DestinationCard'
 import CountryTabs from '../shared/CountryTabs'
 import FeaturedTourTile from '../shared/FeaturedTourTile'
 import ContactForm from '../shared/ContactForm'
-import { tours, privateTourCountFor, countryHasAnyTours, featuredToursFor } from '../../data/tours'
+import { tours, primaryPrivateTourCountFor, hubStatusFor, featuredToursFor } from '../../data/tours'
 import { blogArticles } from '../../data/blogData'
 import { contactInfo } from '../../data/siteData'
 import useT from '../../i18n/useT'
@@ -103,14 +103,17 @@ export default function HomePage() {
   // Eagerly load tour translations for homepage tiles
   if (!tourTranslations) loadTourTranslations()
 
-  const georgiaTourCount = privateTourCountFor('georgia')
-  const destStatus = (country, combined = false) => {
-    if (countryHasAnyTours(country)) {
-      return tCount('home.destStatusTours', privateTourCountFor(country))
-    }
-    if (combined) return t('home.destStatusCombined')
-    // Armenia/Azerbaijan have no standalone tours yet, but each has an
-    // Ultimate Guide article — point visitors there instead of a dead end.
+  const georgiaTourCount = primaryPrivateTourCountFor('georgia')
+  // Status line under each destination card, from the same classification
+  // the /tours/<country> hubs list: the hub's own private tours, or — for a
+  // country that so far appears only inside multi-country tours — a note
+  // saying so, so the number never counts a combined tour twice.
+  const destStatus = (country) => {
+    const status = hubStatusFor(country)
+    if (status.kind === 'count') return tCount('home.destStatusTours', status.n)
+    if (status.kind === 'combinedOnly') return t('home.destStatusCombinedOnly')
+    // No tours at all yet, but an Ultimate Guide article exists — point
+    // visitors there instead of a dead end.
     return t('home.destStatusSoonWithGuide')
   }
 
@@ -125,7 +128,7 @@ export default function HomePage() {
           country="georgia"
           t={t}
           tourTranslations={tourTranslations}
-          seeAllHref="/private-tours"
+          seeAllHref="/tours/georgia"
           seeAllLabel={t('home.seeAllGeorgiaTours', { n: georgiaTourCount })}
         />
       ),
@@ -198,7 +201,7 @@ export default function HomePage() {
                 <DestinationCard
                   name={t('nav.destinations.georgia')}
                   image="/images/files/Sighnaghi.jpg"
-                  to="/private-tours"
+                  to="/tours/georgia"
                   locationLine={destStatus('georgia')}
                   headingLevel="h3"
                 />
@@ -227,7 +230,7 @@ export default function HomePage() {
                   name={t('home.destCaucasus')}
                   image="/images/files/svaneti-caucasus-mountains-georgia-1200.webp"
                   to="/tours/caucasus"
-                  locationLine={destStatus('caucasus', true)}
+                  locationLine={destStatus('caucasus')}
                   headingLevel="h3"
                 />
               </li>

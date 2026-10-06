@@ -11,7 +11,7 @@
 // NOTE: explicit .js extensions — this module is dynamically imported by the
 // Node build scripts (prerender.js / generate-sitemap.js), where extensionless
 // ESM specifiers do not resolve. Vite resolves the extension too.
-import { tours } from './tours.js'
+import { tours, tourCountry } from './tours.js'
 import {
   CATEGORY_IDS,
   CATEGORY_LABEL_KEYS,
@@ -80,4 +80,18 @@ export function toursForCollection(collection) {
   if (!collection) return []
   const wanted = new Set(collection.tourSlugs)
   return privateTours.filter((t) => wanted.has(t.slug))
+}
+
+const tourBySlug = new Map(tours.map((t) => [t.slug, t]))
+
+/**
+ * The collections whose tours ALL belong to `country`'s hub — the chip row on
+ * /tours/<country>. Every collection is Georgia's today (the taxonomy only
+ * assigns Georgia tours), so Georgia gets all eight and the other hubs get
+ * none; the check is by the tours' own `country`, never by hub name, so a
+ * collection that one day holds Armenia tours moves with them.
+ */
+export function collectionsForCountry(country) {
+  return privateTourCollectionPages.filter((c) =>
+    c.tourSlugs.every((slug) => tourCountry(tourBySlug.get(slug)) === country))
 }

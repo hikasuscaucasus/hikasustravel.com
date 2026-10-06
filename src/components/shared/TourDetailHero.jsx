@@ -4,6 +4,8 @@ import LocaleLink from '../../i18n/LocaleLink'
 import useT from '../../i18n/useT'
 import useLang from '../../i18n/useLang'
 import { GalleryLightbox } from './Gallery'
+import { tourCountry } from '../../data/tours'
+import { tourHubById } from '../../data/tourHubs'
 
 /* Ivory-badge pilot: the hero is a two-column split (copy left, framed cover
    photo right) instead of the full-viewport photo it used to be, so the photo
@@ -161,8 +163,12 @@ export default function TourDetailHero({ tour, translatedTitle, heroH1, isGroup,
     if (el) el.scrollIntoView({ behavior: 'smooth' })
   }
 
-  const backPath = isGroup ? '/group-tours' : '/private-tours'
-  const backLabel = isGroup ? t('tour.groupTours') : t('tour.privateTours')
+  // Back to the hub this tour is listed on: group tours to /group-tours, a
+  // private tour to its own country's hub (/tours/<country>) rather than the
+  // global /private-tours chooser.
+  const hub = tourHubById[tourCountry(tour)]
+  const backPath = isGroup ? '/group-tours' : hub.path
+  const backLabel = isGroup ? t('tour.groupTours') : t(hub.navKey)
   const hasPhoto = Boolean(tour.heroImage)
 
   return (

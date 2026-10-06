@@ -22213,8 +22213,6 @@ export const toursForCountry = (country) => tours.filter((t) =>
   tourCountry(t) === country
   || (t.country === 'caucasus' && (t.areaServed || []).some((a) => a.toLowerCase() === country)),
 )
-export const privateTourCountFor = (country) =>
-  toursForCountry(country).filter((t) => t.type === 'private').length
 export const countryHasAnyTours = (country) => toursForCountry(country).length > 0
 // Georgia's homepage tab and /tours/georgia hub show a full 4 + 4 grid; every
 // other country keeps 6. The two extra Georgia tours are listed here rather
@@ -22236,3 +22234,34 @@ export const featuredToursFor = (country) => {
 // scripts/prerender.js (static <head>) and scripts/generate-sitemap.js.
 export const tourHubRobots = (country) =>
   countryHasAnyTours(country) ? null : 'noindex,follow'
+// ---------------------------------------------------------------------------
+// Hub classification. Every tour has exactly ONE primary hub, decided by
+// tourCountry(): a single-country tour belongs to that country's hub, and a
+// `country: "caucasus"` tour belongs to the Caucasus hub only. The country
+// hubs (/tours/<country>) list `primaryToursFor` as their main listing, and
+// show the multi-country tours that pass through them in a separate
+// "Combine <country> with..." section via `combinedToursCovering` — so a
+// Georgia+Armenia tour never pads the Georgia or Armenia tour count.
+// `toursForCountry` above (which folds the combined tours in) stays what
+// decides a hub's indexability/sitemap presence: a hub whose only content is a
+// combined tour still has a real tour to show.
+export const primaryToursFor = (country) => tours.filter((t) => tourCountry(t) === country)
+export const combinedToursCovering = (country) => (country === 'caucasus'
+  ? []
+  : tours.filter((t) => t.country === 'caucasus' && (t.areaServed || []).some((a) => a.toLowerCase() === country)))
+// Count shown on the hub chooser cards and the homepage destination cards:
+// the hub's own private tours (primary classification), never the combined
+// tours it merely links to.
+export const primaryPrivateTourCountFor = (country) =>
+  primaryToursFor(country).filter((t) => t.type === 'private').length
+// What a destination card's status line should say, from the same data the
+// hub renders: { kind: 'count', n } when the hub has tours of its own,
+// 'combinedOnly' when a country appears only inside multi-country tours, and
+// 'soon' when it has neither.
+export const hubStatusFor = (country) => {
+  const n = primaryPrivateTourCountFor(country)
+  if (n > 0) return { kind: 'count', n }
+  if (combinedToursCovering(country).length > 0) return { kind: 'combinedOnly' }
+  return { kind: 'soon' }
+}
+

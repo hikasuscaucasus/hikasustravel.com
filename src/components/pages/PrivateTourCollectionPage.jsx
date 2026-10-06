@@ -8,6 +8,8 @@ import useLang from '../../i18n/useLang'
 import { I18nContext } from '../../i18n/I18nContext'
 import useSEO from '../../hooks/useSEO'
 import { getPrivateTourCollection, toursForCollection } from '../../data/privateTourCollections'
+import { tourCountry } from '../../data/tours'
+import { tourHubById } from '../../data/tourHubs'
 import NotFoundPage from './NotFoundPage'
 
 const SITE_URL = 'https://www.hikasustravel.com'
@@ -92,9 +94,14 @@ export default function PrivateTourCollectionPage({ slug }) {
 
   if (!collection || !matches.length) return <NotFoundPage />
 
+  // Home → Tours (the /private-tours chooser) → <Country> Tours → collection.
+  // The country is the one the collection's tours belong to (Georgia for all
+  // eight today), read from the tours rather than assumed.
+  const hub = tourHubById[tourCountry(matches[0])]
   const trail = [
     { name: t('breadcrumb.home'), to: '/' },
-    { name: t('tour.privateTours'), to: '/private-tours' },
+    { name: t('footer.tours'), to: '/private-tours' },
+    { name: t(hub.navKey), to: hub.path },
     { name: h1 },
   ]
 

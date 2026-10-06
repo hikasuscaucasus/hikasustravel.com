@@ -1125,19 +1125,19 @@
     "keywords": "wycieczki Gruzja, wycieczki Armenia, wycieczki Azerbejdżan, podróż po Kaukazie, wycieczki prywatne Kaukaz, łączona trasa Kaukaz"
   },
   "toursGeorgia": {
-    "title": "Wycieczki po Gruzji | Hikasus Travel",
+    "title": "Wycieczki po Gruzji: prywatne i grupowe | Hikasus Travel",
     "description": "Wycieczki prywatne i grupowe po całej Gruzji — Tbilisi, Kazbegi, kraina win Kachetia, Swanetia i wybrzeże Morza Czarnego. Lokalny przewodnik na każdej wycieczce; do połączenia z Armenią lub Azerbejdżanem.",
     "keywords": "wycieczki Gruzja, wycieczki prywatne Gruzja, wycieczki grupowe Gruzja, Tbilisi, Kazbegi, Kachetia, Swanetia"
   },
   "toursArmenia": {
-    "title": "Wycieczki po Armenii | Hikasus Travel",
-    "description": "Wycieczki prywatne i grupowe po Armenii — Erywań, jezioro Sewan, Dilidżan i więcej. Lokalny przewodnik na każdej wycieczce; do połączenia z Gruzją lub Azerbejdżanem.",
-    "keywords": "wycieczki Armenia, wycieczki prywatne Armenia, wycieczki grupowe Armenia, Erywań, jezioro Sewan, Dilidżan"
+    "title": "Wycieczki po Armenii: wycieczki prywatne | Hikasus Travel",
+    "description": "Wycieczki prywatne po Armenii — Erywań, jezioro Sewan, Dilidżan, Tatev oraz klasztory Geghard i Khor Virap. Lokalny przewodnik na każdej wycieczce; do połączenia z Gruzją lub Azerbejdżanem.",
+    "keywords": "wycieczki Armenia, wycieczki prywatne Armenia, Erywań, jezioro Sewan, Dilidżan, Tatev"
   },
   "toursAzerbaijan": {
-    "title": "Wycieczki po Azerbejdżanie | Hikasus Travel",
-    "description": "Wycieczki prywatne i grupowe po Azerbejdżanie — Baku, Abszeron, Gobustan, Sheki. Lokalny przewodnik na każdej wycieczce; do połączenia z Gruzją lub Armenią.",
-    "keywords": "wycieczki Azerbejdżan, wycieczki prywatne Azerbejdżan, wycieczki grupowe Azerbejdżan, Baku, Gobustan, Sheki"
+    "title": "Wycieczki po Azerbejdżanie: prywatne i łączone po Kaukazie | Hikasus Travel",
+    "description": "Wycieczki prywatne po Azerbejdżanie — Baku, Abszeron, Gobustan, Szeki — samodzielnie lub w ramach łączonej trasy po Kaukazie z Gruzją i Armenią. Lokalny przewodnik na każdej wycieczce.",
+    "keywords": "wycieczki Azerbejdżan, wycieczki prywatne Azerbejdżan, Baku, Gobustan, Szeki, łączone wycieczki Kaukaz"
   },
   "toursCaucasus": {
     "title": "Wycieczki po Kaukazie: Gruzja, Armenia i Azerbejdżan | Hikasus Travel",
@@ -1584,9 +1584,9 @@
     "keywords": "co robić w Tbilisi, co zobaczyć w Tbilisi, atrakcje Tbilisi, starówka Tbilisi, łaźnie siarkowe Abanotubani, twierdza Narikala, katedra Sameba, Narodowe Muzeum Gruzji, kuchnia Tbilisi, bary winne Tbilisi"
   },
   "privateTours": {
-    "title": "Wycieczki Prywatne w Gruzji | Hikasus Travel",
-    "description": "Poznaj nasze prywatne wycieczki po Gruzji oraz łączone trasy Gruzja-Armenia. Konfigurowalne trasy od 3 do 20 dni przez Tbilisi, Kazbegi, Kachetię, Swanetię i Batumi.",
-    "keywords": "wycieczki prywatne Gruzja, spersonalizowane wycieczki Gruzja, trasa Gruzja, wycieczka Tbilisi, wycieczka Kazbegi, wycieczka Swanetia"
+    "title": "Prywatne wycieczki po Kaukazie: Gruzja, Armenia i Azerbejdżan | Hikasus Travel",
+    "description": "Wybierz kierunek: prywatne wycieczki po Gruzji, Armenii i Azerbejdżanie oraz łączone trasy po Kaukazie przez dwa lub trzy kraje, zawsze z lokalnym przewodnikiem.",
+    "keywords": "wycieczki prywatne Kaukaz, wycieczki Gruzja, wycieczki Armenia, wycieczki Azerbejdżan, łączone wycieczki Kaukaz, wycieczki szyte na miarę Kaukaz"
   },
   "groupTours": {
     "title": "Wycieczki Grupowe w Gruzji | Hikasus Travel",

@@ -1,117 +1,120 @@
-import { useContext, useEffect, useState, useMemo } from 'react'
-import ToursHero from '../shared/ToursHero'
-import TourCard from '../shared/TourCard'
-import PrivateTourCollectionLinks from '../shared/PrivateTourCollectionLinks'
-import { tours } from '../../data/tours'
-import { PRIVATE_TOUR_CATEGORIES } from '../../data/tourCategories'
+import { useMemo } from 'react'
+import FadeUp from '../shared/FadeUp'
+import Breadcrumbs from '../shared/Breadcrumbs'
+import DestinationCard from '../shared/DestinationCard'
+import LocaleLink from '../../i18n/LocaleLink'
 import useT from '../../i18n/useT'
+import usePluralT from '../../i18n/usePluralT'
 import useLang from '../../i18n/useLang'
-import { I18nContext } from '../../i18n/I18nContext'
 import useSEO from '../../hooks/useSEO'
 import { getSEO } from '../../data/seoData'
+import { TOUR_HUBS, TOUR_HUB_CHOOSER_IMAGE } from '../../data/tourHubs'
+import { hubStatusFor } from '../../data/tours'
 
-function isWinterTour(tour) {
-  return (PRIVATE_TOUR_CATEGORIES[tour.slug] || []).includes('winter-tours')
-}
-
-// Winter/ski tours are pulled out of the day-range bands entirely and shown
-// only in their own band, even though their day count would otherwise place
-// them in "Classic routes" or "Grand tours" too.
-const DURATION_BANDS = [
-  { key: 'short', labelKey: 'tour.bandShort', min: 3, max: 5 },
-  { key: 'classic', labelKey: 'tour.bandClassic', min: 6, max: 9 },
-  { key: 'grand', labelKey: 'tour.bandGrand', min: 10, max: 20 },
-]
+const SITE_URL = 'https://www.hikasustravel.com'
 
 /**
- * The Private Tours hub. Search works over the whole catalogue; the former
- * "Tours From" and "Tour Categories" dropdowns are crawlable links to the
- * eight collection pages under /private-tours/ (see PrivateTourCollectionLinks).
+ * /:lang/private-tours — the global tour chooser.
  *
- * The flat list is grouped into fixed duration bands (short/classic/grand/
- * winter) rather than offered a days/name sort — a single flat sort control
- * doesn't compose cleanly with bands, so it is removed in favour of the
- * grouped view itself acting as the ordering.
+ * This page used to be the Georgia tour list (every private tour in duration
+ * bands, with Tbilisi/Kutaisi and category chips). Hikasus now sells tours in
+ * three countries plus combined routes, so the Georgia list moved to its own
+ * hub (/tours/georgia, CountryToursHubPage) and this URL — the homepage's
+ * "See our tours" destination — became the page where a visitor picks a
+ * destination: Caucasus, Azerbaijan, Georgia, Armenia, in that order.
+ *
+ * The cards reuse the homepage's "Where do you want to go?" card
+ * (DestinationCard) and the hub registry in src/data/tourHubs.js; the status
+ * line under each name is derived from the tour registry (hubStatusFor), so
+ * a count here always matches the hub it links to.
  */
 export default function PrivateToursPage() {
-  const privateTours = tours.filter((t) => t.type === 'private')
   const t = useT()
+  const tCount = usePluralT()
   const { lang } = useLang()
-  const { tourTranslations, loadTourTranslations } = useContext(I18nContext)
-  const [search, setSearch] = useState('')
   const seo = getSEO('privateTours', lang)
 
-  useSEO({ ...seo, lang, path: 'private-tours', image: '/images/files/georgia-tour-01.jpg' })
+  const trail = [
+    { name: t('breadcrumb.home'), to: '/' },
+    { name: t('footer.tours') },
+  ]
 
-  useEffect(() => {
-    if (!tourTranslations) loadTourTranslations()
-  }, [tourTranslations, loadTourTranslations])
+  const jsonLd = useMemo(() => ({
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: t('breadcrumb.home'), item: `${SITE_URL}/${lang}` },
+          { '@type': 'ListItem', position: 2, name: t('footer.tours'), item: `${SITE_URL}/${lang}/private-tours` },
+        ],
+      },
+      {
+        '@type': 'CollectionPage',
+        name: t('tourHub.title'),
+        description: seo.description,
+        url: `${SITE_URL}/${lang}/private-tours`,
+        inLanguage: lang,
+        mainEntity: {
+          '@type': 'ItemList',
+          itemListElement: TOUR_HUBS.map((hub, i) => ({
+            '@type': 'ListItem',
+            position: i + 1,
+            url: `${SITE_URL}/${lang}${hub.path}`,
+            name: t(hub.titleKey),
+          })),
+        },
+      },
+    ],
+  }), [lang, t, seo.description])
 
-  const filtered = useMemo(() => {
-    let list = privateTours
+  useSEO({ ...seo, lang, path: 'private-tours', image: TOUR_HUB_CHOOSER_IMAGE, jsonLd })
 
-    if (search.trim()) {
-      const q = search.toLowerCase()
-      list = list.filter((tour) => {
-        const tt = tourTranslations?.[tour.slug]
-        const title = (tt?.title || tour.title).toLowerCase()
-        const desc = (tt?.listingDescription || tt?.description || tour.listingDescription || tour.description || '').toLowerCase()
-        const dests = (tour.map?.markers?.map((m) => m.title) || []).join(' ').toLowerCase()
-        return title.includes(q) || desc.includes(q) || dests.includes(q)
-      })
-    }
-
-    return list
-  }, [privateTours, tourTranslations, search])
-
-  const bands = useMemo(() => {
-    const winter = filtered.filter(isWinterTour).sort((a, b) => a.days - b.days)
-    const rest = filtered.filter((tour) => !isWinterTour(tour))
-    const result = DURATION_BANDS.map((band) => ({
-      ...band,
-      tours: rest.filter((tour) => tour.days >= band.min && tour.days <= band.max).sort((a, b) => a.days - b.days),
-    }))
-    result.push({ key: 'winter', labelKey: 'tour.bandWinter', tours: winter })
-    return result.filter((band) => band.tours.length > 0)
-  }, [filtered])
+  const statusLine = (id) => {
+    const status = hubStatusFor(id)
+    if (status.kind === 'count') return tCount('home.destStatusTours', status.n)
+    if (status.kind === 'combinedOnly') return t('home.destStatusCombinedOnly')
+    return t('home.destStatusComingSoon')
+  }
 
   return (
     <>
-      <ToursHero
-        compact
-        image="/images/files/georgia-tour-01.jpg"
-        title={t('tour.privateTours')}
-        subtitle={t('tour.privateToursSubtitle')}
-        tourCount={filtered.length}
-        searchValue={search}
-        onSearchChange={setSearch}
-      />
-
-      <PrivateTourCollectionLinks />
-
-      <section className="tour-listing-bands" aria-label={t('tour.privateTours')}>
-        {bands.length > 0 ? (
-          bands.map((band) => (
-            <div key={band.key} className="tour-band">
-              <h2 className="tour-band__title">{t(band.labelKey)}</h2>
-              <div className="tour-listing">
-                {band.tours.map((tour, index) => (
-                  <TourCard
-                    key={tour.slug}
-                    tour={tour}
-                    translation={tourTranslations?.[tour.slug]}
-                    index={index}
-                    basePath="/private-tours"
+      <section className="dest-title-band">
+        <h1>{t('tourHub.title')}</h1>
+      </section>
+      <section className="home-items">
+        <div className="tours-grid-container">
+          <FadeUp>
+            <Breadcrumbs trail={trail} />
+          </FadeUp>
+          <FadeUp>
+            <p>{t('tourHub.intro')}</p>
+          </FadeUp>
+          <FadeUp>
+            <ul className="dest-hub-grid dest-hub-grid--quad">
+              {TOUR_HUBS.map((hub) => (
+                <li className="dest-hub-card" key={hub.id}>
+                  <DestinationCard
+                    name={t(hub.nameKey)}
+                    description={t(hub.cardKey)}
+                    image={hub.image}
+                    imageAlt={t(hub.altKey)}
+                    to={hub.path}
+                    locationLine={statusLine(hub.id)}
+                    ctaLabel={t(hub.ctaKey)}
+                    headingLevel="h2"
                   />
-                ))}
-              </div>
-            </div>
-          ))
-        ) : (
-          <div className="tour-listing__empty">
-            <p>{t('tour.noResults')}</p>
-          </div>
-        )}
+                </li>
+              ))}
+            </ul>
+          </FadeUp>
+          <FadeUp>
+            <p className="tour-hub__note">{t('tourHub.customNote')}</p>
+            <p className="city-ttd-cta">
+              <LocaleLink to="/contact" className="button">{t('home.requestItinerary')}</LocaleLink>
+            </p>
+          </FadeUp>
+        </div>
       </section>
     </>
   )

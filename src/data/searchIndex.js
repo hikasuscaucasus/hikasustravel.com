@@ -26,7 +26,8 @@ import {
   armeniaBase, armeniaRegionsHubPath, citiesHubPathFor, placesHubPathFor,
   countryBase, regionsHubPathFor, countryHubIndexable,
 } from './places.js'
-import { tours } from './tours.js'
+import { tours, countryHasAnyTours } from './tours.js'
+import { TOUR_HUBS } from './tourHubs.js'
 import { blogArticles } from './blogData.js'
 import { publishedBorderPages } from './borders.js'
 import { embassiesByCountry, embassyHosts, embassyCountries } from './embassyData.js'
@@ -85,6 +86,12 @@ const STATIC_PAGES = [
   // Hubs
   { path: 'private-tours', seoKey: 'privateTours', type: 'tour' },
   { path: 'group-tours', seoKey: 'groupTours', type: 'tour' },
+  // The four tour hubs the /private-tours chooser leads to ("Georgia tours",
+  // "Armenia tours", …). Gated like the sitemap and robots: a hub with zero
+  // tours is noindex and should not be a search hit either.
+  ...TOUR_HUBS
+    .filter((hub) => countryHasAnyTours(hub.id))
+    .map((hub) => ({ path: `tours/${hub.id}`, seoKey: hub.seoKey, type: 'tour' })),
   { path: 'blog', seoKey: 'blog', type: 'blog' },
   { path: destinationsBase, seoKey: 'destinations', type: 'info' },
   { path: regionsHubPath, seoKey: 'destinationsRegions', type: 'info' },

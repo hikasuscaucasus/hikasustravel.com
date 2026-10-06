@@ -1125,19 +1125,19 @@
     "keywords": "Georgien Reisen, Armenien Reisen, Aserbaidschan Reisen, Kaukasus Reise, Privatreisen Kaukasus, Gruppenreisen Kaukasus, kombinierte Kaukasus-Reiseroute"
   },
   "toursGeorgia": {
-    "title": "Reisen nach Georgien | Hikasus Travel",
+    "title": "Georgien-Reisen: Privat- und Gruppenreisen | Hikasus Travel",
     "description": "Private und Gruppenreisen durch ganz Georgien — Tiflis, Kasbegi, Weinland Kachetien, Swanetien und die Schwarzmeerküste. Örtlicher Reiseleiter bei jeder Reise; kombinierbar mit Armenien oder Aserbaidschan.",
     "keywords": "Georgien Reisen, Privatreisen Georgien, Gruppenreisen Georgien, Tiflis Reisen, Kasbegi, Kachetien, Swanetien"
   },
   "toursArmenia": {
-    "title": "Reisen nach Armenien | Hikasus Travel",
-    "description": "Private und Gruppenreisen nach Armenien — Jerewan, Sewansee, Dilischan und mehr. Örtlicher Reiseleiter bei jeder Reise; kombinierbar mit Georgien oder Aserbaidschan.",
-    "keywords": "Armenien Reisen, Privatreisen Armenien, Gruppenreisen Armenien, Jerewan Reisen, Sewansee, Dilischan"
+    "title": "Armenien-Reisen: Privatreisen | Hikasus Travel",
+    "description": "Privatreisen nach Armenien — Jerewan, Sewansee, Dilischan, Tatev und die Klöster Geghard und Chor Virap. Örtlicher Reiseleiter bei jeder Reise; kombinierbar mit Georgien oder Aserbaidschan.",
+    "keywords": "Armenien Reisen, Privatreisen Armenien, Jerewan Reisen, Sewansee, Dilischan, Tatev"
   },
   "toursAzerbaijan": {
-    "title": "Reisen nach Aserbaidschan | Hikasus Travel",
-    "description": "Private und Gruppenreisen nach Aserbaidschan — Baku, Absheron, Gobustan, Sheki. Örtlicher Reiseleiter bei jeder Reise; kombinierbar mit Georgien oder Armenien.",
-    "keywords": "Aserbaidschan Reisen, Privatreisen Aserbaidschan, Gruppenreisen Aserbaidschan, Baku Reisen, Gobustan, Sheki"
+    "title": "Aserbaidschan-Reisen: Privat- und kombinierte Kaukasus-Reisen | Hikasus Travel",
+    "description": "Privatreisen nach Aserbaidschan — Baku, Absheron, Gobustan, Sheki — einzeln oder als Teil einer kombinierten Kaukasus-Reise mit Georgien und Armenien. Örtlicher Reiseleiter bei jeder Reise.",
+    "keywords": "Aserbaidschan Reisen, Privatreisen Aserbaidschan, Baku Reisen, Gobustan, Sheki, kombinierte Kaukasus-Reisen"
   },
   "toursCaucasus": {
     "title": "Kaukasus-Reisen: Georgien, Armenien und Aserbaidschan | Hikasus Travel",
@@ -1584,9 +1584,9 @@
     "keywords": "Aktivitäten in Tiflis, was tun in Tiflis, Tiflis Sehenswürdigkeiten, Altstadt Tiflis, Abanotubani Schwefelbäder, Festung Narikala, Sameba-Kathedrale, Georgisches Nationalmuseum, Essen Tiflis, Weinbars Tiflis"
   },
   "privateTours": {
-    "title": "Privattouren in Georgien | Hikasus Travel",
-    "description": "Entdecken Sie unsere Privattouren durch Georgien und kombinierte Georgien-Armenien-Routen. Individuelle Reiserouten von 3 bis 20 Tagen durch Tiflis, Kasbegi, Kachetien, Swanetien und Batumi.",
-    "keywords": "Privattouren Georgien, individuelle Touren Georgien, Reiseroute Georgien, Tour Tiflis, Tour Kazbegi, Tour Swanetien, Tour Batumi"
+    "title": "Private Kaukasus-Reisen: Georgien, Armenien & Aserbaidschan | Hikasus Travel",
+    "description": "Wählen Sie Ihr Reiseziel: Privatreisen in Georgien, Armenien und Aserbaidschan sowie kombinierte Kaukasus-Reiserouten durch zwei oder drei Länder, stets mit örtlichem Reiseleiter.",
+    "keywords": "Privatreisen Kaukasus, Georgien Reisen, Armenien Reisen, Aserbaidschan Reisen, kombinierte Kaukasus-Reisen, maßgeschneiderte Reisen Kaukasus"
   },
   "groupTours": {
     "title": "Gruppentouren in Georgien | Hikasus Travel",

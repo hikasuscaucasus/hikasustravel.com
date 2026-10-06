@@ -1,27 +1,26 @@
-import { useContext, useMemo } from 'react'
+import { useContext, useEffect, useMemo } from 'react'
 import CardImage from '../shared/CardImage'
 import FadeUp from '../shared/FadeUp'
 import Breadcrumbs from '../shared/Breadcrumbs'
 import ContactForm from '../shared/ContactForm'
+import TourCard from '../shared/TourCard'
+import PrivateTourCollectionLinks from '../shared/PrivateTourCollectionLinks'
 import LocaleLink from '../../i18n/LocaleLink'
 import useT from '../../i18n/useT'
+import usePluralT from '../../i18n/usePluralT'
 import useLang from '../../i18n/useLang'
 import { I18nContext } from '../../i18n/I18nContext'
 import useSEO from '../../hooks/useSEO'
 import { getSEO } from '../../data/seoData'
-import { featuredToursFor, tourHubRobots, tours, privateTourCountFor } from '../../data/tours'
+import { primaryToursFor, combinedToursCovering, tourHubRobots } from '../../data/tours'
+import { tourHubById } from '../../data/tourHubs'
+import { groupToursByDuration } from '../../data/tourDurationBands'
 
 const SITE_URL = 'https://www.hikasustravel.com'
 
-const SEO_KEY = { georgia: 'toursGeorgia', armenia: 'toursArmenia', azerbaijan: 'toursAzerbaijan', caucasus: 'toursCaucasus' }
-const TITLE_KEY = { georgia: 'home.hubTitleGeorgia', armenia: 'home.hubTitleArmenia', azerbaijan: 'home.hubTitleAzerbaijan', caucasus: 'home.hubTitleCaucasus' }
-const INTRO_KEY = { georgia: 'home.hubIntroGeorgia', armenia: 'home.hubIntroArmenia', azerbaijan: 'home.hubIntroAzerbaijan', caucasus: 'home.hubIntroCaucasus' }
-// Existing, already-published destination guides to link from each hub.
+// Published destination guides to link from each hub, below the tour list.
 const GUIDE_LINKS = {
   georgia: [{ to: '/georgia', labelKey: 'nav.destinations.georgia' }],
-  // Armenia/Azerbaijan additionally link their Ultimate Guide blog post —
-  // neither country has standalone tours yet, so the guide is the one
-  // concrete, already-published thing this hub can point a visitor to.
   armenia: [
     { to: '/blog/ultimate-guide-to-traveling-to-armenia', labelKey: 'home.readTravelGuide' },
     { to: '/armenia', labelKey: 'home.exploreDestinations' },
@@ -37,62 +36,101 @@ const GUIDE_LINKS = {
   ],
 }
 
+// A listing longer than this is grouped into duration bands (the way the old
+// /private-tours Georgia list was); a short one is a single flat list.
+const BANDS_FROM = 9
+
+const tourBasePath = (tour) => (tour.type === 'group' ? '/group-tours' : '/private-tours')
+
 /**
- * Shared template for the four country tours hubs (/tours/georgia,
- * /tours/armenia, /tours/azerbaijan, /tours/caucasus). Indexability and
- * content are both driven by the SAME tour-count check
- * (`countryHasAnyTours`) — no manual toggle. Adding a tour with
- * `country: "<country>"` in src/data/tours.js is the only step required to
- * flip a hub from coming-soon/noindex to a real, indexed tour listing.
- * Georgia's hub always has tours (it's the default `tourCountry`), so it is
- * never in the coming-soon state the other three can be.
+ * Shared template for the four tour hubs: /tours/georgia, /tours/armenia,
+ * /tours/azerbaijan and /tours/caucasus — the destinations the /private-tours
+ * chooser leads to.
+ *
+ * Everything listed comes from the tour registry (src/data/tours.js):
+ *   - main listing: `primaryToursFor(country)` — every tour whose ONE primary
+ *     hub this is (single-country tours for a country, `country: "caucasus"`
+ *     tours for the Caucasus hub). Private tours in the list, group tours in
+ *     the "Scheduled group departures" block below it.
+ *   - "Combine <country> with…": `combinedToursCovering(country)` — the
+ *     multi-country tours that pass through this country. Listed separately so
+ *     they never pad the country's own count; they belong to the Caucasus hub.
+ * Tagging a new tour `country: "<country>"` (or `"caucasus"` + `areaServed`) is
+ * the only step needed for it to appear here. Indexability and sitemap
+ * presence use the same registry (tourHubRobots / countryHasAnyTours).
  */
 export default function CountryToursHubPage({ country }) {
+  const hub = tourHubById[country]
   const t = useT()
+  const tCount = usePluralT()
   const { lang } = useLang()
   const { tourTranslations, loadTourTranslations } = useContext(I18nContext)
-  if (!tourTranslations) loadTourTranslations()
 
-  const seo = getSEO(SEO_KEY[country], lang)
+  useEffect(() => {
+    if (!tourTranslations) loadTourTranslations()
+  }, [tourTranslations, loadTourTranslations])
 
+  const seo = getSEO(hub.seoKey, lang)
+  const countryName = t(hub.nameKey)
+
+  const primary = useMemo(() => primaryToursFor(country), [country])
+  const privateTours = useMemo(() => primary.filter((tour) => tour.type === 'private'), [primary])
+  const groupTours = useMemo(() => primary.filter((tour) => tour.type === 'group'), [primary])
+  const combined = useMemo(() => combinedToursCovering(country), [country])
+
+  const bands = useMemo(() => (
+    privateTours.length >= BANDS_FROM
+      ? groupToursByDuration(privateTours)
+      : [{ key: 'all', labelKey: 'tour.privateTours', tours: privateTours }]
+  ), [privateTours])
+
+  // Home → Tours (the /private-tours chooser) → <Country>. The JSON-LD
+  // BreadcrumbList below is built from this same trail.
   const trail = [
     { name: t('breadcrumb.home'), to: '/' },
-    { name: t(TITLE_KEY[country]) },
+    { name: t('footer.tours'), to: '/private-tours' },
+    { name: countryName },
   ]
 
-  // `featuredToursFor` already folds in any `country: "caucasus"` tour whose
-  // `areaServed` covers this hub's country (see `toursForCountry` in
-  // src/data/tours.js), so a multi-country tour needs no per-slug listing here.
-  const countryTours = featuredToursFor(country)
-  const showToursGrid = countryTours.length > 0
-  // Georgia's hub gets the same "See all N tours" link (same dynamic count
-  // and reused translations as the homepage's Featured Tours tab) and
-  // Scheduled Group Departures block the homepage already shows for Georgia.
-  const georgiaTourCount = privateTourCountFor('georgia')
-  const georgiaGroupTours = country === 'georgia' ? tours.filter((tour) => tour.type === 'group') : []
-
-  const jsonLd = useMemo(() => ({
-    '@context': 'https://schema.org',
-    '@graph': [
+  const hubUrl = `${SITE_URL}/${lang}${hub.path}`
+  const jsonLd = useMemo(() => {
+    const graph = [
       {
         '@type': 'BreadcrumbList',
-        itemListElement: trail.map((c, i) => ({
-          '@type': 'ListItem',
-          position: i + 1,
-          name: c.name,
-          item: c.to ? `${SITE_URL}/${lang}${c.to === '/' ? '' : c.to}` : `${SITE_URL}/${lang}/tours/${country}`,
-        })),
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: t('breadcrumb.home'), item: `${SITE_URL}/${lang}` },
+          { '@type': 'ListItem', position: 2, name: t('footer.tours'), item: `${SITE_URL}/${lang}/private-tours` },
+          { '@type': 'ListItem', position: 3, name: countryName, item: hubUrl },
+        ],
       },
-    ],
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }), [lang, country, trail[1]?.name])
+    ]
+    if (primary.length) {
+      graph.push({
+        '@type': 'CollectionPage',
+        name: t(hub.titleKey),
+        description: seo.description,
+        url: hubUrl,
+        inLanguage: lang,
+        mainEntity: {
+          '@type': 'ItemList',
+          itemListElement: primary.map((tour, i) => ({
+            '@type': 'ListItem',
+            position: i + 1,
+            url: `${SITE_URL}/${lang}${tourBasePath(tour)}/${tour.slug}`,
+            name: tourTranslations?.[tour.slug]?.title || tour.title,
+          })),
+        },
+      })
+    }
+    return { '@context': 'https://schema.org', '@graph': graph }
+  }, [lang, t, hub.titleKey, countryName, hubUrl, primary, seo.description, tourTranslations])
 
-  useSEO({ ...seo, lang, robots: tourHubRobots(country), jsonLd })
+  useSEO({ ...seo, lang, path: `tours/${country}`, image: hub.image, robots: tourHubRobots(country), jsonLd })
 
   return (
     <>
       <section className="dest-title-band">
-        <h1>{t(TITLE_KEY[country])}</h1>
+        <h1>{t(hub.titleKey)}</h1>
       </section>
       <section className="home-items">
         <div className="tours-grid-container">
@@ -100,10 +138,14 @@ export default function CountryToursHubPage({ country }) {
             <Breadcrumbs trail={trail} />
           </FadeUp>
           <FadeUp>
-            <p>{t(INTRO_KEY[country])}</p>
+            <p>{t(hub.introKey)}</p>
           </FadeUp>
 
-          {!showToursGrid && (
+          {privateTours.length > 0 ? (
+            <FadeUp>
+              <p className="tour-hub__count">{tCount('tour.countLabel', privateTours.length)}</p>
+            </FadeUp>
+          ) : (
             <>
               <FadeUp>
                 <p>{t('home.hubComingSoonText')}</p>
@@ -117,79 +159,47 @@ export default function CountryToursHubPage({ country }) {
               </FadeUp>
             </>
           )}
-
-          {showToursGrid && (
-            <FadeUp>
-              <div className="tours-grid">
-                {countryTours.map((tour) => {
-                  const tt = tourTranslations?.[tour.slug]
-                  const basePath = tour.type === 'group' ? 'group-tours' : 'private-tours'
-                  // Same "Price from €X" computation FeaturedTourTile uses on
-                  // the homepage's Featured Tours tiles — kept inline (rather
-                  // than swapping in that component) so this page's tour
-                  // titles stay <h2>, matching the page's own heading order
-                  // under the <h1> title band above; FeaturedTourTile's own
-                  // <h3> would skip a level here.
-                  const classicRow = tour.pricing?.find((r) => r.travelers === '4')
-                  const classicNum = classicRow ? parseFloat((classicRow.economy || '').replace(/[^0-9.]/g, '')) : NaN
-                  const priceFrom = !isNaN(classicNum) && classicNum > 0 ? `€${classicNum.toLocaleString('en-US')}` : null
-                  return (
-                    <div className="tour-tile" key={tour.slug}>
-                      <LocaleLink to={`/${basePath}/${tour.slug}`} className="tour-tile-link">
-                        <CardImage
-                          src={tour.tileImage || tour.heroImage}
-                          position={tour.cardPosition}
-                          className="tour-tile-image"
-                        />
-                        <div className="tour-tile-overlay">
-                          <h2>{tt?.title || tour.title}</h2>
-                          <p>{tour.days} {t('tour.days')}</p>
-                          {priceFrom && (
-                            <p className="tour-tile-overlay__price">{t('tour.pricesFrom', { price: priceFrom })}</p>
-                          )}
-                        </div>
-                      </LocaleLink>
-                    </div>
-                  )
-                })}
-              </div>
-            </FadeUp>
-          )}
-
-          {country === 'georgia' && (
-            <FadeUp>
-              <p className="city-ttd-cta">
-                <LocaleLink to="/private-tours" className="button">
-                  {t('home.seeAllGeorgiaTours', { n: georgiaTourCount })}
-                </LocaleLink>
-              </p>
-            </FadeUp>
-          )}
-
-          {GUIDE_LINKS[country].length > 0 && (
-            <FadeUp>
-              <p className="city-ttd-cta">
-                {GUIDE_LINKS[country].map((l) => (
-                  <LocaleLink key={l.to} to={l.to} className="button">
-                    {t(l.labelKey)}
-                  </LocaleLink>
-                ))}
-              </p>
-            </FadeUp>
-          )}
         </div>
       </section>
 
-      {/* Scheduled group departures — same block/markup as the homepage,
-          reused rather than duplicated into a new component. Georgia-only:
-          it is the sole country with a group tour today. */}
-      {georgiaGroupTours.length > 0 && (
+      {privateTours.length > 0 && (
+        <>
+          {/* Starting-point / category chips — only the collections whose
+              tours all belong to this hub (Georgia's eight today; a country
+              with no collections renders nothing). */}
+          <PrivateTourCollectionLinks country={country} />
+
+          <section className="tour-listing-bands" aria-label={t('tour.privateTours')}>
+            {bands.map((band) => (
+              <div key={band.key} className="tour-band">
+                <h2 className="tour-band__title">{t(band.labelKey)}</h2>
+                <div className="tour-listing">
+                  {band.tours.map((tour, index) => (
+                    <TourCard
+                      key={tour.slug}
+                      tour={tour}
+                      translation={tourTranslations?.[tour.slug]}
+                      index={index}
+                      basePath="/private-tours"
+                    />
+                  ))}
+                </div>
+              </div>
+            ))}
+          </section>
+        </>
+      )}
+
+      {/* Scheduled group departures — same block/markup as the homepage.
+          Only this hub's own group tours (primary classification), so a
+          future Armenia or Caucasus departure appears on its own hub. */}
+      {groupTours.length > 0 && (
         <section className="home-items">
           <div className="tour-listing" style={{ background: 'none', maxWidth: '1600px' }}>
             <FadeUp>
               <h2>{t('home.groupDeparturesTitle')}</h2>
             </FadeUp>
-            {georgiaGroupTours.map((groupTour) => {
+            {groupTours.map((groupTour) => {
               const tt = tourTranslations?.[groupTour.slug]
               return (
                 <FadeUp key={groupTour.slug}>
@@ -243,6 +253,48 @@ export default function CountryToursHubPage({ country }) {
             <FadeUp>
               <p className="city-ttd-cta">
                 <LocaleLink to="/group-tours" className="button">{t('home.allGroupTours')}</LocaleLink>
+              </p>
+            </FadeUp>
+          </div>
+        </section>
+      )}
+
+      {/* Multi-country tours that pass through this country. Secondary to the
+          list above and clearly labelled as combined routes; their home hub is
+          /tours/caucasus, linked at the end. */}
+      {combined.length > 0 && (
+        <section className="tour-listing-bands tour-hub-combined" aria-labelledby="tour-hub-combined-title">
+          <div className="tour-band">
+            <h2 id="tour-hub-combined-title" className="tour-band__title">{t(hub.combinedKey)}</h2>
+            <p className="tour-hub-combined__intro">{t('tourHub.combinedIntro', { country: countryName })}</p>
+            <div className="tour-listing">
+              {combined.map((tour, index) => (
+                <TourCard
+                  key={tour.slug}
+                  tour={tour}
+                  translation={tourTranslations?.[tour.slug]}
+                  index={index}
+                  basePath={tourBasePath(tour)}
+                />
+              ))}
+            </div>
+            <p className="city-ttd-cta">
+              <LocaleLink to="/tours/caucasus" className="button">{t('nav.toursCaucasus')}</LocaleLink>
+            </p>
+          </div>
+        </section>
+      )}
+
+      {GUIDE_LINKS[country].length > 0 && (
+        <section className="home-items">
+          <div className="tours-grid-container">
+            <FadeUp>
+              <p className="city-ttd-cta">
+                {GUIDE_LINKS[country].map((l) => (
+                  <LocaleLink key={l.to} to={l.to} className="button">
+                    {t(l.labelKey)}
+                  </LocaleLink>
+                ))}
               </p>
             </FadeUp>
           </div>

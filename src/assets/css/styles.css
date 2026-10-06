@@ -12075,3 +12075,43 @@ img[data-lightbox] {
   }
 }
 /* Native is 1024 — that is the top rung. Do not add a wider breakpoint. */
+
+/* ── Tour hub chooser (/private-tours) + country tour hubs (/tours/<country>) ──
+   The chooser reuses the destination-hub card; `--quad` fixes it to the owner's
+   2 × 2 (Caucasus | Azerbaijan / Georgia | Armenia) on desktop and tablet, one
+   card per row on phones, with a taller cover so four big destinations read as
+   a choice rather than a directory. The grid has no side padding of its own
+   (the homepage grid sits inside a padded band), so it gets the page gutter. */
+.dest-hub-grid--quad {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 960px;
+  gap: 24px;
+  padding: 0 var(--indent);
+}
+.dest-hub-grid--quad .dest-hub-card__image { height: 220px; }
+@media (max-width: 640px) {
+  .dest-hub-grid--quad { grid-template-columns: 1fr; }
+  .dest-hub-grid--quad .dest-hub-card__image { height: 200px; }
+}
+/* The hub's own tour count and the chooser's closing note: secondary lines
+   under the intro paragraph (which `.home-items p` already centres). */
+.tour-hub__count {
+  margin-top: 0;
+  font-family: "rockwell";
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+.tour-hub__note { margin-top: calc(var(--indent) * 1.5); }
+/* "Combine <country> with…" section on a country hub: same band/listing as
+   the main list, plus a one-paragraph explanation under its heading. */
+.tour-hub-combined { padding-bottom: calc(var(--indent) * 1.5); }
+.tour-hub-combined__intro {
+  max-width: 800px;
+  margin: calc(var(--indent) * 0.8) auto 0;
+  padding: 0 calc(var(--indent) * 2);
+  text-align: center;
+  color: var(--color-h2);
+}
+.tour-hub-combined .city-ttd-cta { margin-top: 0; }

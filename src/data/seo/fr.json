@@ -1125,19 +1125,19 @@
     "keywords": "tours Géorgie, tours Arménie, tours Azerbaïdjan, voyage Caucase, tours privés Caucase, tours en groupe Caucase, itinéraire combiné Caucase"
   },
   "toursGeorgia": {
-    "title": "Tours en Géorgie | Hikasus Travel",
+    "title": "Tours en Géorgie : privés et en groupe | Hikasus Travel",
     "description": "Tours privés et en groupe à travers la Géorgie — Tbilissi, Kazbegi, le pays viticole de Kakhétie, la Svanétie et la côte de la mer Noire. Guide local sur chaque tour ; combinable avec l'Arménie ou l'Azerbaïdjan.",
     "keywords": "tours Géorgie, tours privés Géorgie, tours en groupe Géorgie, tours Tbilissi, Kazbegi, Kakhétie, Svanétie"
   },
   "toursArmenia": {
-    "title": "Tours en Arménie | Hikasus Travel",
-    "description": "Tours privés et en groupe en Arménie — Erevan, lac Sevan, Dilijan et plus. Guide local sur chaque tour ; combinable avec la Géorgie ou l'Azerbaïdjan.",
-    "keywords": "tours Arménie, tours privés Arménie, tours en groupe Arménie, tours Erevan, lac Sevan, Dilijan"
+    "title": "Tours en Arménie : tours privés | Hikasus Travel",
+    "description": "Tours privés en Arménie — Erevan, lac Sevan, Dilijan, Tatev et les monastères de Geghard et Khor Virap. Guide local sur chaque tour ; combinable avec la Géorgie ou l'Azerbaïdjan.",
+    "keywords": "tours Arménie, tours privés Arménie, tours Erevan, lac Sevan, Dilijan, Tatev"
   },
   "toursAzerbaijan": {
-    "title": "Tours en Azerbaïdjan | Hikasus Travel",
-    "description": "Tours privés et en groupe en Azerbaïdjan — Bakou, Absheron, Gobustan, Sheki. Guide local sur chaque tour ; combinable avec la Géorgie ou l'Arménie.",
-    "keywords": "tours Azerbaïdjan, tours privés Azerbaïdjan, tours en groupe Azerbaïdjan, tours Bakou, Gobustan, Sheki"
+    "title": "Tours en Azerbaïdjan : privés et combinés dans le Caucase | Hikasus Travel",
+    "description": "Tours privés en Azerbaïdjan — Bakou, Absheron, Gobustan, Sheki — seuls ou dans un itinéraire combiné à travers le Caucase avec la Géorgie et l'Arménie. Guide local sur chaque tour.",
+    "keywords": "tours Azerbaïdjan, tours privés Azerbaïdjan, tours Bakou, Gobustan, Sheki, tours combinés Caucase"
   },
   "toursCaucasus": {
     "title": "Tours dans le Caucase : Géorgie, Arménie et Azerbaïdjan | Hikasus Travel",
@@ -1584,9 +1584,9 @@
     "keywords": "que faire à Tbilissi, que voir à Tbilissi, attractions de Tbilissi, vieille ville de Tbilissi, bains de soufre Abanotubani, forteresse de Narikala, cathédrale Sameba, Musée national géorgien, gastronomie de Tbilissi, bars à vin Tbilissi"
   },
   "privateTours": {
-    "title": "Tours Privés en Géorgie | Hikasus Travel",
-    "description": "Découvrez nos tours privés en Géorgie et nos itinéraires combinés Géorgie-Arménie. Itinéraires personnalisables de 3 à 20 jours couvrant Tbilissi, Kazbegi, Kakhétie, Svanétie et Batoumi.",
-    "keywords": "tours privés Géorgie, circuits sur mesure Géorgie, itinéraire Géorgie, tour Tbilissi, tour Kazbegi, tour Svanétie, tour Batoumi"
+    "title": "Tours privés dans le Caucase : Géorgie, Arménie et Azerbaïdjan | Hikasus Travel",
+    "description": "Choisissez votre destination : tours privés en Géorgie, en Arménie et en Azerbaïdjan, plus des itinéraires combinés dans le Caucase sur deux ou trois pays, toujours avec un guide local.",
+    "keywords": "tours privés Caucase, tours Géorgie, tours Arménie, tours Azerbaïdjan, tours combinés Caucase, voyages sur mesure Caucase"
   },
   "groupTours": {
     "title": "Tours en Groupe en Géorgie | Hikasus Travel",
