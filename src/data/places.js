@@ -11049,6 +11049,9 @@ export const sites = [
     seoKey: 'batumiCentralMosque', contentKey: 'batumiCentralMosque',
     noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/Batumi.jpg',
+    // Places-to-Visit card: text-only (owner request 2026-10-10). `image` above is NOT this mosque
+    // (generic Alphabetic Tower / Boulevard daytime shot) and stays only for og:image / JSON-LD.
+    cardImage: false,
   },
   {
     slug: 'batumi-dolphinarium', name: 'Batumi Dolphinarium',
@@ -11224,7 +11227,11 @@ export const sites = [
     slug: 'batumi-piazza', name: 'Batumi Piazza',
     parentType: 'city', parent: 'batumi', published: true,
     seoKey: 'batumiPiazza', contentKey: 'batumiPiazza',
+    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
     image: '/images/files/Batumi.jpg',
+    // Places-to-Visit card: text-only (owner request 2026-10-10). `image` above is NOT the Piazza
+    // (generic Alphabetic Tower / Boulevard daytime shot) and stays only for og:image / JSON-LD.
+    cardImage: false,
   },
   {
     slug: 'batumi-dancing-fountains', name: 'Batumi Dancing Fountains',
