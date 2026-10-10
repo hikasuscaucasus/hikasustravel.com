@@ -2224,10 +2224,10 @@ section {
    overlay (rgba(0,0,0,0.35)) keeps the centre-anchored H1 legible over the roofline,
    so no extra scrim. */
 .hero--tbilisi {
-  background-image: url("/images/files/tbilisi-old-town-narikala-mtkvari-georgia-1200.webp");
+  background-image: url("/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1200.webp");
   background-image: image-set(
-    url("/images/files/tbilisi-old-town-narikala-mtkvari-georgia-768.avif") type("image/avif"),
-    url("/images/files/tbilisi-old-town-narikala-mtkvari-georgia-768.webp") type("image/webp")
+    url("/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-768.avif") type("image/avif"),
+    url("/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-768.webp") type("image/webp")
   );
   background-position: center center;
   background-size: cover;
@@ -2236,20 +2236,124 @@ section {
 @media (min-width: 768px) {
   .hero--tbilisi {
     background-image: image-set(
-      url("/images/files/tbilisi-old-town-narikala-mtkvari-georgia-1200.avif") type("image/avif"),
-      url("/images/files/tbilisi-old-town-narikala-mtkvari-georgia-1200.webp") type("image/webp")
+      url("/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1200.avif") type("image/avif"),
+      url("/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1200.webp") type("image/webp")
     );
   }
 }
 @media (min-width: 1200px) {
   .hero--tbilisi {
     background-image: image-set(
-      url("/images/files/tbilisi-old-town-narikala-mtkvari-georgia-1448.avif") type("image/avif"),
-      url("/images/files/tbilisi-old-town-narikala-mtkvari-georgia-1448.webp") type("image/webp")
+      url("/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.avif") type("image/avif"),
+      url("/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp") type("image/webp")
     );
   }
 }
 /* No rung above 1448 exists. Do not add a 1600 or 2400 breakpoint. */
+/* Metekhi Church hero — owner photo (2026-10-10 Old Tbilisi pass): the church and the Gorgasali statue on the cliff rim above the Mtkvari. Native 4:3 (1448x1086) → 768/1200/1448 ladder, no upscale. `center 35%` keeps the church (upper-centre of the frame) inside the wide banner crop; the shared .coverme::after overlay carries the H1. */
+.hero--metekhi-church {
+  background-image: url("/images/files/metekhi-church-mtkvari-tbilisi-georgia-1200.webp");
+  background-image: image-set(
+    url("/images/files/metekhi-church-mtkvari-tbilisi-georgia-768.avif") type("image/avif"),
+    url("/images/files/metekhi-church-mtkvari-tbilisi-georgia-768.webp") type("image/webp")
+  );
+  background-position: center 35%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .hero--metekhi-church {
+    background-image: image-set(
+      url("/images/files/metekhi-church-mtkvari-tbilisi-georgia-1200.avif") type("image/avif"),
+      url("/images/files/metekhi-church-mtkvari-tbilisi-georgia-1200.webp") type("image/webp")
+    );
+  }
+}
+@media (min-width: 1200px) {
+  .hero--metekhi-church {
+    background-image: image-set(
+      url("/images/files/metekhi-church-mtkvari-tbilisi-georgia-1448.avif") type("image/avif"),
+      url("/images/files/metekhi-church-mtkvari-tbilisi-georgia-1448.webp") type("image/webp")
+    );
+  }
+}
+/* Native width 1448 — no rung above it. Do not add a higher breakpoint. */
+/* Abanotubani hero — owner photo (2026-10-10): King Erekle's Bath and the brick bath domes above the Tsavkisistsqali footbridge. Native 4:3 (1448x1086) → 768/1200/1448, no upscale. `center 30%` keeps the domes (upper third) in the banner crop. Replaces the noHero title band. */
+.hero--abanotubani {
+  background-image: url("/images/files/abanotubani-sulfur-baths-tbilisi-georgia-1200.webp");
+  background-image: image-set(
+    url("/images/files/abanotubani-sulfur-baths-tbilisi-georgia-768.avif") type("image/avif"),
+    url("/images/files/abanotubani-sulfur-baths-tbilisi-georgia-768.webp") type("image/webp")
+  );
+  background-position: center 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .hero--abanotubani {
+    background-image: image-set(
+      url("/images/files/abanotubani-sulfur-baths-tbilisi-georgia-1200.avif") type("image/avif"),
+      url("/images/files/abanotubani-sulfur-baths-tbilisi-georgia-1200.webp") type("image/webp")
+    );
+  }
+}
+@media (min-width: 1200px) {
+  .hero--abanotubani {
+    background-image: image-set(
+      url("/images/files/abanotubani-sulfur-baths-tbilisi-georgia-1448.avif") type("image/avif"),
+      url("/images/files/abanotubani-sulfur-baths-tbilisi-georgia-1448.webp") type("image/webp")
+    );
+  }
+}
+/* Native width 1448 — no rung above it. Do not add a higher breakpoint. */
+/* Chreli Abano hero — owner photo (2026-10-10): the blue-tiled Orbeliani Baths façade with the balconied house beside it. Native 4:3 (1448x1086) → 768/1200/1448, no upscale. `center 40%` centres the façade in the banner crop. Replaces the noHero title band. */
+.hero--chreli-abano {
+  background-image: url("/images/files/chreli-abano-tbilisi-georgia-1200.webp");
+  background-image: image-set(
+    url("/images/files/chreli-abano-tbilisi-georgia-768.avif") type("image/avif"),
+    url("/images/files/chreli-abano-tbilisi-georgia-768.webp") type("image/webp")
+  );
+  background-position: center 40%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .hero--chreli-abano {
+    background-image: image-set(
+      url("/images/files/chreli-abano-tbilisi-georgia-1200.avif") type("image/avif"),
+      url("/images/files/chreli-abano-tbilisi-georgia-1200.webp") type("image/webp")
+    );
+  }
+}
+@media (min-width: 1200px) {
+  .hero--chreli-abano {
+    background-image: image-set(
+      url("/images/files/chreli-abano-tbilisi-georgia-1448.avif") type("image/avif"),
+      url("/images/files/chreli-abano-tbilisi-georgia-1448.webp") type("image/webp")
+    );
+  }
+}
+/* Native width 1448 — no rung above it. Do not add a higher breakpoint. */
+/* Leghvtakhevi Waterfall hero — owner PORTRAIT photo (2026-10-10), native 3:4 (1086x1448), so the ladder is 768/1086 ONLY (same portrait recipe as .hero--rike-cable-car). `center 45%` keeps the falling water in the wide banner crop. Replaces the noHero title band. */
+.hero--leghvtakhevi-waterfall {
+  background-image: url("/images/files/leghvtakhevi-waterfall-tbilisi-georgia-1086.webp");
+  background-image: image-set(
+    url("/images/files/leghvtakhevi-waterfall-tbilisi-georgia-768.avif") type("image/avif"),
+    url("/images/files/leghvtakhevi-waterfall-tbilisi-georgia-768.webp") type("image/webp")
+  );
+  background-position: center 45%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .hero--leghvtakhevi-waterfall {
+    background-image: image-set(
+      url("/images/files/leghvtakhevi-waterfall-tbilisi-georgia-1086.avif") type("image/avif"),
+      url("/images/files/leghvtakhevi-waterfall-tbilisi-georgia-1086.webp") type("image/webp")
+    );
+  }
+}
+/* Native width 1086 — no rung above it. Do not add a higher breakpoint. */
 /* Akhaltsikhe (town hub) hero — per-page CSS background (same opt-in mechanism as
    .hero--gremi). Rabati ramparts from the walls in evening light, native 4:3
    (1448x1086), just under the 1600 rung, so the ladder is exactly 768/1200/1448 with

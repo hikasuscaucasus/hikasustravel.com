@@ -3794,58 +3794,59 @@ export const cities = [
     // Per-page geo tags. Tbilisi's are the values the shared template used to
     // put on every page — correct here, and only here among the city pages.
     geoMeta: { region: 'GE-TB', placename: 'Tbilisi', lat: '41.7151', lng: '44.8271' },
-    // Hero REPLACEMENT: the old single georgia-home-style hero (/images/files/
-    // tbilisi.jpg) is swapped for the owner's own Old-Town/Narikala/Mtkvari panorama
-    // via the .hero--tbilisi image-set() ladder (styles.css). Native 4:3 (1448x1086),
-    // just under the 1600 rung, so the ladder is exactly 768/1200/1448 with the top
+    // Hero: the owner's own photo (2026-10-10 Old Tbilisi pass) of the Old Town from
+    // the Metekhi side of the river — Narikala Fortress and St Nicholas Church on
+    // the ridge, a Rike–Narikala cable-car cabin mid-span, the Metekhi Bridge and
+    // the Mtkvari below, the Mtatsminda TV tower on the skyline — via the
+    // .hero--tbilisi image-set() ladder (styles.css). Native 4:3 (1448x1086), just
+    // under the 1600 rung, so the ladder is exactly 768/1200/1448 with the top
     // breakpoint at min-width:1200. NO 1600/2400 rung, no upscale.
     // `background-position: center center`; the shared .coverme::after overlay
     // (rgba(0,0,0,0.35)) provides the readable text layer for the centre-anchored H1.
-    // OLD FILE tbilisi.jpg is LEFT ON DISK — still referenced by DestinationHubs.jsx,
-    // DestinationsPage.jsx (+ Cities-hub card) and TbilisiAirportGuidePage.jsx, and by
-    // this entry's `thingsToDo.image` below (the separate Things-to-Do page hero),
-    // none of which change here. `image`/`imageAvif` = the 1448 top rung.
-    image: '/images/files/tbilisi-old-town-narikala-mtkvari-georgia-1448.webp',
-    imageAvif: '/images/files/tbilisi-old-town-narikala-mtkvari-georgia-1448.avif',
+    // The previous family tbilisi-old-town-narikala-mtkvari-georgia-* is LEFT ON
+    // DISK — still this entry's `thingsToDo.image` (the Things-to-Do page hero),
+    // DestinationHubs.jsx's hub hero and other consumers, none of which change here.
+    // The Cities hub card reads `image`, so the card cover follows this hero (its
+    // files-thumb/ twin for the 1448 rung ships with it). Same frame is reused as
+    // the "view" figure on /georgia/tbilisi/metekhi-church (processed once).
+    image: '/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp',
+    imageAvif: '/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.avif',
     heroClass: 'hero--tbilisi',
     // LCP hero preload — the 1200 AVIF (the rung the ladder serves at 768-1199px),
     // fetchpriority=high (via CityPage/useSEO + prerender.js).
-    heroPreload: '/images/files/tbilisi-old-town-narikala-mtkvari-georgia-1200.avif',
-    // Dedicated 1.91:1 social-share image (og:image / twitter:image), .jpg default,
-    // replacing the old og:image (which fell back to tbilisi.jpg).
-    ogImage: { src: '/images/files/tbilisi-old-town-narikala-mtkvari-georgia-og.jpg', width: 1200, height: 630 },
+    heroPreload: '/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1200.avif',
+    // Dedicated 1.91:1 social-share image (og:image / twitter:image), .jpg default.
+    ogImage: { src: '/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-og.jpg', width: 1200, height: 630 },
     // Hero image SEO/AEO metadata (owner's own photo → brand credit, set by CityPage).
     // Hero is a CSS background, so the localized alt lives here and feeds og:image:alt/
     // twitter:image:alt per locale; the `caption` map feeds the hero ImageObject
-    // caption. Verbatim from tbilisi-city-hero-package.md. `imageId: 'hero-image'`
-    // makes CityPage emit the ImageObject `@id` …#hero-image (page-scoped: only
-    // entries that set imageId get an @id — a clean replacement for a page that had
-    // no prior hero ImageObject). contentLocation = name + geo (Old Town area
-    // 41.6883/44.8090), NO address block. There is NO other representativeOfPage
-    // ImageObject on this page (the 3 imageObjects are inline body photos).
+    // caption. `imageId: 'hero-image'` makes CityPage emit the ImageObject `@id`
+    // …#hero-image. contentLocation = name + geo (Old Town area 41.6883/44.8090), NO
+    // address block. There is NO other representativeOfPage ImageObject on this page
+    // (the 3 imageObjects are inline body photos).
     imageMeta: {
       width: 1448, height: 1086, imageId: 'hero-image',
-      name: "Tbilisi's Old Town below Narikala Fortress and the Kartlis Deda statue, with the cable car and the Mtkvari River, Georgia",
-      description: 'A panorama of the Old Town of Tbilisi from across the Mtkvari (Kura) River: Narikala Fortress and St Nicholas Church on the ridge, the Kartlis Deda (Mother of Georgia) statue on the skyline, the Rike-Narikala cable car in mid-span, and tiered pastel houses and church domes above the river and the Metekhi Bridge. Tbilisi is the capital of Georgia (the country).',
+      name: "Tbilisi's Old Town below Narikala Fortress, with the Rike–Narikala cable car above the Metekhi Bridge and the Mtkvari River, Georgia",
+      description: 'The Old Town of Tbilisi seen from the Metekhi side of the river: Narikala Fortress and St Nicholas Church on the ridge, a cabin of the Rike–Narikala cable car on its line, the Metekhi Bridge over the Mtkvari (Kura) River with Meidan (Gorgasali Square) beyond, tiered houses and church domes on the slope, and the Mtatsminda TV tower on the skyline. Tbilisi is the capital of Georgia (the country).',
       locationName: 'Old Town, Tbilisi, Georgia',
       geo: { lat: 41.6883, lng: 44.8090 },
       alt: {
-        en: "Tbilisi's Old Town below Narikala Fortress and the Kartlis Deda statue, with the cable car and the Mtkvari River, Georgia",
-        de: 'Die Altstadt von Tiflis unterhalb der Festung Naryqala und der Statue Kartlis Deda, mit Seilbahn und dem Fluss Mtkwari, Georgien',
-        fr: 'La vieille ville de Tbilissi sous la forteresse Narikala et la statue Kartlis Deda, avec le téléphérique et la rivière Mtkvari, Géorgie',
-        es: 'El casco antiguo de Tiflis bajo la fortaleza de Narikala y la estatua Kartlis Deda, con el teleférico y el río Mtkvari, Georgia',
-        nl: 'De oude stad van Tbilisi onder de Narikala-vesting en het standbeeld Kartlis Deda, met de kabelbaan en de rivier de Mtkvari, Georgië',
-        cs: 'Staré Město Tbilisi pod pevností Narikala a sochou Kartlis Deda, s lanovkou a řekou Mtkvari, Gruzie',
-        pl: 'Stare Miasto Tbilisi pod twierdzą Narikala i pomnikiem Kartlis Deda, z kolejką linową i rzeką Mtkwari, Gruzja',
+        en: 'Tbilisi\'s Old Town below Narikala Fortress, with a Rike–Narikala cable car cabin above the Metekhi Bridge and the Mtkvari River, Georgia',
+        de: 'Die Altstadt von Tiflis unterhalb der Festung Narikala, mit einer Kabine der Seilbahn Rike–Narikala über der Metekhi-Brücke und dem Fluss Mtkwari, Georgien',
+        fr: 'La vieille ville de Tbilissi sous la forteresse Narikala, avec une cabine du téléphérique Rike–Narikala au-dessus du pont Metekhi et de la rivière Mtkvari, Géorgie',
+        es: 'El casco antiguo de Tiflis bajo la fortaleza de Narikala, con una cabina del teleférico Rike–Narikala sobre el puente Metekhi y el río Mtkvari, Georgia',
+        nl: 'De oude stad van Tbilisi onder de Narikala-vesting, met een cabine van de kabelbaan Rike–Narikala boven de Metekhi-brug en de rivier de Mtkvari, Georgië',
+        cs: 'Staré Město Tbilisi pod pevností Narikala, s kabinou lanovky Rike–Narikala nad mostem Metekhi a řekou Mtkvari, Gruzie',
+        pl: 'Stare Miasto Tbilisi pod twierdzą Narikala, z gondolą kolejki linowej Rike–Narikala nad mostem Metekhi i rzeką Mtkwari, Gruzja',
       },
       caption: {
-        en: "Tbilisi's Old Town climbs the slope below Narikala Fortress, watched over by the Kartlis Deda statue, with the cable car crossing overhead and the Mtkvari River flowing past below — the whole layered history of the Georgian capital in one view.",
-        de: 'Die Altstadt von Tiflis zieht sich den Hang unterhalb der Festung Naryqala hinauf, überblickt von der Statue Kartlis Deda, während die Seilbahn darüber schwebt und der Mtkwari unten vorbeifließt – die ganze vielschichtige Geschichte der georgischen Hauptstadt in einem Blick.',
-        fr: "La vieille ville de Tbilissi grimpe le versant sous la forteresse Narikala, veillée par la statue Kartlis Deda, tandis que le téléphérique passe au-dessus et que la Mtkvari coule en contrebas — toute l'histoire en strates de la capitale géorgienne en une seule vue.",
-        es: 'El casco antiguo de Tiflis trepa la ladera bajo la fortaleza de Narikala, vigilado por la estatua Kartlis Deda, mientras el teleférico cruza por encima y el Mtkvari fluye abajo: toda la historia estratificada de la capital georgiana en una sola vista.',
-        nl: 'De oude stad van Tbilisi klimt tegen de helling onder de Narikala-vesting, bewaakt door het standbeeld Kartlis Deda, terwijl de kabelbaan erboven passeert en de Mtkvari beneden voorbijstroomt — de hele gelaagde geschiedenis van de Georgische hoofdstad in één blik.',
-        cs: 'Staré Město Tbilisi stoupá po svahu pod pevností Narikala, střeženo sochou Kartlis Deda, zatímco nad ním přejíždí lanovka a dole plyne řeka Mtkvari – celá vrstevnatá historie gruzínské metropole v jediném pohledu.',
-        pl: 'Stare Miasto Tbilisi wspina się po zboczu pod twierdzą Narikala, pilnowane przez pomnik Kartlis Deda, gdy nad nim przejeżdża kolejka linowa, a w dole płynie Mtkwari — cała warstwowa historia gruzińskiej stolicy w jednym ujęciu.',
+        en: 'The Old Town, Narikala Fortress and the Metekhi Bridge, Tbilisi',
+        de: 'Altstadt, Festung Narikala und Metekhi-Brücke, Tiflis',
+        fr: 'La vieille ville, la forteresse Narikala et le pont Metekhi, Tbilissi',
+        es: 'El casco antiguo, la fortaleza de Narikala y el puente Metekhi, Tiflis',
+        nl: 'De oude stad, de Narikala-vesting en de Metekhi-brug, Tbilisi',
+        cs: 'Staré Město, pevnost Narikala a most Metekhi, Tbilisi',
+        pl: 'Stare Miasto, twierdza Narikala i most Metekhi, Tbilisi',
       },
     },
     thingsToDo: {
@@ -12338,6 +12339,38 @@ export const sites = [
         pl: 'Od 2012 roku kolejka Rike–Narikala łączy park Rike ze wzgórzem twierdzy w zaledwie dwie minuty; jej przeszklone gondole suną nad Starym Miastem obok kościoła Metechi. Na górze Narikala jest po lewej, a pomnik Kartlis Deda po prawej.',
       },
     },
+    // In-body figure (owner's own photo, 2026-10-10 Old Tbilisi pass): two cabins on
+    // the line above the Metekhi Bridge, seen from the Metekhi side. The hero above
+    // is KEPT — the owner's new frames show the cabins small in a wide cityscape,
+    // which suits the body ("The ride") better than the banner.
+    gallery: [
+      // Chunk 2 = <h2>The ride</h2>.
+      {
+        base: 'rike-narikala-cable-car-metekhi-bridge-tbilisi-georgia',
+        afterChunk: 2,
+        widths: [768, 1200, 1448], fallbackWidth: 1200, plainWidths: true,
+        width: 1448, height: 1086,
+        locationName: 'Rike-Narikala Cable Car, Tbilisi, Georgia', locality: 'Tbilisi', region: 'Tbilisi', country: 'GE',
+        alt: {
+          en: 'Two Rike–Narikala cable car cabins on the line above the Metekhi Bridge and the Mtkvari River, with the Old Town and Mtatsminda beyond, Tbilisi, Georgia',
+          de: 'Zwei Kabinen der Seilbahn Rike–Narikala am Seil über der Metekhi-Brücke und dem Mtkvari, dahinter die Altstadt und der Mtatsminda, Tiflis, Georgien',
+          fr: 'Deux cabines du téléphérique Rike–Narikala sur le câble au-dessus du pont Metekhi et de la Mtkvari, avec la vieille ville et le Mtatsminda au loin, Tbilissi, Géorgie',
+          es: 'Dos cabinas del teleférico Rike–Narikala en el cable sobre el puente Metekhi y el río Mtkvari, con el casco antiguo y Mtatsminda al fondo, Tbilisi, Georgia',
+          nl: 'Twee cabines van de kabelbaan Rike–Narikala aan de kabel boven de Metekhi-brug en de Mtkvari, met de oude stad en de Mtatsminda erachter, Tbilisi, Georgië',
+          cs: 'Dvě kabiny lanovky Rike–Narikala na laně nad mostem Metekhi a řekou Mtkvari, v pozadí Staré Město a Mtatsminda, Tbilisi, Gruzie',
+          pl: 'Dwie gondole kolejki linowej Rike–Narikala na linie nad mostem Metekhi i rzeką Mtkvari, w tle Stare Miasto i Mtatsminda, Tbilisi, Gruzja',
+        },
+        caption: {
+          en: 'Rike–Narikala cable car above the Metekhi Bridge, Tbilisi',
+          de: 'Seilbahn Rike–Narikala über der Metekhi-Brücke, Tiflis',
+          fr: 'Le téléphérique Rike–Narikala au-dessus du pont Metekhi, Tbilissi',
+          es: 'El teleférico Rike–Narikala sobre el puente Metekhi, Tbilisi',
+          nl: 'De kabelbaan Rike–Narikala boven de Metekhi-brug, Tbilisi',
+          cs: 'Lanovka Rike–Narikala nad mostem Metekhi, Tbilisi',
+          pl: 'Kolejka linowa Rike–Narikala nad mostem Metekhi, Tbilisi',
+        },
+      },
+    ],
   },
   {
     slug: 'rustaveli-avenue', name: 'Rustaveli Avenue',
@@ -12427,30 +12460,111 @@ export const sites = [
     slug: 'abanotubani-sulfur-baths', name: 'Abanotubani Sulfur Baths',
     parentType: 'city', parent: 'tbilisi', published: true,
     seoKey: 'abanotubaniSulfurBaths', contentKey: 'abanotubaniSulfurBaths',
-    // ⚠️ TEMPORARY, pending a genuine Abanotubani photograph. `noHero` drops the
-    // photo hero on THIS page only: SitePage renders a plain `.dest-title-band`
-    // (solid brand colour, no image) carrying the same H1 instead of HeroSection.
-    // Why a band rather than nothing: `header` is a 300px TRANSPARENT overlay with
-    // cream nav links and a dark ::before gradient, designed to sit over a dark
-    // hero photo — with no dark area behind it the logo and nav render
-    // cream-on-cream and the gradient washes the top of the page grey. The band is
-    // also why the element must stay in <main> at all: removing it outright shifts
-    // every following .page-items into the opposite :nth-child() band and inverts
-    // the whole page's light/dark scheme.
-    // `image` is deliberately LEFT as the generic georgia-home.jpg: it no longer
-    // renders anywhere on the page, but it still feeds og:image / twitter:image /
-    // the TouristAttraction JSON-LD image, and the brief asked for social metadata
-    // to be reported rather than guessed at. Replace all of it together when the
-    // real photo arrives, and delete `noHero`.
-    noHero: true,
-    image: '/images/files/georgia-home.jpg',
+    // Hero: the owner's own photo (2026-10-10 Old Tbilisi pass) — King Erekle's Bath,
+    // the brick bath domes and the Tsavkisistsqali footbridge — via the
+    // .hero--abanotubani image-set() ladder (styles.css). Native 4:3 (1448x1086) →
+    // 768/1200/1448, no upscale; `center 30%` keeps the domes in the banner crop.
+    // Replaces the TEMPORARY noHero title band + georgia-home.jpg social fallback.
+    // `gallery` adds one in-body figure (Royal Bath) under "The bathhouses".
+    image: '/images/files/abanotubani-sulfur-baths-tbilisi-georgia-1448.webp',
+    imageAvif: '/images/files/abanotubani-sulfur-baths-tbilisi-georgia-1448.avif',
+    heroClass: 'hero--abanotubani',
+    heroPreload: '/images/files/abanotubani-sulfur-baths-tbilisi-georgia-1200.avif',
+    ogImage: { src: '/images/files/abanotubani-sulfur-baths-tbilisi-georgia-og.jpg', width: 1200, height: 630 },
+    cardImage: false, // the hub card was image-free before this hero; it stays text-only
+    imageMeta: {
+      width: 1448, height: 1086, imageId: 'hero-image',
+      name: 'Brick domes and the King Erekle\'s Bath bathhouse above the Tsavkisistsqali stream in Abanotubani, Tbilisi, Georgia',
+      description: 'The sulfur-bath district of Abanotubani in Old Tbilisi: the brick bathhouse of King Erekle\'s Bath with its name in Georgian and English on the wall, low brick domes with small lanterns behind it, and the railed footbridge over the Tsavkisistsqali stream in front, Georgia.',
+      locationName: 'Abanotubani, Tbilisi, Georgia', locality: 'Tbilisi', region: 'Tbilisi', country: 'GE',
+      alt: {
+        en: 'Brick domes and the King Erekle\'s Bath bathhouse above the Tsavkisistsqali stream in Abanotubani, Tbilisi, Georgia',
+        de: 'Backsteinkuppeln und das Badehaus King Erekle\'s Bath über dem Bach Tsavkisistsqali in Abanotubani, Tiflis, Georgien',
+        fr: 'Coupoles de brique et le bain King Erekle\'s Bath au-dessus du ruisseau Tsavkisistsqali à Abanotubani, Tbilissi, Géorgie',
+        es: 'Cúpulas de ladrillo y la casa de baños King Erekle\'s Bath sobre el arroyo Tsavkisistsqali en Abanotubani, Tbilisi, Georgia',
+        nl: 'Bakstenen koepels en het badhuis King Erekle\'s Bath boven de beek Tsavkisistsqali in Abanotubani, Tbilisi, Georgië',
+        cs: 'Cihlové kopule a lázně King Erekle\'s Bath nad potokem Tsavkisistsqali v Abanotubani, Tbilisi, Gruzie',
+        pl: 'Ceglane kopuły i łaźnia King Erekle\'s Bath nad strumieniem Tsavkisistsqali w Abanotubani, Tbilisi, Gruzja',
+      },
+      caption: {
+        en: 'Abanotubani, Tbilisi',
+        de: 'Abanotubani, Tiflis',
+        fr: 'Abanotubani, Tbilissi',
+        es: 'Abanotubani, Tbilisi',
+        nl: 'Abanotubani, Tbilisi',
+        cs: 'Abanotubani, Tbilisi',
+        pl: 'Abanotubani, Tbilisi',
+      },
+    },
+    gallery: [
+      // Chunk 3 = <h2>The bathhouses</h2> — an operating bathhouse entrance with its domes.
+      {
+        base: 'royal-bath-abanotubani-tbilisi-georgia',
+        afterChunk: 3,
+        widths: [768, 1200, 1448], fallbackWidth: 1200, plainWidths: true,
+        width: 1448, height: 1086,
+        locationName: 'Royal Bath, Abanotubani, Tbilisi, Georgia', locality: 'Tbilisi', region: 'Tbilisi', country: 'GE',
+        alt: {
+          en: 'The arched entrance and brick domes of the Royal Bath on a cobbled street in Abanotubani, Tbilisi, Georgia',
+          de: 'Der Bogeneingang und die Backsteinkuppeln des Royal Bath an einer gepflasterten Straße in Abanotubani, Tiflis, Georgien',
+          fr: 'L\'entrée en arc et les coupoles de brique du Royal Bath dans une rue pavée d\'Abanotubani, Tbilissi, Géorgie',
+          es: 'La entrada en arco y las cúpulas de ladrillo del Royal Bath en una calle adoquinada de Abanotubani, Tbilisi, Georgia',
+          nl: 'De boogvormige ingang en bakstenen koepels van het Royal Bath aan een geplaveide straat in Abanotubani, Tbilisi, Georgië',
+          cs: 'Klenutý vchod a cihlové kopule lázní Royal Bath v dlážděné ulici v Abanotubani, Tbilisi, Gruzie',
+          pl: 'Łukowe wejście i ceglane kopuły łaźni Royal Bath przy brukowanej uliczce w Abanotubani, Tbilisi, Gruzja',
+        },
+        caption: {
+          en: 'Royal Bath, Abanotubani, Tbilisi',
+          de: 'Royal Bath, Abanotubani, Tiflis',
+          fr: 'Royal Bath, Abanotubani, Tbilissi',
+          es: 'Royal Bath, Abanotubani, Tbilisi',
+          nl: 'Royal Bath, Abanotubani, Tbilisi',
+          cs: 'Royal Bath, Abanotubani, Tbilisi',
+          pl: 'Royal Bath, Abanotubani, Tbilisi',
+        },
+      },
+    ],
   },
   {
     slug: 'chreli-abano', name: 'Chreli Abano (Orbeliani Baths)',
     parentType: 'city', parent: 'tbilisi', published: true,
     seoKey: 'chreliAbano', contentKey: 'chreliAbano',
-    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
-    image: '/images/files/georgia-home.jpg',
+    // Hero: the owner's own photo (2026-10-10 Old Tbilisi pass) of the tiled Orbeliani
+    // Baths façade with the balconied house beside it — via the .hero--chreli-abano
+    // image-set() ladder (styles.css). Native 4:3 (1448x1086) → 768/1200/1448, no
+    // upscale; `center 40%`. Replaces the TEMPORARY noHero title band. The owner's
+    // four portrait frames of the same façade were not added as body figures: the
+    // body-figure component crops to 4:3 and they repeat the hero viewpoint.
+    image: '/images/files/chreli-abano-tbilisi-georgia-1448.webp',
+    imageAvif: '/images/files/chreli-abano-tbilisi-georgia-1448.avif',
+    heroClass: 'hero--chreli-abano',
+    heroPreload: '/images/files/chreli-abano-tbilisi-georgia-1200.avif',
+    ogImage: { src: '/images/files/chreli-abano-tbilisi-georgia-og.jpg', width: 1200, height: 630 },
+    cardImage: false, // the hub card was image-free before this hero; it stays text-only
+    imageMeta: {
+      width: 1448, height: 1086, imageId: 'hero-image',
+      name: 'The blue-tiled façade of Chreli Abano (the Orbeliani Baths) in Abanotubani, Tbilisi, Georgia',
+      description: 'The 19th-century Persian-style façade of Chreli Abano, the Orbeliani Baths, in Tbilisi\'s Abanotubani district: blue, turquoise and white tilework under a pointed arch, stained-glass windows, twin minaret-like turrets, café tables on the forecourt, and the carved wooden balconies of a neighbouring Old Tbilisi house to the right, Georgia.',
+      locationName: 'Chreli Abano (Orbeliani Baths), Tbilisi, Georgia', locality: 'Tbilisi', region: 'Tbilisi', country: 'GE',
+      alt: {
+        en: 'The blue-tiled façade and twin turrets of Chreli Abano, the Orbeliani Baths, beside an old balconied house in Abanotubani, Tbilisi, Georgia',
+        de: 'Die blau gekachelte Fassade mit den beiden Türmchen des Chreli Abano, der Orbeliani-Bäder, neben einem alten Balkonhaus in Abanotubani, Tiflis, Georgien',
+        fr: 'La façade aux carreaux bleus et les deux tourelles du Chreli Abano, les bains Orbeliani, à côté d\'une vieille maison à balcons à Abanotubani, Tbilissi, Géorgie',
+        es: 'La fachada de azulejos azules y las dos torrecillas del Chreli Abano, los baños Orbeliani, junto a una antigua casa con balcones en Abanotubani, Tbilisi, Georgia',
+        nl: 'De blauw betegelde gevel en de twee torentjes van Chreli Abano, de Orbeliani-baden, naast een oud huis met balkons in Abanotubani, Tbilisi, Georgië',
+        cs: 'Modře kachlíkované průčelí se dvěma věžičkami lázní Chreli Abano, Orbelianiho lázní, vedle starého domu s balkony v Abanotubani, Tbilisi, Gruzie',
+        pl: 'Pokryta niebieskimi kafelkami fasada z dwiema wieżyczkami Chreli Abano, Łaźni Orbeliani, obok starego domu z balkonami w Abanotubani, Tbilisi, Gruzja',
+      },
+      caption: {
+        en: 'Chreli Abano, Tbilisi',
+        de: 'Chreli Abano, Tiflis',
+        fr: 'Chreli Abano, Tbilissi',
+        es: 'Chreli Abano, Tbilisi',
+        nl: 'Chreli Abano, Tbilisi',
+        cs: 'Chreli Abano, Tbilisi',
+        pl: 'Chreli Abano, Tbilisi',
+      },
+    },
   },
   {
     slug: 'anchiskhati-basilica', name: 'Anchiskhati Basilica',
@@ -12610,48 +12724,142 @@ export const sites = [
     slug: 'leghvtakhevi-waterfall', name: 'Leghvtakhevi Waterfall',
     parentType: 'city', parent: 'tbilisi', published: true,
     seoKey: 'leghvtakheviWaterfall', contentKey: 'leghvtakheviWaterfall',
-    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
-    image: '/images/files/georgia-home.jpg',
+    // Hero: the owner's own PORTRAIT photo (2026-10-10 Old Tbilisi pass) of the falls,
+    // native 3:4 (1086x1448), so the ladder is 768/1086 ONLY (same portrait recipe as
+    // the Rike–Narikala cable car hero) via .hero--leghvtakhevi-waterfall; `center 45%`
+    // keeps the falling water in the banner crop. The OG crop is a 1086x569 no-upscale
+    // centre cut (canonical is 1200x630; the source only reaches 1086 wide). Replaces
+    // the TEMPORARY noHero title band. The owner's other three frames are the same
+    // viewpoint, so no body figure was added.
+    image: '/images/files/leghvtakhevi-waterfall-tbilisi-georgia-1086.webp',
+    imageAvif: '/images/files/leghvtakhevi-waterfall-tbilisi-georgia-1086.avif',
+    heroClass: 'hero--leghvtakhevi-waterfall',
+    heroPreload: '/images/files/leghvtakhevi-waterfall-tbilisi-georgia-1086.avif',
+    ogImage: { src: '/images/files/leghvtakhevi-waterfall-tbilisi-georgia-og.jpg', width: 1086, height: 569 },
+    cardImage: false, // the hub card was image-free before this hero; it stays text-only
+    imageMeta: {
+      width: 1086, height: 1448, imageId: 'hero-image',
+      name: 'Leghvtakhevi Waterfall in its basalt gorge behind Abanotubani, Tbilisi, Georgia',
+      description: 'The Leghvtakhevi Waterfall, where the Tsavkisistsqali stream drops over a dark basalt ledge into a rock pool between vegetation-hung canyon walls, at the head of the Leghvtakhevi gorge behind the Abanotubani sulfur baths in Old Tbilisi, Georgia.',
+      locationName: 'Leghvtakhevi Waterfall, Tbilisi, Georgia', locality: 'Tbilisi', region: 'Tbilisi', country: 'GE',
+      alt: {
+        en: 'Leghvtakhevi Waterfall pouring over a dark basalt ledge into its gorge behind Abanotubani, Tbilisi, Georgia',
+        de: 'Der Leghvtakhevi-Wasserfall stürzt über eine dunkle Basaltstufe in seine Schlucht hinter Abanotubani, Tiflis, Georgien',
+        fr: 'La cascade de Leghvtakhevi se déversant sur une corniche de basalte sombre dans sa gorge derrière Abanotubani, Tbilissi, Géorgie',
+        es: 'La cascada de Leghvtakhevi cayendo por una cornisa de basalto oscuro en su desfiladero detrás de Abanotubani, Tbilisi, Georgia',
+        nl: 'De Leghvtakhevi-waterval stort over een donkere basaltrichel in zijn kloof achter Abanotubani, Tbilisi, Georgië',
+        cs: 'Vodopád Leghvtakhevi padající přes tmavý čedičový stupeň do své soutěsky za Abanotubani, Tbilisi, Gruzie',
+        pl: 'Wodospad Leghvtakhevi spadający z ciemnej bazaltowej półki do wąwozu za Abanotubani, Tbilisi, Gruzja',
+      },
+      caption: {
+        en: 'Leghvtakhevi Waterfall, Tbilisi',
+        de: 'Leghvtakhevi-Wasserfall, Tiflis',
+        fr: 'La cascade de Leghvtakhevi, Tbilissi',
+        es: 'Cascada de Leghvtakhevi, Tbilisi',
+        nl: 'Leghvtakhevi-waterval, Tbilisi',
+        cs: 'Vodopád Leghvtakhevi, Tbilisi',
+        pl: 'Wodospad Leghvtakhevi, Tbilisi',
+      },
+    },
   },
   {
     slug: 'metekhi-church', name: 'Metekhi Church',
     parentType: 'city', parent: 'tbilisi', published: true,
     seoKey: 'metekhiChurch', contentKey: 'metekhiChurch',
-    // Hero: the owner's real photograph of the Metekhi cliff (New folder/Mtkvari River.jpg,
-    // 5616x3744 JPG, no AI/C2PA markers) — cliff, church on its rim, old balconied houses and the
-    // reflection in the river. NOT the tour-gallery "metekhi-cliff" / "mtkvari-river-old-tbilisi-
-    // cliffs" ladders: those were cut from an OpenAI-generated PNG of the same scene.
-    // Single 1600 rung as image/imageAvif; new 1.91:1 social crop.
-    image: '/images/files/metekhi-church-cliff-mtkvari-tbilisi-georgia-1600.webp',
-    imageAvif: '/images/files/metekhi-church-cliff-mtkvari-tbilisi-georgia-1600.avif',
-    heroPreload: '/images/files/metekhi-church-cliff-mtkvari-tbilisi-georgia-1600.avif',
-    ogImage: { src: '/images/files/metekhi-church-cliff-mtkvari-tbilisi-georgia-og-1200x630.jpg', width: 1200, height: 630 },
-    cardImage: false, // card was image-free before this hero; the hub card stays text-only
+    // Hero: the owner's own photo (2026-10-10 Old Tbilisi pass) of the church and the
+    // Gorgasali statue on the cliff rim above the Mtkvari, taken from the Metekhi
+    // Bridge — via the .hero--metekhi-church image-set() ladder (styles.css). Native
+    // 4:3 (1448x1086) → 768/1200/1448, no upscale; `center 35%` keeps the church in
+    // the banner crop. The previous hero (the owner's real New folder/Mtkvari River.jpg
+    // cliff frame, 1600 rung) is NOT dropped: it moves into the body as the first
+    // `gallery` figure under "A cliff with deep history" (768/1200 rungs cut from the
+    // same original, existing 1600 reused as the top rung). Its old og-1200x630 crops
+    // were deleted (unreferenced). The ladder for the second figure is the Tbilisi
+    // city hero family — same photo, processed once, reused here as "The view".
+    image: '/images/files/metekhi-church-mtkvari-tbilisi-georgia-1448.webp',
+    imageAvif: '/images/files/metekhi-church-mtkvari-tbilisi-georgia-1448.avif',
+    heroClass: 'hero--metekhi-church',
+    heroPreload: '/images/files/metekhi-church-mtkvari-tbilisi-georgia-1200.avif',
+    ogImage: { src: '/images/files/metekhi-church-mtkvari-tbilisi-georgia-og.jpg', width: 1200, height: 630 },
+    cardImage: false, // the hub card was image-free before this hero; it stays text-only
     imageMeta: {
-      width: 1600, height: 1067,
-      name: 'The Metekhi cliff and church above the Mtkvari River, Tbilisi, Georgia',
-      description: 'The Metekhi cliff rising sheer above the Mtkvari River in Tbilisi, with Metekhi Church and old balconied houses along its rim and the cliff reflected in the water, Georgia.',
-      locationName: 'Metekhi Church, Tbilisi, Georgia',
-      locality: 'Tbilisi', region: 'Tbilisi', country: 'GE',
+      width: 1448, height: 1086, imageId: 'hero-image',
+      name: 'Metekhi Church and the Vakhtang Gorgasali statue on the Metekhi cliff above the Mtkvari River, Tbilisi, Georgia',
+      description: 'The 13th-century Metekhi Church and the bronze equestrian statue of King Vakhtang Gorgasali on the rim of the Metekhi cliff, rising above the Mtkvari (Kura) River in Tbilisi, with the tree-lined left-bank embankment beyond, Georgia.',
+      locationName: 'Metekhi Church, Tbilisi, Georgia', locality: 'Tbilisi', region: 'Tbilisi', country: 'GE',
       alt: {
-        en: 'The sheer Metekhi cliff above the Mtkvari, with the church and old Tbilisi houses on its rim and the cliff mirrored in the calm river, Georgia',
-        de: 'Die schroffe Metekhi-Klippe über der Mtkvari, auf ihrem Rand die Kirche und alte Häuser von Tiflis, im ruhigen Fluss gespiegelt, Georgien',
-        fr: 'La falaise abrupte de Metekhi au-dessus de la Mtkvari, avec l\'église et les vieilles maisons de Tbilissi sur son rebord, se reflétant dans la rivière calme, Géorgie',
-        es: 'El escarpado acantilado de Metekhi sobre el Mtkvari, con la iglesia y las casas antiguas de Tbilisi en su borde, reflejado en el río en calma, Georgia',
-        nl: 'De steile Metekhi-klif boven de Mtkvari, met op de rand de kerk en oude huizen van Tbilisi, weerspiegeld in de rustige rivier, Georgië',
-        cs: 'Příkrý útes Metekhi nad Mtkvari s kostelem a starými tbilisskými domy na okraji, zrcadlící se v klidné řece, Gruzie',
-        pl: 'Stromy klif Metekhi nad Mtkvari z kościołem i starymi domami Tbilisi na krawędzi, odbijający się w spokojnej rzece, Gruzja',
+        en: 'Metekhi Church and the equestrian statue of King Vakhtang Gorgasali on the Metekhi cliff above the Mtkvari River, Tbilisi, Georgia',
+        de: 'Die Metekhi-Kirche und das Reiterstandbild König Vakhtang Gorgasalis auf der Metekhi-Klippe über der Mtkvari, Tiflis, Georgien',
+        fr: 'L\'église de Metekhi et la statue équestre du roi Vakhtang Gorgasali sur la falaise de Metekhi au-dessus de la Mtkvari, Tbilissi, Géorgie',
+        es: 'La iglesia de Metekhi y la estatua ecuestre del rey Vakhtang Gorgasali en el acantilado de Metekhi sobre el río Mtkvari, Tbilisi, Georgia',
+        nl: 'De Metekhi-kerk en het ruiterstandbeeld van koning Vakhtang Gorgasali op de Metekhi-klif boven de Mtkvari, Tbilisi, Georgië',
+        cs: 'Kostel Metekhi a jezdecká socha krále Vakhtanga Gorgasaliho na útesu Metekhi nad řekou Mtkvari, Tbilisi, Gruzie',
+        pl: 'Kościół Metekhi i konny pomnik króla Wachtanga Gorgasalego na klifie Metekhi nad rzeką Mtkvari, Tbilisi, Gruzja',
       },
       caption: {
-        en: 'Metekhi cliff and church above the Mtkvari, Tbilisi',
-        de: 'Die Metekhi-Klippe mit der Kirche über der Mtkvari, Tiflis',
-        fr: 'La falaise et l\'église de Metekhi au-dessus de la Mtkvari, Tbilissi',
-        es: 'El acantilado y la iglesia de Metekhi sobre el Mtkvari, Tbilisi',
-        nl: 'De Metekhi-klif en -kerk boven de Mtkvari, Tbilisi',
-        cs: 'Útes a kostel Metekhi nad Mtkvari, Tbilisi',
-        pl: 'Klif i kościół Metekhi nad Mtkvari, Tbilisi',
+        en: 'Metekhi Church, Tbilisi',
+        de: 'Metekhi-Kirche, Tiflis',
+        fr: 'L\'église de Metekhi, Tbilissi',
+        es: 'Iglesia de Metekhi, Tbilisi',
+        nl: 'Metekhi-kerk, Tbilisi',
+        cs: 'Kostel Metekhi, Tbilisi',
+        pl: 'Kościół Metekhi, Tbilisi',
       },
     },
+    gallery: [
+      // Chunk 2 = <h2>A cliff with deep history</h2> — the former hero, the cliff from the water.
+      {
+        base: 'metekhi-church-cliff-mtkvari-tbilisi-georgia',
+        afterChunk: 2,
+        widths: [768, 1200, 1600], fallbackWidth: 1200, plainWidths: true,
+        width: 1600, height: 1067,
+        locationName: 'Metekhi Church, Tbilisi, Georgia', locality: 'Tbilisi', region: 'Tbilisi', country: 'GE',
+        alt: {
+          en: 'The sheer Metekhi cliff above the Mtkvari, with the church and old Tbilisi houses on its rim and the cliff mirrored in the calm river, Georgia',
+          de: 'Die schroffe Metekhi-Klippe über der Mtkvari, auf ihrem Rand die Kirche und alte Häuser von Tiflis, im ruhigen Fluss gespiegelt, Georgien',
+          fr: 'La falaise abrupte de Metekhi au-dessus de la Mtkvari, avec l\'église et les vieilles maisons de Tbilissi sur son rebord, se reflétant dans la rivière calme, Géorgie',
+          es: 'El escarpado acantilado de Metekhi sobre el Mtkvari, con la iglesia y las casas antiguas de Tbilisi en su borde, reflejado en el río en calma, Georgia',
+          nl: 'De steile Metekhi-klif boven de Mtkvari, met op de rand de kerk en oude huizen van Tbilisi, weerspiegeld in de rustige rivier, Georgië',
+          cs: 'Příkrý útes Metekhi nad Mtkvari s kostelem a starými tbilisskými domy na okraji, zrcadlící se v klidné řece, Gruzie',
+          pl: 'Stromy klif Metekhi nad Mtkvari z kościołem i starymi domami Tbilisi na krawędzi, odbijający się w spokojnej rzece, Gruzja',
+        },
+        caption: {
+          en: 'Metekhi cliff and church above the Mtkvari, Tbilisi',
+          de: 'Die Metekhi-Klippe mit der Kirche über der Mtkvari, Tiflis',
+          fr: 'La falaise et l\'église de Metekhi au-dessus de la Mtkvari, Tbilissi',
+          es: 'El acantilado y la iglesia de Metekhi sobre el Mtkvari, Tbilisi',
+          nl: 'De Metekhi-klif en -kerk boven de Mtkvari, Tbilisi',
+          cs: 'Útes a kostel Metekhi nad Mtkvari, Tbilisi',
+          pl: 'Klif i kościół Metekhi nad Mtkvari, Tbilisi',
+        },
+      },
+      // Chunk 6 = <h2>The view</h2> — the Old Town from the cliff terrace (= the Tbilisi city hero frame).
+      {
+        base: 'tbilisi-old-town-narikala-metekhi-bridge-georgia',
+        afterChunk: 6,
+        widths: [768, 1200, 1448], fallbackWidth: 1200, plainWidths: true,
+        width: 1448, height: 1086,
+        locationName: 'Metekhi Church, Tbilisi, Georgia', locality: 'Tbilisi', region: 'Tbilisi', country: 'GE',
+        alt: {
+          en: 'The view from the Metekhi cliff across the Metekhi Bridge to the Old Town, with Narikala Fortress on the ridge and a Rike–Narikala cable car cabin overhead, Tbilisi, Georgia',
+          de: 'Der Blick von der Metekhi-Klippe über die Metekhi-Brücke auf die Altstadt, mit der Festung Narikala auf dem Kamm und einer Kabine der Seilbahn Rike–Narikala darüber, Tiflis, Georgien',
+          fr: 'La vue depuis la falaise de Metekhi, par-dessus le pont Metekhi, sur la vieille ville, avec la forteresse Narikala sur la crête et une cabine du téléphérique Rike–Narikala au-dessus, Tbilissi, Géorgie',
+          es: 'La vista desde el acantilado de Metekhi, por encima del puente Metekhi, hacia el casco antiguo, con la fortaleza de Narikala en la cresta y una cabina del teleférico Rike–Narikala en lo alto, Tbilisi, Georgia',
+          nl: 'Het uitzicht vanaf de Metekhi-klif over de Metekhi-brug op de oude stad, met de Narikala-vesting op de bergkam en een cabine van de kabelbaan Rike–Narikala erboven, Tbilisi, Georgië',
+          cs: 'Výhled z útesu Metekhi přes most Metekhi na Staré Město, s pevností Narikala na hřebeni a kabinou lanovky Rike–Narikala nad ním, Tbilisi, Gruzie',
+          pl: 'Widok z klifu Metekhi ponad mostem Metekhi na Stare Miasto, z twierdzą Narikala na grzbiecie i gondolą kolejki Rike–Narikala w górze, Tbilisi, Gruzja',
+        },
+        caption: {
+          en: 'The Old Town from the Metekhi cliff, Tbilisi',
+          de: 'Die Altstadt von der Metekhi-Klippe aus, Tiflis',
+          fr: 'La vieille ville vue de la falaise de Metekhi, Tbilissi',
+          es: 'El casco antiguo desde el acantilado de Metekhi, Tbilisi',
+          nl: 'De oude stad vanaf de Metekhi-klif, Tbilisi',
+          cs: 'Staré Město z útesu Metekhi, Tbilisi',
+          pl: 'Stare Miasto z klifu Metekhi, Tbilisi',
+        },
+      },
+    ],
   },
   {
     slug: 'mother-of-georgia-kartlis-deda', name: 'Mother of Georgia (Kartlis Deda)',
