@@ -183,6 +183,60 @@ export const tours = [
       },
       {
         /* #2 — Day 2 */
+        "src": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp",
+        "base": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "fallbackWidth": 1200,
+        "caption": {
+          "en": "Tbilisi Old Town",
+          "de": "Altstadt von Tiflis",
+          "fr": "Vieille ville de Tbilissi",
+          "es": "Casco antiguo de Tiflis",
+          "nl": "Oude stad van Tbilisi",
+          "cs": "Staré Město Tbilisi",
+          "pl": "Starówka w Tbilisi"
+        },
+        "altText": {
+          "en": "Tbilisi's Old Town below Narikala Fortress, with a Rike–Narikala cable car cabin above the Metekhi Bridge and the Mtkvari River, Georgia",
+          "de": "Die Altstadt von Tiflis unterhalb der Festung Narikala, mit einer Kabine der Seilbahn Rike–Narikala über der Metekhi-Brücke und dem Fluss Mtkwari, Georgien",
+          "fr": "La vieille ville de Tbilissi sous la forteresse Narikala, avec une cabine du téléphérique Rike–Narikala au-dessus du pont Metekhi et de la rivière Mtkvari, Géorgie",
+          "es": "El casco antiguo de Tiflis bajo la fortaleza de Narikala, con una cabina del teleférico Rike–Narikala sobre el puente Metekhi y el río Mtkvari, Georgia",
+          "nl": "De oude stad van Tbilisi onder de Narikala-vesting, met een cabine van de kabelbaan Rike–Narikala boven de Metekhi-brug en de rivier de Mtkvari, Georgië",
+          "cs": "Staré Město Tbilisi pod pevností Narikala, s kabinou lanovky Rike–Narikala nad mostem Metekhi a řekou Mtkvari, Gruzie",
+          "pl": "Stare Miasto Tbilisi pod twierdzą Narikala, z gondolą kolejki linowej Rike–Narikala nad mostem Metekhi i rzeką Mtkwari, Gruzja"
+        }
+      },
+      {
+        /* #3 — Day 2 */
+        "src": "/images/files/abanotubani-sulfur-baths-tbilisi-georgia-1448.webp",
+        "base": "/images/files/abanotubani-sulfur-baths-tbilisi-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "fallbackWidth": 1200,
+        "caption": {
+          "en": "Abanotubani, Tbilisi",
+          "de": "Abanotubani, Tiflis",
+          "fr": "Abanotubani, Tbilissi",
+          "es": "Abanotubani, Tbilisi",
+          "nl": "Abanotubani, Tbilisi",
+          "cs": "Abanotubani, Tbilisi",
+          "pl": "Abanotubani, Tbilisi"
+        },
+        "altText": {
+          "en": "Brick domes and the King Erekle's Bath bathhouse above the Tsavkisistsqali stream in Abanotubani, Tbilisi, Georgia",
+          "de": "Backsteinkuppeln und das Badehaus King Erekle's Bath über dem Bach Tsavkisistsqali in Abanotubani, Tiflis, Georgien",
+          "fr": "Coupoles de brique et le bain King Erekle's Bath au-dessus du ruisseau Tsavkisistsqali à Abanotubani, Tbilissi, Géorgie",
+          "es": "Cúpulas de ladrillo y la casa de baños King Erekle's Bath sobre el arroyo Tsavkisistsqali en Abanotubani, Tbilisi, Georgia",
+          "nl": "Bakstenen koepels en het badhuis King Erekle's Bath boven de beek Tsavkisistsqali in Abanotubani, Tbilisi, Georgië",
+          "cs": "Cihlové kopule a lázně King Erekle's Bath nad potokem Tsavkisistsqali v Abanotubani, Tbilisi, Gruzie",
+          "pl": "Ceglane kopuły i łaźnia King Erekle's Bath nad strumieniem Tsavkisistsqali w Abanotubani, Tbilisi, Gruzja"
+        }
+      },
+      {
+        /* #4 — Day 2 */
         "src": "/images/group-tours/georgia-group-tour/holy-trinity-cathedral-tbilisi-georgia-1672.webp",
         "base": "/images/group-tours/georgia-group-tour/holy-trinity-cathedral-tbilisi-georgia",
         "widths": [768, 1200, 1600, 1672],
@@ -209,7 +263,7 @@ export const tours = [
         }
       },
       {
-        /* #3 — Day 3 */
+        /* #5 — Day 3 */
         "src": "/images/group-tours/georgia-group-tour/jvari-monastery-mtskheta-georgia-1920.webp",
         "base": "/images/group-tours/georgia-group-tour/jvari-monastery-mtskheta-georgia",
         "widths": [768, 1200, 1600, 1920],
@@ -236,7 +290,7 @@ export const tours = [
         }
       },
       {
-        /* #4 — Day 3 */
+        /* #6 — Day 3 */
         "src": "/images/group-tours/georgia-group-tour/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
         "base": "/images/group-tours/georgia-group-tour/svetitskhoveli-cathedral-mtskheta-georgia",
         "widths": [768, 1200, 1540],
@@ -263,7 +317,7 @@ export const tours = [
         }
       },
       {
-        /* #5 — Day 3 */
+        /* #7 — Day 3 */
         "src": "/images/group-tours/georgia-group-tour/aragvi-confluence-military-highway-georgia-1445.webp",
         "base": "/images/group-tours/georgia-group-tour/aragvi-confluence-military-highway-georgia",
         "widths": [768, 1200, 1445],
@@ -290,7 +344,7 @@ export const tours = [
         }
       },
       {
-        /* #6 — Day 4 */
+        /* #8 — Day 4 */
         "src": "/images/group-tours/georgia-group-tour/gergeti-trinity-church-kazbegi-georgia-1448.webp",
         "base": "/images/group-tours/georgia-group-tour/gergeti-trinity-church-kazbegi-georgia",
         "widths": [768, 1200, 1448],
@@ -317,7 +371,7 @@ export const tours = [
         }
       },
       {
-        /* #7 — Day 5 */
+        /* #9 — Day 5 */
         "src": "/images/group-tours/georgia-group-tour/stalin-museum-gori-georgia-1536.webp",
         "base": "/images/group-tours/georgia-group-tour/stalin-museum-gori-georgia",
         "widths": [768, 1200, 1536],
@@ -344,7 +398,7 @@ export const tours = [
         }
       },
       {
-        /* #8 — Day 5 */
+        /* #10 — Day 5 */
         "src": "/images/group-tours/georgia-group-tour/uplistsikhe-cave-town-gori-georgia-1448.webp",
         "base": "/images/group-tours/georgia-group-tour/uplistsikhe-cave-town-gori-georgia",
         "widths": [768, 1200, 1448],
@@ -371,7 +425,7 @@ export const tours = [
         }
       },
       {
-        /* #9 — Day 6 */
+        /* #11 — Day 6 */
         "src": "/images/group-tours/georgia-group-tour/katskhi-pillar-imereti-georgia-1086.webp",
         "base": "/images/group-tours/georgia-group-tour/katskhi-pillar-imereti-georgia",
         "widths": [768, 1086],
@@ -399,7 +453,7 @@ export const tours = [
         }
       },
       {
-        /* #10 — Day 7 */
+        /* #12 — Day 7 */
         "src": "/images/group-tours/georgia-group-tour/gelati-monastery-kutaisi-georgia-1491.webp",
         "base": "/images/group-tours/georgia-group-tour/gelati-monastery-kutaisi-georgia",
         "widths": [768, 1200, 1491],
@@ -426,7 +480,7 @@ export const tours = [
         }
       },
       {
-        /* #11 — Day 7 */
+        /* #13 — Day 7 */
         "src": "/images/group-tours/georgia-group-tour/prometheus-cave-imereti-georgia-1536.webp",
         "base": "/images/group-tours/georgia-group-tour/prometheus-cave-imereti-georgia",
         "widths": [768, 1200, 1536],
@@ -453,7 +507,7 @@ export const tours = [
         }
       },
       {
-        /* #12 — Day 7 */
+        /* #14 — Day 7 */
         "src": "/images/group-tours/georgia-group-tour/martvili-canyon-samegrelo-georgia-1086.webp",
         "base": "/images/group-tours/georgia-group-tour/martvili-canyon-samegrelo-georgia",
         "widths": [768, 1086],
@@ -481,7 +535,7 @@ export const tours = [
         }
       },
       {
-        /* #13 — Day 8 */
+        /* #15 — Day 8 */
         "src": "/images/group-tours/georgia-group-tour/baias-winery-imereti-georgia-1536.webp",
         "base": "/images/group-tours/georgia-group-tour/baias-winery-imereti-georgia",
         "widths": [768, 1200, 1536],
@@ -508,7 +562,7 @@ export const tours = [
         }
       },
       {
-        /* #14 — Day 8 */
+        /* #16 — Day 8 */
         "src": "/images/group-tours/georgia-group-tour/black-sea-sunset-batumi-georgia-1448.webp",
         "base": "/images/group-tours/georgia-group-tour/black-sea-sunset-batumi-georgia",
         "widths": [768, 1200, 1448],
@@ -535,7 +589,7 @@ export const tours = [
         }
       },
       {
-        /* #15 — Day 9 */
+        /* #17 — Day 9 */
         "src": "/images/group-tours/georgia-group-tour/batumi-skyline-black-sea-georgia-1448.webp",
         "base": "/images/group-tours/georgia-group-tour/batumi-skyline-black-sea-georgia",
         "widths": [768, 1200, 1448],
@@ -562,7 +616,7 @@ export const tours = [
         }
       },
       {
-        /* #16 — Day 9 */
+        /* #18 — Day 9 */
         "src": "/images/group-tours/georgia-group-tour/ali-and-nino-statue-batumi-georgia-1024.webp",
         "base": "/images/group-tours/georgia-group-tour/ali-and-nino-statue-batumi-georgia",
         "widths": [768, 1024],
@@ -590,7 +644,7 @@ export const tours = [
         }
       },
       {
-        /* #17 — Day 9 */
+        /* #19 — Day 9 */
         "src": "/images/group-tours/georgia-group-tour/batumi-boulevard-georgia-1445.webp",
         "base": "/images/group-tours/georgia-group-tour/batumi-boulevard-georgia",
         "widths": [768, 1200, 1445],
@@ -617,7 +671,7 @@ export const tours = [
         }
       },
       {
-        /* #18 — Day 11 */
+        /* #20 — Day 11 */
         "src": "/images/group-tours/georgia-group-tour/tsinandali-estate-kakheti-georgia-1536.webp",
         "base": "/images/group-tours/georgia-group-tour/tsinandali-estate-kakheti-georgia",
         "widths": [768, 1200, 1536],
@@ -644,7 +698,7 @@ export const tours = [
         }
       },
       {
-        /* #19 — Day 12 */
+        /* #21 — Day 12 */
         "src": "/images/group-tours/georgia-group-tour/erekle-monument-telavi-georgia-1448.webp",
         "base": "/images/group-tours/georgia-group-tour/erekle-monument-telavi-georgia",
         "widths": [768, 1200, 1448],
@@ -671,7 +725,7 @@ export const tours = [
         }
       },
       {
-        /* #20 — Day 12 */
+        /* #22 — Day 12 */
         "src": "/images/kakheti/sighnaghi-ridge-alazani-valley-kakheti-georgia-1448.webp",
         "base": "/images/kakheti/sighnaghi-ridge-alazani-valley-kakheti-georgia",
         "widths": [768, 1200, 1448],
@@ -733,6 +787,48 @@ export const tours = [
         "height": 1086,
         "caption": "Narikala Fortress, Tbilisi",
         "description": "Ancient Narikala Fortress walls above the Old Town of Tbilisi, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Tbilisi, Georgia"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp",
+        "width": 1448,
+        "height": 1086,
+        "caption": "Tbilisi Old Town",
+        "description": "Tbilisi's Old Town below Narikala Fortress, with a Rike–Narikala cable car cabin above the Metekhi Bridge and the Mtkvari River, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Tbilisi, Georgia"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/files/abanotubani-sulfur-baths-tbilisi-georgia-1448.webp",
+        "width": 1448,
+        "height": 1086,
+        "caption": "Abanotubani, Tbilisi",
+        "description": "Brick domes and the King Erekle's Bath bathhouse above the Tsavkisistsqali stream in Abanotubani, Tbilisi, Georgia",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -2637,8 +2733,8 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/tbilisi-wine-sulfur/tbilisi-old-town-panorama-georgia-1448.webp",
-        "base": "/images/tours/tbilisi-wine-sulfur/tbilisi-old-town-panorama-georgia",
+        "src": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp",
+        "base": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia",
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
@@ -2650,6 +2746,15 @@ export const tours = [
           "nl": "Old Town panorama, Tbilisi",
           "cs": "Old Town panorama, Tbilisi",
           "pl": "Old Town panorama, Tbilisi"
+        },
+        "altText": {
+          "en": "Tbilisi's Old Town below Narikala Fortress, with a Rike–Narikala cable car cabin above the Metekhi Bridge and the Mtkvari River, Georgia",
+          "de": "Die Altstadt von Tiflis unterhalb der Festung Narikala, mit einer Kabine der Seilbahn Rike–Narikala über der Metekhi-Brücke und dem Fluss Mtkwari, Georgien",
+          "fr": "La vieille ville de Tbilissi sous la forteresse Narikala, avec une cabine du téléphérique Rike–Narikala au-dessus du pont Metekhi et de la rivière Mtkvari, Géorgie",
+          "es": "El casco antiguo de Tiflis bajo la fortaleza de Narikala, con una cabina del teleférico Rike–Narikala sobre el puente Metekhi y el río Mtkvari, Georgia",
+          "nl": "De oude stad van Tbilisi onder de Narikala-vesting, met een cabine van de kabelbaan Rike–Narikala boven de Metekhi-brug en de rivier de Mtkvari, Georgië",
+          "cs": "Staré Město Tbilisi pod pevností Narikala, s kabinou lanovky Rike–Narikala nad mostem Metekhi a řekou Mtkvari, Gruzie",
+          "pl": "Stare Miasto Tbilisi pod twierdzą Narikala, z gondolą kolejki linowej Rike–Narikala nad mostem Metekhi i rzeką Mtkwari, Gruzja"
         }
       },
       {
@@ -2669,8 +2774,33 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/tbilisi-wine-sulfur/metekhi-cliff-mtkvari-river-tbilisi-georgia-1448.webp",
-        "base": "/images/tours/tbilisi-wine-sulfur/metekhi-cliff-mtkvari-river-tbilisi-georgia",
+        "src": "/images/files/abanotubani-sulfur-baths-tbilisi-georgia-1448.webp",
+        "base": "/images/files/abanotubani-sulfur-baths-tbilisi-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Abanotubani, Tbilisi",
+          "de": "Abanotubani, Tiflis",
+          "fr": "Abanotubani, Tbilissi",
+          "es": "Abanotubani, Tbilisi",
+          "nl": "Abanotubani, Tbilisi",
+          "cs": "Abanotubani, Tbilisi",
+          "pl": "Abanotubani, Tbilisi"
+        },
+        "altText": {
+          "en": "Brick domes and the King Erekle's Bath bathhouse above the Tsavkisistsqali stream in Abanotubani, Tbilisi, Georgia",
+          "de": "Backsteinkuppeln und das Badehaus King Erekle's Bath über dem Bach Tsavkisistsqali in Abanotubani, Tiflis, Georgien",
+          "fr": "Coupoles de brique et le bain King Erekle's Bath au-dessus du ruisseau Tsavkisistsqali à Abanotubani, Tbilissi, Géorgie",
+          "es": "Cúpulas de ladrillo y la casa de baños King Erekle's Bath sobre el arroyo Tsavkisistsqali en Abanotubani, Tbilisi, Georgia",
+          "nl": "Bakstenen koepels en het badhuis King Erekle's Bath boven de beek Tsavkisistsqali in Abanotubani, Tbilisi, Georgië",
+          "cs": "Cihlové kopule a lázně King Erekle's Bath nad potokem Tsavkisistsqali v Abanotubani, Tbilisi, Gruzie",
+          "pl": "Ceglane kopuły i łaźnia King Erekle's Bath nad strumieniem Tsavkisistsqali w Abanotubani, Tbilisi, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/metekhi-church-mtkvari-tbilisi-georgia-1448.webp",
+        "base": "/images/files/metekhi-church-mtkvari-tbilisi-georgia",
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
@@ -2682,6 +2812,15 @@ export const tours = [
           "nl": "Metekhi-kerk, Tbilisi",
           "cs": "Kostel Metechi, Tbilisi",
           "pl": "Kościół Metechi, Tbilisi"
+        },
+        "altText": {
+          "en": "Metekhi Church and the equestrian statue of King Vakhtang Gorgasali on the Metekhi cliff above the Mtkvari River, Tbilisi, Georgia",
+          "de": "Die Metekhi-Kirche und das Reiterstandbild König Vakhtang Gorgasalis auf der Metekhi-Klippe über der Mtkvari, Tiflis, Georgien",
+          "fr": "L'église de Metekhi et la statue équestre du roi Vakhtang Gorgasali sur la falaise de Metekhi au-dessus de la Mtkvari, Tbilissi, Géorgie",
+          "es": "La iglesia de Metekhi y la estatua ecuestre del rey Vakhtang Gorgasali en el acantilado de Metekhi sobre el río Mtkvari, Tbilisi, Georgia",
+          "nl": "De Metekhi-kerk en het ruiterstandbeeld van koning Vakhtang Gorgasali op de Metekhi-klif boven de Mtkvari, Tbilisi, Georgië",
+          "cs": "Kostel Metekhi a jezdecká socha krále Vakhtanga Gorgasaliho na útesu Metekhi nad řekou Mtkvari, Tbilisi, Gruzie",
+          "pl": "Kościół Metekhi i konny pomnik króla Wachtanga Gorgasalego na klifie Metekhi nad rzeką Mtkvari, Tbilisi, Gruzja"
         }
       },
       {
@@ -3193,8 +3332,8 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/highlights-from-tbilisi/tbilisi-old-town-panorama-georgia-1448.webp",
-        "base": "/images/tours/highlights-from-tbilisi/tbilisi-old-town-panorama-georgia",
+        "src": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp",
+        "base": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia",
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
@@ -3206,6 +3345,15 @@ export const tours = [
           "nl": "Old Town panorama, Tbilisi",
           "cs": "Old Town panorama, Tbilisi",
           "pl": "Old Town panorama, Tbilisi"
+        },
+        "altText": {
+          "en": "Tbilisi's Old Town below Narikala Fortress, with a Rike–Narikala cable car cabin above the Metekhi Bridge and the Mtkvari River, Georgia",
+          "de": "Die Altstadt von Tiflis unterhalb der Festung Narikala, mit einer Kabine der Seilbahn Rike–Narikala über der Metekhi-Brücke und dem Fluss Mtkwari, Georgien",
+          "fr": "La vieille ville de Tbilissi sous la forteresse Narikala, avec une cabine du téléphérique Rike–Narikala au-dessus du pont Metekhi et de la rivière Mtkvari, Géorgie",
+          "es": "El casco antiguo de Tiflis bajo la fortaleza de Narikala, con una cabina del teleférico Rike–Narikala sobre el puente Metekhi y el río Mtkvari, Georgia",
+          "nl": "De oude stad van Tbilisi onder de Narikala-vesting, met een cabine van de kabelbaan Rike–Narikala boven de Metekhi-brug en de rivier de Mtkvari, Georgië",
+          "cs": "Staré Město Tbilisi pod pevností Narikala, s kabinou lanovky Rike–Narikala nad mostem Metekhi a řekou Mtkvari, Gruzie",
+          "pl": "Stare Miasto Tbilisi pod twierdzą Narikala, z gondolą kolejki linowej Rike–Narikala nad mostem Metekhi i rzeką Mtkwari, Gruzja"
         }
       },
       {
@@ -3225,8 +3373,8 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/highlights-from-tbilisi/metekhi-cliff-mtkvari-river-tbilisi-georgia-1448.webp",
-        "base": "/images/tours/highlights-from-tbilisi/metekhi-cliff-mtkvari-river-tbilisi-georgia",
+        "src": "/images/files/metekhi-church-mtkvari-tbilisi-georgia-1448.webp",
+        "base": "/images/files/metekhi-church-mtkvari-tbilisi-georgia",
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
@@ -3238,6 +3386,15 @@ export const tours = [
           "nl": "Metekhi-kerk, Tbilisi",
           "cs": "Kostel Metechi, Tbilisi",
           "pl": "Kościół Metechi, Tbilisi"
+        },
+        "altText": {
+          "en": "Metekhi Church and the equestrian statue of King Vakhtang Gorgasali on the Metekhi cliff above the Mtkvari River, Tbilisi, Georgia",
+          "de": "Die Metekhi-Kirche und das Reiterstandbild König Vakhtang Gorgasalis auf der Metekhi-Klippe über der Mtkvari, Tiflis, Georgien",
+          "fr": "L'église de Metekhi et la statue équestre du roi Vakhtang Gorgasali sur la falaise de Metekhi au-dessus de la Mtkvari, Tbilissi, Géorgie",
+          "es": "La iglesia de Metekhi y la estatua ecuestre del rey Vakhtang Gorgasali en el acantilado de Metekhi sobre el río Mtkvari, Tbilisi, Georgia",
+          "nl": "De Metekhi-kerk en het ruiterstandbeeld van koning Vakhtang Gorgasali op de Metekhi-klif boven de Mtkvari, Tbilisi, Georgië",
+          "cs": "Kostel Metekhi a jezdecká socha krále Vakhtanga Gorgasaliho na útesu Metekhi nad řekou Mtkvari, Tbilisi, Gruzie",
+          "pl": "Kościół Metekhi i konny pomnik króla Wachtanga Gorgasalego na klifie Metekhi nad rzeką Mtkvari, Tbilisi, Gruzja"
         }
       },
       {
@@ -3794,8 +3951,8 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/7-day-cultural-kutaisi-tbilisi/metekhi-cliff-tbilisi-georgia/metekhi-cliff-tbilisi-georgia-1448.webp",
-        "base": "/images/tours/7-day-cultural-kutaisi-tbilisi/metekhi-cliff-tbilisi-georgia/metekhi-cliff-tbilisi-georgia",
+        "src": "/images/files/metekhi-church-mtkvari-tbilisi-georgia-1448.webp",
+        "base": "/images/files/metekhi-church-mtkvari-tbilisi-georgia",
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
@@ -3809,13 +3966,13 @@ export const tours = [
           "pl": "Kościół Metechi, Tbilisi"
         },
         "altText": {
-          "en": "Metekhi church on the cliff above the Mtkvari River in Old Tbilisi, Georgia",
-          "de": "Metechi-Kirche auf dem Felsen über dem Fluss Mtkwari in der Altstadt von Tiflis, Georgien",
-          "fr": "Église de Metekhi sur la falaise dominant la rivière Mtkvari dans le vieux Tbilissi, Géorgie",
-          "es": "Iglesia de Metekhi sobre el acantilado del río Mtkvari en el casco antiguo de Tiflis, Georgia",
-          "nl": "Metekhi-kerk op de rots boven de rivier de Mtkvari in de oude stad van Tbilisi, Georgië",
-          "cs": "Kostel Metechi na skále nad řekou Mtkvari ve starém Tbilisi, Gruzie",
-          "pl": "Kościół Metechi na skale nad rzeką Mtkwari na starym mieście w Tbilisi, Gruzja"
+          "en": "Metekhi Church and the equestrian statue of King Vakhtang Gorgasali on the Metekhi cliff above the Mtkvari River, Tbilisi, Georgia",
+          "de": "Die Metekhi-Kirche und das Reiterstandbild König Vakhtang Gorgasalis auf der Metekhi-Klippe über der Mtkvari, Tiflis, Georgien",
+          "fr": "L'église de Metekhi et la statue équestre du roi Vakhtang Gorgasali sur la falaise de Metekhi au-dessus de la Mtkvari, Tbilissi, Géorgie",
+          "es": "La iglesia de Metekhi y la estatua ecuestre del rey Vakhtang Gorgasali en el acantilado de Metekhi sobre el río Mtkvari, Tbilisi, Georgia",
+          "nl": "De Metekhi-kerk en het ruiterstandbeeld van koning Vakhtang Gorgasali op de Metekhi-klif boven de Mtkvari, Tbilisi, Georgië",
+          "cs": "Kostel Metekhi a jezdecká socha krále Vakhtanga Gorgasaliho na útesu Metekhi nad řekou Mtkvari, Tbilisi, Gruzie",
+          "pl": "Kościół Metekhi i konny pomnik króla Wachtanga Gorgasalego na klifie Metekhi nad rzeką Mtkvari, Tbilisi, Gruzja"
         }
       },
       {
@@ -3870,8 +4027,8 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/7-day-cultural-kutaisi-tbilisi/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia-1448.webp",
-        "base": "/images/tours/7-day-cultural-kutaisi-tbilisi/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia",
+        "src": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp",
+        "base": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia",
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
@@ -3885,13 +4042,13 @@ export const tours = [
           "pl": "Stare Miasto i Narikala, Tbilisi"
         },
         "altText": {
-          "en": "View of Old Tbilisi with Narikala Fortress and the aerial cable car, Georgia",
-          "de": "Blick auf die Altstadt von Tiflis mit der Festung Narikala und der Seilbahn, Georgien",
-          "fr": "Vue du vieux Tbilissi avec la forteresse de Narikala et le téléphérique, Géorgie",
-          "es": "Vista del casco antiguo de Tiflis con la fortaleza de Narikala y el teleférico, Georgia",
-          "nl": "Uitzicht op de oude stad van Tbilisi met de Narikala-vesting en de kabelbaan, Georgië",
-          "cs": "Pohled na staré Tbilisi s pevností Narikala a lanovkou, Gruzie",
-          "pl": "Widok na stare Tbilisi z twierdzą Narikala i kolejką linową, Gruzja"
+          "en": "Tbilisi's Old Town below Narikala Fortress, with a Rike–Narikala cable car cabin above the Metekhi Bridge and the Mtkvari River, Georgia",
+          "de": "Die Altstadt von Tiflis unterhalb der Festung Narikala, mit einer Kabine der Seilbahn Rike–Narikala über der Metekhi-Brücke und dem Fluss Mtkwari, Georgien",
+          "fr": "La vieille ville de Tbilissi sous la forteresse Narikala, avec une cabine du téléphérique Rike–Narikala au-dessus du pont Metekhi et de la rivière Mtkvari, Géorgie",
+          "es": "El casco antiguo de Tiflis bajo la fortaleza de Narikala, con una cabina del teleférico Rike–Narikala sobre el puente Metekhi y el río Mtkvari, Georgia",
+          "nl": "De oude stad van Tbilisi onder de Narikala-vesting, met een cabine van de kabelbaan Rike–Narikala boven de Metekhi-brug en de rivier de Mtkvari, Georgië",
+          "cs": "Staré Město Tbilisi pod pevností Narikala, s kabinou lanovky Rike–Narikala nad mostem Metekhi a řekou Mtkvari, Gruzie",
+          "pl": "Stare Miasto Tbilisi pod twierdzą Narikala, z gondolą kolejki linowej Rike–Narikala nad mostem Metekhi i rzeką Mtkwari, Gruzja"
         }
       },
       {
@@ -4128,7 +4285,7 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/metekhi-cliff-tbilisi-georgia/metekhi-cliff-tbilisi-georgia-1448.webp",
+        "contentUrl": "https://www.hikasustravel.com/images/files/metekhi-church-mtkvari-tbilisi-georgia-1448.webp",
         "name": "Metekhi Church, Tbilisi",
         "caption": "Metekhi Church, Tbilisi",
         "creditText": "Hikasus Travel",
@@ -4167,9 +4324,9 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia-1448.webp",
-        "name": "Old Town and Narikala, Tbilisi",
-        "caption": "Old Town and Narikala, Tbilisi",
+        "contentUrl": "https://www.hikasustravel.com/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp",
+        "name": "Tbilisi Old Town",
+        "caption": "Tbilisi Old Town",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -4960,8 +5117,8 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/8-day-culture-nature-wine/metekhi-cliff-tbilisi-georgia/metekhi-cliff-tbilisi-georgia-1448.webp",
-        "base": "/images/tours/8-day-culture-nature-wine/metekhi-cliff-tbilisi-georgia/metekhi-cliff-tbilisi-georgia",
+        "src": "/images/files/metekhi-church-mtkvari-tbilisi-georgia-1448.webp",
+        "base": "/images/files/metekhi-church-mtkvari-tbilisi-georgia",
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
@@ -4975,13 +5132,13 @@ export const tours = [
           "pl": "Kościół Metechi, Tbilisi"
         },
         "altText": {
-          "en": "Metekhi church on the cliff above the Mtkvari River in Old Tbilisi, Georgia",
-          "de": "Metechi-Kirche auf dem Felsen über dem Fluss Mtkwari in der Altstadt von Tiflis, Georgien",
-          "fr": "Église de Metekhi sur la falaise dominant la rivière Mtkvari dans le vieux Tbilissi, Géorgie",
-          "es": "Iglesia de Metekhi sobre el acantilado del río Mtkvari en el casco antiguo de Tiflis, Georgia",
-          "nl": "Metekhi-kerk op de rots boven de rivier de Mtkvari in de oude stad van Tbilisi, Georgië",
-          "cs": "Kostel Metechi na skále nad řekou Mtkvari ve starém Tbilisi, Gruzie",
-          "pl": "Kościół Metechi na skale nad rzeką Mtkwari na starym mieście w Tbilisi, Gruzja"
+          "en": "Metekhi Church and the equestrian statue of King Vakhtang Gorgasali on the Metekhi cliff above the Mtkvari River, Tbilisi, Georgia",
+          "de": "Die Metekhi-Kirche und das Reiterstandbild König Vakhtang Gorgasalis auf der Metekhi-Klippe über der Mtkvari, Tiflis, Georgien",
+          "fr": "L'église de Metekhi et la statue équestre du roi Vakhtang Gorgasali sur la falaise de Metekhi au-dessus de la Mtkvari, Tbilissi, Géorgie",
+          "es": "La iglesia de Metekhi y la estatua ecuestre del rey Vakhtang Gorgasali en el acantilado de Metekhi sobre el río Mtkvari, Tbilisi, Georgia",
+          "nl": "De Metekhi-kerk en het ruiterstandbeeld van koning Vakhtang Gorgasali op de Metekhi-klif boven de Mtkvari, Tbilisi, Georgië",
+          "cs": "Kostel Metekhi a jezdecká socha krále Vakhtanga Gorgasaliho na útesu Metekhi nad řekou Mtkvari, Tbilisi, Gruzie",
+          "pl": "Kościół Metekhi i konny pomnik króla Wachtanga Gorgasalego na klifie Metekhi nad rzeką Mtkvari, Tbilisi, Gruzja"
         }
       },
       {
@@ -5036,8 +5193,8 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/8-day-culture-nature-wine/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia-1448.webp",
-        "base": "/images/tours/8-day-culture-nature-wine/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia",
+        "src": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp",
+        "base": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia",
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
@@ -5051,13 +5208,13 @@ export const tours = [
           "pl": "Stare Miasto i Narikala, Tbilisi"
         },
         "altText": {
-          "en": "View of Old Tbilisi with Narikala Fortress and the aerial cable car, Georgia",
-          "de": "Blick auf die Altstadt von Tiflis mit der Festung Narikala und der Seilbahn, Georgien",
-          "fr": "Vue du vieux Tbilissi avec la forteresse de Narikala et le téléphérique, Géorgie",
-          "es": "Vista del casco antiguo de Tiflis con la fortaleza de Narikala y el teleférico, Georgia",
-          "nl": "Uitzicht op de oude stad van Tbilisi met de Narikala-vesting en de kabelbaan, Georgië",
-          "cs": "Pohled na staré Tbilisi s pevností Narikala a lanovkou, Gruzie",
-          "pl": "Widok na stare Tbilisi z twierdzą Narikala i kolejką linową, Gruzja"
+          "en": "Tbilisi's Old Town below Narikala Fortress, with a Rike–Narikala cable car cabin above the Metekhi Bridge and the Mtkvari River, Georgia",
+          "de": "Die Altstadt von Tiflis unterhalb der Festung Narikala, mit einer Kabine der Seilbahn Rike–Narikala über der Metekhi-Brücke und dem Fluss Mtkwari, Georgien",
+          "fr": "La vieille ville de Tbilissi sous la forteresse Narikala, avec une cabine du téléphérique Rike–Narikala au-dessus du pont Metekhi et de la rivière Mtkvari, Géorgie",
+          "es": "El casco antiguo de Tiflis bajo la fortaleza de Narikala, con una cabina del teleférico Rike–Narikala sobre el puente Metekhi y el río Mtkvari, Georgia",
+          "nl": "De oude stad van Tbilisi onder de Narikala-vesting, met een cabine van de kabelbaan Rike–Narikala boven de Metekhi-brug en de rivier de Mtkvari, Georgië",
+          "cs": "Staré Město Tbilisi pod pevností Narikala, s kabinou lanovky Rike–Narikala nad mostem Metekhi a řekou Mtkvari, Gruzie",
+          "pl": "Stare Miasto Tbilisi pod twierdzą Narikala, z gondolą kolejki linowej Rike–Narikala nad mostem Metekhi i rzeką Mtkwari, Gruzja"
         }
       },
       {
@@ -5395,7 +5552,7 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-culture-nature-wine/metekhi-cliff-tbilisi-georgia/metekhi-cliff-tbilisi-georgia-1448.webp",
+        "contentUrl": "https://www.hikasustravel.com/images/files/metekhi-church-mtkvari-tbilisi-georgia-1448.webp",
         "name": "Metekhi Church, Tbilisi",
         "caption": "Metekhi Church, Tbilisi",
         "creditText": "Hikasus Travel",
@@ -5434,9 +5591,9 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-culture-nature-wine/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia-1448.webp",
-        "name": "Old Town and Narikala, Tbilisi",
-        "caption": "Old Town and Narikala, Tbilisi",
+        "contentUrl": "https://www.hikasustravel.com/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp",
+        "name": "Tbilisi Old Town",
+        "caption": "Tbilisi Old Town",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -6158,8 +6315,8 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/8-day-culture-adventure/metekhi-cliff-mtkvari-river-tbilisi-georgia-1448.webp",
-        "base": "/images/tours/8-day-culture-adventure/metekhi-cliff-mtkvari-river-tbilisi-georgia",
+        "src": "/images/files/metekhi-church-mtkvari-tbilisi-georgia-1448.webp",
+        "base": "/images/files/metekhi-church-mtkvari-tbilisi-georgia",
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
@@ -6171,6 +6328,15 @@ export const tours = [
           "nl": "Metekhi-kerk, Tbilisi",
           "cs": "Kostel Metechi, Tbilisi",
           "pl": "Kościół Metechi, Tbilisi"
+        },
+        "altText": {
+          "en": "Metekhi Church and the equestrian statue of King Vakhtang Gorgasali on the Metekhi cliff above the Mtkvari River, Tbilisi, Georgia",
+          "de": "Die Metekhi-Kirche und das Reiterstandbild König Vakhtang Gorgasalis auf der Metekhi-Klippe über der Mtkvari, Tiflis, Georgien",
+          "fr": "L'église de Metekhi et la statue équestre du roi Vakhtang Gorgasali sur la falaise de Metekhi au-dessus de la Mtkvari, Tbilissi, Géorgie",
+          "es": "La iglesia de Metekhi y la estatua ecuestre del rey Vakhtang Gorgasali en el acantilado de Metekhi sobre el río Mtkvari, Tbilisi, Georgia",
+          "nl": "De Metekhi-kerk en het ruiterstandbeeld van koning Vakhtang Gorgasali op de Metekhi-klif boven de Mtkvari, Tbilisi, Georgië",
+          "cs": "Kostel Metekhi a jezdecká socha krále Vakhtanga Gorgasaliho na útesu Metekhi nad řekou Mtkvari, Tbilisi, Gruzie",
+          "pl": "Kościół Metekhi i konny pomnik króla Wachtanga Gorgasalego na klifie Metekhi nad rzeką Mtkvari, Tbilisi, Gruzja"
         }
       },
       {
@@ -6190,19 +6356,28 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/8-day-culture-adventure/tbilisi-cable-car-old-town-georgia-1023.webp",
-        "base": "/images/tours/8-day-culture-adventure/tbilisi-cable-car-old-town-georgia",
-        "widths": [768, 1023],
-        "width": 1023,
-        "height": 1537,
+        "src": "/images/files/rike-narikala-cable-car-metekhi-bridge-tbilisi-georgia-1448.webp",
+        "base": "/images/files/rike-narikala-cable-car-metekhi-bridge-tbilisi-georgia",
+        "widths": [768, 1200, 1448],
+        "width": 1448,
+        "height": 1086,
         "caption": {
-          "en": "Cable car over Old Tbilisi",
-          "de": "Cable car over Old Tbilisi",
-          "fr": "Cable car over Old Tbilisi",
-          "es": "Cable car over Old Tbilisi",
-          "nl": "Cable car over Old Tbilisi",
-          "cs": "Cable car over Old Tbilisi",
-          "pl": "Cable car over Old Tbilisi"
+          "en": "Rike–Narikala cable car, Tbilisi",
+          "de": "Seilbahn Rike–Narikala, Tiflis",
+          "fr": "Téléphérique Rike–Narikala, Tbilissi",
+          "es": "Teleférico Rike–Narikala, Tbilisi",
+          "nl": "Kabelbaan Rike–Narikala, Tbilisi",
+          "cs": "Lanovka Rike–Narikala, Tbilisi",
+          "pl": "Kolejka linowa Rike–Narikala, Tbilisi"
+        },
+        "altText": {
+          "en": "Two Rike–Narikala cable car cabins on the line above the Metekhi Bridge and the Mtkvari River, with the Old Town and Mtatsminda beyond, Tbilisi, Georgia",
+          "de": "Zwei Kabinen der Seilbahn Rike–Narikala am Seil über der Metekhi-Brücke und dem Mtkvari, dahinter die Altstadt und der Mtatsminda, Tiflis, Georgien",
+          "fr": "Deux cabines du téléphérique Rike–Narikala sur le câble au-dessus du pont Metekhi et de la Mtkvari, avec la vieille ville et le Mtatsminda au loin, Tbilissi, Géorgie",
+          "es": "Dos cabinas del teleférico Rike–Narikala en el cable sobre el puente Metekhi y el río Mtkvari, con el casco antiguo y Mtatsminda al fondo, Tbilisi, Georgia",
+          "nl": "Twee cabines van de kabelbaan Rike–Narikala aan de kabel boven de Metekhi-brug en de Mtkvari, met de oude stad en de Mtatsminda erachter, Tbilisi, Georgië",
+          "cs": "Dvě kabiny lanovky Rike–Narikala na laně nad mostem Metekhi a řekou Mtkvari, v pozadí Staré Město a Mtatsminda, Tbilisi, Gruzie",
+          "pl": "Dwie gondole kolejki linowej Rike–Narikala na linie nad mostem Metekhi i rzeką Mtkvari, w tle Stare Miasto i Mtatsminda, Tbilisi, Gruzja"
         }
       },
       {
@@ -6222,8 +6397,8 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/8-day-culture-adventure/tbilisi-old-town-panorama-georgia-1448.webp",
-        "base": "/images/tours/8-day-culture-adventure/tbilisi-old-town-panorama-georgia",
+        "src": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp",
+        "base": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia",
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
@@ -6235,6 +6410,15 @@ export const tours = [
           "nl": "Old Town panorama, Tbilisi",
           "cs": "Old Town panorama, Tbilisi",
           "pl": "Old Town panorama, Tbilisi"
+        },
+        "altText": {
+          "en": "Tbilisi's Old Town below Narikala Fortress, with a Rike–Narikala cable car cabin above the Metekhi Bridge and the Mtkvari River, Georgia",
+          "de": "Die Altstadt von Tiflis unterhalb der Festung Narikala, mit einer Kabine der Seilbahn Rike–Narikala über der Metekhi-Brücke und dem Fluss Mtkwari, Georgien",
+          "fr": "La vieille ville de Tbilissi sous la forteresse Narikala, avec une cabine du téléphérique Rike–Narikala au-dessus du pont Metekhi et de la rivière Mtkvari, Géorgie",
+          "es": "El casco antiguo de Tiflis bajo la fortaleza de Narikala, con una cabina del teleférico Rike–Narikala sobre el puente Metekhi y el río Mtkvari, Georgia",
+          "nl": "De oude stad van Tbilisi onder de Narikala-vesting, met een cabine van de kabelbaan Rike–Narikala boven de Metekhi-brug en de rivier de Mtkvari, Georgië",
+          "cs": "Staré Město Tbilisi pod pevností Narikala, s kabinou lanovky Rike–Narikala nad mostem Metekhi a řekou Mtkvari, Gruzie",
+          "pl": "Stare Miasto Tbilisi pod twierdzą Narikala, z gondolą kolejki linowej Rike–Narikala nad mostem Metekhi i rzeką Mtkwari, Gruzja"
         }
       },
       {
@@ -7443,8 +7627,8 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/9-day-kutaisi-tbilisi/metekhi-cliff-tbilisi-georgia/metekhi-cliff-tbilisi-georgia-1448.webp",
-        "base": "/images/tours/9-day-kutaisi-tbilisi/metekhi-cliff-tbilisi-georgia/metekhi-cliff-tbilisi-georgia",
+        "src": "/images/files/metekhi-church-mtkvari-tbilisi-georgia-1448.webp",
+        "base": "/images/files/metekhi-church-mtkvari-tbilisi-georgia",
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
@@ -7458,13 +7642,13 @@ export const tours = [
           "pl": "Kościół Metechi, Tbilisi"
         },
         "altText": {
-          "en": "Metekhi church on the cliff above the Mtkvari River in Old Tbilisi, Georgia",
-          "de": "Metechi-Kirche auf dem Felsen über dem Fluss Mtkwari in der Altstadt von Tiflis, Georgien",
-          "fr": "Église de Metekhi sur la falaise dominant la rivière Mtkvari dans le vieux Tbilissi, Géorgie",
-          "es": "Iglesia de Metekhi sobre el acantilado del río Mtkvari en el casco antiguo de Tiflis, Georgia",
-          "nl": "Metekhi-kerk op de rots boven de rivier de Mtkvari in de oude stad van Tbilisi, Georgië",
-          "cs": "Kostel Metechi na skále nad řekou Mtkvari ve starém Tbilisi, Gruzie",
-          "pl": "Kościół Metechi na skale nad rzeką Mtkwari na starym mieście w Tbilisi, Gruzja"
+          "en": "Metekhi Church and the equestrian statue of King Vakhtang Gorgasali on the Metekhi cliff above the Mtkvari River, Tbilisi, Georgia",
+          "de": "Die Metekhi-Kirche und das Reiterstandbild König Vakhtang Gorgasalis auf der Metekhi-Klippe über der Mtkvari, Tiflis, Georgien",
+          "fr": "L'église de Metekhi et la statue équestre du roi Vakhtang Gorgasali sur la falaise de Metekhi au-dessus de la Mtkvari, Tbilissi, Géorgie",
+          "es": "La iglesia de Metekhi y la estatua ecuestre del rey Vakhtang Gorgasali en el acantilado de Metekhi sobre el río Mtkvari, Tbilisi, Georgia",
+          "nl": "De Metekhi-kerk en het ruiterstandbeeld van koning Vakhtang Gorgasali op de Metekhi-klif boven de Mtkvari, Tbilisi, Georgië",
+          "cs": "Kostel Metekhi a jezdecká socha krále Vakhtanga Gorgasaliho na útesu Metekhi nad řekou Mtkvari, Tbilisi, Gruzie",
+          "pl": "Kościół Metekhi i konny pomnik króla Wachtanga Gorgasalego na klifie Metekhi nad rzeką Mtkvari, Tbilisi, Gruzja"
         }
       },
       {
@@ -7519,8 +7703,8 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/9-day-kutaisi-tbilisi/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia-1448.webp",
-        "base": "/images/tours/9-day-kutaisi-tbilisi/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia",
+        "src": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp",
+        "base": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia",
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
@@ -7534,13 +7718,13 @@ export const tours = [
           "pl": "Stare Miasto i Narikala, Tbilisi"
         },
         "altText": {
-          "en": "View of Old Tbilisi with Narikala Fortress and the aerial cable car, Georgia",
-          "de": "Blick auf die Altstadt von Tiflis mit der Festung Narikala und der Seilbahn, Georgien",
-          "fr": "Vue du vieux Tbilissi avec la forteresse de Narikala et le téléphérique, Géorgie",
-          "es": "Vista del casco antiguo de Tiflis con la fortaleza de Narikala y el teleférico, Georgia",
-          "nl": "Uitzicht op de oude stad van Tbilisi met de Narikala-vesting en de kabelbaan, Georgië",
-          "cs": "Pohled na staré Tbilisi s pevností Narikala a lanovkou, Gruzie",
-          "pl": "Widok na stare Tbilisi z twierdzą Narikala i kolejką linową, Gruzja"
+          "en": "Tbilisi's Old Town below Narikala Fortress, with a Rike–Narikala cable car cabin above the Metekhi Bridge and the Mtkvari River, Georgia",
+          "de": "Die Altstadt von Tiflis unterhalb der Festung Narikala, mit einer Kabine der Seilbahn Rike–Narikala über der Metekhi-Brücke und dem Fluss Mtkwari, Georgien",
+          "fr": "La vieille ville de Tbilissi sous la forteresse Narikala, avec une cabine du téléphérique Rike–Narikala au-dessus du pont Metekhi et de la rivière Mtkvari, Géorgie",
+          "es": "El casco antiguo de Tiflis bajo la fortaleza de Narikala, con una cabina del teleférico Rike–Narikala sobre el puente Metekhi y el río Mtkvari, Georgia",
+          "nl": "De oude stad van Tbilisi onder de Narikala-vesting, met een cabine van de kabelbaan Rike–Narikala boven de Metekhi-brug en de rivier de Mtkvari, Georgië",
+          "cs": "Staré Město Tbilisi pod pevností Narikala, s kabinou lanovky Rike–Narikala nad mostem Metekhi a řekou Mtkvari, Gruzie",
+          "pl": "Stare Miasto Tbilisi pod twierdzą Narikala, z gondolą kolejki linowej Rike–Narikala nad mostem Metekhi i rzeką Mtkwari, Gruzja"
         }
       },
       {
@@ -7911,7 +8095,7 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/9-day-kutaisi-tbilisi/metekhi-cliff-tbilisi-georgia/metekhi-cliff-tbilisi-georgia-1448.webp",
+        "contentUrl": "https://www.hikasustravel.com/images/files/metekhi-church-mtkvari-tbilisi-georgia-1448.webp",
         "name": "Metekhi Church, Tbilisi",
         "caption": "Metekhi Church, Tbilisi",
         "creditText": "Hikasus Travel",
@@ -7947,9 +8131,9 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/9-day-kutaisi-tbilisi/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia-1448.webp",
-        "name": "Old Town and Narikala, Tbilisi",
-        "caption": "Old Town and Narikala, Tbilisi",
+        "contentUrl": "https://www.hikasustravel.com/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp",
+        "name": "Tbilisi Old Town",
+        "caption": "Tbilisi Old Town",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -8268,8 +8452,8 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/grand-tour-tbilisi-batumi/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia-1448.webp",
-        "base": "/images/tours/grand-tour-tbilisi-batumi/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia",
+        "src": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp",
+        "base": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia",
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
@@ -8283,13 +8467,13 @@ export const tours = [
           "pl": "Stare Miasto i Narikala, Tbilisi"
         },
         "altText": {
-          "en": "View of Old Tbilisi with Narikala Fortress and the aerial cable car, Georgia",
-          "de": "Blick auf die Altstadt von Tiflis mit der Festung Narikala und der Seilbahn, Georgien",
-          "fr": "Vue du vieux Tbilissi avec la forteresse de Narikala et le téléphérique, Géorgie",
-          "es": "Vista del casco antiguo de Tiflis con la fortaleza de Narikala y el teleférico, Georgia",
-          "nl": "Uitzicht op de oude stad van Tbilisi met de Narikala-vesting en de kabelbaan, Georgië",
-          "cs": "Pohled na staré Tbilisi s pevností Narikala a lanovkou, Gruzie",
-          "pl": "Widok na stare Tbilisi z twierdzą Narikala i kolejką linową, Gruzja"
+          "en": "Tbilisi's Old Town below Narikala Fortress, with a Rike–Narikala cable car cabin above the Metekhi Bridge and the Mtkvari River, Georgia",
+          "de": "Die Altstadt von Tiflis unterhalb der Festung Narikala, mit einer Kabine der Seilbahn Rike–Narikala über der Metekhi-Brücke und dem Fluss Mtkwari, Georgien",
+          "fr": "La vieille ville de Tbilissi sous la forteresse Narikala, avec une cabine du téléphérique Rike–Narikala au-dessus du pont Metekhi et de la rivière Mtkvari, Géorgie",
+          "es": "El casco antiguo de Tiflis bajo la fortaleza de Narikala, con una cabina del teleférico Rike–Narikala sobre el puente Metekhi y el río Mtkvari, Georgia",
+          "nl": "De oude stad van Tbilisi onder de Narikala-vesting, met een cabine van de kabelbaan Rike–Narikala boven de Metekhi-brug en de rivier de Mtkvari, Georgië",
+          "cs": "Staré Město Tbilisi pod pevností Narikala, s kabinou lanovky Rike–Narikala nad mostem Metekhi a řekou Mtkvari, Gruzie",
+          "pl": "Stare Miasto Tbilisi pod twierdzą Narikala, z gondolą kolejki linowej Rike–Narikala nad mostem Metekhi i rzeką Mtkwari, Gruzja"
         }
       },
       {
@@ -8764,9 +8948,9 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia-1448.webp",
-        "name": "Old Town and Narikala, Tbilisi",
-        "caption": "Old Town and Narikala, Tbilisi",
+        "contentUrl": "https://www.hikasustravel.com/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp",
+        "name": "Tbilisi Old Town",
+        "caption": "Tbilisi Old Town",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -9261,19 +9445,19 @@ export const tours = [
     "type": "private",
     "title": "9-Day Georgia Wine & Adventure Tour",
     "seoTitle": "9-Day Georgia Wine & Adventure Tour: Caucasus Mountains",
-    "heroImage": "/images/files/old-town-tbilisi-georgia-1200.webp",
+    "heroImage": "/images/files/metekhi-church-mtkvari-tbilisi-georgia-1200.webp",
     "heroBgClass": "hero--9day-wine-old-town",
     "alt": {
-      "en": "Cliffside houses of Old Tbilisi reflected in the Mtkvari River, Georgia",
-      "de": "Die Felsenhäuser der Altstadt von Tiflis spiegeln sich im Fluss Mtkwari, Georgien",
-      "fr": "Les maisons perchées de la vieille ville de Tbilissi se reflétant dans la Mtkvari, Géorgie",
-      "es": "Las casas sobre el acantilado del casco antiguo de Tiflis reflejadas en el río Mtkvari, Georgia",
-      "nl": "De klifhuizen van de oude stad van Tbilisi weerspiegeld in de Mtkvari, Georgië",
-      "cs": "Domy na útesech tbiliského Starého Města zrcadlící se v řece Mtkvari, Gruzie",
-      "pl": "Domy na klifie tbiliskiej starówki odbite w rzece Mtkwari, Gruzja"
+      "en": "Metekhi Church and the equestrian statue of King Vakhtang Gorgasali on the Metekhi cliff above the Mtkvari River, Tbilisi, Georgia",
+      "de": "Die Metekhi-Kirche und das Reiterstandbild König Vakhtang Gorgasalis auf der Metekhi-Klippe über der Mtkvari, Tiflis, Georgien",
+      "fr": "L'église de Metekhi et la statue équestre du roi Vakhtang Gorgasali sur la falaise de Metekhi au-dessus de la Mtkvari, Tbilissi, Géorgie",
+      "es": "La iglesia de Metekhi y la estatua ecuestre del rey Vakhtang Gorgasali en el acantilado de Metekhi sobre el río Mtkvari, Tbilisi, Georgia",
+      "nl": "De Metekhi-kerk en het ruiterstandbeeld van koning Vakhtang Gorgasali op de Metekhi-klif boven de Mtkvari, Tbilisi, Georgië",
+      "cs": "Kostel Metekhi a jezdecká socha krále Vakhtanga Gorgasaliho na útesu Metekhi nad řekou Mtkvari, Tbilisi, Gruzie",
+      "pl": "Kościół Metekhi i konny pomnik króla Wachtanga Gorgasalego na klifie Metekhi nad rzeką Mtkvari, Tbilisi, Gruzja"
     },
-    "tileImage": "/images/files/old-town-tbilisi-georgia-1200.webp",
-    "listingImage": "/images/files/old-town-tbilisi-georgia-1200.webp",
+    "tileImage": "/images/files/metekhi-church-mtkvari-tbilisi-georgia-1200.webp",
+    "listingImage": "/images/files/metekhi-church-mtkvari-tbilisi-georgia-1200.webp",
     "cardPosition": "center",
     "days": 9,
     "description": "Discover the essence of Georgia on this 9-day tour packed with unforgettable experiences.",
@@ -9411,53 +9595,53 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/tbilisi-cityscape-georgia-1448.webp",
-        "base": "/images/files/tbilisi-cityscape-georgia",
+        "src": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp",
+        "base": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia",
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
         "caption": {
-          "en": "Tbilisi",
-          "de": "Tiflis",
-          "fr": "Tbilissi",
-          "es": "Tiflis",
-          "nl": "Tbilisi",
-          "cs": "Tbilisi",
-          "pl": "Tbilisi"
+          "en": "Tbilisi Old Town",
+          "de": "Altstadt von Tiflis",
+          "fr": "Vieille ville de Tbilissi",
+          "es": "Casco antiguo de Tiflis",
+          "nl": "Oude stad van Tbilisi",
+          "cs": "Staré Město Tbilisi",
+          "pl": "Starówka w Tbilisi"
         },
         "altText": {
-          "en": "Panoramic view of Tbilisi with Narikala Fortress, the Mtkvari River and cable car, capital of Georgia",
-          "de": "Panoramablick auf Tiflis mit der Festung Narikala, dem Fluss Mtkwari und der Seilbahn, Hauptstadt Georgiens",
-          "fr": "Vue panoramique de Tbilissi avec la forteresse de Narikala, la rivière Mtkvari et le téléphérique, capitale de la Géorgie",
-          "es": "Vista panorámica de Tiflis con la fortaleza de Narikala, el río Mtkvari y el teleférico, capital de Georgia",
-          "nl": "Panorama van Tbilisi met de Narikala-vesting, de rivier de Mtkvari en de kabelbaan, hoofdstad van Georgië",
-          "cs": "Panorama Tbilisi s pevností Narikala, řekou Mtkvari a lanovkou, hlavní město Gruzie",
-          "pl": "Panorama Tbilisi z twierdzą Narikala, rzeką Mtkwari i kolejką linową, stolica Gruzji"
+          "en": "Tbilisi's Old Town below Narikala Fortress, with a Rike–Narikala cable car cabin above the Metekhi Bridge and the Mtkvari River, Georgia",
+          "de": "Die Altstadt von Tiflis unterhalb der Festung Narikala, mit einer Kabine der Seilbahn Rike–Narikala über der Metekhi-Brücke und dem Fluss Mtkwari, Georgien",
+          "fr": "La vieille ville de Tbilissi sous la forteresse Narikala, avec une cabine du téléphérique Rike–Narikala au-dessus du pont Metekhi et de la rivière Mtkvari, Géorgie",
+          "es": "El casco antiguo de Tiflis bajo la fortaleza de Narikala, con una cabina del teleférico Rike–Narikala sobre el puente Metekhi y el río Mtkvari, Georgia",
+          "nl": "De oude stad van Tbilisi onder de Narikala-vesting, met een cabine van de kabelbaan Rike–Narikala boven de Metekhi-brug en de rivier de Mtkvari, Georgië",
+          "cs": "Staré Město Tbilisi pod pevností Narikala, s kabinou lanovky Rike–Narikala nad mostem Metekhi a řekou Mtkvari, Gruzie",
+          "pl": "Stare Miasto Tbilisi pod twierdzą Narikala, z gondolą kolejki linowej Rike–Narikala nad mostem Metekhi i rzeką Mtkwari, Gruzja"
         }
       },
       {
-        "src": "/images/files/old-town-tbilisi-georgia-1448.webp",
-        "base": "/images/files/old-town-tbilisi-georgia",
+        "src": "/images/files/metekhi-church-mtkvari-tbilisi-georgia-1448.webp",
+        "base": "/images/files/metekhi-church-mtkvari-tbilisi-georgia",
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
         "caption": {
-          "en": "Old Town, Tbilisi",
-          "de": "Altstadt, Tiflis",
-          "fr": "Vieille ville, Tbilissi",
-          "es": "Casco antiguo, Tiflis",
-          "nl": "Oude stad, Tbilisi",
-          "cs": "Staré Město, Tbilisi",
-          "pl": "Starówka, Tbilisi"
+          "en": "Metekhi Church, Tbilisi",
+          "de": "Metekhi-Kirche, Tiflis",
+          "fr": "L'église de Metekhi, Tbilissi",
+          "es": "Iglesia de Metekhi, Tbilisi",
+          "nl": "Metekhi-kerk, Tbilisi",
+          "cs": "Kostel Metekhi, Tbilisi",
+          "pl": "Kościół Metekhi, Tbilisi"
         },
         "altText": {
-          "en": "Cliffside houses of Old Tbilisi reflected in the Mtkvari River, Georgia",
-          "de": "Die Felsenhäuser der Altstadt von Tiflis spiegeln sich im Fluss Mtkwari, Georgien",
-          "fr": "Les maisons perchées de la vieille ville de Tbilissi se reflétant dans la Mtkvari, Géorgie",
-          "es": "Las casas sobre el acantilado del casco antiguo de Tiflis reflejadas en el río Mtkvari, Georgia",
-          "nl": "De klifhuizen van de oude stad van Tbilisi weerspiegeld in de Mtkvari, Georgië",
-          "cs": "Domy na útesech tbiliského Starého Města zrcadlící se v řece Mtkvari, Gruzie",
-          "pl": "Domy na klifie tbiliskiej starówki odbite w rzece Mtkwari, Gruzja"
+          "en": "Metekhi Church and the equestrian statue of King Vakhtang Gorgasali on the Metekhi cliff above the Mtkvari River, Tbilisi, Georgia",
+          "de": "Die Metekhi-Kirche und das Reiterstandbild König Vakhtang Gorgasalis auf der Metekhi-Klippe über der Mtkvari, Tiflis, Georgien",
+          "fr": "L'église de Metekhi et la statue équestre du roi Vakhtang Gorgasali sur la falaise de Metekhi au-dessus de la Mtkvari, Tbilissi, Géorgie",
+          "es": "La iglesia de Metekhi y la estatua ecuestre del rey Vakhtang Gorgasali en el acantilado de Metekhi sobre el río Mtkvari, Tbilisi, Georgia",
+          "nl": "De Metekhi-kerk en het ruiterstandbeeld van koning Vakhtang Gorgasali op de Metekhi-klif boven de Mtkvari, Tbilisi, Georgië",
+          "cs": "Kostel Metekhi a jezdecká socha krále Vakhtanga Gorgasaliho na útesu Metekhi nad řekou Mtkvari, Tbilisi, Gruzie",
+          "pl": "Kościół Metekhi i konny pomnik króla Wachtanga Gorgasalego na klifie Metekhi nad rzeką Mtkvari, Tbilisi, Gruzja"
         }
       },
       {
@@ -9834,10 +10018,10 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "@id": "https://www.hikasustravel.com/images/files/tbilisi-cityscape-georgia-1200.webp#image",
-        "contentUrl": "https://www.hikasustravel.com/images/files/tbilisi-cityscape-georgia-1200.webp",
-        "name": "Tbilisi",
-        "caption": "Tbilisi",
+        "@id": "https://www.hikasustravel.com/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp",
+        "name": "Tbilisi Old Town",
+        "caption": "Tbilisi Old Town",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -9851,10 +10035,10 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "@id": "https://www.hikasustravel.com/images/files/old-town-tbilisi-georgia-1200.webp#image",
-        "contentUrl": "https://www.hikasustravel.com/images/files/old-town-tbilisi-georgia-1200.webp",
-        "name": "Old Town, Tbilisi",
-        "caption": "Old Town, Tbilisi",
+        "@id": "https://www.hikasustravel.com/images/files/metekhi-church-mtkvari-tbilisi-georgia-1448.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/metekhi-church-mtkvari-tbilisi-georgia-1448.webp",
+        "name": "Metekhi Church, Tbilisi",
+        "caption": "Metekhi Church, Tbilisi",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -10461,8 +10645,8 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/georgia-10-days-celebration/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia-1448.webp",
-        "base": "/images/tours/georgia-10-days-celebration/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia",
+        "src": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp",
+        "base": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia",
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
@@ -10476,13 +10660,13 @@ export const tours = [
           "pl": "Stare Miasto i Narikala, Tbilisi"
         },
         "altText": {
-          "en": "View of Old Tbilisi with Narikala Fortress and the aerial cable car, Georgia",
-          "de": "Blick auf die Altstadt von Tiflis mit der Festung Narikala und der Seilbahn, Georgien",
-          "fr": "Vue du vieux Tbilissi avec la forteresse de Narikala et le téléphérique, Géorgie",
-          "es": "Vista del casco antiguo de Tiflis con la fortaleza de Narikala y el teleférico, Georgia",
-          "nl": "Uitzicht op de oude stad van Tbilisi met de Narikala-vesting en de kabelbaan, Georgië",
-          "cs": "Pohled na staré Tbilisi s pevností Narikala a lanovkou, Gruzie",
-          "pl": "Widok na stare Tbilisi z twierdzą Narikala i kolejką linową, Gruzja"
+          "en": "Tbilisi's Old Town below Narikala Fortress, with a Rike–Narikala cable car cabin above the Metekhi Bridge and the Mtkvari River, Georgia",
+          "de": "Die Altstadt von Tiflis unterhalb der Festung Narikala, mit einer Kabine der Seilbahn Rike–Narikala über der Metekhi-Brücke und dem Fluss Mtkwari, Georgien",
+          "fr": "La vieille ville de Tbilissi sous la forteresse Narikala, avec une cabine du téléphérique Rike–Narikala au-dessus du pont Metekhi et de la rivière Mtkvari, Géorgie",
+          "es": "El casco antiguo de Tiflis bajo la fortaleza de Narikala, con una cabina del teleférico Rike–Narikala sobre el puente Metekhi y el río Mtkvari, Georgia",
+          "nl": "De oude stad van Tbilisi onder de Narikala-vesting, met een cabine van de kabelbaan Rike–Narikala boven de Metekhi-brug en de rivier de Mtkvari, Georgië",
+          "cs": "Staré Město Tbilisi pod pevností Narikala, s kabinou lanovky Rike–Narikala nad mostem Metekhi a řekou Mtkvari, Gruzie",
+          "pl": "Stare Miasto Tbilisi pod twierdzą Narikala, z gondolą kolejki linowej Rike–Narikala nad mostem Metekhi i rzeką Mtkwari, Gruzja"
         }
       },
       {
@@ -10959,9 +11143,9 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-10-days-celebration/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia-1448.webp",
-        "name": "Old Town and Narikala, Tbilisi",
-        "caption": "Old Town and Narikala, Tbilisi",
+        "contentUrl": "https://www.hikasustravel.com/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp",
+        "name": "Tbilisi Old Town",
+        "caption": "Tbilisi Old Town",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -11853,8 +12037,8 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/georgia-wonders-11-day/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia-1448.webp",
-        "base": "/images/tours/georgia-wonders-11-day/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia",
+        "src": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp",
+        "base": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia",
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
@@ -11868,13 +12052,13 @@ export const tours = [
           "pl": "Stare Miasto i Narikala, Tbilisi"
         },
         "altText": {
-          "en": "View of Old Tbilisi with Narikala Fortress and the aerial cable car, Georgia",
-          "de": "Blick auf die Altstadt von Tiflis mit der Festung Narikala und der Seilbahn, Georgien",
-          "fr": "Vue du vieux Tbilissi avec la forteresse de Narikala et le téléphérique, Géorgie",
-          "es": "Vista del casco antiguo de Tiflis con la fortaleza de Narikala y el teleférico, Georgia",
-          "nl": "Uitzicht op de oude stad van Tbilisi met de Narikala-vesting en de kabelbaan, Georgië",
-          "cs": "Pohled na staré Tbilisi s pevností Narikala a lanovkou, Gruzie",
-          "pl": "Widok na stare Tbilisi z twierdzą Narikala i kolejką linową, Gruzja"
+          "en": "Tbilisi's Old Town below Narikala Fortress, with a Rike–Narikala cable car cabin above the Metekhi Bridge and the Mtkvari River, Georgia",
+          "de": "Die Altstadt von Tiflis unterhalb der Festung Narikala, mit einer Kabine der Seilbahn Rike–Narikala über der Metekhi-Brücke und dem Fluss Mtkwari, Georgien",
+          "fr": "La vieille ville de Tbilissi sous la forteresse Narikala, avec une cabine du téléphérique Rike–Narikala au-dessus du pont Metekhi et de la rivière Mtkvari, Géorgie",
+          "es": "El casco antiguo de Tiflis bajo la fortaleza de Narikala, con una cabina del teleférico Rike–Narikala sobre el puente Metekhi y el río Mtkvari, Georgia",
+          "nl": "De oude stad van Tbilisi onder de Narikala-vesting, met een cabine van de kabelbaan Rike–Narikala boven de Metekhi-brug en de rivier de Mtkvari, Georgië",
+          "cs": "Staré Město Tbilisi pod pevností Narikala, s kabinou lanovky Rike–Narikala nad mostem Metekhi a řekou Mtkvari, Gruzie",
+          "pl": "Stare Miasto Tbilisi pod twierdzą Narikala, z gondolą kolejki linowej Rike–Narikala nad mostem Metekhi i rzeką Mtkwari, Gruzja"
         }
       },
       {
@@ -12264,9 +12448,9 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-wonders-11-day/old-town-narikala-tbilisi-georgia/old-town-narikala-tbilisi-georgia-1448.webp",
-        "name": "Old Town and Narikala, Tbilisi",
-        "caption": "Old Town and Narikala, Tbilisi",
+        "contentUrl": "https://www.hikasustravel.com/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp",
+        "name": "Tbilisi Old Town",
+        "caption": "Tbilisi Old Town",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -13206,28 +13390,28 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/tbilisi-cityscape-georgia-1448.webp",
-        "base": "/images/files/tbilisi-cityscape-georgia",
+        "src": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp",
+        "base": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia",
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
         "caption": {
-          "en": "Tbilisi",
-          "de": "Tiflis",
-          "fr": "Tbilissi",
-          "es": "Tiflis",
-          "nl": "Tbilisi",
-          "cs": "Tbilisi",
-          "pl": "Tbilisi"
+          "en": "Tbilisi Old Town",
+          "de": "Altstadt von Tiflis",
+          "fr": "Vieille ville de Tbilissi",
+          "es": "Casco antiguo de Tiflis",
+          "nl": "Oude stad van Tbilisi",
+          "cs": "Staré Město Tbilisi",
+          "pl": "Starówka w Tbilisi"
         },
         "altText": {
-          "en": "Panoramic view of Tbilisi with Narikala Fortress, the Mtkvari River and cable car, capital of Georgia",
-          "de": "Panoramablick auf Tiflis mit der Festung Narikala, dem Fluss Mtkwari und der Seilbahn, Hauptstadt Georgiens",
-          "fr": "Vue panoramique de Tbilissi avec la forteresse de Narikala, la rivière Mtkvari et le téléphérique, capitale de la Géorgie",
-          "es": "Vista panorámica de Tiflis con la fortaleza de Narikala, el río Mtkvari y el teleférico, capital de Georgia",
-          "nl": "Panorama van Tbilisi met de Narikala-vesting, de rivier de Mtkvari en de kabelbaan, hoofdstad van Georgië",
-          "cs": "Panorama Tbilisi s pevností Narikala, řekou Mtkvari a lanovkou, hlavní město Gruzie",
-          "pl": "Panorama Tbilisi z twierdzą Narikala, rzeką Mtkwari i kolejką linową, stolica Gruzji"
+          "en": "Tbilisi's Old Town below Narikala Fortress, with a Rike–Narikala cable car cabin above the Metekhi Bridge and the Mtkvari River, Georgia",
+          "de": "Die Altstadt von Tiflis unterhalb der Festung Narikala, mit einer Kabine der Seilbahn Rike–Narikala über der Metekhi-Brücke und dem Fluss Mtkwari, Georgien",
+          "fr": "La vieille ville de Tbilissi sous la forteresse Narikala, avec une cabine du téléphérique Rike–Narikala au-dessus du pont Metekhi et de la rivière Mtkvari, Géorgie",
+          "es": "El casco antiguo de Tiflis bajo la fortaleza de Narikala, con una cabina del teleférico Rike–Narikala sobre el puente Metekhi y el río Mtkvari, Georgia",
+          "nl": "De oude stad van Tbilisi onder de Narikala-vesting, met een cabine van de kabelbaan Rike–Narikala boven de Metekhi-brug en de rivier de Mtkvari, Georgië",
+          "cs": "Staré Město Tbilisi pod pevností Narikala, s kabinou lanovky Rike–Narikala nad mostem Metekhi a řekou Mtkvari, Gruzie",
+          "pl": "Stare Miasto Tbilisi pod twierdzą Narikala, z gondolą kolejki linowej Rike–Narikala nad mostem Metekhi i rzeką Mtkwari, Gruzja"
         }
       },
       {
@@ -13728,10 +13912,10 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "@id": "https://www.hikasustravel.com/images/files/tbilisi-cityscape-georgia-1200.webp#image",
-        "contentUrl": "https://www.hikasustravel.com/images/files/tbilisi-cityscape-georgia-1200.webp",
-        "name": "Tbilisi",
-        "caption": "Tbilisi",
+        "@id": "https://www.hikasustravel.com/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp",
+        "name": "Tbilisi Old Town",
+        "caption": "Tbilisi Old Town",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -14699,8 +14883,8 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/old-tbilisi-mtkvari-river-georgia-1448.webp",
-        "base": "/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/old-tbilisi-mtkvari-river-georgia",
+        "src": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp",
+        "base": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia",
         "widths": [768, 1200, 1448],
         "fallbackWidth": 1200,
         "width": 1448,
@@ -14715,13 +14899,13 @@ export const tours = [
           "pl": "Stare Tbilisi i Mtkwari"
         },
         "altText": {
-          "en": "View across the Mtkvari River to Narikala Fortress and Old Tbilisi, Georgia",
-          "de": "Blick über den Kura-Fluss zur Narikala-Festung und Alt-Tiflis, Georgien",
-          "fr": "Vue sur la Koura vers la forteresse de Narikala et le vieux Tbilissi, Géorgie",
-          "es": "Vista sobre el río Mtkvari hacia la fortaleza de Narikala y el casco antiguo de Tiflis, Georgia",
-          "nl": "Uitzicht over de Mtkvari naar de Narikala-vesting en Oud-Tbilisi, Georgië",
-          "cs": "Pohled přes řeku Mtkvari k pevnosti Narikala a Starému Tbilisi, Gruzie",
-          "pl": "Widok przez rzekę Mtkwari na twierdzę Narikala i Stare Tbilisi, Gruzja"
+          "en": "Tbilisi's Old Town below Narikala Fortress, with a Rike–Narikala cable car cabin above the Metekhi Bridge and the Mtkvari River, Georgia",
+          "de": "Die Altstadt von Tiflis unterhalb der Festung Narikala, mit einer Kabine der Seilbahn Rike–Narikala über der Metekhi-Brücke und dem Fluss Mtkwari, Georgien",
+          "fr": "La vieille ville de Tbilissi sous la forteresse Narikala, avec une cabine du téléphérique Rike–Narikala au-dessus du pont Metekhi et de la rivière Mtkvari, Géorgie",
+          "es": "El casco antiguo de Tiflis bajo la fortaleza de Narikala, con una cabina del teleférico Rike–Narikala sobre el puente Metekhi y el río Mtkvari, Georgia",
+          "nl": "De oude stad van Tbilisi onder de Narikala-vesting, met een cabine van de kabelbaan Rike–Narikala boven de Metekhi-brug en de rivier de Mtkvari, Georgië",
+          "cs": "Staré Město Tbilisi pod pevností Narikala, s kabinou lanovky Rike–Narikala nad mostem Metekhi a řekou Mtkvari, Gruzie",
+          "pl": "Stare Miasto Tbilisi pod twierdzą Narikala, z gondolą kolejki linowej Rike–Narikala nad mostem Metekhi i rzeką Mtkwari, Gruzja"
         }
       },
       {
@@ -15201,11 +15385,11 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/old-tbilisi-mtkvari-river-georgia-1448.webp",
+        "contentUrl": "https://www.hikasustravel.com/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp",
         "width": 1448,
         "height": 1086,
-        "caption": "Old Tbilisi & Mtkvari River",
-        "description": "View across the Mtkvari River to Narikala Fortress and Old Tbilisi, Georgia",
+        "caption": "Tbilisi Old Town",
+        "description": "Tbilisi's Old Town below Narikala Fortress, with a Rike–Narikala cable car cabin above the Metekhi Bridge and the Mtkvari River, Georgia",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -15693,6 +15877,32 @@ export const tours = [
           "nl": "Oude muren van de Narikala-vesting boven de oude stad van Tbilisi, Georgië",
           "cs": "Starobylé hradby pevnosti Narikala nad starým městem Tbilisi, Gruzie",
           "pl": "Starożytne mury twierdzy Narikala nad starówką Tbilisi, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp",
+        "base": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia",
+        "widths": [768, 1200, 1448],
+        "fallbackWidth": 1200,
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Tbilisi Old Town",
+          "de": "Altstadt von Tiflis",
+          "fr": "Vieille ville de Tbilissi",
+          "es": "Casco antiguo de Tiflis",
+          "nl": "Oude stad van Tbilisi",
+          "cs": "Staré Město Tbilisi",
+          "pl": "Starówka w Tbilisi"
+        },
+        "altText": {
+          "en": "Tbilisi's Old Town below Narikala Fortress, with a Rike–Narikala cable car cabin above the Metekhi Bridge and the Mtkvari River, Georgia",
+          "de": "Die Altstadt von Tiflis unterhalb der Festung Narikala, mit einer Kabine der Seilbahn Rike–Narikala über der Metekhi-Brücke und dem Fluss Mtkwari, Georgien",
+          "fr": "La vieille ville de Tbilissi sous la forteresse Narikala, avec une cabine du téléphérique Rike–Narikala au-dessus du pont Metekhi et de la rivière Mtkvari, Géorgie",
+          "es": "El casco antiguo de Tiflis bajo la fortaleza de Narikala, con una cabina del teleférico Rike–Narikala sobre el puente Metekhi y el río Mtkvari, Georgia",
+          "nl": "De oude stad van Tbilisi onder de Narikala-vesting, met een cabine van de kabelbaan Rike–Narikala boven de Metekhi-brug en de rivier de Mtkvari, Georgië",
+          "cs": "Staré Město Tbilisi pod pevností Narikala, s kabinou lanovky Rike–Narikala nad mostem Metekhi a řekou Mtkvari, Gruzie",
+          "pl": "Stare Miasto Tbilisi pod twierdzą Narikala, z gondolą kolejki linowej Rike–Narikala nad mostem Metekhi i rzeką Mtkwari, Gruzja"
         }
       },
       {
@@ -16273,6 +16483,27 @@ export const tours = [
         "height": 1086,
         "caption": "Narikala Fortress, Tbilisi",
         "description": "Ancient Narikala Fortress walls above the Old Town of Tbilisi, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Tbilisi, Georgia"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp",
+        "width": 1448,
+        "height": 1086,
+        "caption": "Tbilisi Old Town",
+        "description": "Tbilisi's Old Town below Narikala Fortress, with a Rike–Narikala cable car cabin above the Metekhi Bridge and the Mtkvari River, Georgia",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -17296,6 +17527,32 @@ export const tours = [
         }
       },
       {
+        "src": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp",
+        "base": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia",
+        "widths": [768, 1200, 1448],
+        "fallbackWidth": 1200,
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Tbilisi Old Town",
+          "de": "Altstadt von Tiflis",
+          "fr": "Vieille ville de Tbilissi",
+          "es": "Casco antiguo de Tiflis",
+          "nl": "Oude stad van Tbilisi",
+          "cs": "Staré Město Tbilisi",
+          "pl": "Starówka w Tbilisi"
+        },
+        "altText": {
+          "en": "Tbilisi's Old Town below Narikala Fortress, with a Rike–Narikala cable car cabin above the Metekhi Bridge and the Mtkvari River, Georgia",
+          "de": "Die Altstadt von Tiflis unterhalb der Festung Narikala, mit einer Kabine der Seilbahn Rike–Narikala über der Metekhi-Brücke und dem Fluss Mtkwari, Georgien",
+          "fr": "La vieille ville de Tbilissi sous la forteresse Narikala, avec une cabine du téléphérique Rike–Narikala au-dessus du pont Metekhi et de la rivière Mtkvari, Géorgie",
+          "es": "El casco antiguo de Tiflis bajo la fortaleza de Narikala, con una cabina del teleférico Rike–Narikala sobre el puente Metekhi y el río Mtkvari, Georgia",
+          "nl": "De oude stad van Tbilisi onder de Narikala-vesting, met een cabine van de kabelbaan Rike–Narikala boven de Metekhi-brug en de rivier de Mtkvari, Georgië",
+          "cs": "Staré Město Tbilisi pod pevností Narikala, s kabinou lanovky Rike–Narikala nad mostem Metekhi a řekou Mtkvari, Gruzie",
+          "pl": "Stare Miasto Tbilisi pod twierdzą Narikala, z gondolą kolejki linowej Rike–Narikala nad mostem Metekhi i rzeką Mtkwari, Gruzja"
+        }
+      },
+      {
         "src": "/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/holy-trinity-cathedral-tbilisi-georgia-1672.webp",
         "base": "/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/holy-trinity-cathedral-tbilisi-georgia",
         "widths": [768, 1200, 1600, 1672],
@@ -17770,6 +18027,27 @@ export const tours = [
         "height": 1086,
         "caption": "Narikala Fortress, Tbilisi",
         "description": "Ancient Narikala Fortress walls above the Old Town of Tbilisi, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Tbilisi, Georgia"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp",
+        "width": 1448,
+        "height": 1086,
+        "caption": "Tbilisi Old Town",
+        "description": "Tbilisi's Old Town below Narikala Fortress, with a Rike–Narikala cable car cabin above the Metekhi Bridge and the Mtkvari River, Georgia",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -18610,9 +18888,9 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/tbilisi-old-town-narikala-mtkvari-georgia-1448.webp",
-        "base": "/images/files/tbilisi-old-town-narikala-mtkvari-georgia",
-        "widths": [768,1200,1448],
+        "src": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp",
+        "base": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia",
+        "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
         "caption": {
@@ -18625,13 +18903,13 @@ export const tours = [
           "pl": "Starówka w Tbilisi"
         },
         "altText": {
-          "en": "Tbilisi Old Town on a green hillside above the Mtkvari river, with Narikala Fortress, the brick Saint Nicholas church and a cable car above the rooftops, Georgia",
-          "de": "Die Altstadt von Tiflis an einem grünen Hang über dem Fluss Mtkwari, mit der Festung Narikala, der Backsteinkirche St. Nikolaus und einer Seilbahn über den Dächern, Georgien",
-          "fr": "La vieille ville de Tbilissi sur un versant verdoyant au-dessus de la Mtkvari, avec la forteresse de Narikala, l’église en brique Saint-Nicolas et un téléphérique au-dessus des toits, Géorgie",
-          "es": "El casco antiguo de Tiflis en una ladera verde sobre el río Mtkvari, con la fortaleza de Narikala, la iglesia de ladrillo de San Nicolás y un teleférico sobre los tejados, Georgia",
-          "nl": "De oude stad van Tbilisi op een groene helling boven de rivier de Mtkvari, met de Narikala-vesting, de bakstenen Sint-Nicolaaskerk en een kabelbaan boven de daken, Georgië",
-          "cs": "Tbiliské Staré Město na zeleném svahu nad řekou Mtkvari, s pevností Narikala, cihlovým kostelem svatého Mikuláše a lanovkou nad střechami, Gruzie",
-          "pl": "Tbiliska starówka na zielonym zboczu nad rzeką Mtkwari, z twierdzą Narikala, ceglaną cerkwią św. Mikołaja i kolejką linową nad dachami, Gruzja"
+          "en": "Tbilisi's Old Town below Narikala Fortress, with a Rike–Narikala cable car cabin above the Metekhi Bridge and the Mtkvari River, Georgia",
+          "de": "Die Altstadt von Tiflis unterhalb der Festung Narikala, mit einer Kabine der Seilbahn Rike–Narikala über der Metekhi-Brücke und dem Fluss Mtkwari, Georgien",
+          "fr": "La vieille ville de Tbilissi sous la forteresse Narikala, avec une cabine du téléphérique Rike–Narikala au-dessus du pont Metekhi et de la rivière Mtkvari, Géorgie",
+          "es": "El casco antiguo de Tiflis bajo la fortaleza de Narikala, con una cabina del teleférico Rike–Narikala sobre el puente Metekhi y el río Mtkvari, Georgia",
+          "nl": "De oude stad van Tbilisi onder de Narikala-vesting, met een cabine van de kabelbaan Rike–Narikala boven de Metekhi-brug en de rivier de Mtkvari, Georgië",
+          "cs": "Staré Město Tbilisi pod pevností Narikala, s kabinou lanovky Rike–Narikala nad mostem Metekhi a řekou Mtkvari, Gruzie",
+          "pl": "Stare Miasto Tbilisi pod twierdzą Narikala, z gondolą kolejki linowej Rike–Narikala nad mostem Metekhi i rzeką Mtkwari, Gruzja"
         }
       },
       {
@@ -20423,9 +20701,9 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/tbilisi-old-town-narikala-mtkvari-georgia-1448.webp",
-        "base": "/images/files/tbilisi-old-town-narikala-mtkvari-georgia",
-        "widths": [768,1200,1448],
+        "src": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp",
+        "base": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia",
+        "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
         "caption": {
@@ -20438,13 +20716,13 @@ export const tours = [
           "pl": "Starówka w Tbilisi"
         },
         "altText": {
-          "en": "Tbilisi Old Town on a green hillside above the Mtkvari river, with Narikala Fortress, the brick Saint Nicholas church and a cable car above the rooftops, Georgia",
-          "de": "Die Altstadt von Tiflis an einem grünen Hang über dem Fluss Mtkwari, mit der Festung Narikala, der Backsteinkirche St. Nikolaus und einer Seilbahn über den Dächern, Georgien",
-          "fr": "La vieille ville de Tbilissi sur un versant verdoyant au-dessus de la Mtkvari, avec la forteresse de Narikala, l'église en brique Saint-Nicolas et un téléphérique au-dessus des toits, Géorgie",
-          "es": "El casco antiguo de Tiflis en una ladera verde sobre el río Mtkvari, con la fortaleza de Narikala, la iglesia de ladrillo de San Nicolás y un teleférico sobre los tejados, Georgia",
-          "nl": "De oude stad van Tbilisi op een groene helling boven de rivier de Mtkvari, met de Narikala-vesting, de bakstenen Sint-Nicolaaskerk en een kabelbaan boven de daken, Georgië",
-          "cs": "Tbiliské Staré Město na zeleném svahu nad řekou Mtkvari, s pevností Narikala, cihlovým kostelem svatého Mikuláše a lanovkou nad střechami, Gruzie",
-          "pl": "Tbiliska starówka na zielonym zboczu nad rzeką Mtkwari, z twierdzą Narikala, ceglaną cerkwią św. Mikołaja i kolejką linową nad dachami, Gruzja"
+          "en": "Tbilisi's Old Town below Narikala Fortress, with a Rike–Narikala cable car cabin above the Metekhi Bridge and the Mtkvari River, Georgia",
+          "de": "Die Altstadt von Tiflis unterhalb der Festung Narikala, mit einer Kabine der Seilbahn Rike–Narikala über der Metekhi-Brücke und dem Fluss Mtkwari, Georgien",
+          "fr": "La vieille ville de Tbilissi sous la forteresse Narikala, avec une cabine du téléphérique Rike–Narikala au-dessus du pont Metekhi et de la rivière Mtkvari, Géorgie",
+          "es": "El casco antiguo de Tiflis bajo la fortaleza de Narikala, con una cabina del teleférico Rike–Narikala sobre el puente Metekhi y el río Mtkvari, Georgia",
+          "nl": "De oude stad van Tbilisi onder de Narikala-vesting, met een cabine van de kabelbaan Rike–Narikala boven de Metekhi-brug en de rivier de Mtkvari, Georgië",
+          "cs": "Staré Město Tbilisi pod pevností Narikala, s kabinou lanovky Rike–Narikala nad mostem Metekhi a řekou Mtkvari, Gruzie",
+          "pl": "Stare Miasto Tbilisi pod twierdzą Narikala, z gondolą kolejki linowej Rike–Narikala nad mostem Metekhi i rzeką Mtkwari, Gruzja"
         }
       },
       {

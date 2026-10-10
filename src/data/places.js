@@ -3804,8 +3804,8 @@ export const cities = [
     // `background-position: center center`; the shared .coverme::after overlay
     // (rgba(0,0,0,0.35)) provides the readable text layer for the centre-anchored H1.
     // The previous family tbilisi-old-town-narikala-mtkvari-georgia-* is LEFT ON
-    // DISK — still this entry's `thingsToDo.image` (the Things-to-Do page hero),
-    // DestinationHubs.jsx's hub hero and other consumers, none of which change here.
+    // DISK — DestinationHubs.jsx's hub hero, DestinationsPage and the airport guide
+    // still use it (the Things-to-Do hero below moved to this family on 2026-10-10).
     // The Cities hub card reads `image`, so the card cover follows this hero (its
     // files-thumb/ twin for the 1448 rung ships with it). Same frame is reused as
     // the "view" figure on /georgia/tbilisi/metekhi-church (processed once).
@@ -3850,7 +3850,42 @@ export const cities = [
       },
     },
     thingsToDo: {
-      seoKey: 'thingsToDoTbilisi', contentKey: 'thingsToDoTbilisi', image: '/images/files/tbilisi-old-town-narikala-mtkvari-georgia-1200.webp',
+      seoKey: 'thingsToDoTbilisi', contentKey: 'thingsToDoTbilisi',
+      // Hero: the owner's own Old Town frame (sitewide owner-photo audit 2026-10-10) — the
+      // SAME canonical asset family as the city hero above, served through the same
+      // .hero--tbilisi ladder; processed once, reused here. Replaces the AI-rendered
+      // tbilisi-old-town-narikala-mtkvari-georgia panorama (that family stays on disk:
+      // DestinationHubs / DestinationsPage / TbilisiAirportGuidePage still use it).
+      image: '/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp',
+      imageAvif: '/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.avif',
+      heroClass: 'hero--tbilisi',
+      heroPreload: '/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1200.avif',
+      ogImage: { src: '/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-og.jpg', width: 1200, height: 630 },
+      imageMeta: {
+        width: 1448, height: 1086, imageId: 'hero-image',
+        name: "Tbilisi's Old Town below Narikala Fortress, with the Rike–Narikala cable car above the Metekhi Bridge and the Mtkvari River, Georgia",
+        description: 'The Old Town of Tbilisi seen from the Metekhi side of the river: Narikala Fortress and St Nicholas Church on the ridge, a cabin of the Rike–Narikala cable car on its line, the Metekhi Bridge over the Mtkvari (Kura) River with Meidan (Gorgasali Square) beyond, tiered houses and church domes on the slope, and the Mtatsminda TV tower on the skyline. Tbilisi is the capital of Georgia (the country).',
+        locationName: 'Old Town, Tbilisi, Georgia',
+        geo: { lat: 41.6883, lng: 44.8090 },
+        alt: {
+          en: 'Tbilisi\'s Old Town below Narikala Fortress, with a Rike–Narikala cable car cabin above the Metekhi Bridge and the Mtkvari River, Georgia',
+          de: 'Die Altstadt von Tiflis unterhalb der Festung Narikala, mit einer Kabine der Seilbahn Rike–Narikala über der Metekhi-Brücke und dem Fluss Mtkwari, Georgien',
+          fr: 'La vieille ville de Tbilissi sous la forteresse Narikala, avec une cabine du téléphérique Rike–Narikala au-dessus du pont Metekhi et de la rivière Mtkvari, Géorgie',
+          es: 'El casco antiguo de Tiflis bajo la fortaleza de Narikala, con una cabina del teleférico Rike–Narikala sobre el puente Metekhi y el río Mtkvari, Georgia',
+          nl: 'De oude stad van Tbilisi onder de Narikala-vesting, met een cabine van de kabelbaan Rike–Narikala boven de Metekhi-brug en de rivier de Mtkvari, Georgië',
+          cs: 'Staré Město Tbilisi pod pevností Narikala, s kabinou lanovky Rike–Narikala nad mostem Metekhi a řekou Mtkvari, Gruzie',
+          pl: 'Stare Miasto Tbilisi pod twierdzą Narikala, z gondolą kolejki linowej Rike–Narikala nad mostem Metekhi i rzeką Mtkwari, Gruzja',
+        },
+        caption: {
+          en: 'The Old Town, Narikala Fortress and the Metekhi Bridge, Tbilisi',
+          de: 'Altstadt, Festung Narikala und Metekhi-Brücke, Tiflis',
+          fr: 'La vieille ville, la forteresse Narikala et le pont Metekhi, Tbilissi',
+          es: 'El casco antiguo, la fortaleza de Narikala y el puente Metekhi, Tiflis',
+          nl: 'De oude stad, de Narikala-vesting en de Metekhi-brug, Tbilisi',
+          cs: 'Staré Město, pevnost Narikala a most Metekhi, Tbilisi',
+          pl: 'Stare Miasto, twierdza Narikala i most Metekhi, Tbilisi',
+        },
+      },
       address: { addressLocality: 'Tbilisi' },
       attractions: [
         'Old Town (Dzveli Tbilisi)', 'Abanotubani Sulfur Baths', 'Narikala Fortress',
@@ -3866,11 +3901,14 @@ export const cities = [
     // (REPLACE-BRAND → Hikasus Travel via BRAND, /images/files path).
     imageObjects: [
       {
-        base: 'mtkvari-river-old-tbilisi-cliffs-georgia', width: 1448, height: 1086,
-        name: 'Old Tbilisi cliffs above the Mtkvari River, Georgia',
-        caption: 'Old Tbilisi houses on the cliffs above the Mtkvari River, reflected in the water',
-        description: 'Houses of Old Tbilisi perched on the cliffs above the Mtkvari (Kura) River, reflected in the water below Mtatsminda hill, Tbilisi, Georgia.',
-        locationName: 'Old Tbilisi, Mtkvari River', locality: 'Tbilisi', region: 'Tbilisi', geo: { lat: 41.6893, lng: 44.8117 },
+        // Owner's own Metekhi frame (2026-10-10 Old Tbilisi pass; canonical asset shared with
+        // the Metekhi page hero and the tour galleries). Replaced the AI-rendered
+        // mtkvari-river-old-tbilisi-cliffs-georgia figure in the sitewide owner-photo audit.
+        base: 'metekhi-church-mtkvari-tbilisi-georgia', width: 1448, height: 1086, plainWidths: true,
+        name: 'Metekhi Church and the Vakhtang Gorgasali statue on the Metekhi cliff above the Mtkvari River, Tbilisi, Georgia',
+        caption: 'Metekhi Church and the equestrian statue of King Vakhtang Gorgasali on the Metekhi cliff above the Mtkvari River',
+        description: 'The 13th-century Metekhi Church and the bronze equestrian statue of King Vakhtang Gorgasali on the rim of the Metekhi cliff, rising above the Mtkvari (Kura) River in Tbilisi, with the tree-lined left-bank embankment beyond, Georgia.',
+        locationName: 'Metekhi Church, Tbilisi', locality: 'Tbilisi', region: 'Tbilisi', geo: { lat: 41.6895, lng: 44.8105 },
       },
       {
         base: 'narikala-fortress-tbilisi-georgia', width: 1448, height: 1086,

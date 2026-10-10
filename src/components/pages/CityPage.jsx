@@ -273,8 +273,12 @@ export default function CityPage() {
           // imageMeta.imageId). Only entries that set `imageId` emit one, so
           // every existing imageObject stays byte-identical.
           ...(img.imageId ? { '@id': `${url}#${img.imageId}` } : {}),
-          contentUrl: `${SITE_URL}/images/files/${img.base}-${img.width}w.webp`,
-          url: `${SITE_URL}/images/files/${img.base}-${img.width}w.webp`,
+          // Files normally carry the `w` suffix (…-1448w.webp). An entry whose ladder ships
+          // WITHOUT it (the owner-photo families reused from the sites gallery, e.g. the
+          // Metekhi frame on the Tbilisi page) sets `plainWidths: true` — same opt-in as
+          // `sites[].gallery`. Every existing imageObject is unchanged.
+          contentUrl: `${SITE_URL}/images/files/${img.base}-${img.width}${img.plainWidths ? "" : "w"}.webp`,
+          url: `${SITE_URL}/images/files/${img.base}-${img.width}${img.plainWidths ? "" : "w"}.webp`,
           width: img.width,
           height: img.height,
           representativeOfPage: !!img.hero,
