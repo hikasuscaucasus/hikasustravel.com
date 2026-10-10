@@ -66,7 +66,7 @@ const COUNTRY_LANDING = {
       // featured city on this same page, so the card would have sat beside an
       // identical tile.)
       regions: '/images/files/kakheti-vineyard.jpg',
-      cities: '/images/files/tbilisi-old-town-narikala-mtkvari-georgia-1200.webp',
+      cities: '/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1200.webp',
       // Places to visit: a recognisable landmark — the Ananuri fortress and
       // church above the Zhinvali reservoir. Distinct from the Regions cover,
       // from the hero and from all featured-city tiles on this page.

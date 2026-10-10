@@ -31,7 +31,7 @@ const HOMEPAGE_BLOG_SLUGS = [
 // Names are proper nouns and stay identical in every locale; only the
 // City/Region type label (typeKey) is translated.
 const EXPLORE_CARDS = [
-  { to: '/georgia/tbilisi', image: '/images/files/old-town-tbilisi-georgia-1200.webp', name: 'Tbilisi', typeKey: 'pricing.city' },
+  { to: '/georgia/tbilisi', image: '/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1200.webp', name: 'Tbilisi', typeKey: 'pricing.city' },
   { to: '/armenia/yerevan', image: '/images/files/republic-square-yerevan-armenia-1200.webp', name: 'Yerevan', typeKey: 'pricing.city' },
   { to: '/azerbaijan/baku', image: '/images/files/baku-flame-towers-azerbaijan-1200.webp', name: 'Baku', typeKey: 'pricing.city' },
   { to: '/georgia/regions/svaneti', image: '/images/files/svaneti-caucasus-mountains-georgia-1200.webp', name: 'Svaneti', typeKey: 'search.typeRegion' },

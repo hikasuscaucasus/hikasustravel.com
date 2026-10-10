@@ -12471,7 +12471,10 @@ export const sites = [
     heroClass: 'hero--abanotubani',
     heroPreload: '/images/files/abanotubani-sulfur-baths-tbilisi-georgia-1200.avif',
     ogImage: { src: '/images/files/abanotubani-sulfur-baths-tbilisi-georgia-og.jpg', width: 1200, height: 630 },
-    cardImage: false, // the hub card was image-free before this hero; it stays text-only
+    // Card cover (Places-to-Visit hub): same hero family, smallest rung (768), with its
+    // files-thumb/ twin for the blur-up. Owner asked for the cards to follow the
+    // new photos (2026-10-10), replacing the previous text-only card.
+    cardImage: '/images/files/abanotubani-sulfur-baths-tbilisi-georgia-768.webp',
     imageMeta: {
       width: 1448, height: 1086, imageId: 'hero-image',
       name: 'Brick domes and the King Erekle\'s Bath bathhouse above the Tsavkisistsqali stream in Abanotubani, Tbilisi, Georgia',
@@ -12540,7 +12543,10 @@ export const sites = [
     heroClass: 'hero--chreli-abano',
     heroPreload: '/images/files/chreli-abano-tbilisi-georgia-1200.avif',
     ogImage: { src: '/images/files/chreli-abano-tbilisi-georgia-og.jpg', width: 1200, height: 630 },
-    cardImage: false, // the hub card was image-free before this hero; it stays text-only
+    // Card cover (Places-to-Visit hub): same hero family, smallest rung (768), with its
+    // files-thumb/ twin for the blur-up. Owner asked for the cards to follow the
+    // new photos (2026-10-10), replacing the previous text-only card.
+    cardImage: '/images/files/chreli-abano-tbilisi-georgia-768.webp',
     imageMeta: {
       width: 1448, height: 1086, imageId: 'hero-image',
       name: 'The blue-tiled façade of Chreli Abano (the Orbeliani Baths) in Abanotubani, Tbilisi, Georgia',
@@ -12736,7 +12742,10 @@ export const sites = [
     heroClass: 'hero--leghvtakhevi-waterfall',
     heroPreload: '/images/files/leghvtakhevi-waterfall-tbilisi-georgia-1086.avif',
     ogImage: { src: '/images/files/leghvtakhevi-waterfall-tbilisi-georgia-og.jpg', width: 1086, height: 569 },
-    cardImage: false, // the hub card was image-free before this hero; it stays text-only
+    // Card cover (Places-to-Visit hub): same hero family, smallest rung (768), with its
+    // files-thumb/ twin for the blur-up. Owner asked for the cards to follow the
+    // new photos (2026-10-10), replacing the previous text-only card.
+    cardImage: '/images/files/leghvtakhevi-waterfall-tbilisi-georgia-768.webp',
     imageMeta: {
       width: 1086, height: 1448, imageId: 'hero-image',
       name: 'Leghvtakhevi Waterfall in its basalt gorge behind Abanotubani, Tbilisi, Georgia',
@@ -12781,7 +12790,10 @@ export const sites = [
     heroClass: 'hero--metekhi-church',
     heroPreload: '/images/files/metekhi-church-mtkvari-tbilisi-georgia-1200.avif',
     ogImage: { src: '/images/files/metekhi-church-mtkvari-tbilisi-georgia-og.jpg', width: 1200, height: 630 },
-    cardImage: false, // the hub card was image-free before this hero; it stays text-only
+    // Card cover (Places-to-Visit hub): same hero family, smallest rung (768), with its
+    // files-thumb/ twin for the blur-up. Owner asked for the cards to follow the
+    // new photos (2026-10-10), replacing the previous text-only card.
+    cardImage: '/images/files/metekhi-church-mtkvari-tbilisi-georgia-768.webp',
     imageMeta: {
       width: 1448, height: 1086, imageId: 'hero-image',
       name: 'Metekhi Church and the Vakhtang Gorgasali statue on the Metekhi cliff above the Mtkvari River, Tbilisi, Georgia',
