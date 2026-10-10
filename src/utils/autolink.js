@@ -69,6 +69,11 @@ const ALIASES = [
   ['Yerevan Cascade', 'place:cascade-monument'],
   ["Sheki Khan's Palace", 'place:palace-of-the-sheki-khans'],
   ["Sheki's Khan's Palace", 'place:palace-of-the-sheki-khans'],
+  // The district's bare name — the registry name is 'Abanotubani Sulfur Baths', so the
+  // far more common bare form never matched (and non-EN bodies have no curated
+  // localized place name at all). 'Abanotubani' is the same proper noun in all 7
+  // locales' own content (sitewide internal-link audit, 2026-10-10).
+  ['Abanotubani', 'place:abanotubani-sulfur-baths'],
 ]
 
 // Derive conservative name variants — NOT invented spellings, only safe
