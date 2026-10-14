@@ -958,7 +958,7 @@ export const tours = [
         "year": "2027", "iso": "2027-10-14/2027-10-28" }
     ],
     "pricePerPerson": "2990",
-    "singleSupplement": "480"
+    "singleSupplement": "680"
   },
   {
     "slug": "3-day-kakheti-wine-and-food-tour-from-tbilisi",
