@@ -5590,7 +5590,7 @@ tour-info h2 a,
   outline-offset: 2px;
 }
 
-/* ── Group-tour card enhancement (Georgia Group Tour card only) ── */
+/* ── Group-tour card enhancement (scheduled-departure cards) ── */
 .tour-item-card {
   grid-template-columns: 1.1fr 1.45fr 0.85fr;
   border-radius: 16px;

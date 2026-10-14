@@ -17,7 +17,7 @@ export default function GroupToursPage() {
   const { lang } = useLang()
   const { tourTranslations, loadTourTranslations } = useContext(I18nContext)
   const seo = getSEO('groupTours', lang)
-  useSEO({ ...seo, lang, path: 'group-tours', image: '/images/files/Gergeti-Church.jpg' })
+  useSEO({ ...seo, lang, path: 'group-tours', image: '/images/files/baku-flame-towers-azerbaijan-og.jpg' })
 
   useEffect(() => {
     if (!tourTranslations) loadTourTranslations()
@@ -25,16 +25,15 @@ export default function GroupToursPage() {
 
   return (
     <>
-      {/* Hero shows the same Gergeti frame as the Georgia Group Tour page it
-          lists, from that tour's own image folder. `imageAvif` upgrades the
+      {/* Hero shows the same Flame Towers frame as the 15-Day Caucasus Group
+          Tour page it lists (the Georgia Group Tour, whose Gergeti frame used
+          to sit here, was removed in October 2026). `imageAvif` upgrades the
           CSS background to AVIF via image-set() where the browser supports it
-          — the same opt-in the city/region/site heroes use. The legacy
-          /images/files/Gergeti-Church.jpg is still referenced by a blog post,
-          so it stays on disk. */}
+          — the same opt-in the city/region/site heroes use. */}
       <HeroSection
         className="hero--compact"
-        image="/images/group-tours/georgia-group-tour/gergeti-trinity-church-kazbegi-georgia-1448.webp"
-        imageAvif="/images/group-tours/georgia-group-tour/gergeti-trinity-church-kazbegi-georgia-1448.avif"
+        image="/images/files/baku-flame-towers-azerbaijan-1448.webp"
+        imageAvif="/images/files/baku-flame-towers-azerbaijan-1448.avif"
         title={t('tour.groupTours')}
       />
 

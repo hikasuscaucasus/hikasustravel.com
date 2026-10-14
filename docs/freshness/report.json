@@ -1,15 +1,15 @@
 {
   "summary": {
-    "today": "2026-10-03",
+    "today": "2026-10-14",
     "lastFullAudit": "2026-10-03",
     "nextFullAudit": "2027-01-01",
-    "daysToAudit": 90,
+    "daysToAudit": 79,
     "auditDue": false,
-    "totalTracked": 45,
+    "totalTracked": 46,
     "byTier": {
       "A": 16,
       "B": 10,
-      "C": 10,
+      "C": 11,
       "D": 9
     },
     "overdue": 0,
@@ -322,6 +322,16 @@
       "state": "OK"
     },
     {
+      "id": "blog:food-drink-caucasus-georgia-armenia-azerbaijan",
+      "path": "/blog/food-drink-caucasus-georgia-armenia-azerbaijan",
+      "country": "caucasus",
+      "type": "blog",
+      "tier": "C",
+      "lastVerified": "2026-10-04",
+      "nextReview": "2027-01-02",
+      "state": "OK"
+    },
+    {
       "id": "blog:essential-georgian-words-phrases",
       "path": "/blog/essential-georgian-words-phrases",
       "country": "georgia",
@@ -392,8 +402,8 @@
       "state": "OK"
     },
     {
-      "id": "tour:10-day-georgia-armenia-tour",
-      "path": "/private-tours/10-day-georgia-armenia-tour",
+      "id": "tour:15-day-caucasus-group-tour",
+      "path": "/group-tours/15-day-caucasus-group-tour",
       "country": "caucasus",
       "type": "tour",
       "tier": "D",
@@ -402,9 +412,9 @@
       "state": "OK"
     },
     {
-      "id": "tour:georgia-group-tour",
-      "path": "/group-tours/georgia-group-tour",
-      "country": "georgia",
+      "id": "tour:10-day-georgia-armenia-tour",
+      "path": "/private-tours/10-day-georgia-armenia-tour",
+      "country": "caucasus",
       "type": "tour",
       "tier": "D",
       "lastVerified": "2026-10-03",

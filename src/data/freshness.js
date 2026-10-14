@@ -74,7 +74,7 @@ export const facts = {
   geRail: {
     fact: 'Georgian Railway Tbilisi–Batumi day trains take about four hours since 3 August 2026 (Batumi 16:50 → Tbilisi 20:50); second class from about 35 GEL; timetable changes seasonally. Baku night train since 26 May 2026, Yerevan night train on alternate nights.',
     sources: ['https://www.railway.ge/en/', 'https://tkt.ge/', 'https://bm.ge/en/news/tbilisi-batumi-train-journey-to-be-reduced-to-4-hours-from-august-3'],
-    usedOn: ['tbilisiRailwayStation', 'blog:ultimate-guide-to-traveling-to-georgia', 'tour:georgia-group-tour', 'tour:5-day-private-tour-from-tbilisi-to-batumi', 'tour:georgias-wonders-11-day-grand-tour-from-kutaisi-to-kazbegi-and-batumi', 'tour:13-day-georgia-grand-tour-from-kutaisi-culture-and-nature', 'tour:20-day-georgia-grand-tour-wine-hiking-and-culture'],
+    usedOn: ['tbilisiRailwayStation', 'blog:ultimate-guide-to-traveling-to-georgia', 'tour:5-day-private-tour-from-tbilisi-to-batumi', 'tour:georgias-wonders-11-day-grand-tour-from-kutaisi-to-kazbegi-and-batumi', 'tour:13-day-georgia-grand-tour-from-kutaisi-culture-and-nature', 'tour:20-day-georgia-grand-tour-wine-hiking-and-culture'],
   },
   unesco: {
     fact: 'UNESCO World Heritage properties: Georgia 4, Armenia 3, Azerbaijan 5 (no additions at the 2025 or 2026 sessions).',
@@ -143,7 +143,6 @@ export const pages = [
   page('tour:14-day-caucasus-tour', '/private-tours/14-day-caucasus-tour', 'caucasus', 'tour', D, ['border direction', 'foot crossings', 'Azerbaijan visa'], ['azLandEntry', 'amBorders']),
   page('tour:15-day-caucasus-group-tour', '/group-tours/15-day-caucasus-group-tour', 'caucasus', 'tour', D, ['border direction', 'foot crossings', 'Azerbaijan visa', 'Georgia insurance'], ['azLandEntry', 'amBorders', 'geInsurance']),
   page('tour:10-day-georgia-armenia-tour', '/private-tours/10-day-georgia-armenia-tour', 'caucasus', 'tour', D, ['Sadakhlo–Bagratashen crossing'], ['amBorders']),
-  page('tour:georgia-group-tour', '/group-tours/georgia-group-tour', 'georgia', 'tour', D, ['Batumi–Tbilisi train'], ['geRail']),
   page('tour:5-day-private-tour-from-tbilisi-to-batumi', '/private-tours/5-day-private-tour-from-tbilisi-to-batumi', 'georgia', 'tour', D, ['Batumi–Tbilisi train'], ['geRail']),
   page('tour:georgias-wonders-11-day-grand-tour-from-kutaisi-to-kazbegi-and-batumi', '/private-tours/georgias-wonders-11-day-grand-tour-from-kutaisi-to-kazbegi-and-batumi', 'georgia', 'tour', D, ['Batumi–Tbilisi train'], ['geRail']),
   page('tour:13-day-georgia-grand-tour-from-kutaisi-culture-and-nature', '/private-tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature', 'georgia', 'tour', D, ['Batumi–Tbilisi train'], ['geRail']),

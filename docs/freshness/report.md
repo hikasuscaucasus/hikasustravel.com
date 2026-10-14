@@ -1,8 +1,8 @@
-# Factual freshness report — 2026-10-03
+# Factual freshness report — 2026-10-14
 
 - Last full audit: **2026-10-03**
-- Next full audit: **2027-01-01** (in 90 days)
-- Tracked pages: 45 (A 16, B 10, C 10, D 9)
+- Next full audit: **2027-01-01** (in 79 days)
+- Tracked pages: 46 (A 16, B 10, C 11, D 9)
 - Shared facts: 11; source URLs: 21
 - Overdue: 0; due within 14 days: 0; never verified: 2
 - Blog publication dates changed: 0
@@ -52,6 +52,7 @@
 | blog:essential-azerbaijani-words-phrases | azerbaijan | blog | 2026-10-03 | 2027-01-01 | OK |
 | blog:ultimate-guide-to-traveling-to-azerbaijan | azerbaijan | blog | 2026-10-03 | 2027-01-01 | OK |
 | blog:azerbaijan-georgia-armenia-2-weeks-current-borders | caucasus | blog | 2026-10-03 | 2027-01-01 | OK |
+| blog:food-drink-caucasus-georgia-armenia-azerbaijan | caucasus | blog | 2026-10-04 | 2027-01-02 | OK |
 | blog:essential-georgian-words-phrases | georgia | blog | 2026-10-03 | 2027-01-01 | OK |
 | blog:georgian-flag-history-meaning | georgia | blog | 2026-10-03 | 2027-01-01 | OK |
 | blog:ultimate-guide-to-traveling-to-georgia | georgia | blog | 2026-10-03 | 2027-01-01 | OK |
@@ -65,11 +66,11 @@
 | data:embassyData | caucasus | directory | — | — | NEVER VERIFIED |
 | tour:10-day-georgia-armenia-tour | caucasus | tour | 2026-10-03 | 2027-01-01 | OK |
 | tour:14-day-caucasus-tour | caucasus | tour | 2026-10-03 | 2027-01-01 | OK |
+| tour:15-day-caucasus-group-tour | caucasus | tour | 2026-10-03 | 2027-01-01 | OK |
 | data:shuttleData | georgia | service | — | — | NEVER VERIFIED |
 | tour:13-day-georgia-grand-tour-from-kutaisi-culture-and-nature | georgia | tour | 2026-10-03 | 2027-01-01 | OK |
 | tour:20-day-georgia-grand-tour-wine-hiking-and-culture | georgia | tour | 2026-10-03 | 2027-01-01 | OK |
 | tour:5-day-private-tour-from-tbilisi-to-batumi | georgia | tour | 2026-10-03 | 2027-01-01 | OK |
-| tour:georgia-group-tour | georgia | tour | 2026-10-03 | 2027-01-01 | OK |
 | tour:georgias-wonders-11-day-grand-tour-from-kutaisi-to-kazbegi-and-batumi | georgia | tour | 2026-10-03 | 2027-01-01 | OK |
 
 ## Problems
