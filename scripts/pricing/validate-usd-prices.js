@@ -122,7 +122,7 @@ if (SOURCE_ONLY) finish()
 async function getHtml(path) {
   if (LIVE) {
     const url = `${SITE}${path}?v=${Date.now()}`
-    const res = await fetch(url, { headers: { 'cache-control': 'no-cache' }, redirect: 'manual' })
+    const res = await fetch(url, { headers: { 'cache-control': 'no-cache', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) HikasusPriceValidator/1.0' }, redirect: 'manual' })
     if (res.status !== 200) return { status: res.status, html: '' }
     return { status: 200, html: await res.text() }
   }
