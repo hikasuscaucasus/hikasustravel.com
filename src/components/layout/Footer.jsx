@@ -103,6 +103,7 @@ export default function Footer({ variant = 'default' }) {
         <div className="footer-bottom__right">
           <LocaleLink to="/privacy-policy">{t('footer.privacyPolicy')}</LocaleLink>
           <LocaleLink to="/terms-and-conditions">{t('footer.termsConditions')}</LocaleLink>
+          <LocaleLink to="/image-licensing">{t('footer.imageLicensing')}</LocaleLink>
         </div>
       </div>
     </footer>

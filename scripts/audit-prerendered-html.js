@@ -26,6 +26,11 @@
  *      zero-width space sat inside the Contact page's tel: number, where it
  *      was part of the dial string, and nine soft hyphens sat inside single
  *      Dutch, Czech and Polish words, breaking find-in-page and copy-paste.
+ *  10. An ImageObject without an absolute contentUrl, or without `license` /
+ *      `acquireLicensePage` (Google Image Metadata). Search Console flagged
+ *      "Missing field acquireLicensePage" on every one of 2,570 nodes, because
+ *      none of the ten node builders set it; the two JSON-LD sinks now fill
+ *      the fields, and each own-site URL they point at must exist in dist.
  *
  * Deliberately NOT checked here: anything requiring a network request, and
  * anything inside the JS bundles — a token in a compiled string table is not a
@@ -52,6 +57,21 @@ const TOKENS = [
   'location', 'destination', 'count', 'price', 'query', 'tour', 'from', 'to', 'n', 'min',
 ]
 const TOKEN_RE = new RegExp(`\\{\\{?\\s*(${TOKENS.join('|')})\\s*\\}?\\}`, 'i')
+
+// Check 10 (Image Metadata): every ImageObject, wherever it sits in a graph.
+const SITE_URL = 'https://www.hikasustravel.com'
+const ABS_HTTPS = /^https:\/\/[^\s"]+$/
+function imageObjectsIn(node, out = []) {
+  if (Array.isArray(node)) { for (const n of node) imageObjectsIn(n, out); return out }
+  if (!node || typeof node !== 'object') return out
+  const t = node['@type']
+  if (t === 'ImageObject' || (Array.isArray(t) && t.includes('ImageObject'))) out.push(node)
+  for (const v of Object.values(node)) imageObjectsIn(v, out)
+  return out
+}
+let imageObjects = 0
+// Own-site license / acquireLicensePage URLs seen; each must be a page in dist.
+const licensePages = new Set()
 
 function walk(dir, out = []) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -173,10 +193,29 @@ for (const file of files) {
   $('script[type="application/ld+json"]').each((_, el) => {
     jsonLdBlocks++
     const raw = $(el).contents().text()
+    let data
     try {
-      JSON.parse(raw)
+      data = JSON.parse(raw)
     } catch (e) {
       add(file, 'jsonld-parse', `${e.message} — ${raw.slice(0, 80)}`)
+      return
+    }
+    // --- 10. Image Metadata completeness ----------------------------------
+    // Google's image-license feature reads each ImageObject's contentUrl and
+    // recommends `license` + `acquireLicensePage` on every node; Search
+    // Console flagged "Missing field acquireLicensePage" on 2,570 nodes
+    // because no builder set it. Both JSON-LD sinks now fill the fields from
+    // utils/imageLicense.js, so a node without them means a sink was bypassed.
+    for (const node of imageObjectsIn(data)) {
+      imageObjects++
+      const cu = node.contentUrl ?? node.url
+      if (typeof cu !== 'string' || !ABS_HTTPS.test(cu)) add(file, 'imageobject-contenturl', String(cu))
+      for (const key of ['acquireLicensePage', 'license']) {
+        const v = node[key]
+        if (v === undefined) add(file, `imageobject-no-${key.toLowerCase()}`, String(cu).split('/').pop())
+        else if (typeof v !== 'string' || !ABS_HTTPS.test(v)) add(file, `imageobject-bad-${key.toLowerCase()}`, String(v))
+        else if (v.startsWith(SITE_URL)) licensePages.add(v)
+      }
     }
   })
 
@@ -231,11 +270,19 @@ for (const u of imageRefs) {
   }
 }
 
+// --- 10b. license / acquireLicensePage pages exist in the build ------------
+for (const u of licensePages) {
+  const rel = u.slice(SITE_URL.length).replace(/^\/|\/$/g, '')
+  if (!fs.existsSync(path.join(DIST, rel, 'index.html'))) {
+    errors.push({ file: '(site-wide)', kind: 'imageobject-license-page-missing', detail: u })
+  }
+}
+
 // --- summary ---------------------------------------------------------------
 const byKind = {}
 for (const e of errors) (byKind[e.kind] ||= []).push(e)
 
-console.log(`Audited ${files.length - stubs} prerendered pages (${stubs} redirect stubs skipped), ${jsonLdBlocks} JSON-LD blocks.`)
+console.log(`Audited ${files.length - stubs} prerendered pages (${stubs} redirect stubs skipped), ${jsonLdBlocks} JSON-LD blocks, ${imageObjects} ImageObjects (${licensePages.size} distinct own-site license page URL(s)).`)
 if (!errors.length) {
   console.log('No defects found.')
   process.exit(0)

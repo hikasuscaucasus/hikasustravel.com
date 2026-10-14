@@ -6935,7 +6935,7 @@ export const tours = [
           "name": "Hikasus Travel LTD"
         },
         "copyrightNotice": "© Hikasus Travel LTD",
-        "license": "https://www.hikasustravel.com/en/terms-and-conditions",
+        "license": "https://www.hikasustravel.com/en/image-licensing/",
         "inLanguage": "en"
       },
       "de": {
@@ -6953,7 +6953,7 @@ export const tours = [
           "name": "Hikasus Travel LTD"
         },
         "copyrightNotice": "© Hikasus Travel LTD",
-        "license": "https://www.hikasustravel.com/de/terms-and-conditions",
+        "license": "https://www.hikasustravel.com/de/image-licensing/",
         "inLanguage": "de"
       },
       "fr": {
@@ -6971,7 +6971,7 @@ export const tours = [
           "name": "Hikasus Travel LTD"
         },
         "copyrightNotice": "© Hikasus Travel LTD",
-        "license": "https://www.hikasustravel.com/fr/terms-and-conditions",
+        "license": "https://www.hikasustravel.com/fr/image-licensing/",
         "inLanguage": "fr"
       },
       "es": {
@@ -6989,7 +6989,7 @@ export const tours = [
           "name": "Hikasus Travel LTD"
         },
         "copyrightNotice": "© Hikasus Travel LTD",
-        "license": "https://www.hikasustravel.com/es/terms-and-conditions",
+        "license": "https://www.hikasustravel.com/es/image-licensing/",
         "inLanguage": "es"
       },
       "nl": {
@@ -7007,7 +7007,7 @@ export const tours = [
           "name": "Hikasus Travel LTD"
         },
         "copyrightNotice": "© Hikasus Travel LTD",
-        "license": "https://www.hikasustravel.com/nl/terms-and-conditions",
+        "license": "https://www.hikasustravel.com/nl/image-licensing/",
         "inLanguage": "nl"
       },
       "cs": {
@@ -7025,7 +7025,7 @@ export const tours = [
           "name": "Hikasus Travel LTD"
         },
         "copyrightNotice": "© Hikasus Travel LTD",
-        "license": "https://www.hikasustravel.com/cs/terms-and-conditions",
+        "license": "https://www.hikasustravel.com/cs/image-licensing/",
         "inLanguage": "cs"
       },
       "pl": {
@@ -7043,7 +7043,7 @@ export const tours = [
           "name": "Hikasus Travel LTD"
         },
         "copyrightNotice": "© Hikasus Travel LTD",
-        "license": "https://www.hikasustravel.com/pl/terms-and-conditions",
+        "license": "https://www.hikasustravel.com/pl/image-licensing/",
         "inLanguage": "pl"
       }
     },
@@ -12704,7 +12704,7 @@ export const tours = [
           "name": "Hikasus Travel LTD"
         },
         "copyrightNotice": "© Hikasus Travel LTD",
-        "license": "https://www.hikasustravel.com/en/terms-and-conditions",
+        "license": "https://www.hikasustravel.com/en/image-licensing/",
         "inLanguage": "en"
       },
       "de": {
@@ -12722,7 +12722,7 @@ export const tours = [
           "name": "Hikasus Travel LTD"
         },
         "copyrightNotice": "© Hikasus Travel LTD",
-        "license": "https://www.hikasustravel.com/de/terms-and-conditions",
+        "license": "https://www.hikasustravel.com/de/image-licensing/",
         "inLanguage": "de"
       },
       "fr": {
@@ -12740,7 +12740,7 @@ export const tours = [
           "name": "Hikasus Travel LTD"
         },
         "copyrightNotice": "© Hikasus Travel LTD",
-        "license": "https://www.hikasustravel.com/fr/terms-and-conditions",
+        "license": "https://www.hikasustravel.com/fr/image-licensing/",
         "inLanguage": "fr"
       },
       "es": {
@@ -12758,7 +12758,7 @@ export const tours = [
           "name": "Hikasus Travel LTD"
         },
         "copyrightNotice": "© Hikasus Travel LTD",
-        "license": "https://www.hikasustravel.com/es/terms-and-conditions",
+        "license": "https://www.hikasustravel.com/es/image-licensing/",
         "inLanguage": "es"
       },
       "nl": {
@@ -12776,7 +12776,7 @@ export const tours = [
           "name": "Hikasus Travel LTD"
         },
         "copyrightNotice": "© Hikasus Travel LTD",
-        "license": "https://www.hikasustravel.com/nl/terms-and-conditions",
+        "license": "https://www.hikasustravel.com/nl/image-licensing/",
         "inLanguage": "nl"
       },
       "cs": {
@@ -12794,7 +12794,7 @@ export const tours = [
           "name": "Hikasus Travel LTD"
         },
         "copyrightNotice": "© Hikasus Travel LTD",
-        "license": "https://www.hikasustravel.com/cs/terms-and-conditions",
+        "license": "https://www.hikasustravel.com/cs/image-licensing/",
         "inLanguage": "cs"
       },
       "pl": {
@@ -12812,7 +12812,7 @@ export const tours = [
           "name": "Hikasus Travel LTD"
         },
         "copyrightNotice": "© Hikasus Travel LTD",
-        "license": "https://www.hikasustravel.com/pl/terms-and-conditions",
+        "license": "https://www.hikasustravel.com/pl/image-licensing/",
         "inLanguage": "pl"
       }
     },
@@ -19526,7 +19526,7 @@ export const tours = [
         "creditText": "Hikasus Travel",
         "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
         "copyrightNotice": "© Hikasus Travel LTD",
-        "license": "https://www.hikasustravel.com/en/terms-and-conditions",
+        "license": "https://www.hikasustravel.com/en/image-licensing/",
         "inLanguage": "en"
       },
       "de": {
@@ -19541,7 +19541,7 @@ export const tours = [
         "creditText": "Hikasus Travel",
         "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
         "copyrightNotice": "© Hikasus Travel LTD",
-        "license": "https://www.hikasustravel.com/de/terms-and-conditions",
+        "license": "https://www.hikasustravel.com/de/image-licensing/",
         "inLanguage": "de"
       },
       "fr": {
@@ -19556,7 +19556,7 @@ export const tours = [
         "creditText": "Hikasus Travel",
         "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
         "copyrightNotice": "© Hikasus Travel LTD",
-        "license": "https://www.hikasustravel.com/fr/terms-and-conditions",
+        "license": "https://www.hikasustravel.com/fr/image-licensing/",
         "inLanguage": "fr"
       },
       "es": {
@@ -19571,7 +19571,7 @@ export const tours = [
         "creditText": "Hikasus Travel",
         "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
         "copyrightNotice": "© Hikasus Travel LTD",
-        "license": "https://www.hikasustravel.com/es/terms-and-conditions",
+        "license": "https://www.hikasustravel.com/es/image-licensing/",
         "inLanguage": "es"
       },
       "nl": {
@@ -19586,7 +19586,7 @@ export const tours = [
         "creditText": "Hikasus Travel",
         "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
         "copyrightNotice": "© Hikasus Travel LTD",
-        "license": "https://www.hikasustravel.com/nl/terms-and-conditions",
+        "license": "https://www.hikasustravel.com/nl/image-licensing/",
         "inLanguage": "nl"
       },
       "cs": {
@@ -19601,7 +19601,7 @@ export const tours = [
         "creditText": "Hikasus Travel",
         "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
         "copyrightNotice": "© Hikasus Travel LTD",
-        "license": "https://www.hikasustravel.com/cs/terms-and-conditions",
+        "license": "https://www.hikasustravel.com/cs/image-licensing/",
         "inLanguage": "cs"
       },
       "pl": {
@@ -19616,7 +19616,7 @@ export const tours = [
         "creditText": "Hikasus Travel",
         "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
         "copyrightNotice": "© Hikasus Travel LTD",
-        "license": "https://www.hikasustravel.com/pl/terms-and-conditions",
+        "license": "https://www.hikasustravel.com/pl/image-licensing/",
         "inLanguage": "pl"
       }
     },
@@ -20164,7 +20164,7 @@ export const tours = [
           "name": "Hikasus Travel LTD"
         },
         "copyrightNotice": "© Hikasus Travel LTD",
-        "license": "https://www.hikasustravel.com/en/terms-and-conditions",
+        "license": "https://www.hikasustravel.com/en/image-licensing/",
         "inLanguage": "en"
       },
       "de": {
@@ -20182,7 +20182,7 @@ export const tours = [
           "name": "Hikasus Travel LTD"
         },
         "copyrightNotice": "© Hikasus Travel LTD",
-        "license": "https://www.hikasustravel.com/de/terms-and-conditions",
+        "license": "https://www.hikasustravel.com/de/image-licensing/",
         "inLanguage": "de"
       },
       "fr": {
@@ -20200,7 +20200,7 @@ export const tours = [
           "name": "Hikasus Travel LTD"
         },
         "copyrightNotice": "© Hikasus Travel LTD",
-        "license": "https://www.hikasustravel.com/fr/terms-and-conditions",
+        "license": "https://www.hikasustravel.com/fr/image-licensing/",
         "inLanguage": "fr"
       },
       "es": {
@@ -20218,7 +20218,7 @@ export const tours = [
           "name": "Hikasus Travel LTD"
         },
         "copyrightNotice": "© Hikasus Travel LTD",
-        "license": "https://www.hikasustravel.com/es/terms-and-conditions",
+        "license": "https://www.hikasustravel.com/es/image-licensing/",
         "inLanguage": "es"
       },
       "nl": {
@@ -20236,7 +20236,7 @@ export const tours = [
           "name": "Hikasus Travel LTD"
         },
         "copyrightNotice": "© Hikasus Travel LTD",
-        "license": "https://www.hikasustravel.com/nl/terms-and-conditions",
+        "license": "https://www.hikasustravel.com/nl/image-licensing/",
         "inLanguage": "nl"
       },
       "cs": {
@@ -20254,7 +20254,7 @@ export const tours = [
           "name": "Hikasus Travel LTD"
         },
         "copyrightNotice": "© Hikasus Travel LTD",
-        "license": "https://www.hikasustravel.com/cs/terms-and-conditions",
+        "license": "https://www.hikasustravel.com/cs/image-licensing/",
         "inLanguage": "cs"
       },
       "pl": {
@@ -20272,7 +20272,7 @@ export const tours = [
           "name": "Hikasus Travel LTD"
         },
         "copyrightNotice": "© Hikasus Travel LTD",
-        "license": "https://www.hikasustravel.com/pl/terms-and-conditions",
+        "license": "https://www.hikasustravel.com/pl/image-licensing/",
         "inLanguage": "pl"
       }
     },
@@ -21239,7 +21239,7 @@ export const tours = [
         "creditText": "Hikasus Travel",
         "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
         "copyrightNotice": "© Hikasus Travel LTD",
-        "license": "https://www.hikasustravel.com/en/terms-and-conditions",
+        "license": "https://www.hikasustravel.com/en/image-licensing/",
         "inLanguage": "en"
       },
       "de": {
@@ -21254,7 +21254,7 @@ export const tours = [
         "creditText": "Hikasus Travel",
         "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
         "copyrightNotice": "© Hikasus Travel LTD",
-        "license": "https://www.hikasustravel.com/de/terms-and-conditions",
+        "license": "https://www.hikasustravel.com/de/image-licensing/",
         "inLanguage": "de"
       },
       "fr": {
@@ -21269,7 +21269,7 @@ export const tours = [
         "creditText": "Hikasus Travel",
         "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
         "copyrightNotice": "© Hikasus Travel LTD",
-        "license": "https://www.hikasustravel.com/fr/terms-and-conditions",
+        "license": "https://www.hikasustravel.com/fr/image-licensing/",
         "inLanguage": "fr"
       },
       "es": {
@@ -21284,7 +21284,7 @@ export const tours = [
         "creditText": "Hikasus Travel",
         "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
         "copyrightNotice": "© Hikasus Travel LTD",
-        "license": "https://www.hikasustravel.com/es/terms-and-conditions",
+        "license": "https://www.hikasustravel.com/es/image-licensing/",
         "inLanguage": "es"
       },
       "nl": {
@@ -21299,7 +21299,7 @@ export const tours = [
         "creditText": "Hikasus Travel",
         "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
         "copyrightNotice": "© Hikasus Travel LTD",
-        "license": "https://www.hikasustravel.com/nl/terms-and-conditions",
+        "license": "https://www.hikasustravel.com/nl/image-licensing/",
         "inLanguage": "nl"
       },
       "cs": {
@@ -21314,7 +21314,7 @@ export const tours = [
         "creditText": "Hikasus Travel",
         "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
         "copyrightNotice": "© Hikasus Travel LTD",
-        "license": "https://www.hikasustravel.com/cs/terms-and-conditions",
+        "license": "https://www.hikasustravel.com/cs/image-licensing/",
         "inLanguage": "cs"
       },
       "pl": {
@@ -21329,7 +21329,7 @@ export const tours = [
         "creditText": "Hikasus Travel",
         "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
         "copyrightNotice": "© Hikasus Travel LTD",
-        "license": "https://www.hikasustravel.com/pl/terms-and-conditions",
+        "license": "https://www.hikasustravel.com/pl/image-licensing/",
         "inLanguage": "pl"
       }
     },

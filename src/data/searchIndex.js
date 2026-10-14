@@ -83,6 +83,7 @@ const STATIC_PAGES = [
   { path: 'contact', seoKey: 'contact', type: 'info' },
   { path: 'privacy-policy', seoKey: 'privacy', type: 'info' },
   { path: 'terms-and-conditions', seoKey: 'terms', type: 'info' },
+  { path: 'image-licensing', seoKey: 'imageLicensing', type: 'info' },
   // Hubs
   { path: 'private-tours', seoKey: 'privateTours', type: 'tour' },
   { path: 'group-tours', seoKey: 'groupTours', type: 'tour' },

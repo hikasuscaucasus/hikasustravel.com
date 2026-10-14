@@ -135,7 +135,7 @@ const livePaths = [
   'georgia', 'georgia/regions', 'georgia/cities', 'georgia/places-to-visit',
   'private-tours', 'group-tours', 'shuttle-service', 'embassies', 'embassies/georgia', 'embassies/armenia',
   'embassies/azerbaijan', 'blog', 'faq',
-  'contact', 'privacy-policy', 'terms-and-conditions',
+  'contact', 'privacy-policy', 'terms-and-conditions', 'image-licensing',
   ...publishedDestinationPages().map((d) => clean(d.path)),
   ...publishedBorderPages().map((b) => clean(b.path)),
   ...entityTourPages.map((e) => clean(e.path)),

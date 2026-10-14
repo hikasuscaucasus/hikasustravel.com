@@ -75,6 +75,11 @@ const { createJsonLdBuilder } = await import(
 const { normalizeJsonLdUrls } = await import(
   pathToFileURL(join(__dirname, '../src/utils/url.js')).href
 )
+// Image Metadata fallbacks (license / acquireLicensePage on every ImageObject),
+// shared with useSEO so the static and hydrated graphs carry the same fields.
+const { withImageLicensing } = await import(
+  pathToFileURL(join(__dirname, '../src/utils/imageLicense.js')).href
+)
 
 // Build-time React renderer (dist-ssr, produced by `vite build --ssr`). Renders
 // the real page body into #root so the article text is in the static HTML
@@ -502,6 +507,7 @@ const seoPageMap = {
   'contact': 'contact',
   'privacy-policy': 'privacy',
   'terms-and-conditions': 'terms',
+  'image-licensing': 'imageLicensing',
 }
 
 // Per-path og:image overrides for static pages (default is georgia-home.jpg).
@@ -630,9 +636,9 @@ const jsonLdBuilder = createJsonLdBuilder({ seoFor: getSEO })
 // Page-specific structured data, tagged data-seo-jsonld so the runtime hook
 // replaces this element's contents instead of appending a second block. `<` is
 // escaped so a description containing "</script>" cannot close the tag early.
-function renderJsonLd(graph) {
+function renderJsonLd(graph, lang) {
   if (!graph) return ''
-  const json = JSON.stringify(normalizeJsonLdUrls(graph)).replace(/</g, '\\u003c')
+  const json = JSON.stringify(normalizeJsonLdUrls(withImageLicensing(graph, lang))).replace(/</g, '\\u003c')
   return `<script type="application/ld+json" data-seo-jsonld>${json}</script>`
 }
 
@@ -797,7 +803,7 @@ async function emitHtml(filePath, lang, { title, description, keywords, canonica
   // A caller may hand over a finished graph instead of one looked up by
   // route — tour pages do, because theirs is built by the same module the
   // React page uses rather than by the route table in seo-jsonld.js.
-  const ldHtml = renderJsonLd(jsonLd || jsonLdBuilder.forRoute(lang, canonicalPath))
+  const ldHtml = renderJsonLd(jsonLd || jsonLdBuilder.forRoute(lang, canonicalPath), lang)
   if (ldHtml) $('head').append(ldHtml)
 
   // The page body, rendered from the same React tree the browser mounts, so the

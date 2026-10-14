@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { withTrailingSlash, normalizeJsonLdUrls } from '../utils/url'
+import { withImageLicensing } from '../utils/imageLicense'
 
 const SITE_URL = 'https://www.hikasustravel.com'
 
@@ -115,7 +116,11 @@ export default function useSEO({ title, description, keywords, lang = 'en', path
         scriptEl.setAttribute('data-seo-jsonld', '')
         document.head.appendChild(scriptEl)
       }
-      scriptEl.textContent = JSON.stringify(normalizeJsonLdUrls(jsonLd))
+      // Every ImageObject in the graph gets the locale's Image Usage &
+      // Licensing page as `license` / `acquireLicensePage` unless the node
+      // already carries its own (see utils/imageLicense.js). Applied here, at
+      // the single runtime sink, so no page builder has to remember it.
+      scriptEl.textContent = JSON.stringify(normalizeJsonLdUrls(withImageLicensing(jsonLd, lang)))
     } else {
       scriptEl?.remove()
     }

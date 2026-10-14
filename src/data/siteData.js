@@ -165,6 +165,7 @@ export const footerLinks = [
   { to: '/faq', labelKey: 'footer.faq' },
   { to: '/privacy-policy', labelKey: 'footer.privacyPolicy' },
   { to: '/terms-and-conditions', labelKey: 'footer.termsConditions' },
+  { to: '/image-licensing', labelKey: 'footer.imageLicensing' },
   { to: '/contact', labelKey: 'footer.contact' },
 ]
 

@@ -126,6 +126,7 @@ const staticPages = [
   { path: 'contact', changefreq: 'monthly', priority: '0.6' },
   { path: 'privacy-policy', changefreq: 'yearly', priority: '0.2' },
   { path: 'terms-and-conditions', changefreq: 'yearly', priority: '0.2' },
+  { path: 'image-licensing', changefreq: 'yearly', priority: '0.2' },
 ]
 
 // Build all route paths (language-independent)

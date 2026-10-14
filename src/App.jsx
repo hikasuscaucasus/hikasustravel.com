@@ -52,6 +52,7 @@ const ContactPage = routeComponent(() => import('./components/pages/ContactPage'
 const ShuttleServicePage = routeComponent(() => import('./components/pages/ShuttleServicePage'))
 const PrivacyPolicyPage = routeComponent(() => import('./components/pages/PrivacyPolicyPage'))
 const TermsPage = routeComponent(() => import('./components/pages/TermsPage'))
+const ImageLicensingPage = routeComponent(() => import('./components/pages/ImageLicensingPage'))
 const EmbassiesPage = routeComponent(() => import('./components/pages/EmbassiesPage'))
 const EmbassyDirectoryPage = routeComponent(() => import('./components/pages/EmbassyDirectoryPage'))
 const BlogPage = routeComponent(() => import('./components/pages/BlogPage'))
@@ -223,6 +224,7 @@ export function AppRoutes() {
           <Route path="contact" element={<ContactPage />} />
           <Route path="privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="terms-and-conditions" element={<TermsPage />} />
+          <Route path="image-licensing" element={<ImageLicensingPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
     </Routes>
