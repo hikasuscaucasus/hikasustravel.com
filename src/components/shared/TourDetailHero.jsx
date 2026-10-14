@@ -6,6 +6,7 @@ import useLang from '../../i18n/useLang'
 import { GalleryLightbox } from './Gallery'
 import { tourCountry } from '../../data/tours'
 import { tourHubById } from '../../data/tourHubs'
+import { formatPrice } from './pricingUtils'
 
 /* Ivory-badge pilot: the hero is a two-column split (copy left, framed cover
    photo right) instead of the full-viewport photo it used to be, so the photo
@@ -215,7 +216,7 @@ export default function TourDetailHero({ tour, translatedTitle, heroH1, isGroup,
               <span className="iv-chip iv-chip--price">
                 <TagIcon />
                 {!isGroup && `${t('sidebar.startingFrom')} `}
-                €{startingPrice.toLocaleString('en-US')} {t('pricing.perPerson')}
+                {formatPrice(startingPrice)} {t('pricing.perPerson')}
               </span>
             )}
             {sitesLabel && (

@@ -5,6 +5,7 @@ import CardImage from '../shared/CardImage'
 import DestinationCard from '../shared/DestinationCard'
 import CountryTabs from '../shared/CountryTabs'
 import FeaturedTourTile from '../shared/FeaturedTourTile'
+import { formatPriceNumber } from '../shared/pricingUtils'
 import ContactForm from '../shared/ContactForm'
 import { tours, primaryPrivateTourCountFor, hubStatusFor, featuredToursFor } from '../../data/tours'
 import { blogArticles } from '../../data/blogData'
@@ -343,7 +344,7 @@ export default function HomePage() {
                       </>
                     )}
                     {groupTour.pricePerPerson && (
-                      <div className="tour-data-price">{t('tour.perPerson', { price: groupTour.pricePerPerson })}</div>
+                      <div className="tour-data-price">{t('tour.perPerson', { price: formatPriceNumber(groupTour.pricePerPerson) })}</div>
                     )}
                   </div>
                 </div>

@@ -31,6 +31,11 @@
  *      "Missing field acquireLicensePage" on every one of 2,570 nodes, because
  *      none of the ten node builders set it; the two JSON-LD sinks now fill
  *      the fields, and each own-site URL they point at must exist in dist.
+ *  11. Tour pricing currency. Tour sales prices are canonical USD (October
+ *      2026 migration, scripts/pricing/): every Offer / AggregateOffer in any
+ *      graph must say priceCurrency "USD", and no tour, tour-hub or home page
+ *      may show a euro sign in visible text. A "€" or an EUR offer on one of
+ *      those pages means a price surface bypassed pricingUtils.js.
  *
  * Deliberately NOT checked here: anything requiring a network request, and
  * anything inside the JS bundles — a token in a compiled string table is not a
@@ -70,6 +75,22 @@ function imageObjectsIn(node, out = []) {
   return out
 }
 let imageObjects = 0
+// Check 11 (tour pricing): every node carrying a price, wherever it sits.
+function offersIn(node, out = []) {
+  if (Array.isArray(node)) { for (const n of node) offersIn(n, out); return out }
+  if (!node || typeof node !== 'object') return out
+  const t = node['@type']
+  const isOffer = t === 'Offer' || t === 'AggregateOffer' || (Array.isArray(t) && (t.includes('Offer') || t.includes('AggregateOffer')))
+  if (isOffer || node.price !== undefined || node.lowPrice !== undefined || node.highPrice !== undefined) out.push(node)
+  for (const v of Object.values(node)) offersIn(v, out)
+  return out
+}
+// Pages whose visible text must carry tour prices in USD only (the shuttle
+// page quotes its own transfer tariff and the blog quotes local costs, so the
+// euro check is scoped to the tour sales surfaces).
+const TOUR_PRICE_PAGE = /[\\/](?:private-tours|group-tours|tours)[\\/]|[\\/]dist[\\/][a-z]{2}[\\/]index\.html$/
+let offerNodes = 0
+
 // Own-site license / acquireLicensePage URLs seen; each must be a page in dist.
 const licensePages = new Set()
 
@@ -217,7 +238,22 @@ for (const file of files) {
         else if (v.startsWith(SITE_URL)) licensePages.add(v)
       }
     }
+    // --- 11. tour offers are priced in USD ---------------------------------
+    for (const node of offersIn(data)) {
+      offerNodes++
+      if (node.priceCurrency !== 'USD') add(file, 'offer-currency-not-usd', `${node['@type']} priceCurrency=${node.priceCurrency}`)
+      for (const key of ['price', 'lowPrice', 'highPrice']) {
+        if (node[key] === undefined) continue
+        const n = Number(node[key])
+        if (!Number.isInteger(n) || n <= 0 || n % 5 !== 0) add(file, 'offer-price-invalid', `${key}=${node[key]}`)
+      }
+    }
   })
+
+  // --- 11b. no euro sign on a tour sales surface ---------------------------
+  if (TOUR_PRICE_PAGE.test(file) && visible.some((t) => /€/.test(t))) {
+    add(file, 'tour-page-euro-sign', (visible.find((t) => /€/.test(t)) || '').replace(/\s+/g, ' ').slice(0, 80))
+  }
 
   // --- 6. heading order ----------------------------------------------------
   // A heading level may repeat or go back up, but stepping DOWN by more than
@@ -282,7 +318,7 @@ for (const u of licensePages) {
 const byKind = {}
 for (const e of errors) (byKind[e.kind] ||= []).push(e)
 
-console.log(`Audited ${files.length - stubs} prerendered pages (${stubs} redirect stubs skipped), ${jsonLdBlocks} JSON-LD blocks, ${imageObjects} ImageObjects (${licensePages.size} distinct own-site license page URL(s)).`)
+console.log(`Audited ${files.length - stubs} prerendered pages (${stubs} redirect stubs skipped), ${jsonLdBlocks} JSON-LD blocks, ${imageObjects} ImageObjects (${licensePages.size} distinct own-site license page URL(s)), ${offerNodes} priced Offer nodes.`)
 if (!errors.length) {
   console.log('No defects found.')
   process.exit(0)

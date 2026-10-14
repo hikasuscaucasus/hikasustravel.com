@@ -2,6 +2,7 @@ import { useContext, useEffect } from 'react'
 import HeroSection from '../shared/HeroSection'
 import FadeUp from '../shared/FadeUp'
 import CardImage from '../shared/CardImage'
+import { formatPriceNumber } from '../shared/pricingUtils'
 import { tours } from '../../data/tours'
 import useT from '../../i18n/useT'
 import useLang from '../../i18n/useLang'
@@ -83,7 +84,7 @@ export default function GroupToursPage() {
                     </>
                   )}
                   {tour.pricePerPerson && (
-                    <div className="tour-data-price">{t('tour.perPerson', { price: tour.pricePerPerson })}</div>
+                    <div className="tour-data-price">{t('tour.perPerson', { price: formatPriceNumber(tour.pricePerPerson) })}</div>
                   )}
                 </div>
               </div>

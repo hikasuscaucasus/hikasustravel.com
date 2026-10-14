@@ -5,7 +5,7 @@ import TourSectionNav from '../shared/TourSectionNav'
 import FadeUp from '../shared/FadeUp'
 import Accordion from '../shared/Accordion'
 import { AccommodationSection, PriceSection } from '../shared/PricingGrid'
-import { getStartingPrice } from '../shared/pricingUtils'
+import { getStartingPrice, formatPrice } from '../shared/pricingUtils'
 import { buildTourSeo } from '../../utils/tourSeo'
 import IncludedNotIncluded from '../shared/IncludedNotIncluded'
 import TourInquiryForm from '../shared/TourInquiryForm'
@@ -384,7 +384,7 @@ export default function TourDetailPage() {
       {startingPrice && (
         <div className="iv-mobilebar">
           <span className="iv-mobilebar__price">
-            <span className="iv-mobilebar__amount">€{startingPrice.toLocaleString('en-US')}</span>
+            <span className="iv-mobilebar__amount">{formatPrice(startingPrice)}</span>
             <span className="iv-mobilebar__note">
               {t('sidebar.startingFrom')} · {t('pricing.perPerson')}
             </span>

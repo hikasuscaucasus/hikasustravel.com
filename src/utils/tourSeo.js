@@ -67,7 +67,9 @@ export function buildTourSeo({ tour, tt, lang }) {
     `book ${areaNames} adventure`,
   ].join(', ')
 
-  // Offer price (lowest available) for richer product/trip schema.
+  // Offer price (lowest available) for richer product/trip schema. Tour prices
+  // are canonical USD (see src/components/shared/pricingUtils.js), so the
+  // schema currency is USD and the number is the same one the page shows.
   const startPrice = tour.type === 'group'
     ? (tour.pricePerPerson ? parseFloat(tour.pricePerPerson.replace(/[^0-9.]/g, '')) : null)
     : getStartingPrice(tour.pricing)
@@ -75,7 +77,7 @@ export function buildTourSeo({ tour, tt, lang }) {
     jsonLd.offers = {
       '@type': 'Offer',
       price: startPrice,
-      priceCurrency: 'EUR',
+      priceCurrency: 'USD',
       availability: 'https://schema.org/InStock',
       url: `https://www.hikasustravel.com/${lang}/${prefix}/${slug}`,
     }

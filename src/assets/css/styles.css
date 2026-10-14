@@ -6714,6 +6714,14 @@ tour-info h2 a,
 .td-price-card__row span:last-child {
   font-weight: 600;
   color: var(--color-h2);
+  /* "1,230 USD" is one token: on a 390px card a long translated label
+     ("Dopłata za pokój jednoosobowy") used to push the amount onto two lines,
+     splitting the number from its currency. The label may wrap; the amount
+     never does. */
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-left: 12px;
+  text-align: right;
 }
 .td-price-card__row--best {
   background: rgba(252, 192, 19, 0.08);

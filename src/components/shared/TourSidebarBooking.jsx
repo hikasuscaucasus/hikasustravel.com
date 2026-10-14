@@ -1,8 +1,5 @@
 import useT from '../../i18n/useT'
-
-function formatPrice(num) {
-  return Number(num).toLocaleString('en-US')
-}
+import { formatPrice } from './pricingUtils'
 
 export default function TourSidebarBooking({ tour, startingPrice, isGroup }) {
   const t = useT()
@@ -21,7 +18,7 @@ export default function TourSidebarBooking({ tour, startingPrice, isGroup }) {
           {startingPrice && (
             <div className="td-sidebar__price-block">
               <span className="td-sidebar__price-label">{t('sidebar.startingFrom')}</span>
-              <span className="td-sidebar__price">€{formatPrice(startingPrice)}</span>
+              <span className="td-sidebar__price">{formatPrice(startingPrice)}</span>
               <span className="td-sidebar__price-pp">{t('pricing.perPerson')}</span>
             </div>
           )}
@@ -52,7 +49,7 @@ export default function TourSidebarBooking({ tour, startingPrice, isGroup }) {
         {startingPrice && (
           <div className="td-mobile-bar__price">
             <span className="td-mobile-bar__price-label">{t('sidebar.startingFrom')}</span>
-            <span className="td-mobile-bar__price-value">€{formatPrice(startingPrice)} <small>{t('pricing.perPerson')}</small></span>
+            <span className="td-mobile-bar__price-value">{formatPrice(startingPrice)} <small>{t('pricing.perPerson')}</small></span>
           </div>
         )}
         <a href="#book" onClick={scrollToBook} className="td-mobile-bar__cta">

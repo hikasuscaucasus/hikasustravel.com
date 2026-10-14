@@ -4,6 +4,7 @@ import FadeUp from '../shared/FadeUp'
 import Breadcrumbs from '../shared/Breadcrumbs'
 import ContactForm from '../shared/ContactForm'
 import TourCard from '../shared/TourCard'
+import { formatPriceNumber } from '../shared/pricingUtils'
 import PrivateTourCollectionLinks from '../shared/PrivateTourCollectionLinks'
 import LocaleLink from '../../i18n/LocaleLink'
 import useT from '../../i18n/useT'
@@ -243,7 +244,7 @@ export default function CountryToursHubPage({ country }) {
                         </>
                       )}
                       {groupTour.pricePerPerson && (
-                        <div className="tour-data-price">{t('tour.perPerson', { price: groupTour.pricePerPerson })}</div>
+                        <div className="tour-data-price">{t('tour.perPerson', { price: formatPriceNumber(groupTour.pricePerPerson) })}</div>
                       )}
                     </div>
                   </div>

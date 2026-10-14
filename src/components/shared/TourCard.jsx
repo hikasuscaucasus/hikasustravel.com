@@ -3,6 +3,7 @@ import FadeUp from './FadeUp'
 import LocaleLink from '../../i18n/LocaleLink'
 import useT from '../../i18n/useT'
 import { PRIVATE_TOUR_CATEGORIES, CATEGORY_LABEL_KEYS } from '../../data/tourCategories'
+import { formatPrice } from './pricingUtils'
 
 function getClassicPrice(pricing) {
   if (!pricing || pricing.length === 0) return null
@@ -38,7 +39,7 @@ export default function TourCard({ tour, translation, index = 0, basePath = '/pr
             {tour.days && (
               <span className="tc__badge">
                 {tour.days} {t('tour.days')}
-                {classicPrice && <> / {t('sidebar.startingFrom')} €{classicPrice.toLocaleString('en-US')}</>}
+                {classicPrice && <> / {t('sidebar.startingFrom')} {formatPrice(classicPrice)}</>}
               </span>
             )}
           </CardImage>

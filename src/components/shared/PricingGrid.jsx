@@ -4,6 +4,7 @@ import useHotel from '../../i18n/useHotel'
 import { I18nContext } from '../../i18n/I18nContext'
 import FadeUp from './FadeUp'
 import HotelPanels from './HotelPanels'
+import { formatPrice, parsePrice } from './pricingUtils'
 
 // Selecting stores the hotel NAME, not a resolved record. The translated copy
 // arrives with the tour translations, a moment after the table itself renders
@@ -194,9 +195,9 @@ export function TravelerPricingTable({ pricing }) {
       {pricing.map((row, i) => (
         <div key={i} className="pricing-grid-row">
           <div>{row.travelers}</div>
-          <div>{row.luxury}</div>
-          <div>{row.midRange}</div>
-          <div>{row.economy}</div>
+          <div>{formatCell(row.luxury)}</div>
+          <div>{formatCell(row.midRange)}</div>
+          <div>{formatCell(row.economy)}</div>
         </div>
       ))}
     </div>
@@ -218,10 +219,11 @@ function scrollToBook(e) {
   if (el) el.scrollIntoView({ behavior: 'smooth' })
 }
 
-function formatEuro(raw) {
-  const num = parseFloat((raw || '').replace(/[^0-9.]/g, ''))
-  if (isNaN(num) || num <= 0) return raw
-  return `€${num.toLocaleString('en-US')}`
+// A stored table cell ("1895") -> "1,895 USD". Anything that is not an
+// amount is shown as authored.
+function formatCell(raw) {
+  const num = parsePrice(raw)
+  return num === null ? raw : formatPrice(num)
 }
 
 function PricingCards({ pricing, onSelectPackage }) {
@@ -263,7 +265,7 @@ function PricingCards({ pricing, onSelectPackage }) {
             {startPrice && (
               <div className="td-price-card__price">
                 <span className="td-price-card__price-from">{t('sidebar.startingFrom')}</span>
-                <span className="td-price-card__price-value">€{startPrice.toLocaleString('en-US')}</span>
+                <span className="td-price-card__price-value">{formatPrice(startPrice)}</span>
                 <span className="td-price-card__price-pp">{t('pricing.perPerson')}</span>
               </div>
             )}
@@ -280,13 +282,13 @@ function PricingCards({ pricing, onSelectPackage }) {
                         : `${row.travelers} ${t('pricing.travelers')}`
                       }
                     </span>
-                    <span>{formatEuro(row[tier.key])}</span>
+                    <span>{formatCell(row[tier.key])}</span>
                   </div>
                 ))}
                 {singleSupplement && (
                   <div className="td-price-card__row">
                     <span>{t('pricing.singleSupplement')}</span>
-                    <span>{formatEuro(singleSupplement[tier.key])}</span>
+                    <span>{formatCell(singleSupplement[tier.key])}</span>
                   </div>
                 )}
               </div>
@@ -331,7 +333,7 @@ function SinglePricingCard({ pricing, onSelectPackage }) {
         {startPrice && (
           <div className="td-price-card__price">
             <span className="td-price-card__price-from">{t('sidebar.startingFrom')}</span>
-            <span className="td-price-card__price-value">€{startPrice.toLocaleString('en-US')}</span>
+            <span className="td-price-card__price-value">{formatPrice(startPrice)}</span>
             <span className="td-price-card__price-pp">{t('pricing.perPerson')}</span>
           </div>
         )}
@@ -345,13 +347,13 @@ function SinglePricingCard({ pricing, onSelectPackage }) {
                     : `${row.travelers} ${t('pricing.travelers')}`
                   }
                 </span>
-                <span>{formatEuro(row.luxury)}</span>
+                <span>{formatCell(row.luxury)}</span>
               </div>
             ))}
             {singleSupplement && (
               <div className="td-price-card__row">
                 <span>{t('pricing.singleSupplement')}</span>
-                <span>{formatEuro(singleSupplement.luxury)}</span>
+                <span>{formatCell(singleSupplement.luxury)}</span>
               </div>
             )}
           </div>
@@ -487,14 +489,14 @@ export function PriceSection({ isGroup, pricing, pricePerPerson, singleSupplemen
                 <div className="td-price-card td-price-card--featured">
                   <h3 className="td-price-card__tier">{t('pricing.pricePerPerson')}</h3>
                   <div className="td-price-card__price">
-                    <span className="td-price-card__price-value">€{pricePerPerson}</span>
+                    <span className="td-price-card__price-value">{formatCell(pricePerPerson)}</span>
                     <span className="td-price-card__price-pp">{t('pricing.perPerson')}</span>
                   </div>
                   {singleSupplement && (
                     <div className="td-price-card__breakdown">
                       <div className="td-price-card__row">
                         <span>{t('pricing.singleSupplement')}</span>
-                        <span>€{singleSupplement}</span>
+                        <span>{formatCell(singleSupplement)}</span>
                       </div>
                     </div>
                   )}

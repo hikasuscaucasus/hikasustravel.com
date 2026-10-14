@@ -5,6 +5,7 @@ export const tours = [
   {
     "slug": "georgia-group-tour",
     "type": "group",
+    "priceCurrency": "USD",
     "title": "Georgia Group Tour",
     /* Hero, cards and social image all come from the packaged Gergeti frame.
        The hero is a CSS background (TourDetailHero paints background-image),
@@ -1460,8 +1461,8 @@ export const tours = [
       { "start": "18 September", "end": "1 October", "year": "2027" },
       { "start": "16 October", "end": "29 October", "year": "2027" }
     ],
-    "pricePerPerson": "2,695",
-    "singleSupplement": "480",
+    "pricePerPerson": "3020",
+    "singleSupplement": "540",
     "groupSummary": [
       {
         "label": "Duration",
@@ -1483,7 +1484,7 @@ export const tours = [
       },
       {
         "label": "Price",
-        "value": "€2,695 per person"
+        "value": "3,020 USD per person"
       }
     ]
   },
@@ -1491,6 +1492,7 @@ export const tours = [
     "slug": "3-day-kakheti-wine-and-food-tour-from-tbilisi",
     "formerSlug": "savor-the-flavors-of-kakheti-3-day-wine-and-culture-adventure",
     "type": "private",
+    "priceCurrency": "USD",
     "featured": true,
     "title": "3-Day Kakheti Wine and Food Tour from Tbilisi",
     "heroImage": "/images/files/kakheti-wine-tasting.jpg",
@@ -1510,7 +1512,7 @@ export const tours = [
       "Main region: Kakheti",
       "Two nights in Telavi",
       "Hotels included",
-      "From €590 per person",
+      "From 665 USD per person",
       "Customizable route"
     ],
     "faq": [
@@ -1536,7 +1538,7 @@ export const tours = [
       },
       {
         "title": "How much does the tour cost?",
-        "content": "<p>Pricing is per person and depends on your group size and accommodation level, starting from €590 per person (Classic package, four travelers). Larger groups pay less per person; a single supplement applies for a single room. Send your dates and group size for an exact quote.</p>"
+        "content": "<p>Pricing is per person and depends on your group size and accommodation level, starting from 665 USD per person (Classic package, four travelers). Larger groups pay less per person; a single supplement applies for a single room. Send your dates and group size for an exact quote.</p>"
       },
       {
         "title": "When is the best time to take this tour?",
@@ -1565,9 +1567,9 @@ export const tours = [
       },
       "offers": {
         "@type": "AggregateOffer",
-        "priceCurrency": "EUR",
-        "lowPrice": "590",
-        "highPrice": "1695",
+        "priceCurrency": "USD",
+        "lowPrice": "665",
+        "highPrice": "1895",
         "offerCount": "3",
         "url": "https://www.hikasustravel.com/en/private-tours/3-day-kakheti-wine-and-food-tour-from-tbilisi/"
       }
@@ -1616,33 +1618,33 @@ export const tours = [
     "pricing": [
       {
         "travelers": "Single Supplement",
-        "luxury": "€235",
-        "midRange": "€115",
-        "economy": "€80"
+        "luxury": "265",
+        "midRange": "130",
+        "economy": "90"
       },
       {
         "travelers": "1",
-        "luxury": "€1695",
-        "midRange": "€1385",
-        "economy": "€1255"
+        "luxury": "1895",
+        "midRange": "1555",
+        "economy": "1395"
       },
       {
         "travelers": "2",
-        "luxury": "€1025",
-        "midRange": "€850",
-        "economy": "€770"
+        "luxury": "1150",
+        "midRange": "955",
+        "economy": "865"
       },
       {
         "travelers": "3",
-        "luxury": "€905",
-        "midRange": "€740",
-        "economy": "€665"
+        "luxury": "1015",
+        "midRange": "830",
+        "economy": "745"
       },
       {
         "travelers": "4",
-        "luxury": "€825",
-        "midRange": "€660",
-        "economy": "€590"
+        "luxury": "925",
+        "midRange": "740",
+        "economy": "665"
       }
     ],
     "included": [
@@ -1949,6 +1951,7 @@ export const tours = [
     "slug": "5-day-private-tour-from-tbilisi-to-batumi",
     "formerSlug": "experience-georgias-rich-culture-coastal-beauty-5-day-tour-from-tbilisi-to-batumi",
     "type": "private",
+    "priceCurrency": "USD",
     "title": "5-Day Private Tour from Tbilisi to Batumi",
     /* Hero: Batumi seafront skyline via the .hero--tbilisi-batumi image-set()
        ladder (styles.css) + the ogImage below. heroImage is the SEO fallback
@@ -1973,7 +1976,7 @@ export const tours = [
       "Visits Kutaisi & Batumi",
       "Returns to Tbilisi",
       "Hotels included",
-      "From €645 per person",
+      "From 765 USD per person",
       "Customizable route"
     ],
     "faq": [
@@ -2038,33 +2041,33 @@ export const tours = [
     "pricing": [
       {
         "travelers": "Single Supplement",
-        "luxury": "€295",
-        "midRange": "€180",
-        "economy": "€95"
+        "luxury": "330",
+        "midRange": "195",
+        "economy": "95"
       },
       {
         "travelers": "1",
-        "luxury": "€2295",
-        "midRange": "€1970",
-        "economy": "€1790"
+        "luxury": "2570",
+        "midRange": "2195",
+        "economy": "1995"
       },
       {
         "travelers": "2",
-        "luxury": "€1275",
-        "midRange": "€1080",
-        "economy": "€990"
+        "luxury": "1430",
+        "midRange": "1195",
+        "economy": "1095"
       },
       {
         "travelers": "3",
-        "luxury": "€1080",
-        "midRange": "€880",
-        "economy": "€795"
+        "luxury": "1195",
+        "midRange": "990",
+        "economy": "890"
       },
       {
         "travelers": "4",
-        "luxury": "€945",
-        "midRange": "€780",
-        "economy": "€680"
+        "luxury": "1060",
+        "midRange": "875",
+        "economy": "765"
       }
     ],
     "included": [
@@ -2580,6 +2583,7 @@ export const tours = [
     "slug": "5-day-georgia-private-tour-tbilisi-wine-and-sulfur-baths",
     "formerSlug": "sulfur-baths-and-sipping-wine-5-days-of-georgian-delights",
     "type": "private",
+    "priceCurrency": "USD",
     "title": "5-Day Georgia Private Tour: Tbilisi, Wine & Sulfur Baths",
     "heroImage": "/images/tours/tbilisi-wine-sulfur/gergeti-trinity-church-kazbegi-georgia-1200.webp",
     "heroBgClass": "hero--tbilisi-wine-sulfur",
@@ -2660,33 +2664,33 @@ export const tours = [
     "pricing": [
       {
         "travelers": "1",
-        "luxury": "€1990",
-        "midRange": "€1520",
-        "economy": "€1395"
+        "luxury": "2230",
+        "midRange": "1695",
+        "economy": "1565"
       },
       {
         "travelers": "2",
-        "luxury": "€1070",
-        "midRange": "€810",
-        "economy": "€750"
+        "luxury": "1195",
+        "midRange": "895",
+        "economy": "840"
       },
       {
         "travelers": "3",
-        "luxury": "€915",
-        "midRange": "€660",
-        "economy": "€595"
+        "luxury": "1025",
+        "midRange": "740",
+        "economy": "670"
       },
       {
         "travelers": "4",
-        "luxury": "€815",
-        "midRange": "€560",
-        "economy": "€495"
+        "luxury": "915",
+        "midRange": "630",
+        "economy": "555"
       },
       {
         "travelers": "Single Supplement",
-        "luxury": "€355",
-        "midRange": "€160",
-        "economy": "€120"
+        "luxury": "395",
+        "midRange": "180",
+        "economy": "135"
       }
     ],
     "included": [
@@ -3167,6 +3171,7 @@ export const tours = [
     "slug": "6-day-georgia-private-tour-highlights-from-tbilisi",
     "formerSlug": "tbilisi-to-treasures-a-6-day-journey-through-georgias-icons-and-hidden-gems",
     "type": "private",
+    "priceCurrency": "USD",
     "featured": true,
     "title": "6-Day Georgia Private Tour: Highlights from Tbilisi",
     "seoTitle": "6-Day Georgia Private Tour: Highlights & Culture from Tbilisi",
@@ -3259,33 +3264,33 @@ export const tours = [
     "pricing": [
       {
         "travelers": "1",
-        "luxury": "€2340",
-        "midRange": "€1860",
-        "economy": "€1690"
+        "luxury": "2625",
+        "midRange": "2085",
+        "economy": "1895"
       },
       {
         "travelers": "2",
-        "luxury": "€1280",
-        "midRange": "€1025",
-        "economy": "€930"
+        "luxury": "1435",
+        "midRange": "1150",
+        "economy": "1045"
       },
       {
         "travelers": "3",
-        "luxury": "€1095",
-        "midRange": "€850",
-        "economy": "€755"
+        "luxury": "1230",
+        "midRange": "955",
+        "economy": "850"
       },
       {
         "travelers": "4",
-        "luxury": "€975",
-        "midRange": "€735",
-        "economy": "€640"
+        "luxury": "1095",
+        "midRange": "825",
+        "economy": "720"
       },
       {
         "travelers": "Single Supplement",
-        "luxury": "€385",
-        "midRange": "€195",
-        "economy": "€120"
+        "luxury": "435",
+        "midRange": "220",
+        "economy": "135"
       }
     ],
     "included": [
@@ -3718,6 +3723,7 @@ export const tours = [
     "slug": "7-day-georgia-cultural-tour-kutaisi-to-tbilisi",
     "formerSlug": "georgias-cultural-wonders-7-day-adventure-from-kutaisi-to-tbilisi-and-beyond",
     "type": "private",
+    "priceCurrency": "USD",
     "title": "7-Day Georgia Cultural Tour: Kutaisi to Tbilisi",
     "heroImage": "/images/tours/7-day-cultural-kutaisi-tbilisi/prometheus-cave-imereti-georgia/prometheus-cave-imereti-georgia-1200.webp",
     "heroBgClass": "hero--prometheus-kutaisi",
@@ -3779,33 +3785,33 @@ export const tours = [
     "pricing": [
       {
         "travelers": "1",
-        "luxury": "€2995",
-        "midRange": "€2470",
-        "economy": "€2360"
+        "luxury": "3355",
+        "midRange": "2770",
+        "economy": "2645"
       },
       {
         "travelers": "2",
-        "luxury": "€1695",
-        "midRange": "€1380",
-        "economy": "€1340"
+        "luxury": "1895",
+        "midRange": "1550",
+        "economy": "1495"
       },
       {
         "travelers": "3",
-        "luxury": "€1395",
-        "midRange": "€1135",
-        "economy": "€1090"
+        "luxury": "1565",
+        "midRange": "1275",
+        "economy": "1225"
       },
       {
         "travelers": "4",
-        "luxury": "€1280",
-        "midRange": "€980",
-        "economy": "€935"
+        "luxury": "1435",
+        "midRange": "1095",
+        "economy": "1050"
       },
       {
         "travelers": "Single Supplement",
-        "luxury": "€450",
-        "midRange": "€190",
-        "economy": "€160"
+        "luxury": "495",
+        "midRange": "215",
+        "economy": "180"
       }
     ],
     "included": [
@@ -4639,6 +4645,7 @@ export const tours = [
   {
     "slug": "7-day-gudauri-ski-tour-from-tbilisi",
     "type": "private",
+    "priceCurrency": "USD",
     "seasonality": "winter",
     "featured": true,
     "title": "7-Day Gudauri Ski Tour from Tbilisi",
@@ -4692,7 +4699,7 @@ export const tours = [
       "Hotels included",
       "4 flexible ski days",
       "Available December 15 – March 15",
-      "From €415 per person",
+      "From 465 USD per person",
       "Customizable route"
     ],
     "faq": [
@@ -4718,7 +4725,7 @@ export const tours = [
       },
       {
         "title": "How much does a ski holiday in Gudauri cost?",
-        "content": "<p>Pricing is per person and depends on your group size and accommodation level, starting from €415 per person for the Classic package. Gudauri is one of the most affordable quality ski destinations in Europe. Send your dates and group size for an exact quote.</p>"
+        "content": "<p>Pricing is per person and depends on your group size and accommodation level, starting from 465 USD per person for the Classic package. Gudauri is one of the most affordable quality ski destinations in Europe. Send your dates and group size for an exact quote.</p>"
       },
       {
         "title": "Do I need special insurance to ski in Georgia?",
@@ -4858,9 +4865,9 @@ export const tours = [
       },
       "offers": {
         "@type": "AggregateOffer",
-        "priceCurrency": "EUR",
-        "lowPrice": "415",
-        "highPrice": "2255",
+        "priceCurrency": "USD",
+        "lowPrice": "465",
+        "highPrice": "2530",
         "offerCount": "3",
         "url": "https://www.hikasustravel.com/en/private-tours/7-day-gudauri-ski-tour-from-tbilisi/"
       }
@@ -4931,33 +4938,33 @@ export const tours = [
     "pricing": [
       {
         "travelers": "Single Supplement",
-        "luxury": "€950",
-        "midRange": "€540",
-        "economy": "€260"
+        "luxury": "1065",
+        "midRange": "595",
+        "economy": "295"
       },
       {
         "travelers": "1",
-        "luxury": "€2255",
-        "midRange": "€1470",
-        "economy": "€855"
+        "luxury": "2530",
+        "midRange": "1650",
+        "economy": "960"
       },
       {
         "travelers": "2",
-        "luxury": "€1170",
-        "midRange": "€795",
-        "economy": "€465"
+        "luxury": "1295",
+        "midRange": "890",
+        "economy": "525"
       },
       {
         "travelers": "3",
-        "luxury": "€1140",
-        "midRange": "€765",
-        "economy": "€440"
+        "luxury": "1280",
+        "midRange": "860",
+        "economy": "495"
       },
       {
         "travelers": "4",
-        "luxury": "€1095",
-        "midRange": "€740",
-        "economy": "€415"
+        "luxury": "1230",
+        "midRange": "830",
+        "economy": "465"
       }
     ],
     "included": [
@@ -4976,6 +4983,7 @@ export const tours = [
     "slug": "8-day-georgia-private-tour-culture-nature-and-wine",
     "formerSlug": "experience-the-heart-of-georgia-8-day-journey-of-culture-nature-wine-tastings",
     "type": "private",
+    "priceCurrency": "USD",
     "title": "8-Day Georgia Private Tour: Culture, Nature & Wine",
     "seoTitle": "8-Day Georgia Private Tour: Culture, Nature & Wine from Tbilisi",
     "heroImage": "/images/tours/8-day-culture-nature-wine/gergeti-trinity-church-kazbegi-georgia/gergeti-trinity-church-kazbegi-georgia-1200.webp",
@@ -5043,33 +5051,33 @@ export const tours = [
     "pricing": [
       {
         "travelers": "1",
-        "luxury": "€3225",
-        "midRange": "€2395",
-        "economy": "€2195"
+        "luxury": "3615",
+        "midRange": "2685",
+        "economy": "2460"
       },
       {
         "travelers": "2",
-        "luxury": "€1820",
-        "midRange": "€1360",
-        "economy": "€1240"
+        "luxury": "2040",
+        "midRange": "1525",
+        "economy": "1390"
       },
       {
         "travelers": "3",
-        "luxury": "€1595",
-        "midRange": "€1155",
-        "economy": "€1040"
+        "luxury": "1790",
+        "midRange": "1295",
+        "economy": "1165"
       },
       {
         "travelers": "4",
-        "luxury": "€1465",
-        "midRange": "€1020",
-        "economy": "€895"
+        "luxury": "1645",
+        "midRange": "1145",
+        "economy": "995"
       },
       {
         "travelers": "Single Supplement",
-        "luxury": "€590",
-        "midRange": "€285",
-        "economy": "€190"
+        "luxury": "665",
+        "midRange": "320",
+        "economy": "215"
       }
     ],
     "included": [
@@ -6117,8 +6125,8 @@ export const tours = [
       },
       "offers": {
         "@type": "AggregateOffer",
-        "priceCurrency": "EUR",
-        "lowPrice": "1185",
+        "priceCurrency": "USD",
+        "lowPrice": "1330",
         "offerCount": "3",
         "availability": "https://schema.org/InStock",
         "url": "https://www.hikasustravel.com/en/private-tours/8-day-georgia-culture-and-adventure-tour/"
@@ -6150,6 +6158,7 @@ export const tours = [
     },
     "formerSlug": "immerse-yourself-in-georgia-8-day-cultural-and-adventure-journey-through-the-caucasus",
     "type": "private",
+    "priceCurrency": "USD",
     "title": "8-Day Georgia Culture & Adventure Tour",
     "seoTitle": "8-Day Georgia Culture & Adventure Tour: Caucasus Mountains",
     "heroImage": "/images/tours/8-day-culture-adventure/gergeti-trinity-church-kazbegi-georgia-1448.webp",
@@ -6222,33 +6231,33 @@ export const tours = [
     "pricing": [
       {
         "travelers": "1",
-        "luxury": "€3675",
-        "midRange": "€2695",
-        "economy": "€2620"
+        "luxury": "4120",
+        "midRange": "3020",
+        "economy": "2935"
       },
       {
         "travelers": "2",
-        "luxury": "€2095",
-        "midRange": "€1595",
-        "economy": "€1540"
+        "luxury": "2350",
+        "midRange": "1790",
+        "economy": "1725"
       },
       {
         "travelers": "3",
-        "luxury": "€1895",
-        "midRange": "€1395",
-        "economy": "€1330"
+        "luxury": "2125",
+        "midRange": "1565",
+        "economy": "1490"
       },
       {
         "travelers": "4",
-        "luxury": "€1740",
-        "midRange": "€1255",
-        "economy": "€1185"
+        "luxury": "1950",
+        "midRange": "1395",
+        "economy": "1330"
       },
       {
         "travelers": "Single Supplement",
-        "luxury": "€640",
-        "midRange": "€340",
-        "economy": "€240"
+        "luxury": "720",
+        "midRange": "385",
+        "economy": "270"
       }
     ],
     "included": [
@@ -6839,6 +6848,7 @@ export const tours = [
   {
     "slug": "8-day-winter-ski-tour-from-kutaisi",
     "type": "private",
+    "priceCurrency": "USD",
     "seasonality": "winter",
     "title": "8-Day Winter Ski Tour from Kutaisi",
     "heroImage": "/images/files/gudauri-ski-resort-caucasus-georgia-1024.webp",
@@ -6894,7 +6904,7 @@ export const tours = [
       "Two nights in Kutaisi",
       "Hotels included",
       "4 full free ski days",
-      "From €535 per person",
+      "From 595 USD per person",
       "Customizable route"
     ],
     "faq": [
@@ -7254,9 +7264,9 @@ export const tours = [
       },
       "offers": {
         "@type": "AggregateOffer",
-        "priceCurrency": "EUR",
-        "lowPrice": "535",
-        "highPrice": "2580",
+        "priceCurrency": "USD",
+        "lowPrice": "595",
+        "highPrice": "2890",
         "offerCount": "3",
         "url": "https://www.hikasustravel.com/en/private-tours/8-day-winter-ski-tour-from-kutaisi/"
       }
@@ -7335,33 +7345,33 @@ export const tours = [
     "pricing": [
       {
         "travelers": "Single Supplement",
-        "luxury": "€995",
-        "midRange": "€560",
-        "economy": "€275"
+        "luxury": "1115",
+        "midRange": "630",
+        "economy": "295"
       },
       {
         "travelers": "1",
-        "luxury": "€2580",
-        "midRange": "€1740",
-        "economy": "€1130"
+        "luxury": "2890",
+        "midRange": "1950",
+        "economy": "1270"
       },
       {
         "travelers": "2",
-        "luxury": "€1340",
-        "midRange": "€935",
-        "economy": "€595"
+        "luxury": "1495",
+        "midRange": "1050",
+        "economy": "670"
       },
       {
         "travelers": "3",
-        "luxury": "€1280",
-        "midRange": "€890",
-        "economy": "€570"
+        "luxury": "1435",
+        "midRange": "995",
+        "economy": "640"
       },
       {
         "travelers": "4",
-        "luxury": "€1235",
-        "midRange": "€840",
-        "economy": "€535"
+        "luxury": "1385",
+        "midRange": "945",
+        "economy": "595"
       }
     ],
     "included": [
@@ -7380,6 +7390,7 @@ export const tours = [
     "slug": "9-day-georgia-private-tour-kutaisi-to-tbilisi",
     "formerSlug": "ultimate-georgia-exploration-9-day-tour-from-kutaisi-to-tbilisi-and-hidden-gems",
     "type": "private",
+    "priceCurrency": "USD",
     "title": "9-Day Georgia Private Tour: Kutaisi to Tbilisi",
     "seoTitle": "9-Day Georgia Private Tour: Kutaisi to Tbilisi Highlights",
     "heroImage": "/images/tours/9-day-kutaisi-tbilisi/martvili-canyon-samegrelo-georgia/martvili-canyon-samegrelo-georgia-1086.webp",
@@ -7453,33 +7464,33 @@ export const tours = [
     "pricing": [
       {
         "travelers": "1",
-        "luxury": "€3895",
-        "midRange": "€3045",
-        "economy": "€2880"
+        "luxury": "4365",
+        "midRange": "3395",
+        "economy": "3230"
       },
       {
         "travelers": "2",
-        "luxury": "€2140",
-        "midRange": "€1695",
-        "economy": "€1595"
+        "luxury": "2395",
+        "midRange": "1895",
+        "economy": "1790"
       },
       {
         "travelers": "3",
-        "luxury": "€1815",
-        "midRange": "€1385",
-        "economy": "€1290"
+        "luxury": "2035",
+        "midRange": "1555",
+        "economy": "1445"
       },
       {
         "travelers": "4",
-        "luxury": "€1610",
-        "midRange": "€1190",
-        "economy": "€1095"
+        "luxury": "1795",
+        "midRange": "1335",
+        "economy": "1230"
       },
       {
         "travelers": "Single Supplement",
-        "luxury": "€595",
-        "midRange": "€245",
-        "economy": "€195"
+        "luxury": "670",
+        "midRange": "275",
+        "economy": "220"
       }
     ],
     "included": [
@@ -8302,6 +8313,7 @@ export const tours = [
     "slug": "georgia-grand-tour-9-days-from-tbilisi-to-batumi",
     "formerSlug": "wander-wonder-and-wine-9-days-of-georgias-best",
     "type": "private",
+    "priceCurrency": "USD",
     "featured": true,
     "title": "Georgia Grand Tour: 9 Days from Tbilisi to Batumi",
     "heroImage": "/images/tours/grand-tour-tbilisi-batumi/batumi-black-sea-beach-batumi-georgia/batumi-black-sea-beach-batumi-georgia-1200.webp",
@@ -8379,33 +8391,33 @@ export const tours = [
     "pricing": [
       {
         "travelers": "1",
-        "luxury": "€3440",
-        "midRange": "€2770",
-        "economy": "€2465"
+        "luxury": "3855",
+        "midRange": "3095",
+        "economy": "2765"
       },
       {
         "travelers": "2",
-        "luxury": "€1880",
-        "midRange": "€1515",
-        "economy": "€1350"
+        "luxury": "2095",
+        "midRange": "1695",
+        "economy": "1515"
       },
       {
         "travelers": "3",
-        "luxury": "€1615",
-        "midRange": "€1260",
-        "economy": "€1095"
+        "luxury": "1795",
+        "midRange": "1395",
+        "economy": "1230"
       },
       {
         "travelers": "4",
-        "luxury": "€1445",
-        "midRange": "€1095",
-        "economy": "€935"
+        "luxury": "1620",
+        "midRange": "1230",
+        "economy": "1050"
       },
       {
         "travelers": "Single Supplement",
-        "luxury": "€590",
-        "midRange": "€330",
-        "economy": "€195"
+        "luxury": "665",
+        "midRange": "370",
+        "economy": "220"
       }
     ],
     "included": [
@@ -9443,6 +9455,7 @@ export const tours = [
     "slug": "9-day-georgia-wine-and-adventure-tour",
     "formerSlug": "wine-wonders-and-the-caucasus-a-9-day-adventure-in-georgia",
     "type": "private",
+    "priceCurrency": "USD",
     "title": "9-Day Georgia Wine & Adventure Tour",
     "seoTitle": "9-Day Georgia Wine & Adventure Tour: Caucasus Mountains",
     "heroImage": "/images/files/metekhi-church-mtkvari-tbilisi-georgia-1200.webp",
@@ -9523,33 +9536,33 @@ export const tours = [
     "pricing": [
       {
         "travelers": "1",
-        "luxury": "€3660",
-        "midRange": "€2670",
-        "economy": "€2495"
+        "luxury": "4095",
+        "midRange": "2990",
+        "economy": "2795"
       },
       {
         "travelers": "2",
-        "luxury": "€2035",
-        "midRange": "€1495",
-        "economy": "€1380"
+        "luxury": "2280",
+        "midRange": "1675",
+        "economy": "1550"
       },
       {
         "travelers": "3",
-        "luxury": "€1780",
-        "midRange": "€1450",
-        "economy": "€1130"
+        "luxury": "1995",
+        "midRange": "1625",
+        "economy": "1270"
       },
       {
         "travelers": "4",
-        "luxury": "€1615",
-        "midRange": "€1090",
-        "economy": "€975"
+        "luxury": "1795",
+        "midRange": "1225",
+        "economy": "1095"
       },
       {
         "travelers": "Single Supplement",
-        "luxury": "€690",
-        "midRange": "€285",
-        "economy": "€195"
+        "luxury": "775",
+        "midRange": "320",
+        "economy": "220"
       }
     ],
     "included": [
@@ -10490,6 +10503,7 @@ export const tours = [
   {
     "slug": "georgia-in-10-days-where-every-corner-has-a-story-and-every-meal-is-a-celebration",
     "type": "private",
+    "priceCurrency": "USD",
     "title": "Georgia in 10 Days: Where Every Corner Has a Story and Every Meal is a Celebration",
     "heroImage": "/images/tours/georgia-10-days-celebration/batumi-sunset-black-sea-batumi-georgia/batumi-sunset-black-sea-batumi-georgia-1200.webp",
     "heroBgClass": "hero--georgia-10-days-sunset",
@@ -10570,33 +10584,33 @@ export const tours = [
     "pricing": [
       {
         "travelers": "1",
-        "luxury": "€4365",
-        "midRange": "€3430",
-        "economy": "€3160"
+        "luxury": "4890",
+        "midRange": "3845",
+        "economy": "3540"
       },
       {
         "travelers": "2",
-        "luxury": "€2355",
-        "midRange": "€1845",
-        "economy": "€1495"
+        "luxury": "2640",
+        "midRange": "2070",
+        "economy": "1675"
       },
       {
         "travelers": "3",
-        "luxury": "€1995",
-        "midRange": "€1690",
-        "economy": "€1345"
+        "luxury": "2235",
+        "midRange": "1895",
+        "economy": "1495"
       },
       {
         "travelers": "4",
-        "luxury": "€1770",
-        "midRange": "€1280",
-        "economy": "€1125"
+        "luxury": "1985",
+        "midRange": "1435",
+        "economy": "1260"
       },
       {
         "travelers": "Single Supplement",
-        "luxury": "€695",
-        "midRange": "€345",
-        "economy": "€240"
+        "luxury": "780",
+        "midRange": "390",
+        "economy": "270"
       }
     ],
     "included": [
@@ -11648,6 +11662,7 @@ export const tours = [
   {
     "slug": "georgias-wonders-11-day-grand-tour-from-kutaisi-to-kazbegi-and-batumi",
     "type": "private",
+    "priceCurrency": "USD",
     "title": "Georgia's Wonders: 11-Day Grand Tour from Kutaisi to Kazbegi and Batumi",
     "heroImage": "/images/tours/georgia-wonders-11-day/ali-and-nino-statue-batumi-georgia/ali-and-nino-statue-batumi-georgia-1024.webp",
     "heroBgClass": "hero--georgia-wonders-ali-nino",
@@ -11734,33 +11749,33 @@ export const tours = [
     "pricing": [
       {
         "travelers": "1",
-        "luxury": "€5120",
-        "midRange": "€4095",
-        "economy": "€3580"
+        "luxury": "5735",
+        "midRange": "4590",
+        "economy": "3995"
       },
       {
         "travelers": "2",
-        "luxury": "€2775",
-        "midRange": "€2230",
-        "economy": "€2065"
+        "luxury": "3095",
+        "midRange": "2495",
+        "economy": "2315"
       },
       {
         "travelers": "3",
-        "luxury": "€2335",
-        "midRange": "€1810",
-        "economy": "€1645"
+        "luxury": "2615",
+        "midRange": "2030",
+        "economy": "1845"
       },
       {
         "travelers": "4",
-        "luxury": "€2060",
-        "midRange": "€1540",
-        "economy": "€1380"
+        "luxury": "2295",
+        "midRange": "1725",
+        "economy": "1550"
       },
       {
         "travelers": "Single Supplement",
-        "luxury": "€780",
-        "midRange": "€535",
-        "economy": "€255"
+        "luxury": "875",
+        "midRange": "595",
+        "economy": "290"
       }
     ],
     "included": [
@@ -12604,6 +12619,7 @@ export const tours = [
   {
     "slug": "11-day-winter-ski-tour-from-kutaisi",
     "type": "private",
+    "priceCurrency": "USD",
     "seasonality": "winter",
     "title": "11-Day Winter Ski Tour from Kutaisi",
     "heroImage": "/images/files/bakuriani-ski-slope-georgia-1600w.webp",
@@ -12659,7 +12675,7 @@ export const tours = [
       "Four nights in Bakuriani",
       "Hotels included",
       "7 flexible ski days",
-      "From €745 per person",
+      "From 835 USD per person",
       "Customizable route"
     ],
     "faq": [
@@ -13070,9 +13086,9 @@ export const tours = [
       },
       "offers": {
         "@type": "AggregateOffer",
-        "priceCurrency": "EUR",
-        "lowPrice": "745",
-        "highPrice": "3980",
+        "priceCurrency": "USD",
+        "lowPrice": "835",
+        "highPrice": "4460",
         "offerCount": "3",
         "url": "https://www.hikasustravel.com/en/private-tours/11-day-winter-ski-tour-from-kutaisi/"
       }
@@ -13161,33 +13177,33 @@ export const tours = [
     "pricing": [
       {
         "travelers": "Single Supplement",
-        "luxury": "€1565",
-        "midRange": "€865",
-        "economy": "€425"
+        "luxury": "1755",
+        "midRange": "970",
+        "economy": "480"
       },
       {
         "travelers": "1",
-        "luxury": "€3980",
-        "midRange": "€2545",
-        "economy": "€1595"
+        "luxury": "4460",
+        "midRange": "2850",
+        "economy": "1790"
       },
       {
         "travelers": "2",
-        "luxury": "€2060",
-        "midRange": "€1375",
-        "economy": "€870"
+        "luxury": "2295",
+        "midRange": "1540",
+        "economy": "975"
       },
       {
         "travelers": "3",
-        "luxury": "€1995",
-        "midRange": "€1295",
-        "economy": "€795"
+        "luxury": "2235",
+        "midRange": "1450",
+        "economy": "890"
       },
       {
         "travelers": "4",
-        "luxury": "€1935",
-        "midRange": "€1250",
-        "economy": "€745"
+        "luxury": "2170",
+        "midRange": "1395",
+        "economy": "835"
       }
     ],
     "included": [
@@ -13205,6 +13221,7 @@ export const tours = [
   {
     "slug": "12-day-ultimate-georgia-adventure-tour-tbilisi-kazbegi-mestia-kutaisi-batumi",
     "type": "private",
+    "priceCurrency": "USD",
     "title": "12-Day Ultimate Georgia Adventure Tour: Tbilisi, Kazbegi, Mestia, Kutaisi, Batumi",
     /* Hero + both cards are Svetitskhoveli Cathedral, Mtskheta — the same
        flat-namespace file this tour's own gallery already ships, so no asset
@@ -13315,33 +13332,33 @@ export const tours = [
     "pricing": [
       {
         "travelers": "1",
-        "luxury": "€5345",
-        "midRange": "€4295",
-        "economy": "€3960"
+        "luxury": "5990",
+        "midRange": "4795",
+        "economy": "4435"
       },
       {
         "travelers": "2",
-        "luxury": "€2865",
-        "midRange": "€2290",
-        "economy": "€2095"
+        "luxury": "3195",
+        "midRange": "2565",
+        "economy": "2350"
       },
       {
         "travelers": "3",
-        "luxury": "€2395",
-        "midRange": "€1850",
-        "economy": "€1655"
+        "luxury": "2685",
+        "midRange": "2075",
+        "economy": "1855"
       },
       {
         "travelers": "4",
-        "luxury": "€2115",
-        "midRange": "€1570",
-        "economy": "€1375"
+        "luxury": "2370",
+        "midRange": "1760",
+        "economy": "1540"
       },
       {
         "travelers": "Single Supplement",
-        "luxury": "€795",
-        "midRange": "€425",
-        "economy": "€290"
+        "luxury": "890",
+        "midRange": "480",
+        "economy": "325"
       }
     ],
     "included": [
@@ -14462,6 +14479,7 @@ export const tours = [
       "grand-georgia-adventure-13-day-cultural-and-scenic-journey"
     ],
     "type": "private",
+    "priceCurrency": "USD",
     "title": "13-Day Georgia Grand Tour from Kutaisi: Culture & Nature",
     "heroImage": "/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/svaneti-highlands-ushguli-georgia-1200.webp",
     "heroBgClass": "hero--13day-grand-kutaisi-svaneti",
@@ -14571,33 +14589,33 @@ export const tours = [
     "pricing": [
       {
         "travelers": "1",
-        "luxury": "€5875",
-        "midRange": "€4725",
-        "economy": "€4270"
+        "luxury": "6580",
+        "midRange": "5295",
+        "economy": "4785"
       },
       {
         "travelers": "2",
-        "luxury": "€3195",
-        "midRange": "€2575",
-        "economy": "€2375"
+        "luxury": "3580",
+        "midRange": "2885",
+        "economy": "2660"
       },
       {
         "travelers": "3",
-        "luxury": "€2695",
-        "midRange": "€2095",
-        "economy": "€1895"
+        "luxury": "3020",
+        "midRange": "2350",
+        "economy": "2125"
       },
       {
         "travelers": "4",
-        "luxury": "€2390",
-        "midRange": "€1795",
-        "economy": "€1595"
+        "luxury": "2680",
+        "midRange": "1995",
+        "economy": "1790"
       },
       {
         "travelers": "Single Supplement",
-        "luxury": "€895",
-        "midRange": "€460",
-        "economy": "€330"
+        "luxury": "995",
+        "midRange": "515",
+        "economy": "370"
       }
     ],
     "included": [
@@ -15630,6 +15648,7 @@ export const tours = [
   {
     "slug": "ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty",
     "type": "private",
+    "priceCurrency": "USD",
     "featured": true,
     "title": "Ultimate 15-Day Georgia Tour: From Tbilisi to Svaneti – Wine, Culture, and Natural Beauty",
     "heroImage": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/holy-trinity-cathedral-tbilisi-georgia-1200.webp",
@@ -15753,33 +15772,33 @@ export const tours = [
     "pricing": [
       {
         "travelers": "1",
-        "luxury": "€6395",
-        "midRange": "€4990",
-        "economy": "€4555"
+        "luxury": "7165",
+        "midRange": "5590",
+        "economy": "5095"
       },
       {
         "travelers": "2",
-        "luxury": "€3490",
-        "midRange": "€2895",
-        "economy": "€2455"
+        "luxury": "3895",
+        "midRange": "3245",
+        "economy": "2750"
       },
       {
         "travelers": "3",
-        "luxury": "€2995",
-        "midRange": "€2250",
-        "economy": "€1995"
+        "luxury": "3355",
+        "midRange": "2520",
+        "economy": "2235"
       },
       {
         "travelers": "4",
-        "luxury": "€2690",
-        "midRange": "€1940",
-        "economy": "€1690"
+        "luxury": "3015",
+        "midRange": "2175",
+        "economy": "1895"
       },
       {
         "travelers": "Single Supplement",
-        "luxury": "€1095",
-        "midRange": "€570",
-        "economy": "€395"
+        "luxury": "1230",
+        "midRange": "640",
+        "economy": "445"
       }
     ],
     "included": [
@@ -17285,6 +17304,7 @@ export const tours = [
     "slug": "20-day-georgia-grand-tour-wine-hiking-and-culture",
     "formerSlug": "georgia-on-my-mind-20-days-of-tasting-trekking-and-total-relaxation",
     "type": "private",
+    "priceCurrency": "USD",
     "title": "20-Day Georgia Grand Tour: Wine, Hiking & Culture",
     "heroImage": "/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/juta-valley-kazbegi-georgia-1200.webp",
     "heroBgClass": "hero--20day-grand-juta",
@@ -17427,33 +17447,33 @@ export const tours = [
     "pricing": [
       {
         "travelers": "1",
-        "luxury": "€9370",
-        "midRange": "€7455",
-        "economy": "€6855"
+        "luxury": "10495",
+        "midRange": "8350",
+        "economy": "7680"
       },
       {
         "travelers": "2",
-        "luxury": "€5090",
-        "midRange": "€4045",
-        "economy": "€3695"
+        "luxury": "5695",
+        "midRange": "4530",
+        "economy": "4140"
       },
       {
         "travelers": "3",
-        "luxury": "€4340",
-        "midRange": "€3320",
-        "economy": "€3975"
+        "luxury": "4865",
+        "midRange": "3720",
+        "economy": "4455"
       },
       {
         "travelers": "4",
-        "luxury": "€3845",
-        "midRange": "€2845",
-        "economy": "€2495"
+        "luxury": "4295",
+        "midRange": "3190",
+        "economy": "2795"
       },
       {
         "travelers": "Single Supplement",
-        "luxury": "€1550",
-        "midRange": "€795",
-        "economy": "€540"
+        "luxury": "1740",
+        "midRange": "890",
+        "economy": "595"
       }
     ],
     "included": [
@@ -18779,6 +18799,7 @@ export const tours = [
   {
     "slug": "10-day-georgia-armenia-tour",
     "type": "private",
+    "priceCurrency": "USD",
     "country": "caucasus",
     "areaServed": ["Georgia", "Armenia"],
     "title": "10-Day Georgia and Armenia Tour: Kazbegi, Kakheti Wine & Yerevan",
@@ -18840,11 +18861,11 @@ export const tours = [
       { "city": "Yerevan (3 nights)", "luxury": "DoubleTree by Hilton", "midRange": "Yerevan Place", "economy": "Ani Central Inn" }
     ],
     "pricing": [
-      { "travelers": "Single Supplement", "luxury": "€795", "midRange": "€470", "economy": "€290" },
-      { "travelers": "1", "luxury": "€4860", "midRange": "€3995", "economy": "€3580" },
-      { "travelers": "2", "luxury": "€2595", "midRange": "€2140", "economy": "€1935" },
-      { "travelers": "3", "luxury": "€2435", "midRange": "€1855", "economy": "€1595" },
-      { "travelers": "4", "luxury": "€1980", "midRange": "€1530", "economy": "€1295" }
+      { "travelers": "Single Supplement", "luxury": "890", "midRange": "530", "economy": "325" },
+      { "travelers": "1", "luxury": "5445", "midRange": "4475", "economy": "3995" },
+      { "travelers": "2", "luxury": "2895", "midRange": "2395", "economy": "2170" },
+      { "travelers": "3", "luxury": "2730", "midRange": "2080", "economy": "1790" },
+      { "travelers": "4", "luxury": "2220", "midRange": "1715", "economy": "1450" }
     ],
     "included": [
       "Accommodation in standard double/twin room, with breakfast included;",
@@ -19625,6 +19646,7 @@ export const tours = [
   {
     "slug": "7-day-svaneti-tour-from-kutaisi",
     "type": "private",
+    "priceCurrency": "USD",
     "title": "7-Day Svaneti Tour from Kutaisi",
     "heroImage": "/images/tours/7-day-svaneti-tour-from-kutaisi/lamaria-church-ushguli-shkhara-georgia-1200.webp",
     "ogImage": {
@@ -19699,33 +19721,33 @@ export const tours = [
     "pricing": [
       {
         "travelers": "Single Supplement",
-        "luxury": "€190",
-        "midRange": "€190",
-        "economy": "€190"
+        "luxury": "215",
+        "midRange": "215",
+        "economy": "215"
       },
       {
         "travelers": "1",
-        "luxury": "€3,595",
-        "midRange": "€3,595",
-        "economy": "€3,595"
+        "luxury": "4030",
+        "midRange": "4030",
+        "economy": "4030"
       },
       {
         "travelers": "2",
-        "luxury": "€2,045",
-        "midRange": "€2,045",
-        "economy": "€2,045"
+        "luxury": "2290",
+        "midRange": "2290",
+        "economy": "2290"
       },
       {
         "travelers": "3",
-        "luxury": "€1,680",
-        "midRange": "€1,680",
-        "economy": "€1,680"
+        "luxury": "1885",
+        "midRange": "1885",
+        "economy": "1885"
       },
       {
         "travelers": "4",
-        "luxury": "€1,370",
-        "midRange": "€1,370",
-        "economy": "€1,370"
+        "luxury": "1535",
+        "midRange": "1535",
+        "economy": "1535"
       }
     ],
     "included": [
@@ -20281,6 +20303,7 @@ export const tours = [
   {
     "slug": "14-day-caucasus-tour",
     "type": "private",
+    "priceCurrency": "USD",
     "country": "caucasus",
     "areaServed": ["Azerbaijan", "Georgia", "Armenia"],
     "title": "14-Day Caucasus Tour: Azerbaijan, Georgia & Armenia",
@@ -20369,11 +20392,11 @@ export const tours = [
       { "city": "Yerevan (3 nights)", "luxury": "DoubleTree by Hilton Yerevan City Centre", "midRange": "Yerevan Place", "economy": "Ani Central Inn" }
     ],
     "pricing": [
-      { "travelers": "Single Supplement", "luxury": "€1090", "midRange": "€695", "economy": "€395" },
-      { "travelers": "1", "luxury": "€6495", "midRange": "€5655", "economy": "€4985" },
-      { "travelers": "2", "luxury": "€3695", "midRange": "€3145", "economy": "€2895" },
-      { "travelers": "3", "luxury": "€3390", "midRange": "€2795", "economy": "€2435" },
-      { "travelers": "4", "luxury": "€2850", "midRange": "€2395", "economy": "€2040" }
+      { "travelers": "Single Supplement", "luxury": "1225", "midRange": "780", "economy": "445" },
+      { "travelers": "1", "luxury": "7275", "midRange": "6335", "economy": "5585" },
+      { "travelers": "2", "luxury": "4140", "midRange": "3525", "economy": "3245" },
+      { "travelers": "3", "luxury": "3795", "midRange": "3130", "economy": "2730" },
+      { "travelers": "4", "luxury": "3195", "midRange": "2685", "economy": "2285" }
     ],
     "included": [
       "Accommodation in standard double/twin room, with breakfast included;",
@@ -21338,6 +21361,7 @@ export const tours = [
   {
     "slug": "5-day-armenia-highlights-tour",
     "type": "private",
+    "priceCurrency": "USD",
     "country": "armenia",
     "title": "5-Day Armenia Highlights Tour: Yerevan, Sevan & the South",
     "heroImage": "/images/files/garni-temple-armenia-1448.webp",
@@ -21384,11 +21408,11 @@ export const tours = [
       { "city": "Yerevan (4 nights)", "luxury": "DoubleTree by Hilton Yerevan City Centre", "midRange": "Yerevan Place", "economy": "Ani Central Inn" }
     ],
     "pricing": [
-      { "travelers": "1", "luxury": "€1680", "midRange": "€1495", "economy": "€1295" },
-      { "travelers": "2", "luxury": "€965", "midRange": "€845", "economy": "€795" },
-      { "travelers": "3", "luxury": "€830", "midRange": "€725", "economy": "€595" },
-      { "travelers": "4", "luxury": "€780", "midRange": "€660", "economy": "€550" },
-      { "travelers": "Single Supplement", "luxury": "€280", "midRange": "€240", "economy": "€165" }
+      { "travelers": "1", "luxury": "1885", "midRange": "1675", "economy": "1450" },
+      { "travelers": "2", "luxury": "1085", "midRange": "950", "economy": "890" },
+      { "travelers": "3", "luxury": "930", "midRange": "815", "economy": "670" },
+      { "travelers": "4", "luxury": "875", "midRange": "740", "economy": "620" },
+      { "travelers": "Single Supplement", "luxury": "315", "midRange": "270", "economy": "185" }
     ],
     "included": [
       "Accommodation in a standard double/twin room, with breakfast included;",
@@ -21680,7 +21704,7 @@ export const tours = [
       },
       {
         "title": "How much does the tour cost?",
-        "content": "<p>Pricing is per person and depends on your group size and accommodation level, starting from €550 per person (Classic package, four travelers). Larger groups pay less per person; a single supplement applies for a single room. Send your dates and group size for an exact quote.</p>"
+        "content": "<p>Pricing is per person and depends on your group size and accommodation level, starting from 620 USD per person (Classic package, four travelers). Larger groups pay less per person; a single supplement applies for a single room. Send your dates and group size for an exact quote.</p>"
       }
     ],
     "tourFormTitle": "5-Day Armenia Highlights Tour: Yerevan, Sevan & the South"
@@ -21688,6 +21712,7 @@ export const tours = [
   {
     "slug": "7-day-armenia-tour-yerevan-tatev-dilijan",
     "type": "private",
+    "priceCurrency": "USD",
     "country": "armenia",
     "title": "7-Day Armenia Tour: Yerevan, Tatev & Dilijan",
     "heroImage": "/images/files/tatev-monastery-armenia-1672.webp",
@@ -21745,11 +21770,11 @@ export const tours = [
       { "city": "Dilijan (1 night)", "luxury": "Best Western Plus Paradise Hotel Dilijan", "midRange": "Dili Town Resort and Spa", "economy": "Casanova Inn" }
     ],
     "pricing": [
-      { "travelers": "1", "luxury": "€2670", "midRange": "€2455", "economy": "€2230" },
-      { "travelers": "2", "luxury": "€1475", "midRange": "€1325", "economy": "€1195" },
-      { "travelers": "3", "luxury": "€1275", "midRange": "€1130", "economy": "€995" },
-      { "travelers": "4", "luxury": "€1135", "midRange": "€985", "economy": "€860" },
-      { "travelers": "Single Supplement", "luxury": "€395", "midRange": "€335", "economy": "€245" }
+      { "travelers": "1", "luxury": "2990", "midRange": "2750", "economy": "2495" },
+      { "travelers": "2", "luxury": "1655", "midRange": "1485", "economy": "1340" },
+      { "travelers": "3", "luxury": "1430", "midRange": "1270", "economy": "1115" },
+      { "travelers": "4", "luxury": "1275", "midRange": "1095", "economy": "965" },
+      { "travelers": "Single Supplement", "luxury": "445", "midRange": "375", "economy": "275" }
     ],
     "included": [
       "Accommodation in a standard double/twin room, with breakfast included;",
@@ -22079,6 +22104,7 @@ export const tours = [
   {
     "slug": "8-day-armenia-grand-tour-yerevan-tatev-dilijan",
     "type": "private",
+    "priceCurrency": "USD",
     "country": "armenia",
     "title": "8-Day Armenia Grand Tour: Yerevan, Lake Sevan, Tatev & Dilijan",
     "heroImage": "/images/files/sevanavank-monastery-armenia-1672.webp",
@@ -22140,11 +22166,11 @@ export const tours = [
       { "city": "Dilijan (1 night)", "luxury": "Best Western Plus Paradise Hotel Dilijan", "midRange": "Dili Town Resort and Spa", "economy": "Casanova Inn" }
     ],
     "pricing": [
-      { "travelers": "1", "luxury": "€2845", "midRange": "€2590", "economy": "€2295" },
-      { "travelers": "2", "luxury": "€1640", "midRange": "€1470", "economy": "€1295" },
-      { "travelers": "3", "luxury": "€1395", "midRange": "€1230", "economy": "€1080" },
-      { "travelers": "4", "luxury": "€1250", "midRange": "€1075", "economy": "€925" },
-      { "travelers": "Single Supplement", "luxury": "€470", "midRange": "€395", "economy": "€280" }
+      { "travelers": "1", "luxury": "3190", "midRange": "2895", "economy": "2570" },
+      { "travelers": "2", "luxury": "1840", "midRange": "1650", "economy": "1450" },
+      { "travelers": "3", "luxury": "1565", "midRange": "1380", "economy": "1195" },
+      { "travelers": "4", "luxury": "1395", "midRange": "1195", "economy": "1040" },
+      { "travelers": "Single Supplement", "luxury": "530", "midRange": "445", "economy": "315" }
     ],
     "included": [
       "Accommodation in a standard double/twin room, with breakfast included;",

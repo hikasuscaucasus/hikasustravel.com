@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import useT from '../../i18n/useT'
+import { formatPrice } from './pricingUtils'
 
 /**
  * Desktop-width sticky request bar: appears once the hero's own top CTA
@@ -46,7 +47,7 @@ export default function StickyRequestBar({ startingPrice }) {
   return (
     <div className={`iv-stickybar${visible ? ' iv-stickybar--visible' : ''}`}>
       <span className="iv-stickybar__price">
-        <span className="iv-stickybar__amount">€{startingPrice.toLocaleString('en-US')}</span>
+        <span className="iv-stickybar__amount">{formatPrice(startingPrice)}</span>
         <span className="iv-stickybar__note">{t('sidebar.startingFrom')} · {t('pricing.perPerson')}</span>
       </span>
       <a
