@@ -5,7 +5,7 @@ import CardImage from '../shared/CardImage'
 import DestinationCard from '../shared/DestinationCard'
 import CountryTabs from '../shared/CountryTabs'
 import FeaturedTourTile from '../shared/FeaturedTourTile'
-import { formatPriceNumber } from '../shared/pricingUtils'
+import FlagshipTour from '../shared/FlagshipTour'
 import ContactForm from '../shared/ContactForm'
 import { tours, primaryPrivateTourCountFor, hubStatusFor, featuredToursFor } from '../../data/tours'
 import { blogArticles } from '../../data/blogData'
@@ -18,6 +18,7 @@ import { I18nContext } from '../../i18n/I18nContext'
 import useSEO from '../../hooks/useSEO'
 import { getSEO } from '../../data/seoData'
 import asset from '../../utils/basePath'
+import { trackEvent } from '../../utils/analytics'
 
 // Fixed Georgia → Armenia → Azerbaijan order for the homepage Travel Blogs
 // teaser (intentionally not the blog registry's own newest-first ordering).
@@ -118,7 +119,16 @@ export default function HomePage() {
     return t('home.destStatusSoonWithGuide')
   }
 
-  const groupTours = tours.filter((tour) => tour.type === 'group')
+  // The one scheduled tour the homepage leads with (flagship: true in
+  // tours.js) — rendered by FlagshipTour directly under the hero and linked
+  // from the hero itself. The old "Scheduled group departures" card section
+  // that sat below the trust strip is gone: with a single group tour it
+  // would have been the same product a second time, in a weaker form.
+  const flagship = tours.find((tour) => tour.flagship && tour.type === 'group')
+  const flagshipTitle = flagship
+    ? (tourTranslations?.[flagship.slug]?.shortTitle || flagship.tourFormTitle || flagship.title)
+    : null
+  const flagshipYear = flagship?.groupDates?.find((d) => !d.soldOut)?.year || ''
 
   const featuredTabs = [
     {
@@ -183,9 +193,28 @@ export default function HomePage() {
             <div className="button button--outline">
               <LocaleLink to="/contact">{t('home.ctaPlanTrip')}</LocaleLink>
             </div>
+            {/* The hero fills the first screen, so the flagship module below it
+                starts under the fold on every device. This one quiet line is
+                what puts the main product on the first screen without
+                displacing the brand H1 or the two broad CTAs. */}
+            {flagship && (
+              <p className="hero-flagship-link">
+                <LocaleLink
+                  to={`/group-tours/${flagship.slug}`}
+                  onClick={() => trackEvent('flagship_cta_click', { tour: flagship.slug, cta: 'hero_link' })}
+                >
+                  {t('home.heroFlagshipLink', { year: flagshipYear, title: flagshipTitle })}
+                </LocaleLink>
+              </p>
+            )}
           </>
         )}
       />
+
+      {/* Flagship tour — directly under the hero, before the destination
+          chooser, so the product the business leads with is the first thing
+          a visitor meets after the brand statement. */}
+      {flagship && <FlagshipTour tour={flagship} />}
 
       {/* Where do you want to go? — four destination cards, status line driven
           by the same tour-count check that gates the country hubs' noindex
@@ -285,75 +314,6 @@ export default function HomePage() {
               >
                 {t('home.trustTripadvisorLink')}
               </a>
-            </p>
-          </FadeUp>
-        </div>
-      </section>
-
-      {/* Scheduled group departures — one card per group tour (currently one),
-          so future Armenia/Azerbaijan/Caucasus departures appear automatically. */}
-      <section className="home-items">
-        <div className="tour-listing" style={{ background: 'none', maxWidth: '1600px' }}>
-          <FadeUp>
-            <h2>{t('home.groupDeparturesTitle')}</h2>
-          </FadeUp>
-          {groupTours.map((groupTour) => {
-            const tt = tourTranslations?.[groupTour.slug]
-            return (
-              <FadeUp key={groupTour.slug}>
-                <div className="tour-item tour-item-card">
-                  <LocaleLink
-                    to={`/group-tours/${groupTour.slug}`}
-                    className="tour-image-link"
-                    aria-label={tt?.title || groupTour.title}
-                  >
-                    <CardImage
-                      src={groupTour.listingImage || groupTour.heroImage}
-                      className="tour-image"
-                    >
-                      <div className="tour-image-scrim" aria-hidden="true" />
-                    </CardImage>
-                  </LocaleLink>
-                  <div className="tour-info">
-                    <h2>
-                      <LocaleLink to={`/group-tours/${groupTour.slug}`}>{tt?.title || groupTour.title}</LocaleLink>
-                    </h2>
-                    <h3>{groupTour.days} {t('tour.days')}</h3>
-                    <p>{tt?.listingDescription || tt?.description || groupTour.listingDescription || groupTour.description}</p>
-                    <div className="more">
-                      <LocaleLink to={`/group-tours/${groupTour.slug}`}>{t('tour.moreInfo')}</LocaleLink>
-                    </div>
-                  </div>
-                  <div className="tour-data">
-                    {groupTour.groupDates && (
-                      <>
-                        <div className="available">{t('tour.availableDates')}</div>
-                        <div className="date-chips">
-                          {/* Sold-out departures stay visible on the tour page
-                              (flagged there) but are dropped from this card, so
-                              it only ever advertises bookable dates. */}
-                          {groupTour.groupDates
-                            .filter((d) => !d.soldOut)
-                            .map((d, i) => (
-                            <div key={i} className="date-chip">
-                              <span className="date-range">{d.start} – {d.end}</span>
-                              <span className="date-year">{d.year}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </>
-                    )}
-                    {groupTour.pricePerPerson && (
-                      <div className="tour-data-price">{t('tour.perPerson', { price: formatPriceNumber(groupTour.pricePerPerson) })}</div>
-                    )}
-                  </div>
-                </div>
-              </FadeUp>
-            )
-          })}
-          <FadeUp>
-            <p className="city-ttd-cta">
-              <LocaleLink to="/group-tours" className="button">{t('home.allGroupTours')}</LocaleLink>
             </p>
           </FadeUp>
         </div>

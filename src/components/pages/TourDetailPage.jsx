@@ -1,5 +1,5 @@
 import { useCallback, useContext, useEffect, useMemo, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useLocation, useParams } from 'react-router-dom'
 import TourDetailHero from '../shared/TourDetailHero'
 import TourSectionNav from '../shared/TourSectionNav'
 import FadeUp from '../shared/FadeUp'
@@ -14,6 +14,8 @@ import StickyRequestBar from '../shared/StickyRequestBar'
 import TourCard from '../shared/TourCard'
 import { tours } from '../../data/tours'
 import { PRIVATE_TOUR_CATEGORIES } from '../../data/tourCategories'
+import { contactInfo } from '../../data/siteData'
+import { trackEvent } from '../../utils/analytics'
 import useT from '../../i18n/useT'
 import useLang from '../../i18n/useLang'
 import { I18nContext } from '../../i18n/I18nContext'
@@ -23,6 +25,7 @@ import { autolinkNodes } from '../../utils/autolinkReact'
 
 export default function TourDetailPage() {
   const { slug } = useParams()
+  const { hash } = useLocation()
   const t = useT()
   const { lang } = useLang()
   const { tourTranslations, loadTourTranslations, pages } = useContext(I18nContext)
@@ -39,6 +42,17 @@ export default function TourDetailPage() {
   useEffect(() => {
     if (!tourTranslations) loadTourTranslations()
   }, [tourTranslations, loadTourTranslations])
+
+  // A link straight to the inquiry form (the homepage flagship's "Choose a
+  // departure" action lands on #book). The shared ScrollToTop resets the
+  // window to 0 on every route change in this same commit, so the jump is
+  // deferred a tick to run after it; a direct page load with the hash is
+  // reset by that same effect after hydration, so this covers both.
+  useEffect(() => {
+    if (hash !== '#book') return undefined
+    const id = setTimeout(() => document.getElementById('book')?.scrollIntoView({ behavior: 'smooth' }), 150)
+    return () => clearTimeout(id)
+  }, [hash, slug])
 
   const tour = tours.find((t) => t.slug === slug)
   const tt = tourTranslations?.[slug]
@@ -57,11 +71,16 @@ export default function TourDetailPage() {
     const hasPrice = tour.priceType !== 'fixed'
       && ((tour.pricing?.length > 0) || (tour.type === 'group' && tour.pricePerPerson))
 
-    // Order must mirror the on-page section order:
+    // Order must mirror the on-page section order. A scheduled group tour
+    // leads with the Overview (what the trip is, who it is for) and shows the
+    // Gallery after it; private tours keep photos first:
     // Gallery → Overview → Itinerary → Accommodation → Pricing → Book
     const sections = []
-    if (tour.gallery?.length > 0) sections.push({ id: 'gallery', labelKey: 'tour.gallery' })
+    const gallery = tour.gallery?.length > 0 ? { id: 'gallery', labelKey: 'tour.gallery' } : null
+    const overviewFirst = tour.type === 'group'
+    if (gallery && !overviewFirst) sections.push(gallery)
     sections.push({ id: 'overview', labelKey: 'tour.overview' })
+    if (gallery && overviewFirst) sections.push(gallery)
     if (itinerary?.length > 0) sections.push({ id: 'itinerary', labelKey: 'tour.itinerary' })
     if (tour.accommodations?.length > 0) sections.push({ id: 'accommodation', labelKey: 'pricing.accommodations' })
     if (hasPrice) sections.push({ id: 'pricing', labelKey: 'tour.pricing' })
@@ -191,6 +210,24 @@ export default function TourDetailPage() {
     />
   )
 
+  // Gallery section, built once so the two render positions (before or after
+  // the Overview) are the same element.
+  const galleryAfterOverview = isGroup
+  const gallerySection = (
+    <section id="gallery" className="td-section">
+      <FadeUp>
+        <h2 className="td-section__title">{t('tour.gallery')}</h2>
+        <p className="td-section__subtitle">{t('tour.gallerySubtitle')}</p>
+      </FadeUp>
+      {/* The 5-day Tbilisi→Batumi route map is a normal gallery item (the
+          closing tile), not a separate block — see its entry in tours.js. The
+          gallery no longer folds after six photos, so it needs no opt-out:
+          every item is in the scroll strip from the first paint.
+          (`galleryShowAll` is left in tours.js, now inert.) */}
+      <Gallery images={localizedGallery} />
+    </section>
+  )
+
   // The icon list of tour highlights that used to sit between the Overview
   // paragraphs and the Itinerary is no longer rendered. The `highlights` arrays
   // stay in tours.js and in the locale files — nothing else in the project
@@ -217,26 +254,15 @@ export default function TourDetailPage() {
 
       <div className="td-layout">
         <div className="td-main">
-          {/* Gallery — placed before Overview so photos lead the page. The
+          {/* Gallery — on private tours placed before Overview so photos lead
+              the page; on a scheduled group tour it follows the Overview (see
+              `galleryAfterOverview`), so a visitor reads what the trip is, who
+              it is for and the group size before a 26-photo strip. The
               Gudauri ski tour's route map used to sit above this as its own
               English-only <figure> with a private one-image lightbox; it is now
               gallery tile #1 (see its entry in tours.js), so it shares the
               gallery's lightbox queue and renders in all 7 locales. */}
-          {tour.gallery && tour.gallery.length > 0 && (
-            <section id="gallery" className="td-section">
-              <FadeUp>
-                <h2 className="td-section__title">{t('tour.gallery')}</h2>
-                <p className="td-section__subtitle">{t('tour.gallerySubtitle')}</p>
-              </FadeUp>
-              {/* The 5-day Tbilisi→Batumi route map is a normal gallery item
-                  (the closing tile), not a separate block — see its entry in
-                  tours.js. The gallery no longer folds after six photos, so it
-                  needs no opt-out: every item is in the scroll strip from the
-                  first paint. (`galleryShowAll` is left in tours.js, now inert —
-                  removing it would be a data edit this task does not cover.) */}
-              <Gallery images={localizedGallery} />
-            </section>
-          )}
+          {tour.gallery && tour.gallery.length > 0 && !galleryAfterOverview && gallerySection}
 
           {/* 1. Overview */}
           <section id="overview" className="td-section">
@@ -263,6 +289,8 @@ export default function TourDetailPage() {
               )}
             </FadeUp>
           </section>
+
+          {tour.gallery && tour.gallery.length > 0 && galleryAfterOverview && gallerySection}
 
           {/* The group-tour facts table (type / countries / route / duration /
               age / group size / dates / price / supplement / meals / borders)
@@ -341,13 +369,27 @@ export default function TourDetailPage() {
         <div className="td-main">
           <section id="book" className="td-section td-book-inline">
             <FadeUp>
-              <h2 className="td-section__title">{t('tour.bookThisTour')}</h2>
-              {!isGroup && <p className="td-section__subtitle">{t('form.privateIntro')}</p>}
+              {/* A scheduled group tour is requested, not booked on the spot:
+                  the heading says so, the intro sets the expectation (we reply
+                  with availability; the request is not yet a booking) and the
+                  one trust line puts the operator and its real review page
+                  next to the decision. Private tours keep their own copy. */}
+              <h2 className="td-section__title">{isGroup ? t('tour.requestThisTour') : t('tour.bookThisTour')}</h2>
+              <p className="td-section__subtitle">{isGroup ? t('form.groupIntro') : t('form.privateIntro')}</p>
+              {isGroup && (
+                <p className="td-book__trust">
+                  <span>{t('home.trustItem1Title')}</span>
+                  <span aria-hidden="true"> · </span>
+                  <a href={contactInfo.tripadvisorUrl} target="_blank" rel="noopener noreferrer">{t('home.trustTripadvisorLink')}</a>
+                </p>
+              )}
               <TourInquiryForm
                 tourTitle={tour.tourFormTitle || tour.title}
+                tourSlug={tour.slug}
                 selectedPackage={packageSelection}
                 hideAccommodationType={tour.accommodationMode === 'single'}
                 departures={departures}
+                travelerRange={isGroup ? tour.groupSize : null}
               />
             </FadeUp>
           </section>
@@ -377,7 +419,7 @@ export default function TourDetailPage() {
       {/* Desktop sticky request bar — shows once #td-hero-cta (the hero's own
           CTA) scrolls out of view; inert ≤900px, where the mobile bar below
           already covers the same job. */}
-      <StickyRequestBar startingPrice={startingPrice} fixedPrice={fixedPrice} />
+      <StickyRequestBar startingPrice={startingPrice} fixedPrice={fixedPrice} tourSlug={tour.slug} />
 
       {/* Mobile booking bar — CSS-gated to <=900px (see ivory.css), so it is
           inert on desktop. Shows the same starting price the pricing cards
@@ -391,11 +433,15 @@ export default function TourDetailPage() {
               {fixedPrice ? t('pricing.perPerson') : `${t('sidebar.startingFrom')} · ${t('pricing.perPerson')}`}
             </span>
           </span>
+          {/* Same wording as the hero and the desktop bar: the form sends a
+              request, nothing is booked on the spot, so the bar never says
+              "Book Now". */}
           <a href="#book" className="iv-pill iv-mobilebar__cta" onClick={(e) => {
             e.preventDefault()
+            trackEvent('tour_request_cta_click', { tour: tour.slug, placement: 'mobile_bar' })
             document.getElementById('book')?.scrollIntoView({ behavior: 'smooth' })
           }}>
-            {t('tour.bookNow')}
+            {t('tour.requestThisTour')}
           </a>
         </div>
       )}

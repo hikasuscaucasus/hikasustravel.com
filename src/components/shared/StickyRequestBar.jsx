@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import useT from '../../i18n/useT'
 import { formatPrice } from './pricingUtils'
+import { trackEvent } from '../../utils/analytics'
 
 /**
  * Desktop-width sticky request bar: appears once the hero's own top CTA
@@ -16,7 +17,7 @@ import { formatPrice } from './pricingUtils'
  * SSR-safe: IntersectionObserver only runs inside useEffect, which never
  * executes during prerendering, so this renders nothing extra server-side.
  */
-export default function StickyRequestBar({ startingPrice, fixedPrice = false }) {
+export default function StickyRequestBar({ startingPrice, fixedPrice = false, tourSlug = '' }) {
   const t = useT()
   const [visible, setVisible] = useState(false)
 
@@ -55,6 +56,7 @@ export default function StickyRequestBar({ startingPrice, fixedPrice = false }) 
         className="iv-pill iv-stickybar__cta"
         onClick={(e) => {
           e.preventDefault()
+          trackEvent('tour_request_cta_click', { tour: tourSlug, placement: 'sticky_bar' })
           document.getElementById('book')?.scrollIntoView({ behavior: 'smooth' })
         }}
       >

@@ -5,6 +5,7 @@ export const tours = [
   {
     "slug": "15-day-caucasus-group-tour",
     "type": "group",
+    "flagship": true,
     "priceCurrency": "USD",
     "priceType": "fixed",
     "country": "caucasus",

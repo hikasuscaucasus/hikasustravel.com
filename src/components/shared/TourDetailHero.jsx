@@ -7,6 +7,7 @@ import { GalleryLightbox } from './Gallery'
 import { tourCountry } from '../../data/tours'
 import { tourHubById } from '../../data/tourHubs'
 import { formatPrice, parsePrice } from './pricingUtils'
+import { trackEvent } from '../../utils/analytics'
 
 /* Ivory-badge pilot: the hero is a two-column split (copy left, framed cover
    photo right) instead of the full-viewport photo it used to be, so the photo
@@ -160,6 +161,7 @@ export default function TourDetailHero({ tour, translatedTitle, heroH1, isGroup,
 
   const scrollToBook = (e) => {
     e.preventDefault()
+    trackEvent('tour_request_cta_click', { tour: tour.slug, placement: 'hero' })
     const el = document.getElementById('book')
     if (el) el.scrollIntoView({ behavior: 'smooth' })
   }

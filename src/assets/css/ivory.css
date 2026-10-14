@@ -3381,6 +3381,34 @@
   color: var(--ink);
 }
 
+/* One-line pointer to the flagship tour under the two hero CTAs. Text, not a
+   third pill: it must read as secondary to the two broad actions while still
+   being on the first screen (the hero is 100dvh, so the flagship module below
+   starts under the fold everywhere). White over the scrim, like the subtitle. */
+.theme-ivory .hero-flagship-link {
+  flex-basis: 100%;
+  width: auto;
+  max-width: none;
+  margin: 2px 0 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.theme-ivory .hero-flagship-link a {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(255, 255, 255, 0.7);
+}
+
+.theme-ivory .hero-flagship-link a:hover,
+.theme-ivory .hero-flagship-link a:focus-visible {
+  text-decoration-color: #fff;
+  outline-color: #fff;
+}
+
 @media (max-width: 600px) {
   .theme-ivory .hero-copy {
     gap: 20px;
@@ -3390,6 +3418,213 @@
     padding: 11px 20px;
     font-size: 13px;
   }
+}
+
+/* --- Homepage flagship tour -------------------------------------------------
+   The one scheduled tour the business leads with, directly under the hero
+   (FlagshipTour.jsx). Same frame, chip, pill and ink/sub tokens as the tour
+   pages — prominence comes from scale and position, not from new paint. The
+   module is a left-aligned editorial split, the opposite of the centred card
+   grids that follow it, so it reads as a feature rather than one more card. */
+.theme-ivory .home-flagship {
+  padding: 44px var(--indent) 48px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.theme-ivory .flagship {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 40px;
+  align-items: center;
+}
+
+.theme-ivory .flagship__media {
+  margin: 0;
+  aspect-ratio: 4 / 3;
+  background: var(--surface);
+}
+
+.theme-ivory .flagship__media a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.theme-ivory .flagship__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.theme-ivory .flagship__body {
+  min-width: 0;
+}
+
+/* .home-items p is 50vw wide and centred for the text bands; every paragraph
+   in this module is natural width, left-aligned. */
+.theme-ivory .flagship__body p {
+  width: auto;
+  max-width: none;
+  margin: 0;
+}
+
+.theme-ivory .flagship__eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold-text);
+}
+
+.theme-ivory h2.flagship__title {
+  margin: 8px 0 4px;
+  font-size: clamp(1.55rem, 2.8vw, 2.125rem);
+  line-height: 1.15;
+  text-align: left;
+  padding: 0;
+}
+
+.theme-ivory .flagship__title a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.theme-ivory .flagship__title a:hover {
+  color: var(--accent);
+}
+
+.theme-ivory .flagship__countries {
+  color: var(--sub);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.theme-ivory .flagship__body .flagship__lead {
+  margin: 14px 0 0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--ink);
+}
+
+.theme-ivory .flagship__facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.theme-ivory .flagship__facts li {
+  display: inline-flex;
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--chipr);
+  color: var(--ink);
+  font-size: 13px;
+  line-height: 1;
+  padding: 8px 14px;
+  white-space: nowrap;
+}
+
+.theme-ivory .flagship__body .flagship__price {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20px 0 0;
+}
+
+.theme-ivory .flagship__amount {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--ink);
+}
+
+.theme-ivory .flagship__per {
+  font-size: 14px;
+  color: var(--sub);
+}
+
+.theme-ivory .flagship__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 22px;
+  margin-top: 22px;
+}
+
+.theme-ivory .flagship__link {
+  color: var(--linkc);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.theme-ivory .flagship__link:hover {
+  color: var(--accent);
+}
+
+.theme-ivory .flagship__cta:focus-visible,
+.theme-ivory .flagship__link:focus-visible,
+.theme-ivory .flagship__title a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+@media (max-width: 900px) {
+  .theme-ivory .flagship {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  /* Photo on top, but short: the title, price and action must arrive within
+     one short scroll on a phone, not after a full-height picture. */
+  .theme-ivory .flagship__media {
+    aspect-ratio: 16 / 9;
+    max-height: 260px;
+  }
+}
+
+@media (max-width: 600px) {
+  .theme-ivory .home-flagship {
+    padding: 30px 16px 36px;
+  }
+
+  .theme-ivory .flagship__amount {
+    font-size: 24px;
+  }
+
+  .theme-ivory .flagship__actions .iv-pill {
+    width: 100%;
+  }
+}
+
+/* --- Tour inquiry: trust line ---------------------------------------------
+   One quiet line between the intro and the form on a scheduled group tour:
+   the operator and its real review page, next to the decision. */
+.theme-ivory .td-book__trust {
+  margin: -6px 0 18px;
+  font-size: 13px;
+  color: var(--sub);
+}
+
+.theme-ivory .td-book__trust a {
+  color: var(--linkc);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.theme-ivory .td-book__trust a:hover {
+  color: var(--accent);
 }
 
 /* --- About Us -------------------------------------------------------------

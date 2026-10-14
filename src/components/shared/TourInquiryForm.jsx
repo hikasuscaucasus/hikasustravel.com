@@ -4,6 +4,7 @@ import useWeb3Form from '../../hooks/useWeb3Form'
 import { WEB3FORMS_KEY, CONTACT_EMAIL } from '../../config'
 import TurnstileWidget from './TurnstileWidget'
 import { getTurnstileToken } from '../../utils/turnstile'
+import { trackEvent } from '../../utils/analytics'
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
@@ -12,7 +13,12 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 // `groupDates`). When present the free start/end date inputs are replaced by
 // one required dropdown of exactly those windows; private tours pass nothing
 // and keep their flexible dates.
-export default function TourInquiryForm({ tourTitle, selectedPackage, hideAccommodationType = false, departures = null }) {
+// `travelerRange` ({ min, max }, the tour's `groupSize`): the free traveler
+// count becomes a required select of exactly those values, so a group tour
+// can never be requested for 0, 1 or more people than it takes.
+// `tourSlug` is the only tour identifier sent to analytics (never the
+// visitor's own fields).
+export default function TourInquiryForm({ tourTitle, tourSlug = '', selectedPackage, hideAccommodationType = false, departures = null, travelerRange = null }) {
   const t = useT()
   const { status, submit } = useWeb3Form()
   const [form, setForm] = useState({
@@ -51,6 +57,7 @@ export default function TourInquiryForm({ tourTitle, selectedPackage, hideAccomm
     if (!form.lastName.trim()) errs.push(t('form.errors.lastName'))
     if (!EMAIL_RE.test(form.email.trim())) errs.push(t('form.errors.email'))
     if (departures && !form.departure) errs.push(t('form.errors.departure'))
+    if (travelerRange && !form.travelers) errs.push(t('form.errors.travelers'))
     return errs
   }
 
@@ -60,7 +67,7 @@ export default function TourInquiryForm({ tourTitle, selectedPackage, hideAccomm
     const errs = validate()
     setErrors(errs)
     if (errs.length) return
-    await submit({
+    const ok = await submit({
       subject: `New tour request: ${tourTitle}`,
       tour: tourTitle,
       salutation: form.salutation,
@@ -85,6 +92,7 @@ export default function TourInquiryForm({ tourTitle, selectedPackage, hideAccomm
       botcheck: '',
       'cf-turnstile-response': getTurnstileToken(),
     })
+    if (ok) trackEvent('inquiry_submit', { tour: tourSlug, form: 'tour_inquiry', ...(departures ? { departure: form.departure } : {}) })
   }
 
   if (status === 'success') {
@@ -127,8 +135,17 @@ export default function TourInquiryForm({ tourTitle, selectedPackage, hideAccomm
           </select>
         </div>
         <div className="td-form__group">
-          <label htmlFor="ti-travelers">{t('form.travelers')}</label>
-          <input id="ti-travelers" name="travelers" type="number" min="1" max="99" step="1" inputMode="numeric" value={form.travelers} onChange={set('travelers')} />
+          <label htmlFor="ti-travelers">{t('form.travelers')}{travelerRange ? ' *' : ''}</label>
+          {travelerRange ? (
+            <select id="ti-travelers" name="travelers" required value={form.travelers} onChange={set('travelers')} aria-invalid={invalid(!form.travelers)} aria-describedby={describedBy(!form.travelers)}>
+              <option value="">{t('form.travelersPlaceholder')}</option>
+              {Array.from({ length: travelerRange.max - travelerRange.min + 1 }, (_, i) => travelerRange.min + i).map((n) => (
+                <option key={n} value={n}>{n}</option>
+              ))}
+            </select>
+          ) : (
+            <input id="ti-travelers" name="travelers" type="number" min="1" max="99" step="1" inputMode="numeric" value={form.travelers} onChange={set('travelers')} />
+          )}
         </div>
       </div>
 
@@ -157,7 +174,18 @@ export default function TourInquiryForm({ tourTitle, selectedPackage, hideAccomm
       {departures ? (
         <div className="td-form__group">
           <label htmlFor="ti-departure">{t('form.departure')} *</label>
-          <select id="ti-departure" name="departure" required value={form.departure} onChange={set('departure')} aria-invalid={invalid(!form.departure)} aria-describedby={describedBy(!form.departure)}>
+          <select
+            id="ti-departure"
+            name="departure"
+            required
+            value={form.departure}
+            onChange={(e) => {
+              set('departure')(e)
+              if (e.target.value) trackEvent('departure_select', { tour: tourSlug, departure: e.target.value })
+            }}
+            aria-invalid={invalid(!form.departure)}
+            aria-describedby={describedBy(!form.departure)}
+          >
             <option value="">{t('form.departurePlaceholder')}</option>
             {departures.map((d) => (
               <option key={d.value} value={d.value} disabled={d.soldOut}>
