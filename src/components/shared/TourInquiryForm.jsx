@@ -13,9 +13,12 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 // `groupDates`). When present the free start/end date inputs are replaced by
 // one required dropdown of exactly those windows; private tours pass nothing
 // and keep their flexible dates.
-// `travelerRange` ({ min, max }, the tour's `groupSize`): the free traveler
-// count becomes a required select of exactly those values, so a group tour
-// can never be requested for 0, 1 or more people than it takes.
+// `travelerRange` ({ min, max }, the tour's `inquiryTravelers` — the party size
+// one inquiry may ask for, 1–12 on the scheduled Caucasus tours — falling back
+// to `groupSize`): the free traveler count becomes a required select of exactly
+// those values, so a group tour can never be requested for 0 or for more
+// people than a departure takes. The operating minimum (`groupSize.min`) is a
+// separate fact shown on the page, not a limit on a single inquiry.
 // `tourSlug` is the only tour identifier sent to analytics (never the
 // visitor's own fields).
 export default function TourInquiryForm({ tourTitle, tourSlug = '', selectedPackage, hideAccommodationType = false, departures = null, travelerRange = null }) {

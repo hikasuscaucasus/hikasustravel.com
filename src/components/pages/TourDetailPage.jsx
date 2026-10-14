@@ -279,12 +279,16 @@ export default function TourDetailPage() {
               {/* One compact line of booking facts that belong with the
                   overview rather than in a facts table: who the tour is for
                   and how large the group is. Opt-in per tour (`adultsOnly`,
-                  `groupSize`), so every other tour renders exactly as before. */}
+                  `groupSize`, `inquiryTravelers`), so every other tour renders
+                  exactly as before. */}
               {(tour.adultsOnly || tour.groupSize) && (
                 <p className="td-overview__facts">
                   {[
                     tour.adultsOnly ? t('tour.adultsOnly') : null,
                     tour.groupSize ? t('tour.groupSizeRange', { min: tour.groupSize.min, max: tour.groupSize.max }) : null,
+                    /* The operating group size is not the party size: a tour whose
+                       inquiry minimum is 1 says so, in one short sentence. */
+                    tour.inquiryTravelers?.min === 1 ? t('tour.soloWelcome') : null,
                   ].filter(Boolean).join(' · ')}
                 </p>
               )}
@@ -396,7 +400,7 @@ export default function TourDetailPage() {
                 selectedPackage={packageSelection}
                 hideAccommodationType={tour.accommodationMode === 'single'}
                 departures={departures}
-                travelerRange={isGroup ? tour.groupSize : null}
+                travelerRange={isGroup ? (tour.inquiryTravelers || tour.groupSize) : null}
               />
             </FadeUp>
           </section>

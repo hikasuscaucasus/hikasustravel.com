@@ -197,6 +197,7 @@
   "form.whatsapp": "Telefon / WhatsApp",
   "tour.adultsOnly": "Nur für Erwachsene",
   "tour.groupSizeRange": "Gruppengröße: {min}–{max} Reisende",
+  "tour.soloWelcome": "Alleinreisende sind herzlich willkommen.",
   "tour.singleSupplementShort": "Einzelzimmerzuschlag: {price}",
   "form.departure": "Abreisetermin",
   "form.departurePlaceholder": "Abreisetermin wählen",

@@ -197,6 +197,7 @@
   "form.whatsapp": "Phone / WhatsApp",
   "tour.adultsOnly": "Adults only",
   "tour.groupSizeRange": "Group size: {min}–{max} travelers",
+  "tour.soloWelcome": "Solo travelers are welcome to join.",
   "tour.singleSupplementShort": "Single supplement: {price}",
   "form.departure": "Departure date",
   "form.departurePlaceholder": "Select a departure date",

@@ -203,6 +203,7 @@
   "form.whatsapp": "Telefon / WhatsApp",
   "tour.adultsOnly": "Tylko dla dorosłych",
   "tour.groupSizeRange": "Wielkość grupy: {min}–{max} uczestników",
+  "tour.soloWelcome": "Osoby podróżujące samotnie są mile widziane.",
   "tour.singleSupplementShort": "Dopłata za pokój jednoosobowy: {price}",
   "form.departure": "Termin wyjazdu",
   "form.departurePlaceholder": "Wybierz termin wyjazdu",

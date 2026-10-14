@@ -197,6 +197,7 @@
   "form.whatsapp": "Teléfono / WhatsApp",
   "tour.adultsOnly": "Solo adultos",
   "tour.groupSizeRange": "Tamaño del grupo: {min}–{max} viajeros",
+  "tour.soloWelcome": "Los viajeros que van solos son bienvenidos.",
   "tour.singleSupplementShort": "Suplemento individual: {price}",
   "form.departure": "Fecha de salida",
   "form.departurePlaceholder": "Seleccione una fecha de salida",

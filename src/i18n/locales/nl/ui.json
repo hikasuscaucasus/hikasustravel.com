@@ -197,6 +197,7 @@
   "form.whatsapp": "Telefoon / WhatsApp",
   "tour.adultsOnly": "Alleen volwassenen",
   "tour.groupSizeRange": "Groepsgrootte: {min}–{max} reizigers",
+  "tour.soloWelcome": "Alleenreizigers zijn van harte welkom.",
   "tour.singleSupplementShort": "Toeslag eenpersoonskamer: {price}",
   "form.departure": "Vertrekdatum",
   "form.departurePlaceholder": "Kies een vertrekdatum",
