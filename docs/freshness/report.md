@@ -2,7 +2,7 @@
 
 - Last full audit: **2026-10-03**
 - Next full audit: **2027-01-01** (in 79 days)
-- Tracked pages: 46 (A 16, B 10, C 11, D 9)
+- Tracked pages: 48 (A 16, B 10, C 11, D 11)
 - Shared facts: 11; source URLs: 21
 - Overdue: 0; due within 14 days: 0; never verified: 2
 - Blog publication dates changed: 0
@@ -65,6 +65,8 @@
 |---|---|---|---|---|---|
 | data:embassyData | caucasus | directory | — | — | NEVER VERIFIED |
 | tour:10-day-georgia-armenia-tour | caucasus | tour | 2026-10-03 | 2027-01-01 | OK |
+| tour:11-day-caucasus-group-tour-azerbaijan-georgia | caucasus | tour | 2026-10-03 | 2027-01-01 | OK |
+| tour:11-day-caucasus-group-tour-georgia-armenia | caucasus | tour | 2026-10-03 | 2027-01-01 | OK |
 | tour:14-day-caucasus-tour | caucasus | tour | 2026-10-03 | 2027-01-01 | OK |
 | tour:15-day-caucasus-group-tour | caucasus | tour | 2026-10-03 | 2027-01-01 | OK |
 | data:shuttleData | georgia | service | — | — | NEVER VERIFIED |

@@ -5,12 +5,12 @@
     "nextFullAudit": "2027-01-01",
     "daysToAudit": 79,
     "auditDue": false,
-    "totalTracked": 46,
+    "totalTracked": 48,
     "byTier": {
       "A": 16,
       "B": 10,
       "C": 11,
-      "D": 9
+      "D": 11
     },
     "overdue": 0,
     "dueSoon": 0,
@@ -404,6 +404,26 @@
     {
       "id": "tour:15-day-caucasus-group-tour",
       "path": "/group-tours/15-day-caucasus-group-tour",
+      "country": "caucasus",
+      "type": "tour",
+      "tier": "D",
+      "lastVerified": "2026-10-03",
+      "nextReview": "2027-01-01",
+      "state": "OK"
+    },
+    {
+      "id": "tour:11-day-caucasus-group-tour-azerbaijan-georgia",
+      "path": "/group-tours/11-day-caucasus-group-tour-azerbaijan-georgia",
+      "country": "caucasus",
+      "type": "tour",
+      "tier": "D",
+      "lastVerified": "2026-10-03",
+      "nextReview": "2027-01-01",
+      "state": "OK"
+    },
+    {
+      "id": "tour:11-day-caucasus-group-tour-georgia-armenia",
+      "path": "/group-tours/11-day-caucasus-group-tour-georgia-armenia",
       "country": "caucasus",
       "type": "tour",
       "tier": "D",

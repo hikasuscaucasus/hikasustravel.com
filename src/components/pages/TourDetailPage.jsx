@@ -11,6 +11,7 @@ import IncludedNotIncluded from '../shared/IncludedNotIncluded'
 import TourInquiryForm from '../shared/TourInquiryForm'
 import Gallery from '../shared/Gallery'
 import StickyRequestBar from '../shared/StickyRequestBar'
+import GroupTourFamily from '../shared/GroupTourFamily'
 import TourCard from '../shared/TourCard'
 import { tours } from '../../data/tours'
 import { PRIVATE_TOUR_CATEGORIES } from '../../data/tourCategories'
@@ -289,6 +290,12 @@ export default function TourDetailPage() {
               )}
             </FadeUp>
           </section>
+
+          {/* The three scheduled Caucasus group tours share one departure
+              calendar; this compact chooser (duration · countries · fixed
+              price, the open tour marked) renders only on a tour that belongs
+              to such a family, so every other page is untouched. */}
+          {isGroup && <GroupTourFamily current={tour} />}
 
           {tour.gallery && tour.gallery.length > 0 && galleryAfterOverview && gallerySection}
 

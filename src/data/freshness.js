@@ -142,6 +142,8 @@ export const pages = [
   // ---- Tier D: other content carrying a volatile fact
   page('tour:14-day-caucasus-tour', '/private-tours/14-day-caucasus-tour', 'caucasus', 'tour', D, ['border direction', 'foot crossings', 'Azerbaijan visa'], ['azLandEntry', 'amBorders']),
   page('tour:15-day-caucasus-group-tour', '/group-tours/15-day-caucasus-group-tour', 'caucasus', 'tour', D, ['border direction', 'foot crossings', 'Azerbaijan visa', 'Georgia insurance'], ['azLandEntry', 'amBorders', 'geInsurance']),
+  page('tour:11-day-caucasus-group-tour-azerbaijan-georgia', '/group-tours/11-day-caucasus-group-tour-azerbaijan-georgia', 'caucasus', 'tour', D, ['border direction', 'foot crossing', 'Azerbaijan visa', 'Georgia insurance'], ['azLandEntry', 'geInsurance']),
+  page('tour:11-day-caucasus-group-tour-georgia-armenia', '/group-tours/11-day-caucasus-group-tour-georgia-armenia', 'caucasus', 'tour', D, ['Sadakhlo–Bagratashen crossing', 'Georgia insurance'], ['amBorders', 'geInsurance']),
   page('tour:10-day-georgia-armenia-tour', '/private-tours/10-day-georgia-armenia-tour', 'caucasus', 'tour', D, ['Sadakhlo–Bagratashen crossing'], ['amBorders']),
   page('tour:5-day-private-tour-from-tbilisi-to-batumi', '/private-tours/5-day-private-tour-from-tbilisi-to-batumi', 'georgia', 'tour', D, ['Batumi–Tbilisi train'], ['geRail']),
   page('tour:georgias-wonders-11-day-grand-tour-from-kutaisi-to-kazbegi-and-batumi', '/private-tours/georgias-wonders-11-day-grand-tour-from-kutaisi-to-kazbegi-and-batumi', 'georgia', 'tour', D, ['Batumi–Tbilisi train'], ['geRail']),

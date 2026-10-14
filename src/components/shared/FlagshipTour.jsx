@@ -6,6 +6,7 @@ import { I18nContext } from '../../i18n/I18nContext'
 import asset from '../../utils/basePath'
 import { trackEvent } from '../../utils/analytics'
 import { formatPrice, parsePrice } from './pricingUtils'
+import { countryLabels, familyOf } from '../../utils/groupTourFamily'
 
 /* Homepage flagship module for the one scheduled tour the business leads with
    (`flagship: true` on its record in tours.js). It sits directly under the
@@ -20,12 +21,6 @@ import { formatPrice, parsePrice } from './pricingUtils'
    in 2027") rather than listed — the tour page's inquiry form is where a
    visitor picks one. The single supplement is a product-page detail and is
    left off on purpose. */
-
-const COUNTRY_KEYS = {
-  azerbaijan: 'nav.destinations.azerbaijan',
-  georgia: 'nav.destinations.georgia',
-  armenia: 'nav.destinations.armenia',
-}
 
 // Same lookup TourDetailHero uses: the gallery item whose `base` is the stem
 // of `heroImage` is that photograph at every width the image pipeline built.
@@ -59,9 +54,11 @@ export default function FlagshipTour({ tour }) {
   const tt = tourTranslations?.[tour.slug]
   const url = `/group-tours/${tour.slug}`
   const title = tt?.shortTitle || tour.tourFormTitle || tt?.title || tour.title
-  const countries = (tour.areaServed || [])
-    .map((c) => (COUNTRY_KEYS[c.toLowerCase()] ? t(COUNTRY_KEYS[c.toLowerCase()]) : c))
-    .join(' · ')
+  const countries = countryLabels(tour, t)
+  // The shorter tours on the same departure calendar — shown as two small
+  // companion cards under the flagship, never beside it, so the 15-day tour
+  // stays the one the page leads with.
+  const companions = familyOf(tour).filter((x) => x.slug !== tour.slug)
   const bookable = (tour.groupDates || []).filter((d) => !d.soldOut)
   const years = [...new Set(bookable.map((d) => d.year))].join('/')
   const price = parsePrice(tour.pricePerPerson)
@@ -127,6 +124,38 @@ export default function FlagshipTour({ tour }) {
           </div>
         </div>
       </div>
+
+      {companions.length > 0 && (
+        <div className="flagship-companions">
+          <h3 className="flagship-companions__title">{t('home.companionsTitle')}</h3>
+          <p className="flagship-companions__text">{t('home.companionsText')}</p>
+          <ul className="flagship-companions__list">
+            {companions.map((c) => {
+              const ctt = tourTranslations?.[c.slug]
+              const cTitle = ctt?.shortTitle || c.tourFormTitle || ctt?.title || c.title
+              const cPrice = parsePrice(c.pricePerPerson)
+              return (
+                <li key={c.slug} className="flagship-companion">
+                  <LocaleLink
+                    to={`/group-tours/${c.slug}`}
+                    className="flagship-companion__link"
+                    onClick={() => trackEvent('flagship_cta_click', { tour: c.slug, cta: 'companion' })}
+                  >
+                    <span className="flagship-companion__title">{cTitle}</span>
+                    <span className="flagship-companion__meta">{c.days} {t('tour.days')} · {countryLabels(c, t)}</span>
+                    {cPrice && (
+                      <span className="flagship-companion__price">
+                        <strong>{formatPrice(cPrice)}</strong> {t('pricing.perPerson')}
+                      </span>
+                    )}
+                    <span className="flagship-companion__cta">{t('tour.exploreTour')}</span>
+                  </LocaleLink>
+                </li>
+              )
+            })}
+          </ul>
+        </div>
+      )}
     </section>
   )
 }
