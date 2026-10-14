@@ -7,12 +7,17 @@ import { getTurnstileToken } from '../../utils/turnstile'
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
-export default function TourInquiryForm({ tourTitle, selectedPackage, hideAccommodationType = false }) {
+// `departures`: for a scheduled group tour, the bookable departure windows
+// ([{ value, label, soldOut }], built by TourDetailPage from the tour's
+// `groupDates`). When present the free start/end date inputs are replaced by
+// one required dropdown of exactly those windows; private tours pass nothing
+// and keep their flexible dates.
+export default function TourInquiryForm({ tourTitle, selectedPackage, hideAccommodationType = false, departures = null }) {
   const t = useT()
   const { status, submit } = useWeb3Form()
   const [form, setForm] = useState({
     salutation: '', firstName: '', lastName: '', email: '', phone: '',
-    travelers: '', startDate: '', endDate: '', accommodation: '', message: '',
+    travelers: '', startDate: '', endDate: '', departure: '', accommodation: '', message: '',
     botcheck: '',
   })
   const [errors, setErrors] = useState([])
@@ -45,6 +50,7 @@ export default function TourInquiryForm({ tourTitle, selectedPackage, hideAccomm
     if (!form.firstName.trim()) errs.push(t('form.errors.firstName'))
     if (!form.lastName.trim()) errs.push(t('form.errors.lastName'))
     if (!EMAIL_RE.test(form.email.trim())) errs.push(t('form.errors.email'))
+    if (departures && !form.departure) errs.push(t('form.errors.departure'))
     return errs
   }
 
@@ -63,8 +69,12 @@ export default function TourInquiryForm({ tourTitle, selectedPackage, hideAccomm
       email: form.email.trim(),
       phone: form.phone.trim(),
       travelers: form.travelers,
-      start_date: form.startDate,
-      end_date: form.endDate,
+      // A scheduled group tour submits the chosen departure (human label plus
+      // the canonical ISO window) instead of free start/end dates, which it
+      // never shows; a private tour sends its dates exactly as before.
+      ...(departures
+        ? { departure: `${departures.find((d) => d.value === form.departure)?.label || ''} (${form.departure})` }
+        : { start_date: form.startDate, end_date: form.endDate }),
       // Omitted entirely (not sent as an empty/blank value) on a tour with a
       // single accommodation option — the field is never shown, so there is
       // nothing for the visitor to have chosen. Web3Forms only emails the
@@ -144,16 +154,30 @@ export default function TourInquiryForm({ tourTitle, selectedPackage, hideAccomm
         </div>
       </div>
 
-      <div className="td-form__row">
+      {departures ? (
         <div className="td-form__group">
-          <label htmlFor="ti-start">{t('form.startDate')}</label>
-          <input id="ti-start" name="startDate" type="date" value={form.startDate} onChange={set('startDate')} />
+          <label htmlFor="ti-departure">{t('form.departure')} *</label>
+          <select id="ti-departure" name="departure" required value={form.departure} onChange={set('departure')} aria-invalid={invalid(!form.departure)} aria-describedby={describedBy(!form.departure)}>
+            <option value="">{t('form.departurePlaceholder')}</option>
+            {departures.map((d) => (
+              <option key={d.value} value={d.value} disabled={d.soldOut}>
+                {d.label}{d.soldOut ? ` — ${t('tour.soldOut')}` : ''}
+              </option>
+            ))}
+          </select>
         </div>
-        <div className="td-form__group">
-          <label htmlFor="ti-end">{t('form.endDate')}</label>
-          <input id="ti-end" name="endDate" type="date" min={form.startDate || undefined} value={form.endDate} onChange={set('endDate')} />
+      ) : (
+        <div className="td-form__row">
+          <div className="td-form__group">
+            <label htmlFor="ti-start">{t('form.startDate')}</label>
+            <input id="ti-start" name="startDate" type="date" value={form.startDate} onChange={set('startDate')} />
+          </div>
+          <div className="td-form__group">
+            <label htmlFor="ti-end">{t('form.endDate')}</label>
+            <input id="ti-end" name="endDate" type="date" min={form.startDate || undefined} value={form.endDate} onChange={set('endDate')} />
+          </div>
         </div>
-      </div>
+      )}
 
       {/* A tour with a single accommodation option (accommodationMode: 'single'
           in tours.js, e.g. the 7-Day Svaneti Tour) has nothing for this field

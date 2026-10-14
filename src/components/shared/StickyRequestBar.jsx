@@ -16,7 +16,7 @@ import { formatPrice } from './pricingUtils'
  * SSR-safe: IntersectionObserver only runs inside useEffect, which never
  * executes during prerendering, so this renders nothing extra server-side.
  */
-export default function StickyRequestBar({ startingPrice }) {
+export default function StickyRequestBar({ startingPrice, fixedPrice = false }) {
   const t = useT()
   const [visible, setVisible] = useState(false)
 
@@ -48,7 +48,7 @@ export default function StickyRequestBar({ startingPrice }) {
     <div className={`iv-stickybar${visible ? ' iv-stickybar--visible' : ''}`}>
       <span className="iv-stickybar__price">
         <span className="iv-stickybar__amount">{formatPrice(startingPrice)}</span>
-        <span className="iv-stickybar__note">{t('sidebar.startingFrom')} · {t('pricing.perPerson')}</span>
+        <span className="iv-stickybar__note">{fixedPrice ? t('pricing.perPerson') : `${t('sidebar.startingFrom')} · ${t('pricing.perPerson')}`}</span>
       </span>
       <a
         href="#book"

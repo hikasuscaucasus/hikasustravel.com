@@ -667,69 +667,11 @@
       "Reisverzekering (sinds 1 januari 2026 is voor bezoekers van Georgië een ziektekosten- en ongevallenverzekering met een dekking van minimaal 30.000 GEL verplicht);",
       "Internationale vluchten (aankomst in Bakoe, vertrek uit Jerevan) en luchtvaartkosten."
     ],
-    "groupSummary": [
-      {
-        "label": "Soort reis",
-        "value": "Groepsreis"
-      },
-      {
-        "label": "Landen",
-        "value": "Azerbeidzjan, Georgië & Armenië"
-      },
-      {
-        "label": "Route",
-        "value": "Bakoe – Sheki – Telavi – Tbilisi – Kazbegi – Tbilisi – Jerevan"
-      },
-      {
-        "label": "Duur",
-        "value": "15 dagen / 14 nachten (Azerbeidzjan 4, Georgië 7, Armenië 3)"
-      },
-      {
-        "label": "Leeftijd",
-        "value": "Alleen volwassenen"
-      },
-      {
-        "label": "Groepsgrootte",
-        "value": "2–12 reizigers (minimaal 2, maximaal 12)"
-      },
-      {
-        "label": "Beschikbare data",
-        "type": "dates",
-        "values": [
-          {
-            "text": "10 juni – 24 juni 2027",
-            "soldOut": false
-          },
-          {
-            "text": "5 augustus – 19 augustus 2027",
-            "soldOut": false
-          },
-          {
-            "text": "2 september – 16 september 2027",
-            "soldOut": false
-          },
-          {
-            "text": "14 oktober – 28 oktober 2027",
-            "soldOut": false
-          }
-        ]
-      },
-      {
-        "label": "Prijs",
-        "value": "2.990 USD per persoon – vaste prijs, tweepersoons-/twinkamer"
-      },
-      {
-        "label": "Toeslag eenpersoonskamer",
-        "value": "480 USD (eenpersoonskamer voor de hele reis)"
-      },
-      {
-        "label": "Maaltijden",
-        "value": "14 ontbijten, 5 lunches, 3 diners, 2 wijnproeverijen"
-      },
-      {
-        "label": "Grensovergangen",
-        "value": "Lagodekhi (dag 5) en Sadakhlo–Bagratashen (dag 12), beide te voet"
-      }
+    "departures": [
+      "10 juni – 24 juni 2027",
+      "5 augustus – 19 augustus 2027",
+      "2 september – 16 september 2027",
+      "14 oktober – 28 oktober 2027"
     ]
   },
   "5-day-private-tour-from-tbilisi-to-batumi": {

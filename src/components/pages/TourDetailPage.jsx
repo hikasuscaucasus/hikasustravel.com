@@ -52,7 +52,10 @@ export default function TourDetailPage() {
     if (!tour) return []
     const ttLocal = tourTranslations?.[tour.slug]
     const itinerary = ttLocal?.itinerary || tour.itinerary
-    const hasPrice = (tour.pricing?.length > 0) || (tour.type === 'group' && tour.pricePerPerson)
+    // A fixed-price tour (priceType: 'fixed') shows its one price in the hero
+    // and the booking bars; a separate Pricing section would only repeat it.
+    const hasPrice = tour.priceType !== 'fixed'
+      && ((tour.pricing?.length > 0) || (tour.type === 'group' && tour.pricePerPerson))
 
     // Order must mirror the on-page section order:
     // Gallery → Overview → Itinerary → Accommodation → Pricing → Book
@@ -147,6 +150,18 @@ export default function TourDetailPage() {
     }
   })
 
+  // Scheduled group tours book one of their published departures, never a
+  // free date: one option per `groupDates` entry, labelled in the page's
+  // language (`tt.departures`, same order) and submitted with the canonical
+  // ISO window so the inquiry email is unambiguous in every locale.
+  const departures = isGroup && tour.groupDates?.length
+    ? tour.groupDates.map((d, i) => ({
+        value: d.iso || `${d.start} ${d.year} – ${d.end} ${d.year}`,
+        label: tt?.departures?.[i] || `${d.start} – ${d.end} ${d.year}`,
+        soldOut: Boolean(d.soldOut),
+      }))
+    : null
+
   // Extract starting price
   const startingPrice = isGroup
     ? (tour.pricePerPerson ? parseFloat(tour.pricePerPerson.replace(/[^0-9.]/g, '')) : null)
@@ -162,7 +177,10 @@ export default function TourDetailPage() {
       singleOption={tour.accommodationMode === 'single'}
     />
   )
-  const priceSection = (
+  // Fixed-price tours (priceType: 'fixed') carry their one price in the hero
+  // and the booking bars, so they render no Pricing section at all.
+  const fixedPrice = tour.priceType === 'fixed'
+  const priceSection = fixedPrice ? null : (
     <PriceSection
       isGroup={isGroup}
       pricing={tour.pricing}
@@ -231,44 +249,27 @@ export default function TourDetailPage() {
               {(tt?.description || tour.description || '').split(/\n{2,}/).map((para, i) => (
                 <p key={i} className="td-overview__text">{autolinkNodes(para, lang, pages)}</p>
               ))}
+              {/* One compact line of booking facts that belong with the
+                  overview rather than in a facts table: who the tour is for
+                  and how large the group is. Opt-in per tour (`adultsOnly`,
+                  `groupSize`), so every other tour renders exactly as before. */}
+              {(tour.adultsOnly || tour.groupSize) && (
+                <p className="td-overview__facts">
+                  {[
+                    tour.adultsOnly ? t('tour.adultsOnly') : null,
+                    tour.groupSize ? t('tour.groupSizeRange', { min: tour.groupSize.min, max: tour.groupSize.max }) : null,
+                  ].filter(Boolean).join(' · ')}
+                </p>
+              )}
             </FadeUp>
           </section>
 
-          {/* Group Tour Summary */}
-          {isGroup && (tt?.groupSummary || tour.groupSummary) && (
-            <section className="td-section">
-              <FadeUp>
-                <div className="tour-group-summary tour-summary-premium">
-                  {(tt?.groupSummary || tour.groupSummary).map((item, i) => (
-                    <div key={i} className="summary-item">
-                      <strong>{item.label}</strong>
-                      {item.type === 'dates' ? (
-                        <div className="dates-list">
-                          {item.values.map((v, j) => {
-                            const dateText = typeof v === 'string' ? v : v.text
-                            const soldOut = typeof v === 'object' && v.soldOut
-                            return (
-                              <div
-                                key={j}
-                                className={`date-range ${soldOut ? 'date-range--sold-out' : 'date-range--available'}`}
-                              >
-                                <span className="date-range__text">{dateText}</span>
-                                <span className="date-range__status">
-                                  {soldOut ? t('tour.soldOut') : t('tour.available')}
-                                </span>
-                              </div>
-                            )
-                          })}
-                        </div>
-                      ) : (
-                        <div>{item.value}</div>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </FadeUp>
-            </section>
-          )}
+          {/* The group-tour facts table (type / countries / route / duration /
+              age / group size / dates / price / supplement / meals / borders)
+              used to render here from `groupSummary`. Removed: every one of
+              those facts is already shown once where it is used — the hero
+              chips, the overview line below, the itinerary, the inclusions
+              and the departure dropdown in the inquiry form. */}
 
           {/* 3. Itinerary */}
           {itineraryItems && itineraryItems.length > 0 && (
@@ -286,7 +287,7 @@ export default function TourDetailPage() {
               targets, in this same document order — the wrapper is a grid and
               nothing else. Private tours, whose pricing table is tall, keep
               them stacked. */}
-          {isGroup ? (
+          {isGroup && priceSection ? (
             <div className="td-pair">
               {accommodationSection}
               {priceSection}
@@ -346,6 +347,7 @@ export default function TourDetailPage() {
                 tourTitle={tour.tourFormTitle || tour.title}
                 selectedPackage={packageSelection}
                 hideAccommodationType={tour.accommodationMode === 'single'}
+                departures={departures}
               />
             </FadeUp>
           </section>
@@ -375,7 +377,7 @@ export default function TourDetailPage() {
       {/* Desktop sticky request bar — shows once #td-hero-cta (the hero's own
           CTA) scrolls out of view; inert ≤900px, where the mobile bar below
           already covers the same job. */}
-      <StickyRequestBar startingPrice={startingPrice} />
+      <StickyRequestBar startingPrice={startingPrice} fixedPrice={fixedPrice} />
 
       {/* Mobile booking bar — CSS-gated to <=900px (see ivory.css), so it is
           inert on desktop. Shows the same starting price the pricing cards
@@ -386,7 +388,7 @@ export default function TourDetailPage() {
           <span className="iv-mobilebar__price">
             <span className="iv-mobilebar__amount">{formatPrice(startingPrice)}</span>
             <span className="iv-mobilebar__note">
-              {t('sidebar.startingFrom')} · {t('pricing.perPerson')}
+              {fixedPrice ? t('pricing.perPerson') : `${t('sidebar.startingFrom')} · ${t('pricing.perPerson')}`}
             </span>
           </span>
           <a href="#book" className="iv-pill iv-mobilebar__cta" onClick={(e) => {

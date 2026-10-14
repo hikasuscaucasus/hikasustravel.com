@@ -662,6 +662,24 @@
   line-height: 1.7;
 }
 
+/* The one-line booking facts under a group tour's overview
+   ("Adults only · Group size: 2–12 travelers"): quieter than the prose. */
+.theme-ivory .td-overview__facts {
+  max-width: 760px;
+  margin: 2px 0 0;
+  color: var(--sub);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Single-room supplement under the hero chips of a group tour — secondary to
+   the price chip it sits beneath. */
+.theme-ivory .td-hero--split .td-hero__supplement {
+  margin: 10px 0 0;
+  color: var(--sub);
+  font-size: 14px;
+}
+
 /* --- Gallery: horizontal scroll-snap strip -------------------------------- */
 
 .theme-ivory .gallery-grid {

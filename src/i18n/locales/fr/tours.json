@@ -667,69 +667,11 @@
       "Assurance voyage (depuis le 1er janvier 2026, une assurance maladie et accident couvrant au moins 30 000 GEL est obligatoire pour les visiteurs en Géorgie) ;",
       "Vols internationaux (arrivée à Bakou, départ d'Erevan) et frais aériens."
     ],
-    "groupSummary": [
-      {
-        "label": "Type de circuit",
-        "value": "Circuit en groupe"
-      },
-      {
-        "label": "Pays",
-        "value": "Azerbaïdjan, Géorgie & Arménie"
-      },
-      {
-        "label": "Itinéraire",
-        "value": "Bakou – Sheki – Telavi – Tbilissi – Kazbegi – Tbilissi – Erevan"
-      },
-      {
-        "label": "Durée",
-        "value": "15 jours / 14 nuits (Azerbaïdjan 4, Géorgie 7, Arménie 3)"
-      },
-      {
-        "label": "Âge",
-        "value": "Adultes uniquement"
-      },
-      {
-        "label": "Taille du groupe",
-        "value": "2–12 voyageurs (minimum 2, maximum 12)"
-      },
-      {
-        "label": "Dates disponibles",
-        "type": "dates",
-        "values": [
-          {
-            "text": "10 juin – 24 juin 2027",
-            "soldOut": false
-          },
-          {
-            "text": "5 août – 19 août 2027",
-            "soldOut": false
-          },
-          {
-            "text": "2 septembre – 16 septembre 2027",
-            "soldOut": false
-          },
-          {
-            "text": "14 octobre – 28 octobre 2027",
-            "soldOut": false
-          }
-        ]
-      },
-      {
-        "label": "Prix",
-        "value": "2 990 USD par personne — prix fixe, chambre double/twin"
-      },
-      {
-        "label": "Supplément individuel",
-        "value": "480 USD (chambre individuelle pour tout le circuit)"
-      },
-      {
-        "label": "Repas",
-        "value": "14 petits-déjeuners, 5 déjeuners, 3 dîners, 2 dégustations de vin"
-      },
-      {
-        "label": "Passages de frontière",
-        "value": "Lagodekhi (jour 5) et Sadakhlo–Bagratashen (jour 12), tous deux à pied"
-      }
+    "departures": [
+      "10 juin – 24 juin 2027",
+      "5 août – 19 août 2027",
+      "2 septembre – 16 septembre 2027",
+      "14 octobre – 28 octobre 2027"
     ]
   },
   "5-day-private-tour-from-tbilisi-to-batumi": {

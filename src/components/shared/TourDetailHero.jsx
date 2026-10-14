@@ -6,7 +6,7 @@ import useLang from '../../i18n/useLang'
 import { GalleryLightbox } from './Gallery'
 import { tourCountry } from '../../data/tours'
 import { tourHubById } from '../../data/tourHubs'
-import { formatPrice } from './pricingUtils'
+import { formatPrice, parsePrice } from './pricingUtils'
 
 /* Ivory-badge pilot: the hero is a two-column split (copy left, framed cover
    photo right) instead of the full-viewport photo it used to be, so the photo
@@ -232,6 +232,15 @@ export default function TourDetailHero({ tour, translatedTitle, heroH1, isGroup,
               </button>
             )}
           </div>
+
+          {/* Group tours with a single-room supplement show it right under the
+              price chips, visually secondary, so the two booking numbers are
+              read together once and nowhere else on the page. */}
+          {isGroup && parsePrice(tour.singleSupplement) && (
+            <p className="td-hero__supplement">
+              {t('tour.singleSupplementShort', { price: formatPrice(parsePrice(tour.singleSupplement)) })}
+            </p>
+          )}
 
           <div className="td-hero__actions">
             {/* `id` gives StickyRequestBar (rendered by TourDetailPage) a

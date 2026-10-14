@@ -667,69 +667,11 @@
       "Ubezpieczenie podróżne (od 1 stycznia 2026 roku osoby odwiedzające Gruzję muszą mieć ubezpieczenie zdrowotne i od następstw nieszczęśliwych wypadków z sumą co najmniej 30 000 GEL);",
       "Loty międzynarodowe (przylot do Baku, wylot z Erywania) i opłaty lotnicze."
     ],
-    "groupSummary": [
-      {
-        "label": "Rodzaj wycieczki",
-        "value": "Wycieczka grupowa"
-      },
-      {
-        "label": "Kraje",
-        "value": "Azerbejdżan, Gruzja i Armenia"
-      },
-      {
-        "label": "Trasa",
-        "value": "Baku – Szeki – Telavi – Tbilisi – Kazbegi – Tbilisi – Erywań"
-      },
-      {
-        "label": "Czas trwania",
-        "value": "15 dni / 14 nocy (Azerbejdżan 4, Gruzja 7, Armenia 3)"
-      },
-      {
-        "label": "Wiek",
-        "value": "Tylko dla dorosłych"
-      },
-      {
-        "label": "Wielkość grupy",
-        "value": "2–12 uczestników (minimum 2, maksimum 12)"
-      },
-      {
-        "label": "Dostępne terminy",
-        "type": "dates",
-        "values": [
-          {
-            "text": "10 czerwca – 24 czerwca 2027",
-            "soldOut": false
-          },
-          {
-            "text": "5 sierpnia – 19 sierpnia 2027",
-            "soldOut": false
-          },
-          {
-            "text": "2 września – 16 września 2027",
-            "soldOut": false
-          },
-          {
-            "text": "14 października – 28 października 2027",
-            "soldOut": false
-          }
-        ]
-      },
-      {
-        "label": "Cena",
-        "value": "2 990 USD za osobę – stała cena, pokój dwuosobowy (double/twin)"
-      },
-      {
-        "label": "Dopłata za pokój jednoosobowy",
-        "value": "480 USD (pokój jednoosobowy przez całą wycieczkę)"
-      },
-      {
-        "label": "Posiłki",
-        "value": "14 śniadań, 5 obiadów, 3 kolacje, 2 degustacje wina"
-      },
-      {
-        "label": "Przejścia graniczne",
-        "value": "Lagodechi (dzień 5) i Sadakhlo–Bagratashen (dzień 12), oba pieszo"
-      }
+    "departures": [
+      "10 czerwca – 24 czerwca 2027",
+      "5 sierpnia – 19 sierpnia 2027",
+      "2 września – 16 września 2027",
+      "14 października – 28 października 2027"
     ]
   },
   "5-day-private-tour-from-tbilisi-to-batumi": {

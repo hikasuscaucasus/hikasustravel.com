@@ -667,69 +667,11 @@
       "Cestovní pojištění (od 1. ledna 2026 je pro návštěvníky Gruzie povinné zdravotní a úrazové pojištění s krytím nejméně 30 000 GEL);",
       "Mezinárodní lety (přílet do Baku, odlet z Jerevanu) a letecké poplatky."
     ],
-    "groupSummary": [
-      {
-        "label": "Typ zájezdu",
-        "value": "Skupinový zájezd"
-      },
-      {
-        "label": "Země",
-        "value": "Ázerbájdžán, Gruzie a Arménie"
-      },
-      {
-        "label": "Trasa",
-        "value": "Baku – Šeki – Telavi – Tbilisi – Kazbegi – Tbilisi – Jerevan"
-      },
-      {
-        "label": "Délka",
-        "value": "15 dní / 14 nocí (Ázerbájdžán 4, Gruzie 7, Arménie 3)"
-      },
-      {
-        "label": "Věk",
-        "value": "Pouze pro dospělé"
-      },
-      {
-        "label": "Velikost skupiny",
-        "value": "2–12 cestujících (minimálně 2, maximálně 12)"
-      },
-      {
-        "label": "Dostupné termíny",
-        "type": "dates",
-        "values": [
-          {
-            "text": "10. června – 24. června 2027",
-            "soldOut": false
-          },
-          {
-            "text": "5. srpna – 19. srpna 2027",
-            "soldOut": false
-          },
-          {
-            "text": "2. září – 16. září 2027",
-            "soldOut": false
-          },
-          {
-            "text": "14. října – 28. října 2027",
-            "soldOut": false
-          }
-        ]
-      },
-      {
-        "label": "Cena",
-        "value": "2 990 USD za osobu — pevná cena, dvoulůžkový pokoj (double/twin)"
-      },
-      {
-        "label": "Příplatek za jednolůžkový pokoj",
-        "value": "480 USD (jednolůžkový pokoj po celou dobu zájezdu)"
-      },
-      {
-        "label": "Strava",
-        "value": "14 snídaní, 5 obědů, 3 večeře, 2 degustace vína"
-      },
-      {
-        "label": "Hraniční přechody",
-        "value": "Lagodechi (den 5) a Sadakhlo–Bagratashen (den 12), oba pěšky"
-      }
+    "departures": [
+      "10. června – 24. června 2027",
+      "5. srpna – 19. srpna 2027",
+      "2. září – 16. září 2027",
+      "14. října – 28. října 2027"
     ]
   },
   "5-day-private-tour-from-tbilisi-to-batumi": {

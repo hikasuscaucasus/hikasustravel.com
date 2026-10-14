@@ -6,6 +6,7 @@ export const tours = [
     "slug": "15-day-caucasus-group-tour",
     "type": "group",
     "priceCurrency": "USD",
+    "priceType": "fixed",
     "country": "caucasus",
     "areaServed": [
       "Azerbaijan",
@@ -51,6 +52,8 @@ export const tours = [
       }
     },
     "days": 15,
+    "adultsOnly": true,
+    "groupSize": { "min": 2, "max": 12 },
     "description": "The 15-Day Caucasus Group Tour is a 14-night journey from Baku to Yerevan through Azerbaijan, Georgia and Armenia, for a small group of 2 to 12 adults. It runs on set departure dates, with an English-speaking guide in each country, and crosses two land borders on foot. Azerbaijan takes four nights, Georgia seven and Armenia three.\n\nThe route runs west from the Caspian coast to the foot of Mount Ararat. Baku takes the first three nights, with its walled Old City and the fire sites of Gobustan and the Absheron peninsula, then Sheki after a day through Shamakhi. You cross into Georgia at Lagodekhi and spend two nights in Telavi, in Kakheti's wine country, before Tbilisi, a night in Kazbegi under Mount Kazbek, the cave town of Uplistsikhe and a free day in the capital. A second crossing, at Sadakhlo, brings you into Armenia for Haghpat, Lake Sevan and three nights in Yerevan, with day trips to Khor Virap, Garni, Geghard and Echmiadzin.\n\nBoth crossings are on foot with your own luggage, and a new guide and vehicle wait on the far side of each. Day 12, from Tbilisi to Yerevan, is the longest day of the tour. The price is fixed per person in a double or twin room and does not change with the size of the group.",
     "listingDescription": "A 15-day small-group tour from Baku to Yerevan — Baku's Old City, Sheki, Kakheti wine country, Tbilisi and Kazbegi, then Haghpat, Lake Sevan, Yerevan and the sights around Mount Ararat. Set 2027 departures for 2–12 adults.",
     "seoTitle": "15-Day Caucasus Group Tour: Azerbaijan, Georgia & Armenia",
@@ -940,90 +943,22 @@ export const tours = [
       {
         "start": "10 June",
         "end": "24 June",
-        "year": "2027"
-      },
+        "year": "2027", "iso": "2027-06-10/2027-06-24" },
       {
         "start": "5 August",
         "end": "19 August",
-        "year": "2027"
-      },
+        "year": "2027", "iso": "2027-08-05/2027-08-19" },
       {
         "start": "2 September",
         "end": "16 September",
-        "year": "2027"
-      },
+        "year": "2027", "iso": "2027-09-02/2027-09-16" },
       {
         "start": "14 October",
         "end": "28 October",
-        "year": "2027"
-      }
+        "year": "2027", "iso": "2027-10-14/2027-10-28" }
     ],
     "pricePerPerson": "2990",
-    "singleSupplement": "480",
-    "groupSummary": [
-      {
-        "label": "Tour Type",
-        "value": "Group tour"
-      },
-      {
-        "label": "Countries",
-        "value": "Azerbaijan, Georgia & Armenia"
-      },
-      {
-        "label": "Route",
-        "value": "Baku – Sheki – Telavi – Tbilisi – Kazbegi – Tbilisi – Yerevan"
-      },
-      {
-        "label": "Duration",
-        "value": "15 days / 14 nights (Azerbaijan 4, Georgia 7, Armenia 3)"
-      },
-      {
-        "label": "Age",
-        "value": "Adults only"
-      },
-      {
-        "label": "Group Size",
-        "value": "2–12 travelers (minimum 2, maximum 12)"
-      },
-      {
-        "label": "Available Dates",
-        "type": "dates",
-        "values": [
-          {
-            "text": "10 June – 24 June 2027",
-            "soldOut": false
-          },
-          {
-            "text": "5 August – 19 August 2027",
-            "soldOut": false
-          },
-          {
-            "text": "2 September – 16 September 2027",
-            "soldOut": false
-          },
-          {
-            "text": "14 October – 28 October 2027",
-            "soldOut": false
-          }
-        ]
-      },
-      {
-        "label": "Price",
-        "value": "2,990 USD per person — fixed price, double/twin room"
-      },
-      {
-        "label": "Single Supplement",
-        "value": "480 USD (single room for the whole tour)"
-      },
-      {
-        "label": "Meals",
-        "value": "14 breakfasts, 5 lunches, 3 dinners, 2 wine tastings"
-      },
-      {
-        "label": "Border Crossings",
-        "value": "Lagodekhi (Day 5) and Sadakhlo–Bagratashen (Day 12), both on foot"
-      }
-    ]
+    "singleSupplement": "480"
   },
   {
     "slug": "3-day-kakheti-wine-and-food-tour-from-tbilisi",
