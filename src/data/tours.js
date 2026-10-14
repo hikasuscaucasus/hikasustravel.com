@@ -181,6 +181,31 @@ export const tours = [
     ],
     "gallery": [
       {
+        "src": "/images/tours/15-day-caucasus-group-tour/route-map-15-day-caucasus-group-tour-2400.webp",
+        "base": "/images/tours/15-day-caucasus-group-tour/route-map-15-day-caucasus-group-tour",
+        "widths": [768,1200,1600,2400],
+        "width": 2400,
+        "height": 1600,
+        "caption": {
+          "en": "Route Map",
+          "de": "Routenkarte",
+          "fr": "Carte de l'itinéraire",
+          "es": "Mapa de la ruta",
+          "nl": "Routekaart",
+          "cs": "Mapa trasy",
+          "pl": "Mapa trasy"
+        },
+        "altText": {
+          "en": "Illustrated route map of the 15-day Caucasus group tour across Azerbaijan, Georgia and Armenia: Baku, Gobustan and Shamakhi, Sheki, the Lagodekhi border crossing, Kakheti and Telavi, Sighnaghi and Bodbe, Tbilisi, Mtskheta, Ananuri and Kazbegi, Uplistsikhe, the Sadakhlo–Bagratashen border crossing, Haghpat, Lake Sevan and Yerevan, with day trips to Khor Virap, Garni and Geghard",
+          "de": "Illustrierte Routenkarte der 15-tägigen Kaukasus-Gruppenreise durch Aserbaidschan, Georgien und Armenien: Baku, Gobustan und Schemacha, Sheki, der Grenzübergang Lagodechi, Kachetien und Telawi, Sighnaghi und Bodbe, Tiflis, Mzcheta, Ananuri und Kazbegi, Uplisziche, der Grenzübergang Sadakhlo–Bagratashen, Haghpat, der Sewansee und Jerewan, mit Tagesausflügen nach Khor Virap, Garni und Geghard",
+          "fr": "Carte illustrée de l'itinéraire du circuit en groupe de 15 jours dans le Caucase, en Azerbaïdjan, en Géorgie et en Arménie : Bakou, Gobustan et Chamakhi, Sheki, le passage frontalier de Lagodekhi, la Kakhétie et Telavi, Sighnaghi et Bodbe, Tbilissi, Mtskheta, Ananouri et Kazbegi, Ouplistsikhé, le passage frontalier de Sadakhlo–Bagratashen, Haghpat, le lac Sevan et Erevan, avec des excursions à Khor Virap, Garni et Geghard",
+          "es": "Mapa ilustrado de la ruta del tour en grupo de 15 días por el Cáucaso, por Azerbaiyán, Georgia y Armenia: Bakú, Gobustán y Shamakhi, Sheki, el paso fronterizo de Lagodekhi, Kajetia y Telavi, Sighnaghi y Bodbe, Tiflis, Mtsjeta, Ananuri y Kazbegi, Uplistsije, el paso fronterizo de Sadakhlo–Bagratashen, Haghpat, el lago Sevan y Ereván, con excursiones a Khor Virap, Garni y Geghard",
+          "nl": "Geïllustreerde routekaart van de 15-daagse Kaukasus-groepsreis door Azerbeidzjan, Georgië en Armenië: Bakoe, Gobustan en Shamakhi, Sheki, de grensovergang Lagodekhi, Kacheti en Telavi, Sighnaghi en Bodbe, Tbilisi, Mtskheta, Ananuri en Kazbegi, Uplistsikhe, de grensovergang Sadakhlo–Bagratashen, Haghpat, het Sevanmeer en Jerevan, met dagtochten naar Khor Virap, Garni en Geghard",
+          "cs": "Ilustrovaná mapa trasy 15denního skupinového zájezdu po Kavkazu, po Ázerbájdžánu, Gruzii a Arménii: Baku, Gobustan a Šamachi, Šeki, hraniční přechod Lagodechi, Kachetie a Telavi, Sighnaghi a Bodbe, Tbilisi, Mccheta, Ananuri a Kazbegi, Uplisciche, hraniční přechod Sadakhlo–Bagratashen, Haghpat, jezero Sevan a Jerevan, s výlety do Khor Virapu, Garni a Geghardu",
+          "pl": "Ilustrowana mapa trasy 15-dniowej wycieczki grupowej po Kaukazie, przez Azerbejdżan, Gruzję i Armenię: Baku, Gobustan i Szamachy, Szeki, przejście graniczne Lagodekhi, Kachetia i Telawi, Sighnaghi i Bodbe, Tbilisi, Mccheta, Ananuri i Kazbegi, Uplisciche, przejście graniczne Sadakhlo–Bagratashen, Haghpat, jezioro Sewan i Erywań, z wycieczkami do Khor Virap, Garni i Geghardu"
+        }
+      },
+      {
         "src": "/images/files/maiden-tower-baku-azerbaijan-1293.webp",
         "base": "/images/files/maiden-tower-baku-azerbaijan",
         "widths": [
@@ -943,6 +968,113 @@ export const tours = [
         }
       }
     ],
+    "routeMapImage": {
+      "en": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/15-day-caucasus-group-tour/route-map-15-day-caucasus-group-tour-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/15-day-caucasus-group-tour/route-map-15-day-caucasus-group-tour-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "15-Day Caucasus Group Tour: Azerbaijan, Georgia and Armenia — Route Map",
+        "description": "Illustrated route map of the 15-day Caucasus group tour across Azerbaijan, Georgia and Armenia: Baku, Gobustan and Shamakhi, Sheki, the Lagodekhi border crossing, Kakheti and Telavi, Sighnaghi and Bodbe, Tbilisi, Mtskheta, Ananuri and Kazbegi, Uplistsikhe, the Sadakhlo–Bagratashen border crossing, Haghpat, Lake Sevan and Yerevan, with day trips to Khor Virap, Garni and Geghard.",
+        "creditText": "Hikasus Travel",
+        "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/en/image-licensing/",
+        "inLanguage": "en"
+      },
+      "de": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/15-day-caucasus-group-tour/route-map-15-day-caucasus-group-tour-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/15-day-caucasus-group-tour/route-map-15-day-caucasus-group-tour-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "15-Day Caucasus Group Tour: Azerbaijan, Georgia and Armenia — Routenkarte",
+        "description": "Illustrierte Routenkarte der 15-tägigen Kaukasus-Gruppenreise durch Aserbaidschan, Georgien und Armenien: Baku, Gobustan und Schemacha, Sheki, der Grenzübergang Lagodechi, Kachetien und Telawi, Sighnaghi und Bodbe, Tiflis, Mzcheta, Ananuri und Kazbegi, Uplisziche, der Grenzübergang Sadakhlo–Bagratashen, Haghpat, der Sewansee und Jerewan, mit Tagesausflügen nach Khor Virap, Garni und Geghard.",
+        "creditText": "Hikasus Travel",
+        "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/de/image-licensing/",
+        "inLanguage": "de"
+      },
+      "fr": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/15-day-caucasus-group-tour/route-map-15-day-caucasus-group-tour-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/15-day-caucasus-group-tour/route-map-15-day-caucasus-group-tour-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "15-Day Caucasus Group Tour: Azerbaijan, Georgia and Armenia — Carte de l'itinéraire",
+        "description": "Carte illustrée de l'itinéraire du circuit en groupe de 15 jours dans le Caucase, en Azerbaïdjan, en Géorgie et en Arménie : Bakou, Gobustan et Chamakhi, Sheki, le passage frontalier de Lagodekhi, la Kakhétie et Telavi, Sighnaghi et Bodbe, Tbilissi, Mtskheta, Ananouri et Kazbegi, Ouplistsikhé, le passage frontalier de Sadakhlo–Bagratashen, Haghpat, le lac Sevan et Erevan, avec des excursions à Khor Virap, Garni et Geghard.",
+        "creditText": "Hikasus Travel",
+        "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/fr/image-licensing/",
+        "inLanguage": "fr"
+      },
+      "es": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/15-day-caucasus-group-tour/route-map-15-day-caucasus-group-tour-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/15-day-caucasus-group-tour/route-map-15-day-caucasus-group-tour-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "15-Day Caucasus Group Tour: Azerbaijan, Georgia and Armenia — Mapa de la ruta",
+        "description": "Mapa ilustrado de la ruta del tour en grupo de 15 días por el Cáucaso, por Azerbaiyán, Georgia y Armenia: Bakú, Gobustán y Shamakhi, Sheki, el paso fronterizo de Lagodekhi, Kajetia y Telavi, Sighnaghi y Bodbe, Tiflis, Mtsjeta, Ananuri y Kazbegi, Uplistsije, el paso fronterizo de Sadakhlo–Bagratashen, Haghpat, el lago Sevan y Ereván, con excursiones a Khor Virap, Garni y Geghard.",
+        "creditText": "Hikasus Travel",
+        "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/es/image-licensing/",
+        "inLanguage": "es"
+      },
+      "nl": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/15-day-caucasus-group-tour/route-map-15-day-caucasus-group-tour-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/15-day-caucasus-group-tour/route-map-15-day-caucasus-group-tour-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "15-Day Caucasus Group Tour: Azerbaijan, Georgia and Armenia — Routekaart",
+        "description": "Geïllustreerde routekaart van de 15-daagse Kaukasus-groepsreis door Azerbeidzjan, Georgië en Armenië: Bakoe, Gobustan en Shamakhi, Sheki, de grensovergang Lagodekhi, Kacheti en Telavi, Sighnaghi en Bodbe, Tbilisi, Mtskheta, Ananuri en Kazbegi, Uplistsikhe, de grensovergang Sadakhlo–Bagratashen, Haghpat, het Sevanmeer en Jerevan, met dagtochten naar Khor Virap, Garni en Geghard.",
+        "creditText": "Hikasus Travel",
+        "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/nl/image-licensing/",
+        "inLanguage": "nl"
+      },
+      "cs": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/15-day-caucasus-group-tour/route-map-15-day-caucasus-group-tour-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/15-day-caucasus-group-tour/route-map-15-day-caucasus-group-tour-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "15-Day Caucasus Group Tour: Azerbaijan, Georgia and Armenia — Mapa trasy",
+        "description": "Ilustrovaná mapa trasy 15denního skupinového zájezdu po Kavkazu, po Ázerbájdžánu, Gruzii a Arménii: Baku, Gobustan a Šamachi, Šeki, hraniční přechod Lagodechi, Kachetie a Telavi, Sighnaghi a Bodbe, Tbilisi, Mccheta, Ananuri a Kazbegi, Uplisciche, hraniční přechod Sadakhlo–Bagratashen, Haghpat, jezero Sevan a Jerevan, s výlety do Khor Virapu, Garni a Geghardu.",
+        "creditText": "Hikasus Travel",
+        "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/cs/image-licensing/",
+        "inLanguage": "cs"
+      },
+      "pl": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/15-day-caucasus-group-tour/route-map-15-day-caucasus-group-tour-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/15-day-caucasus-group-tour/route-map-15-day-caucasus-group-tour-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "15-Day Caucasus Group Tour: Azerbaijan, Georgia and Armenia — Mapa trasy",
+        "description": "Ilustrowana mapa trasy 15-dniowej wycieczki grupowej po Kaukazie, przez Azerbejdżan, Gruzję i Armenię: Baku, Gobustan i Szamachy, Szeki, przejście graniczne Lagodekhi, Kachetia i Telawi, Sighnaghi i Bodbe, Tbilisi, Mccheta, Ananuri i Kazbegi, Uplisciche, przejście graniczne Sadakhlo–Bagratashen, Haghpat, jezioro Sewan i Erywań, z wycieczkami do Khor Virap, Garni i Geghardu.",
+        "creditText": "Hikasus Travel",
+        "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/pl/image-licensing/",
+        "inLanguage": "pl"
+      }
+    },
     "tourFormTitle": "15-Day Caucasus Group Tour",
     "groupDates": familyGroupDates('full'),
     "pricePerPerson": "2990",
@@ -1104,6 +1236,31 @@ export const tours = [
     ],
     "gallery": [
       {
+        "src": "/images/tours/11-day-caucasus-group-tour-azerbaijan-georgia/route-map-11-day-caucasus-group-tour-azerbaijan-georgia-2400.webp",
+        "base": "/images/tours/11-day-caucasus-group-tour-azerbaijan-georgia/route-map-11-day-caucasus-group-tour-azerbaijan-georgia",
+        "widths": [768,1200,1600,2400],
+        "width": 2400,
+        "height": 1600,
+        "caption": {
+          "en": "Route Map",
+          "de": "Routenkarte",
+          "fr": "Carte de l'itinéraire",
+          "es": "Mapa de la ruta",
+          "nl": "Routekaart",
+          "cs": "Mapa trasy",
+          "pl": "Mapa trasy"
+        },
+        "altText": {
+          "en": "Illustrated route map of the 11-day Azerbaijan and Georgia group tour from Baku to Tbilisi: Baku, Gobustan and Shamakhi, Sheki, the Lagodekhi border crossing, Kakheti and Telavi, Sighnaghi and Bodbe, Tbilisi, Mtskheta, Ananuri and Kazbegi, and Uplistsikhe",
+          "de": "Illustrierte Routenkarte der 11-tägigen Gruppenreise durch Aserbaidschan und Georgien von Baku nach Tiflis: Baku, Gobustan und Schemacha, Sheki, der Grenzübergang Lagodechi, Kachetien und Telawi, Sighnaghi und Bodbe, Tiflis, Mzcheta, Ananuri und Kazbegi sowie Uplisziche",
+          "fr": "Carte illustrée de l'itinéraire du circuit en groupe de 11 jours en Azerbaïdjan et en Géorgie, de Bakou à Tbilissi : Bakou, Gobustan et Chamakhi, Sheki, le passage frontalier de Lagodekhi, la Kakhétie et Telavi, Sighnaghi et Bodbe, Tbilissi, Mtskheta, Ananouri et Kazbegi, et Ouplistsikhé",
+          "es": "Mapa ilustrado de la ruta del tour en grupo de 11 días por Azerbaiyán y Georgia, de Bakú a Tiflis: Bakú, Gobustán y Shamakhi, Sheki, el paso fronterizo de Lagodekhi, Kajetia y Telavi, Sighnaghi y Bodbe, Tiflis, Mtsjeta, Ananuri y Kazbegi, y Uplistsije",
+          "nl": "Geïllustreerde routekaart van de 11-daagse groepsreis door Azerbeidzjan en Georgië van Bakoe naar Tbilisi: Bakoe, Gobustan en Shamakhi, Sheki, de grensovergang Lagodekhi, Kacheti en Telavi, Sighnaghi en Bodbe, Tbilisi, Mtskheta, Ananuri en Kazbegi, en Uplistsikhe",
+          "cs": "Ilustrovaná mapa trasy 11denního skupinového zájezdu po Ázerbájdžánu a Gruzii z Baku do Tbilisi: Baku, Gobustan a Šamachi, Šeki, hraniční přechod Lagodechi, Kachetie a Telavi, Sighnaghi a Bodbe, Tbilisi, Mccheta, Ananuri a Kazbegi a Uplisciche",
+          "pl": "Ilustrowana mapa trasy 11-dniowej wycieczki grupowej po Azerbejdżanie i Gruzji z Baku do Tbilisi: Baku, Gobustan i Szamachy, Szeki, przejście graniczne Lagodekhi, Kachetia i Telawi, Sighnaghi i Bodbe, Tbilisi, Mccheta, Ananuri i Kazbegi oraz Uplisciche"
+        }
+      },
+      {
         "src": "/images/files/maiden-tower-baku-azerbaijan-1293.webp",
         "base": "/images/files/maiden-tower-baku-azerbaijan",
         "widths": [
@@ -1602,6 +1759,113 @@ export const tours = [
         }
       }
     ],
+    "routeMapImage": {
+      "en": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/11-day-caucasus-group-tour-azerbaijan-georgia/route-map-11-day-caucasus-group-tour-azerbaijan-georgia-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/11-day-caucasus-group-tour-azerbaijan-georgia/route-map-11-day-caucasus-group-tour-azerbaijan-georgia-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "11-Day Caucasus Group Tour: Azerbaijan and Georgia — Route Map",
+        "description": "Illustrated route map of the 11-day Azerbaijan and Georgia group tour from Baku to Tbilisi: Baku, Gobustan and Shamakhi, Sheki, the Lagodekhi border crossing, Kakheti and Telavi, Sighnaghi and Bodbe, Tbilisi, Mtskheta, Ananuri and Kazbegi, and Uplistsikhe.",
+        "creditText": "Hikasus Travel",
+        "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/en/image-licensing/",
+        "inLanguage": "en"
+      },
+      "de": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/11-day-caucasus-group-tour-azerbaijan-georgia/route-map-11-day-caucasus-group-tour-azerbaijan-georgia-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/11-day-caucasus-group-tour-azerbaijan-georgia/route-map-11-day-caucasus-group-tour-azerbaijan-georgia-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "11-Day Caucasus Group Tour: Azerbaijan and Georgia — Routenkarte",
+        "description": "Illustrierte Routenkarte der 11-tägigen Gruppenreise durch Aserbaidschan und Georgien von Baku nach Tiflis: Baku, Gobustan und Schemacha, Sheki, der Grenzübergang Lagodechi, Kachetien und Telawi, Sighnaghi und Bodbe, Tiflis, Mzcheta, Ananuri und Kazbegi sowie Uplisziche.",
+        "creditText": "Hikasus Travel",
+        "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/de/image-licensing/",
+        "inLanguage": "de"
+      },
+      "fr": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/11-day-caucasus-group-tour-azerbaijan-georgia/route-map-11-day-caucasus-group-tour-azerbaijan-georgia-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/11-day-caucasus-group-tour-azerbaijan-georgia/route-map-11-day-caucasus-group-tour-azerbaijan-georgia-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "11-Day Caucasus Group Tour: Azerbaijan and Georgia — Carte de l'itinéraire",
+        "description": "Carte illustrée de l'itinéraire du circuit en groupe de 11 jours en Azerbaïdjan et en Géorgie, de Bakou à Tbilissi : Bakou, Gobustan et Chamakhi, Sheki, le passage frontalier de Lagodekhi, la Kakhétie et Telavi, Sighnaghi et Bodbe, Tbilissi, Mtskheta, Ananouri et Kazbegi, et Ouplistsikhé.",
+        "creditText": "Hikasus Travel",
+        "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/fr/image-licensing/",
+        "inLanguage": "fr"
+      },
+      "es": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/11-day-caucasus-group-tour-azerbaijan-georgia/route-map-11-day-caucasus-group-tour-azerbaijan-georgia-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/11-day-caucasus-group-tour-azerbaijan-georgia/route-map-11-day-caucasus-group-tour-azerbaijan-georgia-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "11-Day Caucasus Group Tour: Azerbaijan and Georgia — Mapa de la ruta",
+        "description": "Mapa ilustrado de la ruta del tour en grupo de 11 días por Azerbaiyán y Georgia, de Bakú a Tiflis: Bakú, Gobustán y Shamakhi, Sheki, el paso fronterizo de Lagodekhi, Kajetia y Telavi, Sighnaghi y Bodbe, Tiflis, Mtsjeta, Ananuri y Kazbegi, y Uplistsije.",
+        "creditText": "Hikasus Travel",
+        "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/es/image-licensing/",
+        "inLanguage": "es"
+      },
+      "nl": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/11-day-caucasus-group-tour-azerbaijan-georgia/route-map-11-day-caucasus-group-tour-azerbaijan-georgia-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/11-day-caucasus-group-tour-azerbaijan-georgia/route-map-11-day-caucasus-group-tour-azerbaijan-georgia-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "11-Day Caucasus Group Tour: Azerbaijan and Georgia — Routekaart",
+        "description": "Geïllustreerde routekaart van de 11-daagse groepsreis door Azerbeidzjan en Georgië van Bakoe naar Tbilisi: Bakoe, Gobustan en Shamakhi, Sheki, de grensovergang Lagodekhi, Kacheti en Telavi, Sighnaghi en Bodbe, Tbilisi, Mtskheta, Ananuri en Kazbegi, en Uplistsikhe.",
+        "creditText": "Hikasus Travel",
+        "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/nl/image-licensing/",
+        "inLanguage": "nl"
+      },
+      "cs": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/11-day-caucasus-group-tour-azerbaijan-georgia/route-map-11-day-caucasus-group-tour-azerbaijan-georgia-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/11-day-caucasus-group-tour-azerbaijan-georgia/route-map-11-day-caucasus-group-tour-azerbaijan-georgia-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "11-Day Caucasus Group Tour: Azerbaijan and Georgia — Mapa trasy",
+        "description": "Ilustrovaná mapa trasy 11denního skupinového zájezdu po Ázerbájdžánu a Gruzii z Baku do Tbilisi: Baku, Gobustan a Šamachi, Šeki, hraniční přechod Lagodechi, Kachetie a Telavi, Sighnaghi a Bodbe, Tbilisi, Mccheta, Ananuri a Kazbegi a Uplisciche.",
+        "creditText": "Hikasus Travel",
+        "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/cs/image-licensing/",
+        "inLanguage": "cs"
+      },
+      "pl": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/11-day-caucasus-group-tour-azerbaijan-georgia/route-map-11-day-caucasus-group-tour-azerbaijan-georgia-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/11-day-caucasus-group-tour-azerbaijan-georgia/route-map-11-day-caucasus-group-tour-azerbaijan-georgia-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "11-Day Caucasus Group Tour: Azerbaijan and Georgia — Mapa trasy",
+        "description": "Ilustrowana mapa trasy 11-dniowej wycieczki grupowej po Azerbejdżanie i Gruzji z Baku do Tbilisi: Baku, Gobustan i Szamachy, Szeki, przejście graniczne Lagodekhi, Kachetia i Telawi, Sighnaghi i Bodbe, Tbilisi, Mccheta, Ananuri i Kazbegi oraz Uplisciche.",
+        "creditText": "Hikasus Travel",
+        "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/pl/image-licensing/",
+        "inLanguage": "pl"
+      }
+    },
     "tourFormTitle": "11-Day Caucasus Group Tour: Azerbaijan and Georgia",
     "groupDates": familyGroupDates('az-ge'),
     "pricePerPerson": "2295",
@@ -1757,6 +2021,31 @@ export const tours = [
       "International flights (arrival in Tbilisi, departure from Yerevan) and airline fees."
     ],
     "gallery": [
+      {
+        "src": "/images/tours/11-day-caucasus-group-tour-georgia-armenia/route-map-11-day-caucasus-group-tour-georgia-armenia-2400.webp",
+        "base": "/images/tours/11-day-caucasus-group-tour-georgia-armenia/route-map-11-day-caucasus-group-tour-georgia-armenia",
+        "widths": [768,1200,1600,2400],
+        "width": 2400,
+        "height": 1600,
+        "caption": {
+          "en": "Route Map",
+          "de": "Routenkarte",
+          "fr": "Carte de l'itinéraire",
+          "es": "Mapa de la ruta",
+          "nl": "Routekaart",
+          "cs": "Mapa trasy",
+          "pl": "Mapa trasy"
+        },
+        "altText": {
+          "en": "Illustrated route map of the 11-day Georgia and Armenia group tour from Tbilisi and Kakheti to Yerevan: Telavi and Tsinandali, Sighnaghi and Bodbe, Tbilisi, Mtskheta, Ananuri and Kazbegi, Uplistsikhe, the Sadakhlo–Bagratashen border crossing, Haghpat, Lake Sevan and Yerevan, with day trips to Khor Virap, Garni and Geghard",
+          "de": "Illustrierte Routenkarte der 11-tägigen Gruppenreise durch Georgien und Armenien von Tiflis und Kachetien nach Jerewan: Telawi und Zinandali, Sighnaghi und Bodbe, Tiflis, Mzcheta, Ananuri und Kazbegi, Uplisziche, der Grenzübergang Sadakhlo–Bagratashen, Haghpat, der Sewansee und Jerewan, mit Tagesausflügen nach Khor Virap, Garni und Geghard",
+          "fr": "Carte illustrée de l'itinéraire du circuit en groupe de 11 jours en Géorgie et en Arménie, de Tbilissi et de la Kakhétie à Erevan : Telavi et Tsinandali, Sighnaghi et Bodbe, Tbilissi, Mtskheta, Ananouri et Kazbegi, Ouplistsikhé, le passage frontalier de Sadakhlo–Bagratashen, Haghpat, le lac Sevan et Erevan, avec des excursions à Khor Virap, Garni et Geghard",
+          "es": "Mapa ilustrado de la ruta del tour en grupo de 11 días por Georgia y Armenia, de Tiflis y Kajetia a Ereván: Telavi y Tsinandali, Sighnaghi y Bodbe, Tiflis, Mtsjeta, Ananuri y Kazbegi, Uplistsije, el paso fronterizo de Sadakhlo–Bagratashen, Haghpat, el lago Sevan y Ereván, con excursiones a Khor Virap, Garni y Geghard",
+          "nl": "Geïllustreerde routekaart van de 11-daagse groepsreis door Georgië en Armenië van Tbilisi en Kacheti naar Jerevan: Telavi en Tsinandali, Sighnaghi en Bodbe, Tbilisi, Mtskheta, Ananuri en Kazbegi, Uplistsikhe, de grensovergang Sadakhlo–Bagratashen, Haghpat, het Sevanmeer en Jerevan, met dagtochten naar Khor Virap, Garni en Geghard",
+          "cs": "Ilustrovaná mapa trasy 11denního skupinového zájezdu po Gruzii a Arménii z Tbilisi a Kachetie do Jerevanu: Telavi a Cinandali, Sighnaghi a Bodbe, Tbilisi, Mccheta, Ananuri a Kazbegi, Uplisciche, hraniční přechod Sadakhlo–Bagratashen, Haghpat, jezero Sevan a Jerevan, s výlety do Khor Virapu, Garni a Geghardu",
+          "pl": "Ilustrowana mapa trasy 11-dniowej wycieczki grupowej po Gruzji i Armenii z Tbilisi i Kachetii do Erywania: Telawi i Cinandali, Sighnaghi i Bodbe, Tbilisi, Mccheta, Ananuri i Kazbegi, Uplisciche, przejście graniczne Sadakhlo–Bagratashen, Haghpat, jezioro Sewan i Erywań, z wycieczkami do Khor Virap, Garni i Geghardu"
+        }
+      },
       {
         "src": "/images/files/kakheti-vineyard-georgia-1280.webp",
         "base": "/images/files/kakheti-vineyard-georgia",
@@ -2316,6 +2605,113 @@ export const tours = [
         }
       }
     ],
+    "routeMapImage": {
+      "en": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/11-day-caucasus-group-tour-georgia-armenia/route-map-11-day-caucasus-group-tour-georgia-armenia-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/11-day-caucasus-group-tour-georgia-armenia/route-map-11-day-caucasus-group-tour-georgia-armenia-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "11-Day Caucasus Group Tour: Georgia and Armenia — Route Map",
+        "description": "Illustrated route map of the 11-day Georgia and Armenia group tour from Tbilisi and Kakheti to Yerevan: Telavi and Tsinandali, Sighnaghi and Bodbe, Tbilisi, Mtskheta, Ananuri and Kazbegi, Uplistsikhe, the Sadakhlo–Bagratashen border crossing, Haghpat, Lake Sevan and Yerevan, with day trips to Khor Virap, Garni and Geghard.",
+        "creditText": "Hikasus Travel",
+        "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/en/image-licensing/",
+        "inLanguage": "en"
+      },
+      "de": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/11-day-caucasus-group-tour-georgia-armenia/route-map-11-day-caucasus-group-tour-georgia-armenia-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/11-day-caucasus-group-tour-georgia-armenia/route-map-11-day-caucasus-group-tour-georgia-armenia-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "11-Day Caucasus Group Tour: Georgia and Armenia — Routenkarte",
+        "description": "Illustrierte Routenkarte der 11-tägigen Gruppenreise durch Georgien und Armenien von Tiflis und Kachetien nach Jerewan: Telawi und Zinandali, Sighnaghi und Bodbe, Tiflis, Mzcheta, Ananuri und Kazbegi, Uplisziche, der Grenzübergang Sadakhlo–Bagratashen, Haghpat, der Sewansee und Jerewan, mit Tagesausflügen nach Khor Virap, Garni und Geghard.",
+        "creditText": "Hikasus Travel",
+        "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/de/image-licensing/",
+        "inLanguage": "de"
+      },
+      "fr": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/11-day-caucasus-group-tour-georgia-armenia/route-map-11-day-caucasus-group-tour-georgia-armenia-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/11-day-caucasus-group-tour-georgia-armenia/route-map-11-day-caucasus-group-tour-georgia-armenia-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "11-Day Caucasus Group Tour: Georgia and Armenia — Carte de l'itinéraire",
+        "description": "Carte illustrée de l'itinéraire du circuit en groupe de 11 jours en Géorgie et en Arménie, de Tbilissi et de la Kakhétie à Erevan : Telavi et Tsinandali, Sighnaghi et Bodbe, Tbilissi, Mtskheta, Ananouri et Kazbegi, Ouplistsikhé, le passage frontalier de Sadakhlo–Bagratashen, Haghpat, le lac Sevan et Erevan, avec des excursions à Khor Virap, Garni et Geghard.",
+        "creditText": "Hikasus Travel",
+        "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/fr/image-licensing/",
+        "inLanguage": "fr"
+      },
+      "es": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/11-day-caucasus-group-tour-georgia-armenia/route-map-11-day-caucasus-group-tour-georgia-armenia-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/11-day-caucasus-group-tour-georgia-armenia/route-map-11-day-caucasus-group-tour-georgia-armenia-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "11-Day Caucasus Group Tour: Georgia and Armenia — Mapa de la ruta",
+        "description": "Mapa ilustrado de la ruta del tour en grupo de 11 días por Georgia y Armenia, de Tiflis y Kajetia a Ereván: Telavi y Tsinandali, Sighnaghi y Bodbe, Tiflis, Mtsjeta, Ananuri y Kazbegi, Uplistsije, el paso fronterizo de Sadakhlo–Bagratashen, Haghpat, el lago Sevan y Ereván, con excursiones a Khor Virap, Garni y Geghard.",
+        "creditText": "Hikasus Travel",
+        "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/es/image-licensing/",
+        "inLanguage": "es"
+      },
+      "nl": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/11-day-caucasus-group-tour-georgia-armenia/route-map-11-day-caucasus-group-tour-georgia-armenia-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/11-day-caucasus-group-tour-georgia-armenia/route-map-11-day-caucasus-group-tour-georgia-armenia-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "11-Day Caucasus Group Tour: Georgia and Armenia — Routekaart",
+        "description": "Geïllustreerde routekaart van de 11-daagse groepsreis door Georgië en Armenië van Tbilisi en Kacheti naar Jerevan: Telavi en Tsinandali, Sighnaghi en Bodbe, Tbilisi, Mtskheta, Ananuri en Kazbegi, Uplistsikhe, de grensovergang Sadakhlo–Bagratashen, Haghpat, het Sevanmeer en Jerevan, met dagtochten naar Khor Virap, Garni en Geghard.",
+        "creditText": "Hikasus Travel",
+        "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/nl/image-licensing/",
+        "inLanguage": "nl"
+      },
+      "cs": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/11-day-caucasus-group-tour-georgia-armenia/route-map-11-day-caucasus-group-tour-georgia-armenia-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/11-day-caucasus-group-tour-georgia-armenia/route-map-11-day-caucasus-group-tour-georgia-armenia-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "11-Day Caucasus Group Tour: Georgia and Armenia — Mapa trasy",
+        "description": "Ilustrovaná mapa trasy 11denního skupinového zájezdu po Gruzii a Arménii z Tbilisi a Kachetie do Jerevanu: Telavi a Cinandali, Sighnaghi a Bodbe, Tbilisi, Mccheta, Ananuri a Kazbegi, Uplisciche, hraniční přechod Sadakhlo–Bagratashen, Haghpat, jezero Sevan a Jerevan, s výlety do Khor Virapu, Garni a Geghardu.",
+        "creditText": "Hikasus Travel",
+        "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/cs/image-licensing/",
+        "inLanguage": "cs"
+      },
+      "pl": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/11-day-caucasus-group-tour-georgia-armenia/route-map-11-day-caucasus-group-tour-georgia-armenia-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/11-day-caucasus-group-tour-georgia-armenia/route-map-11-day-caucasus-group-tour-georgia-armenia-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "11-Day Caucasus Group Tour: Georgia and Armenia — Mapa trasy",
+        "description": "Ilustrowana mapa trasy 11-dniowej wycieczki grupowej po Gruzji i Armenii z Tbilisi i Kachetii do Erywania: Telawi i Cinandali, Sighnaghi i Bodbe, Tbilisi, Mccheta, Ananuri i Kazbegi, Uplisciche, przejście graniczne Sadakhlo–Bagratashen, Haghpat, jezioro Sewan i Erywań, z wycieczkami do Khor Virap, Garni i Geghardu.",
+        "creditText": "Hikasus Travel",
+        "creator": { "@type": "Organization", "name": "Hikasus Travel LTD" },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/pl/image-licensing/",
+        "inLanguage": "pl"
+      }
+    },
     "tourFormTitle": "11-Day Caucasus Group Tour: Georgia and Armenia",
     "groupDates": familyGroupDates('ge-am'),
     "pricePerPerson": "2195",
