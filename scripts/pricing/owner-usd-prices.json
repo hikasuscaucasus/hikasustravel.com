@@ -20,6 +20,16 @@
         { "travelers": "3", "luxury": "2245", "midRange": "1350", "economy": "895" },
         { "travelers": "4", "luxury": "1725", "midRange": "1055", "economy": "695" }
       ]
+    },
+    "11-day-winter-ski-tour-from-kutaisi": {
+      "approved": "2026-10-16",
+      "pricing": [
+        { "travelers": "Single Supplement", "luxury": "2580", "midRange": "1145", "economy": "715" },
+        { "travelers": "1", "luxury": "5990", "midRange": "3390", "economy": "2395" },
+        { "travelers": "2", "luxury": "2995", "midRange": "1850", "economy": "1295" },
+        { "travelers": "3", "luxury": "3804", "midRange": "2162", "economy": "1475" },
+        { "travelers": "4", "luxury": "2860", "midRange": "1695", "economy": "1155" }
+      ]
     }
   }
 }

@@ -13907,7 +13907,7 @@ export const tours = [
       "Four nights in Bakuriani",
       "Hotels included",
       "7 flexible ski days",
-      "From 835 USD per person",
+      "From 1,155 USD per person",
       "Customizable route"
     ],
     "faq": [
@@ -14319,8 +14319,8 @@ export const tours = [
       "offers": {
         "@type": "AggregateOffer",
         "priceCurrency": "USD",
-        "lowPrice": "835",
-        "highPrice": "4460",
+        "lowPrice": "1155",
+        "highPrice": "5990",
         "offerCount": "3",
         "url": "https://www.hikasustravel.com/en/private-tours/11-day-winter-ski-tour-from-kutaisi/"
       }
@@ -14409,33 +14409,33 @@ export const tours = [
     "pricing": [
       {
         "travelers": "Single Supplement",
-        "luxury": "1755",
-        "midRange": "970",
-        "economy": "480"
+        "luxury": "2580",
+        "midRange": "1145",
+        "economy": "715"
       },
       {
         "travelers": "1",
-        "luxury": "4460",
-        "midRange": "2850",
-        "economy": "1790"
+        "luxury": "5990",
+        "midRange": "3390",
+        "economy": "2395"
       },
       {
         "travelers": "2",
-        "luxury": "2295",
-        "midRange": "1540",
-        "economy": "975"
+        "luxury": "2995",
+        "midRange": "1850",
+        "economy": "1295"
       },
       {
         "travelers": "3",
-        "luxury": "2235",
-        "midRange": "1450",
-        "economy": "890"
+        "luxury": "3804",
+        "midRange": "2162",
+        "economy": "1475"
       },
       {
         "travelers": "4",
-        "luxury": "2170",
-        "midRange": "1395",
-        "economy": "835"
+        "luxury": "2860",
+        "midRange": "1695",
+        "economy": "1155"
       }
     ],
     "included": [
