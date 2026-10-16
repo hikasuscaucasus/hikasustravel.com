@@ -571,6 +571,18 @@
       "Pokoj se dvěma lůžky v hotelu Lileo Inn v Mestii, Svanetie, Gruzie"
     ]
   },
+  "Holiday Inn Telavi": {
+    "imageAlts": [
+      "Exteriér vedle jezdecké sochy krále Erekleho II., Holiday Inn Telavi v Telavi, Gruzie",
+      "Pokoj s manželskou postelí, psacím stolem a posezením, Holiday Inn Telavi v Telavi, Gruzie",
+      "Koupelna se sprchovým koutem a umyvadlem, Holiday Inn Telavi v Telavi, Gruzie",
+      "Lobby s pohovkou, křesly a schodištěm, Holiday Inn Telavi v Telavi, Gruzie",
+      "Krytý bazén, Holiday Inn Telavi v Telavi, Gruzie",
+      "Venkovní bazén s lehátky, Holiday Inn Telavi v Telavi, Gruzie",
+      "Posilovna s činkami a posilovacími lavicemi, Holiday Inn Telavi v Telavi, Gruzie",
+      "Dřevěná sauna, Holiday Inn Telavi v Telavi, Gruzie"
+    ]
+  },
   "Communal Hotel Telavi": {
     "description": "Butikový hotel v zrekonstruované historické vile v centru Telavi, s maurskými oblouky, střešní prosklenou místností a bazénem na nádvoří. Jako součást rodiny Communal Hotels spojuje zachovanou dobovou architekturu s živým barem u bazénu a uvolněnou atmosférou v srdci vinařské oblasti Kachetie.",
     "amenities": ["Bazén na nádvoří", "Restaurace a bar", "Klimatizace", "Wi-Fi zdarma", "Parkování zdarma", "Střešní terasa"],

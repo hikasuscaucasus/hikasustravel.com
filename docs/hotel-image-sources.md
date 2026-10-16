@@ -907,3 +907,18 @@ Source: `Images for tours/Hotels/Midtown Hotel Baku` (owner-approved). Converted
 | Midtown Hotel Baku | Bathroom | `midtown-hotel-baku-bathroom.webp` | 1024x575 |
 | Midtown Hotel Baku | Fitness room | `midtown-hotel-baku-gym.webp` | 1024x575 |
 | Midtown Hotel Baku | Sauna | `midtown-hotel-baku-sauna.webp` | 1024x575 |
+
+## Holiday Inn Telavi gallery added 2026-10-16 (owner-supplied photos)
+
+Source: `Images for tours/Hotels/Holiday Inn Telavi` (owner-approved). Converted to WebP q82 at source width (no upscaling, no colour grading, no scene edits). Images-only record: description/amenities/stars left absent (no owner-approved facts supplied).
+
+| Hotel | Category | Local file | Size |
+|---|---|---|---|
+| Holiday Inn Telavi | Exterior | `holiday-inn-telavi-exterior.webp` | 1024x683 |
+| Holiday Inn Telavi | Room | `holiday-inn-telavi-room.webp` | 1024x683 |
+| Holiday Inn Telavi | Bathroom | `holiday-inn-telavi-bathroom.webp` | 1024x683 |
+| Holiday Inn Telavi | Lobby | `holiday-inn-telavi-lobby.webp` | 1024x683 |
+| Holiday Inn Telavi | Indoor pool | `holiday-inn-telavi-indoor-pool.webp` | 1024x683 |
+| Holiday Inn Telavi | Outdoor pool | `holiday-inn-telavi-outdoor-pool.webp` | 1024x768 |
+| Holiday Inn Telavi | Fitness room | `holiday-inn-telavi-gym.webp` | 576x768 |
+| Holiday Inn Telavi | Sauna | `holiday-inn-telavi-sauna.webp` | 1024x683 |

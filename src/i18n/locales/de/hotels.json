@@ -571,6 +571,18 @@
       "Zweibettzimmer im Lileo Inn in Mestia, Swanetien, Georgien"
     ]
   },
+  "Holiday Inn Telavi": {
+    "imageAlts": [
+      "Außenansicht neben dem Reiterdenkmal für König Erekle II., Holiday Inn Telavi in Telawi, Georgien",
+      "Gästezimmer mit Doppelbett, Schreibtisch und Sitzecke, Holiday Inn Telavi in Telawi, Georgien",
+      "Gästebadezimmer mit ebenerdiger Dusche und Waschbecken, Holiday Inn Telavi in Telawi, Georgien",
+      "Lobby-Lounge mit Sofa, Sesseln und Treppe, Holiday Inn Telavi in Telawi, Georgien",
+      "Hallenbad, Holiday Inn Telavi in Telawi, Georgien",
+      "Außenpool mit Sonnenliegen, Holiday Inn Telavi in Telawi, Georgien",
+      "Fitnessraum mit Hanteln und Trainingsbänken, Holiday Inn Telavi in Telawi, Georgien",
+      "Holzsauna, Holiday Inn Telavi in Telawi, Georgien"
+    ]
+  },
   "Communal Hotel Telavi": {
     "description": "Ein Boutiquehotel in einer restaurierten historischen Villa im Zentrum von Telawi, mit maurischen Bögen, einem Wintergarten auf dem Dach und einem Innenhof mit Pool. Als Teil der Communal-Hotels-Familie verbindet es erhaltene Architektur mit einer lebhaften Poolbar und einer entspannten Atmosphäre im Herzen der Weinregion Kachetien.",
     "amenities": ["Pool im Innenhof", "Restaurant & Bar", "Klimaanlage", "Kostenloses WLAN", "Kostenlose Parkplätze", "Dachterrasse"],

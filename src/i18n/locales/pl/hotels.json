@@ -571,6 +571,18 @@
       "Pokój z dwoma łóżkami w Lileo Inn w Mestii, Swanetia, Gruzja"
     ]
   },
+  "Holiday Inn Telavi": {
+    "imageAlts": [
+      "Fasada obok pomnika konnego króla Erekle II, Holiday Inn Telavi w Telawi, Gruzja",
+      "Pokój z podwójnym łóżkiem, biurkiem i częścią wypoczynkową, Holiday Inn Telavi w Telawi, Gruzja",
+      "Łazienka z kabiną prysznicową i umywalką, Holiday Inn Telavi w Telawi, Gruzja",
+      "Lobby z sofą, fotelami i schodami, Holiday Inn Telavi w Telawi, Gruzja",
+      "Basen kryty, Holiday Inn Telavi w Telawi, Gruzja",
+      "Basen zewnętrzny z leżakami, Holiday Inn Telavi w Telawi, Gruzja",
+      "Siłownia z ciężarami i ławkami treningowymi, Holiday Inn Telavi w Telawi, Gruzja",
+      "Drewniana sauna, Holiday Inn Telavi w Telawi, Gruzja"
+    ]
+  },
   "Communal Hotel Telavi": {
     "description": "Butikowy hotel w odrestaurowanej zabytkowej willi w centrum Telawi, z maurytańskimi łukami, przeszkloną altaną na dachu i basenem na dziedzińcu. Jako część rodziny Communal Hotels łączy zachowaną architekturę epoki z tętniącym życiem barem przy basenie i swobodną atmosferą w sercu regionu winiarskiego Kachetia.",
     "amenities": ["Basen na dziedzińcu", "Restauracja i bar", "Klimatyzacja", "Bezpłatne Wi-Fi", "Bezpłatny parking", "Taras na dachu"],

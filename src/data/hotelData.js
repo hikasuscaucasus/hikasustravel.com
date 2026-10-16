@@ -944,6 +944,19 @@ const hotelData = {
   // --- Kakheti / Telavi hotels for the "Savor the Flavors of Kakheti" tour.
   // Details verified from official sites and reputable booking sources; only
   // confirmed facts are listed. Photos are pending for the text-only entries.
+  'Holiday Inn Telavi': {
+    images: [
+      // Owner-supplied photos (Images for tours/Hotels/Holiday Inn Telavi), shown in this order.
+      { src: '/images/hotels/holiday-inn-telavi-exterior.webp', alt: 'Exterior of Holiday Inn Telavi beside the King Erekle II equestrian monument in Telavi, Georgia', category: 'Exterior' },
+      { src: '/images/hotels/holiday-inn-telavi-room.webp', alt: 'Guest room with a double bed, a desk and a seating area at Holiday Inn Telavi, Georgia', category: 'Room' },
+      { src: '/images/hotels/holiday-inn-telavi-bathroom.webp', alt: 'Guest bathroom with a walk-in shower and a washbasin at Holiday Inn Telavi, Georgia', category: 'Bathroom' },
+      { src: '/images/hotels/holiday-inn-telavi-lobby.webp', alt: 'Lobby lounge with a sofa, armchairs and a staircase at Holiday Inn Telavi, Georgia', category: 'Lobby' },
+      { src: '/images/hotels/holiday-inn-telavi-indoor-pool.webp', alt: 'Indoor swimming pool at Holiday Inn Telavi, Georgia', category: 'Indoor pool' },
+      { src: '/images/hotels/holiday-inn-telavi-outdoor-pool.webp', alt: 'Outdoor swimming pool with sun loungers at Holiday Inn Telavi, Georgia', category: 'Outdoor pool' },
+      { src: '/images/hotels/holiday-inn-telavi-gym.webp', alt: 'Fitness room with weights and exercise benches at Holiday Inn Telavi, Georgia', category: 'Fitness room' },
+      { src: '/images/hotels/holiday-inn-telavi-sauna.webp', alt: 'Wooden sauna at Holiday Inn Telavi, Georgia', category: 'Sauna' },
+    ],
+  },
   'Communal Hotel Telavi': {
     images: [],
     stars: null,

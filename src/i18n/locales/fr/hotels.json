@@ -571,6 +571,18 @@
       "Chambre twin du Lileo Inn à Mestia, Svanétie, Géorgie"
     ]
   },
+  "Holiday Inn Telavi": {
+    "imageAlts": [
+      "Façade à côté de la statue équestre du roi Erekle II, Holiday Inn Telavi à Telavi, Géorgie",
+      "Chambre avec lit double, bureau et coin salon, Holiday Inn Telavi à Telavi, Géorgie",
+      "Salle de bains avec douche à l'italienne et vasque, Holiday Inn Telavi à Telavi, Géorgie",
+      "Salon du hall avec canapé, fauteuils et escalier, Holiday Inn Telavi à Telavi, Géorgie",
+      "Piscine intérieure, Holiday Inn Telavi à Telavi, Géorgie",
+      "Piscine extérieure avec chaises longues, Holiday Inn Telavi à Telavi, Géorgie",
+      "Salle de fitness avec haltères et bancs de musculation, Holiday Inn Telavi à Telavi, Géorgie",
+      "Sauna en bois, Holiday Inn Telavi à Telavi, Géorgie"
+    ]
+  },
   "Communal Hotel Telavi": {
     "description": "Un hôtel-boutique installé dans une villa historique restaurée au centre de Telavi, avec des arcades mauresques, un solarium sur le toit et une piscine dans la cour. Membre de la famille Communal Hotels, il associe une architecture d'époque préservée à un bar de piscine animé et à une atmosphère détendue, au cœur du vignoble de Kakhétie.",
     "amenities": ["Piscine dans la cour", "Restaurant & bar", "Climatisation", "Wi-Fi gratuit", "Parking gratuit", "Terrasse sur le toit"],
