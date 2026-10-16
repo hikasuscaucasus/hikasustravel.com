@@ -2,6 +2,7 @@ import { useState, useMemo, useRef, useContext } from 'react'
 import FadeUp from '../shared/FadeUp'
 import LocaleLink from '../../i18n/LocaleLink'
 import { startLocations, getStopsForStart, getStartsForStop, filterRoutes } from '../../data/shuttleData'
+import { formatPrice, parsePrice } from '../shared/pricingUtils'
 import asset from '../../utils/basePath'
 import useT from '../../i18n/useT'
 import useLang from '../../i18n/useLang'
@@ -9,6 +10,13 @@ import { I18nContext } from '../../i18n/I18nContext'
 import { autolinkNodes } from '../../utils/autolinkReact'
 import useSEO from '../../hooks/useSEO'
 import { getSEO } from '../../data/seoData'
+
+// Shuttle prices are canonical USD (src/data/shuttleData.js); a non-numeric cell
+// such as 'N/A' is shown as-is.
+function shuttlePrice(value) {
+  const n = parsePrice(value)
+  return n ? formatPrice(n) : value
+}
 
 export default function ShuttleServicePage() {
   const [selectedStart, setSelectedStart] = useState('')
@@ -146,9 +154,9 @@ export default function ShuttleServicePage() {
                 <div className="taxi-list-row-from" data-label={t('shuttle.fromHeader')}>{route.start}</div>
                 <div className="taxi-list-row-to" data-label={t('shuttle.toHeader')}>{route.stop}</div>
                 <div className="taxi-list-row-duration" data-label={t('shuttle.duration')}>{route.duration}</div>
-                <div className="taxi-list-row-sedan" data-label={`${t('shuttle.sedan')} ${t('shuttle.sedanDetails')}`}>€ {route.sedan}</div>
-                <div className="taxi-list-row-minivan" data-label={`${t('shuttle.minivan')} ${t('shuttle.minivanDetails')}`}>€ {route.minivan}</div>
-                <div className="taxi-list-row-minibus" data-label={`${t('shuttle.minibus')} ${t('shuttle.minibusDetails')}`}>€ {route.minibus}</div>
+                <div className="taxi-list-row-sedan" data-label={`${t('shuttle.sedan')} ${t('shuttle.sedanDetails')}`}>{shuttlePrice(route.sedan)}</div>
+                <div className="taxi-list-row-minivan" data-label={`${t('shuttle.minivan')} ${t('shuttle.minivanDetails')}`}>{shuttlePrice(route.minivan)}</div>
+                <div className="taxi-list-row-minibus" data-label={`${t('shuttle.minibus')} ${t('shuttle.minibusDetails')}`}>{shuttlePrice(route.minibus)}</div>
               </div>
             ))}
 
