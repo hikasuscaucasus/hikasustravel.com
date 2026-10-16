@@ -8136,7 +8136,7 @@ export const tours = [
       "Two nights in Kutaisi",
       "Hotels included",
       "4 full free ski days",
-      "From 595 USD per person",
+      "From 695 USD per person",
       "Customizable route"
     ],
     "faq": [
@@ -8497,8 +8497,8 @@ export const tours = [
       "offers": {
         "@type": "AggregateOffer",
         "priceCurrency": "USD",
-        "lowPrice": "595",
-        "highPrice": "2890",
+        "lowPrice": "695",
+        "highPrice": "3530",
         "offerCount": "3",
         "url": "https://www.hikasustravel.com/en/private-tours/8-day-winter-ski-tour-from-kutaisi/"
       }
@@ -8577,33 +8577,33 @@ export const tours = [
     "pricing": [
       {
         "travelers": "Single Supplement",
-        "luxury": "1115",
-        "midRange": "630",
-        "economy": "295"
+        "luxury": "1380",
+        "midRange": "695",
+        "economy": "425"
       },
       {
         "travelers": "1",
-        "luxury": "2890",
-        "midRange": "1950",
-        "economy": "1270"
+        "luxury": "3530",
+        "midRange": "2180",
+        "economy": "1550"
       },
       {
         "travelers": "2",
-        "luxury": "1495",
-        "midRange": "1050",
-        "economy": "670"
+        "luxury": "1850",
+        "midRange": "1180",
+        "economy": "830"
       },
       {
         "travelers": "3",
-        "luxury": "1435",
-        "midRange": "995",
-        "economy": "640"
+        "luxury": "2245",
+        "midRange": "1350",
+        "economy": "895"
       },
       {
         "travelers": "4",
-        "luxury": "1385",
-        "midRange": "945",
-        "economy": "595"
+        "luxury": "1725",
+        "midRange": "1055",
+        "economy": "695"
       }
     ],
     "included": [
