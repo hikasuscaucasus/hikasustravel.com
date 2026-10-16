@@ -402,6 +402,17 @@ const hotelData = {
       'Near the Baku City Circuit',
     ],
   },
+  'Midtown Hotel Baku': {
+    images: [
+      // Owner-supplied photos (Images for tours/Hotels/Midtown Hotel Baku), shown in this order.
+      { src: '/images/hotels/midtown-hotel-baku-exterior.webp', alt: 'Exterior with the Midtown Hotel sign above the entrance at Midtown Hotel Baku, Azerbaijan', category: 'Exterior' },
+      { src: '/images/hotels/midtown-hotel-baku-lobby.webp', alt: 'Lobby lounge with armchairs and a marble floor at Midtown Hotel Baku, Azerbaijan', category: 'Lobby' },
+      { src: '/images/hotels/midtown-hotel-baku-room.webp', alt: 'Guest room with a double bed, a desk and a seating area at Midtown Hotel Baku, Azerbaijan', category: 'Room' },
+      { src: '/images/hotels/midtown-hotel-baku-bathroom.webp', alt: 'Guest bathroom with a walk-in shower and a vanity at Midtown Hotel Baku, Azerbaijan', category: 'Bathroom' },
+      { src: '/images/hotels/midtown-hotel-baku-gym.webp', alt: 'Fitness room with treadmills and weight machines at Midtown Hotel Baku, Azerbaijan', category: 'Fitness room' },
+      { src: '/images/hotels/midtown-hotel-baku-sauna.webp', alt: 'Wooden sauna at Midtown Hotel Baku, Azerbaijan', category: 'Sauna' },
+    ],
+  },
   'Gudauri Lodge': {
     images: [
       // Owner-supplied photos (Images for tours/Hotels/Gudauri Lodge), shown in this order.

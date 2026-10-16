@@ -894,3 +894,16 @@ Source: `Images for tours/Hotels/Dili Town Resort and Spa Dilijan` (owner-approv
 | Dili Town Resort and Spa | Hammam | `dili-town-hammam.webp` | 1024x683 |
 | Dili Town Resort and Spa | Fitness room | `dili-town-gym.webp` | 1024x683 |
 
+
+## Midtown Hotel Baku gallery added 2026-10-16 (owner-supplied photos)
+
+Source: `Images for tours/Hotels/Midtown Hotel Baku` (owner-approved). Converted to WebP q82 at source width (no upscaling, no colour grading, no scene edits). Images-only record: description/amenities/stars left absent (no owner-approved facts supplied).
+
+| Hotel | Category | Local file | Size |
+|---|---|---|---|
+| Midtown Hotel Baku | Exterior | `midtown-hotel-baku-exterior.webp` | 614x768 |
+| Midtown Hotel Baku | Lobby | `midtown-hotel-baku-lobby.webp` | 1024x575 |
+| Midtown Hotel Baku | Room | `midtown-hotel-baku-room.webp` | 1024x575 |
+| Midtown Hotel Baku | Bathroom | `midtown-hotel-baku-bathroom.webp` | 1024x575 |
+| Midtown Hotel Baku | Fitness room | `midtown-hotel-baku-gym.webp` | 1024x575 |
+| Midtown Hotel Baku | Sauna | `midtown-hotel-baku-sauna.webp` | 1024x575 |
