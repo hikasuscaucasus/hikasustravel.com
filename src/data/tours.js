@@ -5931,7 +5931,7 @@ export const tours = [
       "Hotels included",
       "4 flexible ski days",
       "Available December 15 – March 15",
-      "From 465 USD per person",
+      "From 595 USD per person",
       "Customizable route"
     ],
     "faq": [
@@ -5957,7 +5957,7 @@ export const tours = [
       },
       {
         "title": "How much does a ski holiday in Gudauri cost?",
-        "content": "<p>Pricing is per person and depends on your group size and accommodation level, starting from 465 USD per person for the Classic package. Gudauri is one of the most affordable quality ski destinations in Europe. Send your dates and group size for an exact quote.</p>"
+        "content": "<p>Pricing is per person and depends on your group size and accommodation level, starting from 595 USD per person for the Classic package. Gudauri is one of the most affordable quality ski destinations in Europe. Send your dates and group size for an exact quote.</p>"
       },
       {
         "title": "Do I need special insurance to ski in Georgia?",
@@ -6098,8 +6098,8 @@ export const tours = [
       "offers": {
         "@type": "AggregateOffer",
         "priceCurrency": "USD",
-        "lowPrice": "465",
-        "highPrice": "2530",
+        "lowPrice": "595",
+        "highPrice": "3220",
         "offerCount": "3",
         "url": "https://www.hikasustravel.com/en/private-tours/7-day-gudauri-ski-tour-from-tbilisi/"
       }
@@ -6170,33 +6170,33 @@ export const tours = [
     "pricing": [
       {
         "travelers": "Single Supplement",
-        "luxury": "1065",
-        "midRange": "595",
-        "economy": "295"
+        "luxury": "1355",
+        "midRange": "680",
+        "economy": "395"
       },
       {
         "travelers": "1",
-        "luxury": "2530",
-        "midRange": "1650",
-        "economy": "960"
+        "luxury": "3220",
+        "midRange": "1875",
+        "economy": "1235"
       },
       {
         "travelers": "2",
-        "luxury": "1295",
-        "midRange": "890",
-        "economy": "525"
+        "luxury": "1690",
+        "midRange": "1020",
+        "economy": "660"
       },
       {
         "travelers": "3",
-        "luxury": "1280",
-        "midRange": "860",
-        "economy": "495"
+        "luxury": "2130",
+        "midRange": "1225",
+        "economy": "770"
       },
       {
         "travelers": "4",
-        "luxury": "1230",
-        "midRange": "830",
-        "economy": "465"
+        "luxury": "1630",
+        "midRange": "960",
+        "economy": "595"
       }
     ],
     "included": [

@@ -1,0 +1,15 @@
+{
+  "note": "Tours whose USD prices were set directly by the owner after the October 2026 EUR->USD migration. These values are final: no EUR source, no x1.12, no x95/round-to-5 rule. validate-usd-prices.js asserts tours.js matches these tables exactly (rows: luxury = Premium, midRange = Mid-Range, economy = Classic) instead of re-deriving them from ledger-eur-to-usd.json.",
+  "tours": {
+    "7-day-gudauri-ski-tour-from-tbilisi": {
+      "approved": "2026-10-16",
+      "pricing": [
+        { "travelers": "Single Supplement", "luxury": "1355", "midRange": "680", "economy": "395" },
+        { "travelers": "1", "luxury": "3220", "midRange": "1875", "economy": "1235" },
+        { "travelers": "2", "luxury": "1690", "midRange": "1020", "economy": "660" },
+        { "travelers": "3", "luxury": "2130", "midRange": "1225", "economy": "770" },
+        { "travelers": "4", "luxury": "1630", "midRange": "960", "economy": "595" }
+      ]
+    }
+  }
+}

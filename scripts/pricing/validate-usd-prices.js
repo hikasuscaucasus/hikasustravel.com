@@ -27,6 +27,10 @@ const fmt = (n) => `${Number(n).toLocaleString('en-US')} USD`
 
 const ledger = JSON.parse(readFileSync(join(__dirname, 'ledger-eur-to-usd.json'), 'utf-8'))
 const original = JSON.parse(readFileSync(join(__dirname, 'original-eur-prices.json'), 'utf-8'))
+// Owner-set USD tables (no EUR source, no rounding rule): these tours are not
+// re-derived from the ledger; their source must equal the register exactly.
+const ownerPriced = JSON.parse(readFileSync(join(__dirname, 'owner-usd-prices.json'), 'utf-8')).tours
+const isOwnerPriced = (slug) => Object.prototype.hasOwnProperty.call(ownerPriced, slug)
 const { tours, featuredToursFor, primaryToursFor, combinedToursCovering } = await import(pathToFileURL(join(ROOT, 'src/data/tours.js')).href)
 
 const problems = []
@@ -38,6 +42,7 @@ const stats = { ledgerEntries: 0, sourceChecks: 0, pagesChecked: 0, offersChecke
 const bySlug = new Map(tours.map((t) => [t.slug, t]))
 const expectedTable = new Map() // slug -> { cells: Map(field->usd), from, classic4, group, supplement }
 for (const e of ledger.entries) {
+  if (isOwnerPriced(e.slug)) continue
   stats.ledgerEntries++
   const r = eurToUsd(e.eur)
   const inv = checkInvariants(r)
@@ -81,6 +86,7 @@ for (const f of ['src/data/tours.js', ...LANGS.map((l) => `src/i18n/locales/${l}
 for (const o of original.tours) {
   const t = bySlug.get(o.slug)
   if (!t) { bad(o.slug, 'tour missing after migration'); continue }
+  if (isOwnerPriced(o.slug)) continue
   if ((o.pricing || []).length !== (t.pricing || []).length) bad(o.slug, 'pricing row count changed')
   for (let i = 0; i < (o.pricing || []).length; i++) {
     for (const k of ['travelers', 'luxury', 'midRange', 'economy']) {
@@ -102,7 +108,7 @@ const expectedFor = (slug) => {
   const o = original.tours.find((x) => x.slug === slug)
   if (t.type === 'group') return { from: Number(t.pricePerPerson), supplement: Number(t.singleSupplement), card: Number(t.pricePerPerson) }
   const from = minOf(t.pricing)
-  if (from !== eurToUsd(minOf(o.pricing)).finalUsd) bad(slug, `from-price ${from} != converted original minimum ${eurToUsd(minOf(o.pricing)).finalUsd}`)
+  if (!isOwnerPriced(slug) && from !== eurToUsd(minOf(o.pricing)).finalUsd) bad(slug, `from-price ${from} != converted original minimum ${eurToUsd(minOf(o.pricing)).finalUsd}`)
   const classic4 = t.pricing.find((r) => r.travelers === '4')
   return { from, card: classic4 ? parseAmount(classic4.economy) : null, cells: t.pricing.flatMap((r) => [r.luxury, r.midRange, r.economy].map(parseAmount)) }
 }
@@ -114,6 +120,35 @@ for (const e of ledger.entries.filter((x) => x.kind === 'duplicate')) {
 }
 for (const [k, set] of dupGroups) if (set.size > 1) bad(k, `locale duplicates disagree: ${[...set].join(', ')}`)
 
+// owner-set tables: source cells, from-price duplicates and EN offers must equal the register exactly (no rounding of any kind)
+let ownerChecks = 0
+for (const [slug, reg] of Object.entries(ownerPriced)) {
+  const t = bySlug.get(slug)
+  if (!t) { bad(slug, 'owner-priced tour not in tours.js'); continue }
+  if ((t.pricing || []).length !== reg.pricing.length) bad(slug, `pricing row count ${t.pricing?.length} != register ${reg.pricing.length}`)
+  reg.pricing.forEach((row, i) => {
+    for (const k of ['travelers', 'luxury', 'midRange', 'economy']) {
+      ownerChecks++
+      if (t.pricing?.[i]?.[k] !== row[k]) bad(slug, `pricing[${i}].${k} = ${JSON.stringify(t.pricing?.[i]?.[k])}, owner register says ${JSON.stringify(row[k])}`)
+    }
+  })
+  const from = minOf(reg.pricing)
+  const high = Math.max(...reg.pricing.filter((r) => r.travelers !== 'Single Supplement').flatMap((r) => [r.luxury, r.midRange, r.economy].map(parseAmount)))
+  ownerChecks += 3
+  if (!(t.heroFacts || []).includes(`From ${fmt(from)} per person`)) bad(slug, `heroFacts lacks "From ${fmt(from)} per person"`)
+  if (t.enTouristTrip?.offers && t.enTouristTrip.offers.lowPrice !== String(from)) bad(slug, `enTouristTrip.offers.lowPrice ${t.enTouristTrip.offers.lowPrice} != ${from}`)
+  if (t.enTouristTrip?.offers && t.enTouristTrip.offers.highPrice !== String(high)) bad(slug, `enTouristTrip.offers.highPrice ${t.enTouristTrip.offers.highPrice} != ${high}`)
+  for (const l of LANGS.filter((x) => x !== 'en')) {
+    ownerChecks++
+    const text = readFileSync(join(ROOT, `src/i18n/locales/${l}/tours.json`), 'utf-8')
+    const s = text.indexOf(`"${slug}": {`)
+    if (s < 0) { bad(slug, `${l}/tours.json has no record`); continue }
+    let e = text.length
+    for (const other of bySlug.keys()) { if (other === slug) continue; const i = text.indexOf(`"${other}": {`, s + 1); if (i >= 0 && i < e) e = i }
+    if (!text.slice(s, e).includes(fmt(from))) bad(slug, `${l}/tours.json record lacks "${fmt(from)}"`)
+  }
+}
+console.log(`OWNER REGISTER: ${Object.keys(ownerPriced).length} tour(s), ${ownerChecks} exact checks`)
 console.log(`SOURCE: ${stats.ledgerEntries} ledger entries re-derived, ${stats.sourceChecks} source checks, ${problems.length} problem(s)`)
 if (SOURCE_ONLY) finish()
 
