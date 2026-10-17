@@ -10,16 +10,13 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
 // `departures`: for a scheduled group tour, the bookable departure windows
 // ([{ value, label, soldOut, bookingDeadline, deadlineLabel }], built by
-// TourDetailPage from the tour's `groupDates`). When present the free
-// start/end date inputs are replaced by one required dropdown of exactly
-// those windows, each option reading "<window> — Book by <date>" so the
-// visitor sees every departure's booking deadline while choosing. A
-// collapsed native select clips that label on phones (and the Spanish one
-// even on desktop), so the chosen departure's deadline is also written once
-// in a plain line directly under the select, tied to it by aria-describedby.
-// The option VALUE stays the canonical ISO window and the deadline travels
-// in the inquiry as its own field. Private tours pass nothing and keep
-// their flexible dates.
+// TourDetailPage from the tour's `groupDates` — the same array the page's
+// "2027 departures" strip renders). When present the free start/end date
+// inputs are replaced by one required dropdown of exactly those windows,
+// each option showing the dates only: the booking deadlines are read on the
+// page, not in the select. The option VALUE stays the canonical ISO window
+// and the deadline travels in the inquiry as its own field. Private tours
+// pass nothing and keep their flexible dates.
 // `travelerRange` ({ min, max }, the tour's `inquiryTravelers` — the party size
 // one inquiry may ask for, 1–12 on the scheduled Caucasus tours — falling back
 // to `groupSize`): the free traveler count becomes a required select of exactly
@@ -121,7 +118,6 @@ export default function TourInquiryForm({ tourTitle, tourSlug = '', selectedPack
   }
 
   const invalid = (cond) => (errors.length && cond ? true : undefined)
-  const chosenDeparture = departures?.find((d) => d.value === form.departure) || null
   // Points a field that failed at the summary that says why. Only while the
   // summary is on screen, so the field is never described by nothing.
   const describedBy = (cond) => (errors.length && cond ? 'ti-errors' : undefined)
@@ -201,18 +197,15 @@ export default function TourInquiryForm({ tourTitle, tourSlug = '', selectedPack
               if (e.target.value) trackEvent('departure_select', { tour: tourSlug, departure: e.target.value })
             }}
             aria-invalid={invalid(!form.departure)}
-            aria-describedby={[describedBy(!form.departure), chosenDeparture?.deadlineLabel ? 'ti-departure-deadline' : null].filter(Boolean).join(' ') || undefined}
+            aria-describedby={describedBy(!form.departure)}
           >
             <option value="">{t('form.departurePlaceholder')}</option>
             {departures.map((d) => (
               <option key={d.value} value={d.value} disabled={d.soldOut}>
-                {d.label}{d.deadlineLabel ? ` — ${d.deadlineLabel}` : ''}{d.soldOut ? ` — ${t('tour.soldOut')}` : ''}
+                {d.label}{d.soldOut ? ` — ${t('tour.soldOut')}` : ''}
               </option>
             ))}
           </select>
-          {chosenDeparture?.deadlineLabel && (
-            <p className="td-form__deadline" id="ti-departure-deadline">{chosenDeparture.deadlineLabel}</p>
-          )}
         </div>
       ) : (
         <div className="td-form__row">

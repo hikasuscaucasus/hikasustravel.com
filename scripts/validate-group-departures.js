@@ -67,8 +67,11 @@ for (const [slug, exp] of Object.entries(EXPECTED)) {
     // Every locale must name the "Book by" label in its own language and
     // render each deadline as a full day / month-word / year date.
     const ui = JSON.parse(readFileSync(join(__dirname, `../src/i18n/locales/${lang}/ui.json`), 'utf8'))
-    if (!ui['form.bookBy'] || !ui['form.bookBy'].includes('{date}')) bad(`${lang}: ui.json form.bookBy missing or has no {date}`)
-    else if (lang !== 'en' && /\bBook by\b/.test(ui['form.bookBy'])) bad(`${lang}: form.bookBy is still English`)
+    if (!ui['tour.bookBy'] || !ui['tour.bookBy'].includes('{date}')) bad(`${lang}: ui.json tour.bookBy missing or has no {date}`)
+    else if (lang !== 'en' && /\bBook by\b/.test(ui['tour.bookBy'])) bad(`${lang}: tour.bookBy is still English`)
+    if (!ui['tour.departuresTitle'] || !ui['tour.departuresTitle'].includes('{year}')) bad(`${lang}: ui.json tour.departuresTitle missing or has no {year}`)
+    else if (lang !== 'en' && /\bdepartures\b/i.test(ui['tour.departuresTitle'])) bad(`${lang}: tour.departuresTitle is still English`)
+    if (ui['form.bookBy']) bad(`${lang}: stale form.bookBy key (the label lives on the page as tour.bookBy)`)
     for (const d of tour.groupDates || []) {
       const text = formatDepartureDate(d.bookingDeadline, lang)
       const [, , dd] = d.bookingDeadline.split('-').map(Number)

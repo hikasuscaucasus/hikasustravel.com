@@ -1124,10 +1124,6 @@
   font-size: 12px;
 }
 
-.theme-ivory .td-form__deadline {
-  color: var(--sub);
-}
-
 .theme-ivory .td-form__group input,
 .theme-ivory .td-form__group textarea,
 .theme-ivory .td-form__group select {
@@ -3810,6 +3806,77 @@
   .theme-ivory .td-family__cta {
     grid-column: 2;
     justify-self: start;
+  }
+}
+
+/* --- Tour page: "2027 departures" ------------------------------------------
+   The scheduled windows with their booking deadlines, at the end of the
+   Overview under the facts line (ScheduledTourDepartures.jsx). Dates lead,
+   the deadline is the quieter second line. Two columns (a 2 × 2 block, never
+   3 + 1) from tablets up; on phones a 2 × 2 block wraps every date range over
+   three to five lines, so there the four read as single stacked rows. Same
+   width as the overview prose and the family chooser. */
+.theme-ivory .td-departures {
+  max-width: 760px;
+  margin: 22px 0 0;
+}
+
+.theme-ivory .td-departures__title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 10px;
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.theme-ivory .td-departures__title svg {
+  color: var(--accent);
+  flex: 0 0 auto;
+}
+
+.theme-ivory .td-departures__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.theme-ivory .td-departures__item {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+  padding: 10px 14px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.theme-ivory .td-departures__dates {
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.theme-ivory .td-departures__deadline {
+  color: var(--sub);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+  .theme-ivory .td-departures__list {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 6px;
+  }
+
+  .theme-ivory .td-departures__item {
+    padding: 9px 12px;
   }
 }
 

@@ -12,6 +12,7 @@ import TourInquiryForm from '../shared/TourInquiryForm'
 import Gallery from '../shared/Gallery'
 import StickyRequestBar from '../shared/StickyRequestBar'
 import GroupTourFamily from '../shared/GroupTourFamily'
+import ScheduledTourDepartures from '../shared/ScheduledTourDepartures'
 import TourCard from '../shared/TourCard'
 import { tours } from '../../data/tours'
 import { formatDepartureDate } from '../../data/groupDepartures'
@@ -174,19 +175,21 @@ export default function TourDetailPage() {
   // Scheduled group tours book one of their published departures, never a
   // free date: one option per `groupDates` entry, labelled in the page's
   // language (`tt.departures`, same order) and submitted with the canonical
-  // ISO window so the inquiry email is unambiguous in every locale. Each
-  // option also states its booking deadline ("Book by 11 May 2027"), derived
-  // in groupDepartures.js as 30 calendar days before the start; the inquiry
-  // form is the one place on the page the deadlines appear.
+  // ISO window so the inquiry email is unambiguous in every locale. The same
+  // array feeds the "2027 departures" strip at the end of the Overview, the
+  // one place that shows each window's booking deadline ("Book by 11 May
+  // 2027", derived in groupDepartures.js as 30 calendar days before the
+  // start); the dropdown shows the dates only.
   const departures = isGroup && tour.groupDates?.length
     ? tour.groupDates.map((d, i) => ({
         value: d.iso || `${d.start} ${d.year} – ${d.end} ${d.year}`,
         label: tt?.departures?.[i] || `${d.start} – ${d.end} ${d.year}`,
         soldOut: Boolean(d.soldOut),
         bookingDeadline: d.bookingDeadline || null,
-        deadlineLabel: d.bookingDeadline ? t('form.bookBy', { date: formatDepartureDate(d.bookingDeadline, lang) }) : '',
+        deadlineLabel: d.bookingDeadline ? t('tour.bookBy', { date: formatDepartureDate(d.bookingDeadline, lang) }) : '',
       }))
     : null
+  const departureYear = departures ? [...new Set(tour.groupDates.map((d) => d.year))].join('/') : ''
 
   // Extract starting price
   const startingPrice = isGroup
@@ -298,6 +301,12 @@ export default function TourDetailPage() {
                   ].filter(Boolean).join(' · ')}
                 </p>
               )}
+              {/* The scheduled windows with their booking deadlines, right
+                  under the facts line, so what / who / when read as one
+                  block before the family chooser and the gallery. Same array
+                  as the inquiry dropdown (which shows dates only); nothing
+                  else on the page repeats these dates. */}
+              {departures && <ScheduledTourDepartures departures={departures} year={departureYear} />}
             </FadeUp>
           </section>
 
