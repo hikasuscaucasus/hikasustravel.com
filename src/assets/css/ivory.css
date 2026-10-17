@@ -1124,6 +1124,10 @@
   font-size: 12px;
 }
 
+.theme-ivory .td-form__deadline {
+  color: var(--sub);
+}
+
 .theme-ivory .td-form__group input,
 .theme-ivory .td-form__group textarea,
 .theme-ivory .td-form__group select {

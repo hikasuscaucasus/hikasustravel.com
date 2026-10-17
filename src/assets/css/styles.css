@@ -6389,6 +6389,15 @@ tour-info h2 a,
   color: rgba(239, 239, 215, 0.5);
   margin-top: 14px;
 }
+/* The chosen group-tour departure's booking deadline ("Book by 11 May 2027"),
+   one line under the departure select — the collapsed select clips the long
+   option label on phones. */
+.td-form__deadline {
+  margin: 8px 0 0;
+  font-size: 13px;
+  line-height: 1.4;
+  color: rgba(239, 239, 215, 0.7);
+}
 .td-form__trust {
   font-size: 13px;
   color: rgba(239, 239, 215, 0.6);

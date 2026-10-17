@@ -201,6 +201,7 @@
   "tour.singleSupplementShort": "Supplément individuel : {price}",
   "form.departure": "Date de départ",
   "form.departurePlaceholder": "Sélectionnez une date de départ",
+  "form.bookBy": "Réservation jusqu’au {date}",
   "form.errors.departure": "Veuillez sélectionner une date de départ",
   "home.flagshipEyebrow": "Circuit en groupe {year} à la une",
   "home.flagshipLead": "Un seul voyage de Bakou à Erevan à travers les trois pays du Caucase du Sud, avec un guide local dans chaque pays et les deux passages de frontière pris en charge pour vous.",

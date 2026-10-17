@@ -9,10 +9,17 @@ import { trackEvent } from '../../utils/analytics'
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
 // `departures`: for a scheduled group tour, the bookable departure windows
-// ([{ value, label, soldOut }], built by TourDetailPage from the tour's
-// `groupDates`). When present the free start/end date inputs are replaced by
-// one required dropdown of exactly those windows; private tours pass nothing
-// and keep their flexible dates.
+// ([{ value, label, soldOut, bookingDeadline, deadlineLabel }], built by
+// TourDetailPage from the tour's `groupDates`). When present the free
+// start/end date inputs are replaced by one required dropdown of exactly
+// those windows, each option reading "<window> — Book by <date>" so the
+// visitor sees every departure's booking deadline while choosing. A
+// collapsed native select clips that label on phones (and the Spanish one
+// even on desktop), so the chosen departure's deadline is also written once
+// in a plain line directly under the select, tied to it by aria-describedby.
+// The option VALUE stays the canonical ISO window and the deadline travels
+// in the inquiry as its own field. Private tours pass nothing and keep
+// their flexible dates.
 // `travelerRange` ({ min, max }, the tour's `inquiryTravelers` — the party size
 // one inquiry may ask for, 1–12 on the scheduled Caucasus tours — falling back
 // to `groupSize`): the free traveler count becomes a required select of exactly
@@ -70,6 +77,7 @@ export default function TourInquiryForm({ tourTitle, tourSlug = '', selectedPack
     const errs = validate()
     setErrors(errs)
     if (errs.length) return
+    const chosen = departures?.find((d) => d.value === form.departure)
     const ok = await submit({
       subject: `New tour request: ${tourTitle}`,
       tour: tourTitle,
@@ -83,7 +91,12 @@ export default function TourInquiryForm({ tourTitle, tourSlug = '', selectedPack
       // the canonical ISO window) instead of free start/end dates, which it
       // never shows; a private tour sends its dates exactly as before.
       ...(departures
-        ? { departure: `${departures.find((d) => d.value === form.departure)?.label || ''} (${form.departure})` }
+        ? {
+            departure: `${chosen?.label || ''} (${form.departure})`,
+            // The departure's booking deadline, as its own line in the email
+            // (ISO date plus the label the visitor saw).
+            ...(chosen?.bookingDeadline ? { booking_deadline: `${chosen.bookingDeadline} (${chosen.deadlineLabel})` } : {}),
+          }
         : { start_date: form.startDate, end_date: form.endDate }),
       // Omitted entirely (not sent as an empty/blank value) on a tour with a
       // single accommodation option — the field is never shown, so there is
@@ -108,6 +121,7 @@ export default function TourInquiryForm({ tourTitle, tourSlug = '', selectedPack
   }
 
   const invalid = (cond) => (errors.length && cond ? true : undefined)
+  const chosenDeparture = departures?.find((d) => d.value === form.departure) || null
   // Points a field that failed at the summary that says why. Only while the
   // summary is on screen, so the field is never described by nothing.
   const describedBy = (cond) => (errors.length && cond ? 'ti-errors' : undefined)
@@ -187,15 +201,18 @@ export default function TourInquiryForm({ tourTitle, tourSlug = '', selectedPack
               if (e.target.value) trackEvent('departure_select', { tour: tourSlug, departure: e.target.value })
             }}
             aria-invalid={invalid(!form.departure)}
-            aria-describedby={describedBy(!form.departure)}
+            aria-describedby={[describedBy(!form.departure), chosenDeparture?.deadlineLabel ? 'ti-departure-deadline' : null].filter(Boolean).join(' ') || undefined}
           >
             <option value="">{t('form.departurePlaceholder')}</option>
             {departures.map((d) => (
               <option key={d.value} value={d.value} disabled={d.soldOut}>
-                {d.label}{d.soldOut ? ` — ${t('tour.soldOut')}` : ''}
+                {d.label}{d.deadlineLabel ? ` — ${d.deadlineLabel}` : ''}{d.soldOut ? ` — ${t('tour.soldOut')}` : ''}
               </option>
             ))}
           </select>
+          {chosenDeparture?.deadlineLabel && (
+            <p className="td-form__deadline" id="ti-departure-deadline">{chosenDeparture.deadlineLabel}</p>
+          )}
         </div>
       ) : (
         <div className="td-form__row">

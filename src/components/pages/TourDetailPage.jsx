@@ -14,6 +14,7 @@ import StickyRequestBar from '../shared/StickyRequestBar'
 import GroupTourFamily from '../shared/GroupTourFamily'
 import TourCard from '../shared/TourCard'
 import { tours } from '../../data/tours'
+import { formatDepartureDate } from '../../data/groupDepartures'
 import { PRIVATE_TOUR_CATEGORIES } from '../../data/tourCategories'
 import { contactInfo } from '../../data/siteData'
 import { trackEvent } from '../../utils/analytics'
@@ -173,12 +174,17 @@ export default function TourDetailPage() {
   // Scheduled group tours book one of their published departures, never a
   // free date: one option per `groupDates` entry, labelled in the page's
   // language (`tt.departures`, same order) and submitted with the canonical
-  // ISO window so the inquiry email is unambiguous in every locale.
+  // ISO window so the inquiry email is unambiguous in every locale. Each
+  // option also states its booking deadline ("Book by 11 May 2027"), derived
+  // in groupDepartures.js as 30 calendar days before the start; the inquiry
+  // form is the one place on the page the deadlines appear.
   const departures = isGroup && tour.groupDates?.length
     ? tour.groupDates.map((d, i) => ({
         value: d.iso || `${d.start} ${d.year} – ${d.end} ${d.year}`,
         label: tt?.departures?.[i] || `${d.start} – ${d.end} ${d.year}`,
         soldOut: Boolean(d.soldOut),
+        bookingDeadline: d.bookingDeadline || null,
+        deadlineLabel: d.bookingDeadline ? t('form.bookBy', { date: formatDepartureDate(d.bookingDeadline, lang) }) : '',
       }))
     : null
 

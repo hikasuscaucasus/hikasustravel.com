@@ -201,6 +201,7 @@
   "tour.singleSupplementShort": "Suplemento individual: {price}",
   "form.departure": "Fecha de salida",
   "form.departurePlaceholder": "Seleccione una fecha de salida",
+  "form.bookBy": "Reserve hasta el {date}",
   "form.errors.departure": "Seleccione una fecha de salida",
   "home.flagshipEyebrow": "Tour en grupo destacado {year}",
   "home.flagshipLead": "Un solo viaje de Bakú a Ereván por los tres países del Cáucaso Sur, con un guía local en cada país y los dos cruces de frontera organizados por nosotros.",

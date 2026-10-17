@@ -9,8 +9,13 @@
 // from that window. tours.js calls familyGroupDates(variant) for each record's
 // `groupDates`, so adding or moving a departure is one edit here.
 //
+// Every departure also carries its booking deadline, derived here from the
+// start date (BOOKING_DEADLINE_DAYS calendar days before it) so the three
+// tours can never show a deadline that disagrees with their departure.
+//
 // scripts/validate-group-departures.js asserts the derived windows (lengths,
-// shared starts/ends, the published table) and runs as part of `npm run build`.
+// shared starts/ends, the published table) and the deadlines against the
+// owner-approved table, and runs as part of `npm run build`.
 
 export const CAUCASUS_2027_FAMILIES = [
   { id: '2027-06', start: '2027-06-10', end: '2027-06-24' },
@@ -26,6 +31,11 @@ export const FAMILY_VARIANTS = {
   'ge-am': { startOffset: 4, endOffset: 0 },  // 11 days, Tbilisi → Yerevan
 }
 
+// Booking deadline rule for every scheduled group departure: exactly this
+// many CALENDAR days before the tour's start date (not business days, not
+// "one month"). 2027-06-10 → 2027-05-11.
+export const BOOKING_DEADLINE_DAYS = 30
+
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
 function shift(isoDate, days) {
@@ -38,6 +48,24 @@ function label(isoDate) {
   return `${d} ${MONTHS[m - 1]}`
 }
 
+/** ISO booking deadline for a departure that starts on `startIso`. */
+export function bookingDeadline(startIso) {
+  return shift(startIso, -BOOKING_DEADLINE_DAYS)
+}
+
+/**
+ * One ISO date ("2027-05-11") as the page's language writes a full date
+ * ("11 May 2027", "11. Mai 2027", "11 de mayo de 2027", "11. května 2027"),
+ * matching the hand-written departure labels in each locale's tours.json.
+ * English uses the day-first British order those labels already use.
+ */
+export function formatDepartureDate(iso, lang) {
+  const [y, m, d] = iso.split('-').map(Number)
+  return new Date(Date.UTC(y, m - 1, d)).toLocaleDateString(lang === 'en' ? 'en-GB' : lang, {
+    timeZone: 'UTC', day: 'numeric', month: 'long', year: 'numeric',
+  })
+}
+
 /** Inclusive calendar-day length of an ISO window "YYYY-MM-DD/YYYY-MM-DD". */
 export function windowDays(iso) {
   const [a, b] = iso.split('/')
@@ -47,8 +75,9 @@ export function windowDays(iso) {
 /**
  * The `groupDates` array a tour record carries, derived from the family
  * calendar: [{ start: '10 June', end: '20 June', year: '2027',
- * iso: '2027-06-10/2027-06-20', family: '2027-06' }, …]. The shape is the one
- * TourDetailPage, the cards and the inquiry form already read.
+ * iso: '2027-06-10/2027-06-20', bookingDeadline: '2027-05-11',
+ * family: '2027-06' }, …]. The shape is the one TourDetailPage, the cards and
+ * the inquiry form already read; `bookingDeadline` is derived, never typed.
  */
 export function familyGroupDates(variant, families = CAUCASUS_2027_FAMILIES) {
   const v = FAMILY_VARIANTS[variant]
@@ -56,6 +85,6 @@ export function familyGroupDates(variant, families = CAUCASUS_2027_FAMILIES) {
   return families.map((f) => {
     const start = shift(f.start, v.startOffset)
     const end = shift(f.end, v.endOffset)
-    return { start: label(start), end: label(end), year: start.slice(0, 4), iso: `${start}/${end}`, family: f.id }
+    return { start: label(start), end: label(end), year: start.slice(0, 4), iso: `${start}/${end}`, bookingDeadline: bookingDeadline(start), family: f.id }
   })
 }
