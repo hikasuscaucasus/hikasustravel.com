@@ -209,6 +209,7 @@
   "form.departurePlaceholder": "Wybierz termin wyjazdu",
   "tour.bookBy": "Rezerwacja do {date}",
   "tour.departuresTitle": "Terminy {year}",
+  "tour.dates": "Terminy",
   "form.errors.departure": "Proszę wybrać termin wyjazdu",
   "home.flagshipEyebrow": "Polecana wycieczka grupowa {year}",
   "home.flagshipLead": "Jedna podróż z Baku do Erywania przez wszystkie trzy kraje Kaukazu Południowego, z lokalnym przewodnikiem w każdym kraju i oboma przejściami granicznymi zorganizowanymi przez nas.",

@@ -34,7 +34,8 @@ body {
 }
 
 /* Anchor scroll offset */
-section[id] {
+section[id],
+.td-departures[id] {
   scroll-margin-top: 120px;
 }
 

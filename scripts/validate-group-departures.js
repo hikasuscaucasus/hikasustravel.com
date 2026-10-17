@@ -72,6 +72,9 @@ for (const [slug, exp] of Object.entries(EXPECTED)) {
     if (!ui['tour.departuresTitle'] || !ui['tour.departuresTitle'].includes('{year}')) bad(`${lang}: ui.json tour.departuresTitle missing or has no {year}`)
     else if (lang !== 'en' && /\bdepartures\b/i.test(ui['tour.departuresTitle'])) bad(`${lang}: tour.departuresTitle is still English`)
     if (ui['form.bookBy']) bad(`${lang}: stale form.bookBy key (the label lives on the page as tour.bookBy)`)
+    // The section nav's "Dates" pill ("Dates" is also the French word).
+    if (!ui['tour.dates'] || !ui['tour.dates'].trim()) bad(`${lang}: ui.json tour.dates (nav pill) missing`)
+    else if (!['en', 'fr'].includes(lang) && /^dates$/i.test(ui['tour.dates'].trim())) bad(`${lang}: tour.dates is still English`)
     for (const d of tour.groupDates || []) {
       const text = formatDepartureDate(d.bookingDeadline, lang)
       const [, , dd] = d.bookingDeadline.split('-').map(Number)

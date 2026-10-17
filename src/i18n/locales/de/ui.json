@@ -203,6 +203,7 @@
   "form.departurePlaceholder": "Abreisetermin wählen",
   "tour.bookBy": "Buchung bis {date}",
   "tour.departuresTitle": "Termine {year}",
+  "tour.dates": "Termine",
   "form.errors.departure": "Bitte wählen Sie einen Abreisetermin",
   "home.flagshipEyebrow": "Empfohlene Gruppenreise {year}",
   "home.flagshipLead": "Eine Reise von Baku nach Jerewan durch alle drei Länder des Südkaukasus, mit einem örtlichen Reiseleiter in jedem Land und beiden Grenzübertritten, die wir für Sie organisieren.",

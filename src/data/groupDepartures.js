@@ -73,6 +73,18 @@ export function windowDays(iso) {
 }
 
 /**
+ * Whether a tour runs on published departures (a scheduled group tour with a
+ * `groupDates` calendar) rather than on dates the visitor picks. The one
+ * switch behind everything the tour page does with departures — the
+ * "2027 departures" strip, its "Dates" nav pill and the inquiry form's
+ * departure dropdown — so a future scheduled tour gets all three by adding
+ * `groupDates`, and no private tour ever shows any of them.
+ */
+export function hasScheduledDepartures(tour) {
+  return tour?.type === 'group' && Array.isArray(tour.groupDates) && tour.groupDates.length > 0
+}
+
+/**
  * The `groupDates` array a tour record carries, derived from the family
  * calendar: [{ start: '10 June', end: '20 June', year: '2027',
  * iso: '2027-06-10/2027-06-20', bookingDeadline: '2027-05-11',

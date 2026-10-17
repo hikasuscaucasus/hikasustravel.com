@@ -1,4 +1,10 @@
 import useT from '../../i18n/useT'
+import FadeUp from './FadeUp'
+
+// The in-page anchor of the strip, the target of the tour nav's "Dates" pill
+// (TourDetailPage builds that pill from this constant). One technical id in
+// every locale, like #overview / #itinerary / #book.
+export const DATES_ANCHOR_ID = 'dates'
 
 /* The scheduled windows of a group tour with their booking deadlines —
    "2027 departures": four small cells, dates first, "Book by <date>" under
@@ -6,7 +12,10 @@ import useT from '../../i18n/useT'
    adults-only / group-size facts line), so a visitor reads what the trip is,
    who it is for and when it runs as one block before the family chooser and
    the gallery. The inquiry dropdown lower down shows the same windows as
-   dates only; nothing else on the page repeats them.
+   dates only; nothing else on the page repeats them. The tour nav's "Dates"
+   pill scrolls here (#dates): the root carries the id and the Ivory
+   scroll-margin-top, and the fade-in wraps only the contents, so the anchored
+   box is never translated while it is still hidden.
 
    `departures` is the array TourDetailPage builds from the tour's
    `groupDates` + the locale's `departures` labels and passes to the inquiry
@@ -29,19 +38,21 @@ export default function ScheduledTourDepartures({ departures, year }) {
   const t = useT()
   if (!departures?.length) return null
   return (
-    <div className="td-departures">
-      <h3 id="td-departures-title" className="td-departures__title">
-        <CalendarIcon />
-        {t('tour.departuresTitle', { year })}
-      </h3>
-      <ul className="td-departures__list" aria-labelledby="td-departures-title">
-        {departures.map((d) => (
-          <li key={d.value} className="td-departures__item">
-            <span className="td-departures__dates">{d.label}</span>
-            {d.deadlineLabel && <span className="td-departures__deadline">{d.deadlineLabel}</span>}
-          </li>
-        ))}
-      </ul>
+    <div id={DATES_ANCHOR_ID} className="td-departures">
+      <FadeUp>
+        <h3 id="td-departures-title" className="td-departures__title">
+          <CalendarIcon />
+          {t('tour.departuresTitle', { year })}
+        </h3>
+        <ul className="td-departures__list" aria-labelledby="td-departures-title">
+          {departures.map((d) => (
+            <li key={d.value} className="td-departures__item">
+              <span className="td-departures__dates">{d.label}</span>
+              {d.deadlineLabel && <span className="td-departures__deadline">{d.deadlineLabel}</span>}
+            </li>
+          ))}
+        </ul>
+      </FadeUp>
     </div>
   )
 }

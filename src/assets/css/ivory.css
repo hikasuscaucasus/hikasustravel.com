@@ -68,9 +68,11 @@
   background: color-mix(in srgb, var(--accent) 22%, transparent);
 }
 
-/* Anchors clear the sticky header + sub-nav. */
+/* Anchors clear the sticky header + sub-nav (the departures strip is the
+   section nav's #dates target inside the Overview). */
 .theme-ivory section[id],
-.theme-ivory a[id] {
+.theme-ivory a[id],
+.theme-ivory .td-departures[id] {
   scroll-margin-top: calc(var(--ivory-header) + var(--ivory-subnav) + 16px);
 }
 

@@ -12,10 +12,10 @@ import TourInquiryForm from '../shared/TourInquiryForm'
 import Gallery from '../shared/Gallery'
 import StickyRequestBar from '../shared/StickyRequestBar'
 import GroupTourFamily from '../shared/GroupTourFamily'
-import ScheduledTourDepartures from '../shared/ScheduledTourDepartures'
+import ScheduledTourDepartures, { DATES_ANCHOR_ID } from '../shared/ScheduledTourDepartures'
 import TourCard from '../shared/TourCard'
 import { tours } from '../../data/tours'
-import { formatDepartureDate } from '../../data/groupDepartures'
+import { formatDepartureDate, hasScheduledDepartures } from '../../data/groupDepartures'
 import { PRIVATE_TOUR_CATEGORIES } from '../../data/tourCategories'
 import { contactInfo } from '../../data/siteData'
 import { trackEvent } from '../../utils/analytics'
@@ -46,17 +46,6 @@ export default function TourDetailPage() {
     if (!tourTranslations) loadTourTranslations()
   }, [tourTranslations, loadTourTranslations])
 
-  // A link straight to the inquiry form (the homepage flagship's "Choose a
-  // departure" action lands on #book). The shared ScrollToTop resets the
-  // window to 0 on every route change in this same commit, so the jump is
-  // deferred a tick to run after it; a direct page load with the hash is
-  // reset by that same effect after hydration, so this covers both.
-  useEffect(() => {
-    if (hash !== '#book') return undefined
-    const id = setTimeout(() => document.getElementById('book')?.scrollIntoView({ behavior: 'smooth' }), 150)
-    return () => clearTimeout(id)
-  }, [hash, slug])
-
   const tour = tours.find((t) => t.slug === slug)
   const tt = tourTranslations?.[slug]
 
@@ -75,14 +64,17 @@ export default function TourDetailPage() {
       && ((tour.pricing?.length > 0) || (tour.type === 'group' && tour.pricePerPerson))
 
     // Order must mirror the on-page section order. A scheduled group tour
-    // leads with the Overview (what the trip is, who it is for) and shows the
-    // Gallery after it; private tours keep photos first:
-    // Gallery → Overview → Itinerary → Accommodation → Pricing → Book
+    // leads with the Overview (what the trip is, who it is for), then its
+    // departures strip ("Dates", at the end of the Overview, only when the
+    // tour has a `groupDates` calendar), and shows the Gallery after it;
+    // private tours keep photos first and never get a Dates pill:
+    // Gallery → Overview → [Dates] → Itinerary → Accommodation → Pricing → Book
     const sections = []
     const gallery = tour.gallery?.length > 0 ? { id: 'gallery', labelKey: 'tour.gallery' } : null
     const overviewFirst = tour.type === 'group'
     if (gallery && !overviewFirst) sections.push(gallery)
     sections.push({ id: 'overview', labelKey: 'tour.overview' })
+    if (hasScheduledDepartures(tour)) sections.push({ id: DATES_ANCHOR_ID, labelKey: 'tour.dates' })
     if (gallery && overviewFirst) sections.push(gallery)
     if (itinerary?.length > 0) sections.push({ id: 'itinerary', labelKey: 'tour.itinerary' })
     if (tour.accommodations?.length > 0) sections.push({ id: 'accommodation', labelKey: 'pricing.accommodations' })
@@ -90,6 +82,20 @@ export default function TourDetailPage() {
     sections.push({ id: 'book', labelKey: 'tour.book' })
     return sections
   }, [tour, tourTranslations])
+
+  // A link straight to one of the page's own sections — the homepage
+  // flagship's "Choose a departure" action lands on #book, and #dates is the
+  // scheduled tours' departure strip. The shared ScrollToTop resets the
+  // window to 0 on every route change in this same commit, so the jump is
+  // deferred a tick to run after it; a direct page load with the hash is
+  // reset by that same effect after hydration, so this covers both. Only ids
+  // the section nav itself offers are honoured.
+  useEffect(() => {
+    const id = hash.slice(1)
+    if (!id || !navSections.some((s) => s.id === id)) return undefined
+    const timer = setTimeout(() => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' }), 150)
+    return () => clearTimeout(timer)
+  }, [hash, slug, navSections])
 
   // Localize gallery alt/caption at the render boundary: the shared Gallery reads
   // plain `caption`/`description` strings, so items that carry a per-locale `alt`
@@ -180,7 +186,7 @@ export default function TourDetailPage() {
   // one place that shows each window's booking deadline ("Book by 11 May
   // 2027", derived in groupDepartures.js as 30 calendar days before the
   // start); the dropdown shows the dates only.
-  const departures = isGroup && tour.groupDates?.length
+  const departures = hasScheduledDepartures(tour)
     ? tour.groupDates.map((d, i) => ({
         value: d.iso || `${d.start} ${d.year} – ${d.end} ${d.year}`,
         label: tt?.departures?.[i] || `${d.start} – ${d.end} ${d.year}`,
@@ -301,13 +307,14 @@ export default function TourDetailPage() {
                   ].filter(Boolean).join(' · ')}
                 </p>
               )}
-              {/* The scheduled windows with their booking deadlines, right
-                  under the facts line, so what / who / when read as one
-                  block before the family chooser and the gallery. Same array
-                  as the inquiry dropdown (which shows dates only); nothing
-                  else on the page repeats these dates. */}
-              {departures && <ScheduledTourDepartures departures={departures} year={departureYear} />}
             </FadeUp>
+            {/* The scheduled windows with their booking deadlines, right
+                under the facts line, so what / who / when read as one block
+                before the family chooser and the gallery. Same array as the
+                inquiry dropdown (which shows dates only); nothing else on the
+                page repeats these dates. Its own box, not inside the FadeUp
+                above: it is the #dates anchor of the section nav. */}
+            {departures && <ScheduledTourDepartures departures={departures} year={departureYear} />}
           </section>
 
           {/* The three scheduled Caucasus group tours share one departure
