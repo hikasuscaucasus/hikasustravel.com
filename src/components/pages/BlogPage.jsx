@@ -1,5 +1,4 @@
 import { Fragment, useContext } from 'react'
-import HeroSection from '../shared/HeroSection'
 import BlogTourPromo from '../shared/BlogTourPromo'
 import FadeUp from '../shared/FadeUp'
 import LocaleLink from '../../i18n/LocaleLink'
@@ -97,7 +96,12 @@ export default function BlogPage() {
 
   return (
     <>
-      <HeroSection className="hero--compact" image="/images/files/georgia-home.jpg" title={heroTitle} />
+      {/* The index is a text-first page: the same solid title band the other
+          hero-free pages use, carrying the H1. Individual articles keep their
+          photographic heroes. `image` in useSEO above still feeds og/twitter. */}
+      <section className="dest-title-band">
+        <h1>{heroTitle}</h1>
+      </section>
       <section className="page-items blog-listing">
         <nav className="blog-breadcrumb" aria-label={t('a11y.breadcrumb')}>
           <LocaleLink to="/">{t('breadcrumb.home')}</LocaleLink>
