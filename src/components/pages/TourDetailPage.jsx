@@ -33,7 +33,7 @@ export default function TourDetailPage() {
   const { lang } = useLang()
   const { tourTranslations, loadTourTranslations, pages } = useContext(I18nContext)
 
-  // Package chosen from a pricing card's "Book Now" button. `nonce` increments on
+  // Package chosen from a pricing card's "Request this tour" button. `nonce` increments on
   // every click so the inquiry form re-applies the selection even when the same
   // package is clicked again, while leaving the user's manual choice untouched
   // between clicks. Kept here (shared parent of the price section and the form).

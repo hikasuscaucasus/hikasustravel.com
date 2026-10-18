@@ -35,7 +35,7 @@ export default function TourInquiryForm({ tourTitle, tourSlug = '', selectedPack
   })
   const [errors, setErrors] = useState([])
 
-  // Pre-select the Accommodation Type when a pricing card's "Book Now" button is
+  // Pre-select the Accommodation Type when a pricing card's "Request this tour" button is
   // clicked. Keyed on the click nonce so repeated clicks (even of the same
   // package) re-apply, while a user's manual choice is preserved between clicks.
   const packageNonce = selectedPackage?.nonce

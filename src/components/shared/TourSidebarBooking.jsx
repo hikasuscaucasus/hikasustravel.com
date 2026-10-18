@@ -37,7 +37,7 @@ export default function TourSidebarBooking({ tour, startingPrice, isGroup }) {
           </div>
 
           <a href="#book" onClick={scrollToBook} className="td-sidebar__submit">
-            {t('tour.bookNow')}
+            {t('tour.requestThisTour')}
           </a>
 
           <p className="td-sidebar__trust">{t('tour.trustReply')}</p>
@@ -53,7 +53,7 @@ export default function TourSidebarBooking({ tour, startingPrice, isGroup }) {
           </div>
         )}
         <a href="#book" onClick={scrollToBook} className="td-mobile-bar__cta">
-          {t('tour.bookNow')}
+          {t('tour.requestThisTour')}
         </a>
       </div>
     </>
