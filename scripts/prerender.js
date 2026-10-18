@@ -427,6 +427,30 @@ const blogArticles = [
     tags: ['caucasus','food','wine','culture'],
     keywords: "Caucasus food, Caucasus cuisine, South Caucasus food, food and drink in the Caucasus, what to eat in the Caucasus, Georgia Armenia Azerbaijan food, Georgian wine, qvevri, Caucasus wine, Armenian brandy, Azerbaijani tea, armudu, dolma, tolma, khorovats, mtsvadi, lavash, Georgian supra, tamada",
   },
+  {
+    slug: 'armenia-in-7-days',
+    titleKey: 'blog.article11.title',
+    descKey: 'blog.article11.desc',
+    title: "Armenia in 7 Days: The Perfect One-Week Itinerary",
+    seoTitle: "Armenia in 7 Days: Perfect One-Week Itinerary | Hikasus",
+    excerpt: "Plan 7 days in Armenia with a realistic one-week itinerary through Yerevan, Garni, Geghard, Khor Virap, Areni, Tatev, Lake Sevan and Dilijan.",
+    metaDescription: "Plan 7 days in Armenia with a realistic one-week itinerary through Yerevan, Garni, Geghard, Khor Virap, Areni, Tatev, Lake Sevan and Dilijan.",
+    heroImage: '/images/files/lake-sevan-armenia-1200.webp',
+    ogImage: '/images/files/lake-sevan-armenia-og.jpg',
+    ogImageWidth: 1200,
+    ogImageHeight: 630,
+    ogImageAlt: {
+      en: "Lake Sevan in Armenia, a wide blue mountain lake with hills and a lakeside town on the far shore under a blue sky with scattered clouds",
+      de: "Der Sewansee in Armenien, ein weiter blauer Bergsee mit Hügeln und einer Ortschaft am gegenüberliegenden Ufer unter blauem Himmel mit vereinzelten Wolken",
+      fr: "Le lac Sevan en Arménie, un vaste lac de montagne bleu bordé de collines, avec une ville sur la rive opposée sous un ciel bleu parsemé de nuages",
+      es: "El lago Sevan, en Armenia: un amplio lago azul de montaña con colinas y una localidad en la orilla opuesta, bajo un cielo azul con nubes dispersas",
+      nl: "Het Sevanmeer in Armenië, een breed blauw bergmeer met heuvels en een stadje aan de overkant van de oever, onder een blauwe lucht met verspreide wolken",
+      cs: "Jezero Sevan v Arménii, široké modré horské jezero s kopci a městečkem na vzdáleném břehu pod modrou oblohou s roztroušenými mraky",
+      pl: "Jezioro Sewan w Armenii, szerokie błękitne górskie jezioro ze wzgórzami i miasteczkiem na drugim brzegu pod niebem z pojedynczymi chmurami",
+    },
+    tags: ['armenia','itinerary','travel-guide','planning','culture'],
+    keywords: "Armenia in 7 days, 7 days in Armenia, Armenia 7-day itinerary, one week in Armenia, Armenia one-week itinerary, what to see in Armenia in 7 days, Armenia itinerary, Yerevan, Garni, Geghard, Khor Virap, Areni, Noravank, Tatev, Lake Sevan, Dilijan",
+  },
 ]
 
 // Blog title translation for a given article key from ui.json

@@ -1,6 +1,9 @@
+import { Fragment, useContext } from 'react'
 import HeroSection from '../shared/HeroSection'
+import BlogTourPromo from '../shared/BlogTourPromo'
 import FadeUp from '../shared/FadeUp'
 import LocaleLink from '../../i18n/LocaleLink'
+import { I18nContext } from '../../i18n/I18nContext'
 import useT from '../../i18n/useT'
 import useLang from '../../i18n/useLang'
 import useSEO from '../../hooks/useSEO'
@@ -40,14 +43,22 @@ function cardImageProps(item) {
   }
 }
 
+// The tour promo sits after this many cards: the reader meets the newest
+// articles first, and the promo reads as a pause in the list rather than a
+// banner above it.
+const PROMO_AFTER = 3
+
 export default function BlogPage() {
   const t = useT()
   const { lang } = useLang()
+  const { tourTranslations, loadTourTranslations } = useContext(I18nContext)
+  // The promo shows the tour's localized title, same eager load the homepage tiles use.
+  if (!tourTranslations) loadTourTranslations()
   const seo = getSEO('blog', lang)
   useSEO({ ...seo, lang, path: 'blog', image: '/images/files/georgia-home.jpg' })
 
   const heroTitle = tf(t, 'blog.heroTitle', 'Travel Blogs')
-  const intro = tf(t, 'blog.intro', 'Insider tips, practical guides, and inspiring stories to help you plan your perfect Georgia adventure.')
+  const intro = tf(t, 'blog.intro', 'Insider tips, practical guides, and inspiring stories to help you plan your perfect adventure in Georgia, Armenia, Azerbaijan and the wider Caucasus.')
   const readMore = tf(t, 'blog.readMore', 'Read Article')
   const readTimeTemplate = tf(t, 'blog.readTime', '{min} min read')
 
@@ -98,9 +109,9 @@ export default function BlogPage() {
           <p className="blog-intro">{intro}</p>
 
           <div className="blog-list">
-            {items.map(item => (
+            {items.map((item, index) => (
+              <Fragment key={item.key}>
               <LocaleLink
-                key={item.key}
                 to={item.to}
                 className="blog-item"
               >
@@ -131,6 +142,10 @@ export default function BlogPage() {
                   </div>
                 </div>
               </LocaleLink>
+              {index === PROMO_AFTER - 1 && (
+                <BlogTourPromo t={t} tourTranslations={tourTranslations} />
+              )}
+              </Fragment>
             ))}
           </div>
         </FadeUp>

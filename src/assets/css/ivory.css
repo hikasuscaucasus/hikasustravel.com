@@ -3957,3 +3957,195 @@
 .theme-ivory .tour-tile-overlay :is(h2, h3) {
   font-size: 1.125rem;
 }
+
+/* --- Blog: tour promo on the Travel Blogs index + in-article route callout ---
+   Two quiet commercial moments inside an editorial surface.
+
+   .blog-promo sits once in the blog list (BlogTourPromo.jsx). It borrows the
+   .blog-item card frame but is tinted and carries an eyebrow, a facts line and a
+   CTA, so it reads as a different kind of card (travel this route) rather than
+   a fifth article. Every figure in it comes from the tour record.
+
+   .blog-cta is the callout authored inside an article body. It is plain HTML in
+   the article content, so it uses no component and no price. */
+.theme-ivory .blog-promo {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  background: color-mix(in srgb, var(--accent) 7%, var(--surface));
+  border: 1px solid var(--accent);
+  border-radius: var(--r);
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.theme-ivory .blog-promo:hover {
+  color: var(--ink);
+  background: color-mix(in srgb, var(--accent) 11%, var(--surface));
+}
+
+.theme-ivory .blog-promo__img-wrap {
+  flex-shrink: 0;
+  width: 300px;
+  overflow: hidden;
+}
+
+.theme-ivory .blog-promo__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.theme-ivory .blog-promo__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 22px 26px;
+  min-width: 0;
+}
+
+.theme-ivory .blog-promo__eyebrow {
+  margin: 0;
+  max-width: none;
+  width: auto;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold-text);
+}
+
+.theme-ivory h2.blog-promo__title {
+  margin: 0;
+  padding: 0;
+  font-family: "rockwell";
+  font-size: 1.1875rem;
+  line-height: 1.3;
+  text-align: left;
+  color: var(--ink);
+}
+
+.theme-ivory .blog-promo__text {
+  margin: 0;
+  max-width: none;
+  width: auto;
+  text-align: left;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--sub);
+}
+
+.theme-ivory .blog-promo__facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.theme-ivory .blog-promo__facts li {
+  margin: 0;
+  padding: 3px 11px;
+  border: 1px solid var(--line);
+  border-radius: var(--chipr);
+  background: var(--surface);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--ink);
+}
+
+.theme-ivory .blog-promo__cta {
+  margin-top: 2px;
+  font-family: "rockwell";
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--accent);
+}
+
+.theme-ivory .blog-promo:hover .blog-promo__cta {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 720px) {
+  .theme-ivory .blog-promo {
+    flex-direction: column;
+  }
+
+  .theme-ivory .blog-promo__img-wrap {
+    width: 100%;
+    height: 150px;
+  }
+
+  .theme-ivory .blog-promo__body {
+    padding: 16px 18px 18px;
+  }
+}
+
+.theme-ivory .blog-article__content .blog-cta {
+  margin: 2em 0;
+  padding: 22px 26px;
+  background: color-mix(in srgb, var(--accent) 7%, var(--surface));
+  border: 1px solid var(--accent);
+  border-radius: var(--r);
+}
+
+.theme-ivory .blog-article__content .blog-cta__eyebrow {
+  margin: 0 0 6px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold-text);
+}
+
+.theme-ivory .blog-article__content .blog-cta__title {
+  margin: 0 0 0.5em;
+  padding: 0;
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
+.theme-ivory .blog-article__content .blog-cta p:last-child {
+  margin-bottom: 0;
+}
+
+.theme-ivory .blog-article__content a.blog-cta__btn:not(.blog-back-link):not(.button) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4px;
+  padding: 12px 26px;
+  background: var(--accent);
+  color: var(--bg);
+  border: 1px solid var(--accent);
+  border-radius: var(--btnr);
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+.theme-ivory .blog-article__content a.blog-cta__btn:not(.blog-back-link):not(.button):hover,
+.theme-ivory .blog-article__content a.blog-cta__btn:not(.blog-back-link):not(.button):focus-visible {
+  background: color-mix(in srgb, var(--accent) 84%, #000);
+  color: var(--bg);
+  text-decoration: none;
+}
+
+@media (max-width: 720px) {
+  .theme-ivory .blog-article__content .blog-cta {
+    padding: 18px 18px;
+  }
+
+  .theme-ivory .blog-article__content a.blog-cta__btn:not(.blog-back-link):not(.button) {
+    width: 100%;
+    padding: 12px 16px;
+  }
+}
