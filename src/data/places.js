@@ -10763,7 +10763,7 @@ export const sites = [
     imageAvif: '/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/david-gareja-monastery-georgia-1600.avif',
     heroPreload: '/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/david-gareja-monastery-georgia-1600.avif',
     ogImage: { src: '/images/files/david-gareja-monastery-georgia-og-1200x630.jpg', width: 1200, height: 630 },
-    cardImage: false, // card was image-free before this hero; the hub card stays text-only
+    cardImage: '/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/david-gareja-monastery-georgia-768.webp', // hub card = the hero photo, smallest shipped rung
     imageMeta: {
       width: 1600, height: 1068,
       name: 'The Lavra monastery buildings at David Gareja, Georgia',
