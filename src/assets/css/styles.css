@@ -1349,6 +1349,33 @@ section {
   }
 }
 /* No rung above 1448 exists. Do not add a 1600 or 2400 breakpoint. */
+/* Colchis Fountain hero — per-page CSS background. Ladder 768/1200/1600. */
+.hero--colchis-fountain {
+  background-image: url("/images/files/colchis-fountain-kutaisi-hero-1200.webp");
+  background-image: image-set(
+    url("/images/files/colchis-fountain-kutaisi-hero-768.avif") type("image/avif"),
+    url("/images/files/colchis-fountain-kutaisi-hero-768.webp") type("image/webp")
+  );
+  background-position: center 40%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .hero--colchis-fountain {
+    background-image: image-set(
+      url("/images/files/colchis-fountain-kutaisi-hero-1200.avif") type("image/avif"),
+      url("/images/files/colchis-fountain-kutaisi-hero-1200.webp") type("image/webp")
+    );
+  }
+}
+@media (min-width: 1200px) {
+  .hero--colchis-fountain {
+    background-image: image-set(
+      url("/images/files/colchis-fountain-kutaisi-hero-1600.avif") type("image/avif"),
+      url("/images/files/colchis-fountain-kutaisi-hero-1600.webp") type("image/webp")
+    );
+  }
+}
 /* Chiatura Cable Cars hero — per-page CSS background (same opt-in mechanism as
    .hero--mestia). Native ceiling is 1536, BELOW the usual 1600 rung, so the
    ladder is exactly 768/1200/1536 with the top breakpoint at min-width:1200 —

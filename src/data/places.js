@@ -15967,8 +15967,31 @@ export const sites = [
     slug: 'colchis-fountain-kutaisi', name: 'Colchis Fountain',
     parentType: 'city', parent: 'kutaisi', published: true,
     seoKey: 'colchisFountain', contentKey: 'colchisFountain',
-    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
-    image: '/images/files/georgia-home.jpg',
+    // Owner's own Pixel 6 photo (2026-10-22), graded for a clear sunny sky. Ladder
+    // 768/1200/1600 (native 4080px). `image`/`imageAvif` = 1600 top rung; the
+    // .hero--colchis-fountain class drives the CSS background; card cover = same file.
+    image: '/images/files/colchis-fountain-kutaisi-hero-1600.webp',
+    imageAvif: '/images/files/colchis-fountain-kutaisi-hero-1600.avif',
+    heroClass: 'hero--colchis-fountain',
+    cardImage: '/images/files/colchis-fountain-kutaisi-hero-768.webp', // hub card = smallest rung (same photo)
+    ogImage: { src: '/images/files/colchis-fountain-kutaisi-hero-og.jpg', width: 1200, height: 630 },
+    imageMeta: {
+      width: 1600, height: 1205,
+      name: 'Colchis Fountain in central Kutaisi, Georgia',
+      description: 'The Colchis Fountain with its golden animal sculptures in front of the Meskhishvili Theatre on David Aghmashenebeli Square, Kutaisi, Imereti, Georgia.',
+      locationName: 'Colchis Fountain, David Aghmashenebeli Square, Kutaisi, Imereti, Georgia',
+      locality: 'Kutaisi', region: 'Imereti', country: 'GE',
+      geo: { lat: 42.2694, lng: 42.7058 },
+      alt: {
+        en: 'Colchis Fountain in central Kutaisi, Georgia',
+        de: 'Der Kolchis-Brunnen im Zentrum von Kutaissi, Georgien',
+        fr: 'La fontaine de Colchide au centre de Koutaïssi, Géorgie',
+        es: 'La fuente de la Cólquide en el centro de Kutaisi, Georgia',
+        nl: 'De Colchis-fontein in het centrum van Koetaisi, Georgië',
+        cs: 'Fontána Kolchidy v centru Kutaisi, Gruzie',
+        pl: 'Fontanna Kolchidy w centrum Kutaisi, Gruzja',
+      },
+    },
   },
   {
     slug: 'white-bridge-kutaisi', name: 'White Bridge',
