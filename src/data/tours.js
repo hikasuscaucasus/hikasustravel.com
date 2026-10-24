@@ -23733,6 +23733,492 @@ export const tours = [
       }
     ],
     "tourFormTitle": "8-Day Armenia Grand Tour: Yerevan, Lake Sevan, Tatev & Dilijan"
+  },
+  {
+    "slug": "9-day-armenia-private-tour-yerevan-dilijan",
+    "type": "private",
+    "priceCurrency": "USD",
+    "country": "armenia",
+    "title": "9-Day Armenia Private Tour: Yerevan, Lake Sevan & Dilijan",
+    "heroImage": "/images/files/noravank-monastery-armenia-1672.webp",
+    "ogImage": {
+      "src": "/images/files/noravank-monastery-armenia-og.jpg",
+      "width": 1200,
+      "height": 630
+    },
+    "tileImage": "/images/files/noravank-monastery-armenia-1672.webp",
+    "listingImage": "/images/files/noravank-monastery-armenia-1672.webp",
+    "alt": {
+      "en": "Noravank Monastery — its medieval golden-stone churches with conical domes, including the two-storey Burtelashen, on a green slope below red-and-grey limestone cliffs, Amaghu Gorge, Vayots Dzor, Armenia",
+      "de": "Kloster Noravank — seine mittelalterlichen Kirchen aus goldfarbenem Stein mit Kegelkuppeln, darunter die zweistöckige Burtelaschen, an einem grünen Hang unter rot-grauen Kalksteinfelsen, Amaghu-Schlucht, Wajoz Dsor, Armenien",
+      "fr": "Le monastère de Noravank — ses églises médiévales en pierre dorée à coupoles coniques, dont la Bourtelachen à deux étages, sur un versant verdoyant au pied de falaises calcaires rouges et grises, gorge d'Amaghou, Vayots Dzor, Arménie",
+      "es": "El monasterio de Noravank — sus iglesias medievales de piedra dorada con cúpulas cónicas, incluida la Burtelashen de dos plantas, en una ladera verde al pie de acantilados calizos rojos y grises, garganta de Amaghu, Vayots Dzor, Armenia",
+      "nl": "Klooster Noravank — de middeleeuwse goudkleurige stenen kerken met kegelkoepels, waaronder de tweelaagse Burtelashen, op een groene helling onder rood-grijze kalkstenen kliffen, Amaghu-kloof, Vajots Dzor, Armenië",
+      "cs": "Klášter Noravank — jeho středověké kostely ze zlatavého kamene s kuželovými kupolemi, včetně dvoupatrové Burtelašen, na zeleném svahu pod červeno-šedými vápencovými útesy, soutěska Amaghu, Vajoc Dzor, Arménie",
+      "pl": "Klasztor Noravank — jego średniowieczne kościoły ze złocistego kamienia ze stożkowymi kopułami, w tym dwukondygnacyjny Burtelaszen, na zielonym zboczu u stóp czerwono-szarych wapiennych klifów, wąwóz Amaghu, Wajoc Dzor, Armenia"
+    },
+    "days": 9,
+    "description": "The 9-Day Armenia Private Tour covers the country's best-known monasteries and early cathedrals at a relaxed pace, with just two hotel bases. It begins and ends in Yerevan and is built for travellers who want culture, history and nature without changing hotels every other day.\n\nFrom Yerevan you visit Echmiadzin and the ruins of Zvartnots, the Garni temple, the Symphony of Stones and Geghard Monastery, and the Matenadaran manuscript museum in the capital. A day north takes you to Lake Sevan and Sevanavank, then into the forests of Dilijan for Haghartsin, Goshavank and Parz Lake and, on the way back, Kecharis in Tsaghkadzor. A final day south reaches Khor Virap, under Mount Ararat, and Noravank in its red canyon.\n\nSix nights are spent in Yerevan and two in Dilijan, so there are only two hotel moves, both on short days. Most days have two or three stops with free time in the afternoon; Day 8, to Khor Virap and Noravank, is the one long excursion, at 7 to 8 hours with about 4 hours in the car. The tour runs all year round on dates you choose, and because it is private, the pace and the stops can be adjusted to you.",
+    "listingDescription": "A private 9-day, 8-night Armenia tour from two hotel bases: Echmiadzin, Garni and Geghard from Yerevan, Lake Sevan and the forests of Dilijan, then Khor Virap and Noravank. Runs all year round.",
+    "seoTitle": "9-Day Armenia Private Tour: Yerevan, Lake Sevan & Dilijan",
+    "metaDescription": "Private 9-day Armenia tour: Echmiadzin, Garni, Geghard, Lake Sevan, Dilijan, Khor Virap and Noravank from two hotel bases, with private guide and car. Runs all year.",
+    "itinerary": [
+      {
+        "title": "Day 1: Arrival in Yerevan",
+        "content": "<p>You'll be met at Zvartnots International Airport and transferred to your hotel in <a href=\"/en/armenia/yerevan\" data-internal=\"/armenia/yerevan\" class=\"entity-link\">Yerevan</a>. Check-in is from 14:00, and the rest of the day is free to rest or explore at your own pace.</p><ul><li>Arrival at Zvartnots International Airport;</li><li>Transfer to hotel and check-in;</li><li>Free time in Yerevan;</li><li>Overnight stay in Yerevan.</li><li><strong>Driving duration:</strong> 30 minutes</li></ul>"
+      },
+      {
+        "title": "Day 2: Yerevan – Echmiadzin – Zvartnots – Yerevan",
+        "content": "<p>A gentle first excursion west of the capital, among the oldest Christian sites in the country. You drive to <a href=\"/en/armenia/etchmiadzin\" data-internal=\"/armenia/etchmiadzin\" class=\"entity-link\">Echmiadzin</a>, the seat of the Armenian Apostolic Church, whose cathedral was founded in the 4th century and is one of the oldest in the world, and walk through the church grounds. On the way back you stop at <a href=\"/en/armenia/armavir/zvartnots-temple\" data-internal=\"/armenia/armavir/zvartnots-temple\" class=\"entity-link\">Zvartnots</a>, the ruins of a 7th-century cathedral whose ring of columns stands open to the sky. The cathedral and churches of Echmiadzin and the archaeological site of Zvartnots are listed together as a UNESCO World Heritage Site. You are back in Yerevan by early afternoon, and the rest of the day is free.</p><ul><li>Visit Echmiadzin Cathedral (UNESCO World Heritage Site);</li><li>See the Zvartnots ruins (UNESCO World Heritage Site);</li><li>Free time in Yerevan;</li><li>Overnight stay in Yerevan.</li><li><strong>Duration of the tour:</strong> 4-5 hours</li><li><strong>Driving duration:</strong> 1 hour</li></ul>"
+      },
+      {
+        "title": "Day 3: Yerevan – Garni – Symphony of Stones – Geghard – Yerevan",
+        "content": "<p>A day out east of the capital to two of Armenia's best-known sights. You start at <a href=\"/en/armenia/garni\" data-internal=\"/armenia/garni\" class=\"entity-link\">Garni</a>, a 1st-century Greco-Roman temple above a river gorge and the only temple of its kind in the former Soviet Union, then walk down into the canyon to the <a href=\"/en/armenia/garni/symphony-of-stones\" data-internal=\"/armenia/garni/symphony-of-stones\" class=\"entity-link\">Symphony of Stones</a>, a wall of natural basalt columns that rises from the cliff like organ pipes. Nearby is <a href=\"/en/armenia/garni/geghard-monastery\" data-internal=\"/armenia/garni/geghard-monastery\" class=\"entity-link\">Geghard</a>, a UNESCO-listed monastery partly cut into the rock, with chapels hewn out of the mountainside. Back in Yerevan for the night.</p><ul><li>Visit the Garni Temple;</li><li>See the Symphony of Stones basalt columns;</li><li>Visit Geghard Monastery (UNESCO World Heritage Site);</li><li>Overnight stay in Yerevan.</li><li><strong>Duration of the tour:</strong> 5-6 hours</li><li><strong>Driving duration:</strong> 2 hours</li></ul>"
+      },
+      {
+        "title": "Day 4: Yerevan – Lake Sevan – Sevanavank – Dilijan",
+        "content": "<p>You leave Yerevan for the north. The first stop is <a href=\"/en/armenia/gegharkunik/lake-sevan\" data-internal=\"/armenia/gegharkunik/lake-sevan\" class=\"entity-link\">Lake Sevan</a>, a vast alpine lake at nearly 1,900 metres, and <a href=\"/en/armenia/gegharkunik/sevanavank-monastery\" data-internal=\"/armenia/gegharkunik/sevanavank-monastery\" class=\"entity-link\">Sevanavank</a>, the monastery on its headland above the blue water. From there the road crosses the mountains into the forests of <a href=\"/en/armenia/dilijan\" data-internal=\"/armenia/dilijan\" class=\"entity-link\">Dilijan</a>, where you check in for two nights. The rest of the afternoon is free to walk Sharambeyan Street, the restored old quarter of craftsmen's houses with wooden balconies and workshops.</p><ul><li>Drive to Lake Sevan;</li><li>Visit Sevanavank Monastery;</li><li>Drive to Dilijan and check in;</li><li>Free time to walk Dilijan's old quarter;</li><li>Overnight stay in Dilijan.</li><li><strong>Duration of the tour:</strong> 5-6 hours</li><li><strong>Driving duration:</strong> 2.5 hours</li></ul>"
+      },
+      {
+        "title": "Day 5: Dilijan – Haghartsin – Goshavank – Parz Lake – Dilijan",
+        "content": "<p>A slow day among the forests of Dilijan National Park, with three short stops. You start at Haghartsin, a 13th-century monastery tucked into a wooded valley a few minutes from Dilijan, its churches and refectory standing among old trees. Next is Goshavank, a monastery founded in the 12th century with some of Armenia's finest khachkars, the carved cross-stones. The last stop is Parz Lake, a small forest lake at 1,334 metres, where your guide leads a short walk through the trees at your own pace. Lunch is not included, and your guide suggests where to eat. In the afternoon you return to Dilijan, and the rest of the day is free.</p><ul><li>Visit Haghartsin Monastery;</li><li>Visit Goshavank Monastery;</li><li>Walk through the forest at Parz Lake;</li><li>Free time in Dilijan;</li><li>Overnight stay in Dilijan.</li><li><strong>Duration of the tour:</strong> 5-6 hours</li><li><strong>Driving duration:</strong> 1.5 hours</li></ul>"
+      },
+      {
+        "title": "Day 6: Dilijan – Kecharis – Tsaghkadzor – Yerevan",
+        "content": "<p>You drive back over the mountains to the Lake Sevan basin and on to <a href=\"/en/armenia/tsaghkadzor\" data-internal=\"/armenia/tsaghkadzor\" class=\"entity-link\">Tsaghkadzor</a>, a mountain resort town, for Kecharis Monastery, a complex of churches from the 11th to the 13th century among old trees. The road then runs south to Yerevan, where you check in again at your hotel, and the rest of the day is free.</p><ul><li>Visit Kecharis Monastery in Tsaghkadzor;</li><li>Drive to Yerevan and check in;</li><li>Free time in Yerevan;</li><li>Overnight stay in Yerevan.</li><li><strong>Duration of the tour:</strong> 5-6 hours</li><li><strong>Driving duration:</strong> 3 hours</li></ul>"
+      },
+      {
+        "title": "Day 7: Yerevan City Tour",
+        "content": "<p>The tour starts at <a href=\"/en/armenia/yerevan/republic-square\" data-internal=\"/armenia/yerevan/republic-square\" class=\"entity-link\">Republic Square</a>, the heart of the city, ringed by government buildings in the pink tuff stone Yerevan is known for, with the singing fountains at its centre. From there you walk up through the <a href=\"/en/armenia/yerevan/cascade-monument\" data-internal=\"/armenia/yerevan/cascade-monument\" class=\"entity-link\">Cascade</a>, the giant stairway of gardens and modern sculpture that climbs the hillside, with Mount Ararat filling the view from the top on a clear day. You pass the <a href=\"/en/armenia/yerevan/opera-and-ballet-theatre\" data-internal=\"/armenia/yerevan/opera-and-ballet-theatre\" class=\"entity-link\">Opera House</a> and Freedom Square, then visit the Matenadaran, the great repository of ancient Armenian manuscripts, before a stop at Victory Park for the Mother Armenia statue and the view over the whole city. The day ends with a dinner of Armenian food and local wine.</p><ul><li>Walk through Republic Square;</li><li>Climb the Cascade, with views of Mount Ararat on a clear day;</li><li>See the Opera House and Freedom Square;</li><li>Visit the Matenadaran manuscript museum;</li><li>See the Mother Armenia statue at Victory Park;</li><li>Dinner at an Armenian restaurant;</li><li>Overnight stay in Yerevan.</li><li><strong>Duration of the tour:</strong> 4-5 hours</li><li><strong>Driving duration:</strong> 30 minutes</li></ul>"
+      },
+      {
+        "title": "Day 8: Yerevan – Khor Virap – Noravank – Yerevan",
+        "content": "<p>The longest day of the tour, heading south toward the great cone of Mount Ararat. <a href=\"/en/armenia/ararat/khor-virap-monastery\" data-internal=\"/armenia/ararat/khor-virap-monastery\" class=\"entity-link\">Khor Virap</a> is a monastery set right below the mountain with some of the finest views of it in the country, and the place where Gregory the Illuminator was imprisoned before Armenia adopted Christianity. Further on is <a href=\"/en/armenia/vayots-dzor/noravank-monastery\" data-internal=\"/armenia/vayots-dzor/noravank-monastery\" class=\"entity-link\">Noravank</a>, a 13th-century monastery glowing red in its narrow canyon, before the drive back to Yerevan. Haze and cloud often hide Mount Ararat, so the view cannot be guaranteed.</p><ul><li>Visit Khor Virap Monastery, with views toward Mount Ararat on a clear day;</li><li>Visit Noravank Monastery;</li><li>Overnight stay in Yerevan.</li><li><strong>Duration of the tour:</strong> 7-8 hours</li><li><strong>Driving duration:</strong> 4 hours</li></ul>"
+      },
+      {
+        "title": "Day 9: Departure from Yerevan",
+        "content": "<p>Check out of your hotel by 12:00 and transfer to Zvartnots International Airport for your departure.</p><ul><li>Hotel check-out by 12:00;</li><li>Transfer to Zvartnots International Airport;</li><li>Departure from Armenia.</li><li><strong>Driving duration:</strong> 30 minutes</li></ul>"
+      }
+    ],
+    "accommodations": [
+      {
+        "city": "Yerevan (6 nights)",
+        "luxury": "DoubleTree by Hilton Yerevan City Centre",
+        "midRange": "Yerevan Place",
+        "economy": "Ani Central Inn"
+      },
+      {
+        "city": "Dilijan (2 nights)",
+        "luxury": "Best Western Plus Paradise Hotel Dilijan",
+        "midRange": "Dili Town Resort and Spa",
+        "economy": "Casanova Inn"
+      }
+    ],
+    "pricing": [
+      {
+        "travelers": "1",
+        "luxury": "3590",
+        "midRange": "3280",
+        "economy": "2895"
+      },
+      {
+        "travelers": "2",
+        "luxury": "2095",
+        "midRange": "1890",
+        "economy": "1690"
+      },
+      {
+        "travelers": "3",
+        "luxury": "1780",
+        "midRange": "1570",
+        "economy": "1380"
+      },
+      {
+        "travelers": "4",
+        "luxury": "1595",
+        "midRange": "1385",
+        "economy": "1230"
+      },
+      {
+        "travelers": "Single Supplement",
+        "luxury": "595",
+        "midRange": "495",
+        "economy": "355"
+      }
+    ],
+    "included": [
+      "Accommodation in a double/twin room with breakfast included (8 nights);",
+      "All transfers as per the itinerary, by private air-conditioned car;",
+      "Professional English-speaking guide on Days 2 to 8;",
+      "Entrance fees as per the itinerary;",
+      "Dinner at an Armenian restaurant in Yerevan on Day 7;",
+      "Still water."
+    ],
+    "notIncluded": [
+      "Lunches and dinners not mentioned in the itinerary;",
+      "Visa fees, if applicable;",
+      "Tips and personal expenses;",
+      "Additional hotel expenses;",
+      "Travel insurance;",
+      "International flights and airline fees."
+    ],
+    "gallery": [
+      {
+        "src": "/images/tours/9-day-armenia-private-tour-yerevan-dilijan/route-map-9-day-armenia-private-tour-2400.webp",
+        "base": "/images/tours/9-day-armenia-private-tour-yerevan-dilijan/route-map-9-day-armenia-private-tour",
+        "widths": [
+          768,
+          1200,
+          1600,
+          2400
+        ],
+        "width": 2400,
+        "height": 1600,
+        "caption": {
+          "en": "Route Map",
+          "de": "Routenkarte",
+          "fr": "Carte de l'itinéraire",
+          "es": "Mapa de la ruta",
+          "nl": "Routekaart",
+          "cs": "Mapa trasy",
+          "pl": "Mapa trasy"
+        },
+        "altText": {
+          "en": "Illustrated route map of the 9-day private Armenia tour, based in Yerevan with day trips to Echmiadzin and Zvartnots, Garni and Geghard, and Khor Virap and Noravank, and a two-night stay in Dilijan after Lake Sevan, with excursions to Haghartsin, Goshavank and Parz Lake and a return via Kecharis",
+          "de": "Illustrierte Routenkarte der 9-tägigen privaten Armenien-Reise mit Standort Jerewan und Tagesausflügen nach Etschmiadsin und Zvartnots, Garni und Geghard sowie Khor Virap und Noravank, dazu zwei Nächte in Dilidschan nach dem Sewansee mit Ausflügen nach Haghartsin, Goschawank und zum Parz-See und Rückweg über Kecharis",
+          "fr": "Carte illustrée de l'itinéraire du circuit privé de 9 jours en Arménie, basé à Erevan avec des excursions à Etchmiadzine et Zvartnots, Garni et Geghard, puis Khor Virap et Noravank, et deux nuits à Dilijan après le lac Sevan, avec des excursions à Haghartsin, Goshavank et au lac Parz et un retour par Kecharis",
+          "es": "Mapa ilustrado de la ruta del tour privado de 9 días por Armenia, con base en Ereván y excursiones a Echmiadzin y Zvartnots, Garni y Geghard, y Khor Virap y Noravank, y dos noches en Dilijan tras el lago Sevan, con excursiones a Haghartsin, Goshavank y el lago Parz y regreso por Kecharis",
+          "nl": "Geïllustreerde routekaart van de 9-daagse privétour door Armenië, met Jerevan als uitvalsbasis en dagtochten naar Etchmiadzin en Zvartnots, Garni en Geghard, en Chor Virap en Noravank, plus twee nachten in Dilijan na het Sevanmeer, met uitstapjes naar Haghartsin, Goshavank en het Parzmeer en terugweg via Kecharis",
+          "cs": "Ilustrovaná mapa trasy 9denního soukromého zájezdu po Arménii se základnou v Jerevanu a výlety do Ečmiadzinu a Zvartnoc, Garni a Gegardu a do Chor Virapu a Noravanku, s dvěma nocemi v Dilidžanu po jezeru Sevan, výlety k Haghartsinu, Gošavanku a jezeru Parz a návratem přes Kecharis",
+          "pl": "Ilustrowana mapa trasy 9-dniowej prywatnej wycieczki po Armenii, z bazą w Erywaniu i wycieczkami do Eczmiadzynu i Zwartnoc, Garni i Geghardu oraz Chor Wirap i Noravanku, z dwoma noclegami w Dilidżanie po jeziorze Sewan, wycieczkami do Haghartsinu, Goszawanku i nad jezioro Parz oraz powrotem przez Kecharis"
+        }
+      },
+      {
+        "src": "/images/files/republic-square-yerevan-armenia-1672.webp",
+        "base": "/images/files/republic-square-yerevan-armenia",
+        "widths": [
+          768,
+          1200,
+          1600,
+          1672
+        ],
+        "width": 1672,
+        "height": 941,
+        "caption": {
+          "en": "Republic Square, Yerevan",
+          "de": "Platz der Republik, Jerewan",
+          "fr": "Place de la République, Erevan",
+          "es": "Plaza de la República, Ereván",
+          "nl": "Plein van de Republiek, Jerevan",
+          "cs": "Náměstí Republiky, Jerevan",
+          "pl": "Plac Republiki, Erywań"
+        },
+        "altText": {
+          "en": "Republic Square in Yerevan — pink-and-yellow tuff neoclassical buildings around the Singing Fountains pool, with Government House’s clock tower flying the Armenian flag and flowerbeds in the foreground under a clear blue sky, Armenia",
+          "de": "Der Platz der Republik in Eriwan — neoklassizistische Gebäude aus rosa-gelbem Tuffstein rund um das Becken der Singenden Fontänen, mit dem Uhrturm des Regierungsgebäudes und der armenischen Flagge sowie Blumenbeeten im Vordergrund unter klarem blauem Himmel, Armenien",
+          "fr": "La place de la République à Erevan — des bâtiments néoclassiques en tuf rose et jaune autour du bassin des Fontaines chantantes, avec la tour de l’horloge de la Maison du gouvernement arborant le drapeau arménien et des parterres de fleurs au premier plan sous un ciel bleu limpide, Arménie",
+          "es": "La plaza de la República en Ereván — edificios neoclásicos de toba rosa y amarilla en torno al estanque de las Fuentes Cantarinas, con la torre del reloj de la Casa de Gobierno ondeando la bandera armenia y parterres de flores en primer plano bajo un cielo azul despejado, Armenia",
+          "nl": "Het Republiekplein in Jerevan — neoclassicistische gebouwen van roze-gele tufsteen rond het bassin van de Zingende Fonteinen, met de klokkentoren van het Regeringsgebouw en de Armeense vlag en bloemperken op de voorgrond onder een strakblauwe hemel, Armenië",
+          "cs": "Náměstí Republiky v Jerevanu — novoklasicistní budovy z růžovo-žlutého tufu kolem bazénu Zpívajících fontán, s hodinovou věží vládní budovy a arménskou vlajkou a květinovými záhony v popředí pod jasně modrou oblohou, Arménie",
+          "pl": "Plac Republiki w Erywaniu — neoklasycystyczne budynki z różowo-żółtego tufu wokół basenu Śpiewających Fontann, z wieżą zegarową Domu Rządowego z flagą Armenii i rabatami kwiatowymi na pierwszym planie pod bezchmurnym błękitnym niebem, Armenia"
+        }
+      },
+      {
+        "src": "/images/files/etchmiadzin-cathedral-armenia-1448.webp",
+        "base": "/images/files/etchmiadzin-cathedral-armenia",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Etchmiadzin Cathedral",
+          "de": "Kathedrale von Etschmiadsin",
+          "fr": "Cathédrale d’Etchmiadzine",
+          "es": "Catedral de Etchmiadzin",
+          "nl": "Kathedraal van Etchmiadzin",
+          "cs": "Katedrála v Ečmiadzinu",
+          "pl": "Katedra w Eczmiadzynie"
+        },
+        "altText": {
+          "en": "The UNESCO-listed Mother Cathedral of Holy Etchmiadzin — a cruciform tuff-stone church with a central conical dome and corner bell-towers, behind autumn shrubs under a blue sky, Vagharshapat, Armenia",
+          "de": "Die UNESCO-gelistete Mutterkathedrale von Heilig-Etschmiadsin — eine kreuzförmige Kirche aus Tuffstein mit zentraler Kegelkuppel und Ecktürmen, hinter herbstlichen Sträuchern unter blauem Himmel, Wagharschapat, Armenien",
+          "fr": "La cathédrale mère de Saint-Etchmiadzin, inscrite à l’UNESCO — une église cruciforme en tuf à coupole conique centrale et clochetons d’angle, derrière des arbustes automnaux sous un ciel bleu, Vagharchapat, Arménie",
+          "es": "La Catedral Madre de la Santa Etchmiadzin, declarada por la UNESCO — una iglesia cruciforme de toba con cúpula cónica central y campanarios en las esquinas, tras arbustos otoñales bajo un cielo azul, Vagharshapat, Armenia",
+          "nl": "De door UNESCO erkende Moederkathedraal van Heilig Etchmiadzin — een kruisvormige tufstenen kerk met een centrale kegelkoepel en hoektorentjes, achter herfstige struiken onder een blauwe hemel, Vagharsjapat, Armenië",
+          "cs": "Katedrála Matky Boží ve Svatém Ečmiadzinu zapsaná na seznamu UNESCO — křížový kostel z tufu s ústřední kuželovou kupolí a nárožními zvonicemi, za podzimními keři pod modrou oblohou, Vagharšapat, Arménie",
+          "pl": "Wpisana na listę UNESCO Katedra Matki Bożej w Świętym Eczmiadzynie — krzyżowy kościół z tufu z centralną stożkową kopułą i narożnymi dzwonnicami, za jesiennymi krzewami pod błękitnym niebem, Wagharszapat, Armenia"
+        }
+      },
+      {
+        "src": "/images/files/zvartnots-cathedral-armenia-1672.webp",
+        "base": "/images/files/zvartnots-cathedral-armenia",
+        "widths": [
+          768,
+          1200,
+          1600,
+          1672
+        ],
+        "width": 1672,
+        "height": 941,
+        "caption": {
+          "en": "Zvartnots Cathedral",
+          "de": "Kathedrale von Zvartnots",
+          "fr": "Cathédrale de Zvartnots",
+          "es": "Catedral de Zvartnots",
+          "nl": "Kathedraal van Zvartnots",
+          "cs": "Katedrála Zvartnoc",
+          "pl": "Katedra Zwartnoc"
+        },
+        "altText": {
+          "en": "The 7th-century ruined cathedral of Zvartnots, its round colonnaded remains standing open to the sky, Armavir, Armenia",
+          "de": "Die Ruinen der Kathedrale von Zvartnots aus dem 7. Jahrhundert, ihr runder Säulenbau offen zum Himmel, Armavir, Armenien",
+          "fr": "Les ruines de la cathédrale de Zvartnots (VIIe siècle), son enceinte circulaire à colonnes ouverte sur le ciel, Armavir, Arménie",
+          "es": "Las ruinas de la catedral de Zvartnots del siglo VII, su recinto circular de columnas abierto al cielo, Armavir, Armenia",
+          "nl": "De ruïnes van de 7e-eeuwse kathedraal van Zvartnots, de ronde zuilenbouw open naar de hemel, Armavir, Armenië",
+          "cs": "Zříceniny katedrály Zvartnoc ze 7. století, její kruhová sloupová stavba otevřená k obloze, Armavir, Arménie",
+          "pl": "Ruiny siódmowiecznej katedry Zwartnoc, jej okrągła kolumnowa budowla otwarta na niebo, Armavir, Armenia"
+        }
+      },
+      {
+        "src": "/images/files/garni-temple-armenia-1448.webp",
+        "base": "/images/files/garni-temple-armenia",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Garni Temple",
+          "de": "Garni-Tempel",
+          "fr": "Temple de Garni",
+          "es": "Templo de Garni",
+          "nl": "Tempel van Garni",
+          "cs": "Chrám v Garni",
+          "pl": "Świątynia w Garni"
+        },
+        "altText": {
+          "en": "The Temple of Garni — a 1st-century Greco-Roman colonnaded temple of dark basalt on a raised podium, under a blue sky with clouds, Kotayk, Armenia",
+          "de": "Der Tempel von Garni — ein griechisch-römischer Säulentempel aus dunklem Basalt aus dem 1. Jahrhundert auf einem erhöhten Podium, unter blauem Wolkenhimmel, Kotayk, Armenien",
+          "fr": "Le temple de Garni — un temple gréco-romain à colonnes en basalte sombre du Ier siècle sur un podium surélevé, sous un ciel bleu nuageux, Kotayk, Arménie",
+          "es": "El templo de Garni — un templo grecorromano de columnas de basalto oscuro del siglo I sobre un podio elevado, bajo un cielo azul con nubes, Kotayk, Armenia",
+          "nl": "De tempel van Garni — een 1e-eeuwse Grieks-Romeinse zuilentempel van donker basalt op een verhoogd podium, onder een blauwe bewolkte hemel, Kotayk, Armenië",
+          "cs": "Chrám v Garni — řecko-římský sloupový chrám z tmavého čediče z 1. století na vyvýšeném podiu, pod modrou oblohou s mraky, Kotajk, Arménie",
+          "pl": "Świątynia w Garni — grecko-rzymska kolumnowa świątynia z ciemnego bazaltu z I wieku na podwyższonym podium, pod błękitnym, zachmurzonym niebem, Kotajk, Armenia"
+        }
+      },
+      {
+        "src": "/images/files/geghard-monastery-armenia-1672.webp",
+        "base": "/images/files/geghard-monastery-armenia",
+        "widths": [
+          768,
+          1200,
+          1600,
+          1672
+        ],
+        "width": 1672,
+        "height": 941,
+        "caption": {
+          "en": "Geghard Monastery",
+          "de": "Kloster Geghard",
+          "fr": "Monastère de Geghard",
+          "es": "Monasterio de Geghard",
+          "nl": "Klooster Geghard",
+          "cs": "Klášter Geghard",
+          "pl": "Klasztor Geghard"
+        },
+        "altText": {
+          "en": "The UNESCO-listed Geghard Monastery — its medieval domed stone church in a paved courtyard below steep rocky cliffs, Upper Azat Valley, Armenia",
+          "de": "Das UNESCO-gelistete Kloster Geghard — seine mittelalterliche kuppelbekrönte Steinkirche in einem gepflasterten Hof unter steilen Felswänden, oberes Azat-Tal, Armenien",
+          "fr": "Le monastère de Geghard, inscrit à l'UNESCO — son église médiévale en pierre à coupole dans une cour pavée au pied de falaises abruptes, haute vallée de l'Azat, Arménie",
+          "es": "El monasterio de Geghard, declarado por la UNESCO — su iglesia medieval de piedra con cúpula en un patio empedrado al pie de escarpados acantilados, alto valle del Azat, Armenia",
+          "nl": "Het door UNESCO erkende klooster Geghard — de middeleeuwse stenen koepelkerk op een geplaveide binnenplaats onder steile rotswanden, boven-Azatdal, Armenië",
+          "cs": "Klášter Geghard zapsaný na seznamu UNESCO — jeho středověký kamenný kostel s kupolí na dlážděném nádvoří pod strmými skalními stěnami, horní údolí Azat, Arménie",
+          "pl": "Wpisany na listę UNESCO klasztor Geghard — jego średniowieczny kamienny kościół z kopułą na brukowanym dziedzińcu u stóp stromych skalnych ścian, górna dolina Azat, Armenia"
+        }
+      },
+      {
+        "src": "/images/files/lake-sevan-armenia-1672.webp",
+        "base": "/images/files/lake-sevan-armenia",
+        "widths": [
+          768,
+          1200,
+          1600,
+          1672
+        ],
+        "width": 1672,
+        "height": 941,
+        "caption": {
+          "en": "Lake Sevan",
+          "de": "Sewansee",
+          "fr": "Lac Sevan",
+          "es": "Lago Sevan",
+          "nl": "Sevanmeer",
+          "cs": "Jezero Sevan",
+          "pl": "Jezioro Sewan"
+        },
+        "altText": {
+          "en": "The deep blue water of Lake Sevan under a summer sky, with a wooded shore in the foreground and a lakeside village below bare hills on the far shore, Gegharkunik, Armenia",
+          "de": "Das tiefblaue Wasser des Sewansees unter sommerlichem Himmel, im Vordergrund ein bewaldetes Ufer, am gegenüberliegenden Ufer ein Dorf unter kahlen Hügeln, Gegharkunik, Armenien",
+          "fr": "Les eaux d’un bleu profond du lac Sevan sous un ciel d’été, avec une rive boisée au premier plan et un village au bord de l’eau au pied de collines dénudées sur la rive opposée, Gegharkunik, Arménie",
+          "es": "Las aguas de un azul profundo del lago Seván bajo un cielo de verano, con una orilla arbolada en primer plano y un pueblo a la orilla del agua al pie de colinas peladas en la ribera opuesta, Gegharkunik, Armenia",
+          "nl": "Het diepblauwe water van het Sevanmeer onder een zomerse hemel, met een beboste oever op de voorgrond en een dorp aan het water onder kale heuvels aan de overkant, Gegharkunik, Armenië",
+          "cs": "Sytě modrá voda Sevanského jezera pod letní oblohou, v popředí zalesněný břeh a na protějším břehu vesnice pod holými kopci, Gegharkunik, Arménie",
+          "pl": "Głęboko niebieska woda jeziora Sewan pod letnim niebem, z zalesionym brzegiem na pierwszym planie i wioską nad wodą u stóp nagich wzgórz na przeciwległym brzegu, Gegharkunik, Armenia"
+        }
+      },
+      {
+        "src": "/images/files/sevanavank-monastery-armenia-1672.webp",
+        "base": "/images/files/sevanavank-monastery-armenia",
+        "widths": [
+          768,
+          1200,
+          1600,
+          1672
+        ],
+        "width": 1672,
+        "height": 941,
+        "caption": {
+          "en": "Sevanavank Monastery",
+          "de": "Kloster Sevanavank",
+          "fr": "Monastère de Sevanavank",
+          "es": "Monasterio de Sevanavank",
+          "nl": "Klooster Sevanavank",
+          "cs": "Klášter Sevanavank",
+          "pl": "Klasztor Sewanawank"
+        },
+        "altText": {
+          "en": "Sevanavank Monastery — its two 9th-century dark basalt churches with tiled conical domes on the Sevan peninsula above Lake Sevan under a blue sky, Gegharkunik, Armenia",
+          "de": "Kloster Sevanavank — seine beiden Kirchen aus dunklem Basalt aus dem 9. Jahrhundert mit ziegelgedeckten Kegelkuppeln auf der Sewan-Halbinsel über dem Sewansee unter blauem Himmel, Gegharkunik, Armenien",
+          "fr": "Le monastère de Sevanavank — ses deux églises du IXe siècle en basalte sombre, coiffées de coupoles coniques en tuiles, sur la presqu’île de Sevan au-dessus du lac Sevan sous un ciel bleu, Gegharkunik, Arménie",
+          "es": "El monasterio de Sevanavank — sus dos iglesias del siglo IX de basalto oscuro con cúpulas cónicas de tejas en la península de Seván sobre el lago Seván bajo un cielo azul, Gegharkunik, Armenia",
+          "nl": "Klooster Sevanavank — de twee 9e-eeuwse kerken van donker basalt met met dakpannen bedekte kegelkoepels op het schiereiland Sevan boven het Sevanmeer onder een blauwe hemel, Gegharkunik, Armenië",
+          "cs": "Klášter Sevanavank — jeho dva kostely z 9. století z tmavého čediče s taškovými kuželovými kupolemi na Sevanském poloostrově nad Sevanským jezerem pod modrou oblohou, Gegharkunik, Arménie",
+          "pl": "Klasztor Sewanawank — jego dwa kościoły z IX wieku z ciemnego bazaltu z krytymi dachówką stożkowymi kopułami na półwyspie Sewan nad jeziorem Sewan pod błękitnym niebem, Gegharkunik, Armenia"
+        }
+      },
+      {
+        "src": "/images/files/khor-virap-monastery-ararat-armenia-1086.webp",
+        "base": "/images/files/khor-virap-monastery-ararat-armenia",
+        "widths": [
+          768,
+          1086
+        ],
+        "width": 1086,
+        "height": 1448,
+        "caption": {
+          "en": "Khor Virap Monastery",
+          "de": "Kloster Khor Virap",
+          "fr": "Monastère de Khor Virap",
+          "es": "Monasterio de Khor Virap",
+          "nl": "Klooster Khor Virap",
+          "cs": "Klášter Khor Virap",
+          "pl": "Klasztor Khor Virap"
+        },
+        "altText": {
+          "en": "Aerial view of Khor Virap Monastery on a hill above the green Ararat plain, with the twin snow-capped peaks of Mount Ararat behind, Armenia",
+          "de": "Luftaufnahme des Klosters Chor Virap auf einem Hügel über der grünen Araratebene, dahinter die beiden schneebedeckten Gipfel des Ararat, Armenien",
+          "fr": "Vue aérienne du monastère de Khor Virap sur une colline dominant la plaine verdoyante de l'Ararat, avec les deux sommets enneigés du mont Ararat en arrière-plan, Arménie",
+          "es": "Vista aérea del monasterio de Khor Virap sobre una colina dominando la verde llanura del Ararat, con las dos cumbres nevadas del monte Ararat al fondo, Armenia",
+          "nl": "Luchtfoto van het klooster Chor Virap op een heuvel boven de groene Araratvlakte, met daarachter de twee besneeuwde toppen van de berg Ararat, Armenië",
+          "cs": "Letecký pohled na klášter Chor Virap na kopci nad zelenou Araratskou nížinou, v pozadí dva zasněžené vrcholy hory Ararat, Arménie",
+          "pl": "Widok z lotu ptaka na klasztor Chor Wirap na wzgórzu nad zieloną Równiną Araratską, w tle dwa ośnieżone szczyty góry Ararat, Armenia"
+        }
+      },
+      {
+        "src": "/images/files/noravank-monastery-armenia-1672.webp",
+        "base": "/images/files/noravank-monastery-armenia",
+        "widths": [
+          768,
+          1200,
+          1600,
+          1672
+        ],
+        "width": 1672,
+        "height": 941,
+        "caption": {
+          "en": "Noravank Monastery",
+          "de": "Kloster Noravank",
+          "fr": "Monastère de Noravank",
+          "es": "Monasterio de Noravank",
+          "nl": "Klooster Noravank",
+          "cs": "Klášter Noravank",
+          "pl": "Klasztor Noravank"
+        },
+        "altText": {
+          "en": "Noravank Monastery — its medieval golden-stone churches with conical domes, including the two-storey Burtelashen, on a green slope below red-and-grey limestone cliffs, Amaghu Gorge, Vayots Dzor, Armenia",
+          "de": "Kloster Noravank — seine mittelalterlichen Kirchen aus goldfarbenem Stein mit Kegelkuppeln, darunter die zweistöckige Burtelaschen, an einem grünen Hang unter rot-grauen Kalksteinfelsen, Amaghu-Schlucht, Wajoz Dsor, Armenien",
+          "fr": "Le monastère de Noravank — ses églises médiévales en pierre dorée à coupoles coniques, dont la Bourtelachen à deux étages, sur un versant verdoyant au pied de falaises calcaires rouges et grises, gorge d'Amaghou, Vayots Dzor, Arménie",
+          "es": "El monasterio de Noravank — sus iglesias medievales de piedra dorada con cúpulas cónicas, incluida la Burtelashen de dos plantas, en una ladera verde al pie de acantilados calizos rojos y grises, garganta de Amaghu, Vayots Dzor, Armenia",
+          "nl": "Klooster Noravank — de middeleeuwse goudkleurige stenen kerken met kegelkoepels, waaronder de tweelaagse Burtelashen, op een groene helling onder rood-grijze kalkstenen kliffen, Amaghu-kloof, Vajots Dzor, Armenië",
+          "cs": "Klášter Noravank — jeho středověké kostely ze zlatavého kamene s kuželovými kupolemi, včetně dvoupatrové Burtelašen, na zeleném svahu pod červeno-šedými vápencovými útesy, soutěska Amaghu, Vajoc Dzor, Arménie",
+          "pl": "Klasztor Noravank — jego średniowieczne kościoły ze złocistego kamienia ze stożkowymi kopułami, w tym dwukondygnacyjny Burtelaszen, na zielonym zboczu u stóp czerwono-szarych wapiennych klifów, wąwóz Amaghu, Wajoc Dzor, Armenia"
+        }
+      },
+      {
+        "src": "/images/files/yerevan-cascade-armenia-1024.webp",
+        "base": "/images/files/yerevan-cascade-armenia",
+        "widths": [
+          768,
+          1024
+        ],
+        "width": 1024,
+        "height": 1536,
+        "caption": {
+          "en": "The Cascade, Yerevan",
+          "de": "Kaskade, Jerewan",
+          "fr": "Cascade, Erevan",
+          "es": "Cascada, Ereván",
+          "nl": "Cascade, Jerevan",
+          "cs": "Kaskáda, Jerevan",
+          "pl": "Kaskada, Erywań"
+        },
+        "altText": {
+          "en": "The Yerevan Cascade — a monumental limestone stairway with terraced gardens, fountains and modern bronze sculptures, rising toward a Soviet-era obelisk under a blue sky, Yerevan, Armenia",
+          "de": "Die Kaskade von Eriwan — eine monumentale Kalksteintreppe mit terrassierten Gärten, Brunnen und modernen Bronzeskulpturen, ansteigend zu einem sowjetischen Obelisken unter blauem Himmel, Eriwan, Armenien",
+          "fr": "La Cascade d’Erevan — un escalier monumental en calcaire avec jardins en terrasses, fontaines et sculptures de bronze modernes, s’élevant vers un obélisque de l’époque soviétique sous un ciel bleu, Erevan, Arménie",
+          "es": "La Cascada de Ereván — una monumental escalinata de piedra caliza con jardines aterrazados, fuentes y esculturas de bronce modernas, ascendiendo hacia un obelisco de la época soviética bajo un cielo azul, Ereván, Armenia",
+          "nl": "De Cascade van Jerevan — een monumentale kalkstenen trap met terrastuinen, fonteinen en moderne bronzen sculpturen, oplopend naar een Sovjet-obelisk onder een blauwe hemel, Jerevan, Armenië",
+          "cs": "Jerevanská Kaskáda — monumentální vápencové schodiště s terasovými zahradami, fontánami a moderními bronzovými sochami, stoupající k sovětskému obelisku pod modrou oblohou, Jerevan, Arménie",
+          "pl": "Kaskada w Erywaniu — monumentalne wapienne schody z tarasowymi ogrodami, fontannami i nowoczesnymi rzeźbami z brązu, wznoszące się ku sowieckiemu obeliskowi pod błękitnym niebem, Erywań, Armenia"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "title": "Is this 9-day Armenia tour available all year round?",
+        "content": "<p>Yes. The tour runs all year round on the dates you choose. The scenery changes with the seasons, and Lake Sevan and Dilijan lie at altitude, so winters there are colder and snow is possible; your guide adjusts walks and timings to the conditions on the day.</p>"
+      },
+      {
+        "title": "Is this a private tour?",
+        "content": "<p>Yes. It runs privately for your own group, with your own guide and driver, and the pace and stops can be adjusted to your interests. The price per person falls as more people share the tour.</p>"
+      },
+      {
+        "title": "Where does the tour start and finish?",
+        "content": "<p>It starts at Zvartnots International Airport in Yerevan on Day 1 and ends with your transfer back to the airport on Day 9.</p>"
+      },
+      {
+        "title": "How many nights are spent in Yerevan and Dilijan?",
+        "content": "<p>Six nights in Yerevan and two in Dilijan. You move hotels only twice: from Yerevan to Dilijan on Day 4 and back to Yerevan on Day 6.</p>"
+      },
+      {
+        "title": "Is the itinerary suitable for travelers who prefer a slower pace?",
+        "content": "<p>Yes, overall. Most days have two or three stops with free time in the afternoon. Day 8, to Khor Virap and Noravank, is the one long excursion, at 7 to 8 hours with about 4 hours of driving.</p>"
+      },
+      {
+        "title": "Is Mount Ararat visible on the tour?",
+        "content": "<p>Khor Virap and the top of the Cascade in Yerevan offer views of Mount Ararat, which lies across the border in Turkey. Visibility depends on the weather and cannot be guaranteed on any given day.</p>"
+      },
+      {
+        "title": "How is this tour different from the other Armenia tours?",
+        "content": "<p>It is built around two bases, Yerevan and Dilijan, and adds the forest monasteries of Dilijan, Parz Lake and Kecharis. It does not go to the far south of Armenia, which the 7-day and 8-day Armenia tours cover.</p>"
+      }
+    ],
+    "tourFormTitle": "9-Day Armenia Private Tour: Yerevan, Lake Sevan & Dilijan"
   }
 ]
 
