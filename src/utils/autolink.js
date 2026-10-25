@@ -11,7 +11,11 @@
  *   - Whole-name, Unicode-aware word boundaries (accents/hyphens/apostrophes OK).
  *   - Case-insensitive; every occurrence is linked, not just the first.
  *   - Generic tails ("museum", "fortress", …) are never linked on their own.
- *   - Ambiguous names (one string -> more than one entity) are left unlinked.
+ *   - Ambiguous names (one string -> more than one entity) are left unlinked,
+ *     EXCEPT a name shared by entities in different countries (Tbilisi's and
+ *     Baku's "Ateshgah Fire Temple"): that one is resolved by the country the
+ *     surrounding text is about (see countryContext), and left unlinked when
+ *     the text gives no single country.
  *   - English links all entities; other languages link only entities that have a
  *     verified localized name (all cities + the curated places), never an
  *     invented translation.
@@ -27,7 +31,7 @@
  * patch a dangerouslySetInnerHTML mismatch, so it kept the link-free server
  * markup and the links vanished from the page entirely.
  */
-import { regions, cities, sites, regionPath, cityPath, sitePath } from '../data/places'
+import { regions, cities, sites, regionPath, cityPath, sitePath, countryOf, countryOfSite } from '../data/places'
 import { domApi } from '@dom'
 
 // Generic words that must never become a link by themselves.
@@ -105,8 +109,9 @@ function buildIndex(lang, pages) {
   const regionItems = (pages && pages.destinationsRegions && pages.destinationsRegions.items) || {}
   const cityItems = (pages && pages.destinationsCities && pages.destinationsCities.items) || {}
   const placeItems = (pages && pages.destinationsPlaces && pages.destinationsPlaces.items) || {}
-  const raw = [] // { name, url, key }
+  const raw = [] // { name, url, key, country }
   const keyToUrl = new Map()
+  const keyToCountry = new Map()
 
   // Published regions are auto-linked to their canonical detail page
   // (/georgia/regions/<slug>). For non-English, we match BOTH the localized
@@ -121,12 +126,14 @@ function buildIndex(lang, pages) {
     const url = regionPath(r.slug)
     const key = `region:${r.slug}`
     keyToUrl.set(key, url)
+    const country = countryOf(r)
+    keyToCountry.set(key, country)
     const names = new Set([r.name])
     if (lang !== 'en') {
       const loc = localizedName(regionItems, r.slug)
       if (loc) names.add(loc)
     }
-    for (const nm of names) for (const v of variants(nm, lang)) raw.push({ name: v, url, key })
+    for (const nm of names) for (const v of variants(nm, lang)) raw.push({ name: v, url, key, country })
   }
 
   for (const c of cities) {
@@ -134,11 +141,13 @@ function buildIndex(lang, pages) {
     const url = cityPath(c.slug)
     const key = `city:${c.slug}`
     keyToUrl.set(key, url)
+    const country = countryOf(c)
+    keyToCountry.set(key, country)
     // EN uses the registry name; other languages use the verified localized name
     // (falling back to the registry proper noun for the few cities without one —
     // these are transliterated proper nouns, not invented translations).
     const display = lang === 'en' ? c.name : (localizedName(cityItems, c.slug) || c.name)
-    for (const v of variants(display, lang)) raw.push({ name: v, url, key })
+    for (const v of variants(display, lang)) raw.push({ name: v, url, key, country })
   }
 
   for (const s of sites) {
@@ -146,11 +155,13 @@ function buildIndex(lang, pages) {
     const url = sitePath(s)
     const key = `place:${s.slug}`
     keyToUrl.set(key, url)
+    const country = countryOfSite(s)
+    keyToCountry.set(key, country)
     // EN uses the registry name; other languages link ONLY places that have a
     // verified curated localized name (no invented translations for the rest).
     const display = lang === 'en' ? s.name : localizedName(placeItems, s.slug)
     if (!display) continue
-    for (const v of variants(display, lang)) raw.push({ name: v, url, key })
+    for (const v of variants(display, lang)) raw.push({ name: v, url, key, country })
   }
 
   // Verified alias forms (see ALIASES above). Applied for every language: each
@@ -160,20 +171,41 @@ function buildIndex(lang, pages) {
   // has no entry in `keyToUrl` and is silently skipped.
   for (const [name, key] of ALIASES) {
     const url = keyToUrl.get(key)
-    if (url) raw.push({ name, url, key })
+    if (url) raw.push({ name, url, key, country: keyToCountry.get(key) })
   }
 
   // Collapse + drop ambiguous names (same string -> multiple distinct URLs).
+  // The one exception is a name whose candidates sit in DIFFERENT countries,
+  // one per country: it is kept as a contextual entry, resolved per body by
+  // countryContext(). Grouping ignores a leading English "The", so "The
+  // Ateshgah Fire Temple" (Tbilisi's registry name) cannot slip through as an
+  // unambiguous Tbilisi link while "Ateshgah Fire Temple" is ambiguous.
+  const norm = (n) => (lang === 'en' ? n.toLowerCase().replace(/^the\s+/, '') : n.toLowerCase())
   const byLower = new Map()
+  const byNorm = new Map()
   for (const e of raw) {
     const lc = e.name.toLowerCase()
     const cur = byLower.get(lc)
     if (!cur) byLower.set(lc, { ...e, urls: new Set([e.url]) })
     else cur.urls.add(e.url)
+    const nk = norm(e.name)
+    if (!byNorm.has(nk)) byNorm.set(nk, new Map())
+    byNorm.get(nk).set(e.url, e)
+  }
+  const crossCountry = (cands) => {
+    if (cands.size < 2) return null
+    const perCountry = {}
+    for (const c of cands.values()) {
+      if (!c.country || perCountry[c.country]) return null // same-country clash: stays ambiguous
+      perCountry[c.country] = { url: c.url, key: c.key }
+    }
+    return perCountry
   }
   const accepted = []
-  for (const [, e] of byLower) {
-    if (e.urls.size === 1) accepted.push({ name: e.name, url: e.url, key: e.key })
+  for (const [lc, e] of byLower) {
+    const contextual = crossCountry(byNorm.get(norm(e.name)))
+    if (contextual) accepted.push({ name: e.name, url: null, key: null, contextual })
+    else if (e.urls.size === 1) accepted.push({ name: e.name, url: e.url, key: e.key, country: e.country })
   }
   // Longest first so longer entity names win over shorter ones they contain.
   accepted.sort((a, b) => b.name.length - a.name.length)
@@ -203,6 +235,31 @@ export function getIndex(lang, pages) {
   if (idx.regex) indexCache.set(lang, idx)
   return idx
 }
+
+/**
+ * The single country a body is about, or null. Read from the unambiguous
+ * entity mentions in it plus any entity links already written into the markup
+ * (hand-placed anchors carry data-internal="/<country>/..."). Mixed or absent
+ * evidence yields null, which leaves a contextual name unlinked rather than
+ * guessing.
+ */
+export function countryContext(ents, anchorPaths = []) {
+  const found = new Set()
+  for (const e of ents) if (e.country) found.add(e.country)
+  for (const p of anchorPaths) {
+    const seg = (p || '').split('/')[1]
+    if (seg && KNOWN_COUNTRIES.has(seg)) found.add(seg)
+  }
+  return found.size === 1 ? [...found][0] : null
+}
+
+/** A matched index entry as a concrete { url, key } for the given context, or null. */
+export function resolveEntity(ent, ctx) {
+  if (!ent.contextual) return ent
+  return (ctx && ent.contextual[ctx]) || null
+}
+
+const KNOWN_COUNTRIES = new Set([...regions, ...cities].map((r) => countryOf(r)))
 
 const SKIP_TAGS = new Set(['A', 'CODE', 'PRE', 'SCRIPT', 'STYLE', 'BUTTON', 'TEXTAREA'])
 
@@ -242,6 +299,7 @@ function linkHtml(html, lang, pages, excludeKey, dom) {
   )
 
   const doc = new dom.DOMParser().parseFromString(`<body>${html}</body>`, 'text/html')
+  const anchorPaths = [...doc.body.querySelectorAll('a[data-internal]')].map((a) => a.getAttribute('data-internal'))
   const walker = doc.createTreeWalker(doc.body, dom.SHOW_TEXT)
   const targets = []
   let node
@@ -256,6 +314,18 @@ function linkHtml(html, lang, pages, excludeKey, dom) {
     if (!skip) targets.push(node)
   }
 
+  // Country context for contextual names, from the whole body.
+  const plain = []
+  for (const tn of targets) {
+    regex.lastIndex = 0
+    let pm
+    while ((pm = regex.exec(tn.nodeValue))) {
+      const pe = byName.get(pm[0].toLowerCase())
+      if (pe && !pe.contextual) plain.push(pe)
+    }
+  }
+  const ctx = countryContext(plain, anchorPaths)
+
   for (const tn of targets) {
     const text = tn.nodeValue
     regex.lastIndex = 0
@@ -264,8 +334,8 @@ function linkHtml(html, lang, pages, excludeKey, dom) {
     let frag = null
     while ((m = regex.exec(text))) {
       const matched = m[0]
-      const ent = byName.get(matched.toLowerCase())
-      if (!ent || excluded.has(ent.key)) continue // unknown casing, self-link or opted-out: leave as text
+      const ent = resolveEntity(byName.get(matched.toLowerCase()) || { contextual: {} }, ctx)
+      if (!ent || excluded.has(ent.key)) continue // unknown casing, unresolved context, self-link or opted-out: leave as text
       if (!frag) frag = doc.createDocumentFragment()
       if (m.index > last) frag.appendChild(doc.createTextNode(text.slice(last, m.index)))
       const a = doc.createElement('a')

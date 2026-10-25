@@ -162,7 +162,7 @@ export default function TourInquiryForm({ tourTitle, tourSlug = '', selectedPack
         <div className="td-form__group">
           <label htmlFor="ti-travelers">{t('form.travelers')}{travelerRange ? ' *' : ''}</label>
           {travelerRange ? (
-            <select id="ti-travelers" name="travelers" required value={form.travelers} onChange={set('travelers')} aria-invalid={invalid(!form.travelers)} aria-describedby={describedBy(!form.travelers)}>
+            <select id="ti-travelers" name="travelers" required value={form.travelers} onChange={set('travelers')} aria-invalid={invalid(!form.travelers)} aria-describedby={[describedBy(!form.travelers), 'ti-travelers-hint'].filter(Boolean).join(' ')}>
               <option value="">{t('form.travelersPlaceholder')}</option>
               {Array.from({ length: travelerRange.max - travelerRange.min + 1 }, (_, i) => travelerRange.min + i).map((n) => (
                 <option key={n} value={n}>{n}</option>
@@ -171,6 +171,9 @@ export default function TourInquiryForm({ tourTitle, tourSlug = '', selectedPack
           ) : (
             <input id="ti-travelers" name="travelers" type="number" min="1" max="99" step="1" inputMode="numeric" value={form.travelers} onChange={set('travelers')} />
           )}
+          {/* Group tours only (travelerRange is set by the scheduled-departure
+              tours): the most one departure takes, and where a bigger party goes. */}
+          {travelerRange && <p className="td-form__hint" id="ti-travelers-hint">{t('form.travelersHint', { n: travelerRange.max })}</p>}
         </div>
       </div>
 

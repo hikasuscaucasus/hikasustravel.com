@@ -142,9 +142,9 @@ export default function CountryToursHubPage({ country }) {
             <p>{t(hub.introKey)}</p>
           </FadeUp>
 
-          {privateTours.length > 0 ? (
+          {primary.length > 0 ? (
             <FadeUp>
-              <p className="tour-hub__count">{tCount('tour.countLabel', privateTours.length)}</p>
+              <p className="tour-hub__count">{tCount('tour.countLabel', primary.length)}</p>
             </FadeUp>
           ) : (
             <>

@@ -11,7 +11,7 @@
 import { createElement, useContext, useMemo } from 'react'
 import { I18nContext } from '../i18n/I18nContext'
 import useLang from '../i18n/useLang'
-import { autolinkHtml, getIndex } from './autolink'
+import { autolinkHtml, getIndex, countryContext, resolveEntity } from './autolink'
 
 export function useLinkedHtml(html, excludeKey) {
   const { pages } = useContext(I18nContext)
@@ -37,13 +37,22 @@ export function autolinkNodes(text, lang, pages, excludeKey) {
   if (!text || typeof text !== 'string') return text
   const { byName, regex } = getIndex(lang, pages)
   if (!regex) return text
+  // Country context for contextual names, from this string's own mentions.
+  regex.lastIndex = 0
+  const seen = []
+  let pm
+  while ((pm = regex.exec(text))) {
+    const pe = byName.get(pm[0].toLowerCase())
+    if (pe && !pe.contextual) seen.push(pe)
+  }
+  const ctx = countryContext(seen)
   regex.lastIndex = 0
   const out = []
   let last = 0
   let m
   let i = 0
   while ((m = regex.exec(text))) {
-    const ent = byName.get(m[0].toLowerCase())
+    const ent = resolveEntity(byName.get(m[0].toLowerCase()) || { contextual: {} }, ctx)
     if (!ent || ent.key === excludeKey) continue
     if (m.index > last) out.push(text.slice(last, m.index))
     out.push(

@@ -58,6 +58,15 @@ const { tourHubById, TOUR_HUB_CHOOSER_IMAGE } = await import(
 const { buildTourSeo } = await import(
   pathToFileURL(join(__dirname, '../src/utils/tourSeo.js')).href
 )
+// Blog articles' structured data: the same builder BlogArticlePage runs, fed
+// by the full article records (author, date, FAQ and translations), which this
+// file's own summary list below does not carry.
+const { blogArticles: blogRecords } = await import(
+  pathToFileURL(join(__dirname, '../src/data/blogData.js')).href
+)
+const { buildBlogJsonLd } = await import(
+  pathToFileURL(join(__dirname, '../src/utils/blogSeo.js')).href
+)
 
 // Crawlable internal-link graph (parent / children / siblings / translations)
 // written into #root as fallback content — see scripts/seo-links.js.
@@ -1109,6 +1118,11 @@ for (const lang of LANGS) {
       ogImageWidth: article.ogImageWidth,
       ogImageHeight: article.ogImageHeight,
       ogLocale,
+      jsonLd: (() => {
+        const record = blogRecords.find((r) => r.slug === article.slug)
+        const tr = record && lang !== 'en' ? record.translations?.[lang] || null : null
+        return buildBlogJsonLd({ article: record, lang, description, faq: tr?.faq || record?.faq })
+      })(),
     })
   }
 }

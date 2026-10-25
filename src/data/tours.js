@@ -24271,9 +24271,11 @@ export const primaryToursFor = (country) => tours.filter((t) => tourCountry(t) =
 export const combinedToursCovering = (country) => (country === 'caucasus'
   ? []
   : tours.filter((t) => t.country === 'caucasus' && (t.areaServed || []).some((a) => a.toLowerCase() === country)))
-// Count shown on the hub chooser cards and the homepage destination cards:
-// the hub's own private tours (primary classification), never the combined
-// tours it merely links to.
+// Count shown on the hub chooser cards, the homepage destination cards and the
+// hub's own "N tours" line: every tour the hub lists as its own (primary
+// classification, private AND scheduled group), never the combined tours it
+// merely links to. Derived from the registry, so it follows it.
+export const primaryTourCountFor = (country) => primaryToursFor(country).length
 export const primaryPrivateTourCountFor = (country) =>
   primaryToursFor(country).filter((t) => t.type === 'private').length
 // What a destination card's status line should say, from the same data the
@@ -24281,7 +24283,7 @@ export const primaryPrivateTourCountFor = (country) =>
 // 'combinedOnly' when a country appears only inside multi-country tours, and
 // 'soon' when it has neither.
 export const hubStatusFor = (country) => {
-  const n = primaryPrivateTourCountFor(country)
+  const n = primaryTourCountFor(country)
   if (n > 0) return { kind: 'count', n }
   if (combinedToursCovering(country).length > 0) return { kind: 'combinedOnly' }
   return { kind: 'soon' }

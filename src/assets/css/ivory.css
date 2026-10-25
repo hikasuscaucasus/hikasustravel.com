@@ -1121,6 +1121,14 @@
   padding: 22px;
 }
 
+/* Helper line under a field (the group-tour traveler limit). */
+.td-form__hint {
+  margin: 6px 0 0;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--sub);
+}
+
 .theme-ivory .td-form__group label {
   color: var(--sub);
   font-size: 12px;
@@ -1919,9 +1927,7 @@
 .theme-ivory .blog-item,
 .theme-ivory .contact-card,
 .theme-ivory .embassy-card,
-.theme-ivory .dest-hub-card,
-.theme-ivory .testimonial-card,
-.theme-ivory .td-testimonial {
+.theme-ivory .dest-hub-card {
   background: var(--surface);
   border: 1px solid var(--accent);
   border-radius: var(--r);
@@ -1938,23 +1944,6 @@
   transform: none;
   background: var(--surface);
   color: var(--ink);
-}
-
-.theme-ivory .td-testimonials-section {
-  background: var(--bg);
-  color: var(--ink);
-}
-
-/* The testimonials heading is centred over its cards. `.td-section__title` is
-   centred in the base stylesheet, but `.theme-ivory .td-section__title` sets
-   `text-align: left` for the tour-detail sections it was written for, and at
-   (0,2,0) that beat the base rule everywhere — including here. This restores
-   the centring for this one section only: `.td-testimonials-section` is used on
-   the homepage and nowhere else, and at (0,3,0) it outranks the theme rule
-   without depending on source order. Every other `.td-section__title` (contact
-   form, tour gallery/overview/booking, pricing) keeps its left alignment. */
-.theme-ivory .td-testimonials-section .td-section__title {
-  text-align: center;
 }
 
 /* A destination tile whose photograph has not been supplied yet. `.tour-tile-
@@ -2219,14 +2208,6 @@
 .theme-ivory .td-book-inline h2,
 .theme-ivory .td-book-inline h3 {
   color: var(--ink);
-}
-
-/* Legacy mid-grey secondary text, below AA on white. The theme has a token for
-   exactly this role. */
-.theme-ivory .td-testimonial__location,
-.theme-ivory .testimonial-location,
-.theme-ivory .td-testimonial__meta {
-  color: var(--sub);
 }
 
 
