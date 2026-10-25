@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react'
 import useT from '../../i18n/useT'
+import useLang from '../../i18n/useLang'
+import { countryOptions, countryName, isCountryCode } from '../../data/countries'
 import useWeb3Form from '../../hooks/useWeb3Form'
 import { WEB3FORMS_KEY, CONTACT_EMAIL } from '../../config'
 import TurnstileWidget from './TurnstileWidget'
@@ -27,9 +29,15 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 // visitor's own fields).
 export default function TourInquiryForm({ tourTitle, tourSlug = '', selectedPackage, hideAccommodationType = false, departures = null, travelerRange = null }) {
   const t = useT()
+  const { lang } = useLang()
+  // Built after mount: Intl.DisplayNames output can differ between the
+  // prerender (Node) and the visitor's browser, so the server HTML carries only
+  // the placeholder option and hydration cannot mismatch.
+  const [countries, setCountries] = useState([])
+  useEffect(() => { setCountries(countryOptions(lang)) }, [lang])
   const { status, submit } = useWeb3Form()
   const [form, setForm] = useState({
-    salutation: '', firstName: '', lastName: '', email: '', phone: '',
+    salutation: '', firstName: '', lastName: '', email: '', phone: '', citizenship: '',
     travelers: '', startDate: '', endDate: '', departure: '', accommodation: '', message: '',
     botcheck: '',
   })
@@ -63,6 +71,7 @@ export default function TourInquiryForm({ tourTitle, tourSlug = '', selectedPack
     if (!form.firstName.trim()) errs.push(t('form.errors.firstName'))
     if (!form.lastName.trim()) errs.push(t('form.errors.lastName'))
     if (!EMAIL_RE.test(form.email.trim())) errs.push(t('form.errors.email'))
+    if (!isCountryCode(form.citizenship)) errs.push(t('form.errors.citizenship'))
     if (departures && !form.departure) errs.push(t('form.errors.departure'))
     if (travelerRange && !form.travelers) errs.push(t('form.errors.travelers'))
     return errs
@@ -83,6 +92,9 @@ export default function TourInquiryForm({ tourTitle, tourSlug = '', selectedPack
       last_name: form.lastName.trim(),
       email: form.email.trim(),
       phone: form.phone.trim(),
+      // Name in English for the team reading the email, plus the ISO code.
+      citizenship: countryName(form.citizenship, 'en'),
+      citizenship_code: form.citizenship,
       travelers: form.travelers,
       // A scheduled group tour submits the chosen departure (human label plus
       // the canonical ISO window) instead of free start/end dates, which it
@@ -182,6 +194,14 @@ export default function TourInquiryForm({ tourTitle, tourSlug = '', selectedPack
           <label htmlFor="ti-phone">{t('form.whatsapp')}</label>
           <input id="ti-phone" name="phone" type="tel" autoComplete="tel" inputMode="tel" value={form.phone} onChange={set('phone')} />
         </div>
+      </div>
+
+      <div className="td-form__group">
+        <label htmlFor="ti-citizenship">{t('form.citizenship')} *</label>
+        <select id="ti-citizenship" name="citizenship" required autoComplete="off" value={form.citizenship} onChange={set('citizenship')} aria-invalid={invalid(!isCountryCode(form.citizenship))} aria-describedby={describedBy(!isCountryCode(form.citizenship))}>
+          <option value="">{t('form.citizenshipPlaceholder')}</option>
+          {countries.map((c) => <option key={c.code} value={c.code}>{c.name}</option>)}
+        </select>
       </div>
 
       {departures ? (
