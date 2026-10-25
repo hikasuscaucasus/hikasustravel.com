@@ -9265,6 +9265,19 @@ select option:checked {
   overflow-wrap: break-word;
 }
 
+.tc__badge-two {
+  display: block;
+  margin-top: 2px;
+  text-transform: none;
+  letter-spacing: 0.2px;
+  font-weight: 600;
+}
+
+.tour-tile-overlay__price--two {
+  margin-top: 0;
+  font-weight: 500;
+}
+
 .tour-tile-overlay__price {
   margin-top: 4px;
   font-weight: 600;
@@ -12148,6 +12161,12 @@ img[data-lightbox] {
   padding: 0 var(--indent);
 }
 .dest-hub-grid--quad .dest-hub-card__image { height: 220px; }
+/* Homepage "Where do you want to go?" cards: on a phone the cover is a strip,
+   not a screen-high photo, so the featured tours below come into view sooner. */
+@media (max-width: 640px) {
+  .dest-hub-grid--home .dest-hub-card__image { height: 110px; margin-bottom: 12px; }
+  .dest-hub-grid--home { gap: 14px; }
+}
 @media (max-width: 640px) {
   .dest-hub-grid--quad { grid-template-columns: 1fr; }
   .dest-hub-grid--quad .dest-hub-card__image { height: 200px; }

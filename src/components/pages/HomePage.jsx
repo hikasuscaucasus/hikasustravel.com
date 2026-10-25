@@ -226,7 +226,7 @@ export default function HomePage() {
             <h2>{t('home.whereToGoTitle')}</h2>
           </FadeUp>
           <FadeUp>
-            <ul className="dest-hub-grid">
+            <ul className="dest-hub-grid dest-hub-grid--home">
               <li>
                 <DestinationCard
                   name={t('nav.destinations.georgia')}

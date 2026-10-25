@@ -3,7 +3,7 @@ import FadeUp from './FadeUp'
 import LocaleLink from '../../i18n/LocaleLink'
 import useT from '../../i18n/useT'
 import { PRIVATE_TOUR_CATEGORIES, CATEGORY_LABEL_KEYS } from '../../data/tourCategories'
-import { formatPrice } from './pricingUtils'
+import { formatPrice, getEntryPrices } from './pricingUtils'
 
 function getClassicPrice(pricing) {
   if (!pricing || pricing.length === 0) return null
@@ -22,6 +22,9 @@ export default function TourCard({ tour, translation, index = 0, basePath = '/pr
   const description = tt?.listingDescription || tt?.description || tour.listingDescription || tour.description
   const tourUrl = `${basePath}/${tour.slug}`
   const classicPrice = getClassicPrice(tour.pricing)
+  // Two-traveler price of the same tier the badge quotes (private tours only).
+  const entry = classicPrice && tour.type !== 'group' ? getEntryPrices(tour.pricing) : null
+  const twoPrice = entry?.basisFour && entry.from === classicPrice ? entry.two : null
   // First (primary) category only — a tour may belong to several, but the
   // card shows one chip, not the full taxonomy.
   const primaryCategory = PRIVATE_TOUR_CATEGORIES[tour.slug]?.[0]
@@ -39,7 +42,8 @@ export default function TourCard({ tour, translation, index = 0, basePath = '/pr
             {tour.days && (
               <span className="tc__badge">
                 {tour.days} {t('tour.days')}
-                {classicPrice && <> / {t('sidebar.startingFrom')} {formatPrice(classicPrice)}</>}
+                {classicPrice && <> / {t('sidebar.startingFrom')} {formatPrice(classicPrice)}{twoPrice && ` ${t('pricing.fourTravelers')}`}</>}
+                {twoPrice && <span className="tc__badge-two">{t('pricing.forTwoTravelers', { price: formatPrice(twoPrice) })}</span>}
               </span>
             )}
           </CardImage>

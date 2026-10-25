@@ -2,7 +2,7 @@ import { tours } from '../../data/tours'
 import LocaleLink from '../../i18n/LocaleLink'
 import useLang from '../../i18n/useLang'
 import asset from '../../utils/basePath'
-import { getStartingPrice, formatPrice } from './pricingUtils'
+import { getEntryPrices, formatPrice } from './pricingUtils'
 
 // The one private tour the Travel Blogs index promotes. Everything the module
 // shows about it — title, photo, length, season, price — is read from the
@@ -36,7 +36,8 @@ export default function BlogTourPromo({ t, tourTranslations }) {
 
   const tt = tourTranslations?.[tour.slug]
   const title = tt?.title || tour.title
-  const startingPrice = getStartingPrice(tour.pricing)
+  const entry = getEntryPrices(tour.pricing)
+  const startingPrice = entry.from
   const season = tour.seasonality === 'seasonal' ? t('tour.seasonalitySeasonal') : null
   const alt = tour.alt?.[lang] || tour.alt?.en || ''
 
@@ -45,7 +46,10 @@ export default function BlogTourPromo({ t, tourTranslations }) {
     tf(t, 'blog.tourPromo.private', 'Private tour'),
     season,
     startingPrice
-      ? `${t('sidebar.startingFrom')} ${formatPrice(startingPrice)} ${t('pricing.perPerson')}`
+      ? `${t('sidebar.startingFrom')} ${formatPrice(startingPrice)} ${t('pricing.perPerson')}${entry.basisFour ? ` ${t('pricing.fourTravelers')}` : ''}`
+      : null,
+    entry.basisFour && entry.two
+      ? t('pricing.forTwoTravelers', { price: formatPrice(entry.two) })
       : null,
   ].filter(Boolean)
 

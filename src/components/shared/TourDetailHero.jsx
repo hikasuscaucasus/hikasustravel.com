@@ -133,7 +133,7 @@ function SunIcon() {
   )
 }
 
-export default function TourDetailHero({ tour, translatedTitle, heroH1, isGroup, sites, startingPrice }) {
+export default function TourDetailHero({ tour, translatedTitle, heroH1, isGroup, sites, startingPrice, entryPrices }) {
   const t = useT()
   const { lang } = useLang()
   const [sitesOpen, setSitesOpen] = useState(false)
@@ -219,6 +219,13 @@ export default function TourDetailHero({ tour, translatedTitle, heroH1, isGroup,
                 <TagIcon />
                 {!isGroup && `${t('sidebar.startingFrom')} `}
                 {formatPrice(startingPrice)} {t('pricing.perPerson')}
+                {entryPrices?.basisFour && ` ${t('pricing.fourTravelers')}`}
+              </span>
+            )}
+            {entryPrices?.basisFour && entryPrices.two > 0 && (
+              <span className="iv-chip iv-chip--price">
+                <TagIcon />
+                {t('pricing.forTwoTravelers', { price: formatPrice(entryPrices.two) })}
               </span>
             )}
             {sitesLabel && (

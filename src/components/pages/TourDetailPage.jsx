@@ -5,7 +5,10 @@ import TourSectionNav from '../shared/TourSectionNav'
 import FadeUp from '../shared/FadeUp'
 import Accordion from '../shared/Accordion'
 import { AccommodationSection, PriceSection } from '../shared/PricingGrid'
-import { getStartingPrice, formatPrice } from '../shared/pricingUtils'
+import { getStartingPrice, getEntryPrices, formatPrice } from '../shared/pricingUtils'
+import TourBookingInfo from '../shared/TourBookingInfo'
+import useWhatsAppHref from '../../hooks/useWhatsAppHref'
+import { trackWhatsAppClick } from '../../utils/whatsapp'
 import { buildTourSeo } from '../../utils/tourSeo'
 import IncludedNotIncluded from '../shared/IncludedNotIncluded'
 import TourInquiryForm from '../shared/TourInquiryForm'
@@ -53,6 +56,9 @@ export default function TourDetailPage() {
   // same graph at build time — see that module for why it is not inline here.
   const tourSeo = useMemo(() => buildTourSeo({ tour, tt, lang }), [tour, tt, lang])
   useSEO({ ...tourSeo, lang })
+  // The same prefilled link the floating bubble uses on this page; the mobile
+  // bar's WhatsApp button below reuses it.
+  const whatsApp = useWhatsAppHref()
 
   const navSections = useMemo(() => {
     if (!tour) return []
@@ -201,6 +207,10 @@ export default function TourDetailPage() {
   const startingPrice = isGroup
     ? (tour.pricePerPerson ? parseFloat(tour.pricePerPerson.replace(/[^0-9.]/g, '')) : null)
     : getStartingPrice(tour.pricing)
+  // Private tours only: the same entry-tier row set, read for two travelers,
+  // and whether the starting price is the four-traveler figure. A fixed-price
+  // group tour has neither (its one price is per person, whatever the group).
+  const entryPrices = isGroup || !tour.pricing ? null : getEntryPrices(tour.pricing)
 
   // Accommodation and Pricing are built here rather than inline because a group
   // tour renders them as one row (see below); every other tour renders exactly
@@ -264,6 +274,7 @@ export default function TourDetailPage() {
         /* Same number as the mobile booking bar and the pricing cards —
            derived once, here, so the hero can never quote a stale price. */
         startingPrice={startingPrice}
+        entryPrices={entryPrices}
       />
 
       <TourSectionNav sections={navSections} />
@@ -397,9 +408,12 @@ export default function TourDetailPage() {
           other page types (city, region, site, blog, airport, the main FAQ
           page) still render their own FAQs with it. */}
 
-      {/* 8. Send inquiry */}
+      {/* 8. How booking works, then the inquiry form. The box is shared by
+          every private and group tour and sits straight above the form, so a
+          visitor reads the terms of the request they are about to send. */}
       <div className="td-layout">
         <div className="td-main">
+          <TourBookingInfo isGroup={isGroup} />
           <section id="book" className="td-section td-book-inline">
             <FadeUp>
               {/* A scheduled group tour is requested, not booked on the spot:
@@ -407,7 +421,7 @@ export default function TourDetailPage() {
                   with availability; the request is not yet a booking) and the
                   one trust line puts the operator and its real review page
                   next to the decision. Private tours keep their own copy. */}
-              <h2 className="td-section__title">{isGroup ? t('tour.requestThisTour') : t('tour.bookThisTour')}</h2>
+              <h2 className="td-section__title">{t('tour.requestThisTour')}</h2>
               <p className="td-section__subtitle">{isGroup ? t('form.groupIntro') : t('form.privateIntro')}</p>
               {isGroup && (
                 <p className="td-book__trust">
@@ -452,7 +466,7 @@ export default function TourDetailPage() {
       {/* Desktop sticky request bar — shows once #td-hero-cta (the hero's own
           CTA) scrolls out of view; inert ≤900px, where the mobile bar below
           already covers the same job. */}
-      <StickyRequestBar startingPrice={startingPrice} fixedPrice={fixedPrice} tourSlug={tour.slug} />
+      <StickyRequestBar startingPrice={startingPrice} fixedPrice={fixedPrice} basisFour={Boolean(entryPrices?.basisFour)} tourSlug={tour.slug} />
 
       {/* Mobile booking bar — CSS-gated to <=900px (see ivory.css), so it is
           inert on desktop. Shows the same starting price the pricing cards
@@ -463,7 +477,7 @@ export default function TourDetailPage() {
           <span className="iv-mobilebar__price">
             <span className="iv-mobilebar__amount">{formatPrice(startingPrice)}</span>
             <span className="iv-mobilebar__note">
-              {fixedPrice ? t('pricing.perPerson') : `${t('sidebar.startingFrom')} · ${t('pricing.perPerson')}`}
+              {fixedPrice ? t('pricing.perPerson') : `${t('sidebar.startingFrom')} · ${t('pricing.perPerson')}${entryPrices?.basisFour ? ` ${t('pricing.fourTravelers')}` : ''}`}
             </span>
           </span>
           {/* Same wording as the hero and the desktop bar: the form sends a
@@ -475,6 +489,21 @@ export default function TourDetailPage() {
             document.getElementById('book')?.scrollIntoView({ behavior: 'smooth' })
           }}>
             {t('tour.requestThisTour')}
+          </a>
+          {/* Secondary action: the page's own prefilled WhatsApp message.
+              The floating bubble is hidden while this bar is showing (see
+              ivory.css), so there is one WhatsApp control on a phone. */}
+          <a
+            href={whatsApp.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="iv-mobilebar__wa"
+            aria-label={t('a11y.whatsapp')}
+            onClick={() => trackWhatsAppClick('tour_mobile_bar', tour.slug)}
+          >
+            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.129 6.744 3.047 9.379L1.054 31.49l6.328-2.032C9.96 31.078 12.871 32 16.004 32 24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.335 22.594c-.39 1.1-1.932 2.013-3.168 2.28-.846.179-1.95.322-5.668-1.218-4.76-1.97-7.825-6.803-8.063-7.117-.228-.314-1.917-2.553-1.917-4.87 0-2.317 1.214-3.455 1.643-3.923.39-.428 1.024-.614 1.63-.614.195 0 .37.01.528.018.467.02.702.048 1.01.782.39.918 1.34 3.273 1.456 3.511.118.238.234.554.078.868-.148.322-.278.466-.516.738-.238.272-.464.48-.702.774-.22.256-.466.53-.196.998.272.467 1.21 1.996 2.598 3.233 1.785 1.59 3.287 2.082 3.754 2.32.467.237.742.197 1.014-.118.272-.314 1.166-1.356 1.476-1.823.302-.467.614-.39 1.032-.234.42.156 2.672 1.26 3.13 1.49.467.237.778.352.896.546.116.196.116 1.12-.274 2.22z" fill="currentColor" />
+            </svg>
           </a>
         </div>
       )}

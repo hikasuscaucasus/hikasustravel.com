@@ -104,6 +104,17 @@
   flex: 0 0 auto;
 }
 
+/* The price chips carry a basis ("(4 travelers)") and a comparison line; in
+   the longer languages that is wider than a phone, and a nowrap chip pushed
+   the whole page (and the fixed header and bar with it) sideways. They wrap
+   inside the chip instead. */
+.theme-ivory .iv-chip--price {
+  white-space: normal;
+  line-height: 1.3;
+  max-width: 100%;
+  border-radius: 18px;
+}
+
 .theme-ivory button.iv-chip {
   cursor: pointer;
   font-size: 13px;
@@ -1086,6 +1097,78 @@
   color: var(--ink);
 }
 
+/* --- How booking works (every tour page, just above the request form) ----- */
+
+.theme-ivory .td-bookinfo {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.theme-ivory .td-bookinfo__box {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  padding: 24px 28px;
+}
+
+.theme-ivory .td-bookinfo__box .td-section__title {
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+
+.theme-ivory .td-bookinfo__steps {
+  margin: 0 0 14px;
+  padding-left: 22px;
+}
+
+.theme-ivory .td-bookinfo__steps li {
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0 0 8px;
+  padding-left: 4px;
+}
+
+.theme-ivory .td-bookinfo__steps li::marker {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.theme-ivory .td-bookinfo__box p {
+  color: var(--ink);
+  font-size: 14px;
+  line-height: 1.65;
+  margin: 0 0 10px;
+  max-width: 760px;
+}
+
+.theme-ivory .td-bookinfo__box .td-bookinfo__terms {
+  margin: 14px 0 0;
+}
+
+.theme-ivory .td-bookinfo__terms a {
+  color: var(--linkc);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.theme-ivory .td-bookinfo__terms a:hover {
+  color: var(--accent);
+}
+
+.theme-ivory .td-bookinfo__terms a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+@media (max-width: 600px) {
+  .theme-ivory .td-bookinfo__box {
+    padding: 20px 18px;
+  }
+}
+
 /* --- Accommodation + Pricing row (group tours) -----------------------------
    Both blocks are short on a group tour, so from 1024px up they sit side by
    side as equal companions. This is a grid around the two existing sections
@@ -1194,6 +1277,11 @@
   display: none;
 }
 
+/* The WhatsApp button only exists inside the bar, which is itself phone-only. */
+.theme-ivory .iv-mobilebar__wa {
+  display: none;
+}
+
 /* --- Footer --------------------------------------------------------------- */
 
 .theme-ivory footer {
@@ -1265,25 +1353,67 @@
     font-size: 13px;
   }
 
-  /* Keep the page's own floating controls clear of the bar — and of each
-     other. Both were lifted to the same `bottom: 84px` on the same right
-     edge, so the Back-to-top pill painted directly over the WhatsApp button
-     (measured: a full 55x38 overlap at every width from 320 to 900, on every
-     page). WhatsApp is a primary contact channel, and on touch it was neither
-     visible nor tappable.
-
-     They stack instead: WhatsApp sits closest to the bar, Back-to-top rides
-     above it (84 + 55 button + 12 gap = 151), and both share one right edge
-     so the pair reads as a column rather than two stray controls. */
+  /* Floating controls on phones. The Back-to-top pill is dropped (the page
+     is a scroll and the browser has its own gesture for the top), and a
+     tour page, which has the bar above, carries its WhatsApp action inside
+     that bar instead of as a bubble stacked over it. Every other page keeps
+     the bubble at its normal corner. */
   .theme-ivory .backtotop {
-    bottom: 151px;
-    right: 20px;
+    display: none;
   }
 
   .theme-ivory .whatsapp-float {
-    bottom: 84px;
+    bottom: 20px;
     right: 20px;
   }
+
+  body:has(.iv-mobilebar) .whatsapp-float,
+  body.has-tour-stickybar .whatsapp-float {
+    display: none;
+  }
+
+  .theme-ivory .iv-mobilebar__price {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .theme-ivory .iv-mobilebar__wa {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: var(--chipr);
+    border: 1px solid #1a7f3c;
+    background: var(--surface);
+    color: #1a7f3c;
+  }
+
+  .theme-ivory .iv-mobilebar__wa svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .theme-ivory .iv-mobilebar__wa:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+}
+
+@media (max-width: 400px) {
+  .theme-ivory .iv-mobilebar {
+    gap: 8px;
+    padding: 10px 12px;
+  }
+
+  .theme-ivory .iv-mobilebar__cta {
+    padding: 10px 14px;
+    font-size: 12.5px;
+  }
+}
+
+@media (max-width: 900px) {
 
   .theme-ivory .td-book-inline {
     padding-bottom: 90px;
@@ -1347,6 +1477,18 @@
      up and down as the bar shows/hides on scroll. */
   body.has-tour-stickybar .whatsapp-float {
     bottom: 90px;
+  }
+}
+
+/* Tour pages, phones and small tablets: styles.css still offsets <main> by the
+   old 80px header (margin-top, at <=900px). The Ivory header is 64px and the
+   split hero clears it with its own padding (fixed header at <=600px) or sits
+   right under it (in-flow header above that), so the margin only added a
+   blank band above the hero photo. Scoped to pages whose <main> opens with the
+   tour hero; every other page keeps the offset it was tuned with. */
+@media (max-width: 900px) {
+  .theme-ivory main:has(> .td-hero--split) {
+    margin-top: 0;
   }
 }
 

@@ -17,7 +17,7 @@ import { trackEvent } from '../../utils/analytics'
  * SSR-safe: IntersectionObserver only runs inside useEffect, which never
  * executes during prerendering, so this renders nothing extra server-side.
  */
-export default function StickyRequestBar({ startingPrice, fixedPrice = false, tourSlug = '' }) {
+export default function StickyRequestBar({ startingPrice, fixedPrice = false, basisFour = false, tourSlug = '' }) {
   const t = useT()
   const [visible, setVisible] = useState(false)
 
@@ -49,7 +49,7 @@ export default function StickyRequestBar({ startingPrice, fixedPrice = false, to
     <div className={`iv-stickybar${visible ? ' iv-stickybar--visible' : ''}`}>
       <span className="iv-stickybar__price">
         <span className="iv-stickybar__amount">{formatPrice(startingPrice)}</span>
-        <span className="iv-stickybar__note">{fixedPrice ? t('pricing.perPerson') : `${t('sidebar.startingFrom')} · ${t('pricing.perPerson')}`}</span>
+        <span className="iv-stickybar__note">{fixedPrice ? t('pricing.perPerson') : `${t('sidebar.startingFrom')} · ${t('pricing.perPerson')}${basisFour ? ` ${t('pricing.fourTravelers')}` : ''}`}</span>
       </span>
       <a
         href="#book"

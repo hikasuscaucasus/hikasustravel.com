@@ -1,14 +1,18 @@
 import useT from '../../i18n/useT'
+import useWhatsAppHref from '../../hooks/useWhatsAppHref'
+import { trackWhatsAppClick } from '../../utils/whatsapp'
 
 export default function WhatsAppButton() {
   const t = useT()
+  const { href, tourSlug } = useWhatsAppHref()
   return (
     <a
-      href="https://wa.me/995551098077"
+      href={href}
       target="_blank"
       rel="noopener noreferrer"
       className="whatsapp-float"
       aria-label={t('a11y.whatsapp')}
+      onClick={() => trackWhatsAppClick('floating', tourSlug)}
     >
       <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
         <path

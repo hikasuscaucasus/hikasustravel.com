@@ -35,3 +35,24 @@ export function getStartingPrice(pricing) {
   if (prices.length === 0) return null
   return Math.min(...prices)
 }
+
+const TIER_KEYS = ['economy', 'midRange', 'luxury']
+
+/**
+ * The entry-tier comparison for a private tour, read from the same pricing
+ * table the price grid renders. `from` is getStartingPrice(); `basisFour` is
+ * true only when that figure really is the four-traveler price of its tier
+ * (so "(4 travelers)" is never printed for a number it does not describe);
+ * `two` is the two-traveler price of that SAME tier, or null when the table
+ * has no two-traveler row — nothing is derived or invented.
+ */
+export function getEntryPrices(pricing) {
+  const from = getStartingPrice(pricing)
+  if (!from) return { from: null, basisFour: false, two: null }
+  const rows = pricing.filter((r) => r.travelers !== 'Single Supplement')
+  const four = rows.find((r) => String(r.travelers) === '4')
+  const tier = four ? TIER_KEYS.find((k) => parsePrice(four[k]) === from) : null
+  if (!tier) return { from, basisFour: false, two: null }
+  const twoRow = rows.find((r) => String(r.travelers) === '2')
+  return { from, basisFour: true, two: twoRow ? parsePrice(twoRow[tier]) : null }
+}

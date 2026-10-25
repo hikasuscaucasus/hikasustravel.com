@@ -1,6 +1,6 @@
 import CardImage from './CardImage'
 import LocaleLink from '../../i18n/LocaleLink'
-import { formatPrice } from './pricingUtils'
+import { formatPrice, getEntryPrices } from './pricingUtils'
 
 // Extracted from HomePage.jsx so the country tour hubs (/tours/georgia etc.,
 // see CountryToursHubPage.jsx) can show the exact same tile — image, days,
@@ -11,6 +11,8 @@ export default function FeaturedTourTile({ tour, t, tourTranslations }) {
   const classicRow = tour.pricing?.find((r) => r.travelers === '4')
   const classicNum = classicRow ? parseFloat((classicRow.economy || '').replace(/[^0-9.]/g, '')) : NaN
   const priceFrom = !isNaN(classicNum) && classicNum > 0 ? formatPrice(classicNum) : null
+  const entry = priceFrom && tour.type !== 'group' ? getEntryPrices(tour.pricing) : null
+  const twoPrice = entry?.basisFour && entry.from === classicNum ? entry.two : null
   const basePath = tour.type === 'group' ? 'group-tours' : 'private-tours'
   return (
     <div className="tour-tile">
@@ -24,7 +26,14 @@ export default function FeaturedTourTile({ tour, t, tourTranslations }) {
           <h3>{tt?.title || tour.title}</h3>
           <p>{tour.days} {t('tour.days')}</p>
           {priceFrom && (
-            <p className="tour-tile-overlay__price">{t('tour.pricesFrom', { price: priceFrom })}</p>
+            <p className="tour-tile-overlay__price">
+              {t('tour.pricesFrom', { price: priceFrom })}{twoPrice && ` ${t('pricing.fourTravelers')}`}
+            </p>
+          )}
+          {twoPrice && (
+            <p className="tour-tile-overlay__price tour-tile-overlay__price--two">
+              {t('pricing.forTwoTravelers', { price: formatPrice(twoPrice) })}
+            </p>
           )}
         </div>
       </LocaleLink>
