@@ -251,17 +251,8 @@ for (const file of files) {
   })
 
   // --- 11b. no euro sign on a tour sales surface ---------------------------
-  // The one sanctioned euro sign: the booking box ("How booking works", a
-  // shared component) quotes the Terms & Conditions' deposit minimum, which is
-  // contractually "€200 or the USD equivalent". It is a legal term, not a
-  // sales price, so only text inside .td-bookinfo is exempt.
-  const bookInfoText = new Set()
-  $('.td-bookinfo').find('*').contents().each((_, node) => {
-    if (node.type === 'text') bookInfoText.add(node.data)
-  })
-  const euroText = visible.filter((t) => /€/.test(t) && !bookInfoText.has(t))
-  if (TOUR_PRICE_PAGE.test(file) && euroText.length > 0) {
-    add(file, 'tour-page-euro-sign', euroText[0].replace(/\s+/g, ' ').slice(0, 80))
+  if (TOUR_PRICE_PAGE.test(file) && visible.some((t) => /€/.test(t))) {
+    add(file, 'tour-page-euro-sign', (visible.find((t) => /€/.test(t)) || '').replace(/\s+/g, ' ').slice(0, 80))
   }
 
   // --- 6. heading order ----------------------------------------------------
