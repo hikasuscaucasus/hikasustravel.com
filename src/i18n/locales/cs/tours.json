@@ -2134,5 +2134,111 @@
             "Další hotelové výdaje;",
             "Cestovní pojištění."
         ]
+    },
+    "7-day-azerbaijan-tour": {
+        "title": "7denní zájezd po Ázerbájdžánu: Baku, Gobustan, Šeki a Gabala",
+        "seoTitle": "7denní zájezd po Ázerbájdžánu: Baku, Gobustan, Šeki a Gabala",
+        "description": "Sedm dní po nejznámějších místech Ázerbájdžánu, od Starého Města a moderního panoramatu Baku přes chrám ohně a středověkou pevnost na Abšeronu až po městečko Šeki na Hedvábné stezce a zelené kopce kolem Gabaly. Tento soukromý zájezd začíná a končí v hlavním městě.\n\nPrvní tři noci strávíte v Baku s výletem k pravěkým skalním rytinám v Gobustanu, k bahenním sopkám, do chrámu ohně Ateshgah a k pevnosti Ramana na poloostrově Abšeron. Poté se vydáte do vnitrozemí — přes Šamachi a vesnici měděných kovářů Lahij — do Šeki, města karavanserájů v podhůří Kavkazu. Odtud cesta pokračuje do Gabaly, kdysi hlavního města Kavkazské Albánie, než se vrátíte do Baku.\n\nJe to cesta postavená na kontrastu: panorama Baku 21. století proti dřevěným balkonům Šeki a měděným dílnám v Lahiji. Dny ve vnitrozemí obnášejí poměrně dost jízdy, ale protože je zájezd soukromý, zastávky i tempo si můžete upravit.",
+        "metaDescription": "Soukromý 7denní zájezd po Ázerbájdžánu z Baku: Gobustan, bahenní sopky, Ateshgah, Ramana, Šamachi, Lahij, Šeki a Gabala — hotely, doprava a průvodce v ceně.",
+        "listingDescription": "Soukromá 7denní trasa z Baku do Gobustanu, na poloostrov Abšeron, do Šamachi, Lahije, Šeki a Gabaly, s chrámem ohně Ateshgah, Chánovým palácem v Šeki a lanovkou Tufandag.",
+        "itinerary": [
+            {
+                "title": "Den 1: Příjezd do Baku",
+                "content": "<p>Na mezinárodním letišti Hejdara Alijeva vás přivítáme a odvezeme do hotelu. Check-in je od 14:00. Zbytek dne je volný. Nocleh v Baku.</p><ul><li>Příjezd na mezinárodní letiště Hejdara Alijeva;</li><li>Transfer do hotelu a check-in;</li><li>Volný čas v Baku;</li><li>Nocleh v Baku.</li><li><strong>Doba jízdy:</strong> 30 minut</li></ul>"
+            },
+            {
+                "title": "Den 2: Prohlídka Baku",
+                "content": "<p>Prohlídka začíná v Icherisheher, opevněném Starém Městě Baku zapsaném na seznamu UNESCO, s úzkými uličkami, Panenskou věží vyčnívající nad střechami a Palácem šírvánšáhů, sídlem středověkých vládců oblasti. Odtud pojedete do Centra Hejdara Alijeva, plynulé bílé budovy architektky Zahy Hadid, která se stala jednou z nejznámějších moderních dominant Baku, a poté se vrátíte projít novější částí města — Náměstím fontán, přímořským bulvárem Baku Boulevard u Kaspického moře a s výhledem na tři skleněné věže Flame Towers, které se staly symbolem panoramatu města. Den zakončí večeře s ázerbájdžánskou kuchyní ve Starém Městě.</p><ul><li>Procházka Icherisheher (památka UNESCO);</li><li>Foto zastávka u Panenské věže;</li><li>Prohlídka Paláce šírvánšáhů;</li><li>Prohlídka Centra Hejdara Alijeva;</li><li>Procházka po Baku Boulevard;</li><li>Pohled na Flame Towers;</li><li>Večeře v Baku;</li><li>Nocleh v Baku.</li><li><strong>Doba trvání prohlídky:</strong> 6-7 hodin</li><li><strong>Doba jízdy:</strong> 45 minut</li></ul>"
+            },
+            {
+                "title": "Den 3: Baku – Gobustan – Bahenní sopky – Ateshgah – pevnost Ramana – Baku",
+                "content": "<p>Den ve znamení podivného a prastarého jižně od města. Národní park Gobustan, památka UNESCO, ukrývá tisíce skalních rytin staré zhruba 40 000 let, vyrytých do holého kamenného svahu. Poblíž jsou bahenní sopky, malé kužely, z nichž místo lávy bublá a syčí studené šedé bahno. Existují dva způsoby, jak je vidět: nový komplex bahenních sopek s bezpečnou a pohodlnou cestou, ale s méně sopkami, nebo tradiční lokalita s více sopkami a dramatičtější krajinou, kam se jede prašnou a hrbolatou cestou v sovětské Nivě. Odpoledne navštívíte Ateshgah, opevněný chrám ohně postavený kolem přirozeného plamene zemního plynu, který po staletí přitahuje zoroastrijské, hinduistické i sikhské poutníky, a pevnost Ramana, středověkou pevnost mezi tradičními kamennými domy vesnice na poloostrově Abšeron, známou svou autentickou místní atmosférou. Návrat do Baku na nocleh.</p><ul><li>Návštěva národního parku Gobustan (památka UNESCO);</li><li>Bahenní sopky v novém komplexu nebo na tradiční lokalitě v Nivě;</li><li>Návštěva chrámu ohně Ateshgah;</li><li>Návštěva pevnosti Ramana;</li><li>Nocleh v Baku.</li><li><strong>Doba trvání prohlídky:</strong> 7-8 hodin</li><li><strong>Doba jízdy:</strong> 3 hodiny</li></ul>"
+            },
+            {
+                "title": "Den 4: Baku – Šamachi – Lahij – Šeki",
+                "content": "<p>Dnes jedete na západ, do podhůří Velkého Kavkazu. Nejdříve se zastavíte v Šamachi, kdysi hlavním městě středověkého chanátu, u mešity Džuma, poté vystoupáte do hor do Lahije, vesnice s dlážděnými uličkami, která se téměř celá točí kolem mědi — po staletí její kováři zásobovali celý region nádobím a nářadím a jejich dílny dodnes lemují hlavní ulici, kde se stále kuje a prodává jako odjakživa. Odtud cesta pokračuje do Šeki, městečka karavanserájů a řemeslníků ukrytého v kopcích, kde přenocujete.</p><ul><li>Zastávka v Šamachi a mešita Džuma;</li><li>Návštěva vesnice měděných kovářů Lahij;</li><li>Nocleh v Šeki.</li><li><strong>Doba trvání prohlídky:</strong> 8-9 hodin</li><li><strong>Doba jízdy:</strong> 5-6 hodin</li></ul>"
+            },
+            {
+                "title": "Den 5: Prohlídka Šeki – Gabala",
+                "content": "<p>Dopoledne v okolí Šeki, než pojedete dál. Navštívíte Chánův palác, malou letní rezidenci z 18. století s vitrážovými okny a malovanými stěnami, při jejíž stavbě nebyl použit jediný hřebík, zapsanou na seznam UNESCO v roce 2019, a jeden ze starých kamenných karavanserájů, které kdysi poskytovaly úkryt obchodníkům na Hedvábné stezce. Zastávka na bazaru v Šeki, živém místním trhu plném čerstvých produktů, koření, tradičních sladkostí a každodenního života, návštěvu doplní. Odpoledne se vydáte do Gabaly, kdysi hlavního města Kavkazské Albánie a dnes zeleného letoviska na úpatí hor, kde přenocujete.</p><ul><li>Návštěva Chánova paláce v Šeki (památka UNESCO);</li><li>Návštěva karavanserája v Šeki;</li><li>Návštěva bazaru v Šeki;</li><li>Přejezd do Gabaly;</li><li>Nocleh v Gabale.</li><li><strong>Doba trvání prohlídky:</strong> 6-7 hodin</li><li><strong>Doba jízdy:</strong> 2 hodiny</li></ul>"
+            },
+            {
+                "title": "Den 6: Gabala – lanovka Tufandag – Baku",
+                "content": "<p>Dopoledne v kopcích před cestou zpět do hlavního města. Lanovka Tufandag vás z Gabaly vyveze do hor a nabídne široký výhled na lesy a rovinu pod nimi. Poté následuje dlouhá cesta napříč zemí zpět do Baku na poslední noc.</p><ul><li>Jízda lanovkou Tufandag;</li><li>Cesta zpět do Baku;</li><li>Nocleh v Baku.</li><li><strong>Doba trvání prohlídky:</strong> 6-7 hodin</li><li><strong>Doba jízdy:</strong> 4-4,5 hodiny</li></ul>"
+            },
+            {
+                "title": "Den 7: Odjezd z Baku",
+                "content": "<p>Check-out z hotelu do 12:00. Ve stanovenou dobu vás odvezeme na mezinárodní letiště Hejdara Alijeva k odletu.</p><ul><li>Check-out z hotelu do 12:00;</li><li>Transfer na mezinárodní letiště Hejdara Alijeva;</li><li>Odjezd.</li><li><strong>Doba jízdy:</strong> 30 minut</li></ul>"
+            }
+        ],
+        "included": [
+            "Ubytování ve dvoulůžkových pokojích se snídaní;",
+            "Transfery dle itineráře;",
+            "Anglicky mluvící průvodce po celou dobu zájezdu;",
+            "Vstupné;",
+            "Večeře v Baku 2. den;",
+            "Neperlivá voda."
+        ],
+        "notIncluded": [
+            "Obědy a večeře neuvedené v itineráři;",
+            "Poplatky za vízum do Ázerbájdžánu, je-li potřeba;",
+            "Další hotelové výdaje;",
+            "Cestovní pojištění."
+        ]
+    },
+    "8-day-azerbaijan-tour": {
+        "title": "8denní zájezd po Ázerbájdžánu: Baku, Quba a Khinalig, Gobustan, Šeki a Gabala",
+        "seoTitle": "8denní zájezd po Ázerbájdžánu: Baku, Quba a Khinalig, Gobustan, Šeki a Gabala",
+        "description": "Osm dní po nejznámějších místech Ázerbájdžánu, od Starého Města a moderního panoramatu Baku přes horskou vesnici Khinalig, chrám ohně a středověkou pevnost na Abšeronu až po městečko Šeki na Hedvábné stezce a zelené kopce kolem Gabaly. Tento soukromý zájezd začíná a končí v hlavním městě.\n\nPrvních pět nocí strávíte v Baku s výlety ke starobylým skalním rytinám v Gobustanu, k bahenním sopkám, do chrámu ohně Ateshgah a k pevnosti Ramana na poloostrově Abšeron a na sever do oblasti Quba, k komunitě horských Židů v Červené vesnici a do odlehlé horské vesnice Khinalig. Poté se vydáte do vnitrozemí — přes Šamachi a vesnici měděných kovářů Lahij — do Šeki, města karavanserájů v podhůří Kavkazu, a dále do Gabaly, než se vrátíte do Baku.\n\nJe to cesta postavená na kontrastu: panorama Baku 21. století proti kamenným domům Khinaligu a dřevěným balkonům Šeki. Několik dnů obnáší hodně jízdy, ale protože je zájezd soukromý, zastávky i tempo si můžete upravit.",
+        "metaDescription": "Soukromý 8denní zájezd po Ázerbájdžánu z Baku: Gobustan, Ateshgah, Quba, Červená vesnice, Khinalig, Šamachi, Lahij, Šeki a Gabala — hotely, doprava a průvodce v ceně.",
+        "listingDescription": "Soukromá 8denní trasa z Baku do Gobustanu a na Abšeron, do oblasti Quba s Červenou vesnicí a Khinaligem, poté přes Šamachi a Lahij do Šeki a Gabaly, zakončená lanovkou Tufandag.",
+        "itinerary": [
+            {
+                "title": "Den 1: Příjezd do Baku",
+                "content": "<p>Na mezinárodním letišti Hejdara Alijeva vás přivítáme a odvezeme do hotelu. Check-in je od 14:00. Zbytek dne je volný. Nocleh v Baku.</p><ul><li>Příjezd na mezinárodní letiště Hejdara Alijeva;</li><li>Transfer do hotelu a check-in;</li><li>Volný čas v Baku;</li><li>Nocleh v Baku.</li><li><strong>Doba jízdy:</strong> 30 minut</li></ul>"
+            },
+            {
+                "title": "Den 2: Prohlídka Baku",
+                "content": "<p>Prohlídka začíná v Icherisheher, opevněném Starém Městě Baku zapsaném na seznamu UNESCO, s úzkými uličkami, Panenskou věží vyčnívající nad střechami a Palácem šírvánšáhů, sídlem středověkých vládců oblasti. Odtud pojedete do Centra Hejdara Alijeva, plynulé bílé budovy architektky Zahy Hadid, která se stala jednou z nejznámějších moderních dominant Baku, a poté se vrátíte projít novější částí města — Náměstím fontán, přímořským bulvárem Baku Boulevard u Kaspického moře a s výhledem na tři skleněné věže Flame Towers, které se staly symbolem panoramatu města. Den zakončí večeře s ázerbájdžánskou kuchyní ve Starém Městě.</p><ul><li>Procházka Icherisheher (památka UNESCO);</li><li>Foto zastávka u Panenské věže;</li><li>Prohlídka Paláce šírvánšáhů;</li><li>Prohlídka Centra Hejdara Alijeva;</li><li>Procházka po Baku Boulevard;</li><li>Pohled na Flame Towers;</li><li>Večeře v Baku;</li><li>Nocleh v Baku.</li><li><strong>Doba trvání prohlídky:</strong> 6-7 hodin</li><li><strong>Doba jízdy:</strong> 45 minut</li></ul>"
+            },
+            {
+                "title": "Den 3: Baku – Gobustan – Bahenní sopky – Ateshgah – pevnost Ramana – Baku",
+                "content": "<p>Den ve znamení podivného a prastarého jižně od města. Národní park Gobustan, památka UNESCO, ukrývá tisíce skalních rytin staré zhruba 40 000 let, vyrytých do holého kamenného svahu. Poblíž jsou bahenní sopky, malé kužely, z nichž místo lávy bublá a syčí studené šedé bahno. Existují dva způsoby, jak je vidět: nový komplex bahenních sopek s bezpečnou a pohodlnou cestou, ale s méně sopkami, nebo tradiční lokalita s více sopkami a dramatičtější krajinou, kam se jede prašnou a hrbolatou cestou v sovětské Nivě. Odpoledne navštívíte Ateshgah, opevněný chrám ohně postavený kolem přirozeného plamene zemního plynu, který po staletí přitahuje zoroastrijské, hinduistické i sikhské poutníky, a pevnost Ramana, středověkou pevnost mezi tradičními kamennými domy vesnice na poloostrově Abšeron, známou svou autentickou místní atmosférou. Návrat do Baku na nocleh.</p><ul><li>Návštěva národního parku Gobustan (památka UNESCO);</li><li>Bahenní sopky v novém komplexu nebo na tradiční lokalitě v Nivě;</li><li>Návštěva chrámu ohně Ateshgah;</li><li>Návštěva pevnosti Ramana;</li><li>Nocleh v Baku.</li><li><strong>Doba trvání prohlídky:</strong> 7-8 hodin</li><li><strong>Doba jízdy:</strong> 3 hodiny</li></ul>"
+            },
+            {
+                "title": "Den 4: Baku – Quba – Qırmızı Qəsəbə – Khinalig – Baku",
+                "content": "<p>Dnes jedete na sever, do hor oblasti Quba. Vyjedete údolím řeky Gudyalchay do Quby a poté do Qırmızı Qəsəbə — Červené vesnice —, domova jedné z mála zbývajících komunit horských Židů, s návštěvou Muzea horských Židů a historické synagogy. Odtud cesta pokračuje do Khinaligu, jedné z nejvýše položených a nejodlehlejších vesnic Ázerbájdžánu, jejíž kamenné domy stojí mezi vrcholky Velkého Kavkazu, s výhledy do kaňonu Gudyalchay cestou. Večer se vrátíte do Baku.</p><ul><li>Jízda do Quby údolím Gudyalchay;</li><li>Návštěva Qırmızı Qəsəbə (Červená vesnice) a Muzea horských Židů;</li><li>Návštěva historické synagogy;</li><li>Jízda do vesnice Khinalig;</li><li>Nocleg v Baku.</li><li><strong>Doba trvání prohlídky:</strong> 10-11 hodin</li><li><strong>Doba jízdy:</strong> 6-7 hodin</li></ul>"
+            },
+            {
+                "title": "Den 5: Baku – Šamachi – Lahij – Šeki",
+                "content": "<p>Dnes jedete na západ, do podhůří Velkého Kavkazu. Nejdříve se zastavíte v Šamachi, kdysi hlavním městě středověkého chanátu, u mešity Džuma, poté vystoupáte do hor do Lahije, vesnice s dlážděnými uličkami, která se téměř celá točí kolem mědi — po staletí její kováři zásobovali celý region nádobím a nářadím a jejich dílny dodnes lemují hlavní ulici, kde se stále kuje a prodává jako odjakživa. Odtud cesta pokračuje do Šeki, městečka karavanserájů a řemeslníků ukrytého v kopcích, kde přenocujete.</p><ul><li>Zastávka v Šamachi a mešita Džuma;</li><li>Návštěva vesnice měděných kovářů Lahij;</li><li>Nocleh v Šeki.</li><li><strong>Doba trvání prohlídky:</strong> 8-9 hodin</li><li><strong>Doba jízdy:</strong> 5-6 hodin</li></ul>"
+            },
+            {
+                "title": "Den 6: Prohlídka Šeki – Gabala",
+                "content": "<p>Dopoledne v okolí Šeki, než pojedete dál. Navštívíte Chánův palác, malou letní rezidenci z 18. století s vitrážovými okny a malovanými stěnami, při jejíž stavbě nebyl použit jediný hřebík, zapsanou na seznam UNESCO v roce 2019, a jeden ze starých kamenných karavanserájů, které kdysi poskytovaly úkryt obchodníkům na Hedvábné stezce. Zastávka na bazaru v Šeki, živém místním trhu plném čerstvých produktů, koření, tradičních sladkostí a každodenního života, návštěvu doplní. Odpoledne se vydáte do Gabaly, kdysi hlavního města Kavkazské Albánie a dnes zeleného letoviska na úpatí hor, kde přenocujete.</p><ul><li>Návštěva Chánova paláce v Šeki (památka UNESCO);</li><li>Návštěva karavanserája v Šeki;</li><li>Návštěva bazaru v Šeki;</li><li>Přejezd do Gabaly;</li><li>Nocleh v Gabale.</li><li><strong>Doba trvání prohlídky:</strong> 6-7 hodin</li><li><strong>Doba jízdy:</strong> 2 hodiny</li></ul>"
+            },
+            {
+                "title": "Den 7: Gabala – lanovka Tufandag – Baku",
+                "content": "<p>Dopoledne v kopcích před cestou zpět do hlavního města. Lanovka Tufandag vás z Gabaly vyveze do hor a nabídne široký výhled na lesy a rovinu pod nimi. Poté následuje dlouhá cesta napříč zemí zpět do Baku na poslední noc.</p><ul><li>Jízda lanovkou Tufandag;</li><li>Cesta zpět do Baku;</li><li>Nocleh v Baku.</li><li><strong>Doba trvání prohlídky:</strong> 6-7 hodin</li><li><strong>Doba jízdy:</strong> 4-4,5 hodiny</li></ul>"
+            },
+            {
+                "title": "Den 8: Odjezd z Baku",
+                "content": "<p>Check-out z hotelu do 12:00. Ve stanovenou dobu vás odvezeme na mezinárodní letiště Hejdara Alijeva k odletu.</p><ul><li>Check-out z hotelu do 12:00;</li><li>Transfer na mezinárodní letiště Hejdara Alijeva;</li><li>Odjezd.</li><li><strong>Doba jízdy:</strong> 30 minut</li></ul>"
+            }
+        ],
+        "included": [
+            "Ubytování ve dvoulůžkových pokojích se snídaní;",
+            "Transfery dle itineráře;",
+            "Anglicky mluvící průvodce po celou dobu zájezdu;",
+            "Vstupné;",
+            "Večeře v Baku 2. den;",
+            "Neperlivá voda."
+        ],
+        "notIncluded": [
+            "Obědy a večeře neuvedené v itineráři;",
+            "Poplatky za vízum do Ázerbájdžánu, je-li potřeba;",
+            "Další hotelové výdaje;",
+            "Cestovní pojištění."
+        ]
     }
 }

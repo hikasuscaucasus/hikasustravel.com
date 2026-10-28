@@ -30,6 +30,26 @@
         { "travelers": "3", "luxury": "3804", "midRange": "2162", "economy": "1475" },
         { "travelers": "4", "luxury": "2860", "midRange": "1695", "economy": "1155" }
       ]
+    },
+    "7-day-azerbaijan-tour": {
+      "approved": "2026-10-28",
+      "pricing": [
+        { "travelers": "Single Supplement", "luxury": "535", "midRange": "395", "economy": "225" },
+        { "travelers": "1", "luxury": "2470", "midRange": "2195", "economy": "1795" },
+        { "travelers": "2", "luxury": "1395", "midRange": "1270", "economy": "1080" },
+        { "travelers": "3", "luxury": "1280", "midRange": "1150", "economy": "965" },
+        { "travelers": "4", "luxury": "1190", "midRange": "1045", "economy": "860" }
+      ]
+    },
+    "8-day-azerbaijan-tour": {
+      "approved": "2026-10-28",
+      "pricing": [
+        { "travelers": "Single Supplement", "luxury": "595", "midRange": "480", "economy": "245" },
+        { "travelers": "1", "luxury": "2895", "midRange": "2655", "economy": "2190" },
+        { "travelers": "2", "luxury": "1650", "midRange": "1540", "economy": "1295" },
+        { "travelers": "3", "luxury": "1535", "midRange": "1390", "economy": "1155" },
+        { "travelers": "4", "luxury": "1395", "midRange": "1255", "economy": "1025" }
+      ]
     }
   }
 }

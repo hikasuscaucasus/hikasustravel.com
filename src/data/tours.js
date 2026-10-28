@@ -21617,7 +21617,7 @@ export const tours = [
     ],
     "accommodations": [
       { "city": "Baku (3 nights)", "luxury": "Sheraton Baku Intourist, Boutique 19 Hotel", "midRange": "Radisson Hotel Baku, Mövenpick Hotel Winter Park Baku", "economy": "Shah Palace Hotel, Midway Park Hotel" },
-      { "city": "Sheki (1 night)", "luxury": "Marxal Resort & Spa", "midRange": "Sheki Palace, Macara", "economy": "Old Town Sheki" },
+      { "city": "Sheki (1 night)", "luxury": "Marxal Resort & Spa", "midRange": "Sheki Palace, Macara", "economy": "Karavansaray, Old Town Sheki" },
       { "city": "Telavi (2 nights)", "luxury": "Tsinandali Estate, A Radisson Collection Hotel", "midRange": "Park Hotel Tsinandali", "economy": "Hotel & Wine Cellar ARGE" },
       { "city": "Tbilisi (3 nights)", "luxury": "Rooms Hotel Tbilisi", "midRange": "Ibis Styles Tbilisi Center", "economy": "Ginger Hotel" },
       { "city": "Kazbegi (1 night)", "luxury": "Rooms Hotel Kazbegi", "midRange": "Northgate", "economy": "Hotel Horizon" },
@@ -24219,6 +24219,714 @@ export const tours = [
       }
     ],
     "tourFormTitle": "9-Day Armenia Private Tour: Yerevan, Lake Sevan & Dilijan"
+  },
+  {
+    "slug": "7-day-azerbaijan-tour",
+    "type": "private",
+    "priceCurrency": "USD",
+    "country": "azerbaijan",
+    "title": "7-Day Azerbaijan Tour: Baku, Gobustan, Sheki & Gabala",
+    "heroImage": "/images/files/baku-flame-towers-azerbaijan-1448.webp",
+    "ogImage": {
+      "src": "/images/files/baku-flame-towers-azerbaijan-og.jpg",
+      "width": 1200,
+      "height": 630
+    },
+    "tileImage": "/images/files/baku-flame-towers-azerbaijan-1200.webp",
+    "listingImage": "/images/files/baku-flame-towers-azerbaijan-1200.webp",
+    "imageMeta": {
+      "width": 1448,
+      "height": 1086,
+      "contentUrl": "/images/files/baku-flame-towers-azerbaijan-1448.webp",
+      "description": "Baku Flame Towers and TV tower seen across the bay, Azerbaijan",
+      "locationName": "Flame Towers, Baku, Azerbaijan",
+      "geo": {
+        "lat": 40.3597,
+        "lng": 49.8213
+      },
+      "alt": {
+        "en": "Baku Flame Towers and TV tower seen across the bay, Azerbaijan",
+        "de": "Die Flame Towers und der Fernsehturm von Baku, von der anderen Seite der Bucht gesehen, Aserbaidschan",
+        "fr": "Les Flame Towers et la tour de télévision de Bakou, vues depuis l'autre côté de la baie, Azerbaïdjan",
+        "es": "Las Flame Towers y la torre de televisión de Bakú, vistas desde el otro lado de la bahía, Azerbaiyán",
+        "nl": "De Flame Towers en de televisietoren van Bakoe, gezien vanaf de overkant van de baai, Azerbeidzjan",
+        "cs": "Věže Flame Towers a televizní věž v Baku, pohled z druhé strany zálivu, Ázerbájdžán",
+        "pl": "Wieże Flame Towers i wieża telewizyjna w Baku, widoczne z drugiej strony zatoki, Azerbejdżan"
+      },
+      "caption": {
+        "en": "Flame Towers, Baku",
+        "de": "Flame Towers, Baku",
+        "fr": "Flame Towers, Bakou",
+        "es": "Flame Towers, Bakú",
+        "nl": "Flame Towers, Bakoe",
+        "cs": "Flame Towers, Baku",
+        "pl": "Flame Towers, Baku"
+      }
+    },
+    "days": 7,
+    "description": "Seven days through Azerbaijan's best-known sights, from the Old City and modern skyline of Baku to the fire temple and medieval fortress of Absheron, the Silk Road town of Sheki and the green hills around Gabala. This private tour begins and ends in the capital.\n\nYou spend the first three nights in Baku, with a day out to Gobustan's ancient rock carvings, the mud volcanoes, the Ateshgah fire temple and Ramana Fortress on the Absheron peninsula, then head inland — through Shamakhi and the copper-smithing village of Lahij — to Sheki, a town of caravanserais under the Caucasus foothills. From there the road continues to Gabala, once the capital of Caucasian Albania, before the drive back to Baku.\n\nIt's a trip built on contrast: Baku's 21st-century skyline against the wooden balconies of Sheki and the copper workshops of Lahij. The inland days carry a fair amount of driving, but because it's private, the stops and the pace are yours to adjust.",
+    "listingDescription": "A private 7-day route from Baku to Gobustan, the Absheron peninsula, Shamakhi, Lahij, Sheki and Gabala, with the Ateshgah fire temple, Sheki Khan's Palace and the Tufandag cable car along the way.",
+    "seoTitle": "7-Day Azerbaijan Tour: Baku, Gobustan, Sheki & Gabala",
+    "metaDescription": "Private 7-day Azerbaijan tour from Baku: Gobustan, mud volcanoes, Ateshgah, Ramana, Shamakhi, Lahij, Sheki and Gabala — hotels, transport and guide included.",
+    "itinerary": [
+      {
+        "title": "Day 1: Arrival in Baku",
+        "content": "<p>You'll be met at Heydar Aliyev International Airport and transferred to your hotel. Check-in is from 14:00. The rest of the day is free. Overnight stay in Baku.</p><ul><li>Arrival at Heydar Aliyev International Airport;</li><li>Transfer to hotel and check-in;</li><li>Free time in Baku;</li><li>Overnight stay in Baku.</li><li><strong>Driving duration:</strong> 30 minutes</li></ul>"
+      },
+      {
+        "title": "Day 2: Baku City Tour",
+        "content": "<p>The tour starts in Icherisheher, Baku's walled Old City and a UNESCO site, with its narrow lanes, the Maiden Tower rising above the rooftops, and the Shirvanshahs' Palace, the seat of the region's medieval rulers. From there you drive out to the Heydar Aliyev Center, a flowing white building by the architect Zaha Hadid that has become one of Baku's best-known modern landmarks, before returning to walk the newer part of the city — Fountains Square, the seafront Baku Boulevard along the Caspian, and the view up to the three glass Flame Towers that have come to define the skyline. The day ends with a dinner of Azerbaijani food in the Old City.</p><ul><li>Walk through Icherisheher (UNESCO World Heritage Site);</li><li>Photo stop at the Maiden Tower;</li><li>Visit the Shirvanshahs' Palace;</li><li>Visit the Heydar Aliyev Center;</li><li>Walk along Baku Boulevard;</li><li>See the Flame Towers;</li><li>Dinner in Baku;</li><li>Overnight stay in Baku.</li><li><strong>Duration of the tour:</strong> 6-7 hours</li><li><strong>Driving duration:</strong> 45 minutes</li></ul>"
+      },
+      {
+        "title": "Day 3: Baku – Gobustan – Mud Volcanoes – Ateshgah – Ramana Fortress – Baku",
+        "content": "<p>A day of the strange and the ancient south of the city. Gobustan National Park, a UNESCO site, holds thousands of rock carvings going back some 40,000 years, scratched onto a hillside of bare stone. Nearby are the mud volcanoes, small cones that bubble and hiss with cold grey mud rather than lava, and there are two ways to see them: the new Mud Volcanoes Complex, which has a safe, comfortable road but fewer volcanoes, or the traditional site, which has more volcanoes and more dramatic scenery but is reached by a dusty, bumpy ride in a Soviet-era Niva vehicle. In the afternoon you visit Ateshgah, a walled fire temple built around a natural gas flame that has drawn Zoroastrian, Hindu and Sikh pilgrims for centuries, and Ramana Fortress, a medieval fortress among the traditional stone houses of a village on the Absheron peninsula, known for its authentic local atmosphere. Back to Baku for the night.</p><ul><li>Visit Gobustan National Park (UNESCO World Heritage Site);</li><li>See the mud volcanoes at the new complex or the traditional site by Niva;</li><li>Visit the Ateshgah Fire Temple;</li><li>Visit Ramana Fortress;</li><li>Overnight stay in Baku.</li><li><strong>Duration of the tour:</strong> 7-8 hours</li><li><strong>Driving duration:</strong> 3 hours</li></ul>"
+      },
+      {
+        "title": "Day 4: Baku – Shamakhi – Lahij – Sheki",
+        "content": "<p>West today, into the foothills of the Greater Caucasus. You'll stop first in Shamakhi, once the capital of a medieval khanate, for the Juma Mosque, then climb into the mountains to Lahij, a village of cobbled streets built almost entirely around copper — for centuries its smiths supplied cookware and tools across the region, and their workshops still line the main street, hammering and selling as they always have. From there the road continues to Sheki, a town of caravanserais and craftsmen tucked into the hills, where you settle in for the night.</p><ul><li>Stop in Shamakhi and see the Juma Mosque;</li><li>Visit the copper-smithing village of Lahij;</li><li>Overnight stay in Sheki.</li><li><strong>Duration of the tour:</strong> 8-9 hours</li><li><strong>Driving duration:</strong> 5-6 hours</li></ul>"
+      },
+      {
+        "title": "Day 5: Sheki City Tour – Gabala",
+        "content": "<p>A morning around Sheki before moving on. You'll visit the Khan's Palace, a small 18th-century summer residence with stained-glass windows and painted walls that took no nails to build, added to the UNESCO list in 2019, and one of the old stone caravanserais that once sheltered Silk Road traders. A stop at Sheki Bazaar, a lively local market filled with fresh produce, spices, traditional sweets and everyday local life, rounds out the visit. In the afternoon you drive to Gabala, once the capital of Caucasian Albania and now a green resort town at the foot of the mountains, where you settle in for the night.</p><ul><li>Visit the Sheki Khan's Palace (UNESCO World Heritage Site);</li><li>Visit a Sheki caravanserai;</li><li>Visit Sheki Bazaar;</li><li>Drive to Gabala;</li><li>Overnight stay in Gabala.</li><li><strong>Duration of the tour:</strong> 6-7 hours</li><li><strong>Driving duration:</strong> 2 hours</li></ul>"
+      },
+      {
+        "title": "Day 6: Gabala – Tufandag Cable Car – Baku",
+        "content": "<p>A morning in the hills before the drive back to the capital. The Tufandag cable car climbs out of Gabala into the mountains for a wide view over the forests and the plain below. From there it's the long drive back across the country to Baku for your final night.</p><ul><li>Ride the Tufandag cable car;</li><li>Drive back to Baku;</li><li>Overnight stay in Baku.</li><li><strong>Duration of the tour:</strong> 6-7 hours</li><li><strong>Driving duration:</strong> 4-4.5 hours</li></ul>"
+      },
+      {
+        "title": "Day 7: Departure from Baku",
+        "content": "<p>Check out of your hotel by 12:00 p.m. When it's time, we'll transfer you to Heydar Aliyev International Airport for your departure.</p><ul><li>Hotel check-out by 12:00 p.m.;</li><li>Transfer to Heydar Aliyev International Airport;</li><li>Departure.</li><li><strong>Driving duration:</strong> 30 minutes</li></ul>"
+      }
+    ],
+    "accommodations": [
+      {
+        "city": "Baku (4 nights)",
+        "luxury": "Sheraton Baku Intourist, Boutique 19 Hotel",
+        "midRange": "Radisson Hotel Baku, Mövenpick Hotel Winter Park Baku",
+        "economy": "Shah Palace Hotel, Midway Park Hotel"
+      },
+      {
+        "city": "Sheki (1 night)",
+        "luxury": "Marxal Resort & Spa",
+        "midRange": "Sheki Palace, Macara",
+        "economy": "Karavansaray, Old Town Sheki"
+      },
+      {
+        "city": "Gabala (1 night)",
+        "luxury": "Qafqaz Tufandag, Qafqaz Riverside Resort Hotel",
+        "midRange": "Gabala Garden Hotel",
+        "economy": "Hill Chalet Hotel Gabala"
+      }
+    ],
+    "pricing": [
+      {
+        "travelers": "1",
+        "luxury": "2470",
+        "midRange": "2195",
+        "economy": "1795"
+      },
+      {
+        "travelers": "2",
+        "luxury": "1395",
+        "midRange": "1270",
+        "economy": "1080"
+      },
+      {
+        "travelers": "3",
+        "luxury": "1280",
+        "midRange": "1150",
+        "economy": "965"
+      },
+      {
+        "travelers": "4",
+        "luxury": "1190",
+        "midRange": "1045",
+        "economy": "860"
+      },
+      {
+        "travelers": "Single Supplement",
+        "luxury": "535",
+        "midRange": "395",
+        "economy": "225"
+      }
+    ],
+    "included": [
+      "Accommodation in double/twin rooms, with breakfast included;",
+      "Transfers as per the itinerary;",
+      "English-speaking guide throughout the whole tour;",
+      "Entrance fees;",
+      "Dinner in Baku on Day 2;",
+      "Still water."
+    ],
+    "notIncluded": [
+      "Lunches and dinners not mentioned in the itinerary;",
+      "Visa fees for Azerbaijan, where applicable;",
+      "Additional hotel expenses;",
+      "Travel insurance."
+    ],
+    "gallery": [
+      {
+        "src": "/images/files/maiden-tower-baku-azerbaijan-1293.webp",
+        "base": "/images/files/maiden-tower-baku-azerbaijan",
+        "widths": [
+          768,
+          1200,
+          1293
+        ],
+        "width": 1293,
+        "height": 1217,
+        "caption": {
+          "en": "Maiden Tower, Baku",
+          "de": "Jungfrauenturm, Baku",
+          "fr": "Tour de la Vierge, Bakou",
+          "es": "Torre de la Doncella, Bakú",
+          "nl": "Maagdentoren, Bakoe",
+          "cs": "Panenská věž, Baku",
+          "pl": "Baszta Dziewicza, Baku"
+        },
+        "altText": {
+          "en": "The medieval Maiden Tower in the UNESCO-listed Walled City of Baku, a tall cylindrical stone tower with a flowering tree in front, Azerbaijan",
+          "de": "Der mittelalterliche Jungfrauenturm in der UNESCO-gelisteten Altstadt von Baku, ein hoher zylindrischer Steinturm mit einem blühenden Baum davor, Aserbaidschan",
+          "fr": "La tour de la Vierge médiévale dans la vieille ville fortifiée de Bakou, inscrite à l'UNESCO, une haute tour de pierre cylindrique avec un arbre en fleurs devant, Azerbaïdjan",
+          "es": "La medieval Torre de la Doncella en la ciudad amurallada de Bakú, declarada por la UNESCO, una alta torre cilíndrica de piedra con un árbol en flor delante, Azerbaiyán",
+          "nl": "De middeleeuwse Maagdentoren in de door UNESCO erkende ommuurde stad Bakoe, een hoge cilindrische stenen toren met een bloeiende boom ervoor, Azerbeidzjan",
+          "cs": "Středověká Panenská věž v hrazeném Starém Městě Baku zapsaném na seznamu UNESCO, vysoká válcová kamenná věž s kvetoucím stromem před ní, Ázerbájdžán",
+          "pl": "Średniowieczna Baszta Dziewicza w otoczonym murami Starym Mieście Baku wpisanym na listę UNESCO, wysoka cylindryczna kamienna wieża z kwitnącym drzewem przed nią, Azerbejdżan"
+        }
+      },
+      {
+        "src": "/images/files/shirvanshahs-palace-baku-azerbaijan-1536.webp",
+        "base": "/images/files/shirvanshahs-palace-baku-azerbaijan",
+        "widths": [
+          768,
+          1200,
+          1536
+        ],
+        "width": 1536,
+        "height": 1024,
+        "caption": {
+          "en": "Shirvanshahs' Palace, Baku",
+          "de": "Palast der Schirwanschahs, Baku",
+          "fr": "Palais des Chirvanchahs, Bakou",
+          "es": "Palacio de los Shirvanshahs, Bakú",
+          "nl": "Paleis van de Shirvansjahs, Bakoe",
+          "cs": "Palác širvánšáhů, Baku",
+          "pl": "Pałac Szirwanszachów, Baku"
+        },
+        "altText": {
+          "en": "The Palace of the Shirvanshahs in the UNESCO-listed Walled City of Baku, a medieval sandstone palace complex with domes, above the modern city skyline, Azerbaijan",
+          "de": "Der Palast der Schirwanschahs in der UNESCO-gelisteten Altstadt von Baku, ein mittelalterlicher Sandsteinpalast mit Kuppeln, über der modernen Stadtsilhouette, Aserbaidschan",
+          "fr": "Le palais des Chirvanchahs dans la vieille ville fortifiée de Bakou, inscrite à l'UNESCO, un palais médiéval en grès à coupoles, au-dessus des gratte-ciel modernes, Azerbaïdjan",
+          "es": "El Palacio de los Shirvanshahs en la ciudad amurallada de Bakú, declarada por la UNESCO, un complejo palaciego medieval de arenisca con cúpulas, sobre el perfil moderno de la ciudad, Azerbaiyán",
+          "nl": "Het Paleis van de Shirvansjahs in de door UNESCO erkende ommuurde stad Bakoe, een middeleeuws zandstenen paleiscomplex met koepels, boven de moderne skyline, Azerbeidzjan",
+          "cs": "Palác širvánšáhů v hrazeném Starém Městě Baku zapsaném na seznamu UNESCO, středověký pískovcový palácový komplex s kupolemi nad moderní panoramatem města, Ázerbájdžán",
+          "pl": "Pałac Szirwanszachów w otoczonym murami Starym Mieście Baku wpisanym na listę UNESCO, średniowieczny piaskowcowy kompleks pałacowy z kopułami, nad nowoczesną panoramą miasta, Azerbejdżan"
+        }
+      },
+      {
+        "src": "/images/files/heydar-aliyev-center-baku-azerbaijan-1672.webp",
+        "base": "/images/files/heydar-aliyev-center-baku-azerbaijan",
+        "widths": [
+          768,
+          1200,
+          1600,
+          1672
+        ],
+        "width": 1672,
+        "height": 941,
+        "caption": {
+          "en": "Heydar Aliyev Center, Baku",
+          "de": "Heydar-Aliyev-Zentrum, Baku",
+          "fr": "Centre Heydar-Aliyev, Bakou",
+          "es": "Centro Heydar Aliyev, Bakú",
+          "nl": "Heydar Aliyev-centrum, Bakoe",
+          "cs": "Centrum Hejdara Alijeva, Baku",
+          "pl": "Centrum Hejdara Alijewa, Baku"
+        },
+        "altText": {
+          "en": "The Heydar Aliyev Center in Baku, a flowing white curvilinear building by Zaha Hadid, with colourful animal sculptures on the green lawn, Azerbaijan",
+          "de": "Das Heydar-Aliyev-Zentrum in Baku, ein fließend geschwungener weißer Bau von Zaha Hadid, mit bunten Tierskulpturen auf dem grünen Rasen, Aserbaidschan",
+          "fr": "Le centre Heydar-Aliyev à Bakou, un bâtiment blanc aux courbes fluides signé Zaha Hadid, avec des sculptures d'animaux colorées sur la pelouse verte, Azerbaïdjan",
+          "es": "El Centro Heydar Aliyev en Bakú, un edificio blanco de curvas fluidas obra de Zaha Hadid, con coloridas esculturas de animales en el césped verde, Azerbaiyán",
+          "nl": "Het Heydar Aliyev-centrum in Bakoe, een vloeiend gebogen wit gebouw van Zaha Hadid, met kleurrijke diersculpturen op het groene gazon, Azerbeidzjan",
+          "cs": "Centrum Hejdara Alijeva v Baku, plynule zakřivená bílá stavba od Zahy Hadid, s barevnými sochami zvířat na zeleném trávníku, Ázerbájdžán",
+          "pl": "Centrum Hejdara Alijewa w Baku, płynnie wygięty biały budynek autorstwa Zahy Hadid, z kolorowymi rzeźbami zwierząt na zielonym trawniku, Azerbejdżan"
+        }
+      },
+      {
+        "src": "/images/files/baku-flame-towers-azerbaijan-1448.webp",
+        "base": "/images/files/baku-flame-towers-azerbaijan",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Flame Towers, Baku",
+          "de": "Flame Towers, Baku",
+          "fr": "Flame Towers, Bakou",
+          "es": "Flame Towers, Bakú",
+          "nl": "Flame Towers, Bakoe",
+          "cs": "Flame Towers, Baku",
+          "pl": "Flame Towers, Baku"
+        },
+        "altText": {
+          "en": "Baku Flame Towers and TV tower seen across the bay, Azerbaijan",
+          "de": "Die Flame Towers und der Fernsehturm von Baku, von der anderen Seite der Bucht gesehen, Aserbaidschan",
+          "fr": "Les Flame Towers et la tour de télévision de Bakou, vues depuis l'autre côté de la baie, Azerbaïdjan",
+          "es": "Las Flame Towers y la torre de televisión de Bakú, vistas desde el otro lado de la bahía, Azerbaiyán",
+          "nl": "De Flame Towers en de televisietoren van Bakoe, gezien vanaf de overkant van de baai, Azerbeidzjan",
+          "cs": "Věže Flame Towers a televizní věž v Baku, pohled z druhé strany zálivu, Ázerbájdžán",
+          "pl": "Wieże Flame Towers i wieża telewizyjna w Baku, widoczne z drugiej strony zatoki, Azerbejdżan"
+        }
+      },
+      {
+        "src": "/images/files/baku-boulevard-caspian-azerbaijan-1536.webp",
+        "base": "/images/files/baku-boulevard-caspian-azerbaijan",
+        "widths": [
+          768,
+          1200,
+          1536
+        ],
+        "width": 1536,
+        "height": 1024,
+        "caption": {
+          "en": "Baku Boulevard",
+          "de": "Baku Boulevard",
+          "fr": "Boulevard de Bakou",
+          "es": "Bulevar de Bakú",
+          "nl": "Baku Boulevard",
+          "cs": "Bakuský bulvár",
+          "pl": "Bulwar Nadmorski w Baku"
+        },
+        "altText": {
+          "en": "Baku Boulevard, the Caspian seafront promenade, with modern glass towers and an archway building along the waterfront under a blue sky, Azerbaijan",
+          "de": "Der Baku Boulevard, die Uferpromenade am Kaspischen Meer, mit modernen Glastürmen und einem Bogengebäude entlang des Ufers unter blauem Himmel, Aserbaidschan",
+          "fr": "Le Boulevard de Bakou, la promenade du front de mer caspien, avec des tours de verre modernes et un bâtiment en arche le long du rivage sous un ciel bleu, Azerbaïdjan",
+          "es": "El Bulevar de Bakú, el paseo marítimo del Caspio, con modernas torres de cristal y un edificio en forma de arco junto a la orilla bajo un cielo azul, Azerbaiyán",
+          "nl": "De Baku Boulevard, de kustpromenade aan de Kaspische Zee, met moderne glazen torens en een booggebouw langs de waterkant onder een blauwe hemel, Azerbeidzjan",
+          "cs": "Bakuský bulvár, pobřežní promenáda u Kaspického moře, s moderními skleněnými věžemi a obloukovou budovou podél nábřeží pod modrou oblohou, Ázerbájdžán",
+          "pl": "Bulwar Nadmorski w Baku, promenada nad Morzem Kaspijskim, z nowoczesnymi szklanymi wieżami i budynkiem w kształcie łuku wzdłuż nabrzeża pod błękitnym niebem, Azerbejdżan"
+        }
+      },
+      {
+        "src": "/images/files/mud-volcanoes-gobustan-azerbaijan-1599.webp",
+        "base": "/images/files/mud-volcanoes-gobustan-azerbaijan",
+        "widths": [
+          768,
+          1200,
+          1599
+        ],
+        "width": 1599,
+        "height": 984,
+        "caption": {
+          "en": "Gobustan Mud Volcanoes",
+          "de": "Schlammvulkane, Gobustan",
+          "fr": "Volcans de boue, Gobustan",
+          "es": "Volcanes de lodo, Gobustán",
+          "nl": "Moddervulkanen, Gobustan",
+          "cs": "Bahenní sopky, Gobustan",
+          "pl": "Wulkany błotne, Gobustan"
+        },
+        "altText": {
+          "en": "Cold grey mud bubbling from low cones at the mud volcanoes near Gobustan, on a bare semi-desert plain under a cloud-dotted sky, Azerbaijan",
+          "de": "Kalter grauer Schlamm, der aus niedrigen Kegeln der Schlammvulkane bei Gobustan quillt, auf einer kahlen Halbwüstenebene unter einem von Wolken gesprenkelten Himmel, Aserbaidschan",
+          "fr": "De la boue grise et froide bouillonnant de petits cônes aux volcans de boue près de Gobustan, sur une plaine semi-désertique nue sous un ciel parsemé de nuages, Azerbaïdjan",
+          "es": "Barro gris y frío burbujeando en conos bajos en los volcanes de lodo cerca de Gobustán, en una llanura semidesértica desnuda bajo un cielo salpicado de nubes, Azerbaiyán",
+          "nl": "Koude grijze modder die opborrelt uit lage kegels bij de moddervulkanen nabij Gobustan, op een kale halfwoestijnvlakte onder een met wolken bespikkelde hemel, Azerbeidzjan",
+          "cs": "Studené šedé bahno bublající z nízkých kuželů u bahenních sopek poblíž Gobustanu, na holé polopouštní pláni pod oblohou posetou mraky, Ázerbájdžán",
+          "pl": "Zimne szare błoto bulgoczące z niskich stożków przy wulkanach błotnych koło Gobustanu, na nagiej półpustynnej równinie pod niebem usianym chmurami, Azerbejdżan"
+        }
+      },
+      {
+        "src": "/images/files/shamakhi-juma-mosque-azerbaijan-1564.webp",
+        "base": "/images/files/shamakhi-juma-mosque-azerbaijan",
+        "widths": [
+          768,
+          1200,
+          1564
+        ],
+        "width": 1564,
+        "height": 1006,
+        "caption": {
+          "en": "Juma Mosque, Shamakhi",
+          "de": "Juma-Moschee, Schamachy",
+          "fr": "Mosquée Juma, Chamakhi",
+          "es": "Mezquita Juma, Shamají",
+          "nl": "Juma-moskee, Şamaxı",
+          "cs": "Mešita Džuma, Šamachy",
+          "pl": "Meczet Dżuma, Szamachy"
+        },
+        "altText": {
+          "en": "The Juma (Friday) Mosque of Shamakhi, a large pale-stone mosque with tall minarets and a dome under a cloud-dotted sky, Azerbaijan",
+          "de": "Die Juma-Moschee (Freitagsmoschee) von Schamachy, eine große Moschee aus hellem Stein mit hohen Minaretten und einer Kuppel unter einem wolkigen Himmel, Aserbaidschan",
+          "fr": "La mosquée Juma (du vendredi) de Chamakhi, une grande mosquée en pierre claire aux hauts minarets et à la coupole, sous un ciel parsemé de nuages, Azerbaïdjan",
+          "es": "La mezquita Juma (del viernes) de Shamají, una gran mezquita de piedra clara con altos alminares y una cúpula bajo un cielo con nubes, Azerbaiyán",
+          "nl": "De Juma- (vrijdag)moskee van Şamaxı, een grote moskee van lichte steen met hoge minaretten en een koepel onder een met wolken bespikkelde hemel, Azerbeidzjan",
+          "cs": "Páteční mešita Džuma v Šamachy, velká mešita ze světlého kamene s vysokými minarety a kupolí pod oblohou posetou mraky, Ázerbájdžán",
+          "pl": "Meczet Dżuma (piątkowy) w Szamachy, duży meczet z jasnego kamienia z wysokimi minaretami i kopułą pod niebem usianym chmurami, Azerbejdżan"
+        }
+      }
+    ],
+    "tourFormTitle": "7-Day Azerbaijan Tour: Baku, Gobustan, Sheki & Gabala"
+  },
+  {
+    "slug": "8-day-azerbaijan-tour",
+    "type": "private",
+    "priceCurrency": "USD",
+    "country": "azerbaijan",
+    "title": "8-Day Azerbaijan Tour: Baku, Quba & Khinalig, Gobustan, Sheki & Gabala",
+    "heroImage": "/images/files/baku-flame-towers-azerbaijan-1448.webp",
+    "ogImage": {
+      "src": "/images/files/baku-flame-towers-azerbaijan-og.jpg",
+      "width": 1200,
+      "height": 630
+    },
+    "tileImage": "/images/files/baku-flame-towers-azerbaijan-1200.webp",
+    "listingImage": "/images/files/baku-flame-towers-azerbaijan-1200.webp",
+    "imageMeta": {
+      "width": 1448,
+      "height": 1086,
+      "contentUrl": "/images/files/baku-flame-towers-azerbaijan-1448.webp",
+      "description": "Baku Flame Towers and TV tower seen across the bay, Azerbaijan",
+      "locationName": "Flame Towers, Baku, Azerbaijan",
+      "geo": {
+        "lat": 40.3597,
+        "lng": 49.8213
+      },
+      "alt": {
+        "en": "Baku Flame Towers and TV tower seen across the bay, Azerbaijan",
+        "de": "Die Flame Towers und der Fernsehturm von Baku, von der anderen Seite der Bucht gesehen, Aserbaidschan",
+        "fr": "Les Flame Towers et la tour de télévision de Bakou, vues depuis l'autre côté de la baie, Azerbaïdjan",
+        "es": "Las Flame Towers y la torre de televisión de Bakú, vistas desde el otro lado de la bahía, Azerbaiyán",
+        "nl": "De Flame Towers en de televisietoren van Bakoe, gezien vanaf de overkant van de baai, Azerbeidzjan",
+        "cs": "Věže Flame Towers a televizní věž v Baku, pohled z druhé strany zálivu, Ázerbájdžán",
+        "pl": "Wieże Flame Towers i wieża telewizyjna w Baku, widoczne z drugiej strony zatoki, Azerbejdżan"
+      },
+      "caption": {
+        "en": "Flame Towers, Baku",
+        "de": "Flame Towers, Baku",
+        "fr": "Flame Towers, Bakou",
+        "es": "Flame Towers, Bakú",
+        "nl": "Flame Towers, Bakoe",
+        "cs": "Flame Towers, Baku",
+        "pl": "Flame Towers, Baku"
+      }
+    },
+    "days": 8,
+    "description": "Eight days through Azerbaijan's best-known sights, from the Old City and modern skyline of Baku to the mountain village of Khinalig, the fire temple and medieval fortress of Absheron, the Silk Road town of Sheki and the green hills around Gabala. This private tour begins and ends in the capital.\n\nYou spend the first five nights in Baku, with days out to Gobustan's ancient rock carvings, the mud volcanoes, the Ateshgah fire temple and Ramana Fortress on the Absheron peninsula, and north to the Quba region for the Mountain Jewish community at Red Village and the remote highland village of Khinalig. From there you head inland — through Shamakhi and the copper-smithing village of Lahij — to Sheki, a town of caravanserais under the Caucasus foothills, and on to Gabala before the drive back to Baku.\n\nIt's a trip built on contrast: Baku's 21st-century skyline against the stone houses of Khinalig and the wooden balconies of Sheki. A couple of the days carry real driving, but because it's private, the stops and the pace are yours to adjust.",
+    "listingDescription": "A private 8-day route from Baku to Gobustan and Absheron, the Quba region with Red Village and Khinalig, then Shamakhi, Lahij, Sheki and Gabala, ending with the Tufandag cable car.",
+    "seoTitle": "8-Day Azerbaijan Tour: Baku, Quba & Khinalig, Gobustan, Sheki & Gabala",
+    "metaDescription": "Private 8-day Azerbaijan tour from Baku: Gobustan, Ateshgah, Quba, Red Village, Khinalig, Shamakhi, Lahij, Sheki and Gabala — hotels, transport and guide included.",
+    "itinerary": [
+      {
+        "title": "Day 1: Arrival in Baku",
+        "content": "<p>You'll be met at Heydar Aliyev International Airport and transferred to your hotel. Check-in is from 14:00. The rest of the day is free. Overnight stay in Baku.</p><ul><li>Arrival at Heydar Aliyev International Airport;</li><li>Transfer to hotel and check-in;</li><li>Free time in Baku;</li><li>Overnight stay in Baku.</li><li><strong>Driving duration:</strong> 30 minutes</li></ul>"
+      },
+      {
+        "title": "Day 2: Baku City Tour",
+        "content": "<p>The tour starts in Icherisheher, Baku's walled Old City and a UNESCO site, with its narrow lanes, the Maiden Tower rising above the rooftops, and the Shirvanshahs' Palace, the seat of the region's medieval rulers. From there you drive out to the Heydar Aliyev Center, a flowing white building by the architect Zaha Hadid that has become one of Baku's best-known modern landmarks, before returning to walk the newer part of the city — Fountains Square, the seafront Baku Boulevard along the Caspian, and the view up to the three glass Flame Towers that have come to define the skyline. The day ends with a dinner of Azerbaijani food in the Old City.</p><ul><li>Walk through Icherisheher (UNESCO World Heritage Site);</li><li>Photo stop at the Maiden Tower;</li><li>Visit the Shirvanshahs' Palace;</li><li>Visit the Heydar Aliyev Center;</li><li>Walk along Baku Boulevard;</li><li>See the Flame Towers;</li><li>Dinner in Baku;</li><li>Overnight stay in Baku.</li><li><strong>Duration of the tour:</strong> 6-7 hours</li><li><strong>Driving duration:</strong> 45 minutes</li></ul>"
+      },
+      {
+        "title": "Day 3: Baku – Gobustan – Mud Volcanoes – Ateshgah – Ramana Fortress – Baku",
+        "content": "<p>A day of the strange and the ancient south of the city. Gobustan National Park, a UNESCO site, holds thousands of rock carvings going back some 40,000 years, scratched onto a hillside of bare stone. Nearby are the mud volcanoes, small cones that bubble and hiss with cold grey mud rather than lava, and there are two ways to see them: the new Mud Volcanoes Complex, which has a safe, comfortable road but fewer volcanoes, or the traditional site, which has more volcanoes and more dramatic scenery but is reached by a dusty, bumpy ride in a Soviet-era Niva vehicle. In the afternoon you visit Ateshgah, a walled fire temple built around a natural gas flame that has drawn Zoroastrian, Hindu and Sikh pilgrims for centuries, and Ramana Fortress, a medieval fortress among the traditional stone houses of a village on the Absheron peninsula, known for its authentic local atmosphere. Back to Baku for the night.</p><ul><li>Visit Gobustan National Park (UNESCO World Heritage Site);</li><li>See the mud volcanoes at the new complex or the traditional site by Niva;</li><li>Visit the Ateshgah Fire Temple;</li><li>Visit Ramana Fortress;</li><li>Overnight stay in Baku.</li><li><strong>Duration of the tour:</strong> 7-8 hours</li><li><strong>Driving duration:</strong> 3 hours</li></ul>"
+      },
+      {
+        "title": "Day 4: Baku – Quba – Red Village – Khinalig – Baku",
+        "content": "<p>North today, into the mountains of the Quba region. You'll drive up through the Gudyalchay river valley to Quba, then to Qırmızı Qəsəbə — Red Village — home to one of the world's few remaining Mountain Jewish communities, with a visit to the Museum of Mountain Jews and a historic synagogue. From there the road continues to Khinalig, one of Azerbaijan's highest and most remote villages, its stone houses set among the peaks of the Greater Caucasus, with views into the Gudyalchay canyon on the way. You return to Baku in the evening.</p><ul><li>Drive to Quba through the Gudyalchay Valley;</li><li>Visit Qırmızı Qəsəbə (Red Village) and the Museum of Mountain Jews;</li><li>Visit a historic synagogue;</li><li>Drive to Khinalig village;</li><li>Overnight stay in Baku.</li><li><strong>Duration of the tour:</strong> 10-11 hours</li><li><strong>Driving duration:</strong> 6-7 hours</li></ul>"
+      },
+      {
+        "title": "Day 5: Baku – Shamakhi – Lahij – Sheki",
+        "content": "<p>West today, into the foothills of the Greater Caucasus. You'll stop first in Shamakhi, once the capital of a medieval khanate, for the Juma Mosque, then climb into the mountains to Lahij, a village of cobbled streets built almost entirely around copper — for centuries its smiths supplied cookware and tools across the region, and their workshops still line the main street, hammering and selling as they always have. From there the road continues to Sheki, a town of caravanserais and craftsmen tucked into the hills, where you settle in for the night.</p><ul><li>Stop in Shamakhi and see the Juma Mosque;</li><li>Visit the copper-smithing village of Lahij;</li><li>Overnight stay in Sheki.</li><li><strong>Duration of the tour:</strong> 8-9 hours</li><li><strong>Driving duration:</strong> 5-6 hours</li></ul>"
+      },
+      {
+        "title": "Day 6: Sheki City Tour – Gabala",
+        "content": "<p>A morning around Sheki before moving on. You'll visit the Khan's Palace, a small 18th-century summer residence with stained-glass windows and painted walls that took no nails to build, added to the UNESCO list in 2019, and one of the old stone caravanserais that once sheltered Silk Road traders. A stop at Sheki Bazaar, a lively local market filled with fresh produce, spices, traditional sweets and everyday local life, rounds out the visit. In the afternoon you drive to Gabala, once the capital of Caucasian Albania and now a green resort town at the foot of the mountains, where you settle in for the night.</p><ul><li>Visit the Sheki Khan's Palace (UNESCO World Heritage Site);</li><li>Visit a Sheki caravanserai;</li><li>Visit Sheki Bazaar;</li><li>Drive to Gabala;</li><li>Overnight stay in Gabala.</li><li><strong>Duration of the tour:</strong> 6-7 hours</li><li><strong>Driving duration:</strong> 2 hours</li></ul>"
+      },
+      {
+        "title": "Day 7: Gabala – Tufandag Cable Car – Baku",
+        "content": "<p>A morning in the hills before the drive back to the capital. The Tufandag cable car climbs out of Gabala into the mountains for a wide view over the forests and the plain below. From there it's the long drive back across the country to Baku for your final night.</p><ul><li>Ride the Tufandag cable car;</li><li>Drive back to Baku;</li><li>Overnight stay in Baku.</li><li><strong>Duration of the tour:</strong> 6-7 hours</li><li><strong>Driving duration:</strong> 4-4.5 hours</li></ul>"
+      },
+      {
+        "title": "Day 8: Departure from Baku",
+        "content": "<p>Check out of your hotel by 12:00 p.m. When it's time, we'll transfer you to Heydar Aliyev International Airport for your departure.</p><ul><li>Hotel check-out by 12:00 p.m.;</li><li>Transfer to Heydar Aliyev International Airport;</li><li>Departure.</li><li><strong>Driving duration:</strong> 30 minutes</li></ul>"
+      }
+    ],
+    "accommodations": [
+      {
+        "city": "Baku (5 nights)",
+        "luxury": "Sheraton Baku Intourist, Boutique 19 Hotel",
+        "midRange": "Radisson Hotel Baku, Mövenpick Hotel Winter Park Baku",
+        "economy": "Shah Palace Hotel, Midway Park Hotel"
+      },
+      {
+        "city": "Sheki (1 night)",
+        "luxury": "Marxal Resort & Spa",
+        "midRange": "Sheki Palace, Macara",
+        "economy": "Karavansaray, Old Town Sheki"
+      },
+      {
+        "city": "Gabala (1 night)",
+        "luxury": "Qafqaz Tufandag, Qafqaz Riverside Resort Hotel",
+        "midRange": "Gabala Garden Hotel",
+        "economy": "Hill Chalet Hotel Gabala"
+      }
+    ],
+    "pricing": [
+      {
+        "travelers": "1",
+        "luxury": "2895",
+        "midRange": "2655",
+        "economy": "2190"
+      },
+      {
+        "travelers": "2",
+        "luxury": "1650",
+        "midRange": "1540",
+        "economy": "1295"
+      },
+      {
+        "travelers": "3",
+        "luxury": "1535",
+        "midRange": "1390",
+        "economy": "1155"
+      },
+      {
+        "travelers": "4",
+        "luxury": "1395",
+        "midRange": "1255",
+        "economy": "1025"
+      },
+      {
+        "travelers": "Single Supplement",
+        "luxury": "595",
+        "midRange": "480",
+        "economy": "245"
+      }
+    ],
+    "included": [
+      "Accommodation in double/twin rooms, with breakfast included;",
+      "Transfers as per the itinerary;",
+      "English-speaking guide throughout the whole tour;",
+      "Entrance fees;",
+      "Dinner in Baku on Day 2;",
+      "Still water."
+    ],
+    "notIncluded": [
+      "Lunches and dinners not mentioned in the itinerary;",
+      "Visa fees for Azerbaijan, where applicable;",
+      "Additional hotel expenses;",
+      "Travel insurance."
+    ],
+    "gallery": [
+      {
+        "src": "/images/files/maiden-tower-baku-azerbaijan-1293.webp",
+        "base": "/images/files/maiden-tower-baku-azerbaijan",
+        "widths": [
+          768,
+          1200,
+          1293
+        ],
+        "width": 1293,
+        "height": 1217,
+        "caption": {
+          "en": "Maiden Tower, Baku",
+          "de": "Jungfrauenturm, Baku",
+          "fr": "Tour de la Vierge, Bakou",
+          "es": "Torre de la Doncella, Bakú",
+          "nl": "Maagdentoren, Bakoe",
+          "cs": "Panenská věž, Baku",
+          "pl": "Baszta Dziewicza, Baku"
+        },
+        "altText": {
+          "en": "The medieval Maiden Tower in the UNESCO-listed Walled City of Baku, a tall cylindrical stone tower with a flowering tree in front, Azerbaijan",
+          "de": "Der mittelalterliche Jungfrauenturm in der UNESCO-gelisteten Altstadt von Baku, ein hoher zylindrischer Steinturm mit einem blühenden Baum davor, Aserbaidschan",
+          "fr": "La tour de la Vierge médiévale dans la vieille ville fortifiée de Bakou, inscrite à l'UNESCO, une haute tour de pierre cylindrique avec un arbre en fleurs devant, Azerbaïdjan",
+          "es": "La medieval Torre de la Doncella en la ciudad amurallada de Bakú, declarada por la UNESCO, una alta torre cilíndrica de piedra con un árbol en flor delante, Azerbaiyán",
+          "nl": "De middeleeuwse Maagdentoren in de door UNESCO erkende ommuurde stad Bakoe, een hoge cilindrische stenen toren met een bloeiende boom ervoor, Azerbeidzjan",
+          "cs": "Středověká Panenská věž v hrazeném Starém Městě Baku zapsaném na seznamu UNESCO, vysoká válcová kamenná věž s kvetoucím stromem před ní, Ázerbájdžán",
+          "pl": "Średniowieczna Baszta Dziewicza w otoczonym murami Starym Mieście Baku wpisanym na listę UNESCO, wysoka cylindryczna kamienna wieża z kwitnącym drzewem przed nią, Azerbejdżan"
+        }
+      },
+      {
+        "src": "/images/files/shirvanshahs-palace-baku-azerbaijan-1536.webp",
+        "base": "/images/files/shirvanshahs-palace-baku-azerbaijan",
+        "widths": [
+          768,
+          1200,
+          1536
+        ],
+        "width": 1536,
+        "height": 1024,
+        "caption": {
+          "en": "Shirvanshahs' Palace, Baku",
+          "de": "Palast der Schirwanschahs, Baku",
+          "fr": "Palais des Chirvanchahs, Bakou",
+          "es": "Palacio de los Shirvanshahs, Bakú",
+          "nl": "Paleis van de Shirvansjahs, Bakoe",
+          "cs": "Palác širvánšáhů, Baku",
+          "pl": "Pałac Szirwanszachów, Baku"
+        },
+        "altText": {
+          "en": "The Palace of the Shirvanshahs in the UNESCO-listed Walled City of Baku, a medieval sandstone palace complex with domes, above the modern city skyline, Azerbaijan",
+          "de": "Der Palast der Schirwanschahs in der UNESCO-gelisteten Altstadt von Baku, ein mittelalterlicher Sandsteinpalast mit Kuppeln, über der modernen Stadtsilhouette, Aserbaidschan",
+          "fr": "Le palais des Chirvanchahs dans la vieille ville fortifiée de Bakou, inscrite à l'UNESCO, un palais médiéval en grès à coupoles, au-dessus des gratte-ciel modernes, Azerbaïdjan",
+          "es": "El Palacio de los Shirvanshahs en la ciudad amurallada de Bakú, declarada por la UNESCO, un complejo palaciego medieval de arenisca con cúpulas, sobre el perfil moderno de la ciudad, Azerbaiyán",
+          "nl": "Het Paleis van de Shirvansjahs in de door UNESCO erkende ommuurde stad Bakoe, een middeleeuws zandstenen paleiscomplex met koepels, boven de moderne skyline, Azerbeidzjan",
+          "cs": "Palác širvánšáhů v hrazeném Starém Městě Baku zapsaném na seznamu UNESCO, středověký pískovcový palácový komplex s kupolemi nad moderní panoramatem města, Ázerbájdžán",
+          "pl": "Pałac Szirwanszachów w otoczonym murami Starym Mieście Baku wpisanym na listę UNESCO, średniowieczny piaskowcowy kompleks pałacowy z kopułami, nad nowoczesną panoramą miasta, Azerbejdżan"
+        }
+      },
+      {
+        "src": "/images/files/heydar-aliyev-center-baku-azerbaijan-1672.webp",
+        "base": "/images/files/heydar-aliyev-center-baku-azerbaijan",
+        "widths": [
+          768,
+          1200,
+          1600,
+          1672
+        ],
+        "width": 1672,
+        "height": 941,
+        "caption": {
+          "en": "Heydar Aliyev Center, Baku",
+          "de": "Heydar-Aliyev-Zentrum, Baku",
+          "fr": "Centre Heydar-Aliyev, Bakou",
+          "es": "Centro Heydar Aliyev, Bakú",
+          "nl": "Heydar Aliyev-centrum, Bakoe",
+          "cs": "Centrum Hejdara Alijeva, Baku",
+          "pl": "Centrum Hejdara Alijewa, Baku"
+        },
+        "altText": {
+          "en": "The Heydar Aliyev Center in Baku, a flowing white curvilinear building by Zaha Hadid, with colourful animal sculptures on the green lawn, Azerbaijan",
+          "de": "Das Heydar-Aliyev-Zentrum in Baku, ein fließend geschwungener weißer Bau von Zaha Hadid, mit bunten Tierskulpturen auf dem grünen Rasen, Aserbaidschan",
+          "fr": "Le centre Heydar-Aliyev à Bakou, un bâtiment blanc aux courbes fluides signé Zaha Hadid, avec des sculptures d'animaux colorées sur la pelouse verte, Azerbaïdjan",
+          "es": "El Centro Heydar Aliyev en Bakú, un edificio blanco de curvas fluidas obra de Zaha Hadid, con coloridas esculturas de animales en el césped verde, Azerbaiyán",
+          "nl": "Het Heydar Aliyev-centrum in Bakoe, een vloeiend gebogen wit gebouw van Zaha Hadid, met kleurrijke diersculpturen op het groene gazon, Azerbeidzjan",
+          "cs": "Centrum Hejdara Alijeva v Baku, plynule zakřivená bílá stavba od Zahy Hadid, s barevnými sochami zvířat na zeleném trávníku, Ázerbájdžán",
+          "pl": "Centrum Hejdara Alijewa w Baku, płynnie wygięty biały budynek autorstwa Zahy Hadid, z kolorowymi rzeźbami zwierząt na zielonym trawniku, Azerbejdżan"
+        }
+      },
+      {
+        "src": "/images/files/baku-flame-towers-azerbaijan-1448.webp",
+        "base": "/images/files/baku-flame-towers-azerbaijan",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Flame Towers, Baku",
+          "de": "Flame Towers, Baku",
+          "fr": "Flame Towers, Bakou",
+          "es": "Flame Towers, Bakú",
+          "nl": "Flame Towers, Bakoe",
+          "cs": "Flame Towers, Baku",
+          "pl": "Flame Towers, Baku"
+        },
+        "altText": {
+          "en": "Baku Flame Towers and TV tower seen across the bay, Azerbaijan",
+          "de": "Die Flame Towers und der Fernsehturm von Baku, von der anderen Seite der Bucht gesehen, Aserbaidschan",
+          "fr": "Les Flame Towers et la tour de télévision de Bakou, vues depuis l'autre côté de la baie, Azerbaïdjan",
+          "es": "Las Flame Towers y la torre de televisión de Bakú, vistas desde el otro lado de la bahía, Azerbaiyán",
+          "nl": "De Flame Towers en de televisietoren van Bakoe, gezien vanaf de overkant van de baai, Azerbeidzjan",
+          "cs": "Věže Flame Towers a televizní věž v Baku, pohled z druhé strany zálivu, Ázerbájdžán",
+          "pl": "Wieże Flame Towers i wieża telewizyjna w Baku, widoczne z drugiej strony zatoki, Azerbejdżan"
+        }
+      },
+      {
+        "src": "/images/files/baku-boulevard-caspian-azerbaijan-1536.webp",
+        "base": "/images/files/baku-boulevard-caspian-azerbaijan",
+        "widths": [
+          768,
+          1200,
+          1536
+        ],
+        "width": 1536,
+        "height": 1024,
+        "caption": {
+          "en": "Baku Boulevard",
+          "de": "Baku Boulevard",
+          "fr": "Boulevard de Bakou",
+          "es": "Bulevar de Bakú",
+          "nl": "Baku Boulevard",
+          "cs": "Bakuský bulvár",
+          "pl": "Bulwar Nadmorski w Baku"
+        },
+        "altText": {
+          "en": "Baku Boulevard, the Caspian seafront promenade, with modern glass towers and an archway building along the waterfront under a blue sky, Azerbaijan",
+          "de": "Der Baku Boulevard, die Uferpromenade am Kaspischen Meer, mit modernen Glastürmen und einem Bogengebäude entlang des Ufers unter blauem Himmel, Aserbaidschan",
+          "fr": "Le Boulevard de Bakou, la promenade du front de mer caspien, avec des tours de verre modernes et un bâtiment en arche le long du rivage sous un ciel bleu, Azerbaïdjan",
+          "es": "El Bulevar de Bakú, el paseo marítimo del Caspio, con modernas torres de cristal y un edificio en forma de arco junto a la orilla bajo un cielo azul, Azerbaiyán",
+          "nl": "De Baku Boulevard, de kustpromenade aan de Kaspische Zee, met moderne glazen torens en een booggebouw langs de waterkant onder een blauwe hemel, Azerbeidzjan",
+          "cs": "Bakuský bulvár, pobřežní promenáda u Kaspického moře, s moderními skleněnými věžemi a obloukovou budovou podél nábřeží pod modrou oblohou, Ázerbájdžán",
+          "pl": "Bulwar Nadmorski w Baku, promenada nad Morzem Kaspijskim, z nowoczesnymi szklanymi wieżami i budynkiem w kształcie łuku wzdłuż nabrzeża pod błękitnym niebem, Azerbejdżan"
+        }
+      },
+      {
+        "src": "/images/files/mud-volcanoes-gobustan-azerbaijan-1599.webp",
+        "base": "/images/files/mud-volcanoes-gobustan-azerbaijan",
+        "widths": [
+          768,
+          1200,
+          1599
+        ],
+        "width": 1599,
+        "height": 984,
+        "caption": {
+          "en": "Gobustan Mud Volcanoes",
+          "de": "Schlammvulkane, Gobustan",
+          "fr": "Volcans de boue, Gobustan",
+          "es": "Volcanes de lodo, Gobustán",
+          "nl": "Moddervulkanen, Gobustan",
+          "cs": "Bahenní sopky, Gobustan",
+          "pl": "Wulkany błotne, Gobustan"
+        },
+        "altText": {
+          "en": "Cold grey mud bubbling from low cones at the mud volcanoes near Gobustan, on a bare semi-desert plain under a cloud-dotted sky, Azerbaijan",
+          "de": "Kalter grauer Schlamm, der aus niedrigen Kegeln der Schlammvulkane bei Gobustan quillt, auf einer kahlen Halbwüstenebene unter einem von Wolken gesprenkelten Himmel, Aserbaidschan",
+          "fr": "De la boue grise et froide bouillonnant de petits cônes aux volcans de boue près de Gobustan, sur une plaine semi-désertique nue sous un ciel parsemé de nuages, Azerbaïdjan",
+          "es": "Barro gris y frío burbujeando en conos bajos en los volcanes de lodo cerca de Gobustán, en una llanura semidesértica desnuda bajo un cielo salpicado de nubes, Azerbaiyán",
+          "nl": "Koude grijze modder die opborrelt uit lage kegels bij de moddervulkanen nabij Gobustan, op een kale halfwoestijnvlakte onder een met wolken bespikkelde hemel, Azerbeidzjan",
+          "cs": "Studené šedé bahno bublající z nízkých kuželů u bahenních sopek poblíž Gobustanu, na holé polopouštní pláni pod oblohou posetou mraky, Ázerbájdžán",
+          "pl": "Zimne szare błoto bulgoczące z niskich stożków przy wulkanach błotnych koło Gobustanu, na nagiej półpustynnej równinie pod niebem usianym chmurami, Azerbejdżan"
+        }
+      },
+      {
+        "src": "/images/files/shamakhi-juma-mosque-azerbaijan-1564.webp",
+        "base": "/images/files/shamakhi-juma-mosque-azerbaijan",
+        "widths": [
+          768,
+          1200,
+          1564
+        ],
+        "width": 1564,
+        "height": 1006,
+        "caption": {
+          "en": "Juma Mosque, Shamakhi",
+          "de": "Juma-Moschee, Schamachy",
+          "fr": "Mosquée Juma, Chamakhi",
+          "es": "Mezquita Juma, Shamají",
+          "nl": "Juma-moskee, Şamaxı",
+          "cs": "Mešita Džuma, Šamachy",
+          "pl": "Meczet Dżuma, Szamachy"
+        },
+        "altText": {
+          "en": "The Juma (Friday) Mosque of Shamakhi, a large pale-stone mosque with tall minarets and a dome under a cloud-dotted sky, Azerbaijan",
+          "de": "Die Juma-Moschee (Freitagsmoschee) von Schamachy, eine große Moschee aus hellem Stein mit hohen Minaretten und einer Kuppel unter einem wolkigen Himmel, Aserbaidschan",
+          "fr": "La mosquée Juma (du vendredi) de Chamakhi, une grande mosquée en pierre claire aux hauts minarets et à la coupole, sous un ciel parsemé de nuages, Azerbaïdjan",
+          "es": "La mezquita Juma (del viernes) de Shamají, una gran mezquita de piedra clara con altos alminares y una cúpula bajo un cielo con nubes, Azerbaiyán",
+          "nl": "De Juma- (vrijdag)moskee van Şamaxı, een grote moskee van lichte steen met hoge minaretten en een koepel onder een met wolken bespikkelde hemel, Azerbeidzjan",
+          "cs": "Páteční mešita Džuma v Šamachy, velká mešita ze světlého kamene s vysokými minarety a kupolí pod oblohou posetou mraky, Ázerbájdžán",
+          "pl": "Meczet Dżuma (piątkowy) w Szamachy, duży meczet z jasnego kamienia z wysokimi minaretami i kopułą pod niebem usianym chmurami, Azerbejdżan"
+        }
+      }
+    ],
+    "tourFormTitle": "8-Day Azerbaijan Tour: Baku, Quba & Khinalig, Gobustan, Sheki & Gabala"
   }
 ]
 
