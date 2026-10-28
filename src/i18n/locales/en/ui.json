@@ -133,7 +133,7 @@
   "booking.step4Private": "The balance is due 30 days before the tour starts. For bookings made less than 30 days before the start, the full amount is due at booking.",
   "booking.step4Group": "The balance is due 30 days before the tour starts, which is also the booking deadline for each departure.",
   "booking.cancellation": "Cancellation: 30 days or more before the tour, you lose the deposit; 15–29 days before, 50% of the tour cost; 7–14 days before, 80%; less than 7 days before, 100%.",
-  "booking.payment": "Payment by bank transfer or online with Visa or MasterCard (2.5% card fee).",
+  "booking.payment": "Payment by bank transfer or online with Visa, MasterCard or American Express (2.5% card fee).",
   "booking.termsLink": "Read the full terms and conditions",
   "pricing.fourTravelers": "(4 travelers)",
   "pricing.forTwoTravelers": "For 2 travelers: {price} per person",

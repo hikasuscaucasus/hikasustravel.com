@@ -133,7 +133,7 @@
   "booking.step4Private": "El importe restante debe abonarse 30 días antes del inicio del tour. En las reservas realizadas con menos de 30 días de antelación al inicio, el importe total se abona en el momento de la reserva.",
   "booking.step4Group": "El importe restante debe abonarse 30 días antes del inicio del tour, que es también la fecha límite de reserva de cada salida.",
   "booking.cancellation": "Cancelación: con 30 días o más de antelación al tour se pierde el depósito; entre 15 y 29 días antes, el 50 % del coste del tour; entre 7 y 14 días antes, el 80 %; con menos de 7 días, el 100 %.",
-  "booking.payment": "Pago por transferencia bancaria o en línea con Visa o MasterCard (comisión del 2,5 % por pago con tarjeta).",
+  "booking.payment": "Pago por transferencia bancaria o en línea con Visa, MasterCard o American Express (comisión del 2,5 % por pago con tarjeta).",
   "booking.termsLink": "Leer los términos y condiciones completos",
   "pricing.fourTravelers": "(4 viajeros)",
   "pricing.forTwoTravelers": "Para 2 viajeros: {price} por persona",

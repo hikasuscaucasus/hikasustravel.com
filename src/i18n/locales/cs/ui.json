@@ -136,7 +136,7 @@
   "booking.step4Private": "Zbývající částka je splatná 30 dní před zahájením zájezdu. U rezervací provedených méně než 30 dní před zahájením je celá částka splatná při rezervaci.",
   "booking.step4Group": "Zbývající částka je splatná 30 dní před zahájením zájezdu, což je zároveň uzávěrka rezervací pro každý termín.",
   "booking.cancellation": "Storno: 30 a více dní před zájezdem propadá záloha; 15–29 dní předem 50 % ceny zájezdu; 7–14 dní předem 80 %; méně než 7 dní předem 100 %.",
-  "booking.payment": "Platba bankovním převodem nebo online kartou Visa či MasterCard (poplatek za platbu kartou 2,5 %).",
+  "booking.payment": "Platba bankovním převodem nebo online kartou Visa, MasterCard či American Express (poplatek za platbu kartou 2,5 %).",
   "booking.termsLink": "Přečtěte si úplné obchodní podmínky",
   "pricing.fourTravelers": "(4 cestující)",
   "pricing.forTwoTravelers": "Pro 2 cestující: {price} za osobu",

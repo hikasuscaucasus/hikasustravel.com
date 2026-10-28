@@ -137,7 +137,7 @@
   "booking.step4Private": "Pozostałą kwotę należy uiścić 30 dni przed rozpoczęciem wycieczki. W przypadku rezerwacji dokonywanych na mniej niż 30 dni przed rozpoczęciem pełna kwota jest płatna w momencie rezerwacji.",
   "booking.step4Group": "Pozostałą kwotę należy uiścić 30 dni przed rozpoczęciem wycieczki; jest to zarazem termin zakończenia rezerwacji dla każdego wyjazdu.",
   "booking.cancellation": "Rezygnacja: na 30 dni lub więcej przed wycieczką tracisz zaliczkę; na 15–29 dni przed – 50% kosztu wycieczki; na 7–14 dni przed – 80%; na mniej niż 7 dni przed – 100%.",
-  "booking.payment": "Płatność przelewem bankowym lub online kartą Visa albo MasterCard (opłata kartowa 2,5%).",
+  "booking.payment": "Płatność przelewem bankowym lub online kartą Visa, MasterCard albo American Express (opłata kartowa 2,5%).",
   "booking.termsLink": "Przeczytaj pełny regulamin",
   "pricing.fourTravelers": "(4 podróżnych)",
   "pricing.forTwoTravelers": "Dla 2 podróżnych: {price} za osobę",

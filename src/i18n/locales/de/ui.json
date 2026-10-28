@@ -133,7 +133,7 @@
   "booking.step4Private": "Der Restbetrag ist 30 Tage vor Tourbeginn fällig. Bei Buchungen, die weniger als 30 Tage vor Beginn erfolgen, ist der Gesamtbetrag bei der Buchung fällig.",
   "booking.step4Group": "Der Restbetrag ist 30 Tage vor Tourbeginn fällig; das ist zugleich die Buchungsfrist für jeden Abreisetermin.",
   "booking.cancellation": "Stornierung: 30 Tage oder mehr vor der Tour verfällt die Anzahlung; 15–29 Tage vorher fallen 50 % der Tourkosten an; 7–14 Tage vorher 80 %; weniger als 7 Tage vorher 100 %.",
-  "booking.payment": "Zahlung per Banküberweisung oder online mit Visa oder MasterCard (2,5 % Kartengebühr).",
+  "booking.payment": "Zahlung per Banküberweisung oder online mit Visa, MasterCard oder American Express (2,5 % Kartengebühr).",
   "booking.termsLink": "Vollständige AGB lesen",
   "pricing.fourTravelers": "(4 Reisende)",
   "pricing.forTwoTravelers": "Für 2 Reisende: {price} pro Person",
