@@ -211,7 +211,9 @@ export default function TourDetailHero({ tour, translatedTitle, heroH1, isGroup,
                   ? t('tour.seasonalityWinter')
                   : tour.seasonality === 'seasonal'
                     ? t('tour.seasonalitySeasonal')
-                    : t('tour.seasonalityAllYear')}
+                    : tour.seasonality === 'aprOct'
+                      ? t('tour.seasonalityAprOct')
+                      : t('tour.seasonalityAllYear')}
               </span>
             )}
             {startingPrice > 0 && (

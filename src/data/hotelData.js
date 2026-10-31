@@ -1427,6 +1427,10 @@ export const hotelAliases = {
   // Kazbegi mid-range hotel to "Northgate" (unchanged, per the owner's
   // instruction not to alter the table).
   'Northgate': 'Northgate Hotel',
+  // The 16-Day Private Caucasus Tour names the Akhaltsikhe hotels the way the
+  // owner supplied them; the canonical records carry the longer names.
+  'Akhaltsikhe Inn': 'Akhaltsikhe Inn (Junior Suite Room)',
+  'Gino Wellness Rabati': 'Hotel Gino Wellness Rabati',
 }
 
 // Resolve a name as written in the tour data to its canonical hotelData key,

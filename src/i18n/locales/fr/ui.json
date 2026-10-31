@@ -144,6 +144,7 @@
   "tour.seasonalityAllYear": "Toute l'année",
   "tour.seasonalityWinter": "Hiver",
   "tour.seasonalitySeasonal": "Mai – octobre",
+  "tour.seasonalityAprOct": "Avril – octobre",
   "tour.pricesFrom": "Prix à partir de {price}",
   "tour.moreInfo": "Plus d'infos",
   "tour.availableDates": "Dates disponibles",

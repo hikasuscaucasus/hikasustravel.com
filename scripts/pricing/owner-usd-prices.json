@@ -41,6 +41,16 @@
         { "travelers": "4", "luxury": "1190", "midRange": "1045", "economy": "860" }
       ]
     },
+    "16-day-caucasus-tour": {
+      "approved": "2026-10-31",
+      "pricing": [
+        { "travelers": "Single Supplement", "luxury": "1340", "midRange": "850", "economy": "485" },
+        { "travelers": "1", "luxury": "7895", "midRange": "6865", "economy": "6085" },
+        { "travelers": "2", "luxury": "4430", "midRange": "3840", "economy": "3450" },
+        { "travelers": "3", "luxury": "4225", "midRange": "3465", "economy": "2955" },
+        { "travelers": "4", "luxury": "3390", "midRange": "2790", "economy": "2395" }
+      ]
+    },
     "8-day-azerbaijan-tour": {
       "approved": "2026-10-28",
       "pricing": [
