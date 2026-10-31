@@ -2394,27 +2394,27 @@ export const blogArticles = [
     "author": "Hikasus Travel",
     "date": "2026-10-31",
     "readTime": 15,
-    "heroImage": "/images/files/gergeti-trinity-church-kazbegi-georgia-1200.webp",
-    "heroBgClass": "hero--gergeti",
+    "heroImage": "/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1200.webp",
+    "heroBgClass": "hero--svetitskhoveli",
     "heroImageMeta": {
       "width": 1200,
-      "height": 900,
+      "height": 796,
       "og": {
-        "src": "/images/files/gergeti-trinity-church-kazbegi-georgia-og.jpg",
+        "src": "/images/files/svetitskhoveli-cathedral-mtskheta-georgia-og.jpg",
         "width": 1200,
         "height": 630
       },
       "alt": {
-        "en": "The Gergeti Trinity Church, a lone stone church with a bell tower on a hill below steep rocky Caucasus mountains near Kazbegi, Georgia",
-        "de": "Die Gergeti-Dreifaltigkeitskirche, eine einzeln stehende Steinkirche mit Glockenturm auf einem Hügel unter steilen felsigen Kaukasusbergen bei Kazbegi, Georgien",
-        "fr": "L'église de la Trinité de Guerguéti, église de pierre isolée avec clocher sur une colline au pied d'abruptes montagnes rocheuses du Caucase, près de Kazbegi, Géorgie",
-        "es": "La iglesia de la Trinidad de Gergeti, iglesia de piedra solitaria con campanario en una colina al pie de escarpadas montañas rocosas del Cáucaso, cerca de Kazbegi, Georgia",
-        "nl": "De Drie-eenheidskerk van Gergeti, een alleenstaande stenen kerk met klokkentoren op een heuvel onder steile rotsachtige Kaukasusbergen bij Kazbegi, Georgië",
-        "cs": "Gergetský kostel Nejsvětější Trojice, osamělý kamenný kostel se zvonicí na kopci pod strmými skalnatými kavkazskými horami u Kazbegi, Gruzie",
-        "pl": "Cerkiew Trójcy Świętej w Gergeti, samotny kamienny kościół z dzwonnicą na wzgórzu u stóp stromych, skalistych gór Kaukazu koło Kazbegi, Gruzja"
+        "en": "Svetitskhoveli Cathedral and the wall of its precinct in Mtskheta, Georgia",
+        "de": "Die Svetitskhoveli-Kathedrale und die Mauer ihres Bezirks in Mtskheta, Georgien",
+        "fr": "La cathédrale de Svetitskhoveli et le mur de son enceinte à Mtskheta, Géorgie",
+        "es": "La catedral de Svetitskhoveli y la muralla de su recinto en Mtskheta, Georgia",
+        "nl": "De Svetitskhoveli-kathedraal en de muur van haar ommuurde terrein in Mtskheta, Georgië",
+        "cs": "Katedrála Svetitskhoveli a zeď jejího areálu v Mtskhetě, Gruzie",
+        "pl": "Katedra Svetitskhoveli i mur jej dziedzińca w Mtskhecie, Gruzja"
       }
     },
-    "thumbnail": "/images/files/gergeti-trinity-church-kazbegi-georgia-768.webp",
+    "thumbnail": "/images/files/svetitskhoveli-cathedral-mtskheta-georgia-768.webp",
     "tags": [
       "georgia",
       "armenia",
