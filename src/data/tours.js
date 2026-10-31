@@ -22622,7 +22622,7 @@ export const tours = [
     "description": "The 16-Day Private Caucasus Tour is a 16-day, 15-night journey from Baku to Yerevan through Azerbaijan, Georgia and Armenia, for one to four travelers. It covers Baku, Gobustan and the Ateshgah fire temple, the Silk Road town of Sheki, the wine country of Kakheti, Tbilisi, the Georgian Military Highway to Mount Kazbek, Borjomi, Rabati and the cave city of Vardzia, then Haghpat, Lake Sevan and Yerevan under Mount Ararat, with seven UNESCO World Heritage Sites on the way.\n\nThe tour runs from east to west for a practical reason: under Azerbaijan's current border rules, foreign visitors can leave the country by land but cannot normally enter it by road, so you fly into Baku, cross into Georgia on foot at Lagodekhi and into Armenia at Sadakhlo, and fly home from Yerevan. A separate vehicle and English-speaking guide serve you in each country, and the next guide waits on the far side of each border. We reconfirm the border rules before departure.\n\nYou stay three nights in Baku, one in Sheki, two in Telavi, four in Tbilisi — two before Kazbegi, one after Kazbegi and one after Vardzia — one in Kazbegi, one in Akhaltsikhe and three in Yerevan. The days are full but the walks are short, and the longest drives, on Days 4, 10, 12 and 13, are approximately 5 to 6.5 hours. May, June, September and October are the best months; July and August are hot in Baku and Yerevan.\n\nGood to know: expect cobbled streets, stairs and uneven ground — Sevanavank is about 200 steps — so comfortable shoes with good grip are best. Churches, monasteries and mosques are active places of worship; cover shoulders and knees, and bring a light scarf. Some museums and sights close on certain weekdays, so for your start day we may keep the same places but change the order of the stops.",
     "listingDescription": "A private 16-day route from Baku to Yerevan through Azerbaijan, Georgia and Armenia — Baku, Gobustan and Sheki, Kakheti wine country, Tbilisi and Kazbegi, Borjomi, Rabati and Vardzia, then Lake Sevan and Yerevan, with two border crossings on foot.",
     "seoTitle": "16-Day Private Caucasus Tour: Azerbaijan, Georgia & Armenia",
-    "metaDescription": "Private 16-day Caucasus tour from Baku to Yerevan for 1–4 travelers: Sheki, Kakheti, Tbilisi, Kazbegi, Borjomi, Vardzia, Lake Sevan and Yerevan, April–October 2027.",
+    "metaDescription": "Private 16-day Caucasus tour from Baku to Yerevan for 1–4 travelers: Sheki, Kakheti, Tbilisi, Kazbegi, Borjomi, Vardzia, Lake Sevan and Yerevan.",
     "itinerary": [
       {
         "title": "Day 1: Arrival in Baku",
@@ -23939,7 +23939,6 @@ export const tours = [
       }
     },
     "tourFormTitle": "16-Day Private Caucasus Tour: Azerbaijan, Georgia & Armenia",
-    "seasonality": "aprOct"
   },
   {
     "slug": "13-day-azerbaijan-georgia-tour",
@@ -23972,7 +23971,7 @@ export const tours = [
     "description": "The 13-Day Private Azerbaijan & Georgia Tour is a 13-day, 12-night journey from Baku to Tbilisi, for one to four travelers. It covers Baku, Gobustan and the Ateshgah fire temple, the Silk Road town of Sheki, the wine country of Kakheti, Tbilisi, the Georgian Military Highway to Mount Kazbek, Borjomi, Rabati and the cave city of Vardzia, with four UNESCO World Heritage Sites on the way.\n\nThe tour runs from east to west for a practical reason: under Azerbaijan's current border rules, foreign visitors can leave the country by land but cannot normally enter it by road, so you fly into Baku, cross into Georgia on foot at Lagodekhi and fly home from Tbilisi. A separate vehicle and English-speaking guide serve you in each country, and your Georgian guide waits on the far side of the border. We reconfirm the border rules before departure.\n\nYou stay three nights in Baku, one in Sheki, two in Telavi, four in Tbilisi — two before Kazbegi, one after Kazbegi and one after Vardzia — one in Kazbegi and one in Akhaltsikhe. The days are full but the walks are short, and the longest drives, on Days 4, 10 and 12, are 5 to 6.5 hours. May, June, September and October are the best months; July and August are hot in Baku and Tbilisi.\n\nGood to know: expect cobbled streets, stairs, uneven rock and tunnels — notably at Uplistsikhe and Vardzia — so comfortable shoes with good grip are best. Churches, monasteries and mosques are active places of worship; cover shoulders and knees, and bring a light scarf. Some museums and sights close on certain weekdays, so for your start day we may keep the same places but change the order of the stops.",
     "listingDescription": "A private 13-day route from Baku to Tbilisi through Azerbaijan and Georgia — Baku, Gobustan and Sheki, Kakheti wine country, Tbilisi and Kazbegi, Borjomi, Rabati and Vardzia, with one border crossing on foot.",
     "seoTitle": "13-Day Private Azerbaijan & Georgia Tour",
-    "metaDescription": "Private 13-day Azerbaijan and Georgia tour from Baku to Tbilisi for 1–4 travelers: Sheki, Kakheti, Tbilisi, Kazbegi, Borjomi and Vardzia, April–October 2027.",
+    "metaDescription": "Private 13-day Azerbaijan and Georgia tour from Baku to Tbilisi for 1–4 travelers: Sheki, Kakheti, Tbilisi, Kazbegi, Borjomi and Vardzia.",
     "itinerary": [
       {
         "title": "Day 1: Arrival in Baku",
@@ -24948,7 +24947,6 @@ export const tours = [
       }
     },
     "tourFormTitle": "13-Day Private Azerbaijan & Georgia Tour",
-    "seasonality": "aprOct"
   },
   {
     "slug": "5-day-armenia-highlights-tour",
