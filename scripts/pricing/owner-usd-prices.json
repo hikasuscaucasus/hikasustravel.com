@@ -41,6 +41,16 @@
         { "travelers": "4", "luxury": "1190", "midRange": "1045", "economy": "860" }
       ]
     },
+    "13-day-georgia-armenia-tour": {
+      "approved": "2026-10-31",
+      "pricing": [
+        { "travelers": "Single Supplement", "luxury": "1110", "midRange": "650", "economy": "380" },
+        { "travelers": "1", "luxury": "6495", "midRange": "5485", "economy": "4895" },
+        { "travelers": "2", "luxury": "3550", "midRange": "2960", "economy": "2665" },
+        { "travelers": "3", "luxury": "3420", "midRange": "2670", "economy": "2290" },
+        { "travelers": "4", "luxury": "2730", "midRange": "2135", "economy": "1835" }
+      ]
+    },
     "13-day-azerbaijan-georgia-tour": {
       "approved": "2026-10-31",
       "pricing": [

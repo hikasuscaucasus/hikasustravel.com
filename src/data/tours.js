@@ -24949,6 +24949,1126 @@ export const tours = [
     "tourFormTitle": "13-Day Private Azerbaijan & Georgia Tour",
   },
   {
+    "slug": "13-day-georgia-armenia-tour",
+    "type": "private",
+    "priceCurrency": "USD",
+    "country": "caucasus",
+    "areaServed": [
+      "Georgia",
+      "Armenia"
+    ],
+    "title": "13-Day Private Georgia & Armenia Tour",
+    "heroImage": "/images/files/baku-boulevard-caspian-azerbaijan-1536.webp",
+    "ogImage": {
+      "src": "/images/files/baku-boulevard-caspian-azerbaijan-og.jpg",
+      "width": 1200,
+      "height": 630
+    },
+    "tileImage": "/images/files/baku-boulevard-caspian-azerbaijan-1200.webp",
+    "listingImage": "/images/files/baku-boulevard-caspian-azerbaijan-1200.webp",
+    "alt": {
+      "en": "Baku Boulevard, the Caspian seafront promenade, with modern glass towers and an archway building along the waterfront under a blue sky, Azerbaijan",
+      "de": "Der Baku Boulevard, die Uferpromenade am Kaspischen Meer, mit modernen Glastürmen und einem Bogengebäude entlang des Ufers unter blauem Himmel, Aserbaidschan",
+      "fr": "Le Boulevard de Bakou, la promenade du front de mer caspien, avec des tours de verre modernes et un bâtiment en arche le long du rivage sous un ciel bleu, Azerbaïdjan",
+      "es": "El Bulevar de Bakú, el paseo marítimo del Caspio, con modernas torres de cristal y un edificio en forma de arco junto a la orilla bajo un cielo azul, Azerbaiyán",
+      "nl": "De Baku Boulevard, de kustpromenade aan de Kaspische Zee, met moderne glazen torens en een booggebouw langs de waterkant onder een blauwe hemel, Azerbeidzjan",
+      "cs": "Bakuský bulvár, pobřežní promenáda u Kaspického moře, s moderními skleněnými věžemi a obloukovou budovou podél nábřeží pod modrou oblohou, Ázerbájdžán",
+      "pl": "Bulwar Nadmorski w Baku, promenada nad Morzem Kaspijskim, z nowoczesnymi szklanymi wieżami i budynkiem w kształcie łuku wzdłuż nabrzeża pod błękitnym niebem, Azerbejdżan"
+    },
+    "days": 13,
+    "description": "The 13-Day Private Georgia & Armenia Tour is a 13-day, 12-night journey from Tbilisi to Yerevan, for one to four travelers. It covers the wine country of Kakheti, Tbilisi, the Georgian Military Highway to Mount Kazbek, Borjomi, Rabati and the cave city of Vardzia, then Haghpat, Lake Sevan and Yerevan under Mount Ararat, with four UNESCO World Heritage Sites on the way.\n\nYou fly into Tbilisi, cross into Armenia on foot at Sadakhlo and fly home from Yerevan. A separate vehicle and English-speaking guide serve you in each country, and your Armenian guide waits on the far side of the border.\n\nYou stay five nights in Tbilisi — the arrival night, two after Kakheti, one after Kazbegi and one after Vardzia — two in Telavi, one in Kazbegi, one in Akhaltsikhe and three in Yerevan. The days are full but the walks are short, and the longest drives, on Days 7, 9 and 10, are 5 to 6.5 hours. May, June, September and October are the best months; July and August are hot in Tbilisi and Yerevan.\n\nGood to know: expect cobbled streets, stairs and uneven ground — Sevanavank is about 200 steps — so comfortable shoes with good grip are best. Churches, monasteries and mosques are active places of worship; cover shoulders and knees, and bring a light scarf. Some museums and sights close on certain weekdays, so for your start day we may keep the same places but change the order of the stops.",
+    "listingDescription": "A private 13-day route from Tbilisi to Yerevan through Georgia and Armenia — Kakheti wine country, Tbilisi and Kazbegi, Borjomi, Rabati and Vardzia, then Lake Sevan, Yerevan and the sights around Mount Ararat, with one border crossing on foot.",
+    "seoTitle": "13-Day Private Georgia & Armenia Tour",
+    "metaDescription": "Private 13-day Georgia and Armenia tour from Tbilisi to Yerevan for 1–4 travelers: Kakheti, Kazbegi, Borjomi, Vardzia, Haghpat, Lake Sevan and Yerevan.",
+    "itinerary": [
+      {
+        "title": "Day 1: Arrival in Tbilisi",
+        "content": "<p>You'll be met at Tbilisi International Airport and transferred to your hotel. Check-in is from 2:00 p.m. The rest of the day is free. Overnight stay in Tbilisi.</p><ul><li>Arrival at Tbilisi International Airport;</li><li>Transfer to hotel and check-in;</li><li>Free time in Tbilisi;</li><li>Overnight stay in Tbilisi.</li><li><strong>Driving duration:</strong> 30 minutes</li></ul>"
+      },
+      {
+        "title": "Day 2: Tbilisi – Winery Lunch – Telavi",
+        "content": "<p>This morning you leave Tbilisi and drive east over the Gombori Pass into Kakheti, Georgia's wine region. You stop at a winery near Kvareli for lunch and a tasting of local wines, before continuing to Telavi, where you stay for two nights.</p><ul><li>Drive from Tbilisi into Kakheti;</li><li>Lunch and wine tasting at a winery near Kvareli;</li><li>Overnight stay in Telavi.</li><li><strong>Duration of the tour:</strong> 6-7 hours</li><li><strong>Driving duration:</strong> 3 hours</li></ul>"
+      },
+      {
+        "title": "Day 3: Telavi – Batonistsikhe – Tsinandali – Winery Lunch and Tasting – Telavi",
+        "content": "<p>The day starts with a walk through Telavi: the old town, the giant 900-year-old plane tree and Batonistsikhe, the walled palace of the kings of Kakheti, with the rooms of King Erekle II and a small museum.</p><p>Then out to Tsinandali Estate, the 19th-century home and park of Prince Alexander Chavchavadze, where Georgia's first European-style wines were bottled and the cellar still holds bottles from the 1800s.</p><p>After the house and gardens you stop at a family winery for lunch and a tasting, with the chance to see a qvevri, the buried clay vessel used for traditional Georgian winemaking, and the afternoon ends back in Telavi.</p><ul><li>Walk through Telavi and see the 900-year-old plane tree;</li><li>Visit Batonistsikhe Castle;</li><li>Visit Tsinandali Estate;</li><li>Lunch and wine tasting at a family winery;</li><li>Overnight stay in Telavi.</li><li><strong>Duration of the tour:</strong> 7-8 hours</li><li><strong>Driving duration:</strong> 1.5 hours</li></ul>"
+      },
+      {
+        "title": "Day 4: Telavi – Sighnaghi – Bodbe – Tbilisi",
+        "content": "<p>You leave Telavi and drive along the Alazani Valley to Sighnaghi, the small walled town known as the City of Love, with its cobbled streets, wooden balconies and long views over the valley to the Caucasus.</p><p>Nearby is Bodbe, a convent on a hillside and the burial place of St. Nino, who brought Christianity to Georgia in the 4th century.</p><p>From there it is a straightforward drive to Tbilisi, where you arrive in the early afternoon, with the rest of the day free in the capital.</p><ul><li>Visit Sighnaghi;</li><li>Visit Bodbe Monastery;</li><li>Drive to Tbilisi and check in;</li><li>Free afternoon in Tbilisi;</li><li>Overnight stay in Tbilisi.</li><li><strong>Duration of the tour:</strong> 5-6 hours</li><li><strong>Driving duration:</strong> 3 hours</li></ul>"
+      },
+      {
+        "title": "Day 5: Tbilisi City Tour",
+        "content": "<p>The tour starts at Holy Trinity Cathedral, Sameba, one of the largest Orthodox churches in the world, rising above the city. From there you visit the clifftop Metekhi Church above the river, then ride the cable car up to Narikala Fortress for the view over Tbilisi.</p><p>Walking down from the fortress, you pass through Abanotubani, the district of brick-domed sulfur bathhouses the city was built on and named after, then wander the Old Town lanes to the leaning clock tower of the Rezo Gabriadze Theatre and cross the glass Peace Bridge. The rest of the day is free.</p><ul><li>Visit Holy Trinity Cathedral (Sameba);</li><li>See Metekhi Church;</li><li>Ride the cable car to Narikala Fortress;</li><li>Walk through the Abanotubani sulfur bath district;</li><li>See the Rezo Gabriadze Theatre clock tower and cross the Peace Bridge;</li><li>Overnight stay in Tbilisi.</li><li><strong>Duration of the tour:</strong> 4-5 hours</li><li><strong>Driving duration:</strong> 30 minutes</li></ul>"
+      },
+      {
+        "title": "Day 6: Tbilisi – Jvari – Mtskheta – Ananuri – Gudauri – Stepantsminda (Kazbegi)",
+        "content": "<p>North today, up the Georgian Military Highway into the Caucasus. The first stop is Mtskheta, Georgia's old capital and spiritual heart: Jvari Monastery on the hill above the meeting of two rivers, and Svetitskhoveli Cathedral in the town below, both on the UNESCO list.</p><p>Then a pause at Ananuri, a fortress and its churches standing over Jinvali Reservoir, with a lunch stop on the way.</p><p>Further up you stop where the Black and White Aragvi rivers meet, their two colors running side by side before they blend, and again at Gudauri Panorama.</p><p>The road crosses the Jvari Pass at 2,379 meters and drops to Stepantsminda, usually called Kazbegi, below Mount Kazbek.</p><ul><li>Visit Jvari Monastery (UNESCO World Heritage Site);</li><li>Visit Mtskheta and Svetitskhoveli Cathedral (UNESCO World Heritage Site);</li><li>Stop at Ananuri Fortress above Jinvali Reservoir, with a lunch stop on the way;</li><li>See the meeting of the Black and White Aragvi rivers;</li><li>Stop at Gudauri Panorama and cross the Jvari Pass;</li><li>Overnight stay in Kazbegi.</li><li><strong>Duration of the tour:</strong> 8-9 hours</li><li><strong>Driving duration:</strong> 3.5 hours</li></ul>"
+      },
+      {
+        "title": "Day 7: Kazbegi – Gergeti Trinity Church – Uplistsikhe – Tbilisi",
+        "content": "<p>The morning starts with a short drive up to Gergeti Trinity Church, the 14th-century church at 2,170 meters with Mount Kazbek behind it.</p><p>You then leave the mountains the way you came, with a lunch stop in the valley, and turn west of Mtskheta to Uplistsikhe, a town carved into the rock above the Mtkvari River that dates back to the Iron Age.</p><p>From there it is approximately an hour and a half back to Tbilisi for the night.</p><ul><li>Visit Gergeti Trinity Church;</li><li>Drive back down the Georgian Military Highway, with a lunch stop;</li><li>Visit Uplistsikhe cave town;</li><li>Return to Tbilisi;</li><li>Overnight stay in Tbilisi.</li><li><strong>Duration of the tour:</strong> 9-10 hours</li><li><strong>Driving duration:</strong> 5.5 hours</li></ul>"
+      },
+      {
+        "title": "Day 8: Tbilisi – Borjomi – Akhaltsikhe – Rabati Castle",
+        "content": "<p>Today you leave the capital and head southwest into the Lesser Caucasus. The first stop is Borjomi, the spa town known for its mineral water, with a short walk through the riverside park, where you can taste the water at the spring.</p><p>After lunch you continue to Akhaltsikhe, where Rabati Castle, a restored fortress complex with a mosque, a church and a museum inside its walls, overlooks the old town. You spend the night in Akhaltsikhe, close to Vardzia, which you visit tomorrow.</p><ul><li>Drive southwest from Tbilisi to Borjomi;</li><li>Walk through Borjomi Park;</li><li>Visit Rabati Castle in Akhaltsikhe;</li><li>Overnight stay in Akhaltsikhe.</li><li><strong>Duration of the tour:</strong> 8-9 hours</li><li><strong>Driving duration:</strong> 3.5-4 hours</li></ul>"
+      },
+      {
+        "title": "Day 9: Akhaltsikhe – Vardzia – Tbilisi",
+        "content": "<p>An early start for the drive south to Vardzia, a cave monastery carved into a cliff above the Mtkvari River in the 12th and 13th centuries, once home to hundreds of monks across its churches, cells and tunnels.</p><p>You have time to explore it before the long drive back to Tbilisi, with a lunch stop on the way, arriving in the evening for your last night in Georgia.</p><p>Access to parts of Vardzia can change after rockfalls; we check the current access before departure, and your guide adjusts the visit if a section is closed.</p><ul><li>Drive to Vardzia;</li><li>Visit the Vardzia cave monastery complex;</li><li>Drive back to Tbilisi, with a lunch stop;</li><li>Overnight stay in Tbilisi.</li><li><strong>Duration of the tour:</strong> 10-11 hours</li><li><strong>Driving duration:</strong> 6-6.5 hours</li></ul>"
+      },
+      {
+        "title": "Day 10: Tbilisi – Sadakhlo Border – Bagratashen – Haghpat – Lake Sevan – Sevanavank – Yerevan",
+        "content": "<p>Your Georgian guide takes you south from Tbilisi to the Sadakhlo border crossing.</p><p>The vehicle stops at the checkpoint and you walk across into Armenia with your luggage, completing the passport formalities yourselves.</p><p>On the Armenian side, at Bagratashen, your Armenian guide and vehicle are waiting, and the tour continues.</p><p>First stop is Haghpat, a 10th-century monastery on a green plateau in the Lori hills and one of Armenia's UNESCO sites.</p><p>The road then climbs to Lake Sevan, a vast alpine lake at nearly 1,900 meters, where Sevanavank Monastery sits on a headland above the water.</p><p>From there it is on to Yerevan for the first of three nights.</p><ul><li>Cross the Sadakhlo–Bagratashen border on foot and meet your Armenian guide;</li><li>Visit Haghpat Monastery (UNESCO World Heritage Site);</li><li>Stop at Lake Sevan;</li><li>Visit Sevanavank Monastery;</li><li>Overnight stay in Yerevan.</li><li><strong>Duration of the tour:</strong> 10-11 hours plus border crossing</li><li><strong>Driving duration:</strong> 5 hours</li></ul>"
+      },
+      {
+        "title": "Day 11: Yerevan – Echmiadzin – Zvartnots – Yerevan City Tour",
+        "content": "<p>Today pairs Armenia's spiritual heart with its capital. You'll drive out to Echmiadzin, the seat of the Armenian Apostolic Church, home to a cathedral founded in the 4th century, and stop at the ruins of Zvartnots, a 7th-century cathedral.</p><p>Back in Yerevan, the city tour takes in Republic Square, the Cascade with its view toward Mount Ararat, the Opera House and the Matenadaran manuscript museum.</p><p>The day ends with a dinner of Armenian food and local wine.</p><ul><li>Visit Echmiadzin Cathedral (UNESCO World Heritage Site);</li><li>See the Zvartnots ruins (UNESCO World Heritage Site);</li><li>Yerevan city tour;</li><li>Dinner at an Armenian restaurant;</li><li>Overnight stay in Yerevan.</li><li><strong>Duration of the tour:</strong> 6-7 hours</li><li><strong>Driving duration:</strong> 1.5 hours</li></ul>"
+      },
+      {
+        "title": "Day 12: Yerevan – Khor Virap – Garni – Symphony of Stones – Geghard – Yerevan",
+        "content": "<p>A full day to Armenia's best-known sights. You start south at Khor Virap, a monastery below Mount Ararat and closely associated with Gregory the Illuminator. Then east to Garni, a 1st-century Greco-Roman temple standing above a river gorge, with a walk down to the Symphony of Stones, a wall of natural basalt columns in the canyon below.</p><p>Nearby is Geghard, a UNESCO-listed monastery partly hewn directly into the rock. Back in Yerevan for your last night. Mount Ararat is not always visible; cloud and haze vary by day and season.</p><ul><li>Visit Khor Virap Monastery with views toward Mount Ararat;</li><li>Visit Garni Temple;</li><li>See the Symphony of Stones basalt columns;</li><li>Visit Geghard Monastery (UNESCO World Heritage Site);</li><li>Overnight stay in Yerevan.</li><li><strong>Duration of the tour:</strong> 8-9 hours</li><li><strong>Driving duration:</strong> 3.5 hours</li></ul>"
+      },
+      {
+        "title": "Day 13: Departure from Yerevan",
+        "content": "<p>Check out of your hotel by 12:00 p.m. When it's time, we'll transfer you to Zvartnots International Airport for your departure.</p><ul><li>Hotel check-out by 12:00 p.m.;</li><li>Transfer to Zvartnots International Airport;</li><li>Departure.</li><li><strong>Driving duration:</strong> 30 minutes</li></ul>"
+      }
+    ],
+    "accommodations": [
+      {
+        "city": "Tbilisi (5 nights)",
+        "luxury": "Rooms Hotel Tbilisi",
+        "midRange": "Ibis Styles Tbilisi Center",
+        "economy": "Ginger Hotel"
+      },
+      {
+        "city": "Telavi (2 nights)",
+        "luxury": "Tsinandali Estate, A Radisson Collection Hotel",
+        "midRange": "Park Hotel Tsinandali",
+        "economy": "Hotel & Wine Cellar ARGE"
+      },
+      {
+        "city": "Kazbegi (1 night)",
+        "luxury": "Rooms Hotel Kazbegi",
+        "midRange": "Northgate",
+        "economy": "Hotel Horizon"
+      },
+      {
+        "city": "Akhaltsikhe (1 night)",
+        "luxury": "Gino Wellness Rabati",
+        "midRange": "Akhaltsikhe Inn",
+        "economy": "Hotel Beni"
+      },
+      {
+        "city": "Yerevan (3 nights)",
+        "luxury": "DoubleTree by Hilton Yerevan City Centre",
+        "midRange": "Yerevan Place",
+        "economy": "Ani Central Inn"
+      }
+    ],
+    "pricing": [
+      {
+        "travelers": "Single Supplement",
+        "luxury": "1110",
+        "midRange": "650",
+        "economy": "380"
+      },
+      {
+        "travelers": "1",
+        "luxury": "6495",
+        "midRange": "5485",
+        "economy": "4895"
+      },
+      {
+        "travelers": "2",
+        "luxury": "3550",
+        "midRange": "2960",
+        "economy": "2665"
+      },
+      {
+        "travelers": "3",
+        "luxury": "3420",
+        "midRange": "2670",
+        "economy": "2290"
+      },
+      {
+        "travelers": "4",
+        "luxury": "2730",
+        "midRange": "2135",
+        "economy": "1835"
+      }
+    ],
+    "included": [
+      "Accommodation in double/twin rooms — single room for 1 traveler — with breakfast included (12 nights);",
+      "All transfers as per itinerary, by private air-conditioned vehicle (car for 1–2 travelers, minivan for 3–4), with a separate vehicle in each country;",
+      "English-speaking guide in each country on all sightseeing days (Days 2–12);",
+      "Entrance fees as per itinerary;",
+      "Lunch and wine tasting at Kakheti wineries on Days 2 and 3;",
+      "Dinner in Yerevan on Day 11;",
+      "Still water."
+    ],
+    "notIncluded": [
+      "Lunches and dinners not mentioned in the itinerary;",
+      "Visa fees, where applicable;",
+      "Tips and personal expenses;",
+      "Additional hotel expenses;",
+      "Travel insurance — Georgia requires every visitor to hold health and accident insurance of at least GEL 30,000 covering the whole stay, which may be checked at the border;",
+      "International flights — arrival in Tbilisi and departure from Yerevan — and airline fees."
+    ],
+    "gallery": [
+      {
+        "src": "/images/tours/13-day-georgia-armenia-tour/route-map-13-day-georgia-armenia-tour-2400.webp",
+        "base": "/images/tours/13-day-georgia-armenia-tour/route-map-13-day-georgia-armenia-tour",
+        "widths": [
+          768,
+          1200,
+          1600,
+          2400
+        ],
+        "width": 2400,
+        "height": 1600,
+        "caption": {
+          "en": "Route Map",
+          "de": "Routenkarte",
+          "fr": "Carte de l'itinéraire",
+          "es": "Mapa de la ruta",
+          "nl": "Routekaart",
+          "cs": "Mapa trasy",
+          "pl": "Mapa trasy"
+        },
+        "altText": {
+          "en": "Illustrated route map of the 13-day private tour across Georgia and Armenia: Tbilisi, Kakheti and Telavi, Sighnaghi and Bodbe, Mtskheta, Ananuri and Kazbegi, Uplistsikhe, Borjomi, Akhaltsikhe and Vardzia, the Sadakhlo–Bagratashen border crossing, Haghpat, Lake Sevan and Yerevan, with day trips to Echmiadzin, Khor Virap, Garni and Geghard",
+          "de": "Illustrierte Routenkarte der 13-tägigen Privatreise durch Georgien und Armenien: Tiflis, Kachetien und Telawi, Sighnaghi und Bodbe, Mzcheta, Ananuri und Kasbegi, Uplisziche, Borjomi, Akhaltsikhe und Vardzia, der Grenzübergang Sadakhlo–Bagratashen, Haghpat, Sevan-See und Jerewan, mit Tagesausflügen nach Etchmiadzin, Khor Virap, Garni und Geghard",
+          "fr": "Carte illustrée de l'itinéraire du circuit privé de 13 jours en Géorgie et en Arménie : Tbilissi, la Kakhétie et Telavi, Sighnaghi et Bodbe, Mtskheta, Ananouri et Kazbegi, Ouplistsikhé, Borjomi, Akhaltsikhe et Vardzia, le passage frontalier de Sadakhlo–Bagratashen, Haghpat, le lac Sevan et Erevan, avec des excursions à Etchmiadzine, Khor Virap, Garni et Geghard",
+          "es": "Mapa ilustrado de la ruta del tour privado de 13 días por Georgia y Armenia: Tiflis, Kajetia y Telavi, Sighnaghi y Bodbe, Mtskheta, Ananuri y Kazbegi, Uplistsikhe, Borjomi, Akhaltsikhe y Vardzia, el paso fronterizo de Sadakhlo–Bagratashen, Haghpat, el lago Sevan y Ereván, con excursiones a Echmiadzin, Khor Virap, Garni y Geghard",
+          "nl": "Geïllustreerde routekaart van de 13-daagse privétour door Georgië en Armenië: Tbilisi, Kacheti en Telavi, Sighnaghi en Bodbe, Mtskheta, Ananuri en Kazbegi, Uplistsikhe, Borjomi, Akhaltsikhe en Vardzia, de grensovergang Sadakhlo–Bagratashen, Haghpat, het Sevanmeer en Jerevan, met dagtrips naar Etchmiadzin, Khor Virap, Garni en Geghard",
+          "cs": "Ilustrovaná mapa trasy 13denního soukromého zájezdu po Gruzii a Arménii: Tbilisi, Kachetie a Telavi, Sighnaghi a Bodbe, Mccheta, Ananuri a Kazbegi, Uplisciche, Borjomi, Akhaltsikhe a Vardzia, hraniční přechod Sadakhlo–Bagratashen, Haghpat, jezero Sevan a Jerevan, s výlety do Etchmiadzinu, Khor Virap, Garni a Geghardu",
+          "pl": "Ilustrowana mapa trasy 13-dniowej prywatnej wycieczki po Gruzji i Armenii: Tbilisi, Kachetia i Telawi, Sighnaghi i Bodbe, Mccheta, Ananuri i Kazbegi, Uplisciche, Borjomi, Akhaltsikhe i Vardzia, przejście graniczne Sadakhlo–Bagratashen, Haghpat, jezioro Sewan i Erywań, z wycieczkami do Etchmiadzinu, Khor Virap, Garni i Geghardu"
+        }
+      },
+      {
+        "src": "/images/files/kakheti-vineyard-georgia-1280.webp",
+        "base": "/images/files/kakheti-vineyard-georgia",
+        "widths": [
+          768,
+          1200,
+          1280
+        ],
+        "width": 1280,
+        "height": 853,
+        "caption": {
+          "en": "Kakheti Vineyards",
+          "de": "Weinberge Kachetiens",
+          "fr": "Vignobles de Kakhétie",
+          "es": "Viñedos de Kajetia",
+          "nl": "Wijngaarden van Kacheti",
+          "cs": "Vinice Kachetie",
+          "pl": "Winnice Kachetii"
+        },
+        "altText": {
+          "en": "Rows of grapevines in a vineyard at sunrise, with mist over the surrounding fields, Kakheti wine country, Georgia",
+          "de": "Rebzeilen in einem Weinberg bei Sonnenaufgang, mit Nebel über den umliegenden Feldern, Weinregion Kachetien, Georgien",
+          "fr": "Rangées de vignes dans un vignoble au lever du soleil, avec de la brume sur les champs alentour, région viticole de Kakhétie, Géorgie",
+          "es": "Hileras de vides en un viñedo al amanecer, con niebla sobre los campos circundantes, región vinícola de Kajetia, Georgia",
+          "nl": "Rijen wijnstokken in een wijngaard bij zonsopgang, met mist over de omliggende velden, wijnstreek Kacheti, Georgië",
+          "cs": "Řady vinné révy ve vinici za svítání, s mlhou nad okolními poli, vinařský kraj Kachetie, Gruzie",
+          "pl": "Rzędy winorośli w winnicy o wschodzie słońca, z mgłą nad okolicznymi polami, region winiarski Kachetia, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/erekle-ii-monument-telavi-georgia-1448.webp",
+        "base": "/images/files/erekle-ii-monument-telavi-georgia",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Monument to King Erekle II, Telavi",
+          "de": "Denkmal für König Erekle II., Telawi",
+          "fr": "Monument au roi Erekle II, Telavi",
+          "es": "Monumento al rey Erekle II, Telavi",
+          "nl": "Standbeeld van koning Erekle II, Telavi",
+          "cs": "Pomník krále Erekleho II., Telavi",
+          "pl": "Pomnik króla Erekle II, Telawi"
+        },
+        "altText": {
+          "en": "The bronze equestrian monument to King Erekle II, raising a sword on horseback against a blue sky, Telavi, Georgia",
+          "de": "Das bronzene Reiterdenkmal für König Erekle II., der zu Pferd ein Schwert erhebt, vor blauem Himmel, Telawi, Georgien",
+          "fr": "Le monument équestre en bronze du roi Erekle II, brandissant une épée à cheval sur fond de ciel bleu, Telavi, Géorgie",
+          "es": "El monumento ecuestre de bronce al rey Erekle II, alzando una espada a caballo contra un cielo azul, Telavi, Georgia",
+          "nl": "Het bronzen ruiterstandbeeld van koning Erekle II, te paard een zwaard heffend tegen een blauwe hemel, Telavi, Georgië",
+          "cs": "Bronzový jezdecký pomník krále Erekleho II., pozvedajícího na koni meč proti modré obloze, Telavi, Gruzie",
+          "pl": "Brązowy pomnik konny króla Erekle II, wznoszącego miecz na koniu na tle błękitnego nieba, Telawi, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/tsinandali-estate-georgia-1536.webp",
+        "base": "/images/files/tsinandali-estate-georgia",
+        "widths": [
+          768,
+          1200,
+          1536
+        ],
+        "width": 1536,
+        "height": 1024,
+        "caption": {
+          "en": "Tsinandali Estate",
+          "de": "Anwesen Zinandali",
+          "fr": "Domaine de Tsinandali",
+          "es": "Finca de Tsinandali",
+          "nl": "Landgoed Tsinandali",
+          "cs": "Usedlost Cinandali",
+          "pl": "Majątek Cinandali"
+        },
+        "altText": {
+          "en": "The Chavchavadze house at Tsinandali Estate across a lawn framed by tall trees, Kakheti, Georgia",
+          "de": "Das Chavchavadze-Haus des Anwesens Zinandali hinter einer von hohen Bäumen gesäumten Rasenfläche, Kachetien, Georgien",
+          "fr": "La maison Chavchavadze du domaine de Tsinandali, au-delà d'une pelouse bordée de grands arbres, Kakhétie, Géorgie",
+          "es": "La casa Chavchavadze de la finca de Tsinandali tras una pradera rodeada de árboles altos, Kajetia, Georgia",
+          "nl": "Het Chavchavadze-huis van het landgoed Tsinandali achter een gazon omzoomd door hoge bomen, Kacheti, Georgië",
+          "cs": "Dům Čavčavadzeů v usedlosti Cinandali za trávníkem lemovaným vysokými stromy, Kachetie, Gruzie",
+          "pl": "Dom Czawczawadzego w majątku Cinandali za trawnikiem otoczonym wysokimi drzewami, Kachetia, Gruzja"
+        }
+      },
+      {
+        "src": "/images/kakheti/sighnaghi-ridge-alazani-valley-kakheti-georgia-1448.webp",
+        "base": "/images/kakheti/sighnaghi-ridge-alazani-valley-kakheti-georgia",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "fallbackWidth": 1200,
+        "width": 1448,
+        "height": 877,
+        "caption": {
+          "en": "Sighnaghi, Kakheti",
+          "de": "Sighnaghi, Kachetien",
+          "fr": "Sighnaghi, Kakhétie",
+          "es": "Sighnaghi, Kajetia",
+          "nl": "Sighnaghi, Kachetië",
+          "cs": "Sighnaghi, Kachetie",
+          "pl": "Sighnaghi, Kachetia"
+        },
+        "altText": {
+          "en": "Hilltop town of Sighnaghi overlooking the Alazani Valley in Kakheti, Georgia",
+          "de": "Die Hügelstadt Sighnaghi mit Blick über das Alasani-Tal in Kachetien, Georgien",
+          "fr": "La ville perchée de Sighnaghi dominant la vallée de l'Alazani en Kakhétie, Géorgie",
+          "es": "El pueblo en la colina de Sighnaghi con vistas al valle de Alazani en Kajetia, Georgia",
+          "nl": "Het heuveltopstadje Sighnaghi met uitzicht over de Alazani-vallei in Kachetië, Georgië",
+          "cs": "Městečko Sighnaghi na kopci s výhledem na Alazanské údolí v Kachetii, Gruzie",
+          "pl": "Miasteczko Sighnaghi na wzgórzu z widokiem na Dolinę Alazani w Kachetii, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp",
+        "base": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Tbilisi Old Town",
+          "de": "Altstadt von Tiflis",
+          "fr": "Vieille ville de Tbilissi",
+          "es": "Casco antiguo de Tiflis",
+          "nl": "Oude stad van Tbilisi",
+          "cs": "Staré Město Tbilisi",
+          "pl": "Starówka w Tbilisi"
+        },
+        "altText": {
+          "en": "Tbilisi's Old Town below Narikala Fortress, with a Rike–Narikala cable car cabin above the Metekhi Bridge and the Mtkvari River, Georgia",
+          "de": "Die Altstadt von Tiflis unterhalb der Festung Narikala, mit einer Kabine der Seilbahn Rike–Narikala über der Metekhi-Brücke und dem Fluss Mtkwari, Georgien",
+          "fr": "La vieille ville de Tbilissi sous la forteresse Narikala, avec une cabine du téléphérique Rike–Narikala au-dessus du pont Metekhi et de la rivière Mtkvari, Géorgie",
+          "es": "El casco antiguo de Tiflis bajo la fortaleza de Narikala, con una cabina del teleférico Rike–Narikala sobre el puente Metekhi y el río Mtkvari, Georgia",
+          "nl": "De oude stad van Tbilisi onder de Narikala-vesting, met een cabine van de kabelbaan Rike–Narikala boven de Metekhi-brug en de rivier de Mtkvari, Georgië",
+          "cs": "Staré Město Tbilisi pod pevností Narikala, s kabinou lanovky Rike–Narikala nad mostem Metekhi a řekou Mtkvari, Gruzie",
+          "pl": "Stare Miasto Tbilisi pod twierdzą Narikala, z gondolą kolejki linowej Rike–Narikala nad mostem Metekhi i rzeką Mtkwari, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/holy-trinity-cathedral-tbilisi-georgia-1672.webp",
+        "base": "/images/files/holy-trinity-cathedral-tbilisi-georgia",
+        "widths": [
+          768,
+          1200,
+          1600,
+          1672
+        ],
+        "width": 1672,
+        "height": 941,
+        "caption": {
+          "en": "Holy Trinity Cathedral (Sameba)",
+          "de": "Dreifaltigkeitskathedrale Sameba",
+          "fr": "Cathédrale de la Sainte-Trinité (Sameba)",
+          "es": "Catedral de la Santísima Trinidad (Sameba)",
+          "nl": "Heilige-Drie-eenheidskathedraal (Sameba)",
+          "cs": "Katedrála Nejsvětější Trojice (Sameba)",
+          "pl": "Katedra Trójcy Świętej (Sameba)"
+        },
+        "altText": {
+          "en": "The Holy Trinity Cathedral of Tbilisi (Sameba), a large golden-domed Georgian Orthodox church, under a blue sky with clouds, Georgia",
+          "de": "Die Heilige-Dreifaltigkeits-Kathedrale von Tiflis (Sameba), eine große georgisch-orthodoxe Kirche mit goldener Kuppel, unter blauem Wolkenhimmel, Georgien",
+          "fr": "La cathédrale de la Sainte-Trinité de Tbilissi (Sameba), grande église orthodoxe géorgienne à coupole dorée, sous un ciel bleu nuageux, Géorgie",
+          "es": "La catedral de la Santísima Trinidad de Tiflis (Sameba), gran iglesia ortodoxa georgiana de cúpula dorada, bajo un cielo azul con nubes, Georgia",
+          "nl": "De Heilige-Drie-eenheidskathedraal van Tbilisi (Sameba), een grote Georgisch-orthodoxe kerk met gouden koepel, onder een blauwe bewolkte hemel, Georgië",
+          "cs": "Katedrála Nejsvětější Trojice v Tbilisi (Sameba), velký gruzínský pravoslavný chrám se zlatou kupolí, pod modrou oblohou s mraky, Gruzie",
+          "pl": "Katedra Trójcy Świętej w Tbilisi (Sameba), wielki gruziński prawosławny kościół ze złotą kopułą, pod błękitnym, zachmurzonym niebem, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/narikala-fortress-tbilisi-georgia-1448.webp",
+        "base": "/images/files/narikala-fortress-tbilisi-georgia",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Narikala Fortress",
+          "de": "Festung Narikala",
+          "fr": "Forteresse de Narikala",
+          "es": "Fortaleza de Narikala",
+          "nl": "Fort Narikala",
+          "cs": "Pevnost Narikala",
+          "pl": "Twierdza Narikala"
+        },
+        "altText": {
+          "en": "The stone walls and gate of Narikala Fortress above Tbilisi Old Town, with the brick church of Saint Nicholas, under a blue sky, Georgia",
+          "de": "Die Steinmauern und das Tor der Festung Narikala über der Altstadt von Tiflis, mit der Backsteinkirche St. Nikolaus, unter blauem Himmel, Georgien",
+          "fr": "Les murs de pierre et la porte de la forteresse de Narikala au-dessus de la vieille ville de Tbilissi, avec l'église en brique Saint-Nicolas, sous un ciel bleu, Géorgie",
+          "es": "Los muros de piedra y la puerta de la fortaleza de Narikala sobre el casco antiguo de Tiflis, con la iglesia de ladrillo de San Nicolás, bajo un cielo azul, Georgia",
+          "nl": "De stenen muren en poort van de Narikala-vesting boven de oude stad van Tbilisi, met de bakstenen Sint-Nicolaaskerk, onder een blauwe hemel, Georgië",
+          "cs": "Kamenné hradby a brána pevnosti Narikala nad tbiliským Starým Městem, s cihlovým kostelem svatého Mikuláše, pod modrou oblohou, Gruzie",
+          "pl": "Kamienne mury i brama twierdzy Narikala nad tbiliską starówką, z ceglaną cerkwią św. Mikołaja, pod błękitnym niebem, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/rezo-gabriadze-clock-tower-10day-tour-georgia-1086.webp",
+        "base": "/images/files/rezo-gabriadze-clock-tower-10day-tour-georgia",
+        "widths": [
+          768,
+          1086
+        ],
+        "width": 1086,
+        "height": 1448,
+        "caption": {
+          "en": "Rezo Gabriadze Clock Tower",
+          "de": "Uhrturm des Rezo-Gabriadze-Theaters",
+          "fr": "Tour de l'horloge du théâtre Rezo Gabriadze",
+          "es": "Torre del reloj del teatro Rezo Gabriadze",
+          "nl": "Klokkentoren van het Rezo Gabriadze-theater",
+          "cs": "Hodinová věž divadla Reza Gabriadzeho",
+          "pl": "Wieża zegarowa teatru Rezo Gabriadze"
+        },
+        "altText": {
+          "en": "The leaning, richly decorated clock tower of the Rezo Gabriadze Theatre in Tbilisi Old Town, Georgia",
+          "de": "Der schiefe, reich verzierte Uhrturm des Rezo-Gabriadse-Theaters in der Altstadt von Tiflis, Georgien",
+          "fr": "La tour de l'horloge penchée et richement décorée du théâtre Rezo Gabriadze, dans la vieille ville de Tbilissi, Géorgie",
+          "es": "La inclinada y ricamente decorada torre del reloj del teatro Rezo Gabriadze, en el casco antiguo de Tiflis, Georgia",
+          "nl": "De scheve, rijk versierde klokkentoren van het Rezo Gabriadze-theater in de oude stad van Tbilisi, Georgië",
+          "cs": "Nakloněná, bohatě zdobená hodinová věž divadla Rezo Gabriadzeho v tbiliském Starém Městě, Gruzie",
+          "pl": "Pochylona, bogato zdobiona wieża zegarowa teatru Rezo Gabriadzego na tbiliskiej starówce, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/jvari-monastery-mtskheta-georgia-1540.webp",
+        "base": "/images/files/jvari-monastery-mtskheta-georgia",
+        "widths": [
+          768,
+          1200,
+          1540
+        ],
+        "width": 1540,
+        "height": 1021,
+        "caption": {
+          "en": "Jvari Monastery, Mtskheta",
+          "de": "Dschwari-Kloster, Mzcheta",
+          "fr": "Monastère de Djvari, Mtskheta",
+          "es": "Monasterio de Jvari, Mtsjeta",
+          "nl": "Jvari-klooster, Mtscheta",
+          "cs": "Klášter Džvari, Mccheta",
+          "pl": "Klasztor Dżwari, Mccheta"
+        },
+        "altText": {
+          "en": "The UNESCO-listed Jvari Monastery, a 6th-century stone church on a hilltop above the confluence of the Aragvi and Mtkvari rivers at Mtskheta, Georgia",
+          "de": "Das UNESCO-gelistete Dschwari-Kloster, eine Steinkirche aus dem 6. Jahrhundert auf einem Hügel über dem Zusammenfluss von Aragwi und Kura bei Mzcheta, Georgien",
+          "fr": "Le monastère de Djvari, inscrit à l'UNESCO, église de pierre du VIe siècle sur une colline dominant le confluent de l'Aragvi et de la Koura à Mtskheta, Géorgie",
+          "es": "El monasterio de Jvari, declarado por la UNESCO, iglesia de piedra del siglo VI en una colina sobre la confluencia de los ríos Aragvi y Mtkvari en Mtsjeta, Georgia",
+          "nl": "Het door UNESCO erkende Jvari-klooster, een 6e-eeuwse stenen kerk op een heuvel boven de samenvloeiing van de Aragvi en de Mtkvari bij Mtscheta, Georgië",
+          "cs": "Klášter Džvari zapsaný na seznamu UNESCO, kamenný kostel ze 6. století na kopci nad soutokem řek Aragvi a Mtkvari u Mcchety, Gruzie",
+          "pl": "Wpisany na listę UNESCO klasztor Dżwari, kamienny kościół z VI wieku na wzgórzu nad zbiegiem rzek Aragwi i Mtkwari w Mcchecie, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
+        "base": "/images/files/svetitskhoveli-cathedral-mtskheta-georgia",
+        "widths": [
+          768,
+          1200,
+          1540
+        ],
+        "width": 1540,
+        "height": 1021,
+        "caption": {
+          "en": "Svetitskhoveli Cathedral, Mtskheta",
+          "de": "Swetizchoweli-Kathedrale, Mzcheta",
+          "fr": "Cathédrale de Svétitskhovéli, Mtskheta",
+          "es": "Catedral de Svetitsjoveli, Mtsjeta",
+          "nl": "Svetitschoveli-kathedraal, Mtscheta",
+          "cs": "Katedrála Sveticchoveli, Mccheta",
+          "pl": "Katedra Sweticchoweli, Mccheta"
+        },
+        "altText": {
+          "en": "The UNESCO-listed Svetitskhoveli Cathedral, an 11th-century domed stone cathedral within its walled courtyard at Mtskheta, Georgia",
+          "de": "Die UNESCO-gelistete Swetizchoweli-Kathedrale, eine kuppelbekrönte Steinkathedrale aus dem 11. Jahrhundert in ihrem ummauerten Hof in Mzcheta, Georgien",
+          "fr": "La cathédrale de Svétitskhovéli, inscrite à l'UNESCO, cathédrale de pierre à coupole du XIe siècle dans son enceinte fortifiée à Mtskheta, Géorgie",
+          "es": "La catedral de Svetitsjoveli, declarada por la UNESCO, catedral de piedra con cúpula del siglo XI en su recinto amurallado de Mtsjeta, Georgia",
+          "nl": "De door UNESCO erkende Svetitschoveli-kathedraal, een 11e-eeuwse stenen koepelkathedraal binnen haar ommuurde hof in Mtscheta, Georgië",
+          "cs": "Katedrála Sveticchoveli zapsaná na seznamu UNESCO, kamenná kupolová katedrála z 11. století ve svém hrazeném areálu v Mcchetě, Gruzie",
+          "pl": "Wpisana na listę UNESCO katedra Sweticchoweli, kamienna kopułowa katedra z XI wieku w obrębie murowanego dziedzińca w Mcchecie, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/ananuri-fortress-georgia-1920.webp",
+        "base": "/images/files/ananuri-fortress-georgia",
+        "widths": [
+          768,
+          1200,
+          1600,
+          1920
+        ],
+        "width": 1920,
+        "height": 1271,
+        "caption": {
+          "en": "Ananuri Fortress",
+          "de": "Festung Ananuri",
+          "fr": "Forteresse d'Ananouri",
+          "es": "Fortaleza de Ananuri",
+          "nl": "Vesting Ananuri",
+          "cs": "Pevnost Ananuri",
+          "pl": "Twierdza Ananuri"
+        },
+        "altText": {
+          "en": "The Ananuri fortress and its domed church on a green hillside above the turquoise Zhinvali reservoir, backed by forested mountains, Georgia",
+          "de": "Die Festung Ananuri und ihre Kuppelkirche an einem grünen Hang über dem türkisfarbenen Schinwali-Stausee, dahinter bewaldete Berge, Georgien",
+          "fr": "La forteresse d'Ananouri et son église à coupole sur un versant verdoyant au-dessus du réservoir turquoise de Jinvali, adossées à des montagnes boisées, Géorgie",
+          "es": "La fortaleza de Ananuri y su iglesia de cúpula en una ladera verde sobre el embalse turquesa de Zhinvali, con montañas boscosas al fondo, Georgia",
+          "nl": "De vesting Ananuri en haar koepelkerk op een groene helling boven het turkooizen Zhinvali-stuwmeer, met beboste bergen erachter, Georgië",
+          "cs": "Pevnost Ananuri a její kupolový kostel na zeleném svahu nad tyrkysovou přehradou Žinvali, v pozadí zalesněné hory, Gruzie",
+          "pl": "Twierdza Ananuri i jej kopułowy kościół na zielonym zboczu nad turkusowym zbiornikiem Żinwali, na tle zalesionych gór, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/gudauri-panorama-friendship-monument-georgia-1448.webp",
+        "base": "/images/files/gudauri-panorama-friendship-monument-georgia",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Gudauri Panorama",
+          "de": "Gudauri-Panorama",
+          "fr": "Panorama de Gudauri",
+          "es": "Panorama de Gudauri",
+          "nl": "Panorama Gudauri",
+          "cs": "Panorama Gudauri",
+          "pl": "Panorama Gudauri"
+        },
+        "altText": {
+          "en": "The Russia–Georgia Friendship Monument at Gudauri, a curved stone terrace with a colourful mosaic mural, above the Caucasus mountains, Georgia",
+          "de": "Das russisch-georgische Freundschaftsdenkmal in Gudauri, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild, über den Kaukasusbergen, Georgien",
+          "fr": "Le monument de l'amitié russo-géorgienne à Gudauri, une terrasse de pierre incurvée ornée d'une fresque en mosaïque colorée, au-dessus des montagnes du Caucase, Géorgie",
+          "es": "El Monumento a la Amistad ruso-georgiana en Gudauri, una terraza de piedra curva con un colorido mural de mosaico, sobre las montañas del Cáucaso, Georgia",
+          "nl": "Het Russisch-Georgische Vriendschapsmonument bij Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering, boven de Kaukasusbergen, Georgië",
+          "cs": "Rusko-gruzínský památník přátelství v Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou, nad kavkazskými horami, Gruzie",
+          "pl": "Pomnik Przyjaźni Rosyjsko-Gruzińskiej w Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem, nad górami Kaukazu, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/gergeti-trinity-church-kazbegi-georgia-1448.webp",
+        "base": "/images/files/gergeti-trinity-church-kazbegi-georgia",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Gergeti Trinity Church",
+          "de": "Gergeti-Dreifaltigkeitskirche",
+          "fr": "Église de la Trinité de Gergeti",
+          "es": "Iglesia de la Trinidad de Gergeti",
+          "nl": "Drie-eenheidskerk van Gergeti",
+          "cs": "Gergetský kostel Nejsvětější Trojice",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti"
+        },
+        "altText": {
+          "en": "The Gergeti Trinity Church, a lone stone church with a bell tower on a hill below steep rocky Caucasus mountains near Kazbegi, Georgia",
+          "de": "Die Gergeti-Dreifaltigkeitskirche, eine einzeln stehende Steinkirche mit Glockenturm auf einem Hügel unter steilen felsigen Kaukasusbergen bei Kazbegi, Georgien",
+          "fr": "L'église de la Trinité de Guerguéti, église de pierre isolée avec clocher sur une colline au pied d'abruptes montagnes rocheuses du Caucase, près de Kazbegi, Géorgie",
+          "es": "La iglesia de la Trinidad de Gergeti, iglesia de piedra solitaria con campanario en una colina al pie de escarpadas montañas rocosas del Cáucaso, cerca de Kazbegi, Georgia",
+          "nl": "De Drie-eenheidskerk van Gergeti, een alleenstaande stenen kerk met klokkentoren op een heuvel onder steile rotsachtige Kaukasusbergen bij Kazbegi, Georgië",
+          "cs": "Gergetský kostel Nejsvětější Trojice, osamělý kamenný kostel se zvonicí na kopci pod strmými skalnatými kavkazskými horami u Kazbegi, Gruzie",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti, samotny kamienny kościół z dzwonnicą na wzgórzu u stóp stromych, skalistych gór Kaukazu koło Kazbegi, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/uplistsikhe-cave-town-georgia-1448.webp",
+        "base": "/images/files/uplistsikhe-cave-town-georgia",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Uplistsikhe Cave Town",
+          "de": "Höhlenstadt Uplisziche",
+          "fr": "Cité troglodytique d'Ouplistsikhé",
+          "es": "Ciudad rupestre de Uplistsije",
+          "nl": "Grotstad Uplistsiche",
+          "cs": "Jeskynní město Uplisciche",
+          "pl": "Skalne miasto Upliscyche"
+        },
+        "altText": {
+          "en": "The Uplistsikhe cave town — an ancient settlement carved into a rocky hillside above the green Mtkvari valley, Georgia",
+          "de": "Die Höhlenstadt Uplisziche — eine antike Siedlung, in einen felsigen Hang über dem grünen Mtkwari-Tal gehauen, Georgien",
+          "fr": "La cité troglodytique d'Ouplistsikhé — un ancien site creusé dans un versant rocheux au-dessus de la vallée verdoyante de la Mtkvari, Géorgie",
+          "es": "La ciudad rupestre de Uplistsije — un antiguo asentamiento excavado en una ladera rocosa sobre el verde valle del Mtkvari, Georgia",
+          "nl": "De grotstad Uplistsiche — een oude nederzetting uitgehouwen in een rotsachtige helling boven het groene Mtkvari-dal, Georgië",
+          "cs": "Jeskynní město Uplisciche — starobylé sídlo vytesané do skalnatého svahu nad zeleným údolím Mtkvari, Gruzie",
+          "pl": "Skalne miasto Upliscyche — starożytna osada wykuta w skalistym zboczu nad zieloną doliną Mtkwari, Gruzja"
+        }
+      },
+      {
+        "src": "/images/tours/highlights-from-tbilisi/borjomi-central-park-pavilion-georgia-1672.webp",
+        "base": "/images/tours/highlights-from-tbilisi/borjomi-central-park-pavilion-georgia",
+        "widths": [
+          768,
+          1200,
+          1672
+        ],
+        "width": 1672,
+        "height": 941,
+        "caption": {
+          "en": "Central Park, Borjomi",
+          "de": "Zentralpark, Bordschomi",
+          "fr": "Parc central, Borjomi",
+          "es": "Parque Central, Borjomi",
+          "nl": "Centraal Park, Borjomi",
+          "cs": "Centrální park, Bordžomi",
+          "pl": "Park Centralny, Borjomi"
+        }
+      },
+      {
+        "src": "/images/tours/highlights-from-tbilisi/rabati-castle-akhaltsikhe-georgia-1448.webp",
+        "base": "/images/tours/highlights-from-tbilisi/rabati-castle-akhaltsikhe-georgia",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Rabati Castle, Akhaltsikhe",
+          "de": "Burg Rabati, Achalziche",
+          "fr": "Château de Rabati, Akhaltsikhe",
+          "es": "Castillo de Rabati, Akhaltsikhe",
+          "nl": "Kasteel Rabati, Achaltsiche",
+          "cs": "Hrad Rabati, Achalciche",
+          "pl": "Zamek Rabati, Achalciche"
+        }
+      },
+      {
+        "src": "/images/tours/highlights-from-tbilisi/vardzia-cave-monastery-georgia-1448.webp",
+        "base": "/images/tours/highlights-from-tbilisi/vardzia-cave-monastery-georgia",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Vardzia cave monastery",
+          "de": "Höhlenkloster Wardsia",
+          "fr": "Monastère troglodyte de Vardzia",
+          "es": "Monasterio rupestre de Vardzia",
+          "nl": "Grottenklooster Vardzia",
+          "cs": "Jeskynní klášter Vardzia",
+          "pl": "Klasztor jaskiniowy Wardzia"
+        }
+      },
+      {
+        "src": "/images/files/haghpat-monastery-armenia-1672.webp",
+        "base": "/images/files/haghpat-monastery-armenia",
+        "widths": [
+          768,
+          1200,
+          1600,
+          1672
+        ],
+        "width": 1672,
+        "height": 941,
+        "caption": {
+          "en": "Haghpat Monastery",
+          "de": "Kloster Haghpat",
+          "fr": "Monastère de Haghpat",
+          "es": "Monasterio de Haghpat",
+          "nl": "Klooster Haghpat",
+          "cs": "Klášter Haghpat",
+          "pl": "Klasztor Haghpat"
+        },
+        "altText": {
+          "en": "The UNESCO-listed Haghpat Monastery — the medieval basalt church of Saint Nshan with its tiled conical dome on a grassy hillside under a clear blue sky, Lori, Armenia",
+          "de": "Das UNESCO-gelistete Kloster Haghpat — die mittelalterliche Basaltkirche Surb Nschan mit ihrer ziegelgedeckten Kegelkuppel auf einem grasbewachsenen Hang unter klarem blauem Himmel, Lori, Armenien",
+          "fr": "Le monastère de Haghpat, inscrit à l'UNESCO — l'église médiévale en basalte de Saint-Nshan et sa coupole conique en tuiles sur un versant herbeux sous un ciel bleu limpide, Lori, Arménie",
+          "es": "El monasterio de Haghpat, declarado por la UNESCO — la iglesia medieval de basalto de San Nshan con su cúpula cónica de tejas en una ladera cubierta de hierba bajo un cielo azul despejado, Lori, Armenia",
+          "nl": "Het door UNESCO erkende klooster Haghpat — de middeleeuwse basaltkerk Sint-Nshan met haar met dakpannen bedekte kegelkoepel op een grazige helling onder een strakblauwe hemel, Lori, Armenië",
+          "cs": "Klášter Haghpat zapsaný na seznamu UNESCO — středověký čedičový kostel svatého Nšana s taškovou kuželovou kupolí na travnatém svahu pod jasně modrou oblohou, Lori, Arménie",
+          "pl": "Wpisany na listę UNESCO klasztor Haghpat — średniowieczny bazaltowy kościół św. Nszana z krytą dachówką stożkową kopułą na trawiastym zboczu pod bezchmurnym błękitnym niebem, Lori, Armenia"
+        }
+      },
+      {
+        "src": "/images/files/lake-sevan-armenia-1672.webp",
+        "base": "/images/files/lake-sevan-armenia",
+        "widths": [
+          768,
+          1200,
+          1600,
+          1672
+        ],
+        "width": 1672,
+        "height": 941,
+        "caption": {
+          "en": "Lake Sevan",
+          "de": "Sewansee",
+          "fr": "Lac Sevan",
+          "es": "Lago Sevan",
+          "nl": "Sevanmeer",
+          "cs": "Jezero Sevan",
+          "pl": "Jezioro Sewan"
+        },
+        "altText": {
+          "en": "The deep blue water of Lake Sevan under a summer sky, with a wooded shore in the foreground and a lakeside village below bare hills on the far shore, Gegharkunik, Armenia",
+          "de": "Das tiefblaue Wasser des Sewansees unter sommerlichem Himmel, im Vordergrund ein bewaldetes Ufer, am gegenüberliegenden Ufer ein Dorf unter kahlen Hügeln, Gegharkunik, Armenien",
+          "fr": "Les eaux d'un bleu profond du lac Sevan sous un ciel d'été, avec une rive boisée au premier plan et un village au bord de l'eau au pied de collines dénudées sur la rive opposée, Gegharkunik, Arménie",
+          "es": "Las aguas de un azul profundo del lago Seván bajo un cielo de verano, con una orilla arbolada en primer plano y un pueblo a la orilla del agua al pie de colinas peladas en la ribera opuesta, Gegharkunik, Armenia",
+          "nl": "Het diepblauwe water van het Sevanmeer onder een zomerse hemel, met een beboste oever op de voorgrond en een dorp aan het water onder kale heuvels aan de overkant, Gegharkunik, Armenië",
+          "cs": "Sytě modrá voda Sevanského jezera pod letní oblohou, v popředí zalesněný břeh a na protějším břehu vesnice pod holými kopci, Gegharkunik, Arménie",
+          "pl": "Głęboko niebieska woda jeziora Sewan pod letnim niebem, z zalesionym brzegiem na pierwszym planie i wioską nad wodą u stóp nagich wzgórz na przeciwległym brzegu, Gegharkunik, Armenia"
+        }
+      },
+      {
+        "src": "/images/files/sevanavank-monastery-armenia-1672.webp",
+        "base": "/images/files/sevanavank-monastery-armenia",
+        "widths": [
+          768,
+          1200,
+          1600,
+          1672
+        ],
+        "width": 1672,
+        "height": 941,
+        "caption": {
+          "en": "Sevanavank Monastery",
+          "de": "Kloster Sevanavank",
+          "fr": "Monastère de Sevanavank",
+          "es": "Monasterio de Sevanavank",
+          "nl": "Klooster Sevanavank",
+          "cs": "Klášter Sevanavank",
+          "pl": "Klasztor Sewanawank"
+        },
+        "altText": {
+          "en": "Sevanavank Monastery — its two 9th-century dark basalt churches with tiled conical domes on the Sevan peninsula above Lake Sevan under a blue sky, Gegharkunik, Armenia",
+          "de": "Kloster Sevanavank — seine beiden Kirchen aus dunklem Basalt aus dem 9. Jahrhundert mit ziegelgedeckten Kegelkuppeln auf der Sewan-Halbinsel über dem Sewansee unter blauem Himmel, Gegharkunik, Armenien",
+          "fr": "Le monastère de Sevanavank — ses deux églises du IXe siècle en basalte sombre, coiffées de coupoles coniques en tuiles, sur la presqu'île de Sevan au-dessus du lac Sevan sous un ciel bleu, Gegharkunik, Arménie",
+          "es": "El monasterio de Sevanavank — sus dos iglesias del siglo IX de basalto oscuro con cúpulas cónicas de tejas en la península de Seván sobre el lago Seván bajo un cielo azul, Gegharkunik, Armenia",
+          "nl": "Klooster Sevanavank — de twee 9e-eeuwse kerken van donker basalt met met dakpannen bedekte kegelkoepels op het schiereiland Sevan boven het Sevanmeer onder een blauwe hemel, Gegharkunik, Armenië",
+          "cs": "Klášter Sevanavank — jeho dva kostely z 9. století z tmavého čediče s taškovými kuželovými kupolemi na Sevanském poloostrově nad Sevanským jezerem pod modrou oblohou, Gegharkunik, Arménie",
+          "pl": "Klasztor Sewanawank — jego dwa kościoły z IX wieku z ciemnego bazaltu z krytymi dachówką stożkowymi kopułami na półwyspie Sewan nad jeziorem Sewan pod błękitnym niebem, Gegharkunik, Armenia"
+        }
+      },
+      {
+        "src": "/images/files/etchmiadzin-cathedral-armenia-1448.webp",
+        "base": "/images/files/etchmiadzin-cathedral-armenia",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Etchmiadzin Cathedral",
+          "de": "Kathedrale von Etschmiadsin",
+          "fr": "Cathédrale d'Etchmiadzine",
+          "es": "Catedral de Etchmiadzin",
+          "nl": "Kathedraal van Etchmiadzin",
+          "cs": "Katedrála v Ečmiadzinu",
+          "pl": "Katedra w Eczmiadzynie"
+        },
+        "altText": {
+          "en": "The UNESCO-listed Mother Cathedral of Holy Etchmiadzin — a cruciform tuff-stone church with a central conical dome and corner bell-towers, behind autumn shrubs under a blue sky, Vagharshapat, Armenia",
+          "de": "Die UNESCO-gelistete Mutterkathedrale von Heilig-Etschmiadsin — eine kreuzförmige Kirche aus Tuffstein mit zentraler Kegelkuppel und Ecktürmen, hinter herbstlichen Sträuchern unter blauem Himmel, Wagharschapat, Armenien",
+          "fr": "La cathédrale mère de Saint-Etchmiadzin, inscrite à l'UNESCO — une église cruciforme en tuf à coupole conique centrale et clochetons d'angle, derrière des arbustes automnaux sous un ciel bleu, Vagharchapat, Arménie",
+          "es": "La Catedral Madre de la Santa Etchmiadzin, declarada por la UNESCO — una iglesia cruciforme de toba con cúpula cónica central y campanarios en las esquinas, tras arbustos otoñales bajo un cielo azul, Vagharshapat, Armenia",
+          "nl": "De door UNESCO erkende Moederkathedraal van Heilig Etchmiadzin — een kruisvormige tufstenen kerk met een centrale kegelkoepel en hoektorentjes, achter herfstige struiken onder een blauwe hemel, Vagharsjapat, Armenië",
+          "cs": "Katedrála Matky Boží ve Svatém Ečmiadzinu zapsaná na seznamu UNESCO — křížový kostel z tufu s ústřední kuželovou kupolí a nárožními zvonicemi, za podzimními keři pod modrou oblohou, Vagharšapat, Arménie",
+          "pl": "Wpisana na listę UNESCO Katedra Matki Bożej w Świętym Eczmiadzynie — krzyżowy kościół z tufu z centralną stożkową kopułą i narożnymi dzwonnicami, za jesiennymi krzewami pod błękitnym niebem, Wagharszapat, Armenia"
+        }
+      },
+      {
+        "src": "/images/files/zvartnots-cathedral-armenia-1672.webp",
+        "base": "/images/files/zvartnots-cathedral-armenia",
+        "widths": [
+          768,
+          1200,
+          1600,
+          1672
+        ],
+        "width": 1672,
+        "height": 941,
+        "caption": {
+          "en": "Zvartnots Cathedral",
+          "de": "Kathedrale von Zvartnots",
+          "fr": "Cathédrale de Zvartnots",
+          "es": "Catedral de Zvartnots",
+          "nl": "Kathedraal van Zvartnots",
+          "cs": "Katedrála Zvartnoc",
+          "pl": "Katedra Zwartnoc"
+        },
+        "altText": {
+          "en": "The 7th-century ruined cathedral of Zvartnots, its round colonnaded remains standing open to the sky, Armavir, Armenia",
+          "de": "Die Ruinen der Kathedrale von Zvartnots aus dem 7. Jahrhundert, ihr runder Säulenbau offen zum Himmel, Armavir, Armenien",
+          "fr": "Les ruines de la cathédrale de Zvartnots (VIIe siècle), son enceinte circulaire à colonnes ouverte sur le ciel, Armavir, Arménie",
+          "es": "Las ruinas de la catedral de Zvartnots del siglo VII, su recinto circular de columnas abierto al cielo, Armavir, Armenia",
+          "nl": "De ruïnes van de 7e-eeuwse kathedraal van Zvartnots, de ronde zuilenbouw open naar de hemel, Armavir, Armenië",
+          "cs": "Zříceniny katedrály Zvartnoc ze 7. století, její kruhová sloupová stavba otevřená k obloze, Armavir, Arménie",
+          "pl": "Ruiny siódmowiecznej katedry Zwartnoc, jej okrągła kolumnowa budowla otwarta na niebo, Armavir, Armenia"
+        }
+      },
+      {
+        "src": "/images/files/republic-square-yerevan-armenia-1672.webp",
+        "base": "/images/files/republic-square-yerevan-armenia",
+        "widths": [
+          768,
+          1200,
+          1600,
+          1672
+        ],
+        "width": 1672,
+        "height": 941,
+        "caption": {
+          "en": "Republic Square, Yerevan",
+          "de": "Platz der Republik, Jerewan",
+          "fr": "Place de la République, Erevan",
+          "es": "Plaza de la República, Ereván",
+          "nl": "Plein van de Republiek, Jerevan",
+          "cs": "Náměstí Republiky, Jerevan",
+          "pl": "Plac Republiki, Erywań"
+        },
+        "altText": {
+          "en": "Republic Square in Yerevan — pink-and-yellow tuff neoclassical buildings around the Singing Fountains pool, with Government House's clock tower flying the Armenian flag and flowerbeds in the foreground under a clear blue sky, Armenia",
+          "de": "Der Platz der Republik in Eriwan — neoklassizistische Gebäude aus rosa-gelbem Tuffstein rund um das Becken der Singenden Fontänen, mit dem Uhrturm des Regierungsgebäudes und der armenischen Flagge sowie Blumenbeeten im Vordergrund unter klarem blauem Himmel, Armenien",
+          "fr": "La place de la République à Erevan — des bâtiments néoclassiques en tuf rose et jaune autour du bassin des Fontaines chantantes, avec la tour de l'horloge de la Maison du gouvernement arborant le drapeau arménien et des parterres de fleurs au premier plan sous un ciel bleu limpide, Arménie",
+          "es": "La plaza de la República en Ereván — edificios neoclásicos de toba rosa y amarilla en torno al estanque de las Fuentes Cantarinas, con la torre del reloj de la Casa de Gobierno ondeando la bandera armenia y parterres de flores en primer plano bajo un cielo azul despejado, Armenia",
+          "nl": "Het Republiekplein in Jerevan — neoclassicistische gebouwen van roze-gele tufsteen rond het bassin van de Zingende Fonteinen, met de klokkentoren van het Regeringsgebouw en de Armeense vlag en bloemperken op de voorgrond onder een strakblauwe hemel, Armenië",
+          "cs": "Náměstí Republiky v Jerevanu — novoklasicistní budovy z růžovo-žlutého tufu kolem bazénu Zpívajících fontán, s hodinovou věží vládní budovy a arménskou vlajkou a květinovými záhony v popředí pod jasně modrou oblohou, Arménie",
+          "pl": "Plac Republiki w Erywaniu — neoklasycystyczne budynki z różowo-żółtego tufu wokół basenu Śpiewających Fontann, z wieżą zegarową Domu Rządowego z flagą Armenii i rabatami kwiatowymi na pierwszym planie pod bezchmurnym błękitnym niebem, Armenia"
+        }
+      },
+      {
+        "src": "/images/files/yerevan-cascade-armenia-1024.webp",
+        "base": "/images/files/yerevan-cascade-armenia",
+        "widths": [
+          768,
+          1024
+        ],
+        "width": 1024,
+        "height": 1536,
+        "caption": {
+          "en": "The Cascade, Yerevan",
+          "de": "Kaskade, Jerewan",
+          "fr": "Cascade, Erevan",
+          "es": "Cascada, Ereván",
+          "nl": "Cascade, Jerevan",
+          "cs": "Kaskáda, Jerevan",
+          "pl": "Kaskada, Erywań"
+        },
+        "altText": {
+          "en": "The Yerevan Cascade — a monumental limestone stairway with terraced gardens, fountains and modern bronze sculptures, rising toward a Soviet-era obelisk under a blue sky, Yerevan, Armenia",
+          "de": "Die Kaskade von Eriwan — eine monumentale Kalksteintreppe mit terrassierten Gärten, Brunnen und modernen Bronzeskulpturen, ansteigend zu einem sowjetischen Obelisken unter blauem Himmel, Eriwan, Armenien",
+          "fr": "La Cascade d'Erevan — un escalier monumental en calcaire avec jardins en terrasses, fontaines et sculptures de bronze modernes, s'élevant vers un obélisque de l'époque soviétique sous un ciel bleu, Erevan, Arménie",
+          "es": "La Cascada de Ereván — una monumental escalinata de piedra caliza con jardines aterrazados, fuentes y esculturas de bronce modernas, ascendiendo hacia un obelisco de la época soviética bajo un cielo azul, Ereván, Armenia",
+          "nl": "De Cascade van Jerevan — een monumentale kalkstenen trap met terrastuinen, fonteinen en moderne bronzen sculpturen, oplopend naar een Sovjet-obelisk onder een blauwe hemel, Jerevan, Armenië",
+          "cs": "Jerevanská Kaskáda — monumentální vápencové schodiště s terasovými zahradami, fontánami a moderními bronzovými sochami, stoupající k sovětskému obelisku pod modrou oblohou, Jerevan, Arménie",
+          "pl": "Kaskada w Erywaniu — monumentalne wapienne schody z tarasowymi ogrodami, fontannami i nowoczesnymi rzeźbami z brązu, wznoszące się ku sowieckiemu obeliskowi pod błękitnym niebem, Erywań, Armenia"
+        }
+      },
+      {
+        "src": "/images/files/khor-virap-monastery-ararat-armenia-1086.webp",
+        "base": "/images/files/khor-virap-monastery-ararat-armenia",
+        "widths": [
+          768,
+          1086
+        ],
+        "width": 1086,
+        "height": 1448,
+        "caption": {
+          "en": "Khor Virap Monastery",
+          "de": "Kloster Khor Virap",
+          "fr": "Monastère de Khor Virap",
+          "es": "Monasterio de Khor Virap",
+          "nl": "Klooster Khor Virap",
+          "cs": "Klášter Khor Virap",
+          "pl": "Klasztor Khor Virap"
+        },
+        "altText": {
+          "en": "Aerial view of Khor Virap Monastery on a hill above the green Ararat plain, with the twin snow-capped peaks of Mount Ararat behind, Armenia",
+          "de": "Luftaufnahme des Klosters Chor Virap auf einem Hügel über der grünen Araratebene, dahinter die beiden schneebedeckten Gipfel des Ararat, Armenien",
+          "fr": "Vue aérienne du monastère de Khor Virap sur une colline dominant la plaine verdoyante de l'Ararat, avec les deux sommets enneigés du mont Ararat en arrière-plan, Arménie",
+          "es": "Vista aérea del monasterio de Khor Virap sobre una colina dominando la verde llanura del Ararat, con las dos cumbres nevadas del monte Ararat al fondo, Armenia",
+          "nl": "Luchtfoto van het klooster Chor Virap op een heuvel boven de groene Araratvlakte, met daarachter de twee besneeuwde toppen van de berg Ararat, Armenië",
+          "cs": "Letecký pohled na klášter Chor Virap na kopci nad zelenou Araratskou nížinou, v pozadí dva zasněžené vrcholy hory Ararat, Arménie",
+          "pl": "Widok z lotu ptaka na klasztor Chor Wirap na wzgórzu nad zieloną Równiną Araratską, w tle dwa ośnieżone szczyty góry Ararat, Armenia"
+        }
+      },
+      {
+        "src": "/images/files/mount-ararat-armenia-1448.webp",
+        "base": "/images/files/mount-ararat-armenia",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Mount Ararat",
+          "de": "Berg Ararat",
+          "fr": "Mont Ararat",
+          "es": "Monte Ararat",
+          "nl": "Berg Ararat",
+          "cs": "Hora Ararat",
+          "pl": "Góra Ararat"
+        },
+        "altText": {
+          "en": "Snow-capped summit of Mount Ararat (Greater Ararat) rising above brown volcanic slopes and the green Ararat plain under a clear blue sky, seen from Armenia — the mountain lies across the border in Turkey",
+          "de": "Schneebedeckter Gipfel des Ararat (Großer Ararat) über braunen Vulkanhängen und der grünen Araratebene unter klarem blauem Himmel, von Armenien aus gesehen — der Berg liegt jenseits der Grenze in der Türkei",
+          "fr": "Sommet enneigé du mont Ararat (Grand Ararat) dominant des pentes volcaniques brunes et la plaine verdoyante de l'Ararat sous un ciel bleu limpide, vu depuis l'Arménie — la montagne se trouve de l'autre côté de la frontière, en Turquie",
+          "es": "Cumbre nevada del monte Ararat (Ararat Mayor) alzándose sobre laderas volcánicas pardas y la verde llanura del Ararat bajo un cielo azul despejado, vista desde Armenia — la montaña se encuentra al otro lado de la frontera, en Turquía",
+          "nl": "Besneeuwde top van de berg Ararat (Grote Ararat) boven bruine vulkanische hellingen en de groene Araratvlakte onder een strakblauwe hemel, gezien vanuit Armenië — de berg ligt over de grens in Turkije",
+          "cs": "Zasněžený vrchol hory Ararat (Velký Ararat) tyčící se nad hnědými sopečnými svahy a zelenou Araratskou nížinou pod jasně modrou oblohou, pohled z Arménie — hora leží za hranicí v Turecku",
+          "pl": "Ośnieżony szczyt góry Ararat (Wielki Ararat) wznoszący się nad brązowymi wulkanicznymi zboczami i zieloną Równiną Araratską pod bezchmurnym błękitnym niebem, widziany z Armenii — góra leży po drugiej stronie granicy, w Turcji"
+        }
+      },
+      {
+        "src": "/images/files/garni-temple-armenia-1448.webp",
+        "base": "/images/files/garni-temple-armenia",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Garni Temple",
+          "de": "Garni-Tempel",
+          "fr": "Temple de Garni",
+          "es": "Templo de Garni",
+          "nl": "Tempel van Garni",
+          "cs": "Chrám v Garni",
+          "pl": "Świątynia w Garni"
+        },
+        "altText": {
+          "en": "The Temple of Garni — a 1st-century Greco-Roman colonnaded temple of dark basalt on a raised podium, under a blue sky with clouds, Kotayk, Armenia",
+          "de": "Der Tempel von Garni — ein griechisch-römischer Säulentempel aus dunklem Basalt aus dem 1. Jahrhundert auf einem erhöhten Podium, unter blauem Wolkenhimmel, Kotayk, Armenien",
+          "fr": "Le temple de Garni — un temple gréco-romain à colonnes en basalte sombre du Ier siècle sur un podium surélevé, sous un ciel bleu nuageux, Kotayk, Arménie",
+          "es": "El templo de Garni — un templo grecorromano de columnas de basalto oscuro del siglo I sobre un podio elevado, bajo un cielo azul con nubes, Kotayk, Armenia",
+          "nl": "De tempel van Garni — een 1e-eeuwse Grieks-Romeinse zuilentempel van donker basalt op een verhoogd podium, onder een blauwe bewolkte hemel, Kotayk, Armenië",
+          "cs": "Chrám v Garni — řecko-římský sloupový chrám z tmavého čediče z 1. století na vyvýšeném podiu, pod modrou oblohou s mraky, Kotajk, Arménie",
+          "pl": "Świątynia w Garni — grecko-rzymska kolumnowa świątynia z ciemnego bazaltu z I wieku na podwyższonym podium, pod błękitnym, zachmurzonym niebem, Kotajk, Armenia"
+        }
+      },
+      {
+        "src": "/images/files/geghard-monastery-armenia-1672.webp",
+        "base": "/images/files/geghard-monastery-armenia",
+        "widths": [
+          768,
+          1200,
+          1600,
+          1672
+        ],
+        "width": 1672,
+        "height": 941,
+        "caption": {
+          "en": "Geghard Monastery",
+          "de": "Kloster Geghard",
+          "fr": "Monastère de Geghard",
+          "es": "Monasterio de Geghard",
+          "nl": "Klooster Geghard",
+          "cs": "Klášter Geghard",
+          "pl": "Klasztor Geghard"
+        },
+        "altText": {
+          "en": "The UNESCO-listed Geghard Monastery — its medieval domed stone church in a paved courtyard below steep rocky cliffs, Upper Azat Valley, Armenia",
+          "de": "Das UNESCO-gelistete Kloster Geghard — seine mittelalterliche kuppelbekrönte Steinkirche in einem gepflasterten Hof unter steilen Felswänden, oberes Azat-Tal, Armenien",
+          "fr": "Le monastère de Geghard, inscrit à l'UNESCO — son église médiévale en pierre à coupole dans une cour pavée au pied de falaises abruptes, haute vallée de l'Azat, Arménie",
+          "es": "El monasterio de Geghard, declarado por la UNESCO — su iglesia medieval de piedra con cúpula en un patio empedrado al pie de escarpados acantilados, alto valle del Azat, Armenia",
+          "nl": "Het door UNESCO erkende klooster Geghard — de middeleeuwse stenen koepelkerk op een geplaveide binnenplaats onder steile rotswanden, boven-Azatdal, Armenië",
+          "cs": "Klášter Geghard zapsaný na seznamu UNESCO — jeho středověký kamenný kostel s kupolí na dlážděném nádvoří pod strmými skalními stěnami, horní údolí Azat, Arménie",
+          "pl": "Wpisany na listę UNESCO klasztor Geghard — jego średniowieczny kamienny kościół z kopułą na brukowanym dziedzińcu u stóp stromych skalnych ścian, górna dolina Azat, Armenia"
+        }
+      }
+    ],
+    "routeMapImage": {
+      "en": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/13-day-georgia-armenia-tour/route-map-13-day-georgia-armenia-tour-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/13-day-georgia-armenia-tour/route-map-13-day-georgia-armenia-tour-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "13-Day Private Georgia & Armenia Tour — Route Map",
+        "description": "Illustrated route map of the 13-day private tour across Georgia and Armenia: Tbilisi, Kakheti and Telavi, Sighnaghi and Bodbe, Mtskheta, Ananuri and Kazbegi, Uplistsikhe, Borjomi, Akhaltsikhe and Vardzia, the Sadakhlo–Bagratashen border crossing, Haghpat, Lake Sevan and Yerevan, with day trips to Echmiadzin, Khor Virap, Garni and Geghard.",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel LTD"
+        },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/en/image-licensing/",
+        "inLanguage": "en"
+      },
+      "de": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/13-day-georgia-armenia-tour/route-map-13-day-georgia-armenia-tour-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/13-day-georgia-armenia-tour/route-map-13-day-georgia-armenia-tour-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "13-Day Private Georgia & Armenia Tour — Routenkarte",
+        "description": "Illustrierte Routenkarte der 13-tägigen Privatreise durch Georgien und Armenien: Tiflis, Kachetien und Telawi, Sighnaghi und Bodbe, Mzcheta, Ananuri und Kasbegi, Uplisziche, Borjomi, Akhaltsikhe und Vardzia, der Grenzübergang Sadakhlo–Bagratashen, Haghpat, Sevan-See und Jerewan, mit Tagesausflügen nach Etchmiadzin, Khor Virap, Garni und Geghard.",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel LTD"
+        },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/de/image-licensing/",
+        "inLanguage": "de"
+      },
+      "fr": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/13-day-georgia-armenia-tour/route-map-13-day-georgia-armenia-tour-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/13-day-georgia-armenia-tour/route-map-13-day-georgia-armenia-tour-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "13-Day Private Georgia & Armenia Tour — Carte de l'itinéraire",
+        "description": "Carte illustrée de l'itinéraire du circuit privé de 13 jours en Géorgie et en Arménie : Tbilissi, la Kakhétie et Telavi, Sighnaghi et Bodbe, Mtskheta, Ananouri et Kazbegi, Ouplistsikhé, Borjomi, Akhaltsikhe et Vardzia, le passage frontalier de Sadakhlo–Bagratashen, Haghpat, le lac Sevan et Erevan, avec des excursions à Etchmiadzine, Khor Virap, Garni et Geghard.",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel LTD"
+        },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/fr/image-licensing/",
+        "inLanguage": "fr"
+      },
+      "es": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/13-day-georgia-armenia-tour/route-map-13-day-georgia-armenia-tour-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/13-day-georgia-armenia-tour/route-map-13-day-georgia-armenia-tour-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "13-Day Private Georgia & Armenia Tour — Mapa de la ruta",
+        "description": "Mapa ilustrado de la ruta del tour privado de 13 días por Georgia y Armenia: Tiflis, Kajetia y Telavi, Sighnaghi y Bodbe, Mtskheta, Ananuri y Kazbegi, Uplistsikhe, Borjomi, Akhaltsikhe y Vardzia, el paso fronterizo de Sadakhlo–Bagratashen, Haghpat, el lago Sevan y Ereván, con excursiones a Echmiadzin, Khor Virap, Garni y Geghard.",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel LTD"
+        },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/es/image-licensing/",
+        "inLanguage": "es"
+      },
+      "nl": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/13-day-georgia-armenia-tour/route-map-13-day-georgia-armenia-tour-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/13-day-georgia-armenia-tour/route-map-13-day-georgia-armenia-tour-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "13-Day Private Georgia & Armenia Tour — Routekaart",
+        "description": "Geïllustreerde routekaart van de 13-daagse privétour door Georgië en Armenië: Tbilisi, Kacheti en Telavi, Sighnaghi en Bodbe, Mtskheta, Ananuri en Kazbegi, Uplistsikhe, Borjomi, Akhaltsikhe en Vardzia, de grensovergang Sadakhlo–Bagratashen, Haghpat, het Sevanmeer en Jerevan, met dagtrips naar Etchmiadzin, Khor Virap, Garni en Geghard.",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel LTD"
+        },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/nl/image-licensing/",
+        "inLanguage": "nl"
+      },
+      "cs": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/13-day-georgia-armenia-tour/route-map-13-day-georgia-armenia-tour-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/13-day-georgia-armenia-tour/route-map-13-day-georgia-armenia-tour-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "13-Day Private Georgia & Armenia Tour — Mapa trasy",
+        "description": "Ilustrovaná mapa trasy 13denního soukromého zájezdu po Gruzii a Arménii: Tbilisi, Kachetie a Telavi, Sighnaghi a Bodbe, Mccheta, Ananuri a Kazbegi, Uplisciche, Borjomi, Akhaltsikhe a Vardzia, hraniční přechod Sadakhlo–Bagratashen, Haghpat, jezero Sevan a Jerevan, s výlety do Etchmiadzinu, Khor Virap, Garni a Geghardu.",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel LTD"
+        },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/cs/image-licensing/",
+        "inLanguage": "cs"
+      },
+      "pl": {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/13-day-georgia-armenia-tour/route-map-13-day-georgia-armenia-tour-2400.webp",
+        "url": "https://www.hikasustravel.com/images/tours/13-day-georgia-armenia-tour/route-map-13-day-georgia-armenia-tour-2400.webp",
+        "width": 2400,
+        "height": 1600,
+        "encodingFormat": "image/webp",
+        "name": "13-Day Private Georgia & Armenia Tour — Mapa trasy",
+        "description": "Ilustrowana mapa trasy 13-dniowej prywatnej wycieczki po Gruzji i Armenii: Tbilisi, Kachetia i Telawi, Sighnaghi i Bodbe, Mccheta, Ananuri i Kazbegi, Uplisciche, Borjomi, Akhaltsikhe i Vardzia, przejście graniczne Sadakhlo–Bagratashen, Haghpat, jezioro Sewan i Erywań, z wycieczkami do Etchmiadzinu, Khor Virap, Garni i Geghardu.",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel LTD"
+        },
+        "copyrightNotice": "© Hikasus Travel LTD",
+        "license": "https://www.hikasustravel.com/pl/image-licensing/",
+        "inLanguage": "pl"
+      }
+    },
+    "tourFormTitle": "13-Day Private Georgia & Armenia Tour"
+  },
+  {
     "slug": "5-day-armenia-highlights-tour",
     "type": "private",
     "priceCurrency": "USD",

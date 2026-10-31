@@ -142,6 +142,7 @@ export const pages = [
 
   // ---- Tier D: other content carrying a volatile fact
   page('tour:14-day-caucasus-tour', '/private-tours/14-day-caucasus-tour', 'caucasus', 'tour', D, ['border direction', 'foot crossings', 'Azerbaijan visa'], ['azLandEntry', 'amBorders']),
+  page('tour:13-day-georgia-armenia-tour', '/private-tours/13-day-georgia-armenia-tour', 'caucasus', 'tour', D, ['Sadakhlo–Bagratashen crossing', 'Georgia insurance', 'Vardzia access'], ['amBorders', 'geInsurance']),
   page('tour:13-day-azerbaijan-georgia-tour', '/private-tours/13-day-azerbaijan-georgia-tour', 'caucasus', 'tour', D, ['border direction', 'foot crossing', 'Azerbaijan visa', 'Georgia insurance', 'Vardzia access'], ['azLandEntry', 'geInsurance']),
   page('tour:16-day-caucasus-tour', '/private-tours/16-day-caucasus-tour', 'caucasus', 'tour', D, ['border direction', 'foot crossings', 'Azerbaijan visa', 'Georgia insurance', 'Vardzia access'], ['azLandEntry', 'amBorders', 'geInsurance']),
   page('tour:15-day-caucasus-group-tour', '/group-tours/15-day-caucasus-group-tour', 'caucasus', 'tour', D, ['border direction', 'foot crossings', 'Azerbaijan visa', 'Georgia insurance'], ['azLandEntry', 'amBorders', 'geInsurance']),
