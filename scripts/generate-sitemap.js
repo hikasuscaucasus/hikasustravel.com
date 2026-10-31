@@ -123,6 +123,7 @@ const staticPages = [
   { path: 'blog/essential-azerbaijani-words-phrases', changefreq: 'monthly', priority: '0.8' },
   { path: 'blog/food-drink-caucasus-georgia-armenia-azerbaijan', changefreq: 'monthly', priority: '0.8' },
   { path: 'blog/armenia-in-7-days', changefreq: 'monthly', priority: '0.8' },
+  { path: 'blog/georgia-armenia-in-10-days', changefreq: 'monthly', priority: '0.8' },
   { path: 'faq', changefreq: 'monthly', priority: '0.5' },
   { path: 'contact', changefreq: 'monthly', priority: '0.6' },
   { path: 'privacy-policy', changefreq: 'yearly', priority: '0.2' },

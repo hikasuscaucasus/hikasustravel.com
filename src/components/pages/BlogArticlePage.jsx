@@ -1,9 +1,11 @@
-import { useMemo, useRef } from 'react'
+import { useContext, useMemo, useRef } from 'react'
 import { useParams } from 'react-router-dom'
 import HeroSection from '../shared/HeroSection'
 import Accordion from '../shared/Accordion'
 import ContentImageLightbox from '../shared/ContentImageLightbox'
+import BlogTourPromo from '../shared/BlogTourPromo'
 import LocaleLink from '../../i18n/LocaleLink'
+import { I18nContext } from '../../i18n/I18nContext'
 import useT from '../../i18n/useT'
 import useLang from '../../i18n/useLang'
 import useSEO from '../../hooks/useSEO'
@@ -36,6 +38,9 @@ export default function BlogArticlePage() {
   const article = getBlogArticle(slug)
   const related = useMemo(() => article ? getRelatedArticles(slug) : [], [slug, article])
   const contentRef = useRef(null)
+  const { tourTranslations, loadTourTranslations } = useContext(I18nContext)
+  // An article that promotes a tour (`promoTour`) shows the tour's localized title.
+  if (article?.promoTour && !tourTranslations) loadTourTranslations()
 
   // Per-language article body/FAQ (falls back to the English base when no translation exists).
   const tr = article && lang !== 'en' ? (article.translations?.[lang] || null) : null
@@ -146,6 +151,18 @@ export default function BlogArticlePage() {
             CSS background and the related-article cards below sit outside this
             container, so neither becomes a trigger. */}
         <ContentImageLightbox containerRef={contentRef} />
+
+        {/* End-of-article tour promo: the card the blog index uses, pointed at this
+            article's own tour. Title, photo, length and price come from the tour
+            record, never from this file. */}
+        {article.promoTour && (
+          <BlogTourPromo
+            t={t}
+            tourTranslations={tourTranslations}
+            slug={article.promoTour.slug}
+            textKey={article.promoTour.textKey}
+          />
+        )}
 
         {articleFaq?.length > 0 && (
           <div className="blog-article__faq">

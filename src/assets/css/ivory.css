@@ -4103,6 +4103,12 @@
   color: var(--ink);
 }
 
+/* The same card at the end of an article (promoTour): air above and below it,
+   because on the blog index the list grid supplies that gap. */
+.theme-ivory .blog-article > .blog-promo {
+  margin: 40px 0;
+}
+
 .theme-ivory .blog-promo:hover {
   color: var(--ink);
   background: color-mix(in srgb, var(--accent) 11%, var(--surface));
