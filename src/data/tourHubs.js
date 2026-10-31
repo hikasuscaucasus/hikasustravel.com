@@ -29,6 +29,10 @@ export const TOUR_HUBS = [
     // The same Greater Caucasus frame the homepage's Caucasus card already
     // uses: a range, not a landmark, so it does not read as one country.
     image: '/images/files/svaneti-caucasus-mountains-georgia-1200.webp',
+    // List this hub's private tours shortest → longest (by `tour.days`). The
+    // sort is stable, so same-length tours keep their registry order. The
+    // scheduled group departures below keep the registry order.
+    sortPrivateByDuration: true,
   },
   {
     id: 'azerbaijan',

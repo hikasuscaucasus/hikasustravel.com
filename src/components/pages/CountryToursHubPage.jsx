@@ -75,7 +75,11 @@ export default function CountryToursHubPage({ country }) {
   const countryName = t(hub.nameKey)
 
   const primary = useMemo(() => primaryToursFor(country), [country])
-  const privateTours = useMemo(() => primary.filter((tour) => tour.type === 'private'), [primary])
+  const privateTours = useMemo(() => {
+    const list = primary.filter((tour) => tour.type === 'private')
+    // Array.prototype.sort is stable: equal-length tours keep registry order.
+    return hub.sortPrivateByDuration ? [...list].sort((a, b) => a.days - b.days) : list
+  }, [primary, hub])
   const groupTours = useMemo(() => primary.filter((tour) => tour.type === 'group'), [primary])
   const combined = useMemo(() => combinedToursCovering(country), [country])
 
