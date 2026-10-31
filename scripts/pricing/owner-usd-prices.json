@@ -41,6 +41,16 @@
         { "travelers": "4", "luxury": "1190", "midRange": "1045", "economy": "860" }
       ]
     },
+    "13-day-azerbaijan-georgia-tour": {
+      "approved": "2026-10-31",
+      "pricing": [
+        { "travelers": "Single Supplement", "luxury": "1130", "midRange": "665", "economy": "365" },
+        { "travelers": "1", "luxury": "6295", "midRange": "5290", "economy": "4695" },
+        { "travelers": "2", "luxury": "3555", "midRange": "2995", "economy": "2690" },
+        { "travelers": "3", "luxury": "3425", "midRange": "2720", "economy": "2315" },
+        { "travelers": "4", "luxury": "2730", "midRange": "2180", "economy": "1875" }
+      ]
+    },
     "16-day-caucasus-tour": {
       "approved": "2026-10-31",
       "pricing": [
