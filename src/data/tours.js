@@ -1886,32 +1886,28 @@ export const tours = [
       "Armenia"
     ],
     "title": "11-Day Caucasus Group Tour: Georgia and Armenia",
-    "heroImage": "/images/files/gergeti-trinity-church-kazbegi-georgia-1448.webp",
-    "ogImage": {
-      "src": "/images/files/gergeti-trinity-church-kazbegi-georgia-og.jpg",
-      "width": 1200,
-      "height": 630
-    },
-    "tileImage": "/images/files/gergeti-trinity-church-kazbegi-georgia-1200.webp",
-    "listingImage": "/images/files/gergeti-trinity-church-kazbegi-georgia-1200.webp",
+    "heroImage": "/images/files/lake-sevan-armenia-1672.webp",
+    "ogImage": { "src": "/images/files/lake-sevan-armenia-og.jpg", "width": 1200, "height": 630 },
+    "tileImage": "/images/files/lake-sevan-armenia-1200.webp",
+    "listingImage": "/images/files/lake-sevan-armenia-1200.webp",
     "imageMeta": {
-      "width": 1448,
-      "height": 1086,
-      "contentUrl": "/images/files/gergeti-trinity-church-kazbegi-georgia-1448.webp",
-      "description": "The Gergeti Trinity Church, a lone stone church with a bell tower on a hill below steep rocky Caucasus mountains near Kazbegi, Georgia",
-      "locationName": "Gergeti Trinity Church, Stepantsminda, Georgia",
+      "width": 1672,
+      "height": 941,
+      "contentUrl": "/images/files/lake-sevan-armenia-1672.webp",
+      "description": "Lake Sevan, a vast alpine lake ringed by mountains under a blue sky, Armenia",
+      "locationName": "Lake Sevan, Armenia",
       "geo": {
-        "lat": 42.6625,
-        "lng": 44.6204
+        "lat": 40.563,
+        "lng": 45.011
       },
       "alt": {
-        "en": "The Gergeti Trinity Church, a lone stone church with a bell tower on a hill below steep rocky Caucasus mountains near Kazbegi, Georgia",
-        "de": "Die Gergeti-Dreifaltigkeitskirche, eine einzeln stehende Steinkirche mit Glockenturm auf einem Hügel unter steilen felsigen Kaukasusbergen bei Kazbegi, Georgien",
-        "fr": "L'église de la Trinité de Guerguéti, église de pierre isolée avec clocher sur une colline au pied d'abruptes montagnes rocheuses du Caucase, près de Kazbegi, Géorgie",
-        "es": "La iglesia de la Trinidad de Gergeti, iglesia de piedra solitaria con campanario en una colina al pie de escarpadas montañas rocosas del Cáucaso, cerca de Kazbegi, Georgia",
-        "nl": "De Drie-eenheidskerk van Gergeti, een alleenstaande stenen kerk met klokkentoren op een heuvel onder steile rotsachtige Kaukasusbergen bij Kazbegi, Georgië",
-        "cs": "Gergetský kostel Nejsvětější Trojice, osamělý kamenný kostel se zvonicí na kopci pod strmými skalnatými kavkazskými horami u Kazbegi, Gruzie",
-        "pl": "Cerkiew Trójcy Świętej w Gergeti, samotny kamienny kościół z dzwonnicą na wzgórzu u stóp stromych, skalistych gór Kaukazu koło Kazbegi, Gruzja"
+        "en": "Lake Sevan, a vast alpine lake ringed by mountains under a blue sky, Armenia",
+        "de": "Der Sevan-See, ein weiter Hochgebirgssee, umgeben von Bergen unter blauem Himmel, Armenien",
+        "fr": "Le lac Sevan, un vaste lac alpin entouré de montagnes sous un ciel bleu, Arménie",
+        "es": "El lago Sevan, un vasto lago alpino rodeado de montañas bajo un cielo azul, Armenia",
+        "nl": "Het Sevanmeer, een uitgestrekt bergmeer omringd door bergen onder een blauwe lucht, Armenië",
+        "cs": "Jezero Sevan, rozlehlé alpské jezero obklopené horami pod modrou oblohou, Arménie",
+        "pl": "Jezioro Sewan, rozległe górskie jezioro otoczone górami pod błękitnym niebem, Armenia"
       },
       "caption": {
         "en": "Gergeti Trinity Church",
@@ -21539,18 +21535,18 @@ export const tours = [
     "country": "caucasus",
     "areaServed": ["Azerbaijan", "Georgia", "Armenia"],
     "title": "14-Day Caucasus Tour: Azerbaijan, Georgia & Armenia",
-    "heroImage": "/images/files/baku-boulevard-caspian-azerbaijan-1536.webp",
-    "ogImage": { "src": "/images/files/baku-boulevard-caspian-azerbaijan-og.jpg", "width": 1200, "height": 630 },
-    "tileImage": "/images/files/baku-boulevard-caspian-azerbaijan-1200.webp",
-    "listingImage": "/images/files/baku-boulevard-caspian-azerbaijan-1200.webp",
+    "heroImage": "/images/files/heydar-aliyev-center-baku-azerbaijan-1672.webp",
+    "ogImage": { "src": "/images/files/heydar-aliyev-center-baku-azerbaijan-og.jpg", "width": 1200, "height": 630 },
+    "tileImage": "/images/files/heydar-aliyev-center-baku-azerbaijan-1200.webp",
+    "listingImage": "/images/files/heydar-aliyev-center-baku-azerbaijan-1200.webp",
     "alt": {
-      "en": "Baku Boulevard, the Caspian seafront promenade, with modern glass towers and an archway building along the waterfront under a blue sky, Azerbaijan",
-      "de": "Der Baku Boulevard, die Uferpromenade am Kaspischen Meer, mit modernen Glastürmen und einem Bogengebäude entlang des Ufers unter blauem Himmel, Aserbaidschan",
-      "fr": "Le Boulevard de Bakou, la promenade du front de mer caspien, avec des tours de verre modernes et un bâtiment en arche le long du rivage sous un ciel bleu, Azerbaïdjan",
-      "es": "El Bulevar de Bakú, el paseo marítimo del Caspio, con modernas torres de cristal y un edificio en forma de arco junto a la orilla bajo un cielo azul, Azerbaiyán",
-      "nl": "De Baku Boulevard, de kustpromenade aan de Kaspische Zee, met moderne glazen torens en een booggebouw langs de waterkant onder een blauwe hemel, Azerbeidzjan",
-      "cs": "Bakuský bulvár, pobřežní promenáda u Kaspického moře, s moderními skleněnými věžemi a obloukovou budovou podél nábřeží pod modrou oblohou, Ázerbájdžán",
-      "pl": "Bulwar Nadmorski w Baku, promenada nad Morzem Kaspijskim, z nowoczesnymi szklanymi wieżami i budynkiem w kształcie łuku wzdłuż nabrzeża pod błękitnym niebem, Azerbejdżan"
+      "en": "The Heydar Aliyev Center in Baku, a flowing white curved building by Zaha Hadid with a glass facade, on a green lawn under a blue sky, Azerbaijan",
+      "de": "Das Heydar-Aliyev-Zentrum in Baku, ein fließendes weißes, geschwungenes Gebäude von Zaha Hadid mit Glasfassade, auf einer grünen Wiese unter blauem Himmel, Aserbaidschan",
+      "fr": "Le centre Heydar Aliyev à Bakou, un bâtiment blanc aux courbes fluides signé Zaha Hadid, à façade de verre, sur une pelouse verte sous un ciel bleu, Azerbaïdjan",
+      "es": "El Centro Heydar Aliyev en Bakú, un edificio blanco de formas fluidas obra de Zaha Hadid con fachada de cristal, sobre un césped verde bajo un cielo azul, Azerbaiyán",
+      "nl": "Het Heydar Aliyev Centrum in Bakoe, een vloeiend wit gebouw van Zaha Hadid met een glazen gevel, op een groen grasveld onder een blauwe lucht, Azerbeidzjan",
+      "cs": "Centrum Hejdara Alijeva v Baku, plynule tvarovaná bílá budova Zahy Hadid se skleněnou fasádou na zeleném trávníku pod modrou oblohou, Ázerbájdžán",
+      "pl": "Centrum Hejdara Alijewa w Baku, płynnie ukształtowany biały budynek Zahy Hadid ze szklaną fasadą, na zielonym trawniku pod błękitnym niebem, Azerbejdżan"
     },
     "days": 14,
     "description": "Fourteen days across three countries, each with its own script — Azerbaijan's mix of Soviet-era Baku and eternal flames, Georgia's mountains and wine, Armenia's monasteries and the shadow of Ararat. This private tour crosses two land borders on foot, with a new guide and driver waiting on the far side of each.\n\nYou begin in Baku, with its walled Old City and the fire-worship sites of the Absheron peninsula, then head inland to the Khan's palace at Sheki before crossing into Georgia at Lagodekhi. Kakheti's wine country and Tbilisi's old town follow, along with a night under Mount Kazbek, before a second border crossing takes you into Armenia for Lake Sevan, Yerevan and the great sights around Mount Ararat.\n\nBoth border crossings are on foot and are built into the day rather than treated as a footnote — you'll find exactly what to expect at each. It's a full itinerary, and a couple of the days carry real driving, but because it's private, the pace and the stops bend around you.",
@@ -22601,22 +22597,18 @@ export const tours = [
       "Armenia"
     ],
     "title": "16-Day Private Caucasus Tour: Azerbaijan, Georgia & Armenia",
-    "heroImage": "/images/files/baku-boulevard-caspian-azerbaijan-1536.webp",
-    "ogImage": {
-      "src": "/images/files/baku-boulevard-caspian-azerbaijan-og.jpg",
-      "width": 1200,
-      "height": 630
-    },
-    "tileImage": "/images/files/baku-boulevard-caspian-azerbaijan-1200.webp",
-    "listingImage": "/images/files/baku-boulevard-caspian-azerbaijan-1200.webp",
+    "heroImage": "/images/files/shirvanshahs-palace-baku-azerbaijan-1536.webp",
+    "ogImage": { "src": "/images/files/shirvanshahs-palace-baku-azerbaijan-og.jpg", "width": 1200, "height": 630 },
+    "tileImage": "/images/files/shirvanshahs-palace-baku-azerbaijan-1200.webp",
+    "listingImage": "/images/files/shirvanshahs-palace-baku-azerbaijan-1200.webp",
     "alt": {
-      "en": "Baku Boulevard, the Caspian seafront promenade, with modern glass towers and an archway building along the waterfront under a blue sky, Azerbaijan",
-      "de": "Der Baku Boulevard, die Uferpromenade am Kaspischen Meer, mit modernen Glastürmen und einem Bogengebäude entlang des Ufers unter blauem Himmel, Aserbaidschan",
-      "fr": "Le Boulevard de Bakou, la promenade du front de mer caspien, avec des tours de verre modernes et un bâtiment en arche le long du rivage sous un ciel bleu, Azerbaïdjan",
-      "es": "El Bulevar de Bakú, el paseo marítimo del Caspio, con modernas torres de cristal y un edificio en forma de arco junto a la orilla bajo un cielo azul, Azerbaiyán",
-      "nl": "De Baku Boulevard, de kustpromenade aan de Kaspische Zee, met moderne glazen torens en een booggebouw langs de waterkant onder een blauwe hemel, Azerbeidzjan",
-      "cs": "Bakuský bulvár, pobřežní promenáda u Kaspického moře, s moderními skleněnými věžemi a obloukovou budovou podél nábřeží pod modrou oblohou, Ázerbájdžán",
-      "pl": "Bulwar Nadmorski w Baku, promenada nad Morzem Kaspijskim, z nowoczesnymi szklanymi wieżami i budynkiem w kształcie łuku wzdłuż nabrzeża pod błękitnym niebem, Azerbejdżan"
+      "en": "The Palace of the Shirvanshahs in the walled Old City of Baku, medieval limestone buildings with domes and carved portals, Azerbaijan",
+      "de": "Der Palast der Schirwanschahs in der ummauerten Altstadt von Baku, mittelalterliche Kalksteingebäude mit Kuppeln und geschnitzten Portalen, Aserbaidschan",
+      "fr": "Le palais des Chirvanchahs dans la vieille ville fortifiée de Bakou, des bâtiments médiévaux en calcaire à coupoles et portails sculptés, Azerbaïdjan",
+      "es": "El Palacio de los Shirvanshah en la ciudad vieja amurallada de Bakú, edificios medievales de piedra caliza con cúpulas y portales tallados, Azerbaiyán",
+      "nl": "Het Sjirvansjachpaleis in de ommuurde oude stad van Bakoe, middeleeuwse kalkstenen gebouwen met koepels en gebeeldhouwde portalen, Azerbeidzjan",
+      "cs": "Palác Širvanšáhů v hrazeném Starém Městě Baku, středověké vápencové budovy s kupolemi a vyřezávanými portály, Ázerbájdžán",
+      "pl": "Pałac Szirwanszachów na otoczonej murami Starówce w Baku, średniowieczne wapienne budowle z kopułami i rzeźbionymi portalami, Azerbejdżan"
     },
     "days": 16,
     "description": "The 16-Day Private Caucasus Tour is a 16-day, 15-night journey from Baku to Yerevan through Azerbaijan, Georgia and Armenia, for one to four travelers. It covers Baku, Gobustan and the Ateshgah fire temple, the Silk Road town of Sheki, the wine country of Kakheti, Tbilisi, the Georgian Military Highway to Mount Kazbek, Borjomi, Rabati and the cave city of Vardzia, then Haghpat, Lake Sevan and Yerevan under Mount Ararat, with seven UNESCO World Heritage Sites on the way.\n\nThe tour runs from east to west for a practical reason: under Azerbaijan's current border rules, foreign visitors can leave the country by land but cannot normally enter it by road, so you fly into Baku, cross into Georgia on foot at Lagodekhi and into Armenia at Sadakhlo, and fly home from Yerevan. A separate vehicle and English-speaking guide serve you in each country, and the next guide waits on the far side of each border. We reconfirm the border rules before departure.\n\nYou stay three nights in Baku, one in Sheki, two in Telavi, four in Tbilisi — two before Kazbegi, one after Kazbegi and one after Vardzia — one in Kazbegi, one in Akhaltsikhe and three in Yerevan. The days are full but the walks are short, and the longest drives, on Days 4, 10, 12 and 13, are approximately 5 to 6.5 hours. May, June, September and October are the best months; July and August are hot in Baku and Yerevan.\n\nGood to know: expect cobbled streets, stairs and uneven ground — Sevanavank is about 200 steps — so comfortable shoes with good grip are best. Churches, monasteries and mosques are active places of worship; cover shoulders and knees, and bring a light scarf. Some museums and sights close on certain weekdays, so for your start day we may keep the same places but change the order of the stops.",
@@ -23950,22 +23942,18 @@ export const tours = [
       "Georgia"
     ],
     "title": "13-Day Private Azerbaijan & Georgia Tour",
-    "heroImage": "/images/files/baku-boulevard-caspian-azerbaijan-1536.webp",
-    "ogImage": {
-      "src": "/images/files/baku-boulevard-caspian-azerbaijan-og.jpg",
-      "width": 1200,
-      "height": 630
-    },
-    "tileImage": "/images/files/baku-boulevard-caspian-azerbaijan-1200.webp",
-    "listingImage": "/images/files/baku-boulevard-caspian-azerbaijan-1200.webp",
+    "heroImage": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1448.webp",
+    "ogImage": { "src": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-og.jpg", "width": 1200, "height": 630 },
+    "tileImage": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1200.webp",
+    "listingImage": "/images/files/tbilisi-old-town-narikala-metekhi-bridge-georgia-1200.webp",
     "alt": {
-      "en": "Baku Boulevard, the Caspian seafront promenade, with modern glass towers and an archway building along the waterfront under a blue sky, Azerbaijan",
-      "de": "Der Baku Boulevard, die Uferpromenade am Kaspischen Meer, mit modernen Glastürmen und einem Bogengebäude entlang des Ufers unter blauem Himmel, Aserbaidschan",
-      "fr": "Le Boulevard de Bakou, la promenade du front de mer caspien, avec des tours de verre modernes et un bâtiment en arche le long du rivage sous un ciel bleu, Azerbaïdjan",
-      "es": "El Bulevar de Bakú, el paseo marítimo del Caspio, con modernas torres de cristal y un edificio en forma de arco junto a la orilla bajo un cielo azul, Azerbaiyán",
-      "nl": "De Baku Boulevard, de kustpromenade aan de Kaspische Zee, met moderne glazen torens en een booggebouw langs de waterkant onder een blauwe hemel, Azerbeidzjan",
-      "cs": "Bakuský bulvár, pobřežní promenáda u Kaspického moře, s moderními skleněnými věžemi a obloukovou budovou podél nábřeží pod modrou oblohou, Ázerbájdžán",
-      "pl": "Bulwar Nadmorski w Baku, promenada nad Morzem Kaspijskim, z nowoczesnymi szklanymi wieżami i budynkiem w kształcie łuku wzdłuż nabrzeża pod błękitnym niebem, Azerbejdżan"
+      "en": "Tbilisi Old Town seen across the Mtkvari River, with Narikala Fortress on the hill and a bridge in the foreground, Georgia",
+      "de": "Die Altstadt von Tiflis, vom Fluss Mtkwari aus gesehen, mit der Festung Narikala auf dem Hügel und einer Brücke im Vordergrund, Georgien",
+      "fr": "La vieille ville de Tbilissi vue depuis la Mtkvari, avec la forteresse de Narikala sur la colline et un pont au premier plan, Géorgie",
+      "es": "El casco antiguo de Tiflis visto desde el río Mtkvari, con la fortaleza de Narikala en la colina y un puente en primer plano, Georgia",
+      "nl": "De oude stad van Tbilisi gezien vanaf de rivier de Mtkvari, met de vesting Narikala op de heuvel en een brug op de voorgrond, Georgië",
+      "cs": "Staré Město v Tbilisi při pohledu přes řeku Mtkvari, s pevností Narikala na kopci a mostem v popředí, Gruzie",
+      "pl": "Stare Miasto w Tbilisi widziane przez rzekę Mtkvari, z twierdzą Narikala na wzgórzu i mostem na pierwszym planie, Gruzja"
     },
     "days": 13,
     "description": "The 13-Day Private Azerbaijan & Georgia Tour is a 13-day, 12-night journey from Baku to Tbilisi, for one to four travelers. It covers Baku, Gobustan and the Ateshgah fire temple, the Silk Road town of Sheki, the wine country of Kakheti, Tbilisi, the Georgian Military Highway to Mount Kazbek, Borjomi, Rabati and the cave city of Vardzia, with four UNESCO World Heritage Sites on the way.\n\nThe tour runs from east to west for a practical reason: under Azerbaijan's current border rules, foreign visitors can leave the country by land but cannot normally enter it by road, so you fly into Baku, cross into Georgia on foot at Lagodekhi and fly home from Tbilisi. A separate vehicle and English-speaking guide serve you in each country, and your Georgian guide waits on the far side of the border. We reconfirm the border rules before departure.\n\nYou stay three nights in Baku, one in Sheki, two in Telavi, four in Tbilisi — two before Kazbegi, one after Kazbegi and one after Vardzia — one in Kazbegi and one in Akhaltsikhe. The days are full but the walks are short, and the longest drives, on Days 4, 10 and 12, are 5 to 6.5 hours. May, June, September and October are the best months; July and August are hot in Baku and Tbilisi.\n\nGood to know: expect cobbled streets, stairs, uneven rock and tunnels — notably at Uplistsikhe and Vardzia — so comfortable shoes with good grip are best. Churches, monasteries and mosques are active places of worship; cover shoulders and knees, and bring a light scarf. Some museums and sights close on certain weekdays, so for your start day we may keep the same places but change the order of the stops.",
@@ -24958,22 +24946,18 @@ export const tours = [
       "Armenia"
     ],
     "title": "13-Day Private Georgia & Armenia Tour",
-    "heroImage": "/images/files/baku-boulevard-caspian-azerbaijan-1536.webp",
-    "ogImage": {
-      "src": "/images/files/baku-boulevard-caspian-azerbaijan-og.jpg",
-      "width": 1200,
-      "height": 630
-    },
-    "tileImage": "/images/files/baku-boulevard-caspian-azerbaijan-1200.webp",
-    "listingImage": "/images/files/baku-boulevard-caspian-azerbaijan-1200.webp",
+    "heroImage": "/images/files/haghpat-monastery-armenia-1672.webp",
+    "ogImage": { "src": "/images/files/haghpat-monastery-armenia-og.jpg", "width": 1200, "height": 630 },
+    "tileImage": "/images/files/haghpat-monastery-armenia-1200.webp",
+    "listingImage": "/images/files/haghpat-monastery-armenia-1200.webp",
     "alt": {
-      "en": "Baku Boulevard, the Caspian seafront promenade, with modern glass towers and an archway building along the waterfront under a blue sky, Azerbaijan",
-      "de": "Der Baku Boulevard, die Uferpromenade am Kaspischen Meer, mit modernen Glastürmen und einem Bogengebäude entlang des Ufers unter blauem Himmel, Aserbaidschan",
-      "fr": "Le Boulevard de Bakou, la promenade du front de mer caspien, avec des tours de verre modernes et un bâtiment en arche le long du rivage sous un ciel bleu, Azerbaïdjan",
-      "es": "El Bulevar de Bakú, el paseo marítimo del Caspio, con modernas torres de cristal y un edificio en forma de arco junto a la orilla bajo un cielo azul, Azerbaiyán",
-      "nl": "De Baku Boulevard, de kustpromenade aan de Kaspische Zee, met moderne glazen torens en een booggebouw langs de waterkant onder een blauwe hemel, Azerbeidzjan",
-      "cs": "Bakuský bulvár, pobřežní promenáda u Kaspického moře, s moderními skleněnými věžemi a obloukovou budovou podél nábřeží pod modrou oblohou, Ázerbájdžán",
-      "pl": "Bulwar Nadmorski w Baku, promenada nad Morzem Kaspijskim, z nowoczesnymi szklanymi wieżami i budynkiem w kształcie łuku wzdłuż nabrzeża pod błękitnym niebem, Azerbejdżan"
+      "en": "Haghpat Monastery, a UNESCO-listed medieval stone church complex with a domed roof on a green hillside in the Lori region, Armenia",
+      "de": "Das Kloster Haghpat, eine mittelalterliche Kirchenanlage aus Stein mit Kuppeldach auf einem grünen Hang in der Region Lori, UNESCO-Welterbe, Armenien",
+      "fr": "Le monastère de Haghpat, un ensemble d’églises médiévales en pierre à toit en coupole sur une colline verte de la région du Lori, inscrit à l’UNESCO, Arménie",
+      "es": "El monasterio de Haghpat, un complejo medieval de iglesias de piedra con techo abovedado en una ladera verde de la región de Lori, declarado por la UNESCO, Armenia",
+      "nl": "Het klooster Haghpat, een middeleeuws stenen kerkencomplex met een koepeldak op een groene heuvel in de regio Lori, UNESCO-werelderfgoed, Armenië",
+      "cs": "Klášter Haghpat, středověký kamenný kostelní komplex s kupolí na zelené stráni v regionu Lori, zapsaný na seznam UNESCO, Arménie",
+      "pl": "Klasztor Haghpat, średniowieczny kamienny kompleks kościelny z kopułą na zielonym zboczu w regionie Lori, wpisany na listę UNESCO, Armenia"
     },
     "days": 13,
     "description": "The 13-Day Private Georgia & Armenia Tour is a 13-day, 12-night journey from Tbilisi to Yerevan, for one to four travelers. It covers the wine country of Kakheti, Tbilisi, the Georgian Military Highway to Mount Kazbek, Borjomi, Rabati and the cave city of Vardzia, then Haghpat, Lake Sevan and Yerevan under Mount Ararat, with four UNESCO World Heritage Sites on the way.\n\nYou fly into Tbilisi, cross into Armenia on foot at Sadakhlo and fly home from Yerevan. A separate vehicle and English-speaking guide serve you in each country, and your Armenian guide waits on the far side of the border.\n\nYou stay five nights in Tbilisi — the arrival night, two after Kakheti, one after Kazbegi and one after Vardzia — two in Telavi, one in Kazbegi, one in Akhaltsikhe and three in Yerevan. The days are full but the walks are short, and the longest drives, on Days 7, 9 and 10, are 5 to 6.5 hours. May, June, September and October are the best months; July and August are hot in Tbilisi and Yerevan.\n\nGood to know: expect cobbled streets, stairs and uneven ground — Sevanavank is about 200 steps — so comfortable shoes with good grip are best. Churches, monasteries and mosques are active places of worship; cover shoulders and knees, and bring a light scarf. Some museums and sights close on certain weekdays, so for your start day we may keep the same places but change the order of the stops.",
@@ -27704,32 +27688,28 @@ export const tours = [
     "priceCurrency": "USD",
     "country": "azerbaijan",
     "title": "7-Day Azerbaijan Tour: Baku, Gobustan, Sheki & Gabala",
-    "heroImage": "/images/files/baku-flame-towers-azerbaijan-1448.webp",
-    "ogImage": {
-      "src": "/images/files/baku-flame-towers-azerbaijan-og.jpg",
-      "width": 1200,
-      "height": 630
-    },
-    "tileImage": "/images/files/baku-flame-towers-azerbaijan-1200.webp",
-    "listingImage": "/images/files/baku-flame-towers-azerbaijan-1200.webp",
+    "heroImage": "/images/files/shamakhi-juma-mosque-azerbaijan-1564.webp",
+    "ogImage": { "src": "/images/files/shamakhi-juma-mosque-azerbaijan-og.jpg", "width": 1200, "height": 630 },
+    "tileImage": "/images/files/shamakhi-juma-mosque-azerbaijan-1200.webp",
+    "listingImage": "/images/files/shamakhi-juma-mosque-azerbaijan-1200.webp",
     "imageMeta": {
-      "width": 1448,
-      "height": 1086,
-      "contentUrl": "/images/files/baku-flame-towers-azerbaijan-1448.webp",
-      "description": "Baku Flame Towers and TV tower seen across the bay, Azerbaijan",
-      "locationName": "Flame Towers, Baku, Azerbaijan",
+      "width": 1564,
+      "height": 1006,
+      "contentUrl": "/images/files/shamakhi-juma-mosque-azerbaijan-1564.webp",
+      "description": "The Juma Mosque in Shamakhi, a sand-colored stone mosque with two tall minarets under a blue sky, Azerbaijan",
+      "locationName": "Juma Mosque, Shamakhi, Azerbaijan",
       "geo": {
-        "lat": 40.3597,
-        "lng": 49.8213
+        "lat": 40.6319,
+        "lng": 48.6414
       },
       "alt": {
-        "en": "Baku Flame Towers and TV tower seen across the bay, Azerbaijan",
-        "de": "Die Flame Towers und der Fernsehturm von Baku, von der anderen Seite der Bucht gesehen, Aserbaidschan",
-        "fr": "Les Flame Towers et la tour de télévision de Bakou, vues depuis l'autre côté de la baie, Azerbaïdjan",
-        "es": "Las Flame Towers y la torre de televisión de Bakú, vistas desde el otro lado de la bahía, Azerbaiyán",
-        "nl": "De Flame Towers en de televisietoren van Bakoe, gezien vanaf de overkant van de baai, Azerbeidzjan",
-        "cs": "Věže Flame Towers a televizní věž v Baku, pohled z druhé strany zálivu, Ázerbájdžán",
-        "pl": "Wieże Flame Towers i wieża telewizyjna w Baku, widoczne z drugiej strony zatoki, Azerbejdżan"
+        "en": "The Juma Mosque in Shamakhi, a sand-colored stone mosque with two tall minarets under a blue sky, Azerbaijan",
+        "de": "Die Juma-Moschee in Schamachi, eine sandfarbene Steinmoschee mit zwei hohen Minaretten unter blauem Himmel, Aserbaidschan",
+        "fr": "La mosquée Juma de Chamakhi, une mosquée en pierre couleur sable aux deux hauts minarets sous un ciel bleu, Azerbaïdjan",
+        "es": "La mezquita Juma de Shamakhi, una mezquita de piedra color arena con dos altos minaretes bajo un cielo azul, Azerbaiyán",
+        "nl": "De Juma-moskee in Shamakhi, een zandkleurige stenen moskee met twee hoge minaretten onder een blauwe lucht, Azerbeidzjan",
+        "cs": "Mešita Juma v Šamachi, pískově zbarvená kamenná mešita se dvěma vysokými minarety pod modrou oblohou, Ázerbájdžán",
+        "pl": "Meczet Juma w Szamachy, piaskowy kamienny meczet z dwoma wysokimi minaretami pod błękitnym niebem, Azerbejdżan"
       },
       "caption": {
         "en": "Flame Towers, Baku",
@@ -28056,32 +28036,28 @@ export const tours = [
     "priceCurrency": "USD",
     "country": "azerbaijan",
     "title": "8-Day Azerbaijan Tour: Baku, Quba & Khinalig, Gobustan, Sheki & Gabala",
-    "heroImage": "/images/files/baku-flame-towers-azerbaijan-1448.webp",
-    "ogImage": {
-      "src": "/images/files/baku-flame-towers-azerbaijan-og.jpg",
-      "width": 1200,
-      "height": 630
-    },
-    "tileImage": "/images/files/baku-flame-towers-azerbaijan-1200.webp",
-    "listingImage": "/images/files/baku-flame-towers-azerbaijan-1200.webp",
+    "heroImage": "/images/files/mud-volcanoes-gobustan-azerbaijan-1599.webp",
+    "ogImage": { "src": "/images/files/mud-volcanoes-gobustan-azerbaijan-og.jpg", "width": 1200, "height": 630 },
+    "tileImage": "/images/files/mud-volcanoes-gobustan-azerbaijan-1200.webp",
+    "listingImage": "/images/files/mud-volcanoes-gobustan-azerbaijan-1200.webp",
     "imageMeta": {
-      "width": 1448,
-      "height": 1086,
-      "contentUrl": "/images/files/baku-flame-towers-azerbaijan-1448.webp",
-      "description": "Baku Flame Towers and TV tower seen across the bay, Azerbaijan",
-      "locationName": "Flame Towers, Baku, Azerbaijan",
+      "width": 1599,
+      "height": 984,
+      "contentUrl": "/images/files/mud-volcanoes-gobustan-azerbaijan-1599.webp",
+      "description": "Small gray mud volcanoes and bubbling pools of cold mud on the dry plain at Gobustan, Azerbaijan",
+      "locationName": "Gobustan Mud Volcanoes, Azerbaijan",
       "geo": {
-        "lat": 40.3597,
-        "lng": 49.8213
+        "lat": 40.1,
+        "lng": 49.38
       },
       "alt": {
-        "en": "Baku Flame Towers and TV tower seen across the bay, Azerbaijan",
-        "de": "Die Flame Towers und der Fernsehturm von Baku, von der anderen Seite der Bucht gesehen, Aserbaidschan",
-        "fr": "Les Flame Towers et la tour de télévision de Bakou, vues depuis l'autre côté de la baie, Azerbaïdjan",
-        "es": "Las Flame Towers y la torre de televisión de Bakú, vistas desde el otro lado de la bahía, Azerbaiyán",
-        "nl": "De Flame Towers en de televisietoren van Bakoe, gezien vanaf de overkant van de baai, Azerbeidzjan",
-        "cs": "Věže Flame Towers a televizní věž v Baku, pohled z druhé strany zálivu, Ázerbájdžán",
-        "pl": "Wieże Flame Towers i wieża telewizyjna w Baku, widoczne z drugiej strony zatoki, Azerbejdżan"
+        "en": "Small gray mud volcanoes and bubbling pools of cold mud on the dry plain at Gobustan, Azerbaijan",
+        "de": "Kleine graue Schlammvulkane und blubbernde Pfützen aus kaltem Schlamm auf der trockenen Ebene bei Gobustan, Aserbaidschan",
+        "fr": "De petits volcans de boue gris et des mares de boue froide qui bouillonnent sur la plaine aride de Gobustan, Azerbaïdjan",
+        "es": "Pequeños volcanes de lodo grises y charcos de barro frío burbujeante en la llanura seca de Gobustán, Azerbaiyán",
+        "nl": "Kleine grijze moddervulkanen en borrelende poelen van koude modder op de droge vlakte bij Gobustan, Azerbeidzjan",
+        "cs": "Malé šedé bahenní sopky a bublající kaluže studeného bahna na suché planině u Gobustanu, Ázerbájdžán",
+        "pl": "Małe szare wulkany błotne i bulgoczące kałuże zimnego błota na suchej równinie w Gobustanie, Azerbejdżan"
       },
       "caption": {
         "en": "Flame Towers, Baku",
