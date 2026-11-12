@@ -18,9 +18,9 @@ export const shuttleRoutes = [
   { start: 'Batumi', stop: 'Zugdidi', duration: '2h', sedan: '125', minivan: '165', minibus: '230' },
   { start: 'Batumi', stop: 'Kazbegi', duration: '7h', sedan: '300', minivan: '365', minibus: '490' },
   { start: 'Batumi', stop: 'Mestia', duration: '5,5h', sedan: '225', minivan: '300', minibus: '395' },
-  { start: 'Tbilisi', stop: 'Telavi', duration: '2h', sedan: '125', minivan: '155', minibus: '230' },
+  { start: 'Tbilisi', stop: 'Telavi', duration: '2h', sedan: '130', minivan: '160', minibus: '260' },
   { start: 'Tbilisi', stop: 'Batumi', duration: '5h', sedan: '225', minivan: '300', minibus: '395' },
-  { start: 'Tbilisi', stop: 'Sighnaghi', duration: '2h', sedan: '140', minivan: '175', minibus: '245' },
+  { start: 'Tbilisi', stop: 'Sighnaghi', duration: '2h', sedan: '140', minivan: '170', minibus: '280' },
 ]
 
 export const startLocations = ['Tbilisi', 'Batumi', 'Kutaisi']
