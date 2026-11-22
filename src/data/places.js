@@ -13325,11 +13325,11 @@ export const sites = [
     // position: center center`; no scrim beyond the shared .coverme::after). H1 is
     // centre-anchored by the shared HeroSection (not changed here). `image`/
     // `imageAvif` = the 1448 top rung, feeding the ImageObject contentUrl (1448).
-    image: '/images/files/gudauri-panorama-georgia-1448.webp',
-    imageAvif: '/images/files/gudauri-panorama-georgia-1448.avif',
+    image: '/images/files/gudauri-panorama-1448.webp',
+    imageAvif: '/images/files/gudauri-panorama-1448.avif',
     heroClass: 'hero--gudauri-panorama',
     // Dedicated 1.91:1 social-share image (og:image / twitter:image), .jpg default.
-    ogImage: { src: '/images/files/gudauri-panorama-georgia-og.jpg', width: 1200, height: 630 },
+    ogImage: { src: '/images/files/gudauri-panorama-og.jpg', width: 1200, height: 630 },
     // Hero image SEO/AEO metadata (owner's own photo, faces pre-blurred → brand
     // credit, set by SitePage). Hero is a CSS background (no <img alt>), so the
     // localized alt lives here and is emitted as og:image:alt/twitter:image:alt per
@@ -13339,19 +13339,19 @@ export const sites = [
     // Soviet-era mural, not a current celebration of "friendship".
     imageMeta: {
       width: 1448, height: 1086,
-      name: "The Gudauri Panorama, a curved Soviet-era monument with a colourful mosaic mural above the Devil's Valley on the Georgian Military Highway, Georgia",
+      name: "Gudauri Panorama: the curved mosaic terrace on a hilltop above a winding road, with snow-covered Caucasus slopes behind, Georgia",
       description: "The Gudauri Panorama, officially the Russia-Georgia Friendship Monument, a large semicircular stone-and-concrete structure on the Georgian Military Highway above the Devil's Valley, its inner wall covered by a colourful tile mosaic of Georgian and Russian historical scenes, with a paved viewing terrace and arches opening to the Caucasus mountains. Built in 1983 near Gudauri in the Mtskheta-Mtianeti region of Georgia (the country).",
       locationName: 'Gudauri Panorama (Russia-Georgia Friendship Monument), Georgian Military Highway, Gudauri, Georgia',
       locality: 'Gudauri', region: 'Mtskheta-Mtianeti', country: 'GE',
       geo: { lat: 42.4920, lng: 44.4527 },
       alt: {
-        en: "The Gudauri Panorama, a curved Soviet-era monument with a colourful mosaic mural above the Devil's Valley on the Georgian Military Highway, Georgia",
-        de: 'Das Gudauri-Panorama, ein geschwungenes Denkmal aus der Sowjetzeit mit buntem Mosaik über dem Teufelstal an der Georgischen Heerstraße, Georgien',
-        fr: "Le panorama de Gudauri, monument incurvé de l'époque soviétique orné d'une mosaïque colorée au-dessus de la vallée du Diable, sur la route militaire géorgienne, Géorgie",
-        es: 'El panorama de Gudauri, un monumento curvo de la era soviética con un colorido mosaico sobre el valle del Diablo, en la carretera militar georgiana, Georgia',
-        nl: 'Het Gudauri-panorama, een gebogen monument uit de Sovjettijd met een kleurrijk mozaïek boven de Duivelsvallei aan de Georgische Militaire Weg, Georgië',
-        cs: 'Gudauri Panorama, zakřivený památník ze sovětské éry s barevnou mozaikou nad Ďáblovým údolím na Gruzínské vojenské cestě, Gruzie',
-        pl: 'Panorama Gudauri, wygięty pomnik z czasów sowieckich z barwną mozaiką nad Diablą Doliną przy Gruzińskiej Drodze Wojennej, Gruzja',
+        en: "Gudauri Panorama: the curved mosaic terrace on a hilltop above a winding road, with snow-covered Caucasus slopes behind, Georgia",
+        de: "Gudauri-Panorama: die geschwungene Mosaikterrasse auf einer Anhöhe über einer kurvenreichen Straße, dahinter schneebedeckte Hänge des Kaukasus, Georgien",
+        fr: "Panorama de Gudauri : la terrasse en mosaïque incurvée sur une hauteur au-dessus d’une route sinueuse, avec les versants enneigés du Caucase en arrière-plan, Géorgie",
+        es: "Panorama de Gudauri: la terraza curva de mosaico sobre una colina junto a una carretera sinuosa, con laderas nevadas del Cáucaso al fondo, Georgia",
+        nl: "Panorama Gudauri: het gebogen mozaïekterras op een heuveltop boven een kronkelende weg, met besneeuwde hellingen van de Kaukasus erachter, Georgië",
+        cs: "Panorama Gudauri: zakřivená mozaiková terasa na kopci nad klikatou silnicí, za ní zasněžené svahy Kavkazu, Gruzie",
+        pl: "Panorama Gudauri: zakrzywiony mozaikowy taras na wzgórzu nad krętą drogą, a za nim ośnieżone zbocza Kaukazu, Gruzja",
       },
       caption: {
         en: "Built in 1983 to mark the bicentennial of the 1783 Treaty of Georgievsk, this semicircular monument on the Georgian Military Highway is lined with a mosaic mural of Georgian and Russian history. Today it is best known as a viewpoint over the Devil's Valley.",
@@ -13363,38 +13363,38 @@ export const sites = [
         pl: 'Zbudowany w 1983 roku z okazji dwustulecia traktatu w Georgijewsku (1783), ten półkolisty pomnik przy Gruzińskiej Drodze Wojennej wyłożony jest mozaiką przedstawiającą historię Gruzji i Rosji. Dziś znany głównie jako punkt widokowy na Diablą Dolinę.',
       },
     },
-    // One contextual inline body image (real <figure class="body-img body-img--
-    // portrait"> in the per-locale body, placed after the first paragraph of each
-    // locale's "The panoramic view" section — the view down into the Devil's Valley
-    // that the caption describes). HERO UNTOUCHED. Rendered via SitePage's
+    // One contextual inline body image (real <figure class="body-img"> in the
+    // per-locale body, placed after the first paragraph of each locale's "The
+    // panoramic view" section — the Devil's Valley Reservoir seen from above, 4:3
+    // 1448x1086 owner image). Rendered via SitePage's
     // inlineImageObjects @graph map: stable @id (#inline-devils-valley), contentUrl
-    // at the 1024 rung (portrait, no `w` suffix), localized name (=alt) + caption,
+    // at the 1448 rung (no `w` suffix), localized name (=alt) + caption,
     // brand credit, NO representativeOfPage (hero stays representative). contentLocation
     // matches the hero (the viewpoint, geo 42.4920/44.4527). Verbatim from
     // devils-valley-inline-package.md.
     inlineImageObjects: [
       {
-        base: 'devils-valley-view-gudauri-georgia', width: 1024, height: 1536, anchor: 'inline-devils-valley',
-        description: "The view down into the Devil's Valley from the Gudauri Panorama viewpoint, forested slopes falling to the river and the Georgian Military Highway, Georgia",
+        base: 'devils-valley-reservoir', width: 1448, height: 1086, anchor: 'inline-devils-valley',
+        description: "A turquoise reservoir in the Devil's Valley below Gudauri, seen from above, with snow-dusted slopes and a stony river bed, Greater Caucasus, Georgia",
         locationName: 'Gudauri Panorama (Russia-Georgia Friendship Monument), Georgian Military Highway, Gudauri, Georgia',
         locality: 'Gudauri', region: 'Mtskheta-Mtianeti', geo: { lat: 42.4920, lng: 44.4527 },
         name: {
-          en: "The view down into the Devil's Valley from the Gudauri Panorama viewpoint, forested slopes falling to the river and the Georgian Military Highway, Georgia",
-          de: 'Der Blick hinab ins Teufelstal vom Aussichtspunkt Gudauri-Panorama, bewaldete Hänge fallen zum Fluss und zur Georgischen Heerstraße ab, Georgien',
-          fr: 'La vue plongeante sur la vallée du Diable depuis le belvédère du panorama de Gudauri, versants boisés descendant vers la rivière et la route militaire géorgienne, Géorgie',
-          es: 'La vista hacia el valle del Diablo desde el mirador del panorama de Gudauri, laderas boscosas que caen hacia el río y la carretera militar georgiana, Georgia',
-          nl: 'Het uitzicht neerwaarts in de Duivelsvallei vanaf het uitzichtpunt Gudauri-panorama, beboste hellingen die afdalen naar de rivier en de Georgische Militaire Weg, Georgië',
-          cs: 'Pohled dolů do Ďáblova údolí z vyhlídky Gudauri Panorama, zalesněné svahy klesající k řece a Gruzínské vojenské cestě, Gruzie',
-          pl: 'Widok w dół na Diablą Dolinę z punktu widokowego Panorama Gudauri, zalesione zbocza opadające ku rzece i Gruzińskiej Drodze Wojennej, Gruzja',
+          en: "A turquoise reservoir in the Devil's Valley below Gudauri, seen from above, with snow-dusted slopes and a stony river bed, Greater Caucasus, Georgia",
+          de: "Ein türkisfarbener Stausee im Teufelstal unterhalb von Gudauri, von oben gesehen, mit schneebestäubten Hängen und einem steinigen Flussbett, Großer Kaukasus, Georgien",
+          fr: "Un réservoir turquoise dans la Vallée du Diable, en contrebas de Gudauri, vu d’en haut, avec des versants saupoudrés de neige et un lit de rivière caillouteux, Grand Caucase, Géorgie",
+          es: "Un embalse turquesa en el Valle del Diablo, bajo Gudauri, visto desde arriba, con laderas cubiertas de nieve ligera y un lecho de río pedregoso, Gran Cáucaso, Georgia",
+          nl: "Een turquoise stuwmeer in de Duivelsvallei onder Gudauri, van bovenaf gezien, met licht besneeuwde hellingen en een stenige rivierbedding, Grote Kaukasus, Georgië",
+          cs: "Tyrkysová nádrž v Ďáblově údolí pod Gudauri při pohledu shora, s mírně zasněženými svahy a kamenitým říčním korytem, Velký Kavkaz, Gruzie",
+          pl: "Turkusowy zbiornik w Diabelskiej Dolinie poniżej Gudauri widziany z góry, z lekko przyprószonymi śniegiem zboczami i kamienistym korytem rzeki, Wielki Kaukaz, Gruzja",
         },
         caption: {
-          en: "This is the view the monument was built to frame: the ground drops away from the terrace into the Devil's Valley, where the Georgian Military Highway threads the braided riverbed far below.",
-          de: 'Das ist der Blick, für den das Denkmal gebaut wurde: Von der Terrasse fällt der Boden ins Teufelstal ab, wo sich die Georgische Heerstraße tief unten durch das verzweigte Flussbett zieht.',
-          fr: "C'est la vue que le monument a été bâti pour encadrer : le sol s'effondre depuis la terrasse dans la vallée du Diable, où la route militaire géorgienne se faufile tout en bas dans le lit tressé de la rivière.",
-          es: 'Esta es la vista que el monumento fue construido para enmarcar: el terreno se desploma desde la terraza hacia el valle del Diablo, donde la carretera militar georgiana serpentea muy abajo por el lecho trenzado del río.',
-          nl: 'Dit is het uitzicht waarvoor het monument werd gebouwd: vanaf het terras valt de grond weg in de Duivelsvallei, waar de Georgische Militaire Weg diep beneden langs de vertakte rivierbedding loopt.',
-          cs: 'Tohle je výhled, kvůli kterému byl památník postaven: od terasy se terén propadá do Ďáblova údolí, kde se hluboko dole Gruzínská vojenská cesta vine podél rozvětveného koryta řeky.',
-          pl: 'To widok, dla którego zbudowano pomnik: teren opada z tarasu w Diablą Dolinę, gdzie daleko w dole Gruzińska Droga Wojenna wije się wzdłuż rozgałęzionego koryta rzeki.',
+          en: "Looking down into the Devil's Valley from the viewpoint: a turquoise reservoir lies on the valley floor beside the stony riverbed far below.",
+          de: "Der Blick vom Aussichtspunkt hinab ins Teufelstal: Tief unten liegt neben dem steinigen Flussbett ein türkisfarbener Stausee.",
+          fr: "La vue plongeante sur la vallée du Diable depuis le belvédère : tout en bas, un réservoir turquoise borde le lit caillouteux de la rivière.",
+          es: "La vista hacia el valle del Diablo desde el mirador: muy abajo, un embalse turquesa junto al lecho pedregoso del río.",
+          nl: "Het uitzicht vanaf het uitzichtpunt neerwaarts in de Duivelsvallei: diep beneden ligt een turquoise stuwmeer naast de stenige rivierbedding.",
+          cs: "Pohled z vyhlídky dolů do Ďáblova údolí: hluboko dole leží vedle kamenitého říčního koryta tyrkysová nádrž.",
+          pl: "Widok z punktu widokowego w dół na Diablą Dolinę: daleko w dole, obok kamienistego koryta rzeki, leży turkusowy zbiornik.",
         },
       },
     ],

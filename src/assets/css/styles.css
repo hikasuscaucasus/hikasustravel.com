@@ -619,17 +619,16 @@ section {
    .hero--juta; the Russia-Georgia Friendship Monument on the Georgian Military
    Highway). Native 4:3 (1448x1086), just UNDER the usual 1600 rung, so the ladder
    is exactly 768/1200/1448 with the top breakpoint at min-width:1200 — there is NO
-   1600 or 2400 rung, no upscale. `background-position: center center`: the overcast
-   sky fills the top third (H1 zone). No per-hero scrim is added — the shared
+   1600 or 2400 rung, no upscale. `background-position: center center`. No per-hero scrim is added — the shared
    .coverme::after overlay keeps the centre-anchored H1 readable over the colourful
    mural (the H1 position is HeroSection's shared, centre-anchored default, not
    changed here). plain url() line = image-set() fallback for browsers without
    image-set(). */
 .hero--gudauri-panorama {
-  background-image: url("/images/files/gudauri-panorama-georgia-1200.webp");
+  background-image: url("/images/files/gudauri-panorama-1200.webp");
   background-image: image-set(
-    url("/images/files/gudauri-panorama-georgia-768.avif") type("image/avif"),
-    url("/images/files/gudauri-panorama-georgia-768.webp") type("image/webp")
+    url("/images/files/gudauri-panorama-768.avif") type("image/avif"),
+    url("/images/files/gudauri-panorama-768.webp") type("image/webp")
   );
   background-position: center center;
   background-size: cover;
@@ -638,16 +637,16 @@ section {
 @media (min-width: 768px) {
   .hero--gudauri-panorama {
     background-image: image-set(
-      url("/images/files/gudauri-panorama-georgia-1200.avif") type("image/avif"),
-      url("/images/files/gudauri-panorama-georgia-1200.webp") type("image/webp")
+      url("/images/files/gudauri-panorama-1200.avif") type("image/avif"),
+      url("/images/files/gudauri-panorama-1200.webp") type("image/webp")
     );
   }
 }
 @media (min-width: 1200px) {
   .hero--gudauri-panorama {
     background-image: image-set(
-      url("/images/files/gudauri-panorama-georgia-1448.avif") type("image/avif"),
-      url("/images/files/gudauri-panorama-georgia-1448.webp") type("image/webp")
+      url("/images/files/gudauri-panorama-1448.avif") type("image/avif"),
+      url("/images/files/gudauri-panorama-1448.webp") type("image/webp")
     );
   }
 }
