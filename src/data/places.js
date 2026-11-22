@@ -2058,7 +2058,7 @@ export const regions = [
           },
         },
         {
-          base: 'gudauri-panorama-friendship-monument-georgia', width: 1448, height: 1086,
+          base: 'gudauri-panorama-georgia', width: 1448, height: 1086,
           anchor: 'inline-friendship-monument',
           description: 'The curved stone-and-concrete wall of the Russia-Georgia Friendship Monument near Gudauri, covered with a colourful mosaic mural, on the Georgian Military Highway in the Mtskheta-Mtianeti region of Georgia.',
           locationName: 'Russia-Georgia Friendship Monument, Gudauri, Mtskheta-Mtianeti, Georgia',
@@ -8334,8 +8334,8 @@ export const cities = [
       // also carries `Kasbegi`, but 18x against 111 — a clear minority, so Latin
       // Kazbegi is used, which is also what this page says. The monument at line 16
       // is "Gudauri Panorama" only: this page uses that name 4x and the old
-      // Friendship name 0x, and the old name survives solely inside the shipped
-      // filename, which cannot be renamed here.
+      // Friendship name 0x (the shipped filename was renamed to
+      // gudauri-panorama-georgia, so the old name no longer appears anywhere).
       //
       // ⚠️ NO CONDITION CLAIMS. No string implies clear views of Kazbek, passable
       // trails, difficulty, road or border status, weather, or access. Note this is
@@ -8492,7 +8492,7 @@ export const cities = [
           },
         },
         {
-          base: 'gudauri-panorama-friendship-monument-georgia', width: 1200, height: 900,
+          base: 'gudauri-panorama-georgia', width: 1200, height: 900,
           anchor: 'inline-gudauri-panorama', dir: '/images/files',
           description: 'The curved terrace of Gudauri Panorama, its wall faced with a large mosaic mural above arched openings, on the Georgian Military Highway in Mtskheta-Mtianeti, Georgia.',
           locationName: 'Gudauri Panorama', locality: 'Gudauri', region: 'Mtskheta-Mtianeti',
@@ -8633,12 +8633,12 @@ export const cities = [
       // the `alt` map drives og:image:alt / twitter:image:alt and every `caption`
       // map drives the per-locale ImageObject JSON-LD.
       //
-      // ⚠️ NAMING — the monument. The panorama FILE is historically named
-      // `gudauri-panorama-friendship-monument-georgia`, so the old name is
-      // unavoidable in the ImageObject contentUrl (renaming shipped assets is out
-      // of scope). NO new alt, caption, name, description or locationName uses it:
-      // they say "Gudauri Panorama" only, which is also the house preference and
-      // what this page uses (Panorama 4x, Friendship 0x).
+      // ⚠️ NAMING — the monument. The panorama FILE is now named
+      // `gudauri-panorama-georgia` (it was renamed from the old Friendship
+      // filename on 2026-11-22), so the old name appears nowhere. NO alt, caption,
+      // name, description or locationName uses it: they say "Gudauri Panorama"
+      // only, which is also the house preference and what this page uses
+      // (Panorama 4x, Friendship 0x).
       //
       // ⚠️ NAMING — places. Gudauri (63x), Ananuri (30x), Kazbegi (111-129x) and
       // Mtskheta-Mtianeti are Latin in every locale. German also carries `Kasbegi`
@@ -8723,7 +8723,7 @@ export const cities = [
           },
         },
         {
-          base: 'gudauri-panorama-friendship-monument-georgia', width: 1200, height: 900,
+          base: 'gudauri-panorama-georgia', width: 1200, height: 900,
           anchor: 'inline-gudauri-panorama', dir: '/images/files',
           description: 'The curved terrace of Gudauri Panorama, its wall faced with a large mosaic mural above arched openings, Mtskheta-Mtianeti, Georgia.',
           locationName: 'Gudauri Panorama', locality: 'Gudauri', region: 'Mtskheta-Mtianeti',
@@ -13325,11 +13325,11 @@ export const sites = [
     // position: center center`; no scrim beyond the shared .coverme::after). H1 is
     // centre-anchored by the shared HeroSection (not changed here). `image`/
     // `imageAvif` = the 1448 top rung, feeding the ImageObject contentUrl (1448).
-    image: '/images/files/gudauri-panorama-friendship-monument-georgia-1448.webp',
-    imageAvif: '/images/files/gudauri-panorama-friendship-monument-georgia-1448.avif',
+    image: '/images/files/gudauri-panorama-georgia-1448.webp',
+    imageAvif: '/images/files/gudauri-panorama-georgia-1448.avif',
     heroClass: 'hero--gudauri-panorama',
     // Dedicated 1.91:1 social-share image (og:image / twitter:image), .jpg default.
-    ogImage: { src: '/images/files/gudauri-panorama-friendship-monument-georgia-og.jpg', width: 1200, height: 630 },
+    ogImage: { src: '/images/files/gudauri-panorama-georgia-og.jpg', width: 1200, height: 630 },
     // Hero image SEO/AEO metadata (owner's own photo, faces pre-blurred → brand
     // credit, set by SitePage). Hero is a CSS background (no <img alt>), so the
     // localized alt lives here and is emitted as og:image:alt/twitter:image:alt per

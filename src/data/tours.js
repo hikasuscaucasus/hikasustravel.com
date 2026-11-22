@@ -4153,19 +4153,19 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/tbilisi-wine-sulfur/gudauri-friendship-monument-georgia-1448.webp",
-        "base": "/images/tours/tbilisi-wine-sulfur/gudauri-friendship-monument-georgia",
+        "src": "/images/tours/tbilisi-wine-sulfur/gudauri-panorama-georgia-1448.webp",
+        "base": "/images/tours/tbilisi-wine-sulfur/gudauri-panorama-georgia",
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
         "caption": {
-          "en": "Friendship Monument, Gudauri",
-          "de": "Friendship Monument, Gudauri",
-          "fr": "Friendship Monument, Gudauri",
-          "es": "Friendship Monument, Gudauri",
-          "nl": "Friendship Monument, Gudauri",
-          "cs": "Friendship Monument, Gudauri",
-          "pl": "Pomnik Przyjaźni, Gudauri"
+          "en": "Gudauri Panorama",
+          "de": "Gudauri Panorama",
+          "fr": "Gudauri Panorama",
+          "es": "Gudauri Panorama",
+          "nl": "Gudauri Panorama",
+          "cs": "Gudauri Panorama",
+          "pl": "Panorama Gudauri"
         }
       },
       {
@@ -5359,8 +5359,8 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/friendship-monument-gudauri-georgia-1448.webp",
-        "base": "/images/files/friendship-monument-gudauri-georgia",
+        "src": "/images/files/gudauri-panorama-terrace-georgia-1448.webp",
+        "base": "/images/files/gudauri-panorama-terrace-georgia",
         "widths": [
           768,
           1200,
@@ -5369,22 +5369,22 @@ export const tours = [
         "width": 1448,
         "height": 1086,
         "caption": {
-          "en": "Friendship Monument, Gudauri",
-          "de": "Freundschaftsdenkmal, Gudauri",
-          "fr": "Monument de l'Amitié, Gudauri",
-          "es": "Monumento a la Amistad, Gudauri",
-          "nl": "Vriendschapsmonument, Gudauri",
-          "cs": "Pomník přátelství, Gudauri",
-          "pl": "Pomnik Przyjaźni, Gudauri"
+          "en": "Gudauri Panorama",
+          "de": "Gudauri-Panorama",
+          "fr": "Panorama de Gudauri",
+          "es": "Panorama de Gudauri",
+          "nl": "Panorama Gudauri",
+          "cs": "Panorama Gudauri",
+          "pl": "Panorama Gudauri"
         },
         "altText": {
-          "en": "The mosaic Russia–Georgia Friendship Monument on the Georgian Military Highway at Gudauri, Georgia",
-          "de": "Das Mosaik-Freundschaftsdenkmal Russland–Georgien an der Georgischen Heerstraße bei Gudauri, Georgien",
-          "fr": "Le monument de l'Amitié russo-géorgienne en mosaïque sur la route militaire géorgienne à Gudauri, Géorgie",
-          "es": "El monumento en mosaico a la Amistad ruso-georgiana en la Carretera Militar Georgiana en Gudauri, Georgia",
-          "nl": "Het mozaïek Vriendschapsmonument Rusland–Georgië aan de Georgische Militaire Weg bij Gudauri, Georgië",
-          "cs": "Mozaikový Památník rusko-gruzínského přátelství na Gruzínské vojenské silnici u Gudauri, Gruzie",
-          "pl": "Mozaikowy Pomnik Przyjaźni Rosyjsko-Gruzińskiej przy Gruzińskiej Drodze Wojennej w Gudauri, Gruzja"
+          "en": "Gudauri Panorama, a curved stone terrace with a colourful mosaic mural above the Caucasus mountains on the Georgian Military Highway, Georgia",
+          "de": "Gudauri-Panorama, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild über den Kaukasusbergen an der Georgischen Heerstraße, Georgien",
+          "fr": "Panorama de Gudauri, une terrasse de pierre incurvée ornée d’une fresque en mosaïque colorée au-dessus des montagnes du Caucase, sur la route militaire géorgienne, Géorgie",
+          "es": "Panorama de Gudauri, una terraza de piedra curva con un colorido mural de mosaico sobre las montañas del Cáucaso, en la Carretera Militar Georgiana, Georgia",
+          "nl": "Panorama Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering boven de Kaukasusbergen aan de Georgische Militaire Weg, Georgië",
+          "cs": "Panorama Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou nad kavkazskými horami na Gruzínské vojenské silnici, Gruzie",
+          "pl": "Panorama Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem nad górami Kaukazu przy Gruzińskiej Drodze Wojennej, Gruzja"
         }
       },
       {
@@ -5678,10 +5678,10 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "@id": "https://www.hikasustravel.com/images/files/friendship-monument-gudauri-georgia-1200.webp#image",
-        "contentUrl": "https://www.hikasustravel.com/images/files/friendship-monument-gudauri-georgia-1200.webp",
-        "name": "Friendship Monument, Gudauri",
-        "caption": "Friendship Monument, Gudauri",
+        "@id": "https://www.hikasustravel.com/images/files/gudauri-panorama-terrace-georgia-1200.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/gudauri-panorama-terrace-georgia-1200.webp",
+        "name": "Gudauri Panorama",
+        "caption": "Gudauri Panorama",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -6348,28 +6348,28 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/7-day-cultural-kutaisi-tbilisi/friendship-monument-gudauri-georgia/friendship-monument-gudauri-georgia-1448.webp",
-        "base": "/images/tours/7-day-cultural-kutaisi-tbilisi/friendship-monument-gudauri-georgia/friendship-monument-gudauri-georgia",
+        "src": "/images/tours/7-day-cultural-kutaisi-tbilisi/gudauri-panorama-georgia/gudauri-panorama-georgia-1448.webp",
+        "base": "/images/tours/7-day-cultural-kutaisi-tbilisi/gudauri-panorama-georgia/gudauri-panorama-georgia",
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
         "caption": {
-          "en": "Friendship Monument, Gudauri",
-          "de": "Freundschaftsdenkmal, Gudauri",
-          "fr": "Monument de l'Amitié, Gudauri",
-          "es": "Monumento a la Amistad, Gudauri",
-          "nl": "Vriendschapsmonument, Gudauri",
-          "cs": "Pomník přátelství, Gudauri",
-          "pl": "Pomnik Przyjaźni, Gudauri"
+          "en": "Gudauri Panorama",
+          "de": "Gudauri-Panorama",
+          "fr": "Panorama de Gudauri",
+          "es": "Panorama de Gudauri",
+          "nl": "Panorama Gudauri",
+          "cs": "Panorama Gudauri",
+          "pl": "Panorama Gudauri"
         },
         "altText": {
-          "en": "Mosaic panorama of the Friendship Monument near Gudauri, Georgia",
-          "de": "Mosaik-Panorama des Freundschaftsdenkmals bei Gudauri, Georgien",
-          "fr": "Panorama en mosaïque du Monument de l'Amitié près de Gudauri, Géorgie",
-          "es": "Panorama de mosaico del Monumento a la Amistad cerca de Gudauri, Georgia",
-          "nl": "Mozaïekpanorama van het Vriendschapsmonument bij Gudauri, Georgië",
-          "cs": "Mozaikové panorama Pomníku přátelství u Gudauri, Gruzie",
-          "pl": "Mozaikowa panorama Pomnika Przyjaźni koło Gudauri, Gruzja"
+          "en": "Gudauri Panorama, a curved stone terrace with a colourful mosaic mural above the Caucasus mountains on the Georgian Military Highway, Georgia",
+          "de": "Gudauri-Panorama, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild über den Kaukasusbergen an der Georgischen Heerstraße, Georgien",
+          "fr": "Panorama de Gudauri, une terrasse de pierre incurvée ornée d’une fresque en mosaïque colorée au-dessus des montagnes du Caucase, sur la route militaire géorgienne, Géorgie",
+          "es": "Panorama de Gudauri, una terraza de piedra curva con un colorido mural de mosaico sobre las montañas del Cáucaso, en la Carretera Militar Georgiana, Georgia",
+          "nl": "Panorama Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering boven de Kaukasusbergen aan de Georgische Militaire Weg, Georgië",
+          "cs": "Panorama Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou nad kavkazskými horami na Gruzínské vojenské silnici, Gruzie",
+          "pl": "Panorama Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem nad górami Kaukazu przy Gruzińskiej Drodze Wojennej, Gruzja"
         }
       },
       {
@@ -6609,9 +6609,9 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/friendship-monument-gudauri-georgia/friendship-monument-gudauri-georgia-1448.webp",
-        "name": "Friendship Monument, Gudauri",
-        "caption": "Friendship Monument, Gudauri",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/gudauri-panorama-georgia/gudauri-panorama-georgia-1448.webp",
+        "name": "Gudauri Panorama",
+        "caption": "Gudauri Panorama",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -7591,28 +7591,28 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/8-day-culture-nature-wine/friendship-monument-gudauri-georgia/friendship-monument-gudauri-georgia-1448.webp",
-        "base": "/images/tours/8-day-culture-nature-wine/friendship-monument-gudauri-georgia/friendship-monument-gudauri-georgia",
+        "src": "/images/tours/8-day-culture-nature-wine/gudauri-panorama-georgia/gudauri-panorama-georgia-1448.webp",
+        "base": "/images/tours/8-day-culture-nature-wine/gudauri-panorama-georgia/gudauri-panorama-georgia",
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
         "caption": {
-          "en": "Friendship Monument, Gudauri",
-          "de": "Freundschaftsdenkmal, Gudauri",
-          "fr": "Monument de l'Amitié, Gudauri",
-          "es": "Monumento a la Amistad, Gudauri",
-          "nl": "Vriendschapsmonument, Gudauri",
-          "cs": "Pomník přátelství, Gudauri",
-          "pl": "Pomnik Przyjaźni, Gudauri"
+          "en": "Gudauri Panorama",
+          "de": "Gudauri-Panorama",
+          "fr": "Panorama de Gudauri",
+          "es": "Panorama de Gudauri",
+          "nl": "Panorama Gudauri",
+          "cs": "Panorama Gudauri",
+          "pl": "Panorama Gudauri"
         },
         "altText": {
-          "en": "Mosaic panorama of the Friendship Monument near Gudauri, Georgia",
-          "de": "Mosaik-Panorama des Freundschaftsdenkmals bei Gudauri, Georgien",
-          "fr": "Panorama en mosaïque du Monument de l'Amitié près de Gudauri, Géorgie",
-          "es": "Panorama de mosaico del Monumento a la Amistad cerca de Gudauri, Georgia",
-          "nl": "Mozaïekpanorama van het Vriendschapsmonument bij Gudauri, Georgië",
-          "cs": "Mozaikové panorama Pomníku přátelství u Gudauri, Gruzie",
-          "pl": "Mozaikowa panorama Pomnika Przyjaźni koło Gudauri, Gruzja"
+          "en": "Gudauri Panorama, a curved stone terrace with a colourful mosaic mural above the Caucasus mountains on the Georgian Military Highway, Georgia",
+          "de": "Gudauri-Panorama, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild über den Kaukasusbergen an der Georgischen Heerstraße, Georgien",
+          "fr": "Panorama de Gudauri, une terrasse de pierre incurvée ornée d’une fresque en mosaïque colorée au-dessus des montagnes du Caucase, sur la route militaire géorgienne, Géorgie",
+          "es": "Panorama de Gudauri, una terraza de piedra curva con un colorido mural de mosaico sobre las montañas del Cáucaso, en la Carretera Militar Georgiana, Georgia",
+          "nl": "Panorama Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering boven de Kaukasusbergen aan de Georgische Militaire Weg, Georgië",
+          "cs": "Panorama Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou nad kavkazskými horami na Gruzínské vojenské silnici, Gruzie",
+          "pl": "Panorama Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem nad górami Kaukazu przy Gruzińskiej Drodze Wojennej, Gruzja"
         }
       },
       {
@@ -7917,9 +7917,9 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-culture-nature-wine/friendship-monument-gudauri-georgia/friendship-monument-gudauri-georgia-1448.webp",
-        "name": "Friendship Monument, Gudauri",
-        "caption": "Friendship Monument, Gudauri",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-culture-nature-wine/gudauri-panorama-georgia/gudauri-panorama-georgia-1448.webp",
+        "name": "Gudauri Panorama",
+        "caption": "Gudauri Panorama",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -8799,19 +8799,19 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/8-day-culture-adventure/gudauri-friendship-monument-georgia-1448.webp",
-        "base": "/images/tours/8-day-culture-adventure/gudauri-friendship-monument-georgia",
+        "src": "/images/tours/8-day-culture-adventure/gudauri-panorama-georgia-1448.webp",
+        "base": "/images/tours/8-day-culture-adventure/gudauri-panorama-georgia",
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
         "caption": {
-          "en": "Friendship Monument, Gudauri",
-          "de": "Friendship Monument, Gudauri",
-          "fr": "Friendship Monument, Gudauri",
-          "es": "Friendship Monument, Gudauri",
-          "nl": "Friendship Monument, Gudauri",
-          "cs": "Friendship Monument, Gudauri",
-          "pl": "Pomnik Przyjaźni, Gudauri"
+          "en": "Gudauri Panorama",
+          "de": "Gudauri Panorama",
+          "fr": "Gudauri Panorama",
+          "es": "Gudauri Panorama",
+          "nl": "Gudauri Panorama",
+          "cs": "Gudauri Panorama",
+          "pl": "Panorama Gudauri"
         }
       },
       {
@@ -9414,15 +9414,15 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/gudauri-panorama-friendship-monument-georgia-1448.webp",
+        "src": "/images/files/gudauri-panorama-georgia-1448.webp",
         "caption": {
-          "en": "Mountain Views, Gudauri",
-          "de": "Bergblick, Gudauri",
-          "fr": "Vue sur les montagnes, Gudauri",
-          "es": "Vistas de montaña, Gudauri",
-          "nl": "Bergzicht, Gudauri",
-          "cs": "Výhledy na hory, Gudauri",
-          "pl": "Widoki na góry, Gudauri"
+          "en": "Gudauri Panorama",
+          "de": "Gudauri-Panorama",
+          "fr": "Panorama de Gudauri",
+          "es": "Panorama de Gudauri",
+          "nl": "Panorama Gudauri",
+          "cs": "Panorama Gudauri",
+          "pl": "Panorama Gudauri"
         },
         "altText": {
           "en": "Panorama over the Greater Caucasus from the viewpoint above Gudauri on the Georgian Military Highway, Georgia",
@@ -10129,28 +10129,28 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/9-day-kutaisi-tbilisi/friendship-monument-gudauri-georgia/friendship-monument-gudauri-georgia-1448.webp",
-        "base": "/images/tours/9-day-kutaisi-tbilisi/friendship-monument-gudauri-georgia/friendship-monument-gudauri-georgia",
+        "src": "/images/tours/9-day-kutaisi-tbilisi/gudauri-panorama-georgia/gudauri-panorama-georgia-1448.webp",
+        "base": "/images/tours/9-day-kutaisi-tbilisi/gudauri-panorama-georgia/gudauri-panorama-georgia",
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
         "caption": {
-          "en": "Friendship Monument, Gudauri",
-          "de": "Freundschaftsdenkmal, Gudauri",
-          "fr": "Monument de l'Amitié, Gudauri",
-          "es": "Monumento a la Amistad, Gudauri",
-          "nl": "Vriendschapsmonument, Gudauri",
-          "cs": "Pomník přátelství, Gudauri",
-          "pl": "Pomnik Przyjaźni, Gudauri"
+          "en": "Gudauri Panorama",
+          "de": "Gudauri-Panorama",
+          "fr": "Panorama de Gudauri",
+          "es": "Panorama de Gudauri",
+          "nl": "Panorama Gudauri",
+          "cs": "Panorama Gudauri",
+          "pl": "Panorama Gudauri"
         },
         "altText": {
-          "en": "Mosaic panorama of the Friendship Monument near Gudauri, Georgia",
-          "de": "Mosaik-Panorama des Freundschaftsdenkmals bei Gudauri, Georgien",
-          "fr": "Panorama en mosaïque du Monument de l'Amitié près de Gudauri, Géorgie",
-          "es": "Panorama de mosaico del Monumento a la Amistad cerca de Gudauri, Georgia",
-          "nl": "Mozaïekpanorama van het Vriendschapsmonument bij Gudauri, Georgië",
-          "cs": "Mozaikové panorama Pomníku přátelství u Gudauri, Gruzie",
-          "pl": "Mozaikowa panorama Pomnika Przyjaźni koło Gudauri, Gruzja"
+          "en": "Gudauri Panorama, a curved stone terrace with a colourful mosaic mural above the Caucasus mountains on the Georgian Military Highway, Georgia",
+          "de": "Gudauri-Panorama, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild über den Kaukasusbergen an der Georgischen Heerstraße, Georgien",
+          "fr": "Panorama de Gudauri, une terrasse de pierre incurvée ornée d’une fresque en mosaïque colorée au-dessus des montagnes du Caucase, sur la route militaire géorgienne, Géorgie",
+          "es": "Panorama de Gudauri, una terraza de piedra curva con un colorido mural de mosaico sobre las montañas del Cáucaso, en la Carretera Militar Georgiana, Georgia",
+          "nl": "Panorama Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering boven de Kaukasusbergen aan de Georgische Militaire Weg, Georgië",
+          "cs": "Panorama Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou nad kavkazskými horami na Gruzínské vojenské silnici, Gruzie",
+          "pl": "Panorama Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem nad górami Kaukazu przy Gruzińskiej Drodze Wojennej, Gruzja"
         }
       },
       {
@@ -10466,9 +10466,9 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/9-day-kutaisi-tbilisi/friendship-monument-gudauri-georgia/friendship-monument-gudauri-georgia-1448.webp",
-        "name": "Friendship Monument, Gudauri",
-        "caption": "Friendship Monument, Gudauri",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/9-day-kutaisi-tbilisi/gudauri-panorama-georgia/gudauri-panorama-georgia-1448.webp",
+        "name": "Gudauri Panorama",
+        "caption": "Gudauri Panorama",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -12099,28 +12099,28 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/friendship-monument-gudauri-georgia-1448.webp",
-        "base": "/images/files/friendship-monument-gudauri-georgia",
+        "src": "/images/files/gudauri-panorama-terrace-georgia-1448.webp",
+        "base": "/images/files/gudauri-panorama-terrace-georgia",
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
         "caption": {
-          "en": "Friendship Monument, Gudauri",
-          "de": "Freundschaftsdenkmal, Gudauri",
-          "fr": "Monument de l'Amitié, Gudauri",
-          "es": "Monumento a la Amistad, Gudauri",
-          "nl": "Vriendschapsmonument, Gudauri",
-          "cs": "Pomník přátelství, Gudauri",
-          "pl": "Pomnik Przyjaźni, Gudauri"
+          "en": "Gudauri Panorama",
+          "de": "Gudauri-Panorama",
+          "fr": "Panorama de Gudauri",
+          "es": "Panorama de Gudauri",
+          "nl": "Panorama Gudauri",
+          "cs": "Panorama Gudauri",
+          "pl": "Panorama Gudauri"
         },
         "altText": {
-          "en": "The mosaic Russia–Georgia Friendship Monument on the Georgian Military Highway at Gudauri, Georgia",
-          "de": "Das Mosaik-Freundschaftsdenkmal Russland–Georgien an der Georgischen Heerstraße bei Gudauri, Georgien",
-          "fr": "Le monument de l'Amitié russo-géorgienne en mosaïque sur la route militaire géorgienne à Gudauri, Géorgie",
-          "es": "El monumento en mosaico a la Amistad ruso-georgiana en la Carretera Militar Georgiana en Gudauri, Georgia",
-          "nl": "Het mozaïek Vriendschapsmonument Rusland–Georgië aan de Georgische Militaire Weg bij Gudauri, Georgië",
-          "cs": "Mozaikový Památník rusko-gruzínského přátelství na Gruzínské vojenské silnici u Gudauri, Gruzie",
-          "pl": "Mozaikowy Pomnik Przyjaźni Rosyjsko-Gruzińskiej przy Gruzińskiej Drodze Wojennej w Gudauri, Gruzja"
+          "en": "Gudauri Panorama, a curved stone terrace with a colourful mosaic mural above the Caucasus mountains on the Georgian Military Highway, Georgia",
+          "de": "Gudauri-Panorama, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild über den Kaukasusbergen an der Georgischen Heerstraße, Georgien",
+          "fr": "Panorama de Gudauri, une terrasse de pierre incurvée ornée d’une fresque en mosaïque colorée au-dessus des montagnes du Caucase, sur la route militaire géorgienne, Géorgie",
+          "es": "Panorama de Gudauri, una terraza de piedra curva con un colorido mural de mosaico sobre las montañas del Cáucaso, en la Carretera Militar Georgiana, Georgia",
+          "nl": "Panorama Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering boven de Kaukasusbergen aan de Georgische Militaire Weg, Georgië",
+          "cs": "Panorama Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou nad kavkazskými horami na Gruzínské vojenské silnici, Gruzie",
+          "pl": "Panorama Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem nad górami Kaukazu przy Gruzińskiej Drodze Wojennej, Gruzja"
         }
       },
       {
@@ -12442,10 +12442,10 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "@id": "https://www.hikasustravel.com/images/files/friendship-monument-gudauri-georgia-1200.webp#image",
-        "contentUrl": "https://www.hikasustravel.com/images/files/friendship-monument-gudauri-georgia-1200.webp",
-        "name": "Friendship Monument, Gudauri",
-        "caption": "Friendship Monument, Gudauri",
+        "@id": "https://www.hikasustravel.com/images/files/gudauri-panorama-terrace-georgia-1200.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/gudauri-panorama-terrace-georgia-1200.webp",
+        "name": "Gudauri Panorama",
+        "caption": "Gudauri Panorama",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -13025,28 +13025,28 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/georgia-10-days-celebration/friendship-monument-gudauri-georgia/friendship-monument-gudauri-georgia-1448.webp",
-        "base": "/images/tours/georgia-10-days-celebration/friendship-monument-gudauri-georgia/friendship-monument-gudauri-georgia",
+        "src": "/images/tours/georgia-10-days-celebration/gudauri-panorama-georgia/gudauri-panorama-georgia-1448.webp",
+        "base": "/images/tours/georgia-10-days-celebration/gudauri-panorama-georgia/gudauri-panorama-georgia",
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
         "caption": {
-          "en": "Friendship Monument, Gudauri",
-          "de": "Freundschaftsdenkmal, Gudauri",
-          "fr": "Monument de l'Amitié, Gudauri",
-          "es": "Monumento a la Amistad, Gudauri",
-          "nl": "Vriendschapsmonument, Gudauri",
-          "cs": "Pomník přátelství, Gudauri",
-          "pl": "Pomnik Przyjaźni, Gudauri"
+          "en": "Gudauri Panorama",
+          "de": "Gudauri-Panorama",
+          "fr": "Panorama de Gudauri",
+          "es": "Panorama de Gudauri",
+          "nl": "Panorama Gudauri",
+          "cs": "Panorama Gudauri",
+          "pl": "Panorama Gudauri"
         },
         "altText": {
-          "en": "Mosaic panorama of the Friendship Monument near Gudauri, Georgia",
-          "de": "Mosaik-Panorama des Freundschaftsdenkmals bei Gudauri, Georgien",
-          "fr": "Panorama en mosaïque du Monument de l'Amitié près de Gudauri, Géorgie",
-          "es": "Panorama de mosaico del Monumento a la Amistad cerca de Gudauri, Georgia",
-          "nl": "Mozaïekpanorama van het Vriendschapsmonument bij Gudauri, Georgië",
-          "cs": "Mozaikové panorama Pomníku přátelství u Gudauri, Gruzie",
-          "pl": "Mozaikowa panorama Pomnika Przyjaźni koło Gudauri, Gruzja"
+          "en": "Gudauri Panorama, a curved stone terrace with a colourful mosaic mural above the Caucasus mountains on the Georgian Military Highway, Georgia",
+          "de": "Gudauri-Panorama, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild über den Kaukasusbergen an der Georgischen Heerstraße, Georgien",
+          "fr": "Panorama de Gudauri, une terrasse de pierre incurvée ornée d’une fresque en mosaïque colorée au-dessus des montagnes du Caucase, sur la route militaire géorgienne, Géorgie",
+          "es": "Panorama de Gudauri, una terraza de piedra curva con un colorido mural de mosaico sobre las montañas del Cáucaso, en la Carretera Militar Georgiana, Georgia",
+          "nl": "Panorama Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering boven de Kaukasusbergen aan de Georgische Militaire Weg, Georgië",
+          "cs": "Panorama Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou nad kavkazskými horami na Gruzínské vojenské silnici, Gruzie",
+          "pl": "Panorama Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem nad górami Kaukazu przy Gruzińskiej Drodze Wojennej, Gruzja"
         }
       },
       {
@@ -13462,9 +13462,9 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-10-days-celebration/friendship-monument-gudauri-georgia/friendship-monument-gudauri-georgia-1448.webp",
-        "name": "Friendship Monument, Gudauri",
-        "caption": "Friendship Monument, Gudauri",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-10-days-celebration/gudauri-panorama-georgia/gudauri-panorama-georgia-1448.webp",
+        "name": "Gudauri Panorama",
+        "caption": "Gudauri Panorama",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -14468,28 +14468,28 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/georgia-wonders-11-day/friendship-monument-gudauri-georgia/friendship-monument-gudauri-georgia-1448.webp",
-        "base": "/images/tours/georgia-wonders-11-day/friendship-monument-gudauri-georgia/friendship-monument-gudauri-georgia",
+        "src": "/images/tours/georgia-wonders-11-day/gudauri-panorama-georgia/gudauri-panorama-georgia-1448.webp",
+        "base": "/images/tours/georgia-wonders-11-day/gudauri-panorama-georgia/gudauri-panorama-georgia",
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
         "caption": {
-          "en": "Friendship Monument, Gudauri",
-          "de": "Freundschaftsdenkmal, Gudauri",
-          "fr": "Monument de l'Amitié, Gudauri",
-          "es": "Monumento a la Amistad, Gudauri",
-          "nl": "Vriendschapsmonument, Gudauri",
-          "cs": "Pomník přátelství, Gudauri",
-          "pl": "Pomnik Przyjaźni, Gudauri"
+          "en": "Gudauri Panorama",
+          "de": "Gudauri-Panorama",
+          "fr": "Panorama de Gudauri",
+          "es": "Panorama de Gudauri",
+          "nl": "Panorama Gudauri",
+          "cs": "Panorama Gudauri",
+          "pl": "Panorama Gudauri"
         },
         "altText": {
-          "en": "Mosaic panorama of the Friendship Monument near Gudauri, Georgia",
-          "de": "Mosaik-Panorama des Freundschaftsdenkmals bei Gudauri, Georgien",
-          "fr": "Panorama en mosaïque du Monument de l'Amitié près de Gudauri, Géorgie",
-          "es": "Panorama de mosaico del Monumento a la Amistad cerca de Gudauri, Georgia",
-          "nl": "Mozaïekpanorama van het Vriendschapsmonument bij Gudauri, Georgië",
-          "cs": "Mozaikové panorama Pomníku přátelství u Gudauri, Gruzie",
-          "pl": "Mozaikowa panorama Pomnika Przyjaźni koło Gudauri, Gruzja"
+          "en": "Gudauri Panorama, a curved stone terrace with a colourful mosaic mural above the Caucasus mountains on the Georgian Military Highway, Georgia",
+          "de": "Gudauri-Panorama, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild über den Kaukasusbergen an der Georgischen Heerstraße, Georgien",
+          "fr": "Panorama de Gudauri, une terrasse de pierre incurvée ornée d’une fresque en mosaïque colorée au-dessus des montagnes du Caucase, sur la route militaire géorgienne, Géorgie",
+          "es": "Panorama de Gudauri, una terraza de piedra curva con un colorido mural de mosaico sobre las montañas del Cáucaso, en la Carretera Militar Georgiana, Georgia",
+          "nl": "Panorama Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering boven de Kaukasusbergen aan de Georgische Militaire Weg, Georgië",
+          "cs": "Panorama Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou nad kavkazskými horami na Gruzínské vojenské silnici, Gruzie",
+          "pl": "Panorama Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem nad górami Kaukazu przy Gruzińskiej Drodze Wojennej, Gruzja"
         }
       },
       {
@@ -14794,9 +14794,9 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-wonders-11-day/friendship-monument-gudauri-georgia/friendship-monument-gudauri-georgia-1448.webp",
-        "name": "Friendship Monument, Gudauri",
-        "caption": "Friendship Monument, Gudauri",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-wonders-11-day/gudauri-panorama-georgia/gudauri-panorama-georgia-1448.webp",
+        "name": "Gudauri Panorama",
+        "caption": "Gudauri Panorama",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -15798,28 +15798,28 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/friendship-monument-gudauri-georgia-1448.webp",
-        "base": "/images/files/friendship-monument-gudauri-georgia",
+        "src": "/images/files/gudauri-panorama-terrace-georgia-1448.webp",
+        "base": "/images/files/gudauri-panorama-terrace-georgia",
         "widths": [768, 1200, 1448],
         "width": 1448,
         "height": 1086,
         "caption": {
-          "en": "Friendship Monument, Gudauri",
-          "de": "Freundschaftsdenkmal, Gudauri",
-          "fr": "Monument de l'Amitié, Gudauri",
-          "es": "Monumento a la Amistad, Gudauri",
-          "nl": "Vriendschapsmonument, Gudauri",
-          "cs": "Pomník přátelství, Gudauri",
-          "pl": "Pomnik Przyjaźni, Gudauri"
+          "en": "Gudauri Panorama",
+          "de": "Gudauri-Panorama",
+          "fr": "Panorama de Gudauri",
+          "es": "Panorama de Gudauri",
+          "nl": "Panorama Gudauri",
+          "cs": "Panorama Gudauri",
+          "pl": "Panorama Gudauri"
         },
         "altText": {
-          "en": "The mosaic Russia–Georgia Friendship Monument on the Georgian Military Highway at Gudauri, Georgia",
-          "de": "Das Mosaik-Freundschaftsdenkmal Russland–Georgien an der Georgischen Heerstraße bei Gudauri, Georgien",
-          "fr": "Le monument de l'Amitié russo-géorgienne en mosaïque sur la route militaire géorgienne à Gudauri, Géorgie",
-          "es": "El monumento en mosaico a la Amistad ruso-georgiana en la Carretera Militar Georgiana en Gudauri, Georgia",
-          "nl": "Het mozaïek Vriendschapsmonument Rusland–Georgië aan de Georgische Militaire Weg bij Gudauri, Georgië",
-          "cs": "Mozaikový Památník rusko-gruzínského přátelství na Gruzínské vojenské silnici u Gudauri, Gruzie",
-          "pl": "Mozaikowy Pomnik Przyjaźni Rosyjsko-Gruzińskiej przy Gruzińskiej Drodze Wojennej w Gudauri, Gruzja"
+          "en": "Gudauri Panorama, a curved stone terrace with a colourful mosaic mural above the Caucasus mountains on the Georgian Military Highway, Georgia",
+          "de": "Gudauri-Panorama, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild über den Kaukasusbergen an der Georgischen Heerstraße, Georgien",
+          "fr": "Panorama de Gudauri, une terrasse de pierre incurvée ornée d’une fresque en mosaïque colorée au-dessus des montagnes du Caucase, sur la route militaire géorgienne, Géorgie",
+          "es": "Panorama de Gudauri, una terraza de piedra curva con un colorido mural de mosaico sobre las montañas del Cáucaso, en la Carretera Militar Georgiana, Georgia",
+          "nl": "Panorama Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering boven de Kaukasusbergen aan de Georgische Militaire Weg, Georgië",
+          "cs": "Panorama Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou nad kavkazskými horami na Gruzínské vojenské silnici, Gruzie",
+          "pl": "Panorama Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem nad górami Kaukazu przy Gruzińskiej Drodze Wojennej, Gruzja"
         }
       },
       {
@@ -16271,10 +16271,10 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "@id": "https://www.hikasustravel.com/images/files/friendship-monument-gudauri-georgia-1200.webp#image",
-        "contentUrl": "https://www.hikasustravel.com/images/files/friendship-monument-gudauri-georgia-1200.webp",
-        "name": "Friendship Monument, Gudauri",
-        "caption": "Friendship Monument, Gudauri",
+        "@id": "https://www.hikasustravel.com/images/files/gudauri-panorama-terrace-georgia-1200.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/gudauri-panorama-terrace-georgia-1200.webp",
+        "name": "Gudauri Panorama",
+        "caption": "Gudauri Panorama",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -17298,29 +17298,29 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/friendship-monument-gudauri-georgia-1448.webp",
-        "base": "/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/friendship-monument-gudauri-georgia",
+        "src": "/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/gudauri-panorama-georgia-1448.webp",
+        "base": "/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/gudauri-panorama-georgia",
         "widths": [768, 1200, 1448],
         "fallbackWidth": 1200,
         "width": 1448,
         "height": 1086,
         "caption": {
-          "en": "Friendship Monument, Gudauri",
-          "de": "Freundschaftsdenkmal, Gudauri",
-          "fr": "Monument de l'Amitié, Gudauri",
-          "es": "Monumento a la Amistad, Gudauri",
-          "nl": "Vriendschapsmonument, Gudauri",
-          "cs": "Pomník přátelství, Gudauri",
-          "pl": "Pomnik Przyjaźni, Gudauri"
+          "en": "Gudauri Panorama",
+          "de": "Gudauri-Panorama",
+          "fr": "Panorama de Gudauri",
+          "es": "Panorama de Gudauri",
+          "nl": "Panorama Gudauri",
+          "cs": "Panorama Gudauri",
+          "pl": "Panorama Gudauri"
         },
         "altText": {
-          "en": "Colorful mosaic panorama terrace at the Friendship Monument in Gudauri, Georgia",
-          "de": "Bunte Mosaik-Panoramaterrasse am Freundschaftsdenkmal in Gudauri, Georgien",
-          "fr": "Terrasse panoramique en mosaïque colorée au Monument de l'Amitié à Gudauri, Géorgie",
-          "es": "Terraza panorámica de mosaico colorido en el Monumento a la Amistad en Gudauri, Georgia",
-          "nl": "Kleurrijk mozaïek-panoramaterras bij het Vriendschapsmonument in Gudauri, Georgië",
-          "cs": "Barevná mozaiková vyhlídková terasa u Památníku přátelství v Gudauri, Gruzie",
-          "pl": "Kolorowy mozaikowy taras widokowy przy Pomniku Przyjaźni w Gudauri, Gruzja"
+          "en": "Gudauri Panorama, a curved stone terrace with a colourful mosaic mural above the Caucasus mountains on the Georgian Military Highway, Georgia",
+          "de": "Gudauri-Panorama, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild über den Kaukasusbergen an der Georgischen Heerstraße, Georgien",
+          "fr": "Panorama de Gudauri, une terrasse de pierre incurvée ornée d’une fresque en mosaïque colorée au-dessus des montagnes du Caucase, sur la route militaire géorgienne, Géorgie",
+          "es": "Panorama de Gudauri, una terraza de piedra curva con un colorido mural de mosaico sobre las montañas del Cáucaso, en la Carretera Militar Georgiana, Georgia",
+          "nl": "Panorama Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering boven de Kaukasusbergen aan de Georgische Militaire Weg, Georgië",
+          "cs": "Panorama Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou nad kavkazskými horami na Gruzínské vojenské silnici, Gruzie",
+          "pl": "Panorama Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem nad górami Kaukazu przy Gruzińskiej Drodze Wojennej, Gruzja"
         }
       },
       {
@@ -17769,11 +17769,11 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/friendship-monument-gudauri-georgia-1448.webp",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/gudauri-panorama-georgia-1448.webp",
         "width": 1448,
         "height": 1086,
-        "caption": "Friendship Monument, Gudauri",
-        "description": "Colorful mosaic panorama terrace at the Friendship Monument in Gudauri, Georgia",
+        "caption": "Gudauri Panorama",
+        "description": "Gudauri Panorama, a curved stone terrace with a colourful mosaic mural above the Caucasus mountains on the Georgian Military Highway, Georgia",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -18348,29 +18348,29 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/friendship-monument-gudauri-georgia-1448.webp",
-        "base": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/friendship-monument-gudauri-georgia",
+        "src": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/gudauri-panorama-georgia-1448.webp",
+        "base": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/gudauri-panorama-georgia",
         "widths": [768, 1200, 1448],
         "fallbackWidth": 1200,
         "width": 1448,
         "height": 1086,
         "caption": {
-          "en": "Friendship Monument, Gudauri",
-          "de": "Freundschaftsdenkmal, Gudauri",
-          "fr": "Monument de l'Amitié, Gudauri",
-          "es": "Monumento a la Amistad, Gudauri",
-          "nl": "Vriendschapsmonument, Gudauri",
-          "cs": "Pomník přátelství, Gudauri",
-          "pl": "Pomnik Przyjaźni, Gudauri"
+          "en": "Gudauri Panorama",
+          "de": "Gudauri-Panorama",
+          "fr": "Panorama de Gudauri",
+          "es": "Panorama de Gudauri",
+          "nl": "Panorama Gudauri",
+          "cs": "Panorama Gudauri",
+          "pl": "Panorama Gudauri"
         },
         "altText": {
-          "en": "Colorful mosaic panorama terrace at the Friendship Monument in Gudauri, Georgia",
-          "de": "Bunte Mosaik-Panoramaterrasse am Freundschaftsdenkmal in Gudauri, Georgien",
-          "fr": "Terrasse panoramique en mosaïque colorée au Monument de l'Amitié à Gudauri, Géorgie",
-          "es": "Terraza panorámica de mosaico colorido en el Monumento a la Amistad en Gudauri, Georgia",
-          "nl": "Kleurrijk mozaïek-panoramaterras bij het Vriendschapsmonument in Gudauri, Georgië",
-          "cs": "Barevná mozaiková vyhlídková terasa u Památníku přátelství v Gudauri, Gruzie",
-          "pl": "Kolorowy mozaikowy taras widokowy przy Pomniku Przyjaźni w Gudauri, Gruzja"
+          "en": "Gudauri Panorama, a curved stone terrace with a colourful mosaic mural above the Caucasus mountains on the Georgian Military Highway, Georgia",
+          "de": "Gudauri-Panorama, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild über den Kaukasusbergen an der Georgischen Heerstraße, Georgien",
+          "fr": "Panorama de Gudauri, une terrasse de pierre incurvée ornée d’une fresque en mosaïque colorée au-dessus des montagnes du Caucase, sur la route militaire géorgienne, Géorgie",
+          "es": "Panorama de Gudauri, una terraza de piedra curva con un colorido mural de mosaico sobre las montañas del Cáucaso, en la Carretera Militar Georgiana, Georgia",
+          "nl": "Panorama Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering boven de Kaukasusbergen aan de Georgische Militaire Weg, Georgië",
+          "cs": "Panorama Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou nad kavkazskými horami na Gruzínské vojenské silnici, Gruzie",
+          "pl": "Panorama Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem nad górami Kaukazu przy Gruzińskiej Drodze Wojennej, Gruzja"
         }
       },
       {
@@ -18926,11 +18926,11 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/friendship-monument-gudauri-georgia-1448.webp",
+        "contentUrl": "https://www.hikasustravel.com/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/gudauri-panorama-georgia-1448.webp",
         "width": 1448,
         "height": 1086,
-        "caption": "Friendship Monument, Gudauri",
-        "description": "Colorful mosaic panorama terrace at the Friendship Monument in Gudauri, Georgia",
+        "caption": "Gudauri Panorama",
+        "description": "Gudauri Panorama, a curved stone terrace with a colourful mosaic mural above the Caucasus mountains on the Georgian Military Highway, Georgia",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -21374,8 +21374,8 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/gudauri-panorama-friendship-monument-georgia-1448.webp",
-        "base": "/images/files/gudauri-panorama-friendship-monument-georgia",
+        "src": "/images/files/gudauri-panorama-georgia-1448.webp",
+        "base": "/images/files/gudauri-panorama-georgia",
         "widths": [768,1200,1448],
         "width": 1448,
         "height": 1086,
@@ -21389,13 +21389,13 @@ export const tours = [
           "pl": "Panorama Gudauri"
         },
         "altText": {
-          "en": "The Russia–Georgia Friendship Monument at Gudauri, a curved stone terrace with a colourful mosaic mural, above the Caucasus mountains, Georgia",
-          "de": "Das russisch-georgische Freundschaftsdenkmal in Gudauri, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild, über den Kaukasusbergen, Georgien",
-          "fr": "Le monument de l’amitié russo-géorgienne à Gudauri, une terrasse de pierre incurvée ornée d’une fresque en mosaïque colorée, au-dessus des montagnes du Caucase, Géorgie",
-          "es": "El Monumento a la Amistad ruso-georgiana en Gudauri, una terraza de piedra curva con un colorido mural de mosaico, sobre las montañas del Cáucaso, Georgia",
-          "nl": "Het Russisch-Georgische Vriendschapsmonument bij Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering, boven de Kaukasusbergen, Georgië",
-          "cs": "Rusko-gruzínský památník přátelství v Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou, nad kavkazskými horami, Gruzie",
-          "pl": "Pomnik Przyjaźni Rosyjsko-Gruzińskiej w Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem, nad górami Kaukazu, Gruzja"
+          "en": "Gudauri Panorama, a curved stone terrace with a colourful mosaic mural above the Caucasus mountains on the Georgian Military Highway, Georgia",
+          "de": "Gudauri-Panorama, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild über den Kaukasusbergen an der Georgischen Heerstraße, Georgien",
+          "fr": "Panorama de Gudauri, une terrasse de pierre incurvée ornée d’une fresque en mosaïque colorée au-dessus des montagnes du Caucase, sur la route militaire géorgienne, Géorgie",
+          "es": "Panorama de Gudauri, una terraza de piedra curva con un colorido mural de mosaico sobre las montañas del Cáucaso, en la Carretera Militar Georgiana, Georgia",
+          "nl": "Panorama Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering boven de Kaukasusbergen aan de Georgische Militaire Weg, Georgië",
+          "cs": "Panorama Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou nad kavkazskými horami na Gruzínské vojenské silnici, Gruzie",
+          "pl": "Panorama Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem nad górami Kaukazu przy Gruzińskiej Drodze Wojennej, Gruzja"
         }
       },
       {
@@ -23139,8 +23139,8 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/gudauri-panorama-friendship-monument-georgia-1448.webp",
-        "base": "/images/files/gudauri-panorama-friendship-monument-georgia",
+        "src": "/images/files/gudauri-panorama-georgia-1448.webp",
+        "base": "/images/files/gudauri-panorama-georgia",
         "widths": [768,1200,1448],
         "width": 1448,
         "height": 1086,
@@ -23154,13 +23154,13 @@ export const tours = [
           "pl": "Panorama Gudauri"
         },
         "altText": {
-          "en": "The Russia–Georgia Friendship Monument at Gudauri, a curved stone terrace with a colourful mosaic mural, above the Caucasus mountains, Georgia",
-          "de": "Das russisch-georgische Freundschaftsdenkmal in Gudauri, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild, über den Kaukasusbergen, Georgien",
-          "fr": "Le monument de l'amitié russo-géorgienne à Gudauri, une terrasse de pierre incurvée ornée d'une fresque en mosaïque colorée, au-dessus des montagnes du Caucase, Géorgie",
-          "es": "El Monumento a la Amistad ruso-georgiana en Gudauri, una terraza de piedra curva con un colorido mural de mosaico, sobre las montañas del Cáucaso, Georgia",
-          "nl": "Het Russisch-Georgische Vriendschapsmonument bij Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering, boven de Kaukasusbergen, Georgië",
-          "cs": "Rusko-gruzínský památník přátelství v Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou, nad kavkazskými horami, Gruzie",
-          "pl": "Pomnik Przyjaźni Rosyjsko-Gruzińskiej w Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem, nad górami Kaukazu, Gruzja"
+          "en": "Gudauri Panorama, a curved stone terrace with a colourful mosaic mural above the Caucasus mountains on the Georgian Military Highway, Georgia",
+          "de": "Gudauri-Panorama, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild über den Kaukasusbergen an der Georgischen Heerstraße, Georgien",
+          "fr": "Panorama de Gudauri, une terrasse de pierre incurvée ornée d’une fresque en mosaïque colorée au-dessus des montagnes du Caucase, sur la route militaire géorgienne, Géorgie",
+          "es": "Panorama de Gudauri, una terraza de piedra curva con un colorido mural de mosaico sobre las montañas del Cáucaso, en la Carretera Militar Georgiana, Georgia",
+          "nl": "Panorama Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering boven de Kaukasusbergen aan de Georgische Militaire Weg, Georgië",
+          "cs": "Panorama Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou nad kavkazskými horami na Gruzínské vojenské silnici, Gruzie",
+          "pl": "Panorama Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem nad górami Kaukazu przy Gruzińskiej Drodze Wojennej, Gruzja"
         }
       },
       {
@@ -24344,8 +24344,8 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/gudauri-panorama-friendship-monument-georgia-1448.webp",
-        "base": "/images/files/gudauri-panorama-friendship-monument-georgia",
+        "src": "/images/files/gudauri-panorama-georgia-1448.webp",
+        "base": "/images/files/gudauri-panorama-georgia",
         "widths": [
           768,
           1200,
@@ -24363,13 +24363,13 @@ export const tours = [
           "pl": "Panorama Gudauri"
         },
         "altText": {
-          "en": "The Russia–Georgia Friendship Monument at Gudauri, a curved stone terrace with a colourful mosaic mural, above the Caucasus mountains, Georgia",
-          "de": "Das russisch-georgische Freundschaftsdenkmal in Gudauri, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild, über den Kaukasusbergen, Georgien",
-          "fr": "Le monument de l'amitié russo-géorgienne à Gudauri, une terrasse de pierre incurvée ornée d'une fresque en mosaïque colorée, au-dessus des montagnes du Caucase, Géorgie",
-          "es": "El Monumento a la Amistad ruso-georgiana en Gudauri, una terraza de piedra curva con un colorido mural de mosaico, sobre las montañas del Cáucaso, Georgia",
-          "nl": "Het Russisch-Georgische Vriendschapsmonument bij Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering, boven de Kaukasusbergen, Georgië",
-          "cs": "Rusko-gruzínský památník přátelství v Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou, nad kavkazskými horami, Gruzie",
-          "pl": "Pomnik Przyjaźni Rosyjsko-Gruzińskiej w Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem, nad górami Kaukazu, Gruzja"
+          "en": "Gudauri Panorama, a curved stone terrace with a colourful mosaic mural above the Caucasus mountains on the Georgian Military Highway, Georgia",
+          "de": "Gudauri-Panorama, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild über den Kaukasusbergen an der Georgischen Heerstraße, Georgien",
+          "fr": "Panorama de Gudauri, une terrasse de pierre incurvée ornée d’une fresque en mosaïque colorée au-dessus des montagnes du Caucase, sur la route militaire géorgienne, Géorgie",
+          "es": "Panorama de Gudauri, una terraza de piedra curva con un colorido mural de mosaico sobre las montañas del Cáucaso, en la Carretera Militar Georgiana, Georgia",
+          "nl": "Panorama Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering boven de Kaukasusbergen aan de Georgische Militaire Weg, Georgië",
+          "cs": "Panorama Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou nad kavkazskými horami na Gruzínské vojenské silnici, Gruzie",
+          "pl": "Panorama Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem nad górami Kaukazu przy Gruzińskiej Drodze Wojennej, Gruzja"
         }
       },
       {
@@ -25671,8 +25671,8 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/gudauri-panorama-friendship-monument-georgia-1448.webp",
-        "base": "/images/files/gudauri-panorama-friendship-monument-georgia",
+        "src": "/images/files/gudauri-panorama-georgia-1448.webp",
+        "base": "/images/files/gudauri-panorama-georgia",
         "widths": [
           768,
           1200,
@@ -25690,13 +25690,13 @@ export const tours = [
           "pl": "Panorama Gudauri"
         },
         "altText": {
-          "en": "The Russia–Georgia Friendship Monument at Gudauri, a curved stone terrace with a colourful mosaic mural, above the Caucasus mountains, Georgia",
-          "de": "Das russisch-georgische Freundschaftsdenkmal in Gudauri, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild, über den Kaukasusbergen, Georgien",
-          "fr": "Le monument de l'amitié russo-géorgienne à Gudauri, une terrasse de pierre incurvée ornée d'une fresque en mosaïque colorée, au-dessus des montagnes du Caucase, Géorgie",
-          "es": "El Monumento a la Amistad ruso-georgiana en Gudauri, una terraza de piedra curva con un colorido mural de mosaico, sobre las montañas del Cáucaso, Georgia",
-          "nl": "Het Russisch-Georgische Vriendschapsmonument bij Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering, boven de Kaukasusbergen, Georgië",
-          "cs": "Rusko-gruzínský památník přátelství v Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou, nad kavkazskými horami, Gruzie",
-          "pl": "Pomnik Przyjaźni Rosyjsko-Gruzińskiej w Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem, nad górami Kaukazu, Gruzja"
+          "en": "Gudauri Panorama, a curved stone terrace with a colourful mosaic mural above the Caucasus mountains on the Georgian Military Highway, Georgia",
+          "de": "Gudauri-Panorama, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild über den Kaukasusbergen an der Georgischen Heerstraße, Georgien",
+          "fr": "Panorama de Gudauri, une terrasse de pierre incurvée ornée d’une fresque en mosaïque colorée au-dessus des montagnes du Caucase, sur la route militaire géorgienne, Géorgie",
+          "es": "Panorama de Gudauri, una terraza de piedra curva con un colorido mural de mosaico sobre las montañas del Cáucaso, en la Carretera Militar Georgiana, Georgia",
+          "nl": "Panorama Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering boven de Kaukasusbergen aan de Georgische Militaire Weg, Georgië",
+          "cs": "Panorama Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou nad kavkazskými horami na Gruzínské vojenské silnici, Gruzie",
+          "pl": "Panorama Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem nad górami Kaukazu przy Gruzińskiej Drodze Wojennej, Gruzja"
         }
       },
       {
@@ -26464,8 +26464,8 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/gudauri-panorama-friendship-monument-georgia-1448.webp",
-        "base": "/images/files/gudauri-panorama-friendship-monument-georgia",
+        "src": "/images/files/gudauri-panorama-georgia-1448.webp",
+        "base": "/images/files/gudauri-panorama-georgia",
         "widths": [
           768,
           1200,
@@ -26483,13 +26483,13 @@ export const tours = [
           "pl": "Panorama Gudauri"
         },
         "altText": {
-          "en": "The Russia–Georgia Friendship Monument at Gudauri, a curved stone terrace with a colourful mosaic mural, above the Caucasus mountains, Georgia",
-          "de": "Das russisch-georgische Freundschaftsdenkmal in Gudauri, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild, über den Kaukasusbergen, Georgien",
-          "fr": "Le monument de l'amitié russo-géorgienne à Gudauri, une terrasse de pierre incurvée ornée d'une fresque en mosaïque colorée, au-dessus des montagnes du Caucase, Géorgie",
-          "es": "El Monumento a la Amistad ruso-georgiana en Gudauri, una terraza de piedra curva con un colorido mural de mosaico, sobre las montañas del Cáucaso, Georgia",
-          "nl": "Het Russisch-Georgische Vriendschapsmonument bij Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering, boven de Kaukasusbergen, Georgië",
-          "cs": "Rusko-gruzínský památník přátelství v Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou, nad kavkazskými horami, Gruzie",
-          "pl": "Pomnik Przyjaźni Rosyjsko-Gruzińskiej w Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem, nad górami Kaukazu, Gruzja"
+          "en": "Gudauri Panorama, a curved stone terrace with a colourful mosaic mural above the Caucasus mountains on the Georgian Military Highway, Georgia",
+          "de": "Gudauri-Panorama, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild über den Kaukasusbergen an der Georgischen Heerstraße, Georgien",
+          "fr": "Panorama de Gudauri, une terrasse de pierre incurvée ornée d’une fresque en mosaïque colorée au-dessus des montagnes du Caucase, sur la route militaire géorgienne, Géorgie",
+          "es": "Panorama de Gudauri, una terraza de piedra curva con un colorido mural de mosaico sobre las montañas del Cáucaso, en la Carretera Militar Georgiana, Georgia",
+          "nl": "Panorama Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering boven de Kaukasusbergen aan de Georgische Militaire Weg, Georgië",
+          "cs": "Panorama Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou nad kavkazskými horami na Gruzínské vojenské silnici, Gruzie",
+          "pl": "Panorama Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem nad górami Kaukazu przy Gruzińskiej Drodze Wojennej, Gruzja"
         }
       },
       {

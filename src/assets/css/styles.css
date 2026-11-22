@@ -626,10 +626,10 @@ section {
    changed here). plain url() line = image-set() fallback for browsers without
    image-set(). */
 .hero--gudauri-panorama {
-  background-image: url("/images/files/gudauri-panorama-friendship-monument-georgia-1200.webp");
+  background-image: url("/images/files/gudauri-panorama-georgia-1200.webp");
   background-image: image-set(
-    url("/images/files/gudauri-panorama-friendship-monument-georgia-768.avif") type("image/avif"),
-    url("/images/files/gudauri-panorama-friendship-monument-georgia-768.webp") type("image/webp")
+    url("/images/files/gudauri-panorama-georgia-768.avif") type("image/avif"),
+    url("/images/files/gudauri-panorama-georgia-768.webp") type("image/webp")
   );
   background-position: center center;
   background-size: cover;
@@ -638,16 +638,16 @@ section {
 @media (min-width: 768px) {
   .hero--gudauri-panorama {
     background-image: image-set(
-      url("/images/files/gudauri-panorama-friendship-monument-georgia-1200.avif") type("image/avif"),
-      url("/images/files/gudauri-panorama-friendship-monument-georgia-1200.webp") type("image/webp")
+      url("/images/files/gudauri-panorama-georgia-1200.avif") type("image/avif"),
+      url("/images/files/gudauri-panorama-georgia-1200.webp") type("image/webp")
     );
   }
 }
 @media (min-width: 1200px) {
   .hero--gudauri-panorama {
     background-image: image-set(
-      url("/images/files/gudauri-panorama-friendship-monument-georgia-1448.avif") type("image/avif"),
-      url("/images/files/gudauri-panorama-friendship-monument-georgia-1448.webp") type("image/webp")
+      url("/images/files/gudauri-panorama-georgia-1448.avif") type("image/avif"),
+      url("/images/files/gudauri-panorama-georgia-1448.webp") type("image/webp")
     );
   }
 }
