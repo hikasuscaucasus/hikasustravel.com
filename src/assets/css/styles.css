@@ -872,6 +872,24 @@ section {
 }
 /* No rung above 1448 (native ceiling). */
 
+/* 7-Day Georgia Tour hero — Jvari Monastery aerial (owner photo, shared with the Mtskheta gallery). 768/1200/1600/1920 ladder; centre crop keeps the church and the confluence in frame. */
+.hero--7day-georgia-jvari {
+  background-image: url("/images/files/jvari-monastery-aerial-mtskheta-georgia-1200.webp");
+  background-image: image-set(url("/images/files/jvari-monastery-aerial-mtskheta-georgia-768.avif") type("image/avif"), url("/images/files/jvari-monastery-aerial-mtskheta-georgia-768.webp") type("image/webp"));
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .hero--7day-georgia-jvari { background-image: image-set(url("/images/files/jvari-monastery-aerial-mtskheta-georgia-1200.avif") type("image/avif"), url("/images/files/jvari-monastery-aerial-mtskheta-georgia-1200.webp") type("image/webp")); }
+}
+@media (min-width: 1200px) {
+  .hero--7day-georgia-jvari { background-image: image-set(url("/images/files/jvari-monastery-aerial-mtskheta-georgia-1600.avif") type("image/avif"), url("/images/files/jvari-monastery-aerial-mtskheta-georgia-1600.webp") type("image/webp")); }
+}
+@media (min-width: 1700px) {
+  .hero--7day-georgia-jvari { background-image: image-set(url("/images/files/jvari-monastery-aerial-mtskheta-georgia-1920.avif") type("image/avif"), url("/images/files/jvari-monastery-aerial-mtskheta-georgia-1920.webp") type("image/webp")); }
+}
+
 /* 12-Day Ultimate Georgia Adventure tour hero — Svetitskhoveli Cathedral in
    Mtskheta, same opt-in .heroBgClass mechanism. Ladder 768/1200/1540 — native
    ceiling 1540 (1540x1021), so no 1600/2400 rung and nothing is upscaled.
