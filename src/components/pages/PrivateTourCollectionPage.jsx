@@ -27,7 +27,7 @@ const HERO = '/images/files/georgia-tour-01.jpg'
 export default function PrivateTourCollectionPage({ slug }) {
   const t = useT()
   const { lang } = useLang()
-  const { tourTranslations, loadTourTranslations } = useContext(I18nContext)
+  const { tourTranslations, loadTourTranslations, translations } = useContext(I18nContext)
   const [search, setSearch] = useState('')
   const [sort, setSort] = useState('')
 
@@ -78,7 +78,7 @@ export default function PrivateTourCollectionPage({ slug }) {
         const tt = tourTranslations?.[tour.slug]
         const name = (tt?.title || tour.title).toLowerCase()
         const desc = (tt?.listingDescription || tt?.description || tour.listingDescription || tour.description || '').toLowerCase()
-        const dests = (tour.map?.markers?.map((m) => m.title) || []).join(' ').toLowerCase()
+        const dests = (tour.places || []).map((id) => translations[`place.${id}`] || id).join(' ').toLowerCase()
         return name.includes(q) || desc.includes(q) || dests.includes(q)
       })
     }
@@ -90,7 +90,7 @@ export default function PrivateTourCollectionPage({ slug }) {
       return aName.localeCompare(bName)
     })
     return list
-  }, [matches, tourTranslations, search, sort])
+  }, [matches, tourTranslations, translations, search, sort])
 
   if (!collection || !matches.length) return <NotFoundPage />
 

@@ -1,4 +1,5 @@
 import CardImage from './CardImage'
+import TourPlaces from './TourPlaces'
 import FadeUp from './FadeUp'
 import LocaleLink from '../../i18n/LocaleLink'
 import useT from '../../i18n/useT'
@@ -17,7 +18,6 @@ export default function TourCard({ tour, translation, index = 0, basePath = '/pr
   const t = useT()
   const tt = translation
   const isReversed = index % 2 === 1
-  const destinations = tour.map?.markers?.map((m) => m.title) || []
   const title = tt?.title || tour.title
   const description = tt?.listingDescription || tt?.description || tour.listingDescription || tour.description
   const tourUrl = `${basePath}/${tour.slug}`
@@ -58,16 +58,7 @@ export default function TourCard({ tour, translation, index = 0, basePath = '/pr
               <LocaleLink to={tourUrl}>{title}</LocaleLink>
             </h2>
 
-            {destinations.length > 0 && (
-              <div className="tc__tags" role="list" aria-label={t('a11y.destinations')}>
-                {destinations.slice(0, 6).map((dest, i) => (
-                  <span key={i} className="tc__tag" role="listitem">{dest}</span>
-                ))}
-                {destinations.length > 6 && (
-                  <span className="tc__tag tc__tag--more">+{destinations.length - 6}</span>
-                )}
-              </div>
-            )}
+            <TourPlaces places={tour.places} variant="compact" />
 
             <p className="tc__desc">{description}</p>
           </div>

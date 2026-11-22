@@ -1,6 +1,7 @@
 import { useCallback, useContext, useEffect, useMemo, useState } from 'react'
 import { useLocation, useParams } from 'react-router-dom'
 import TourDetailHero from '../shared/TourDetailHero'
+import TourPlaces from '../shared/TourPlaces'
 import TourSectionNav from '../shared/TourSectionNav'
 import FadeUp from '../shared/FadeUp'
 import Accordion from '../shared/Accordion'
@@ -302,6 +303,10 @@ export default function TourDetailPage() {
               {(tt?.description || tour.description || '').split(/\n{2,}/).map((para, i) => (
                 <p key={i} className="td-overview__text">{autolinkNodes(para, lang, pages)}</p>
               ))}
+              {/* The route at a glance: every place the tour visits, in order,
+                  from the same `tour.places` ids the listing cards use. The
+                  day-by-day detail stays in the itinerary below. */}
+              <TourPlaces places={tour.places} variant="full" />
               {/* One compact line of booking facts that belong with the
                   overview rather than in a facts table: who the tour is for
                   and how large the group is. Opt-in per tour (`adultsOnly`,

@@ -386,7 +386,7 @@ export function buildSearchIndex({ lang, pages = {}, t, tourTranslations = null 
     const prefix = tour.type === 'group' ? 'group-tours' : 'private-tours'
     // Places the tour visits — structured, and strong search signal
     // ("Kazbegi" should surface the tours that go there).
-    const markers = (tour.map?.markers || []).map((m) => m.title).filter(Boolean)
+    const markers = (tour.places || []).map((id) => t(`place.${id}`)).filter(Boolean)
     push({
       id: `tour:${tour.slug}`,
       path: `${prefix}/${tour.slug}`,

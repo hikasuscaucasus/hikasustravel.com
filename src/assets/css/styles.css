@@ -5551,6 +5551,51 @@ tour-info h2 a,
   border: 1.5px dashed rgba(43, 78, 71, 0.25);
   color: rgba(43, 78, 71, 0.5);
 }
+/* Place chips are <li> items in a real list; the "+N" control is a real button
+   that expands the remaining places in place (TourPlaces). */
+ul.tc__tags {
+  list-style: none;
+  padding: 0;
+}
+.tc__tag-toggle-item {
+  display: inline-block;
+  list-style: none;
+}
+.tc__tag--toggle {
+  font: inherit;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: inherit;
+  cursor: pointer;
+}
+.tc__tag--toggle:hover {
+  background: rgba(43, 78, 71, 0.08);
+  border-color: rgba(43, 78, 71, 0.5);
+  color: var(--color-h2);
+}
+.tc__tag--toggle:focus-visible {
+  outline: 2px solid var(--color-h3);
+  outline-offset: 2px;
+}
+/* Tour page: the full route as plain labels (no hover affordance, not links). */
+.td-places {
+  margin-top: 22px;
+}
+.td-places__title {
+  margin: 0 0 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-h3);
+}
+.td-places .tc__tag {
+  font-size: 13px;
+  padding: 5px 14px;
+}
+.td-places .tc__tag:hover {
+  background: rgba(43, 78, 71, 0.07);
+}
 
 /* Primary category chip — same pill shape as .tc__tag (the destination tags
    below it), in the accent gold instead of green so "what kind of tour" reads
