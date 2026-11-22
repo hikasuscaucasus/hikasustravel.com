@@ -484,6 +484,30 @@ const blogArticles = [
     tags: ['georgia','armenia','itinerary','travel-guide','planning'],
     keywords: "Georgia and Armenia in 10 days, 10 days in Georgia and Armenia, Georgia Armenia itinerary, 10-day Georgia Armenia itinerary, Tbilisi to Yerevan, Georgia Armenia border crossing, Sadakhlo Bagratashen, Kazbegi, Kakheti, Lake Sevan",
   },
+  {
+    slug: 'georgia-in-7-days',
+    titleKey: 'blog.article13.title',
+    descKey: 'blog.article13.desc',
+    title: "Georgia in 7 Days: The Perfect One-Week Itinerary",
+    seoTitle: "Georgia in 7 Days: Perfect One-Week Itinerary | Hikasus",
+    excerpt: "Plan Georgia in 7 days with a realistic one-week itinerary through Tbilisi, Mtskheta, Kazbegi and Kakheti wine country, plus tips on timing and transport.",
+    metaDescription: "Plan Georgia in 7 days with a realistic one-week itinerary through Tbilisi, Mtskheta, Kazbegi and Kakheti wine country, plus tips on timing and transport.",
+    heroImage: '/images/files/gergeti-trinity-church-kazbegi-georgia-1200.webp',
+    ogImage: '/images/files/gergeti-trinity-church-kazbegi-georgia-og.jpg',
+    ogImageWidth: 1200,
+    ogImageHeight: 630,
+    ogImageAlt: {
+      en: "The Gergeti Trinity Church, a lone stone church with a bell tower on a hill below steep rocky Caucasus mountains near Kazbegi, Georgia",
+      de: "Die Gergeti-Dreifaltigkeitskirche, eine einzeln stehende Steinkirche mit Glockenturm auf einem Hügel unter steilen felsigen Kaukasusbergen bei Kazbegi, Georgien",
+      fr: "L'église de la Trinité de Guerguéti, église de pierre isolée avec clocher sur une colline au pied d'abruptes montagnes rocheuses du Caucase, près de Kazbegi, Géorgie",
+      es: "La iglesia de la Trinidad de Gergeti, iglesia de piedra solitaria con campanario en una colina al pie de escarpadas montañas rocosas del Cáucaso, cerca de Kazbegi, Georgia",
+      nl: "De Drie-eenheidskerk van Gergeti, een alleenstaande stenen kerk met klokkentoren op een heuvel onder steile rotsachtige Kaukasusbergen bij Kazbegi, Georgië",
+      cs: "Gergetský kostel Nejsvětější Trojice, osamělý kamenný kostel se zvonicí na kopci pod strmými skalnatými kavkazskými horami u Kazbegi, Gruzie",
+      pl: "Cerkiew Trójcy Świętej w Gergeti, samotny kamienny kościół z dzwonnicą na wzgórzu u stóp stromych, skalistych gór Kaukazu koło Kazbegi, Gruzja",
+    },
+    tags: ['georgia','itinerary','travel-guide','planning','culture'],
+    keywords: "Georgia in 7 days, 7 days in Georgia, Georgia 7 day itinerary, one week in Georgia, Georgia itinerary 7 days, Tbilisi Kazbegi Kakheti itinerary, one week Georgia itinerary, Georgia road trip 7 days",
+  },
 ]
 
 // Blog title translation for a given article key from ui.json

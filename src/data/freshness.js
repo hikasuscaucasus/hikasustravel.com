@@ -134,6 +134,7 @@ export const pages = [
   page('blog:food-drink-caucasus-georgia-armenia-azerbaijan', '/blog/food-drink-caucasus-georgia-armenia-azerbaijan', 'caucasus', 'blog', C, ['UNESCO intangible-heritage inscriptions', 'Cognac naming rule', 'tour inclusions'], [], { lastVerified: '2026-10-04' }),
   page('blog:armenia-in-7-days', '/blog/armenia-in-7-days', 'armenia', 'blog', C, ['season window', 'driving times', 'Wings of Tatev operation', 'tour inclusions'], [], { lastVerified: '2026-10-18' }),
   page('blog:georgia-armenia-in-10-days', '/blog/georgia-armenia-in-10-days', 'georgia', 'blog', C, ['driving times', 'Sadakhlo border procedure', 'season window', 'tour inclusions'], [], { lastVerified: '2026-10-31' }),
+  page('blog:georgia-in-7-days', '/blog/georgia-in-7-days', 'georgia', 'blog', C, ['driving times', 'season window', 'tour inclusions', 'Military Highway winter closures'], [], { lastVerified: '2026-11-22' }),
   page('blog:essential-georgian-words-phrases', '/blog/essential-georgian-words-phrases', 'georgia', 'blog', C, ['none time-sensitive'], []),
   page('blog:essential-azerbaijani-words-phrases', '/blog/essential-azerbaijani-words-phrases', 'azerbaijan', 'blog', C, ['English proficiency statement'], []),
   page('blog:essential-armenian-words', '/blog/essential-armenian-words', 'armenia', 'blog', C, ['English proficiency statement'], []),
