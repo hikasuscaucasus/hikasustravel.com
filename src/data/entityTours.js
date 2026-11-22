@@ -91,6 +91,69 @@ export const ENTITY_TOURS = {
   'site|vardzia': ['6-day-georgia-private-tour-highlights-from-tbilisi', 'georgia-grand-tour-9-days-from-tbilisi-to-batumi', '16-day-caucasus-tour', '13-day-azerbaijan-georgia-tour', '13-day-georgia-armenia-tour'],
 }
 
+// ---- Structured place relationships (automatic) -------------------------------------
+// The map above is the curated base. Every tour also carries `places` — an ordered
+// list of place ids that the tour cards and tour pages already use — and each id
+// that has a published destination page adds that tour to the page's entity, plus
+// the region it sits in. So a new tour, or a new place on an existing tour, shows
+// up in its destination's "<Entity> Tours" tag and listing page with no list to
+// maintain here. A place id resolves by exact slug (a published city or site);
+// PLACE_ENTITY covers the ids whose destination page is named differently. Ids with
+// no destination page (and ids that are not a tour stop at a page) simply add nothing.
+const PLACE_ENTITY = {
+  'gobustan': 'site|gobustan-petroglyphs', 'mud-volcanoes': 'site|gobustan-mud-volcanoes', 'ateshgah': 'site|ateshgah-fire-temple',
+  'batonistsikhe-castle': 'site|batonistsikhe-fortress', 'haghpat': 'site|haghpat-monastery', 'sevanavank': 'site|sevanavank-monastery',
+  'khor-virap': 'site|khor-virap-monastery', 'geghard': 'site|geghard-monastery', 'zvartnots': 'site|zvartnots-temple',
+  'khareba-winery': 'site|kvareli-wine-cave-khareba', 'gremi-fortress': 'site|gremi-archangels-complex', 'musicians-park': 'site|musicians-park-shekvetili',
+  'gveleti-waterfall': 'site|gveleti-waterfalls', 'holy-trinity-cathedral': 'site|holy-trinity-cathedral-sameba', 'europe-square': 'site|europe-square-batumi',
+  'svaneti-museum': 'site|svaneti-museum-history-ethnography', 'juta-village': 'site|juta', 'okatse-canyon': 'site|okatse-kinchkha-waterfall',
+  'dadiani-palace': 'site|dadiani-palace-museum', 'noravank': 'site|noravank-monastery', 'tatev': 'site|tatev-monastery',
+}
+{
+  // Tags and listing pages are keyed by slug, so a slug shared by two published pages
+  // (e.g. the Ateshgah in Tbilisi and in Baku) is ambiguous: skip it rather than tag the
+  // wrong page.
+  const live = (list) => {
+    const n = {}
+    for (const x of list) if (x.published !== false) n[x.slug] = (n[x.slug] || 0) + 1
+    return new Set(Object.keys(n).filter((slug) => n[slug] === 1))
+  }
+  const liveCities = live(cities), liveSites = live(sites), liveRegions = live(regions)
+  const cityBySlug = Object.fromEntries(cities.map((c) => [c.slug, c]))
+  const siteBySlug = Object.fromEntries(sites.map((x) => [x.slug, x]))
+  // The region a city/site sits in (a place nested under a site climbs to that site's region).
+  const regionOf = (type, slug, hops = 0) => {
+    if (type === 'city') return cityBySlug[slug]?.region || null
+    const site = siteBySlug[slug]
+    if (!site || hops > 4) return null
+    if (site.parentType === 'region') return site.parent
+    if (site.parentType === 'city') return cityBySlug[site.parent]?.region || null
+    return regionOf('site', site.parent, hops + 1)
+  }
+  const resolveEntity = (id) => {
+    const key = PLACE_ENTITY[id] || (liveCities.has(id) ? `city|${id}` : liveSites.has(id) ? `site|${id}` : null)
+    if (!key) return null
+    const [type, slug] = key.split('|')
+    return (type === 'city' ? liveCities : liveSites).has(slug) ? { type, slug } : null
+  }
+  const add = (key, tourSlug) => {
+    const list = (ENTITY_TOURS[key] ||= [])
+    if (!list.includes(tourSlug)) list.push(tourSlug)
+  }
+  for (const tour of tours) {
+    for (const id of tour.places || []) {
+      const entity = resolveEntity(id)
+      if (!entity) continue
+      add(`${entity.type}|${entity.slug}`, tour.slug)
+      const region = regionOf(entity.type, entity.slug)
+      if (region && liveRegions.has(region)) add(`region|${region}`, tour.slug)
+    }
+  }
+  // Keep every list in tours.js order (the curated order the base map already follows).
+  const order = new Map(tours.map((t, i) => [t.slug, i]))
+  for (const key of Object.keys(ENTITY_TOURS)) ENTITY_TOURS[key].sort((a, b) => order.get(a) - order.get(b))
+}
+
 // English proper name per entity (keyed by `${type}:${slug}`). The localized tag
 // and H1 wrap this in a per-locale template, mirroring the existing
 // `city.thingsToDoCta` convention (proper names are shown as-is on every locale).
