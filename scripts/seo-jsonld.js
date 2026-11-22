@@ -38,7 +38,7 @@ const {
   countryBase, countryName,
   regionsHubPathFor, citiesHubPathFor, placesHubPathFor, DEFAULT_COUNTRY,
 } = await import(src('data/places.js'))
-const { publishedBorderPages, borderCrossings, borderOverview } = await import(src('data/borders.js'))
+const { publishedBorderPages, borderCrossings } = await import(src('data/borders.js'))
 const { primaryToursFor } = await import(src('data/tours.js'))
 const { TOUR_HUBS } = await import(src('data/tourHubs.js'))
 

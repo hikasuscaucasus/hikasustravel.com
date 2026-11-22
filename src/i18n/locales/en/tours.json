@@ -1310,5 +1310,54 @@
       "Additional hotel expenses;",
       "Travel insurance."
     ]
+  },
+  "7-day-georgia-tour": {
+    "title": "7-Day Georgia Tour",
+    "seoTitle": "7-Day Georgia Tour from Tbilisi: Kazbegi & Kakheti Wine",
+    "description": "A private 7-day tour from Tbilisi to the mountains of Kazbegi and the wine country of Kakheti. It begins and ends in Tbilisi, with six nights in three bases: three in Tbilisi, one in Kazbegi and two in Telavi, with an English-speaking guide and driver.\n\nAfter a day in Tbilisi's Old Town, the road runs north to Mtskheta and Ananuri and up the Georgian Military Highway to Kazbegi, where Gergeti Trinity Church stands under Mount Kazbek. You then cross to Kakheti for two nights in Telavi, with the Batonistsikhe castle, the Tsinandali estate and a lunch with wine tasting at a winery, before Sighnaghi, Bodbe and the drive back to Tbilisi. The tour is private, so the pace and stops can be adjusted to you.",
+    "metaDescription": "Private 7-day Georgia tour from Tbilisi: Mtskheta, Ananuri, Kazbegi, Gergeti Trinity Church and Kakheti wine country with Telavi, Tsinandali and Sighnaghi — hotels, transport and guide included.",
+    "listingDescription": "A private 7-day route from Tbilisi through Mtskheta, Ananuri and Kazbegi to Kakheti wine country, with a winery lunch and tasting, hotels, transport and a guide-driver handled for you.",
+    "itinerary": [
+      {
+        "title": "Day 1: Arrival in Tbilisi",
+        "content": "<p>You'll be met at Tbilisi International Airport and transferred to your hotel. Check-in is from 14:00. The rest of the day is free. Overnight stay in Tbilisi.</p><ul><li>Arrival at Tbilisi International Airport;</li><li>Transfer to hotel and check-in;</li><li>Free time in Tbilisi;</li><li>Overnight stay in Tbilisi.</li><li><strong>Driving duration:</strong> 30 minutes</li></ul>"
+      },
+      {
+        "title": "Day 2: Tbilisi City Tour",
+        "content": "<p>The tour starts at Holy Trinity Cathedral — Sameba — one of the largest Orthodox churches in the world, rising above the city. From there you'll visit the clifftop Metekhi church, perched above the river, then ride the cable car up to the Narikala fortress for the view over the whole of Tbilisi. Walking down from the fortress, you'll pass through <a href=\"/en/georgia/tbilisi/abanotubani-sulfur-baths\" data-internal=\"/georgia/tbilisi/abanotubani-sulfur-baths\" class=\"entity-link\">Abanotubani</a>, the district of brick-domed sulfur bathhouses the city was built on and named after, then wander the Old Town lanes to the leaning clock tower of the <a href=\"/en/georgia/tbilisi/rezo-gabriadze-marionette-theatre\" data-internal=\"/georgia/tbilisi/rezo-gabriadze-marionette-theatre\" class=\"entity-link\">Rezo Gabriadze theatre</a>. Free evening in Tbilisi.</p><ul><li>Visit Holy Trinity Cathedral (Sameba);</li><li>See Metekhi Church;</li><li>Ride the cable car to Narikala Fortress;</li><li>Walk through the Abanotubani sulfur bath district;</li><li>See the Rezo Gabriadze Theatre clock tower;</li><li>Walk across the Peace Bridge;</li><li>Overnight stay in Tbilisi.</li><li><strong>Duration of the tour:</strong> 4-5 hours</li><li><strong>Driving duration:</strong> 30 minutes</li></ul>"
+      },
+      {
+        "title": "Day 3: Tbilisi – Mtskheta – Ananuri – Kazbegi",
+        "content": "<p>North today, up the old Georgian Military Highway into the Caucasus. First stop is Mtskheta, Georgia's spiritual heart — the great Svetitskhoveli cathedral in the town, and Jvari monastery on the hill above it, both UNESCO sites. Then a pause at <a href=\"/en/georgia/mtskheta-mtianeti/ananuri-fortress\" data-internal=\"/georgia/mtskheta-mtianeti/ananuri-fortress\" class=\"entity-link\">Ananuri</a>, a fortress standing over the turquoise Jinvali reservoir. Further up you'll stop where the black and white Aragvi rivers meet, their two colours running side by side before they blend into one, and again at the Gudauri Panorama for the wide view back down the valley. From there the road climbs to Kazbegi, a small town under the snows of Mount Kazbek where the air changes completely.</p><ul><li>Visit Jvari Monastery (UNESCO World Heritage Site);</li><li>Explore Mtskheta and Svetitskhoveli Cathedral;</li><li>Stop at Ananuri Architectural Complex and enjoy views of Jinvali Reservoir;</li><li>See the confluence of Black and White Aragvi rivers;</li><li>Stop at Gudauri Panorama;</li><li>Overnight stay in Kazbegi.</li><li><strong>Duration of the tour:</strong> 8-9 hours</li><li><strong>Driving duration:</strong> 3.5 hours</li></ul>"
+      },
+      {
+        "title": "Day 4: Kazbegi – Gergeti Trinity Church – Telavi",
+        "content": "<p>Your morning is the big one — up to Gergeti Trinity, the lone church at 2,170 metres with Mount Kazbek behind it, one of Georgia's great views and best in the early light. Afterwards you leave the mountains and drive back down the Military Highway, then east across the country into Kakheti, arriving in Telavi, the heart of the wine region, in the evening.</p><ul><li>Visit Gergeti Trinity Church;</li><li>Drive from Kazbegi to Kakheti;</li><li>Overnight stay in Telavi.</li><li><strong>Duration of the tour:</strong> 8-9 hours</li><li><strong>Driving duration:</strong> 5 hours</li></ul>"
+      },
+      {
+        "title": "Day 5: Telavi – Batonistsikhe – Tsinandali – Lunch and Wine Tasting at the Winery – Telavi",
+        "content": "<p>The day starts with a walk through Telavi — the old town, the giant 900-year-old plane tree, and the Batonistsikhe castle, the former royal residence of the kings of Kakheti. Then out to the Tsinandali estate, the 19th-century home and gardens of Prince Alexander Chavchavadze, before a stop at a local winery for lunch and a tasting, with the chance to get hands-on with a qvevri — the buried clay vessel Georgians have fermented wine in for millennia. Back to Telavi for the night.</p><ul><li>Walk through Telavi and see the 900-year-old plane tree;</li><li>Visit Batonistsikhe Castle;</li><li>Visit Tsinandali Estate;</li><li>Lunch and wine tasting at a local winery;</li><li>Overnight stay in Telavi.</li><li><strong>Duration of the tour:</strong> 7-8 hours</li><li><strong>Driving duration:</strong> 1.5 hours</li></ul>"
+      },
+      {
+        "title": "Day 6: Telavi – Sighnaghi – Bodbe – Tbilisi",
+        "content": "<p>You leave Telavi and drive to Sighnaghi, the small walled “City of Love” with its cobbled streets and long views over the Alazani valley, then on to Bodbe, a hilltop convent nearby and the burial place of St. Nino, who brought Christianity to Georgia. From there it's a straightforward drive to Tbilisi for the evening.</p><ul><li>Visit Sighnaghi;</li><li>Visit Bodbe Monastery;</li><li>Drive to Tbilisi;</li><li>Overnight stay in Tbilisi.</li><li><strong>Duration of the tour:</strong> 5-6 hours</li><li><strong>Driving duration:</strong> 2.5 hours</li></ul>"
+      },
+      {
+        "title": "Day 7: Departure from Tbilisi",
+        "content": "<p>Check out of your hotel by 12:00 p.m. When it's time, we'll transfer you to Tbilisi International Airport for your departure.</p><ul><li>Hotel check-out by 12:00 p.m.;</li><li>Transfer to Tbilisi International Airport;</li><li>Departure.</li><li><strong>Driving duration:</strong> 30 minutes</li></ul>"
+      }
+    ],
+    "included": [
+      "Accommodation in double/twin rooms, with breakfast included;",
+      "Transfers as per the itinerary in a comfortable, air-conditioned vehicle, with an English-speaking guide driver;",
+      "Entrance fees as per itinerary;",
+      "Still water;",
+      "1 lunch and 1 wine tasting."
+    ],
+    "notIncluded": [
+      "Full board;",
+      "Additional hotel expenses;",
+      "Travel insurance."
+    ]
   }
 }

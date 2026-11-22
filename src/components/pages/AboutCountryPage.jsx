@@ -79,7 +79,10 @@ export default function AboutCountryPage({ country = 'georgia' }) {
   const { pages, enPages } = useContext(I18nContext)
   const { lang } = useLang()
   const conf = ABOUT_PAGES[country] || ABOUT_PAGES.georgia
-  const page = pages[conf.pageKey] || enPages[conf.pageKey] || {}
+  const page = useMemo(
+    () => pages[conf.pageKey] || enPages[conf.pageKey] || {},
+    [pages, enPages, conf.pageKey],
+  )
   const linkedContent = useLinkedHtml(page.content)
   const seo = getSEO(conf.seoKey, lang)
 
@@ -150,7 +153,6 @@ export default function AboutCountryPage({ country = 'georgia' }) {
         },
       ],
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [lang, seo.description, page.heroTitle, faqItems, conf])
 
   const imageAlt = conf.imageAlt?.[lang] || conf.imageAlt?.en

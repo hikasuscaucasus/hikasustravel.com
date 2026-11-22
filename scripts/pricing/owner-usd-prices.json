@@ -80,6 +80,16 @@
         { "travelers": "3", "luxury": "1535", "midRange": "1390", "economy": "1155" },
         { "travelers": "4", "luxury": "1395", "midRange": "1255", "economy": "1025" }
       ]
+    },
+    "7-day-georgia-tour": {
+      "approved": "2026-11-22",
+      "pricing": [
+        { "travelers": "1", "luxury": "3640", "midRange": "2855", "economy": "2530" },
+        { "travelers": "2", "luxury": "1945", "midRange": "1495", "economy": "1350" },
+        { "travelers": "3", "luxury": "1895", "midRange": "1350", "economy": "1135" },
+        { "travelers": "4", "luxury": "1485", "midRange": "1050", "economy": "890" },
+        { "travelers": "Single Supplement", "luxury": "695", "midRange": "345", "economy": "185" }
+      ]
     }
   }
 }

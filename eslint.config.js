@@ -8,7 +8,7 @@ export default defineConfig([
   // Both build outputs: `dist` is the browser bundle, `dist-ssr` the build-time
   // renderer (see vite.config.js). Without dist-ssr here, `npm run lint` walks
   // the generated bundles and reports dozens of failures in machine-written code.
-  globalIgnores(['dist', 'dist-ssr']),
+  globalIgnores(['dist', 'dist-ssr', '.claude']),
   {
     files: ['**/*.{js,jsx}'],
     extends: [
