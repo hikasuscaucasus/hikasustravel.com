@@ -4153,19 +4153,61 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/tbilisi-wine-sulfur/gudauri-panorama-georgia-1448.webp",
-        "base": "/images/tours/tbilisi-wine-sulfur/gudauri-panorama-georgia",
-        "widths": [768, 1200, 1448],
+        "src": "/images/files/gudauri-panorama-1448.webp",
+        "base": "/images/files/gudauri-panorama",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
         "width": 1448,
         "height": 1086,
         "caption": {
           "en": "Gudauri Panorama",
-          "de": "Gudauri Panorama",
-          "fr": "Gudauri Panorama",
-          "es": "Gudauri Panorama",
-          "nl": "Gudauri Panorama",
-          "cs": "Gudauri Panorama",
+          "de": "Gudauri-Panorama",
+          "fr": "Panorama de Gudauri",
+          "es": "Panorama de Gudauri",
+          "nl": "Panorama Gudauri",
+          "cs": "Panorama Gudauri",
           "pl": "Panorama Gudauri"
+        },
+        "altText": {
+          "en": "Gudauri Panorama: the curved mosaic terrace on a hilltop above a winding road, with snow-covered Caucasus slopes behind, Georgia",
+          "de": "Gudauri-Panorama: die geschwungene Mosaikterrasse auf einer Anhöhe über einer kurvenreichen Straße, dahinter schneebedeckte Hänge des Kaukasus, Georgien",
+          "fr": "Panorama de Gudauri : la terrasse en mosaïque incurvée sur une hauteur au-dessus d’une route sinueuse, avec les versants enneigés du Caucase en arrière-plan, Géorgie",
+          "es": "Panorama de Gudauri: la terraza curva de mosaico sobre una colina junto a una carretera sinuosa, con laderas nevadas del Cáucaso al fondo, Georgia",
+          "nl": "Panorama Gudauri: het gebogen mozaïekterras op een heuveltop boven een kronkelende weg, met besneeuwde hellingen van de Kaukasus erachter, Georgië",
+          "cs": "Panorama Gudauri: zakřivená mozaiková terasa na kopci nad klikatou silnicí, za ní zasněžené svahy Kavkazu, Gruzie",
+          "pl": "Panorama Gudauri: zakrzywiony mozaikowy taras na wzgórzu nad krętą drogą, a za nim ośnieżone zbocza Kaukazu, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/devils-valley-reservoir-1448.webp",
+        "base": "/images/files/devils-valley-reservoir",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Devil’s Valley Reservoir",
+          "de": "Stausee im Teufelstal",
+          "fr": "Réservoir de la Vallée du Diable",
+          "es": "Embalse del Valle del Diablo",
+          "nl": "Stuwmeer in de Duivelsvallei",
+          "cs": "Nádrž v Ďáblově údolí",
+          "pl": "Zbiornik w Diabelskiej Dolinie"
+        },
+        "altText": {
+          "en": "A turquoise reservoir in the Devil's Valley below Gudauri, seen from above, with snow-dusted slopes and a stony river bed, Greater Caucasus, Georgia",
+          "de": "Ein türkisfarbener Stausee im Teufelstal unterhalb von Gudauri, von oben gesehen, mit schneebestäubten Hängen und einem steinigen Flussbett, Großer Kaukasus, Georgien",
+          "fr": "Un réservoir turquoise dans la Vallée du Diable, en contrebas de Gudauri, vu d’en haut, avec des versants saupoudrés de neige et un lit de rivière caillouteux, Grand Caucase, Géorgie",
+          "es": "Un embalse turquesa en el Valle del Diablo, bajo Gudauri, visto desde arriba, con laderas cubiertas de nieve ligera y un lecho de río pedregoso, Gran Cáucaso, Georgia",
+          "nl": "Een turquoise stuwmeer in de Duivelsvallei onder Gudauri, van bovenaf gezien, met licht besneeuwde hellingen en een stenige rivierbedding, Grote Kaukasus, Georgië",
+          "cs": "Tyrkysová nádrž v Ďáblově údolí pod Gudauri při pohledu shora, s mírně zasněženými svahy a kamenitým říčním korytem, Velký Kavkaz, Gruzie",
+          "pl": "Turkusowy zbiornik w Diabelskiej Dolinie poniżej Gudauri widziany z góry, z lekko przyprószonymi śniegiem zboczami i kamienistym korytem rzeki, Wielki Kaukaz, Gruzja"
         }
       },
       {
@@ -5359,8 +5401,8 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/gudauri-panorama-terrace-georgia-1448.webp",
-        "base": "/images/files/gudauri-panorama-terrace-georgia",
+        "src": "/images/files/gudauri-panorama-1448.webp",
+        "base": "/images/files/gudauri-panorama",
         "widths": [
           768,
           1200,
@@ -5378,13 +5420,42 @@ export const tours = [
           "pl": "Panorama Gudauri"
         },
         "altText": {
-          "en": "Gudauri Panorama, a curved stone terrace with a colourful mosaic mural above the Caucasus mountains on the Georgian Military Highway, Georgia",
-          "de": "Gudauri-Panorama, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild über den Kaukasusbergen an der Georgischen Heerstraße, Georgien",
-          "fr": "Panorama de Gudauri, une terrasse de pierre incurvée ornée d’une fresque en mosaïque colorée au-dessus des montagnes du Caucase, sur la route militaire géorgienne, Géorgie",
-          "es": "Panorama de Gudauri, una terraza de piedra curva con un colorido mural de mosaico sobre las montañas del Cáucaso, en la Carretera Militar Georgiana, Georgia",
-          "nl": "Panorama Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering boven de Kaukasusbergen aan de Georgische Militaire Weg, Georgië",
-          "cs": "Panorama Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou nad kavkazskými horami na Gruzínské vojenské silnici, Gruzie",
-          "pl": "Panorama Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem nad górami Kaukazu przy Gruzińskiej Drodze Wojennej, Gruzja"
+          "en": "Gudauri Panorama: the curved mosaic terrace on a hilltop above a winding road, with snow-covered Caucasus slopes behind, Georgia",
+          "de": "Gudauri-Panorama: die geschwungene Mosaikterrasse auf einer Anhöhe über einer kurvenreichen Straße, dahinter schneebedeckte Hänge des Kaukasus, Georgien",
+          "fr": "Panorama de Gudauri : la terrasse en mosaïque incurvée sur une hauteur au-dessus d’une route sinueuse, avec les versants enneigés du Caucase en arrière-plan, Géorgie",
+          "es": "Panorama de Gudauri: la terraza curva de mosaico sobre una colina junto a una carretera sinuosa, con laderas nevadas del Cáucaso al fondo, Georgia",
+          "nl": "Panorama Gudauri: het gebogen mozaïekterras op een heuveltop boven een kronkelende weg, met besneeuwde hellingen van de Kaukasus erachter, Georgië",
+          "cs": "Panorama Gudauri: zakřivená mozaiková terasa na kopci nad klikatou silnicí, za ní zasněžené svahy Kavkazu, Gruzie",
+          "pl": "Panorama Gudauri: zakrzywiony mozaikowy taras na wzgórzu nad krętą drogą, a za nim ośnieżone zbocza Kaukazu, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/devils-valley-reservoir-1448.webp",
+        "base": "/images/files/devils-valley-reservoir",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Devil’s Valley Reservoir",
+          "de": "Stausee im Teufelstal",
+          "fr": "Réservoir de la Vallée du Diable",
+          "es": "Embalse del Valle del Diablo",
+          "nl": "Stuwmeer in de Duivelsvallei",
+          "cs": "Nádrž v Ďáblově údolí",
+          "pl": "Zbiornik w Diabelskiej Dolinie"
+        },
+        "altText": {
+          "en": "A turquoise reservoir in the Devil's Valley below Gudauri, seen from above, with snow-dusted slopes and a stony river bed, Greater Caucasus, Georgia",
+          "de": "Ein türkisfarbener Stausee im Teufelstal unterhalb von Gudauri, von oben gesehen, mit schneebestäubten Hängen und einem steinigen Flussbett, Großer Kaukasus, Georgien",
+          "fr": "Un réservoir turquoise dans la Vallée du Diable, en contrebas de Gudauri, vu d’en haut, avec des versants saupoudrés de neige et un lit de rivière caillouteux, Grand Caucase, Géorgie",
+          "es": "Un embalse turquesa en el Valle del Diablo, bajo Gudauri, visto desde arriba, con laderas cubiertas de nieve ligera y un lecho de río pedregoso, Gran Cáucaso, Georgia",
+          "nl": "Een turquoise stuwmeer in de Duivelsvallei onder Gudauri, van bovenaf gezien, met licht besneeuwde hellingen en een stenige rivierbedding, Grote Kaukasus, Georgië",
+          "cs": "Tyrkysová nádrž v Ďáblově údolí pod Gudauri při pohledu shora, s mírně zasněženými svahy a kamenitým říčním korytem, Velký Kavkaz, Gruzie",
+          "pl": "Turkusowy zbiornik w Diabelskiej Dolinie poniżej Gudauri widziany z góry, z lekko przyprószonymi śniegiem zboczami i kamienistym korytem rzeki, Wielki Kaukaz, Gruzja"
         }
       },
       {
@@ -5678,10 +5749,27 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "@id": "https://www.hikasustravel.com/images/files/gudauri-panorama-terrace-georgia-1200.webp#image",
-        "contentUrl": "https://www.hikasustravel.com/images/files/gudauri-panorama-terrace-georgia-1200.webp",
+        "@id": "https://www.hikasustravel.com/images/files/gudauri-panorama-1200.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/gudauri-panorama-1200.webp",
         "name": "Gudauri Panorama",
         "caption": "Gudauri Panorama",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Georgia (country)"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://www.hikasustravel.com/images/files/devils-valley-reservoir-1200.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/devils-valley-reservoir-1200.webp",
+        "name": "Devil’s Valley Reservoir",
+        "caption": "Devil’s Valley Reservoir",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -6348,9 +6436,13 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/7-day-cultural-kutaisi-tbilisi/gudauri-panorama-georgia/gudauri-panorama-georgia-1448.webp",
-        "base": "/images/tours/7-day-cultural-kutaisi-tbilisi/gudauri-panorama-georgia/gudauri-panorama-georgia",
-        "widths": [768, 1200, 1448],
+        "src": "/images/files/gudauri-panorama-1448.webp",
+        "base": "/images/files/gudauri-panorama",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
         "width": 1448,
         "height": 1086,
         "caption": {
@@ -6363,13 +6455,42 @@ export const tours = [
           "pl": "Panorama Gudauri"
         },
         "altText": {
-          "en": "Gudauri Panorama, a curved stone terrace with a colourful mosaic mural above the Caucasus mountains on the Georgian Military Highway, Georgia",
-          "de": "Gudauri-Panorama, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild über den Kaukasusbergen an der Georgischen Heerstraße, Georgien",
-          "fr": "Panorama de Gudauri, une terrasse de pierre incurvée ornée d’une fresque en mosaïque colorée au-dessus des montagnes du Caucase, sur la route militaire géorgienne, Géorgie",
-          "es": "Panorama de Gudauri, una terraza de piedra curva con un colorido mural de mosaico sobre las montañas del Cáucaso, en la Carretera Militar Georgiana, Georgia",
-          "nl": "Panorama Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering boven de Kaukasusbergen aan de Georgische Militaire Weg, Georgië",
-          "cs": "Panorama Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou nad kavkazskými horami na Gruzínské vojenské silnici, Gruzie",
-          "pl": "Panorama Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem nad górami Kaukazu przy Gruzińskiej Drodze Wojennej, Gruzja"
+          "en": "Gudauri Panorama: the curved mosaic terrace on a hilltop above a winding road, with snow-covered Caucasus slopes behind, Georgia",
+          "de": "Gudauri-Panorama: die geschwungene Mosaikterrasse auf einer Anhöhe über einer kurvenreichen Straße, dahinter schneebedeckte Hänge des Kaukasus, Georgien",
+          "fr": "Panorama de Gudauri : la terrasse en mosaïque incurvée sur une hauteur au-dessus d’une route sinueuse, avec les versants enneigés du Caucase en arrière-plan, Géorgie",
+          "es": "Panorama de Gudauri: la terraza curva de mosaico sobre una colina junto a una carretera sinuosa, con laderas nevadas del Cáucaso al fondo, Georgia",
+          "nl": "Panorama Gudauri: het gebogen mozaïekterras op een heuveltop boven een kronkelende weg, met besneeuwde hellingen van de Kaukasus erachter, Georgië",
+          "cs": "Panorama Gudauri: zakřivená mozaiková terasa na kopci nad klikatou silnicí, za ní zasněžené svahy Kavkazu, Gruzie",
+          "pl": "Panorama Gudauri: zakrzywiony mozaikowy taras na wzgórzu nad krętą drogą, a za nim ośnieżone zbocza Kaukazu, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/devils-valley-reservoir-1448.webp",
+        "base": "/images/files/devils-valley-reservoir",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Devil’s Valley Reservoir",
+          "de": "Stausee im Teufelstal",
+          "fr": "Réservoir de la Vallée du Diable",
+          "es": "Embalse del Valle del Diablo",
+          "nl": "Stuwmeer in de Duivelsvallei",
+          "cs": "Nádrž v Ďáblově údolí",
+          "pl": "Zbiornik w Diabelskiej Dolinie"
+        },
+        "altText": {
+          "en": "A turquoise reservoir in the Devil's Valley below Gudauri, seen from above, with snow-dusted slopes and a stony river bed, Greater Caucasus, Georgia",
+          "de": "Ein türkisfarbener Stausee im Teufelstal unterhalb von Gudauri, von oben gesehen, mit schneebestäubten Hängen und einem steinigen Flussbett, Großer Kaukasus, Georgien",
+          "fr": "Un réservoir turquoise dans la Vallée du Diable, en contrebas de Gudauri, vu d’en haut, avec des versants saupoudrés de neige et un lit de rivière caillouteux, Grand Caucase, Géorgie",
+          "es": "Un embalse turquesa en el Valle del Diablo, bajo Gudauri, visto desde arriba, con laderas cubiertas de nieve ligera y un lecho de río pedregoso, Gran Cáucaso, Georgia",
+          "nl": "Een turquoise stuwmeer in de Duivelsvallei onder Gudauri, van bovenaf gezien, met licht besneeuwde hellingen en een stenige rivierbedding, Grote Kaukasus, Georgië",
+          "cs": "Tyrkysová nádrž v Ďáblově údolí pod Gudauri při pohledu shora, s mírně zasněženými svahy a kamenitým říčním korytem, Velký Kavkaz, Gruzie",
+          "pl": "Turkusowy zbiornik w Diabelskiej Dolinie poniżej Gudauri widziany z góry, z lekko przyprószonymi śniegiem zboczami i kamienistym korytem rzeki, Wielki Kaukaz, Gruzja"
         }
       },
       {
@@ -6609,9 +6730,22 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/gudauri-panorama-georgia/gudauri-panorama-georgia-1448.webp",
+        "contentUrl": "https://www.hikasustravel.com/images/files/gudauri-panorama-1448.webp",
         "name": "Gudauri Panorama",
         "caption": "Gudauri Panorama",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/files/devils-valley-reservoir-1448.webp",
+        "name": "Devil’s Valley Reservoir",
+        "caption": "Devil’s Valley Reservoir",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -7591,9 +7725,13 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/8-day-culture-nature-wine/gudauri-panorama-georgia/gudauri-panorama-georgia-1448.webp",
-        "base": "/images/tours/8-day-culture-nature-wine/gudauri-panorama-georgia/gudauri-panorama-georgia",
-        "widths": [768, 1200, 1448],
+        "src": "/images/files/gudauri-panorama-1448.webp",
+        "base": "/images/files/gudauri-panorama",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
         "width": 1448,
         "height": 1086,
         "caption": {
@@ -7606,13 +7744,42 @@ export const tours = [
           "pl": "Panorama Gudauri"
         },
         "altText": {
-          "en": "Gudauri Panorama, a curved stone terrace with a colourful mosaic mural above the Caucasus mountains on the Georgian Military Highway, Georgia",
-          "de": "Gudauri-Panorama, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild über den Kaukasusbergen an der Georgischen Heerstraße, Georgien",
-          "fr": "Panorama de Gudauri, une terrasse de pierre incurvée ornée d’une fresque en mosaïque colorée au-dessus des montagnes du Caucase, sur la route militaire géorgienne, Géorgie",
-          "es": "Panorama de Gudauri, una terraza de piedra curva con un colorido mural de mosaico sobre las montañas del Cáucaso, en la Carretera Militar Georgiana, Georgia",
-          "nl": "Panorama Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering boven de Kaukasusbergen aan de Georgische Militaire Weg, Georgië",
-          "cs": "Panorama Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou nad kavkazskými horami na Gruzínské vojenské silnici, Gruzie",
-          "pl": "Panorama Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem nad górami Kaukazu przy Gruzińskiej Drodze Wojennej, Gruzja"
+          "en": "Gudauri Panorama: the curved mosaic terrace on a hilltop above a winding road, with snow-covered Caucasus slopes behind, Georgia",
+          "de": "Gudauri-Panorama: die geschwungene Mosaikterrasse auf einer Anhöhe über einer kurvenreichen Straße, dahinter schneebedeckte Hänge des Kaukasus, Georgien",
+          "fr": "Panorama de Gudauri : la terrasse en mosaïque incurvée sur une hauteur au-dessus d’une route sinueuse, avec les versants enneigés du Caucase en arrière-plan, Géorgie",
+          "es": "Panorama de Gudauri: la terraza curva de mosaico sobre una colina junto a una carretera sinuosa, con laderas nevadas del Cáucaso al fondo, Georgia",
+          "nl": "Panorama Gudauri: het gebogen mozaïekterras op een heuveltop boven een kronkelende weg, met besneeuwde hellingen van de Kaukasus erachter, Georgië",
+          "cs": "Panorama Gudauri: zakřivená mozaiková terasa na kopci nad klikatou silnicí, za ní zasněžené svahy Kavkazu, Gruzie",
+          "pl": "Panorama Gudauri: zakrzywiony mozaikowy taras na wzgórzu nad krętą drogą, a za nim ośnieżone zbocza Kaukazu, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/devils-valley-reservoir-1448.webp",
+        "base": "/images/files/devils-valley-reservoir",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Devil’s Valley Reservoir",
+          "de": "Stausee im Teufelstal",
+          "fr": "Réservoir de la Vallée du Diable",
+          "es": "Embalse del Valle del Diablo",
+          "nl": "Stuwmeer in de Duivelsvallei",
+          "cs": "Nádrž v Ďáblově údolí",
+          "pl": "Zbiornik w Diabelskiej Dolinie"
+        },
+        "altText": {
+          "en": "A turquoise reservoir in the Devil's Valley below Gudauri, seen from above, with snow-dusted slopes and a stony river bed, Greater Caucasus, Georgia",
+          "de": "Ein türkisfarbener Stausee im Teufelstal unterhalb von Gudauri, von oben gesehen, mit schneebestäubten Hängen und einem steinigen Flussbett, Großer Kaukasus, Georgien",
+          "fr": "Un réservoir turquoise dans la Vallée du Diable, en contrebas de Gudauri, vu d’en haut, avec des versants saupoudrés de neige et un lit de rivière caillouteux, Grand Caucase, Géorgie",
+          "es": "Un embalse turquesa en el Valle del Diablo, bajo Gudauri, visto desde arriba, con laderas cubiertas de nieve ligera y un lecho de río pedregoso, Gran Cáucaso, Georgia",
+          "nl": "Een turquoise stuwmeer in de Duivelsvallei onder Gudauri, van bovenaf gezien, met licht besneeuwde hellingen en een stenige rivierbedding, Grote Kaukasus, Georgië",
+          "cs": "Tyrkysová nádrž v Ďáblově údolí pod Gudauri při pohledu shora, s mírně zasněženými svahy a kamenitým říčním korytem, Velký Kavkaz, Gruzie",
+          "pl": "Turkusowy zbiornik w Diabelskiej Dolinie poniżej Gudauri widziany z góry, z lekko przyprószonymi śniegiem zboczami i kamienistym korytem rzeki, Wielki Kaukaz, Gruzja"
         }
       },
       {
@@ -7917,9 +8084,22 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-culture-nature-wine/gudauri-panorama-georgia/gudauri-panorama-georgia-1448.webp",
+        "contentUrl": "https://www.hikasustravel.com/images/files/gudauri-panorama-1448.webp",
         "name": "Gudauri Panorama",
         "caption": "Gudauri Panorama",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/files/devils-valley-reservoir-1448.webp",
+        "name": "Devil’s Valley Reservoir",
+        "caption": "Devil’s Valley Reservoir",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -8799,19 +8979,61 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/8-day-culture-adventure/gudauri-panorama-georgia-1448.webp",
-        "base": "/images/tours/8-day-culture-adventure/gudauri-panorama-georgia",
-        "widths": [768, 1200, 1448],
+        "src": "/images/files/gudauri-panorama-1448.webp",
+        "base": "/images/files/gudauri-panorama",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
         "width": 1448,
         "height": 1086,
         "caption": {
           "en": "Gudauri Panorama",
-          "de": "Gudauri Panorama",
-          "fr": "Gudauri Panorama",
-          "es": "Gudauri Panorama",
-          "nl": "Gudauri Panorama",
-          "cs": "Gudauri Panorama",
+          "de": "Gudauri-Panorama",
+          "fr": "Panorama de Gudauri",
+          "es": "Panorama de Gudauri",
+          "nl": "Panorama Gudauri",
+          "cs": "Panorama Gudauri",
           "pl": "Panorama Gudauri"
+        },
+        "altText": {
+          "en": "Gudauri Panorama: the curved mosaic terrace on a hilltop above a winding road, with snow-covered Caucasus slopes behind, Georgia",
+          "de": "Gudauri-Panorama: die geschwungene Mosaikterrasse auf einer Anhöhe über einer kurvenreichen Straße, dahinter schneebedeckte Hänge des Kaukasus, Georgien",
+          "fr": "Panorama de Gudauri : la terrasse en mosaïque incurvée sur une hauteur au-dessus d’une route sinueuse, avec les versants enneigés du Caucase en arrière-plan, Géorgie",
+          "es": "Panorama de Gudauri: la terraza curva de mosaico sobre una colina junto a una carretera sinuosa, con laderas nevadas del Cáucaso al fondo, Georgia",
+          "nl": "Panorama Gudauri: het gebogen mozaïekterras op een heuveltop boven een kronkelende weg, met besneeuwde hellingen van de Kaukasus erachter, Georgië",
+          "cs": "Panorama Gudauri: zakřivená mozaiková terasa na kopci nad klikatou silnicí, za ní zasněžené svahy Kavkazu, Gruzie",
+          "pl": "Panorama Gudauri: zakrzywiony mozaikowy taras na wzgórzu nad krętą drogą, a za nim ośnieżone zbocza Kaukazu, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/devils-valley-reservoir-1448.webp",
+        "base": "/images/files/devils-valley-reservoir",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Devil’s Valley Reservoir",
+          "de": "Stausee im Teufelstal",
+          "fr": "Réservoir de la Vallée du Diable",
+          "es": "Embalse del Valle del Diablo",
+          "nl": "Stuwmeer in de Duivelsvallei",
+          "cs": "Nádrž v Ďáblově údolí",
+          "pl": "Zbiornik w Diabelskiej Dolinie"
+        },
+        "altText": {
+          "en": "A turquoise reservoir in the Devil's Valley below Gudauri, seen from above, with snow-dusted slopes and a stony river bed, Greater Caucasus, Georgia",
+          "de": "Ein türkisfarbener Stausee im Teufelstal unterhalb von Gudauri, von oben gesehen, mit schneebestäubten Hängen und einem steinigen Flussbett, Großer Kaukasus, Georgien",
+          "fr": "Un réservoir turquoise dans la Vallée du Diable, en contrebas de Gudauri, vu d’en haut, avec des versants saupoudrés de neige et un lit de rivière caillouteux, Grand Caucase, Géorgie",
+          "es": "Un embalse turquesa en el Valle del Diablo, bajo Gudauri, visto desde arriba, con laderas cubiertas de nieve ligera y un lecho de río pedregoso, Gran Cáucaso, Georgia",
+          "nl": "Een turquoise stuwmeer in de Duivelsvallei onder Gudauri, van bovenaf gezien, met licht besneeuwde hellingen en een stenige rivierbedding, Grote Kaukasus, Georgië",
+          "cs": "Tyrkysová nádrž v Ďáblově údolí pod Gudauri při pohledu shora, s mírně zasněženými svahy a kamenitým říčním korytem, Velký Kavkaz, Gruzie",
+          "pl": "Turkusowy zbiornik w Diabelskiej Dolinie poniżej Gudauri widziany z góry, z lekko przyprószonymi śniegiem zboczami i kamienistym korytem rzeki, Wielki Kaukaz, Gruzja"
         }
       },
       {
@@ -9414,7 +9636,15 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/gudauri-panorama-georgia-1448.webp",
+        "src": "/images/files/gudauri-panorama-1448.webp",
+        "base": "/images/files/gudauri-panorama",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
         "caption": {
           "en": "Gudauri Panorama",
           "de": "Gudauri-Panorama",
@@ -9425,13 +9655,42 @@ export const tours = [
           "pl": "Panorama Gudauri"
         },
         "altText": {
-          "en": "Panorama over the Greater Caucasus from the viewpoint above Gudauri on the Georgian Military Highway, Georgia",
-          "de": "Panorama über den Großen Kaukasus vom Aussichtspunkt oberhalb von Gudauri an der Georgischen Heerstraße, Georgien",
-          "fr": "Panorama sur le Grand Caucase depuis le belvédère au-dessus de Gudauri, sur la route militaire géorgienne, Géorgie",
-          "es": "Panorama del Gran Cáucaso desde el mirador sobre Gudauri, en la Carretera Militar Georgiana, Georgia",
-          "nl": "Panorama over de Grote Kaukasus vanaf het uitzichtpunt boven Gudauri aan de Georgische Militaire Weg, Georgië",
-          "cs": "Panorama Velkého Kavkazu z vyhlídky nad Gudauri na Gruzínské vojenské cestě, Gruzie",
-          "pl": "Panorama Wielkiego Kaukazu z punktu widokowego nad Gudauri przy Gruzińskiej Drodze Wojennej, Gruzja"
+          "en": "Gudauri Panorama: the curved mosaic terrace on a hilltop above a winding road, with snow-covered Caucasus slopes behind, Georgia",
+          "de": "Gudauri-Panorama: die geschwungene Mosaikterrasse auf einer Anhöhe über einer kurvenreichen Straße, dahinter schneebedeckte Hänge des Kaukasus, Georgien",
+          "fr": "Panorama de Gudauri : la terrasse en mosaïque incurvée sur une hauteur au-dessus d’une route sinueuse, avec les versants enneigés du Caucase en arrière-plan, Géorgie",
+          "es": "Panorama de Gudauri: la terraza curva de mosaico sobre una colina junto a una carretera sinuosa, con laderas nevadas del Cáucaso al fondo, Georgia",
+          "nl": "Panorama Gudauri: het gebogen mozaïekterras op een heuveltop boven een kronkelende weg, met besneeuwde hellingen van de Kaukasus erachter, Georgië",
+          "cs": "Panorama Gudauri: zakřivená mozaiková terasa na kopci nad klikatou silnicí, za ní zasněžené svahy Kavkazu, Gruzie",
+          "pl": "Panorama Gudauri: zakrzywiony mozaikowy taras na wzgórzu nad krętą drogą, a za nim ośnieżone zbocza Kaukazu, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/devils-valley-reservoir-1448.webp",
+        "base": "/images/files/devils-valley-reservoir",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Devil’s Valley Reservoir",
+          "de": "Stausee im Teufelstal",
+          "fr": "Réservoir de la Vallée du Diable",
+          "es": "Embalse del Valle del Diablo",
+          "nl": "Stuwmeer in de Duivelsvallei",
+          "cs": "Nádrž v Ďáblově údolí",
+          "pl": "Zbiornik w Diabelskiej Dolinie"
+        },
+        "altText": {
+          "en": "A turquoise reservoir in the Devil's Valley below Gudauri, seen from above, with snow-dusted slopes and a stony river bed, Greater Caucasus, Georgia",
+          "de": "Ein türkisfarbener Stausee im Teufelstal unterhalb von Gudauri, von oben gesehen, mit schneebestäubten Hängen und einem steinigen Flussbett, Großer Kaukasus, Georgien",
+          "fr": "Un réservoir turquoise dans la Vallée du Diable, en contrebas de Gudauri, vu d’en haut, avec des versants saupoudrés de neige et un lit de rivière caillouteux, Grand Caucase, Géorgie",
+          "es": "Un embalse turquesa en el Valle del Diablo, bajo Gudauri, visto desde arriba, con laderas cubiertas de nieve ligera y un lecho de río pedregoso, Gran Cáucaso, Georgia",
+          "nl": "Een turquoise stuwmeer in de Duivelsvallei onder Gudauri, van bovenaf gezien, met licht besneeuwde hellingen en een stenige rivierbedding, Grote Kaukasus, Georgië",
+          "cs": "Tyrkysová nádrž v Ďáblově údolí pod Gudauri při pohledu shora, s mírně zasněženými svahy a kamenitým říčním korytem, Velký Kavkaz, Gruzie",
+          "pl": "Turkusowy zbiornik w Diabelskiej Dolinie poniżej Gudauri widziany z góry, z lekko przyprószonymi śniegiem zboczami i kamienistym korytem rzeki, Wielki Kaukaz, Gruzja"
         }
       },
       {
@@ -10129,9 +10388,13 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/9-day-kutaisi-tbilisi/gudauri-panorama-georgia/gudauri-panorama-georgia-1448.webp",
-        "base": "/images/tours/9-day-kutaisi-tbilisi/gudauri-panorama-georgia/gudauri-panorama-georgia",
-        "widths": [768, 1200, 1448],
+        "src": "/images/files/gudauri-panorama-1448.webp",
+        "base": "/images/files/gudauri-panorama",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
         "width": 1448,
         "height": 1086,
         "caption": {
@@ -10144,13 +10407,42 @@ export const tours = [
           "pl": "Panorama Gudauri"
         },
         "altText": {
-          "en": "Gudauri Panorama, a curved stone terrace with a colourful mosaic mural above the Caucasus mountains on the Georgian Military Highway, Georgia",
-          "de": "Gudauri-Panorama, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild über den Kaukasusbergen an der Georgischen Heerstraße, Georgien",
-          "fr": "Panorama de Gudauri, une terrasse de pierre incurvée ornée d’une fresque en mosaïque colorée au-dessus des montagnes du Caucase, sur la route militaire géorgienne, Géorgie",
-          "es": "Panorama de Gudauri, una terraza de piedra curva con un colorido mural de mosaico sobre las montañas del Cáucaso, en la Carretera Militar Georgiana, Georgia",
-          "nl": "Panorama Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering boven de Kaukasusbergen aan de Georgische Militaire Weg, Georgië",
-          "cs": "Panorama Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou nad kavkazskými horami na Gruzínské vojenské silnici, Gruzie",
-          "pl": "Panorama Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem nad górami Kaukazu przy Gruzińskiej Drodze Wojennej, Gruzja"
+          "en": "Gudauri Panorama: the curved mosaic terrace on a hilltop above a winding road, with snow-covered Caucasus slopes behind, Georgia",
+          "de": "Gudauri-Panorama: die geschwungene Mosaikterrasse auf einer Anhöhe über einer kurvenreichen Straße, dahinter schneebedeckte Hänge des Kaukasus, Georgien",
+          "fr": "Panorama de Gudauri : la terrasse en mosaïque incurvée sur une hauteur au-dessus d’une route sinueuse, avec les versants enneigés du Caucase en arrière-plan, Géorgie",
+          "es": "Panorama de Gudauri: la terraza curva de mosaico sobre una colina junto a una carretera sinuosa, con laderas nevadas del Cáucaso al fondo, Georgia",
+          "nl": "Panorama Gudauri: het gebogen mozaïekterras op een heuveltop boven een kronkelende weg, met besneeuwde hellingen van de Kaukasus erachter, Georgië",
+          "cs": "Panorama Gudauri: zakřivená mozaiková terasa na kopci nad klikatou silnicí, za ní zasněžené svahy Kavkazu, Gruzie",
+          "pl": "Panorama Gudauri: zakrzywiony mozaikowy taras na wzgórzu nad krętą drogą, a za nim ośnieżone zbocza Kaukazu, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/devils-valley-reservoir-1448.webp",
+        "base": "/images/files/devils-valley-reservoir",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Devil’s Valley Reservoir",
+          "de": "Stausee im Teufelstal",
+          "fr": "Réservoir de la Vallée du Diable",
+          "es": "Embalse del Valle del Diablo",
+          "nl": "Stuwmeer in de Duivelsvallei",
+          "cs": "Nádrž v Ďáblově údolí",
+          "pl": "Zbiornik w Diabelskiej Dolinie"
+        },
+        "altText": {
+          "en": "A turquoise reservoir in the Devil's Valley below Gudauri, seen from above, with snow-dusted slopes and a stony river bed, Greater Caucasus, Georgia",
+          "de": "Ein türkisfarbener Stausee im Teufelstal unterhalb von Gudauri, von oben gesehen, mit schneebestäubten Hängen und einem steinigen Flussbett, Großer Kaukasus, Georgien",
+          "fr": "Un réservoir turquoise dans la Vallée du Diable, en contrebas de Gudauri, vu d’en haut, avec des versants saupoudrés de neige et un lit de rivière caillouteux, Grand Caucase, Géorgie",
+          "es": "Un embalse turquesa en el Valle del Diablo, bajo Gudauri, visto desde arriba, con laderas cubiertas de nieve ligera y un lecho de río pedregoso, Gran Cáucaso, Georgia",
+          "nl": "Een turquoise stuwmeer in de Duivelsvallei onder Gudauri, van bovenaf gezien, met licht besneeuwde hellingen en een stenige rivierbedding, Grote Kaukasus, Georgië",
+          "cs": "Tyrkysová nádrž v Ďáblově údolí pod Gudauri při pohledu shora, s mírně zasněženými svahy a kamenitým říčním korytem, Velký Kavkaz, Gruzie",
+          "pl": "Turkusowy zbiornik w Diabelskiej Dolinie poniżej Gudauri widziany z góry, z lekko przyprószonymi śniegiem zboczami i kamienistym korytem rzeki, Wielki Kaukaz, Gruzja"
         }
       },
       {
@@ -10466,9 +10758,21 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/9-day-kutaisi-tbilisi/gudauri-panorama-georgia/gudauri-panorama-georgia-1448.webp",
+        "contentUrl": "https://www.hikasustravel.com/images/files/gudauri-panorama-1448.webp",
         "name": "Gudauri Panorama",
         "caption": "Gudauri Panorama",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel"
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/files/devils-valley-reservoir-1448.webp",
+        "name": "Devil’s Valley Reservoir",
+        "caption": "Devil’s Valley Reservoir",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -12099,9 +12403,13 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/gudauri-panorama-terrace-georgia-1448.webp",
-        "base": "/images/files/gudauri-panorama-terrace-georgia",
-        "widths": [768, 1200, 1448],
+        "src": "/images/files/gudauri-panorama-1448.webp",
+        "base": "/images/files/gudauri-panorama",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
         "width": 1448,
         "height": 1086,
         "caption": {
@@ -12114,13 +12422,42 @@ export const tours = [
           "pl": "Panorama Gudauri"
         },
         "altText": {
-          "en": "Gudauri Panorama, a curved stone terrace with a colourful mosaic mural above the Caucasus mountains on the Georgian Military Highway, Georgia",
-          "de": "Gudauri-Panorama, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild über den Kaukasusbergen an der Georgischen Heerstraße, Georgien",
-          "fr": "Panorama de Gudauri, une terrasse de pierre incurvée ornée d’une fresque en mosaïque colorée au-dessus des montagnes du Caucase, sur la route militaire géorgienne, Géorgie",
-          "es": "Panorama de Gudauri, una terraza de piedra curva con un colorido mural de mosaico sobre las montañas del Cáucaso, en la Carretera Militar Georgiana, Georgia",
-          "nl": "Panorama Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering boven de Kaukasusbergen aan de Georgische Militaire Weg, Georgië",
-          "cs": "Panorama Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou nad kavkazskými horami na Gruzínské vojenské silnici, Gruzie",
-          "pl": "Panorama Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem nad górami Kaukazu przy Gruzińskiej Drodze Wojennej, Gruzja"
+          "en": "Gudauri Panorama: the curved mosaic terrace on a hilltop above a winding road, with snow-covered Caucasus slopes behind, Georgia",
+          "de": "Gudauri-Panorama: die geschwungene Mosaikterrasse auf einer Anhöhe über einer kurvenreichen Straße, dahinter schneebedeckte Hänge des Kaukasus, Georgien",
+          "fr": "Panorama de Gudauri : la terrasse en mosaïque incurvée sur une hauteur au-dessus d’une route sinueuse, avec les versants enneigés du Caucase en arrière-plan, Géorgie",
+          "es": "Panorama de Gudauri: la terraza curva de mosaico sobre una colina junto a una carretera sinuosa, con laderas nevadas del Cáucaso al fondo, Georgia",
+          "nl": "Panorama Gudauri: het gebogen mozaïekterras op een heuveltop boven een kronkelende weg, met besneeuwde hellingen van de Kaukasus erachter, Georgië",
+          "cs": "Panorama Gudauri: zakřivená mozaiková terasa na kopci nad klikatou silnicí, za ní zasněžené svahy Kavkazu, Gruzie",
+          "pl": "Panorama Gudauri: zakrzywiony mozaikowy taras na wzgórzu nad krętą drogą, a za nim ośnieżone zbocza Kaukazu, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/devils-valley-reservoir-1448.webp",
+        "base": "/images/files/devils-valley-reservoir",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Devil’s Valley Reservoir",
+          "de": "Stausee im Teufelstal",
+          "fr": "Réservoir de la Vallée du Diable",
+          "es": "Embalse del Valle del Diablo",
+          "nl": "Stuwmeer in de Duivelsvallei",
+          "cs": "Nádrž v Ďáblově údolí",
+          "pl": "Zbiornik w Diabelskiej Dolinie"
+        },
+        "altText": {
+          "en": "A turquoise reservoir in the Devil's Valley below Gudauri, seen from above, with snow-dusted slopes and a stony river bed, Greater Caucasus, Georgia",
+          "de": "Ein türkisfarbener Stausee im Teufelstal unterhalb von Gudauri, von oben gesehen, mit schneebestäubten Hängen und einem steinigen Flussbett, Großer Kaukasus, Georgien",
+          "fr": "Un réservoir turquoise dans la Vallée du Diable, en contrebas de Gudauri, vu d’en haut, avec des versants saupoudrés de neige et un lit de rivière caillouteux, Grand Caucase, Géorgie",
+          "es": "Un embalse turquesa en el Valle del Diablo, bajo Gudauri, visto desde arriba, con laderas cubiertas de nieve ligera y un lecho de río pedregoso, Gran Cáucaso, Georgia",
+          "nl": "Een turquoise stuwmeer in de Duivelsvallei onder Gudauri, van bovenaf gezien, met licht besneeuwde hellingen en een stenige rivierbedding, Grote Kaukasus, Georgië",
+          "cs": "Tyrkysová nádrž v Ďáblově údolí pod Gudauri při pohledu shora, s mírně zasněženými svahy a kamenitým říčním korytem, Velký Kavkaz, Gruzie",
+          "pl": "Turkusowy zbiornik w Diabelskiej Dolinie poniżej Gudauri widziany z góry, z lekko przyprószonymi śniegiem zboczami i kamienistym korytem rzeki, Wielki Kaukaz, Gruzja"
         }
       },
       {
@@ -12442,10 +12779,27 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "@id": "https://www.hikasustravel.com/images/files/gudauri-panorama-terrace-georgia-1200.webp#image",
-        "contentUrl": "https://www.hikasustravel.com/images/files/gudauri-panorama-terrace-georgia-1200.webp",
+        "@id": "https://www.hikasustravel.com/images/files/gudauri-panorama-1200.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/gudauri-panorama-1200.webp",
         "name": "Gudauri Panorama",
         "caption": "Gudauri Panorama",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Georgia (country)"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://www.hikasustravel.com/images/files/devils-valley-reservoir-1200.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/devils-valley-reservoir-1200.webp",
+        "name": "Devil’s Valley Reservoir",
+        "caption": "Devil’s Valley Reservoir",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -13025,9 +13379,13 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/georgia-10-days-celebration/gudauri-panorama-georgia/gudauri-panorama-georgia-1448.webp",
-        "base": "/images/tours/georgia-10-days-celebration/gudauri-panorama-georgia/gudauri-panorama-georgia",
-        "widths": [768, 1200, 1448],
+        "src": "/images/files/gudauri-panorama-1448.webp",
+        "base": "/images/files/gudauri-panorama",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
         "width": 1448,
         "height": 1086,
         "caption": {
@@ -13040,13 +13398,42 @@ export const tours = [
           "pl": "Panorama Gudauri"
         },
         "altText": {
-          "en": "Gudauri Panorama, a curved stone terrace with a colourful mosaic mural above the Caucasus mountains on the Georgian Military Highway, Georgia",
-          "de": "Gudauri-Panorama, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild über den Kaukasusbergen an der Georgischen Heerstraße, Georgien",
-          "fr": "Panorama de Gudauri, une terrasse de pierre incurvée ornée d’une fresque en mosaïque colorée au-dessus des montagnes du Caucase, sur la route militaire géorgienne, Géorgie",
-          "es": "Panorama de Gudauri, una terraza de piedra curva con un colorido mural de mosaico sobre las montañas del Cáucaso, en la Carretera Militar Georgiana, Georgia",
-          "nl": "Panorama Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering boven de Kaukasusbergen aan de Georgische Militaire Weg, Georgië",
-          "cs": "Panorama Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou nad kavkazskými horami na Gruzínské vojenské silnici, Gruzie",
-          "pl": "Panorama Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem nad górami Kaukazu przy Gruzińskiej Drodze Wojennej, Gruzja"
+          "en": "Gudauri Panorama: the curved mosaic terrace on a hilltop above a winding road, with snow-covered Caucasus slopes behind, Georgia",
+          "de": "Gudauri-Panorama: die geschwungene Mosaikterrasse auf einer Anhöhe über einer kurvenreichen Straße, dahinter schneebedeckte Hänge des Kaukasus, Georgien",
+          "fr": "Panorama de Gudauri : la terrasse en mosaïque incurvée sur une hauteur au-dessus d’une route sinueuse, avec les versants enneigés du Caucase en arrière-plan, Géorgie",
+          "es": "Panorama de Gudauri: la terraza curva de mosaico sobre una colina junto a una carretera sinuosa, con laderas nevadas del Cáucaso al fondo, Georgia",
+          "nl": "Panorama Gudauri: het gebogen mozaïekterras op een heuveltop boven een kronkelende weg, met besneeuwde hellingen van de Kaukasus erachter, Georgië",
+          "cs": "Panorama Gudauri: zakřivená mozaiková terasa na kopci nad klikatou silnicí, za ní zasněžené svahy Kavkazu, Gruzie",
+          "pl": "Panorama Gudauri: zakrzywiony mozaikowy taras na wzgórzu nad krętą drogą, a za nim ośnieżone zbocza Kaukazu, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/devils-valley-reservoir-1448.webp",
+        "base": "/images/files/devils-valley-reservoir",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Devil’s Valley Reservoir",
+          "de": "Stausee im Teufelstal",
+          "fr": "Réservoir de la Vallée du Diable",
+          "es": "Embalse del Valle del Diablo",
+          "nl": "Stuwmeer in de Duivelsvallei",
+          "cs": "Nádrž v Ďáblově údolí",
+          "pl": "Zbiornik w Diabelskiej Dolinie"
+        },
+        "altText": {
+          "en": "A turquoise reservoir in the Devil's Valley below Gudauri, seen from above, with snow-dusted slopes and a stony river bed, Greater Caucasus, Georgia",
+          "de": "Ein türkisfarbener Stausee im Teufelstal unterhalb von Gudauri, von oben gesehen, mit schneebestäubten Hängen und einem steinigen Flussbett, Großer Kaukasus, Georgien",
+          "fr": "Un réservoir turquoise dans la Vallée du Diable, en contrebas de Gudauri, vu d’en haut, avec des versants saupoudrés de neige et un lit de rivière caillouteux, Grand Caucase, Géorgie",
+          "es": "Un embalse turquesa en el Valle del Diablo, bajo Gudauri, visto desde arriba, con laderas cubiertas de nieve ligera y un lecho de río pedregoso, Gran Cáucaso, Georgia",
+          "nl": "Een turquoise stuwmeer in de Duivelsvallei onder Gudauri, van bovenaf gezien, met licht besneeuwde hellingen en een stenige rivierbedding, Grote Kaukasus, Georgië",
+          "cs": "Tyrkysová nádrž v Ďáblově údolí pod Gudauri při pohledu shora, s mírně zasněženými svahy a kamenitým říčním korytem, Velký Kavkaz, Gruzie",
+          "pl": "Turkusowy zbiornik w Diabelskiej Dolinie poniżej Gudauri widziany z góry, z lekko przyprószonymi śniegiem zboczami i kamienistym korytem rzeki, Wielki Kaukaz, Gruzja"
         }
       },
       {
@@ -13462,9 +13849,22 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-10-days-celebration/gudauri-panorama-georgia/gudauri-panorama-georgia-1448.webp",
+        "contentUrl": "https://www.hikasustravel.com/images/files/gudauri-panorama-1448.webp",
         "name": "Gudauri Panorama",
         "caption": "Gudauri Panorama",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/files/devils-valley-reservoir-1448.webp",
+        "name": "Devil’s Valley Reservoir",
+        "caption": "Devil’s Valley Reservoir",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -14468,9 +14868,13 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/georgia-wonders-11-day/gudauri-panorama-georgia/gudauri-panorama-georgia-1448.webp",
-        "base": "/images/tours/georgia-wonders-11-day/gudauri-panorama-georgia/gudauri-panorama-georgia",
-        "widths": [768, 1200, 1448],
+        "src": "/images/files/gudauri-panorama-1448.webp",
+        "base": "/images/files/gudauri-panorama",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
         "width": 1448,
         "height": 1086,
         "caption": {
@@ -14483,13 +14887,42 @@ export const tours = [
           "pl": "Panorama Gudauri"
         },
         "altText": {
-          "en": "Gudauri Panorama, a curved stone terrace with a colourful mosaic mural above the Caucasus mountains on the Georgian Military Highway, Georgia",
-          "de": "Gudauri-Panorama, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild über den Kaukasusbergen an der Georgischen Heerstraße, Georgien",
-          "fr": "Panorama de Gudauri, une terrasse de pierre incurvée ornée d’une fresque en mosaïque colorée au-dessus des montagnes du Caucase, sur la route militaire géorgienne, Géorgie",
-          "es": "Panorama de Gudauri, una terraza de piedra curva con un colorido mural de mosaico sobre las montañas del Cáucaso, en la Carretera Militar Georgiana, Georgia",
-          "nl": "Panorama Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering boven de Kaukasusbergen aan de Georgische Militaire Weg, Georgië",
-          "cs": "Panorama Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou nad kavkazskými horami na Gruzínské vojenské silnici, Gruzie",
-          "pl": "Panorama Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem nad górami Kaukazu przy Gruzińskiej Drodze Wojennej, Gruzja"
+          "en": "Gudauri Panorama: the curved mosaic terrace on a hilltop above a winding road, with snow-covered Caucasus slopes behind, Georgia",
+          "de": "Gudauri-Panorama: die geschwungene Mosaikterrasse auf einer Anhöhe über einer kurvenreichen Straße, dahinter schneebedeckte Hänge des Kaukasus, Georgien",
+          "fr": "Panorama de Gudauri : la terrasse en mosaïque incurvée sur une hauteur au-dessus d’une route sinueuse, avec les versants enneigés du Caucase en arrière-plan, Géorgie",
+          "es": "Panorama de Gudauri: la terraza curva de mosaico sobre una colina junto a una carretera sinuosa, con laderas nevadas del Cáucaso al fondo, Georgia",
+          "nl": "Panorama Gudauri: het gebogen mozaïekterras op een heuveltop boven een kronkelende weg, met besneeuwde hellingen van de Kaukasus erachter, Georgië",
+          "cs": "Panorama Gudauri: zakřivená mozaiková terasa na kopci nad klikatou silnicí, za ní zasněžené svahy Kavkazu, Gruzie",
+          "pl": "Panorama Gudauri: zakrzywiony mozaikowy taras na wzgórzu nad krętą drogą, a za nim ośnieżone zbocza Kaukazu, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/devils-valley-reservoir-1448.webp",
+        "base": "/images/files/devils-valley-reservoir",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Devil’s Valley Reservoir",
+          "de": "Stausee im Teufelstal",
+          "fr": "Réservoir de la Vallée du Diable",
+          "es": "Embalse del Valle del Diablo",
+          "nl": "Stuwmeer in de Duivelsvallei",
+          "cs": "Nádrž v Ďáblově údolí",
+          "pl": "Zbiornik w Diabelskiej Dolinie"
+        },
+        "altText": {
+          "en": "A turquoise reservoir in the Devil's Valley below Gudauri, seen from above, with snow-dusted slopes and a stony river bed, Greater Caucasus, Georgia",
+          "de": "Ein türkisfarbener Stausee im Teufelstal unterhalb von Gudauri, von oben gesehen, mit schneebestäubten Hängen und einem steinigen Flussbett, Großer Kaukasus, Georgien",
+          "fr": "Un réservoir turquoise dans la Vallée du Diable, en contrebas de Gudauri, vu d’en haut, avec des versants saupoudrés de neige et un lit de rivière caillouteux, Grand Caucase, Géorgie",
+          "es": "Un embalse turquesa en el Valle del Diablo, bajo Gudauri, visto desde arriba, con laderas cubiertas de nieve ligera y un lecho de río pedregoso, Gran Cáucaso, Georgia",
+          "nl": "Een turquoise stuwmeer in de Duivelsvallei onder Gudauri, van bovenaf gezien, met licht besneeuwde hellingen en een stenige rivierbedding, Grote Kaukasus, Georgië",
+          "cs": "Tyrkysová nádrž v Ďáblově údolí pod Gudauri při pohledu shora, s mírně zasněženými svahy a kamenitým říčním korytem, Velký Kavkaz, Gruzie",
+          "pl": "Turkusowy zbiornik w Diabelskiej Dolinie poniżej Gudauri widziany z góry, z lekko przyprószonymi śniegiem zboczami i kamienistym korytem rzeki, Wielki Kaukaz, Gruzja"
         }
       },
       {
@@ -14794,9 +15227,22 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-wonders-11-day/gudauri-panorama-georgia/gudauri-panorama-georgia-1448.webp",
+        "contentUrl": "https://www.hikasustravel.com/images/files/gudauri-panorama-1448.webp",
         "name": "Gudauri Panorama",
         "caption": "Gudauri Panorama",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "representativeOfPage": false
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/files/devils-valley-reservoir-1448.webp",
+        "name": "Devil’s Valley Reservoir",
+        "caption": "Devil’s Valley Reservoir",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -15798,9 +16244,13 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/gudauri-panorama-terrace-georgia-1448.webp",
-        "base": "/images/files/gudauri-panorama-terrace-georgia",
-        "widths": [768, 1200, 1448],
+        "src": "/images/files/gudauri-panorama-1448.webp",
+        "base": "/images/files/gudauri-panorama",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
         "width": 1448,
         "height": 1086,
         "caption": {
@@ -15813,13 +16263,42 @@ export const tours = [
           "pl": "Panorama Gudauri"
         },
         "altText": {
-          "en": "Gudauri Panorama, a curved stone terrace with a colourful mosaic mural above the Caucasus mountains on the Georgian Military Highway, Georgia",
-          "de": "Gudauri-Panorama, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild über den Kaukasusbergen an der Georgischen Heerstraße, Georgien",
-          "fr": "Panorama de Gudauri, une terrasse de pierre incurvée ornée d’une fresque en mosaïque colorée au-dessus des montagnes du Caucase, sur la route militaire géorgienne, Géorgie",
-          "es": "Panorama de Gudauri, una terraza de piedra curva con un colorido mural de mosaico sobre las montañas del Cáucaso, en la Carretera Militar Georgiana, Georgia",
-          "nl": "Panorama Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering boven de Kaukasusbergen aan de Georgische Militaire Weg, Georgië",
-          "cs": "Panorama Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou nad kavkazskými horami na Gruzínské vojenské silnici, Gruzie",
-          "pl": "Panorama Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem nad górami Kaukazu przy Gruzińskiej Drodze Wojennej, Gruzja"
+          "en": "Gudauri Panorama: the curved mosaic terrace on a hilltop above a winding road, with snow-covered Caucasus slopes behind, Georgia",
+          "de": "Gudauri-Panorama: die geschwungene Mosaikterrasse auf einer Anhöhe über einer kurvenreichen Straße, dahinter schneebedeckte Hänge des Kaukasus, Georgien",
+          "fr": "Panorama de Gudauri : la terrasse en mosaïque incurvée sur une hauteur au-dessus d’une route sinueuse, avec les versants enneigés du Caucase en arrière-plan, Géorgie",
+          "es": "Panorama de Gudauri: la terraza curva de mosaico sobre una colina junto a una carretera sinuosa, con laderas nevadas del Cáucaso al fondo, Georgia",
+          "nl": "Panorama Gudauri: het gebogen mozaïekterras op een heuveltop boven een kronkelende weg, met besneeuwde hellingen van de Kaukasus erachter, Georgië",
+          "cs": "Panorama Gudauri: zakřivená mozaiková terasa na kopci nad klikatou silnicí, za ní zasněžené svahy Kavkazu, Gruzie",
+          "pl": "Panorama Gudauri: zakrzywiony mozaikowy taras na wzgórzu nad krętą drogą, a za nim ośnieżone zbocza Kaukazu, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/devils-valley-reservoir-1448.webp",
+        "base": "/images/files/devils-valley-reservoir",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Devil’s Valley Reservoir",
+          "de": "Stausee im Teufelstal",
+          "fr": "Réservoir de la Vallée du Diable",
+          "es": "Embalse del Valle del Diablo",
+          "nl": "Stuwmeer in de Duivelsvallei",
+          "cs": "Nádrž v Ďáblově údolí",
+          "pl": "Zbiornik w Diabelskiej Dolinie"
+        },
+        "altText": {
+          "en": "A turquoise reservoir in the Devil's Valley below Gudauri, seen from above, with snow-dusted slopes and a stony river bed, Greater Caucasus, Georgia",
+          "de": "Ein türkisfarbener Stausee im Teufelstal unterhalb von Gudauri, von oben gesehen, mit schneebestäubten Hängen und einem steinigen Flussbett, Großer Kaukasus, Georgien",
+          "fr": "Un réservoir turquoise dans la Vallée du Diable, en contrebas de Gudauri, vu d’en haut, avec des versants saupoudrés de neige et un lit de rivière caillouteux, Grand Caucase, Géorgie",
+          "es": "Un embalse turquesa en el Valle del Diablo, bajo Gudauri, visto desde arriba, con laderas cubiertas de nieve ligera y un lecho de río pedregoso, Gran Cáucaso, Georgia",
+          "nl": "Een turquoise stuwmeer in de Duivelsvallei onder Gudauri, van bovenaf gezien, met licht besneeuwde hellingen en een stenige rivierbedding, Grote Kaukasus, Georgië",
+          "cs": "Tyrkysová nádrž v Ďáblově údolí pod Gudauri při pohledu shora, s mírně zasněženými svahy a kamenitým říčním korytem, Velký Kavkaz, Gruzie",
+          "pl": "Turkusowy zbiornik w Diabelskiej Dolinie poniżej Gudauri widziany z góry, z lekko przyprószonymi śniegiem zboczami i kamienistym korytem rzeki, Wielki Kaukaz, Gruzja"
         }
       },
       {
@@ -16271,10 +16750,27 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "@id": "https://www.hikasustravel.com/images/files/gudauri-panorama-terrace-georgia-1200.webp#image",
-        "contentUrl": "https://www.hikasustravel.com/images/files/gudauri-panorama-terrace-georgia-1200.webp",
+        "@id": "https://www.hikasustravel.com/images/files/gudauri-panorama-1200.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/gudauri-panorama-1200.webp",
         "name": "Gudauri Panorama",
         "caption": "Gudauri Panorama",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightNotice": "© Hikasus Travel",
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Georgia (country)"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://www.hikasustravel.com/images/files/devils-valley-reservoir-1200.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/devils-valley-reservoir-1200.webp",
+        "name": "Devil’s Valley Reservoir",
+        "caption": "Devil’s Valley Reservoir",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -17298,10 +17794,13 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/gudauri-panorama-georgia-1448.webp",
-        "base": "/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/gudauri-panorama-georgia",
-        "widths": [768, 1200, 1448],
-        "fallbackWidth": 1200,
+        "src": "/images/files/gudauri-panorama-1448.webp",
+        "base": "/images/files/gudauri-panorama",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
         "width": 1448,
         "height": 1086,
         "caption": {
@@ -17314,13 +17813,42 @@ export const tours = [
           "pl": "Panorama Gudauri"
         },
         "altText": {
-          "en": "Gudauri Panorama, a curved stone terrace with a colourful mosaic mural above the Caucasus mountains on the Georgian Military Highway, Georgia",
-          "de": "Gudauri-Panorama, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild über den Kaukasusbergen an der Georgischen Heerstraße, Georgien",
-          "fr": "Panorama de Gudauri, une terrasse de pierre incurvée ornée d’une fresque en mosaïque colorée au-dessus des montagnes du Caucase, sur la route militaire géorgienne, Géorgie",
-          "es": "Panorama de Gudauri, una terraza de piedra curva con un colorido mural de mosaico sobre las montañas del Cáucaso, en la Carretera Militar Georgiana, Georgia",
-          "nl": "Panorama Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering boven de Kaukasusbergen aan de Georgische Militaire Weg, Georgië",
-          "cs": "Panorama Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou nad kavkazskými horami na Gruzínské vojenské silnici, Gruzie",
-          "pl": "Panorama Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem nad górami Kaukazu przy Gruzińskiej Drodze Wojennej, Gruzja"
+          "en": "Gudauri Panorama: the curved mosaic terrace on a hilltop above a winding road, with snow-covered Caucasus slopes behind, Georgia",
+          "de": "Gudauri-Panorama: die geschwungene Mosaikterrasse auf einer Anhöhe über einer kurvenreichen Straße, dahinter schneebedeckte Hänge des Kaukasus, Georgien",
+          "fr": "Panorama de Gudauri : la terrasse en mosaïque incurvée sur une hauteur au-dessus d’une route sinueuse, avec les versants enneigés du Caucase en arrière-plan, Géorgie",
+          "es": "Panorama de Gudauri: la terraza curva de mosaico sobre una colina junto a una carretera sinuosa, con laderas nevadas del Cáucaso al fondo, Georgia",
+          "nl": "Panorama Gudauri: het gebogen mozaïekterras op een heuveltop boven een kronkelende weg, met besneeuwde hellingen van de Kaukasus erachter, Georgië",
+          "cs": "Panorama Gudauri: zakřivená mozaiková terasa na kopci nad klikatou silnicí, za ní zasněžené svahy Kavkazu, Gruzie",
+          "pl": "Panorama Gudauri: zakrzywiony mozaikowy taras na wzgórzu nad krętą drogą, a za nim ośnieżone zbocza Kaukazu, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/devils-valley-reservoir-1448.webp",
+        "base": "/images/files/devils-valley-reservoir",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Devil’s Valley Reservoir",
+          "de": "Stausee im Teufelstal",
+          "fr": "Réservoir de la Vallée du Diable",
+          "es": "Embalse del Valle del Diablo",
+          "nl": "Stuwmeer in de Duivelsvallei",
+          "cs": "Nádrž v Ďáblově údolí",
+          "pl": "Zbiornik w Diabelskiej Dolinie"
+        },
+        "altText": {
+          "en": "A turquoise reservoir in the Devil's Valley below Gudauri, seen from above, with snow-dusted slopes and a stony river bed, Greater Caucasus, Georgia",
+          "de": "Ein türkisfarbener Stausee im Teufelstal unterhalb von Gudauri, von oben gesehen, mit schneebestäubten Hängen und einem steinigen Flussbett, Großer Kaukasus, Georgien",
+          "fr": "Un réservoir turquoise dans la Vallée du Diable, en contrebas de Gudauri, vu d’en haut, avec des versants saupoudrés de neige et un lit de rivière caillouteux, Grand Caucase, Géorgie",
+          "es": "Un embalse turquesa en el Valle del Diablo, bajo Gudauri, visto desde arriba, con laderas cubiertas de nieve ligera y un lecho de río pedregoso, Gran Cáucaso, Georgia",
+          "nl": "Een turquoise stuwmeer in de Duivelsvallei onder Gudauri, van bovenaf gezien, met licht besneeuwde hellingen en een stenige rivierbedding, Grote Kaukasus, Georgië",
+          "cs": "Tyrkysová nádrž v Ďáblově údolí pod Gudauri při pohledu shora, s mírně zasněženými svahy a kamenitým říčním korytem, Velký Kavkaz, Gruzie",
+          "pl": "Turkusowy zbiornik w Diabelskiej Dolinie poniżej Gudauri widziany z góry, z lekko przyprószonymi śniegiem zboczami i kamienistym korytem rzeki, Wielki Kaukaz, Gruzja"
         }
       },
       {
@@ -17769,11 +18297,32 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/gudauri-panorama-georgia-1448.webp",
+        "contentUrl": "https://www.hikasustravel.com/images/files/gudauri-panorama-1448.webp",
         "width": 1448,
         "height": 1086,
         "caption": "Gudauri Panorama",
-        "description": "Gudauri Panorama, a curved stone terrace with a colourful mosaic mural above the Caucasus mountains on the Georgian Military Highway, Georgia",
+        "description": "Gudauri Panorama: the curved mosaic terrace on a hilltop above a winding road, with snow-covered Caucasus slopes behind, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Gudauri, Georgia"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/files/devils-valley-reservoir-1448.webp",
+        "width": 1448,
+        "height": 1086,
+        "caption": "Devil’s Valley Reservoir",
+        "description": "A turquoise reservoir in the Devil's Valley below Gudauri, seen from above, with snow-dusted slopes and a stony river bed, Greater Caucasus, Georgia",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -18348,10 +18897,13 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/gudauri-panorama-georgia-1448.webp",
-        "base": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/gudauri-panorama-georgia",
-        "widths": [768, 1200, 1448],
-        "fallbackWidth": 1200,
+        "src": "/images/files/gudauri-panorama-1448.webp",
+        "base": "/images/files/gudauri-panorama",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
         "width": 1448,
         "height": 1086,
         "caption": {
@@ -18364,13 +18916,42 @@ export const tours = [
           "pl": "Panorama Gudauri"
         },
         "altText": {
-          "en": "Gudauri Panorama, a curved stone terrace with a colourful mosaic mural above the Caucasus mountains on the Georgian Military Highway, Georgia",
-          "de": "Gudauri-Panorama, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild über den Kaukasusbergen an der Georgischen Heerstraße, Georgien",
-          "fr": "Panorama de Gudauri, une terrasse de pierre incurvée ornée d’une fresque en mosaïque colorée au-dessus des montagnes du Caucase, sur la route militaire géorgienne, Géorgie",
-          "es": "Panorama de Gudauri, una terraza de piedra curva con un colorido mural de mosaico sobre las montañas del Cáucaso, en la Carretera Militar Georgiana, Georgia",
-          "nl": "Panorama Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering boven de Kaukasusbergen aan de Georgische Militaire Weg, Georgië",
-          "cs": "Panorama Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou nad kavkazskými horami na Gruzínské vojenské silnici, Gruzie",
-          "pl": "Panorama Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem nad górami Kaukazu przy Gruzińskiej Drodze Wojennej, Gruzja"
+          "en": "Gudauri Panorama: the curved mosaic terrace on a hilltop above a winding road, with snow-covered Caucasus slopes behind, Georgia",
+          "de": "Gudauri-Panorama: die geschwungene Mosaikterrasse auf einer Anhöhe über einer kurvenreichen Straße, dahinter schneebedeckte Hänge des Kaukasus, Georgien",
+          "fr": "Panorama de Gudauri : la terrasse en mosaïque incurvée sur une hauteur au-dessus d’une route sinueuse, avec les versants enneigés du Caucase en arrière-plan, Géorgie",
+          "es": "Panorama de Gudauri: la terraza curva de mosaico sobre una colina junto a una carretera sinuosa, con laderas nevadas del Cáucaso al fondo, Georgia",
+          "nl": "Panorama Gudauri: het gebogen mozaïekterras op een heuveltop boven een kronkelende weg, met besneeuwde hellingen van de Kaukasus erachter, Georgië",
+          "cs": "Panorama Gudauri: zakřivená mozaiková terasa na kopci nad klikatou silnicí, za ní zasněžené svahy Kavkazu, Gruzie",
+          "pl": "Panorama Gudauri: zakrzywiony mozaikowy taras na wzgórzu nad krętą drogą, a za nim ośnieżone zbocza Kaukazu, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/devils-valley-reservoir-1448.webp",
+        "base": "/images/files/devils-valley-reservoir",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Devil’s Valley Reservoir",
+          "de": "Stausee im Teufelstal",
+          "fr": "Réservoir de la Vallée du Diable",
+          "es": "Embalse del Valle del Diablo",
+          "nl": "Stuwmeer in de Duivelsvallei",
+          "cs": "Nádrž v Ďáblově údolí",
+          "pl": "Zbiornik w Diabelskiej Dolinie"
+        },
+        "altText": {
+          "en": "A turquoise reservoir in the Devil's Valley below Gudauri, seen from above, with snow-dusted slopes and a stony river bed, Greater Caucasus, Georgia",
+          "de": "Ein türkisfarbener Stausee im Teufelstal unterhalb von Gudauri, von oben gesehen, mit schneebestäubten Hängen und einem steinigen Flussbett, Großer Kaukasus, Georgien",
+          "fr": "Un réservoir turquoise dans la Vallée du Diable, en contrebas de Gudauri, vu d’en haut, avec des versants saupoudrés de neige et un lit de rivière caillouteux, Grand Caucase, Géorgie",
+          "es": "Un embalse turquesa en el Valle del Diablo, bajo Gudauri, visto desde arriba, con laderas cubiertas de nieve ligera y un lecho de río pedregoso, Gran Cáucaso, Georgia",
+          "nl": "Een turquoise stuwmeer in de Duivelsvallei onder Gudauri, van bovenaf gezien, met licht besneeuwde hellingen en een stenige rivierbedding, Grote Kaukasus, Georgië",
+          "cs": "Tyrkysová nádrž v Ďáblově údolí pod Gudauri při pohledu shora, s mírně zasněženými svahy a kamenitým říčním korytem, Velký Kavkaz, Gruzie",
+          "pl": "Turkusowy zbiornik w Diabelskiej Dolinie poniżej Gudauri widziany z góry, z lekko przyprószonymi śniegiem zboczami i kamienistym korytem rzeki, Wielki Kaukaz, Gruzja"
         }
       },
       {
@@ -18926,11 +19507,32 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/gudauri-panorama-georgia-1448.webp",
+        "contentUrl": "https://www.hikasustravel.com/images/files/gudauri-panorama-1448.webp",
         "width": 1448,
         "height": 1086,
         "caption": "Gudauri Panorama",
-        "description": "Gudauri Panorama, a curved stone terrace with a colourful mosaic mural above the Caucasus mountains on the Georgian Military Highway, Georgia",
+        "description": "Gudauri Panorama: the curved mosaic terrace on a hilltop above a winding road, with snow-covered Caucasus slopes behind, Georgia",
+        "creditText": "Hikasus Travel",
+        "creator": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "copyrightHolder": {
+          "@type": "Organization",
+          "name": "Hikasus Travel"
+        },
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Gudauri, Georgia"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "contentUrl": "https://www.hikasustravel.com/images/files/devils-valley-reservoir-1448.webp",
+        "width": 1448,
+        "height": 1086,
+        "caption": "Devil’s Valley Reservoir",
+        "description": "A turquoise reservoir in the Devil's Valley below Gudauri, seen from above, with snow-dusted slopes and a stony river bed, Greater Caucasus, Georgia",
         "creditText": "Hikasus Travel",
         "creator": {
           "@type": "Organization",
@@ -21374,9 +21976,13 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/gudauri-panorama-georgia-1448.webp",
-        "base": "/images/files/gudauri-panorama-georgia",
-        "widths": [768,1200,1448],
+        "src": "/images/files/gudauri-panorama-1448.webp",
+        "base": "/images/files/gudauri-panorama",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
         "width": 1448,
         "height": 1086,
         "caption": {
@@ -21389,13 +21995,42 @@ export const tours = [
           "pl": "Panorama Gudauri"
         },
         "altText": {
-          "en": "Gudauri Panorama, a curved stone terrace with a colourful mosaic mural above the Caucasus mountains on the Georgian Military Highway, Georgia",
-          "de": "Gudauri-Panorama, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild über den Kaukasusbergen an der Georgischen Heerstraße, Georgien",
-          "fr": "Panorama de Gudauri, une terrasse de pierre incurvée ornée d’une fresque en mosaïque colorée au-dessus des montagnes du Caucase, sur la route militaire géorgienne, Géorgie",
-          "es": "Panorama de Gudauri, una terraza de piedra curva con un colorido mural de mosaico sobre las montañas del Cáucaso, en la Carretera Militar Georgiana, Georgia",
-          "nl": "Panorama Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering boven de Kaukasusbergen aan de Georgische Militaire Weg, Georgië",
-          "cs": "Panorama Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou nad kavkazskými horami na Gruzínské vojenské silnici, Gruzie",
-          "pl": "Panorama Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem nad górami Kaukazu przy Gruzińskiej Drodze Wojennej, Gruzja"
+          "en": "Gudauri Panorama: the curved mosaic terrace on a hilltop above a winding road, with snow-covered Caucasus slopes behind, Georgia",
+          "de": "Gudauri-Panorama: die geschwungene Mosaikterrasse auf einer Anhöhe über einer kurvenreichen Straße, dahinter schneebedeckte Hänge des Kaukasus, Georgien",
+          "fr": "Panorama de Gudauri : la terrasse en mosaïque incurvée sur une hauteur au-dessus d’une route sinueuse, avec les versants enneigés du Caucase en arrière-plan, Géorgie",
+          "es": "Panorama de Gudauri: la terraza curva de mosaico sobre una colina junto a una carretera sinuosa, con laderas nevadas del Cáucaso al fondo, Georgia",
+          "nl": "Panorama Gudauri: het gebogen mozaïekterras op een heuveltop boven een kronkelende weg, met besneeuwde hellingen van de Kaukasus erachter, Georgië",
+          "cs": "Panorama Gudauri: zakřivená mozaiková terasa na kopci nad klikatou silnicí, za ní zasněžené svahy Kavkazu, Gruzie",
+          "pl": "Panorama Gudauri: zakrzywiony mozaikowy taras na wzgórzu nad krętą drogą, a za nim ośnieżone zbocza Kaukazu, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/devils-valley-reservoir-1448.webp",
+        "base": "/images/files/devils-valley-reservoir",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Devil’s Valley Reservoir",
+          "de": "Stausee im Teufelstal",
+          "fr": "Réservoir de la Vallée du Diable",
+          "es": "Embalse del Valle del Diablo",
+          "nl": "Stuwmeer in de Duivelsvallei",
+          "cs": "Nádrž v Ďáblově údolí",
+          "pl": "Zbiornik w Diabelskiej Dolinie"
+        },
+        "altText": {
+          "en": "A turquoise reservoir in the Devil's Valley below Gudauri, seen from above, with snow-dusted slopes and a stony river bed, Greater Caucasus, Georgia",
+          "de": "Ein türkisfarbener Stausee im Teufelstal unterhalb von Gudauri, von oben gesehen, mit schneebestäubten Hängen und einem steinigen Flussbett, Großer Kaukasus, Georgien",
+          "fr": "Un réservoir turquoise dans la Vallée du Diable, en contrebas de Gudauri, vu d’en haut, avec des versants saupoudrés de neige et un lit de rivière caillouteux, Grand Caucase, Géorgie",
+          "es": "Un embalse turquesa en el Valle del Diablo, bajo Gudauri, visto desde arriba, con laderas cubiertas de nieve ligera y un lecho de río pedregoso, Gran Cáucaso, Georgia",
+          "nl": "Een turquoise stuwmeer in de Duivelsvallei onder Gudauri, van bovenaf gezien, met licht besneeuwde hellingen en een stenige rivierbedding, Grote Kaukasus, Georgië",
+          "cs": "Tyrkysová nádrž v Ďáblově údolí pod Gudauri při pohledu shora, s mírně zasněženými svahy a kamenitým říčním korytem, Velký Kavkaz, Gruzie",
+          "pl": "Turkusowy zbiornik w Diabelskiej Dolinie poniżej Gudauri widziany z góry, z lekko przyprószonymi śniegiem zboczami i kamienistym korytem rzeki, Wielki Kaukaz, Gruzja"
         }
       },
       {
@@ -23139,9 +23774,13 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/gudauri-panorama-georgia-1448.webp",
-        "base": "/images/files/gudauri-panorama-georgia",
-        "widths": [768,1200,1448],
+        "src": "/images/files/gudauri-panorama-1448.webp",
+        "base": "/images/files/gudauri-panorama",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
         "width": 1448,
         "height": 1086,
         "caption": {
@@ -23154,13 +23793,42 @@ export const tours = [
           "pl": "Panorama Gudauri"
         },
         "altText": {
-          "en": "Gudauri Panorama, a curved stone terrace with a colourful mosaic mural above the Caucasus mountains on the Georgian Military Highway, Georgia",
-          "de": "Gudauri-Panorama, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild über den Kaukasusbergen an der Georgischen Heerstraße, Georgien",
-          "fr": "Panorama de Gudauri, une terrasse de pierre incurvée ornée d’une fresque en mosaïque colorée au-dessus des montagnes du Caucase, sur la route militaire géorgienne, Géorgie",
-          "es": "Panorama de Gudauri, una terraza de piedra curva con un colorido mural de mosaico sobre las montañas del Cáucaso, en la Carretera Militar Georgiana, Georgia",
-          "nl": "Panorama Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering boven de Kaukasusbergen aan de Georgische Militaire Weg, Georgië",
-          "cs": "Panorama Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou nad kavkazskými horami na Gruzínské vojenské silnici, Gruzie",
-          "pl": "Panorama Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem nad górami Kaukazu przy Gruzińskiej Drodze Wojennej, Gruzja"
+          "en": "Gudauri Panorama: the curved mosaic terrace on a hilltop above a winding road, with snow-covered Caucasus slopes behind, Georgia",
+          "de": "Gudauri-Panorama: die geschwungene Mosaikterrasse auf einer Anhöhe über einer kurvenreichen Straße, dahinter schneebedeckte Hänge des Kaukasus, Georgien",
+          "fr": "Panorama de Gudauri : la terrasse en mosaïque incurvée sur une hauteur au-dessus d’une route sinueuse, avec les versants enneigés du Caucase en arrière-plan, Géorgie",
+          "es": "Panorama de Gudauri: la terraza curva de mosaico sobre una colina junto a una carretera sinuosa, con laderas nevadas del Cáucaso al fondo, Georgia",
+          "nl": "Panorama Gudauri: het gebogen mozaïekterras op een heuveltop boven een kronkelende weg, met besneeuwde hellingen van de Kaukasus erachter, Georgië",
+          "cs": "Panorama Gudauri: zakřivená mozaiková terasa na kopci nad klikatou silnicí, za ní zasněžené svahy Kavkazu, Gruzie",
+          "pl": "Panorama Gudauri: zakrzywiony mozaikowy taras na wzgórzu nad krętą drogą, a za nim ośnieżone zbocza Kaukazu, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/devils-valley-reservoir-1448.webp",
+        "base": "/images/files/devils-valley-reservoir",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Devil’s Valley Reservoir",
+          "de": "Stausee im Teufelstal",
+          "fr": "Réservoir de la Vallée du Diable",
+          "es": "Embalse del Valle del Diablo",
+          "nl": "Stuwmeer in de Duivelsvallei",
+          "cs": "Nádrž v Ďáblově údolí",
+          "pl": "Zbiornik w Diabelskiej Dolinie"
+        },
+        "altText": {
+          "en": "A turquoise reservoir in the Devil's Valley below Gudauri, seen from above, with snow-dusted slopes and a stony river bed, Greater Caucasus, Georgia",
+          "de": "Ein türkisfarbener Stausee im Teufelstal unterhalb von Gudauri, von oben gesehen, mit schneebestäubten Hängen und einem steinigen Flussbett, Großer Kaukasus, Georgien",
+          "fr": "Un réservoir turquoise dans la Vallée du Diable, en contrebas de Gudauri, vu d’en haut, avec des versants saupoudrés de neige et un lit de rivière caillouteux, Grand Caucase, Géorgie",
+          "es": "Un embalse turquesa en el Valle del Diablo, bajo Gudauri, visto desde arriba, con laderas cubiertas de nieve ligera y un lecho de río pedregoso, Gran Cáucaso, Georgia",
+          "nl": "Een turquoise stuwmeer in de Duivelsvallei onder Gudauri, van bovenaf gezien, met licht besneeuwde hellingen en een stenige rivierbedding, Grote Kaukasus, Georgië",
+          "cs": "Tyrkysová nádrž v Ďáblově údolí pod Gudauri při pohledu shora, s mírně zasněženými svahy a kamenitým říčním korytem, Velký Kavkaz, Gruzie",
+          "pl": "Turkusowy zbiornik w Diabelskiej Dolinie poniżej Gudauri widziany z góry, z lekko przyprószonymi śniegiem zboczami i kamienistym korytem rzeki, Wielki Kaukaz, Gruzja"
         }
       },
       {
@@ -24344,8 +25012,8 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/gudauri-panorama-georgia-1448.webp",
-        "base": "/images/files/gudauri-panorama-georgia",
+        "src": "/images/files/gudauri-panorama-1448.webp",
+        "base": "/images/files/gudauri-panorama",
         "widths": [
           768,
           1200,
@@ -24363,13 +25031,42 @@ export const tours = [
           "pl": "Panorama Gudauri"
         },
         "altText": {
-          "en": "Gudauri Panorama, a curved stone terrace with a colourful mosaic mural above the Caucasus mountains on the Georgian Military Highway, Georgia",
-          "de": "Gudauri-Panorama, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild über den Kaukasusbergen an der Georgischen Heerstraße, Georgien",
-          "fr": "Panorama de Gudauri, une terrasse de pierre incurvée ornée d’une fresque en mosaïque colorée au-dessus des montagnes du Caucase, sur la route militaire géorgienne, Géorgie",
-          "es": "Panorama de Gudauri, una terraza de piedra curva con un colorido mural de mosaico sobre las montañas del Cáucaso, en la Carretera Militar Georgiana, Georgia",
-          "nl": "Panorama Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering boven de Kaukasusbergen aan de Georgische Militaire Weg, Georgië",
-          "cs": "Panorama Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou nad kavkazskými horami na Gruzínské vojenské silnici, Gruzie",
-          "pl": "Panorama Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem nad górami Kaukazu przy Gruzińskiej Drodze Wojennej, Gruzja"
+          "en": "Gudauri Panorama: the curved mosaic terrace on a hilltop above a winding road, with snow-covered Caucasus slopes behind, Georgia",
+          "de": "Gudauri-Panorama: die geschwungene Mosaikterrasse auf einer Anhöhe über einer kurvenreichen Straße, dahinter schneebedeckte Hänge des Kaukasus, Georgien",
+          "fr": "Panorama de Gudauri : la terrasse en mosaïque incurvée sur une hauteur au-dessus d’une route sinueuse, avec les versants enneigés du Caucase en arrière-plan, Géorgie",
+          "es": "Panorama de Gudauri: la terraza curva de mosaico sobre una colina junto a una carretera sinuosa, con laderas nevadas del Cáucaso al fondo, Georgia",
+          "nl": "Panorama Gudauri: het gebogen mozaïekterras op een heuveltop boven een kronkelende weg, met besneeuwde hellingen van de Kaukasus erachter, Georgië",
+          "cs": "Panorama Gudauri: zakřivená mozaiková terasa na kopci nad klikatou silnicí, za ní zasněžené svahy Kavkazu, Gruzie",
+          "pl": "Panorama Gudauri: zakrzywiony mozaikowy taras na wzgórzu nad krętą drogą, a za nim ośnieżone zbocza Kaukazu, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/devils-valley-reservoir-1448.webp",
+        "base": "/images/files/devils-valley-reservoir",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Devil’s Valley Reservoir",
+          "de": "Stausee im Teufelstal",
+          "fr": "Réservoir de la Vallée du Diable",
+          "es": "Embalse del Valle del Diablo",
+          "nl": "Stuwmeer in de Duivelsvallei",
+          "cs": "Nádrž v Ďáblově údolí",
+          "pl": "Zbiornik w Diabelskiej Dolinie"
+        },
+        "altText": {
+          "en": "A turquoise reservoir in the Devil's Valley below Gudauri, seen from above, with snow-dusted slopes and a stony river bed, Greater Caucasus, Georgia",
+          "de": "Ein türkisfarbener Stausee im Teufelstal unterhalb von Gudauri, von oben gesehen, mit schneebestäubten Hängen und einem steinigen Flussbett, Großer Kaukasus, Georgien",
+          "fr": "Un réservoir turquoise dans la Vallée du Diable, en contrebas de Gudauri, vu d’en haut, avec des versants saupoudrés de neige et un lit de rivière caillouteux, Grand Caucase, Géorgie",
+          "es": "Un embalse turquesa en el Valle del Diablo, bajo Gudauri, visto desde arriba, con laderas cubiertas de nieve ligera y un lecho de río pedregoso, Gran Cáucaso, Georgia",
+          "nl": "Een turquoise stuwmeer in de Duivelsvallei onder Gudauri, van bovenaf gezien, met licht besneeuwde hellingen en een stenige rivierbedding, Grote Kaukasus, Georgië",
+          "cs": "Tyrkysová nádrž v Ďáblově údolí pod Gudauri při pohledu shora, s mírně zasněženými svahy a kamenitým říčním korytem, Velký Kavkaz, Gruzie",
+          "pl": "Turkusowy zbiornik w Diabelskiej Dolinie poniżej Gudauri widziany z góry, z lekko przyprószonymi śniegiem zboczami i kamienistym korytem rzeki, Wielki Kaukaz, Gruzja"
         }
       },
       {
@@ -25671,8 +26368,8 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/gudauri-panorama-georgia-1448.webp",
-        "base": "/images/files/gudauri-panorama-georgia",
+        "src": "/images/files/gudauri-panorama-1448.webp",
+        "base": "/images/files/gudauri-panorama",
         "widths": [
           768,
           1200,
@@ -25690,13 +26387,42 @@ export const tours = [
           "pl": "Panorama Gudauri"
         },
         "altText": {
-          "en": "Gudauri Panorama, a curved stone terrace with a colourful mosaic mural above the Caucasus mountains on the Georgian Military Highway, Georgia",
-          "de": "Gudauri-Panorama, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild über den Kaukasusbergen an der Georgischen Heerstraße, Georgien",
-          "fr": "Panorama de Gudauri, une terrasse de pierre incurvée ornée d’une fresque en mosaïque colorée au-dessus des montagnes du Caucase, sur la route militaire géorgienne, Géorgie",
-          "es": "Panorama de Gudauri, una terraza de piedra curva con un colorido mural de mosaico sobre las montañas del Cáucaso, en la Carretera Militar Georgiana, Georgia",
-          "nl": "Panorama Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering boven de Kaukasusbergen aan de Georgische Militaire Weg, Georgië",
-          "cs": "Panorama Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou nad kavkazskými horami na Gruzínské vojenské silnici, Gruzie",
-          "pl": "Panorama Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem nad górami Kaukazu przy Gruzińskiej Drodze Wojennej, Gruzja"
+          "en": "Gudauri Panorama: the curved mosaic terrace on a hilltop above a winding road, with snow-covered Caucasus slopes behind, Georgia",
+          "de": "Gudauri-Panorama: die geschwungene Mosaikterrasse auf einer Anhöhe über einer kurvenreichen Straße, dahinter schneebedeckte Hänge des Kaukasus, Georgien",
+          "fr": "Panorama de Gudauri : la terrasse en mosaïque incurvée sur une hauteur au-dessus d’une route sinueuse, avec les versants enneigés du Caucase en arrière-plan, Géorgie",
+          "es": "Panorama de Gudauri: la terraza curva de mosaico sobre una colina junto a una carretera sinuosa, con laderas nevadas del Cáucaso al fondo, Georgia",
+          "nl": "Panorama Gudauri: het gebogen mozaïekterras op een heuveltop boven een kronkelende weg, met besneeuwde hellingen van de Kaukasus erachter, Georgië",
+          "cs": "Panorama Gudauri: zakřivená mozaiková terasa na kopci nad klikatou silnicí, za ní zasněžené svahy Kavkazu, Gruzie",
+          "pl": "Panorama Gudauri: zakrzywiony mozaikowy taras na wzgórzu nad krętą drogą, a za nim ośnieżone zbocza Kaukazu, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/devils-valley-reservoir-1448.webp",
+        "base": "/images/files/devils-valley-reservoir",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Devil’s Valley Reservoir",
+          "de": "Stausee im Teufelstal",
+          "fr": "Réservoir de la Vallée du Diable",
+          "es": "Embalse del Valle del Diablo",
+          "nl": "Stuwmeer in de Duivelsvallei",
+          "cs": "Nádrž v Ďáblově údolí",
+          "pl": "Zbiornik w Diabelskiej Dolinie"
+        },
+        "altText": {
+          "en": "A turquoise reservoir in the Devil's Valley below Gudauri, seen from above, with snow-dusted slopes and a stony river bed, Greater Caucasus, Georgia",
+          "de": "Ein türkisfarbener Stausee im Teufelstal unterhalb von Gudauri, von oben gesehen, mit schneebestäubten Hängen und einem steinigen Flussbett, Großer Kaukasus, Georgien",
+          "fr": "Un réservoir turquoise dans la Vallée du Diable, en contrebas de Gudauri, vu d’en haut, avec des versants saupoudrés de neige et un lit de rivière caillouteux, Grand Caucase, Géorgie",
+          "es": "Un embalse turquesa en el Valle del Diablo, bajo Gudauri, visto desde arriba, con laderas cubiertas de nieve ligera y un lecho de río pedregoso, Gran Cáucaso, Georgia",
+          "nl": "Een turquoise stuwmeer in de Duivelsvallei onder Gudauri, van bovenaf gezien, met licht besneeuwde hellingen en een stenige rivierbedding, Grote Kaukasus, Georgië",
+          "cs": "Tyrkysová nádrž v Ďáblově údolí pod Gudauri při pohledu shora, s mírně zasněženými svahy a kamenitým říčním korytem, Velký Kavkaz, Gruzie",
+          "pl": "Turkusowy zbiornik w Diabelskiej Dolinie poniżej Gudauri widziany z góry, z lekko przyprószonymi śniegiem zboczami i kamienistym korytem rzeki, Wielki Kaukaz, Gruzja"
         }
       },
       {
@@ -26464,8 +27190,8 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/gudauri-panorama-georgia-1448.webp",
-        "base": "/images/files/gudauri-panorama-georgia",
+        "src": "/images/files/gudauri-panorama-1448.webp",
+        "base": "/images/files/gudauri-panorama",
         "widths": [
           768,
           1200,
@@ -26483,13 +27209,42 @@ export const tours = [
           "pl": "Panorama Gudauri"
         },
         "altText": {
-          "en": "Gudauri Panorama, a curved stone terrace with a colourful mosaic mural above the Caucasus mountains on the Georgian Military Highway, Georgia",
-          "de": "Gudauri-Panorama, eine geschwungene Steinterrasse mit farbenfrohem Mosaik-Wandbild über den Kaukasusbergen an der Georgischen Heerstraße, Georgien",
-          "fr": "Panorama de Gudauri, une terrasse de pierre incurvée ornée d’une fresque en mosaïque colorée au-dessus des montagnes du Caucase, sur la route militaire géorgienne, Géorgie",
-          "es": "Panorama de Gudauri, una terraza de piedra curva con un colorido mural de mosaico sobre las montañas del Cáucaso, en la Carretera Militar Georgiana, Georgia",
-          "nl": "Panorama Gudauri, een gebogen stenen terras met een kleurrijke mozaïekmuurschildering boven de Kaukasusbergen aan de Georgische Militaire Weg, Georgië",
-          "cs": "Panorama Gudauri, zakřivená kamenná terasa s barevnou mozaikovou malbou nad kavkazskými horami na Gruzínské vojenské silnici, Gruzie",
-          "pl": "Panorama Gudauri, zakrzywiony kamienny taras z barwnym mozaikowym muralem nad górami Kaukazu przy Gruzińskiej Drodze Wojennej, Gruzja"
+          "en": "Gudauri Panorama: the curved mosaic terrace on a hilltop above a winding road, with snow-covered Caucasus slopes behind, Georgia",
+          "de": "Gudauri-Panorama: die geschwungene Mosaikterrasse auf einer Anhöhe über einer kurvenreichen Straße, dahinter schneebedeckte Hänge des Kaukasus, Georgien",
+          "fr": "Panorama de Gudauri : la terrasse en mosaïque incurvée sur une hauteur au-dessus d’une route sinueuse, avec les versants enneigés du Caucase en arrière-plan, Géorgie",
+          "es": "Panorama de Gudauri: la terraza curva de mosaico sobre una colina junto a una carretera sinuosa, con laderas nevadas del Cáucaso al fondo, Georgia",
+          "nl": "Panorama Gudauri: het gebogen mozaïekterras op een heuveltop boven een kronkelende weg, met besneeuwde hellingen van de Kaukasus erachter, Georgië",
+          "cs": "Panorama Gudauri: zakřivená mozaiková terasa na kopci nad klikatou silnicí, za ní zasněžené svahy Kavkazu, Gruzie",
+          "pl": "Panorama Gudauri: zakrzywiony mozaikowy taras na wzgórzu nad krętą drogą, a za nim ośnieżone zbocza Kaukazu, Gruzja"
+        }
+      },
+      {
+        "src": "/images/files/devils-valley-reservoir-1448.webp",
+        "base": "/images/files/devils-valley-reservoir",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Devil’s Valley Reservoir",
+          "de": "Stausee im Teufelstal",
+          "fr": "Réservoir de la Vallée du Diable",
+          "es": "Embalse del Valle del Diablo",
+          "nl": "Stuwmeer in de Duivelsvallei",
+          "cs": "Nádrž v Ďáblově údolí",
+          "pl": "Zbiornik w Diabelskiej Dolinie"
+        },
+        "altText": {
+          "en": "A turquoise reservoir in the Devil's Valley below Gudauri, seen from above, with snow-dusted slopes and a stony river bed, Greater Caucasus, Georgia",
+          "de": "Ein türkisfarbener Stausee im Teufelstal unterhalb von Gudauri, von oben gesehen, mit schneebestäubten Hängen und einem steinigen Flussbett, Großer Kaukasus, Georgien",
+          "fr": "Un réservoir turquoise dans la Vallée du Diable, en contrebas de Gudauri, vu d’en haut, avec des versants saupoudrés de neige et un lit de rivière caillouteux, Grand Caucase, Géorgie",
+          "es": "Un embalse turquesa en el Valle del Diablo, bajo Gudauri, visto desde arriba, con laderas cubiertas de nieve ligera y un lecho de río pedregoso, Gran Cáucaso, Georgia",
+          "nl": "Een turquoise stuwmeer in de Duivelsvallei onder Gudauri, van bovenaf gezien, met licht besneeuwde hellingen en een stenige rivierbedding, Grote Kaukasus, Georgië",
+          "cs": "Tyrkysová nádrž v Ďáblově údolí pod Gudauri při pohledu shora, s mírně zasněženými svahy a kamenitým říčním korytem, Velký Kavkaz, Gruzie",
+          "pl": "Turkusowy zbiornik w Diabelskiej Dolinie poniżej Gudauri widziany z góry, z lekko przyprószonymi śniegiem zboczami i kamienistym korytem rzeki, Wielki Kaukaz, Gruzja"
         }
       },
       {
