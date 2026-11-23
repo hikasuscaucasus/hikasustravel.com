@@ -3306,30 +3306,22 @@ section {
   }
 }
 /* Native width 1024 — no rung above it. Do not add a 1200/1448/1600/2400 breakpoint. */
-/* Kazbegi (region hub) hero — per-page CSS background (same opt-in mechanism as
-   .hero--gremi). PORTRAIT 2:3 source (native 1024x1536), so the ladder is exactly
-   768/1024 with the top breakpoint at min-width:768. NO rung above 1024 (no
-   1200/1448/1600/2400), no upscale. `background-position: center 48%` is DELIBERATE
-   — it keeps the peaks + village in a wide banner with sky above for the H1; center
-   center leans to empty sky and lower buries the peaks in the dark forest. Do NOT
-   normalise. Expect softness on very wide desktops (native width 1024, flagged). The
-   shared .coverme::after overlay (rgba(0,0,0,0.35)) is the light scrim; keep the H1
-   in the blue sky, never over the dark forest foot. */
+/* Kazbegi CITY page hero — the town of Stepantsminda below the snow-covered Greater Caucasus (owner's photo). PORTRAIT 1024x1536, native width 1024, so the ladder is exactly 768/1024; no 1200/1448/1600/2400 rung. `center 42%` keeps the ridge and the town both in a wide banner; the shared .coverme::after overlay already provides the text scrim. */
 .hero--kazbegi {
-  background-image: url("/images/files/kazbegi-mountains-village-georgia-768.webp");
+  background-image: url("/images/files/kazbegi-village-below-caucasus-peaks-georgia-768.webp");
   background-image: image-set(
-    url("/images/files/kazbegi-mountains-village-georgia-768.avif") type("image/avif"),
-    url("/images/files/kazbegi-mountains-village-georgia-768.webp") type("image/webp")
+    url("/images/files/kazbegi-village-below-caucasus-peaks-georgia-768.avif") type("image/avif"),
+    url("/images/files/kazbegi-village-below-caucasus-peaks-georgia-768.webp") type("image/webp")
   );
-  background-position: center 48%;
+  background-position: center 42%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
   .hero--kazbegi {
     background-image: image-set(
-      url("/images/files/kazbegi-mountains-village-georgia-1024.avif") type("image/avif"),
-      url("/images/files/kazbegi-mountains-village-georgia-1024.webp") type("image/webp")
+      url("/images/files/kazbegi-village-below-caucasus-peaks-georgia-1024.avif") type("image/avif"),
+      url("/images/files/kazbegi-village-below-caucasus-peaks-georgia-1024.webp") type("image/webp")
     );
   }
 }
@@ -3714,84 +3706,58 @@ section {
   }
 }
 /* Native ceiling 1448 is the top rung. Do not add a 1600 or 2400 breakpoint. */
-/* Svetitskhoveli Cathedral hero — per-page CSS background (same opt-in mechanism
-   as .hero--mestia). Native ceiling is 1540, BELOW the usual 1600 rung, so the
-   ladder is exactly 768/1200/1540 with the top breakpoint at min-width:1200 —
-   there is NO 1600 or 2400 rung. `background-position: center center` (default):
-   the frame has sky on the right and keeps the cathedral + dome in view at every
-   crop, so no positioning bias is needed. The .coverme::after overlay already
-   provides the readable text layer, so the package's optional ::before scrim is
-   NOT enabled. plain url() line = fallback for browsers without image-set(). */
+/* Svetitskhoveli CATHEDRAL page hero — per-page CSS background (owner's photo). Native 1448x1086, so the ladder is 768/1200/1448 with the top breakpoint at min-width:1200; no 1540/1600/2400 rung. `56% center` keeps the dome in frame on a portrait phone hero. */
 .hero--svetitskhoveli {
-  background-image: url("/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1200.webp");
+  background-image: url("/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1200.webp");
   background-image: image-set(
-    url("/images/files/svetitskhoveli-cathedral-mtskheta-georgia-768.avif") type("image/avif"),
-    url("/images/files/svetitskhoveli-cathedral-mtskheta-georgia-768.webp") type("image/webp")
+    url("/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-768.avif") type("image/avif"),
+    url("/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-768.webp") type("image/webp")
   );
-  background-position: center center;
+  background-position: 56% center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
   .hero--svetitskhoveli {
     background-image: image-set(
-      url("/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1200.avif") type("image/avif"),
-      url("/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1200.webp") type("image/webp")
+      url("/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1200.avif") type("image/avif"),
+      url("/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1200.webp") type("image/webp")
     );
   }
 }
 @media (min-width: 1200px) {
   .hero--svetitskhoveli {
     background-image: image-set(
-      url("/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1540.avif") type("image/avif"),
-      url("/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp") type("image/webp")
+      url("/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1448.avif") type("image/avif"),
+      url("/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1448.webp") type("image/webp")
     );
   }
 }
-/* No rung above 1540 exists. Do not add a 1600 or 2400 breakpoint. */
-/* Mtskheta CITY page hero — per-page CSS background (same opt-in mechanism as
-   .hero--svetitskhoveli above). The frame is the aerial of Jvari Monastery on its
-   cliff with Mtskheta, the river confluence and the valley below; its rungs
-   already ship in /images/mtskheta-mtianeti/ for the region page, so this class
-   only points at them — no file was copied, generated or re-encoded. Native is
-   4:3 at 1448x1085, BELOW the usual 1600 rung, so the ladder is exactly
-   768/1200/1448 with the top breakpoint at min-width:1200 — there is NO 1600 or
-   2400 rung.
-
-   ⚠️ `background-position: 82% center`, NOT the default centre. The church sits
-   in the right third of a 4:3 frame; a portrait phone hero shows only ~43% of the
-   width under `cover`, and centring pushes the monastery hard against the right
-   edge, leaving mostly hillside. Rendered and COMPARED at 50/62/70/76/82% on a
-   360px frame: 50% clips the church badly, 62% and 70% still cut its right side,
-   82% is the first value that clears the whole building while keeping the river
-   bend at the left edge. Above ~1.34:1 viewports (all desktop widths) `cover`
-   scales by width and crops vertically instead, so this value is a phone-only
-   correction and does not alter the desktop framing. The shared .coverme::after
-   overlay already provides the readable text layer, so no extra scrim is added.
-   The plain url() line is the fallback for browsers without image-set(). */
+/* No rung above 1448 exists. Do not add a 1540, 1600 or 2400 breakpoint. */
+/* Mtskheta CITY page hero — Svetitskhoveli Cathedral from its courtyard (owner's photo). Native 1448x1086 → ladder 768/1200/1448, top breakpoint at min-width:1200; no 1600/2400 rung. `34% center` keeps the cathedral facade in a portrait phone crop (the bell tower sits at the right edge and is cropped there); above ~1.34:1 viewports `cover` crops vertically, so it only affects phones. */
 .hero--mtskheta {
-  background-image: url("/images/mtskheta-mtianeti/jvari-monastery-confluence-mtskheta-georgia-1200.webp");
+  background-image: url("/images/files/svetitskhoveli-cathedral-courtyard-view-mtskheta-georgia-1200.webp");
   background-image: image-set(
-    url("/images/mtskheta-mtianeti/jvari-monastery-confluence-mtskheta-georgia-768.avif") type("image/avif"),
-    url("/images/mtskheta-mtianeti/jvari-monastery-confluence-mtskheta-georgia-768.webp") type("image/webp")
+    url("/images/files/svetitskhoveli-cathedral-courtyard-view-mtskheta-georgia-768.avif") type("image/avif"),
+    url("/images/files/svetitskhoveli-cathedral-courtyard-view-mtskheta-georgia-768.webp") type("image/webp")
   );
-  background-position: 82% center;
+  background-position: 34% center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
   .hero--mtskheta {
     background-image: image-set(
-      url("/images/mtskheta-mtianeti/jvari-monastery-confluence-mtskheta-georgia-1200.avif") type("image/avif"),
-      url("/images/mtskheta-mtianeti/jvari-monastery-confluence-mtskheta-georgia-1200.webp") type("image/webp")
+      url("/images/files/svetitskhoveli-cathedral-courtyard-view-mtskheta-georgia-1200.avif") type("image/avif"),
+      url("/images/files/svetitskhoveli-cathedral-courtyard-view-mtskheta-georgia-1200.webp") type("image/webp")
     );
   }
 }
 @media (min-width: 1200px) {
   .hero--mtskheta {
     background-image: image-set(
-      url("/images/mtskheta-mtianeti/jvari-monastery-confluence-mtskheta-georgia-1448.avif") type("image/avif"),
-      url("/images/mtskheta-mtianeti/jvari-monastery-confluence-mtskheta-georgia-1448.webp") type("image/webp")
+      url("/images/files/svetitskhoveli-cathedral-courtyard-view-mtskheta-georgia-1448.avif") type("image/avif"),
+      url("/images/files/svetitskhoveli-cathedral-courtyard-view-mtskheta-georgia-1448.webp") type("image/webp")
     );
   }
 }

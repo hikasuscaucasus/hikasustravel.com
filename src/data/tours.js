@@ -562,6 +562,35 @@ export const tours = [
         }
       },
       {
+        "src": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1448.webp",
+        "base": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Svetitskhoveli Cathedral, Mtskheta",
+          "de": "Swetizchoweli-Kathedrale, Mzcheta",
+          "fr": "Cathédrale de Svétitskhovéli, Mtskheta",
+          "es": "Catedral de Svetitsjoveli, Mtsjeta",
+          "nl": "Svetitschoveli-kathedraal, Mtscheta",
+          "cs": "Katedrála Sveticchoveli, Mccheta",
+          "pl": "Katedra Sweticchoweli, Mccheta"
+        },
+        "altText": {
+          "en": "Svetitskhoveli Cathedral in Mtskheta, a large church of golden sandstone with arcaded walls and a conical dome under a blue sky, Georgia",
+          "de": "Die Swetizchoweli-Kathedrale in Mzcheta, eine große Kirche aus goldenem Sandstein mit Blendarkaden und Kegelkuppel unter blauem Himmel, Georgien",
+          "fr": "La cathédrale de Svétitskhovéli à Mtskheta, grande église en grès doré à arcatures et coupole conique sous un ciel bleu, Géorgie",
+          "es": "La catedral de Svetitsjoveli en Mtsjeta, una gran iglesia de arenisca dorada con arquerías y cúpula cónica bajo un cielo azul, Georgia",
+          "nl": "De Svetitschoveli-kathedraal in Mtscheta, een grote kerk van goudkleurige zandsteen met arcaden en een kegelvormige koepel onder een blauwe lucht, Georgië",
+          "cs": "Katedrála Sveticchoveli v Mcchetě, velký chrám ze zlatavého pískovce s arkádami a kuželovou kupolí pod modrou oblohou, Gruzie",
+          "pl": "Katedra Sweticchoweli w Mcchecie, duży kościół ze złocistego piaskowca z arkadami i stożkową kopułą pod błękitnym niebem, Gruzja"
+        }
+      },
+      {
         "src": "/images/files/ananuri-fortress-georgia-1920.webp",
         "base": "/images/files/ananuri-fortress-georgia",
         "widths": [
@@ -592,8 +621,8 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/gergeti-trinity-church-kazbegi-georgia-1448.webp",
-        "base": "/images/files/gergeti-trinity-church-kazbegi-georgia",
+        "src": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1448.webp",
+        "base": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view",
         "widths": [
           768,
           1200,
@@ -611,13 +640,13 @@ export const tours = [
           "pl": "Cerkiew Trójcy Świętej w Gergeti"
         },
         "altText": {
-          "en": "The Gergeti Trinity Church, a lone stone church with a bell tower on a hill below steep rocky Caucasus mountains near Kazbegi, Georgia",
-          "de": "Die Gergeti-Dreifaltigkeitskirche, eine einzeln stehende Steinkirche mit Glockenturm auf einem Hügel unter steilen felsigen Kaukasusbergen bei Kazbegi, Georgien",
-          "fr": "L'église de la Trinité de Guerguéti, église de pierre isolée avec clocher sur une colline au pied d'abruptes montagnes rocheuses du Caucase, près de Kazbegi, Géorgie",
-          "es": "La iglesia de la Trinidad de Gergeti, iglesia de piedra solitaria con campanario en una colina al pie de escarpadas montañas rocosas del Cáucaso, cerca de Kazbegi, Georgia",
-          "nl": "De Drie-eenheidskerk van Gergeti, een alleenstaande stenen kerk met klokkentoren op een heuvel onder steile rotsachtige Kaukasusbergen bij Kazbegi, Georgië",
-          "cs": "Gergetský kostel Nejsvětější Trojice, osamělý kamenný kostel se zvonicí na kopci pod strmými skalnatými kavkazskými horami u Kazbegi, Gruzie",
-          "pl": "Cerkiew Trójcy Świętej w Gergeti, samotny kamienny kościół z dzwonnicą na wzgórzu u stóp stromych, skalistych gór Kaukazu koło Kazbegi, Gruzja"
+          "en": "Gergeti Trinity Church on its hilltop below the snow-covered peaks of the Greater Caucasus near Stepantsminda, Georgia",
+          "de": "Die Gergeti-Dreifaltigkeitskirche auf ihrem Hügel unterhalb der schneebedeckten Gipfel des Großen Kaukasus bei Stepanzminda, Georgien",
+          "fr": "L'église de la Trinité de Gergeti sur sa colline, au pied des sommets enneigés du Grand Caucase près de Stepantsminda, Géorgie",
+          "es": "La iglesia de la Trinidad de Gergeti en su colina, bajo las cumbres nevadas del Gran Cáucaso cerca de Stepantsminda, Georgia",
+          "nl": "De Drie-eenheidskerk van Gergeti op haar heuvel onder de besneeuwde toppen van de Grote Kaukasus bij Stepantsminda, Georgië",
+          "cs": "Gergetský kostel Nejsvětější Trojice na svém kopci pod zasněženými vrcholy Velkého Kavkazu u Stepancminda, Gruzie",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti na wzgórzu pod ośnieżonymi szczytami Wielkiego Kaukazu koło Stepancminda, Gruzja"
         }
       },
       {
@@ -1641,6 +1670,35 @@ export const tours = [
         }
       },
       {
+        "src": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1448.webp",
+        "base": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Svetitskhoveli Cathedral, Mtskheta",
+          "de": "Swetizchoweli-Kathedrale, Mzcheta",
+          "fr": "Cathédrale de Svétitskhovéli, Mtskheta",
+          "es": "Catedral de Svetitsjoveli, Mtsjeta",
+          "nl": "Svetitschoveli-kathedraal, Mtscheta",
+          "cs": "Katedrála Sveticchoveli, Mccheta",
+          "pl": "Katedra Sweticchoweli, Mccheta"
+        },
+        "altText": {
+          "en": "Svetitskhoveli Cathedral in Mtskheta, a large church of golden sandstone with arcaded walls and a conical dome under a blue sky, Georgia",
+          "de": "Die Swetizchoweli-Kathedrale in Mzcheta, eine große Kirche aus goldenem Sandstein mit Blendarkaden und Kegelkuppel unter blauem Himmel, Georgien",
+          "fr": "La cathédrale de Svétitskhovéli à Mtskheta, grande église en grès doré à arcatures et coupole conique sous un ciel bleu, Géorgie",
+          "es": "La catedral de Svetitsjoveli en Mtsjeta, una gran iglesia de arenisca dorada con arquerías y cúpula cónica bajo un cielo azul, Georgia",
+          "nl": "De Svetitschoveli-kathedraal in Mtscheta, een grote kerk van goudkleurige zandsteen met arcaden en een kegelvormige koepel onder een blauwe lucht, Georgië",
+          "cs": "Katedrála Sveticchoveli v Mcchetě, velký chrám ze zlatavého pískovce s arkádami a kuželovou kupolí pod modrou oblohou, Gruzie",
+          "pl": "Katedra Sweticchoweli w Mcchecie, duży kościół ze złocistego piaskowca z arkadami i stożkową kopułą pod błękitnym niebem, Gruzja"
+        }
+      },
+      {
         "src": "/images/files/ananuri-fortress-georgia-1920.webp",
         "base": "/images/files/ananuri-fortress-georgia",
         "widths": [
@@ -1671,8 +1729,8 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/gergeti-trinity-church-kazbegi-georgia-1448.webp",
-        "base": "/images/files/gergeti-trinity-church-kazbegi-georgia",
+        "src": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1448.webp",
+        "base": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view",
         "widths": [
           768,
           1200,
@@ -1690,13 +1748,13 @@ export const tours = [
           "pl": "Cerkiew Trójcy Świętej w Gergeti"
         },
         "altText": {
-          "en": "The Gergeti Trinity Church, a lone stone church with a bell tower on a hill below steep rocky Caucasus mountains near Kazbegi, Georgia",
-          "de": "Die Gergeti-Dreifaltigkeitskirche, eine einzeln stehende Steinkirche mit Glockenturm auf einem Hügel unter steilen felsigen Kaukasusbergen bei Kazbegi, Georgien",
-          "fr": "L'église de la Trinité de Guerguéti, église de pierre isolée avec clocher sur une colline au pied d'abruptes montagnes rocheuses du Caucase, près de Kazbegi, Géorgie",
-          "es": "La iglesia de la Trinidad de Gergeti, iglesia de piedra solitaria con campanario en una colina al pie de escarpadas montañas rocosas del Cáucaso, cerca de Kazbegi, Georgia",
-          "nl": "De Drie-eenheidskerk van Gergeti, een alleenstaande stenen kerk met klokkentoren op een heuvel onder steile rotsachtige Kaukasusbergen bij Kazbegi, Georgië",
-          "cs": "Gergetský kostel Nejsvětější Trojice, osamělý kamenný kostel se zvonicí na kopci pod strmými skalnatými kavkazskými horami u Kazbegi, Gruzie",
-          "pl": "Cerkiew Trójcy Świętej w Gergeti, samotny kamienny kościół z dzwonnicą na wzgórzu u stóp stromych, skalistych gór Kaukazu koło Kazbegi, Gruzja"
+          "en": "Gergeti Trinity Church on its hilltop below the snow-covered peaks of the Greater Caucasus near Stepantsminda, Georgia",
+          "de": "Die Gergeti-Dreifaltigkeitskirche auf ihrem Hügel unterhalb der schneebedeckten Gipfel des Großen Kaukasus bei Stepanzminda, Georgien",
+          "fr": "L'église de la Trinité de Gergeti sur sa colline, au pied des sommets enneigés du Grand Caucase près de Stepantsminda, Géorgie",
+          "es": "La iglesia de la Trinidad de Gergeti en su colina, bajo las cumbres nevadas del Gran Cáucaso cerca de Stepantsminda, Georgia",
+          "nl": "De Drie-eenheidskerk van Gergeti op haar heuvel onder de besneeuwde toppen van de Grote Kaukasus bij Stepantsminda, Georgië",
+          "cs": "Gergetský kostel Nejsvětější Trojice na svém kopci pod zasněženými vrcholy Velkého Kavkazu u Stepancminda, Gruzie",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti na wzgórzu pod ośnieżonymi szczytami Wielkiego Kaukazu koło Stepancminda, Gruzja"
         }
       },
       {
@@ -2246,6 +2304,35 @@ export const tours = [
         }
       },
       {
+        "src": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1448.webp",
+        "base": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
+        "caption": {
+          "en": "Svetitskhoveli Cathedral, Mtskheta",
+          "de": "Swetizchoweli-Kathedrale, Mzcheta",
+          "fr": "Cathédrale de Svétitskhovéli, Mtskheta",
+          "es": "Catedral de Svetitsjoveli, Mtsjeta",
+          "nl": "Svetitschoveli-kathedraal, Mtscheta",
+          "cs": "Katedrála Sveticchoveli, Mccheta",
+          "pl": "Katedra Sweticchoweli, Mccheta"
+        },
+        "altText": {
+          "en": "Svetitskhoveli Cathedral in Mtskheta, a large church of golden sandstone with arcaded walls and a conical dome under a blue sky, Georgia",
+          "de": "Die Swetizchoweli-Kathedrale in Mzcheta, eine große Kirche aus goldenem Sandstein mit Blendarkaden und Kegelkuppel unter blauem Himmel, Georgien",
+          "fr": "La cathédrale de Svétitskhovéli à Mtskheta, grande église en grès doré à arcatures et coupole conique sous un ciel bleu, Géorgie",
+          "es": "La catedral de Svetitsjoveli en Mtsjeta, una gran iglesia de arenisca dorada con arquerías y cúpula cónica bajo un cielo azul, Georgia",
+          "nl": "De Svetitschoveli-kathedraal in Mtscheta, een grote kerk van goudkleurige zandsteen met arcaden en een kegelvormige koepel onder een blauwe lucht, Georgië",
+          "cs": "Katedrála Sveticchoveli v Mcchetě, velký chrám ze zlatavého pískovce s arkádami a kuželovou kupolí pod modrou oblohou, Gruzie",
+          "pl": "Katedra Sweticchoweli w Mcchecie, duży kościół ze złocistego piaskowca z arkadami i stożkową kopułą pod błękitnym niebem, Gruzja"
+        }
+      },
+      {
         "src": "/images/files/ananuri-fortress-georgia-1920.webp",
         "base": "/images/files/ananuri-fortress-georgia",
         "widths": [
@@ -2276,8 +2363,8 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/gergeti-trinity-church-kazbegi-georgia-1448.webp",
-        "base": "/images/files/gergeti-trinity-church-kazbegi-georgia",
+        "src": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1448.webp",
+        "base": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view",
         "widths": [
           768,
           1200,
@@ -2295,13 +2382,13 @@ export const tours = [
           "pl": "Cerkiew Trójcy Świętej w Gergeti"
         },
         "altText": {
-          "en": "The Gergeti Trinity Church, a lone stone church with a bell tower on a hill below steep rocky Caucasus mountains near Kazbegi, Georgia",
-          "de": "Die Gergeti-Dreifaltigkeitskirche, eine einzeln stehende Steinkirche mit Glockenturm auf einem Hügel unter steilen felsigen Kaukasusbergen bei Kazbegi, Georgien",
-          "fr": "L'église de la Trinité de Guerguéti, église de pierre isolée avec clocher sur une colline au pied d'abruptes montagnes rocheuses du Caucase, près de Kazbegi, Géorgie",
-          "es": "La iglesia de la Trinidad de Gergeti, iglesia de piedra solitaria con campanario en una colina al pie de escarpadas montañas rocosas del Cáucaso, cerca de Kazbegi, Georgia",
-          "nl": "De Drie-eenheidskerk van Gergeti, een alleenstaande stenen kerk met klokkentoren op een heuvel onder steile rotsachtige Kaukasusbergen bij Kazbegi, Georgië",
-          "cs": "Gergetský kostel Nejsvětější Trojice, osamělý kamenný kostel se zvonicí na kopci pod strmými skalnatými kavkazskými horami u Kazbegi, Gruzie",
-          "pl": "Cerkiew Trójcy Świętej w Gergeti, samotny kamienny kościół z dzwonnicą na wzgórzu u stóp stromych, skalistych gór Kaukazu koło Kazbegi, Gruzja"
+          "en": "Gergeti Trinity Church on its hilltop below the snow-covered peaks of the Greater Caucasus near Stepantsminda, Georgia",
+          "de": "Die Gergeti-Dreifaltigkeitskirche auf ihrem Hügel unterhalb der schneebedeckten Gipfel des Großen Kaukasus bei Stepanzminda, Georgien",
+          "fr": "L'église de la Trinité de Gergeti sur sa colline, au pied des sommets enneigés du Grand Caucase près de Stepantsminda, Géorgie",
+          "es": "La iglesia de la Trinidad de Gergeti en su colina, bajo las cumbres nevadas del Gran Cáucaso cerca de Stepantsminda, Georgia",
+          "nl": "De Drie-eenheidskerk van Gergeti op haar heuvel onder de besneeuwde toppen van de Grote Kaukasus bij Stepantsminda, Georgië",
+          "cs": "Gergetský kostel Nejsvětější Trojice na svém kopci pod zasněženými vrcholy Velkého Kavkazu u Stepancminda, Gruzie",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti na wzgórzu pod ośnieżonymi szczytami Wielkiego Kaukazu koło Stepancminda, Gruzja"
         }
       },
       {
@@ -3517,11 +3604,15 @@ export const tours = [
       },
       {
         /* tour5.svetitskhoveli */
-        "src": "/images/tours/tbilisi-to-batumi/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
-        "base": "/images/tours/tbilisi-to-batumi/svetitskhoveli-cathedral-mtskheta-georgia",
-        "widths": [768, 1200, 1540],
-        "width": 1540,
-        "height": 1021,
+        "src": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1448.webp",
+        "base": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
         "caption": {
           "en": "Svetitskhoveli Cathedral, Mtskheta",
           "de": "Swetizchoweli-Kathedrale, Mzcheta",
@@ -3530,6 +3621,15 @@ export const tours = [
           "nl": "Svetitschoveli-kathedraal, Mtscheta",
           "cs": "Katedrála Sveticchoveli, Mccheta",
           "pl": "Katedra Sweticchoweli, Mccheta"
+        },
+        "altText": {
+          "en": "Svetitskhoveli Cathedral in Mtskheta, a large church of golden sandstone with arcaded walls and a conical dome under a blue sky, Georgia",
+          "de": "Die Swetizchoweli-Kathedrale in Mzcheta, eine große Kirche aus goldenem Sandstein mit Blendarkaden und Kegelkuppel unter blauem Himmel, Georgien",
+          "fr": "La cathédrale de Svétitskhovéli à Mtskheta, grande église en grès doré à arcatures et coupole conique sous un ciel bleu, Géorgie",
+          "es": "La catedral de Svetitsjoveli en Mtsjeta, una gran iglesia de arenisca dorada con arquerías y cúpula cónica bajo un cielo azul, Georgia",
+          "nl": "De Svetitschoveli-kathedraal in Mtscheta, een grote kerk van goudkleurige zandsteen met arcaden en een kegelvormige koepel onder een blauwe lucht, Georgië",
+          "cs": "Katedrála Sveticchoveli v Mcchetě, velký chrám ze zlatavého pískovce s arkádami a kuželovou kupolí pod modrou oblohou, Gruzie",
+          "pl": "Katedra Sweticchoweli w Mcchecie, duży kościół ze złocistego piaskowca z arkadami i stożkową kopułą pod błękitnym niebem, Gruzja"
         }
       },
       {
@@ -3928,7 +4028,7 @@ export const tours = [
     "imageMeta": {
       "width": 1448,
       "height": 1086,
-      "contentUrl": "/images/tours/tbilisi-wine-sulfur/gergeti-trinity-church-kazbegi-georgia-1448.webp",
+      "contentUrl": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1448.webp",
       "description": "The Gergeti Trinity Church and its separate stone bell tower on a grassy ridge above Stepantsminda, against the vast scree slopes of the Kazbek massif, in the Mtskheta-Mtianeti region of Georgia.",
       "locationName": "Gergeti Trinity Church, Stepantsminda, Mtskheta-Mtianeti, Georgia",
       "geo": { "lat": 42.66253, "lng": 44.62072 },
@@ -4226,11 +4326,15 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/tbilisi-wine-sulfur/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
-        "base": "/images/tours/tbilisi-wine-sulfur/svetitskhoveli-cathedral-mtskheta-georgia",
-        "widths": [768, 1200, 1540],
-        "width": 1540,
-        "height": 1021,
+        "src": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1448.webp",
+        "base": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
         "caption": {
           "en": "Svetitskhoveli Cathedral, Mtskheta",
           "de": "Swetizchoweli-Kathedrale, Mzcheta",
@@ -4239,6 +4343,15 @@ export const tours = [
           "nl": "Svetitschoveli-kathedraal, Mtscheta",
           "cs": "Katedrála Sveticchoveli, Mccheta",
           "pl": "Katedra Sweticchoweli, Mccheta"
+        },
+        "altText": {
+          "en": "Svetitskhoveli Cathedral in Mtskheta, a large church of golden sandstone with arcaded walls and a conical dome under a blue sky, Georgia",
+          "de": "Die Swetizchoweli-Kathedrale in Mzcheta, eine große Kirche aus goldenem Sandstein mit Blendarkaden und Kegelkuppel unter blauem Himmel, Georgien",
+          "fr": "La cathédrale de Svétitskhovéli à Mtskheta, grande église en grès doré à arcatures et coupole conique sous un ciel bleu, Géorgie",
+          "es": "La catedral de Svetitsjoveli en Mtsjeta, una gran iglesia de arenisca dorada con arquerías y cúpula cónica bajo un cielo azul, Georgia",
+          "nl": "De Svetitschoveli-kathedraal in Mtscheta, een grote kerk van goudkleurige zandsteen met arcaden en een kegelvormige koepel onder een blauwe lucht, Georgië",
+          "cs": "Katedrála Sveticchoveli v Mcchetě, velký chrám ze zlatavého pískovce s arkádami a kuželovou kupolí pod modrou oblohou, Gruzie",
+          "pl": "Katedra Sweticchoweli w Mcchecie, duży kościół ze złocistego piaskowca z arkadami i stożkową kopułą pod błękitnym niebem, Gruzja"
         }
       },
       {
@@ -4332,9 +4445,13 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/tbilisi-wine-sulfur/gergeti-trinity-church-kazbegi-georgia-1448.webp",
-        "base": "/images/tours/tbilisi-wine-sulfur/gergeti-trinity-church-kazbegi-georgia",
-        "widths": [768, 1200, 1448],
+        "src": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1448.webp",
+        "base": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
         "width": 1448,
         "height": 1086,
         "caption": {
@@ -4345,6 +4462,15 @@ export const tours = [
           "nl": "Gergeti-Drie-eenheidskerk, Kazbegi",
           "cs": "Kostel Nejsvětější Trojice v Gergeti, Kazbegi",
           "pl": "Cerkiew Trójcy Świętej w Gergeti, Kazbegi"
+        },
+        "altText": {
+          "en": "Gergeti Trinity Church on its hilltop below the snow-covered peaks of the Greater Caucasus near Stepantsminda, Georgia",
+          "de": "Die Gergeti-Dreifaltigkeitskirche auf ihrem Hügel unterhalb der schneebedeckten Gipfel des Großen Kaukasus bei Stepanzminda, Georgien",
+          "fr": "L'église de la Trinité de Gergeti sur sa colline, au pied des sommets enneigés du Grand Caucase près de Stepantsminda, Géorgie",
+          "es": "La iglesia de la Trinidad de Gergeti en su colina, bajo las cumbres nevadas del Gran Cáucaso cerca de Stepantsminda, Georgia",
+          "nl": "De Drie-eenheidskerk van Gergeti op haar heuvel onder de besneeuwde toppen van de Grote Kaukasus bij Stepantsminda, Georgië",
+          "cs": "Gergetský kostel Nejsvětější Trojice na svém kopci pod zasněženými vrcholy Velkého Kavkazu u Stepancminda, Gruzie",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti na wzgórzu pod ośnieżonymi szczytami Wielkiego Kaukazu koło Stepancminda, Gruzja"
         }
       },
       {
@@ -5400,15 +5526,15 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
-        "base": "/images/files/svetitskhoveli-cathedral-mtskheta-georgia",
+        "src": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1448.webp",
+        "base": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia",
         "widths": [
           768,
           1200,
-          1540
+          1448
         ],
-        "width": 1540,
-        "height": 1021,
+        "width": 1448,
+        "height": 1086,
         "caption": {
           "en": "Svetitskhoveli Cathedral, Mtskheta",
           "de": "Swetizchoweli-Kathedrale, Mzcheta",
@@ -5419,13 +5545,13 @@ export const tours = [
           "pl": "Katedra Sweticchoweli, Mccheta"
         },
         "altText": {
-          "en": "Svetitskhoveli Cathedral, a UNESCO World Heritage site in Mtskheta, Georgia",
-          "de": "Die Swetizchoweli-Kathedrale, UNESCO-Welterbe in Mzcheta, Georgien",
-          "fr": "La cathédrale de Svétitskhovéli, site du patrimoine mondial de l’UNESCO à Mtskheta, Géorgie",
-          "es": "La catedral de Svetitsjoveli, Patrimonio de la Humanidad de la UNESCO en Mtsjeta, Georgia",
-          "nl": "De Svetitschoveli-kathedraal, UNESCO-werelderfgoed in Mtscheta, Georgië",
-          "cs": "Katedrála Sveticchoveli, památka UNESCO v Mcchetě, Gruzie",
-          "pl": "Katedra Sweticchoweli, obiekt UNESCO w Mcchecie, Gruzja"
+          "en": "Svetitskhoveli Cathedral in Mtskheta, a large church of golden sandstone with arcaded walls and a conical dome under a blue sky, Georgia",
+          "de": "Die Swetizchoweli-Kathedrale in Mzcheta, eine große Kirche aus goldenem Sandstein mit Blendarkaden und Kegelkuppel unter blauem Himmel, Georgien",
+          "fr": "La cathédrale de Svétitskhovéli à Mtskheta, grande église en grès doré à arcatures et coupole conique sous un ciel bleu, Géorgie",
+          "es": "La catedral de Svetitsjoveli en Mtsjeta, una gran iglesia de arenisca dorada con arquerías y cúpula cónica bajo un cielo azul, Georgia",
+          "nl": "De Svetitschoveli-kathedraal in Mtscheta, een grote kerk van goudkleurige zandsteen met arcaden en een kegelvormige koepel onder een blauwe lucht, Georgië",
+          "cs": "Katedrála Sveticchoveli v Mcchetě, velký chrám ze zlatavého pískovce s arkádami a kuželovou kupolí pod modrou oblohou, Gruzie",
+          "pl": "Katedra Sweticchoweli w Mcchecie, duży kościół ze złocistego piaskowca z arkadami i stożkową kopułą pod błękitnym niebem, Gruzja"
         }
       },
       {
@@ -5518,8 +5644,8 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/gergeti-trinity-church-kazbegi-georgia-1448.webp",
-        "base": "/images/files/gergeti-trinity-church-kazbegi-georgia",
+        "src": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1448.webp",
+        "base": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view",
         "widths": [
           768,
           1200,
@@ -5537,13 +5663,13 @@ export const tours = [
           "pl": "Cerkiew Trójcy Świętej w Gergeti, Kazbegi"
         },
         "altText": {
-          "en": "Gergeti Trinity Church set against the Caucasus mountains near Kazbegi, Georgia",
-          "de": "Die Gergeti-Dreifaltigkeitskirche vor der Kulisse des Kaukasus bei Kasbegi, Georgien",
-          "fr": "L'église de la Trinité de Guerguéti devant les montagnes du Caucase près de Kazbegi, Géorgie",
-          "es": "La iglesia de la Trinidad de Gergeti frente a las montañas del Cáucaso, cerca de Kazbegi, Georgia",
-          "nl": "De Gergeti-Drie-eenheidskerk tegen de achtergrond van de Kaukasus bij Kazbegi, Georgië",
-          "cs": "Kostel Nejsvětější Trojice v Gergeti na pozadí Kavkazu poblíž Kazbegi, Gruzie",
-          "pl": "Cerkiew Trójcy Świętej w Gergeti na tle Kaukazu koło Kazbegi, Gruzja"
+          "en": "Gergeti Trinity Church on its hilltop below the snow-covered peaks of the Greater Caucasus near Stepantsminda, Georgia",
+          "de": "Die Gergeti-Dreifaltigkeitskirche auf ihrem Hügel unterhalb der schneebedeckten Gipfel des Großen Kaukasus bei Stepanzminda, Georgien",
+          "fr": "L'église de la Trinité de Gergeti sur sa colline, au pied des sommets enneigés du Grand Caucase près de Stepantsminda, Géorgie",
+          "es": "La iglesia de la Trinidad de Gergeti en su colina, bajo las cumbres nevadas del Gran Cáucaso cerca de Stepantsminda, Georgia",
+          "nl": "De Drie-eenheidskerk van Gergeti op haar heuvel onder de besneeuwde toppen van de Grote Kaukasus bij Stepantsminda, Georgië",
+          "cs": "Gergetský kostel Nejsvětější Trojice na svém kopci pod zasněženými vrcholy Velkého Kavkazu u Stepancminda, Gruzie",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti na wzgórzu pod ośnieżonymi szczytami Wielkiego Kaukazu koło Stepancminda, Gruzja"
         }
       },
       {
@@ -5810,8 +5936,8 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "@id": "https://www.hikasustravel.com/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1200.webp#image",
-        "contentUrl": "https://www.hikasustravel.com/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1200.webp",
+        "@id": "https://www.hikasustravel.com/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1200.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1200.webp",
         "name": "Svetitskhoveli Cathedral, Mtskheta",
         "caption": "Svetitskhoveli Cathedral, Mtskheta",
         "creditText": "Hikasus Travel",
@@ -5878,8 +6004,8 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "@id": "https://www.hikasustravel.com/images/files/gergeti-trinity-church-kazbegi-georgia-1200.webp#image",
-        "contentUrl": "https://www.hikasustravel.com/images/files/gergeti-trinity-church-kazbegi-georgia-1200.webp",
+        "@id": "https://www.hikasustravel.com/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1200.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1200.webp",
         "name": "Gergeti Trinity Church, Kazbegi",
         "caption": "Gergeti Trinity Church, Kazbegi",
         "creditText": "Hikasus Travel",
@@ -6658,9 +6784,12 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/7-day-cultural-kutaisi-tbilisi/mount-kazbek-stepantsminda-georgia/mount-kazbek-stepantsminda-georgia-1024.webp",
-        "base": "/images/tours/7-day-cultural-kutaisi-tbilisi/mount-kazbek-stepantsminda-georgia/mount-kazbek-stepantsminda-georgia",
-        "widths": [768, 1024],
+        "src": "/images/files/mount-kazbek-snow-summit-kazbegi-georgia-1024.webp",
+        "base": "/images/files/mount-kazbek-snow-summit-kazbegi-georgia",
+        "widths": [
+          768,
+          1024
+        ],
         "width": 1024,
         "height": 1536,
         "objectPosition": "center 30%",
@@ -6674,19 +6803,23 @@ export const tours = [
           "pl": "Szczyt Kazbek, Stepancminda"
         },
         "altText": {
-          "en": "Snow-capped Mount Kazbek rising above Stepantsminda village, Georgia",
-          "de": "Der schneebedeckte Kazbek über dem Dorf Stepanzminda, Georgien",
-          "fr": "Le mont Kazbek enneigé dominant le village de Stepantsminda, Géorgie",
-          "es": "El monte Kazbek nevado sobre el pueblo de Stepantsminda, Georgia",
-          "nl": "De besneeuwde Kazbek boven het dorp Stepantsminda, Georgië",
-          "cs": "Zasněžená hora Kazbek nad vesnicí Stepancminda, Gruzie",
-          "pl": "Ośnieżony szczyt Kazbek nad wsią Stepancminda, Gruzja"
+          "en": "Snow-covered Mount Kazbek under a blue sky with wispy clouds, seen from the Stepantsminda area, Georgia",
+          "de": "Der schneebedeckte Kazbek unter blauem Himmel mit zarten Wolkenschleiern, gesehen aus der Gegend von Stepanzminda, Georgien",
+          "fr": "Le mont Kazbek enneigé sous un ciel bleu parsemé de nuages légers, vu depuis la région de Stepantsminda, Géorgie",
+          "es": "El monte Kazbek nevado bajo un cielo azul con nubes ligeras, visto desde los alrededores de Stepantsminda, Georgia",
+          "nl": "De besneeuwde Kazbek onder een blauwe lucht met ijle wolken, gezien vanuit de omgeving van Stepantsminda, Georgië",
+          "cs": "Zasněžená hora Kazbek pod modrou oblohou s řídkými mraky, pohled z okolí Stepancminda, Gruzie",
+          "pl": "Ośnieżony szczyt Kazbek pod błękitnym niebem z cienkimi chmurami, widok z okolic Stepancminda, Gruzja"
         }
       },
       {
-        "src": "/images/tours/7-day-cultural-kutaisi-tbilisi/gergeti-trinity-church-kazbegi-georgia/gergeti-trinity-church-kazbegi-georgia-1448.webp",
-        "base": "/images/tours/7-day-cultural-kutaisi-tbilisi/gergeti-trinity-church-kazbegi-georgia/gergeti-trinity-church-kazbegi-georgia",
-        "widths": [768, 1200, 1448],
+        "src": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1448.webp",
+        "base": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
         "width": 1448,
         "height": 1086,
         "caption": {
@@ -6699,13 +6832,13 @@ export const tours = [
           "pl": "Cerkiew Trójcy Świętej w Gergeti, Kazbegi"
         },
         "altText": {
-          "en": "Gergeti Trinity Church on a hill below the Caucasus peaks near Stepantsminda, Georgia",
-          "de": "Gergeti-Dreifaltigkeitskirche auf einem Hügel unterhalb der Kaukasusgipfel bei Stepanzminda, Georgien",
-          "fr": "Église de la Trinité de Guerguéti sur une colline sous les sommets du Caucase près de Stepantsminda, Géorgie",
-          "es": "Iglesia de la Trinidad de Gergeti en una colina bajo los picos del Cáucaso cerca de Stepantsminda, Georgia",
-          "nl": "Gergeti-Drie-eenheidskerk op een heuvel onder de Kaukasustoppen bij Stepantsminda, Georgië",
-          "cs": "Kostel Nejsvětější Trojice Gergeti na kopci pod vrcholky Kavkazu u Stepancmindy, Gruzie",
-          "pl": "Cerkiew Trójcy Świętej w Gergeti na wzgórzu pod szczytami Kaukazu koło Stepancmindy, Gruzja"
+          "en": "Gergeti Trinity Church on its hilltop below the snow-covered peaks of the Greater Caucasus near Stepantsminda, Georgia",
+          "de": "Die Gergeti-Dreifaltigkeitskirche auf ihrem Hügel unterhalb der schneebedeckten Gipfel des Großen Kaukasus bei Stepanzminda, Georgien",
+          "fr": "L'église de la Trinité de Gergeti sur sa colline, au pied des sommets enneigés du Grand Caucase près de Stepantsminda, Géorgie",
+          "es": "La iglesia de la Trinidad de Gergeti en su colina, bajo las cumbres nevadas del Gran Cáucaso cerca de Stepantsminda, Georgia",
+          "nl": "De Drie-eenheidskerk van Gergeti op haar heuvel onder de besneeuwde toppen van de Grote Kaukasus bij Stepantsminda, Georgië",
+          "cs": "Gergetský kostel Nejsvětější Trojice na svém kopci pod zasněženými vrcholy Velkého Kavkazu u Stepancminda, Gruzie",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti na wzgórzu pod ośnieżonymi szczytami Wielkiego Kaukazu koło Stepancminda, Gruzja"
         }
       },
       {
@@ -6920,7 +7053,7 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/mount-kazbek-stepantsminda-georgia/mount-kazbek-stepantsminda-georgia-1024.webp",
+        "contentUrl": "https://www.hikasustravel.com/images/files/mount-kazbek-snow-summit-kazbegi-georgia-1024.webp",
         "name": "Mount Kazbek, Stepantsminda",
         "caption": "Mount Kazbek, Stepantsminda",
         "creditText": "Hikasus Travel",
@@ -6933,7 +7066,7 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/7-day-cultural-kutaisi-tbilisi/gergeti-trinity-church-kazbegi-georgia/gergeti-trinity-church-kazbegi-georgia-1448.webp",
+        "contentUrl": "https://www.hikasustravel.com/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1448.webp",
         "name": "Gergeti Trinity Church, Kazbegi",
         "caption": "Gergeti Trinity Church, Kazbegi",
         "creditText": "Hikasus Travel",
@@ -7833,11 +7966,15 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/8-day-culture-nature-wine/svetitskhoveli-cathedral-mtskheta-georgia/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
-        "base": "/images/tours/8-day-culture-nature-wine/svetitskhoveli-cathedral-mtskheta-georgia/svetitskhoveli-cathedral-mtskheta-georgia",
-        "widths": [768, 1200, 1540],
-        "width": 1540,
-        "height": 1021,
+        "src": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1448.webp",
+        "base": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
         "caption": {
           "en": "Svetitskhoveli Cathedral, Mtskheta",
           "de": "Swetizchoweli-Kathedrale, Mzcheta",
@@ -7848,13 +7985,13 @@ export const tours = [
           "pl": "Katedra Sweticchoweli, Mccheta"
         },
         "altText": {
-          "en": "Svetitskhoveli Cathedral, a UNESCO World Heritage site in Mtskheta, Georgia",
-          "de": "Swetizchoweli-Kathedrale, UNESCO-Welterbe in Mzcheta, Georgien",
-          "fr": "Cathédrale de Svetitskhoveli, site du patrimoine mondial de l'UNESCO à Mtskheta, Géorgie",
-          "es": "Catedral de Svetitsjoveli, Patrimonio de la Humanidad de la UNESCO en Mtsjeta, Georgia",
-          "nl": "Svetitskhoveli-kathedraal, UNESCO-werelderfgoed in Mtscheta, Georgië",
-          "cs": "Katedrála Sveticchoveli, památka UNESCO ve městě Mccheta, Gruzie",
-          "pl": "Katedra Sweticchoweli, obiekt światowego dziedzictwa UNESCO w Mcchecie, Gruzja"
+          "en": "Svetitskhoveli Cathedral in Mtskheta, a large church of golden sandstone with arcaded walls and a conical dome under a blue sky, Georgia",
+          "de": "Die Swetizchoweli-Kathedrale in Mzcheta, eine große Kirche aus goldenem Sandstein mit Blendarkaden und Kegelkuppel unter blauem Himmel, Georgien",
+          "fr": "La cathédrale de Svétitskhovéli à Mtskheta, grande église en grès doré à arcatures et coupole conique sous un ciel bleu, Géorgie",
+          "es": "La catedral de Svetitsjoveli en Mtsjeta, una gran iglesia de arenisca dorada con arquerías y cúpula cónica bajo un cielo azul, Georgia",
+          "nl": "De Svetitschoveli-kathedraal in Mtscheta, een grote kerk van goudkleurige zandsteen met arcaden en een kegelvormige koepel onder een blauwe lucht, Georgië",
+          "cs": "Katedrála Sveticchoveli v Mcchetě, velký chrám ze zlatavého pískovce s arkádami a kuželovou kupolí pod modrou oblohou, Gruzie",
+          "pl": "Katedra Sweticchoweli w Mcchecie, duży kościół ze złocistego piaskowca z arkadami i stożkową kopułą pod błękitnym niebem, Gruzja"
         }
       },
       {
@@ -7966,9 +8103,13 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/8-day-culture-nature-wine/gergeti-trinity-church-kazbegi-georgia/gergeti-trinity-church-kazbegi-georgia-1448.webp",
-        "base": "/images/tours/8-day-culture-nature-wine/gergeti-trinity-church-kazbegi-georgia/gergeti-trinity-church-kazbegi-georgia",
-        "widths": [768, 1200, 1448],
+        "src": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1448.webp",
+        "base": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
         "width": 1448,
         "height": 1086,
         "caption": {
@@ -7981,13 +8122,13 @@ export const tours = [
           "pl": "Cerkiew Trójcy Świętej w Gergeti, Kazbegi"
         },
         "altText": {
-          "en": "Gergeti Trinity Church on a hill below the Caucasus peaks near Stepantsminda, Georgia",
-          "de": "Gergeti-Dreifaltigkeitskirche auf einem Hügel unterhalb der Kaukasusgipfel bei Stepanzminda, Georgien",
-          "fr": "Église de la Trinité de Guerguéti sur une colline sous les sommets du Caucase près de Stepantsminda, Géorgie",
-          "es": "Iglesia de la Trinidad de Gergeti en una colina bajo los picos del Cáucaso cerca de Stepantsminda, Georgia",
-          "nl": "Gergeti-Drie-eenheidskerk op een heuvel onder de Kaukasustoppen bij Stepantsminda, Georgië",
-          "cs": "Kostel Nejsvětější Trojice Gergeti na kopci pod vrcholky Kavkazu u Stepancmindy, Gruzie",
-          "pl": "Cerkiew Trójcy Świętej w Gergeti na wzgórzu pod szczytami Kaukazu koło Stepancmindy, Gruzja"
+          "en": "Gergeti Trinity Church on its hilltop below the snow-covered peaks of the Greater Caucasus near Stepantsminda, Georgia",
+          "de": "Die Gergeti-Dreifaltigkeitskirche auf ihrem Hügel unterhalb der schneebedeckten Gipfel des Großen Kaukasus bei Stepanzminda, Georgien",
+          "fr": "L'église de la Trinité de Gergeti sur sa colline, au pied des sommets enneigés du Grand Caucase près de Stepantsminda, Géorgie",
+          "es": "La iglesia de la Trinidad de Gergeti en su colina, bajo las cumbres nevadas del Gran Cáucaso cerca de Stepantsminda, Georgia",
+          "nl": "De Drie-eenheidskerk van Gergeti op haar heuvel onder de besneeuwde toppen van de Grote Kaukasus bij Stepantsminda, Georgië",
+          "cs": "Gergetský kostel Nejsvětější Trojice na svém kopci pod zasněženými vrcholy Velkého Kavkazu u Stepancminda, Gruzie",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti na wzgórzu pod ośnieżonymi szczytami Wielkiego Kaukazu koło Stepancminda, Gruzja"
         }
       },
       {
@@ -8228,7 +8369,7 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-culture-nature-wine/svetitskhoveli-cathedral-mtskheta-georgia/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
+        "contentUrl": "https://www.hikasustravel.com/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1448.webp",
         "name": "Svetitskhoveli Cathedral, Mtskheta",
         "caption": "Svetitskhoveli Cathedral, Mtskheta",
         "creditText": "Hikasus Travel",
@@ -8293,7 +8434,7 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/8-day-culture-nature-wine/gergeti-trinity-church-kazbegi-georgia/gergeti-trinity-church-kazbegi-georgia-1448.webp",
+        "contentUrl": "https://www.hikasustravel.com/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1448.webp",
         "name": "Gergeti Trinity Church, Kazbegi",
         "caption": "Gergeti Trinity Church, Kazbegi",
         "creditText": "Hikasus Travel",
@@ -9116,11 +9257,15 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/8-day-culture-adventure/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
-        "base": "/images/tours/8-day-culture-adventure/svetitskhoveli-cathedral-mtskheta-georgia",
-        "widths": [768, 1200, 1540],
-        "width": 1540,
-        "height": 1021,
+        "src": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1448.webp",
+        "base": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
         "caption": {
           "en": "Svetitskhoveli Cathedral, Mtskheta",
           "de": "Swetizchoweli-Kathedrale, Mzcheta",
@@ -9129,6 +9274,15 @@ export const tours = [
           "nl": "Svetitschoveli-kathedraal, Mtscheta",
           "cs": "Katedrála Sveticchoveli, Mccheta",
           "pl": "Katedra Sweticchoweli, Mccheta"
+        },
+        "altText": {
+          "en": "Svetitskhoveli Cathedral in Mtskheta, a large church of golden sandstone with arcaded walls and a conical dome under a blue sky, Georgia",
+          "de": "Die Swetizchoweli-Kathedrale in Mzcheta, eine große Kirche aus goldenem Sandstein mit Blendarkaden und Kegelkuppel unter blauem Himmel, Georgien",
+          "fr": "La cathédrale de Svétitskhovéli à Mtskheta, grande église en grès doré à arcatures et coupole conique sous un ciel bleu, Géorgie",
+          "es": "La catedral de Svetitsjoveli en Mtsjeta, una gran iglesia de arenisca dorada con arquerías y cúpula cónica bajo un cielo azul, Georgia",
+          "nl": "De Svetitschoveli-kathedraal in Mtscheta, een grote kerk van goudkleurige zandsteen met arcaden en een kegelvormige koepel onder een blauwe lucht, Georgië",
+          "cs": "Katedrála Sveticchoveli v Mcchetě, velký chrám ze zlatavého pískovce s arkádami a kuželovou kupolí pod modrou oblohou, Gruzie",
+          "pl": "Katedra Sweticchoweli w Mcchecie, duży kościół ze złocistego piaskowca z arkadami i stożkową kopułą pod błękitnym niebem, Gruzja"
         }
       },
       {
@@ -9238,9 +9392,13 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/8-day-culture-adventure/gergeti-trinity-church-kazbegi-georgia-1448.webp",
-        "base": "/images/tours/8-day-culture-adventure/gergeti-trinity-church-kazbegi-georgia",
-        "widths": [768, 1200, 1448],
+        "src": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1448.webp",
+        "base": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
         "width": 1448,
         "height": 1086,
         "caption": {
@@ -9251,6 +9409,15 @@ export const tours = [
           "nl": "Gergeti-Drie-eenheidskerk, Kazbegi",
           "cs": "Kostel Nejsvětější Trojice v Gergeti, Kazbegi",
           "pl": "Cerkiew Trójcy Świętej w Gergeti, Kazbegi"
+        },
+        "altText": {
+          "en": "Gergeti Trinity Church on its hilltop below the snow-covered peaks of the Greater Caucasus near Stepantsminda, Georgia",
+          "de": "Die Gergeti-Dreifaltigkeitskirche auf ihrem Hügel unterhalb der schneebedeckten Gipfel des Großen Kaukasus bei Stepanzminda, Georgien",
+          "fr": "L'église de la Trinité de Gergeti sur sa colline, au pied des sommets enneigés du Grand Caucase près de Stepantsminda, Géorgie",
+          "es": "La iglesia de la Trinidad de Gergeti en su colina, bajo las cumbres nevadas del Gran Cáucaso cerca de Stepantsminda, Georgia",
+          "nl": "De Drie-eenheidskerk van Gergeti op haar heuvel onder de besneeuwde toppen van de Grote Kaukasus bij Stepantsminda, Georgië",
+          "cs": "Gergetský kostel Nejsvětější Trojice na svém kopci pod zasněženými vrcholy Velkého Kavkazu u Stepancminda, Gruzie",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti na wzgórzu pod ośnieżonymi szczytami Wielkiego Kaukazu koło Stepancminda, Gruzja"
         }
       },
       {
@@ -10510,11 +10677,15 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/9-day-kutaisi-tbilisi/svetitskhoveli-cathedral-mtskheta-georgia/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
-        "base": "/images/tours/9-day-kutaisi-tbilisi/svetitskhoveli-cathedral-mtskheta-georgia/svetitskhoveli-cathedral-mtskheta-georgia",
-        "widths": [768, 1200, 1540],
-        "width": 1540,
-        "height": 1021,
+        "src": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1448.webp",
+        "base": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
         "caption": {
           "en": "Svetitskhoveli Cathedral, Mtskheta",
           "de": "Swetizchoweli-Kathedrale, Mzcheta",
@@ -10525,13 +10696,13 @@ export const tours = [
           "pl": "Katedra Sweticchoweli, Mccheta"
         },
         "altText": {
-          "en": "Svetitskhoveli Cathedral, a UNESCO World Heritage site in Mtskheta, Georgia",
-          "de": "Swetizchoweli-Kathedrale, UNESCO-Welterbe in Mzcheta, Georgien",
-          "fr": "Cathédrale de Svetitskhoveli, site du patrimoine mondial de l'UNESCO à Mtskheta, Géorgie",
-          "es": "Catedral de Svetitsjoveli, Patrimonio de la Humanidad de la UNESCO en Mtsjeta, Georgia",
-          "nl": "Svetitskhoveli-kathedraal, UNESCO-werelderfgoed in Mtscheta, Georgië",
-          "cs": "Katedrála Sveticchoveli, památka UNESCO ve městě Mccheta, Gruzie",
-          "pl": "Katedra Sweticchoweli, obiekt światowego dziedzictwa UNESCO w Mcchecie, Gruzja"
+          "en": "Svetitskhoveli Cathedral in Mtskheta, a large church of golden sandstone with arcaded walls and a conical dome under a blue sky, Georgia",
+          "de": "Die Swetizchoweli-Kathedrale in Mzcheta, eine große Kirche aus goldenem Sandstein mit Blendarkaden und Kegelkuppel unter blauem Himmel, Georgien",
+          "fr": "La cathédrale de Svétitskhovéli à Mtskheta, grande église en grès doré à arcatures et coupole conique sous un ciel bleu, Géorgie",
+          "es": "La catedral de Svetitsjoveli en Mtsjeta, una gran iglesia de arenisca dorada con arquerías y cúpula cónica bajo un cielo azul, Georgia",
+          "nl": "De Svetitschoveli-kathedraal in Mtscheta, een grote kerk van goudkleurige zandsteen met arcaden en een kegelvormige koepel onder een blauwe lucht, Georgië",
+          "cs": "Katedrála Sveticchoveli v Mcchetě, velký chrám ze zlatavého pískovce s arkádami a kuželovou kupolí pod modrou oblohou, Gruzie",
+          "pl": "Katedra Sweticchoweli w Mcchecie, duży kościół ze złocistego piaskowca z arkadami i stożkową kopułą pod błękitnym niebem, Gruzja"
         }
       },
       {
@@ -10668,9 +10839,12 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/9-day-kutaisi-tbilisi/mount-kazbek-stepantsminda-georgia/mount-kazbek-stepantsminda-georgia-1024.webp",
-        "base": "/images/tours/9-day-kutaisi-tbilisi/mount-kazbek-stepantsminda-georgia/mount-kazbek-stepantsminda-georgia",
-        "widths": [768, 1024],
+        "src": "/images/files/mount-kazbek-snow-summit-kazbegi-georgia-1024.webp",
+        "base": "/images/files/mount-kazbek-snow-summit-kazbegi-georgia",
+        "widths": [
+          768,
+          1024
+        ],
         "width": 1024,
         "height": 1536,
         "objectPosition": "center 30%",
@@ -10684,19 +10858,23 @@ export const tours = [
           "pl": "Szczyt Kazbek, Stepancminda"
         },
         "altText": {
-          "en": "Snow-capped Mount Kazbek rising above Stepantsminda village, Georgia",
-          "de": "Der schneebedeckte Kazbek über dem Dorf Stepanzminda, Georgien",
-          "fr": "Le mont Kazbek enneigé dominant le village de Stepantsminda, Géorgie",
-          "es": "El monte Kazbek nevado sobre el pueblo de Stepantsminda, Georgia",
-          "nl": "De besneeuwde Kazbek boven het dorp Stepantsminda, Georgië",
-          "cs": "Zasněžená hora Kazbek nad vesnicí Stepancminda, Gruzie",
-          "pl": "Ośnieżony szczyt Kazbek nad wsią Stepancminda, Gruzja"
+          "en": "Snow-covered Mount Kazbek under a blue sky with wispy clouds, seen from the Stepantsminda area, Georgia",
+          "de": "Der schneebedeckte Kazbek unter blauem Himmel mit zarten Wolkenschleiern, gesehen aus der Gegend von Stepanzminda, Georgien",
+          "fr": "Le mont Kazbek enneigé sous un ciel bleu parsemé de nuages légers, vu depuis la région de Stepantsminda, Géorgie",
+          "es": "El monte Kazbek nevado bajo un cielo azul con nubes ligeras, visto desde los alrededores de Stepantsminda, Georgia",
+          "nl": "De besneeuwde Kazbek onder een blauwe lucht met ijle wolken, gezien vanuit de omgeving van Stepantsminda, Georgië",
+          "cs": "Zasněžená hora Kazbek pod modrou oblohou s řídkými mraky, pohled z okolí Stepancminda, Gruzie",
+          "pl": "Ośnieżony szczyt Kazbek pod błękitnym niebem z cienkimi chmurami, widok z okolic Stepancminda, Gruzja"
         }
       },
       {
-        "src": "/images/tours/9-day-kutaisi-tbilisi/gergeti-trinity-church-kazbegi-georgia/gergeti-trinity-church-kazbegi-georgia-1448.webp",
-        "base": "/images/tours/9-day-kutaisi-tbilisi/gergeti-trinity-church-kazbegi-georgia/gergeti-trinity-church-kazbegi-georgia",
-        "widths": [768, 1200, 1448],
+        "src": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1448.webp",
+        "base": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
         "width": 1448,
         "height": 1086,
         "caption": {
@@ -10709,13 +10887,13 @@ export const tours = [
           "pl": "Cerkiew Trójcy Świętej w Gergeti, Kazbegi"
         },
         "altText": {
-          "en": "Gergeti Trinity Church on a hill below the Caucasus peaks near Stepantsminda, Georgia",
-          "de": "Gergeti-Dreifaltigkeitskirche auf einem Hügel unterhalb der Kaukasusgipfel bei Stepanzminda, Georgien",
-          "fr": "Église de la Trinité de Guerguéti sur une colline sous les sommets du Caucase près de Stepantsminda, Géorgie",
-          "es": "Iglesia de la Trinidad de Gergeti en una colina bajo los picos del Cáucaso cerca de Stepantsminda, Georgia",
-          "nl": "Gergeti-Drie-eenheidskerk op een heuvel onder de Kaukasustoppen bij Stepantsminda, Georgië",
-          "cs": "Kostel Nejsvětější Trojice Gergeti na kopci pod vrcholky Kavkazu u Stepancmindy, Gruzie",
-          "pl": "Cerkiew Trójcy Świętej w Gergeti na wzgórzu pod szczytami Kaukazu koło Stepancmindy, Gruzja"
+          "en": "Gergeti Trinity Church on its hilltop below the snow-covered peaks of the Greater Caucasus near Stepantsminda, Georgia",
+          "de": "Die Gergeti-Dreifaltigkeitskirche auf ihrem Hügel unterhalb der schneebedeckten Gipfel des Großen Kaukasus bei Stepanzminda, Georgien",
+          "fr": "L'église de la Trinité de Gergeti sur sa colline, au pied des sommets enneigés du Grand Caucase près de Stepantsminda, Géorgie",
+          "es": "La iglesia de la Trinidad de Gergeti en su colina, bajo las cumbres nevadas del Gran Cáucaso cerca de Stepantsminda, Georgia",
+          "nl": "De Drie-eenheidskerk van Gergeti op haar heuvel onder de besneeuwde toppen van de Grote Kaukasus bij Stepantsminda, Georgië",
+          "cs": "Gergetský kostel Nejsvětější Trojice na svém kopci pod zasněženými vrcholy Velkého Kavkazu u Stepancminda, Gruzie",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti na wzgórzu pod ośnieżonymi szczytami Wielkiego Kaukazu koło Stepancminda, Gruzja"
         }
       },
       {
@@ -10932,7 +11110,7 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/9-day-kutaisi-tbilisi/svetitskhoveli-cathedral-mtskheta-georgia/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
+        "contentUrl": "https://www.hikasustravel.com/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1448.webp",
         "name": "Svetitskhoveli Cathedral, Mtskheta",
         "caption": "Svetitskhoveli Cathedral, Mtskheta",
         "creditText": "Hikasus Travel",
@@ -11004,7 +11182,7 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/9-day-kutaisi-tbilisi/mount-kazbek-stepantsminda-georgia/mount-kazbek-stepantsminda-georgia-1024.webp",
+        "contentUrl": "https://www.hikasustravel.com/images/files/mount-kazbek-snow-summit-kazbegi-georgia-1024.webp",
         "name": "Mount Kazbek, Stepantsminda",
         "caption": "Mount Kazbek, Stepantsminda",
         "creditText": "Hikasus Travel",
@@ -11016,7 +11194,7 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/9-day-kutaisi-tbilisi/gergeti-trinity-church-kazbegi-georgia/gergeti-trinity-church-kazbegi-georgia-1448.webp",
+        "contentUrl": "https://www.hikasustravel.com/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1448.webp",
         "name": "Gergeti Trinity Church, Kazbegi",
         "caption": "Gergeti Trinity Church, Kazbegi",
         "creditText": "Hikasus Travel",
@@ -11377,11 +11555,15 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/grand-tour-tbilisi-batumi/svetitskhoveli-cathedral-mtskheta-georgia/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
-        "base": "/images/tours/grand-tour-tbilisi-batumi/svetitskhoveli-cathedral-mtskheta-georgia/svetitskhoveli-cathedral-mtskheta-georgia",
-        "widths": [768, 1200, 1540],
-        "width": 1540,
-        "height": 1021,
+        "src": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1448.webp",
+        "base": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
         "caption": {
           "en": "Svetitskhoveli Cathedral, Mtskheta",
           "de": "Swetizchoweli-Kathedrale, Mzcheta",
@@ -11392,13 +11574,13 @@ export const tours = [
           "pl": "Katedra Sweticchoweli, Mccheta"
         },
         "altText": {
-          "en": "Svetitskhoveli Cathedral, a UNESCO World Heritage site in Mtskheta, Georgia",
-          "de": "Swetizchoweli-Kathedrale, UNESCO-Welterbe in Mzcheta, Georgien",
-          "fr": "Cathédrale de Svetitskhoveli, site du patrimoine mondial de l'UNESCO à Mtskheta, Géorgie",
-          "es": "Catedral de Svetitsjoveli, Patrimonio de la Humanidad de la UNESCO en Mtsjeta, Georgia",
-          "nl": "Svetitskhoveli-kathedraal, UNESCO-werelderfgoed in Mtscheta, Georgië",
-          "cs": "Katedrála Sveticchoveli, památka UNESCO ve městě Mccheta, Gruzie",
-          "pl": "Katedra Sweticchoweli, obiekt światowego dziedzictwa UNESCO w Mcchecie, Gruzja"
+          "en": "Svetitskhoveli Cathedral in Mtskheta, a large church of golden sandstone with arcaded walls and a conical dome under a blue sky, Georgia",
+          "de": "Die Swetizchoweli-Kathedrale in Mzcheta, eine große Kirche aus goldenem Sandstein mit Blendarkaden und Kegelkuppel unter blauem Himmel, Georgien",
+          "fr": "La cathédrale de Svétitskhovéli à Mtskheta, grande église en grès doré à arcatures et coupole conique sous un ciel bleu, Géorgie",
+          "es": "La catedral de Svetitsjoveli en Mtsjeta, una gran iglesia de arenisca dorada con arquerías y cúpula cónica bajo un cielo azul, Georgia",
+          "nl": "De Svetitschoveli-kathedraal in Mtscheta, een grote kerk van goudkleurige zandsteen met arcaden en een kegelvormige koepel onder een blauwe lucht, Georgië",
+          "cs": "Katedrála Sveticchoveli v Mcchetě, velký chrám ze zlatavého pískovce s arkádami a kuželovou kupolí pod modrou oblohou, Gruzie",
+          "pl": "Katedra Sweticchoweli w Mcchecie, duży kościół ze złocistego piaskowca z arkadami i stożkową kopułą pod błękitnym niebem, Gruzja"
         }
       },
       {
@@ -11812,7 +11994,7 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/grand-tour-tbilisi-batumi/svetitskhoveli-cathedral-mtskheta-georgia/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
+        "contentUrl": "https://www.hikasustravel.com/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1448.webp",
         "name": "Svetitskhoveli Cathedral, Mtskheta",
         "caption": "Svetitskhoveli Cathedral, Mtskheta",
         "creditText": "Hikasus Travel",
@@ -12541,11 +12723,15 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
-        "base": "/images/files/svetitskhoveli-cathedral-mtskheta-georgia",
-        "widths": [768, 1200, 1540],
-        "width": 1540,
-        "height": 1021,
+        "src": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1448.webp",
+        "base": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
         "caption": {
           "en": "Svetitskhoveli Cathedral, Mtskheta",
           "de": "Swetizchoweli-Kathedrale, Mzcheta",
@@ -12556,13 +12742,13 @@ export const tours = [
           "pl": "Katedra Sweticchoweli, Mccheta"
         },
         "altText": {
-          "en": "Svetitskhoveli Cathedral, a UNESCO World Heritage site in Mtskheta, Georgia",
-          "de": "Die Swetizchoweli-Kathedrale, UNESCO-Welterbe in Mzcheta, Georgien",
-          "fr": "La cathédrale de Svétitskhovéli, site du patrimoine mondial de l’UNESCO à Mtskheta, Géorgie",
-          "es": "La catedral de Svetitsjoveli, Patrimonio de la Humanidad de la UNESCO en Mtsjeta, Georgia",
-          "nl": "De Svetitschoveli-kathedraal, UNESCO-werelderfgoed in Mtscheta, Georgië",
-          "cs": "Katedrála Sveticchoveli, památka UNESCO v Mcchetě, Gruzie",
-          "pl": "Katedra Sweticchoweli, obiekt UNESCO w Mcchecie, Gruzja"
+          "en": "Svetitskhoveli Cathedral in Mtskheta, a large church of golden sandstone with arcaded walls and a conical dome under a blue sky, Georgia",
+          "de": "Die Swetizchoweli-Kathedrale in Mzcheta, eine große Kirche aus goldenem Sandstein mit Blendarkaden und Kegelkuppel unter blauem Himmel, Georgien",
+          "fr": "La cathédrale de Svétitskhovéli à Mtskheta, grande église en grès doré à arcatures et coupole conique sous un ciel bleu, Géorgie",
+          "es": "La catedral de Svetitsjoveli en Mtsjeta, una gran iglesia de arenisca dorada con arquerías y cúpula cónica bajo un cielo azul, Georgia",
+          "nl": "De Svetitschoveli-kathedraal in Mtscheta, een grote kerk van goudkleurige zandsteen met arcaden en een kegelvormige koepel onder een blauwe lucht, Georgië",
+          "cs": "Katedrála Sveticchoveli v Mcchetě, velký chrám ze zlatavého pískovce s arkádami a kuželovou kupolí pod modrou oblohou, Gruzie",
+          "pl": "Katedra Sweticchoweli w Mcchecie, duży kościół ze złocistego piaskowca z arkadami i stożkową kopułą pod błękitnym niebem, Gruzja"
         }
       },
       {
@@ -12641,9 +12827,13 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/gergeti-trinity-church-kazbegi-georgia-1448.webp",
-        "base": "/images/files/gergeti-trinity-church-kazbegi-georgia",
-        "widths": [768, 1200, 1448],
+        "src": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1448.webp",
+        "base": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
         "width": 1448,
         "height": 1086,
         "caption": {
@@ -12656,13 +12846,13 @@ export const tours = [
           "pl": "Cerkiew Trójcy Świętej w Gergeti, Kazbegi"
         },
         "altText": {
-          "en": "Gergeti Trinity Church set against the Caucasus mountains near Kazbegi, Georgia",
-          "de": "Die Gergeti-Dreifaltigkeitskirche vor der Kulisse des Kaukasus bei Kasbegi, Georgien",
-          "fr": "L'église de la Trinité de Guerguéti devant les montagnes du Caucase près de Kazbegi, Géorgie",
-          "es": "La iglesia de la Trinidad de Gergeti frente a las montañas del Cáucaso, cerca de Kazbegi, Georgia",
-          "nl": "De Gergeti-Drie-eenheidskerk tegen de achtergrond van de Kaukasus bij Kazbegi, Georgië",
-          "cs": "Kostel Nejsvětější Trojice v Gergeti na pozadí Kavkazu poblíž Kazbegi, Gruzie",
-          "pl": "Cerkiew Trójcy Świętej w Gergeti na tle Kaukazu koło Kazbegi, Gruzja"
+          "en": "Gergeti Trinity Church on its hilltop below the snow-covered peaks of the Greater Caucasus near Stepantsminda, Georgia",
+          "de": "Die Gergeti-Dreifaltigkeitskirche auf ihrem Hügel unterhalb der schneebedeckten Gipfel des Großen Kaukasus bei Stepanzminda, Georgien",
+          "fr": "L'église de la Trinité de Gergeti sur sa colline, au pied des sommets enneigés du Grand Caucase près de Stepantsminda, Géorgie",
+          "es": "La iglesia de la Trinidad de Gergeti en su colina, bajo las cumbres nevadas del Gran Cáucaso cerca de Stepantsminda, Georgia",
+          "nl": "De Drie-eenheidskerk van Gergeti op haar heuvel onder de besneeuwde toppen van de Grote Kaukasus bij Stepantsminda, Georgië",
+          "cs": "Gergetský kostel Nejsvětější Trojice na svém kopci pod zasněženými vrcholy Velkého Kavkazu u Stepancminda, Gruzie",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti na wzgórzu pod ośnieżonymi szczytami Wielkiego Kaukazu koło Stepancminda, Gruzja"
         }
       },
       {
@@ -12957,8 +13147,8 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "@id": "https://www.hikasustravel.com/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1200.webp#image",
-        "contentUrl": "https://www.hikasustravel.com/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1200.webp",
+        "@id": "https://www.hikasustravel.com/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1200.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1200.webp",
         "name": "Svetitskhoveli Cathedral, Mtskheta",
         "caption": "Svetitskhoveli Cathedral, Mtskheta",
         "creditText": "Hikasus Travel",
@@ -13025,8 +13215,8 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "@id": "https://www.hikasustravel.com/images/files/gergeti-trinity-church-kazbegi-georgia-1200.webp#image",
-        "contentUrl": "https://www.hikasustravel.com/images/files/gergeti-trinity-church-kazbegi-georgia-1200.webp",
+        "@id": "https://www.hikasustravel.com/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1200.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1200.webp",
         "name": "Gergeti Trinity Church, Kazbegi",
         "caption": "Gergeti Trinity Church, Kazbegi",
         "creditText": "Hikasus Travel",
@@ -13725,9 +13915,13 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/georgia-10-days-celebration/gergeti-trinity-church-kazbegi-georgia/gergeti-trinity-church-kazbegi-georgia-1448.webp",
-        "base": "/images/tours/georgia-10-days-celebration/gergeti-trinity-church-kazbegi-georgia/gergeti-trinity-church-kazbegi-georgia",
-        "widths": [768, 1200, 1448],
+        "src": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1448.webp",
+        "base": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
         "width": 1448,
         "height": 1086,
         "caption": {
@@ -13740,19 +13934,22 @@ export const tours = [
           "pl": "Cerkiew Trójcy Świętej w Gergeti, Kazbegi"
         },
         "altText": {
-          "en": "Gergeti Trinity Church on a hill below the Caucasus peaks near Stepantsminda, Georgia",
-          "de": "Gergeti-Dreifaltigkeitskirche auf einem Hügel unterhalb der Kaukasusgipfel bei Stepanzminda, Georgien",
-          "fr": "Église de la Trinité de Guerguéti sur une colline sous les sommets du Caucase près de Stepantsminda, Géorgie",
-          "es": "Iglesia de la Trinidad de Gergeti en una colina bajo los picos del Cáucaso cerca de Stepantsminda, Georgia",
-          "nl": "Gergeti-Drie-eenheidskerk op een heuvel onder de Kaukasustoppen bij Stepantsminda, Georgië",
-          "cs": "Kostel Nejsvětější Trojice Gergeti na kopci pod vrcholky Kavkazu u Stepancmindy, Gruzie",
-          "pl": "Cerkiew Trójcy Świętej w Gergeti na wzgórzu pod szczytami Kaukazu koło Stepancmindy, Gruzja"
+          "en": "Gergeti Trinity Church on its hilltop below the snow-covered peaks of the Greater Caucasus near Stepantsminda, Georgia",
+          "de": "Die Gergeti-Dreifaltigkeitskirche auf ihrem Hügel unterhalb der schneebedeckten Gipfel des Großen Kaukasus bei Stepanzminda, Georgien",
+          "fr": "L'église de la Trinité de Gergeti sur sa colline, au pied des sommets enneigés du Grand Caucase près de Stepantsminda, Géorgie",
+          "es": "La iglesia de la Trinidad de Gergeti en su colina, bajo las cumbres nevadas del Gran Cáucaso cerca de Stepantsminda, Georgia",
+          "nl": "De Drie-eenheidskerk van Gergeti op haar heuvel onder de besneeuwde toppen van de Grote Kaukasus bij Stepantsminda, Georgië",
+          "cs": "Gergetský kostel Nejsvětější Trojice na svém kopci pod zasněženými vrcholy Velkého Kavkazu u Stepancminda, Gruzie",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti na wzgórzu pod ośnieżonymi szczytami Wielkiego Kaukazu koło Stepancminda, Gruzja"
         }
       },
       {
-        "src": "/images/tours/georgia-10-days-celebration/mount-kazbek-stepantsminda-georgia/mount-kazbek-stepantsminda-georgia-1024.webp",
-        "base": "/images/tours/georgia-10-days-celebration/mount-kazbek-stepantsminda-georgia/mount-kazbek-stepantsminda-georgia",
-        "widths": [768, 1024],
+        "src": "/images/files/mount-kazbek-snow-summit-kazbegi-georgia-1024.webp",
+        "base": "/images/files/mount-kazbek-snow-summit-kazbegi-georgia",
+        "widths": [
+          768,
+          1024
+        ],
         "width": 1024,
         "height": 1536,
         "objectPosition": "center 30%",
@@ -13766,13 +13963,13 @@ export const tours = [
           "pl": "Szczyt Kazbek, Stepancminda"
         },
         "altText": {
-          "en": "Snow-capped Mount Kazbek rising above Stepantsminda village, Georgia",
-          "de": "Der schneebedeckte Kazbek über dem Dorf Stepanzminda, Georgien",
-          "fr": "Le mont Kazbek enneigé dominant le village de Stepantsminda, Géorgie",
-          "es": "El monte Kazbek nevado sobre el pueblo de Stepantsminda, Georgia",
-          "nl": "De besneeuwde Kazbek boven het dorp Stepantsminda, Georgië",
-          "cs": "Zasněžená hora Kazbek nad vesnicí Stepancminda, Gruzie",
-          "pl": "Ośnieżony szczyt Kazbek nad wsią Stepancminda, Gruzja"
+          "en": "Snow-covered Mount Kazbek under a blue sky with wispy clouds, seen from the Stepantsminda area, Georgia",
+          "de": "Der schneebedeckte Kazbek unter blauem Himmel mit zarten Wolkenschleiern, gesehen aus der Gegend von Stepanzminda, Georgien",
+          "fr": "Le mont Kazbek enneigé sous un ciel bleu parsemé de nuages légers, vu depuis la région de Stepantsminda, Géorgie",
+          "es": "El monte Kazbek nevado bajo un cielo azul con nubes ligeras, visto desde los alrededores de Stepantsminda, Georgia",
+          "nl": "De besneeuwde Kazbek onder een blauwe lucht met ijle wolken, gezien vanuit de omgeving van Stepantsminda, Georgië",
+          "cs": "Zasněžená hora Kazbek pod modrou oblohou s řídkými mraky, pohled z okolí Stepancminda, Gruzie",
+          "pl": "Ośnieżony szczyt Kazbek pod błękitnym niebem z cienkimi chmurami, widok z okolic Stepancminda, Gruzja"
         }
       },
       {
@@ -14163,7 +14360,7 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-10-days-celebration/gergeti-trinity-church-kazbegi-georgia/gergeti-trinity-church-kazbegi-georgia-1448.webp",
+        "contentUrl": "https://www.hikasustravel.com/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1448.webp",
         "name": "Gergeti Trinity Church, Kazbegi",
         "caption": "Gergeti Trinity Church, Kazbegi",
         "creditText": "Hikasus Travel",
@@ -14176,7 +14373,7 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-10-days-celebration/mount-kazbek-stepantsminda-georgia/mount-kazbek-stepantsminda-georgia-1024.webp",
+        "contentUrl": "https://www.hikasustravel.com/images/files/mount-kazbek-snow-summit-kazbegi-georgia-1024.webp",
         "name": "Mount Kazbek, Stepantsminda",
         "caption": "Mount Kazbek, Stepantsminda",
         "creditText": "Hikasus Travel",
@@ -15125,11 +15322,15 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/georgia-wonders-11-day/svetitskhoveli-cathedral-mtskheta-georgia/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
-        "base": "/images/tours/georgia-wonders-11-day/svetitskhoveli-cathedral-mtskheta-georgia/svetitskhoveli-cathedral-mtskheta-georgia",
-        "widths": [768, 1200, 1540],
-        "width": 1540,
-        "height": 1021,
+        "src": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1448.webp",
+        "base": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
         "caption": {
           "en": "Svetitskhoveli Cathedral, Mtskheta",
           "de": "Swetizchoweli-Kathedrale, Mzcheta",
@@ -15140,13 +15341,13 @@ export const tours = [
           "pl": "Katedra Sweticchoweli, Mccheta"
         },
         "altText": {
-          "en": "Svetitskhoveli Cathedral, a UNESCO World Heritage site in Mtskheta, Georgia",
-          "de": "Swetizchoweli-Kathedrale, UNESCO-Welterbe in Mzcheta, Georgien",
-          "fr": "Cathédrale de Svetitskhoveli, site du patrimoine mondial de l'UNESCO à Mtskheta, Géorgie",
-          "es": "Catedral de Svetitsjoveli, Patrimonio de la Humanidad de la UNESCO en Mtsjeta, Georgia",
-          "nl": "Svetitskhoveli-kathedraal, UNESCO-werelderfgoed in Mtscheta, Georgië",
-          "cs": "Katedrála Sveticchoveli, památka UNESCO ve městě Mccheta, Gruzie",
-          "pl": "Katedra Sweticchoweli, obiekt światowego dziedzictwa UNESCO w Mcchecie, Gruzja"
+          "en": "Svetitskhoveli Cathedral in Mtskheta, a large church of golden sandstone with arcaded walls and a conical dome under a blue sky, Georgia",
+          "de": "Die Swetizchoweli-Kathedrale in Mzcheta, eine große Kirche aus goldenem Sandstein mit Blendarkaden und Kegelkuppel unter blauem Himmel, Georgien",
+          "fr": "La cathédrale de Svétitskhovéli à Mtskheta, grande église en grès doré à arcatures et coupole conique sous un ciel bleu, Géorgie",
+          "es": "La catedral de Svetitsjoveli en Mtsjeta, una gran iglesia de arenisca dorada con arquerías y cúpula cónica bajo un cielo azul, Georgia",
+          "nl": "De Svetitschoveli-kathedraal in Mtscheta, een grote kerk van goudkleurige zandsteen met arcaden en een kegelvormige koepel onder een blauwe lucht, Georgië",
+          "cs": "Katedrála Sveticchoveli v Mcchetě, velký chrám ze zlatavého pískovce s arkádami a kuželovou kupolí pod modrou oblohou, Gruzie",
+          "pl": "Katedra Sweticchoweli w Mcchecie, duży kościół ze złocistego piaskowca z arkadami i stożkową kopułą pod błękitnym niebem, Gruzja"
         }
       },
       {
@@ -15233,9 +15434,13 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/georgia-wonders-11-day/gergeti-trinity-church-kazbegi-georgia/gergeti-trinity-church-kazbegi-georgia-1448.webp",
-        "base": "/images/tours/georgia-wonders-11-day/gergeti-trinity-church-kazbegi-georgia/gergeti-trinity-church-kazbegi-georgia",
-        "widths": [768, 1200, 1448],
+        "src": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1448.webp",
+        "base": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
         "width": 1448,
         "height": 1086,
         "caption": {
@@ -15248,13 +15453,13 @@ export const tours = [
           "pl": "Cerkiew Trójcy Świętej w Gergeti, Kazbegi"
         },
         "altText": {
-          "en": "Gergeti Trinity Church on a hill below the Caucasus peaks near Stepantsminda, Georgia",
-          "de": "Gergeti-Dreifaltigkeitskirche auf einem Hügel unterhalb der Kaukasusgipfel bei Stepanzminda, Georgien",
-          "fr": "Église de la Trinité de Guerguéti sur une colline sous les sommets du Caucase près de Stepantsminda, Géorgie",
-          "es": "Iglesia de la Trinidad de Gergeti en una colina bajo los picos del Cáucaso cerca de Stepantsminda, Georgia",
-          "nl": "Gergeti-Drie-eenheidskerk op een heuvel onder de Kaukasustoppen bij Stepantsminda, Georgië",
-          "cs": "Kostel Nejsvětější Trojice Gergeti na kopci pod vrcholky Kavkazu u Stepancmindy, Gruzie",
-          "pl": "Cerkiew Trójcy Świętej w Gergeti na wzgórzu pod szczytami Kaukazu koło Stepancmindy, Gruzja"
+          "en": "Gergeti Trinity Church on its hilltop below the snow-covered peaks of the Greater Caucasus near Stepantsminda, Georgia",
+          "de": "Die Gergeti-Dreifaltigkeitskirche auf ihrem Hügel unterhalb der schneebedeckten Gipfel des Großen Kaukasus bei Stepanzminda, Georgien",
+          "fr": "L'église de la Trinité de Gergeti sur sa colline, au pied des sommets enneigés du Grand Caucase près de Stepantsminda, Géorgie",
+          "es": "La iglesia de la Trinidad de Gergeti en su colina, bajo las cumbres nevadas del Gran Cáucaso cerca de Stepantsminda, Georgia",
+          "nl": "De Drie-eenheidskerk van Gergeti op haar heuvel onder de besneeuwde toppen van de Grote Kaukasus bij Stepantsminda, Georgië",
+          "cs": "Gergetský kostel Nejsvětější Trojice na svém kopci pod zasněženými vrcholy Velkého Kavkazu u Stepancminda, Gruzie",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti na wzgórzu pod ośnieżonymi szczytami Wielkiego Kaukazu koło Stepancminda, Gruzja"
         }
       },
       {
@@ -15508,7 +15713,7 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-wonders-11-day/svetitskhoveli-cathedral-mtskheta-georgia/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
+        "contentUrl": "https://www.hikasustravel.com/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1448.webp",
         "name": "Svetitskhoveli Cathedral, Mtskheta",
         "caption": "Svetitskhoveli Cathedral, Mtskheta",
         "creditText": "Hikasus Travel",
@@ -15560,7 +15765,7 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/georgia-wonders-11-day/gergeti-trinity-church-kazbegi-georgia/gergeti-trinity-church-kazbegi-georgia-1448.webp",
+        "contentUrl": "https://www.hikasustravel.com/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1448.webp",
         "name": "Gergeti Trinity Church, Kazbegi",
         "caption": "Gergeti Trinity Church, Kazbegi",
         "creditText": "Hikasus Travel",
@@ -16531,11 +16736,15 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
-        "base": "/images/files/svetitskhoveli-cathedral-mtskheta-georgia",
-        "widths": [768, 1200, 1540],
-        "width": 1540,
-        "height": 1021,
+        "src": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1448.webp",
+        "base": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
         "caption": {
           "en": "Svetitskhoveli Cathedral, Mtskheta",
           "de": "Swetizchoweli-Kathedrale, Mzcheta",
@@ -16546,13 +16755,13 @@ export const tours = [
           "pl": "Katedra Sweticchoweli, Mccheta"
         },
         "altText": {
-          "en": "Svetitskhoveli Cathedral, a UNESCO World Heritage site in Mtskheta, Georgia",
-          "de": "Die Swetizchoweli-Kathedrale, UNESCO-Welterbe in Mzcheta, Georgien",
-          "fr": "La cathédrale de Svétitskhovéli, site du patrimoine mondial de l'UNESCO à Mtskheta, Géorgie",
-          "es": "La catedral de Svetitsjoveli, Patrimonio de la Humanidad de la UNESCO en Mtsjeta, Georgia",
-          "nl": "De Svetitschoveli-kathedraal, UNESCO-werelderfgoed in Mtscheta, Georgië",
-          "cs": "Katedrála Sveticchoveli, památka UNESCO v Mcchetě, Gruzie",
-          "pl": "Katedra Sweticchoweli, obiekt UNESCO w Mcchecie, Gruzja"
+          "en": "Svetitskhoveli Cathedral in Mtskheta, a large church of golden sandstone with arcaded walls and a conical dome under a blue sky, Georgia",
+          "de": "Die Swetizchoweli-Kathedrale in Mzcheta, eine große Kirche aus goldenem Sandstein mit Blendarkaden und Kegelkuppel unter blauem Himmel, Georgien",
+          "fr": "La cathédrale de Svétitskhovéli à Mtskheta, grande église en grès doré à arcatures et coupole conique sous un ciel bleu, Géorgie",
+          "es": "La catedral de Svetitsjoveli en Mtsjeta, una gran iglesia de arenisca dorada con arquerías y cúpula cónica bajo un cielo azul, Georgia",
+          "nl": "De Svetitschoveli-kathedraal in Mtscheta, een grote kerk van goudkleurige zandsteen met arcaden en een kegelvormige koepel onder een blauwe lucht, Georgië",
+          "cs": "Katedrála Sveticchoveli v Mcchetě, velký chrám ze zlatavého pískovce s arkádami a kuželovou kupolí pod modrou oblohou, Gruzie",
+          "pl": "Katedra Sweticchoweli w Mcchecie, duży kościół ze złocistego piaskowca z arkadami i stożkową kopułą pod błękitnym niebem, Gruzja"
         }
       },
       {
@@ -16639,9 +16848,13 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/gergeti-trinity-church-kazbegi-georgia-1448.webp",
-        "base": "/images/files/gergeti-trinity-church-kazbegi-georgia",
-        "widths": [768, 1200, 1448],
+        "src": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1448.webp",
+        "base": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
         "width": 1448,
         "height": 1086,
         "caption": {
@@ -16654,13 +16867,13 @@ export const tours = [
           "pl": "Cerkiew Trójcy Świętej w Gergeti, Kazbegi"
         },
         "altText": {
-          "en": "Gergeti Trinity Church set against the Caucasus mountains near Kazbegi, Georgia",
-          "de": "Die Gergeti-Dreifaltigkeitskirche vor der Kulisse des Kaukasus bei Kasbegi, Georgien",
-          "fr": "L'église de la Trinité de Guerguéti devant les montagnes du Caucase près de Kazbegi, Géorgie",
-          "es": "La iglesia de la Trinidad de Gergeti frente a las montañas del Cáucaso, cerca de Kazbegi, Georgia",
-          "nl": "De Gergeti-Drie-eenheidskerk tegen de achtergrond van de Kaukasus bij Kazbegi, Georgië",
-          "cs": "Kostel Nejsvětější Trojice v Gergeti na pozadí Kavkazu poblíž Kazbegi, Gruzie",
-          "pl": "Cerkiew Trójcy Świętej w Gergeti na tle Kaukazu koło Kazbegi, Gruzja"
+          "en": "Gergeti Trinity Church on its hilltop below the snow-covered peaks of the Greater Caucasus near Stepantsminda, Georgia",
+          "de": "Die Gergeti-Dreifaltigkeitskirche auf ihrem Hügel unterhalb der schneebedeckten Gipfel des Großen Kaukasus bei Stepanzminda, Georgien",
+          "fr": "L'église de la Trinité de Gergeti sur sa colline, au pied des sommets enneigés du Grand Caucase près de Stepantsminda, Géorgie",
+          "es": "La iglesia de la Trinidad de Gergeti en su colina, bajo las cumbres nevadas del Gran Cáucaso cerca de Stepantsminda, Georgia",
+          "nl": "De Drie-eenheidskerk van Gergeti op haar heuvel onder de besneeuwde toppen van de Grote Kaukasus bij Stepantsminda, Georgië",
+          "cs": "Gergetský kostel Nejsvětější Trojice na svém kopci pod zasněženými vrcholy Velkého Kavkazu u Stepancminda, Gruzie",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti na wzgórzu pod ośnieżonymi szczytami Wielkiego Kaukazu koło Stepancminda, Gruzja"
         }
       },
       {
@@ -17053,8 +17266,8 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "@id": "https://www.hikasustravel.com/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1200.webp#image",
-        "contentUrl": "https://www.hikasustravel.com/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1200.webp",
+        "@id": "https://www.hikasustravel.com/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1200.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1200.webp",
         "name": "Svetitskhoveli Cathedral, Mtskheta",
         "caption": "Svetitskhoveli Cathedral, Mtskheta",
         "creditText": "Hikasus Travel",
@@ -17121,8 +17334,8 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "@id": "https://www.hikasustravel.com/images/files/gergeti-trinity-church-kazbegi-georgia-1200.webp#image",
-        "contentUrl": "https://www.hikasustravel.com/images/files/gergeti-trinity-church-kazbegi-georgia-1200.webp",
+        "@id": "https://www.hikasustravel.com/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1200.webp#image",
+        "contentUrl": "https://www.hikasustravel.com/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1200.webp",
         "name": "Gergeti Trinity Church, Kazbegi",
         "caption": "Gergeti Trinity Church, Kazbegi",
         "creditText": "Hikasus Travel",
@@ -18126,12 +18339,15 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
-        "base": "/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/svetitskhoveli-cathedral-mtskheta-georgia",
-        "widths": [768, 1200, 1540],
-        "fallbackWidth": 1200,
-        "width": 1540,
-        "height": 1021,
+        "src": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1448.webp",
+        "base": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
         "caption": {
           "en": "Svetitskhoveli Cathedral, Mtskheta",
           "de": "Swetizchoweli-Kathedrale, Mzcheta",
@@ -18142,13 +18358,13 @@ export const tours = [
           "pl": "Katedra Sweticchoweli, Mccheta"
         },
         "altText": {
-          "en": "Eleventh-century Svetitskhoveli Cathedral under a blue sky in Mtskheta, Georgia",
-          "de": "Swetizchoweli-Kathedrale aus dem 11. Jahrhundert unter blauem Himmel in Mzcheta, Georgien",
-          "fr": "Cathédrale de Svétitskhovéli du XIe siècle sous un ciel bleu à Mtskheta, Géorgie",
-          "es": "Catedral de Svetitsjoveli del siglo XI bajo cielo azul en Mtsjeta, Georgia",
-          "nl": "Elfde-eeuwse Svetitschoveli-kathedraal onder een blauwe lucht in Mtscheta, Georgië",
-          "cs": "Katedrála Sveticchoveli z 11. století pod modrou oblohou v Mcchetě, Gruzie",
-          "pl": "Jedenastowieczna katedra Sweticchoweli pod błękitnym niebem w Mcchecie, Gruzja"
+          "en": "Svetitskhoveli Cathedral in Mtskheta, a large church of golden sandstone with arcaded walls and a conical dome under a blue sky, Georgia",
+          "de": "Die Swetizchoweli-Kathedrale in Mzcheta, eine große Kirche aus goldenem Sandstein mit Blendarkaden und Kegelkuppel unter blauem Himmel, Georgien",
+          "fr": "La cathédrale de Svétitskhovéli à Mtskheta, grande église en grès doré à arcatures et coupole conique sous un ciel bleu, Géorgie",
+          "es": "La catedral de Svetitsjoveli en Mtsjeta, una gran iglesia de arenisca dorada con arquerías y cúpula cónica bajo un cielo azul, Georgia",
+          "nl": "De Svetitschoveli-kathedraal in Mtscheta, een grote kerk van goudkleurige zandsteen met arcaden en een kegelvormige koepel onder een blauwe lucht, Georgië",
+          "cs": "Katedrála Sveticchoveli v Mcchetě, velký chrám ze zlatavého pískovce s arkádami a kuželovou kupolí pod modrou oblohou, Gruzie",
+          "pl": "Katedra Sweticchoweli w Mcchecie, duży kościół ze złocistego piaskowca z arkadami i stożkową kopułą pod błękitnym niebem, Gruzja"
         }
       },
       {
@@ -18236,10 +18452,13 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/gergeti-trinity-church-kazbegi-georgia-1448.webp",
-        "base": "/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/gergeti-trinity-church-kazbegi-georgia",
-        "widths": [768, 1200, 1448],
-        "fallbackWidth": 1200,
+        "src": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1448.webp",
+        "base": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
         "width": 1448,
         "height": 1086,
         "caption": {
@@ -18252,13 +18471,13 @@ export const tours = [
           "pl": "Cerkiew Trójcy Świętej w Gergeti, Kazbegi"
         },
         "altText": {
-          "en": "Gergeti Trinity Church on a ridge below the Caucasus peaks near Kazbegi, Georgia",
-          "de": "Gergeti-Dreifaltigkeitskirche auf einem Bergrücken unter den Kaukasusgipfeln bei Kasbegi, Georgien",
-          "fr": "Église de la Trinité de Guerguéti sur une crête sous les sommets du Caucase près de Kazbegi, Géorgie",
-          "es": "Iglesia de la Trinidad de Gergeti en una cresta bajo los picos del Cáucaso cerca de Kazbegi, Georgia",
-          "nl": "Gergeti-Drie-eenheidskerk op een bergkam onder de Kaukasustoppen bij Kazbegi, Georgië",
-          "cs": "Kostel Nejsvětější Trojice v Gergeti na hřebeni pod vrcholky Kavkazu u Kazbegi, Gruzie",
-          "pl": "Cerkiew Trójcy Świętej w Gergeti na grani pod szczytami Kaukazu koło Kazbegi, Gruzja"
+          "en": "Gergeti Trinity Church on its hilltop below the snow-covered peaks of the Greater Caucasus near Stepantsminda, Georgia",
+          "de": "Die Gergeti-Dreifaltigkeitskirche auf ihrem Hügel unterhalb der schneebedeckten Gipfel des Großen Kaukasus bei Stepanzminda, Georgien",
+          "fr": "L'église de la Trinité de Gergeti sur sa colline, au pied des sommets enneigés du Grand Caucase près de Stepantsminda, Géorgie",
+          "es": "La iglesia de la Trinidad de Gergeti en su colina, bajo las cumbres nevadas del Gran Cáucaso cerca de Stepantsminda, Georgia",
+          "nl": "De Drie-eenheidskerk van Gergeti op haar heuvel onder de besneeuwde toppen van de Grote Kaukasus bij Stepantsminda, Georgië",
+          "cs": "Gergetský kostel Nejsvětější Trojice na svém kopci pod zasněženými vrcholy Velkého Kavkazu u Stepancminda, Gruzie",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti na wzgórzu pod ośnieżonymi szczytami Wielkiego Kaukazu koło Stepancminda, Gruzja"
         }
       },
       {
@@ -18634,7 +18853,7 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
+        "contentUrl": "https://www.hikasustravel.com/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1448.webp",
         "width": 1540,
         "height": 1021,
         "caption": "Svetitskhoveli Cathedral, Mtskheta",
@@ -18718,7 +18937,7 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/13-day-georgia-grand-tour-from-kutaisi-culture-and-nature/gergeti-trinity-church-kazbegi-georgia-1448.webp",
+        "contentUrl": "https://www.hikasustravel.com/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1448.webp",
         "width": 1448,
         "height": 1086,
         "caption": "Gergeti Trinity Church, Kazbegi",
@@ -19262,12 +19481,15 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
-        "base": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/svetitskhoveli-cathedral-mtskheta-georgia",
-        "widths": [768, 1200, 1540],
-        "fallbackWidth": 1200,
-        "width": 1540,
-        "height": 1021,
+        "src": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1448.webp",
+        "base": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
         "caption": {
           "en": "Svetitskhoveli Cathedral, Mtskheta",
           "de": "Swetizchoweli-Kathedrale, Mzcheta",
@@ -19278,13 +19500,13 @@ export const tours = [
           "pl": "Katedra Sweticchoweli, Mccheta"
         },
         "altText": {
-          "en": "Eleventh-century Svetitskhoveli Cathedral under a blue sky in Mtskheta, Georgia",
-          "de": "Swetizchoweli-Kathedrale aus dem 11. Jahrhundert unter blauem Himmel in Mzcheta, Georgien",
-          "fr": "Cathédrale de Svétitskhovéli du XIe siècle sous un ciel bleu à Mtskheta, Géorgie",
-          "es": "Catedral de Svetitsjoveli del siglo XI bajo cielo azul en Mtsjeta, Georgia",
-          "nl": "Elfde-eeuwse Svetitschoveli-kathedraal onder een blauwe lucht in Mtscheta, Georgië",
-          "cs": "Katedrála Sveticchoveli z 11. století pod modrou oblohou v Mcchetě, Gruzie",
-          "pl": "Jedenastowieczna katedra Sweticchoweli pod błękitnym niebem w Mcchecie, Gruzja"
+          "en": "Svetitskhoveli Cathedral in Mtskheta, a large church of golden sandstone with arcaded walls and a conical dome under a blue sky, Georgia",
+          "de": "Die Swetizchoweli-Kathedrale in Mzcheta, eine große Kirche aus goldenem Sandstein mit Blendarkaden und Kegelkuppel unter blauem Himmel, Georgien",
+          "fr": "La cathédrale de Svétitskhovéli à Mtskheta, grande église en grès doré à arcatures et coupole conique sous un ciel bleu, Géorgie",
+          "es": "La catedral de Svetitsjoveli en Mtsjeta, una gran iglesia de arenisca dorada con arquerías y cúpula cónica bajo un cielo azul, Georgia",
+          "nl": "De Svetitschoveli-kathedraal in Mtscheta, een grote kerk van goudkleurige zandsteen met arcaden en een kegelvormige koepel onder een blauwe lucht, Georgië",
+          "cs": "Katedrála Sveticchoveli v Mcchetě, velký chrám ze zlatavého pískovce s arkádami a kuželovou kupolí pod modrou oblohou, Gruzie",
+          "pl": "Katedra Sweticchoweli w Mcchecie, duży kościół ze złocistego piaskowca z arkadami i stożkową kopułą pod błękitnym niebem, Gruzja"
         }
       },
       {
@@ -19372,10 +19594,13 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/gergeti-trinity-church-kazbegi-georgia-1448.webp",
-        "base": "/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/gergeti-trinity-church-kazbegi-georgia",
-        "widths": [768, 1200, 1448],
-        "fallbackWidth": 1200,
+        "src": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1448.webp",
+        "base": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
         "width": 1448,
         "height": 1086,
         "caption": {
@@ -19388,13 +19613,13 @@ export const tours = [
           "pl": "Cerkiew Trójcy Świętej w Gergeti, Kazbegi"
         },
         "altText": {
-          "en": "Gergeti Trinity Church on a ridge below the Caucasus peaks near Kazbegi, Georgia",
-          "de": "Gergeti-Dreifaltigkeitskirche auf einem Bergrücken unter den Kaukasusgipfeln bei Kasbegi, Georgien",
-          "fr": "Église de la Trinité de Guerguéti sur une crête sous les sommets du Caucase près de Kazbegi, Géorgie",
-          "es": "Iglesia de la Trinidad de Gergeti en una cresta bajo los picos del Cáucaso cerca de Kazbegi, Georgia",
-          "nl": "Gergeti-Drie-eenheidskerk op een bergkam onder de Kaukasustoppen bij Kazbegi, Georgië",
-          "cs": "Kostel Nejsvětější Trojice v Gergeti na hřebeni pod vrcholky Kavkazu u Kazbegi, Gruzie",
-          "pl": "Cerkiew Trójcy Świętej w Gergeti na grani pod szczytami Kaukazu koło Kazbegi, Gruzja"
+          "en": "Gergeti Trinity Church on its hilltop below the snow-covered peaks of the Greater Caucasus near Stepantsminda, Georgia",
+          "de": "Die Gergeti-Dreifaltigkeitskirche auf ihrem Hügel unterhalb der schneebedeckten Gipfel des Großen Kaukasus bei Stepanzminda, Georgien",
+          "fr": "L'église de la Trinité de Gergeti sur sa colline, au pied des sommets enneigés du Grand Caucase près de Stepantsminda, Géorgie",
+          "es": "La iglesia de la Trinidad de Gergeti en su colina, bajo las cumbres nevadas del Gran Cáucaso cerca de Stepantsminda, Georgia",
+          "nl": "De Drie-eenheidskerk van Gergeti op haar heuvel onder de besneeuwde toppen van de Grote Kaukasus bij Stepantsminda, Georgië",
+          "cs": "Gergetský kostel Nejsvětější Trojice na svém kopci pod zasněženými vrcholy Velkého Kavkazu u Stepancminda, Gruzie",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti na wzgórzu pod ośnieżonymi szczytami Wielkiego Kaukazu koło Stepancminda, Gruzja"
         }
       },
       {
@@ -19877,7 +20102,7 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
+        "contentUrl": "https://www.hikasustravel.com/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1448.webp",
         "width": 1540,
         "height": 1021,
         "caption": "Svetitskhoveli Cathedral, Mtskheta",
@@ -19961,7 +20186,7 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/ultimate-15-day-georgia-tour-from-tbilisi-to-svaneti--wine-culture-and-natural-beauty/gergeti-trinity-church-kazbegi-georgia-1448.webp",
+        "contentUrl": "https://www.hikasustravel.com/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1448.webp",
         "width": 1448,
         "height": 1086,
         "caption": "Gergeti Trinity Church, Kazbegi",
@@ -20975,12 +21200,15 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
-        "base": "/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/svetitskhoveli-cathedral-mtskheta-georgia",
-        "widths": [768, 1200, 1540],
-        "fallbackWidth": 1200,
-        "width": 1540,
-        "height": 1021,
+        "src": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1448.webp",
+        "base": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
         "caption": {
           "en": "Svetitskhoveli Cathedral, Mtskheta",
           "de": "Swetizchoweli-Kathedrale, Mzcheta",
@@ -20991,13 +21219,13 @@ export const tours = [
           "pl": "Katedra Sweticchoweli, Mccheta"
         },
         "altText": {
-          "en": "Eleventh-century Svetitskhoveli Cathedral under a blue sky in Mtskheta, Georgia",
-          "de": "Swetizchoweli-Kathedrale aus dem 11. Jahrhundert unter blauem Himmel in Mzcheta, Georgien",
-          "fr": "Cathédrale de Svétitskhovéli du XIe siècle sous un ciel bleu à Mtskheta, Géorgie",
-          "es": "Catedral de Svetitsjoveli del siglo XI bajo cielo azul en Mtsjeta, Georgia",
-          "nl": "Elfde-eeuwse Svetitschoveli-kathedraal onder een blauwe lucht in Mtscheta, Georgië",
-          "cs": "Katedrála Sveticchoveli z 11. století pod modrou oblohou v Mcchetě, Gruzie",
-          "pl": "Jedenastowieczna katedra Sweticchoweli pod błękitnym niebem w Mcchecie, Gruzja"
+          "en": "Svetitskhoveli Cathedral in Mtskheta, a large church of golden sandstone with arcaded walls and a conical dome under a blue sky, Georgia",
+          "de": "Die Swetizchoweli-Kathedrale in Mzcheta, eine große Kirche aus goldenem Sandstein mit Blendarkaden und Kegelkuppel unter blauem Himmel, Georgien",
+          "fr": "La cathédrale de Svétitskhovéli à Mtskheta, grande église en grès doré à arcatures et coupole conique sous un ciel bleu, Géorgie",
+          "es": "La catedral de Svetitsjoveli en Mtsjeta, una gran iglesia de arenisca dorada con arquerías y cúpula cónica bajo un cielo azul, Georgia",
+          "nl": "De Svetitschoveli-kathedraal in Mtscheta, een grote kerk van goudkleurige zandsteen met arcaden en een kegelvormige koepel onder een blauwe lucht, Georgië",
+          "cs": "Katedrála Sveticchoveli v Mcchetě, velký chrám ze zlatavého pískovce s arkádami a kuželovou kupolí pod modrou oblohou, Gruzie",
+          "pl": "Katedra Sweticchoweli w Mcchecie, duży kościół ze złocistego piaskowca z arkadami i stożkową kopułą pod błękitnym niebem, Gruzja"
         }
       },
       {
@@ -21027,10 +21255,13 @@ export const tours = [
         }
       },
       {
-        "src": "/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/gergeti-trinity-church-kazbegi-georgia-1448.webp",
-        "base": "/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/gergeti-trinity-church-kazbegi-georgia",
-        "widths": [768, 1200, 1448],
-        "fallbackWidth": 1200,
+        "src": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1448.webp",
+        "base": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
         "width": 1448,
         "height": 1086,
         "caption": {
@@ -21043,13 +21274,13 @@ export const tours = [
           "pl": "Cerkiew Trójcy Świętej w Gergeti, Kazbegi"
         },
         "altText": {
-          "en": "Gergeti Trinity Church on a ridge below the Caucasus peaks near Kazbegi, Georgia",
-          "de": "Gergeti-Dreifaltigkeitskirche auf einem Bergrücken unter den Kaukasusgipfeln bei Kasbegi, Georgien",
-          "fr": "Église de la Trinité de Guerguéti sur une crête sous les sommets du Caucase près de Kazbegi, Géorgie",
-          "es": "Iglesia de la Trinidad de Gergeti en una cresta bajo los picos del Cáucaso cerca de Kazbegi, Georgia",
-          "nl": "Gergeti-Drie-eenheidskerk op een bergkam onder de Kaukasustoppen bij Kazbegi, Georgië",
-          "cs": "Kostel Nejsvětější Trojice v Gergeti na hřebeni pod vrcholky Kavkazu u Kazbegi, Gruzie",
-          "pl": "Cerkiew Trójcy Świętej w Gergeti na grani pod szczytami Kaukazu koło Kazbegi, Gruzja"
+          "en": "Gergeti Trinity Church on its hilltop below the snow-covered peaks of the Greater Caucasus near Stepantsminda, Georgia",
+          "de": "Die Gergeti-Dreifaltigkeitskirche auf ihrem Hügel unterhalb der schneebedeckten Gipfel des Großen Kaukasus bei Stepanzminda, Georgien",
+          "fr": "L'église de la Trinité de Gergeti sur sa colline, au pied des sommets enneigés du Grand Caucase près de Stepantsminda, Géorgie",
+          "es": "La iglesia de la Trinidad de Gergeti en su colina, bajo las cumbres nevadas del Gran Cáucaso cerca de Stepantsminda, Georgia",
+          "nl": "De Drie-eenheidskerk van Gergeti op haar heuvel onder de besneeuwde toppen van de Grote Kaukasus bij Stepantsminda, Georgië",
+          "cs": "Gergetský kostel Nejsvětější Trojice na svém kopci pod zasněženými vrcholy Velkého Kavkazu u Stepancminda, Gruzie",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti na wzgórzu pod ośnieżonymi szczytami Wielkiego Kaukazu koło Stepancminda, Gruzja"
         }
       },
       {
@@ -21461,7 +21692,7 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
+        "contentUrl": "https://www.hikasustravel.com/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1448.webp",
         "width": 1540,
         "height": 1021,
         "caption": "Svetitskhoveli Cathedral, Mtskheta",
@@ -21503,7 +21734,7 @@ export const tours = [
       },
       {
         "@type": "ImageObject",
-        "contentUrl": "https://www.hikasustravel.com/images/tours/20-day-georgia-grand-tour-wine-hiking-and-culture/gergeti-trinity-church-kazbegi-georgia-1448.webp",
+        "contentUrl": "https://www.hikasustravel.com/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1448.webp",
         "width": 1448,
         "height": 1086,
         "caption": "Gergeti Trinity Church, Kazbegi",
@@ -22384,11 +22615,15 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
-        "base": "/images/files/svetitskhoveli-cathedral-mtskheta-georgia",
-        "widths": [768,1200,1540],
-        "width": 1540,
-        "height": 1021,
+        "src": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1448.webp",
+        "base": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
         "caption": {
           "en": "Svetitskhoveli Cathedral, Mtskheta",
           "de": "Swetizchoweli-Kathedrale, Mzcheta",
@@ -22399,13 +22634,13 @@ export const tours = [
           "pl": "Katedra Sweticchoweli, Mccheta"
         },
         "altText": {
-          "en": "The UNESCO-listed Svetitskhoveli Cathedral, an 11th-century domed stone cathedral within its walled courtyard at Mtskheta, Georgia",
-          "de": "Die UNESCO-gelistete Swetizchoweli-Kathedrale, eine kuppelbekrönte Steinkathedrale aus dem 11. Jahrhundert in ihrem ummauerten Hof in Mzcheta, Georgien",
-          "fr": "La cathédrale de Svétitskhovéli, inscrite à l’UNESCO, cathédrale de pierre à coupole du XIe siècle dans son enceinte fortifiée à Mtskheta, Géorgie",
-          "es": "La catedral de Svetitsjoveli, declarada por la UNESCO, catedral de piedra con cúpula del siglo XI en su recinto amurallado de Mtsjeta, Georgia",
-          "nl": "De door UNESCO erkende Svetitschoveli-kathedraal, een 11e-eeuwse stenen koepelkathedraal binnen haar ommuurde hof in Mtscheta, Georgië",
-          "cs": "Katedrála Sveticchoveli zapsaná na seznamu UNESCO, kamenná kupolová katedrála z 11. století ve svém hrazeném areálu v Mcchetě, Gruzie",
-          "pl": "Wpisana na listę UNESCO katedra Sweticchoweli, kamienna kopułowa katedra z XI wieku w obrębie murowanego dziedzińca w Mcchecie, Gruzja"
+          "en": "Svetitskhoveli Cathedral in Mtskheta, a large church of golden sandstone with arcaded walls and a conical dome under a blue sky, Georgia",
+          "de": "Die Swetizchoweli-Kathedrale in Mzcheta, eine große Kirche aus goldenem Sandstein mit Blendarkaden und Kegelkuppel unter blauem Himmel, Georgien",
+          "fr": "La cathédrale de Svétitskhovéli à Mtskheta, grande église en grès doré à arcatures et coupole conique sous un ciel bleu, Géorgie",
+          "es": "La catedral de Svetitsjoveli en Mtsjeta, una gran iglesia de arenisca dorada con arquerías y cúpula cónica bajo un cielo azul, Georgia",
+          "nl": "De Svetitschoveli-kathedraal in Mtscheta, een grote kerk van goudkleurige zandsteen met arcaden en een kegelvormige koepel onder een blauwe lucht, Georgië",
+          "cs": "Katedrála Sveticchoveli v Mcchetě, velký chrám ze zlatavého pískovce s arkádami a kuželovou kupolí pod modrou oblohou, Gruzie",
+          "pl": "Katedra Sweticchoweli w Mcchecie, duży kościół ze złocistego piaskowca z arkadami i stożkową kopułą pod błękitnym niebem, Gruzja"
         }
       },
       {
@@ -22492,9 +22727,13 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/gergeti-trinity-church-kazbegi-georgia-1448.webp",
-        "base": "/images/files/gergeti-trinity-church-kazbegi-georgia",
-        "widths": [768,1200,1448],
+        "src": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1448.webp",
+        "base": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
         "width": 1448,
         "height": 1086,
         "caption": {
@@ -22507,13 +22746,13 @@ export const tours = [
           "pl": "Cerkiew Trójcy Świętej w Gergeti"
         },
         "altText": {
-          "en": "The Gergeti Trinity Church, a lone stone church with a bell tower on a hill below steep rocky Caucasus mountains near Kazbegi, Georgia",
-          "de": "Die Gergeti-Dreifaltigkeitskirche, eine einzeln stehende Steinkirche mit Glockenturm auf einem Hügel unter steilen felsigen Kaukasusbergen bei Kazbegi, Georgien",
-          "fr": "L’église de la Trinité de Guerguéti, église de pierre isolée avec clocher sur une colline au pied d’abruptes montagnes rocheuses du Caucase, près de Kazbegi, Géorgie",
-          "es": "La iglesia de la Trinidad de Gergeti, iglesia de piedra solitaria con campanario en una colina al pie de escarpadas montañas rocosas del Cáucaso, cerca de Kazbegi, Georgia",
-          "nl": "De Drie-eenheidskerk van Gergeti, een alleenstaande stenen kerk met klokkentoren op een heuvel onder steile rotsachtige Kaukasusbergen bij Kazbegi, Georgië",
-          "cs": "Gergetský kostel Nejsvětější Trojice, osamělý kamenný kostel se zvonicí na kopci pod strmými skalnatými kavkazskými horami u Kazbegi, Gruzie",
-          "pl": "Cerkiew Trójcy Świętej w Gergeti, samotny kamienny kościół z dzwonnicą na wzgórzu u stóp stromych, skalistych gór Kaukazu koło Kazbegi, Gruzja"
+          "en": "Gergeti Trinity Church on its hilltop below the snow-covered peaks of the Greater Caucasus near Stepantsminda, Georgia",
+          "de": "Die Gergeti-Dreifaltigkeitskirche auf ihrem Hügel unterhalb der schneebedeckten Gipfel des Großen Kaukasus bei Stepanzminda, Georgien",
+          "fr": "L'église de la Trinité de Gergeti sur sa colline, au pied des sommets enneigés du Grand Caucase près de Stepantsminda, Géorgie",
+          "es": "La iglesia de la Trinidad de Gergeti en su colina, bajo las cumbres nevadas del Gran Cáucaso cerca de Stepantsminda, Georgia",
+          "nl": "De Drie-eenheidskerk van Gergeti op haar heuvel onder de besneeuwde toppen van de Grote Kaukasus bij Stepantsminda, Georgië",
+          "cs": "Gergetský kostel Nejsvětější Trojice na svém kopci pod zasněženými vrcholy Velkého Kavkazu u Stepancminda, Gruzie",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti na wzgórzu pod ośnieżonymi szczytami Wielkiego Kaukazu koło Stepancminda, Gruzja"
         }
       },
       {
@@ -24229,11 +24468,15 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
-        "base": "/images/files/svetitskhoveli-cathedral-mtskheta-georgia",
-        "widths": [768,1200,1540],
-        "width": 1540,
-        "height": 1021,
+        "src": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1448.webp",
+        "base": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
+        "width": 1448,
+        "height": 1086,
         "caption": {
           "en": "Svetitskhoveli Cathedral, Mtskheta",
           "de": "Swetizchoweli-Kathedrale, Mzcheta",
@@ -24244,13 +24487,13 @@ export const tours = [
           "pl": "Katedra Sweticchoweli, Mccheta"
         },
         "altText": {
-          "en": "The UNESCO-listed Svetitskhoveli Cathedral, an 11th-century domed stone cathedral within its walled courtyard at Mtskheta, Georgia",
-          "de": "Die UNESCO-gelistete Swetizchoweli-Kathedrale, eine kuppelbekrönte Steinkathedrale aus dem 11. Jahrhundert in ihrem ummauerten Hof in Mzcheta, Georgien",
-          "fr": "La cathédrale de Svétitskhovéli, inscrite à l'UNESCO, cathédrale de pierre à coupole du XIe siècle dans son enceinte fortifiée à Mtskheta, Géorgie",
-          "es": "La catedral de Svetitsjoveli, declarada por la UNESCO, catedral de piedra con cúpula del siglo XI en su recinto amurallado de Mtsjeta, Georgia",
-          "nl": "De door UNESCO erkende Svetitschoveli-kathedraal, een 11e-eeuwse stenen koepelkathedraal binnen haar ommuurde hof in Mtscheta, Georgië",
-          "cs": "Katedrála Sveticchoveli zapsaná na seznamu UNESCO, kamenná kupolová katedrála z 11. století ve svém hrazeném areálu v Mcchetě, Gruzie",
-          "pl": "Wpisana na listę UNESCO katedra Sweticchoweli, kamienna kopułowa katedra z XI wieku w obrębie murowanego dziedzińca w Mcchecie, Gruzja"
+          "en": "Svetitskhoveli Cathedral in Mtskheta, a large church of golden sandstone with arcaded walls and a conical dome under a blue sky, Georgia",
+          "de": "Die Swetizchoweli-Kathedrale in Mzcheta, eine große Kirche aus goldenem Sandstein mit Blendarkaden und Kegelkuppel unter blauem Himmel, Georgien",
+          "fr": "La cathédrale de Svétitskhovéli à Mtskheta, grande église en grès doré à arcatures et coupole conique sous un ciel bleu, Géorgie",
+          "es": "La catedral de Svetitsjoveli en Mtsjeta, una gran iglesia de arenisca dorada con arquerías y cúpula cónica bajo un cielo azul, Georgia",
+          "nl": "De Svetitschoveli-kathedraal in Mtscheta, een grote kerk van goudkleurige zandsteen met arcaden en een kegelvormige koepel onder een blauwe lucht, Georgië",
+          "cs": "Katedrála Sveticchoveli v Mcchetě, velký chrám ze zlatavého pískovce s arkádami a kuželovou kupolí pod modrou oblohou, Gruzie",
+          "pl": "Katedra Sweticchoweli w Mcchecie, duży kościół ze złocistego piaskowca z arkadami i stożkową kopułą pod błękitnym niebem, Gruzja"
         }
       },
       {
@@ -24337,9 +24580,13 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/gergeti-trinity-church-kazbegi-georgia-1448.webp",
-        "base": "/images/files/gergeti-trinity-church-kazbegi-georgia",
-        "widths": [768,1200,1448],
+        "src": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1448.webp",
+        "base": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view",
+        "widths": [
+          768,
+          1200,
+          1448
+        ],
         "width": 1448,
         "height": 1086,
         "caption": {
@@ -24352,13 +24599,13 @@ export const tours = [
           "pl": "Cerkiew Trójcy Świętej w Gergeti"
         },
         "altText": {
-          "en": "The Gergeti Trinity Church, a lone stone church with a bell tower on a hill below steep rocky Caucasus mountains near Kazbegi, Georgia",
-          "de": "Die Gergeti-Dreifaltigkeitskirche, eine einzeln stehende Steinkirche mit Glockenturm auf einem Hügel unter steilen felsigen Kaukasusbergen bei Kazbegi, Georgien",
-          "fr": "L'église de la Trinité de Guerguéti, église de pierre isolée avec clocher sur une colline au pied d'abruptes montagnes rocheuses du Caucase, près de Kazbegi, Géorgie",
-          "es": "La iglesia de la Trinidad de Gergeti, iglesia de piedra solitaria con campanario en una colina al pie de escarpadas montañas rocosas del Cáucaso, cerca de Kazbegi, Georgia",
-          "nl": "De Drie-eenheidskerk van Gergeti, een alleenstaande stenen kerk met klokkentoren op een heuvel onder steile rotsachtige Kaukasusbergen bij Kazbegi, Georgië",
-          "cs": "Gergetský kostel Nejsvětější Trojice, osamělý kamenný kostel se zvonicí na kopci pod strmými skalnatými kavkazskými horami u Kazbegi, Gruzie",
-          "pl": "Cerkiew Trójcy Świętej w Gergeti, samotny kamienny kościół z dzwonnicą na wzgórzu u stóp stromych, skalistych gór Kaukazu koło Kazbegi, Gruzja"
+          "en": "Gergeti Trinity Church on its hilltop below the snow-covered peaks of the Greater Caucasus near Stepantsminda, Georgia",
+          "de": "Die Gergeti-Dreifaltigkeitskirche auf ihrem Hügel unterhalb der schneebedeckten Gipfel des Großen Kaukasus bei Stepanzminda, Georgien",
+          "fr": "L'église de la Trinité de Gergeti sur sa colline, au pied des sommets enneigés du Grand Caucase près de Stepantsminda, Géorgie",
+          "es": "La iglesia de la Trinidad de Gergeti en su colina, bajo las cumbres nevadas del Gran Cáucaso cerca de Stepantsminda, Georgia",
+          "nl": "De Drie-eenheidskerk van Gergeti op haar heuvel onder de besneeuwde toppen van de Grote Kaukasus bij Stepantsminda, Georgië",
+          "cs": "Gergetský kostel Nejsvětější Trojice na svém kopci pod zasněženými vrcholy Velkého Kavkazu u Stepancminda, Gruzie",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti na wzgórzu pod ośnieżonymi szczytami Wielkiego Kaukazu koło Stepancminda, Gruzja"
         }
       },
       {
@@ -25497,15 +25744,15 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
-        "base": "/images/files/svetitskhoveli-cathedral-mtskheta-georgia",
+        "src": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1448.webp",
+        "base": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia",
         "widths": [
           768,
           1200,
-          1540
+          1448
         ],
-        "width": 1540,
-        "height": 1021,
+        "width": 1448,
+        "height": 1086,
         "caption": {
           "en": "Svetitskhoveli Cathedral, Mtskheta",
           "de": "Swetizchoweli-Kathedrale, Mzcheta",
@@ -25516,13 +25763,13 @@ export const tours = [
           "pl": "Katedra Sweticchoweli, Mccheta"
         },
         "altText": {
-          "en": "The UNESCO-listed Svetitskhoveli Cathedral, an 11th-century domed stone cathedral within its walled courtyard at Mtskheta, Georgia",
-          "de": "Die UNESCO-gelistete Swetizchoweli-Kathedrale, eine kuppelbekrönte Steinkathedrale aus dem 11. Jahrhundert in ihrem ummauerten Hof in Mzcheta, Georgien",
-          "fr": "La cathédrale de Svétitskhovéli, inscrite à l'UNESCO, cathédrale de pierre à coupole du XIe siècle dans son enceinte fortifiée à Mtskheta, Géorgie",
-          "es": "La catedral de Svetitsjoveli, declarada por la UNESCO, catedral de piedra con cúpula del siglo XI en su recinto amurallado de Mtsjeta, Georgia",
-          "nl": "De door UNESCO erkende Svetitschoveli-kathedraal, een 11e-eeuwse stenen koepelkathedraal binnen haar ommuurde hof in Mtscheta, Georgië",
-          "cs": "Katedrála Sveticchoveli zapsaná na seznamu UNESCO, kamenná kupolová katedrála z 11. století ve svém hrazeném areálu v Mcchetě, Gruzie",
-          "pl": "Wpisana na listę UNESCO katedra Sweticchoweli, kamienna kopułowa katedra z XI wieku w obrębie murowanego dziedzińca w Mcchecie, Gruzja"
+          "en": "Svetitskhoveli Cathedral in Mtskheta, a large church of golden sandstone with arcaded walls and a conical dome under a blue sky, Georgia",
+          "de": "Die Swetizchoweli-Kathedrale in Mzcheta, eine große Kirche aus goldenem Sandstein mit Blendarkaden und Kegelkuppel unter blauem Himmel, Georgien",
+          "fr": "La cathédrale de Svétitskhovéli à Mtskheta, grande église en grès doré à arcatures et coupole conique sous un ciel bleu, Géorgie",
+          "es": "La catedral de Svetitsjoveli en Mtsjeta, una gran iglesia de arenisca dorada con arquerías y cúpula cónica bajo un cielo azul, Georgia",
+          "nl": "De Svetitschoveli-kathedraal in Mtscheta, een grote kerk van goudkleurige zandsteen met arcaden en een kegelvormige koepel onder een blauwe lucht, Georgië",
+          "cs": "Katedrála Sveticchoveli v Mcchetě, velký chrám ze zlatavého pískovce s arkádami a kuželovou kupolí pod modrou oblohou, Gruzie",
+          "pl": "Katedra Sweticchoweli w Mcchecie, duży kościół ze złocistego piaskowca z arkadami i stożkową kopułą pod błękitnym niebem, Gruzja"
         }
       },
       {
@@ -25614,8 +25861,8 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/gergeti-trinity-church-kazbegi-georgia-1448.webp",
-        "base": "/images/files/gergeti-trinity-church-kazbegi-georgia",
+        "src": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1448.webp",
+        "base": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view",
         "widths": [
           768,
           1200,
@@ -25633,13 +25880,13 @@ export const tours = [
           "pl": "Cerkiew Trójcy Świętej w Gergeti"
         },
         "altText": {
-          "en": "The Gergeti Trinity Church, a lone stone church with a bell tower on a hill below steep rocky Caucasus mountains near Kazbegi, Georgia",
-          "de": "Die Gergeti-Dreifaltigkeitskirche, eine einzeln stehende Steinkirche mit Glockenturm auf einem Hügel unter steilen felsigen Kaukasusbergen bei Kazbegi, Georgien",
-          "fr": "L'église de la Trinité de Guerguéti, église de pierre isolée avec clocher sur une colline au pied d'abruptes montagnes rocheuses du Caucase, près de Kazbegi, Géorgie",
-          "es": "La iglesia de la Trinidad de Gergeti, iglesia de piedra solitaria con campanario en una colina al pie de escarpadas montañas rocosas del Cáucaso, cerca de Kazbegi, Georgia",
-          "nl": "De Drie-eenheidskerk van Gergeti, een alleenstaande stenen kerk met klokkentoren op een heuvel onder steile rotsachtige Kaukasusbergen bij Kazbegi, Georgië",
-          "cs": "Gergetský kostel Nejsvětější Trojice, osamělý kamenný kostel se zvonicí na kopci pod strmými skalnatými kavkazskými horami u Kazbegi, Gruzie",
-          "pl": "Cerkiew Trójcy Świętej w Gergeti, samotny kamienny kościół z dzwonnicą na wzgórzu u stóp stromych, skalistych gór Kaukazu koło Kazbegi, Gruzja"
+          "en": "Gergeti Trinity Church on its hilltop below the snow-covered peaks of the Greater Caucasus near Stepantsminda, Georgia",
+          "de": "Die Gergeti-Dreifaltigkeitskirche auf ihrem Hügel unterhalb der schneebedeckten Gipfel des Großen Kaukasus bei Stepanzminda, Georgien",
+          "fr": "L'église de la Trinité de Gergeti sur sa colline, au pied des sommets enneigés du Grand Caucase près de Stepantsminda, Géorgie",
+          "es": "La iglesia de la Trinidad de Gergeti en su colina, bajo las cumbres nevadas del Gran Cáucaso cerca de Stepantsminda, Georgia",
+          "nl": "De Drie-eenheidskerk van Gergeti op haar heuvel onder de besneeuwde toppen van de Grote Kaukasus bij Stepantsminda, Georgië",
+          "cs": "Gergetský kostel Nejsvětější Trojice na svém kopci pod zasněženými vrcholy Velkého Kavkazu u Stepancminda, Gruzie",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti na wzgórzu pod ośnieżonymi szczytami Wielkiego Kaukazu koło Stepancminda, Gruzja"
         }
       },
       {
@@ -26881,15 +27128,15 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
-        "base": "/images/files/svetitskhoveli-cathedral-mtskheta-georgia",
+        "src": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1448.webp",
+        "base": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia",
         "widths": [
           768,
           1200,
-          1540
+          1448
         ],
-        "width": 1540,
-        "height": 1021,
+        "width": 1448,
+        "height": 1086,
         "caption": {
           "en": "Svetitskhoveli Cathedral, Mtskheta",
           "de": "Swetizchoweli-Kathedrale, Mzcheta",
@@ -26900,13 +27147,13 @@ export const tours = [
           "pl": "Katedra Sweticchoweli, Mccheta"
         },
         "altText": {
-          "en": "The UNESCO-listed Svetitskhoveli Cathedral, an 11th-century domed stone cathedral within its walled courtyard at Mtskheta, Georgia",
-          "de": "Die UNESCO-gelistete Swetizchoweli-Kathedrale, eine kuppelbekrönte Steinkathedrale aus dem 11. Jahrhundert in ihrem ummauerten Hof in Mzcheta, Georgien",
-          "fr": "La cathédrale de Svétitskhovéli, inscrite à l'UNESCO, cathédrale de pierre à coupole du XIe siècle dans son enceinte fortifiée à Mtskheta, Géorgie",
-          "es": "La catedral de Svetitsjoveli, declarada por la UNESCO, catedral de piedra con cúpula del siglo XI en su recinto amurallado de Mtsjeta, Georgia",
-          "nl": "De door UNESCO erkende Svetitschoveli-kathedraal, een 11e-eeuwse stenen koepelkathedraal binnen haar ommuurde hof in Mtscheta, Georgië",
-          "cs": "Katedrála Sveticchoveli zapsaná na seznamu UNESCO, kamenná kupolová katedrála z 11. století ve svém hrazeném areálu v Mcchetě, Gruzie",
-          "pl": "Wpisana na listę UNESCO katedra Sweticchoweli, kamienna kopułowa katedra z XI wieku w obrębie murowanego dziedzińca w Mcchecie, Gruzja"
+          "en": "Svetitskhoveli Cathedral in Mtskheta, a large church of golden sandstone with arcaded walls and a conical dome under a blue sky, Georgia",
+          "de": "Die Swetizchoweli-Kathedrale in Mzcheta, eine große Kirche aus goldenem Sandstein mit Blendarkaden und Kegelkuppel unter blauem Himmel, Georgien",
+          "fr": "La cathédrale de Svétitskhovéli à Mtskheta, grande église en grès doré à arcatures et coupole conique sous un ciel bleu, Géorgie",
+          "es": "La catedral de Svetitsjoveli en Mtsjeta, una gran iglesia de arenisca dorada con arquerías y cúpula cónica bajo un cielo azul, Georgia",
+          "nl": "De Svetitschoveli-kathedraal in Mtscheta, een grote kerk van goudkleurige zandsteen met arcaden en een kegelvormige koepel onder een blauwe lucht, Georgië",
+          "cs": "Katedrála Sveticchoveli v Mcchetě, velký chrám ze zlatavého pískovce s arkádami a kuželovou kupolí pod modrou oblohou, Gruzie",
+          "pl": "Katedra Sweticchoweli w Mcchecie, duży kościół ze złocistego piaskowca z arkadami i stożkową kopułą pod błękitnym niebem, Gruzja"
         }
       },
       {
@@ -26998,8 +27245,8 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/gergeti-trinity-church-kazbegi-georgia-1448.webp",
-        "base": "/images/files/gergeti-trinity-church-kazbegi-georgia",
+        "src": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1448.webp",
+        "base": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view",
         "widths": [
           768,
           1200,
@@ -27017,13 +27264,13 @@ export const tours = [
           "pl": "Cerkiew Trójcy Świętej w Gergeti"
         },
         "altText": {
-          "en": "The Gergeti Trinity Church, a lone stone church with a bell tower on a hill below steep rocky Caucasus mountains near Kazbegi, Georgia",
-          "de": "Die Gergeti-Dreifaltigkeitskirche, eine einzeln stehende Steinkirche mit Glockenturm auf einem Hügel unter steilen felsigen Kaukasusbergen bei Kazbegi, Georgien",
-          "fr": "L'église de la Trinité de Guerguéti, église de pierre isolée avec clocher sur une colline au pied d'abruptes montagnes rocheuses du Caucase, près de Kazbegi, Géorgie",
-          "es": "La iglesia de la Trinidad de Gergeti, iglesia de piedra solitaria con campanario en una colina al pie de escarpadas montañas rocosas del Cáucaso, cerca de Kazbegi, Georgia",
-          "nl": "De Drie-eenheidskerk van Gergeti, een alleenstaande stenen kerk met klokkentoren op een heuvel onder steile rotsachtige Kaukasusbergen bij Kazbegi, Georgië",
-          "cs": "Gergetský kostel Nejsvětější Trojice, osamělý kamenný kostel se zvonicí na kopci pod strmými skalnatými kavkazskými horami u Kazbegi, Gruzie",
-          "pl": "Cerkiew Trójcy Świętej w Gergeti, samotny kamienny kościół z dzwonnicą na wzgórzu u stóp stromych, skalistych gór Kaukazu koło Kazbegi, Gruzja"
+          "en": "Gergeti Trinity Church on its hilltop below the snow-covered peaks of the Greater Caucasus near Stepantsminda, Georgia",
+          "de": "Die Gergeti-Dreifaltigkeitskirche auf ihrem Hügel unterhalb der schneebedeckten Gipfel des Großen Kaukasus bei Stepanzminda, Georgien",
+          "fr": "L'église de la Trinité de Gergeti sur sa colline, au pied des sommets enneigés du Grand Caucase près de Stepantsminda, Géorgie",
+          "es": "La iglesia de la Trinidad de Gergeti en su colina, bajo las cumbres nevadas del Gran Cáucaso cerca de Stepantsminda, Georgia",
+          "nl": "De Drie-eenheidskerk van Gergeti op haar heuvel onder de besneeuwde toppen van de Grote Kaukasus bij Stepantsminda, Georgië",
+          "cs": "Gergetský kostel Nejsvětější Trojice na svém kopci pod zasněženými vrcholy Velkého Kavkazu u Stepancminda, Gruzie",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti na wzgórzu pod ośnieżonymi szczytami Wielkiego Kaukazu koło Stepancminda, Gruzja"
         }
       },
       {
@@ -27734,15 +27981,15 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp",
-        "base": "/images/files/svetitskhoveli-cathedral-mtskheta-georgia",
+        "src": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1448.webp",
+        "base": "/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia",
         "widths": [
           768,
           1200,
-          1540
+          1448
         ],
-        "width": 1540,
-        "height": 1021,
+        "width": 1448,
+        "height": 1086,
         "caption": {
           "en": "Svetitskhoveli Cathedral, Mtskheta",
           "de": "Swetizchoweli-Kathedrale, Mzcheta",
@@ -27753,13 +28000,13 @@ export const tours = [
           "pl": "Katedra Sweticchoweli, Mccheta"
         },
         "altText": {
-          "en": "The UNESCO-listed Svetitskhoveli Cathedral, an 11th-century domed stone cathedral within its walled courtyard at Mtskheta, Georgia",
-          "de": "Die UNESCO-gelistete Swetizchoweli-Kathedrale, eine kuppelbekrönte Steinkathedrale aus dem 11. Jahrhundert in ihrem ummauerten Hof in Mzcheta, Georgien",
-          "fr": "La cathédrale de Svétitskhovéli, inscrite à l'UNESCO, cathédrale de pierre à coupole du XIe siècle dans son enceinte fortifiée à Mtskheta, Géorgie",
-          "es": "La catedral de Svetitsjoveli, declarada por la UNESCO, catedral de piedra con cúpula del siglo XI en su recinto amurallado de Mtsjeta, Georgia",
-          "nl": "De door UNESCO erkende Svetitschoveli-kathedraal, een 11e-eeuwse stenen koepelkathedraal binnen haar ommuurde hof in Mtscheta, Georgië",
-          "cs": "Katedrála Sveticchoveli zapsaná na seznamu UNESCO, kamenná kupolová katedrála z 11. století ve svém hrazeném areálu v Mcchetě, Gruzie",
-          "pl": "Wpisana na listę UNESCO katedra Sweticchoweli, kamienna kopułowa katedra z XI wieku w obrębie murowanego dziedzińca w Mcchecie, Gruzja"
+          "en": "Svetitskhoveli Cathedral in Mtskheta, a large church of golden sandstone with arcaded walls and a conical dome under a blue sky, Georgia",
+          "de": "Die Swetizchoweli-Kathedrale in Mzcheta, eine große Kirche aus goldenem Sandstein mit Blendarkaden und Kegelkuppel unter blauem Himmel, Georgien",
+          "fr": "La cathédrale de Svétitskhovéli à Mtskheta, grande église en grès doré à arcatures et coupole conique sous un ciel bleu, Géorgie",
+          "es": "La catedral de Svetitsjoveli en Mtsjeta, una gran iglesia de arenisca dorada con arquerías y cúpula cónica bajo un cielo azul, Georgia",
+          "nl": "De Svetitschoveli-kathedraal in Mtscheta, een grote kerk van goudkleurige zandsteen met arcaden en een kegelvormige koepel onder een blauwe lucht, Georgië",
+          "cs": "Katedrála Sveticchoveli v Mcchetě, velký chrám ze zlatavého pískovce s arkádami a kuželovou kupolí pod modrou oblohou, Gruzie",
+          "pl": "Katedra Sweticchoweli w Mcchecie, duży kościół ze złocistego piaskowca z arkadami i stożkową kopułą pod błękitnym niebem, Gruzja"
         }
       },
       {
@@ -27851,8 +28098,8 @@ export const tours = [
         }
       },
       {
-        "src": "/images/files/gergeti-trinity-church-kazbegi-georgia-1448.webp",
-        "base": "/images/files/gergeti-trinity-church-kazbegi-georgia",
+        "src": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1448.webp",
+        "base": "/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view",
         "widths": [
           768,
           1200,
@@ -27870,13 +28117,13 @@ export const tours = [
           "pl": "Cerkiew Trójcy Świętej w Gergeti"
         },
         "altText": {
-          "en": "The Gergeti Trinity Church, a lone stone church with a bell tower on a hill below steep rocky Caucasus mountains near Kazbegi, Georgia",
-          "de": "Die Gergeti-Dreifaltigkeitskirche, eine einzeln stehende Steinkirche mit Glockenturm auf einem Hügel unter steilen felsigen Kaukasusbergen bei Kazbegi, Georgien",
-          "fr": "L'église de la Trinité de Guerguéti, église de pierre isolée avec clocher sur une colline au pied d'abruptes montagnes rocheuses du Caucase, près de Kazbegi, Géorgie",
-          "es": "La iglesia de la Trinidad de Gergeti, iglesia de piedra solitaria con campanario en una colina al pie de escarpadas montañas rocosas del Cáucaso, cerca de Kazbegi, Georgia",
-          "nl": "De Drie-eenheidskerk van Gergeti, een alleenstaande stenen kerk met klokkentoren op een heuvel onder steile rotsachtige Kaukasusbergen bij Kazbegi, Georgië",
-          "cs": "Gergetský kostel Nejsvětější Trojice, osamělý kamenný kostel se zvonicí na kopci pod strmými skalnatými kavkazskými horami u Kazbegi, Gruzie",
-          "pl": "Cerkiew Trójcy Świętej w Gergeti, samotny kamienny kościół z dzwonnicą na wzgórzu u stóp stromych, skalistych gór Kaukazu koło Kazbegi, Gruzja"
+          "en": "Gergeti Trinity Church on its hilltop below the snow-covered peaks of the Greater Caucasus near Stepantsminda, Georgia",
+          "de": "Die Gergeti-Dreifaltigkeitskirche auf ihrem Hügel unterhalb der schneebedeckten Gipfel des Großen Kaukasus bei Stepanzminda, Georgien",
+          "fr": "L'église de la Trinité de Gergeti sur sa colline, au pied des sommets enneigés du Grand Caucase près de Stepantsminda, Géorgie",
+          "es": "La iglesia de la Trinidad de Gergeti en su colina, bajo las cumbres nevadas del Gran Cáucaso cerca de Stepantsminda, Georgia",
+          "nl": "De Drie-eenheidskerk van Gergeti op haar heuvel onder de besneeuwde toppen van de Grote Kaukasus bij Stepantsminda, Georgië",
+          "cs": "Gergetský kostel Nejsvětější Trojice na svém kopci pod zasněženými vrcholy Velkého Kavkazu u Stepancminda, Gruzie",
+          "pl": "Cerkiew Trójcy Świętej w Gergeti na wzgórzu pod ośnieżonymi szczytami Wielkiego Kaukazu koło Stepancminda, Gruzja"
         }
       },
       {

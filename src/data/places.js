@@ -5528,167 +5528,79 @@ export const cities = [
   {
     slug: 'mtskheta', name: 'Mtskheta', region: 'mtskheta-mtianeti', published: true,
     seoKey: 'mtskheta', contentKey: 'mtskheta',
-    // Hero = the aerial of Jvari Monastery on its cliff with Mtskheta, the
-    // Aragvi/Mtkvari confluence and the valley below (native 1448x1085), replacing
-    // the generic georgia-home.jpg placeholder. Owner's pick: it is the one frame
-    // in the project that shows the town, the two rivers and the monastery in a
-    // single image, which is precisely what this page is about.
-    //
-    // ⚠️ NOT from `Images for tours/Pictures for the website (Final)`. That folder
-    // holds only four Mtskheta-cluster photographs (two Svetitskhoveli, two Jvari)
-    // and none of them shows the confluence. This frame already ships in the
-    // project: it is a body figure on the Mtskheta-Mtianeti region page, reached
-    // originally through tours.js. Chosen deliberately over the in-folder
-    // Svetitskhoveli frame, which now runs as the first body figure below.
-    //
-    // ⚠️ ZERO NEW FILES. All six rungs (768/1200/1448 avif+webp) already exist in
-    // /images/mtskheta-mtianeti/ and are REFERENCED in place — nothing copied,
-    // nothing re-encoded, nothing upscaled.
-    //
-    // Native ceiling is 1448, BELOW the usual 1600 rung, so the ladder is exactly
-    // 768/1200/1448 with the top breakpoint at min-width:1200 — there is NO
-    // 1600/2400 rung. The visible background comes from the new `.hero--mtskheta`
-    // class (styles.css), which also carries `background-position: 62% center`:
-    // the church sits in the right third of a 4:3 frame and a centred crop pushes
-    // it off a portrait phone hero entirely. HeroSection omits its inline
-    // background when heroClass is set.
-    image: '/images/mtskheta-mtianeti/jvari-monastery-confluence-mtskheta-georgia-1448.webp',
-    imageAvif: '/images/mtskheta-mtianeti/jvari-monastery-confluence-mtskheta-georgia-1448.avif',
+    // Cover = Svetitskhoveli Cathedral seen from its own courtyard, with the bell tower
+    // and precinct wall (owner's own photo, "Svetitskhoveli 1"; native 1448x1086, so
+    // the ladder is exactly 768/1200/1448 — no 1600/2400 rung, no upscale). The visible
+    // background is the .hero--mtskheta CSS class (styles.css); HeroSection omits its
+    // inline background when heroClass is set. Replaces the Jvari-confluence aerial,
+    // which stays on the Jvari content (inline figures below, Jvari pages).
+    image: '/images/files/svetitskhoveli-cathedral-courtyard-view-mtskheta-georgia-1448.webp',
+    imageAvif: '/images/files/svetitskhoveli-cathedral-courtyard-view-mtskheta-georgia-1448.avif',
     heroClass: 'hero--mtskheta',
-    // LCP hint for the CSS-background hero (same convention as the region guides
-    // and the Kazbegi hub): preload the 1200 AVIF rung with fetchpriority=high.
-    heroPreload: '/images/mtskheta-mtianeti/jvari-monastery-confluence-mtskheta-georgia-1200.avif',
-    // NO `ogImage`: no 1.91:1 crop exists for this frame, so og:image/twitter:image
-    // auto-derive from `image` above (the 1448 webp) — the same call the region
-    // page makes for this very photograph. Still a real change from the previous
-    // state, where og:image was the georgia-home.jpg placeholder. No other SEO
-    // field is touched.
-    //
-    // Hero image SEO/AEO metadata. The hero is a CSS background with no <img alt>,
-    // so the localized alt lives here and is emitted as the hero ImageObject
-    // caption plus og:image:alt / twitter:image:alt per locale. width/height = the
-    // 1448 rung.
-    //
-    // ⚠️ `noCredit: true` — the hero ImageObject ships with NO creator /
-    // creditText / copyrightNotice. This photograph asserts no authorship anywhere
-    // in the repo; the region page reached the same conclusion for the same frame
-    // and set noCredit there. Claiming the brand here would be inventing it, and
-    // absence is how schema.org says "unknown". Do NOT substitute a placeholder
-    // string. The three body figures below ARE ours and keep brand credit, so this
-    // page mixes credited and uncredited nodes on purpose.
-    //
-    // Naming: Latin forms (Mtskheta / Svetitskhoveli / Jvari) in all seven
-    // locales. That is the site-wide majority in every language — de 174:31,
-    // fr 205:0, es 200:5, nl 192:13, cs 76:27, pl 82:18 — and it is also what this
-    // page's own body says, since the Mtskheta block exists ONLY in English and
-    // the other six locales render it through the EN fallback. Only the
-    // grammatical case is localized (cs "v Mtskhetě" 20x, pl "w Mtskhecie" 25x).
+    heroPreload: '/images/files/svetitskhoveli-cathedral-courtyard-view-mtskheta-georgia-1200.avif',
+    ogImage: { src: '/images/files/svetitskhoveli-cathedral-courtyard-view-mtskheta-georgia-og.jpg', width: 1200, height: 630 },
+    // Hero ImageObject metadata. Hero is a CSS background (no <img alt>), so the
+    // localized alt lives here (og:image:alt / twitter:image:alt, ImageObject caption).
+    // Owner's own photo → brand credit (default). Latin forms (Mtskheta /
+    // Svetitskhoveli) in all seven locales, as in the body.
     imageMeta: {
-      width: 1448, height: 1085,
-      noCredit: true,
-      name: 'Jvari Monastery on the cliff above Mtskheta and the meeting of the Aragvi and Mtkvari rivers, Georgia',
-      description: 'An aerial view of Jvari Monastery, a stone church with a low dome standing among ruined walls on the cliff above the confluence of the Aragvi and Mtkvari rivers, with the town of Mtskheta spread across the valley floor below and wooded hills behind. Mtskheta lies in the Mtskheta-Mtianeti region of Georgia (the country).',
-      locationName: 'Jvari Monastery, Mtskheta, Mtskheta-Mtianeti, Georgia',
+      width: 1448, height: 1086,
+      name: 'Svetitskhoveli Cathedral and the bell tower of its walled precinct under a blue sky in Mtskheta, Georgia',
+      description: 'Svetitskhoveli Cathedral in Mtskheta, a large church of golden sandstone with arcaded walls and a conical dome, seen from the courtyard of its walled precinct under a blue sky, with the stone gatehouse and bell tower to the right. Mtskheta lies in the Mtskheta-Mtianeti region of Georgia (the country).',
+      locationName: 'Svetitskhoveli Cathedral, Mtskheta, Mtskheta-Mtianeti, Georgia',
       locality: 'Mtskheta', region: 'Mtskheta-Mtianeti', country: 'GE',
-      geo: { lat: 41.8380, lng: 44.7328 },
+      geo: { lat: 41.8419, lng: 44.7211 },
       alt: {
-        en: 'Jvari Monastery on the cliff above Mtskheta and the meeting of the Aragvi and Mtkvari rivers, Georgia',
-        de: 'Das Jvari-Kloster auf der Klippe über Mtskheta und dem Zusammenfluss von Aragvi und Mtkvari, Georgien',
-        fr: "Le monastère de Jvari sur la falaise dominant Mtskheta et la rencontre de l'Aragvi et de la Mtkvari, Géorgie",
-        es: 'El monasterio de Jvari en el acantilado sobre Mtskheta y el encuentro del Aragvi y el Mtkvari, Georgia',
-        nl: 'Het Jvari-klooster op de klif boven Mtskheta en de samenvloeiing van de Aragvi en de Mtkvari, Georgië',
-        cs: 'Klášter Jvari na útesu nad Mtskhetou a soutokem Aragvi a Mtkvari, Gruzie',
-        pl: 'Klasztor Jvari na klifie nad Mtskhetą i zbiegiem Aragwi i Mtkwari, Gruzja',
+        en: 'Svetitskhoveli Cathedral and the bell tower of its walled precinct under a blue sky in Mtskheta, Georgia',
+        de: 'Die Svetitskhoveli-Kathedrale und der Glockenturm ihres ummauerten Bezirks unter blauem Himmel in Mtskheta, Georgien',
+        fr: 'La cathédrale de Svetitskhoveli et le clocher de son enceinte sous un ciel bleu à Mtskheta, Géorgie',
+        es: 'La catedral de Svetitskhoveli y el campanario de su recinto amurallado bajo un cielo azul en Mtskheta, Georgia',
+        nl: 'De Svetitskhoveli-kathedraal en de klokkentoren van haar ommuurde terrein onder een blauwe lucht in Mtskheta, Georgië',
+        cs: 'Katedrála Svetitskhoveli a zvonice jejího hrazeného areálu pod modrou oblohou v Mtskhetě, Gruzie',
+        pl: 'Katedra Svetitskhoveli i dzwonnica jej obwarowanego dziedzińca pod błękitnym niebem w Mtskhecie, Gruzja',
+      },
+      caption: {
+        en: 'Svetitskhoveli Cathedral, the dominant monument of Mtskheta, seen from its courtyard with the bell tower and precinct wall to the right.',
+        de: 'Die Svetitskhoveli-Kathedrale, das beherrschende Bauwerk von Mtskheta, vom Hof aus gesehen, rechts Glockenturm und Bezirksmauer.',
+        fr: 'La cathédrale de Svetitskhoveli, monument dominant de Mtskheta, vue depuis sa cour, avec le clocher et le mur d\'enceinte à droite.',
+        es: 'La catedral de Svetitskhoveli, el monumento dominante de Mtskheta, vista desde su patio, con el campanario y la muralla del recinto a la derecha.',
+        nl: 'De Svetitskhoveli-kathedraal, het dominante monument van Mtskheta, gezien vanaf de binnenplaats, met rechts de klokkentoren en de terreinmuur.',
+        cs: 'Katedrála Svetitskhoveli, dominantní památka Mtskhety, při pohledu z nádvoří, vpravo zvonice a zeď areálu.',
+        pl: 'Katedra Svetitskhoveli, dominujący zabytek Mtskhety, widziana z dziedzińca, po prawej dzwonnica i mur dziedzińca.',
       },
     },
-    // Four LANDSCAPE inline body photos, rendered by CityPage as real crawlable
-    // <figure class="body-img"> blocks BETWEEN body sections via `afterChunk` —
-    // never the hero, never OG, lazy + async, no fetchpriority, explicit
-    // width/height. `portrait: false` + `widths` selects the 4:3 landscape branch
-    // (768/1200/1448, 642px display cap, 1200x900 fallback <img>).
-    //
-    // ⚠️ ZERO FILES COPIED OR GENERATED. All four ladders already exist at
-    // /images/files/ without the `w` suffix (they were built for the Svetitskhoveli
-    // and Jvari site pages) and are referenced in place. Native width is 1448 for
-    // three of them and 1540 for the cathedral, so those are their top rungs —
-    // no 1600/2400, no upscale.
-    //
-    // The Mtskheta page-content block exists ONLY in English (the other six
-    // locales fall back to it all-or-nothing), so alt/caption live here as
-    // 7-language maps to guarantee localized figure text on every locale — the
-    // same reason the Ushguli inlines do. Each gets one inline ImageObject via
-    // `anchor` (stable page-scoped @id, brand credit, own contentLocation) and
-    // none is representativeOfPage — that stays the hero's.
-    //
-    // Placement follows the body: the cathedral frame sits under "Svetitskhoveli
-    // Cathedral"; the carved-facade frame under "Jvari Monastery", which describes
-    // the relief carvings and the precision of the stone cutting; the wall and
-    // bell-tower frame under "The town", which talks about walking between the
-    // monuments and the area around Svetitskhoveli; the ridge frame under "Best
-    // time to visit Mtskheta", which names the clear spring and autumn skies at
-    // Jvari.
-    //
-    // The cathedral frame was this page's hero until the owner chose the Jvari
-    // confluence aerial instead; it moved down here rather than going unused,
-    // which is why the wall/bell-tower frame sits under "The town" and not under
-    // the cathedral section.
-    //
-    // ⚠️ NO DATES IN THE CAPTIONS for the Svetitskhoveli wall. This page dates it
-    // "mainly to the 17th century"; the Svetitskhoveli site page's own inline
-    // caption says 1787 under Erekle II. Both stay as they are (no body copy was
-    // touched); the caption here describes only what the photograph shows, so it
-    // contradicts neither.
+    // Four LANDSCAPE/portrait inline body photos, real crawlable <figure class="body-img">
+    // blocks BETWEEN sections via `afterChunk` (lazy, no fetchpriority, explicit
+    // width/height). The Mtskheta body exists ONLY in English, so alt/caption live here
+    // as 7-language maps. Owner's own photos (Svetitskhoveli interior under
+    // "Svetitskhoveli Cathedral", the cobbled street under "The town") replace the
+    // earlier cathedral and wall frames. The two Jvari figures are DELIBERATELY kept
+    // verbatim: they sit under "Jvari Monastery" and the Jvari clear-air passage and
+    // depict Jvari, which the owner's Mtskheta folder does not cover.
     portraitInlines: [
       {
-        // 3:2, not 4:3 — native 1540x1021, so the ladder is 768/1200/1540 and the
-        // 1200 fallback <img> is 1200x796 (CityPage derives the height).
-        base: 'svetitskhoveli-cathedral-mtskheta-georgia', width: 1540, height: 1021,
-        afterChunk: 2, anchor: 'inline-svetitskhoveli-cathedral',
-        portrait: false, widths: [768, 1200, 1540],
-        locationName: 'Svetitskhoveli Cathedral, Mtskheta, Mtskheta-Mtianeti, Georgia',
-        locality: 'Mtskheta', region: 'Mtskheta-Mtianeti', geo: { lat: 41.8419, lng: 44.7211 },
-        alt: {
-          en: 'Svetitskhoveli Cathedral and the wall of its precinct in Mtskheta, Georgia',
-          de: 'Die Svetitskhoveli-Kathedrale und die Mauer ihres Bezirks in Mtskheta, Georgien',
-          fr: "La cathédrale de Svetitskhoveli et le mur de son enceinte à Mtskheta, Géorgie",
-          es: 'La catedral de Svetitskhoveli y la muralla de su recinto en Mtskheta, Georgia',
-          nl: 'De Svetitskhoveli-kathedraal en de muur van haar ommuurde terrein in Mtskheta, Georgië',
-          cs: 'Katedrála Svetitskhoveli a zeď jejího areálu v Mtskhetě, Gruzie',
-          pl: 'Katedra Svetitskhoveli i mur jej dziedzińca w Mtskhecie, Gruzja',
-        },
-        caption: {
-          en: 'Svetitskhoveli in golden sandstone, its arcaded flanks rising to a faceted drum and conical dome, with the gate tower and precinct wall standing off to the right.',
-          de: 'Svetitskhoveli aus goldenem Sandstein: Die arkadengegliederten Flanken steigen zu einem facettierten Tambour und einer Kegelkuppel auf, rechts stehen Torturm und Bezirksmauer.',
-          fr: "Svetitskhoveli en grès doré, ses flancs à arcatures s'élevant vers un tambour à pans et une coupole conique, la tour-porte et le mur d'enceinte se tenant à droite.",
-          es: 'Svetitskhoveli en arenisca dorada, con sus costados de arquerías que ascienden hasta un tambor facetado y una cúpula cónica, y la torre de la puerta y la muralla del recinto a la derecha.',
-          nl: 'Svetitskhoveli in goudkleurige zandsteen, met arcadegevels die oplopen naar een gefacetteerde tamboer en kegelkoepel, en rechts de poorttoren en de muur van het terrein.',
-          cs: 'Svetitskhoveli ze zlatavého pískovce: boční stěny s arkádami stoupají k fasetovanému tamburu a kuželové kupoli, vpravo stojí brána s věží a zeď areálu.',
-          pl: 'Svetitskhoveli ze złocistego piaskowca — arkadowe ściany wznoszą się ku fasetowanemu bębnowi i stożkowej kopule, a po prawej stoją wieża bramna i mur dziedzińca.',
-        },
-      },
-      {
-        base: 'svetitskhoveli-bell-tower-wall-mtskheta-georgia', width: 1448, height: 1086,
-        afterChunk: 6, anchor: 'inline-svetitskhoveli-wall',
+        base: 'svetitskhoveli-cathedral-interior-fresco-mtskheta-georgia', width: 1448, height: 1086,
+        afterChunk: 2, anchor: 'inline-svetitskhoveli-interior',
         portrait: false, widths: [768, 1200, 1448],
         locationName: 'Svetitskhoveli Cathedral, Mtskheta, Mtskheta-Mtianeti, Georgia',
         locality: 'Mtskheta', region: 'Mtskheta-Mtianeti', geo: { lat: 41.8419, lng: 44.7211 },
         alt: {
-          en: 'The bell tower over the gate and the crenellated wall around Svetitskhoveli Cathedral, seen from the courtyard in Mtskheta, Georgia',
-          de: 'Der Glockenturm über dem Tor und die zinnenbewehrte Mauer um die Svetitskhoveli-Kathedrale, vom Hof aus gesehen, Mtskheta, Georgien',
-          fr: "Le clocher au-dessus de la porte et le mur crénelé qui entoure la cathédrale de Svetitskhoveli, vus de la cour, Mtskheta, Géorgie",
-          es: 'El campanario sobre la puerta y la muralla almenada que rodea la catedral de Svetitskhoveli, vistos desde el patio, Mtskheta, Georgia',
-          nl: 'De klokkentoren boven de poort en de gekanteelde muur rond de Svetitskhoveli-kathedraal, gezien vanaf de binnenplaats, Mtskheta, Georgië',
-          cs: 'Zvonice nad branou a cimbuřím opatřená zeď kolem katedrály Svetitskhoveli při pohledu z nádvoří, Mtskheta, Gruzie',
-          pl: 'Dzwonnica nad bramą i blankowany mur wokół katedry Svetitskhoveli widziane z dziedzińca, Mtskheta, Gruzja',
+          en: 'Visitors inside Svetitskhoveli Cathedral, with stone arches leading to a large fresco of Christ in the apse, Mtskheta, Georgia',
+          de: 'Besucher im Innenraum der Svetitskhoveli-Kathedrale, Steinbögen führen zu einem großen Fresko Christi in der Apsis, Mtskheta, Georgien',
+          fr: 'Des visiteurs à l\'intérieur de la cathédrale de Svetitskhoveli, des arcs de pierre menant à une grande fresque du Christ dans l\'abside, Mtskheta, Géorgie',
+          es: 'Visitantes en el interior de la catedral de Svetitskhoveli, con arcos de piedra que conducen a un gran fresco de Cristo en el ábside, Mtskheta, Georgia',
+          nl: 'Bezoekers in de Svetitskhoveli-kathedraal, met stenen bogen die leiden naar een grote fresco van Christus in de apsis, Mtskheta, Georgië',
+          cs: 'Návštěvníci uvnitř katedrály Svetitskhoveli, kamenné oblouky vedou k velké fresce Krista v apsidě, Mtskheta, Gruzie',
+          pl: 'Zwiedzający wewnątrz katedry Svetitskhoveli, kamienne łuki prowadzą do wielkiego fresku Chrystusa w apsydzie, Mtskheta, Gruzja',
         },
         caption: {
-          en: 'Svetitskhoveli stands inside a walled precinct: a crenellated stone wall with corner towers rings the cathedral, and a bell tower rises over the entrance gate.',
-          de: 'Svetitskhoveli steht in einem ummauerten Bezirk: Eine zinnenbewehrte Steinmauer mit Ecktürmen umschließt die Kathedrale, über dem Eingangstor erhebt sich ein Glockenturm.',
-          fr: "Svetitskhoveli s'élève dans une enceinte fortifiée : un mur de pierre crénelé, flanqué de tours d'angle, ceint la cathédrale, et un clocher domine la porte d'entrée.",
-          es: 'Svetitskhoveli se alza dentro de un recinto amurallado: una muralla de piedra almenada con torres en las esquinas rodea la catedral y un campanario se levanta sobre la puerta de entrada.',
-          nl: 'Svetitskhoveli staat binnen een ommuurd terrein: een gekanteelde stenen muur met hoektorens omsluit de kathedraal, en boven de toegangspoort rijst een klokkentoren op.',
-          cs: 'Svetitskhoveli stojí v ohrazeném areálu: katedrálu obepíná cimbuřím opatřená kamenná zeď s nárožními věžemi a nad vstupní branou se zvedá zvonice.',
-          pl: 'Svetitskhoveli stoi w obwarowanym dziedzińcu: katedrę otacza blankowany kamienny mur z wieżami w narożnikach, a nad bramą wjazdową wznosi się dzwonnica.',
+          en: 'Inside Svetitskhoveli, stone arches frame the apse, where a large fresco of Christ looks down the nave.',
+          de: 'Im Inneren von Svetitskhoveli rahmen Steinbögen die Apsis, in der ein großes Christusfresko über das Kirchenschiff blickt.',
+          fr: 'À l\'intérieur de Svetitskhoveli, des arcs de pierre encadrent l\'abside, où une grande fresque du Christ domine la nef.',
+          es: 'En el interior de Svetitskhoveli, arcos de piedra enmarcan el ábside, donde un gran fresco de Cristo preside la nave.',
+          nl: 'In Svetitskhoveli omlijsten stenen bogen de apsis, waar een grote fresco van Christus over het schip uitkijkt.',
+          cs: 'Uvnitř Svetitskhoveli rámují kamenné oblouky apsidu, v níž velká freska Krista hledí do lodi.',
+          pl: 'Wewnątrz Svetitskhoveli kamienne łuki ujmują apsydę, w której wielki fresk Chrystusa spogląda wzdłuż nawy.',
         },
       },
       {
@@ -5714,6 +5626,30 @@ export const cities = [
           nl: 'Van dichtbij toont de Jvari-kerk waar het gebouw om bekendstaat: strak gehouwen steen, reliëfwerk rond de vensters en op de gevel, en een lage tamboer die de koepel draagt.',
           cs: 'Zblízka ukazuje kostel Jvari to, čím je proslulý: čistě tesaný kámen, reliéfy kolem oken i na fasádě a nízký tambur nesoucí kupoli.',
           pl: 'Z bliska kościół Jvari pokazuje to, z czego słynie: czysto ciosany kamień, reliefy wokół okien i na fasadzie oraz niski bęben dźwigający kopułę.',
+        },
+      },
+      {
+        base: 'mtskheta-old-town-cobbled-street-georgia', width: 1024, height: 1536,
+        afterChunk: 6, anchor: 'inline-mtskheta-street',
+        locationName: 'Svetitskhoveli Cathedral, Mtskheta, Mtskheta-Mtianeti, Georgia',
+        locality: 'Mtskheta', region: 'Mtskheta-Mtianeti', geo: { lat: 41.8419, lng: 44.7211 },
+        alt: {
+          en: 'A cobbled street in Mtskheta lined with shops, cafés and tile-roofed houses, with wooded hills behind, Georgia',
+          de: 'Eine Kopfsteinpflasterstraße in Mtskheta mit Läden, Cafés und ziegelgedeckten Häusern, dahinter bewaldete Hügel, Georgien',
+          fr: 'Une rue pavée de Mtskheta bordée de boutiques, de cafés et de maisons aux toits de tuiles, avec des collines boisées en arrière-plan, Géorgie',
+          es: 'Una calle empedrada de Mtskheta con tiendas, cafés y casas de tejados de teja, con colinas boscosas al fondo, Georgia',
+          nl: 'Een geplaveide straat in Mtskheta met winkels, cafés en huizen met pannendaken, met beboste heuvels erachter, Georgië',
+          cs: 'Dlážděná ulice v Mtskhetě s obchody, kavárnami a domy s taškovými střechami, v pozadí zalesněné kopce, Gruzie',
+          pl: 'Brukowana ulica w Mtskhecie ze sklepami, kawiarniami i domami krytymi dachówką, w tle zalesione wzgórza, Gruzja',
+        },
+        caption: {
+          en: 'The streets between the monuments are lined with small shops, cafés and tile-roofed houses.',
+          de: 'Die Gassen zwischen den Monumenten säumen kleine Läden, Cafés und ziegelgedeckte Häuser.',
+          fr: 'Les rues entre les monuments sont bordées de petites boutiques, de cafés et de maisons aux toits de tuiles.',
+          es: 'Las calles entre los monumentos están bordeadas de pequeñas tiendas, cafés y casas de tejados de teja.',
+          nl: 'De straten tussen de monumenten worden omzoomd door kleine winkels, cafés en huizen met pannendaken.',
+          cs: 'Ulice mezi památkami lemují malé obchody, kavárny a domy s taškovými střechami.',
+          pl: 'Ulice między zabytkami wypełniają małe sklepy, kawiarnie i domy kryte dachówką.',
         },
       },
       {
@@ -8231,61 +8167,159 @@ export const cities = [
   {
     slug: 'kazbegi', name: 'Kazbegi (Stepantsminda)', region: 'mtskheta-mtianeti', published: true,
     seoKey: 'kazbegiStepantsminda', contentKey: 'kazbegiStepantsminda',
-    // Hero: real Kazbegi-area village below the Greater Caucasus (owner's own photo)
-    // via the .hero--kazbegi image-set() ladder (styles.css), replacing the shared
-    // georgia-home.jpg placeholder. PORTRAIT 2:3 (1024×1536), native width 1024 →
-    // ladder is exactly 768/1024. NO 1200/1448/1600/2400 rung, no upscale. The CSS
-    // class controls the visible background (`background-position: center 48%` —
-    // deliberate, keeps the peaks + village with sky above for the H1; center center
-    // leans to empty sky, lower buries the peaks in the dark forest). No extra scrim
-    // — the shared .coverme::after overlay (rgba(0,0,0,0.35)) already provides the
-    // light scrim, and the H1 sits in the blue sky, never over the dark forest foot.
+    // Hero: the town of Stepantsminda below the snow-covered peaks of the Greater
+    // Caucasus (owner's own photo, "Kazbegi 1"). PORTRAIT 2:3 (1024x1536), native
+    // width 1024 → ladder is exactly 768/1024, NO 1200/1448 rung, no upscale. The
+    // CSS class controls the visible background (.hero--kazbegi, styles.css).
     // `image`/`imageAvif` = the 1024 top rung, feeding the ImageObject contentUrl.
-    image: '/images/files/kazbegi-mountains-village-georgia-1024.webp',
-    imageAvif: '/images/files/kazbegi-mountains-village-georgia-1024.avif',
+    image: '/images/files/kazbegi-village-below-caucasus-peaks-georgia-1024.webp',
+    imageAvif: '/images/files/kazbegi-village-below-caucasus-peaks-georgia-1024.avif',
     heroClass: 'hero--kazbegi',
-    // LCP hero preload — the site's preload is a single fixed URL, and the package
-    // specifies "1024 if single-URL preload", so preload the 1024 AVIF (the desktop
-    // rung) with fetchpriority=high. Page-scoped (only entries with heroPreload emit
-    // a <link rel=preload> via CityPage/useSEO + prerender.js).
-    heroPreload: '/images/files/kazbegi-mountains-village-georgia-1024.avif',
-    // Dedicated social image. NOTE: this OG is 1024x537 (a no-upscale crop, below the
+    // LCP preload — the 1024 AVIF (desktop rung), fetchpriority=high, page-scoped.
+    heroPreload: '/images/files/kazbegi-village-below-caucasus-peaks-georgia-1024.avif',
+    // Dedicated social image, a 1024x537 no-upscale crop of the hero (below the
     // 1200x630 canonical — platforms accept it); do NOT upscale to 1200x630.
-    ogImage: { src: '/images/files/kazbegi-mountains-village-georgia-og.jpg', width: 1024, height: 537 },
-    // Hero image SEO/AEO metadata (owner's own photo → brand credit, set by
-    // CityPage). Hero is a CSS background (no <img alt>), so the localized alt lives
-    // here and is emitted as og:image:alt/twitter:image:alt per locale; the `caption`
-    // map feeds the hero ImageObject caption. Verbatim from kazbegi-hero-package.md.
-    // width/height = 1024 rung. DELIBERATELY names NO summit (the peak reads as a
-    // serrated ridge, NOT the Kazbek cone) and NO specific village. contentLocation
-    // is name + geo pinned to Stepantsminda town (42.6572/44.6415) as the REGIONAL
-    // anchor, with NO address block — CityPage omits address when locality/region/
-    // country are absent and emits geo when present. Region Mtskheta-Mtianeti.
+    ogImage: { src: '/images/files/kazbegi-village-below-caucasus-peaks-georgia-og.jpg', width: 1024, height: 537 },
+    // Hero ImageObject metadata. The hero is a CSS background (no <img alt>), so the
+    // localized alt lives here and is emitted as og:image:alt / twitter:image:alt per
+    // locale; `caption` feeds the hero ImageObject caption. Owner's own photo → brand
+    // credit (default). No summit is named: the frame shows the rocky wall above the
+    // town, not the Kazbek cone.
     imageMeta: {
       width: 1024, height: 1536,
-      name: 'A village on green terraces below the snow-capped peaks of the Greater Caucasus in the Kazbegi region, Georgia',
-      description: 'A village of red- and metal-roofed houses on green mountain terraces in the Kazbegi (Stepantsminda) region of northern Georgia, below a serrated wall of snow-capped Greater Caucasus peaks under a deep blue sky with towering clouds, and dark conifer forest in the foreground. Kazbegi lies on the Georgian Military Highway in the Mtskheta-Mtianeti region of Georgia (the country).',
-      locationName: 'Kazbegi (Stepantsminda) region, Mtskheta-Mtianeti, Georgia',
+      name: 'The town of Stepantsminda in the valley below steep snow-covered peaks of the Greater Caucasus, Kazbegi region, Georgia',
+      description: 'The town of Stepantsminda in the Kazbegi region of northern Georgia: houses with red and metal roofs spread across the valley floor below a dark conifer grove, with steep, rocky, snow-covered peaks of the Greater Caucasus rising above under a blue sky. Stepantsminda lies on the Georgian Military Highway in the Mtskheta-Mtianeti region of Georgia (the country).',
+      locationName: 'Stepantsminda, Kazbegi, Mtskheta-Mtianeti, Georgia',
       geo: { lat: 42.6572, lng: 44.6415 },
       alt: {
-        en: 'A village on green terraces below the snow-capped peaks of the Greater Caucasus in the Kazbegi region, Georgia',
-        de: 'Ein Dorf auf grünen Terrassen unterhalb der schneebedeckten Gipfel des Großen Kaukasus in der Region Kasbegi, Georgien',
-        fr: 'Un village sur des terrasses verdoyantes sous les sommets enneigés du Grand Caucase dans la région de Kazbegi, Géorgie',
-        es: 'Una aldea en terrazas verdes bajo los picos nevados del Gran Cáucaso en la región de Kazbegi, Georgia',
-        nl: 'Een dorp op groene terrassen onder de besneeuwde toppen van de Grote Kaukasus in de regio Kazbegi, Georgië',
-        cs: 'Vesnice na zelených terasách pod zasněženými vrcholy Velkého Kavkazu v regionu Kazbegi, Gruzie',
-        pl: 'Wieś na zielonych tarasach pod ośnieżonymi szczytami Wielkiego Kaukazu w regionie Kazbegi, Gruzja',
+        en: 'The town of Stepantsminda in the valley below steep snow-covered peaks of the Greater Caucasus, Kazbegi region, Georgia',
+        de: 'Die Stadt Stepanzminda im Tal unterhalb steiler, schneebedeckter Gipfel des Großen Kaukasus, Region Kasbegi, Georgien',
+        fr: 'La ville de Stepantsminda dans la vallée, au pied de sommets escarpés et enneigés du Grand Caucase, région de Kazbegi, Géorgie',
+        es: 'El pueblo de Stepantsminda en el valle, bajo escarpadas cumbres nevadas del Gran Cáucaso, región de Kazbegi, Georgia',
+        nl: 'De stad Stepantsminda in het dal onder steile, besneeuwde toppen van de Grote Kaukasus, regio Kazbegi, Georgië',
+        cs: 'Město Stepancminda v údolí pod strmými zasněženými vrcholy Velkého Kavkazu, region Kazbegi, Gruzie',
+        pl: 'Miasto Stepancminda w dolinie pod stromymi, ośnieżonymi szczytami Wielkiego Kaukazu, region Kazbegi, Gruzja',
       },
       caption: {
-        en: 'The Kazbegi region — reached by the Georgian Military Highway north of Tbilisi — gathers green valleys, stone villages and the snow-capped wall of the Greater Caucasus along the Russian border. Nearby stands its most famous sight, the Gergeti Trinity Church beneath Mount Kazbek.',
-        de: 'Die Region Kasbegi – über die Georgische Heerstraße nördlich von Tiflis erreichbar – vereint grüne Täler, Steindörfer und die schneebedeckte Wand des Großen Kaukasus entlang der russischen Grenze. Ganz in der Nähe liegt ihr berühmtestes Wahrzeichen, die Gergeti-Dreifaltigkeitskirche unter dem Kasbek.',
-        fr: "La région de Kazbegi — accessible par la route militaire géorgienne au nord de Tbilissi — réunit vallées verdoyantes, villages de pierre et la muraille enneigée du Grand Caucase le long de la frontière russe. Tout près se dresse son site le plus célèbre, l'église de la Trinité de Guerguéti sous le mont Kazbek.",
-        es: 'La región de Kazbegi —a la que se llega por la carretera militar georgiana al norte de Tiflis— reúne valles verdes, aldeas de piedra y la muralla nevada del Gran Cáucaso junto a la frontera rusa. Cerca se alza su lugar más célebre, la iglesia de la Trinidad de Guergueti bajo el monte Kazbek.',
-        nl: 'De regio Kazbegi — bereikbaar via de Georgische Militaire Weg ten noorden van Tbilisi — verenigt groene valleien, stenen dorpen en de besneeuwde wand van de Grote Kaukasus langs de Russische grens. Vlakbij staat haar beroemdste bezienswaardigheid, de Gergeti-Drie-eenheidskerk onder de Kazbek.',
-        cs: 'Region Kazbegi – dostupný Gruzínskou vojenskou cestou severně od Tbilisi – spojuje zelená údolí, kamenné vesnice a zasněženou stěnu Velkého Kavkazu podél ruské hranice. Nedaleko stojí jeho nejslavnější památka, gergetský kostel Nejsvětější Trojice pod horou Kazbek.',
-        pl: 'Region Kazbegi — dostępny Gruzińską Drogą Wojenną na północ od Tbilisi — łączy zielone doliny, kamienne wsie i ośnieżoną ścianę Wielkiego Kaukazu wzdłuż granicy z Rosją. Nieopodal wznosi się jego najsłynniejszy zabytek, cerkiew Trójcy Świętej w Gergeti pod górą Kazbek.',
+        en: 'Stepantsminda, the main town of the Kazbegi region, lies in the Terek valley beneath the snow-covered wall of the Greater Caucasus, on the Georgian Military Highway north of Tbilisi.',
+        de: 'Stepanzminda, der Hauptort der Region Kasbegi, liegt im Terek-Tal unterhalb der schneebedeckten Wand des Großen Kaukasus an der Georgischen Heerstraße nördlich von Tiflis.',
+        fr: 'Stepantsminda, la principale localité de la région de Kazbegi, s\'étend dans la vallée du Terek au pied de la muraille enneigée du Grand Caucase, sur la route militaire géorgienne au nord de Tbilissi.',
+        es: 'Stepantsminda, la principal localidad de la región de Kazbegi, se extiende en el valle del Terek al pie de la muralla nevada del Gran Cáucaso, en la carretera militar georgiana al norte de Tiflis.',
+        nl: 'Stepantsminda, de hoofdplaats van de regio Kazbegi, ligt in de Terekvallei onder de besneeuwde wand van de Grote Kaukasus, aan de Georgische Militaire Weg ten noorden van Tbilisi.',
+        cs: 'Stepancminda, hlavní město regionu Kazbegi, leží v údolí řeky Terek pod zasněženou stěnou Velkého Kavkazu u Gruzínské vojenské cesty severně od Tbilisi.',
+        pl: 'Stepancminda, główne miasto regionu Kazbegi, leży w dolinie Tereku pod ośnieżoną ścianą Wielkiego Kaukazu, przy Gruzińskiej Drodze Wojennej na północ od Tbilisi.',
       },
     },
+    // Four inline body photos (owner's own), real crawlable <figure> blocks between
+    // sections via CityPage's `portraitInlines`: the Kazbegi body exists only in
+    // English (other locales fall back to it), so alt/caption live here as
+    // 7-language maps. Placement follows the text: hilltop view under "Why visit
+    // Kazbegi?" (names the church against Kazbek), stone-wall close-up under
+    // "Gergeti Trinity Church", Mount Kazbek under "Mount Kazbek and the setting",
+    // the town under "The town". Landscape = 768/1200/1448, portrait = 768/1024.
+    // None is representativeOfPage — that is the hero's. No glacier photo exists,
+    // so none is claimed.
+    portraitInlines: [
+      {
+        base: 'gergeti-trinity-church-hilltop-kazbegi-georgia-view', width: 1448, height: 1086,
+        afterChunk: 1, anchor: 'inline-gergeti-church-hilltop',
+        portrait: false, widths: [768, 1200, 1448],
+        locationName: 'Gergeti Trinity Church, Stepantsminda, Mtskheta-Mtianeti, Georgia',
+        locality: 'Stepantsminda', region: 'Mtskheta-Mtianeti',
+        alt: {
+          en: 'Gergeti Trinity Church on its hilltop below the snow-covered peaks of the Greater Caucasus near Stepantsminda, Georgia',
+          de: 'Die Gergeti-Dreifaltigkeitskirche auf ihrem Hügel unterhalb der schneebedeckten Gipfel des Großen Kaukasus bei Stepanzminda, Georgien',
+          fr: 'L\'église de la Trinité de Gergeti sur sa colline, au pied des sommets enneigés du Grand Caucase près de Stepantsminda, Géorgie',
+          es: 'La iglesia de la Trinidad de Gergeti en su colina, bajo las cumbres nevadas del Gran Cáucaso cerca de Stepantsminda, Georgia',
+          nl: 'De Drie-eenheidskerk van Gergeti op haar heuvel onder de besneeuwde toppen van de Grote Kaukasus bij Stepantsminda, Georgië',
+          cs: 'Gergetský kostel Nejsvětější Trojice na svém kopci pod zasněženými vrcholy Velkého Kavkazu u Stepancminda, Gruzie',
+          pl: 'Cerkiew Trójcy Świętej w Gergeti na wzgórzu pod ośnieżonymi szczytami Wielkiego Kaukazu koło Stepancminda, Gruzja',
+        },
+        caption: {
+          en: 'Gergeti Trinity Church stands on a hill above Stepantsminda, with the snow-covered ridges of the Greater Caucasus rising behind it.',
+          de: 'Die Gergeti-Dreifaltigkeitskirche steht auf einem Hügel über Stepanzminda, dahinter erheben sich die schneebedeckten Kämme des Großen Kaukasus.',
+          fr: 'L\'église de la Trinité de Gergeti se dresse sur une colline au-dessus de Stepantsminda, devant les crêtes enneigées du Grand Caucase.',
+          es: 'La iglesia de la Trinidad de Gergeti se alza en una colina sobre Stepantsminda, con las crestas nevadas del Gran Cáucaso detrás.',
+          nl: 'De Drie-eenheidskerk van Gergeti staat op een heuvel boven Stepantsminda, met de besneeuwde bergkammen van de Grote Kaukasus erachter.',
+          cs: 'Gergetský kostel Nejsvětější Trojice stojí na kopci nad Stepancmindou, za ním se zdvíhají zasněžené hřebeny Velkého Kavkazu.',
+          pl: 'Cerkiew Trójcy Świętej w Gergeti stoi na wzgórzu nad Stepancmindą, a za nią wznoszą się ośnieżone grzbiety Wielkiego Kaukazu.',
+        },
+      },
+      {
+        base: 'gergeti-trinity-church-stone-walls-kazbegi-georgia', width: 1448, height: 1086,
+        afterChunk: 2, anchor: 'inline-gergeti-church-walls',
+        portrait: false, widths: [768, 1200, 1448],
+        locationName: 'Gergeti Trinity Church, Stepantsminda, Mtskheta-Mtianeti, Georgia',
+        locality: 'Stepantsminda', region: 'Mtskheta-Mtianeti',
+        alt: {
+          en: 'The stone walls and carved crosses of Gergeti Trinity Church, with its octagonal drum and a snow-covered peak in the distance, Georgia',
+          de: 'Die Steinmauern und Reliefkreuze der Gergeti-Dreifaltigkeitskirche mit ihrem achteckigen Tambour, in der Ferne ein schneebedeckter Gipfel, Georgien',
+          fr: 'Les murs de pierre et les croix sculptées de l\'église de la Trinité de Gergeti, avec son tambour octogonal et un sommet enneigé au loin, Géorgie',
+          es: 'Los muros de piedra y las cruces talladas de la iglesia de la Trinidad de Gergeti, con su tambor octogonal y una cumbre nevada al fondo, Georgia',
+          nl: 'De stenen muren en uitgehouwen kruisen van de Drie-eenheidskerk van Gergeti, met de achthoekige tamboer en in de verte een besneeuwde bergtop, Georgië',
+          cs: 'Kamenné zdi a vytesané kříže gergetského kostela Nejsvětější Trojice s osmibokým tamburem a vzdáleným zasněženým vrcholem, Gruzie',
+          pl: 'Kamienne mury i rzeźbione krzyże cerkwi Trójcy Świętej w Gergeti z ośmiobocznym bębnem i ośnieżonym szczytem w oddali, Gruzja',
+        },
+        caption: {
+          en: 'Up close, the church is a compact building of dressed stone, its walls carved with crosses and its drum pierced by narrow arched windows.',
+          de: 'Aus der Nähe zeigt sich die Kirche als kompakter Bau aus behauenem Stein, die Wände mit Kreuzen verziert und der Tambour von schmalen Rundbogenfenstern durchbrochen.',
+          fr: 'De près, l\'église est un édifice compact en pierre taillée, aux murs ornés de croix sculptées et au tambour percé de fenêtres étroites en arc.',
+          es: 'De cerca, la iglesia es un edificio compacto de piedra tallada, con los muros decorados con cruces y el tambor abierto por estrechas ventanas en arco.',
+          nl: 'Van dichtbij is de kerk een compact gebouw van gehouwen steen, met muren versierd met kruisen en een tamboer met smalle boogvensters.',
+          cs: 'Zblízka je kostel kompaktní stavbou z tesaného kamene se zdmi ozdobenými kříži a tamburem prolomeným úzkými obloukovými okny.',
+          pl: 'Z bliska cerkiew to zwarta budowla z ciosanego kamienia, o ścianach zdobionych krzyżami i bębnie z wąskimi okienkami w łukach.',
+        },
+      },
+      {
+        base: 'mount-kazbek-snow-summit-kazbegi-georgia', width: 1024, height: 1536,
+        afterChunk: 3, anchor: 'inline-mount-kazbek',
+        locationName: 'Mount Kazbek, Stepantsminda, Mtskheta-Mtianeti, Georgia',
+        locality: 'Stepantsminda', region: 'Mtskheta-Mtianeti',
+        alt: {
+          en: 'Snow-covered Mount Kazbek under a blue sky with wispy clouds, seen from the Stepantsminda area, Georgia',
+          de: 'Der schneebedeckte Kazbek unter blauem Himmel mit zarten Wolkenschleiern, gesehen aus der Gegend von Stepanzminda, Georgien',
+          fr: 'Le mont Kazbek enneigé sous un ciel bleu parsemé de nuages légers, vu depuis la région de Stepantsminda, Géorgie',
+          es: 'El monte Kazbek nevado bajo un cielo azul con nubes ligeras, visto desde los alrededores de Stepantsminda, Georgia',
+          nl: 'De besneeuwde Kazbek onder een blauwe lucht met ijle wolken, gezien vanuit de omgeving van Stepantsminda, Georgië',
+          cs: 'Zasněžená hora Kazbek pod modrou oblohou s řídkými mraky, pohled z okolí Stepancminda, Gruzie',
+          pl: 'Ośnieżony szczyt Kazbek pod błękitnym niebem z cienkimi chmurami, widok z okolic Stepancminda, Gruzja',
+        },
+        caption: {
+          en: 'Mount Kazbek (5,054 m), the dormant volcano that dominates the skyline above Stepantsminda.',
+          de: 'Der Kazbek (5.054 m), der ruhende Vulkan, der die Kulisse über Stepanzminda beherrscht.',
+          fr: 'Le mont Kazbek (5 054 m), volcan endormi qui domine l\'horizon au-dessus de Stepantsminda.',
+          es: 'El monte Kazbek (5054 m), el volcán dormido que domina el horizonte sobre Stepantsminda.',
+          nl: 'De Kazbek (5.054 m), de slapende vulkaan die de horizon boven Stepantsminda beheerst.',
+          cs: 'Hora Kazbek (5 054 m), spící sopka, která ovládá obzor nad Stepancmindou.',
+          pl: 'Szczyt Kazbek (5054 m), uśpiony wulkan dominujący nad horyzontem Stepancmindą.',
+        },
+      },
+      {
+        base: 'stepantsminda-town-aerial-view-georgia', width: 1448, height: 1086,
+        afterChunk: 6, anchor: 'inline-stepantsminda-town',
+        portrait: false, widths: [768, 1200, 1448],
+        locationName: 'Stepantsminda, Kazbegi, Mtskheta-Mtianeti, Georgia',
+        locality: 'Stepantsminda', region: 'Mtskheta-Mtianeti', geo: { lat: 42.6572, lng: 44.6415 },
+        alt: {
+          en: 'Red- and metal-roofed houses across the town of Stepantsminda, with a dark conifer grove and snow-dusted slopes rising behind it, Georgia',
+          de: 'Rot- und metallgedeckte Häuser in der Stadt Stepanzminda, dahinter ein dunkler Nadelwald und schneebestäubte Hänge, Georgien',
+          fr: 'Maisons aux toits rouges et métalliques dans la ville de Stepantsminda, avec un bois sombre de conifères et des pentes saupoudrées de neige derrière, Géorgie',
+          es: 'Casas de tejados rojos y metálicos en el pueblo de Stepantsminda, con un oscuro bosque de coníferas y laderas espolvoreadas de nieve detrás, Georgia',
+          nl: 'Huizen met rode en metalen daken in de stad Stepantsminda, met erachter een donker naaldbos en met sneeuw bestoven hellingen, Georgië',
+          cs: 'Domy s červenými a plechovými střechami ve městě Stepancminda, za nimi tmavý jehličnatý les a svahy poprašené sněhem, Gruzie',
+          pl: 'Domy o czerwonych i blaszanych dachach w mieście Stepancminda, za nimi ciemny las iglasty i zaśnieżone stoki, Gruzja',
+        },
+        caption: {
+          en: 'Stepantsminda spreads across the valley floor below a hill of dark conifers.',
+          de: 'Stepanzminda breitet sich auf dem Talboden unterhalb eines Hügels mit dunklen Nadelbäumen aus.',
+          fr: 'Stepantsminda s\'étend au fond de la vallée, sous une colline de conifères sombres.',
+          es: 'Stepantsminda se extiende por el fondo del valle, bajo una colina de coníferas oscuras.',
+          nl: 'Stepantsminda strekt zich uit over de dalbodem, onder een heuvel met donkere naaldbomen.',
+          cs: 'Stepancminda se rozkládá na dně údolí pod kopcem s tmavými jehličnany.',
+          pl: 'Stepancminda rozciąga się na dnie doliny pod wzgórzem porośniętym ciemnymi drzewami iglastymi.',
+        },
+      },
+    ],
     thingsToDo: {
       seoKey: 'thingsToDoKazbegiStepantsminda', contentKey: 'thingsToDoKazbegiStepantsminda',
       // Cover/hero = Gergeti Trinity Church on its green hill below the snow-streaked
@@ -13240,74 +13274,130 @@ export const sites = [
     slug: 'svetitskhoveli-cathedral', name: 'Svetitskhoveli Cathedral',
     parentType: 'city', parent: 'mtskheta', published: true,
     seoKey: 'svetitskhoveliCathedral', contentKey: 'svetitskhoveliCathedral',
-    // Hero = owner's own Svetitskhoveli photo (landscape, native 1540 → variants
-    // capped at 1540; NO 1600/2400 variant), replacing the generic georgia-home.jpg
-    // placeholder. Native ceiling is 1540 (BELOW the usual 1600 rung), so the ladder
-    // is 768/1200/1540 only and the ImageObject contentUrl points at the 1540 rung.
-    // Visible background is the `.hero--svetitskhoveli` CSS class (heroClass below)
-    // so the image-set ladder + `background-position: center center` apply; HeroSection
-    // then omits its inline background. First Mtskheta-cluster image — filename kept
-    // scoped to Svetitskhoveli (not genericised); a future Mtskheta town-page image
-    // gets a distinct suffix. Region is Mtskheta-Mtianeti (NOT Kakheti/Shida Kartli).
-    image: '/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1540.webp',
-    imageAvif: '/images/files/svetitskhoveli-cathedral-mtskheta-georgia-1540.avif',
+    // Hero = Svetitskhoveli Cathedral seen from the lawn: arcaded golden sandstone,
+    // conical dome, blue sky (owner's own photo, "Svetitskhoveli 2"; native 1448x1086
+    // → ladder 768/1200/1448, no 1540/1600/2400 rung, no upscale). Visible background
+    // is the .hero--svetitskhoveli CSS class (styles.css). The Mtskheta city page opens
+    // on a different frame (courtyard view), so the two covers stay distinct.
+    image: '/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1448.webp',
+    imageAvif: '/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-1448.avif',
     heroClass: 'hero--svetitskhoveli',
-    // Dedicated 1.91:1 social-share image (og:image / twitter:image) — the safe
-    // .jpg default for scrapers.
-    ogImage: { src: '/images/files/svetitskhoveli-cathedral-mtskheta-georgia-og.jpg', width: 1200, height: 630 },
-    // Image SEO/AEO metadata (owner's own photo → brand credit, set by SitePage).
-    // Hero is a CSS background (no <img alt>), so the localized alt lives here and
-    // is emitted as the ImageObject caption + og:image:alt/twitter:image:alt per
-    // locale. Verbatim from svetitskhoveli-hero-image-package.md. width/height = 1540 rung.
+    ogImage: { src: '/images/files/svetitskhoveli-cathedral-exterior-mtskheta-georgia-og.jpg', width: 1200, height: 630 },
+    // Hero image metadata (CSS background → alt lives here, emitted as the ImageObject
+    // caption + og:image:alt / twitter:image:alt per locale). Brand credit (default).
     imageMeta: {
-      width: 1540, height: 1021,
-      name: 'Svetitskhoveli Cathedral in Mtskheta, stone cross-dome church with a conical dome and fortified wall, Georgia',
-      description: 'The 11th-century Svetitskhoveli Cathedral in Mtskheta, an elongated cross-in-square stone church of sandy tuff with a faceted drum and conical dome, its arcaded facades carved in relief, with the fortified stone wall, gatehouse and bell tower of the complex to the right. Mtskheta lies in Mtskheta-Mtianeti, in eastern Georgia (the country).',
+      width: 1448, height: 1086,
+      name: 'Svetitskhoveli Cathedral in Mtskheta, a large church of golden sandstone with arcaded walls and a conical dome under a blue sky, Georgia',
+      description: 'The early 11th-century Svetitskhoveli Cathedral in Mtskheta, a large cross-in-square church of golden sandstone with arcaded facades, a faceted drum and a conical dome, seen from the lawn of its walled precinct under a blue sky. Mtskheta is in the Mtskheta-Mtianeti region of Georgia (the country). The site belongs to the UNESCO World Heritage property Historical Monuments of Mtskheta.',
       locationName: 'Svetitskhoveli Cathedral, Mtskheta, Mtskheta-Mtianeti, Georgia',
       locality: 'Mtskheta', region: 'Mtskheta-Mtianeti', country: 'GE',
       geo: { lat: 41.8419, lng: 44.7211 },
       alt: {
-        en: 'Svetitskhoveli Cathedral in Mtskheta, stone cross-dome church with a conical dome and fortified wall, Georgia',
-        de: 'Swetizchoweli-Kathedrale in Mzcheta, steinerne Kreuzkuppelkirche mit Kegeldach und Wehrmauer, Georgien',
-        fr: 'Cathédrale de Svétitskhovéli à Mtskheta, église en pierre à coupole conique et muraille fortifiée, Géorgie',
-        es: 'Catedral de Svetitsjoveli en Mtsjeta, iglesia de piedra con cúpula cónica y muralla fortificada, Georgia',
-        nl: 'Svetitskhoveli-kathedraal in Mtscheta, stenen kruiskoepelkerk met kegeldak en verdedigingsmuur, Georgië',
-        cs: 'Katedrála Sveticchoveli v Mcchetě, kamenný křížový chrám s kuželovou kupolí a hradbou, Gruzie',
-        pl: 'Katedra Sweticchoweli w Mcchecie, kamienny kościół z kopułą i murem obronnym, Gruzja',
+        en: 'Svetitskhoveli Cathedral in Mtskheta, a large church of golden sandstone with arcaded walls and a conical dome under a blue sky, Georgia',
+        de: 'Die Swetizchoweli-Kathedrale in Mzcheta, eine große Kirche aus goldenem Sandstein mit Blendarkaden und Kegelkuppel unter blauem Himmel, Georgien',
+        fr: 'La cathédrale de Svétitskhovéli à Mtskheta, grande église en grès doré à arcatures et coupole conique sous un ciel bleu, Géorgie',
+        es: 'La catedral de Svetitsjoveli en Mtsjeta, una gran iglesia de arenisca dorada con arquerías y cúpula cónica bajo un cielo azul, Georgia',
+        nl: 'De Svetitschoveli-kathedraal in Mtscheta, een grote kerk van goudkleurige zandsteen met arcaden en een kegelvormige koepel onder een blauwe lucht, Georgië',
+        cs: 'Katedrála Sveticchoveli v Mcchetě, velký chrám ze zlatavého pískovce s arkádami a kuželovou kupolí pod modrou oblohou, Gruzie',
+        pl: 'Katedra Sweticchoweli w Mcchecie, duży kościół ze złocistego piaskowca z arkadami i stożkową kopułą pod błękitnym niebem, Gruzja',
+      },
+      caption: {
+        en: 'Svetitskhoveli Cathedral, built in the early 11th century, is the largest medieval church in Georgia.',
+        de: 'Die Swetizchoweli-Kathedrale, im frühen 11. Jahrhundert erbaut, ist die größte mittelalterliche Kirche Georgiens.',
+        fr: 'La cathédrale de Svétitskhovéli, construite au début du XIe siècle, est la plus grande église médiévale de Géorgie.',
+        es: 'La catedral de Svetitsjoveli, construida a principios del siglo XI, es la mayor iglesia medieval de Georgia.',
+        nl: 'De Svetitschoveli-kathedraal, gebouwd in het begin van de 11e eeuw, is de grootste middeleeuwse kerk van Georgië.',
+        cs: 'Katedrála Sveticchoveli, postavená na počátku 11. století, je největším středověkým kostelem v Gruzii.',
+        pl: 'Katedra Sweticchoweli, zbudowana na początku XI wieku, jest największym średniowiecznym kościołem w Gruzji.',
       },
     },
-    // One contextual inline body image (real <figure class="body-img"> in the
-    // per-locale body, placed at the end of each locale's "The architecture" section
-    // — right after the sentence about the fortified wall built under Erekle II,
-    // which this courtyard view of the bell tower + defensive wall shows). Rendered
-    // via SitePage's inlineImageObjects @graph map: stable @id (#inline-wall-bell-
-    // tower), contentUrl at the 1448 rung (no `w` suffix), localized name (=alt) +
-    // caption, brand credit, contentLocation matching the hero, NO representativeOf-
-    // Page (that's the hero's). Verbatim from svetitskhoveli-inline-package.md. Hero
-    // above is untouched — inline-only addition.
-    inlineImageObjects: [
+    // Three owner-photo body figures, data-driven via SitePage's `gallery` (BodyFigure,
+    // 4:3, ladder 768/1200/1448 without the `w` suffix) placed at the END of the section
+    // each depicts: the gatehouse + bell tower under "The architecture" (which describes
+    // the fortified wall and its gateways), the nave and apse fresco under "The
+    // interior", the walled lawn with a distant hilltop monastery under "The precinct and
+    // setting". The earlier hand-written <figure> in each locale body was removed in
+    // favour of these, so alt/caption are localized here for all seven locales.
+    gallery: [
       {
-        base: 'svetitskhoveli-bell-tower-wall-mtskheta-georgia', width: 1448, height: 1086, anchor: 'inline-wall-bell-tower',
-        description: 'The bell tower over the entrance gate and the long crenellated 18th-century defensive wall of Svetitskhoveli Cathedral, seen from the courtyard with one of the wall\'s cylindrical towers in the distance and the Saguramo hills behind. The wall was built in 1787 under King Erekle II. Svetitskhoveli stands in Mtskheta, Mtskheta-Mtianeti, Georgia (the country).',
+        base: 'svetitskhoveli-gatehouse-and-bell-tower-mtskheta-georgia', width: 1448, height: 1086,
+        widths: [768, 1200, 1448], plainWidths: true, fallbackWidth: 1200,
+        afterChunk: 3,
+        name: 'The gatehouse and brick bell tower in the crenellated wall of the Svetitskhoveli precinct, with a lawn and flagpoles in the foreground, Mtskheta, Georgia',
+        description: 'The stone gatehouse and brick bell tower in the crenellated wall around the Svetitskhoveli precinct in Mtskheta, seen across the lawn with Georgian flags and visitors near the entrance, under a blue sky with white clouds.',
         locationName: 'Svetitskhoveli Cathedral, Mtskheta, Mtskheta-Mtianeti, Georgia',
-        locality: 'Mtskheta', region: 'Mtskheta-Mtianeti', geo: { lat: 41.8419, lng: 44.7211 },
-        name: {
-          en: 'The bell tower and crenellated 18th-century defensive wall of Svetitskhoveli Cathedral seen from the courtyard, Mtskheta, Georgia',
-          de: 'Der Glockenturm und die zinnenbewehrte Wehrmauer der Swetizchoweli-Kathedrale aus dem 18. Jahrhundert, vom Innenhof gesehen, Mzcheta, Georgien',
-          fr: 'Le clocher et le mur défensif crénelé du XVIIIe siècle de la cathédrale de Svetitskhoveli, vus de la cour, Mtskheta, Géorgie',
-          es: 'El campanario y la muralla defensiva almenada del siglo XVIII de la catedral de Svetitsjoveli, vistos desde el patio, Mtsjeta, Georgia',
-          nl: 'De klokkentoren en de gekanteelde 18e-eeuwse verdedigingsmuur van de Svetitschoveli-kathedraal, gezien vanaf de binnenplaats, Mtscheta, Georgië',
-          cs: 'Zvonice a cimbuřím opatřená obranná zeď katedrály Svetícchoveli z 18. století při pohledu z nádvoří, Mccheta, Gruzie',
-          pl: 'Dzwonnica i blankowany XVIII-wieczny mur obronny katedry Sweticchoweli widziane z dziedzińca, Mccheta, Gruzja',
+        locality: 'Mtskheta', region: 'Mtskheta-Mtianeti', country: 'GE', geo: { lat: 41.8419, lng: 44.7211 },
+        alt: {
+          en: 'The gatehouse and brick bell tower in the crenellated wall of the Svetitskhoveli precinct, with a lawn and flagpoles in the foreground, Mtskheta, Georgia',
+          de: 'Das Torhaus und der Backstein-Glockenturm in der zinnenbewehrten Mauer des Svetitskhoveli-Bezirks, im Vordergrund Rasen und Fahnenmasten, Mtskheta, Georgien',
+          fr: 'Le corps de garde et le clocher en brique dans le mur crénelé de l\'enceinte de Svetitskhoveli, avec une pelouse et des mâts de drapeaux au premier plan, Mtskheta, Géorgie',
+          es: 'La puerta y el campanario de ladrillo en la muralla almenada del recinto de Svetitskhoveli, con césped y mástiles en primer plano, Mtskheta, Georgia',
+          nl: 'Het poortgebouw en de bakstenen klokkentoren in de gekanteelde muur van het Svetitskhoveli-terrein, met een grasveld en vlaggenmasten op de voorgrond, Mtskheta, Georgië',
+          cs: 'Brána a cihlová zvonice v cimbuřím opatřené zdi areálu Svetitskhoveli, v popředí trávník a stožáry na vlajky, Mtskheta, Gruzie',
+          pl: 'Budynek bramny i ceglana dzwonnica w blankowanym murze dziedzińca Svetitskhoveli, na pierwszym planie trawnik i maszty z flagami, Mtskheta, Gruzja',
         },
         caption: {
-          en: 'The wall around Svetitskhoveli was built in 1787 under King Erekle II — stone and brick, with eight towers and a fighting top storey. The bell tower over the gate, ruined for two centuries, was restored in the 2000s; Erekle himself is buried inside the cathedral his wall protects.',
-          de: 'Die Mauer um Swetizchoweli entstand 1787 unter König Erekle II. – Stein und Ziegel, mit acht Türmen und einem Wehrgeschoss. Der Glockenturm über dem Tor, zwei Jahrhunderte lang Ruine, wurde in den 2000er-Jahren restauriert; Erekle selbst liegt in der Kathedrale begraben, die seine Mauer schützt.',
-          fr: "Le mur qui entoure Svetitskhoveli fut élevé en 1787 sous le roi Erekle II — pierre et brique, huit tours et un étage de combat. Le clocher au-dessus de la porte, ruiné pendant deux siècles, fut restauré dans les années 2000 ; Erekle lui-même repose dans la cathédrale que son mur protège.",
-          es: 'La muralla de Svetitsjoveli se levantó en 1787 bajo el rey Erekle II: piedra y ladrillo, ocho torres y un piso superior de combate. El campanario sobre la puerta, en ruinas durante dos siglos, se restauró en los años 2000; el propio Erekle está enterrado en la catedral que su muralla protege.',
-          nl: 'De muur rond Svetitschoveli werd in 1787 gebouwd onder koning Erekle II — steen en baksteen, met acht torens en een weergang. De klokkentoren boven de poort, twee eeuwen lang een ruïne, werd in de jaren 2000 gerestaureerd; Erekle zelf ligt begraven in de kathedraal die zijn muur beschermt.',
-          cs: 'Zeď kolem Svetícchoveli vznikla roku 1787 za krále Erekleho II. – kámen a cihla, osm věží a bojové horní patro. Zvonice nad branou, dvě století v ruinách, byla obnovena v prvním desetiletí 21. století; sám Erekle je pohřben v katedrále, kterou jeho zeď chrání.',
-          pl: 'Mur wokół Sweticchoweli wzniesiono w 1787 roku za króla Erekle II — kamień i cegła, osiem wież i bojowa górna kondygnacja. Dzwonnicę nad bramą, przez dwa wieki w ruinie, odrestaurowano w latach 2000.; sam Erekle spoczywa w katedrze, którą chroni jego mur.',
+          en: 'The fortified wall around the precinct, with its gatehouse and bell tower, was built under King Erekle II in the late 18th century.',
+          de: 'Die Wehrmauer um den Bezirk mit Torhaus und Glockenturm entstand im späten 18. Jahrhundert unter König Erekle II.',
+          fr: 'Le mur fortifié qui entoure l\'enceinte, avec son corps de garde et son clocher, fut élevé à la fin du XVIIIe siècle sous le roi Erekle II.',
+          es: 'La muralla fortificada que rodea el recinto, con su puerta y su campanario, se levantó a finales del siglo XVIII bajo el rey Erekle II.',
+          nl: 'De versterkte muur rond het terrein, met poortgebouw en klokkentoren, werd in de late 18e eeuw gebouwd onder koning Erekle II.',
+          cs: 'Opevněnou zeď kolem areálu s bránou a zvonicí nechal vystavět na konci 18. století král Erekle II.',
+          pl: 'Warowny mur wokół dziedzińca z budynkiem bramnym i dzwonnicą wzniesiono pod koniec XVIII wieku za króla Erekle II.',
+        },
+      },
+      {
+        base: 'svetitskhoveli-cathedral-interior-fresco-mtskheta-georgia', width: 1448, height: 1086,
+        widths: [768, 1200, 1448], plainWidths: true, fallbackWidth: 1200,
+        afterChunk: 4,
+        name: 'Visitors inside Svetitskhoveli Cathedral, with stone arches leading to a large fresco of Christ in the apse, Mtskheta, Georgia',
+        description: 'The nave of Svetitskhoveli Cathedral in Mtskheta seen through a stone arch, with visitors on the stone floor, an iconostasis and a large fresco of Christ enthroned in the apse.',
+        locationName: 'Svetitskhoveli Cathedral, Mtskheta, Mtskheta-Mtianeti, Georgia',
+        locality: 'Mtskheta', region: 'Mtskheta-Mtianeti', country: 'GE', geo: { lat: 41.8419, lng: 44.7211 },
+        alt: {
+          en: 'Visitors inside Svetitskhoveli Cathedral, with stone arches leading to a large fresco of Christ in the apse, Mtskheta, Georgia',
+          de: 'Besucher im Innenraum der Svetitskhoveli-Kathedrale, Steinbögen führen zu einem großen Fresko Christi in der Apsis, Mtskheta, Georgien',
+          fr: 'Des visiteurs à l\'intérieur de la cathédrale de Svetitskhoveli, des arcs de pierre menant à une grande fresque du Christ dans l\'abside, Mtskheta, Géorgie',
+          es: 'Visitantes en el interior de la catedral de Svetitskhoveli, con arcos de piedra que conducen a un gran fresco de Cristo en el ábside, Mtskheta, Georgia',
+          nl: 'Bezoekers in de Svetitskhoveli-kathedraal, met stenen bogen die leiden naar een grote fresco van Christus in de apsis, Mtskheta, Georgië',
+          cs: 'Návštěvníci uvnitř katedrály Svetitskhoveli, kamenné oblouky vedou k velké fresce Krista v apsidě, Mtskheta, Gruzie',
+          pl: 'Zwiedzający wewnątrz katedry Svetitskhoveli, kamienne łuki prowadzą do wielkiego fresku Chrystusa w apsydzie, Mtskheta, Gruzja',
+        },
+        caption: {
+          en: 'Inside Svetitskhoveli, stone arches frame the apse, where a large fresco of Christ looks down the nave.',
+          de: 'Im Inneren von Svetitskhoveli rahmen Steinbögen die Apsis, in der ein großes Christusfresko über das Kirchenschiff blickt.',
+          fr: 'À l\'intérieur de Svetitskhoveli, des arcs de pierre encadrent l\'abside, où une grande fresque du Christ domine la nef.',
+          es: 'En el interior de Svetitskhoveli, arcos de piedra enmarcan el ábside, donde un gran fresco de Cristo preside la nave.',
+          nl: 'In Svetitskhoveli omlijsten stenen bogen de apsis, waar een grote fresco van Christus over het schip uitkijkt.',
+          cs: 'Uvnitř Svetitskhoveli rámují kamenné oblouky apsidu, v níž velká freska Krista hledí do lodi.',
+          pl: 'Wewnątrz Svetitskhoveli kamienne łuki ujmują apsydę, w której wielki fresk Chrystusa spogląda wzdłuż nawy.',
+        },
+      },
+      {
+        base: 'svetitskhoveli-courtyard-olive-trees-mtskheta-georgia', width: 1448, height: 1086,
+        widths: [768, 1200, 1448], plainWidths: true, fallbackWidth: 1200,
+        afterChunk: 5,
+        name: 'A lawn with olive trees inside the walls of the Svetitskhoveli precinct, a brick building beside it and a hilltop monastery visible in the distance, Mtskheta, Georgia',
+        description: 'A lawn with olive trees inside the walled precinct of Svetitskhoveli Cathedral in Mtskheta, with a brick building and the crenellated wall, and a hilltop monastery on the ridge in the distance.',
+        locationName: 'Svetitskhoveli Cathedral, Mtskheta, Mtskheta-Mtianeti, Georgia',
+        locality: 'Mtskheta', region: 'Mtskheta-Mtianeti', country: 'GE', geo: { lat: 41.8419, lng: 44.7211 },
+        alt: {
+          en: 'A lawn with olive trees inside the walls of the Svetitskhoveli precinct, a brick building beside it and a hilltop monastery visible in the distance, Mtskheta, Georgia',
+          de: 'Eine Rasenfläche mit Olivenbäumen innerhalb der Mauern des Svetitskhoveli-Bezirks, daneben ein Backsteingebäude und in der Ferne ein Kloster auf dem Hügel, Mtskheta, Georgien',
+          fr: 'Une pelouse plantée d\'oliviers à l\'intérieur des murs de l\'enceinte de Svetitskhoveli, avec un bâtiment en brique à côté et un monastère sur une colline au loin, Mtskheta, Géorgie',
+          es: 'Un césped con olivos dentro de los muros del recinto de Svetitskhoveli, con un edificio de ladrillo al lado y un monasterio en una colina a lo lejos, Mtskheta, Georgia',
+          nl: 'Een grasveld met olijfbomen binnen de muren van het Svetitskhoveli-terrein, met een bakstenen gebouw ernaast en in de verte een klooster op een heuvel, Mtskheta, Georgië',
+          cs: 'Trávník s olivovníky uvnitř zdí areálu Svetitskhoveli, vedle cihlová budova a v dálce klášter na vrcholu kopce, Mtskheta, Gruzie',
+          pl: 'Trawnik z drzewami oliwnymi wewnątrz murów dziedzińca Svetitskhoveli, obok ceglany budynek, a w oddali klasztor na wzgórzu, Mtskheta, Gruzja',
+        },
+        caption: {
+          en: 'Lawns and olive trees fill the walled precinct, with a hilltop monastery visible beyond the wall.',
+          de: 'Rasenflächen und Olivenbäume füllen den ummauerten Bezirk, jenseits der Mauer ist ein Kloster auf dem Hügel zu sehen.',
+          fr: 'Des pelouses et des oliviers occupent l\'enceinte fortifiée ; au-delà du mur, un monastère se dresse sur la colline.',
+          es: 'Césped y olivos llenan el recinto amurallado; más allá del muro se distingue un monasterio en lo alto de la colina.',
+          nl: 'Grasvelden en olijfbomen vullen het ommuurde terrein; achter de muur is een klooster op de heuvel te zien.',
+          cs: 'Trávníky a olivovníky vyplňují hrazený areál, za zdí je vidět klášter na vrcholu kopce.',
+          pl: 'Trawniki i drzewa oliwne wypełniają obwarowany dziedziniec, a za murem widać klasztor na szczycie wzgórza.',
         },
       },
     ],
@@ -14292,8 +14382,69 @@ export const sites = [
     slug: 'gergeti-glacier', name: 'Gergeti Glacier',
     parentType: 'city', parent: 'kazbegi', published: true,
     seoKey: 'gergetiGlacier', contentKey: 'gergetiGlacier',
-    noHero: true, // TEMPORARY — no authentic photograph of this place yet (see the noHero note at the top of this file)
+    // Still `noHero`: the owner's Kazbegi folder has NO photograph of the glacier itself,
+    // and none is claimed. Two owner photos sit in the body beside the text they match
+    // (4:3 crop via SitePage `gallery`): Mount Kazbek under "The mountain and the
+    // glacier" (the mountain the glacier descends from) and the Gergeti Trinity Church
+    // under "The hike" (the route's starting point). Captions describe only what shows.
+    noHero: true,
     image: '/images/files/georgia-home.jpg',
+    gallery: [
+      {
+        base: 'mount-kazbek-snow-summit-kazbegi-georgia', width: 1024, height: 1536,
+        widths: [768, 1024], plainWidths: true, fallbackWidth: 1024,
+        afterChunk: 2,
+        name: 'Snow-covered Mount Kazbek under a blue sky with wispy clouds, seen from the Stepantsminda area, Georgia',
+        description: 'Snow-covered Mount Kazbek under a blue sky with wispy clouds, seen from the Stepantsminda area of the Kazbegi region, with brown hills in the foreground.',
+        locationName: 'Mount Kazbek, Stepantsminda, Mtskheta-Mtianeti, Georgia',
+        locality: 'Stepantsminda', region: 'Mtskheta-Mtianeti', country: 'GE',
+        alt: {
+          en: 'Snow-covered Mount Kazbek under a blue sky with wispy clouds, seen from the Stepantsminda area, Georgia',
+          de: 'Der schneebedeckte Kazbek unter blauem Himmel mit zarten Wolkenschleiern, gesehen aus der Gegend von Stepanzminda, Georgien',
+          fr: 'Le mont Kazbek enneigé sous un ciel bleu parsemé de nuages légers, vu depuis la région de Stepantsminda, Géorgie',
+          es: 'El monte Kazbek nevado bajo un cielo azul con nubes ligeras, visto desde los alrededores de Stepantsminda, Georgia',
+          nl: 'De besneeuwde Kazbek onder een blauwe lucht met ijle wolken, gezien vanuit de omgeving van Stepantsminda, Georgië',
+          cs: 'Zasněžená hora Kazbek pod modrou oblohou s řídkými mraky, pohled z okolí Stepancminda, Gruzie',
+          pl: 'Ośnieżony szczyt Kazbek pod błękitnym niebem z cienkimi chmurami, widok z okolic Stepancminda, Gruzja',
+        },
+        caption: {
+          en: 'Mount Kazbek, the dormant volcano from whose summit plateau the Gergeti Glacier descends.',
+          de: 'Der Kazbek, der ruhende Vulkan, von dessen Gipfelplateau der Gergeti-Gletscher herabfließt.',
+          fr: 'Le mont Kazbek, volcan endormi dont le plateau sommital alimente le glacier de Gergeti.',
+          es: 'El monte Kazbek, el volcán dormido de cuya meseta cimera desciende el glaciar de Gergeti.',
+          nl: 'De Kazbek, de slapende vulkaan van wiens toppenplateau de Gergeti-gletsjer afdaalt.',
+          cs: 'Hora Kazbek, spící sopka, z jejíhož vrcholového plató sestupuje ledovec Gergeti.',
+          pl: 'Szczyt Kazbek, uśpiony wulkan, z którego płaskowyżu szczytowego schodzi lodowiec Gergeti.',
+        },
+      },
+      {
+        base: 'gergeti-trinity-church-hilltop-kazbegi-georgia-view', width: 1448, height: 1086,
+        widths: [768, 1200, 1448], plainWidths: true, fallbackWidth: 1200,
+        afterChunk: 3,
+        name: 'Gergeti Trinity Church on its hilltop below the snow-covered peaks of the Greater Caucasus near Stepantsminda, Georgia',
+        description: 'Gergeti Trinity Church and its bell tower on a hilltop below the snow-covered peaks of the Greater Caucasus near Stepantsminda, with a walker on the grassy slope in the foreground.',
+        locationName: 'Gergeti Trinity Church, Stepantsminda, Mtskheta-Mtianeti, Georgia',
+        locality: 'Stepantsminda', region: 'Mtskheta-Mtianeti', country: 'GE',
+        alt: {
+          en: 'Gergeti Trinity Church on its hilltop below the snow-covered peaks of the Greater Caucasus near Stepantsminda, Georgia',
+          de: 'Die Gergeti-Dreifaltigkeitskirche auf ihrem Hügel unterhalb der schneebedeckten Gipfel des Großen Kaukasus bei Stepanzminda, Georgien',
+          fr: 'L\'église de la Trinité de Gergeti sur sa colline, au pied des sommets enneigés du Grand Caucase près de Stepantsminda, Géorgie',
+          es: 'La iglesia de la Trinidad de Gergeti en su colina, bajo las cumbres nevadas del Gran Cáucaso cerca de Stepantsminda, Georgia',
+          nl: 'De Drie-eenheidskerk van Gergeti op haar heuvel onder de besneeuwde toppen van de Grote Kaukasus bij Stepantsminda, Georgië',
+          cs: 'Gergetský kostel Nejsvětější Trojice na svém kopci pod zasněženými vrcholy Velkého Kavkazu u Stepancminda, Gruzie',
+          pl: 'Cerkiew Trójcy Świętej w Gergeti na wzgórzu pod ośnieżonymi szczytami Wielkiego Kaukazu koło Stepancminda, Gruzja',
+        },
+        caption: {
+          en: 'The Gergeti Trinity Church on its hill, where the glacier hike begins.',
+          de: 'Die Gergeti-Dreifaltigkeitskirche auf ihrem Hügel, dem Ausgangspunkt der Gletscherwanderung.',
+          fr: 'L\'église de la Trinité de Gergeti sur sa colline, point de départ de la randonnée vers le glacier.',
+          es: 'La iglesia de la Trinidad de Gergeti en su colina, punto de partida de la ruta al glaciar.',
+          nl: 'De Drie-eenheidskerk van Gergeti op haar heuvel, het vertrekpunt van de gletsjerwandeling.',
+          cs: 'Gergetský kostel Nejsvětější Trojice na svém kopci, odkud výstup k ledovci začíná.',
+          pl: 'Cerkiew Trójcy Świętej w Gergeti na wzgórzu, skąd zaczyna się wędrówka do lodowca.',
+        },
+      },
+    ],
   },
   {
     slug: 'batumi-botanical-garden', name: 'Batumi Botanical Garden',
