@@ -3356,10 +3356,10 @@ section {
 /* Native width 1086 — no rung above it. Do not add a 1200/1448/1600/2400 breakpoint. */
 /* Gergeti Trinity Church hero — per-page CSS background (owner's photo, close view of the church walls). Native 4:3 (1448x1086) → ladder 768/1200/1448, top breakpoint at min-width:1200; no 1600/2400 rung. `background-position: center center`; the shared .coverme::after overlay provides the text layer. */
 .hero--gergeti {
-  background-image: url("/images/files/gergeti-trinity-church-stone-walls-kazbegi-georgia-1200.webp");
+  background-image: url("/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1200.webp");
   background-image: image-set(
-    url("/images/files/gergeti-trinity-church-stone-walls-kazbegi-georgia-768.avif") type("image/avif"),
-    url("/images/files/gergeti-trinity-church-stone-walls-kazbegi-georgia-768.webp") type("image/webp")
+    url("/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-768.avif") type("image/avif"),
+    url("/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-768.webp") type("image/webp")
   );
   background-position: center center;
   background-size: cover;
@@ -3368,16 +3368,16 @@ section {
 @media (min-width: 768px) {
   .hero--gergeti {
     background-image: image-set(
-      url("/images/files/gergeti-trinity-church-stone-walls-kazbegi-georgia-1200.avif") type("image/avif"),
-      url("/images/files/gergeti-trinity-church-stone-walls-kazbegi-georgia-1200.webp") type("image/webp")
+      url("/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1200.avif") type("image/avif"),
+      url("/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1200.webp") type("image/webp")
     );
   }
 }
 @media (min-width: 1200px) {
   .hero--gergeti {
     background-image: image-set(
-      url("/images/files/gergeti-trinity-church-stone-walls-kazbegi-georgia-1448.avif") type("image/avif"),
-      url("/images/files/gergeti-trinity-church-stone-walls-kazbegi-georgia-1448.webp") type("image/webp")
+      url("/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1448.avif") type("image/avif"),
+      url("/images/files/gergeti-trinity-church-hilltop-kazbegi-georgia-view-1448.webp") type("image/webp")
     );
   }
 }
