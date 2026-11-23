@@ -3354,18 +3354,12 @@ section {
   }
 }
 /* Native width 1086 — no rung above it. Do not add a 1200/1448/1600/2400 breakpoint. */
-/* Gergeti Trinity Church hero — per-page CSS background (same opt-in mechanism as
-   .hero--gremi). The church + bell tower on the ridge below Mount Kazbek, native
-   4:3 (1448x1086), just under the 1600 rung, so the ladder is exactly 768/1200/1448
-   with the top breakpoint at min-width:1200. NO 1600/2400 rung, no upscale.
-   `background-position: center center`. NO open sky in this frame — but the shared
-   .coverme::after overlay (rgba(0,0,0,0.35)) already provides the readable text
-   layer for the centre-anchored H1 (same as .hero--gremi), so no extra scrim. */
+/* Gergeti Trinity Church hero — per-page CSS background (owner's photo, close view of the church walls). Native 4:3 (1448x1086) → ladder 768/1200/1448, top breakpoint at min-width:1200; no 1600/2400 rung. `background-position: center center`; the shared .coverme::after overlay provides the text layer. */
 .hero--gergeti {
-  background-image: url("/images/files/gergeti-trinity-church-kazbegi-georgia-1200.webp");
+  background-image: url("/images/files/gergeti-trinity-church-stone-walls-kazbegi-georgia-1200.webp");
   background-image: image-set(
-    url("/images/files/gergeti-trinity-church-kazbegi-georgia-768.avif") type("image/avif"),
-    url("/images/files/gergeti-trinity-church-kazbegi-georgia-768.webp") type("image/webp")
+    url("/images/files/gergeti-trinity-church-stone-walls-kazbegi-georgia-768.avif") type("image/avif"),
+    url("/images/files/gergeti-trinity-church-stone-walls-kazbegi-georgia-768.webp") type("image/webp")
   );
   background-position: center center;
   background-size: cover;
@@ -3374,20 +3368,40 @@ section {
 @media (min-width: 768px) {
   .hero--gergeti {
     background-image: image-set(
-      url("/images/files/gergeti-trinity-church-kazbegi-georgia-1200.avif") type("image/avif"),
-      url("/images/files/gergeti-trinity-church-kazbegi-georgia-1200.webp") type("image/webp")
+      url("/images/files/gergeti-trinity-church-stone-walls-kazbegi-georgia-1200.avif") type("image/avif"),
+      url("/images/files/gergeti-trinity-church-stone-walls-kazbegi-georgia-1200.webp") type("image/webp")
     );
   }
 }
 @media (min-width: 1200px) {
   .hero--gergeti {
     background-image: image-set(
-      url("/images/files/gergeti-trinity-church-kazbegi-georgia-1448.avif") type("image/avif"),
-      url("/images/files/gergeti-trinity-church-kazbegi-georgia-1448.webp") type("image/webp")
+      url("/images/files/gergeti-trinity-church-stone-walls-kazbegi-georgia-1448.avif") type("image/avif"),
+      url("/images/files/gergeti-trinity-church-stone-walls-kazbegi-georgia-1448.webp") type("image/webp")
     );
   }
 }
 /* No rung above 1448 exists. Do not add a 1600 or 2400 breakpoint. */
+/* Gergeti Glacier page hero — Mount Kazbek (owner's photo; the mountain the glacier descends from). PORTRAIT 1024x1536, native width 1024 → ladder 768/1024; no 1200/1448/1600/2400 rung. `center 45%` keeps the summit in a wide banner. */
+.hero--gergeti-glacier {
+  background-image: url("/images/files/mount-kazbek-snow-summit-kazbegi-georgia-768.webp");
+  background-image: image-set(
+    url("/images/files/mount-kazbek-snow-summit-kazbegi-georgia-768.avif") type("image/avif"),
+    url("/images/files/mount-kazbek-snow-summit-kazbegi-georgia-768.webp") type("image/webp")
+  );
+  background-position: center 45%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .hero--gergeti-glacier {
+    background-image: image-set(
+      url("/images/files/mount-kazbek-snow-summit-kazbegi-georgia-1024.avif") type("image/avif"),
+      url("/images/files/mount-kazbek-snow-summit-kazbegi-georgia-1024.webp") type("image/webp")
+    );
+  }
+}
+/* Native width 1024 — no rung above it. */
 /* Bolnisi Museum hero — per-page CSS background (same opt-in mechanism as
    .hero--gremi). The museum's blue medieval hall, native 4:3 (1448x1086), just
    under the 1600 rung, so the ladder is exactly 768/1200/1448 with the top

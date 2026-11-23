@@ -14040,60 +14040,76 @@ export const sites = [
     slug: 'gergeti-trinity-church', name: 'Gergeti Trinity Church',
     parentType: 'city', parent: 'kazbegi', published: true,
     seoKey: 'gergetiTrinityChurch', contentKey: 'gergetiTrinityChurch',
-    // Hero: real Gergeti Trinity Church + bell tower on the ridge below Mount Kazbek
-    // (owner's own photo) via the .hero--gergeti image-set() ladder (styles.css),
-    // replacing the shared georgia-home.jpg placeholder. Native 4:3 (1448x1086),
-    // just under the 1600 rung, so the ladder is exactly 768/1200/1448 with the top
-    // breakpoint at min-width:1200. NO 1600/2400 rung, no upscale. The CSS class
-    // controls the visible background (`background-position: center center`); no
-    // extra scrim — the shared .coverme::after overlay (rgba(0,0,0,0.35)) already
-    // provides the readable text layer for the centre-anchored H1 over this
-    // sky-less scree frame (same as .hero--gremi). `image`/`imageAvif` = the 1448
-    // top rung, feeding the ImageObject contentUrl.
-    image: '/images/files/gergeti-trinity-church-kazbegi-georgia-1448.webp',
-    imageAvif: '/images/files/gergeti-trinity-church-kazbegi-georgia-1448.avif',
+    // Hero: the Gergeti Trinity Church seen close up — dressed-stone walls, carved cross
+    // reliefs, the drum with narrow arched windows, snow-covered mountains behind (owner's
+    // own photo, "Gergeti 1"; native 4:3 1448x1086 → ladder 768/1200/1448, top breakpoint
+    // at min-width:1200, no 1600/2400 rung, no upscale). The visible background is the
+    // .hero--gergeti CSS class (styles.css); the hilltop view of the church in its setting
+    // is the body figure under "The view and the setting".
+    image: '/images/files/gergeti-trinity-church-stone-walls-kazbegi-georgia-1448.webp',
+    imageAvif: '/images/files/gergeti-trinity-church-stone-walls-kazbegi-georgia-1448.avif',
     heroClass: 'hero--gergeti',
-    // This image is the page's LCP hero — preload the 1200 AVIF (the rung the
-    // ladder serves at 768-1199px) with fetchpriority=high. Page-scoped: only
-    // entries that set `heroPreload` emit a <link rel=preload> (via SitePage →
-    // useSEO); every other hero is unchanged.
-    heroPreload: '/images/files/gergeti-trinity-church-kazbegi-georgia-1200.avif',
-    // Dedicated 1.91:1 social-share image (og:image / twitter:image), .jpg default.
-    ogImage: { src: '/images/files/gergeti-trinity-church-kazbegi-georgia-og.jpg', width: 1200, height: 630 },
-    // Hero image SEO/AEO metadata (owner's own photo → brand credit, set by
-    // SitePage). Hero is a CSS background (no <img alt>), so the localized alt lives
-    // here and is emitted as og:image:alt/twitter:image:alt per locale; the `caption`
-    // map feeds the hero ImageObject caption. Verbatim from gergeti-trinity-hero-
-    // package.md. width/height = 1448 rung; coordinates per package (the church).
-    // NO elevation asserted in name/description/contentLocation (the "2,170 m" figure
-    // is disputed/single-sourced); the caption's soft "over 2,100 metres" is the
-    // package's deliberate, non-precise phrasing, kept verbatim. Region Mtskheta-Mtianeti.
+    heroPreload: '/images/files/gergeti-trinity-church-stone-walls-kazbegi-georgia-1200.avif',
+    ogImage: { src: '/images/files/gergeti-trinity-church-stone-walls-kazbegi-georgia-og.jpg', width: 1200, height: 630 },
+    // Hero image metadata (CSS background → alt lives here, emitted as og:image:alt /
+    // twitter:image:alt and the ImageObject caption per locale). Brand credit (default).
+    // No elevation is asserted in name/description/contentLocation (the "2,170 m" figure
+    // is single-sourced); coordinates as before (the church).
     imageMeta: {
       width: 1448, height: 1086,
-      name: 'Gergeti Trinity Church and its bell tower on a ridge above Stepantsminda, against the vast scree slopes of the Kazbek massif, Georgia',
-      description: 'The Gergeti Trinity Church (Tsminda Sameba), a 14th-century Georgian Orthodox cross-cupola church with a separate stone bell tower, standing on a grassy ridge above the town of Stepantsminda beneath the immense scree slopes of the Mount Kazbek massif, with visitors on the path up. An active monastery in the Kazbegi (Stepantsminda) area of the Mtskheta-Mtianeti region, it is one of the most iconic landmarks of Georgia (the country).',
+      name: 'The stone walls and carved crosses of Gergeti Trinity Church, with its octagonal drum and a snow-covered peak in the distance, Georgia',
+      description: 'The Gergeti Trinity Church (Tsminda Sameba), a Georgian Orthodox cross-cupola church, seen from close to its stone walls: dressed stone blocks carved with cross reliefs, an octagonal drum with narrow arched windows and a cross finial, with snow-covered mountains in the distance under a blue sky with white clouds. Stepantsminda, Kazbegi, Mtskheta-Mtianeti, Georgia.',
       locationName: 'Gergeti Trinity Church, Stepantsminda (Kazbegi), Mtskheta-Mtianeti, Georgia',
       locality: 'Stepantsminda', region: 'Mtskheta-Mtianeti', country: 'GE',
       geo: { lat: 42.66253, lng: 44.62072 },
       alt: {
-        en: 'Gergeti Trinity Church and its bell tower on a ridge above Stepantsminda, against the vast scree slopes of the Kazbek massif, Georgia',
-        de: 'Die Gergeti-Dreifaltigkeitskirche und ihr Glockenturm auf einem Bergrücken über Stepanzminda, vor den gewaltigen Geröllhängen des Kasbek-Massivs, Georgien',
-        fr: "L'église de la Trinité de Guerguéti et son clocher sur une crête au-dessus de Stepantsminda, devant les immenses pentes d'éboulis du massif du Kazbek, Géorgie",
-        es: 'La iglesia de la Trinidad de Guergueti y su campanario en una cresta sobre Stepantsminda, ante las enormes laderas de pedregal del macizo del Kazbek, Georgia',
-        nl: 'De Gergeti-Drie-eenheidskerk en haar klokkentoren op een bergkam boven Stepantsminda, tegen de enorme puinhellingen van het Kazbek-massief, Georgië',
-        cs: 'Gergetský kostel Nejsvětější Trojice a jeho zvonice na hřebeni nad Stepancmindou, před obrovskými sutinovými svahy masivu Kazbek, Gruzie',
-        pl: 'Cerkiew Trójcy Świętej w Gergeti i jej dzwonnica na grani nad Stepancmindą, na tle rozległych piarżystych zboczy masywu Kazbek, Gruzja',
+        en: 'The stone walls and carved crosses of Gergeti Trinity Church, with its octagonal drum and a snow-covered peak in the distance, Georgia',
+        de: 'Die Steinmauern und Reliefkreuze der Gergeti-Dreifaltigkeitskirche mit ihrem achteckigen Tambour, in der Ferne ein schneebedeckter Gipfel, Georgien',
+        fr: 'Les murs de pierre et les croix sculptées de l\'église de la Trinité de Gergeti, avec son tambour octogonal et un sommet enneigé au loin, Géorgie',
+        es: 'Los muros de piedra y las cruces talladas de la iglesia de la Trinidad de Gergeti, con su tambor octogonal y una cumbre nevada al fondo, Georgia',
+        nl: 'De stenen muren en uitgehouwen kruisen van de Drie-eenheidskerk van Gergeti, met de achthoekige tamboer en in de verte een besneeuwde bergtop, Georgië',
+        cs: 'Kamenné zdi a vytesané kříže gergetského kostela Nejsvětější Trojice s osmibokým tamburem a vzdáleným zasněženým vrcholem, Gruzie',
+        pl: 'Kamienne mury i rzeźbione krzyże cerkwi Trójcy Świętej w Gergeti z ośmiobocznym bębnem i ośnieżonym szczytem w oddali, Gruzja',
       },
       caption: {
-        en: "Gergeti Trinity Church, built in the 14th century at over 2,100 metres beneath Mount Kazbek, is one of Georgia's most iconic sights. Its ridge was so hard to reach that in times of invasion the nation's holiest relics — including St Nino's Cross — were hidden here for safekeeping.",
-        de: 'Die im 14. Jahrhundert auf über 2.100 Metern unter dem Kasbek erbaute Gergeti-Dreifaltigkeitskirche ist eines der bekanntesten Wahrzeichen Georgiens. Ihr Bergrücken war so schwer erreichbar, dass in Zeiten der Invasion die heiligsten Reliquien des Landes – darunter das Kreuz der hl. Nino – hier in Sicherheit gebracht wurden.',
-        fr: "Bâtie au XIVe siècle à plus de 2 100 mètres sous le mont Kazbek, l'église de la Trinité de Guerguéti est l'un des sites les plus emblématiques de Géorgie. Sa crête était si difficile d'accès qu'en temps d'invasion les reliques les plus sacrées du pays — dont la croix de sainte Nino — y étaient cachées.",
-        es: 'Construida en el siglo XIV a más de 2.100 metros bajo el monte Kazbek, la iglesia de la Trinidad de Guergueti es uno de los lugares más emblemáticos de Georgia. Su cresta era tan difícil de alcanzar que en tiempos de invasión las reliquias más sagradas del país —entre ellas la cruz de santa Nino— se ocultaban aquí.',
-        nl: 'De in de 14e eeuw op ruim 2.100 meter onder de Kazbek gebouwde Gergeti-Drie-eenheidskerk is een van Georgiës meest iconische bezienswaardigheden. Haar bergkam was zo moeilijk bereikbaar dat in tijden van invasie de heiligste relieken van het land — waaronder het kruis van de heilige Nino — hier veilig werden verborgen.',
-        cs: 'Gergetský kostel Nejsvětější Trojice, postavený ve 14. století ve výšce přes 2 100 metrů pod horou Kazbek, patří k nejikoničtějším místům Gruzie. Jeho hřeben byl tak nedostupný, že se sem v dobách nájezdů ukrývaly nejposvátnější relikvie země – včetně kříže svaté Nino.',
-        pl: 'Zbudowana w XIV wieku na ponad 2100 metrach u stóp Kazbeku cerkiew Trójcy Świętej w Gergeti to jeden z najbardziej ikonicznych widoków Gruzji. Jej grań była tak trudno dostępna, że w czasach najazdów ukrywano tu najświętsze relikwie kraju — w tym krzyż świętej Nino.',
+        en: 'Up close, the church is a compact building of dressed stone, its walls carved with crosses and its drum pierced by narrow arched windows.',
+        de: 'Aus der Nähe zeigt sich die Kirche als kompakter Bau aus behauenem Stein, die Wände mit Kreuzen verziert und der Tambour von schmalen Rundbogenfenstern durchbrochen.',
+        fr: 'De près, l\'église est un édifice compact en pierre taillée, aux murs ornés de croix sculptées et au tambour percé de fenêtres étroites en arc.',
+        es: 'De cerca, la iglesia es un edificio compacto de piedra tallada, con los muros decorados con cruces y el tambor abierto por estrechas ventanas en arco.',
+        nl: 'Van dichtbij is de kerk een compact gebouw van gehouwen steen, met muren versierd met kruisen en een tamboer met smalle boogvensters.',
+        cs: 'Zblízka je kostel kompaktní stavbou z tesaného kamene se zdmi ozdobenými kříži a tamburem prolomeným úzkými obloukovými okny.',
+        pl: 'Z bliska cerkiew to zwarta budowla z ciosanego kamienia, o ścianach zdobionych krzyżami i bębnie z wąskimi okienkami w łukach.',
       },
     },
+    gallery: [
+      {
+        base: 'gergeti-trinity-church-hilltop-kazbegi-georgia-view', width: 1448, height: 1086,
+        widths: [768, 1200, 1448], plainWidths: true, fallbackWidth: 1200,
+        afterChunk: 4,
+        name: 'Gergeti Trinity Church on its hilltop below the snow-covered peaks of the Greater Caucasus near Stepantsminda, Georgia',
+        description: 'Gergeti Trinity Church and its bell tower on a hilltop below the snow-covered peaks of the Greater Caucasus near Stepantsminda, with a walker on the grassy slope in the foreground.',
+        locationName: 'Gergeti Trinity Church, Stepantsminda, Mtskheta-Mtianeti, Georgia',
+        locality: 'Stepantsminda', region: 'Mtskheta-Mtianeti', country: 'GE',
+        alt: {
+          en: 'Gergeti Trinity Church on its hilltop below the snow-covered peaks of the Greater Caucasus near Stepantsminda, Georgia',
+          de: 'Die Gergeti-Dreifaltigkeitskirche auf ihrem Hügel unterhalb der schneebedeckten Gipfel des Großen Kaukasus bei Stepanzminda, Georgien',
+          fr: 'L\'église de la Trinité de Gergeti sur sa colline, au pied des sommets enneigés du Grand Caucase près de Stepantsminda, Géorgie',
+          es: 'La iglesia de la Trinidad de Gergeti en su colina, bajo las cumbres nevadas del Gran Cáucaso cerca de Stepantsminda, Georgia',
+          nl: 'De Drie-eenheidskerk van Gergeti op haar heuvel onder de besneeuwde toppen van de Grote Kaukasus bij Stepantsminda, Georgië',
+          cs: 'Gergetský kostel Nejsvětější Trojice na svém kopci pod zasněženými vrcholy Velkého Kavkazu u Stepancminda, Gruzie',
+          pl: 'Cerkiew Trójcy Świętej w Gergeti na wzgórzu pod ośnieżonymi szczytami Wielkiego Kaukazu koło Stepancminda, Gruzja',
+        },
+        caption: {
+          en: 'Gergeti Trinity Church stands on a hill above Stepantsminda, with the snow-covered ridges of the Greater Caucasus rising behind it.',
+          de: 'Die Gergeti-Dreifaltigkeitskirche steht auf einem Hügel über Stepanzminda, dahinter erheben sich die schneebedeckten Kämme des Großen Kaukasus.',
+          fr: 'L\'église de la Trinité de Gergeti se dresse sur une colline au-dessus de Stepantsminda, devant les crêtes enneigées du Grand Caucase.',
+          es: 'La iglesia de la Trinidad de Gergeti se alza en una colina sobre Stepantsminda, con las crestas nevadas del Gran Cáucaso detrás.',
+          nl: 'De Drie-eenheidskerk van Gergeti staat op een heuvel boven Stepantsminda, met de besneeuwde bergkammen van de Grote Kaukasus erachter.',
+          cs: 'Gergetský kostel Nejsvětější Trojice stojí na kopci nad Stepancmindou, za ním se zdvíhají zasněžené hřebeny Velkého Kavkazu.',
+          pl: 'Cerkiew Trójcy Świętej w Gergeti stoi na wzgórzu nad Stepancmindą, a za nią wznoszą się ośnieżone grzbiety Wielkiego Kaukazu.',
+        },
+      },
+    ],
   },
   {
     slug: 'gveleti-waterfalls', name: 'Gveleti Waterfalls',
@@ -14382,39 +14398,69 @@ export const sites = [
     slug: 'gergeti-glacier', name: 'Gergeti Glacier',
     parentType: 'city', parent: 'kazbegi', published: true,
     seoKey: 'gergetiGlacier', contentKey: 'gergetiGlacier',
-    // Still `noHero`: the owner's Kazbegi folder has NO photograph of the glacier itself,
-    // and none is claimed. Two owner photos sit in the body beside the text they match
-    // (4:3 crop via SitePage `gallery`): Mount Kazbek under "The mountain and the
-    // glacier" (the mountain the glacier descends from) and the Gergeti Trinity Church
-    // under "The hike" (the route's starting point). Captions describe only what shows.
-    noHero: true,
-    image: '/images/files/georgia-home.jpg',
+    // Cover = Mount Kazbek (owner's own photo, "Mount Kazbek"; PORTRAIT 1024x1536 → ladder
+    // 768/1024, no upscale), the mountain whose summit plateau feeds the glacier. The
+    // owner's Kazbegi folder has NO photograph of the glacier itself, so none is claimed:
+    // alt/caption say only what is visible. The visible background is the
+    // .hero--gergeti-glacier CSS class (styles.css). Two owner photos sit in the body
+    // beside matching text (4:3 crop via SitePage `gallery`): the high alpine terrain
+    // above Stepantsminda under "The mountain and the glacier", and the Gergeti Trinity
+    // Church under "The hike" (the route's starting point).
+    image: '/images/files/mount-kazbek-snow-summit-kazbegi-georgia-1024.webp',
+    imageAvif: '/images/files/mount-kazbek-snow-summit-kazbegi-georgia-1024.avif',
+    heroClass: 'hero--gergeti-glacier',
+    ogImage: { src: '/images/files/mount-kazbek-snow-summit-kazbegi-georgia-og.jpg', width: 1024, height: 537 },
+    imageMeta: {
+      width: 1024, height: 1536,
+      name: 'Snow-covered Mount Kazbek under a blue sky with wispy clouds, seen from the Stepantsminda area, Georgia',
+      description: 'Snow-covered Mount Kazbek under a blue sky with wispy clouds, seen from the Stepantsminda area of the Kazbegi region of northern Georgia, with brown hills in the foreground. The Gergeti Glacier descends from the summit plateau of this mountain.',
+      locationName: 'Mount Kazbek, Stepantsminda, Mtskheta-Mtianeti, Georgia',
+      locality: 'Stepantsminda', region: 'Mtskheta-Mtianeti', country: 'GE',
+      alt: {
+        en: 'Snow-covered Mount Kazbek under a blue sky with wispy clouds, seen from the Stepantsminda area, Georgia',
+        de: 'Der schneebedeckte Kazbek unter blauem Himmel mit zarten Wolkenschleiern, gesehen aus der Gegend von Stepanzminda, Georgien',
+        fr: 'Le mont Kazbek enneigé sous un ciel bleu parsemé de nuages légers, vu depuis la région de Stepantsminda, Géorgie',
+        es: 'El monte Kazbek nevado bajo un cielo azul con nubes ligeras, visto desde los alrededores de Stepantsminda, Georgia',
+        nl: 'De besneeuwde Kazbek onder een blauwe lucht met ijle wolken, gezien vanuit de omgeving van Stepantsminda, Georgië',
+        cs: 'Zasněžená hora Kazbek pod modrou oblohou s řídkými mraky, pohled z okolí Stepancminda, Gruzie',
+        pl: 'Ośnieżony szczyt Kazbek pod błękitnym niebem z cienkimi chmurami, widok z okolic Stepancminda, Gruzja',
+      },
+      caption: {
+        en: 'Mount Kazbek, the dormant volcano from whose summit plateau the Gergeti Glacier descends.',
+        de: 'Der Kazbek, der ruhende Vulkan, von dessen Gipfelplateau der Gergeti-Gletscher herabfließt.',
+        fr: 'Le mont Kazbek, volcan endormi dont le plateau sommital alimente le glacier de Gergeti.',
+        es: 'El monte Kazbek, el volcán dormido de cuya meseta cimera desciende el glaciar de Gergeti.',
+        nl: 'De Kazbek, de slapende vulkaan van wiens toppenplateau de Gergeti-gletsjer afdaalt.',
+        cs: 'Hora Kazbek, spící sopka, z jejíhož vrcholového plató sestupuje ledovec Gergeti.',
+        pl: 'Szczyt Kazbek, uśpiony wulkan, z którego płaskowyżu szczytowego schodzi lodowiec Gergeti.',
+      },
+    },
     gallery: [
       {
-        base: 'mount-kazbek-snow-summit-kazbegi-georgia', width: 1024, height: 1536,
+        base: 'kazbegi-village-below-caucasus-peaks-georgia', width: 1024, height: 1536,
         widths: [768, 1024], plainWidths: true, fallbackWidth: 1024,
         afterChunk: 2,
-        name: 'Snow-covered Mount Kazbek under a blue sky with wispy clouds, seen from the Stepantsminda area, Georgia',
-        description: 'Snow-covered Mount Kazbek under a blue sky with wispy clouds, seen from the Stepantsminda area of the Kazbegi region, with brown hills in the foreground.',
-        locationName: 'Mount Kazbek, Stepantsminda, Mtskheta-Mtianeti, Georgia',
+        name: 'Steep snow-covered rock faces of the Greater Caucasus rising above a conifer-covered slope and the town of Stepantsminda, Georgia',
+        description: 'Steep, rocky, snow-covered peaks of the Greater Caucasus above a dark conifer grove and the town of Stepantsminda in the Kazbegi region, under a blue sky.',
+        locationName: 'Stepantsminda, Kazbegi, Mtskheta-Mtianeti, Georgia',
         locality: 'Stepantsminda', region: 'Mtskheta-Mtianeti', country: 'GE',
         alt: {
-          en: 'Snow-covered Mount Kazbek under a blue sky with wispy clouds, seen from the Stepantsminda area, Georgia',
-          de: 'Der schneebedeckte Kazbek unter blauem Himmel mit zarten Wolkenschleiern, gesehen aus der Gegend von Stepanzminda, Georgien',
-          fr: 'Le mont Kazbek enneigé sous un ciel bleu parsemé de nuages légers, vu depuis la région de Stepantsminda, Géorgie',
-          es: 'El monte Kazbek nevado bajo un cielo azul con nubes ligeras, visto desde los alrededores de Stepantsminda, Georgia',
-          nl: 'De besneeuwde Kazbek onder een blauwe lucht met ijle wolken, gezien vanuit de omgeving van Stepantsminda, Georgië',
-          cs: 'Zasněžená hora Kazbek pod modrou oblohou s řídkými mraky, pohled z okolí Stepancminda, Gruzie',
-          pl: 'Ośnieżony szczyt Kazbek pod błękitnym niebem z cienkimi chmurami, widok z okolic Stepancminda, Gruzja',
+          en: 'Steep snow-covered rock faces of the Greater Caucasus rising above a conifer-covered slope and the town of Stepantsminda, Georgia',
+          de: 'Steile, schneebedeckte Felswände des Großen Kaukasus über einem Nadelwaldhang und der Stadt Stepanzminda, Georgien',
+          fr: 'Parois rocheuses abruptes et enneigées du Grand Caucase dominant une pente boisée de conifères et la ville de Stepantsminda, Géorgie',
+          es: 'Escarpadas paredes rocosas nevadas del Gran Cáucaso sobre una ladera de coníferas y el pueblo de Stepantsminda, Georgia',
+          nl: 'Steile, besneeuwde rotswanden van de Grote Kaukasus boven een met naaldbomen begroeide helling en de stad Stepantsminda, Georgië',
+          cs: 'Strmé zasněžené skalní stěny Velkého Kavkazu nad svahem porostlým jehličnany a městem Stepancminda, Gruzie',
+          pl: 'Strome, ośnieżone ściany skalne Wielkiego Kaukazu nad zboczem porośniętym iglakami i miastem Stepancminda, Gruzja',
         },
         caption: {
-          en: 'Mount Kazbek, the dormant volcano from whose summit plateau the Gergeti Glacier descends.',
-          de: 'Der Kazbek, der ruhende Vulkan, von dessen Gipfelplateau der Gergeti-Gletscher herabfließt.',
-          fr: 'Le mont Kazbek, volcan endormi dont le plateau sommital alimente le glacier de Gergeti.',
-          es: 'El monte Kazbek, el volcán dormido de cuya meseta cimera desciende el glaciar de Gergeti.',
-          nl: 'De Kazbek, de slapende vulkaan van wiens toppenplateau de Gergeti-gletsjer afdaalt.',
-          cs: 'Hora Kazbek, spící sopka, z jejíhož vrcholového plató sestupuje ledovec Gergeti.',
-          pl: 'Szczyt Kazbek, uśpiony wulkan, z którego płaskowyżu szczytowego schodzi lodowiec Gergeti.',
+          en: 'The high alpine terrain above Stepantsminda, where the route into the mountains begins.',
+          de: 'Das hochalpine Gelände oberhalb von Stepanzminda, wo der Weg in die Berge beginnt.',
+          fr: 'Le terrain de haute montagne au-dessus de Stepantsminda, où commence la route vers les sommets.',
+          es: 'El terreno de alta montaña sobre Stepantsminda, donde empieza la ruta hacia las cumbres.',
+          nl: 'Het hoogalpiene terrein boven Stepantsminda, waar de route de bergen in begint.',
+          cs: 'Vysokohorský terén nad Stepancmindou, kde začíná cesta do hor.',
+          pl: 'Wysokogórski teren nad Stepancmindą, gdzie zaczyna się droga w góry.',
         },
       },
       {
