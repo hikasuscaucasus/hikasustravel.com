@@ -31116,7 +31116,7 @@ export const countryHasAnyTours = (country) => toursForCountry(country).length >
 // other country keeps 6. The two extra Georgia tours are listed here rather
 // than flagged `featured` on the tour, because that flag also drives ordering
 // on the tour collection and attraction pages, which must stay as they are.
-const FEATURED_LIMIT = { georgia: 8 }
+const FEATURED_LIMIT = { georgia: 8, caucasus: 8 }
 const FEATURED_EXTRA = {
   georgia: ['7-day-svaneti-tour-from-kutaisi', '7-day-georgia-cultural-tour-kutaisi-to-tbilisi'],
 }
@@ -31124,7 +31124,13 @@ export const featuredToursFor = (country) => {
   const inCountry = toursForCountry(country).filter((t) => t.type !== 'group')
   const extra = FEATURED_EXTRA[country] || []
   const flagged = inCountry.filter((t) => t.featured || extra.includes(t.slug))
-  return (flagged.length ? flagged : inCountry).slice(0, FEATURED_LIMIT[country] ?? 6)
+  const privateTours = flagged.length ? flagged : inCountry
+  // The Caucasus tab leads with the scheduled multi-country group tours (they
+  // are Caucasus-hub tours); every other country shows private tours only.
+  const groupTours = country === 'caucasus'
+    ? tours.filter((t) => t.type === 'group' && tourCountry(t) === 'caucasus')
+    : []
+  return [...groupTours, ...privateTours].slice(0, FEATURED_LIMIT[country] ?? 6)
 }
 // Single source of truth for the country tours hub pages' robots directive:
 // noindex while a country has zero tours, indexable the moment it has one.
