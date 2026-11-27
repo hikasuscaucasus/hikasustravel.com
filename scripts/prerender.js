@@ -508,6 +508,30 @@ const blogArticles = [
     tags: ['georgia','itinerary','travel-guide','planning','culture'],
     keywords: "Georgia in 7 days, 7 days in Georgia, Georgia 7 day itinerary, one week in Georgia, Georgia itinerary 7 days, Tbilisi Kazbegi Kakheti itinerary, one week Georgia itinerary, Georgia road trip 7 days",
   },
+  {
+    slug: 'azerbaijan-in-7-days',
+    titleKey: 'blog.article14.title',
+    descKey: 'blog.article14.desc',
+    title: "Azerbaijan in 7 Days: The Perfect One-Week Itinerary",
+    seoTitle: "Azerbaijan in 7 Days: Perfect One-Week Itinerary | Hikasus",
+    excerpt: "Plan Azerbaijan in 7 days with a realistic one-week itinerary through Baku, Gobustan, Shamakhi, Lahij, Sheki and Gabala, plus tips on timing and transport.",
+    metaDescription: "Plan Azerbaijan in 7 days with a realistic one-week itinerary through Baku, Gobustan, Shamakhi, Lahij, Sheki and Gabala, plus tips on timing and transport.",
+    heroImage: '/images/files/baku-flame-towers-azerbaijan-1200.webp',
+    ogImage: '/images/files/baku-flame-towers-azerbaijan-og.jpg',
+    ogImageWidth: 1200,
+    ogImageHeight: 630,
+    ogImageAlt: {
+      en: "Baku Flame Towers and TV tower seen across the bay, Azerbaijan",
+      de: "Die Flame Towers und der Fernsehturm von Baku, über die Bucht hinweg gesehen, Aserbaidschan",
+      fr: "Les Flame Towers et la tour de télévision de Bakou vues de l'autre côté de la baie, Azerbaïdjan",
+      es: "Las Flame Towers y la torre de televisión de Bakú vistas al otro lado de la bahía, Azerbaiyán",
+      nl: "De Flame Towers van Bakoe en de tv-toren, gezien over de baai, Azerbeidzjan",
+      cs: "Flame Towers a televizní věž v Baku při pohledu přes záliv, Ázerbájdžán",
+      pl: "Flame Towers i wieża telewizyjna w Baku widoczne nad zatoką, Azerbejdżan",
+    },
+    tags: ['azerbaijan','itinerary','travel-guide','planning','culture'],
+    keywords: "Azerbaijan in 7 days, 7 days in Azerbaijan, Azerbaijan 7 day itinerary, one week in Azerbaijan, Azerbaijan itinerary 7 days, Baku Sheki Gabala itinerary, one week Azerbaijan itinerary, Azerbaijan road trip 7 days",
+  },
 ]
 
 // Blog title translation for a given article key from ui.json
