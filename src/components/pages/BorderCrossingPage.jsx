@@ -114,7 +114,7 @@ export default function BorderCrossingPage({ overview = false, country = 'georgi
           description: seo.description,
           inLanguage: lang,
           mainEntityOfPage: url,
-          image: `${SITE_URL}${heroImage}`,
+          ...(heroImage ? { image: `${SITE_URL}${heroImage}` } : {}),
           about: { '@type': 'Country', name: countryName(entry.country || country) },
           ...(modified && { dateModified: modified }),
           author: { '@type': 'Organization', name: 'Hikasus Travel' },
@@ -155,7 +155,7 @@ export default function BorderCrossingPage({ overview = false, country = 'georgi
       {entry.noHero ? (
         // Hero-free page: the same solid title band the other no-hero pages use,
         // carrying the H1. It stays in <main> so the alternating page-items
-        // bands below keep their order. `heroImage` still feeds og/JSON-LD.
+        // bands below keep their order. A noHero entry carries no `image`, so og/JSON-LD omit it.
         <section className="dest-title-band">
           <h1>{page.heroTitle}</h1>
         </section>

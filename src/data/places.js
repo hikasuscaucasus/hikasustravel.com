@@ -4185,7 +4185,10 @@ export const cities = [
     slug: 'ambrolauri', name: 'Ambrolauri', region: 'racha-lechkhumi', published: true,
     seoKey: 'ambrolauri', contentKey: 'ambrolauri', noHero: true, // TEMPORARY — no correct photo yet; `image` removed on purpose
     thingsToDo: {
-      seoKey: 'thingsToDoAmbrolauri', contentKey: 'thingsToDoAmbrolauri', image: '/images/files/georgia-home.jpg',
+      // No photograph of Ambrolauri exists in the library, so this guide has no hero (same
+      // call as the Ambrolauri city page). It used to show the site-wide Sighnaghi
+      // placeholder, which is a different town.
+      seoKey: 'thingsToDoAmbrolauri', contentKey: 'thingsToDoAmbrolauri', noHero: true,
       address: { addressRegion: 'Racha' },
       attractions: ['Khvanchkara wineries', 'Nikortsminda Cathedral', 'Shaori Lake', 'Racha villages', 'Rioni River'],
     },
@@ -4878,7 +4881,14 @@ export const cities = [
       },
     ],
     thingsToDo: {
-      seoKey: 'thingsToDoTskaltubo', contentKey: 'thingsToDoTskaltubo', image: '/images/files/georgia-home.jpg',
+      // Hero = Prometheus Cave (listed in this guide), the same owner-approved hero as the Tskaltubo city page. It used to show the site-wide
+      // Sighnaghi placeholder, which is a different town.
+      seoKey: 'thingsToDoTskaltubo', contentKey: 'thingsToDoTskaltubo',
+      image: '/images/files/prometheus-cave-illuminated-chamber-imereti-georgia-1536w.webp',
+      imageAvif: '/images/files/prometheus-cave-illuminated-chamber-imereti-georgia-1536w.avif',
+      heroPreload: '/images/files/prometheus-cave-illuminated-chamber-imereti-georgia-1200w.avif',
+      ogImage: { src: '/images/files/prometheus-cave-illuminated-chamber-imereti-georgia-og-1200x630.jpg', width: 1200, height: 630 },
+      heroClass: 'hero--tskaltubo',
       address: { addressLocality: 'Tskaltubo' },
       attractions: ['Tskaltubo Soviet Sanatoriums', 'Tskaltubo Mineral Baths', 'Tskaltubo Central Park', 'Prometheus Cave', 'Sataplia Nature Reserve'],
     },
@@ -6812,7 +6822,14 @@ export const cities = [
       },
     ],
     thingsToDo: {
-      seoKey: 'thingsToDoZugdidi', contentKey: 'thingsToDoZugdidi', image: '/images/files/georgia-home.jpg',
+      // Hero = the Dadiani Palace, the same hero as the Zugdidi city page. It used to show the site-wide
+      // Sighnaghi placeholder, which is a different town.
+      seoKey: 'thingsToDoZugdidi', contentKey: 'thingsToDoZugdidi',
+      image: '/images/files/dadiani-palace-zugdidi-georgia-1448.webp',
+      imageAvif: '/images/files/dadiani-palace-zugdidi-georgia-1448.avif',
+      heroPreload: '/images/files/dadiani-palace-zugdidi-georgia-1200.avif',
+      ogImage: { src: '/images/files/dadiani-palace-zugdidi-georgia-og-1200x630.jpg', width: 1200, height: 630 },
+      heroClass: 'hero--zugdidi',
       address: { addressLocality: 'Zugdidi' },
       attractions: ['Dadiani Palace', 'Dadiani Palace Gardens', 'Zugdidi Market', 'Anaklia Black Sea Coast'],
     },
@@ -7440,7 +7457,10 @@ export const cities = [
     slug: 'oni', name: 'Oni', region: 'racha-lechkhumi', published: true,
     seoKey: 'oni', contentKey: 'oni', noHero: true, // TEMPORARY — no correct photo yet; `image` removed on purpose
     thingsToDo: {
-      seoKey: 'thingsToDoOni', contentKey: 'thingsToDoOni', image: '/images/files/georgia-home.jpg',
+      // No photograph of Oni exists in the library, so this guide has no hero (same
+      // call as the Oni city page). It used to show the site-wide Sighnaghi
+      // placeholder, which is a different town.
+      seoKey: 'thingsToDoOni', contentKey: 'thingsToDoOni', noHero: true,
       address: { addressLocality: 'Oni' },
       attractions: ['Oni Synagogue', 'Rioni River Valley', 'Shovi Mountain Resort', 'Racha Villages'],
     },
@@ -7449,7 +7469,10 @@ export const cities = [
     slug: 'gurjaani', name: 'Gurjaani', region: 'kakheti', published: true,
     seoKey: 'gurjaani', contentKey: 'gurjaani', noHero: true, // TEMPORARY — no correct photo yet; `image` removed on purpose
     thingsToDo: {
-      seoKey: 'thingsToDoGurjaani', contentKey: 'thingsToDoGurjaani', image: '/images/files/georgia-home.jpg',
+      // No photograph of Gurjaani exists in the library, so this guide has no hero (same
+      // call as the Gurjaani city page). It used to show the site-wide Sighnaghi
+      // placeholder, which is a different town.
+      seoKey: 'thingsToDoGurjaani', contentKey: 'thingsToDoGurjaani', noHero: true,
       address: { addressLocality: 'Gurjaani' },
       attractions: ['Gurjaani Kvelatsminda Church', 'Velistsikhe Wine Museum', 'Nekresi Monastery', 'Alazani Valley'],
     },
@@ -7680,7 +7703,10 @@ export const cities = [
     slug: 'kvareli', name: 'Kvareli', region: 'kakheti', published: true,
     seoKey: 'kvareli', contentKey: 'kvareli', noHero: true, // TEMPORARY — no correct photo yet; `image` removed on purpose
     thingsToDo: {
-      seoKey: 'thingsToDoKvareli', contentKey: 'thingsToDoKvareli', image: '/images/files/georgia-home.jpg',
+      // No photograph of Kvareli exists in the library, so this guide has no hero (same
+      // call as the Kvareli city page). It used to show the site-wide Sighnaghi
+      // placeholder, which is a different town.
+      seoKey: 'thingsToDoKvareli', contentKey: 'thingsToDoKvareli', noHero: true,
       address: { addressLocality: 'Kvareli' },
       attractions: ['Khareba Winery Wine Tunnel', 'Nekresi Monastery', 'Kvareli Lake', 'Ilia Chavchavadze Museum'],
     },
@@ -8840,7 +8866,10 @@ export const cities = [
     slug: 'dmanisi', name: 'Dmanisi', region: 'kvemo-kartli', published: true,
     seoKey: 'dmanisi', contentKey: 'dmanisi', noHero: true, // TEMPORARY — no correct photo yet; `image` removed on purpose
     thingsToDo: {
-      seoKey: 'thingsToDoDmanisi', contentKey: 'thingsToDoDmanisi', image: '/images/files/georgia-home.jpg',
+      // No photograph of Dmanisi exists in the library, so this guide has no hero (same
+      // call as the Dmanisi city page). It used to show the site-wide Sighnaghi
+      // placeholder, which is a different town.
+      seoKey: 'thingsToDoDmanisi', contentKey: 'thingsToDoDmanisi', noHero: true,
       address: { addressLocality: 'Dmanisi' },
       attractions: ['Dmanisi Archaeological Site', 'Dmanisi Medieval Town Ruins', 'Dmanisi Sioni Cathedral', 'Dmanisi Museum-Reserve'],
     },
@@ -8849,7 +8878,10 @@ export const cities = [
     slug: 'bolnisi', name: 'Bolnisi', region: 'kvemo-kartli', published: true,
     seoKey: 'bolnisi', contentKey: 'bolnisi', noHero: true, // TEMPORARY — no correct photo yet; `image` removed on purpose
     thingsToDo: {
-      seoKey: 'thingsToDoBolnisi', contentKey: 'thingsToDoBolnisi', image: '/images/files/georgia-home.jpg',
+      // No photograph of Bolnisi exists in the library, so this guide has no hero (same
+      // call as the Bolnisi city page). It used to show the site-wide Sighnaghi
+      // placeholder, which is a different town.
+      seoKey: 'thingsToDoBolnisi', contentKey: 'thingsToDoBolnisi', noHero: true,
       address: { addressLocality: 'Bolnisi' },
       attractions: [
         'Bolnisi Sioni Cathedral', 'German Heritage (Katharinenfeld)', 'Dmanisi Archaeological Site',

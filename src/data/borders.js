@@ -13,12 +13,11 @@
 // unfinished or unverified crossing never shows a half-built stub.
 
 // The overview / complete-guide hub. It lives at the section index URL.
-// noHero: no visible hero (solid title band instead); `image` is kept because
-// it still feeds og:image / twitter:image / the Article JSON-LD.
+// noHero: no visible hero (solid title band instead) and no `image`: the old
+// placeholder was a Sighnaghi photo. og:image falls back to the site default.
 export const borderOverview = {
   seoKey: 'borderCrossingsOverview',
   contentKey: 'borderCrossingsOverview',
-  image: '/images/files/georgia-home.jpg',
   noHero: true,
   published: true,
 }
@@ -58,7 +57,7 @@ export const borderCrossings = [
     name: 'Akhkerpi Border Crossing',
     seoKey: 'akhkerpiBorderCrossing',
     contentKey: 'akhkerpiBorderCrossing',
-    image: '/images/files/georgia-home.jpg',
+    noHero: true,
     published: true,
   },
   {
@@ -66,7 +65,7 @@ export const borderCrossings = [
     name: 'Guguti / Gogavan Border Crossing',
     seoKey: 'gugutiGogavanBorderCrossing',
     contentKey: 'gugutiGogavanBorderCrossing',
-    image: '/images/files/georgia-home.jpg',
+    noHero: true,
     published: true,
   },
   {
@@ -74,7 +73,7 @@ export const borderCrossings = [
     name: 'Kartsakhi Border Crossing',
     seoKey: 'kartsakhiBorderCrossing',
     contentKey: 'kartsakhiBorderCrossing',
-    image: '/images/files/georgia-home.jpg',
+    noHero: true,
     published: true,
   },
   {
@@ -82,7 +81,7 @@ export const borderCrossings = [
     name: 'Kazbegi (Upper Lars) Border Crossing',
     seoKey: 'kazbegiUpperLarsBorderCrossing',
     contentKey: 'kazbegiUpperLarsBorderCrossing',
-    image: '/images/files/georgia-home.jpg',
+    noHero: true,
     published: true,
   },
   {
@@ -90,7 +89,7 @@ export const borderCrossings = [
     name: 'Lagodekhi / Balakan Border Crossing',
     seoKey: 'lagodekhiBalakanBorderCrossing',
     contentKey: 'lagodekhiBalakanBorderCrossing',
-    image: '/images/files/georgia-home.jpg',
+    noHero: true,
     published: true,
   },
   {
@@ -98,7 +97,7 @@ export const borderCrossings = [
     name: 'Ninotsminda / Bavra Border Crossing',
     seoKey: 'ninotsmindaBavraBorderCrossing',
     contentKey: 'ninotsmindaBavraBorderCrossing',
-    image: '/images/files/georgia-home.jpg',
+    noHero: true,
     published: true,
   },
   {
@@ -106,7 +105,7 @@ export const borderCrossings = [
     name: 'Red Bridge Border Crossing',
     seoKey: 'redBridgeBorderCrossing',
     contentKey: 'redBridgeBorderCrossing',
-    image: '/images/files/georgia-home.jpg',
+    noHero: true,
     published: true,
   },
   {
@@ -114,7 +113,7 @@ export const borderCrossings = [
     name: 'Sadakhlo / Bagratashen Border Crossing',
     seoKey: 'sadakhloBagratashenBorderCrossing',
     contentKey: 'sadakhloBagratashenBorderCrossing',
-    image: '/images/files/georgia-home.jpg',
+    noHero: true,
     published: true,
   },
   {
@@ -122,7 +121,7 @@ export const borderCrossings = [
     name: 'Sarpi Border Crossing',
     seoKey: 'sarpiBorderCrossing',
     contentKey: 'sarpiBorderCrossing',
-    image: '/images/files/georgia-home.jpg',
+    noHero: true,
     published: true,
   },
   {
@@ -130,7 +129,7 @@ export const borderCrossings = [
     name: 'Vale Border Crossing',
     seoKey: 'valeBorderCrossing',
     contentKey: 'valeBorderCrossing',
-    image: '/images/files/georgia-home.jpg',
+    noHero: true,
     published: true,
   },
 ]
