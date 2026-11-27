@@ -4,7 +4,7 @@ import FadeUp from './FadeUp'
 import LocaleLink from '../../i18n/LocaleLink'
 import useT from '../../i18n/useT'
 import { PRIVATE_TOUR_CATEGORIES, CATEGORY_LABEL_KEYS } from '../../data/tourCategories'
-import { formatPrice, getEntryPrices } from './pricingUtils'
+import { formatPrice, formatPriceNumber, getEntryPrices, parsePrice } from './pricingUtils'
 
 function getClassicPrice(pricing) {
   if (!pricing || pricing.length === 0) return null
@@ -22,6 +22,8 @@ export default function TourCard({ tour, translation, index = 0, basePath = '/pr
   const description = tt?.listingDescription || tt?.description || tour.listingDescription || tour.description
   const tourUrl = `${basePath}/${tour.slug}`
   const classicPrice = getClassicPrice(tour.pricing)
+  // Scheduled group tours: one fixed per-person price, no pricing table.
+  const groupPrice = tour.type === 'group' && !classicPrice ? parsePrice(tour.pricePerPerson) : null
   // Two-traveler price of the same tier the badge quotes (private tours only).
   const entry = classicPrice && tour.type !== 'group' ? getEntryPrices(tour.pricing) : null
   const twoPrice = entry?.basisFour && entry.from === classicPrice ? entry.two : null
@@ -43,6 +45,7 @@ export default function TourCard({ tour, translation, index = 0, basePath = '/pr
               <span className="tc__badge">
                 {tour.days} {t('tour.days')}
                 {classicPrice && <> / {t('sidebar.startingFrom')} {formatPrice(classicPrice)}{twoPrice && ` ${t('pricing.fourTravelers')}`}</>}
+                {groupPrice && <> / {t('tour.perPerson', { price: formatPriceNumber(groupPrice) })}</>}
                 {twoPrice && <span className="tc__badge-two">{t('pricing.forTwoTravelers', { price: formatPrice(twoPrice) })}</span>}
               </span>
             )}

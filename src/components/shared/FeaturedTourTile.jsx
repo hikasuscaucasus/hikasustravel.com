@@ -1,6 +1,6 @@
 import CardImage from './CardImage'
 import LocaleLink from '../../i18n/LocaleLink'
-import { formatPrice, getEntryPrices } from './pricingUtils'
+import { formatPrice, formatPriceNumber, getEntryPrices, parsePrice } from './pricingUtils'
 
 // Extracted from HomePage.jsx so the country tour hubs (/tours/georgia etc.,
 // see CountryToursHubPage.jsx) can show the exact same tile — image, days,
@@ -13,6 +13,9 @@ export default function FeaturedTourTile({ tour, t, tourTranslations }) {
   const priceFrom = !isNaN(classicNum) && classicNum > 0 ? formatPrice(classicNum) : null
   const entry = priceFrom && tour.type !== 'group' ? getEntryPrices(tour.pricing) : null
   const twoPrice = entry?.basisFour && entry.from === classicNum ? entry.two : null
+  // Scheduled group tours have one fixed per-person price instead of a
+  // pricing table, so they print "<amount> USD per person", never "from".
+  const groupPrice = tour.type === 'group' ? parsePrice(tour.pricePerPerson) : null
   const basePath = tour.type === 'group' ? 'group-tours' : 'private-tours'
   return (
     <div className="tour-tile">
@@ -28,6 +31,11 @@ export default function FeaturedTourTile({ tour, t, tourTranslations }) {
           {priceFrom && (
             <p className="tour-tile-overlay__price">
               {t('tour.pricesFrom', { price: priceFrom })}{twoPrice && ` ${t('pricing.fourTravelers')}`}
+            </p>
+          )}
+          {groupPrice && (
+            <p className="tour-tile-overlay__price">
+              {t('tour.perPerson', { price: formatPriceNumber(groupPrice) })}
             </p>
           )}
           {twoPrice && (
