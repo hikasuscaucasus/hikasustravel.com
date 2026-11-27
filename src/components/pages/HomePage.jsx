@@ -132,6 +132,11 @@ export default function HomePage() {
 
   const featuredTabs = [
     {
+      key: 'caucasus',
+      label: t('home.destCaucasus'),
+      content: <FeaturedCountryPanel country="caucasus" comingSoonKey="home.featuredComingSoonCaucasus" t={t} tourTranslations={tourTranslations} />,
+    },
+    {
       key: 'georgia',
       label: t('nav.destinations.georgia'),
       content: (
@@ -171,11 +176,6 @@ export default function HomePage() {
           destinationLink={{ to: '/azerbaijan' }}
         />
       ),
-    },
-    {
-      key: 'caucasus',
-      label: t('home.destCaucasus'),
-      content: <FeaturedCountryPanel country="caucasus" comingSoonKey="home.featuredComingSoonCaucasus" t={t} tourTranslations={tourTranslations} />,
     },
   ]
 
@@ -229,6 +229,15 @@ export default function HomePage() {
             <ul className="dest-hub-grid dest-hub-grid--home">
               <li>
                 <DestinationCard
+                  name={t('home.destCaucasus')}
+                  image="/images/files/svaneti-caucasus-mountains-georgia-1200.webp"
+                  to="/tours/caucasus"
+                  locationLine={destStatus('caucasus')}
+                  headingLevel="h3"
+                />
+              </li>
+              <li>
+                <DestinationCard
                   name={t('nav.destinations.georgia')}
                   image="/images/files/Sighnaghi.jpg"
                   to="/tours/georgia"
@@ -255,21 +264,12 @@ export default function HomePage() {
                   headingLevel="h3"
                 />
               </li>
-              <li>
-                <DestinationCard
-                  name={t('home.destCaucasus')}
-                  image="/images/files/svaneti-caucasus-mountains-georgia-1200.webp"
-                  to="/tours/caucasus"
-                  locationLine={destStatus('caucasus')}
-                  headingLevel="h3"
-                />
-              </li>
             </ul>
           </FadeUp>
         </div>
       </section>
 
-      {/* Featured tours — country tabs. Georgia's panel is index 0, so it is
+      {/* Featured tours — country tabs. Caucasus is panel index 0 (first, per the site order), so it is
           the one baked into the static prerendered HTML (see CountryTabs.jsx
           — every panel always renders, only `hidden` toggles). */}
       <section className="home-items">
