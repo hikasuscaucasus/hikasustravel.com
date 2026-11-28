@@ -53,7 +53,7 @@ export default function BlogArticlePage() {
   // visible H1 and the card excerpt).
   const seoTitleOverride = article?.seoTitleKey ? tf(t, article.seoTitleKey, '') : ''
   const metaDescOverride = article?.metaDescKey ? tf(t, article.metaDescKey, '') : ''
-  const localizedDesc = metaDescOverride ? metaDescOverride : article
+  const localizedDesc = article
     ? (article.descKey ? tf(t, article.descKey, article.metaDescription || article.excerpt) : (article.metaDescription || article.excerpt))
     : ''
 
@@ -82,7 +82,7 @@ export default function BlogArticlePage() {
     title: (lang === 'en' && article.seoTitle)
       ? article.seoTitle
       : (seoTitleOverride || `${tf(t, article.titleKey, article.title)} | Hikasus Travel Blog`),
-    description: localizedDesc,
+    description: metaDescOverride || localizedDesc,
     keywords: articleKeywords,
     lang,
     path: `blog/${slug}`,

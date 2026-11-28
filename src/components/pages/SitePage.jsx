@@ -303,7 +303,7 @@ export default function SitePage() {
             '@type': site.schemaType,
             name: site.name,
             headline: (page && page.heroTitle) || site.name,
-            description: seo.description,
+            description: seo.schemaDescription || seo.description,
             url,
             ...imageProp,
             inLanguage: lang,
@@ -312,7 +312,7 @@ export default function SitePage() {
         : {
             '@type': 'TouristAttraction',
             name: site.name,
-            description: seo.description,
+            description: seo.schemaDescription || seo.description,
             url,
             ...imageProp,
             // Reads the site's country instead of asserting Georgia, so an
@@ -539,7 +539,7 @@ export default function SitePage() {
       ],
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [published, lang, path, seo.description, heroImage, faqItems, gallery])
+  }, [published, lang, path, seo.description, seo.schemaDescription, heroImage, faqItems, gallery])
 
   useSEO(published ? {
     ...seo, lang, path,

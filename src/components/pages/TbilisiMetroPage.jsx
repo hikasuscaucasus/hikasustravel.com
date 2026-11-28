@@ -30,7 +30,7 @@ export default function TbilisiMetroPage() {
         {
           '@type': 'Article',
           headline: page.heroTitle,
-          description: seo.description,
+          description: seo.schemaDescription || seo.description,
           inLanguage: lang,
           mainEntityOfPage: url,
           image: `${SITE_URL}${HERO_IMAGE}`,
@@ -58,7 +58,7 @@ export default function TbilisiMetroPage() {
         },
       ],
     }
-  }, [lang, seo.description, page.heroTitle, faqItems])
+  }, [lang, seo.description, seo.schemaDescription, page.heroTitle, faqItems])
 
   useSEO({ ...seo, lang, path: PATH, image: HERO_IMAGE, jsonLd })
 

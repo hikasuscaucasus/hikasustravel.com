@@ -123,7 +123,7 @@ export default function RegionPage() {
         {
           '@type': 'TouristDestination',
           name: region.name,
-          description: seo.description,
+          description: seo.schemaDescription || seo.description,
           url,
           // Opt-in: a region may point this node at a dedicated 1.91:1 social
           // crop via `jsonLdImage` so schema.org, og:image and twitter:image all
@@ -238,7 +238,7 @@ export default function RegionPage() {
       ],
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [published, lang, path, seo.description, heroImage, faqItems, country])
+  }, [published, lang, path, seo.description, seo.schemaDescription, heroImage, faqItems, country])
 
   useSEO(published ? { ...seo, lang, path, image: heroImage, jsonLd } : {})
 

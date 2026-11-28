@@ -742,6 +742,7 @@
   "tbilisiMetro": {
     "title": "Tbiliské metro: linky, jízdné a jak ho používat",
     "description": "Jak funguje metro v Tbilisi v Gruzii: dvě linky, platba bankovní kartou nebo kartou MetroMoney, jízdné, provozní doba a stanice nejblíže hlavním památkám.",
+    "schemaDescription": "Tbiliské metro vysvětleno: dvě linky, 23 stanic, bezhotovostní jízdné 1 GEL a klíčové stanice pro Staré Město, Rustaveli, Sameba a uzly pro celodenní výlety.",
     "keywords": "tbiliské metro, metro Tbilisi, podzemní dráha Tbilisi, linka Akhmeteli–Varketili, linka Saburtalo, Nádražní náměstí, náměstí Svobody, stanice Rustaveli, Avlabari, Marjanishvili, Didube, Samgori, maršrutka, tbiliská dopravní karta, MetroMoney, bezkontaktní jízdné Tbilisi, jízdné 1 GEL, Mccheta, Kazbegi, Gori, Kutaisi, Kachetie, Sameba, Staré Město Tbilisi, doprava po Tbilisi, co dělat v Tbilisi, Gruzie"
   },
   "tbilisiRailwayStation": {
@@ -817,6 +818,7 @@
   "enguriDam": {
     "title": "Přehrada Enguri, Gruzie: jedna z nejvyšších obloukových přehrad",
     "description": "Přehrada Enguri v západní Gruzii je se 271,5 m jednou z nejvyšších obloukových přehrad světa. Kde leží, jak byla postavena a jak ji navštívit na cestě do Svanetie.",
+    "schemaDescription": "Přehrada Enguri, Gruzie: druhá nejvyšší oblouková přehrada na světě (271,5 m), na cestě Zugdidi–Mestia do Svanetie – tyrkysová nádrž a pozoruhodná sdílená historie.",
     "keywords": "přehrada Enguri, přehrada Inguri, oblouková přehrada Enguri, druhá nejvyšší oblouková přehrada, betonová oblouková přehrada, 271,5 m, řeka Enguri, přehradní nádrž Jvari, Jvari, Zugdidi, Mestia, Svanetie, Horní Svanetie, Ushguli, Samegrelo, vodní elektrárna Gruzie, elektrárna Enguri, Abcházie, okres Gali, Niko Nikoladze, Tsalenjikha, tyrkysová nádrž, svanetská cesta, Zugdidi do Mestie, palác Dadiani, Tbilisi"
   },
   "intsraWaterfall": {
@@ -1691,6 +1693,7 @@
   "absheron": {
     "title": "Apšeronský poloostrov, Ázerbájdžán: co vidět u Baku",
     "description": "Průvodce Apšeronským poloostrovem u Baku v Ázerbájdžánu: chrám ohně Ateshgah, hořící svah Yanar Dag, středověké pevnosti a kaspické pláže.",
+    "schemaDescription": "Poznejte Apšeronský poloostrov v Ázerbájdžánu: chrám ohně Ateshgah, Yanar Dag, středověké pevnosti, kaspické pláže a Apšeronský národní park za hranicemi Baku.",
     "keywords": "Apšeronský poloostrov, chrám ohně Ateshgah, Yanar Dag, Gala Qala, hrad Mardakan, Apšeronský národní park, pláže Absheron, výlety z Baku, jednodenní výlety Ázerbájdžán"
   },
   "baku": {

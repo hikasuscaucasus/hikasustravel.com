@@ -159,7 +159,7 @@ export function createJsonLdBuilder({ seoFor }) {
         {
           '@type': 'TouristDestination',
           name: r.name,
-          description: seo.description,
+          description: seo.schemaDescription || seo.description,
           url,
           // Opt-in `jsonLdImage`, same as the sites branch below: a region may
           // name a dedicated social crop here. Regions without it are unchanged.
@@ -253,7 +253,7 @@ export function createJsonLdBuilder({ seoFor }) {
             '@type': s.schemaType,
             name: s.name,
             headline: heroTitle(s.contentKey) || s.name,
-            description: seo.description,
+            description: seo.schemaDescription || seo.description,
             url,
             ...imageProp,
             inLanguage: lang,
@@ -261,7 +261,7 @@ export function createJsonLdBuilder({ seoFor }) {
         : {
             '@type': 'TouristAttraction',
             name: s.name,
-            description: seo.description,
+            description: seo.schemaDescription || seo.description,
             url,
             ...imageProp,
             // A region-parented site is not always physically inside its parent

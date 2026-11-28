@@ -742,6 +742,7 @@
   "tbilisiMetro": {
     "title": "Tbilisi Metro Guide: Lines, Fares and How to Ride",
     "description": "How the Tbilisi metro works in Georgia: two lines, paying by bank card or MetroMoney card, fares, opening hours, and the stations closest to the main sights.",
+    "schemaDescription": "The Tbilisi Metro explained: two lines, 23 stations, the cashless 1 GEL fare, and the key stops for the Old Town, Rustaveli, Sameba, and the day-trip hubs.",
     "keywords": "Tbilisi Metro, Tbilisi underground, Tbilisi subway, Akhmeteli–Varketili Line, Saburtalo Line, Station Square, Liberty Square, Freedom Square, Rustaveli station, Avlabari, Marjanishvili, Didube, Samgori, marshrutka, Tbilisi transport card, MetroMoney, contactless fare Tbilisi, 1 GEL fare, Mtskheta, Kazbegi, Gori, Kutaisi, Kakheti, Sameba, Old Town Tbilisi, getting around Tbilisi, things to do in Tbilisi, Georgia"
   },
   "tbilisiRailwayStation": {
@@ -817,6 +818,7 @@
   "enguriDam": {
     "title": "Enguri Dam, Georgia: One of the World's Tallest Arch Dams",
     "description": "The Enguri Dam in western Georgia is one of the world's tallest arch dams at 271.5 m. Where it is, how it was built, and how to visit on the way to Svaneti.",
+    "schemaDescription": "The Enguri Dam, Georgia: the world's second-highest arch dam (271.5 m), on the Zugdidi–Mestia road to Svaneti — a turquoise reservoir and a remarkable shared history.",
     "keywords": "Enguri Dam, Inguri Dam, Enguri arch dam, second-highest arch dam, concrete arch dam, 271.5 m, Enguri River, Jvari Reservoir, Jvari, Zugdidi, Mestia, Svaneti, Upper Svaneti, Ushguli, Samegrelo, hydroelectric Georgia, Enguri HPP, Abkhazia, Gali district, Niko Nikoladze, Tsalenjikha, turquoise reservoir, Svaneti road, Zugdidi to Mestia, Dadiani Palace, Tbilisi"
   },
   "intsraWaterfall": {
@@ -1692,6 +1694,7 @@
   "absheron": {
     "title": "Absheron Peninsula, Azerbaijan: What to See Near Baku",
     "description": "A guide to Azerbaijan's Absheron Peninsula near Baku: the Ateshgah fire temple, the burning hillside of Yanar Dag, medieval fortresses, and Caspian beaches.",
+    "schemaDescription": "Explore Azerbaijan's Absheron Peninsula: Ateshgah Fire Temple, Yanar Dag, medieval fortresses, Caspian beaches and Absheron National Park beyond central Baku.",
     "keywords": "Absheron Peninsula, Ateshgah Fire Temple, Yanar Dag, Gala Qala, Mardakan Castle, Absheron National Park, Absheron beaches, Baku excursions, Azerbaijan day trips"
   },
   "baku": {

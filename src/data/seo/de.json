@@ -742,6 +742,7 @@
   "tbilisiMetro": {
     "title": "Tifliser Metro: Linien, Fahrpreise und Nutzung",
     "description": "So funktioniert die Metro in Tiflis, Georgien: zwei Linien, Zahlung per Bankkarte oder MetroMoney, Fahrpreise, Betriebszeiten und Stationen bei den wichtigsten Sehenswürdigkeiten.",
+    "schemaDescription": "Die Tifliser Metro erklärt: zwei Linien, 23 Stationen, der bargeldlose Fahrpreis von 1 GEL und die wichtigsten Stationen für die Altstadt, Rustaveli, Sameba und die Drehkreuze für Tagesausflüge.",
     "keywords": "Tifliser Metro, Metro Tiflis, U-Bahn Tiflis, Tiflis U-Bahn, Akhmeteli–Varketili-Linie, Saburtalo-Linie, Bahnhofsplatz, Freiheitsplatz, Station Rustaveli, Avlabari, Marjanishvili, Didube, Samgori, Marschrutka, Tifliser Verkehrskarte, MetroMoney, kontaktloser Fahrpreis Tiflis, Fahrpreis 1 GEL, Mzcheta, Kazbegi, Gori, Kutaissi, Kachetien, Sameba, Altstadt Tiflis, Fortbewegung in Tiflis, Aktivitäten in Tiflis, Georgien"
   },
   "tbilisiRailwayStation": {
@@ -817,6 +818,7 @@
   "enguriDam": {
     "title": "Enguri-Staudamm, Georgien: eine der höchsten Bogenstaumauern",
     "description": "Der Enguri-Staudamm in Westgeorgien ist mit 271,5 m eine der höchsten Bogenstaumauern der Welt. Lage, Bau und Besuch auf dem Weg nach Swanetien.",
+    "schemaDescription": "Der Enguri-Staudamm, Georgien: die zweithöchste Bogenstaumauer der Welt (271,5 m), an der Straße von Zugdidi nach Mestia in Richtung Swanetien – ein türkisfarbener Stausee und eine bemerkenswerte geteilte Geschichte.",
     "keywords": "Enguri-Staudamm, Inguri-Staudamm, Enguri-Bogenstaumauer, zweithöchste Bogenstaumauer, Beton-Bogenstaumauer, 271,5 m, Fluss Enguri, Jvari-Stausee, Jvari, Zugdidi, Mestia, Swanetien, Oberswanetien, Ushguli, Samegrelo, Wasserkraft Georgien, Enguri-Wasserkraftwerk, Abchasien, Bezirk Gali, Niko Nikoladze, Tsalenjikha, türkisfarbener Stausee, Straße nach Swanetien, Zugdidi nach Mestia, Dadiani-Palast, Tiflis"
   },
   "intsraWaterfall": {
@@ -1691,6 +1693,7 @@
   "absheron": {
     "title": "Halbinsel Absheron, Aserbaidschan: Sehenswertes bei Baku",
     "description": "Reiseführer zur Halbinsel Absheron bei Baku in Aserbaidschan: Ateshgah-Feuertempel, der brennende Hang Yanar Dag, mittelalterliche Festungen und Kaspische Strände.",
+    "schemaDescription": "Entdecken Sie die Halbinsel Absheron: Ateshgah-Feuertempel, Yanar Dag, mittelalterliche Festungen, Kaspische Strände und Nationalpark jenseits von Baku.",
     "keywords": "Halbinsel Absheron, Ateshgah-Feuertempel, Yanar Dag, Gala Qala, Festung Mardakan, Absheron-Nationalpark, Strände Absheron, Ausflüge ab Baku, Tagesausflüge Aserbaidschan"
   },
   "baku": {

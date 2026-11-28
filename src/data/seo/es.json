@@ -742,6 +742,7 @@
   "tbilisiMetro": {
     "title": "Metro de Tbilisi: líneas, tarifas y cómo usarlo",
     "description": "El metro de Tbilisi, en Georgia: dos líneas, pago con tarjeta bancaria o MetroMoney, tarifas, horarios y estaciones cercanas a los principales lugares de interés.",
+    "schemaDescription": "El metro de Tbilisi explicado: dos líneas, 23 estaciones, la tarifa sin efectivo de 1 GEL y las paradas clave para el Casco Antiguo, Rustaveli, Sameba y los nudos de las excursiones de un día.",
     "keywords": "metro de Tbilisi, suburbano de Tbilisi, metropolitano de Tbilisi, línea Akhmeteli–Varketili, línea Saburtalo, plaza de la Estación, plaza de la Libertad, Freedom Square, estación Rustaveli, Avlabari, Marjanishvili, Didube, Samgori, marshrutka, tarjeta de transporte de Tbilisi, MetroMoney, tarifa contactless Tbilisi, tarifa de 1 GEL, Mtskheta, Kazbegi, Gori, Kutaisi, Kakheti, Sameba, Casco Antiguo de Tbilisi, moverse por Tbilisi, qué hacer en Tbilisi, Georgia"
   },
   "tbilisiRailwayStation": {
@@ -817,6 +818,7 @@
   "enguriDam": {
     "title": "Presa de Enguri, Georgia: una de las presas de arco más altas",
     "description": "La presa de Enguri, en el oeste de Georgia, es una de las presas de arco más altas del mundo (271,5 m). Dónde está, cómo se construyó y cómo visitarla de camino a Svaneti.",
+    "schemaDescription": "La presa de Enguri, Georgia: la segunda presa de arco más alta del mundo (271,5 m), en la carretera Zugdidi–Mestia hacia Svaneti — un embalse turquesa y una historia compartida notable.",
     "keywords": "presa de Enguri, presa de Inguri, presa de arco de Enguri, segunda presa de arco más alta, presa de arco de hormigón, 271,5 m, río Enguri, embalse de Jvari, Jvari, Zugdidi, Mestia, Svaneti, Alta Svaneti, Ushguli, Samegrelo, hidroeléctrica Georgia, central de Enguri, Abjasia, distrito de Gali, Niko Nikoladze, Tsalenjikha, embalse turquesa, carretera de Svaneti, Zugdidi a Mestia, Palacio Dadiani, Tbilisi"
   },
   "intsraWaterfall": {
@@ -1691,6 +1693,7 @@
   "absheron": {
     "title": "Península de Absheron, Azerbaiyán: qué ver cerca de Bakú",
     "description": "Guía de la península de Absheron, cerca de Bakú, en Azerbaiyán: templo del fuego de Ateshgah, ladera en llamas de Yanar Dag, fortalezas medievales y playas del Caspio.",
+    "schemaDescription": "Explora la península de Absheron: el templo del fuego de Ateshgah, Yanar Dag, fortalezas medievales, playas del Caspio y el parque nacional más allá de Bakú.",
     "keywords": "península de Absheron, templo del fuego de Ateshgah, Yanar Dag, Gala Qala, castillo de Mardakan, Parque Nacional de Absheron, playas de Absheron, excursiones desde Bakú, excursiones de un día Azerbaiyán"
   },
   "baku": {

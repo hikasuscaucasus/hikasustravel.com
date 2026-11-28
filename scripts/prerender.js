@@ -1176,7 +1176,9 @@ for (const lang of LANGS) {
     const title = (lang === 'en' && article.seoTitle)
       ? article.seoTitle
       : (seoTitleOverride || `${translatedTitle} | Hikasus Travel Blog`)
-    const description = metaDescOverride || (article.descKey && loadBlogTitle(lang, article.descKey)) || article.metaDescription || article.excerpt
+    // JSON-LD keeps the legacy description; only the meta tags use the SEO override.
+    const schemaDescription = (article.descKey && loadBlogTitle(lang, article.descKey)) || article.metaDescription || article.excerpt
+    const description = metaDescOverride || schemaDescription
     const tagKeywords = article.tags.flatMap(tag => [
       `Georgia ${tag.replace(/-/g, ' ')}`,
     ])
@@ -1199,7 +1201,7 @@ for (const lang of LANGS) {
       jsonLd: (() => {
         const record = blogRecords.find((r) => r.slug === article.slug)
         const tr = record && lang !== 'en' ? record.translations?.[lang] || null : null
-        return buildBlogJsonLd({ article: record, lang, description, faq: tr?.faq || record?.faq })
+        return buildBlogJsonLd({ article: record, lang, description: schemaDescription, faq: tr?.faq || record?.faq })
       })(),
     })
   }
