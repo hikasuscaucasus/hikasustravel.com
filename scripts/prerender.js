@@ -300,9 +300,11 @@ const blogArticles = [
     titleKey: 'blog.article5.title',
     descKey: 'blog.article5.desc',
     title: "The Ultimate Guide to Traveling to Armenia",
-    seoTitle: "The Ultimate Guide to Traveling to Armenia | Hikasus Travel",
+    seoTitle: "Armenia Travel Tips: What to Know Before You Go",
+    seoTitleKey: 'blog.article5.seoTitle',
+    metaDescKey: 'blog.article5.metaDesc',
     excerpt: "Plan a trip to Armenia: best time to visit, trip length, Yerevan, monasteries, Lake Sevan, food and wine, transport, money, visas and practical advice.",
-    metaDescription: "Plan a trip to Armenia: best time to visit, trip length, Yerevan, monasteries, Lake Sevan, food and wine, transport, money, visas and practical advice.",
+    metaDescription: "Practical tips for travelling in Armenia: visas, currency, transport, when to visit, and local etiquette for a first trip to the South Caucasus.",
     heroImage: '/images/files/khor-virap-monastery-ararat-armenia-1086.webp',
     ogImage: '/images/files/khor-virap-monastery-ararat-armenia-og.jpg',
     ogImageWidth: 1200,
@@ -1167,10 +1169,14 @@ for (const lang of LANGS) {
   // --- Blog article pages ---
   for (const article of blogArticles) {
     const translatedTitle = loadBlogTitle(lang, article.titleKey) || article.title
+    // Optional per-article SEO overrides (separate from titleKey/descKey, which
+    // drive the visible H1 and the card excerpt).
+    const seoTitleOverride = article.seoTitleKey ? loadBlogTitle(lang, article.seoTitleKey) : null
+    const metaDescOverride = article.metaDescKey ? loadBlogTitle(lang, article.metaDescKey) : null
     const title = (lang === 'en' && article.seoTitle)
       ? article.seoTitle
-      : `${translatedTitle} | Hikasus Travel Blog`
-    const description = (article.descKey && loadBlogTitle(lang, article.descKey)) || article.metaDescription || article.excerpt
+      : (seoTitleOverride || `${translatedTitle} | Hikasus Travel Blog`)
+    const description = metaDescOverride || (article.descKey && loadBlogTitle(lang, article.descKey)) || article.metaDescription || article.excerpt
     const tagKeywords = article.tags.flatMap(tag => [
       `Georgia ${tag.replace(/-/g, ' ')}`,
     ])
