@@ -471,6 +471,8 @@
   "a11y.backToTop": "Do góry",
   "a11y.breadcrumb": "Ścieżka nawigacji",
   "a11y.scrollDown": "Przewiń w dół",
+  "a11y.pauseHeroVideo": "Wstrzymaj film w tle",
+  "a11y.playHeroVideo": "Odtwórz film w tle",
   "a11y.toggleMenu": "Przełącz menu",
   "a11y.changeLanguage": "Zmień język",
   "a11y.whatsapp": "Napisz na WhatsAppie",

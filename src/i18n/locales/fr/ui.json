@@ -465,6 +465,8 @@
   "a11y.backToTop": "Haut de page",
   "a11y.breadcrumb": "Fil d'Ariane",
   "a11y.scrollDown": "Faire défiler vers le bas",
+  "a11y.pauseHeroVideo": "Mettre en pause la vidéo d'arrière-plan",
+  "a11y.playHeroVideo": "Lire la vidéo d'arrière-plan",
   "a11y.toggleMenu": "Afficher ou masquer le menu",
   "a11y.changeLanguage": "Changer de langue",
   "a11y.whatsapp": "Discuter sur WhatsApp",

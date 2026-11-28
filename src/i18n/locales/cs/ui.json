@@ -470,6 +470,8 @@
   "a11y.backToTop": "Zpět nahoru",
   "a11y.breadcrumb": "Drobečková navigace",
   "a11y.scrollDown": "Přejít dolů",
+  "a11y.pauseHeroVideo": "Pozastavit video na pozadí",
+  "a11y.playHeroVideo": "Přehrát video na pozadí",
   "a11y.toggleMenu": "Přepnout nabídku",
   "a11y.changeLanguage": "Změnit jazyk",
   "a11y.whatsapp": "Napsat na WhatsAppu",

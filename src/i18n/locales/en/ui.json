@@ -465,6 +465,8 @@
   "a11y.backToTop": "Back to top",
   "a11y.breadcrumb": "Breadcrumb",
   "a11y.scrollDown": "Scroll down",
+  "a11y.pauseHeroVideo": "Pause background video",
+  "a11y.playHeroVideo": "Play background video",
   "a11y.toggleMenu": "Toggle menu",
   "a11y.changeLanguage": "Change language",
   "a11y.whatsapp": "Chat on WhatsApp",

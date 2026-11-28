@@ -465,6 +465,8 @@
   "a11y.backToTop": "Volver arriba",
   "a11y.breadcrumb": "Ruta de navegación",
   "a11y.scrollDown": "Desplazarse hacia abajo",
+  "a11y.pauseHeroVideo": "Pausar el vídeo de fondo",
+  "a11y.playHeroVideo": "Reproducir el vídeo de fondo",
   "a11y.toggleMenu": "Mostrar u ocultar el menú",
   "a11y.changeLanguage": "Cambiar de idioma",
   "a11y.whatsapp": "Chatear por WhatsApp",

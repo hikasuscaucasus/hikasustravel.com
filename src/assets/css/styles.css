@@ -534,6 +534,57 @@ section {
   background: rgba(0, 0, 0, 0.35);
   pointer-events: none;
 }
+/* Home hero video. The poster is the section's CSS background so the static HTML
+   paints it (and prerender.js preloads it) before any JS runs; the media queries
+   mirror HeroVideo.jsx and the preload links. The <video> sits under the shared
+   .coverme::after overlay (no z-index) and fades in over the poster. */
+.hero--home-video {
+  background-image: url("/videos/home-hero/hikasus-hero-poster-desktop.jpg");
+}
+@media (orientation: landscape) and (max-width: 1023.98px) {
+  .hero--home-video { background-image: url("/videos/home-hero/hikasus-hero-poster-tablet.jpg"); }
+}
+@media (orientation: portrait) {
+  .hero--home-video { background-image: url("/videos/home-hero/hikasus-hero-poster-mobile.jpg"); }
+}
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 400ms ease;
+  pointer-events: none;
+}
+.hero-video.is-playing { opacity: 1; }
+.hero-video-toggle {
+  position: absolute;
+  left: var(--indent);
+  bottom: var(--indent);
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid rgba(239, 239, 215, 0.6);
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.35);
+  color: var(--color-bg);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.hero-video-toggle:hover { background: rgba(0, 0, 0, 0.55); }
+.hero-video-toggle:focus-visible {
+  outline: 2px solid var(--color-h3);
+  outline-offset: 2px;
+}
+@media (max-width: 600px) {
+  .hero-video-toggle { left: calc(var(--indent) / 2); bottom: calc(var(--indent) / 2); width: 44px; height: 44px; }
+}
+
 /* Infographic hero — opt-in via HeroSection's `infographic` prop, currently the
    Georgian alphabet chart on the essential-georgian-words-phrases post. A chart
    has to be read, so none of the treatment above works for it: `.coverme` would

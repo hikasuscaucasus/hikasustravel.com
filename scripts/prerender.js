@@ -792,7 +792,7 @@ async function drainPages() {
   }
 }
 
-async function emitHtml(filePath, lang, { title, description, keywords, canonical, image, ogImage, ogImageAlt, ogImageWidth, ogImageHeight, heroPreload, ogLocale, jsonLd, geo, robots }) {
+async function emitHtml(filePath, lang, { title, description, keywords, canonical, image, ogImage, ogImageAlt, ogImageWidth, ogImageHeight, heroPreload, homeHero, ogLocale, jsonLd, geo, robots }) {
   // Use the trailing-slash form the host serves at 200; this also flows through
   // to the hreflang/x-default alternates and og:url derived from it below.
   canonical = withTrailingSlash(canonical)
@@ -831,6 +831,20 @@ async function emitHtml(filePath, lang, { title, description, keywords, canonica
   if (heroPreload) {
     $('head').append(
       `<link rel="preload" as="image" href="${escAttr(heroPreload)}" type="image/avif" fetchpriority="high" data-seo-preload>`,
+    )
+  }
+
+  // Home page only: the hero is a video over a poster, and the poster (a CSS
+  // background) is the LCP element. Preload the one that matches the viewport -
+  // the media queries mirror `.hero--home-video` in styles.css and HeroVideo.jsx.
+  // Own attribute (not data-seo-preload) so the client-side useSEO leaves them alone.
+  if (homeHero) {
+    const p = (size, media) =>
+      `<link rel="preload" as="image" href="/videos/home-hero/hikasus-hero-poster-${size}.jpg" type="image/jpeg" media="${media}" fetchpriority="high" data-home-hero-preload>`
+    $('head').append(
+      p('mobile', '(orientation: portrait)'),
+      p('tablet', '(orientation: landscape) and (max-width: 1023.98px)'),
+      p('desktop', '(orientation: landscape) and (min-width: 1024px)'),
     )
   }
 
@@ -1030,6 +1044,7 @@ for (const lang of LANGS) {
       // The two pages that really are about the company's own address keep the
       // geo tags the shared template used to give every page.
       geo: (path === '' || path === 'contact') ? COMPANY_GEO : undefined,
+      homeHero: path === '',
       robots: staticPageRobots[path] || undefined,
     })
   }

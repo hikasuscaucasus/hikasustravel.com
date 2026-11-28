@@ -182,7 +182,7 @@ export default function HomePage() {
   return (
     <>
       <HeroSection
-        image="/images/files/Sighnaghi.jpg"
+        videoBackground={{ dir: '/videos/home-hero', name: 'hikasus-hero' }}
         title={t('home.heroTitle')}
         subtitle={t('home.heroSubtitle')}
         actions={(

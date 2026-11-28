@@ -1,6 +1,7 @@
 import { useRef } from 'react'
 import asset from '../../utils/basePath'
 import useT from '../../i18n/useT'
+import HeroVideo from './HeroVideo'
 
 // Build the hero background value. Default to a plain url() so every browser
 // shows the WebP; when an AVIF variant is supplied and the browser supports
@@ -24,7 +25,7 @@ function heroBackground(image, imageAvif) {
 const srcSetFor = (base, widths, ext) =>
   widths.map((w) => `${asset(`${base}-${w}.${ext}`)} ${w}w`).join(', ')
 
-export default function HeroSection({ image, imageAvif, title, subtitle, className = '', isTaxi = false, bgClass = '', infographic = null, actions = null }) {
+export default function HeroSection({ image, imageAvif, title, subtitle, className = '', isTaxi = false, bgClass = '', infographic = null, actions = null, videoBackground = null }) {
   const t = useT()
   const sectionRef = useRef(null)
 
@@ -71,9 +72,12 @@ export default function HeroSection({ image, imageAvif, title, subtitle, classNa
   return (
     <section
       ref={sectionRef}
-      className={`fullscreen coverme ${isTaxi ? 'taxi-item' : ''} ${bgClass} ${className}`}
-      style={bgClass ? undefined : { backgroundImage: heroBackground(image, imageAvif) }}
+      className={`fullscreen coverme ${isTaxi ? 'taxi-item' : ''} ${bgClass} ${videoBackground ? 'hero--home-video ' : ''}${className}`}
+      style={(bgClass || videoBackground) ? undefined : { backgroundImage: heroBackground(image, imageAvif) }}
     >
+      {/* Opt-in background video (home page only). The poster is the CSS
+          background of `.hero--home-video`; the video mounts after hydration. */}
+      {videoBackground && <HeroVideo {...videoBackground} />}
       <div className="hometop-item">
         {actions ? (
           /* With actions the title and the buttons stack as one centred
